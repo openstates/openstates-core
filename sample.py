@@ -16,7 +16,7 @@ join opencivicdata_billversionlink link on link.version_id=v.id;
 """
 
 
-with open('version-export.csv') as f, open('output.csv', 'w') as outf:
+with open('version-export.csv') as f, open('sample.csv', 'w') as outf:
     out = csv.writer(outf)
     for line in csv.reader(f):
         bill_id, session, identifier, title, org_name, org_classification, jurisdiction, date, note, media_type, url = line
