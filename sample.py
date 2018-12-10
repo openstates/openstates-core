@@ -1,6 +1,5 @@
 import csv
-
-seen = set()
+from collections import Counter
 
 """
 Generate version-export.csv via a query like:
@@ -16,13 +15,24 @@ join opencivicdata_billversionlink link on link.version_id=v.id;
 """
 
 
+
+seen = Counter()
+
+COUNT_PER_KEY = 25
+output = []
+
 with open('version-export.csv') as f, open('sample.csv', 'w') as outf:
-    out = csv.writer(outf)
-    for line in csv.reader(f):
-        bill_id, session, identifier, title, org_name, org_classification, jurisdiction, date, note, media_type, url = line
+    versions = csv.DictReader(f)
+    for version in versions:
+        key = (version['jurisdiction_id'],
+               version['session'], 
+               version['classification'],
+               version['media_type'])
+        if seen[key] < COUNT_PER_KEY:
+            output.append(version)
+            seen[key] += 1
 
-        key = (jurisdiction, session, org_classification, media_type)
-
-        if key not in seen:
-            out.writerow(line)
-            seen.add(key)
+    out = csv.DictWriter(outf, fieldnames=versions.fieldnames)
+    out.writeheader()
+    for v in sorted(output, key=lambda x: (x['jurisdiction_id'], x['session'])):
+        out.writerow(v)
