@@ -26,3 +26,15 @@ All extraction functions must implement the interface ``f(data, metadata)``, whe
  * ``media_type`` - the type of file, e.g. application/pdf
  
 Other metadata values should generally not be used to alter behavior.  In particular, refrain from using ``jurisdiction_id`` to alter behavior within a function, prefering different functions where necessary.
+
+
+## Output Style Guidelines
+
+**How far do we go? Should we strip punctuation? Newlines? Whitespace? Section headings?**
+
+- Try not to be too aggressive with punctuation stripping, search indices/etc. can easily strip it later, but it can be handy if someone decides they want to search for things like "§ 143C-4-8.b"
+- Ideally leave newlines as-is since it makes looking at changes a lot nicer for humans and stripping newlines out for final products (search/text comparison/etc.) is trivial. 
+- Collapsing spaces/etc. is recommended, but not required.
+- Removal of section headers/etc. is fine, but if the only reason you're writing a new function instead of using a common one is to do this, reconsider.
+
+When in doubt, **ask**, you may have encountered something we haven't considered yet and we can discuss the best practice and add it here.
