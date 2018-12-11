@@ -15,24 +15,25 @@ join opencivicdata_billversionlink link on link.version_id=v.id;
 """
 
 
-
 seen = Counter()
 
 COUNT_PER_KEY = 25
 output = []
 
-with open('version-export.csv') as f, open('sample.csv', 'w') as outf:
+with open("version-export.csv") as f, open("sample.csv", "w") as outf:
     versions = csv.DictReader(f)
     for version in versions:
-        key = (version['jurisdiction_id'],
-               version['session'], 
-               version['classification'],
-               version['media_type'])
+        key = (
+            version["jurisdiction_id"],
+            version["session"],
+            version["classification"],
+            version["media_type"],
+        )
         if seen[key] < COUNT_PER_KEY:
             output.append(version)
             seen[key] += 1
 
     out = csv.DictWriter(outf, fieldnames=versions.fieldnames)
     out.writeheader()
-    for v in sorted(output, key=lambda x: (x['jurisdiction_id'], x['session'])):
+    for v in sorted(output, key=lambda x: (x["jurisdiction_id"], x["session"])):
         out.writerow(v)
