@@ -1,0 +1,418 @@
+                                                                                            H.B. 873
+                         GENERAL ASSEMBLY OF NORTH CAROLINA
+                                                                                          Apr 24, 2017
+                                     SESSION 2017                                    HOUSE PRINCIPAL CLERK
+     H                                                                                             D
+                           HOUSE BILL DRH40483-MHxf-86D* (03/14)
+
+
+
+     Short Title:   NC Consumer Fireworks Safety Act.                                         (Public)
+     Sponsors:      Representatives Brody, Hardister, Szoka, and Brockman (Primary Sponsors).
+     Referred to:
+
+
+ 1                                     A BILL TO BE ENTITLED
+ 2   AN ACT TO PERMIT THE SALE, POSSESSION, AND DISCHARGE OF CERTAIN
+ 3       CONSUMER FIREWORKS AND TO LEVY AN EXCISE TAX ON THE SALES OF
+ 4       CONSUMER FIREWORKS.
+ 5   The General Assembly of North Carolina enacts:
+ 6              SECTION 1. G.S. 14-410 reads as rewritten:
+ 7   "§ 14-410. Manufacture, sale and use of pyrotechnics prohibited; exceptions; license
+ 8              required; sale to persons under the age of 16 18 prohibited.
+ 9       (a)    Except as otherwise provided in this section, it shall be unlawful for any individual,
+10   firm, partnership or corporation to manufacture, purchase, sell, deal in, transport, possess,
+11   receive, advertise, use, handle, exhibit, or discharge any pyrotechnics of any description
+12   whatsoever within the State of North Carolina.
+13       (a1) It shall be permissible for pyrotechnics to be exhibited, used, handled,
+14   manufactured, or discharged within the State, provided all of the following apply:
+15              (1)     The exhibition, use, or discharge is at a concert or public exhibition.
+16              (2)     All individuals who exhibit, use, handle, or discharge pyrotechnics in
+17                      connection with a concert or public exhibition have completed the training
+18                      and licensing required under Article 82A of Chapter 58 of the General
+19                      Statutes. The display operator or proximate audience display operator, as
+20                      required under Article 82A of Chapter 58 of the General Statutes, must be
+21                      present at the concert or public exhibition and must personally direct all
+22                      aspects of exhibiting, using, handling, or discharging the pyrotechnics.
+23                      Notwithstanding this subdivision, the display operator for the University of
+24                      North Carolina School of the Arts may appoint an on-site representative to
+25                      supervise any performances that include a proximate audience display
+26                      subsequent to the opening performance, provided that the representative (i)
+27                      is a minimum of 21 years of age and (ii) is properly trained in the safe
+28                      discharge of proximate audience displays.
+29              (3)     The display operator has secured written authority under G.S. 14-413 from
+30                      the board of county commissioners of the county, or the city if authorized
+31                      under G.S. 14-413(a1), in which the pyrotechnics are to be exhibited, used or
+32                      discharged. Written authority from the board of commissioners or city is not
+33                      required under this subdivision for a concert or public exhibition provided
+34                      the display operator has secured written authority from (i) The University of
+35                      North Carolina or the University of North Carolina at Chapel Hill under
+36                      G.S. 14-413, and pyrotechnics are exhibited on lands or buildings in Orange
+
+
+                                *DRH40483-MHxf-86D*
+     General Assembly Of North Carolina                                                   Session 2017
+ 1                         County owned by The University of North Carolina or the University of
+ 2                         North Carolina at Chapel Hill or (ii) the University of North Carolina School
+ 3                         of the Arts and pyrotechnics are exhibited on lands or in buildings owned by
+ 4                         the State and used by the University of North Carolina School of the Arts.
+ 5       (a2) Notwithstanding any provision of this section, it shall not be unlawful for a common
+ 6   carrier to receive, transport, and deliver pyrotechnics in the regular course of its business.
+ 7       (a3) The requirements of this section apply to G.S. 14-413(b) and G.S. 14-413(c).
+ 8       (a4) It shall be permissible for pyrotechnics to be exhibited, used, handled,
+ 9   manufactured, or discharged within the State as a special effect by a production company, as
+10   defined in G.S. 105-164.3(30), for a motion picture production, if the motion picture set is
+11   closed to the public or is separated from the public by a minimum distance of 500 feet.
+12       (a5) It shall be permissible for pyrotechnics to be exhibited, used, handled,
+13   manufactured, or discharged within the State for pyrotechnic or proximate audience display
+14   instruction consisting of classroom and practical skills training approved by the Office of State
+15   Fire Marshal.
+16       (a6) It shall be permissible for pyrotechnics that are consumer fireworks to be advertised,
+17   sold, used, transported, handled, or discharged within the State, provided the advertising, sale,
+18   use, transportation, handling, or discharge comply with Part 2 of Article 82A of Chapter 58 of
+19   the General Statutes.
+20       (b)      Notwithstanding the provisions of G.S. 14-414, it shall be unlawful for any
+21   individual, firm, partnership, or corporation to sell pyrotechnics as defined in G.S. 14-414(2),
+22   (3), (4)c., (5), or (6) to persons under the age of 16.18.
+23       (c)      The following definitions apply in this Article:
+24                (1)      Concert or public exhibition. – A fair, carnival, show of any description, or
+25                         public celebration.
+26                (1a) Consumer fireworks. – Defined in G.S. 58-82A-80(1), unless otherwise
+27                         excluded by the Commissioner under the authority granted in
+28                         G.S. 58-82A-105.
+29                (2)      Display operator. – An individual issued a display operator license under
+30                         G.S. 58-82A-3.
+31                (3)      State Fire Marshal. – Defined in G.S. 58-80-1."
+32                SECTION 2. G.S. 58-82A-1 through G.S. 58-82A-55 are recodified as Part 1 of
+33   Article 82A of Chapter 58 of the General Statutes, to be entitled:
+34                                                   "Part 1.
+35                               "Display Pyrotechnics Training and Permitting."
+36                SECTION 3. Article 82A of Chapter 58 of the General Statutes is amended by
+37   adding a new Part to read:
+38                                                   "Part 2.
+39                                           "Consumer Fireworks.
+40   "§ 58-82A-75. Purpose.
+41       The sale, use, handling, or discharge of consumer fireworks shall be permitted only in
+42   compliance with the provisions of this Part.
+43   "§ 58-82A-80. Definitions.
+44       The following definitions apply in this Part:
+45                (1)      Consumer fireworks. – Any small fireworks device designed primarily to
+46                         produce visible effects by combustion or deflagration that (i) is categorized
+47                         as a 1.4G firework device under Standard 87-1 of the American Pyrotechnics
+48                         Association and (ii) complies with the construction, chemical composition,
+49                         and labeling regulations of the United States Consumer Product Safety
+50                         Commission, as set forth in the Code of Federal Regulations, volumes 16
+51                         and 49.
+
+     Page 2                                                    DRH40483-MHxf-86D* [v.2] (03/17)
+     General Assembly Of North Carolina                                                Session 2017
+ 1            (2)    Consumer fireworks distributor. – A person or corporation owning or
+ 2                   otherwise controlling a facility where consumer fireworks are stored or
+ 3                   otherwise maintained for distribution to fireworks retailers permitted under
+ 4                   this Part.
+ 5            (3)    Consumer fireworks permanent retailer. – An individual or corporation that
+ 6                   sells only consumer fireworks, ground and handheld sparkling devices and
+ 7                   novelties, and related items from a consumer fireworks retail establishment.
+ 8            (4)    Consumer fireworks retail establishment. – A freestanding retail facility
+ 9                   operated by a consumer fireworks permanent retailer.
+10            (5)    Fireworks retailer. – A consumer fireworks permanent retailer, sparkling
+11                   device temporary retailer, or an incidental sparkling device retailer permitted
+12                   under this Part.
+13            (6)    Fireworks safety and education trainer. – A person who has completed
+14                   training on the function, safe handling, and best practices for the safe use of
+15                   all categories of consumer fireworks and annually registers with the
+16                   Department. The Commissioner shall (i) create a training course or identify
+17                   existing training courses that meet the requirements of this subdivision and
+18                   (ii) create and maintain a listing of persons meeting the requirements of this
+19                   subdivision. The Department may issue rules to implement this subdivision,
+20                   including reasonable requirements for verification or certification that
+21                   persons have met the training requirements of this subdivision. The
+22                   Department may also charge a fee to cover the costs of implementing this
+23                   subdivision.
+24            (7)    Ground and handheld sparkling devices and novelties or sparkling devices. –
+25                   Consumer fireworks that do not rise into the air, do not fire inserts or
+26                   projectiles into the air, and do not explode or produce a report, as the
+27                   Commissioner, through the Office of the State Fire Marshall, may specify by
+28                   rule. The specification of sparkling devices under this subdivision shall
+29                   substantially follow the definition of these devices under Standard 87-1 of
+30                   the American Pyrotechnics Association, unless the Commissioner finds there
+31                   is a substantial threat to public safety that justifies a divergence from that
+32                   standard.
+33            (8)    Incidental sparkling device retailer. – An individual or corporation selling
+34                   only ground and handheld sparkling devices and novelties that is not a
+35                   consumer fireworks permanent retailer or a sparkling device temporary
+36                   retailer as defined by this section.
+37            (9)    NFPA standards. – Standard 1124 of the National Fire Protection
+38                   Association, 2006 edition, as it applies to the retail sale or distribution of
+39                   consumer fireworks, except as otherwise specified by this Part.
+40            (10)   Novelties. – Any wire or wooden stick sparklers, snaps, party poppers,
+41                   snakes and glow worms, and toy smoke devices containing five grams or
+42                   less of polytechnic composition.
+43            (11)   Permitting authority. – A county or city operating a consumer fireworks
+44                   sales permitting program approved by the Commissioner under
+45                   G.S. 58-82A-90.
+46            (12)   Public space. – Any building or area open to the public, whether privately or
+47                   publicly owned. Public space includes, but is not limited to, bars, restaurants,
+48                   theaters, stadiums, arenas, retail establishments, and shopping malls.
+49            (13)   Sparkling device retail stand. – A temporary or permanent building or
+50                   structure with a floor area not greater than 800 square feet, other than tents,
+51                   canopies, or membrane structures, that is used for the temporary retail
+
+     DRH40483-MHxf-86D* [v.2] (03/17)                                                         Page 3
+     General Assembly Of North Carolina                                                    Session 2017
+ 1                       display and sale of ground and handheld sparkling devices and novelties to
+ 2                       the public. Stands may include, but are not limited to, buildings, temporary
+ 3                       structures constructed from plywood, sheet metal, or similar materials,
+ 4                       manufactured buildings, trailers, and shipping containers.
+ 5               (14) Sparkling device temporary retailer. – An individual or corporation that sells
+ 6                       ground and handheld sparkling devices and novelties from a sparkling
+ 7                       device retail stand or a sparkling device tent.
+ 8               (15) Sparkling device tent. – A tent, canopy, or membrane structure with a floor
+ 9                       area not greater than 1,500 square feet that is not permanently installed and
+10                       that is used for the temporary retail display and sale of ground and handheld
+11                       sparkling devices and novelties to the public.
+12   "§ 58-82A-85. Possession and use of consumer fireworks.
+13       (a)     General Allowance. – Except as provided in subsection (b) of this section, the
+14   possession and use of consumer fireworks is allowed in the State, subject to the following
+15   conditions:
+16               (1)     The person possessing or using the consumer fireworks must be at least 18
+17                       years old.
+18               (2)     The use of consumer fireworks may occur only between the hours of 10:00
+19                       A.M. and 10:00 P.M., with the following exceptions:
+20                       a.       On July 4, use is permitted until 12:00 A.M.
+21                       b.       On December 31 and the following January 1, use is permitted from
+22                                8:00 A.M. on December 31 until 12:30 A.M. on January 1.
+23               (3)     The discharge of consumer fireworks is prohibited in the following
+24                       locations:
+25                       a.       In or on the premises of a public or private primary or secondary
+26                                school, unless the person has written permission from the school.
+27                       b.       On the campus of a college or university, unless the person has
+28                                received written authorization from the college or university.
+29                       c.       Within 1,500 feet of a hospital, veterinary hospital, licensed child
+30                                care center, fireworks retailer, fireworks distributor, gas station, or
+31                                bulk storage facility for petroleum products or other explosive or
+32                                flammable substances.
+33               (4)     The possession or discharge of consumer fireworks is prohibited in or on the
+34                       premises of any public park or public space, except as otherwise permitted
+35                       by the person, State agency, or unit of local government owning or otherwise
+36                       controlling the park, property, or space.
+37   "§ 58-82A-90. Sale of consumer fireworks; permit required.
+38       (a)     Permit Requirement. – No person shall sell consumer fireworks or ground and
+39   handheld sparkling devices and novelties in this State unless the person holds a permit issued
+40   under this Part from a county or city authorized by the Commissioner to issue retail fireworks
+41   and sparkling device permits. The Commissioner shall issue rules to implement this section,
+42   including rules for the approval of local consumer fireworks sales and sparkling device sales
+43   permitting programs funded and operated by counties or municipalities within their jurisdiction.
+44   Nothing in this section is intended to require a county or city to issue consumer fireworks
+45   permits or sparkling device permits. Permits for operation of a fireworks retailer or a sparkling
+46   device retailer shall be posted in a location visible to members of the general public visiting the
+47   retailer. The permitting authority shall issue a permit to a person who meets the following
+48   conditions:
+49               (1)     Is 21 years of age or older.
+50               (2)     Complies with all of the requirements of this Part.
+51               (3)     Has not been convicted of a felony and has not received a pardon.
+
+     Page 4                                                     DRH40483-MHxf-86D* [v.2] (03/17)
+     General Assembly Of North Carolina                                                    Session 2017
+ 1              (4)      Has not been convicted of an offense for a violation of State or federal law
+ 2                       or been found in violation of any municipal ordinance involving fireworks or
+ 3                       explosives within five years prior to the date of the application for the
+ 4                       permit.
+ 5               (5)     Maintains at all times public liability and product liability insurance with
+ 6                       minimum coverage limits of five million dollars ($5,000,000) to cover
+ 7                       losses, damages, or injury that might occur as a result of the person selling
+ 8                       consumer fireworks.
+ 9               (6)     Submits the application for a permit no less than 120 days prior to the date
+10                       the applicant proposes to begin sales of consumer fireworks under this Part.
+11               (7)     Provides a lease or evidence of ownership of the site of the proposed
+12                       fireworks retailer for no less than the duration of the permit.
+13       (b)     No Transportation Exclusions. – No county or city may restrict or exclude the
+14   transportation of consumer fireworks across or through the county or city. Nothing in this
+15   subsection is intended to prevent reasonable transportation-related restrictions applicable to all
+16   vehicles or a class of vehicles regardless of cargo, such as vehicle weight limits or truck route
+17   restrictions in accordance with U.S. Department of Transportation regulations.
+18       (c)     Requirements for All Fireworks Retailers. – Any permit issued for a fireworks
+19   retailer or consumer fireworks distributor shall contain, at a minimum, the following
+20   conditions:
+21               (1)     Standards. – The permittee must comply with (i) NFPA standards and (ii)
+22                       applicable local zoning and land use rules.
+23               (2)     Employees. – All employees of the permittee engaged in the sale of
+24                       fireworks or sparkling devices must be at least 18 years of age.
+25               (3)     Fire suppression devices. – The permittee must maintain on the premises a
+26                       minimum of two portable fire extinguishers with a 2A rating. The fire
+27                       extinguishers shall be located in two different locations within the premises
+28                       of the retailer, and at least one of the extinguishers shall be of the
+29                       pressurized water type, subject to additional provisions in NFPA standards.
+30               (4)     Required signs. – The permittee shall post signs prohibiting smoking on the
+31                       premises and discharge of fireworks and sparkling devices within 1,500 feet
+32                       of the premises in a manner specified by the Commissioner.
+33       (d)     Consumer Fireworks Permanent Retailer. – In addition to the restrictions set forth in
+34   subsection (a) of this section, a permit issued for a consumer fireworks permanent retailer shall
+35   contain, at a minimum, the following conditions:
+36               (1)     Setbacks. – Areas within 20 feet of the retailer's premises shall be kept free
+37                       of dry vegetation and other combustible debris. The retailer may not be
+38                       located within 300 feet of the following:
+39                       a.      Retail establishments dispensing flammable or combustible liquids,
+40                               flammable gas, or flammable liquefied gas.
+41                       b.      Above-ground storage tanks storing flammable or combustible
+42                               liquids, flammable gas, or flammable liquefied gas.
+43                       c.      Propane dispensing stations.
+44               (2)     Smoking prohibited. – Smoking shall not be permitted inside of the retailer's
+45                       premises, subject to the retailer's building location, layout, and restrictions.
+46               (3)     Egress requirements. – Means of egress, including, but not limited to, aisles,
+47                       doors, and exit discharge, shall be clear at all times when the retailer is open
+48                       to the public, and aisles must be at least 48 inches in width.
+49               (4)     Fire safety. – The retailer shall create and maintain a fire safety and
+50                       evacuation plan in a form specified and approved by the Commissioner.
+
+
+     DRH40483-MHxf-86D* [v.2] (03/17)                                                             Page 5
+     General Assembly Of North Carolina                                                 Session 2017
+ 1              (5)      Training. – No less than two management or supervisory employees of each
+ 2                       permittee subject to this subsection shall be Fireworks Safety and Education
+ 3                       Trainers. Fireworks Safety and Education Trainers shall be responsible for
+ 4                       the annual training of all employees on the function, safe handling and best
+ 5                       practices regarding the safe use of all categories of consumer fireworks.
+ 6                       Such training shall be documented on forms approved by the Commissioner,
+ 7                       and be readily available at the request of the Commissioner.
+ 8       (e)     Incidental Sparkling Device and Sparkling Device Temporary Retailer. – A permit
+ 9   issued to an incidental sparkling device retailer or a sparkling device temporary retailer shall
+10   allow the sale of ground and handheld sparkling devices and novelties only, and shall require
+11   compliance with NFPA standards applicable to sales of ground and handheld sparkling devices
+12   and novelties.
+13       (f)     Nothing in this section is meant to override any fire code applicable to a structure
+14   regulated by this Part. If the fire code imposes a more stringent requirement, the fire code
+15   requirement will apply instead of the standards imposed by this section.
+16   "§ 58-82A-95. Permit fees.
+17       The permitting authority may charge an applicant for a permit under G.S. 58-82A-90 the
+18   following annual fees:
+19               (1)     One hundred dollars ($100.00) for a sparkling device temporary retailer or
+20                       an incidental sparkling device retailer permit.
+21               (2)     Five thousand dollars ($5,000) for a consumer fireworks permanent retailer
+22                       permit.
+23               (3)     Five thousand dollars ($5,000) for a consumer fireworks distributor permit.
+24               (4)     Twenty-five dollars ($25.00) for the renewal of a sparkling device temporary
+25                       retailer or an incidental sparkling device retailer permit.
+26               (5)     Two thousand five hundred dollars ($2,500) for the renewal of a consumer
+27                       fireworks permanent retailer permit or a consumer fireworks distributor
+28                       permit.
+29   "§ 58-82A-100. Power of Commissioner to exclude certain categories of pyrotechnics
+30               from definition of consumer fireworks.
+31       The Commissioner, through the Office of State Fire Marshal and in consultation with the
+32   State Fire and Rescue Commission, may by rule exclude certain types or categories of
+33   pyrotechnics otherwise meeting the definition of "consumer fireworks" from the provisions of
+34   this Part upon a finding that the type or category of pyrotechnic presents a significant and
+35   widespread risk of death, serious bodily injury, or substantial damage to public or private
+36   property. Exclusion of any type or category of pyrotechnics pursuant to this section must be
+37   evidence-based.
+38   "§ 58-82A-105. Prohibition of consumer fireworks.
+39       During periods of declared hazardous forest fire conditions as referenced in G.S. 106-946,
+40   the Commissioner in consultation with the North Carolina Forest Service is authorized to
+41   prohibit all use of consumer fireworks otherwise permitted by this Part in all or part of the
+42   State. The Commissioner shall issue a press release containing relevant details of the
+43   prohibition to news media serving the area affected.
+44   "§ 58-82A-110. Civil and criminal penalties for violations.
+45       (a)     G.S. 14-415 and G.S. 58-2-70 shall apply to any person violating any of the
+46   provisions of this Part.
+47       (b)     The Commissioner, a State law enforcement officer, a municipal law enforcement
+48   officer, a code enforcement officer, or a fire safety official may petition the district court to
+49   seize or remove, at the expense of the permit holder, fireworks sold, offered for sale, stored,
+50   possessed or used in violation of this Part.
+
+
+     Page 6                                                   DRH40483-MHxf-86D* [v.2] (03/17)
+     General Assembly Of North Carolina                                                    Session 2017
+ 1       (c)     The Commissioner or a permitting authority may suspend or revoke the license
+ 2   issued under this Part of a permittee found guilty of (i) selling fireworks or explosives not
+ 3   defined in Chapter 3 of Standard 87-1 of the American Pyrotechnics Association or (ii) selling
+ 4   fireworks without a valid permit issued under this Part. In addition to or instead of suspending
+ 5   or revoking the permit, the Commissioner or permitting authority may order the payment of a
+ 6   civil penalty as set forth in subsection (d) of this section.
+ 7       (d)     If the Commissioner or a local permitting authority orders the payment of a civil
+ 8   penalty pursuant to subsection (c) of this section, the penalty shall not be less than one
+ 9   thousand dollars ($1,000) nor more than ten thousand dollars ($10,000). In determining the
+10   amount of the penalty, the Commissioner or local permitting authority shall consider the degree
+11   and extent of harm caused by the violation, the amount of money that inured to the benefit of
+12   the violator as a result of the violation, whether the violation was committed willfully, and the
+13   prior record of the violator in complying or failing to comply with laws, rules, or orders
+14   applicable to the violator. The clear proceeds of the penalty shall be remitted to the Civil
+15   Penalty and Forfeiture Fund in accordance with G.S. 115C-457.2. Payment of the civil penalty
+16   under this section shall be in addition to payment of any other penalty for a violation of the
+17   criminal laws of this State.
+18   "§ 58-82A-115. Prohibited activities.
+19       (a)     The permitting authority, by majority vote, may suspend the permit of a person
+20   authorized to sell consumer fireworks or sparkling devices for engaging in any of the following
+21   prohibited activities:
+22               (1)     Selling consumer fireworks or sparkling devices within the State without a
+23                       valid permit.
+24               (2)     Selling consumer fireworks or sparkling devices to a person who appears to
+25                       be under the influence of alcohol or drugs.
+26               (3)     Knowingly aiding or assisting in procuring, furnishing, giving, selling, or
+27                       delivering consumer fireworks or sparkling devices to a person under the age
+28                       of 18. It is an affirmative defense to any disciplinary action taken pursuant to
+29                       this subdivision that the permit holder procured, furnished, gave, sold, or
+30                       delivered consumer fireworks or sparkling devices to a person under the age
+31                       of 18 in reasonable reliance upon fraudulent proof of age presented to the
+32                       permit holder.
+33       A person whose permit has been suspended under this section shall receive a hearing before
+34   the applicable body within 10 days of the suspension. If the suspension is upheld, the person
+35   may seek judicial review in superior court."
+36               SECTION 4.(a) Article 6 of Chapter 153A of the General Statutes is amended by
+37   adding a new section to read:
+38   "§ 153A-130.1 Use and sales of consumer fireworks.
+39       Notwithstanding G.S. 153A-128, a county may by ordinance regulate the use and sales of
+40   consumer fireworks and sparkling devices to the public pursuant to Part 2 of Article 82A of
+41   Chapter 58 of the General Statutes, provided that the ordinance shall not apply to a city located
+42   within the county that has adopted an ordinance in accordance with G.S. 160A-190.1."
+43               SECTION 4.(b) Article 8 of Chapter 160A of the General Statutes is amended by
+44   adding a new section to read:
+45   "§ 160A-190.1 Use and sales of consumer fireworks.
+46       Notwithstanding G.S. 160A-183, a city may by ordinance regulate the use and sales of
+47   consumer fireworks and sparkling devices to the public pursuant to Part 2 of Article 82A of
+48   Chapter 58 of the General Statutes."
+49               SECTION 5. Subchapter I of Chapter 105 of the General Statutes is amended by
+50   adding a new Article to read:
+51                                                "Article 2E.
+
+     DRH40483-MHxf-86D* [v.2] (03/17)                                                             Page 7
+     General Assembly Of North Carolina                                                   Session 2017
+ 1                                       "Tax on Consumer Fireworks.
+ 2   "§ 105-113.125. Tax on consumer fireworks.
+ 3       (a)     Tax on Consumer Fireworks. – An excise tax is levied on consumer fireworks at the
+ 4   rate of five percent (5%) of the cost price of the products. A person who sells consumer
+ 5   fireworks at retail is subject to and liable for the tax imposed by this section.
+ 6       (b)     Definitions. – The following definitions apply in this Article:
+ 7               (1)      Consumer fireworks. – Defined in G.S. 58-82A-80.
+ 8               (2)      Cost price. – The price a person liable for the tax on consumer fireworks
+ 9                        imposed by this Article paid for the products, before any discount, rebate, or
+10                        allowance.
+11       (c)     Monthly Report. – The taxes levied by this Article are payable when a report is
+12   required to be filed. A report is due on a monthly basis. A monthly report covers sales and other
+13   activities occurring in a calendar month and is due within 20 days after the end of the month
+14   covered by the report. A report shall be filed on a form provided by the Secretary and shall
+15   contain the information required by the Secretary.
+16       (d)     Discount. – A person who is liable for the excise taxes imposed by this Article, who
+17   files a timely report under this section, and who sends a timely payment may deduct from the
+18   amount due with the report a discount of two percent (2%). This discount covers expenses
+19   incurred in preparing the records and reports required by this Article.
+20       (e)     Refund. – A person liable for the excise taxes imposed by this Article and in
+21   possession of unsalable consumer fireworks upon which the tax has been paid may return the
+22   consumer fireworks to the manufacturer and apply to the Secretary for refund of the tax. The
+23   application shall be in the form prescribed by the Secretary and shall be accompanied by a
+24   written certificate signed under penalty of perjury or an affidavit from the manufacturer listing
+25   the consumer fireworks returned to the manufacturer by the applicant. The Secretary shall
+26   refund the tax paid, less the discount allowed, on the listed products.
+27       (f)     Records. – Every person liable for the excise taxes imposed by this Article shall
+28   keep accurate records of the purchases, inventories, and sales of consumer fireworks. These
+29   records shall be open at all times for inspection by the Secretary or an authorized representative
+30   of the Secretary.
+31       (g)     Use. – The Secretary must credit the net proceeds of the tax collected under this
+32   Article to the General Fund."
+33               SECTION 6. This act becomes effective July 1, 2017, and Section 5 applies to the
+34   cost price paid for fireworks on or after that date.
+
+
+
+
+     Page 8                                                    DRH40483-MHxf-86D* [v.2] (03/17)
+

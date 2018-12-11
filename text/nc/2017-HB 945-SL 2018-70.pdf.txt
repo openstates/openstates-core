@@ -1,0 +1,143 @@
+                      GENERAL ASSEMBLY OF NORTH CAROLINA
+                                  SESSION 2017
+
+                                     SESSION LAW 2018-70
+                                       HOUSE BILL 945
+
+
+AN ACT TO CREATE THE STATEWIDE SEXUAL ASSAULT EVIDENCE COLLECTION
+  KIT TRACKING SYSTEM AND TO REQUIRE TESTING OF PREVIOUSLY
+  UNTESTED SEXUAL ASSAULT EVIDENCE COLLECTION KITS, AS
+  RECOMMENDED BY THE JOINT LEGISLATIVE OVERSIGHT COMMITTEE ON
+  JUSTICE AND PUBLIC SAFETY.
+
+The General Assembly of North Carolina enacts:
+
+              SECTION 1. Article 9 of Chapter 114 of the General Statutes is amended by adding
+a new section to read:
+"§ 114-65. Statewide sexual assault evidence collection kit tracking system.
+     (a)      Legislative Intent. – The General Assembly finds that the preservation and testing of
+sexual assault evidence collection kits (SAECK or “kit”) are important to public safety. Timely
+testing is vital to solve cases, punish offenders, bring justice to victims, and prevent future crimes.
+It is the intent of the General Assembly that every sexual assault evidence collection kit in North
+Carolina be tested. Sexual assault victims deserve no less.
+     (a1) Establishment of System. – There is established in the State Crime Laboratory the
+Statewide Sexual Assault Evidence Collection Kit Tracking System (the System). All sexual
+assault evidence collection kits purchased or distributed under G.S. 143B-1201 on or after
+October 1, 2018, shall be trackable and shall comply with the requirements of the System. The
+Director of the State Crime Laboratory (Director) shall implement protocols and administer the
+System. The Secretary of the Department of Public Safety (Secretary) shall adopt rules,
+guidelines, and sanctions, for agencies required to participate in the System under this section.
+The Director shall guidelines for agencies required to participate in the System under this section.
+The Director shall ensure that the System protects victim information against disclosure to
+nonparticipating agencies. Except as otherwise required for reporting under subsection (e) of this
+section, information maintained in the System is confidential and not a public record as defined
+in G.S. 132-1.
+     (b)      Required Participation. – All medical providers, law enforcement agencies, forensic
+laboratories, or other persons or entities having custody or use of any sexual assault evidence
+collection kit in the State shall participate in the System and comply with the established
+protocols, rules, and guidelines. A participating entity shall be permitted to access the entity's
+tracking information through the System.
+     (c)      Victim's Access to View Status of Kit. – It is the policy of the State to ensure that a
+victim of sexual assault or attempted sexual assault is able to track the location of the sexual
+assault evidence collection kit used to conduct the victim's forensic medical examination and that
+the victim is also able to determine whether forensic testing of the kit has been completed.
+     (d)      Tracking of Previously Untested Kits. – The Director shall implement protocols and
+the Secretary shall adopt rules and guidelines to ensure that previously untested sexual assault
+evidence collection kits are trackable and are entered into the System. Any law enforcement
+agency, medical provider, or forensic laboratory that has in its custody a previously untested
+
+
+
+                                       *H945-v-4*
+sexual assault evidence collection kit used for a forensic medical examination shall comply with
+the established protocols, rules, and guidelines with respect to all untested kits.
+    For purposes of this subsection, a "previously untested sexual assault evidence collection kit"
+means any kit that has not undergone forensic testing and was identified and included in the 2017
+statewide inventory of kits in law enforcement custody pursuant to Section 17.7 of S.L. 2017-57.
+To the extent practicable, and consistent with protecting victim confidentiality for unreported
+sexual assaults, a law enforcement agency having custody of a kit governed by this subsection
+shall take reasonable measures to provide appropriate tracking information to the affected victim.
+    (e)      Annual Report to the General Assembly. – Beginning October 1, 2019, and annually
+thereafter, the Director shall report to the Joint Legislative Oversight Committee on Justice and
+Public Safety the following information for the previous fiscal year:
+             (1)    The number of tracking-enabled kits shipped to medical facilities or medical
+                    providers.
+             (2)    The number of tracking-enabled kits used by medical facilities or medical
+                    providers to conduct forensic medical examinations of sexual assault or
+                    attempted sexual assault victims.
+             (3)    Of the tracking-enabled kits used by medical facilities or medical providers to
+                    conduct forensic medical examinations, the number of kits for which a sexual
+                    assault has been reported to law enforcement, sorted by law enforcement
+                    agency.
+             (4)    Of the tracking-enabled kits generated for reported cases, the number of kits
+                    submitted to a laboratory for forensic testing.
+             (5)    Of the tracking-enabled kits submitted for forensic testing, the number of kits
+                    for which forensic testing has been completed.
+             (6)    The number of tracking-enabled kits for which a sexual assault has not been
+                    reported, including the total submitted to local law enforcement and the total
+                    submitted to Department of Public Safety Law Enforcement Support Services.
+             (7)    Information regarding efforts to track and test previously untested kits
+                    described in subsection (d) of this section."
+             SECTION 2. G.S. 143B-1201 reads as rewritten:
+"§ 143B-1201. Restitution; actions.
+    (a)      The Program shall be an eligible recipient for restitution or reparation under
+G.S. 15A-1021, 15A-1343, 148-33.1, 148-33.2, 148-57.1, and any other applicable statutes.
+    (b)      When any victim who:
+             (1)    Has received assistance under this Part;
+             (2)    Brings an action for damages arising out of the rape, attempted rape, sexual
+                    offense, or attempted sexual offense for which she received that assistance;
+                    and
+             (3)    Recovers damages including the expenses for which she was awarded
+                    assistance, the court shall make as part of its judgment an order for
+                    reimbursement to the Program of the amount of any assistance awarded less
+                    reasonable expenses allocated by the court to that recovery.
+    (c)      Funds appropriated to the Department of Public Safety for this program may be used
+to purchase and distribute rape sexual assault evidence collection kits approved by the State
+Bureau of Investigation.Director of the State Crime Laboratory.
+    (d)      The Secretary, in consultation with the Director of the State Crime Laboratory, shall
+require that all sexual assault evidence collection kits purchased or distributed on or after October
+1, 2018, are compatible with the Statewide Sexual Assault Evidence Collection Kit Tracking
+System established under G.S. 114-65."
+             SECTION 3. The Secretary of the Department of Public Safety shall convene a
+working group to make recommendations regarding the testing priority of untested sexual assault
+
+Page 2                                 Session Law 2018-70                           House Bill 945
+kits identified in the 2017 Sexual Assault Evidence Collection Kit Law Enforcement Report
+made pursuant to Section 17.7 of S.L. 2017-57. The working group shall include representatives
+from law enforcement, victims' advocates such as the North Carolina Victim Assistance Network
+and the North Carolina Coalition Against Sexual Assault, RTI International, the North Carolina
+Department of Justice, prosecutors, and criminal defense attorneys. The working group shall
+develop findings and recommendations including a strategic plan to (i) establish the order of
+priority for testing kits; (ii) test all of the kits that can be tested; (iii) direct the preservation of all
+kits; (iv) suggest sanctions for the destruction or contamination of kits in violation of G.S. 15A-
+268; and (v) develop statewide protocols to test sexual assault evidence collection kits in the
+future. The working group statewide protocol for testing future sexual assault evidence collection
+kits. The working group shall also make findings and recommendations to the Secretary and to
+the Director with respect to developing the protocols, rules, and guidelines for the System under
+G.S. 114-65(a). The Secretary shall submit the findings and recommendations of the working
+group to the Joint Legislative Oversight Committee on Justice and Public Safety by December 1,
+2018.
+             SECTION 4. This act is effective when it becomes law.
+             In the General Assembly read three times and ratified this the 15th day of June, 2018.
+
+
+                                                s/ Philip E. Berger
+                                                   President Pro Tempore of the Senate
+
+
+                                                s/ Tim Moore
+                                                   Speaker of the House of Representatives
+
+
+                                                s/ Roy Cooper
+                                                   Governor
+
+
+Approved 10:38 a.m. this 25th day of June, 2018
+
+
+
+
+House Bill 945                             Session Law 2018-70                                       Page 3
+

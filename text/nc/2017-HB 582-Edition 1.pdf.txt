@@ -1,0 +1,213 @@
+                         GENERAL ASSEMBLY OF NORTH CAROLINA
+                                     SESSION 2017
+     H                                                                                                            1
+                                              HOUSE BILL 582
+
+
+     Short Title:   Abuse & Neglect Resources/Anon. Tip Line App.                                         (Public)
+     Sponsors:      Representatives White, Hardister, and Meyer (Primary Sponsors).
+                        For a complete list of sponsors, refer to the North Carolina General Assembly web site.
+     Referred to:   Education - K-12, if favorable, Appropriations
+                                                  April 6, 2017
+
+ 1                                  A BILL TO BE ENTITLED
+ 2   AN ACT TO REQUIRE PUBLIC SCHOOLS TO PROVIDE STUDENTS WITH
+ 3      INFORMATION AND RESOURCES ON CHILD ABUSE AND NEGLECT,
+ 4      INCLUDING SEXUAL ABUSE, TO APPROPRIATE FUNDS TO SUPPORT THE
+ 5      ANONYMOUS SAFETY TIP LINE APPLICATION, AND TO MAKE CERTAIN
+ 6      CHANGES TO UPDATE THE GENERAL STATUTES.
+ 7   The General Assembly of North Carolina enacts:
+ 8
+ 9   PART I. POLICY ON ABUSE AND NEGLECT RESOURCES
+10               SECTION 1.(a) G.S. 115C-12 is amended by adding a new subdivision to read:
+11               "(46) Duty Regarding Abuse and Neglect. – Upon consideration and
+12                       recommendation by the Superintendent of Public Instruction, the State Board
+13                       of Education shall adopt a policy to be implemented by local boards of
+14                       education to address student awareness of child abuse and neglect, including
+15                       sexual abuse. This policy shall include a requirement that the local boards of
+16                       education provide students in grades six through 12 with a document at the
+17                       beginning of each school year that provides (i) the telephone number used
+18                       for reporting abuse to the department of social services in the county in
+19                       which the local school administrative unit is located, in accordance with
+20                       G.S. 7B-301, and (ii) information about the resources developed pursuant to
+21                       G.S. 115C-105.51, including the anonymous safety tip line application."
+22               SECTION 1.(b) G.S. 115C-218.75(a) reads as rewritten:
+23       "(a) Health and Safety Standards. – A charter school shall meet the same health and
+24   safety requirements required of a local school administrative unit. The Department of Public
+25   Instruction shall ensure that the following:
+26               (1)     That charter schools provide parents and guardians with information about
+27                       meningococcal meningitis and influenza and their vaccines at the beginning
+28                       of every school year. This information shall include the causes, symptoms,
+29                       and how meningococcal meningitis and influenza are spread and the places
+30                       where parents and guardians may obtain additional information and
+31                       vaccinations for their children.
+32               (2)     The Department of Public Instruction shall also ensure that That charter
+33                       schools provide parents and guardians with information about cervical
+34                       cancer, cervical dysplasia, human papillomavirus, and the vaccines available
+35                       to prevent these diseases. This information shall be provided at the
+
+
+                                             *H582-v-1*
+     General Assembly Of North Carolina                                               Session 2017
+ 1                     beginning of the school year to parents of children entering grades five
+ 2                     through 12. This information shall include the causes and symptoms of these
+ 3                     diseases, how they are transmitted, how they may be prevented by
+ 4                     vaccination, including the benefits and possible side effects of vaccination,
+ 5                     and the places where parents and guardians may obtain additional
+ 6                     information and vaccinations for their children.
+ 7             (3)     The Department of Public Instruction shall also ensure that That charter
+ 8                     schools provide students in grades seven through 12 with information
+ 9                     annually on the preventable risks for preterm birth in subsequent
+10                     pregnancies, including induced abortion, smoking, alcohol consumption, the
+11                     use of illicit drugs, and inadequate prenatal care.
+12             (4)     The Department of Public Instruction shall also ensure that That charter
+13                     schools provide students in grades nine through 12 with information
+14                     annually on the manner in which a parent may lawfully abandon a newborn
+15                     baby with a responsible person, in accordance with G.S. 7B-500.
+16             (5)     The Department of Public Instruction shall also ensure that That the
+17                     guidelines for individual diabetes care plans adopted by the State Board of
+18                     Education under G.S. 115C-12(31) are implemented in charter schools in
+19                     which students with diabetes are enrolled and that charter schools otherwise
+20                     comply with the provisions of G.S. 115C-375.3.
+21             (6)     The Department of Public Instruction shall ensure that That charter schools
+22                     comply with G.S. 115C-375.2A. The board of directors of a charter school
+23                     shall provide the school with a supply of emergency epinephrine
+24                     auto-injectors necessary to carry out the provisions of G.S. 115C-375.2A.
+25             (7)     That the policy addressing student awareness of child abuse and neglect,
+26                     including sexual abuse, adopted by the State Board of Education under
+27                     G.S. 115C-12(46), is implemented in charter schools."
+28             SECTION 1.(c) G.S. 115C-238.66 reads as rewritten:
+29   "§ 115C-238.66. Board of directors; powers and duties.
+30       The board of directors shall have the following powers and duties:
+31             ...
+32             (7)     Health and safety. – The board of directors shall require that the regional
+33                     school meet the same health and safety standards required of a local school
+34                     administrative unit.
+35                         The Department of Public Instruction shall ensure that regional schools
+36                     comply with G.S. 115C-375.2A. The board of directors of a regional school
+37                     shall provide the school with a supply of emergency epinephrine
+38                     auto-injectors necessary to carry out the provisions of G.S. 115C-375.2A.
+39                         The Department of Public Instruction shall also ensure that the policy
+40                     addressing student awareness of child abuse and neglect, including sexual
+41                     abuse, adopted by the State Board of Education under G.S. 115C-12(46), is
+42                     implemented in regional schools.
+43             ...."
+44
+45   PART II. ANONYMOUS TIP LINE APPLICATION
+46              SECTION 2.1.(a) G.S. 115C-105.49(d) reads as rewritten:
+47       "(d) The Department of Public Safety, Division of Emergency Management, and in
+48   collaboration with the Department of Public Instruction, Division of Safe and Healthy Schools
+49   Support, and the Center for Safer Schools Schools, shall provide guidance and
+50   recommendations to local school administrative units on the types of multiple hazards to plan
+51   and respond to, including intruders on school grounds."
+
+     Page 2                                                            House Bill 582-First Edition
+     General Assembly Of North Carolina                                                 Session 2017
+ 1               SECTION 2.1.(b) G.S. 115C-105.49A reads as rewritten:
+ 2   "§ 115C-105.49A. School Risk and Response Management System.
+ 3       (a)     The Department of Public Safety, Division of Emergency Management, and the
+ 4   Center for Safer Schools in collaboration with the Department of Public Instruction and the
+ 5   Center for Safer Schools, shall construct and maintain a statewide School Risk and Response
+ 6   Management System (SRRMS). The system shall fully integrate and leverage existing data and
+ 7   applications that support school risk planning, exercises, monitoring, and emergency response
+ 8   via 911 dispatch.
+ 9       (b)     In constructing the SRRMS, the Division of Emergency Management Management
+10   of the Department of Public Safety, in collaboration with the Department of Public Instruction
+11   and the Center for Safer Schools Schools, shall leverage the existing enterprise risk
+12   management database, the School Risk Management Planning tool managed by the
+13   Division.Division of Emergency Management. The Division shall also leverage the local
+14   school administrative unit schematic diagrams of school facilities. Where technically feasible,
+15   the SRRMS shall integrate any anonymous tip lines established pursuant to G.S. 115C-105.51
+16   and any 911-initiated panic alarm systems authorized as part of a SRMP pursuant to
+17   G.S. 115C-47(40). The Division and the Center for Safer Schools shall collaborate with the
+18   Department of Public Instruction Instruction, the Center for Safer Schools, and the North
+19   Carolina 911 Board in the design, implementation, and maintenance of the SRRMS.
+20       (c)     All data and information acquired and stored in the SRRMS as provided in
+21   subsections (a) and (b) of this section are not considered public records as the term "public
+22   record" is defined under G.S. 132-1 and shall not be subject to inspection and examination
+23   under G.S. 132-6."
+24               SECTION 2.1.(c) G.S. 115C-105.51 reads as rewritten:
+25   "§ 115C-105.51. Anonymous tip lines and monitoring and response applications.
+26       (a)     Each local school administrative unit is encouraged to develop and operate an
+27   anonymous tip line, in coordination with local law enforcement and social services agencies, to
+28   receive anonymous information on internal or external risks to the school population, school
+29   buildings, and school-related activities. The Department of Public Safety, in consultation with
+30   the Department of Public Instruction Instruction, in consultation with the Department of Public
+31   Safety, may develop standards and guidelines for the development, operation, and staffing of
+32   tip lines. Local school administrative units may use the anonymous tip line application
+33   developed pursuant to subsection (b) of this section, or another application that meets standards
+34   and guidelines developed by the Department of Public Instruction, to achieve the purposes of
+35   this subsection.
+36       (b)     The Department of Public Safety, Division of Emergency Management, and the
+37   Center for Safer Schools, in collaboration with the The Department of Public Instruction,
+38   Division of Safe and Healthy Schools Support, and the Center for Safer Schools, in
+39   collaboration with the Department of Public Safety, Division of Emergency Management, shall
+40   implement and maintain an anonymous safety tip line application for purposes of receiving
+41   anonymous student information on internal or external risks to the school population, school
+42   buildings, and school-related activities.activities, and for purposes of receiving student
+43   information on suspected abuse and neglect. Local school administrative units shall inform
+44   students about the application and provide opportunities for students to learn about its purpose
+45   and function. Each local school administrative unit shall work with the Department of Public
+46   Instruction, Division of Safe and Healthy Schools Support, and the Center for Safer Schools to
+47   ensure that employees of the local school administrative unit receive adequate training in its
+48   operation.
+49       (c)     The Department of Public Safety, Division of Emergency Management, and the
+50   Center for Safer Schools, in collaboration with the Department of Public Instruction and the
+51   North Carolina 911 Board, in collaboration with the Department of Public Instruction, Division
+
+     House Bill 582-First Edition                                                              Page 3
+     General Assembly Of North Carolina                                                 Session 2017
+ 1   of Safe and Healthy Schools Support, and the Center for Safer Schools, shall implement and
+ 2   maintain a statewide panic alarm system for the purposes of launching real-time 911 messaging
+ 3   to public safety answering points of internal and external risks to the school population, school
+ 4   buildings, and school-related activities. The Department of Public Safety, in consultation with
+ 5   the Department of Public Instruction and the North Carolina 911 Board, may develop standards
+ 6   and guidelines for the operations and use of the panic alarm tool.
+ 7        (d)     The Department of Public Safety Instruction and the Department of Public Safety
+ 8   shall ensure that the anonymous safety tip line application is integrated with and supports the
+ 9   statewide School Risk and Response Management System (SRRMS) as provided in
+10   G.S. 115C-105.49A. Where technically feasible and cost efficient, the Department of Public
+11   Safety is and the Department of Public Instruction are encouraged to implement a single
+12   solution supporting both the anonymous safety tip line application and panic alarm system.
+13        (e)     All data and information acquired and stored by the anonymous safety tip line
+14   application are not considered public records as the term "public record" is defined under
+15   G.S. 132-1 and shall not be subject to inspection and examination under G.S. 132-6.
+16        (f)     Notwithstanding subsection (e) of this section, the Division Department of Public
+17   Instruction, Division of Safe and Healthy Schools Support, may collect the annual aggregate
+18   number and type of tips sent to the anonymous tip line. The collection of this aggregate data
+19   shall not have any identifying information on the reporter of the tip, including, but not limited
+20   to, the school where the incident was reported and the date the tip was reported."
+21                SECTION 2.1.(d) G.S. 115C-105.52 reads as rewritten:
+22   "§ 115C-105.52. School crisis kits.
+23        The Department of Public Instruction, Instruction and the North Carolina Center for Safer
+24   Schools, in consultation with the Department of Public Safety through the North Carolina
+25   Center for Safer Schools, Safety, may develop and adopt policies on the placement of school
+26   crisis kits in schools and on the contents of those kits. The kits should include, at a minimum,
+27   basic first-aid supplies, communications devices, and other items recommended by the
+28   International Association of Chiefs of Police.
+29        The principal of each school, in coordination with the law enforcement agencies that are
+30   part of the local board of education's School Risk Management Plan, may place one or more
+31   crisis kits at appropriate locations in the school."
+32                SECTION 2.2. Section 8.26(n) of S.L. 2015-241 reads as rewritten:
+33        "SECTION 8.26.(n) By July 1, 2016, the Department of Public Safety shall implement an
+34   anonymous safety tip line application and a statewide panic alarm system as required under
+35   G.S. 115C-105.51, as amended by subsection (d) of this section.G.S. 115C-105.51. By July 1,
+36   2018, the Department of Public Instruction shall implement an anonymous safety tip line
+37   application as required under G.S. 115C-105.51."
+38
+39   PART III. APPROPRIATION
+40              SECTION 3. There is appropriated from the General Fund to the Department of
+41   Public Instruction the sum of seven hundred eight thousand four hundred twenty dollars
+42   ($708,420) for the 2017-2018 fiscal year to support the anonymous safety tip line application
+43   implemented by the Department of Public Instruction, Division of Safe and Healthy Schools
+44   Support, and the Center for Safer Schools pursuant to G.S. 115C-105.51.
+45
+46   PART IV. EFFECTIVE DATE
+47             SECTION 4. This act becomes effective July 1, 2017. Section 1 of this act applies
+48   beginning with the 2018-2019 school year.
+
+
+
+
+     Page 4                                                              House Bill 582-First Edition
+

@@ -1,9 +1,10 @@
 import csv
 import os
 import sys
+import argparse
 import scrapelib
-import click
-from extract import extract_text
+
+from extract import extract_text, jid_to_abbr
 
 
 MIMETYPES = {
@@ -17,14 +18,10 @@ MIMETYPES = {
 scraper = scrapelib.Scraper()
 
 
-def jid_to_abbr(j):
-    return j.split(':')[-1].split('/')[0]
-
-
 def download(version):
     abbr = jid_to_abbr(version['jurisdiction_id'])
     ext = MIMETYPES[version["media_type"]]
-    filename = f'raw/{abbr}/{version["session"]}-{version["identifier"]}.{ext}'
+    filename = f'raw/{abbr}/{version["session"]}-{version["identifier"]}-{version["note"]}.{ext}'
 
     if not os.path.exists(filename):
         try:
@@ -39,7 +36,7 @@ def download(version):
 
 
 def extract_to_file(filename, data, version):
-    text = extract_text(filename, data, version)
+    text = extract_text(data, version)
 
     text_filename = filename.replace('raw/', 'text/') + '.txt'
     try:
@@ -53,10 +50,13 @@ def extract_to_file(filename, data, version):
 
 
 def main():
-    state = sys.argv[1]
+    parser = argparse.ArgumentParser(description='Test text extraction.')
+    parser.add_argument('state', type=str, help='state to run')
+    args = parser.parse_args()
+
     with open('sample.csv') as f:
         for version in csv.DictReader(f):
-            if jid_to_abbr(version['jurisdiction_id']) == state:
+            if jid_to_abbr(version['jurisdiction_id']) == args.state:
                 filename, data = download(version)
                 text_filename, bytes = extract_to_file(filename, data, version)
                 print(f'{filename} => {text_filename} ({bytes} bytes)')
