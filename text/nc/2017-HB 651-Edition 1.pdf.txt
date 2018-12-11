@@ -1,173 +1,144 @@
-                          GENERAL ASSEMBLY OF NORTH CAROLINA
-                                      SESSION 2017
-     H                                                                                                            1
-                                              HOUSE BILL 651
-
-
-     Short Title:   State Pension/Ret. Health Ben. Fund Solvency.                                         (Public)
-     Sponsors:      Representatives Dollar, Lambeth, McNeill, and Ross (Primary Sponsors).
-                        For a complete list of sponsors, refer to the North Carolina General Assembly web site.
-     Referred to:   Pensions and Retirement, if favorable, Appropriations
-                                                 April 11, 2017
-
- 1                                        A BILL TO BE ENTITLED
- 2   AN ACT TO ESTABLISH THE UNFUNDED LIABILITY SOLVENCY RESERVE.
- 3   The General Assembly of North Carolina enacts:
- 4               SECTION 1. Article 4 of Chapter 143C of the General Statutes is amended by
- 5   adding a new section to read:
- 6   "§ 143C-4-8. Unfunded Liability Solvency Reserve.
- 7       (a)     Creation. – The Unfunded Liability Solvency Reserve is established as a reserve in
- 8   the General Fund. The Unfunded Liability Solvency Reserve is an employee benefits trust as
- 9   described under G.S. 143C-1-3(a).
-10       (b)     Definitions. – The following definitions apply in this section:
-11               (1)     Benefit enhancement. – Any change to the benefits provided under the
-12                       Teachers' and State Employees' Retirement System of North Carolina
-13                       established under G.S. 135-2 or to the Retiree Health Benefit Fund
-14                       established under G.S. 135-7(f) that is estimated to increase the contributions
-15                       or liabilities associated with either program, as indicated by an actuarial note
-16                       provided under G.S. 120-114.
-17               (2)     Health Benefit Fund. – The Retiree Health Benefit Fund established under
-18                       G.S. 135-7(f).
-19               (3)     Health Benefit Fund Actuarial Committee. – The Committee on Actuarial
-20                       Valuation of Retired Employees' Health Benefits established under
-21                       G.S. 135-48.12.
-22               (4)     Reserve. – The Unfunded Liability Solvency Reserve established under
-23                       subsection (a) of this section.
-24               (5)     Retirement System. – The Teachers' and State Employees' Retirement
-25                       System of North Carolina established under G.S. 135-2.
-26       (c)     Source of Funds. – The Reserve shall receive the following funds:
-27               (1)     Any amounts that shall be appropriated by the General Assembly.
-28               (2)     Twenty-five percent (25%) of the unreserved fund balance of the current
-29                       fiscal year, as defined in G.S. 143C-1-1(d), and not otherwise designated,
-30                       shall be placed in the Reserve the next fiscal year.
-31       (d)     Transfer of Funds From the Reserve. – The transfer of funds from the Reserve shall
-32   meet all of the following requirements:
-33               (1)     The funds in the Reserve shall be used only for transfers to the (i) Health
-34                       Benefit Fund or (ii) the Retirement System for the purpose of reducing the
-35                       unfunded liabilities of those two funds.
-
-
-                                             *H651-v-1*
-     General Assembly Of North Carolina                                                  Session 2017
- 1              (2)     Funds in the Reserve must be appropriated by the end of the next fiscal year
- 2                      after the funds entered the Reserve.
- 3               (3)    Transfers from the Reserve to the Health Benefit Fund and the Retirement
- 4                      System shall not supplant employer contributions otherwise designated for
- 5                      the Health Benefit Fund or Retirement System. Transfers shall be made from
- 6                      the Reserve only upon the following conditions:
- 7                      a.       The portion of the State's employer contribution rate provided to the
- 8                               Health Benefit Fund is not less than the cost of the premiums for the
- 9                               retirees served by the Retiree Health Benefit Fund in the most recent
-10                               plan year.
-11                      b.       The portion of the State's employer contribution rate provided to the
-12                               Retirement System in effect at the time of the transfer is equal to or
-13                               greater than the rate certified under G.S. 135-8 as necessary by the
-14                               Board of Trustees of the Retirement System.
-15                      c.       Transfers from the Reserves shall not be used to pay the cost of
-16                               benefit enhancements commencing after July 1, 2017.
-17       (e)     Use of Funds in the Reserve. – On the first day of each fiscal year, the total balance
-18   of the Reserve as of the last day of the preceding fiscal year shall be used to appropriate an
-19   additional employer contribution to the Health Benefit Trust and the Retirement System. This
-20   additional employer contribution shall be calculated as follows:
-21               (1)    The total balance in the Reserve as of the last day of the preceding fiscal
-22                      year shall be divided between the Health Benefit Fund and the Retirement
-23                      System according to each program's proportion of the State's total unfunded
-24                      liability of both programs as reported in the most recent Comprehensive
-25                      Annual Financial Report issued by the State Controller.
-26               (2)    Each program's pro rata share of the total balance in the Reserve as of the
-27                      last day of the preceding fiscal year shall be converted into a percentage of
-28                      the General Fund payroll of covered members of the Health Benefit Fund
-29                      and the Retirement System.
-30               (3)    Each program's percentage of General Fund payroll of covered members, as
-31                      calculated in subdivision (2) of this subsection, shall be set as an additional
-32                      portion of the State's employer contribution rate budgeted for retirement and
-33                      related benefits. The following shall also apply:
-34                      a.       The percentage of General Fund payroll of covered members
-35                               allocated to the Health Benefit Fund shall be added to the portion of
-36                               the State's employer contribution rate budgeted for hospital and
-37                               medical benefits.
-38                      b.       The percentage of General Fund payroll of covered members
-39                               allocated to the Retirement System shall be added to the State's
-40                               employer contribution rate budgeted for the Retirement System.
-41       (f)     Not Considered Debt Service Funds. – Any funds in the Reserve, as well as any
-42   funds from the Reserve used to establish additional contributions to the Health Benefit Fund or
-43   Retirement System, shall not be considered debt service funds for general long-term debt
-44   principal and interest."
-45               SECTION 2.(a) If House Bill 7, 2017 Regular Session, becomes law, then
-46   G.S. 142-15.4 is amended by adding a new subsection to read:
-47       "(d) If, and to the extent that, the balance of the Savings Reserve is at or above the
-48   recommended Savings Reserve balance developed pursuant to G.S. 143C-4-2(f), whenever
-49   general obligation bonds issued or incurred by the State are refinanced, the following shall
-50   apply:
-
-
-     Page 2                                                              House Bill 651-First Edition
-     General Assembly Of North Carolina                                                   Session 2017
- 1              (1)      The General Assembly shall not reduce the funds appropriated for serving
- 2                       the refinanced debt during the fiscal biennium in which the refinancing
- 3                       occurs.
- 4               (2)     The State Controller shall, in conjunction with the State Treasurer,
- 5                       periodically transfer the savings resulting from the refinancing of the debt to
- 6                       the Unfunded Liability Solvency Reserve, established under G.S. 143C-4-8,
- 7                       during the fiscal biennium in which the refinancing occurs.
- 8               (3)     In the fiscal biennium immediately following the refinancing, the Director of
- 9                       the Budget shall adjust the amount of debt service funded in the base budget
-10                       so that it aligns with the actual debt service needs."
-11               SECTION 2.(b) If House Bill 7, 2017 Regular Session, becomes law, then
-12   G.S. 142-96 is amended by adding a new subsection to read:
-13       "(d) If, and to the extent that, the balance of the Savings Reserve is at or above the
-14   recommended Savings Reserve balance developed pursuant to G.S. 143C-4-2(f), whenever
-15   special indebtedness issued or incurred by the State is refinanced, the following shall apply:
-16               (1)     The General Assembly shall not reduce the funds appropriated for serving
-17                       the refinanced debt during the fiscal biennium in which the refinancing
-18                       occurs.
-19               (2)     The State Controller shall, in conjunction with the State Treasurer,
-20                       periodically transfer the savings resulting from the refinancing of the debt to
-21                       the Unfunded Liability Solvency Reserve, established under G.S. 143C-4-8,
-22                       during the fiscal biennium in which the refinancing occurs.
-23               (3)     In the fiscal biennium immediately following the refinancing, the Director of
-24                       the Budget shall adjust the amount of debt service funded in the base budget
-25                       so that it aligns with the actual debt service needs."
-26               SECTION 2.(c) If House Bill 7, 2017 Regular Session, becomes law, then
-27   G.S. 143C-4-2 is amended by adding two new subsections to read:
-28       "(i)    Unfunded Liability Solvency Reserve Full-Growth Transfer Requirement. – If, and
-29   to the extent that, the balance of the Savings Reserve is at or above the recommended Savings
-30   Reserve balance developed under subsection (f) of this section as of the last day of the fiscal
-31   year, the Current Operations Appropriations Act for the succeeding fiscal year shall include a
-32   transfer to the Unfunded Liability Solvency Reserve of fifteen percent (15%) of the succeeding
-33   fiscal year's estimated growth in State tax revenues that are deposited in the General Fund.
-34       (j)     Unfunded Liability Solvency Reserve Partial Growth Transfer Requirement. – If,
-35   and to the extent that, the balance of the Savings Reserve is below the recommended Savings
-36   Reserve balance developed under subsection (f) of this section as of the last day of the fiscal
-37   year, prior to the transfer of fifteen percent (15%) of the succeeding fiscal year's estimated
-38   growth in State tax revenues that are deposited in the General Fund, then the following shall
-39   apply:
-40               (1)     If, upon transfer to the Savings Reserve funds in the amount of fifteen
-41                       percent (15%) of estimated growth in State tax revenues deposited in the
-42                       General Fund, the balance of the Savings Reserve is above the recommended
-43                       Savings Reserve balance developed under subsection (f) of this section, then
-44                       the Current Operations Appropriations Act shall include a transfer to the
-45                       Unfunded Liability Solvency Reserve of an amount equal to the difference
-46                       between the recommended balance of the Savings Reserve developed under
-47                       subsection (f) of this section and the balance of the Savings Reserve upon
-48                       transfer of fifteen percent (15%) of estimated growth in State tax revenues.
-49               (2)     If, upon transfer to the Savings Reserve funds in the amount of fifteen
-50                       percent (15%) of estimated growth in State tax revenues deposited in the
-51                       General Fund, the balance of Savings Reserves is at or below the
-
-     House Bill 651-First Edition                                                                Page 3
-    General Assembly Of North Carolina                                              Session 2017
-1                     recommended Savings Reserve balance developed under subsection (f) of
-2                     this section, then no such transfer described in subdivision (1) of this
-3                     subsection shall occur."
-4             SECTION 2.(d) If House Bill 7, 2017 Regular Session, becomes law, then
-5   G.S. 143C-4-8(c), as enacted by Section 1 of this act, is amended by adding a new subdivision
-6   to read:
-7             "(3) Funds transferred under G.S. 142-15.5, 142-96, and 143C-4.2."
-8             SECTION 3. This act becomes effective July 1, 2017.
-
-
-
-
-    Page 4                                                           House Bill 651-First Edition
-
+A BILL TO BE ENTITLED
+AN ACT TO ESTABLISH THE UNFUNDED LIABILITY SOLVENCY RESERVE.
+The General Assembly of North Carolina enacts:
+SECTION 1. Article 4 of Chapter 143C of the General Statutes is amended by
+adding a new section to read:
+"§ 143C-4-8. Unfunded Liability Solvency Reserve.
+(a)     Creation. – The Unfunded Liability Solvency Reserve is established as a reserve in
+the General Fund. The Unfunded Liability Solvency Reserve is an employee benefits trust as
+described under G.S. 143C-1-3(a).
+(b)     Definitions. – The following definitions apply in this section:
+(1)     Benefit enhancement. – Any change to the benefits provided under the
+Teachers' and State Employees' Retirement System of North Carolina
+established under G.S. 135-2 or to the Retiree Health Benefit Fund
+established under G.S. 135-7(f) that is estimated to increase the contributions
+or liabilities associated with either program, as indicated by an actuarial note
+provided under G.S. 120-114.
+(2)     Health Benefit Fund. – The Retiree Health Benefit Fund established under
+G.S. 135-7(f).
+(3)     Health Benefit Fund Actuarial Committee. – The Committee on Actuarial
+Valuation of Retired Employees' Health Benefits established under
+G.S. 135-48.12.
+(4)     Reserve. – The Unfunded Liability Solvency Reserve established under
+subsection (a) of this section.
+(5)     Retirement System. – The Teachers' and State Employees' Retirement
+System of North Carolina established under G.S. 135-2.
+(c)     Source of Funds. – The Reserve shall receive the following funds:
+(1)     Any amounts that shall be appropriated by the General Assembly.
+(2)     Twenty-five percent (25%) of the unreserved fund balance of the current
+fiscal year, as defined in G.S. 143C-1-1(d), and not otherwise designated,
+shall be placed in the Reserve the next fiscal year.
+(d)     Transfer of Funds From the Reserve. – The transfer of funds from the Reserve shall
+meet all of the following requirements:
+(1)     The funds in the Reserve shall be used only for transfers to the (i) Health
+Benefit Fund or (ii) the Retirement System for the purpose of reducing the
+unfunded liabilities of those two funds.
+(2)     Funds in the Reserve must be appropriated by the end of the next fiscal year
+after the funds entered the Reserve.
+(3)    Transfers from the Reserve to the Health Benefit Fund and the Retirement
+System shall not supplant employer contributions otherwise designated for
+the Health Benefit Fund or Retirement System. Transfers shall be made from
+the Reserve only upon the following conditions:
+a.       The portion of the State's employer contribution rate provided to the
+Health Benefit Fund is not less than the cost of the premiums for the
+retirees served by the Retiree Health Benefit Fund in the most recent
+plan year.
+b.       The portion of the State's employer contribution rate provided to the
+Retirement System in effect at the time of the transfer is equal to or
+greater than the rate certified under G.S. 135-8 as necessary by the
+Board of Trustees of the Retirement System.
+c.       Transfers from the Reserves shall not be used to pay the cost of
+benefit enhancements commencing after July 1, 2017.
+(e)     Use of Funds in the Reserve. – On the first day of each fiscal year, the total balance
+of the Reserve as of the last day of the preceding fiscal year shall be used to appropriate an
+additional employer contribution to the Health Benefit Trust and the Retirement System. This
+additional employer contribution shall be calculated as follows:
+(1)    The total balance in the Reserve as of the last day of the preceding fiscal
+year shall be divided between the Health Benefit Fund and the Retirement
+System according to each program's proportion of the State's total unfunded
+liability of both programs as reported in the most recent Comprehensive
+Annual Financial Report issued by the State Controller.
+(2)    Each program's pro rata share of the total balance in the Reserve as of the
+last day of the preceding fiscal year shall be converted into a percentage of
+the General Fund payroll of covered members of the Health Benefit Fund
+and the Retirement System.
+(3)    Each program's percentage of General Fund payroll of covered members, as
+calculated in subdivision (2) of this subsection, shall be set as an additional
+portion of the State's employer contribution rate budgeted for retirement and
+related benefits. The following shall also apply:
+a.       The percentage of General Fund payroll of covered members
+allocated to the Health Benefit Fund shall be added to the portion of
+the State's employer contribution rate budgeted for hospital and
+medical benefits.
+b.       The percentage of General Fund payroll of covered members
+allocated to the Retirement System shall be added to the State's
+employer contribution rate budgeted for the Retirement System.
+(f)     Not Considered Debt Service Funds. – Any funds in the Reserve, as well as any
+funds from the Reserve used to establish additional contributions to the Health Benefit Fund or
+Retirement System, shall not be considered debt service funds for general long-term debt
+principal and interest."
+SECTION 2.(a) If House Bill 7, 2017 Regular Session, becomes law, then
+G.S. 142-15.4 is amended by adding a new subsection to read:
+"(d) If, and to the extent that, the balance of the Savings Reserve is at or above the
+recommended Savings Reserve balance developed pursuant to G.S. 143C-4-2(f), whenever
+general obligation bonds issued or incurred by the State are refinanced, the following shall
+apply:
+(1)      The General Assembly shall not reduce the funds appropriated for serving
+the refinanced debt during the fiscal biennium in which the refinancing
+occurs.
+(2)     The State Controller shall, in conjunction with the State Treasurer,
+periodically transfer the savings resulting from the refinancing of the debt to
+the Unfunded Liability Solvency Reserve, established under G.S. 143C-4-8,
+during the fiscal biennium in which the refinancing occurs.
+(3)     In the fiscal biennium immediately following the refinancing, the Director of
+the Budget shall adjust the amount of debt service funded in the base budget
+so that it aligns with the actual debt service needs."
+SECTION 2.(b) If House Bill 7, 2017 Regular Session, becomes law, then
+G.S. 142-96 is amended by adding a new subsection to read:
+"(d) If, and to the extent that, the balance of the Savings Reserve is at or above the
+recommended Savings Reserve balance developed pursuant to G.S. 143C-4-2(f), whenever
+special indebtedness issued or incurred by the State is refinanced, the following shall apply:
+(1)     The General Assembly shall not reduce the funds appropriated for serving
+the refinanced debt during the fiscal biennium in which the refinancing
+occurs.
+(2)     The State Controller shall, in conjunction with the State Treasurer,
+periodically transfer the savings resulting from the refinancing of the debt to
+the Unfunded Liability Solvency Reserve, established under G.S. 143C-4-8,
+during the fiscal biennium in which the refinancing occurs.
+(3)     In the fiscal biennium immediately following the refinancing, the Director of
+the Budget shall adjust the amount of debt service funded in the base budget
+so that it aligns with the actual debt service needs."
+SECTION 2.(c) If House Bill 7, 2017 Regular Session, becomes law, then
+G.S. 143C-4-2 is amended by adding two new subsections to read:
+"(i)    Unfunded Liability Solvency Reserve Full-Growth Transfer Requirement. – If, and
+to the extent that, the balance of the Savings Reserve is at or above the recommended Savings
+Reserve balance developed under subsection (f) of this section as of the last day of the fiscal
+year, the Current Operations Appropriations Act for the succeeding fiscal year shall include a
+transfer to the Unfunded Liability Solvency Reserve of fifteen percent (15%) of the succeeding
+fiscal year's estimated growth in State tax revenues that are deposited in the General Fund.
+(j)     Unfunded Liability Solvency Reserve Partial Growth Transfer Requirement. – If,
+and to the extent that, the balance of the Savings Reserve is below the recommended Savings
+Reserve balance developed under subsection (f) of this section as of the last day of the fiscal
+year, prior to the transfer of fifteen percent (15%) of the succeeding fiscal year's estimated
+growth in State tax revenues that are deposited in the General Fund, then the following shall
+apply:
+(1)     If, upon transfer to the Savings Reserve funds in the amount of fifteen
+percent (15%) of estimated growth in State tax revenues deposited in the
+General Fund, the balance of the Savings Reserve is above the recommended
+Savings Reserve balance developed under subsection (f) of this section, then
+the Current Operations Appropriations Act shall include a transfer to the
+Unfunded Liability Solvency Reserve of an amount equal to the difference
+between the recommended balance of the Savings Reserve developed under
+subsection (f) of this section and the balance of the Savings Reserve upon
+transfer of fifteen percent (15%) of estimated growth in State tax revenues.
+(2)     If, upon transfer to the Savings Reserve funds in the amount of fifteen
+percent (15%) of estimated growth in State tax revenues deposited in the
+General Fund, the balance of Savings Reserves is at or below the
+recommended Savings Reserve balance developed under subsection (f) of
+this section, then no such transfer described in subdivision (1) of this
+subsection shall occur."
+SECTION 2.(d) If House Bill 7, 2017 Regular Session, becomes law, then
+G.S. 143C-4-8(c), as enacted by Section 1 of this act, is amended by adding a new subdivision
+to read:
+"(3) Funds transferred under G.S. 142-15.5, 142-96, and 143C-4.2."
+SECTION 3. This act becomes effective July 1, 2017.

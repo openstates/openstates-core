@@ -1,34 +1,12 @@
-                                                                                   FILED SENATE
-                                                                                     Feb 14, 2017
-                          GENERAL ASSEMBLY OF NORTH CAROLINA
-                                                                                       S.B. 77
-                                      SESSION 2017
-                                                                                 PRINCIPAL CLERK
-     S                                                                                       D
-                               SENATE BILL DRS35021-LR-24 (01/25)
-
-
-
-     Short Title:   Public Meetings/Records Law Violations.                                (Public)
-     Sponsors:      Senators Cook and Sanderson (Primary Sponsors).
-     Referred to:
-
-
- 1                                         A BILL TO BE ENTITLED
- 2   AN ACT TO MAKE VIOLATIONS OF THE PUBLIC RECORDS AND OPEN MEETINGS
- 3       LAWS CLASS 3 MISDEMEANORS.
- 4   The General Assembly of North Carolina enacts:
- 5              SECTION 1. G.S. 132-9 is amended by adding a new subsection to read:
- 6       "(a1) It is a Class 3 misdemeanor to deny access to public records for purposes of inspection
- 7   and examination or to deny copies of public records."
- 8              SECTION 2. Article 33C of Chapter 143 of the General Statutes is amended by
- 9   adding a new section to read:
-10   "§ 143-318.18A. Violation of Article.
-11       Violation of this Article is a Class 3 misdemeanor."
-12              SECTION 3. This act becomes effective December 1, 2017.
-
-
-
-
-                                    *DRS35021-LR-24*
-
+A BILL TO BE ENTITLED
+AN ACT TO MAKE VIOLATIONS OF THE PUBLIC RECORDS AND OPEN MEETINGS
+LAWS CLASS 3 MISDEMEANORS.
+The General Assembly of North Carolina enacts:
+SECTION 1. G.S. 132-9 is amended by adding a new subsection to read:
+"(a1) It is a Class 3 misdemeanor to deny access to public records for purposes of inspection
+and examination or to deny copies of public records."
+SECTION 2. Article 33C of Chapter 143 of the General Statutes is amended by
+adding a new section to read:
+"§ 143-318.18A. Violation of Article.
+Violation of this Article is a Class 3 misdemeanor."
+SECTION 3. This act becomes effective December 1, 2017.

@@ -6,4 +6,4 @@ def extract_simple_pdf(data, version):
 
 
 def extract_line_numbered_pdf(data, version):
-    return text_after_line_numbers(pdfdata_to_text(data, version))
+    return text_after_line_numbers(pdfdata_to_text(data))

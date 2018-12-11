@@ -1,51 +1,33 @@
-                          GENERAL ASSEMBLY OF NORTH CAROLINA
-                                FIRST EXTRA SESSION 2018
-     H                                                                                                            1
-                                               HOUSE BILL 3*
-
-
-     Short Title:   Ballot Designations/Referenda.                                                        (Public)
-     Sponsors:      Representatives Lewis, Burr, J. Bell, and Corbin (Primary Sponsors).
-                        For a complete list of sponsors, refer to the North Carolina General Assembly web site.
-     Referred to:   Rules, Calendar, and Operations of the House
-                                                  July 24, 2018
-
- 1                                      A BILL TO BE ENTITLED
- 2   AN ACT TO CLARIFY THE DESIGNATIONS TO APPEAR ON THE BALLOT FOR
- 3       CONSTITUTIONAL AMENDMENTS AND OTHER REFERENDA.
- 4   The General Assembly of North Carolina enacts:
- 5               SECTION 1.(a) G.S. 163A-1114(h) reads as rewritten:
- 6       "(h) Order of Precedence for Referenda. – TheWithout referencing a numerical order or
- 7   other reference of order by category or within a category, the referendum questions to be voted
- 8   on shall be arranged on the official ballot in the following order:
- 9               (1)     Proposed amendments to the North Carolina Constitution, in the
-10                       chronological order in which the proposals were approved by the General
-11                       Assembly. Proposed amendments shall be designated by only the short
-12                       caption provided by the Constitutional Amendments Publication Commission
-13                       under Article 4A of Chapter 147 of the General Statutes.phrase
-14                       "Constitutional Amendment" prior to setting forth the referendum question.
-15               (2)     Other referenda to be voted on by all voters in the State, in the chronological
-16                       order in which the proposals were approved by the General Assembly.
-17               (3)     Referenda to be voted on by fewer than all the voters in the State, in the
-18                       chronological order of the acts by which the referenda were properly
-19                       authorized."
-20               SECTION 1.(b) This section is effective when it becomes law and applies to ballots
-21   used in the 2018 general election and thereafter. No numerical order or other reference of order
-22   for referenda, by category or within a category, shall appear on the 2018 general election ballot.
-23   Any captions adopted by the Constitutional Amendments Publication Commission pursuant to
-24   G.S. 147-54.10(a) prior to this bill becoming law are null and void and shall not appear on the
-25   ballot used in the 2018 general election.
-26               SECTION 2. G.S. 147-54.10(a) reads as rewritten:
-27       "(a) At least 75 days before an election in which a proposed amendment to the
-28   Constitution, or a revised or new Constitution, is to be voted on, the Commission shall prepare
-29   an explanation of the amendment, revision, or new Constitution in simple and commonly used
-30   language. The explanation shall include a short caption reflecting the contents,that shall not
-31   include a numerical or other reference of order, to be used on the ballot and the printed summary."
-32               SECTION 3. Except as otherwise provided, this act is effective when it becomes
-33   law.
-
-
-
-
-                                               *H3-v-1*
-
+A BILL TO BE ENTITLED
+AN ACT TO CLARIFY THE DESIGNATIONS TO APPEAR ON THE BALLOT FOR
+CONSTITUTIONAL AMENDMENTS AND OTHER REFERENDA.
+The General Assembly of North Carolina enacts:
+SECTION 1.(a) G.S. 163A-1114(h) reads as rewritten:
+"(h) Order of Precedence for Referenda. – TheWithout referencing a numerical order or
+other reference of order by category or within a category, the referendum questions to be voted
+on shall be arranged on the official ballot in the following order:
+(1)     Proposed amendments to the North Carolina Constitution, in the
+chronological order in which the proposals were approved by the General
+Assembly. Proposed amendments shall be designated by only the short
+caption provided by the Constitutional Amendments Publication Commission
+under Article 4A of Chapter 147 of the General Statutes.phrase
+"Constitutional Amendment" prior to setting forth the referendum question.
+(2)     Other referenda to be voted on by all voters in the State, in the chronological
+order in which the proposals were approved by the General Assembly.
+(3)     Referenda to be voted on by fewer than all the voters in the State, in the
+chronological order of the acts by which the referenda were properly
+authorized."
+SECTION 1.(b) This section is effective when it becomes law and applies to ballots
+used in the 2018 general election and thereafter. No numerical order or other reference of order
+for referenda, by category or within a category, shall appear on the 2018 general election ballot.
+Any captions adopted by the Constitutional Amendments Publication Commission pursuant to
+G.S. 147-54.10(a) prior to this bill becoming law are null and void and shall not appear on the
+ballot used in the 2018 general election.
+SECTION 2. G.S. 147-54.10(a) reads as rewritten:
+"(a) At least 75 days before an election in which a proposed amendment to the
+Constitution, or a revised or new Constitution, is to be voted on, the Commission shall prepare
+an explanation of the amendment, revision, or new Constitution in simple and commonly used
+language. The explanation shall include a short caption reflecting the contents,that shall not
+include a numerical or other reference of order, to be used on the ballot and the printed summary."
+SECTION 3. Except as otherwise provided, this act is effective when it becomes
+law.

@@ -1,825 +1,716 @@
-                         GENERAL ASSEMBLY OF NORTH CAROLINA
-                               THIRD EXTRA SESSION 2018
-     S                                                                                          3
-                                        SENATE BILL 3
-                 Appropriations/Base Budget Committee Substitute Adopted 10/15/18
-                                 Third Edition Engrossed 10/15/18
-
-     Short Title:   2018 Hurricane Florence Disaster Recovery Act.                        (Public)
-     Sponsors:
-     Referred to:
-                                           October 2, 2018
-
- 1                                  A BILL TO BE ENTITLED
- 2   AN ACT TO ENACT THE 2018 HURRICANE FLORENCE DISASTER RECOVERY ACT.
- 3   The General Assembly of North Carolina enacts:
- 4
- 5   PART I. TITLE OF ACT
- 6              SECTION 1.1. This act shall be known as "2018 Hurricane Florence Disaster
- 7   Recovery Act."
- 8              SECTION 1.2. The appropriations and allocations made in this act are for maximum
- 9   amounts necessary to implement this act. Savings shall be effected where the total amounts
-10   appropriated or allocated are not required to implement this act.
-11
-12   PART II. HURRICANE FLORENCE DISASTER RECOVERY APPROPRIATION AND
-13   AVAILABILITY
-14                SECTION 2.1.(a) There is appropriated from the Hurricane Florence Disaster
-15   Recovery Fund the sum of three hundred ninety-eight million four hundred thirty thousand four
-16   hundred seventy-seven dollars ($398,430,477) for the 2018-2019 fiscal year.
-17                SECTION 2.1.(b) The availability for Hurricane Florence disaster recovery
-18   activities in this act are set out below:
-19                                                                                    FY 2018-19
-20
-21   Beginning Unreserved Fund Balance                                       $                 0
-22   Transfer from Savings Reserve, S.L. 2018-134                            $        56,500,000
-23   Transfer from Savings Reserve                                           $       700,000,000
-24   Transfer from Education Lottery Reserve per G.S. 166A-19.40(c)          $        25,000,000
-25   Transfer from Shallow Draft Navigation Channel Dredging
-26      and Aquatic Weed Fund                                                $         2,000,000
-27   Transfer of S.L. 2016-124 funds                                         $           930,477
-28   Transfer from Highway Fund                                              $        65,000,000
-29
-30   Total Hurricane Florence Disaster Recovery Activities Availability      $       849,430,477
-31
-32   Less Appropriations in S.L. 2018-134                                    $        56,500,000
-33   Less Additional FY 2018-19 Appropriations                               $       398,430,477
-34
-35   Unappropriated Balance Remaining                                        $       394,500,000
-
-
-                                          *S3-v-3*
-     General Assembly Of North Carolina                                     Third Extra Session 2018
- 1
- 2               SECTION 2.1.(c) The State Controller shall establish a Hurricane Florence Disaster
- 3   Recovery Reserve in the State General Fund to maintain funds reserved for disaster recovery in
- 4   this act. The State Controller shall transfer funds to the Hurricane Florence Disaster Recovery
- 5   Fund only as needed to meet the appropriations set out in this act or other related acts of the
- 6   General Assembly and only upon request by the Director of the Budget. Funds shall remain in
- 7   the Reserve until funds are needed to comply with the allocations as set forth in this act. Funds
- 8   reserved in the Reserve do not constitute an "appropriation made by law," as that phrase is used
- 9   in Section 7(1) of Article V of the North Carolina Constitution.
-10               SECTION 2.1.(d) Effective October 2, 2018, Section 3.1(a) of S.L. 2018-134 reads
-11   as rewritten:
-12       "SECTION 3.1.(a) The Hurricane Florence Disaster Recovery Fund is established. The
-13   purpose of the Fund is to provide necessary and appropriate relief and assistance from the effects
-14   of Hurricane Florence, consistent with the provisions of this act,act and with subsequent
-15   legislation addressing the effects of Hurricane Florence. The Fund shall be maintained as a
-16   special fund and administered by the Office of State Budget and Management or by another State
-17   agency, as determined by the Governor, to carry out the provisions of this and subsequent acts
-18   necessitated as a result of Hurricane Florence. All State and federal funds appropriated or
-19   reallocated for Hurricane Florence relief and recovery efforts shall be budgeted and accounted
-20   for in the Fund established in this section."
-21               SECTION 2.2. The State Controller shall transfer the sum of seven hundred million
-22   dollars ($700,000,000) for the 2018-2019 fiscal year from the Savings Reserve in the General
-23   Fund to the Hurricane Florence Disaster Recovery Reserve.
-24               SECTION 2.3. The Office of State Budget and Management shall transfer the sum
-25   of twenty-five million dollars ($25,000,000) for the 2018-2019 fiscal year from the Education
-26   Lottery Reserve to the Hurricane Florence Disaster Recovery Reserve. The transfer authorized
-27   by this section and allocated in this act ratifies the prior budgetary action taken by the Governor
-28   and shall not be construed to duplicate that transfer of lottery funds.
-29               SECTION 2.4.            Notwithstanding G.S. 143-215.73F, the Department of
-30   Environmental Quality shall transfer the sum of two million dollars ($2,000,000) for the
-31   2018-2019 fiscal year from the Shallow Draft Navigation Channel Dredging and Aquatic Weed
-32   Fund to the Office of State Budget and Management to be credited to the Hurricane Florence
-33   Disaster Recovery Reserve.
-34               SECTION 2.5. Of the funds allocated to the Department of Insurance, Office of the
-35   State Fire Marshal, by subdivision (11) of Section 4.1 of S.L. 2016-124 for grants to volunteer
-36   fire departments, the sum of nine hundred thirty thousand four hundred seventy-seven dollars
-37   ($930,477) is transferred to the Hurricane Florence Disaster Recovery Reserve.
-38               SECTION 2.6. Notwithstanding any provision of law to the contrary, the
-39   Department of Transportation shall transfer from the Highway Fund the sum of sixty-five million
-40   dollars ($65,000,000) for the 2018-2019 fiscal year to the Office of State Budget and
-41   Management to be credited to the Hurricane Florence Disaster Recovery Reserve.
-42
-43   PART III. SCOPE OF ACT
-44              SECTION 3. Unless otherwise provided, Section 2.1(a) of this act applies to the
-45   North Carolina counties designated under a major disaster declaration by the President of the
-46   United States under the Stafford Act (P.L. 93-288) as a result of Hurricane Florence.
-47
-48   PART IV. FUNDING OF DISASTER RELIEF/REIMBURSEMENT
-49
-50   ALLOCATIONS OF FUNDS FOR DISASTER RELIEF
-
-
-     Page 2                                                                Senate Bill 3-Third Edition
-     General Assembly Of North Carolina                                      Third Extra Session 2018
- 1             SECTION 4.1. The funds appropriated in Section 2.1(a) of this act in the Hurricane
- 2   Florence Disaster Recovery Fund created in S.L. 2018-134 shall be allocated as provided in the
- 3   Committee Report described in Section 6.1 of this act and as follows:
- 4
- 5   Department of Agriculture and Consumer Services                               $         70,000,000
- 6   Community Colleges System Office                                              $         18,500,000
- 7   Department of Environmental Quality                                           $          4,000,000
- 8   Department of Health and Human Services                                       $         12,000,000
- 9   Housing Finance Agency                                                        $         10,000,000
-10   Department of Insurance                                                       $            930,477
-11   Department of Public Instruction                                              $         60,000,000
-12   Department of Public Safety                                                   $        100,000,000
-13   Office of State Budget and Management                                         $         25,000,000
-14   Department of Transportation                                                  $         65,000,000
-15   University of North Carolina – Board of Governors                             $         33,000,000
-16
-17   REIMBURSEMENT FOR FUNDS PROVIDED UNDER THIS ACT
-18                SECTION 4.2.(a) A recipient of State funds under this act shall use best efforts and
-19   take all reasonable steps to obtain alternative funds that cover the losses or needs for which the
-20   State funds are provided, including funds from insurance policies in effect and available federal
-21   aid. State funds paid under this act are declared to be excess over funds received by a recipient
-22   from the settlement of a claim for loss or damage covered under the recipient's applicable
-23   insurance policy in effect. Further, each institution of higher education and non-State entity that
-24   receives State funds under this act shall also seek private donations to help cover the losses or
-25   needs for which these State funds are provided.
-26                SECTION 4.2.(b) If a recipient obtains alternative funds pursuant to subsection (a)
-27   of this section, the recipient shall remit the funds to the State agency from which the State funds
-28   were received. A recipient is not required to remit any amount in excess of the State funds
-29   provided to the recipient under this act. The State agency shall transfer these funds to the
-30   Hurricane Florence Disaster Recovery Fund. The funds shall further be transferred to the
-31   applicable fund or reserve from which the funds were originally transferred to the Fund, except
-32   that the first twenty-five million dollars ($25,000,000) deposited under this subsection as
-33   reimbursement for funds expended for repair and renovation of facilities damaged by Hurricane
-34   Florence for local school administrative units, lab schools, and any eligible Innovative School
-35   District shall be transferred to the Education Lottery Reserve Fund. Funds deposited into the
-36   Fund under this subsection are receipts that do not constitute an "appropriation made by law," as
-37   that phrase is used in Section 7(1) of Article V of the North Carolina Constitution.
-38                SECTION 4.2.(c) Any contract or other instrument entered into by a recipient for
-39   receipt of funds under this act shall include the requirements set forth in subsections (a) and (b)
-40   of this section.
-41                SECTION 4.2.(d) For purposes of this section, the term "recipient" means a local
-42   political subdivision of the State, a State agency, a State department, an institution of higher
-43   education as defined in Section 5.3(a) of this act, a public school unit as defined in Section 5.1
-44   of this act, or a non-State entity.
-45
-46   ADDITIONAL LIMITATIONS ON USE OF FUNDS
-47               SECTION 4.3.(a) The Governor shall ensure that funds appropriated in this act are
-48   expended in a manner that does not adversely affect any person's or entity's eligibility for federal
-49   funds that are made available, or that are anticipated to be made available, as a result of Hurricane
-50   Florence. The Governor shall also, to the extent practicable, avoid using State funds to cover
-51   costs that will be, or likely will be, covered by federal funds.
-
-     Senate Bill 3-Third Edition                                                                  Page 3
-     General Assembly Of North Carolina                                     Third Extra Session 2018
- 1               SECTION 4.3.(b) The Governor may not use the funds described in this act to make
- 2   reallocations under G.S. 166A-19.40(c). Nothing in this act shall be construed to prohibit the
- 3   Governor from exercising the Governor's authority under this statute with respect to funds other
- 4   than those described in this act.
- 5
- 6   PART V. IMPLEMENTATION OF ACT
- 7
- 8   AVERAGE DAILY MEMBERSHIP DETERMINATION
- 9               SECTION 5.1. Notwithstanding any other provision of law, in allocating funds for
-10   the 2018-2019 fiscal year, the State Board of Education shall adjust the allotted average daily
-11   membership (ADM) of public school units for the 2018-2019 school year in a manner that will
-12   assist units impacted by Hurricane Florence as follows: Allotment adjustments for ADM
-13   decreases shall be based on the highest of the first four months' ADM for public school units
-14   located in counties designated under a major disaster declaration by the President of the United
-15   States under the Stafford Act (P.L. 93-288) as a result of Hurricane Florence.
-16               Consistent with the Allotment Adjustments for ADM Growth provisions of the NC
-17   Public Schools Allotment Policy Manual applicable for the 2018-2019 school year, local school
-18   administrative units are encouraged to apply for additional funding to address needs related to
-19   extraordinary ADM growth due to an influx of displaced students as a result of Hurricane
-20   Florence.
-21               If the State Board of Education does not have sufficient resources in the ADM
-22   Contingency Reserve line item to make allotment adjustments in accordance with this section,
-23   the State Board of Education may use funds appropriated to State Aid for Public Schools for this
-24   purpose.
-25               For the purposes of this section, "public school unit" is defined as a local school
-26   administrative unit, regional school, innovative school, laboratory school, charter school, or
-27   residential school for the deaf or the blind.
-28
-29   CAPITAL RECOVERY FUNDS – PUBLIC SCHOOL FACILITIES
-30               SECTION 5.2. The funds allocated to the Department of Public Instruction in this
-31   act shall not be subject to approval by the State Board of Education.
-32
-33   EMERGENCY SCHOLARSHIP GRANTS FOR POSTSECONDARY STUDENTS
-34                SECTION 5.3.(a) Program Established; Purpose. – There is established the
-35   Hurricane Florence Emergency Grant Program for Postsecondary Students (Program) to provide
-36   emergency scholarship grants in an amount up to one thousand two hundred fifty dollars ($1,250)
-37   per student to eligible postsecondary students who have suffered financial hardship due to the
-38   damage and destruction from Hurricane Florence. An emergency scholarship grant shall be used
-39   to mitigate the impact of Hurricane Florence on a student so that his or her postsecondary
-40   education in a North Carolina institution of higher education continues uninterrupted. These
-41   funds may be used to cover any expenses that support a student's continued enrollment, including
-42   costs related to transportation, textbooks, tuition, fees, and living expenses.
-43                For the purposes of this section, an "institution of higher education" is defined as a
-44   constituent institution of The University of North Carolina, a community college under the
-45   jurisdiction of the State Board of Community Colleges, or an eligible private postsecondary
-46   institution, as defined in G.S. 116-280(3).
-47                SECTION 5.3.(b) Applications; Eligibility. – By November 1, 2018, each institution
-48   of higher education that is eligible for an allocation of funds pursuant to this section shall begin
-49   accepting applications from eligible postsecondary students. An application for an emergency
-50   scholarship grant must demonstrate that the student is an eligible postsecondary student by
-51   including documentation that the student meets the following criteria:
-
-     Page 4                                                                 Senate Bill 3-Third Edition
-     General Assembly Of North Carolina                                      Third Extra Session 2018
- 1              (1)      The student is enrolled in the institution of higher education at the time of
- 2                       application.
- 3                (2)    The student has a financial need related to the impact of Hurricane Florence.
- 4                (3)    The student meets at least one of the following criteria:
- 5                       a.       The institution of higher education in which the student was enrolled
- 6                                as of September 10, 2018, is located in a county designated under a
- 7                                major disaster declaration by the President of the United States under
- 8                                the Stafford Act (P.L. 93-288) as a result of Hurricane Florence.
- 9                       b.       The student resided, as of September 10, 2018, temporarily or
-10                                permanently, in a county designated under a major disaster declaration
-11                                by the President of the United States under the Stafford Act (P.L.
-12                                93-288) as a result of Hurricane Florence.
-13                SECTION 5.3.(c) Award of Grants. – Within the funds available to an institution of
-14   higher education in accordance with this section, an institution shall award an emergency
-15   scholarship grant to an eligible postsecondary student within two weeks of the receipt of the
-16   application, or as soon as otherwise practicable, in an amount of up to one thousand two hundred
-17   fifty dollars ($1,250) based on the information provided in the student's application. An
-18   institution of higher education may establish priority in the award of emergency scholarship
-19   grants to eligible postsecondary students based on the funds available and the pool of applicants,
-20   including giving priority to students who have demonstrated the greatest financial need. If no
-21   priority in the award of funds is established, the emergency scholarship grants shall be awarded
-22   in the order in which applications are received. If the institution of higher education has
-23   unexpended funds remaining after the award of the initial emergency scholarship grants, the
-24   institution may increase the award to an eligible postsecondary student who previously received
-25   funds or solicit additional applications from eligible postsecondary students, provided that the
-26   award to an individual student does not exceed one thousand two hundred fifty dollars ($1,250)
-27   for each academic semester in which funds are awarded.
-28                SECTION 5.3.(d) Reimbursement for Losses Covered by Other Funds. – An eligible
-29   postsecondary student who receives an emergency scholarship grant under the Program shall use
-30   best efforts and take all reasonable steps to obtain alternative funds that cover the losses or needs
-31   for which the emergency scholarship grant funds are provided, including funds from insurance
-32   policies in effect and available federal aid. If the student obtains alternative funds, the student
-33   shall remit the amount of the emergency scholarship grant covered by the alternative funds to the
-34   institution of higher education. A student is not required to remit any amount in excess of the
-35   funds provided to the student.
-36                SECTION 5.3.(e) Funds for UNC Constituent Institutions. – Of the funds allocated
-37   to the Board of Governors of The University of North Carolina from the Hurricane Florence
-38   Disaster Recovery Fund for the 2018-2019 fiscal year, the sum of two million dollars
-39   ($2,000,000) in nonrecurring funds shall be allocated by the Board of Governors to constituent
-40   institutions of The University of North Carolina for the purpose of providing emergency
-41   scholarship grants to eligible postsecondary students in accordance with the Program. The Board
-42   of Governors shall prioritize the allocation of funds based on the impact of Hurricane Florence
-43   on enrolled students to the following constituent institutions:
-44                (1)    A constituent institution located in a county designated under a major disaster
-45                       declaration by the President of the United States under the Stafford Act (P.L.
-46                       93-288) as a result of Hurricane Florence.
-47                (2)    A constituent institution that is not located a county designated under a major
-48                       disaster declaration by the President of the United States under the Stafford
-49                       Act (P.L. 93-288) as a result of Hurricane Florence but has an eligible
-50                       postsecondary student enrolled at the institution who (i) resides, temporarily
-51                       or permanently, in a county designated under a major disaster declaration by
-
-     Senate Bill 3-Third Edition                                                                  Page 5
-     General Assembly Of North Carolina                                       Third Extra Session 2018
- 1                        the President of the United States under the Stafford Act (P.L. 93-288) as a
- 2                        result of Hurricane Florence or (ii) has transferred to the institution due to the
- 3                        damage and destruction caused by Hurricane Florence.
- 4                Constituent institutions allocated funds under this subsection shall have discretion to
- 5   establish criteria for the eligibility of postsecondary students in addition to the criteria required
- 6   by this section. However, the Board of Governors shall not establish additional eligibility
- 7   requirements for the administration of the Program to those set forth in this section.
- 8                SECTION 5.3.(f) Funds for Community Colleges. – Of the funds allocated to the
- 9   Community Colleges System Office from the Hurricane Florence Disaster Recovery Fund for
-10   the 2018-2019 fiscal year, the sum of five million dollars ($5,000,000) in nonrecurring funds
-11   shall be allocated by the State Board of Community Colleges to community colleges for the
-12   purpose of providing emergency scholarship grants to eligible postsecondary students in
-13   accordance with the Program. The State Board of Community Colleges shall prioritize the
-14   allocation of funds based on the impacts of Hurricane Florence on enrolled students to the
-15   following community colleges:
-16                (1)     A community college located in a county designated under a major disaster
-17                        declaration by the President of the United States under the Stafford Act (P.L.
-18                        93-288) as a result of Hurricane Florence.
-19                (2)     A community college that is not located in a county designated under a major
-20                        disaster declaration by the President of the United States under the Stafford
-21                        Act (P.L. 93-288) as a result of Hurricane Florence but has an eligible
-22                        postsecondary student enrolled at the community college who (i) resides,
-23                        temporarily or permanently, in a county designated under a major disaster
-24                        declaration by the President of the United States under the Stafford Act (P.L.
-25                        93-288) as a result of Hurricane Florence or (ii) has transferred to the
-26                        community college due to the damage and destruction caused by Hurricane
-27                        Florence.
-28                Community colleges allocated funds under this subsection shall have discretion to
-29   establish criteria for the eligibility of postsecondary students in addition to the criteria required
-30   by this section. However, the State Board of Community Colleges shall not establish additional
-31   eligibility requirements for the administration of the Program to those set forth in this section.
-32                SECTION 5.3.(g) Funds for Private Postsecondary Institutions. – Of the funds
-33   allocated to the Board of Governors of The University of North Carolina from the Hurricane
-34   Florence Disaster Recovery Fund for the 2018-2019 fiscal year, in addition to the two million
-35   dollars ($2,000,000) allocated to constituent institutions pursuant to subsection (e) of this section,
-36   the sum of one million dollars ($1,000,000) in nonrecurring funds shall be allocated to the State
-37   Education Assistance Authority (Authority) to provide funds to eligible private postsecondary
-38   institutions as defined in G.S. 116-280(3) for the purpose of providing emergency scholarship
-39   grants to eligible postsecondary students in accordance with the Program. The Authority shall
-40   prioritize the allocation of funds based on the impact of Hurricane Florence on enrolled students
-41   to the following eligible private postsecondary institutions:
-42                (1)     A private postsecondary institution with a campus located in a county
-43                        designated under a major disaster declaration by the President of the United
-44                        States under the Stafford Act (P.L. 93-288) as a result of Hurricane Florence.
-45                (2)     A campus of a private postsecondary institution that is not located in a county
-46                        designated under a major disaster declaration by the President of the United
-47                        States under the Stafford Act (P.L. 93-288) as a result of Hurricane Florence
-48                        but has an eligible postsecondary student enrolled at the private postsecondary
-49                        institution who (i) resides, temporarily or permanently, in a county designated
-50                        under a major disaster declaration by the President of the United States under
-51                        the Stafford Act (P.L. 93-288) as a result of Hurricane Florence or (ii) has
-
-     Page 6                                                                   Senate Bill 3-Third Edition
-     General Assembly Of North Carolina                                     Third Extra Session 2018
- 1                       transferred to the private postsecondary institution due to the damage and
- 2                       destruction caused by Hurricane Florence.
- 3               Private postsecondary institutions allocated funds under this subsection shall have
- 4   discretion to establish criteria for the eligibility of postsecondary students in addition to the
- 5   criteria required by this section. However, the Authority shall not establish additional eligibility
- 6   requirements for the administration of the Program to those set forth in this section. A private
- 7   postsecondary institution receiving funds pursuant to this subsection shall report to the Authority
- 8   on the implementation of the Program, including the information required for the report under
- 9   subsection (h) of this section.
-10               SECTION 5.3.(h) Reporting Requirements. – By April 1, 2019, the Board of
-11   Governors of The University of North Carolina, the State Board of Community Colleges, and the
-12   Authority shall report to the chairs of the House of Representatives Committee on Appropriations
-13   and the Senate Appropriations/Base Budget Committee, the Joint Legislative Education
-14   Oversight Committee, Office of Recovery and Resiliency in the Department of Public Safety,
-15   and to the Fiscal Research Division of the General Assembly on the implementation of the
-16   Program at the institutions of higher education that received funds pursuant to this section,
-17   including the number and type of institutions of higher education that were allocated funds, the
-18   amount of funds allocated to each institution, the number of emergency scholarship grants
-19   awarded to students and the amount of those grants, the use of emergency scholarship grant funds
-20   by eligible postsecondary students, any funds reimbursed to institutions due to coverage of losses
-21   by alternative funds, and any remaining funds available for awards in subsequent semesters.
-22
-23   BEHAVIORAL HEALTH SERVICES
-24               SECTION 5.4.(a) The following definitions apply in this section:
-25               (1)     DMH/DD/SAS. – The Division of Mental Health, Developmental
-26                       Disabilities, and Substance Abuse Services within the Department of Health
-27                       and Human Services.
-28               (2)     Federally declared disaster area. – Any county designated under a major
-29                       disaster declaration by the President of the United States under the Stafford
-30                       Act (P.L. 93-288) as a result of Hurricane Florence.
-31               (3)     LME/MCO. – As defined in G.S. 122C-3.
-32               (4)     Qualifying LME/MCO. – An LME/MCO with a catchment area that includes
-33                       at least one federally declared disaster area.
-34               SECTION 5.4.(b) It is the intent of the General Assembly to support individuals and
-35   families experiencing distress as a result of Hurricane Florence by meeting the increased demand
-36   for behavioral health services in the counties most impacted by Hurricane Florence. To that end,
-37   funds allocated in this act from the Hurricane Florence Disaster Recovery Fund to the Department
-38   of Health and Human Services, Division of Mental Health, Developmental Disabilities, and
-39   Substance Abuse Services, to increase single-stream funding, shall be allocated by
-40   DMH/DD/SAS among LME/MCOs with a catchment area that includes at least one federally
-41   declared disaster area. DMH/DD/SAS shall determine the basis for allocating these funds among
-42   qualifying LME/MCOs. Qualifying LME/MCOs shall not use these allocated funds for any
-43   purpose other than to fund mental health, developmental disabilities, and substance use disorder
-44   services that are (i) for individuals residing in a federally declared disaster area who have been
-45   determined by the LME/MCO to be in need of these services as a result of Hurricane Florence,
-46   and (ii) not reimbursable under the Medicaid program. Each qualifying LME/MCO shall offer at
-47   least the same level of single-stream service utilization required by Section 11F.2(b) of S.L.
-48   2017-57, as amended, increased proportionately by the amount of single-stream funding
-49   allocated to the LME/MCO pursuant to this section.
-50               SECTION 5.4.(c) Pursuant to its authority under G.S. 108A-54(e), the Department
-51   of Health and Human Services shall manage, within the Medicaid budget, any increased demand
-
-     Senate Bill 3-Third Edition                                                                 Page 7
-     General Assembly Of North Carolina                                       Third Extra Session 2018
- 1   for behavioral health services reimbursable under the Medicaid program for individuals residing
- 2   in a federally declared disaster area.
- 3
- 4   ASSISTANCE FOR UNAFFILIATED COMMUNITY HOSPITALS
- 5               SECTION 5.5.(a) It is the intent of the General Assembly to assist unaffiliated
- 6   community hospitals, especially those serving rural areas, in covering the increase in nursing and
- 7   other staffing expenses related to Hurricane Florence. To that end, funds allocated in this act
- 8   from the Hurricane Florence Disaster Recovery Fund to the Department of Health and Human
- 9   Services, Division of Central Management and Support, Office of Rural Health, shall be allocated
-10   to the North Carolina Hospital Foundation (NCHF), a nonprofit corporation. NCHF shall use
-11   these funds to award grants, on a basis determined by NCHF, to unaffiliated community hospitals
-12   located in counties designated under a major disaster declaration by the President of the United
-13   States under the Stafford Act (P.L. 93-288) as a result of Hurricane Florence, with priority
-14   consideration given to unaffiliated community hospitals serving rural areas. Grant recipients shall
-15   not use these funds for any purpose other than to (i) offset the cost of increased nursing and other
-16   staffing expenses related to Hurricane Florence, and, after this purpose is fulfilled, (ii) assist the
-17   community hospital with other relief related to Hurricane Florence. Grant recipients are
-18   prohibited from using these funds to supplant existing funds for community recovery related to
-19   Hurricane Florence. Notwithstanding Section 3.1(c) of S.L. 2018-134, any funds allocated
-20   pursuant to this section that have not been expended or encumbered as of June 30, 2019, shall
-21   revert to the Hurricane Florence Disaster Recovery Fund.
-22               SECTION 5.5.(b) By July 15, 2019, each unaffiliated community hospital receiving
-23   grant funding from NCHF pursuant to subsection (a) of this section shall submit to the Office of
-24   Rural Health and the Office of Recovery and Resiliency in the Department of Public Safety a
-25   written report of all expenses funded by State appropriations. By December 1, 2019, the Office
-26   of Rural Health shall submit a written report to the Joint Legislative Oversight Committee on
-27   Health and Human Services and the Fiscal Research Division on the use of the funds allocated
-28   pursuant to subsection (a) of this section.
-29
-30   EXTEND 90-DAY TRANSITION PERIOD IN CERTAIN COUNTIES/CHILD CARE
-31   SUBSIDY
-32               SECTION 5.6.(a) Notwithstanding any other provision of law or rule to the contrary,
-33   the Department of Health and Human Services, Division of Child Development and Early
-34   Education, shall extend the transition period from 90 days to 120 days for a child care subsidy
-35   recipient who is otherwise eligible for child care subsidy and resides in an area damaged or
-36   impacted by Hurricane Florence if the recipient is (i) temporarily absent from employment,
-37   training, or an educational program with arrangements to continue the same employment,
-38   training, or educational program, (ii) unemployed but seeking employment, or (iii) no longer
-39   attending a training or educational program but is seeking employment or to resume attendance
-40   at a training or educational program.
-41               SECTION 5.6.(b) This Section applies only (i) in the counties designated under a
-42   major disaster declaration by the President of the United States under the Stafford Act (P.L.
-43   93-288) as a result of Hurricane Florence and (ii) for the 2018-2019 fiscal year.
-44
-45   CREATION OF OFFICE OF RECOVERY AND RESILIENCY/GRANTS
-46              SECTION 5.7.(a) The Office of Recovery and Resiliency (Office) is created in the
-47   Department of Public Safety. The Office shall execute multi-year recovery and resiliency projects
-48   and administer funds provided by the Community Development Block Grant Disaster Recovery
-49   program. The Secretary may reassign up to 15 existing positions of the Division of Emergency
-50   Management to the Office. In addition, the Secretary may create up to 30 new three-year
-51   time-limited positions. The reassigned positions assigned to the Office shall retain the
-
-     Page 8                                                                  Senate Bill 3-Third Edition
-     General Assembly Of North Carolina                                     Third Extra Session 2018
- 1   employment status of the positions at the time of the reassignment after implementation of this
- 2   act is completed. The three-year time-limited positions created in this section shall be temporary
- 3   positions and are exempt from the provision of the State Human Resources Act, Chapter 126 of
- 4   the General Statutes, except Articles 6 and 7 of that Chapter. The Office will provide general
- 5   disaster recovery coordination and public information; citizen outreach and application case
- 6   management; audit, finance, compliance, and reporting on disaster recovery funds; and program
- 7   and construction management services. The Office shall also contract for services from vendors
- 8   specializing in housing, construction, and project management services.
- 9               SECTION 5.7.(b) The Office shall develop and administer a grant program for
-10   financially distressed local governments to assist with recovery capacity. The grants shall cover
-11   the salaries, benefits, and operating costs for up to two three-year positions and may also be used
-12   to purchase one vehicle per community as necessitated by the individual circumstances of each
-13   community. The Office shall also, in consultation with the Local Government Commission,
-14   develop and administer a one-time emergency fund for local governments in disaster-affected
-15   areas that need immediate cash flow assistance. These funds shall be used to meet local
-16   government debt service obligations, to meet payroll obligations for local governments, and to
-17   meet vendor payments where nonpayment would result in negative financial outcome.
-18
-19   OFFICE OF RECOVERY AND RESILIENCY REPORTS
-20                SECTION 5.8.(a) Beginning January 1, 2019, the Office of Recovery and Resiliency
-21   (Office) shall provide quarterly reports to the Director of the Budget, the standing Appropriations
-22   Committees of the Senate and the House of Representatives, and the Fiscal Research Division
-23   on the use of State disaster recovery and assistance funds expended from the Hurricane Florence
-24   Recovery Fund. The reports shall summarize oversight activities and the results achieved as well
-25   as all of the following:
-26                (1)    Expenditures by program and by source of funds.
-27                (2)    Expenditures required to receive federal grants.
-28                (3)    Federal funding provided to the State to refund certain federally related
-29                       spending.
-30                (4)    Actual and projected State spending data including time lines and milestones.
-31                (5)    State spending data classified by disaster phase to include preparedness,
-32                       response, mitigation, and recovery.
-33                (6)    Total State spending data by agency and by program.
-34                (7)    Total State spending by program and county, where practicable.
-35                (8)    Location and job responsibilities of all time-limited State positions created
-36                       under this act or paid for with federal funds received as a result of Hurricane
-37                       Florence.
-38                SECTION 5.8.(b) In addition to the quarterly reports required under subsection (a)
-39   of this section and beginning January 1, 2020, the Office shall provide annual reports that compile
-40   the information contained in the quarterly reports. The annual reports shall be submitted to the
-41   entities required under subsection (a) of this section.
-42
-43   NATIONAL GUARD MEMBERS/REEMPLOYMENT
-44               SECTION 5.9. G.S. 127A-202(a) reads as rewritten:
-45       "(a) Release From State Duty. – Upon an employee's release from state duty, the
-46   employee's previous employer shall reemploy the employee in the employee's previous position
-47   within five days of the employee's release from state duty. If the employee's state duty lasted 30
-48   days or less, the employee shall make written application to the employee's previous employer
-49   for reemployment no later than the first regularly scheduled work period which that begins eight
-50   hours 24 hours after the employee has safely traveled from the place of state service to the
-51   employee's residence. If the employee's state duty lasted more than 30 days, the employee shall
-
-     Senate Bill 3-Third Edition                                                                 Page 9
-     General Assembly Of North Carolina                                     Third Extra Session 2018
- 1   make written application to the employee's previous employer for reemployment within 14 days
- 2   of the employee's release from state duty. If the employee is still qualified for the employee's
- 3   previous employment, the employee shall be restored to the employee's previous position or to a
- 4   position of like seniority, status, and salary, unless the employer's circumstances now at that time
- 5   make the restoration unreasonable. If the employee is no longer qualified for the employee's
- 6   previous employment, the employee shall be placed in another position, position for which the
- 7   employee is qualified, qualified and which that will give the employee appropriate seniority,
- 8   status, and salary, unless the employer's circumstances now at that time make the placement
- 9   unreasonable."
-10
-11   NORTH CAROLINA NATIONAL GUARD/OVERPAYMENT OF FUNDS
-12              SECTION 5.10. Notwithstanding G.S. 143-64.80, the Office of State Controller
-13   shall waive any outstanding debt arising from, or as a result of, any State active duty performed
-14   by North Carolina National Guard Service members in response to Hurricane Matthew in 2016
-15   due to overpayment of state active duty salary. The Department of Public Safety shall reimburse
-16   those North Carolina National Guard Service members who have already reimbursed the State
-17   for such overpayments.
-18
-19   HURRICANE FLORENCE AGRICULTURAL DISASTER PROGRAM OF 2018
-20          SECTION 5.11.(a) The General Assembly finds that:
-21          (1)  The historic flood and other impacts of Hurricane Florence in September of
-22               2018 caused unprecedented damage to the State and its people, with particular
-23               devastating statewide impacts on North Carolina farmers and the State's
-24               agriculture industry.
-25          (2)  The State has over 50,000 farms across over 8 million acres, which generates
-26               87 billion dollars of economic impact annually and represents the State's
-27               number one industry, making it a vital component to a healthy state economy.
-28          (3)  The total loss of crops as a result of the flooding is estimated at over a billion
-29               dollars and the estimated federal crop insurance payments will only cover a
-30               percentage of the total crop loss.
-31          (4)  The federal crop insurance program as authorized in the 2014 Farm Bill is an
-32               inadequate method of indemnification as compared to traditional forms of
-33               insurance and is not sufficient to aid farmers with substantial losses due to
-34               catastrophic events of nature.
-35          (5)  The State has a significant public interest to prevent the economic collapse of
-36               many of the State's farms, which could cause a severe disruption in the State's
-37               economy and food supply chain.
-38          (6)  The most effective program for administration of financial assistance is
-39               two-fold. The first category shall be based on information available from the
-40               Farm Service Agency ("FSA") within the United States Department of
-41               Agriculture ("USDA"). The second category, for producers who do not
-42               participate in FSA programs, shall be based on verifiable documentation from
-43               producers.
-44          SECTION 5.11.(b) For purposes of this section, the following definitions apply:
-45          (1)  Agricultural commodity. – Apples, barley, corn, cotton, dry peas, flax, forage,
-46               freezing and canning peas, grain sorghum, grapes, hay, industrial hemp, native
-47               grass, nursery crops, nuts, oats, peanuts, potatoes, rye, soybeans, sunflowers,
-48               sweet corn, tobacco, tomatoes, wheat, specialty crops and other fruits and
-49               vegetables, and aquacultural species propagated or reared in a controlled or
-50               selected environment. An agricultural commodity does not include stored
-51               grain.
-
-     Page 10                                                                Senate Bill 3-Third Edition
-     General Assembly Of North Carolina                                    Third Extra Session 2018
- 1              (2)      Department. – The Department of Agriculture and Consumer Services.
- 2              (3)      Fund. – The Hurricane Florence Agricultural Disaster Fund.
- 3              (4)      Livestock. – Cattle, sheep, swine, goats, farmed cervids, and bison. Livestock
- 4                       shall include horses, mules, or other equines only if they are used for
- 5                       production of agricultural commodities.
- 6               (5)     Person. – Any individual, trust, estate, partnership, receiver, association,
- 7                       company, limited liability company, corporation, or other entity or group.
- 8               (6)     Poultry. – Chickens, quail, or turkeys.
- 9               (7)     State. – The State of North Carolina.
-10               (8)     USDA. – The United States Department of Agriculture.
-11               SECTION 5.11.(c) The Hurricane Florence Disaster Fund is established as a special
-12   fund in the Department of Agriculture and Consumer Services. The Fund consists of allocations
-13   directed by the General Assembly and contributions and grants from public or private sources.
-14   The Fund shall be used for a financial assistance program that provides assistance to farmers
-15   affected by Hurricane Florence. The Department may not use funds for administrative purposes.
-16   Earnings on the contributions and grants deposited in the Fund shall be credited to the Fund. The
-17   Fund shall expire upon the complete expenditure of funds allocated for the purposes specified
-18   herein.
-19               SECTION 5.11.(d) To be eligible for financial assistance for losses of agricultural
-20   commodities, a person must satisfy all of the following criteria:
-21               (1)     The person experienced a verifiable loss of agricultural commodities as a
-22                       result of Hurricane Florence, and the person's farm is located in a North
-23                       Carolina county that is or becomes any of the following:
-24                       a.      Designated under a major disaster declaration by the President of the
-25                               United States under the Stafford Act (P.L. 93-288) as a result of
-26                               Hurricane Florence.
-27                       b.      Included in either a Secretarial Disaster Declaration for Hurricane
-28                               Florence issued by the United States Secretary of Agriculture or the
-29                               Presidential Federal Emergency Management Agency Declaration for
-30                               Hurricane Florence.
-31               (2)     The agricultural commodity was planted on or before September 13, 2018, or,
-32                       for aquaculture commodities, the commodities were being raised on or before
-33                       September 13, 2018.
-34               SECTION 5.11.(e) A person seeking financial assistance for losses of agricultural
-35   commodities shall submit to the Department a Form 578 on file with the USDA Farm Service
-36   Agency or a form provided by the Department for reporting acreage or plantings of crops not
-37   typically reported on Form 578, along with any other documentation deemed appropriate by the
-38   Department, on or before December 10, 2018. For nursery crops, fruit-bearing trees and bushes,
-39   and specialty crops where the survival level is not immediately known, the Department may
-40   extend this deadline to May 1, 2019, upon written request by the person received on or before
-41   December 10, 2018, and upon approval by the Department. A person receiving assistance under
-42   this program must provide a signed affidavit, under penalty of perjury, certifying that each fact
-43   of the loss presented by the person is accurate.
-44               SECTION 5.11.(f) To be eligible for financial assistance for losses of livestock or
-45   poultry, a person must first qualify for and receive payment through the USDA Livestock
-46   Indemnity Program and be a participant in a livestock or poultry indemnity program administered
-47   by the USDA Farm Service Agency.
-48               SECTION 5.11.(g) A person seeking financial assistance for losses of livestock or
-49   poultry shall submit documentation of loss and indemnity received from the USDA Livestock
-50   Indemnity Program, along with any other documentation deemed appropriate by the Department,
-51   to the Department on or before December 10, 2018. The Department may extend this deadline to
-
-     Senate Bill 3-Third Edition                                                              Page 11
-     General Assembly Of North Carolina                                      Third Extra Session 2018
- 1   March 1, 2019, upon written request by the person received on or before December 10, 2018,
- 2   and upon approval by the Department. A person receiving assistance under this program must
- 3   provide a signed affidavit, under penalty of perjury, certifying that each fact of the loss presented
- 4   by the person is accurate.
- 5               SECTION 5.11.(h) The Department shall administer the financial assistance
- 6   program authorized by this section in accordance with the following criteria:
- 7               (1)     In determining the payment calculation for agricultural commodities, the
- 8                       Department shall use a formula based on acreage, county loss estimates, and
- 9                       USDA National Agricultural Statistics Service averages, and any other
-10                       measure the Department deems appropriate. Funds shall be distributed based
-11                       on county averages for yields and State averages for price. Calculations shall
-12                       be based on county or State averages in price, whichever the Department
-13                       determines is appropriate.
-14               (2)     The payment calculation for livestock and poultry shall be based on twelve
-15                       and one-half percent (12.5%) of the total loss reported to the USDA Livestock
-16                       Indemnity Program.
-17               (3)     The Department shall gather all claim information, except from those
-18                       applicants granted a deadline extension, no later than December 10, 2018. The
-19                       Department shall, as closely as possible, estimate the amount of the
-20                       appropriation needed to be held in reserve for payments related to losses of
-21                       livestock, poultry, nursery, bush, tree, and specialty crops for which losses
-22                       will not be fully known or calculated. The Department shall set aside funds as
-23                       it deems appropriate based on the estimated percentage of these losses.
-24               (4)     Payments made under this program shall be made to the person who filed the
-25                       Form 578 or Department form for claims related to agricultural commodity
-26                       losses, or the person who received payment from the USDA Livestock
-27                       Indemnity Program for claims related to livestock or poultry losses.
-28               SECTION 5.11.(i) The Department may audit the financial and other records of each
-29   recipient of funds in order to ensure that the funds are used in accordance with the requirements
-30   of this program. The Department may require any documentation or proof it considers necessary
-31   to efficiently administer this program, including the ownership structure of each entity and the
-32   social security numbers of each owner. In order to verify losses, the Department may require the
-33   submission of dated, signed, and continuous records. These records may include, but are not
-34   limited to, commercial receipts, settlement sheets, warehouse ledger sheets, pick records, load
-35   summaries, contemporaneous measurements, truck scale tickets, contemporaneous diaries,
-36   appraisals, ledgers of income, income statements of deposit slips, cash register tape, invoices for
-37   custom harvesting, u-pick records, and insurance documents.
-38               SECTION 5.11.(j) Awarded funds shall be used for agricultural production expenses
-39   and recovery of losses due to the impacts of Hurricane Florence. The Department shall develop
-40   guidelines and procedures to ensure that funds are expended for the purposes allowed by this
-41   section, and may require any documentation it determines necessary to verify the appropriate use
-42   of financial assistance awards including receipts. All distributed funds are subject to federal and
-43   State income tax.
-44               SECTION 5.11.(k) If the Department determines that a person who received
-45   financial assistance provided inaccurate information, then the person shall refund the entire
-46   amount of the financial assistance. If the person does not refund the appropriate amount, the
-47   North Carolina Department of Revenue shall collect the money from the person pursuant to
-48   G.S. 105-242.
-49               SECTION 5.11.(l) This section expires January 1, 2024.
-50
-51   COASTAL DEBRIS CLEANUP
-
-     Page 12                                                                 Senate Bill 3-Third Edition
-     General Assembly Of North Carolina                                    Third Extra Session 2018
- 1              SECTION 5.12. Funds allocated in this act to the Department of Environmental
- 2   Quality for coastal debris cleanup will be used to provide a grant to the North Carolina Coastal
- 3   Federation to contract with third parties to remove and properly dispose of marine debris
- 4   deposited in and adjacent to the waters of the State by Hurricane Florence. The Federation shall
- 5   not use any of the funds allocated to it by this section for administrative or overhead costs. The
- 6   Federation shall report on the use of the funds to the Joint Legislative Oversight Committee on
- 7   Agriculture and Natural and Economic Resources, the Office of Recovery and Resiliency in the
- 8   Department of Public Safety, and the Fiscal Research Division on or before April 1, 2019.
- 9
-10   LIVING SHORELINES PERMIT REVISIONS
-11                SECTION 5.13. The Coastal Resources Commission shall adopt temporary rules
-12   pursuant to G.S. 150B-21.1 to revise the Commission's general permit for the construction of
-13   riprap sills for wetland enhancement in estuarine and public trust waters (15A NCAC 07H .2700)
-14   (the Living Shorelines General Permit) in order to make the general permit consistent with the
-15   United States Army Corps of Engineers Wilmington District regional general permit for living
-16   shorelines. The temporary rules adopted by the Commission shall not include any changes to the
-17   Living Shorelines General Permit that would delay or otherwise alter general permits issued by
-18   the Commission for other types of coastal erosion control structures, including bulkheads and
-19   other hardened structures.
-20
-21   FERRY FEES WAIVER/SECRETARY OF TRANSPORTATION
-22               SECTION 5.14. G.S. 136-82 is amended by adding a new subsection to read:
-23       "(b2) Emergency Suspension of Tolling. – The Secretary of Transportation may suspend
-24   the collection of tolls for any ferry route serving an emergency area, as declared pursuant to
-25   G.S. 166A-19.20 or G.S. 166A-19.22, for the duration of the state of emergency."
-26
-27   DOT REPORTING REQUIREMENTS
-28               SECTION 5.15. The Department of Transportation shall report within 30 days of
-29   the end of each calendar quarter to the Office of Recovery and Resiliency in the Department of
-30   Public Safety on the use of the funds allocated from the Hurricane Florence Disaster Recovery
-31   Fund and all matching funds received from the federal government. The report shall contain all
-32   of the following information itemized by DOT Highway Division and county:
-33               (1)    Project scope and ranking by priority; total cost; amount spent (federal and
-34                      state); project status including percentage complete and timeline; the
-35                      responsible entity, including names of private contractors; and any issues
-36                      encountered with overall project management and delivery.
-37               (2)    The cash balance of the fund, the amount of funds expended, encumbered, and
-38                      unencumbered.
-39
-40   CONSTRUCTION FEE MORATORIUM
-41              SECTION 5.16.(a) Notwithstanding any other provision of law, for any single
-42   commercial or residential project, the Department of Insurance, counties, and cities shall not
-43   impose any fee associated with a permit, inspection, or certificate of occupancy required by law
-44   for construction, reconstruction, alteration, repair, movement to another site, removal, or
-45   demolition of a manufactured home, building, dwelling, or structure damaged as a direct result
-46   of Hurricane Florence.
-47              SECTION 5.16.(b) The moratorium provided in subsection (a) of this section applies
-48   in North Carolina counties designated under a major disaster declaration by the President of the
-49   United States under the Stafford Act (P.L. 93-288) as a result of Hurricane Florence. A person is
-50   allowed a refund of any fee assessed and collected that is subject to the moratorium imposed by
-
-
-     Senate Bill 3-Third Edition                                                              Page 13
-     General Assembly Of North Carolina                                     Third Extra Session 2018
- 1   this section. The Department of Insurance, counties, and cities shall post a notice of the
- 2   availability of a refund on their Web sites.
- 3               SECTION 5.16.(c) This section is effective when it becomes law and applies to
- 4   applications for issuance of a permit dated on or after September 13, 2018. This section expires
- 5   December 31, 2018.
- 6
- 7   EXCEPTION TO CONFIDENTIALITY OF TAX INFORMATION
- 8               SECTION 5.17.(a) G.S. 105-259(b) is amended by adding a new subdivision to
- 9   read:
-10               "(55) To provide data drawn from an individual taxpayer's tax information to the
-11                      Office of Recovery and Resiliency for the purpose of facilitating such a
-12                      taxpayer's application for any means-tested federal or state disaster relief
-13                      following a federal major disaster declaration; provided, however, that no
-14                      federal tax information may be disclosed under this subpart unless such a
-15                      disclosure is permitted by section 6103 of the Code."
-16               SECTION 5.17.(b) The Department of Revenue and the Office of Recovery and
-17   Resiliency shall, within a reasonable time following the effective date of this act but not later
-18   than June 30, 2019, enter into a confidential information sharing agreement settling data transfer
-19   protocols, required security measures, audit mechanisms, and other issues necessary to develop
-20   and implement the information exchange provided in subsection (a) of this section.
-21
-22   EXPAND ELIGIBILITY FOR DISASTER HOUSING ASSISTANCE
-23               SECTION 5.18. Notwithstanding G.S. 122E-6(a) and (b) and the provisions of
-24   G.S. 122E-6 relating to income limitations of individuals and families, funds allocated in this act
-25   to the North Carolina Housing Finance Agency for eligible projects under Chapter 122E of the
-26   General Statutes in counties impacted by Hurricane Matthew or Hurricane Florence may be used
-27   to assist individuals and families with household incomes that equal, but do not exceed, one
-28   hundred percent (100%) of the local area's median income, adjusted for family size, pursuant to
-29   the most recent available data from the United States Department of Housing and Urban
-30   Development.
-31
-32   AUDIT OF HURRICANE FLORENCE DISASTER RECOVERY FUND
-33               SECTION 5.19. The State Auditor shall conduct a preliminary financial and
-34   performance audit of the Hurricane Florence Disaster Recovery Fund created in Section 3.1 of
-35   S.L. 2018-134 (Fund) no later than March 1, 2019. The State Auditor shall conduct additional
-36   periodic financial and performance audits of the Fund and a final financial and performance audit
-37   as requested by the Director of the Budget and the General Assembly.
-38
-39   DEPARTMENT OF INSURANCE REPORTING
-40               SECTION 5.20. The Department of Insurance shall report to the Office of Recovery
-41   and Resiliency in the Department of Public Safety and the Fiscal Research Division on the funds
-42   allocated to it by this act for grants to volunteer fire departments. The report shall include the
-43   number of applications received, the number of grantees denied funding, and the amounts
-44   awarded to each grantee. The Department shall report within 30 days of the end of each calendar
-45   quarter until all funds allocated to the Department have been expended or have reverted.
-46
-47   INVOLVEMENT OF HISTORICALLY UNDERUTILIZED BUSINESSES
-48               SECTION 5.21. It is the intent of the General Assembly that, during this time of
-49   rebuilding and relief efforts, each State agency should strive to acquire goods and services from
-50   historically underutilized business vendors, whether directly as principal contractors or indirectly
-51   as subcontractors or otherwise.
-
-     Page 14                                                                Senate Bill 3-Third Edition
-     General Assembly Of North Carolina                                    Third Extra Session 2018
- 1
- 2   LEGISLATIVE REVIEW OF FEDERAL FUNDING AND REMAINING UNMET
- 3   NEEDS
- 4              SECTION 5.22. It is the intent of the General Assembly to review in 2018 and 2019
- 5   the funds appropriated by Congress for disaster relief and to consider actions needed to address
- 6   any remaining unmet needs. It is also the intent of the General Assembly to review the adequacy
- 7   of the measures funded by Section 2.1 of this act at that time.
- 8
- 9   PROHIBITION ON USE OF STATE FUNDS TO CONSTRUCT CERTAIN
-10   RESIDENCES
-11               SECTION 5.23.(a) No State funds appropriated in this act may be expended for the
-12   construction of any new residence within the 100-year floodplain unless the construction is in an
-13   area regulated by a unit of local government pursuant to a floodplain management ordinance and
-14   the construction complies with the ordinance. For purposes of this act, the term "100-year
-15   floodplain" means any area subject to inundation by the one percent (1%) annual chance flood
-16   event, as indicated on the most recent Flood Insurance Rate Map prepared by the Federal
-17   Emergency Management Agency under the National Flood Insurance Program.
-18               SECTION 5.23.(b) Homeowners in the 100-year floodplain who receive
-19   homeowner's housing assistance pursuant to this act shall have in effect federal flood insurance,
-20   if available, as a precondition to receipt of State homeowner's housing assistance for losses
-21   resulting from future flooding.
-22               SECTION 5.23.(c) Funds loaned to small and mid-sized businesses shall be used
-23   only for eligible purposes under the Small Business Administration (SBA) disaster loan
-24   assistance program, as described in the federal disaster declarations designated by the SBA as
-25   NC 14911 and NC 14912. Payments for economic losses shall be limited to documented business
-26   expenses necessary for the continued operation of the business.
-27
-28   SUBROGATION BY STATE OF RIGHT TO INSURANCE COVERAGE FOR
-29   DAMAGED HOMES PURCHASED OR RELOCATED UNDER THE HAZARD
-30   MITIGATION PROGRAM
-31              SECTION 5.24. If a person's home is relocated or purchased with funds from the
-32   Hazard Mitigation Grant Program or the State Acquisition and Relocation Fund, the State
-33   Emergency Response and Disaster Relief Fund is subrogated to the person's rights under any
-34   insurance coverage for the damage to the home, and any monies received from the insurance
-35   coverage shall be paid to the State Emergency Response and Disaster Relief Fund. The Division
-36   of Emergency Management shall ensure that those potentially affected by this section are notified
-37   of, and adhere to, its requirements.
-38
-39   PART VI. MISCELLANEOUS PROVISIONS
-40
-41   COMMITTEE REPORT
-42              SECTION 6.1. The document titled N.C. Senate Committee on Appropriations/Base
-43   Budget and N.C. House of Representatives Committee on Appropriations Committee Report on
-44   Hurricane Florence Disaster Recovery Fund for Senate Bill 3 and House Bill 3 (Committee
-45   Report) dated October 15, 2018, which was distributed in the Senate and the House of
-46   Representatives and used to explain this act, shall indicate action by the General Assembly on
-47   this act and shall, therefore, be used to construe this act, and for these purposes shall be
-48   considered a part of this act and, as such, shall be printed as a part of the Session Laws. If the
-49   Committee Report conflicts with this act, the act prevails.
-50
-51   EFFECT OF HEADINGS
-
-     Senate Bill 3-Third Edition                                                              Page 15
-     General Assembly Of North Carolina                                     Third Extra Session 2018
- 1                SECTION 6.2. The headings to the parts, subparts, and sections of this act are a
- 2   convenience to the reader and are for reference only. The headings do not expand, limit, or define
- 3   the text of this act, except for effective dates referring to a part or subpart.
- 4
- 5   SEVERABILITY CLAUSE
- 6               SECTION 6.3. If any section or provision of this act is declared unconstitutional or
- 7   invalid by the courts, it does not affect the validity of this act as a whole or any part other than
- 8   the part so declared to be unconstitutional or invalid.
- 9
-10   PART VII. EFFECTIVE DATE
-11           SECTION 7.1. Except as otherwise provided, this act is effective when it becomes
-12   law.
-
-
-
-
-     Page 16                                                                Senate Bill 3-Third Edition
-
+A BILL TO BE ENTITLED
+AN ACT TO ENACT THE 2018 HURRICANE FLORENCE DISASTER RECOVERY ACT.
+The General Assembly of North Carolina enacts:
+PART I. TITLE OF ACT
+SECTION 1.1. This act shall be known as "2018 Hurricane Florence Disaster
+Recovery Act."
+SECTION 1.2. The appropriations and allocations made in this act are for maximum
+amounts necessary to implement this act. Savings shall be effected where the total amounts
+appropriated or allocated are not required to implement this act.
+PART II. HURRICANE FLORENCE DISASTER RECOVERY APPROPRIATION AND
+AVAILABILITY
+SECTION 2.1.(a) There is appropriated from the Hurricane Florence Disaster
+Recovery Fund the sum of three hundred ninety-eight million four hundred thirty thousand four
+hundred seventy-seven dollars ($398,430,477) for the 2018-2019 fiscal year.
+SECTION 2.1.(b) The availability for Hurricane Florence disaster recovery
+activities in this act are set out below:
+FY 2018-19
+Beginning Unreserved Fund Balance                                       $                 0
+Transfer from Savings Reserve, S.L. 2018-134                            $        56,500,000
+Transfer from Savings Reserve                                           $       700,000,000
+Transfer from Education Lottery Reserve per G.S. 166A-19.40(c)          $        25,000,000
+Transfer from Shallow Draft Navigation Channel Dredging
+and Aquatic Weed Fund                                                $         2,000,000
+Transfer of S.L. 2016-124 funds                                         $           930,477
+Transfer from Highway Fund                                              $        65,000,000
+Total Hurricane Florence Disaster Recovery Activities Availability      $       849,430,477
+Less Appropriations in S.L. 2018-134                                    $        56,500,000
+Less Additional FY 2018-19 Appropriations                               $       398,430,477
+Unappropriated Balance Remaining                                        $       394,500,000
+SECTION 2.1.(c) The State Controller shall establish a Hurricane Florence Disaster
+Recovery Reserve in the State General Fund to maintain funds reserved for disaster recovery in
+this act. The State Controller shall transfer funds to the Hurricane Florence Disaster Recovery
+Fund only as needed to meet the appropriations set out in this act or other related acts of the
+General Assembly and only upon request by the Director of the Budget. Funds shall remain in
+the Reserve until funds are needed to comply with the allocations as set forth in this act. Funds
+reserved in the Reserve do not constitute an "appropriation made by law," as that phrase is used
+in Section 7(1) of Article V of the North Carolina Constitution.
+SECTION 2.1.(d) Effective October 2, 2018, Section 3.1(a) of S.L. 2018-134 reads
+as rewritten:
+"SECTION 3.1.(a) The Hurricane Florence Disaster Recovery Fund is established. The
+purpose of the Fund is to provide necessary and appropriate relief and assistance from the effects
+of Hurricane Florence, consistent with the provisions of this act,act and with subsequent
+legislation addressing the effects of Hurricane Florence. The Fund shall be maintained as a
+special fund and administered by the Office of State Budget and Management or by another State
+agency, as determined by the Governor, to carry out the provisions of this and subsequent acts
+necessitated as a result of Hurricane Florence. All State and federal funds appropriated or
+reallocated for Hurricane Florence relief and recovery efforts shall be budgeted and accounted
+for in the Fund established in this section."
+SECTION 2.2. The State Controller shall transfer the sum of seven hundred million
+dollars ($700,000,000) for the 2018-2019 fiscal year from the Savings Reserve in the General
+Fund to the Hurricane Florence Disaster Recovery Reserve.
+SECTION 2.3. The Office of State Budget and Management shall transfer the sum
+of twenty-five million dollars ($25,000,000) for the 2018-2019 fiscal year from the Education
+Lottery Reserve to the Hurricane Florence Disaster Recovery Reserve. The transfer authorized
+by this section and allocated in this act ratifies the prior budgetary action taken by the Governor
+and shall not be construed to duplicate that transfer of lottery funds.
+SECTION 2.4.            Notwithstanding G.S. 143-215.73F, the Department of
+Environmental Quality shall transfer the sum of two million dollars ($2,000,000) for the
+2018-2019 fiscal year from the Shallow Draft Navigation Channel Dredging and Aquatic Weed
+Fund to the Office of State Budget and Management to be credited to the Hurricane Florence
+Disaster Recovery Reserve.
+SECTION 2.5. Of the funds allocated to the Department of Insurance, Office of the
+State Fire Marshal, by subdivision (11) of Section 4.1 of S.L. 2016-124 for grants to volunteer
+fire departments, the sum of nine hundred thirty thousand four hundred seventy-seven dollars
+($930,477) is transferred to the Hurricane Florence Disaster Recovery Reserve.
+SECTION 2.6. Notwithstanding any provision of law to the contrary, the
+Department of Transportation shall transfer from the Highway Fund the sum of sixty-five million
+dollars ($65,000,000) for the 2018-2019 fiscal year to the Office of State Budget and
+Management to be credited to the Hurricane Florence Disaster Recovery Reserve.
+PART III. SCOPE OF ACT
+SECTION 3. Unless otherwise provided, Section 2.1(a) of this act applies to the
+North Carolina counties designated under a major disaster declaration by the President of the
+United States under the Stafford Act (P.L. 93-288) as a result of Hurricane Florence.
+PART IV. FUNDING OF DISASTER RELIEF/REIMBURSEMENT
+ALLOCATIONS OF FUNDS FOR DISASTER RELIEF
+SECTION 4.1. The funds appropriated in Section 2.1(a) of this act in the Hurricane
+Florence Disaster Recovery Fund created in S.L. 2018-134 shall be allocated as provided in the
+Committee Report described in Section 6.1 of this act and as follows:
+Department of Agriculture and Consumer Services                               $         70,000,000
+Community Colleges System Office                                              $         18,500,000
+Department of Environmental Quality                                           $          4,000,000
+Department of Health and Human Services                                       $         12,000,000
+Housing Finance Agency                                                        $         10,000,000
+Department of Insurance                                                       $            930,477
+Department of Public Instruction                                              $         60,000,000
+Department of Public Safety                                                   $        100,000,000
+Office of State Budget and Management                                         $         25,000,000
+Department of Transportation                                                  $         65,000,000
+University of North Carolina – Board of Governors                             $         33,000,000
+REIMBURSEMENT FOR FUNDS PROVIDED UNDER THIS ACT
+SECTION 4.2.(a) A recipient of State funds under this act shall use best efforts and
+take all reasonable steps to obtain alternative funds that cover the losses or needs for which the
+State funds are provided, including funds from insurance policies in effect and available federal
+aid. State funds paid under this act are declared to be excess over funds received by a recipient
+from the settlement of a claim for loss or damage covered under the recipient's applicable
+insurance policy in effect. Further, each institution of higher education and non-State entity that
+receives State funds under this act shall also seek private donations to help cover the losses or
+needs for which these State funds are provided.
+SECTION 4.2.(b) If a recipient obtains alternative funds pursuant to subsection (a)
+of this section, the recipient shall remit the funds to the State agency from which the State funds
+were received. A recipient is not required to remit any amount in excess of the State funds
+provided to the recipient under this act. The State agency shall transfer these funds to the
+Hurricane Florence Disaster Recovery Fund. The funds shall further be transferred to the
+applicable fund or reserve from which the funds were originally transferred to the Fund, except
+that the first twenty-five million dollars ($25,000,000) deposited under this subsection as
+reimbursement for funds expended for repair and renovation of facilities damaged by Hurricane
+Florence for local school administrative units, lab schools, and any eligible Innovative School
+District shall be transferred to the Education Lottery Reserve Fund. Funds deposited into the
+Fund under this subsection are receipts that do not constitute an "appropriation made by law," as
+that phrase is used in Section 7(1) of Article V of the North Carolina Constitution.
+SECTION 4.2.(c) Any contract or other instrument entered into by a recipient for
+receipt of funds under this act shall include the requirements set forth in subsections (a) and (b)
+of this section.
+SECTION 4.2.(d) For purposes of this section, the term "recipient" means a local
+political subdivision of the State, a State agency, a State department, an institution of higher
+education as defined in Section 5.3(a) of this act, a public school unit as defined in Section 5.1
+of this act, or a non-State entity.
+ADDITIONAL LIMITATIONS ON USE OF FUNDS
+SECTION 4.3.(a) The Governor shall ensure that funds appropriated in this act are
+expended in a manner that does not adversely affect any person's or entity's eligibility for federal
+funds that are made available, or that are anticipated to be made available, as a result of Hurricane
+Florence. The Governor shall also, to the extent practicable, avoid using State funds to cover
+costs that will be, or likely will be, covered by federal funds.
+SECTION 4.3.(b) The Governor may not use the funds described in this act to make
+reallocations under G.S. 166A-19.40(c). Nothing in this act shall be construed to prohibit the
+Governor from exercising the Governor's authority under this statute with respect to funds other
+than those described in this act.
+PART V. IMPLEMENTATION OF ACT
+AVERAGE DAILY MEMBERSHIP DETERMINATION
+SECTION 5.1. Notwithstanding any other provision of law, in allocating funds for
+the 2018-2019 fiscal year, the State Board of Education shall adjust the allotted average daily
+membership (ADM) of public school units for the 2018-2019 school year in a manner that will
+assist units impacted by Hurricane Florence as follows: Allotment adjustments for ADM
+decreases shall be based on the highest of the first four months' ADM for public school units
+located in counties designated under a major disaster declaration by the President of the United
+States under the Stafford Act (P.L. 93-288) as a result of Hurricane Florence.
+Consistent with the Allotment Adjustments for ADM Growth provisions of the NC
+Public Schools Allotment Policy Manual applicable for the 2018-2019 school year, local school
+administrative units are encouraged to apply for additional funding to address needs related to
+extraordinary ADM growth due to an influx of displaced students as a result of Hurricane
+Florence.
+If the State Board of Education does not have sufficient resources in the ADM
+Contingency Reserve line item to make allotment adjustments in accordance with this section,
+the State Board of Education may use funds appropriated to State Aid for Public Schools for this
+purpose.
+For the purposes of this section, "public school unit" is defined as a local school
+administrative unit, regional school, innovative school, laboratory school, charter school, or
+residential school for the deaf or the blind.
+CAPITAL RECOVERY FUNDS – PUBLIC SCHOOL FACILITIES
+SECTION 5.2. The funds allocated to the Department of Public Instruction in this
+act shall not be subject to approval by the State Board of Education.
+EMERGENCY SCHOLARSHIP GRANTS FOR POSTSECONDARY STUDENTS
+SECTION 5.3.(a) Program Established; Purpose. – There is established the
+Hurricane Florence Emergency Grant Program for Postsecondary Students (Program) to provide
+emergency scholarship grants in an amount up to one thousand two hundred fifty dollars ($1,250)
+per student to eligible postsecondary students who have suffered financial hardship due to the
+damage and destruction from Hurricane Florence. An emergency scholarship grant shall be used
+to mitigate the impact of Hurricane Florence on a student so that his or her postsecondary
+education in a North Carolina institution of higher education continues uninterrupted. These
+funds may be used to cover any expenses that support a student's continued enrollment, including
+costs related to transportation, textbooks, tuition, fees, and living expenses.
+For the purposes of this section, an "institution of higher education" is defined as a
+constituent institution of The University of North Carolina, a community college under the
+jurisdiction of the State Board of Community Colleges, or an eligible private postsecondary
+institution, as defined in G.S. 116-280(3).
+SECTION 5.3.(b) Applications; Eligibility. – By November 1, 2018, each institution
+of higher education that is eligible for an allocation of funds pursuant to this section shall begin
+accepting applications from eligible postsecondary students. An application for an emergency
+scholarship grant must demonstrate that the student is an eligible postsecondary student by
+including documentation that the student meets the following criteria:
+(1)      The student is enrolled in the institution of higher education at the time of
+application.
+(2)    The student has a financial need related to the impact of Hurricane Florence.
+(3)    The student meets at least one of the following criteria:
+a.       The institution of higher education in which the student was enrolled
+as of September 10, 2018, is located in a county designated under a
+major disaster declaration by the President of the United States under
+the Stafford Act (P.L. 93-288) as a result of Hurricane Florence.
+b.       The student resided, as of September 10, 2018, temporarily or
+permanently, in a county designated under a major disaster declaration
+by the President of the United States under the Stafford Act (P.L.
+93-288) as a result of Hurricane Florence.
+SECTION 5.3.(c) Award of Grants. – Within the funds available to an institution of
+higher education in accordance with this section, an institution shall award an emergency
+scholarship grant to an eligible postsecondary student within two weeks of the receipt of the
+application, or as soon as otherwise practicable, in an amount of up to one thousand two hundred
+fifty dollars ($1,250) based on the information provided in the student's application. An
+institution of higher education may establish priority in the award of emergency scholarship
+grants to eligible postsecondary students based on the funds available and the pool of applicants,
+including giving priority to students who have demonstrated the greatest financial need. If no
+priority in the award of funds is established, the emergency scholarship grants shall be awarded
+in the order in which applications are received. If the institution of higher education has
+unexpended funds remaining after the award of the initial emergency scholarship grants, the
+institution may increase the award to an eligible postsecondary student who previously received
+funds or solicit additional applications from eligible postsecondary students, provided that the
+award to an individual student does not exceed one thousand two hundred fifty dollars ($1,250)
+for each academic semester in which funds are awarded.
+SECTION 5.3.(d) Reimbursement for Losses Covered by Other Funds. – An eligible
+postsecondary student who receives an emergency scholarship grant under the Program shall use
+best efforts and take all reasonable steps to obtain alternative funds that cover the losses or needs
+for which the emergency scholarship grant funds are provided, including funds from insurance
+policies in effect and available federal aid. If the student obtains alternative funds, the student
+shall remit the amount of the emergency scholarship grant covered by the alternative funds to the
+institution of higher education. A student is not required to remit any amount in excess of the
+funds provided to the student.
+SECTION 5.3.(e) Funds for UNC Constituent Institutions. – Of the funds allocated
+to the Board of Governors of The University of North Carolina from the Hurricane Florence
+Disaster Recovery Fund for the 2018-2019 fiscal year, the sum of two million dollars
+($2,000,000) in nonrecurring funds shall be allocated by the Board of Governors to constituent
+institutions of The University of North Carolina for the purpose of providing emergency
+scholarship grants to eligible postsecondary students in accordance with the Program. The Board
+of Governors shall prioritize the allocation of funds based on the impact of Hurricane Florence
+on enrolled students to the following constituent institutions:
+(1)    A constituent institution located in a county designated under a major disaster
+declaration by the President of the United States under the Stafford Act (P.L.
+93-288) as a result of Hurricane Florence.
+(2)    A constituent institution that is not located a county designated under a major
+disaster declaration by the President of the United States under the Stafford
+Act (P.L. 93-288) as a result of Hurricane Florence but has an eligible
+postsecondary student enrolled at the institution who (i) resides, temporarily
+or permanently, in a county designated under a major disaster declaration by
+the President of the United States under the Stafford Act (P.L. 93-288) as a
+result of Hurricane Florence or (ii) has transferred to the institution due to the
+damage and destruction caused by Hurricane Florence.
+Constituent institutions allocated funds under this subsection shall have discretion to
+establish criteria for the eligibility of postsecondary students in addition to the criteria required
+by this section. However, the Board of Governors shall not establish additional eligibility
+requirements for the administration of the Program to those set forth in this section.
+SECTION 5.3.(f) Funds for Community Colleges. – Of the funds allocated to the
+Community Colleges System Office from the Hurricane Florence Disaster Recovery Fund for
+the 2018-2019 fiscal year, the sum of five million dollars ($5,000,000) in nonrecurring funds
+shall be allocated by the State Board of Community Colleges to community colleges for the
+purpose of providing emergency scholarship grants to eligible postsecondary students in
+accordance with the Program. The State Board of Community Colleges shall prioritize the
+allocation of funds based on the impacts of Hurricane Florence on enrolled students to the
+following community colleges:
+(1)     A community college located in a county designated under a major disaster
+declaration by the President of the United States under the Stafford Act (P.L.
+93-288) as a result of Hurricane Florence.
+(2)     A community college that is not located in a county designated under a major
+disaster declaration by the President of the United States under the Stafford
+Act (P.L. 93-288) as a result of Hurricane Florence but has an eligible
+postsecondary student enrolled at the community college who (i) resides,
+temporarily or permanently, in a county designated under a major disaster
+declaration by the President of the United States under the Stafford Act (P.L.
+93-288) as a result of Hurricane Florence or (ii) has transferred to the
+community college due to the damage and destruction caused by Hurricane
+Florence.
+Community colleges allocated funds under this subsection shall have discretion to
+establish criteria for the eligibility of postsecondary students in addition to the criteria required
+by this section. However, the State Board of Community Colleges shall not establish additional
+eligibility requirements for the administration of the Program to those set forth in this section.
+SECTION 5.3.(g) Funds for Private Postsecondary Institutions. – Of the funds
+allocated to the Board of Governors of The University of North Carolina from the Hurricane
+Florence Disaster Recovery Fund for the 2018-2019 fiscal year, in addition to the two million
+dollars ($2,000,000) allocated to constituent institutions pursuant to subsection (e) of this section,
+the sum of one million dollars ($1,000,000) in nonrecurring funds shall be allocated to the State
+Education Assistance Authority (Authority) to provide funds to eligible private postsecondary
+institutions as defined in G.S. 116-280(3) for the purpose of providing emergency scholarship
+grants to eligible postsecondary students in accordance with the Program. The Authority shall
+prioritize the allocation of funds based on the impact of Hurricane Florence on enrolled students
+to the following eligible private postsecondary institutions:
+(1)     A private postsecondary institution with a campus located in a county
+designated under a major disaster declaration by the President of the United
+States under the Stafford Act (P.L. 93-288) as a result of Hurricane Florence.
+(2)     A campus of a private postsecondary institution that is not located in a county
+designated under a major disaster declaration by the President of the United
+States under the Stafford Act (P.L. 93-288) as a result of Hurricane Florence
+but has an eligible postsecondary student enrolled at the private postsecondary
+institution who (i) resides, temporarily or permanently, in a county designated
+under a major disaster declaration by the President of the United States under
+the Stafford Act (P.L. 93-288) as a result of Hurricane Florence or (ii) has
+transferred to the private postsecondary institution due to the damage and
+destruction caused by Hurricane Florence.
+Private postsecondary institutions allocated funds under this subsection shall have
+discretion to establish criteria for the eligibility of postsecondary students in addition to the
+criteria required by this section. However, the Authority shall not establish additional eligibility
+requirements for the administration of the Program to those set forth in this section. A private
+postsecondary institution receiving funds pursuant to this subsection shall report to the Authority
+on the implementation of the Program, including the information required for the report under
+subsection (h) of this section.
+SECTION 5.3.(h) Reporting Requirements. – By April 1, 2019, the Board of
+Governors of The University of North Carolina, the State Board of Community Colleges, and the
+Authority shall report to the chairs of the House of Representatives Committee on Appropriations
+and the Senate Appropriations/Base Budget Committee, the Joint Legislative Education
+Oversight Committee, Office of Recovery and Resiliency in the Department of Public Safety,
+and to the Fiscal Research Division of the General Assembly on the implementation of the
+Program at the institutions of higher education that received funds pursuant to this section,
+including the number and type of institutions of higher education that were allocated funds, the
+amount of funds allocated to each institution, the number of emergency scholarship grants
+awarded to students and the amount of those grants, the use of emergency scholarship grant funds
+by eligible postsecondary students, any funds reimbursed to institutions due to coverage of losses
+by alternative funds, and any remaining funds available for awards in subsequent semesters.
+BEHAVIORAL HEALTH SERVICES
+SECTION 5.4.(a) The following definitions apply in this section:
+(1)     DMH/DD/SAS. – The Division of Mental Health, Developmental
+Disabilities, and Substance Abuse Services within the Department of Health
+and Human Services.
+(2)     Federally declared disaster area. – Any county designated under a major
+disaster declaration by the President of the United States under the Stafford
+Act (P.L. 93-288) as a result of Hurricane Florence.
+(3)     LME/MCO. – As defined in G.S. 122C-3.
+(4)     Qualifying LME/MCO. – An LME/MCO with a catchment area that includes
+at least one federally declared disaster area.
+SECTION 5.4.(b) It is the intent of the General Assembly to support individuals and
+families experiencing distress as a result of Hurricane Florence by meeting the increased demand
+for behavioral health services in the counties most impacted by Hurricane Florence. To that end,
+funds allocated in this act from the Hurricane Florence Disaster Recovery Fund to the Department
+of Health and Human Services, Division of Mental Health, Developmental Disabilities, and
+Substance Abuse Services, to increase single-stream funding, shall be allocated by
+DMH/DD/SAS among LME/MCOs with a catchment area that includes at least one federally
+declared disaster area. DMH/DD/SAS shall determine the basis for allocating these funds among
+qualifying LME/MCOs. Qualifying LME/MCOs shall not use these allocated funds for any
+purpose other than to fund mental health, developmental disabilities, and substance use disorder
+services that are (i) for individuals residing in a federally declared disaster area who have been
+determined by the LME/MCO to be in need of these services as a result of Hurricane Florence,
+and (ii) not reimbursable under the Medicaid program. Each qualifying LME/MCO shall offer at
+least the same level of single-stream service utilization required by Section 11F.2(b) of S.L.
+2017-57, as amended, increased proportionately by the amount of single-stream funding
+allocated to the LME/MCO pursuant to this section.
+SECTION 5.4.(c) Pursuant to its authority under G.S. 108A-54(e), the Department
+of Health and Human Services shall manage, within the Medicaid budget, any increased demand
+for behavioral health services reimbursable under the Medicaid program for individuals residing
+in a federally declared disaster area.
+ASSISTANCE FOR UNAFFILIATED COMMUNITY HOSPITALS
+SECTION 5.5.(a) It is the intent of the General Assembly to assist unaffiliated
+community hospitals, especially those serving rural areas, in covering the increase in nursing and
+other staffing expenses related to Hurricane Florence. To that end, funds allocated in this act
+from the Hurricane Florence Disaster Recovery Fund to the Department of Health and Human
+Services, Division of Central Management and Support, Office of Rural Health, shall be allocated
+to the North Carolina Hospital Foundation (NCHF), a nonprofit corporation. NCHF shall use
+these funds to award grants, on a basis determined by NCHF, to unaffiliated community hospitals
+located in counties designated under a major disaster declaration by the President of the United
+States under the Stafford Act (P.L. 93-288) as a result of Hurricane Florence, with priority
+consideration given to unaffiliated community hospitals serving rural areas. Grant recipients shall
+not use these funds for any purpose other than to (i) offset the cost of increased nursing and other
+staffing expenses related to Hurricane Florence, and, after this purpose is fulfilled, (ii) assist the
+community hospital with other relief related to Hurricane Florence. Grant recipients are
+prohibited from using these funds to supplant existing funds for community recovery related to
+Hurricane Florence. Notwithstanding Section 3.1(c) of S.L. 2018-134, any funds allocated
+pursuant to this section that have not been expended or encumbered as of June 30, 2019, shall
+revert to the Hurricane Florence Disaster Recovery Fund.
+SECTION 5.5.(b) By July 15, 2019, each unaffiliated community hospital receiving
+grant funding from NCHF pursuant to subsection (a) of this section shall submit to the Office of
+Rural Health and the Office of Recovery and Resiliency in the Department of Public Safety a
+written report of all expenses funded by State appropriations. By December 1, 2019, the Office
+of Rural Health shall submit a written report to the Joint Legislative Oversight Committee on
+Health and Human Services and the Fiscal Research Division on the use of the funds allocated
+pursuant to subsection (a) of this section.
+EXTEND 90-DAY TRANSITION PERIOD IN CERTAIN COUNTIES/CHILD CARE
+SUBSIDY
+SECTION 5.6.(a) Notwithstanding any other provision of law or rule to the contrary,
+the Department of Health and Human Services, Division of Child Development and Early
+Education, shall extend the transition period from 90 days to 120 days for a child care subsidy
+recipient who is otherwise eligible for child care subsidy and resides in an area damaged or
+impacted by Hurricane Florence if the recipient is (i) temporarily absent from employment,
+training, or an educational program with arrangements to continue the same employment,
+training, or educational program, (ii) unemployed but seeking employment, or (iii) no longer
+attending a training or educational program but is seeking employment or to resume attendance
+at a training or educational program.
+SECTION 5.6.(b) This Section applies only (i) in the counties designated under a
+major disaster declaration by the President of the United States under the Stafford Act (P.L.
+93-288) as a result of Hurricane Florence and (ii) for the 2018-2019 fiscal year.
+CREATION OF OFFICE OF RECOVERY AND RESILIENCY/GRANTS
+SECTION 5.7.(a) The Office of Recovery and Resiliency (Office) is created in the
+Department of Public Safety. The Office shall execute multi-year recovery and resiliency projects
+and administer funds provided by the Community Development Block Grant Disaster Recovery
+program. The Secretary may reassign up to 15 existing positions of the Division of Emergency
+Management to the Office. In addition, the Secretary may create up to 30 new three-year
+time-limited positions. The reassigned positions assigned to the Office shall retain the
+employment status of the positions at the time of the reassignment after implementation of this
+act is completed. The three-year time-limited positions created in this section shall be temporary
+positions and are exempt from the provision of the State Human Resources Act, Chapter 126 of
+the General Statutes, except Articles 6 and 7 of that Chapter. The Office will provide general
+disaster recovery coordination and public information; citizen outreach and application case
+management; audit, finance, compliance, and reporting on disaster recovery funds; and program
+and construction management services. The Office shall also contract for services from vendors
+specializing in housing, construction, and project management services.
+SECTION 5.7.(b) The Office shall develop and administer a grant program for
+financially distressed local governments to assist with recovery capacity. The grants shall cover
+the salaries, benefits, and operating costs for up to two three-year positions and may also be used
+to purchase one vehicle per community as necessitated by the individual circumstances of each
+community. The Office shall also, in consultation with the Local Government Commission,
+develop and administer a one-time emergency fund for local governments in disaster-affected
+areas that need immediate cash flow assistance. These funds shall be used to meet local
+government debt service obligations, to meet payroll obligations for local governments, and to
+meet vendor payments where nonpayment would result in negative financial outcome.
+OFFICE OF RECOVERY AND RESILIENCY REPORTS
+SECTION 5.8.(a) Beginning January 1, 2019, the Office of Recovery and Resiliency
+(Office) shall provide quarterly reports to the Director of the Budget, the standing Appropriations
+Committees of the Senate and the House of Representatives, and the Fiscal Research Division
+on the use of State disaster recovery and assistance funds expended from the Hurricane Florence
+Recovery Fund. The reports shall summarize oversight activities and the results achieved as well
+as all of the following:
+(1)    Expenditures by program and by source of funds.
+(2)    Expenditures required to receive federal grants.
+(3)    Federal funding provided to the State to refund certain federally related
+spending.
+(4)    Actual and projected State spending data including time lines and milestones.
+(5)    State spending data classified by disaster phase to include preparedness,
+response, mitigation, and recovery.
+(6)    Total State spending data by agency and by program.
+(7)    Total State spending by program and county, where practicable.
+(8)    Location and job responsibilities of all time-limited State positions created
+under this act or paid for with federal funds received as a result of Hurricane
+Florence.
+SECTION 5.8.(b) In addition to the quarterly reports required under subsection (a)
+of this section and beginning January 1, 2020, the Office shall provide annual reports that compile
+the information contained in the quarterly reports. The annual reports shall be submitted to the
+entities required under subsection (a) of this section.
+NATIONAL GUARD MEMBERS/REEMPLOYMENT
+SECTION 5.9. G.S. 127A-202(a) reads as rewritten:
+"(a) Release From State Duty. – Upon an employee's release from state duty, the
+employee's previous employer shall reemploy the employee in the employee's previous position
+within five days of the employee's release from state duty. If the employee's state duty lasted 30
+days or less, the employee shall make written application to the employee's previous employer
+for reemployment no later than the first regularly scheduled work period which that begins eight
+hours 24 hours after the employee has safely traveled from the place of state service to the
+employee's residence. If the employee's state duty lasted more than 30 days, the employee shall
+make written application to the employee's previous employer for reemployment within 14 days
+of the employee's release from state duty. If the employee is still qualified for the employee's
+previous employment, the employee shall be restored to the employee's previous position or to a
+position of like seniority, status, and salary, unless the employer's circumstances now at that time
+make the restoration unreasonable. If the employee is no longer qualified for the employee's
+previous employment, the employee shall be placed in another position, position for which the
+employee is qualified, qualified and which that will give the employee appropriate seniority,
+status, and salary, unless the employer's circumstances now at that time make the placement
+unreasonable."
+NORTH CAROLINA NATIONAL GUARD/OVERPAYMENT OF FUNDS
+SECTION 5.10. Notwithstanding G.S. 143-64.80, the Office of State Controller
+shall waive any outstanding debt arising from, or as a result of, any State active duty performed
+by North Carolina National Guard Service members in response to Hurricane Matthew in 2016
+due to overpayment of state active duty salary. The Department of Public Safety shall reimburse
+those North Carolina National Guard Service members who have already reimbursed the State
+for such overpayments.
+HURRICANE FLORENCE AGRICULTURAL DISASTER PROGRAM OF 2018
+SECTION 5.11.(a) The General Assembly finds that:
+(1)  The historic flood and other impacts of Hurricane Florence in September of
+2018 caused unprecedented damage to the State and its people, with particular
+devastating statewide impacts on North Carolina farmers and the State's
+agriculture industry.
+(2)  The State has over 50,000 farms across over 8 million acres, which generates
+87 billion dollars of economic impact annually and represents the State's
+number one industry, making it a vital component to a healthy state economy.
+(3)  The total loss of crops as a result of the flooding is estimated at over a billion
+dollars and the estimated federal crop insurance payments will only cover a
+percentage of the total crop loss.
+(4)  The federal crop insurance program as authorized in the 2014 Farm Bill is an
+inadequate method of indemnification as compared to traditional forms of
+insurance and is not sufficient to aid farmers with substantial losses due to
+catastrophic events of nature.
+(5)  The State has a significant public interest to prevent the economic collapse of
+many of the State's farms, which could cause a severe disruption in the State's
+economy and food supply chain.
+(6)  The most effective program for administration of financial assistance is
+two-fold. The first category shall be based on information available from the
+Farm Service Agency ("FSA") within the United States Department of
+Agriculture ("USDA"). The second category, for producers who do not
+participate in FSA programs, shall be based on verifiable documentation from
+producers.
+SECTION 5.11.(b) For purposes of this section, the following definitions apply:
+(1)  Agricultural commodity. – Apples, barley, corn, cotton, dry peas, flax, forage,
+freezing and canning peas, grain sorghum, grapes, hay, industrial hemp, native
+grass, nursery crops, nuts, oats, peanuts, potatoes, rye, soybeans, sunflowers,
+sweet corn, tobacco, tomatoes, wheat, specialty crops and other fruits and
+vegetables, and aquacultural species propagated or reared in a controlled or
+selected environment. An agricultural commodity does not include stored
+grain.
+(2)      Department. – The Department of Agriculture and Consumer Services.
+(3)      Fund. – The Hurricane Florence Agricultural Disaster Fund.
+(4)      Livestock. – Cattle, sheep, swine, goats, farmed cervids, and bison. Livestock
+shall include horses, mules, or other equines only if they are used for
+production of agricultural commodities.
+(5)     Person. – Any individual, trust, estate, partnership, receiver, association,
+company, limited liability company, corporation, or other entity or group.
+(6)     Poultry. – Chickens, quail, or turkeys.
+(7)     State. – The State of North Carolina.
+(8)     USDA. – The United States Department of Agriculture.
+SECTION 5.11.(c) The Hurricane Florence Disaster Fund is established as a special
+fund in the Department of Agriculture and Consumer Services. The Fund consists of allocations
+directed by the General Assembly and contributions and grants from public or private sources.
+The Fund shall be used for a financial assistance program that provides assistance to farmers
+affected by Hurricane Florence. The Department may not use funds for administrative purposes.
+Earnings on the contributions and grants deposited in the Fund shall be credited to the Fund. The
+Fund shall expire upon the complete expenditure of funds allocated for the purposes specified
+herein.
+SECTION 5.11.(d) To be eligible for financial assistance for losses of agricultural
+commodities, a person must satisfy all of the following criteria:
+(1)     The person experienced a verifiable loss of agricultural commodities as a
+result of Hurricane Florence, and the person's farm is located in a North
+Carolina county that is or becomes any of the following:
+a.      Designated under a major disaster declaration by the President of the
+United States under the Stafford Act (P.L. 93-288) as a result of
+Hurricane Florence.
+b.      Included in either a Secretarial Disaster Declaration for Hurricane
+Florence issued by the United States Secretary of Agriculture or the
+Presidential Federal Emergency Management Agency Declaration for
+Hurricane Florence.
+(2)     The agricultural commodity was planted on or before September 13, 2018, or,
+for aquaculture commodities, the commodities were being raised on or before
+September 13, 2018.
+SECTION 5.11.(e) A person seeking financial assistance for losses of agricultural
+commodities shall submit to the Department a Form 578 on file with the USDA Farm Service
+Agency or a form provided by the Department for reporting acreage or plantings of crops not
+typically reported on Form 578, along with any other documentation deemed appropriate by the
+Department, on or before December 10, 2018. For nursery crops, fruit-bearing trees and bushes,
+and specialty crops where the survival level is not immediately known, the Department may
+extend this deadline to May 1, 2019, upon written request by the person received on or before
+December 10, 2018, and upon approval by the Department. A person receiving assistance under
+this program must provide a signed affidavit, under penalty of perjury, certifying that each fact
+of the loss presented by the person is accurate.
+SECTION 5.11.(f) To be eligible for financial assistance for losses of livestock or
+poultry, a person must first qualify for and receive payment through the USDA Livestock
+Indemnity Program and be a participant in a livestock or poultry indemnity program administered
+by the USDA Farm Service Agency.
+SECTION 5.11.(g) A person seeking financial assistance for losses of livestock or
+poultry shall submit documentation of loss and indemnity received from the USDA Livestock
+Indemnity Program, along with any other documentation deemed appropriate by the Department,
+to the Department on or before December 10, 2018. The Department may extend this deadline to
+March 1, 2019, upon written request by the person received on or before December 10, 2018,
+and upon approval by the Department. A person receiving assistance under this program must
+provide a signed affidavit, under penalty of perjury, certifying that each fact of the loss presented
+by the person is accurate.
+SECTION 5.11.(h) The Department shall administer the financial assistance
+program authorized by this section in accordance with the following criteria:
+(1)     In determining the payment calculation for agricultural commodities, the
+Department shall use a formula based on acreage, county loss estimates, and
+USDA National Agricultural Statistics Service averages, and any other
+measure the Department deems appropriate. Funds shall be distributed based
+on county averages for yields and State averages for price. Calculations shall
+be based on county or State averages in price, whichever the Department
+determines is appropriate.
+(2)     The payment calculation for livestock and poultry shall be based on twelve
+and one-half percent (12.5%) of the total loss reported to the USDA Livestock
+Indemnity Program.
+(3)     The Department shall gather all claim information, except from those
+applicants granted a deadline extension, no later than December 10, 2018. The
+Department shall, as closely as possible, estimate the amount of the
+appropriation needed to be held in reserve for payments related to losses of
+livestock, poultry, nursery, bush, tree, and specialty crops for which losses
+will not be fully known or calculated. The Department shall set aside funds as
+it deems appropriate based on the estimated percentage of these losses.
+(4)     Payments made under this program shall be made to the person who filed the
+Form 578 or Department form for claims related to agricultural commodity
+losses, or the person who received payment from the USDA Livestock
+Indemnity Program for claims related to livestock or poultry losses.
+SECTION 5.11.(i) The Department may audit the financial and other records of each
+recipient of funds in order to ensure that the funds are used in accordance with the requirements
+of this program. The Department may require any documentation or proof it considers necessary
+to efficiently administer this program, including the ownership structure of each entity and the
+social security numbers of each owner. In order to verify losses, the Department may require the
+submission of dated, signed, and continuous records. These records may include, but are not
+limited to, commercial receipts, settlement sheets, warehouse ledger sheets, pick records, load
+summaries, contemporaneous measurements, truck scale tickets, contemporaneous diaries,
+appraisals, ledgers of income, income statements of deposit slips, cash register tape, invoices for
+custom harvesting, u-pick records, and insurance documents.
+SECTION 5.11.(j) Awarded funds shall be used for agricultural production expenses
+and recovery of losses due to the impacts of Hurricane Florence. The Department shall develop
+guidelines and procedures to ensure that funds are expended for the purposes allowed by this
+section, and may require any documentation it determines necessary to verify the appropriate use
+of financial assistance awards including receipts. All distributed funds are subject to federal and
+State income tax.
+SECTION 5.11.(k) If the Department determines that a person who received
+financial assistance provided inaccurate information, then the person shall refund the entire
+amount of the financial assistance. If the person does not refund the appropriate amount, the
+North Carolina Department of Revenue shall collect the money from the person pursuant to
+G.S. 105-242.
+SECTION 5.11.(l) This section expires January 1, 2024.
+COASTAL DEBRIS CLEANUP
+SECTION 5.12. Funds allocated in this act to the Department of Environmental
+Quality for coastal debris cleanup will be used to provide a grant to the North Carolina Coastal
+Federation to contract with third parties to remove and properly dispose of marine debris
+deposited in and adjacent to the waters of the State by Hurricane Florence. The Federation shall
+not use any of the funds allocated to it by this section for administrative or overhead costs. The
+Federation shall report on the use of the funds to the Joint Legislative Oversight Committee on
+Agriculture and Natural and Economic Resources, the Office of Recovery and Resiliency in the
+Department of Public Safety, and the Fiscal Research Division on or before April 1, 2019.
+LIVING SHORELINES PERMIT REVISIONS
+SECTION 5.13. The Coastal Resources Commission shall adopt temporary rules
+pursuant to G.S. 150B-21.1 to revise the Commission's general permit for the construction of
+riprap sills for wetland enhancement in estuarine and public trust waters (15A NCAC 07H .2700)
+(the Living Shorelines General Permit) in order to make the general permit consistent with the
+United States Army Corps of Engineers Wilmington District regional general permit for living
+shorelines. The temporary rules adopted by the Commission shall not include any changes to the
+Living Shorelines General Permit that would delay or otherwise alter general permits issued by
+the Commission for other types of coastal erosion control structures, including bulkheads and
+other hardened structures.
+FERRY FEES WAIVER/SECRETARY OF TRANSPORTATION
+SECTION 5.14. G.S. 136-82 is amended by adding a new subsection to read:
+"(b2) Emergency Suspension of Tolling. – The Secretary of Transportation may suspend
+the collection of tolls for any ferry route serving an emergency area, as declared pursuant to
+G.S. 166A-19.20 or G.S. 166A-19.22, for the duration of the state of emergency."
+DOT REPORTING REQUIREMENTS
+SECTION 5.15. The Department of Transportation shall report within 30 days of
+the end of each calendar quarter to the Office of Recovery and Resiliency in the Department of
+Public Safety on the use of the funds allocated from the Hurricane Florence Disaster Recovery
+Fund and all matching funds received from the federal government. The report shall contain all
+of the following information itemized by DOT Highway Division and county:
+(1)    Project scope and ranking by priority; total cost; amount spent (federal and
+state); project status including percentage complete and timeline; the
+responsible entity, including names of private contractors; and any issues
+encountered with overall project management and delivery.
+(2)    The cash balance of the fund, the amount of funds expended, encumbered, and
+unencumbered.
+CONSTRUCTION FEE MORATORIUM
+SECTION 5.16.(a) Notwithstanding any other provision of law, for any single
+commercial or residential project, the Department of Insurance, counties, and cities shall not
+impose any fee associated with a permit, inspection, or certificate of occupancy required by law
+for construction, reconstruction, alteration, repair, movement to another site, removal, or
+demolition of a manufactured home, building, dwelling, or structure damaged as a direct result
+of Hurricane Florence.
+SECTION 5.16.(b) The moratorium provided in subsection (a) of this section applies
+in North Carolina counties designated under a major disaster declaration by the President of the
+United States under the Stafford Act (P.L. 93-288) as a result of Hurricane Florence. A person is
+allowed a refund of any fee assessed and collected that is subject to the moratorium imposed by
+this section. The Department of Insurance, counties, and cities shall post a notice of the
+availability of a refund on their Web sites.
+SECTION 5.16.(c) This section is effective when it becomes law and applies to
+applications for issuance of a permit dated on or after September 13, 2018. This section expires
+December 31, 2018.
+EXCEPTION TO CONFIDENTIALITY OF TAX INFORMATION
+SECTION 5.17.(a) G.S. 105-259(b) is amended by adding a new subdivision to
+read:
+"(55) To provide data drawn from an individual taxpayer's tax information to the
+Office of Recovery and Resiliency for the purpose of facilitating such a
+taxpayer's application for any means-tested federal or state disaster relief
+following a federal major disaster declaration; provided, however, that no
+federal tax information may be disclosed under this subpart unless such a
+disclosure is permitted by section 6103 of the Code."
+SECTION 5.17.(b) The Department of Revenue and the Office of Recovery and
+Resiliency shall, within a reasonable time following the effective date of this act but not later
+than June 30, 2019, enter into a confidential information sharing agreement settling data transfer
+protocols, required security measures, audit mechanisms, and other issues necessary to develop
+and implement the information exchange provided in subsection (a) of this section.
+EXPAND ELIGIBILITY FOR DISASTER HOUSING ASSISTANCE
+SECTION 5.18. Notwithstanding G.S. 122E-6(a) and (b) and the provisions of
+G.S. 122E-6 relating to income limitations of individuals and families, funds allocated in this act
+to the North Carolina Housing Finance Agency for eligible projects under Chapter 122E of the
+General Statutes in counties impacted by Hurricane Matthew or Hurricane Florence may be used
+to assist individuals and families with household incomes that equal, but do not exceed, one
+hundred percent (100%) of the local area's median income, adjusted for family size, pursuant to
+the most recent available data from the United States Department of Housing and Urban
+Development.
+AUDIT OF HURRICANE FLORENCE DISASTER RECOVERY FUND
+SECTION 5.19. The State Auditor shall conduct a preliminary financial and
+performance audit of the Hurricane Florence Disaster Recovery Fund created in Section 3.1 of
+S.L. 2018-134 (Fund) no later than March 1, 2019. The State Auditor shall conduct additional
+periodic financial and performance audits of the Fund and a final financial and performance audit
+as requested by the Director of the Budget and the General Assembly.
+DEPARTMENT OF INSURANCE REPORTING
+SECTION 5.20. The Department of Insurance shall report to the Office of Recovery
+and Resiliency in the Department of Public Safety and the Fiscal Research Division on the funds
+allocated to it by this act for grants to volunteer fire departments. The report shall include the
+number of applications received, the number of grantees denied funding, and the amounts
+awarded to each grantee. The Department shall report within 30 days of the end of each calendar
+quarter until all funds allocated to the Department have been expended or have reverted.
+INVOLVEMENT OF HISTORICALLY UNDERUTILIZED BUSINESSES
+SECTION 5.21. It is the intent of the General Assembly that, during this time of
+rebuilding and relief efforts, each State agency should strive to acquire goods and services from
+historically underutilized business vendors, whether directly as principal contractors or indirectly
+as subcontractors or otherwise.
+LEGISLATIVE REVIEW OF FEDERAL FUNDING AND REMAINING UNMET
+NEEDS
+SECTION 5.22. It is the intent of the General Assembly to review in 2018 and 2019
+the funds appropriated by Congress for disaster relief and to consider actions needed to address
+any remaining unmet needs. It is also the intent of the General Assembly to review the adequacy
+of the measures funded by Section 2.1 of this act at that time.
+PROHIBITION ON USE OF STATE FUNDS TO CONSTRUCT CERTAIN
+RESIDENCES
+SECTION 5.23.(a) No State funds appropriated in this act may be expended for the
+construction of any new residence within the 100-year floodplain unless the construction is in an
+area regulated by a unit of local government pursuant to a floodplain management ordinance and
+the construction complies with the ordinance. For purposes of this act, the term "100-year
+floodplain" means any area subject to inundation by the one percent (1%) annual chance flood
+event, as indicated on the most recent Flood Insurance Rate Map prepared by the Federal
+Emergency Management Agency under the National Flood Insurance Program.
+SECTION 5.23.(b) Homeowners in the 100-year floodplain who receive
+homeowner's housing assistance pursuant to this act shall have in effect federal flood insurance,
+if available, as a precondition to receipt of State homeowner's housing assistance for losses
+resulting from future flooding.
+SECTION 5.23.(c) Funds loaned to small and mid-sized businesses shall be used
+only for eligible purposes under the Small Business Administration (SBA) disaster loan
+assistance program, as described in the federal disaster declarations designated by the SBA as
+NC 14911 and NC 14912. Payments for economic losses shall be limited to documented business
+expenses necessary for the continued operation of the business.
+SUBROGATION BY STATE OF RIGHT TO INSURANCE COVERAGE FOR
+DAMAGED HOMES PURCHASED OR RELOCATED UNDER THE HAZARD
+MITIGATION PROGRAM
+SECTION 5.24. If a person's home is relocated or purchased with funds from the
+Hazard Mitigation Grant Program or the State Acquisition and Relocation Fund, the State
+Emergency Response and Disaster Relief Fund is subrogated to the person's rights under any
+insurance coverage for the damage to the home, and any monies received from the insurance
+coverage shall be paid to the State Emergency Response and Disaster Relief Fund. The Division
+of Emergency Management shall ensure that those potentially affected by this section are notified
+of, and adhere to, its requirements.
+PART VI. MISCELLANEOUS PROVISIONS
+COMMITTEE REPORT
+SECTION 6.1. The document titled N.C. Senate Committee on Appropriations/Base
+Budget and N.C. House of Representatives Committee on Appropriations Committee Report on
+Hurricane Florence Disaster Recovery Fund for Senate Bill 3 and House Bill 3 (Committee
+Report) dated October 15, 2018, which was distributed in the Senate and the House of
+Representatives and used to explain this act, shall indicate action by the General Assembly on
+this act and shall, therefore, be used to construe this act, and for these purposes shall be
+considered a part of this act and, as such, shall be printed as a part of the Session Laws. If the
+Committee Report conflicts with this act, the act prevails.
+EFFECT OF HEADINGS
+SECTION 6.2. The headings to the parts, subparts, and sections of this act are a
+convenience to the reader and are for reference only. The headings do not expand, limit, or define
+the text of this act, except for effective dates referring to a part or subpart.
+SEVERABILITY CLAUSE
+SECTION 6.3. If any section or provision of this act is declared unconstitutional or
+invalid by the courts, it does not affect the validity of this act as a whole or any part other than
+the part so declared to be unconstitutional or invalid.
+PART VII. EFFECTIVE DATE
+SECTION 7.1. Except as otherwise provided, this act is effective when it becomes
+law.

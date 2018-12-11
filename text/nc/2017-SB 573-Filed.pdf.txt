@@ -1,34 +1,12 @@
-                                                                                    FILED SENATE
-                                                                                     Mar 30, 2017
-                         GENERAL ASSEMBLY OF NORTH CAROLINA
-                                                                                        S.B. 573
-                                     SESSION 2017
-                                                                                  PRINCIPAL CLERK
-     S                                                                                        D
-                             SENATE BILL DRS15144-MM-92 (03/15)
-
-
-
-     Short Title:   Appraisal Assignment Modifications.                                      (Public)
-     Sponsors:      Senator Gunn (Primary Sponsor).
-     Referred to:
-
-
- 1                                     A BILL TO BE ENTITLED
- 2   AN ACT TO MODIFY THE LAW RELATED TO APPRAISAL ASSIGNMENTS.
- 3   The General Assembly of North Carolina enacts:
- 4              SECTION 1. G.S. 93E-2-4(i) reads as rewritten:
- 5       "(i)   For appraisal assignments of property secured by the principal dwelling of the
- 6   consumer, one- to four-family residential dwellings, an appraisal management company shall
- 7   compensate appraisers in compliance with section 129E(i) of the federal Truth in Lending Act
- 8   (15 U.S.C. § 1601 et seq.) and regulations promulgated thereunder. The Board shall adopt rules
- 9   necessary to enforce this subsection. Rules establishing customary and reasonable rates shall be
-10   based on objective third-party information, such as academic studies and independent private
-11   sector surveys."
-12              SECTION 2. This act becomes effective October 1, 2017.
-
-
-
-
-                                   *DRS15144-MM-92*
-
+A BILL TO BE ENTITLED
+AN ACT TO MODIFY THE LAW RELATED TO APPRAISAL ASSIGNMENTS.
+The General Assembly of North Carolina enacts:
+SECTION 1. G.S. 93E-2-4(i) reads as rewritten:
+"(i)   For appraisal assignments of property secured by the principal dwelling of the
+consumer, one- to four-family residential dwellings, an appraisal management company shall
+compensate appraisers in compliance with section 129E(i) of the federal Truth in Lending Act
+(15 U.S.C. § 1601 et seq.) and regulations promulgated thereunder. The Board shall adopt rules
+necessary to enforce this subsection. Rules establishing customary and reasonable rates shall be
+based on objective third-party information, such as academic studies and independent private
+sector surveys."
+SECTION 2. This act becomes effective October 1, 2017.

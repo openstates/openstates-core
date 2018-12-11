@@ -1,469 +1,427 @@
-                         GENERAL ASSEMBLY OF NORTH CAROLINA
-                                     SESSION 2017
-     H                                                                                               2
-                                         HOUSE BILL 701
-                                Committee Substitute Favorable 4/24/17
-
-     Short Title:   OLB Uniform Discipline and Increase Oversight.                             (Public)
-     Sponsors:
-     Referred to:
-                                              April 11, 2017
-
- 1                                       A BILL TO BE ENTITLED
- 2   AN ACT TO REQUIRE OCCUPATIONAL LICENSING BOARDS TO ADOPT RULES
- 3       GOVERNING HEARINGS IN ORDER TO EXERCISE THE POWER TO SUMMARILY
- 4       SUSPEND LICENSES AND TO INCREASE OVERSIGHT OF OCCUPATIONAL
- 5       LICENSING BOARDS.
- 6   The General Assembly of North Carolina enacts:
- 7               SECTION 1. G.S. 150B-3 reads as rewritten:
- 8   "§ 150B-3. Special provisions on licensing.
- 9       …
-10       (c)     If the agency finds that the public health, safety, or welfare requires emergency
-11   action and incorporates this finding in its order, summary suspension of a license or
-12   occupational license may be ordered effective on the date specified in the order or on service of
-13   the certified copy of the order at the last known address of the licensee, whichever is later, and
-14   effective during the proceedings. The proceedings shall be promptly commenced and
-15   determined. An occupational licensing board, as defined in Chapter 93B of the General
-16   Statutes, shall not summarily suspend an occupational license unless the occupational licensing
-17   board has first adopted rules governing the conduct of its hearings in accordance with
-18   G.S. 150B-38(h).
-19       Nothing in this subsection shall be construed as amending or repealing any special statutes,
-20   in effect prior to February 1, 1976, which provide for the summary suspension of a license.
-21       …."
-22               SECTION 2. G.S. 93B-1 reads as rewritten:
-23   "§ 93B-1. Definitions.Definitions; list of occupational licensing boards.
-24       (a)     As used in this Chapter:Chapter, the following definitions apply:
-25               (1)     "License" means any license (other than a privilege license),License. – Any
-26                       license, other than a privilege license, certificate, or other evidence of
-27                       qualification which an individual is required to obtain before he or she may
-28                       engage in or represent himself or herself to be a member of a particular
-29                       profession or occupation.
-30               (2)     "Occupational licensing board" means anyOccupational licensing board. –
-31                       Any board, committee, commission, or other agency in North Carolina
-32                       which receives no General Fund revenue and is established for the primary
-33                       purpose of regulating the entry of persons into, and/or the conduct of persons
-34                       within, a particular profession or occupation, and which is authorized to
-35                       issue licenses; "occupational licensing board" does not include State
-36                       agencies, staffed by full-time State employees, which as a part of their
-
-
-                                          *H701-v-2*
-     General Assembly Of North Carolina                                                   Session 2017
- 1                       regular functions may issue licenses.given statutory authority to do all of the
- 2                       following:
- 3                       a.      Determine minimum qualifications required for licensure for a
- 4                               particular profession or occupation.
- 5                       b.      Issue licenses to qualified applicants.
- 6                       c.      Regulate the conduct of licensees within a particular profession or
- 7                               occupation.
- 8                       d.      Seek injunctive relief to prohibit unlicensed individuals or entities
- 9                               from engaging in certain activities as defined by statute.
-10                       e.      Collect fees to support agency operations.
-11       (b)     Occupational licensing boards include only those boards specifically identified in
-12   this subsection. No additional boards or commissions shall be added to this list without first
-13   having been approved by the Joint Legislative Administrative Procedure Oversight Committee
-14   of the General Assembly as being necessary in that the profession subject to licensure affects
-15   the health, safety, or welfare of the public and that mandatory licensure is necessary to ensure
-16   minimum standards of competency so as to protect the public from unqualified persons or
-17   unprofessional conduct by persons or entities practicing in the profession. Occupational
-18   licensing boards shall include only the following:
-19               (1)     Acupuncture Licensing Board.
-20               (2)     Alarm Systems Licensing Board.
-21               (3)     Board of Examiners for Speech and Language Pathologists and
-22                       Audiologists.
-23               (4)     Midwifery Joint Subcommittee.
-24               (5)     North Carolina Appraisal Board.
-25               (6)     North Carolina Auctioneers Commission.
-26               (7)     North Carolina Board for Licensing of Geologists.
-27               (8)     North Carolina Board for Licensing of Soil Scientists.
-28               (9)     North Carolina Board of Architecture.
-29               (10) North Carolina Board of Athletic Trainer Examiners.
-30               (11) North Carolina Board of Cosmetic Art Examiners.
-31               (12) North Carolina Board of Dietetics/Nutrition.
-32               (13) North Carolina Board of Electrolysis Examiners.
-33               (14) North Carolina Board of Funeral Service.
-34               (15) North Carolina Board of Landscape Architects.
-35               (16) North Carolina Board of Licensed Professional Counselors.
-36               (17) North Carolina Board of Massage and Bodywork Therapy.
-37               (18) North Carolina Board of Nursing.
-38               (19) North Carolina Board of Occupational Therapy.
-39               (20) North Carolina Board of Pharmacy.
-40               (21) North Carolina Board of Physical Therapy Examiners.
-41               (22) North Carolina Board of Podiatry Examiners.
-42               (23) North Carolina Board of Recreational Therapy Licensure.
-43               (24) North Carolina Cemetery Commission.
-44               (25) North Carolina Criminal Justice Education and Training Standards
-45                       Commission.
-46               (26) North Carolina Home Inspector Licensure Board.
-47               (27) North Carolina Interpreter and Transliterator Licensing Board.
-48               (28) North Carolina Irrigation Contractors' Licensing Board.
-49               (29) North Carolina Landscape Contractors' Licensing Board.
-50               (30) North Carolina Locksmith Licensing Board.
-51               (31) North Carolina Marriage and Family Therapy Licensure Board.
-
-     Page 2                                                            House Bill 701-Second Edition
-     General Assembly Of North Carolina                                               Session 2017
- 1              (32)    North Carolina Medical Board.
- 2              (33)    North Carolina On-Site Wastewater Contractors and Inspectors Certification
- 3                      Board.
- 4              (34) North Carolina Psychology Board.
- 5              (35) North Carolina Real Estate Commission.
- 6              (36) North Carolina Respiratory Care Board.
- 7              (37) North Carolina Social Work Certification and Licensure Board.
- 8              (38) North Carolina State Board of Dental Examiners.
- 9              (39) North Carolina State Board of Examiners for Engineers and Surveyors.
-10              (40) North Carolina State Board of Examiners for Nursing Home Administrators.
-11              (41) North Carolina State Board of Examiners in Optometry.
-12              (42) North Carolina State Board of Examiners of Fee-Based Practicing Pastoral
-13                      Counselors.
-14              (43) North Carolina State Board of Opticians.
-15              (44) North Carolina State Hearing Aid Dealers and Fitters Board.
-16              (45) North Carolina State Licensing Board for General Contractors.
-17              (46) North Carolina Substance Abuse Professional Practice Board.
-18              (47) North Carolina Veterinary Medical Board.
-19              (48) Private Protective Services Board.
-20              (49) Public Librarian Certification Commission.
-21              (50) Sheriffs' Education and Training Standards Commission.
-22              (51) State Board of Barber Examiners.
-23              (52) State Board of Certified Public Accountant Examiners.
-24              (53) State Board of Chiropractic Examiners.
-25              (54) State Board of Environmental Health Specialist Examiners.
-26              (55) State Board of Examiners of Electrical Contractors.
-27              (56) State Board of Examiners of Plumbing, Heating, and Fire Sprinkler
-28                      Contractors.
-29              (57) State Board of Refrigeration Examiners.
-30              (58) State Board of Registration for Foresters."
-31              SECTION 3. G.S. 93B-2 reads as rewritten:
-32   "§ 93B-2. Annual reports required; contents; open to inspection; sanction for failure to
-33              report.
-34       (a)    No later than October 31 of each year, each occupational licensing board shall file
-35   electronically with the Secretary of State, the Attorney General, and the Joint Legislative
-36   Administrative Procedure Oversight Committee Committee, the Department of Commerce, the
-37   State Auditor, the Office of State Budget and Management, and the State Controller an annual
-38   report containing all of the following information:
-39              (1)     The address of the board, and the names of its members and officers.
-40              (1a) The total number of licensees supervised by the board.
-41              (2)     The number of persons who applied to the board for examination.
-42              (3)     The number who were refused examination.
-43              (4)     The number who took the examination.
-44              (5)     The number to whom initial licenses were issued.
-45              (5a) The number who failed the examination.
-46              (6)     The number who applied for license by reciprocity or comity.
-47              (7)     The number who were granted licenses by reciprocity or comity.
-48              (7a) The number of official complaints received involving licensed and
-49                      unlicensed activities.
-50              (7b) The number of disciplinary actions taken against licensees, or other actions
-51                      taken against nonlicensees, including injunctive relief.
-
-     House Bill 701-Second Edition                                                          Page 3
-     General Assembly Of North Carolina                                                    Session 2017
- 1              (8)      The number of licenses suspended or revoked.
- 2              (9)      The number of licenses terminated for any reason other than failure to pay
- 3                       the required renewal fee.
- 4               (10) The substance of any anticipated request by the occupational licensing board
- 5                       to the General Assembly to amend statutes related to the occupational
- 6                       licensing board.
- 7               (11) The substance of any anticipated change in rules adopted by the
- 8                       occupational licensing board or the substance of any anticipated adoption of
- 9                       new rules by the occupational licensing board.
-10               (12) A financial report that includes the source and amount of all funds credited
-11                       to the occupational licensing board and the purpose and amount of all funds
-12                       disbursed by the occupational licensing board during the previous fiscal
-13                       year.
-14               (13) The certification of a proper system of internal control and other financial
-15                       information as required by G.S. 143D-7.
-16               (14) A report of all civil penalties, civil forfeitures, and civil fines collected and
-17                       remitted to the Civil Penalty and Forfeiture Fund pursuant to
-18                       G.S. 115C-457.2.
-19               (15) The statute or rule authorizing each fee collected, the amount of the fee, the
-20                       date the fee was last changed, the number of times the fee was collected
-21                       during the prior reporting period, and the total receipts resulting from the fee
-22                       during the prior reporting period.
-23               (16) If the occupational licensing board has a budget of at least fifty thousand
-24                       dollars ($50,000), a financial audit of its operations.
-25       (b)     No later than October 31 of each year, each occupational licensing board shall file
-26   electronically with the Secretary of State, the Attorney General, the Office of State Budget and
-27   Management, and the Joint Legislative Administrative Procedure Oversight Committee a
-28   financial report that includes the source and amount of all funds credited to the occupational
-29   licensing board and the purpose and amount of all funds disbursed by the occupational
-30   licensing board during the previous fiscal year.
-31       (c)     The reports required by this section shall be open to public inspection.inspection
-32   and shall be posted on the Internet Web site of the occupational licensing board.
-33       (c1) Each occupational licensing board shall provide the Joint Legislative Administrative
-34   Procedure Oversight Committee with the name and contact information of the individual
-35   responsible for filing the reports required by this section. Each occupational licensing board
-36   shall keep this information current and notify the Committee within 30 days of any changes in
-37   this information.
-38       (d)     The Joint Legislative Administrative Procedure Oversight Committee shall review
-39   the reports submitted pursuant to this section and shall notify any board that fails to file the
-40   reports required by this section. Failure of a board to comply with the reporting requirements of
-41   this section by October 31 of each year shall result in a suspension of the board's authority to
-42   expend any funds until such time as the board files the required reports. Suspension of a board's
-43   authority to expend funds under this subsection shall not affect the board's duty to issue and
-44   renew licenses or the validity of any application or license for which fees have been tendered in
-45   accordance with law. Each board shall adopt rules establishing a procedure for implementing
-46   this subsection and shall maintain an escrow account into which any fees tendered during a
-47   board's period of suspension under this subsection shall be deposited."
-48               SECTION 4. G.S. 93B-4 reads as rewritten:
-49   "§ 93B-4. Audit of Occupational Licensing Boards; payment of costs.
-50       (a)     The State Auditor shall audit occupational licensing boards from time to time to
-51   ensure their proper operation. The books, records, and operations of each occupational
-
-     Page 4                                                             House Bill 701-Second Edition
-     General Assembly Of North Carolina                                                  Session 2017
- 1   licensing board shall be subject to the oversight of the State Auditor pursuant to Article 5A of
- 2   Chapter 147 of the General Statutes. In accordance with G.S. 147-64.7(b), the State Auditor
- 3   may contract with independent professionals to meet the requirements of this section.
- 4       (b)     Each occupational licensing board with a budget of at least fifty thousand dollars
- 5   ($50,000) shall conduct an annual financial audit of its operations and provide a copy to the
- 6   State Auditor."
- 7               SECTION 5. G.S. 93B-5 reads as rewritten:
- 8   "§ 93B-5. Compensation, employment, and training of board members.
- 9       (a)     Board Notwithstanding the provisions of G.S. 138-5, board members shall receive
-10   as compensation for their services per diem not to exceed one two hundred dollars ($100.00)
-11   ($200.00) for each day during which they are engaged in the official business of the board.
-12       ...
-13       (g)     Within six months of a board member's initial appointment to the board, and at least
-14   once within every two calendar years thereafter, a board member shall receive training, either
-15   from the board's staff, including its legal advisor, or from an outside educational institution
-16   such as the School of Government of the University of North Carolina, on the statutes
-17   governing the board and rules adopted by the board, as well as the following State and federal
-18   laws, in order to better understand the obligations and limitations of a State agency:
-19               (1)     Chapter 150B, The Administrative Procedure Act.
-20               (2)     Chapter 132, The Public Records Law.
-21               (3)     Article 33C of Chapter 143, The Open Meetings Act.
-22               (4)     Articles 31 and 31A of Chapter 143, The State Tort Claims Act and The
-23                       Defense of State Employees Law.
-24               (5)     Chapter 138A, The State Government Ethics Act.
-25               (6)     Chapter 120C, Lobbying.
-26               (7)     Antitrust law and State action immunity.
-27       Completion of the training requirements contained in Chapter 138A and Chapter 120C of
-28   the General Statutes satisfies the requirements of subdivisions (5) and (6) of this subsection."
-29               SECTION 6.(a) Chapter 93B of the General Statutes is amended by adding six
-30   new sections to read:
-31   "§ 93B-17. Occupational licensing board rule making.
-32       (a)     Each occupational licensing board shall adopt rules for the receipt and resolution of
-33   complaints, for taking disciplinary or enforcement actions against its licensees, and for taking
-34   enforcement actions against persons not licensed by the board. No occupational licensing board
-35   shall summarily suspend a license unless the licensing board has adopted rules governing the
-36   conduct of its hearings in accordance with G.S. 150B-38(h).
-37       (b)     Any interpretation, clarification, or other delineation of the scope of practice of an
-38   occupational licensing board shall be adopted as a rule.
-39   "§ 93B-18. Unlicensed activity.
-40       (a)     An occupational licensing board shall have the authority to investigate unlicensed
-41   activity and notify unlicensed persons and entities of the possible violation of the law and
-42   administrative rules and any civil action or criminal penalty that may be imposed by a court.
-43   The notification shall not indicate that the occupational licensing board has made any finding of
-44   a violation but may indicate the board's belief or opinion that a particular act may violate the
-45   board's enabling statutes, include factual information regarding legislation and court
-46   proceedings concerning the potential violation, and provide notice of the board's intention to
-47   pursue administrative remedies or court proceedings with regard to the potential violation.
-48       (b)     Any occupational licensing board providing notification to unlicensed persons and
-49   entities of a possible violation of the law and administrative rules and any civil action or
-50   criminal penalty that may be imposed by a court shall include the following statement in the
-51   notification:
-
-     House Bill 701-Second Edition                                                              Page 5
-     General Assembly Of North Carolina                                                    Session 2017
- 1                    You are hereby notified that the opinion expressed herein is not a legal
- 2                    determination. An occupational licensing board does not have the authority to
- 3                    order you to discontinue your current practices. Only a court may determine that
- 4                    you have violated or are violating any law and, if appropriate, impose a remedy
- 5                    or penalty for the violation. Further, pursuant to G.S. 150B-4, you may have the
- 6                    right, prior to initiation of any court action by the occupational licensing board,
- 7                    to request a declaratory ruling regarding whether your particular conduct is
- 8                    lawful. You are further notified that any right to a declaratory ruling
- 9                    supplements any other legal rights that you may already have to establish the
-10                    legality of your conduct with respect to the goods or services you offer or
-11                    provide.
-12   "§ 93B-19. Venue for court enforcement.
-13       The venue for occupational licensing boards seeking a court order for injunctive relief or to
-14   show cause for failure to comply with a subpoena lawfully issued by the occupational licensing
-15   board shall be in the superior court of the county where the defendant resides or in the county
-16   where the occupational licensing board has its principal place of business.
-17   "§ 93B-20. Injunctive relief.
-18       An occupational licensing board may appear in its own name in superior court in actions for
-19   injunctive relief to restrain the violation of the provisions of a statute administered by the board
-20   or a rule or order of the board. The superior court shall have the jurisdiction to grant these
-21   injunctions or restraining orders or take other appropriate action even if criminal prosecution
-22   has been or may be instituted as a result of the violations, or whether the person is a licensee of
-23   the board. No board shall issue such orders independently of the superior court unless
-24   specifically authorized to do so by law.
-25   "§ 93B-21. Jurisdictional disputes between boards.
-26       It is the policy of the State that jurisdictional disputes among occupational licensing boards
-27   shall be resolved through informal procedures. If a jurisdictional dispute among occupational
-28   licensing boards cannot be resolved through informal procedures, any affected board may
-29   commence an administrative proceeding to resolve the jurisdictional dispute by filing a petition
-30   with the Office of Administrative Hearings and serving the petition on all affected boards.
-31   Once the petition is filed and the required fee is paid, the dispute shall become a contested case
-32   and shall be conducted by the Office of Administrative Hearings under Articles 3 and 4 of
-33   Chapter 150B of the General Statutes.
-34   "§ 93B-22. Complaint process.
-35       Each occupational licensing board shall develop and implement a complaint process that
-36   provides for all of the following:
-37                (1)     A description of the complaint process on the board's Web site, including the
-38                        types of violations that are under the jurisdictional authority of the board.
-39                (2)     Electronic complaint submission via the board's Web site, including a
-40                        prominently displayed link to a complaint form.
-41                (3)     The ability to provide complainants with a written description of the final
-42                        disposition of each complaint."
-43                SECTION 6.(b) The complaint process provided for in G.S. 93B-22 shall be
-44   implemented and active on each board's Web site no later than January 1, 2018.
-45                SECTION 7. G.S. 115C-457.2 reads as rewritten:
-46   "§ 115C-457.2. Remittance of moneys to the Fund.
-47       The clear proceeds of all civil penalties, civil forfeitures, and civil fines that are collected
-48   by a State agency and that the General Assembly is authorized to place in a State fund pursuant
-49   to Article IX, Section 7(b) of the Constitution shall be remitted to the Office of State Budget
-50   and Management by the officer having custody of the funds within 10 days after the close of
-51   the calendar month in which the revenues were received or collected. Notwithstanding any
-
-     Page 6                                                             House Bill 701-Second Edition
-     General Assembly Of North Carolina                                                    Session 2017
- 1   other law, all such funds shall be deposited in the Civil Penalty and Forfeiture Fund. The clear
- 2   proceeds of these funds include the full amount of all civil penalties, civil forfeitures, and civil
- 3   fines collected under authority conferred by the State, diminished only by the actual costs of
- 4   collection, not to exceed twenty percent (20%) of the amount collected. The collection cost
- 5   percentage to be used by a State agency shall be established and approved by the Office of
- 6   State Budget and Management on an annual basis based upon the computation of actual
- 7   collection costs by each agency for the prior fiscal year. Occupational licensing boards as
- 8   defined in G.S. 93B-1 shall satisfy the annual reporting obligation imposed under this section
- 9   by including the information required in the occupational licensing board's annual report
-10   required pursuant to G.S. 93B-2."
-11               SECTION 8. G.S. 143C-9-4 reads as rewritten:
-12   "§ 143C-9-4. Biennial fee report.
-13       The Office of State Budget and Management shall prepare a report biennially on the fees
-14   charged by each State department, bureau, division, board, commission, institution, and agency
-15   during the previous two fiscal years. The report shall include the statutory or regulatory
-16   authority for each fee, the amount of the fee, when the amount of the fee was last changed, the
-17   number of times the fee was collected during the prior fiscal year, and the total receipts from
-18   the fee during the prior fiscal year. The Office of State Budget and Management shall obtain
-19   the information required under this section for occupational licensing boards as defined in
-20   G.S. 93B-1 from the annual report filed by each occupational licensing board pursuant to
-21   G.S. 93B-2."
-22               SECTION 9. G.S. 143D-7 reads as rewritten:
-23   "§ 143D-7. Agency management responsibilities.
-24       (a)     The management of each State agency bears full responsibility for establishing and
-25   maintaining a proper system of internal control within that agency. Each principal executive
-26   officer and each principal fiscal officer shall annually certify, in a manner prescribed by the
-27   State Controller, that the agency has in place a proper system of internal control. The State
-28   Controller shall develop policies and procedures to direct agencies in their evaluation.
-29       (b)     The management of each State agency also bears the responsibility periodically to
-30   submit accurate and complete financial information to the State Controller for compilation into
-31   North Carolina State government's various financial reports and other related financial
-32   information disseminated to the public. With the submission of such periodic reports to the
-33   State Controller, each agency's principal executive officer and each agency's principal fiscal
-34   officer shall certify, in a manner prescribed by the State Controller, to the accuracy and
-35   completeness of the financial information submitted.
-36       (c)     Occupational licensing boards as defined in G.S. 93B-1 shall satisfy the annual
-37   reporting obligation imposed under this section by including the information required in the
-38   occupational licensing board's annual report required pursuant to G.S. 93B-2."
-39               SECTION 10. G.S. 150B-38(a) reads as rewritten:
-40   "§ 150B-38. Scope; hearing required; notice; venue.
-41       (a)     The provisions of this Article shall apply to:
-42               (1)    Occupational licensing agencies.boards, as defined by G.S. 93B-1.
-43               (2)    The State Banking Commission, the Commissioner of Banks, and the Credit
-44                      Union Division of the Department of Commerce.
-45               (3)    The Department of Insurance and the Commissioner of Insurance.
-46               (4)    The State Chief Information Officer in the administration of the provisions
-47                      of Article 14 of Chapter 143B of the General Statutes.
-48               (5)    The North Carolina State Building Code Council.
-49               (6)    The State Board of Elections in the administration of any investigation or
-50                      audit under the provisions of Article 22A of Chapter 163 of the General
-51                      Statutes.
-
-     House Bill 701-Second Edition                                                                Page 7
-     General Assembly Of North Carolina                                                   Session 2017
- 1               (7)     The Securities Division of the Department of the Secretary of State."
- 2               SECTION 11. G.S. 150B-45 reads as rewritten:
- 3   "§ 150B-45. Procedure for seeking review; waiver.
- 4       (a)     Procedure. – To obtain judicial review of a final decision under this Article, the
- 5   person seeking review must file a petition within 30 days after the person is served with a
- 6   written copy of the decision. The petition must be filed as follows:
- 7               (1)     Contested tax cases. – A petition for review of a final decision in a contested
- 8                       tax case arising under G.S. 105-241.15 must be filed in the Superior Court of
- 9                       Wake County.
-10               (2)     Other final decisions. – A petition for review of any other final decision
-11                       under this Article must be filed in the superior court of the county where the
-12                       person aggrieved by the administrative decision resides, in the county where
-13                       the agency has its principal place of business, or in the case of a person
-14                       residing outside the State, in the county where the contested case which
-15                       resulted in the final decision was filed. If a petitioner files a petition in a
-16                       county other than as provided in this subdivision, the superior court may
-17                       order a change of venue pursuant to G.S. 1-83; provided, however, that
-18                       improper venue shall not be grounds for dismissal of the petition.
-19       (b)     Waiver. – A person who fails to file a petition within the required time waives the
-20   right to judicial review under this Article. For good cause shown, however, the superior court
-21   may accept an untimely petition."
-22               SECTION 12.           The Joint Legislative Administrative Procedure Oversight
-23   Committee shall continue to monitor and study the effects of the opinion in North Carolina
-24   State Board of Dental Examiners v. Federal Trade Commission and other issues related to the
-25   scope of practice jurisdiction of occupational licensing boards.
-26               SECTION 13.(a) G.S. 86A-3 reads as rewritten:
-27   "§ 86A-3. Qualifications for certificate as a registered barber.
-28       A certificate of registration as a registered barber shall be issued by the Board to any person
-29   who meets all of the following qualifications:
-30               (1)     Has attended an approved barber school for at least 1528 hours.
-31               (2)     Has completed a 12-month apprenticeship under the supervision of a
-32                       licensed barber, as provided in G.S. 86A-24.
-33               (3)     Has passed a clinical examination conducted by the Board.
-34               (4)     Has submitted to the Board the affidavit required by G.S. 86A-24(c)
-35                       certifying that the applicant has served the apprenticeship required by
-36                       subdivision (2).
-37               (5)     Has received a high school diploma or its equivalency or a high school
-38                       graduation equivalency certificate and provided documentation thereof to the
-39                       Board."
-40               SECTION 13.(b) G.S. 86A-22 reads as rewritten:
-41   "§ 86A-22. Licensing and regulating barber schools and colleges.
-42       The North Carolina State Board of Barber Examiners may approve barber schools or
-43   colleges in the State, and may prescribe rules and regulations for their operation. The Board
-44   shall adopt rules establishing criteria for barber schools and colleges to maintain their
-45   accreditation. No barber school or college shall be approved by the Board unless the school or
-46   college meets all of the following requirements:
-47               (1)     Each school shall provide a course of instruction of at least 1528 1,528
-48                       hours.
-49               (2)     Each school shall employ at least two instructors for the first 40 enrolled
-50                       students and employ at least one additional instructor for every additional 20
-51                       enrolled students. Schools that are organized as nonprofits and have obtained
-
-     Page 8                                                            House Bill 701-Second Edition
-     General Assembly Of North Carolina                                                  Session 2017
- 1                     a ruling from the Internal Revenue Service recognizing their tax-exempt
- 2                     status shall have at least one instructor for every 20 enrolled students. No
- 3                     school, whether for profit or nonprofit, shall provide practical training and
- 4                     theoretical training simultaneously unless at least two instructors are present.
- 5              (2a)   Each student shall have received a high school diploma or its equivalency or
- 6                     a high school graduation equivalency certificate and provided documentation
- 7                     thereof to the Board and the school.
- 8              (3)    An application for a student's permit, on a form prescribed by the Board,
- 9                     must be filed with the Board before the student enters school. No student
-10                     may enroll without having obtained a student's permit.
-11              ...."
-12              SECTION 14. G.S. 143B-68 reads as rewritten:
-13   "§ 143B-68. Public Librarian Certification Commission – members; selection; quorum;
-14              compensation.
-15       The Public Librarian Certification Commission of the Department of Natural and Cultural
-16   Resources shall consist of five members as follows: (i) the chairman of the North Carolina
-17   Association of Library Trustees, (ii) the chairman of the public libraries section of the North
-18   Carolina Library Association, (iii) an individual (ii) two individuals named by the Governor
-19   upon the nomination of the North Carolina Library Association, (iv)(iii) the dean of a State or
-20   regionally accredited graduate school of librarianship in North Carolina appointed by the
-21   Governor Governor, and (v)(iv) one member at large appointed by the Governor.
-22       The members shall serve four-year terms or while holding the appropriate chairmanships.
-23   Any appointment to fill a vacancy created by the resignation, dismissal, death or disability of a
-24   member shall be for the balance of the unexpired term.
-25       The Governor shall have the power to remove any member of the Commission from office
-26   for misfeasance, malfeasance, and nonfeasance according to the provisions of G.S. 143B-13 of
-27   the Executive Organization Act of 1973.
-28       The members of the Commission shall receive per diem, and necessary travel expenses in
-29   accordance with the provisions of G.S. 138-5.
-30       A majority of the Commission shall constitute a quorum for the transaction of business.
-31       All clerical and other services required by the Commission shall be supplied by the
-32   Secretary of the Department through the regular staff of the Department."
-33              SECTION 15. Except as otherwise provided, the act is effective when it becomes
-34   law and applies to licensing board actions occurring on or after that date.
-
-
-
-
-     House Bill 701-Second Edition                                                              Page 9
-
+A BILL TO BE ENTITLED
+AN ACT TO REQUIRE OCCUPATIONAL LICENSING BOARDS TO ADOPT RULES
+GOVERNING HEARINGS IN ORDER TO EXERCISE THE POWER TO SUMMARILY
+SUSPEND LICENSES AND TO INCREASE OVERSIGHT OF OCCUPATIONAL
+LICENSING BOARDS.
+The General Assembly of North Carolina enacts:
+SECTION 1. G.S. 150B-3 reads as rewritten:
+"§ 150B-3. Special provisions on licensing.
+…
+(c)     If the agency finds that the public health, safety, or welfare requires emergency
+action and incorporates this finding in its order, summary suspension of a license or
+occupational license may be ordered effective on the date specified in the order or on service of
+the certified copy of the order at the last known address of the licensee, whichever is later, and
+effective during the proceedings. The proceedings shall be promptly commenced and
+determined. An occupational licensing board, as defined in Chapter 93B of the General
+Statutes, shall not summarily suspend an occupational license unless the occupational licensing
+board has first adopted rules governing the conduct of its hearings in accordance with
+G.S. 150B-38(h).
+Nothing in this subsection shall be construed as amending or repealing any special statutes,
+in effect prior to February 1, 1976, which provide for the summary suspension of a license.
+…."
+SECTION 2. G.S. 93B-1 reads as rewritten:
+"§ 93B-1. Definitions.Definitions; list of occupational licensing boards.
+(a)     As used in this Chapter:Chapter, the following definitions apply:
+(1)     "License" means any license (other than a privilege license),License. – Any
+license, other than a privilege license, certificate, or other evidence of
+qualification which an individual is required to obtain before he or she may
+engage in or represent himself or herself to be a member of a particular
+profession or occupation.
+(2)     "Occupational licensing board" means anyOccupational licensing board. –
+Any board, committee, commission, or other agency in North Carolina
+which receives no General Fund revenue and is established for the primary
+purpose of regulating the entry of persons into, and/or the conduct of persons
+within, a particular profession or occupation, and which is authorized to
+issue licenses; "occupational licensing board" does not include State
+agencies, staffed by full-time State employees, which as a part of their
+regular functions may issue licenses.given statutory authority to do all of the
+following:
+a.      Determine minimum qualifications required for licensure for a
+particular profession or occupation.
+b.      Issue licenses to qualified applicants.
+c.      Regulate the conduct of licensees within a particular profession or
+occupation.
+d.      Seek injunctive relief to prohibit unlicensed individuals or entities
+from engaging in certain activities as defined by statute.
+e.      Collect fees to support agency operations.
+(b)     Occupational licensing boards include only those boards specifically identified in
+this subsection. No additional boards or commissions shall be added to this list without first
+having been approved by the Joint Legislative Administrative Procedure Oversight Committee
+of the General Assembly as being necessary in that the profession subject to licensure affects
+the health, safety, or welfare of the public and that mandatory licensure is necessary to ensure
+minimum standards of competency so as to protect the public from unqualified persons or
+unprofessional conduct by persons or entities practicing in the profession. Occupational
+licensing boards shall include only the following:
+(1)     Acupuncture Licensing Board.
+(2)     Alarm Systems Licensing Board.
+(3)     Board of Examiners for Speech and Language Pathologists and
+Audiologists.
+(4)     Midwifery Joint Subcommittee.
+(5)     North Carolina Appraisal Board.
+(6)     North Carolina Auctioneers Commission.
+(7)     North Carolina Board for Licensing of Geologists.
+(8)     North Carolina Board for Licensing of Soil Scientists.
+(9)     North Carolina Board of Architecture.
+(10) North Carolina Board of Athletic Trainer Examiners.
+(11) North Carolina Board of Cosmetic Art Examiners.
+(12) North Carolina Board of Dietetics/Nutrition.
+(13) North Carolina Board of Electrolysis Examiners.
+(14) North Carolina Board of Funeral Service.
+(15) North Carolina Board of Landscape Architects.
+(16) North Carolina Board of Licensed Professional Counselors.
+(17) North Carolina Board of Massage and Bodywork Therapy.
+(18) North Carolina Board of Nursing.
+(19) North Carolina Board of Occupational Therapy.
+(20) North Carolina Board of Pharmacy.
+(21) North Carolina Board of Physical Therapy Examiners.
+(22) North Carolina Board of Podiatry Examiners.
+(23) North Carolina Board of Recreational Therapy Licensure.
+(24) North Carolina Cemetery Commission.
+(25) North Carolina Criminal Justice Education and Training Standards
+Commission.
+(26) North Carolina Home Inspector Licensure Board.
+(27) North Carolina Interpreter and Transliterator Licensing Board.
+(28) North Carolina Irrigation Contractors' Licensing Board.
+(29) North Carolina Landscape Contractors' Licensing Board.
+(30) North Carolina Locksmith Licensing Board.
+(31) North Carolina Marriage and Family Therapy Licensure Board.
+(32)    North Carolina Medical Board.
+(33)    North Carolina On-Site Wastewater Contractors and Inspectors Certification
+Board.
+(34) North Carolina Psychology Board.
+(35) North Carolina Real Estate Commission.
+(36) North Carolina Respiratory Care Board.
+(37) North Carolina Social Work Certification and Licensure Board.
+(38) North Carolina State Board of Dental Examiners.
+(39) North Carolina State Board of Examiners for Engineers and Surveyors.
+(40) North Carolina State Board of Examiners for Nursing Home Administrators.
+(41) North Carolina State Board of Examiners in Optometry.
+(42) North Carolina State Board of Examiners of Fee-Based Practicing Pastoral
+Counselors.
+(43) North Carolina State Board of Opticians.
+(44) North Carolina State Hearing Aid Dealers and Fitters Board.
+(45) North Carolina State Licensing Board for General Contractors.
+(46) North Carolina Substance Abuse Professional Practice Board.
+(47) North Carolina Veterinary Medical Board.
+(48) Private Protective Services Board.
+(49) Public Librarian Certification Commission.
+(50) Sheriffs' Education and Training Standards Commission.
+(51) State Board of Barber Examiners.
+(52) State Board of Certified Public Accountant Examiners.
+(53) State Board of Chiropractic Examiners.
+(54) State Board of Environmental Health Specialist Examiners.
+(55) State Board of Examiners of Electrical Contractors.
+(56) State Board of Examiners of Plumbing, Heating, and Fire Sprinkler
+Contractors.
+(57) State Board of Refrigeration Examiners.
+(58) State Board of Registration for Foresters."
+SECTION 3. G.S. 93B-2 reads as rewritten:
+"§ 93B-2. Annual reports required; contents; open to inspection; sanction for failure to
+report.
+(a)    No later than October 31 of each year, each occupational licensing board shall file
+electronically with the Secretary of State, the Attorney General, and the Joint Legislative
+Administrative Procedure Oversight Committee Committee, the Department of Commerce, the
+State Auditor, the Office of State Budget and Management, and the State Controller an annual
+report containing all of the following information:
+(1)     The address of the board, and the names of its members and officers.
+(1a) The total number of licensees supervised by the board.
+(2)     The number of persons who applied to the board for examination.
+(3)     The number who were refused examination.
+(4)     The number who took the examination.
+(5)     The number to whom initial licenses were issued.
+(5a) The number who failed the examination.
+(6)     The number who applied for license by reciprocity or comity.
+(7)     The number who were granted licenses by reciprocity or comity.
+(7a) The number of official complaints received involving licensed and
+unlicensed activities.
+(7b) The number of disciplinary actions taken against licensees, or other actions
+taken against nonlicensees, including injunctive relief.
+(8)      The number of licenses suspended or revoked.
+(9)      The number of licenses terminated for any reason other than failure to pay
+the required renewal fee.
+(10) The substance of any anticipated request by the occupational licensing board
+to the General Assembly to amend statutes related to the occupational
+licensing board.
+(11) The substance of any anticipated change in rules adopted by the
+occupational licensing board or the substance of any anticipated adoption of
+new rules by the occupational licensing board.
+(12) A financial report that includes the source and amount of all funds credited
+to the occupational licensing board and the purpose and amount of all funds
+disbursed by the occupational licensing board during the previous fiscal
+year.
+(13) The certification of a proper system of internal control and other financial
+information as required by G.S. 143D-7.
+(14) A report of all civil penalties, civil forfeitures, and civil fines collected and
+remitted to the Civil Penalty and Forfeiture Fund pursuant to
+G.S. 115C-457.2.
+(15) The statute or rule authorizing each fee collected, the amount of the fee, the
+date the fee was last changed, the number of times the fee was collected
+during the prior reporting period, and the total receipts resulting from the fee
+during the prior reporting period.
+(16) If the occupational licensing board has a budget of at least fifty thousand
+dollars ($50,000), a financial audit of its operations.
+(b)     No later than October 31 of each year, each occupational licensing board shall file
+electronically with the Secretary of State, the Attorney General, the Office of State Budget and
+Management, and the Joint Legislative Administrative Procedure Oversight Committee a
+financial report that includes the source and amount of all funds credited to the occupational
+licensing board and the purpose and amount of all funds disbursed by the occupational
+licensing board during the previous fiscal year.
+(c)     The reports required by this section shall be open to public inspection.inspection
+and shall be posted on the Internet Web site of the occupational licensing board.
+(c1) Each occupational licensing board shall provide the Joint Legislative Administrative
+Procedure Oversight Committee with the name and contact information of the individual
+responsible for filing the reports required by this section. Each occupational licensing board
+shall keep this information current and notify the Committee within 30 days of any changes in
+this information.
+(d)     The Joint Legislative Administrative Procedure Oversight Committee shall review
+the reports submitted pursuant to this section and shall notify any board that fails to file the
+reports required by this section. Failure of a board to comply with the reporting requirements of
+this section by October 31 of each year shall result in a suspension of the board's authority to
+expend any funds until such time as the board files the required reports. Suspension of a board's
+authority to expend funds under this subsection shall not affect the board's duty to issue and
+renew licenses or the validity of any application or license for which fees have been tendered in
+accordance with law. Each board shall adopt rules establishing a procedure for implementing
+this subsection and shall maintain an escrow account into which any fees tendered during a
+board's period of suspension under this subsection shall be deposited."
+SECTION 4. G.S. 93B-4 reads as rewritten:
+"§ 93B-4. Audit of Occupational Licensing Boards; payment of costs.
+(a)     The State Auditor shall audit occupational licensing boards from time to time to
+ensure their proper operation. The books, records, and operations of each occupational
+licensing board shall be subject to the oversight of the State Auditor pursuant to Article 5A of
+Chapter 147 of the General Statutes. In accordance with G.S. 147-64.7(b), the State Auditor
+may contract with independent professionals to meet the requirements of this section.
+(b)     Each occupational licensing board with a budget of at least fifty thousand dollars
+($50,000) shall conduct an annual financial audit of its operations and provide a copy to the
+State Auditor."
+SECTION 5. G.S. 93B-5 reads as rewritten:
+"§ 93B-5. Compensation, employment, and training of board members.
+(a)     Board Notwithstanding the provisions of G.S. 138-5, board members shall receive
+as compensation for their services per diem not to exceed one two hundred dollars ($100.00)
+($200.00) for each day during which they are engaged in the official business of the board.
+...
+(g)     Within six months of a board member's initial appointment to the board, and at least
+once within every two calendar years thereafter, a board member shall receive training, either
+from the board's staff, including its legal advisor, or from an outside educational institution
+such as the School of Government of the University of North Carolina, on the statutes
+governing the board and rules adopted by the board, as well as the following State and federal
+laws, in order to better understand the obligations and limitations of a State agency:
+(1)     Chapter 150B, The Administrative Procedure Act.
+(2)     Chapter 132, The Public Records Law.
+(3)     Article 33C of Chapter 143, The Open Meetings Act.
+(4)     Articles 31 and 31A of Chapter 143, The State Tort Claims Act and The
+Defense of State Employees Law.
+(5)     Chapter 138A, The State Government Ethics Act.
+(6)     Chapter 120C, Lobbying.
+(7)     Antitrust law and State action immunity.
+Completion of the training requirements contained in Chapter 138A and Chapter 120C of
+the General Statutes satisfies the requirements of subdivisions (5) and (6) of this subsection."
+SECTION 6.(a) Chapter 93B of the General Statutes is amended by adding six
+new sections to read:
+"§ 93B-17. Occupational licensing board rule making.
+(a)     Each occupational licensing board shall adopt rules for the receipt and resolution of
+complaints, for taking disciplinary or enforcement actions against its licensees, and for taking
+enforcement actions against persons not licensed by the board. No occupational licensing board
+shall summarily suspend a license unless the licensing board has adopted rules governing the
+conduct of its hearings in accordance with G.S. 150B-38(h).
+(b)     Any interpretation, clarification, or other delineation of the scope of practice of an
+occupational licensing board shall be adopted as a rule.
+"§ 93B-18. Unlicensed activity.
+(a)     An occupational licensing board shall have the authority to investigate unlicensed
+activity and notify unlicensed persons and entities of the possible violation of the law and
+administrative rules and any civil action or criminal penalty that may be imposed by a court.
+The notification shall not indicate that the occupational licensing board has made any finding of
+a violation but may indicate the board's belief or opinion that a particular act may violate the
+board's enabling statutes, include factual information regarding legislation and court
+proceedings concerning the potential violation, and provide notice of the board's intention to
+pursue administrative remedies or court proceedings with regard to the potential violation.
+(b)     Any occupational licensing board providing notification to unlicensed persons and
+entities of a possible violation of the law and administrative rules and any civil action or
+criminal penalty that may be imposed by a court shall include the following statement in the
+notification:
+You are hereby notified that the opinion expressed herein is not a legal
+determination. An occupational licensing board does not have the authority to
+order you to discontinue your current practices. Only a court may determine that
+you have violated or are violating any law and, if appropriate, impose a remedy
+or penalty for the violation. Further, pursuant to G.S. 150B-4, you may have the
+right, prior to initiation of any court action by the occupational licensing board,
+to request a declaratory ruling regarding whether your particular conduct is
+lawful. You are further notified that any right to a declaratory ruling
+supplements any other legal rights that you may already have to establish the
+legality of your conduct with respect to the goods or services you offer or
+provide.
+"§ 93B-19. Venue for court enforcement.
+The venue for occupational licensing boards seeking a court order for injunctive relief or to
+show cause for failure to comply with a subpoena lawfully issued by the occupational licensing
+board shall be in the superior court of the county where the defendant resides or in the county
+where the occupational licensing board has its principal place of business.
+"§ 93B-20. Injunctive relief.
+An occupational licensing board may appear in its own name in superior court in actions for
+injunctive relief to restrain the violation of the provisions of a statute administered by the board
+or a rule or order of the board. The superior court shall have the jurisdiction to grant these
+injunctions or restraining orders or take other appropriate action even if criminal prosecution
+has been or may be instituted as a result of the violations, or whether the person is a licensee of
+the board. No board shall issue such orders independently of the superior court unless
+specifically authorized to do so by law.
+"§ 93B-21. Jurisdictional disputes between boards.
+It is the policy of the State that jurisdictional disputes among occupational licensing boards
+shall be resolved through informal procedures. If a jurisdictional dispute among occupational
+licensing boards cannot be resolved through informal procedures, any affected board may
+commence an administrative proceeding to resolve the jurisdictional dispute by filing a petition
+with the Office of Administrative Hearings and serving the petition on all affected boards.
+Once the petition is filed and the required fee is paid, the dispute shall become a contested case
+and shall be conducted by the Office of Administrative Hearings under Articles 3 and 4 of
+Chapter 150B of the General Statutes.
+"§ 93B-22. Complaint process.
+Each occupational licensing board shall develop and implement a complaint process that
+provides for all of the following:
+(1)     A description of the complaint process on the board's Web site, including the
+types of violations that are under the jurisdictional authority of the board.
+(2)     Electronic complaint submission via the board's Web site, including a
+prominently displayed link to a complaint form.
+(3)     The ability to provide complainants with a written description of the final
+disposition of each complaint."
+SECTION 6.(b) The complaint process provided for in G.S. 93B-22 shall be
+implemented and active on each board's Web site no later than January 1, 2018.
+SECTION 7. G.S. 115C-457.2 reads as rewritten:
+"§ 115C-457.2. Remittance of moneys to the Fund.
+The clear proceeds of all civil penalties, civil forfeitures, and civil fines that are collected
+by a State agency and that the General Assembly is authorized to place in a State fund pursuant
+to Article IX, Section 7(b) of the Constitution shall be remitted to the Office of State Budget
+and Management by the officer having custody of the funds within 10 days after the close of
+the calendar month in which the revenues were received or collected. Notwithstanding any
+other law, all such funds shall be deposited in the Civil Penalty and Forfeiture Fund. The clear
+proceeds of these funds include the full amount of all civil penalties, civil forfeitures, and civil
+fines collected under authority conferred by the State, diminished only by the actual costs of
+collection, not to exceed twenty percent (20%) of the amount collected. The collection cost
+percentage to be used by a State agency shall be established and approved by the Office of
+State Budget and Management on an annual basis based upon the computation of actual
+collection costs by each agency for the prior fiscal year. Occupational licensing boards as
+defined in G.S. 93B-1 shall satisfy the annual reporting obligation imposed under this section
+by including the information required in the occupational licensing board's annual report
+required pursuant to G.S. 93B-2."
+SECTION 8. G.S. 143C-9-4 reads as rewritten:
+"§ 143C-9-4. Biennial fee report.
+The Office of State Budget and Management shall prepare a report biennially on the fees
+charged by each State department, bureau, division, board, commission, institution, and agency
+during the previous two fiscal years. The report shall include the statutory or regulatory
+authority for each fee, the amount of the fee, when the amount of the fee was last changed, the
+number of times the fee was collected during the prior fiscal year, and the total receipts from
+the fee during the prior fiscal year. The Office of State Budget and Management shall obtain
+the information required under this section for occupational licensing boards as defined in
+G.S. 93B-1 from the annual report filed by each occupational licensing board pursuant to
+G.S. 93B-2."
+SECTION 9. G.S. 143D-7 reads as rewritten:
+"§ 143D-7. Agency management responsibilities.
+(a)     The management of each State agency bears full responsibility for establishing and
+maintaining a proper system of internal control within that agency. Each principal executive
+officer and each principal fiscal officer shall annually certify, in a manner prescribed by the
+State Controller, that the agency has in place a proper system of internal control. The State
+Controller shall develop policies and procedures to direct agencies in their evaluation.
+(b)     The management of each State agency also bears the responsibility periodically to
+submit accurate and complete financial information to the State Controller for compilation into
+North Carolina State government's various financial reports and other related financial
+information disseminated to the public. With the submission of such periodic reports to the
+State Controller, each agency's principal executive officer and each agency's principal fiscal
+officer shall certify, in a manner prescribed by the State Controller, to the accuracy and
+completeness of the financial information submitted.
+(c)     Occupational licensing boards as defined in G.S. 93B-1 shall satisfy the annual
+reporting obligation imposed under this section by including the information required in the
+occupational licensing board's annual report required pursuant to G.S. 93B-2."
+SECTION 10. G.S. 150B-38(a) reads as rewritten:
+"§ 150B-38. Scope; hearing required; notice; venue.
+(a)     The provisions of this Article shall apply to:
+(1)    Occupational licensing agencies.boards, as defined by G.S. 93B-1.
+(2)    The State Banking Commission, the Commissioner of Banks, and the Credit
+Union Division of the Department of Commerce.
+(3)    The Department of Insurance and the Commissioner of Insurance.
+(4)    The State Chief Information Officer in the administration of the provisions
+of Article 14 of Chapter 143B of the General Statutes.
+(5)    The North Carolina State Building Code Council.
+(6)    The State Board of Elections in the administration of any investigation or
+audit under the provisions of Article 22A of Chapter 163 of the General
+Statutes.
+(7)     The Securities Division of the Department of the Secretary of State."
+SECTION 11. G.S. 150B-45 reads as rewritten:
+"§ 150B-45. Procedure for seeking review; waiver.
+(a)     Procedure. – To obtain judicial review of a final decision under this Article, the
+person seeking review must file a petition within 30 days after the person is served with a
+written copy of the decision. The petition must be filed as follows:
+(1)     Contested tax cases. – A petition for review of a final decision in a contested
+tax case arising under G.S. 105-241.15 must be filed in the Superior Court of
+Wake County.
+(2)     Other final decisions. – A petition for review of any other final decision
+under this Article must be filed in the superior court of the county where the
+person aggrieved by the administrative decision resides, in the county where
+the agency has its principal place of business, or in the case of a person
+residing outside the State, in the county where the contested case which
+resulted in the final decision was filed. If a petitioner files a petition in a
+county other than as provided in this subdivision, the superior court may
+order a change of venue pursuant to G.S. 1-83; provided, however, that
+improper venue shall not be grounds for dismissal of the petition.
+(b)     Waiver. – A person who fails to file a petition within the required time waives the
+right to judicial review under this Article. For good cause shown, however, the superior court
+may accept an untimely petition."
+SECTION 12.           The Joint Legislative Administrative Procedure Oversight
+Committee shall continue to monitor and study the effects of the opinion in North Carolina
+State Board of Dental Examiners v. Federal Trade Commission and other issues related to the
+scope of practice jurisdiction of occupational licensing boards.
+SECTION 13.(a) G.S. 86A-3 reads as rewritten:
+"§ 86A-3. Qualifications for certificate as a registered barber.
+A certificate of registration as a registered barber shall be issued by the Board to any person
+who meets all of the following qualifications:
+(1)     Has attended an approved barber school for at least 1528 hours.
+(2)     Has completed a 12-month apprenticeship under the supervision of a
+licensed barber, as provided in G.S. 86A-24.
+(3)     Has passed a clinical examination conducted by the Board.
+(4)     Has submitted to the Board the affidavit required by G.S. 86A-24(c)
+certifying that the applicant has served the apprenticeship required by
+subdivision (2).
+(5)     Has received a high school diploma or its equivalency or a high school
+graduation equivalency certificate and provided documentation thereof to the
+Board."
+SECTION 13.(b) G.S. 86A-22 reads as rewritten:
+"§ 86A-22. Licensing and regulating barber schools and colleges.
+The North Carolina State Board of Barber Examiners may approve barber schools or
+colleges in the State, and may prescribe rules and regulations for their operation. The Board
+shall adopt rules establishing criteria for barber schools and colleges to maintain their
+accreditation. No barber school or college shall be approved by the Board unless the school or
+college meets all of the following requirements:
+(1)     Each school shall provide a course of instruction of at least 1528 1,528
+hours.
+(2)     Each school shall employ at least two instructors for the first 40 enrolled
+students and employ at least one additional instructor for every additional 20
+enrolled students. Schools that are organized as nonprofits and have obtained
+a ruling from the Internal Revenue Service recognizing their tax-exempt
+status shall have at least one instructor for every 20 enrolled students. No
+school, whether for profit or nonprofit, shall provide practical training and
+theoretical training simultaneously unless at least two instructors are present.
+(2a)   Each student shall have received a high school diploma or its equivalency or
+a high school graduation equivalency certificate and provided documentation
+thereof to the Board and the school.
+(3)    An application for a student's permit, on a form prescribed by the Board,
+must be filed with the Board before the student enters school. No student
+may enroll without having obtained a student's permit.
+...."
+SECTION 14. G.S. 143B-68 reads as rewritten:
+"§ 143B-68. Public Librarian Certification Commission – members; selection; quorum;
+compensation.
+The Public Librarian Certification Commission of the Department of Natural and Cultural
+Resources shall consist of five members as follows: (i) the chairman of the North Carolina
+Association of Library Trustees, (ii) the chairman of the public libraries section of the North
+Carolina Library Association, (iii) an individual (ii) two individuals named by the Governor
+upon the nomination of the North Carolina Library Association, (iv)(iii) the dean of a State or
+regionally accredited graduate school of librarianship in North Carolina appointed by the
+Governor Governor, and (v)(iv) one member at large appointed by the Governor.
+The members shall serve four-year terms or while holding the appropriate chairmanships.
+Any appointment to fill a vacancy created by the resignation, dismissal, death or disability of a
+member shall be for the balance of the unexpired term.
+The Governor shall have the power to remove any member of the Commission from office
+for misfeasance, malfeasance, and nonfeasance according to the provisions of G.S. 143B-13 of
+the Executive Organization Act of 1973.
+The members of the Commission shall receive per diem, and necessary travel expenses in
+accordance with the provisions of G.S. 138-5.
+A majority of the Commission shall constitute a quorum for the transaction of business.
+All clerical and other services required by the Commission shall be supplied by the
+Secretary of the Department through the regular staff of the Department."
+SECTION 15. Except as otherwise provided, the act is effective when it becomes
+law and applies to licensing board actions occurring on or after that date.

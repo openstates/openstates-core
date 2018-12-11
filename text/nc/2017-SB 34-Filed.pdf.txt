@@ -1,47 +1,25 @@
-                                                                                    FILED SENATE
-                                                                                      Feb 7, 2017
-                          GENERAL ASSEMBLY OF NORTH CAROLINA
-                                                                                        S.B. 34
-                                      SESSION 2017
-                                                                                 PRINCIPAL CLERK
-     S                                                                                       D
-                             SENATE BILL DRS55005-ML-22F* (12/15)
-
-
-
-     Short Title:   Eminent Domain Const. Amendment.                                        (Public)
-     Sponsors:      Senator B. Jackson (Primary Sponsor).
-     Referred to:
-
-
- 1                                        A BILL TO BE ENTITLED
- 2   AN ACT TO AMEND THE NORTH CAROLINA CONSTITUTION TO PROHIBIT
- 3       CONDEMNATION OF PRIVATE PROPERTY EXCEPT FOR A PUBLIC USE AND TO
- 4       PROVIDE FOR THE PAYMENT OF JUST COMPENSATION WITH THE RIGHT OF
- 5       TRIAL BY JURY IN ALL CONDEMNATION CASES.
- 6   The General Assembly of North Carolina enacts:
- 7               SECTION 1. Article I of the North Carolina Constitution is amended by adding a new
- 8   section to read:
- 9   "Sec. 38. Eminent domain.
-10       Private property shall not be taken by eminent domain except for a public use. Just
-11   compensation shall be paid and shall be determined by a jury at the request of any party."
-12               SECTION 2. The amendment set out in Section 1 of this act shall be submitted to the
-13   qualified voters of the State at a statewide election to be conducted on November 6, 2018, which
-14   election shall be conducted under the laws then governing elections in the State. The question to
-15   be used in the voting systems and ballots shall be:
-16                                        "[ ] FOR        [ ] AGAINST
-17               Constitutional amendment to prohibit condemnation of private property except for a
-18   public use and to provide for the payment of just compensation with right of trial by jury in all
-19   condemnation cases."
-20               SECTION 3. If a majority of votes cast on the question are in favor of the amendment
-21   set out in Section 1 of this act, the State Board of Elections shall certify the amendment to the
-22   Secretary of State. The Secretary of State shall enroll the amendment so certified among the
-23   permanent records of that office. The amendment set out in Section 1 of this act becomes effective
-24   upon certification and applies to takings after that date.
-25               SECTION 4. This act is effective when it becomes law.
-
-
-
-
-                                   *DRS55005-ML-22F*
-
+A BILL TO BE ENTITLED
+AN ACT TO AMEND THE NORTH CAROLINA CONSTITUTION TO PROHIBIT
+CONDEMNATION OF PRIVATE PROPERTY EXCEPT FOR A PUBLIC USE AND TO
+PROVIDE FOR THE PAYMENT OF JUST COMPENSATION WITH THE RIGHT OF
+TRIAL BY JURY IN ALL CONDEMNATION CASES.
+The General Assembly of North Carolina enacts:
+SECTION 1. Article I of the North Carolina Constitution is amended by adding a new
+section to read:
+"Sec. 38. Eminent domain.
+Private property shall not be taken by eminent domain except for a public use. Just
+compensation shall be paid and shall be determined by a jury at the request of any party."
+SECTION 2. The amendment set out in Section 1 of this act shall be submitted to the
+qualified voters of the State at a statewide election to be conducted on November 6, 2018, which
+election shall be conducted under the laws then governing elections in the State. The question to
+be used in the voting systems and ballots shall be:
+"[ ] FOR        [ ] AGAINST
+Constitutional amendment to prohibit condemnation of private property except for a
+public use and to provide for the payment of just compensation with right of trial by jury in all
+condemnation cases."
+SECTION 3. If a majority of votes cast on the question are in favor of the amendment
+set out in Section 1 of this act, the State Board of Elections shall certify the amendment to the
+Secretary of State. The Secretary of State shall enroll the amendment so certified among the
+permanent records of that office. The amendment set out in Section 1 of this act becomes effective
+upon certification and applies to takings after that date.
+SECTION 4. This act is effective when it becomes law.

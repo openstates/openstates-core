@@ -1,226 +1,193 @@
-                                                                                         H.B. 791
-                         GENERAL ASSEMBLY OF NORTH CAROLINA
-                                                                                        Apr 11, 2017
-                                     SESSION 2017                                 HOUSE PRINCIPAL CLERK
-     H                                                                                          D
-                              HOUSE BILL DRH40448-ST-42 (03/10)
-
-
-
-     Short Title:   Electoral Districts/Wake Co District Ct.                               (Public)
-     Sponsors:      Representatives Dollar, Malone, and Williams (Primary Sponsors).
-     Referred to:
-
-
- 1                                       A BILL TO BE ENTITLED
- 2   AN ACT TO ESTABLISH ELECTORAL DISTRICTS FOR WAKE COUNTY DISTRICT
- 3       COURT JUDGES.
- 4   The General Assembly of North Carolina enacts:
- 5                SECTION 1. G.S. 7A-133 reads as rewritten:
- 6   "§ 7A-133. Numbers of judges by districts; numbers of magistrates and additional seats
- 7                of court, by counties.
- 8       (a)      Each district court district shall have the numbers of judges as set forth in the
- 9   following table:
-10       District                   Judges                              County
-11       –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––-
-12           1                         5                                Camden
-13                                                                      Chowan
-14                                                                      Currituck
-15                                                                      Dare
-16                                                                      Gates
-17                                                                      Pasquotank
-18                                                                      Perquimans
-19           2                         4                                Martin
-20                                                                      Beaufort
-21                                                                      Tyrrell
-22                                                                      Hyde
-23                                                                      Washington
-24           3A                        5                                Pitt
-25           3B                        6                                Craven
-26                                                                      Pamlico
-27                                                                      Carteret
-28           4                         8                                Sampson
-29                                                                      Duplin
-30                                                                      Jones
-31                                                                      Onslow
-32           5                         9                                New Hanover
-33                                                                      Pender
-34           6                         4                                Northampton
-35                                                                      Bertie
-36                                                                      Hertford
-
-
-                                   *DRH40448-ST-42*
-     General Assembly Of North Carolina                     Session 2017
- 1                                           Halifax
- 2            7                 7            Nash
- 3                                           Edgecombe
- 4                                           Wilson
- 5            8                 6            Wayne
- 6                                           Greene
- 7                                           Lenoir
- 8            9                 4            Granville
- 9                                           (part of Vance
-10                                           see subsection (b))
-11                                           Franklin
-12            9A                2            Person
-13                                           Caswell
-14            9B                2            Warren
-15                                           (part of Vance
-16                                           see subsection (b))
-17            1010A           193            part of Wake
-18                                           (see subsection (b))
-19            10B               3            part of Wake
-20                                           (see subsection (b))
-21            10C               3            part of Wake
-22                                           (see subsection (b))
-23            10D               3            part of Wake
-24                                           (see subsection (b))
-25            10E               3            part of Wake
-26                                           (see subsection (b))
-27            10F               4            part of Wake
-28                                           (see subsection (b))
-29            11               11            Harnett
-30                                           Johnston
-31                                           Lee
-32            12               10            Cumberland
-33            13                6            Bladen
-34                                           Brunswick
-35                                           Columbus
-36            14                7            Durham
-37            15A               4            Alamance
-38            15B               5            Orange
-39                                           Chatham
-40            16A               6            Scotland
-41                                           Hoke
-42                                           Anson
-43                                           Richmond
-44            16B               5            Robeson
-45            17A               3            Rockingham
-46            17B               4            Stokes
-47                                           Surry
-48            18               14            Guilford
-49            19A               5            Cabarrus
-50            19B               7            Montgomery
-51                                           Moore
-
-     Page 2                               DRH40448-ST-42 [v.4] (03/17)
-     General Assembly Of North Carolina                                                Session 2017
- 1                                                                          Randolph
- 2          19C                      5                                      Rowan
- 3          20A                      2                                      Stanly
- 4          20B                      1                                      (part of Union
- 5                                                                          see subsection (b))
- 6          20C                       2                                     (part of Union
- 7                                                                          see subsection (b))
- 8          20D                       1                                     Union
- 9          21                       11                                     Forsyth
-10          22A                       5                                     Alexander
-11                                                                          Iredell
-12          22B                       6                                     Davidson
-13                                                                          Davie
-14          23                        4                                     Alleghany
-15                                                                          Ashe
-16                                                                          Wilkes
-17                                                                          Yadkin
-18          24                        4                                     Avery
-19                                                                          Madison
-20                                                                          Mitchell
-21                                                                          Watauga
-22                                                                          Yancey
-23          25                        9                                     Burke
-24                                                                          Caldwell
-25                                                                          Catawba
-26          26                       21                                     Mecklenburg
-27          27A                       7                                     Gaston
-28          27B                       6                                     Cleveland
-29                                                                          Lincoln
-30          28                        7                                     Buncombe
-31          29A                       3                                     McDowell
-32                                                                          Rutherford
-33          29B                       4                                     Henderson
-34                                                                          Polk
-35                                                                          Transylvania
-36          30                        6                                     Cherokee
-37                                                                          Clay
-38                                                                          Graham
-39                                                                          Haywood
-40                                                                          Jackson
-41                                                                          Macon
-42                                                                          Swain.
-43      (b)     For district court districts of less than a whole county, or with part or all of one
-44   county with part of another, the composition of the district is as follows:
-45              (1)     District Court District 9 consists of Franklin and Granville Counties and the
-46                      remainder of Vance County not in District Court District 9B.
-47              (2)     District Court District 9B consists of Warren County and East Henderson I,
-48                      North Henderson I, North Henderson II, Middleburg, Townsville, and
-49                      Williamsboro Precincts of Vance County.
-50              (3)     District Court District 20C consists of the remainder of Union County not in
-51                      District Court District 20B.
-
-     DRH40448-ST-42 [v.4] (03/17)                                                             Page 3
-     General Assembly Of North Carolina                                                     Session 2017
- 1              (4)      District Court District 20B consists of Precinct 01: Tract 204.01: Block
- 2                       Group 2: Block 2040, Block 2057, Block 2058, Block 2060, Block 2061,
- 3                       Block 2062, Block 2064, Block 2065; Tract 204.02: Block Group 2: Block
- 4                       2001, Block 2002, Block 2003, Block 2004, Block 2005, Block 2006, Block
- 5                       2007, Block 2008, Block 2009, Block 2010, Block 2011, Block 2012, Block
- 6                       2013, Block 2014, Block 2015, Block 2016, Block 2017, Block 2018, Block
- 7                       2023, Block 2024, Block 2025, Block 2026, Block 2027, Block 2028, Block
- 8                       2029, Block 2030, Block 2031, Block 2032, Block 2033, Block 2034; Block
- 9                       Group 3: Block 3000, Block 3003, Block 3004, Block 3005, Block 3006,
-10                       Block 3007, Block 3008, Block 3009, Block 3010, Block 3011, Block 3012,
-11                       Block 3013, Block 3014, Block 3015, Block 3016, Block 3017, Block 3018,
-12                       Block 3019, Block 3020, Block 3021, Block 3022, Block 3023, Block 3024,
-13                       Block 3025, Block 3026, Block 3027, Block 3028, Block 3029, Block 3030,
-14                       Block 3031, Block 3032, Block 3033, Block 3034, Block 30 35, Block 3036,
-15                       Block 3037, Block 3038, Block 3039, Block 3040, Block 3041, Block 3042,
-16                       Block 3043, Block 3044, Block 3045, Block 3046, Block 3047; Block
-17                       Group 4: Block 4035, Block 4054, Block 4055; Precinct 02: Tract 205:
-18                       Block Group 1: Block 1000, Block 1001, Block 1002, Block 1003, Block
-19                       1004, Block 1005, Block 1006, Block 1007, Block 1009, Block 1010, Block
-20                       1011, Block 1012, Block 1013, Block 1014, Block 1015, Block 1016, Block
-21                       1017, Block 1018, Block 1019, Block 1020, Block 1021, Block 1022, Block
-22                       1023, Block 1037, Block 1038; Block Group 2: Block 2081, Block 2082,
-23                       Block 2092, Block 2099, Block 2100, Block 2101, Block 2102; Tract 206:
-24                       Block Group 3: Block 3036, Block 3038, Block 3039, Block 3040, Block
-25                       3048; Block Group 4: Block 4053; Precinct 03, Precinct 04, Precinct 06:
-26                       Tract 202.02: Block Group 1: Block 1012, Block 1013, Block 1014, Block
-27                       1015, Block 1017, Block 1018, Block 1021, Block 1022, Block 1023; Tract
-28                       204.01: Block Group 2: Block 2000, Block 2001, Block 2002, Block 200 3,
-29                       Block 2004, Block 2005, Block 2033, Block 2034, Block 2035, Block 2036,
-30                       Block 2041, Block 2042, Block 2043, Block 2044, Block 2045, Block 2056,
-31                       Block 2063, Block 2999; Precinct 08, Precinct 09, Precinct 10, Precinct 13,
-32                       Precinct 23: Tract 206: Block Group 4: Block 4051; Precinct 25: Tract 206:
-33                       Block Group 4: Block 4036; Precinct 34, Precinct 36, Precinct 43 of Union
-34                       County.
-35               (5)     District court District 10A consists of that territory in Superior Court District
-36                       10A, as established in G.S. 7A-41(b)(6).
-37               (6)     District court District 10B consists of that territory in Superior Court District
-38                       10B, as established in G.S. 7A-41(b)(7).
-39               (7)     District Court District 10C consists of that territory in Superior Court
-40                       District 10C, as established in G.S. 7A-41(b)(8).
-41               (8)     District Court District 10D consists of that territory in Superior Court
-42                       District 10D, as established in G.S. 7A-41(b)(9).
-43               (9)     District Court District 10E consists of that territory in Superior Court
-44                       District 10E, as established in G.S. 7A-41(b)(10).
-45               (10) District Court District 10F consists of that territory in Superior Court District
-46                       10F, as established in G.S. 7A-41(b)(11).
-47        Precinct boundaries as used in this section for Vance County are those shown on maps on
-48   file with the Legislative Services Office on May 1, 1991, for Union County, are those shown on
-49   the Legislative Services Office's redistricting computer database on January 1, 2005; and for
-50   other counties are those reported by the United States Bureau of the Census under Public Law
-51   94-171 for the 1990 Census in the IVTD Version of the TIGER files.
-
-     Page 4                                                            DRH40448-ST-42 [v.4] (03/17)
-    General Assembly Of North Carolina                                             Session 2017
-1      …."
-2               SECTION 2. This act becomes effective January 1, 2019, and elections in 2018
-3   and thereafter shall be held in accordance with G.S. 7A-133, as amended by Section 1 of this
-4   act, as terms expire.
-
-
-
-
-    DRH40448-ST-42 [v.4] (03/17)                                                         Page 5
-
+A BILL TO BE ENTITLED
+AN ACT TO ESTABLISH ELECTORAL DISTRICTS FOR WAKE COUNTY DISTRICT
+COURT JUDGES.
+The General Assembly of North Carolina enacts:
+SECTION 1. G.S. 7A-133 reads as rewritten:
+"§ 7A-133. Numbers of judges by districts; numbers of magistrates and additional seats
+of court, by counties.
+(a)      Each district court district shall have the numbers of judges as set forth in the
+following table:
+District                   Judges                              County
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––-
+1                         5                                Camden
+Chowan
+Currituck
+Dare
+Gates
+Pasquotank
+Perquimans
+2                         4                                Martin
+Beaufort
+Tyrrell
+Hyde
+Washington
+3A                        5                                Pitt
+3B                        6                                Craven
+Pamlico
+Carteret
+4                         8                                Sampson
+Duplin
+Jones
+Onslow
+5                         9                                New Hanover
+Pender
+6                         4                                Northampton
+Bertie
+Hertford
+Halifax
+7                 7            Nash
+Edgecombe
+Wilson
+8                 6            Wayne
+Greene
+Lenoir
+9                 4            Granville
+(part of Vance
+see subsection (b))
+Franklin
+9A                2            Person
+Caswell
+9B                2            Warren
+(part of Vance
+see subsection (b))
+1010A           193            part of Wake
+(see subsection (b))
+10B               3            part of Wake
+(see subsection (b))
+10C               3            part of Wake
+(see subsection (b))
+10D               3            part of Wake
+(see subsection (b))
+10E               3            part of Wake
+(see subsection (b))
+10F               4            part of Wake
+(see subsection (b))
+11               11            Harnett
+Johnston
+Lee
+12               10            Cumberland
+13                6            Bladen
+Brunswick
+Columbus
+14                7            Durham
+15A               4            Alamance
+15B               5            Orange
+Chatham
+16A               6            Scotland
+Hoke
+Anson
+Richmond
+16B               5            Robeson
+17A               3            Rockingham
+17B               4            Stokes
+Surry
+18               14            Guilford
+19A               5            Cabarrus
+19B               7            Montgomery
+Moore
+Randolph
+19C                      5                                      Rowan
+20A                      2                                      Stanly
+20B                      1                                      (part of Union
+see subsection (b))
+20C                       2                                     (part of Union
+see subsection (b))
+20D                       1                                     Union
+21                       11                                     Forsyth
+22A                       5                                     Alexander
+Iredell
+22B                       6                                     Davidson
+Davie
+23                        4                                     Alleghany
+Ashe
+Wilkes
+Yadkin
+24                        4                                     Avery
+Madison
+Mitchell
+Watauga
+Yancey
+25                        9                                     Burke
+Caldwell
+Catawba
+26                       21                                     Mecklenburg
+27A                       7                                     Gaston
+27B                       6                                     Cleveland
+Lincoln
+28                        7                                     Buncombe
+29A                       3                                     McDowell
+Rutherford
+29B                       4                                     Henderson
+Polk
+Transylvania
+30                        6                                     Cherokee
+Clay
+Graham
+Haywood
+Jackson
+Macon
+Swain.
+(b)     For district court districts of less than a whole county, or with part or all of one
+county with part of another, the composition of the district is as follows:
+(1)     District Court District 9 consists of Franklin and Granville Counties and the
+remainder of Vance County not in District Court District 9B.
+(2)     District Court District 9B consists of Warren County and East Henderson I,
+North Henderson I, North Henderson II, Middleburg, Townsville, and
+Williamsboro Precincts of Vance County.
+(3)     District Court District 20C consists of the remainder of Union County not in
+District Court District 20B.
+(4)      District Court District 20B consists of Precinct 01: Tract 204.01: Block
+Group 2: Block 2040, Block 2057, Block 2058, Block 2060, Block 2061,
+Block 2062, Block 2064, Block 2065; Tract 204.02: Block Group 2: Block
+2001, Block 2002, Block 2003, Block 2004, Block 2005, Block 2006, Block
+2007, Block 2008, Block 2009, Block 2010, Block 2011, Block 2012, Block
+2013, Block 2014, Block 2015, Block 2016, Block 2017, Block 2018, Block
+2023, Block 2024, Block 2025, Block 2026, Block 2027, Block 2028, Block
+2029, Block 2030, Block 2031, Block 2032, Block 2033, Block 2034; Block
+Group 3: Block 3000, Block 3003, Block 3004, Block 3005, Block 3006,
+Block 3007, Block 3008, Block 3009, Block 3010, Block 3011, Block 3012,
+Block 3013, Block 3014, Block 3015, Block 3016, Block 3017, Block 3018,
+Block 3019, Block 3020, Block 3021, Block 3022, Block 3023, Block 3024,
+Block 3025, Block 3026, Block 3027, Block 3028, Block 3029, Block 3030,
+Block 3031, Block 3032, Block 3033, Block 3034, Block 30 35, Block 3036,
+Block 3037, Block 3038, Block 3039, Block 3040, Block 3041, Block 3042,
+Block 3043, Block 3044, Block 3045, Block 3046, Block 3047; Block
+Group 4: Block 4035, Block 4054, Block 4055; Precinct 02: Tract 205:
+Block Group 1: Block 1000, Block 1001, Block 1002, Block 1003, Block
+1004, Block 1005, Block 1006, Block 1007, Block 1009, Block 1010, Block
+1011, Block 1012, Block 1013, Block 1014, Block 1015, Block 1016, Block
+1017, Block 1018, Block 1019, Block 1020, Block 1021, Block 1022, Block
+1023, Block 1037, Block 1038; Block Group 2: Block 2081, Block 2082,
+Block 2092, Block 2099, Block 2100, Block 2101, Block 2102; Tract 206:
+Block Group 3: Block 3036, Block 3038, Block 3039, Block 3040, Block
+3048; Block Group 4: Block 4053; Precinct 03, Precinct 04, Precinct 06:
+Tract 202.02: Block Group 1: Block 1012, Block 1013, Block 1014, Block
+1015, Block 1017, Block 1018, Block 1021, Block 1022, Block 1023; Tract
+204.01: Block Group 2: Block 2000, Block 2001, Block 2002, Block 200 3,
+Block 2004, Block 2005, Block 2033, Block 2034, Block 2035, Block 2036,
+Block 2041, Block 2042, Block 2043, Block 2044, Block 2045, Block 2056,
+Block 2063, Block 2999; Precinct 08, Precinct 09, Precinct 10, Precinct 13,
+Precinct 23: Tract 206: Block Group 4: Block 4051; Precinct 25: Tract 206:
+Block Group 4: Block 4036; Precinct 34, Precinct 36, Precinct 43 of Union
+County.
+(5)     District court District 10A consists of that territory in Superior Court District
+10A, as established in G.S. 7A-41(b)(6).
+(6)     District court District 10B consists of that territory in Superior Court District
+10B, as established in G.S. 7A-41(b)(7).
+(7)     District Court District 10C consists of that territory in Superior Court
+District 10C, as established in G.S. 7A-41(b)(8).
+(8)     District Court District 10D consists of that territory in Superior Court
+District 10D, as established in G.S. 7A-41(b)(9).
+(9)     District Court District 10E consists of that territory in Superior Court
+District 10E, as established in G.S. 7A-41(b)(10).
+(10) District Court District 10F consists of that territory in Superior Court District
+10F, as established in G.S. 7A-41(b)(11).
+Precinct boundaries as used in this section for Vance County are those shown on maps on
+file with the Legislative Services Office on May 1, 1991, for Union County, are those shown on
+the Legislative Services Office's redistricting computer database on January 1, 2005; and for
+other counties are those reported by the United States Bureau of the Census under Public Law
+94-171 for the 1990 Census in the IVTD Version of the TIGER files.
+…."
+SECTION 2. This act becomes effective January 1, 2019, and elections in 2018
+and thereafter shall be held in accordance with G.S. 7A-133, as amended by Section 1 of this
+act, as terms expire.

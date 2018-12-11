@@ -1,513 +1,463 @@
-                          GENERAL ASSEMBLY OF NORTH CAROLINA
-                                      SESSION 2017
-     H                                                                                                            1
-                                              HOUSE BILL 692
-
-
-     Short Title:   Enact Naturopathic Doctors Certification Act.                                         (Public)
-     Sponsors:      Representatives Collins, Fisher, Lambeth, and Dollar (Primary Sponsors).
-                        For a complete list of sponsors, refer to the North Carolina General Assembly web site.
-     Referred to:   Finance, if favorable, Health, if favorable, Regulatory Reform
-                                                 April 11, 2017
-
- 1                                       A BILL TO BE ENTITLED
- 2   AN ACT TO ESTABLISH CERTIFICATION AND EDUCATION STANDARDS FOR THE
- 3       PRACTICE OF NATUROPATHIC MEDICINE.
- 4   The General Assembly of North Carolina enacts:
- 5               SECTION 1. Chapter 90 of the General Statutes is amended by adding a new
- 6   Article to read:
- 7                                               "Article 43.
- 8                                          "Naturopathic Doctors.
- 9   "§ 90-730. Short title.
-10       This Article may be cited as the "North Carolina Naturopathic Doctors Certification Act."
-11   "§ 90-731. Intent; purpose.
-12       (a)     Intent. – The General Assembly finds that a significant number of residents of the
-13   State of North Carolina choose complementary and alternative health care and declares that
-14   naturopathic medicine is a distinct health care profession that affects the public health, safety,
-15   and welfare and provides for choices in health care. The General Assembly concludes that
-16   certification is in the current interest of North Carolina citizens to aid in protecting citizens
-17   from deception, fraud, and damage to their health status. Certification can provide a process in
-18   which citizens may more confidently rely on the level of skill, education, and competency
-19   possessed by certified persons.
-20       (b)     Purpose. – The purpose of this Article is to provide standards for the certification of
-21   naturopathic doctors desiring to practice naturopathic medicine in this State and to ensure the
-22   maintenance of professional competence and acceptable standards of practice.
-23   "§ 90-732. Definitions.
-24       The following definitions apply in this Article:
-25               (1)     Approved program of naturopathic medicine. – A program that meets all of
-26                       the following conditions:
-27                       a.      A program that provides graduate-level, full-time didactic and
-28                               supervised clinical training in naturopathic medicine that is
-29                               accredited, or has achieved candidacy status for accreditation, by the
-30                               Council on Naturopathic Medical Education or an equivalent
-31                               federally recognized accrediting body for the naturopathic medical
-32                               profession recognized by the North Carolina Naturopathic Doctors
-33                               Certification Board; or if the program existed prior to the existence
-34                               of the Council on Naturopathic Medical Education, the program must
-35                               (i) have provided graduate-level, full-time didactic and supervised
-
-
-                                             *H692-v-1*
-     General Assembly Of North Carolina                                                  Session 2017
- 1                              clinical training in naturopathic medicine for a duration of not less
- 2                              than 132 weeks and required completion within a period of not less
- 3                              than 35 months; (ii) be recognized as a reputable program by, and in
- 4                              good standing with, the North Carolina Naturopathic Doctors
- 5                              Certification Board; and (iii) if the program is still in existence, be
- 6                              currently accredited, or have achieved candidacy status for
- 7                              accreditation, by the Council on Naturopathic Medical Education or
- 8                              an equivalent federally recognized accrediting body for the
- 9                              naturopathic medical profession recognized by the North Carolina
-10                              Naturopathic Doctors Certification Board.
-11                      b.      A program that is offered by an institution of higher education that is
-12                              accredited by a regional or national institutional accrediting body
-13                              recognized by the United States Secretary of Education.
-14                      c.      If the program is offered in the United States, a program that awards
-15                              the degree of Doctor of Naturopathy or Doctor of Naturopathic
-16                              Medicine. If the program is offered in Canada, a program that awards
-17                              the degree or diploma of Doctor of Naturopathy or Doctor of
-18                              Naturopathic Medicine and is offered by an institution of higher
-19                              education that has provincial approval for participation in
-20                              government-funded student aid programs.
-21                      d.      A program that has been approved by the North Carolina
-22                              Naturopathic Doctors Certification Board to meet the standards
-23                              established by its rules.
-24              (2)     Board. – The North Carolina Naturopathic Doctors Certification Board.
-25              (3)     Criminal history. – A history of conviction, or of having pled guilty or no
-26                      contest to a State or federal crime, whether a misdemeanor or felony.
-27              (4)     Integrative medicine. – As defined in G.S. 90-1.1.
-28              (5)     Natural medicines. – Any herbal, nutritional, supplemental, homeopathic, or
-29                      other nonprescription remedies.
-30              (6)     Naturopathic doctor. – A person certified to practice naturopathic medicine
-31                      under this Article.
-32              (7)     Naturopathic medicine. – A system of natural health care that employs
-33                      diagnosis and treatment using diagnostic techniques and natural therapies for
-34                      the promotion, maintenance, and restoration of health and the prevention of
-35                      disease, including all of the following:
-36                      a.      The administration or provision of any of the following for
-37                              preventive and therapeutic purposes: natural medicines, natural
-38                              therapies, natural topical medicines, hydrotherapy, dietary therapy,
-39                              and naturopathic physical medicine.
-40                      b.      The use of diagnostic procedures, including physical and orificial
-41                              examination, but excluding endoscopy, sigmoidoscopy, and
-42                              colonoscopy.
-43                      c.      The ordering, performing, and interpretation of laboratory tests and
-44                              diagnostic imaging.
-45              (8)     Naturopathic physical medicine. – The manual use of massage, stretching,
-46                      resistance, or naturopathic manipulation.
-47   "§ 90-733. Practice of naturopathic medicine; scope of practice.
-48       (a)    Practice of Naturopathic Medicine. – A naturopathic doctor is a certified health care
-49   provider having the same responsibilities as other licensed, certified, or registered health care
-50   providers regarding public health laws, reportable diseases and conditions, communicable
-51   disease control and prevention, and the recording of vital statistics. In diagnosing and treating
-
-     Page 2                                                              House Bill 692-First Edition
-     General Assembly Of North Carolina                                                   Session 2017
- 1   an individual, a naturopathic doctor may employ the following therapies, modalities,
- 2   procedures, or remedies consistent with naturopathic education and training:
- 3               (1)     Dispense, administer, order, and advise the use of natural remedies derived
- 4                       from or substantially similar in molecular structure or function to natural
- 5                       sources for preventive and therapeutic purposes, including food, extracts of
- 6                       food, nutraceuticals, vitamins, minerals, amino acids, enzymes, botanicals
- 7                       and their extracts, homeopathic remedies prepared according to the
- 8                       Homeopathic Pharmacopoeia of the United States, and all dietary
- 9                       supplements and nonprescription drugs as defined by the federal Food, Drug,
-10                       and Cosmetic Act, 21 U.S.C. § 301, et seq.
-11               (2)     Order and perform physical examinations and physiological function tests.
-12               (3)     Order, perform, and interpret laboratory tests, including performing waived
-13                       tests as defined by the United States Food and Drug Administration Clinical
-14                       Laboratory Improvement Amendments of 1998 (CLIA), including obtaining
-15                       specimens to assess and treat disease.
-16               (4)     Order diagnostic imaging, including X-ray, MRI, CT scan, ultrasound,
-17                       mammogram, and bone densitometry to be conducted and interpreted by an
-18                       appropriately licensed, registered, or certified health care professional. This
-19                       excludes electrocardiograms, echocardiograms, electroencephalograms, and
-20                       nuclear imaging which should be ordered, conducted, and interpreted by a
-21                       physician licensed under Article 1 of this Chapter.
-22               (5)     Perform hot or cold hydrotherapy, naturopathic physical medicine,
-23                       electromagnetic therapy, and therapeutic exercise.
-24               (6)     Perform health education and health counseling, including dietary and
-25                       lifestyle counseling.
-26               (7)     Utilize routes of administration for substances, including oral, nasal,
-27                       auricular, ocular, rectal, vaginal, and transdermal.
-28               (8)     Perform care incidental to superficial lacerations and abrasions, including
-29                       the application of topical and local anesthetics and antimicrobials.
-30               (9)     Remove foreign bodies located in the superficial tissues.
-31       (b)     Prohibitions. – A naturopathic doctor may practice only within the scope of practice
-32   authorized in subsection (a) of this section. A naturopathic doctor may not practice as any other
-33   health care professional licensed, certified, or registered under another Article of this Chapter
-34   unless otherwise licensed, certified, or registered by this State to do so. A naturopathic doctor
-35   may not perform any of the following functions unless otherwise licensed by this State to do so:
-36               (1)     Prescribe, dispense, or administer any legend drug, except as authorized by
-37                       this Article.
-38               (2)     Use general or spinal anesthetics.
-39               (3)     Perform surgical procedures using a laser device.
-40               (4)     Perform surgical procedures beyond superficial tissue.
-41               (5)     Administer ionizing radioactive substances for therapeutic purposes.
-42   "§ 90-734. Certification required; exemptions.
-43       (a)     Certification Required. – No person shall practice, attempt to practice, or claim to
-44   practice naturopathic medicine unless the person has been certified under the provisions of this
-45   Article.
-46       (b)     Use of Titles. – Only persons certified under this Article may use the titles
-47   "Naturopathic Doctor," "Doctor of Naturopathic Medicine," "Doctor of Naturopathy,"
-48   "Naturopathic Medicine," "Naturopath," "Certified Naturopathic Doctor," or the abbreviations
-49   "N.D.," "ND," or any other titles, words, letters, abbreviations, or insignia indicating or
-50   implying that the individual is a certified naturopathic doctor unless the individual has been
-51   certified as a naturopathic doctor under this Article.
-
-     House Bill 692-First Edition                                                                Page 3
-     General Assembly Of North Carolina                                                     Session 2017
- 1       (c)     Exemptions. – Nothing in this Article shall be construed to prohibit or affect any of
- 2   the following:
- 3               (1)     The practice of a profession by an individual who is licensed, certified, or
- 4                       registered under other laws of this State and is performing services within
- 5                       the authorized scope of practice.
- 6               (2)     The practice of naturopathic medicine by a person employed by the federal
- 7                       government while the person is engaged in the performance of duties
- 8                       prescribed by laws and regulations of the United States.
- 9               (3)     A person rendering aid in an emergency situation when no fee or other
-10                       compensation for the service is received.
-11               (4)     The practice of naturopathic medicine by a naturopathic doctor duly
-12                       licensed, certified, or registered in another state, territory, or the District of
-13                       Columbia when called into this State to consult with a licensed, certified, or
-14                       registered health care provider for a period not to exceed six months.
-15               (5)     The practice of naturopathic medicine by students completing a clinical
-16                       requirement for graduation from an approved program of naturopathic
-17                       medicine, so long as the practice is performed under the supervision of a
-18                       physician licensed under Article 1 of this Chapter or a naturopathic doctor
-19                       certified under this Article and the clinical requirement does not exceed one
-20                       year.
-21               (6)     A person who does not hold himself or herself out to be a naturopathic
-22                       doctor as described in subsection (b) of this section when furnishing
-23                       information to customers or selling, administering, or utilizing nutritional
-24                       supplements, herbs, food, homeopathic preparations, and such physical
-25                       forces as heat, cold, water, touch, and light at the person's retail, health spa,
-26                       or health consulting establishment.
-27       (d)     Unlawful Act. – A person who violates this section is guilty of a Class 1
-28   misdemeanor. The Board may investigate violations of this section and any rules adopted to
-29   implement this section and notify persons of (i) possible violations, (ii) possible civil actions
-30   that may be taken against the person, or (iii) possible criminal penalties that may be imposed by
-31   a court as a result of any violations. The Board may make application to superior court for an
-32   order enjoining a violation of this section. Upon a showing by the Board that a person has
-33   violated or is about to violate this section, the court may grant an injunction, restraining order,
-34   or take other appropriate action.
-35   "§ 90-735. North Carolina Naturopathic Doctors Certification Board.
-36       (a)     Board. – The North Carolina Naturopathic Doctors Certification Board is created.
-37   The Board consists of seven members serving for staggered terms. The initial Board members
-38   shall be appointed on or before January 1, 2018, as follows:
-39               (1)     The General Assembly, upon the recommendation of the President Pro
-40                       Tempore of the Senate, shall appoint two naturopathic doctors who are
-41                       certified under this Article. One member shall serve a term of one year, and
-42                       one member shall serve a term of three years.
-43               (2)     The General Assembly, upon the recommendation of the Speaker of the
-44                       House of Representatives, shall appoint two naturopathic doctors who are
-45                       certified under this Article. One member shall serve a term of one year, and
-46                       one member shall serve a term of three years.
-47               (3)     The Governor shall appoint two physicians licensed under Article 1 of
-48                       Chapter 90 of the General Statutes, at least one of whom is involved in the
-49                       practice of integrative medicine or teaches integrative medicine at a medical
-50                       school. Both of these members shall serve a term of three years.
-
-
-     Page 4                                                                 House Bill 692-First Edition
-     General Assembly Of North Carolina                                                    Session 2017
- 1              (4)      The Governor shall appoint for a two-year term a public member who is not
- 2                       a licensed, certified, or registered health care professional and is not
- 3                       employed in a health care profession.
- 4       Upon the expiration of the terms of the initial Board members, each subsequent member
- 5   shall be appointed for a term of three years. The term of a member shall begin on January 1 of
- 6   each year. A member shall serve until the member's successor is appointed. No member shall
- 7   serve on the Board for more than two consecutive terms.
- 8       (b)     Vacancies. – A vacancy shall be filled in the same manner as the original
- 9   appointment. An appointee to fill a vacancy shall serve the remainder of the unexpired term and
-10   until the appointee's successor has been duly appointed.
-11       (c)     Removal. – The Board may remove any of its members for neglect of duty,
-12   incompetence, or unprofessional conduct. A member subject to disciplinary proceedings as a
-13   licensed, certified, or registered health care professional shall be disqualified from participating
-14   in the official business of the Board until the charges have been resolved.
-15       (d)     General Administration. – A Board member may not receive compensation but may
-16   receive reimbursement as provided in G.S. 93B-5. The officers of the Board include a chair, a
-17   secretary, and any other officer deemed necessary by the Board to carry out the purposes of this
-18   Article. All officers shall be elected annually by the Board at its first meeting held after
-19   appointments to the Board are made. The Board shall hold a meeting within 45 days after the
-20   appointment of new Board members. All officers shall serve one-year terms and shall serve
-21   until their successors are elected and qualified. No person shall chair the Board for more than
-22   five consecutive years. The Board may adopt rules governing the calling, holding, and
-23   conducting of regular and special meetings. A majority of Board members constitutes a
-24   quorum.
-25   "§ 90-736. Powers of the Board.
-26       The Board shall have the following powers and duties:
-27               (1)     Administer and enforce the provisions of this Article.
-28               (2)     Adopt, amend, or repeal rules in the manner prescribed under Chapter 150B
-29                       of the General Statutes, as may be necessary to carry out the provisions of
-30                       this Article.
-31               (3)     Establish, examine, and determine the qualifications and fitness of applicants
-32                       for certification and renewal of certification.
-33               (4)     Issue, renew, deny, suspend, or revoke certification and conduct any
-34                       disciplinary actions authorized by this Article.
-35               (5)     Collect fees for certification, certification renewal, and other services
-36                       deemed necessary to carry out the provisions of this Article.
-37               (6)     Establish and approve continuing education requirements for persons
-38                       certified under this Article.
-39               (7)     Employ and fix the compensation of personnel that the Board determines is
-40                       necessary to carry out the provisions of this Article and incur other expenses
-41                       necessary to perform the duties of the Board.
-42               (8)     Adopt a seal containing the name of the Board for use on all certifications
-43                       and official reports issued by the Board.
-44               (9)     Institute corrective measures, as necessary and as permitted by Chapter 93 of
-45                       the General Statutes, to rehabilitate naturopathic doctors or limit their
-46                       practice.
-47               (10) Receive complaints and investigate persons engaging in practices that
-48                       violate the provisions of this Article.
-49   "§ 90-737. Qualifications for certification; renewal; reinstatement.
-
-
-
-     House Bill 692-First Edition                                                                 Page 5
-     General Assembly Of North Carolina                                                     Session 2017
- 1       (a)     Certification. – Upon application to the Board and payment of the required fees, an
- 2   applicant may be certified under this Article as a naturopathic doctor if the applicant meets all
- 3   of the following qualifications and conditions:
- 4               (1)      Is of good moral and ethical character.
- 5               (2)      Is a graduate of an approved program of naturopathic medicine as defined in
- 6                        G.S. 90-732.
- 7               (3)      Meets one, or both, of the following two conditions:
- 8                        a.      Has successfully passed the Naturopathic Physicians Licensing
- 9                                Examination (NPLEX), a competency-based national naturopathic
-10                                licensing examination administered by the North American Board of
-11                                Naturopathic Examiners or an equivalent successor agency
-12                                recognized by the Board.
-13                        b.      Has successfully passed a competency-based state or Canadian
-14                                province naturopathic licensing examination administered prior to
-15                                the existence of NPLEX and approved by the Board.
-16               (4)      Provides the Board with a list of physicians licensed to practice medicine in
-17                        this State who have agreed to consult with the applicant and accept referrals
-18                        from the applicant. The applicant shall also provide the Board with letters of
-19                        verification from the listed physicians. The list must include physicians with
-20                        specialties in at least four of the following areas: allergy and immunology,
-21                        cancer and oncology, cardiology, endocrinology and metabolism, family
-22                        medicine, gastroenterology, internal medicine, obstetrics and gynecology,
-23                        pediatrics, psychiatry, and urology.
-24               (5)      Submits any other documentation the Board deems necessary to determine
-25                        the applicant's fitness for certification under this Article. This documentation
-26                        may include successful completion of a Board-approved jurisprudence
-27                        examination on State laws and rules related to naturopathic medicine.
-28       (b)     Renewal. – A certification expires two years after the date it is issued unless it is
-29   renewed. To renew a certification, a licensee shall meet all of the following conditions:
-30               (1)      Submit an application for certification renewal.
-31               (2)      Pay the required fees.
-32               (3)      Complete at least 40 hours of continuing education approved by the Board
-33                        within the two-year period immediately prior to the renewal date.
-34   Failure to renew a certification within six months of the date the certification expires shall
-35   result in automatic forfeiture of the right to practice naturopathic medicine in this State until the
-36   certification is reinstated.
-37       (c)     Reinstatement. – A certified naturopathic doctor who has allowed the certification to
-38   lapse by failure to renew within the time allowed under subsection (b) of this section may apply
-39   for reinstatement. The Board may reinstate the applicant's certification if the applicant pays the
-40   required fees, furnishes a statement of the reason for failure to apply for renewal before the
-41   deadline, and complies with any other requirements established in rules adopted by the Board.
-42   If the certification has lapsed for five years or longer, the Board may require the applicant to
-43   satisfactorily complete one or more skills assessment or remediation courses approved by the
-44   Board or to provide proof of active licensure, certification, or registration within the past five
-45   years in another state, district, territory, or Canadian province.
-46   "§ 90-738. Reciprocity.
-47       The Board may grant, upon application and payment of fees, a certification to a person who
-48   resides in this State and has been licensed, certified, or registered to practice as a naturopathic
-49   doctor in another state, district, territory, or Canadian province if both of the following
-50   conditions are met:
-
-
-     Page 6                                                                 House Bill 692-First Edition
-     General Assembly Of North Carolina                                                                           Session 2017
- 1                 (1)       The standards for licensure, certification, or registration in the state, district,
- 2                           territory, or province in which the naturopathic doctor is licensed, certified,
- 3                           or registered are substantially equivalent to those provided in this Article.
- 4                 (2)       The applicant provides proof of licensure, certification, or registration in
- 5                           good standing in all states, districts, territories, and provinces in which the
- 6                           applicant has been licensed, certified, or registered.
- 7   "§ 90-739. Fees.
- 8        The Board may impose the following fees:
- 9                (1)     Application and examination .......................................................... $200.00
-10                (2)     Certification..................................................................................... $600.00
-11                (3)     Certification renewal ....................................................................... $400.00
-12                (4)     Late renewal .................................................................................... $200.00
-13                (5)     Reinstatement ............................................................................... $1,000.00
-14                (6)     Reasonable charges for duplication services and material.
-15                (7)     Criminal history record check fee equal to the amount imposed by the
-16                        Department of Justice to conduct the criminal history record check requested
-17                        by the Board.
-18   "§ 90-740. Disciplinary authority.
-19        (a)     Authority. – The Board may impose probationary conditions upon a certified
-20   naturopathic doctor, or it may deny, suspend, revoke, or refuse to issue or renew a certification
-21   if the certified naturopathic doctor or applicant does any of the following:
-22                (1)     Engages in any act or practice in violation of any of the provisions of this
-23                        Article or of any of the rules adopted by the Board or aids, abets, or assists
-24                        any other person in the violation of the provisions of this Article or rules
-25                        adopted by the Board.
-26                (2)     Gives false information to or withholds information from the Board in
-27                        procuring or attempting to procure certification.
-28                (3)     Has been convicted of or pled guilty or no contest to a crime that indicates
-29                        that the person is unfit or incompetent to practice as a naturopathic doctor or
-30                        that indicates the person has deceived or defrauded the public. A felony
-31                        conviction shall result in the automatic revocation of certification by the
-32                        Board unless the Board determines otherwise pursuant to rules adopted by
-33                        the Board.
-34                (4)     Has been declared mentally incompetent by a court of competent
-35                        jurisdiction.
-36                (5)     Habitually uses or is addicted to drugs or intoxicating liquors to the extent
-37                        that it affects the certified naturopathic doctor's professional competency. If
-38                        a certified naturopathic doctor violates this subdivision, the Board may
-39                        require the certified naturopathic doctor to undergo a mental or physical
-40                        examination by physicians designated by the Board before or after the
-41                        certified naturopathic doctor has been charged. The results of the
-42                        examination shall be admissible as evidence in a hearing before the Board.
-43                (6)     Has demonstrated gross negligence, incompetency, or misconduct in the
-44                        performance of naturopathic medical treatment.
-45                (7)     Has had a health care provider license, certification, or registration denied,
-46                        restricted, revoked, or suspended by another state, district, territory, or
-47                        province.
-48                (8)     Fails to consent to a criminal history record check.
-49                (9)     Fails to respond, within a reasonable time, to inquiries from the Board
-50                        concerning any matter affecting the individual's certification to practice
-51                        naturopathic medicine.
-
-     House Bill 692-First Edition                                                                                          Page 7
-     General Assembly Of North Carolina                                                   Session 2017
- 1              (10)     Fails to complete continuing education requirements within the time
- 2                       prescribed.
- 3       (b)     Hearing. – Denial, refusal to renew, suspension, or revocation of a certification or
- 4   imposition of probationary conditions upon a certified naturopathic doctor may be ordered by
- 5   the Board after a hearing held in accordance with Article 3A of Chapter 150B of the General
- 6   Statutes and rules adopted pursuant to this Article. An application may be made to the Board
- 7   for reinstatement of a revoked certification if the revocation has been in effect for not less than
- 8   two years.
- 9       (c)     Records. – The Board shall keep a record of its proceedings. The Board shall, in a
-10   closed session, receive evidence regarding the treatment or examination of a patient who has
-11   not expressly or impliedly consented to the public disclosure of the treatment when necessary
-12   for the protection of the rights of the patient or of the accused naturopathic doctor and the full
-13   presentation of relevant evidence. All records, papers, investigative files, investigative reports,
-14   and other documents containing information gathered or received by the Board as a result of
-15   investigations, inquiries, or interviews conducted in connection with an application for
-16   certification, a complaint, or a disciplinary matter are not considered public documents within
-17   the meaning of Chapter 132 of the General Statutes.
-18       (d)     Confidential Information. – The Board may release confidential or nonpublic
-19   information about a certified naturopathic doctor to any health care licensure, certification, or
-20   registration board in this State or another state relating to the issuance, denial, suspension,
-21   revocation, or voluntary surrender of the license, certification, or registration including the
-22   reasons for the action or any investigative report prepared by the Board. The Board shall notify
-23   the naturopathic doctor within 60 days after the information is released. The Board shall furnish
-24   to the naturopathic doctor a summary of the information being released. However, if the
-25   naturopathic doctor requests, in writing, within 30 days after the date of notice, a copy of the
-26   information being released, the Board shall give to the naturopathic doctor a copy of all the
-27   information being released. Notice or copies shall not be provided by the Board if the
-28   information relates to an ongoing criminal investigation by a law enforcement agency or any
-29   Department of Health and Human Services personnel with enforcement or investigative
-30   responsibilities.
-31   "§ 90-741. Criminal history record check of applicants and certified naturopathic
-32               doctors.
-33       (a)     Criminal History Record Check. – The Board shall require a criminal history record
-34   check for a person who is either certified as a naturopathic doctor under this Article or applying
-35   for certification as a naturopathic doctor under this Article. The Board is responsible for
-36   providing to the North Carolina Department of Justice the fingerprints of the person to be
-37   checked, a form signed by the person consenting to the criminal record check and the use of
-38   fingerprints and other identifying information required by the State or national repositories, and
-39   any additional information required by the Department of Justice. The Board shall keep all
-40   information obtained pursuant to this section confidential.
-41       (b)     Conviction. – If a criminal history record check reveals one or more convictions, the
-42   conviction does not automatically bar certification. The Board shall consider all of the
-43   following factors regarding the conviction:
-44               (1)     The level of seriousness of the crime.
-45               (2)     The date of the crime.
-46               (3)     The age of the person at the time of the conviction.
-47               (4)     The circumstances surrounding the commission of the crime, if known.
-48               (5)     The nexus between the criminal conduct of the person and the job duties of
-49                       the position to be filled.
-50               (6)     The person's prison, jail, probation, parole, rehabilitation, and employment
-51                       records since the date the crime was committed.
-
-     Page 8                                                               House Bill 692-First Edition
-     General Assembly Of North Carolina                                                   Session 2017
- 1               (7)     The subsequent commission of a crime by the person.
- 2       (c)     Denial of Certification. – If the Board denies, revokes, or suspends a certification
- 3   based on information obtained in a criminal history record check, the Board shall disclose to
- 4   the person the information contained in the criminal history record check that is relevant to the
- 5   Board's actions. The Board may not provide a copy of the criminal history record check to the
- 6   person. A person has the right to appear before the Board to appeal the Board's decision. An
- 7   appearance before the Board shall constitute an exhaustion of administrative remedies in
- 8   accordance with Chapter 150B of the General Statutes.
- 9   "§ 90-742. Reports; immunity from suit.
-10       (a)     Report. – A person who has reasonable cause to suspect misconduct or incapacity of
-11   a certified naturopathic doctor, or who has reasonable cause to suspect that a person is in
-12   violation of this Article, may report the relevant facts to the Board. Upon receipt of a charge, or
-13   upon its own initiative, the Board may give notice of an administrative hearing or may, after
-14   diligent investigation, dismiss unfounded charges. A person who, in good faith, makes a report
-15   pursuant to this section is immune from any criminal prosecution or civil liability resulting
-16   from making the report.
-17       (b)     Limited Immunity. – The Board, its officers, employees, and staff are immune from
-18   any criminal prosecution or civil liability for exercising, in good faith, the powers and duties
-19   given to the Board under this Article.
-20   "§ 90-743. Third-party reimbursement.
-21       Nothing in this Article shall be construed to require direct third-party reimbursement to
-22   persons certified under this Article.
-23   "§ 90-744. Advisory Council.
-24       (a)     Created. – An Advisory Council is created to advise the Board and to develop
-25   recommendations to foster coordination and collaboration between naturopathic doctors,
-26   medical doctors, and other health care professionals for the purpose of providing appropriate
-27   care for patients. The Council shall meet periodically and report its recommendations to the
-28   Board and to the boards of directors for the North Carolina Medical Society and the North
-29   Carolina Association of Naturopathic Physicians.
-30       (b)     Membership. – The Advisory Council shall consist of the following six members:
-31               (1)     Two licensed physicians appointed by the North Carolina Medical Society.
-32               (2)     Two certified naturopathic doctors appointed by the North Carolina
-33                       Association of Naturopathic Physicians.
-34               (3)     One licensed pharmacist or pharmacologist appointed by the North Carolina
-35                       Association of Pharmacists.
-36               (4)     One licensed advanced practice registered nurse appointed by the North
-37                       Carolina Nursing Association.
-38       (c)     General Administration. – Each member is appointed for a term of two years
-39   beginning July 1, 2018. A member serves until a successor is appointed. The members of the
-40   Advisory Council may elect a chairperson by a majority vote. Advisory Council members may
-41   not receive compensation for their services but may receive reimbursement as provided in
-42   G.S. 93B-5."
-43               SECTION 2. G.S. 90-18(c) is amended by adding a new subdivision to read:
-44       "(c) The following shall not constitute practicing medicine or surgery as defined in this
-45   Article:
-46               …
-47               (21) The practice of naturopathic medicine by a naturopathic doctor certified
-48                       under the provisions of Article 43 of this Chapter."
-49               SECTION 3. Part 2 of Article 4 of Chapter 114 of the General Statutes is amended
-50   by adding a new section to read:
-51   "§ 114-19.33A. Criminal history record checks for naturopathic doctors.
-
-     House Bill 692-First Edition                                                                Page 9
-     General Assembly Of North Carolina                                                   Session 2017
- 1        (a)    The Department of Justice shall provide to the North Carolina Naturopathic Doctors
- 2   Certification Board from the State and National Repositories of Criminal Histories the criminal
- 3   history of an applicant for certification by the Board or a certified naturopathic doctor of the
- 4   Board. The North Carolina Naturopathic Doctors Certification Board shall provide to the
- 5   Department of Justice, along with the request, the fingerprints of the applicant or certified
- 6   naturopathic doctor, a form signed by the applicant or certified naturopathic doctor consenting
- 7   to the criminal history record check and use of fingerprints and other identifying information
- 8   required by the State and national repositories, and any additional information required by the
- 9   Department of Justice. The fingerprints of the applicant or certified naturopathic doctor shall be
-10   forwarded to the State Bureau of Investigation for a search of the State's criminal history record
-11   file, and the State Bureau of Investigation shall forward a set of fingerprints to the Federal
-12   Bureau of Investigation for a national criminal history record check. The North Carolina
-13   Naturopathic Doctors Certification Board shall keep all information obtained pursuant to this
-14   section confidential.
-15        (b)    The Department of Justice may charge a fee to offset the cost incurred by it to
-16   conduct a criminal history record check under this section. The fee shall not exceed the actual
-17   cost of locating, editing, researching, and retrieving the information."
-18               SECTION 4. Notwithstanding the provisions of G.S. 90-735, as enacted by Section
-19   1 of this act, the initial naturopathic doctors appointed to the North Carolina Naturopathic
-20   Doctors Certification Board must be North Carolina residents, must be licensed as a
-21   naturopathic doctor in a state, district, territory, or province that licenses this profession, and
-22   must be eligible for certification under G.S. 90-737, as enacted by Section 1 of this act. Upon
-23   appointment, the appointee must immediately seek to become certified under this act.
-24               SECTION 5. This act is effective when it becomes law.
-
-
-
-
-     Page 10                                                              House Bill 692-First Edition
-
+A BILL TO BE ENTITLED
+AN ACT TO ESTABLISH CERTIFICATION AND EDUCATION STANDARDS FOR THE
+PRACTICE OF NATUROPATHIC MEDICINE.
+The General Assembly of North Carolina enacts:
+SECTION 1. Chapter 90 of the General Statutes is amended by adding a new
+Article to read:
+"Article 43.
+"Naturopathic Doctors.
+"§ 90-730. Short title.
+This Article may be cited as the "North Carolina Naturopathic Doctors Certification Act."
+"§ 90-731. Intent; purpose.
+(a)     Intent. – The General Assembly finds that a significant number of residents of the
+State of North Carolina choose complementary and alternative health care and declares that
+naturopathic medicine is a distinct health care profession that affects the public health, safety,
+and welfare and provides for choices in health care. The General Assembly concludes that
+certification is in the current interest of North Carolina citizens to aid in protecting citizens
+from deception, fraud, and damage to their health status. Certification can provide a process in
+which citizens may more confidently rely on the level of skill, education, and competency
+possessed by certified persons.
+(b)     Purpose. – The purpose of this Article is to provide standards for the certification of
+naturopathic doctors desiring to practice naturopathic medicine in this State and to ensure the
+maintenance of professional competence and acceptable standards of practice.
+"§ 90-732. Definitions.
+The following definitions apply in this Article:
+(1)     Approved program of naturopathic medicine. – A program that meets all of
+the following conditions:
+a.      A program that provides graduate-level, full-time didactic and
+supervised clinical training in naturopathic medicine that is
+accredited, or has achieved candidacy status for accreditation, by the
+Council on Naturopathic Medical Education or an equivalent
+federally recognized accrediting body for the naturopathic medical
+profession recognized by the North Carolina Naturopathic Doctors
+Certification Board; or if the program existed prior to the existence
+of the Council on Naturopathic Medical Education, the program must
+(i) have provided graduate-level, full-time didactic and supervised
+clinical training in naturopathic medicine for a duration of not less
+than 132 weeks and required completion within a period of not less
+than 35 months; (ii) be recognized as a reputable program by, and in
+good standing with, the North Carolina Naturopathic Doctors
+Certification Board; and (iii) if the program is still in existence, be
+currently accredited, or have achieved candidacy status for
+accreditation, by the Council on Naturopathic Medical Education or
+an equivalent federally recognized accrediting body for the
+naturopathic medical profession recognized by the North Carolina
+Naturopathic Doctors Certification Board.
+b.      A program that is offered by an institution of higher education that is
+accredited by a regional or national institutional accrediting body
+recognized by the United States Secretary of Education.
+c.      If the program is offered in the United States, a program that awards
+the degree of Doctor of Naturopathy or Doctor of Naturopathic
+Medicine. If the program is offered in Canada, a program that awards
+the degree or diploma of Doctor of Naturopathy or Doctor of
+Naturopathic Medicine and is offered by an institution of higher
+education that has provincial approval for participation in
+government-funded student aid programs.
+d.      A program that has been approved by the North Carolina
+Naturopathic Doctors Certification Board to meet the standards
+established by its rules.
+(2)     Board. – The North Carolina Naturopathic Doctors Certification Board.
+(3)     Criminal history. – A history of conviction, or of having pled guilty or no
+contest to a State or federal crime, whether a misdemeanor or felony.
+(4)     Integrative medicine. – As defined in G.S. 90-1.1.
+(5)     Natural medicines. – Any herbal, nutritional, supplemental, homeopathic, or
+other nonprescription remedies.
+(6)     Naturopathic doctor. – A person certified to practice naturopathic medicine
+under this Article.
+(7)     Naturopathic medicine. – A system of natural health care that employs
+diagnosis and treatment using diagnostic techniques and natural therapies for
+the promotion, maintenance, and restoration of health and the prevention of
+disease, including all of the following:
+a.      The administration or provision of any of the following for
+preventive and therapeutic purposes: natural medicines, natural
+therapies, natural topical medicines, hydrotherapy, dietary therapy,
+and naturopathic physical medicine.
+b.      The use of diagnostic procedures, including physical and orificial
+examination, but excluding endoscopy, sigmoidoscopy, and
+colonoscopy.
+c.      The ordering, performing, and interpretation of laboratory tests and
+diagnostic imaging.
+(8)     Naturopathic physical medicine. – The manual use of massage, stretching,
+resistance, or naturopathic manipulation.
+"§ 90-733. Practice of naturopathic medicine; scope of practice.
+(a)    Practice of Naturopathic Medicine. – A naturopathic doctor is a certified health care
+provider having the same responsibilities as other licensed, certified, or registered health care
+providers regarding public health laws, reportable diseases and conditions, communicable
+disease control and prevention, and the recording of vital statistics. In diagnosing and treating
+an individual, a naturopathic doctor may employ the following therapies, modalities,
+procedures, or remedies consistent with naturopathic education and training:
+(1)     Dispense, administer, order, and advise the use of natural remedies derived
+from or substantially similar in molecular structure or function to natural
+sources for preventive and therapeutic purposes, including food, extracts of
+food, nutraceuticals, vitamins, minerals, amino acids, enzymes, botanicals
+and their extracts, homeopathic remedies prepared according to the
+Homeopathic Pharmacopoeia of the United States, and all dietary
+supplements and nonprescription drugs as defined by the federal Food, Drug,
+and Cosmetic Act, 21 U.S.C. § 301, et seq.
+(2)     Order and perform physical examinations and physiological function tests.
+(3)     Order, perform, and interpret laboratory tests, including performing waived
+tests as defined by the United States Food and Drug Administration Clinical
+Laboratory Improvement Amendments of 1998 (CLIA), including obtaining
+specimens to assess and treat disease.
+(4)     Order diagnostic imaging, including X-ray, MRI, CT scan, ultrasound,
+mammogram, and bone densitometry to be conducted and interpreted by an
+appropriately licensed, registered, or certified health care professional. This
+excludes electrocardiograms, echocardiograms, electroencephalograms, and
+nuclear imaging which should be ordered, conducted, and interpreted by a
+physician licensed under Article 1 of this Chapter.
+(5)     Perform hot or cold hydrotherapy, naturopathic physical medicine,
+electromagnetic therapy, and therapeutic exercise.
+(6)     Perform health education and health counseling, including dietary and
+lifestyle counseling.
+(7)     Utilize routes of administration for substances, including oral, nasal,
+auricular, ocular, rectal, vaginal, and transdermal.
+(8)     Perform care incidental to superficial lacerations and abrasions, including
+the application of topical and local anesthetics and antimicrobials.
+(9)     Remove foreign bodies located in the superficial tissues.
+(b)     Prohibitions. – A naturopathic doctor may practice only within the scope of practice
+authorized in subsection (a) of this section. A naturopathic doctor may not practice as any other
+health care professional licensed, certified, or registered under another Article of this Chapter
+unless otherwise licensed, certified, or registered by this State to do so. A naturopathic doctor
+may not perform any of the following functions unless otherwise licensed by this State to do so:
+(1)     Prescribe, dispense, or administer any legend drug, except as authorized by
+this Article.
+(2)     Use general or spinal anesthetics.
+(3)     Perform surgical procedures using a laser device.
+(4)     Perform surgical procedures beyond superficial tissue.
+(5)     Administer ionizing radioactive substances for therapeutic purposes.
+"§ 90-734. Certification required; exemptions.
+(a)     Certification Required. – No person shall practice, attempt to practice, or claim to
+practice naturopathic medicine unless the person has been certified under the provisions of this
+Article.
+(b)     Use of Titles. – Only persons certified under this Article may use the titles
+"Naturopathic Doctor," "Doctor of Naturopathic Medicine," "Doctor of Naturopathy,"
+"Naturopathic Medicine," "Naturopath," "Certified Naturopathic Doctor," or the abbreviations
+"N.D.," "ND," or any other titles, words, letters, abbreviations, or insignia indicating or
+implying that the individual is a certified naturopathic doctor unless the individual has been
+certified as a naturopathic doctor under this Article.
+(c)     Exemptions. – Nothing in this Article shall be construed to prohibit or affect any of
+the following:
+(1)     The practice of a profession by an individual who is licensed, certified, or
+registered under other laws of this State and is performing services within
+the authorized scope of practice.
+(2)     The practice of naturopathic medicine by a person employed by the federal
+government while the person is engaged in the performance of duties
+prescribed by laws and regulations of the United States.
+(3)     A person rendering aid in an emergency situation when no fee or other
+compensation for the service is received.
+(4)     The practice of naturopathic medicine by a naturopathic doctor duly
+licensed, certified, or registered in another state, territory, or the District of
+Columbia when called into this State to consult with a licensed, certified, or
+registered health care provider for a period not to exceed six months.
+(5)     The practice of naturopathic medicine by students completing a clinical
+requirement for graduation from an approved program of naturopathic
+medicine, so long as the practice is performed under the supervision of a
+physician licensed under Article 1 of this Chapter or a naturopathic doctor
+certified under this Article and the clinical requirement does not exceed one
+year.
+(6)     A person who does not hold himself or herself out to be a naturopathic
+doctor as described in subsection (b) of this section when furnishing
+information to customers or selling, administering, or utilizing nutritional
+supplements, herbs, food, homeopathic preparations, and such physical
+forces as heat, cold, water, touch, and light at the person's retail, health spa,
+or health consulting establishment.
+(d)     Unlawful Act. – A person who violates this section is guilty of a Class 1
+misdemeanor. The Board may investigate violations of this section and any rules adopted to
+implement this section and notify persons of (i) possible violations, (ii) possible civil actions
+that may be taken against the person, or (iii) possible criminal penalties that may be imposed by
+a court as a result of any violations. The Board may make application to superior court for an
+order enjoining a violation of this section. Upon a showing by the Board that a person has
+violated or is about to violate this section, the court may grant an injunction, restraining order,
+or take other appropriate action.
+"§ 90-735. North Carolina Naturopathic Doctors Certification Board.
+(a)     Board. – The North Carolina Naturopathic Doctors Certification Board is created.
+The Board consists of seven members serving for staggered terms. The initial Board members
+shall be appointed on or before January 1, 2018, as follows:
+(1)     The General Assembly, upon the recommendation of the President Pro
+Tempore of the Senate, shall appoint two naturopathic doctors who are
+certified under this Article. One member shall serve a term of one year, and
+one member shall serve a term of three years.
+(2)     The General Assembly, upon the recommendation of the Speaker of the
+House of Representatives, shall appoint two naturopathic doctors who are
+certified under this Article. One member shall serve a term of one year, and
+one member shall serve a term of three years.
+(3)     The Governor shall appoint two physicians licensed under Article 1 of
+Chapter 90 of the General Statutes, at least one of whom is involved in the
+practice of integrative medicine or teaches integrative medicine at a medical
+school. Both of these members shall serve a term of three years.
+(4)      The Governor shall appoint for a two-year term a public member who is not
+a licensed, certified, or registered health care professional and is not
+employed in a health care profession.
+Upon the expiration of the terms of the initial Board members, each subsequent member
+shall be appointed for a term of three years. The term of a member shall begin on January 1 of
+each year. A member shall serve until the member's successor is appointed. No member shall
+serve on the Board for more than two consecutive terms.
+(b)     Vacancies. – A vacancy shall be filled in the same manner as the original
+appointment. An appointee to fill a vacancy shall serve the remainder of the unexpired term and
+until the appointee's successor has been duly appointed.
+(c)     Removal. – The Board may remove any of its members for neglect of duty,
+incompetence, or unprofessional conduct. A member subject to disciplinary proceedings as a
+licensed, certified, or registered health care professional shall be disqualified from participating
+in the official business of the Board until the charges have been resolved.
+(d)     General Administration. – A Board member may not receive compensation but may
+receive reimbursement as provided in G.S. 93B-5. The officers of the Board include a chair, a
+secretary, and any other officer deemed necessary by the Board to carry out the purposes of this
+Article. All officers shall be elected annually by the Board at its first meeting held after
+appointments to the Board are made. The Board shall hold a meeting within 45 days after the
+appointment of new Board members. All officers shall serve one-year terms and shall serve
+until their successors are elected and qualified. No person shall chair the Board for more than
+five consecutive years. The Board may adopt rules governing the calling, holding, and
+conducting of regular and special meetings. A majority of Board members constitutes a
+quorum.
+"§ 90-736. Powers of the Board.
+The Board shall have the following powers and duties:
+(1)     Administer and enforce the provisions of this Article.
+(2)     Adopt, amend, or repeal rules in the manner prescribed under Chapter 150B
+of the General Statutes, as may be necessary to carry out the provisions of
+this Article.
+(3)     Establish, examine, and determine the qualifications and fitness of applicants
+for certification and renewal of certification.
+(4)     Issue, renew, deny, suspend, or revoke certification and conduct any
+disciplinary actions authorized by this Article.
+(5)     Collect fees for certification, certification renewal, and other services
+deemed necessary to carry out the provisions of this Article.
+(6)     Establish and approve continuing education requirements for persons
+certified under this Article.
+(7)     Employ and fix the compensation of personnel that the Board determines is
+necessary to carry out the provisions of this Article and incur other expenses
+necessary to perform the duties of the Board.
+(8)     Adopt a seal containing the name of the Board for use on all certifications
+and official reports issued by the Board.
+(9)     Institute corrective measures, as necessary and as permitted by Chapter 93 of
+the General Statutes, to rehabilitate naturopathic doctors or limit their
+practice.
+(10) Receive complaints and investigate persons engaging in practices that
+violate the provisions of this Article.
+"§ 90-737. Qualifications for certification; renewal; reinstatement.
+(a)     Certification. – Upon application to the Board and payment of the required fees, an
+applicant may be certified under this Article as a naturopathic doctor if the applicant meets all
+of the following qualifications and conditions:
+(1)      Is of good moral and ethical character.
+(2)      Is a graduate of an approved program of naturopathic medicine as defined in
+G.S. 90-732.
+(3)      Meets one, or both, of the following two conditions:
+a.      Has successfully passed the Naturopathic Physicians Licensing
+Examination (NPLEX), a competency-based national naturopathic
+licensing examination administered by the North American Board of
+Naturopathic Examiners or an equivalent successor agency
+recognized by the Board.
+b.      Has successfully passed a competency-based state or Canadian
+province naturopathic licensing examination administered prior to
+the existence of NPLEX and approved by the Board.
+(4)      Provides the Board with a list of physicians licensed to practice medicine in
+this State who have agreed to consult with the applicant and accept referrals
+from the applicant. The applicant shall also provide the Board with letters of
+verification from the listed physicians. The list must include physicians with
+specialties in at least four of the following areas: allergy and immunology,
+cancer and oncology, cardiology, endocrinology and metabolism, family
+medicine, gastroenterology, internal medicine, obstetrics and gynecology,
+pediatrics, psychiatry, and urology.
+(5)      Submits any other documentation the Board deems necessary to determine
+the applicant's fitness for certification under this Article. This documentation
+may include successful completion of a Board-approved jurisprudence
+examination on State laws and rules related to naturopathic medicine.
+(b)     Renewal. – A certification expires two years after the date it is issued unless it is
+renewed. To renew a certification, a licensee shall meet all of the following conditions:
+(1)      Submit an application for certification renewal.
+(2)      Pay the required fees.
+(3)      Complete at least 40 hours of continuing education approved by the Board
+within the two-year period immediately prior to the renewal date.
+Failure to renew a certification within six months of the date the certification expires shall
+result in automatic forfeiture of the right to practice naturopathic medicine in this State until the
+certification is reinstated.
+(c)     Reinstatement. – A certified naturopathic doctor who has allowed the certification to
+lapse by failure to renew within the time allowed under subsection (b) of this section may apply
+for reinstatement. The Board may reinstate the applicant's certification if the applicant pays the
+required fees, furnishes a statement of the reason for failure to apply for renewal before the
+deadline, and complies with any other requirements established in rules adopted by the Board.
+If the certification has lapsed for five years or longer, the Board may require the applicant to
+satisfactorily complete one or more skills assessment or remediation courses approved by the
+Board or to provide proof of active licensure, certification, or registration within the past five
+years in another state, district, territory, or Canadian province.
+"§ 90-738. Reciprocity.
+The Board may grant, upon application and payment of fees, a certification to a person who
+resides in this State and has been licensed, certified, or registered to practice as a naturopathic
+doctor in another state, district, territory, or Canadian province if both of the following
+conditions are met:
+(1)       The standards for licensure, certification, or registration in the state, district,
+territory, or province in which the naturopathic doctor is licensed, certified,
+or registered are substantially equivalent to those provided in this Article.
+(2)       The applicant provides proof of licensure, certification, or registration in
+good standing in all states, districts, territories, and provinces in which the
+applicant has been licensed, certified, or registered.
+"§ 90-739. Fees.
+The Board may impose the following fees:
+(1)     Application and examination .......................................................... $200.00
+(2)     Certification..................................................................................... $600.00
+(3)     Certification renewal ....................................................................... $400.00
+(4)     Late renewal .................................................................................... $200.00
+(5)     Reinstatement ............................................................................... $1,000.00
+(6)     Reasonable charges for duplication services and material.
+(7)     Criminal history record check fee equal to the amount imposed by the
+Department of Justice to conduct the criminal history record check requested
+by the Board.
+"§ 90-740. Disciplinary authority.
+(a)     Authority. – The Board may impose probationary conditions upon a certified
+naturopathic doctor, or it may deny, suspend, revoke, or refuse to issue or renew a certification
+if the certified naturopathic doctor or applicant does any of the following:
+(1)     Engages in any act or practice in violation of any of the provisions of this
+Article or of any of the rules adopted by the Board or aids, abets, or assists
+any other person in the violation of the provisions of this Article or rules
+adopted by the Board.
+(2)     Gives false information to or withholds information from the Board in
+procuring or attempting to procure certification.
+(3)     Has been convicted of or pled guilty or no contest to a crime that indicates
+that the person is unfit or incompetent to practice as a naturopathic doctor or
+that indicates the person has deceived or defrauded the public. A felony
+conviction shall result in the automatic revocation of certification by the
+Board unless the Board determines otherwise pursuant to rules adopted by
+the Board.
+(4)     Has been declared mentally incompetent by a court of competent
+jurisdiction.
+(5)     Habitually uses or is addicted to drugs or intoxicating liquors to the extent
+that it affects the certified naturopathic doctor's professional competency. If
+a certified naturopathic doctor violates this subdivision, the Board may
+require the certified naturopathic doctor to undergo a mental or physical
+examination by physicians designated by the Board before or after the
+certified naturopathic doctor has been charged. The results of the
+examination shall be admissible as evidence in a hearing before the Board.
+(6)     Has demonstrated gross negligence, incompetency, or misconduct in the
+performance of naturopathic medical treatment.
+(7)     Has had a health care provider license, certification, or registration denied,
+restricted, revoked, or suspended by another state, district, territory, or
+province.
+(8)     Fails to consent to a criminal history record check.
+(9)     Fails to respond, within a reasonable time, to inquiries from the Board
+concerning any matter affecting the individual's certification to practice
+naturopathic medicine.
+(10)     Fails to complete continuing education requirements within the time
+prescribed.
+(b)     Hearing. – Denial, refusal to renew, suspension, or revocation of a certification or
+imposition of probationary conditions upon a certified naturopathic doctor may be ordered by
+the Board after a hearing held in accordance with Article 3A of Chapter 150B of the General
+Statutes and rules adopted pursuant to this Article. An application may be made to the Board
+for reinstatement of a revoked certification if the revocation has been in effect for not less than
+two years.
+(c)     Records. – The Board shall keep a record of its proceedings. The Board shall, in a
+closed session, receive evidence regarding the treatment or examination of a patient who has
+not expressly or impliedly consented to the public disclosure of the treatment when necessary
+for the protection of the rights of the patient or of the accused naturopathic doctor and the full
+presentation of relevant evidence. All records, papers, investigative files, investigative reports,
+and other documents containing information gathered or received by the Board as a result of
+investigations, inquiries, or interviews conducted in connection with an application for
+certification, a complaint, or a disciplinary matter are not considered public documents within
+the meaning of Chapter 132 of the General Statutes.
+(d)     Confidential Information. – The Board may release confidential or nonpublic
+information about a certified naturopathic doctor to any health care licensure, certification, or
+registration board in this State or another state relating to the issuance, denial, suspension,
+revocation, or voluntary surrender of the license, certification, or registration including the
+reasons for the action or any investigative report prepared by the Board. The Board shall notify
+the naturopathic doctor within 60 days after the information is released. The Board shall furnish
+to the naturopathic doctor a summary of the information being released. However, if the
+naturopathic doctor requests, in writing, within 30 days after the date of notice, a copy of the
+information being released, the Board shall give to the naturopathic doctor a copy of all the
+information being released. Notice or copies shall not be provided by the Board if the
+information relates to an ongoing criminal investigation by a law enforcement agency or any
+Department of Health and Human Services personnel with enforcement or investigative
+responsibilities.
+"§ 90-741. Criminal history record check of applicants and certified naturopathic
+doctors.
+(a)     Criminal History Record Check. – The Board shall require a criminal history record
+check for a person who is either certified as a naturopathic doctor under this Article or applying
+for certification as a naturopathic doctor under this Article. The Board is responsible for
+providing to the North Carolina Department of Justice the fingerprints of the person to be
+checked, a form signed by the person consenting to the criminal record check and the use of
+fingerprints and other identifying information required by the State or national repositories, and
+any additional information required by the Department of Justice. The Board shall keep all
+information obtained pursuant to this section confidential.
+(b)     Conviction. – If a criminal history record check reveals one or more convictions, the
+conviction does not automatically bar certification. The Board shall consider all of the
+following factors regarding the conviction:
+(1)     The level of seriousness of the crime.
+(2)     The date of the crime.
+(3)     The age of the person at the time of the conviction.
+(4)     The circumstances surrounding the commission of the crime, if known.
+(5)     The nexus between the criminal conduct of the person and the job duties of
+the position to be filled.
+(6)     The person's prison, jail, probation, parole, rehabilitation, and employment
+records since the date the crime was committed.
+(7)     The subsequent commission of a crime by the person.
+(c)     Denial of Certification. – If the Board denies, revokes, or suspends a certification
+based on information obtained in a criminal history record check, the Board shall disclose to
+the person the information contained in the criminal history record check that is relevant to the
+Board's actions. The Board may not provide a copy of the criminal history record check to the
+person. A person has the right to appear before the Board to appeal the Board's decision. An
+appearance before the Board shall constitute an exhaustion of administrative remedies in
+accordance with Chapter 150B of the General Statutes.
+"§ 90-742. Reports; immunity from suit.
+(a)     Report. – A person who has reasonable cause to suspect misconduct or incapacity of
+a certified naturopathic doctor, or who has reasonable cause to suspect that a person is in
+violation of this Article, may report the relevant facts to the Board. Upon receipt of a charge, or
+upon its own initiative, the Board may give notice of an administrative hearing or may, after
+diligent investigation, dismiss unfounded charges. A person who, in good faith, makes a report
+pursuant to this section is immune from any criminal prosecution or civil liability resulting
+from making the report.
+(b)     Limited Immunity. – The Board, its officers, employees, and staff are immune from
+any criminal prosecution or civil liability for exercising, in good faith, the powers and duties
+given to the Board under this Article.
+"§ 90-743. Third-party reimbursement.
+Nothing in this Article shall be construed to require direct third-party reimbursement to
+persons certified under this Article.
+"§ 90-744. Advisory Council.
+(a)     Created. – An Advisory Council is created to advise the Board and to develop
+recommendations to foster coordination and collaboration between naturopathic doctors,
+medical doctors, and other health care professionals for the purpose of providing appropriate
+care for patients. The Council shall meet periodically and report its recommendations to the
+Board and to the boards of directors for the North Carolina Medical Society and the North
+Carolina Association of Naturopathic Physicians.
+(b)     Membership. – The Advisory Council shall consist of the following six members:
+(1)     Two licensed physicians appointed by the North Carolina Medical Society.
+(2)     Two certified naturopathic doctors appointed by the North Carolina
+Association of Naturopathic Physicians.
+(3)     One licensed pharmacist or pharmacologist appointed by the North Carolina
+Association of Pharmacists.
+(4)     One licensed advanced practice registered nurse appointed by the North
+Carolina Nursing Association.
+(c)     General Administration. – Each member is appointed for a term of two years
+beginning July 1, 2018. A member serves until a successor is appointed. The members of the
+Advisory Council may elect a chairperson by a majority vote. Advisory Council members may
+not receive compensation for their services but may receive reimbursement as provided in
+G.S. 93B-5."
+SECTION 2. G.S. 90-18(c) is amended by adding a new subdivision to read:
+"(c) The following shall not constitute practicing medicine or surgery as defined in this
+Article:
+…
+(21) The practice of naturopathic medicine by a naturopathic doctor certified
+under the provisions of Article 43 of this Chapter."
+SECTION 3. Part 2 of Article 4 of Chapter 114 of the General Statutes is amended
+by adding a new section to read:
+"§ 114-19.33A. Criminal history record checks for naturopathic doctors.
+(a)    The Department of Justice shall provide to the North Carolina Naturopathic Doctors
+Certification Board from the State and National Repositories of Criminal Histories the criminal
+history of an applicant for certification by the Board or a certified naturopathic doctor of the
+Board. The North Carolina Naturopathic Doctors Certification Board shall provide to the
+Department of Justice, along with the request, the fingerprints of the applicant or certified
+naturopathic doctor, a form signed by the applicant or certified naturopathic doctor consenting
+to the criminal history record check and use of fingerprints and other identifying information
+required by the State and national repositories, and any additional information required by the
+Department of Justice. The fingerprints of the applicant or certified naturopathic doctor shall be
+forwarded to the State Bureau of Investigation for a search of the State's criminal history record
+file, and the State Bureau of Investigation shall forward a set of fingerprints to the Federal
+Bureau of Investigation for a national criminal history record check. The North Carolina
+Naturopathic Doctors Certification Board shall keep all information obtained pursuant to this
+section confidential.
+(b)    The Department of Justice may charge a fee to offset the cost incurred by it to
+conduct a criminal history record check under this section. The fee shall not exceed the actual
+cost of locating, editing, researching, and retrieving the information."
+SECTION 4. Notwithstanding the provisions of G.S. 90-735, as enacted by Section
+1 of this act, the initial naturopathic doctors appointed to the North Carolina Naturopathic
+Doctors Certification Board must be North Carolina residents, must be licensed as a
+naturopathic doctor in a state, district, territory, or province that licenses this profession, and
+must be eligible for certification under G.S. 90-737, as enacted by Section 1 of this act. Upon
+appointment, the appointee must immediately seek to become certified under this act.
+SECTION 5. This act is effective when it becomes law.

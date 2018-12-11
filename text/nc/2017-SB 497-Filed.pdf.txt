@@ -1,172 +1,138 @@
-                                                                                       FILED SENATE
-                                                                                        Mar 29, 2017
-                          GENERAL ASSEMBLY OF NORTH CAROLINA
-                                                                                           S.B. 497
-                                      SESSION 2017
-                                                                                     PRINCIPAL CLERK
-     S                                                                                           D
-                              SENATE BILL DRS45320-MC-123 (03/14)
-
-
-
-     Short Title:   Nonprofit Sales Tax Exemption.                                              (Public)
-     Sponsors:      Senators D. Davis and Pate (Primary Sponsors).
-     Referred to:
-
-
- 1                                        A BILL TO BE ENTITLED
- 2   AN ACT TO PROVIDE A SALES TAX EXEMPTION FOR CERTAIN NONPROFIT
- 3       ENTITIES.
- 4   The General Assembly of North Carolina enacts:
- 5               SECTION 1. G.S. 105-164.14(b) is repealed.
- 6               SECTION 2. G.S. 105-164.13 reads as rewritten:
- 7   "§ 105-164.13. Retail sales and use tax.
- 8       The sale at retail and the use, storage, or consumption in this State of the following tangible
- 9   personal property, digital property, and services are specifically exempted from the tax imposed
-10   by this Article:
-11               …
-12               (52a) Tangible personal property, digital property, and services for use in carrying
-13                       on the work of the following entities, provided the entity is not owned or
-14                       controlled by the State:
-15                       a.      Hospitals not operated for profit, including hospitals and medical
-16                               accommodations operated by an authority or other public hospital
-17                               described in Article 2 of Chapter 131E of the General Statutes.
-18                       b.      An organization that is exempt from income tax under section
-19                               501(c)(3) of the Code and not classified in the National Taxonomy of
-20                               Exempt Entities major group areas of (i) Community Improvement
-21                               and Capacity Building, (ii) Public and Societal Benefit, or (iii)
-22                               Mutual and Membership Benefit.
-23                       c.      Volunteer fire departments and volunteer emergency medical
-24                               services squads that are (i) exempt from income tax under the Code,
-25                               (ii) financially accountable to a city as defined in G.S. 160A-1, a
-26                               county, or a group of cities and counties, or (iii) both.
-27                       d.      An organization that is a single member LLC that is disregarded for
-28                               income tax purposes and satisfies all of the following conditions:
-29                               1.       The owner of the LLC is an organization that is exempt from
-30                                        income tax under section 501(c)(3) of the Code.
-31                               2.       The LLC is a nonprofit entity that would be eligible for an
-32                                        exemption under 501(c)(3) of the Code if it were not
-33                                        disregarded for income tax purposes.
-34                               3.       The LLC is not an organization that would be properly
-35                                        classified in any of the major group areas of the National
-
-
-
-                                  *DRS45320-MC-123*
-     General Assembly Of North Carolina                                                    Session 2017
- 1                                       Taxonomy of Exempt Entities listed in sub-subdivision b. of
- 2                                       this subdivision.
- 3                     e.       Qualified retirement facilities whose property is excluded from
- 4                              property tax under G.S. 105-278.6A.
- 5                     f.       A university-affiliated nonprofit organization that procures, designs,
- 6                              constructs, or provides facilities to, or for use by, a constituent
- 7                              institution of The University of North Carolina. For purposes of this
- 8                              sub-subdivision, a nonprofit organization includes an entity exempt
- 9                              from taxation as a disregarded entity of the nonprofit organization.
-10                     g.       Over-the-counter drugs purchased for use in carrying out the work of
-11                              a hospital not listed in one of the sub-subdivisions of this
-12                              subdivision.
-13                          This exemption provided in this subdivision includes indirect sales to a
-14                     nonprofit entity of digital property and tangible personal property purchased
-15                     by a real property contractor that becomes a part of or permanently installed
-16                     or applied to any building or structure that is owned or leased by the
-17                     nonprofit entity and is being erected, altered, or repaired for use by the
-18                     nonprofit entity for carrying on its nonprofit activities. A sale to fulfill a real
-19                     property contract with an entity that holds an exemption certificate is exempt
-20                     to the same extent as if purchased directly by the entity that holds the
-21                     exemption certificate. A real property contractor that purchases an item
-22                     allowed an exemption under this subdivision must provide (i) an exemption
-23                     certificate to the retailer that includes the name of the nonprofit entity
-24                     holding the exemption certificate, (ii) the exemption certificate number
-25                     issued to that holder, and (iii) the information required pursuant to
-26                     G.S. 105-164.28.
-27                          The exemption provided in this subdivision does not apply to (i)
-28                     purchases of electricity, telecommunications service, ancillary service, piped
-29                     natural gas, video programming, a prepaid meal plan, aviation gasoline and
-30                     jet fuel, and spirituous liquor or (ii) sales and use tax liability indirectly paid
-31                     by a nonprofit entity through reimbursement to an authorized person of the
-32                     entity for tax incurred by the person on an item or transaction subject to tax
-33                     under Article 5 of this Chapter.
-34                          The aggregate annual exemption amount allowed to an entity under this
-35                     subsection for a fiscal year may not exceed thirty-one million seven hundred
-36                     thousand dollars ($31,700,000) in tax. A real property contractor who pays
-37                     local sales and use taxes on property qualifying for an exemption under this
-38                     subdivision on behalf of an entity shall give the entity for whose project the
-39                     property was purchased a signed statement containing (i) the date the
-40                     property was purchased, (ii) the type of property purchased, (iii) the project
-41                     for which the property was used, (iv) if the property was purchased in this
-42                     State, the county in which it was purchased, and (v) if the property was not
-43                     purchased in this State, the county in which the property was used. If the
-44                     property was purchased in this State, the real property contractor shall attach
-45                     a copy of the sales or purchase receipt to the statement.
-46              …."
-47              SECTION 3. Article 5 of Chapter 105 of the General Statutes is amended by
-48   adding a new section to read:
-49   "§ 105-164.29C. Nonprofit entity exemption process.
-50       (a)    Application. – To be eligible for the exemption provided in G.S. 105-164.13(52a), a
-51   nonprofit entity must obtain from the Department a sales tax exemption number. The
-
-     Page 2                                                        DRS45320-MC-123 [v.17] (03/17)
-     General Assembly Of North Carolina                                                     Session 2017
- 1   application for exemption must be in the form required by the Secretary, be signed by a person
- 2   with authority to bind the entity, and contain any information required by the Secretary. The
- 3   Secretary must assign a sales tax exemption number to a nonprofit entity that submits a proper
- 4   application.
- 5       (b)     Liability. – A nonprofit entity that does not use the items purchased with its
- 6   exemption number must pay the tax that should have been paid on the items purchased, plus
- 7   interest calculated from the date the tax would otherwise have been paid."
- 8               SECTION 4. G.S. 105-467(b) reads as rewritten:
- 9       "(b) Exemptions and Refunds. – The State exemptions and exclusions contained in
-10   G.S. 105-164.13 and G.S. 105-164.27A Article 5 of this Chapter apply to the local sales and
-11   use tax authorized to be levied and imposed under this Article. The State refund provisions
-12   contained in G.S. 105-164.14 through G.S. 105-164.14B and G.S. 105-164.14A apply to the
-13   local sales and use tax authorized to be levied and imposed under this Article. A refund of an
-14   excessive or erroneous State sales tax collection allowed under G.S. 105-164.11 and a refund of
-15   State sales tax paid on a rescinded sale or cancelled service contract under G.S. 105-164.11A
-16   apply to the local sales and use tax authorized to be levied and imposed under this Article. The
-17   aggregate annual local refund exemption amount allowed an entity under G.S. 105-164.14(b)
-18   G.S. 105-164.13(52a) for a fiscal year may not exceed thirteen million three hundred thousand
-19   dollars ($13,300,000).($13,300,000) in tax.
-20       Except as provided in this subsection, a taxing county may not allow an exemption,
-21   exclusion, or refund that is not allowed under the State sales and use tax. A local school
-22   administrative unit and a joint agency created by interlocal agreement among local school
-23   administrative units pursuant to G.S. 160A-462 to jointly purchase food service-related
-24   materials, supplies, and equipment on their behalf is allowed an annual refund of sales and use
-25   taxes paid by it under this Article on direct purchases of tangible personal property and
-26   services. Sales and use tax liability indirectly incurred by the entity on building materials,
-27   supplies, fixtures, and equipment that become a part of or annexed to any building or structure
-28   that is owned or leased by the entity and is being erected, altered, or repaired for use by the
-29   entity is considered a sales or use tax liability incurred on direct purchases by the entity for the
-30   purpose of this subsection. The refund allowed under this subsection does not apply to
-31   purchases of electricity, telecommunications service, ancillary service, piped natural gas, video
-32   programming, or a prepaid meal plan. A request for a refund is due in the same time and
-33   manner as provided in G.S. 105-164.14(c). Refunds applied for more than three years after the
-34   due date are barred."
-35               SECTION 5. G.S. 105-236(a)(5a) reads as rewritten:
-36               "(5a) Misuse of Exemption Certificate. – For misuse of an exemption certificate
-37                       by a purchaser, the Secretary shall assess a penalty equal to two hundred
-38                       fifty dollars ($250.00). An exemption certificate is a certificate issued by the
-39                       Secretary that authorizes a retailer to sell tangible personal property to the
-40                       holder of the certificate and either collect tax at a preferential rate or not
-41                       collect tax on the sale. Examples of an exemption certificate include a
-42                       certificate of exemption, a direct pay certificate, and a conditional exemption
-43                       certificate. Misuse under this subdivision includes improper use of a
-44                       certificate of exemption issued to a nonprofit entity pursuant to
-45                       G.S. 105-164.29C for direct and indirect purchases by the entity or another
-46                       person."
-47               SECTION 6. This act becomes effective October 1, 2017, and applies to sales and
-48   purchases made on or after that date. This act does not affect the rights or liabilities of the State,
-49   a taxpayer, or another person arising under a statute amended or repealed by this act before the
-50   effective date of its amendment or repeal, nor does it affect the right to any refund or credit of a
-
-
-     DRS45320-MC-123 [v.17] (03/17)                                                                 Page 3
-    General Assembly Of North Carolina                                         Session 2017
-1   tax that accrued under the amended or repealed statute before the effective date of its
-2   amendment or repeal.
-
-
-
-
-    Page 4                                                DRS45320-MC-123 [v.17] (03/17)
-
+A BILL TO BE ENTITLED
+AN ACT TO PROVIDE A SALES TAX EXEMPTION FOR CERTAIN NONPROFIT
+ENTITIES.
+The General Assembly of North Carolina enacts:
+SECTION 1. G.S. 105-164.14(b) is repealed.
+SECTION 2. G.S. 105-164.13 reads as rewritten:
+"§ 105-164.13. Retail sales and use tax.
+The sale at retail and the use, storage, or consumption in this State of the following tangible
+personal property, digital property, and services are specifically exempted from the tax imposed
+by this Article:
+…
+(52a) Tangible personal property, digital property, and services for use in carrying
+on the work of the following entities, provided the entity is not owned or
+controlled by the State:
+a.      Hospitals not operated for profit, including hospitals and medical
+accommodations operated by an authority or other public hospital
+described in Article 2 of Chapter 131E of the General Statutes.
+b.      An organization that is exempt from income tax under section
+501(c)(3) of the Code and not classified in the National Taxonomy of
+Exempt Entities major group areas of (i) Community Improvement
+and Capacity Building, (ii) Public and Societal Benefit, or (iii)
+Mutual and Membership Benefit.
+c.      Volunteer fire departments and volunteer emergency medical
+services squads that are (i) exempt from income tax under the Code,
+(ii) financially accountable to a city as defined in G.S. 160A-1, a
+county, or a group of cities and counties, or (iii) both.
+d.      An organization that is a single member LLC that is disregarded for
+income tax purposes and satisfies all of the following conditions:
+1.       The owner of the LLC is an organization that is exempt from
+income tax under section 501(c)(3) of the Code.
+2.       The LLC is a nonprofit entity that would be eligible for an
+exemption under 501(c)(3) of the Code if it were not
+disregarded for income tax purposes.
+3.       The LLC is not an organization that would be properly
+classified in any of the major group areas of the National
+Taxonomy of Exempt Entities listed in sub-subdivision b. of
+this subdivision.
+e.       Qualified retirement facilities whose property is excluded from
+property tax under G.S. 105-278.6A.
+f.       A university-affiliated nonprofit organization that procures, designs,
+constructs, or provides facilities to, or for use by, a constituent
+institution of The University of North Carolina. For purposes of this
+sub-subdivision, a nonprofit organization includes an entity exempt
+from taxation as a disregarded entity of the nonprofit organization.
+g.       Over-the-counter drugs purchased for use in carrying out the work of
+a hospital not listed in one of the sub-subdivisions of this
+subdivision.
+This exemption provided in this subdivision includes indirect sales to a
+nonprofit entity of digital property and tangible personal property purchased
+by a real property contractor that becomes a part of or permanently installed
+or applied to any building or structure that is owned or leased by the
+nonprofit entity and is being erected, altered, or repaired for use by the
+nonprofit entity for carrying on its nonprofit activities. A sale to fulfill a real
+property contract with an entity that holds an exemption certificate is exempt
+to the same extent as if purchased directly by the entity that holds the
+exemption certificate. A real property contractor that purchases an item
+allowed an exemption under this subdivision must provide (i) an exemption
+certificate to the retailer that includes the name of the nonprofit entity
+holding the exemption certificate, (ii) the exemption certificate number
+issued to that holder, and (iii) the information required pursuant to
+G.S. 105-164.28.
+The exemption provided in this subdivision does not apply to (i)
+purchases of electricity, telecommunications service, ancillary service, piped
+natural gas, video programming, a prepaid meal plan, aviation gasoline and
+jet fuel, and spirituous liquor or (ii) sales and use tax liability indirectly paid
+by a nonprofit entity through reimbursement to an authorized person of the
+entity for tax incurred by the person on an item or transaction subject to tax
+under Article 5 of this Chapter.
+The aggregate annual exemption amount allowed to an entity under this
+subsection for a fiscal year may not exceed thirty-one million seven hundred
+thousand dollars ($31,700,000) in tax. A real property contractor who pays
+local sales and use taxes on property qualifying for an exemption under this
+subdivision on behalf of an entity shall give the entity for whose project the
+property was purchased a signed statement containing (i) the date the
+property was purchased, (ii) the type of property purchased, (iii) the project
+for which the property was used, (iv) if the property was purchased in this
+State, the county in which it was purchased, and (v) if the property was not
+purchased in this State, the county in which the property was used. If the
+property was purchased in this State, the real property contractor shall attach
+a copy of the sales or purchase receipt to the statement.
+…."
+SECTION 3. Article 5 of Chapter 105 of the General Statutes is amended by
+adding a new section to read:
+"§ 105-164.29C. Nonprofit entity exemption process.
+(a)    Application. – To be eligible for the exemption provided in G.S. 105-164.13(52a), a
+nonprofit entity must obtain from the Department a sales tax exemption number. The
+application for exemption must be in the form required by the Secretary, be signed by a person
+with authority to bind the entity, and contain any information required by the Secretary. The
+Secretary must assign a sales tax exemption number to a nonprofit entity that submits a proper
+application.
+(b)     Liability. – A nonprofit entity that does not use the items purchased with its
+exemption number must pay the tax that should have been paid on the items purchased, plus
+interest calculated from the date the tax would otherwise have been paid."
+SECTION 4. G.S. 105-467(b) reads as rewritten:
+"(b) Exemptions and Refunds. – The State exemptions and exclusions contained in
+G.S. 105-164.13 and G.S. 105-164.27A Article 5 of this Chapter apply to the local sales and
+use tax authorized to be levied and imposed under this Article. The State refund provisions
+contained in G.S. 105-164.14 through G.S. 105-164.14B and G.S. 105-164.14A apply to the
+local sales and use tax authorized to be levied and imposed under this Article. A refund of an
+excessive or erroneous State sales tax collection allowed under G.S. 105-164.11 and a refund of
+State sales tax paid on a rescinded sale or cancelled service contract under G.S. 105-164.11A
+apply to the local sales and use tax authorized to be levied and imposed under this Article. The
+aggregate annual local refund exemption amount allowed an entity under G.S. 105-164.14(b)
+G.S. 105-164.13(52a) for a fiscal year may not exceed thirteen million three hundred thousand
+dollars ($13,300,000).($13,300,000) in tax.
+Except as provided in this subsection, a taxing county may not allow an exemption,
+exclusion, or refund that is not allowed under the State sales and use tax. A local school
+administrative unit and a joint agency created by interlocal agreement among local school
+administrative units pursuant to G.S. 160A-462 to jointly purchase food service-related
+materials, supplies, and equipment on their behalf is allowed an annual refund of sales and use
+taxes paid by it under this Article on direct purchases of tangible personal property and
+services. Sales and use tax liability indirectly incurred by the entity on building materials,
+supplies, fixtures, and equipment that become a part of or annexed to any building or structure
+that is owned or leased by the entity and is being erected, altered, or repaired for use by the
+entity is considered a sales or use tax liability incurred on direct purchases by the entity for the
+purpose of this subsection. The refund allowed under this subsection does not apply to
+purchases of electricity, telecommunications service, ancillary service, piped natural gas, video
+programming, or a prepaid meal plan. A request for a refund is due in the same time and
+manner as provided in G.S. 105-164.14(c). Refunds applied for more than three years after the
+due date are barred."
+SECTION 5. G.S. 105-236(a)(5a) reads as rewritten:
+"(5a) Misuse of Exemption Certificate. – For misuse of an exemption certificate
+by a purchaser, the Secretary shall assess a penalty equal to two hundred
+fifty dollars ($250.00). An exemption certificate is a certificate issued by the
+Secretary that authorizes a retailer to sell tangible personal property to the
+holder of the certificate and either collect tax at a preferential rate or not
+collect tax on the sale. Examples of an exemption certificate include a
+certificate of exemption, a direct pay certificate, and a conditional exemption
+certificate. Misuse under this subdivision includes improper use of a
+certificate of exemption issued to a nonprofit entity pursuant to
+G.S. 105-164.29C for direct and indirect purchases by the entity or another
+person."
+SECTION 6. This act becomes effective October 1, 2017, and applies to sales and
+purchases made on or after that date. This act does not affect the rights or liabilities of the State,
+a taxpayer, or another person arising under a statute amended or repealed by this act before the
+effective date of its amendment or repeal, nor does it affect the right to any refund or credit of a
+tax that accrued under the amended or repealed statute before the effective date of its
+amendment or repeal.

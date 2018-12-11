@@ -1,46 +1,29 @@
-                         GENERAL ASSEMBLY OF NORTH CAROLINA
-                              SECOND EXTRA SESSION 2018
-     S                                                                                              1
-                                            SENATE BILL 3
-
-
-     Short Title:   Modify Constitutional Tax Rate Caps.                                      (Public)
-     Sponsors:      Senator Clark (Primary Sponsor).
-     Referred to:   Rules and Operations of the Senate
-                                             August 24, 2018
-
- 1                                       A BILL TO BE ENTITLED
- 2   AN ACT TO REPEAL THE PROPOSED CONSTITUTIONAL AMENDMENT MODIFYING
- 3       THE MAXIMUM TAX RATE ON INCOMES AND TO AMEND THE NORTH
- 4       CAROLINA CONSTITUTION TO PROVIDE THAT THE MAXIMUM STATE SALES
- 5       AND USE TAX RATE, NOT INCLUDING AUTHORIZED LOCAL SALES AND USE
- 6       TAXES AND NOT INCLUDING OTHER TAXES IMPOSED BY THE STATE, CANNOT
- 7       EXCEED SIX PERCENT.
- 8   The General Assembly of North Carolina enacts:
- 9               SECTION 1. Section 2 of Article V of the North Carolina Constitution is amended
-10   by adding a new subsection to read:
-11       "(6a) Sales tax. The State rate of tax on net taxable sales or gross receipts, not including
-12   other State or local taxes, shall not in any case exceed six percent."
-13               SECTION 2. The amendment set out in Section 1 of this act shall be submitted to
-14   the qualified voters of the State at a statewide general election to be held in November of 2018,
-15   which election shall be conducted under the laws then governing elections in the State. Ballots,
-16   voting systems, or both may be used in accordance with Chapter 163A of the General Statutes.
-17   The question to be used in the voting systems and ballots shall be:
-18                                       "[ ] FOR       [ ] AGAINST
-19               Constitutional amendment to set a maximum allowable State sales and use tax rate,
-20   not including other State or local taxes, of six percent (6%)."
-21               SECTION 3. If a majority of votes cast on the question are in favor of the amendment
-22   set out in Section 1 of this act, the Bipartisan State Board of Elections and Ethics Enforcement
-23   shall certify the amendment to the Secretary of State. The Secretary of State shall enroll the
-24   amendment so certified among the permanent records of that office.
-25               SECTION 4. The constitutional amendment shall become effective upon such
-26   certification and apply to sales occurring on or after that date.
-27               SECTION 5. Effective when this act becomes law, S.L. 2018-119 is repealed.
-28               SECTION 6. Except as otherwise provided, this act is effective when it becomes
-29   law.
-
-
-
-
-                                            *S3-v-1*
-
+A BILL TO BE ENTITLED
+AN ACT TO REPEAL THE PROPOSED CONSTITUTIONAL AMENDMENT MODIFYING
+THE MAXIMUM TAX RATE ON INCOMES AND TO AMEND THE NORTH
+CAROLINA CONSTITUTION TO PROVIDE THAT THE MAXIMUM STATE SALES
+AND USE TAX RATE, NOT INCLUDING AUTHORIZED LOCAL SALES AND USE
+TAXES AND NOT INCLUDING OTHER TAXES IMPOSED BY THE STATE, CANNOT
+EXCEED SIX PERCENT.
+The General Assembly of North Carolina enacts:
+SECTION 1. Section 2 of Article V of the North Carolina Constitution is amended
+by adding a new subsection to read:
+"(6a) Sales tax. The State rate of tax on net taxable sales or gross receipts, not including
+other State or local taxes, shall not in any case exceed six percent."
+SECTION 2. The amendment set out in Section 1 of this act shall be submitted to
+the qualified voters of the State at a statewide general election to be held in November of 2018,
+which election shall be conducted under the laws then governing elections in the State. Ballots,
+voting systems, or both may be used in accordance with Chapter 163A of the General Statutes.
+The question to be used in the voting systems and ballots shall be:
+"[ ] FOR       [ ] AGAINST
+Constitutional amendment to set a maximum allowable State sales and use tax rate,
+not including other State or local taxes, of six percent (6%)."
+SECTION 3. If a majority of votes cast on the question are in favor of the amendment
+set out in Section 1 of this act, the Bipartisan State Board of Elections and Ethics Enforcement
+shall certify the amendment to the Secretary of State. The Secretary of State shall enroll the
+amendment so certified among the permanent records of that office.
+SECTION 4. The constitutional amendment shall become effective upon such
+certification and apply to sales occurring on or after that date.
+SECTION 5. Effective when this act becomes law, S.L. 2018-119 is repealed.
+SECTION 6. Except as otherwise provided, this act is effective when it becomes
+law.

@@ -1,90 +1,67 @@
-                           GENERAL ASSEMBLY OF NORTH CAROLINA
-                                       SESSION 2017
-     S                                                                                               1
-                                            SENATE BILL 93*
-
-
-     Short Title:   Common Sense Compromise to Repeal HB 2.                                    (Public)
-     Sponsors:      Senators Blue, Van Duyn (Primary Sponsors); Foushee, Robinson, and Waddell.
-     Referred to:   Rules and Operations of the Senate
-                                              February 16, 2017
-
- 1                                        A BILL TO BE ENTITLED
- 2   AN ACT TO PROVIDE A COMMON SENSE COMPROMISE TO REPEAL HOUSE BILL 2
- 3       AND REQUIRE ENHANCED CRIMINAL PENALTIES AND PROVIDE NOTICE FOR
- 4       ADOPTION OF CERTAIN NONDISCRIMINATION ORDINANCES.
- 5   The General Assembly of North Carolina enacts:
- 6              SECTION 1. S.L. 2016-99 and S.L. 2016-3 are repealed.
- 7              SECTION 2. Article 21 of Chapter 160A of the General Statutes is amended by
- 8   adding a new section to read:
- 9   "§ 160A-499.5. Nondiscrimination ordinances.
-10       (a)    A local government shall provide at least 30 days' notice to the General Assembly, and
-11   to the public, before the adoption of any nondiscrimination ordinance extending any protections
-12   beyond those already afforded by State law. The notice required by this section shall be given in
-13   the same manner as provided by G.S. 120-29.5.
-14       (b)    The provisions of this section apply to counties."
-15              SECTION 3. Article 81B of Chapter 15A of the General Statutes is amended by
-16   adding a new section to read:
-17   "§ 15A-1340.16E. Enhanced sentence if defendant committed certain felony offenses in a
-18              public changing facility or a changing facility in a place of public
-19              accommodations.
-20       (a)    The following definitions apply in this section:
-21              (1)     Changing facility. – A facility designed or designated to be used by a person in
-22                      various states of undress. The term may include, but is not limited to, a
-23                      restroom, locker room, changing room, or shower room.
-24              (2)     Place of public accommodations. – As defined in G.S. 168A-3(8).
-25       (b)    If a person is convicted of any of the felonies set out in subdivisions (1) through (8) of
-26   this subsection and it is found as provided in this section that the felony was committed in a public
-27   changing facility or in a changing facility in a place of public accommodations, then the person
-28   shall have the minimum term of imprisonment to which the person is sentenced for that felony
-29   increased by six months. The maximum term of imprisonment shall be the maximum term that
-30   corresponds to the minimum term after it is increased by six months as specified in
-31   G.S. 15A-1340.17. An enhanced penalty may be imposed pursuant to this section on a person
-32   convicted of any of the following offenses:
-33              (1)     G.S. 14-27.22 (Second degree forcible rape).
-34              (2)     G.S. 14-27.27 (Second degree forcible sexual offense).
-35              (3)     G.S. 14-190.9(a1) (Indecent exposure for purpose of arousing sexual desire).
-
-
-
-
-                                             *S93-v-1*
-     General Assembly Of North Carolina                                                     Session 2017
- 1              (4)       G.S. 14-202(d), (e), or (f) (Secretly peeping into room occupied by another
- 2                        person).
- 3                (5)     G.S. 14-202(g) or (h) (Secretly peeping into room occupied by another person),
- 4                        if the person convicted knows or has reason to know that the photographic
- 5                        image possessed or any other image being disseminated was taken in a public
- 6                        changing facility or changing facility in a place of public accommodations.
- 7                (6)     G.S. 14-202.1 (Taking indecent liberties with children).
- 8                (7)     G.S. 14-202.4 (Taking indecent liberties with a student).
- 9                (8)     G.S. 14-277.3A (Felony stalking offense), if the person is convicted of either a
-10                        Class H or Class F felony.
-11       (c)      An indictment or information for the felony shall allege in that indictment or
-12   information or in a separate indictment or information the facts set out in subsection (b) of this
-13   section. The pleading is sufficient if it alleges that the defendant committed the felony in a public
-14   changing facility or in a changing facility in a place of public accommodations. One pleading is
-15   sufficient for all felonies that are tried at a single trial.
-16       (d)      The State shall prove the issue set out in subsection (b) of this section beyond a
-17   reasonable doubt during the same trial in which the defendant is tried for the felony unless the
-18   defendant pleads guilty or no contest to that issue. If the defendant pleads guilty or no contest to
-19   the felony but pleads not guilty to the issue set out in subsection (b) of this section, then a jury
-20   shall be impaneled to determine that issue."
-21                SECTION 4. Article 8 of Chapter 14 of the General Statutes is amended by adding a
-22   new section to read:
-23   "§ 14-32.5. Assault in a changing facility.
-24       (a)      The following definitions apply in this section:
-25                (1)     Changing facility. – As defined in G.S. 15A-1340.16E.
-26                (2)     Place of public accommodations. – As defined in G.S. 168A-3(8).
-27       (b)      Unless the conduct is covered under some other provision of law providing greater
-28   punishment, any person who commits an assault in a public changing facility or in a changing
-29   facility in a place of public accommodations is guilty of a Class A1 misdemeanor."
-30                SECTION 5.(a) Sections 3 and 4 of this act become effective December 1, 2017, and
-31   apply to offenses committed on or after that date.
-32                SECTION 5.(b) The remainder of this act is effective when it becomes law.
-
-
-
-
-     Page 2                                                                 Senate Bill 93*-First Edition
-
+A BILL TO BE ENTITLED
+AN ACT TO PROVIDE A COMMON SENSE COMPROMISE TO REPEAL HOUSE BILL 2
+AND REQUIRE ENHANCED CRIMINAL PENALTIES AND PROVIDE NOTICE FOR
+ADOPTION OF CERTAIN NONDISCRIMINATION ORDINANCES.
+The General Assembly of North Carolina enacts:
+SECTION 1. S.L. 2016-99 and S.L. 2016-3 are repealed.
+SECTION 2. Article 21 of Chapter 160A of the General Statutes is amended by
+adding a new section to read:
+"§ 160A-499.5. Nondiscrimination ordinances.
+(a)    A local government shall provide at least 30 days' notice to the General Assembly, and
+to the public, before the adoption of any nondiscrimination ordinance extending any protections
+beyond those already afforded by State law. The notice required by this section shall be given in
+the same manner as provided by G.S. 120-29.5.
+(b)    The provisions of this section apply to counties."
+SECTION 3. Article 81B of Chapter 15A of the General Statutes is amended by
+adding a new section to read:
+"§ 15A-1340.16E. Enhanced sentence if defendant committed certain felony offenses in a
+public changing facility or a changing facility in a place of public
+accommodations.
+(a)    The following definitions apply in this section:
+(1)     Changing facility. – A facility designed or designated to be used by a person in
+various states of undress. The term may include, but is not limited to, a
+restroom, locker room, changing room, or shower room.
+(2)     Place of public accommodations. – As defined in G.S. 168A-3(8).
+(b)    If a person is convicted of any of the felonies set out in subdivisions (1) through (8) of
+this subsection and it is found as provided in this section that the felony was committed in a public
+changing facility or in a changing facility in a place of public accommodations, then the person
+shall have the minimum term of imprisonment to which the person is sentenced for that felony
+increased by six months. The maximum term of imprisonment shall be the maximum term that
+corresponds to the minimum term after it is increased by six months as specified in
+G.S. 15A-1340.17. An enhanced penalty may be imposed pursuant to this section on a person
+convicted of any of the following offenses:
+(1)     G.S. 14-27.22 (Second degree forcible rape).
+(2)     G.S. 14-27.27 (Second degree forcible sexual offense).
+(3)     G.S. 14-190.9(a1) (Indecent exposure for purpose of arousing sexual desire).
+(4)       G.S. 14-202(d), (e), or (f) (Secretly peeping into room occupied by another
+person).
+(5)     G.S. 14-202(g) or (h) (Secretly peeping into room occupied by another person),
+if the person convicted knows or has reason to know that the photographic
+image possessed or any other image being disseminated was taken in a public
+changing facility or changing facility in a place of public accommodations.
+(6)     G.S. 14-202.1 (Taking indecent liberties with children).
+(7)     G.S. 14-202.4 (Taking indecent liberties with a student).
+(8)     G.S. 14-277.3A (Felony stalking offense), if the person is convicted of either a
+Class H or Class F felony.
+(c)      An indictment or information for the felony shall allege in that indictment or
+information or in a separate indictment or information the facts set out in subsection (b) of this
+section. The pleading is sufficient if it alleges that the defendant committed the felony in a public
+changing facility or in a changing facility in a place of public accommodations. One pleading is
+sufficient for all felonies that are tried at a single trial.
+(d)      The State shall prove the issue set out in subsection (b) of this section beyond a
+reasonable doubt during the same trial in which the defendant is tried for the felony unless the
+defendant pleads guilty or no contest to that issue. If the defendant pleads guilty or no contest to
+the felony but pleads not guilty to the issue set out in subsection (b) of this section, then a jury
+shall be impaneled to determine that issue."
+SECTION 4. Article 8 of Chapter 14 of the General Statutes is amended by adding a
+new section to read:
+"§ 14-32.5. Assault in a changing facility.
+(a)      The following definitions apply in this section:
+(1)     Changing facility. – As defined in G.S. 15A-1340.16E.
+(2)     Place of public accommodations. – As defined in G.S. 168A-3(8).
+(b)      Unless the conduct is covered under some other provision of law providing greater
+punishment, any person who commits an assault in a public changing facility or in a changing
+facility in a place of public accommodations is guilty of a Class A1 misdemeanor."
+SECTION 5.(a) Sections 3 and 4 of this act become effective December 1, 2017, and
+apply to offenses committed on or after that date.
+SECTION 5.(b) The remainder of this act is effective when it becomes law.

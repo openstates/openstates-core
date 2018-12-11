@@ -1,32 +1,12 @@
-                                                                                         H.B. 4
-                         GENERAL ASSEMBLY OF NORTH CAROLINA
-                                                                                       Jul 24, 2018
-                               FIRST EXTRA SESSION 2018                          HOUSE PRINCIPAL CLERK
-     H                                                                                         D
-                                   HOUSE BILL DRH40002-ST-10
-
-
-
-     Short Title:   Candidate Challenge/Felony/Sheriff.                                   (Public)
-     Sponsors:      Representative Clampitt.
-     Referred to:
-
-
- 1                                      A BILL TO BE ENTITLED
- 2   AN ACT TO REQUIRE THAT THE BURDEN OF PROOF IN CERTAIN CHALLENGES TO
- 3       CANDIDACY BE PLACED ON THE CHALLENGER UNDER THE LAWS
- 4       GOVERNING ELECTIONS.
- 5   The General Assembly of North Carolina enacts:
- 6               SECTION 1. G.S. 163A-1029(a) reads as rewritten:
- 7       "(a) The Except for a challenge based on residency as provided in subsection (b) of this
- 8   section, the burden of proof shall be upon the candidate,challenger, who must show by a
- 9   preponderance of the evidence of the record as a whole that he or she isthe candidate is not
-10   qualified to be a candidate for the office."
-11               SECTION 2. This act is effective when it becomes law and applies to challenges to
-12   candidacy on or after that date.
-
-
-
-
-                                  *DRH40002-ST-10*
-
+A BILL TO BE ENTITLED
+AN ACT TO REQUIRE THAT THE BURDEN OF PROOF IN CERTAIN CHALLENGES TO
+CANDIDACY BE PLACED ON THE CHALLENGER UNDER THE LAWS
+GOVERNING ELECTIONS.
+The General Assembly of North Carolina enacts:
+SECTION 1. G.S. 163A-1029(a) reads as rewritten:
+"(a) The Except for a challenge based on residency as provided in subsection (b) of this
+section, the burden of proof shall be upon the candidate,challenger, who must show by a
+preponderance of the evidence of the record as a whole that he or she isthe candidate is not
+qualified to be a candidate for the office."
+SECTION 2. This act is effective when it becomes law and applies to challenges to
+candidacy on or after that date.
