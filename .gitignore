@@ -1,2 +1,4 @@
 version-export.csv
 *.pyc
+raw/
+text/
