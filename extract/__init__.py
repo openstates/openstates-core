@@ -7,6 +7,7 @@ CONVERSION_FUNCTIONS = {
 }
 
 
-def extract_text(data, version):
-    func = CONVERSION_FUNCTIONS[jid_to_abbr(version['jurisdiction_id'])]
-    return func(data, version)
+def extract_text(data, metadata):
+    func = CONVERSION_FUNCTIONS.get(jid_to_abbr(metadata['jurisdiction_id']),
+                                    lambda data, metadata: "")
+    return func(data, metadata)

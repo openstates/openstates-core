@@ -20,7 +20,7 @@ To add an extraction function for a state, edit ``extract/__init__.py`` and add 
 
 If your state would greatly benefit from a custom implementation, add a file like ``extract/ca.py`` that handles your specific state's edge case.  
 
-All extraction functions must implement the interface ``f(data, version)``, where data is the raw bytes of the HTML/PDF/DOC/etc. and version is a dictionary which provides basic metadata.  The two keys of interest in the metadata are: 
+All extraction functions must implement the interface ``f(data, metadata)``, where data is the raw bytes of the HTML/PDF/DOC/etc. and metadata is a dictionary which provides basic metadata.  The two keys of interest in the metadata are: 
  
  * ``classification`` - used to distinguish between upper & lower in the case that bill formats differ
  * ``media_type`` - the type of file, e.g. application/pdf
