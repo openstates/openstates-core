@@ -1,0 +1,571 @@
+HOUSE BILL NO. 351                                                                          
+"An Act relating to care of juveniles and to juvenile justice; relating to employment of                                
+juvenile probation officers by the Department of Health and Social Services; relating to                                
+terms used in juvenile justice; relating to mandatory reporters of child abuse or neglect;                              
+relating to adjudication of minor delinquency and the deoxyribonucleic acid                                             
+identification registration system; relating to sexual assault in the third degree; relating                            
+to sexual assault in the fourth degree; repealing a requirement for administrative                                      
+revocation of a minor's driver's license, permit, privilege to drive, or privilege to obtain                            
+a license for consumption or possession of alcohol or drugs; and providing for an                                       
+effective date."                                                                                                        
+BE IT ENACTED BY THE LEGISLATURE OF THE STATE OF ALASKA:                                                                
+* Section 1. AS 09.65.255(b) is amended to read:                                                                   
+(b)  A state agency or its agents, including a person working in or responsible                              
+for the operation of a foster home, as defined in AS 47.32.900, juvenile treatment                                  
+facility, juvenile detention facility [, RECEIVING, OR DETENTION HOME], or                                          
+treatment [CHILDREN'S] institution, is not liable for the acts of unemancipated                                     
+minors in its charge or custody. A state agency or an agent of a state agency, including                                
+a nonprofit corporation that designates shelters for runaways under AS 47.10.392 -                                      
+47.10.399 and employees of or volunteers with that corporation, is not liable for the                                   
+acts of a minor sheltered in a shelter for runaways, as defined in AS 47.10.399. In this                            
+subsection, "juvenile treatment facility" and "juvenile detention facility" have                                    
+the meanings given in AS 47.12.990 and "treatment institution" has the meaning                                      
+given in AS 47.14.990.                                                                                        
+* Sec. 2. AS 11.41.425(b)(1) is amended to read:                                                                   
+(1)  "juvenile facility staff" means a person employed in a juvenile                                                    
+detention facility or juvenile treatment facility as those terms are defined in                             
+AS 47.12.990;                                                                                                 
+* Sec. 3. AS 11.41.425(b)(2) is amended to read:                                                                   
+(2)  "juvenile probation officer" has the meaning given in                                                          
+AS 47.12.990 [MEANS A PERSON ASSIGNED TO SUPERVISE ANOTHER                                                          
+PERSON 18 OR 19 YEARS OF AGE WHO IS COMMITTED TO THE                                                                    
+PROBATIONARY SUPERVISION OF THE DEPARTMENT OF HEALTH AND                                                                
+SOCIAL SERVICES];                                                                                                 
+* Sec. 4. AS 11.41.427(b)(2) is amended to read:                                                                   
+(2)  "juvenile probation officer" has the meaning given in AS 47.12.990                                             
+[AS 11.41.425];                                                                                                   
+* Sec. 5. AS 11.41.470(3) is amended to read:                                                                      
+(3)  "legal guardian" means a person who is under a duty to exercise                                                    
+general supervision over a minor or other person committed to the custody of the                                        
+Department of Health and Social Services under AS 47.10 or AS 47.12 as a result of a                                    
+court order, statute, or regulation, and includes Department of Health and Social                                       
+Services employees, foster parents, and staff members and other employees of                                            
+treatment institutions, group homes, or youth facilities where the minor or other                               
+person is placed as a result of a court order or the action of the Department of Health                                 
+and Social Services, and police officers, juvenile and adult probation officers, and                                
+social workers when those persons are exercising custodial control over a minor or                                      
+other person;                                                                                                     
+* Sec. 6. AS 11.41.470(5) is amended to read:                                                                      
+(5)  "position of authority" means an employer, youth leader, scout                                                     
+leader, coach, teacher, counselor, school administrator, religious leader, doctor, nurse,                               
+psychologist, guardian ad litem, babysitter, or a substantially similar position, and a                                 
+police officer, correctional employee, juvenile facility staff, staff member of a                                   
+treatment institution, or juvenile or adult probation officer other than when the                               
+officer or staff member is exercising custodial control over a minor;                                         
+* Sec. 7. AS 11.41.470 is amended by adding  new paragraphs to read:                                               
+(9)  "juvenile facility staff" has the meaning given in AS 11.41.425(b);                                
+(10)  "treatment institution" has the meaning given in AS 47.14.990.                                    
+* Sec. 8. AS 11.56.760(a) is amended to read:                                                                      
+(a)  A person commits the crime of violating an order to submit to DNA testing                                          
+if, when requested by a health care professional acting on behalf of the state to provide                               
+a blood sample, oral sample, or both, or when requested by a juvenile or adult                                          
+correctional, probation, or parole officer or a peace officer to provide an oral sample,                                
+the person refuses to provide the sample or samples and the person                                                
+(1)  has been ordered to submit to DNA testing as part of a sentence                                                    
+imposed under AS 12.55.015;                                                                                       
+(2)  has been convicted of or adjudicated delinquent for an offense                                                 
+that requires DNA testing under the provisions of AS 44.41.035; or                                                
+(3)  is required to register as a sex offender or child kidnapper under                                                 
+AS 12.63.                                                                                                         
+* Sec. 9. AS 11.61.123(e) is amended to read:                                                                      
+(e)  In this section,                                                                                        
+(1)  "picture" means a film, photograph, negative, slide, book,                                                         
+newspaper, or magazine, whether in print, electronic, magnetic, or digital format; and                            
+(2)  "private exposure" means that a person has exposed the person's                                                    
+body or part of the body in a place, and under circumstances, that the person                                           
+reasonably believed would not result in the person's body or body parts being (A)                                       
+viewed by the defendant; or (B) produced in a picture; "private exposure" does not                                      
+include the exposure of a person's body or body parts in a law enforcement facility,                                    
+correctional facility, treatment institution, designated treatment facility, juvenile                           
+treatment facility, or a juvenile detention facility; in this paragraph, "correctional                              
+facility" has the meaning given in AS 33.30.901, "designated treatment facility" has                                    
+the meaning given in AS 47.30.915, [AND] "juvenile detention facility" and                                          
+"juvenile treatment facility" have [HAS] the meanings [MEANING] given in                                        
+AS 47.12.990; and "treatment institution" has the meaning given in AS 47.14.990.                                    
+* Sec. 10. AS 14.07.020(a) is amended to read:                                                                     
+(a)  The department shall                                                                                    
+(1)  exercise general supervision over the public schools of the state                                                  
+except the University of Alaska;                                                                                  
+(2)  study the conditions and needs of the public schools of the state,                                                 
+adopt or recommend plans, administer and evaluate grants to improve school                                              
+performance awarded under AS 14.03.125, and adopt regulations for the improvement                                       
+of the public schools; the department may consult with the University of Alaska to                                      
+develop secondary education requirements to improve student achievement in college                                      
+preparatory courses;                                                                                              
+(3)  provide advisory and consultative services to all public school                                                    
+governing bodies and personnel;                                                                                   
+(4)  prescribe by regulation a minimum course of study for the public                                                   
+schools; the regulations must provide that, if a course in American Sign Language is                                    
+given, the course shall be given credit as a course in a foreign language;                                        
+(5)  establish, in coordination with the Department of Health and Social                                                
+Services, a program for the continuing education of children who are held in juvenile                               
+detention facilities or juvenile treatment facilities, as those terms are defined in                            
+AS 47.12.990, in the state during the period of detention or treatment;                                   
+(6)  accredit those public schools that meet accreditation standards                                                    
+prescribed by regulation by the department; these regulations shall be adopted by the                                   
+department and presented to the legislature during the first 10 days of any regular                                     
+session, and become effective 45 days after presentation or at the end of the session,                                  
+whichever is earlier, unless disapproved by a resolution concurred in by a majority of                                  
+the members of each house;                                                                                        
+(7)  prescribe by regulation, after consultation with the state fire                                                    
+marshal and the state sanitarian, standards that will ensure healthful and safe                                         
+conditions in the public and private schools of the state, including a requirement of                                   
+physical examinations and immunizations in pre-elementary schools; the standards for                                    
+private schools may not be more stringent than those for public schools;                                          
+(8)  exercise general supervision over pre-elementary schools that                                                      
+receive direct state or federal funding;                                                                          
+(9)  exercise general supervision over elementary and secondary                                                         
+correspondence study programs offered by municipal school districts or regional                                         
+educational attendance areas; the department may also offer and make available to any                                   
+Alaskan through a centralized office a correspondence study program;                                              
+(10)  accredit private schools that request accreditation and that meet                                                 
+accreditation standards prescribed by regulation by the department; nothing in this                                     
+paragraph authorizes the department to require religious or other private schools to be                                 
+licensed;                                                                                                         
+(11)  review plans for construction of new public elementary and                                                        
+secondary schools and for additions to and major rehabilitation of existing public                                      
+elementary and secondary schools and, in accordance with regulations adopted by the                                     
+department, determine and approve the extent of eligibility for state aid of a school                                   
+construction or major maintenance project; for the purposes of this paragraph, "plans"                                  
+include educational specifications, schematic designs, projected energy consumption                                     
+and costs, and final contract documents;                                                                          
+(12)  provide educational opportunities in the areas of vocational                                                      
+education and training, and basic education to individuals over 16 years of age who                                     
+are no longer attending school; the department may consult with businesses and labor                                    
+unions to develop a program to prepare students for apprenticeships or internships that                                 
+will lead to employment opportunities;                                                                            
+(13)  administer the grants awarded under AS 14.11;                                                     
+(14)  establish, in coordination with the Department of Public Safety, a                                
+school bus driver training course;                                                                                
+(15)  require the reporting of information relating to school disciplinary                              
+and safety programs under AS 14.33.120 and of incidents of disruptive or violent                                  
+behavior;                                                                                                         
+(16)  establish by regulation criteria, based on low student performance,                               
+under which the department may intervene in a school district to improve instructional                            
+practices, as described in AS 14.07.030(14) or (15); the regulations must include                                 
+(A)  a notice provision that alerts the district to the deficiencies                               
+and the instructional practice changes proposed by the department;                                           
+(B)  an end date for departmental intervention, as described in                                                         
+AS 14.07.030(14)(A) and (B) and (15), after the district demonstrates three                                             
+consecutive years of improvement consisting of not less than two percent                                                
+increases in student proficiency on standards-based assessments in language                                             
+arts and mathematics, as provided in AS 14.03.123(f)(1)(A); and                                              
+(C)  a process for districts to petition the department for                                                             
+continuing or discontinuing the department's intervention;                                                   
+(17)  notify the legislative committees having jurisdiction over                                                        
+education before intervening in a school district under AS 14.07.030(14) or redirecting                                 
+public school funding under AS 14.07.030(15).                                                                     
+* Sec. 11. AS 14.30.186(a) is amended to read:                                                                     
+(a)  Special education and related services shall be provided by                                             
+(1)  a borough or city school district for a child with a disability                                                    
+residing within the district;                                                                                     
+(2)  the board of a regional educational attendance area operating a                                                    
+school in the area for a child with a disability residing in the area served by the school;                             
+(3)  the borough, city school district, or regional educational attendance                                              
+area in which a treatment institution, as that term is defined in AS 47.14.990,                                     
+juvenile detention facility or juvenile treatment facility, as those terms are defined                          
+in AS 47.12.990, or a correctional [OR YOUTH DETENTION] facility is located for                                     
+a child with a disability placed at the facility;                                                                 
+(4)  a state boarding school established under AS 14.16 for a child with                                
+a disability enrolled at a state boarding school; or                                                              
+(5)  a school district that provides a statewide correspondence study                                   
+program for a child with a disability who is enrolled in the program.                                             
+* Sec. 12. AS 17.37.070(6) is amended to read:                                                                     
+(6)  "facility monitored by the department or the Department of                                                         
+Administration" means an institution, building, office, or home operated by the                                         
+department or the Department of Administration, funded by the department or the                                         
+Department of Administration, under contract with the department or the Department                                      
+of Administration, inspected by the department or the Department of Administration,                                     
+designated by the department or the Department of Administration, or licensed by the                                    
+department or the Department of Administration, for the care of                                                   
+(A)  juveniles; for the purposes of this subparagraph,                                                                  
+"institution" includes a foster home and a group home, and a juvenile detention                                         
+facility [, A JUVENILE DETENTION HOME, A JUVENILE WORK                                                                  
+CAMP,] and a juvenile treatment facility, as those terms are defined in                                             
+AS 47.12.990;                                                                                                
+(B)  the elderly; for the purposes of this subparagraph,                                                                
+"institution" includes                                                                                       
+(i)  an assisted living home as defined in AS 47.33.990;                                                                
+and                                                                                                     
+(ii)  the Alaska Pioneers' Home or the Alaska Veterans'                                                                 
+Home, operated under AS 47.55;                                                                          
+(C)  the mentally ill; for the purposes of this subparagraph,                                                           
+"institution" includes a designated treatment facility and an evaluation facility,                                      
+as those terms are defined in AS 47.30.915;                                                                  
+* Sec. 13. AS 18.20.499(2) is amended to read:                                                                     
+(2)  "health care facility" means a private, municipal, or state hospital;                                              
+independent diagnostic testing facility; primary care outpatient facility; skilled nursing                              
+facility; kidney disease treatment center, including freestanding hemodialysis units;                                   
+intermediate care facility; ambulatory surgical facility; Alaska Pioneers' Home or                                      
+Alaska Veterans' Home administered by the Department of Health and Social Services                                      
+under AS 47.55; correctional facility owned or administered by the state; private,                                      
+municipal, or state facility employing one or more public health nurses; long-term care                                 
+facility; psychiatric hospital; residential psychiatric treatment center, as defined in                                 
+AS 18.07.111 or AS 47.32.900; secure residential psychiatric treatment center under                                     
+AS 47.12.990; a juvenile detention facility [; JUVENILE DETENTION HOME,                                             
+JUVENILE WORK CAMP,] or juvenile treatment facility, as those terms are                                     
+defined in AS 47.12.990; or a treatment institution as that term is defined in                                      
+AS 47.14.990;                                                                                                 
+* Sec. 14. AS 47.10.141(c) is amended to read:                                                                     
+(c)  A minor may be taken into emergency protective custody by a peace                                                  
+officer and placed into temporary detention in a juvenile detention facility [HOME] in                              
+the local community if there has been an order issued by a court under a finding of                                     
+probable cause that (1) the minor is a runaway in wilful violation of a valid court order                               
+issued under AS 47.10.080(c)(1), 47.10.142(f), AS 47.12.120(b)(1) or (3), or                                            
+47.12.250(d), (2) the minor's current situation poses a severe and imminent risk to the                                 
+minor's life or safety, and (3) no reasonable placement alternative exists within the                                   
+community. A minor detained under this subsection shall be brought before a court on                                    
+the day the minor is detained, or if that is not possible, within 24 hours after the                                    
+detention for a hearing to determine the most appropriate placement in the best                                         
+interests of the minor. A minor taken into emergency protective custody under this                                      
+subsection may not be detained for more than 24 hours, except as provided under                                         
+AS 47.12.250. Emergency protective custody may not include placement of a minor in                                      
+an adult correctional facility, an adult [A] jail or a temporary secure juvenile                                
+holding area [SECURE FACILITY OTHER THAN A JUVENILE DETENTION                                                       
+HOME], nor may an order for protective custody be enforced against a minor who is                                       
+residing in a licensed program for runaway minors, as defined in AS 47.10.390.                                    
+* Sec. 15. AS 47.10.141(j) is amended by adding a new paragraph to read:                                           
+(3)  "temporary secure juvenile holding area" has the meaning given in                                                  
+AS 47.12.990.                                                                                                     
+* Sec. 16. AS 47.10.990(20) is amended to read:                                                                    
+(20)  "juvenile detention facility [HOME]" has the meaning given in                                             
+AS 47.12.990 [IS A SEPARATE ESTABLISHMENT, EXCLUSIVELY DEVOTED                                                      
+TO THE DETENTION OF MINORS ON A SHORT-TERM BASIS AND NOT A                                                              
+PART OF AN ADULT JAIL];                                                                                           
+* Sec. 17. AS 47.12.025(c) is amended to read:                                                                     
+(c)  If a person who is subject to the jurisdiction of this chapter due solely to                                       
+AS 47.12.020(b) has been arrested by a peace officer or a juvenile probation officer                                
+under AS 47.12.245, detained under AS 47.12.250, or committed to the custody or                                         
+supervision of the department under AS 47.12.120(b) or 47.12.240, the department,                                       
+after consulting the peace officer or juvenile probation officer if appropriate, shall                              
+make arrangements for the detention, placement, or supervision of the person. In the                                    
+discretion of the department, the person may be detained or placed in a juvenile                                        
+detention facility, juvenile treatment facility, temporary secure juvenile holding                              
+area, or in an adult correctional facility.                                                                   
+* Sec. 18. AS 47.12.120(b) is amended to read:                                                                     
+(b)  If the minor is not subject to (j) of this section and the court finds that the                                    
+minor is delinquent, it shall                                                                                     
+(1)  order the minor committed to the department for a period of time                                                   
+not to exceed two years or in any event extend past the day the minor becomes 19                                        
+years of age, except that the department may petition for and the court may grant in a                                  
+hearing (A) two-year extensions of commitment that do not extend beyond the minor's                                     
+19th birthday if the extension is in the best interests of the minor and the public; and                                
+(B) an additional one-year period of supervision past age 19 if continued supervision                                   
+is in the best interests of the person and the person consents to it; the department shall                              
+place the minor in the juvenile facility that the department considers appropriate and                                  
+that may include a juvenile [CORRECTIONAL SCHOOL, JUVENILE WORK                                                         
+CAMP,] treatment facility, juvenile [DETENTION HOME, OR] detention facility, or                                 
+secure residential psychiatric treatment center; the minor may be released from                                     
+placement or detention and placed on probation on order of the court and may also be                                    
+released by the department, in its discretion, under AS 47.12.260;                                                
+(2)  order the minor placed on probation, to be supervised by the                                                       
+department, and released to the minor's parents, guardian, or a suitable person; if the                                 
+court orders the minor placed on probation, it may specify the terms and conditions of                                  
+probation; the probation may be for a period of time not to exceed two years and in no                                  
+event to extend past the day the minor becomes 19 years of age, except that the                                         
+department may petition for and the court may grant in a hearing                                                  
+(A)  two-year extensions of supervision that do not extend                                                              
+beyond the minor's 19th birthday if the extension is in the best interests of the                                       
+minor and the public; and                                                                                    
+(B)  an additional one-year period of supervision past age 19 if                                                        
+the continued supervision is in the best interests of the person and the person                                         
+consents to it;                                                                                              
+(3)  order the minor committed to the custody of the department and                                                     
+placed on probation, to be supervised by the department and released to the minor's                                     
+parents, guardian, other suitable person, or suitable nondetention setting such as with a                               
+relative or in a foster home or residential child care facility, whichever the department                               
+considers appropriate to implement the treatment plan of the predisposition report; if                                  
+the court orders the minor placed on probation, it may specify the terms and conditions                                 
+of probation; the department may transfer the minor, in the minor's best interests, from                                
+one of the probationary placement settings listed in this paragraph to another, and the                                 
+minor, the minor's parents or guardian, the minor's foster parent, and the minor's                                      
+attorney are entitled to reasonable notice of the transfer; the probation may be for a                                  
+period of time not to exceed two years and in no event to extend past the day the                                       
+minor becomes 19 years of age, except that the department may petition for and the                                      
+court may grant in a hearing                                                                                      
+(A)  two-year extensions of commitment that do not extend                                                               
+beyond the minor's 19th birthday if the extension is in the best interests of the                                       
+minor and the public; and                                                                                    
+(B)  an additional one-year period of supervision past age 19 if                                                        
+the continued supervision is in the best interests of the person and the person                                         
+consents to it;                                                                                              
+(4)  order the minor and the minor's parent to make suitable restitution                                                
+in lieu of or in addition to the court's order under (1), (2), or (3) of this subsection;                               
+under this paragraph,                                                                                             
+(A)  except as provided in (B) of this paragraph, the court may                                                         
+not refuse to make an order of restitution to benefit the victim of the act of the                                      
+minor that is the basis of the delinquency adjudication; under this                                                     
+subparagraph, the court may require the minor to use the services of a                                                  
+community dispute resolution center that has been recognized by the                                                     
+commissioner under AS 47.12.450(b) to resolve any dispute between the minor                                             
+and the victim of the minor's offense as to the amount of or manner of payment                                          
+of the restitution;                                                                                          
+(B)  the court may not order payment of restitution by the parent                                                       
+of a minor who is a runaway or missing minor for an act of the minor that was                                           
+committed by the minor after the parent has made a report to a law                                                      
+enforcement agency, as authorized by AS 47.10.141(a), that the minor has run                                            
+away or is missing; for purposes of this subparagraph, "runaway or missing                                              
+minor" means a minor who a parent reasonably believes is absent from the                                                
+minor's residence for the purpose of evading the parent or who is otherwise                                             
+missing from the minor's usual place of abode without the consent of the                                                
+parent; and                                                                                                  
+(C)  at the request of the department, the Department of Law,                                                           
+the victims' advocate, or on its own motion, the court shall, at any time, order                                        
+the minor and the minor's parent, if applicable, to submit financial information                                        
+on a form approved by the Alaska Court System to the court, the department,                                             
+and the Department of Law for the purpose of establishing the amount of                                                 
+restitution or enforcing an order of restitution under AS 47.12.170; the form                                           
+must include a warning that submission of incomplete or inaccurate                                                      
+information is punishable as unsworn falsification in the second degree under                                           
+AS 11.56.210;                                                                                                
+(5)  order the minor committed to the department for placement in an                                                    
+adventure-based education program established under AS 47.21.020 with conditions                                        
+the court considers appropriate concerning release upon satisfactory completion of the                                  
+program or commitment under (1) of this subsection if the program is not satisfactorily                           
+completed;                                                                                                        
+(6)  in addition to an order under (1) - (5) of this subsection, order the                              
+minor to perform community service; for purposes of this paragraph, "community                                    
+service" includes work                                                                                            
+(A)  on a project identified in AS 33.30.901; or                                                   
+(B)  that, on the recommendation of the city council or                                            
+traditional village council, would benefit persons within the city or village who                            
+are elderly or disabled; or                                                                                  
+(7)  in addition to an order under (1) - (6) of this subsection, order the                                              
+minor's parent or guardian to comply with orders made under AS 47.12.155, including                                     
+participation in treatment under AS 47.12.155(b)(1).                                                              
+* Sec. 19. AS 47.12.120 is amended by adding a new subsection to read:                                             
+(l)  The court shall order a minor who is adjudicated as a delinquent in this                                           
+state for an act committed when the minor was 16 years of age or older that would be                                    
+a crime against a person or a felony under AS 11 or AS 28.35 if committed by an adult                                   
+or for an act that would violate a law or ordinance with elements similar to a crime                                    
+against a person or a felony under AS 11 or AS 28.35 if committed by an adult to                                        
+submit to the collection of a blood sample, oral sample, or both for the                                                
+deoxyribonucleic acid identification registration system under AS 44.41.035. The                                        
+minor shall submit to the collection of                                                                           
+(1)  the sample or samples when requested by a health care professional                                                 
+acting on behalf of the state to provide the sample or samples; or                                                
+(2)  an oral sample when requested by a juvenile probation officer,                                                     
+juvenile facility staff, or peace officer.                                                                        
+* Sec. 20. AS 47.12.240(a) is amended to read:                                                                     
+(a)  When the court commits a minor to the custody of the department, the                                               
+department shall arrange to place the minor in a juvenile detention facility                                        
+[DETENTION HOME, WORK CAMP,] or another suitable place that the department                                              
+designates for that purpose. Except under the conditions described in [WHEN                                         
+DETENTION IN A CORRECTIONAL FACILITY IS AUTHORIZED BY] (c) of this                                                      
+section, the minor may not be detained [INCARCERATED] in a correctional facility                              
+that houses adult prisoners.                                                                                      
+* Sec. 21. AS 47.12.240(c) is amended to read:                                                                     
+(c)  Notwithstanding (a) of this section, a minor may be detained                                                   
+[INCARCERATED] in an adult [A] correctional facility, an adult jail, or a                                       
+temporary secure juvenile holding area only if the minor is not in sight or sound                                   
+of adult prisoners, and one of the following applies:                                                         
+(1)  [IF] the minor is the subject of a petition filed with the court under                             
+this chapter seeking adjudication of the minor as a delinquent minor or [IF] the minor                            
+is detained or in official detention pending the filing of that petition; however,                                  
+detention in an adult [A] correctional facility, an adult jail, or a temporary secure                           
+juvenile holding area under this paragraph may not exceed the lesser of                                       
+(A)  six hours, except under the criteria listed in (e) of this                                                         
+section; or                                                                                                  
+(B)  the time necessary to arrange the minor's transportation to a                                                      
+juvenile detention facility [HOME] or comparable facility for the detention of                                      
+minors;                                                                                                      
+(2)  [IF,] in response to a petition of delinquency filed under this                                                    
+chapter, the court has entered an order closing the case under AS 47.12.100(a),                                         
+allowing the minor to be prosecuted as an adult; or                                                               
+(3)  [IF] the minor is at least 16 years of age and the court has entered                                               
+an order under AS 47.12.160(e) imposing an adult sentence and transferring custody                                      
+of the minor to the Department of Corrections.                                                                    
+* Sec. 22. AS 47.12.245(b) is amended to read:                                                                     
+(b)  A juvenile probation officer may arrest a minor if the juvenile probation                                  
+officer has probable cause to believe that the minor has violated conditions of the                                     
+minor's release or probation.                                                                                     
+* Sec. 23. AS 47.12.250(a) is amended to read:                                                                     
+(a)  A peace officer or a juvenile probation officer who has arrested, or a peace                               
+officer who has continued the arrest of, a minor under AS 47.12.245 may                                       
+(1)  have the minor detained in a juvenile detention facility or                                                    
+temporary secure juvenile holding area if, in the opinion of the peace officer                                  
+making or continuing the arrest, it is necessary to do so to protect the minor or the                               
+community; however, the department may direct that a minor who was arrested or                                          
+whose arrest was continued be released from detention before the hearing required by                                    
+(c) of this section;                                                                                              
+(2)  before taking the minor to a juvenile detention facility or                                    
+temporary secure juvenile holding area, release the minor to the minor's parents or                           
+guardian if detention is not necessary to                                                                         
+(A)  protect the minor or the community; or                                                        
+(B)  ensure the minor's attendance at subsequent court hearings.                                   
+* Sec. 24. AS 47.12.270 is repealed and reenacted to read:                                                         
+Sec. 47.12.270.  Juvenile probation officers.  (a) The department shall                                               
+employ juvenile probation officers.  A juvenile probation officer shall exercise the                                    
+duties of a probation officer and shall prepare preliminary investigations and assist and                               
+advise the court in the furtherance of the welfare and control of a minor under the                                     
+court's jurisdiction. A juvenile probation officer shall also carry out other duties in the                             
+care and treatment of minors that are consistent with the intent of this chapter.                                 
+(b)  A juvenile probation officer has the powers of a peace officer with respect                                        
+to the service of process and arresting a minor when                                                              
+(1)  a court has issued an arrest warrant;                                                              
+(2)  there is probable cause to believe the minor has violated conditions                                               
+of release or probation; or                                                                                       
+(3)  probable cause exists for believing that the minor has escaped from                                                
+or unlawfully evaded a placement made under AS 47.12.120(b)(1).                                                   
+* Sec. 25. AS 47.12.310(d) is amended to read:                                                                     
+(d)  Upon request of a victim, the department shall make every reasonable                                               
+effort to notify the victim as soon as practicable, by telephone or in writing, when a                                  
+delinquent minor is to be released from placement [IN A JUVENILE FACILITY]                                              
+under AS 47.12.120(b)(1). The notice under this subsection must include the expected                                    
+date of the delinquent minor's release, the geographic area in which the delinquent                                     
+minor is required to reside, and other pertinent information concerning the delinquent                                  
+minor's conditions of release that may affect the victim.                                                         
+* Sec. 26. AS 47.12.315(c) is amended to read:                                                                     
+(c)  When required by this section to disclose information, the department may                                          
+disclose only the name of the minor, the name of each legal parent or guardian, the                                     
+specific offense for which the minor was adjudicated delinquent [ALLEGED TO                                         
+HAVE BEEN COMMITTED IN THE PETITION], and the final outcome of the court                                                
+proceedings relating to the offense. Before the disclosure, the department shall delete                                 
+the information that identifies the victim of the offense.                                                        
+* Sec. 27. AS 47.12.990(7) is amended to read:                                                                     
+(7)  "juvenile detention facility" means a secure facility [SEPARATE                                                
+QUARTERS WITHIN A CITY JAIL USED] for the detention of delinquent minors in                                         
+the custody of the department under AS 47.12.240 or 47.12.250;                                                
+* Sec. 28. AS 47.12.990(12) is amended to read:                                                                    
+(12)  "minor" means a person who is                                                                 
+(A)  under 18 years of age at the time the person commits an                                                    
+offense; and                                                                                             
+(B)  subject to the jurisdiction of the court under this                                                            
+chapter;                                                                                                 
+* Sec. 29. AS 47.12.990 is amended by adding new paragraphs to read:                                               
+(17)  "juvenile probation officer" means an officer described in                                                        
+AS 47.12.270;                                                                                                     
+(18)  "juvenile treatment facility" means a secure facility for treatment                                               
+of minors adjudicated delinquent and committed by a court to the care and custody of                                    
+the department under AS 47.12.120(b)(1);                                                                          
+(19)  "residential child care facility" has the meaning given in                                                        
+AS 47.32.900;                                                                                                     
+(20)  "temporary secure juvenile holding area" means separate quarters                                                  
+that are used for the temporary detention of delinquent minors pending a court order or                                 
+transportation to a juvenile detention facility and that are not within sight or sound of                               
+any adult prisoners.                                                                                              
+* Sec. 30. AS 47.14.010 is amended to read:                                                                        
+Sec. 47.14.010.  General powers of department over juvenile facilities and                               
+institutions.  The department may                                                                               
+(1)  purchase, lease, or construct buildings or other facilities for the                                
+care, detention, rehabilitation, and education of children in need of aid or delinquent                           
+minors;                                                                                                           
+(2)  adopt plans for construction of juvenile detention facilities                                  
+[HOMES, JUVENILE WORK CAMPS], juvenile treatment [DETENTION]                                                  
+facilities, and other juvenile institutions;                                                                      
+(3)  adopt standards and regulations for the design, construction, repair,                              
+maintenance, and operation of all juvenile detention facilities, juvenile treatment                                 
+[HOMES, WORK CAMPS,] facilities, and institutions;                                                                
+(4)  inspect periodically each juvenile detention facility, juvenile                                                
+treatment [HOME, WORK CAMP,] facility, or other institution to ensure that the                                      
+standards and regulations adopted are being maintained;                                                           
+(5)  reimburse municipalities [CITIES] maintaining and operating                                                    
+juvenile detention [HOMES, WORK CAMPS, AND] facilities;                                                           
+(6)  enter into contracts and arrangements with cities and state and                                                    
+federal agencies to carry out the purposes of AS 47.10, AS 47.12, and this chapter;                               
+(7)  do all acts necessary to carry out the purposes of AS 47.10,                                                       
+AS 47.12, and this chapter;                                                                                       
+(8)  adopt the regulations necessary to carry out AS 47.10, AS 47.12,                                                   
+and this chapter;                                                                                                 
+(9)  accept donations, gifts, or bequests of money or other property for                                                
+use in construction of juvenile [HOMES, WORK CAMPS,] institutions, [OR]                                                 
+detention facilities, or juvenile treatment facilities;                                                       
+(10)  operate juvenile detention facilities [HOMES] when                                                            
+municipalities are unable to do so;                                                                               
+(11)  receive, care for, and place in a juvenile detention facility                                                 
+[HOME], the minor's own home, a foster home, [OR] a juvenile treatment facility                                     
+[CORRECTIONAL SCHOOL, WORK CAMP], or treatment institution all minors                                                   
+committed to its custody under AS 47.10, AS 47.12, and this chapter.                                              
+* Sec. 31. AS 47.14.020 is amended to read:                                                                        
+Sec. 47.14.020. Duties of department. The department shall                                                 
+(1)  accept all minors committed to the custody of the department and                                                   
+all minors who are involved in a written agreement under AS 47.14.100(c), and                                           
+provide for the welfare, control, care, custody, and placement of these minors in                                       
+accordance with this chapter;                                                                                     
+(2)  require and collect statistics on juvenile offenses and offenders in                               
+the state;                                                                                                        
+(3)  conduct studies and prepare findings and recommendations on the                                    
+need, number, type, construction, maintenance, and operating costs of juvenile                                          
+detention facilities, juvenile treatment [HOMES, WORK CAMPS,] facilities, and                                       
+[THE] other institutions, and adopt and submit a plan for construction of the                                           
+[HOMES, WORK CAMPS,] facilities [,] and institutions when needed, together with                                         
+a plan for financing the construction programs;                                                                   
+(4)  examine, where possible, all facilities, institutions, [WORK                                                       
+CAMPS,] and places of juvenile detention and treatment in the state and inquire into                                
+their methods and the management of juveniles in them.                                                            
+* Sec. 32. AS 47.14.040 is amended to read:                                                                        
+Sec. 47.14.040. Authority to maintain and operate temporary secure                                                  
+juvenile holding area, juvenile detention facility, or juvenile treatment [HOME,                                    
+WORK CAMP, OR] facility. (a) A municipality or entity [CITY] may maintain                                         
+and operate a temporary secure juvenile holding area [JUVENILE DETENTION                                            
+FACILITY], and a municipality [CITY] or a nonprofit corporation may maintain and                                    
+operate a juvenile detention facility or juvenile treatment facility [HOME OR A                                     
+JUVENILE WORK CAMP].                                                                                              
+(b)  The municipality [CITY] or nonprofit corporation may receive grants-in-                                        
+aid from the state for costs of operation of the temporary secure juvenile holding                                  
+area or facility [HOMES, WORK CAMPS, OR FACILITIES] maintained and                                                  
+operated under (a) of this section.                                                                               
+* Sec. 33. AS 47.14.050(a) is repealed and reenacted to read:                                                      
+(a)  The department shall adopt standards and regulations for the operation of                                          
+juvenile detention facilities and juvenile treatment facilities in the state.                                     
+* Sec. 34. AS 47.14.050(b) is amended to read:                                                                     
+(b)  The department may enter into contracts with municipalities [CITIES]                                           
+and other governmental agencies for the detention of juveniles before and after                                         
+commitment by juvenile authorities. A contract may not be made for longer than one                                      
+year.                                                                                                             
+* Sec. 35. AS 47.14.990(7) is amended to read:                                                                     
+(7)  "juvenile detention facility" has the meaning given in                                         
+AS 47.12.990 [MEANS SEPARATE QUARTERS WITHIN A CITY JAIL USED                                                 
+FOR THE DETENTION OF DELINQUENT MINORS];                                                                          
+* Sec. 36. AS 47.14.990(10) is amended to read:                                                                    
+(10)  "minor" has the meaning given in AS 47.12.990 [MEANS A                                                        
+PERSON UNDER 18 YEARS OF AGE];                                                                                    
+* Sec. 37. AS 47.14.990 is amended by adding new paragraphs to read:                                               
+(12)  "juvenile probation officer" has the meaning given in                                                             
+AS 47.12.990;                                                                                                     
+(13)  "juvenile treatment facility" has the meaning given in                                                            
+AS 47.12.990;                                                                                                     
+(14)  "temporary secure juvenile holding area" has the meaning given                                                    
+in AS 47.12.990.                                                                                                  
+* Sec. 38. AS 47.17.020(a) is amended to read:                                                                     
+(a)  The following persons who, in the performance of their occupational                                                
+duties, their appointed duties under (8) of this subsection, or their volunteer duties                                  
+under (9) of this subsection, have reasonable cause to suspect that a child has suffered                                
+harm as a result of child abuse or neglect shall immediately report the harm to the                                     
+nearest office of the department:                                                                                 
+(1)  practitioners of the healing arts;                                                                 
+(2)  school teachers and school administrative staff members, including                                                 
+athletic coaches, of public and private schools;                                                                  
+(3)  peace officers and officers of the Department of Corrections;                                      
+(4)  administrative officers of institutions;                                                           
+(5)  child care providers;                                                                              
+(6)  paid employees of domestic violence and sexual assault programs,                                   
+and crisis intervention and prevention programs as defined in AS 18.66.990;                                       
+(7)  paid employees of an organization that provides counseling or                                      
+treatment to individuals seeking to control their use of drugs or alcohol;                                        
+(8)  members of a child fatality review team established under                                          
+AS 12.65.015(e) or 12.65.120 or the multidisciplinary child protection team created                               
+under AS 47.14.300;                                                                                               
+(9)  volunteers who interact with children in a public or private school                                
+for more than four hours a week;                                                                              
+(10)  juvenile probation officers, juvenile probation office staff, and                                             
+staff of juvenile detention facilities and juvenile treatment facilities, as those                                  
+terms are defined in AS 47.12.990.                                                                            
+* Sec. 39. AS 28.15.176; AS 47.12.060(b)(5), 47.12.990(8), 47.12.990(9), 47.12.990(15);                            
+AS 47.14.990(8) and 47.14.990(9) are repealed.                                                                          
+* Sec. 40. The uncodified law of the State of Alaska is amended by adding a new section to                         
+read:                                                                                                                   
+APPLICABILITY. AS 11.41.425(b)(1), as amended by sec. 2 of this Act,                                                    
+AS 11.41.425(b)(2), as amended by sec. 3 of this Act, AS 11.41.427(b)(2), as amended by                                 
+sec. 4 of this Act, AS 11.41.470(3), as amended by sec. 5 of this Act, AS 11.41.470(5), as                              
+amended by sec. 6 of this Act, AS 11.41.470(9) and (10), enacted by sec. 7 of this Act,                                 
+AS 11.56.760(a), as amended by sec. 8 of this Act, AS 11.61.123(e), as amended by sec. 9 of                             
+this Act, and AS 47.12.120(l), enacted by sec. 19 of this Act, apply to offenses committed on                           
+or after the effective date of secs. 2 - 9 and 19 of this Act.                                                          
+* Sec. 41. The uncodified law of the State of Alaska is amended by adding a new section to                         
+read:                                                                                                                   
+TRANSITION: REGULATIONS. The Department of Health and Social Services may                                               
+adopt regulations necessary to implement the changes made by this Act. The regulations take                             
+effect under AS 44.62 (Administrative Procedure Act), but not before the effective date of the                          
+relevant provision of this Act implemented by the regulation.                                                           
+* Sec. 42. Section 41 of this Act takes effect immediately under AS 01.10.070(c).                                  
