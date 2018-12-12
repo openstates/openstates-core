@@ -1,0 +1,35 @@
+SB375
+185548-1
+By Senator Sanders
+RFD: Judiciary
+First Read: 20-APR-17
+185548-1:n:04/19/2017:FC/tgw LRS2017-1802
+SYNOPSIS:           Under existing law, Act 2017-131 of the 2017
+Regular Session removed the authority of the court
+to override a jury verdict in a capital case. Act
+2017-131 specifically provided that the act would
+not apply retroactively.
+This bill would specify that Act 2017-131
+would apply retroactively.
+A BILL
+TO BE ENTITLED
+AN ACT
+Relating to capital cases; to amend Act 2017-131 of
+the 2017 Regular Session, removing the authority of the court
+to override a jury verdict, to specify that the act would
+apply retroactively to defendants sentenced to death when the
+jury returned a verdict of life without parole.
+BE IT ENACTED BY THE LEGISLATURE OF ALABAMA:
+Section 1. Section 2 of Act 2017-131 of the 2017
+Regular Session is amended to read as follows:
+"Section 2. This act shall apply to any defendant
+who is charged with capital murder after the effective date of
+this act and shall not apply retroactively to any defendant
+who has previously been convicted of capital murder and
+sentenced to death prior to the effective date of this act.
+Any defendant sentenced to death by the court after the jury
+returned a verdict of life without parole shall be resentenced
+to life without parole in accordance with this act."
+Section 2. This act shall become effective
+immediately following its passage and approval by the
+Governor, or its otherwise becoming law.

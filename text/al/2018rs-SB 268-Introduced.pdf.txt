@@ -1,0 +1,312 @@
+SB268
+188868-1
+By Senator Allen
+RFD: Transportation and Energy
+First Read: 01-FEB-18
+188868-1:n:11/17/2017:FC/tgw LSA2017-3526
+SYNOPSIS:           Existing law provides for size and weight
+restrictions on certain vehicles operating in
+Alabama.
+This bill would further provide for the
+length of certain vehicles and would allow motor
+vehicle weight increases for vehicles that have
+conversion equipment installed allowing the vehicle
+to operate on compressed natural gas or compressed
+liquefied gas.
+A BILL
+TO BE ENTITLED
+AN ACT
+To amend Section 32-9-20, Code of Alabama 1975, as
+last amended by Act 2017-442, 2017 Regular Session, relating
+to the restrictions on the operation of certain motor
+vehicles; to further provide for the length of certain
+vehicles; and to allow for weight increases for vehicles
+having conversion equipment installed that allows the vehicle
+to operate on compressed natural gas or compressed liquefied
+gas.
+BE IT ENACTED BY THE LEGISLATURE OF ALABAMA:
+Section 1. Section 32-9-20, Code of Alabama 1975, as
+last amended by Act 2017-442, 2017 Regular Session, is amended
+to read as follows:
+"§32-9-20.
+"(a) It shall be unlawful for any person to drive or
+move on any highway in this state any vehicle or vehicles of a
+size or weight except in accordance with the following:
+"(1) WIDTH. Vehicles and combinations of vehicles,
+operating on highways with traffic lanes 12 feet or more in
+width, shall not exceed a total outside width, including any
+load thereon, of 102 inches, exclusive of mirrors or other
+safety devices approved by the State Transportation
+Department. The Director of the State Transportation
+Department may, in his or her discretion, designate other
+public highways for use by vehicles and loads with total
+outside widths not exceeding 102 inches, otherwise; vehicles
+and combinations of vehicles, operating on highways with
+traffic lanes less than 12 feet in width, shall not exceed a
+total outside width, including any load thereon, of 96 inches,
+exclusive of mirrors or other safety devices approved by the
+State Transportation Department. No passenger vehicle shall
+carry any load extending beyond the line of the fenders. No
+vehicle hauling forest products or culvert pipe on any highway
+in this state shall have a load exceeding 102 inches in width.
+"(2) HEIGHT. No vehicle or semitrailer or trailer
+shall exceed in height 13 1/2 feet, including load.
+"(3) LENGTH. No vehicle shall exceed in length 40
+feet; except, that the length of a truck-semitrailer
+combination, semitrailers, including load, used in a truck
+tractor-semitrailer combination, shall not exceed 57 feet;
+semitrailers and trailers, including load, used in a truck
+tractor-semitrailer-trailer combination, shall not exceed 28
+1/2 feet each; and motor vehicles designed, used, or
+maintained primarily as a mobile dwelling, office, or
+commercial space, commonly called motor homes, shall not
+exceed 45 feet. Semitrailers exceeding 53 1/2 feet shall only
+be operated on highways designated pursuant to Section 32-9-1
+and shall only be operated when the distance between the
+kingpin of the semitrailer and the rearmost axle or a point
+midway between the two rear axles, if the two rear axles are
+tandem axles, does not exceed 41 feet and if the semitrailer
+is equipped with a rear underride guard of a substantial
+construction consisting of a continuous lateral beam extending
+to within four inches of the lateral extremities of the
+semitrailer and located not more than 22 inches from the
+surface as measured with the semitrailers empty and on a level
+surface. For purposes of enforcement of this subdivision,
+lengths of semitrailers and trailers refer to the cargo
+carrying portion of the unit. Truck tractor units used
+exclusively in combinations transporting motor vehicles may
+directly carry a portion of the cargo, provided that the
+combinations are restricted to truck tractor-semitrailer
+combinations only and provided further that the overall length
+of these particular combinations shall not exceed 65 feet;
+except that the overall length of stinger-steered type units
+shall not exceed 75 80 feet. No truck tractor-semitrailer
+combination used exclusively for transporting motor vehicles
+shall carry any load extending more than three four feet
+beyond the front or four six feet beyond the rear of the
+combination. No other vehicle operated on a highway shall
+carry any load extending more than a total of five feet beyond
+both the front and rear, inclusive, of the vehicle.
+"(4) WEIGHT.
+"a. The gross weight imposed on the highway by the
+wheels of any one axle of a vehicle shall not exceed 20,000
+pounds, or such other weight, if any, as may be permitted by
+federal law to keep the state from losing federal funds;
+provided, that inadequate bridges shall be posted to define
+load limits.
+"b. For the purpose of this section, an axle load
+shall be defined as the total load transmitted to the road by
+all wheels whose centers are included between two parallel
+transverse vertical planes 40 inches apart, extending across
+the full width of the vehicle.
+"c. Subject to the limit upon the weight imposed
+upon the highway through any one axle as set forth herein, the
+total weight with load imposed upon the highway by all the
+axles of a vehicle or combination of vehicles shall not exceed
+the gross weight given for the respective distances between
+the first and last axle of the vehicle or combination of vehi-
+cles, measured longitudinally to the nearest foot as set forth
+in the following table:
+COMPUTED GROSS WEIGHT TABLE
+For various spacings of axle groupings
+Distance in feet between first                  Maximum load in
+and last axles of vehicle or                    pounds on all the
+combination of vehicles                              axles
+2 axles      3 axles      4 axles      5 axles     6 axles
+8 or         36,000       42,000       42,000
+less
+9            38,000       42,500       42,500
+10           40,000       43,500       43,500
+11                        44,000       44,000
+12                        45,000       50,000       50,000
+13                        45,500       50,500       50,500
+14                        46,500       51,500       51,500
+15                        47,000       52,000       52,000
+16                        48,000       52,500       58,000        58,000
+17   48,500      53,500   58,500   58,500
+18   49,500      54,000   59,000   59,000
+19   50,000      54,500   60,000   60,000
+20   51,000      55,500   60,500   66,000
+21   51,500      56,000   61,000   66,500
+22   52,500      56,500   61,500   67,000
+23   53,000      57,500   62,500   68,000
+24   54,000      58,000   63,000   68,500
+25   54,500      58,500   63,500   69,000
+26   56,000      59,500   64,000   69,500
+27   57,000      60,000   65,000   70,000
+28   59,000      60,500   65,500   71,000
+29   60,000      61,500   66,000   71,500
+30               62,000   66,500   72,000
+31               63,500   67,000   72,500
+32               64,500   68,000   73,500
+33               65,000   69,000   74,000
+34               65,500   70,000   74,500
+35               66,500   71,000   75,000
+36               67,000   72,000   76,000
+37               68,000   73,000   77,000
+38               69,000   74,000   78,000
+39                                  70,000       75,000     79,000
+40                                  71,000       76,000     80,000
+41                                  72,000       77,000     81,000
+42                                  73,000       78,000     82,000
+43                                  74,000       79,000     83,000
+44 and                              75,000       80,000     84,000
+over
+"Except as provided by special permits, no vehicle
+or combination of vehicles exceeding the gross weights
+specified above shall be permitted to travel on the public
+highways within the State of Alabama.
+"No vehicle or combination of vehicles shall be per-
+mitted to operate on any portion of the Interstate Highway
+System of Alabama that shall have a greater weight than 20,000
+pounds carried on any one axle, including all enforcement tol-
+erances, or with a tandem axle weight in excess of 34,000
+pounds, including all enforcement tolerances, or with an over-
+all gross weight on a group of two or more consecutive axles
+produced by application of the following formula:
+W=500    LN     +      12N   +   36
+N-1
+where W = overall gross weight on any group of two
+or more consecutive axles to the nearest 500 pounds, L =
+distance in feet between the extreme of any group of two or
+more consecutive axles, and N = number of axles in group under
+consideration; except, that two consecutive sets of tandem
+axles may carry a gross load of 34,000 pounds each, provided
+the overall distance between the first and last axles of the
+consecutive sets of tandem axles is 36 feet or more; provided,
+that the overall gross weight may not exceed 80,000 pounds,
+including all enforcement tolerances. Nothing in this section
+shall be construed as permitting size or weight limits on the
+National System of Interstate and Defense Highways in this
+state in excess of those permitted under 23 U.S.C. Section
+127. If the federal government prescribes or adopts vehicle
+size or weight limits greater than or less than those now
+prescribed by 23 U.S.C. Section 127 for the National System of
+Interstate and Defense Highways, the increased or decreased
+limits shall become effective on the National System of
+Interstate and Defense Highways in this state. Nothing in this
+section shall be construed to deny the operation of any
+vehicle or combination of vehicles that could be lawfully
+operated upon the highways and roads of this state on January
+4, 1975.
+"d. For purposes of enforcement of this subdivision,
+all weights less than or equal to the sum of the weight
+otherwise prescribed by this subdivision, plus an additional
+weight to be calculated by multiplying the weight prescribed
+by this subdivision by one-tenth (.10) that shall represent a
+scale or enforcement tolerance, shall be deemed to be in
+compliance with the requirements of this section, and shall
+not constitute violations thereof. No evidence shall be
+admitted into evidence or considered by the trier of fact in
+any civil action unless the evidence proffered would tend to
+prove that the weight of the vehicle exceeded the amount
+provided in this subsection. Nothing in this paragraph d.
+shall restrict or affect the right of any defendant to place
+in evidence such evidence tending to prove the defendant was
+in compliance with this section.
+"e. Dump trucks, dump trailers, concrete mixing
+trucks, fuel oil, gasoline trucks, and trucks designated and
+constructed for special type work or use shall not be made to
+conform to the axle spacing requirements of paragraph (4)c of
+this section; provided, that the vehicle shall be limited to a
+weight of 20,000 pounds per axle plus scale tolerances; and,
+provided further, that the maximum gross weight of the
+vehicles shall not exceed the maximum weight allowed by this
+section for the appropriate number of axles, irrespective of
+the distance between axles, plus allowable scale tolerances.
+All axles shall be brake equipped. Trucks delivering asphalt
+plant mix which do not exceed the maximum allowable gross
+weight and operate within 50 miles of their home base shall
+not be required to conform to the requirements of paragraph
+(4)a of this section. Concrete mixing trucks which operate
+within 50 miles of their home base and do not exceed the
+maximum allowable gross weight shall not be required to
+conform to the requirements of paragraph (4)a of this section.
+It shall be a violation if the vehicles named under this
+subdivision travel upon bridges designated and posted by the
+Transportation Director as incapable of carrying the load.
+"f. If the driver of any vehicle can comply with the
+weight requirements of this section by shifting or equalizing
+the load on all wheels or axles and does so when requested by
+the proper authority, the driver shall not be held to be
+operating in violation of this section.
+"g. When portable scales are used in the enforcement
+of this section, the axles of any vehicle described or
+commonly referred to as tandem or triaxle rigs or units (that
+is, vehicles having two or more axles in addition to a
+steering axle), the group of tandem or triaxles shall be
+weighed simultaneously, and the total weight so derived shall
+be divided by the number of axles weighed in the group to
+arrive at the per axle weight, except that if any one axle in
+the group exceeds 20,000 pounds in weight, it shall not exceed
+the weight of any other axle in the group by more than 50
+percent. When portable scales are used to determine the weight
+of a vehicle pursuant to this section, the operator of the
+vehicle will be permitted to move the vehicle to the nearest
+platform scales certified by the Department of Agriculture and
+Industries and operated by a bonded operator within a distance
+of 10 highway miles, accompanied by an enforcement officer to
+verify the accuracy of the portable scales used in determining
+the vehicle weight. If the weight of the vehicle is shown by
+the platform scales to be within the legal limits of this
+section, the operator of the vehicle shall not be held to be
+in violation of this section.
+"h. The governing body of a county, by appropriate
+resolution, may authorize limitations less than those
+prescribed herein for vehicles operated upon the county
+highways of the county.
+"i. The State Transportation Department may post or
+limit any road or bridge to weights less than those prescribed
+by this section. It is the legislative intent and purpose that
+this section be rigidly enforced by the State Transportation
+Department, the Alabama State Law Enforcement Agency and any
+other authorized law enforcement officers of the state, any
+county, or city and incorporated towns.
+"j. Two and three axle vehicles being used
+exclusively for the purpose of transporting agricultural
+commodities or products to and from a farm and for
+agricultural purposes relating to the operation and
+maintenance of a farm by any farmer, custom harvester or
+husbandman may not be made to conform to the axle requirements
+of paragraph (4)a of this section or the gross weight
+requirements of paragraph (4)c of this section.
+"(b)(1) Any vehicle utilizing an auxiliary power or
+idle reduction technology unit in order to promote reduction
+of fuel use and emissions because of engine idling shall be
+allowed an additional 400 pounds total to the gross, axle,
+tandem, or bridge formula weight limits defined in this
+section.
+"(2) To be eligible for the exception provided in
+this subsection, the operator of the vehicle must provide
+written proof or certification of the weight of the auxiliary
+power unit (APU) and demonstrate or certify the idle reduction
+technology is fully functional at all times.
+"(3) Written proof or certification of the weight of
+the APU must be available to law enforcement officers if the
+vehicle is found in violation of applicable weight laws. The
+weight allowed cannot exceed 400 pounds or the actual weight
+proven or certified, whichever is less.
+"(4) It is the intent of this subsection to apply at
+the state highway level the weight limit increase for vehicles
+using a functioning auxiliary power or idle reduction
+technology as provided in the Federal Energy Policy Act of
+2005.
+"(c)(1) Any motor vehicle, if operated by an engine
+fueled primarily by natural gas, may exceed any vehicle weight
+limit, up to a maximum gross vehicle weight of 82,000 pounds,
+under this section by an amount that is equal to the
+difference between:
+"a. The weight of the vehicle attributable to the
+natural gas tank and fueling system carried by that vehicle;
+and
+"b. The weight of a comparable diesel tank and
+fueling system.
+"(2) This subsection applies on federal interstate
+highways to the weight limit increases for vehicles using an
+EPA certified natural gas engine or an EPA approved conversion
+unit installed on the vehicle which allows the vehicle to
+operate primarily on compressed natural gas or liquefied
+natural gas."
+Section 2. This act shall become effective on the
+first day of the third month following its passage and
+approval by the Governor, or its otherwise becoming law.

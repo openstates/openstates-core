@@ -1,0 +1,805 @@
+HB76
+190627-5
+By Representatives Warren and Brown
+RFD: Children and Senior Advocacy
+First Read: 09-JAN-18
+PFD: 01/08/2018
+ENGROSSED
+A BILL
+TO BE ENTITLED
+AN ACT
+Relating to child care facilities; to amend Sections
+13A-6-29, 38-7-2, 38-7-3, 38-13-2, and 38-13-3, Code of
+Alabama 1975; to add a new Section 38-7-21 to the Code of
+Alabama 1975; to establish the Child Care Safety Act; to
+revise the definition of day care center to include
+preschools; to remove the exemption from licensure by the
+Department of Human Resources of certain child care facilities
+that are part of a church or nonprofit religious school; to
+clarify that the licensing of a faith-based child care
+facility may not be construed to infringe upon the rights of
+the facility to teach or practice a religion; and to revise
+the criminal history background information check required for
+certain individuals.
+BE IT ENACTED BY THE LEGISLATURE OF ALABAMA:
+Section 1. This act shall be known and may be cited
+as the Child Care Safety Act.
+Section 2. Sections 13A-6-29, 38-7-2, 38-7-3,
+38-13-2, and 38-13-3, Code of Alabama 1975, are amended to
+read as follows:
+"§13A-6-29.
+"(a) As used in this section, the following terms
+shall have the following meanings:
+"(1) MEDICALLY PRESCRIBED. In accordance with a
+physician's prescription or in accordance with age-appropriate
+directions for the over-the-counter medication.
+"(2) NEAR FATALITY. An act that, as certified by a
+physician, places the child in serious or critical condition.
+"(b) There is established the crime of
+administration of medication by the owner, operator, or
+employee of a licensed or statutorily exempt child care
+facility with the intent to drug the child or alter the
+child's behavior beyond what is medically prescribed or with
+the reckless disregard for the health, safety, and welfare of
+the child.
+"(c) A violation of subsection (b) is punishable as
+follows:
+"(1) A violation which does not cause or contributes
+to the death, near fatality, dismemberment, or permanent
+disability of a child is a Class C felony.
+"(2) A violation which causes a near fatality,
+dismemberment, or permanent disability of a child is a Class B
+felony.
+"(3) A violation which causes the death of a child
+is a Class A felony.
+"§38-7-2.
+"Terms used in this chapter, unless the context
+otherwise requires, have the meanings ascribed to them in this
+section. When not inconsistent with the context, words used in
+the present tense include the future, words in the singular
+number include the plural number, and words in the plural
+number include the singular number, and the word "shall" is
+always mandatory and not merely directory:
+"(1) CHILD. Any person under 19 years of age, a
+person under the continuing jurisdiction of the juvenile court
+pursuant to Section 12-15-117, or a person under 21 years of
+age in foster care as defined by the Department of Human
+Resources.
+"(2) CHILD-CARE INSTITUTION or INSTITUTION FOR CHILD
+CARE. A child-care facility where more than 10 children are
+received and maintained for the purpose of providing them with
+care or training or both, or transitional living program
+services, but does not include:
+"a. Any institution for child care which is under
+the ownership or control, or both, of the State of Alabama, or
+which is operated or certified or licensed by another agency
+or department of the State of Alabama;
+"b. Any juvenile detention home established and
+operated by the State of Alabama;
+"c. Any bona fide boarding school in which children
+are primarily taught branches of education corresponding to
+those taught in public schools, grades 1 through 12, or taught
+in public elementary schools, high schools, or both elementary
+and high schools.
+"(3) CHILD-PLACING AGENCY. A public or private
+child-care facility which receives, places, or arranges for
+the placement of any child or children in adoptive or foster
+family homes or other facilities for child care apart from the
+custody of the child's or children's parents. The term
+"child-placing agency" includes, but is not limited to, all
+agencies established and maintained by a municipality or other
+political subdivision of the State of Alabama to protect,
+guard, train, or care for children outside their own homes,
+but does not include any circuit court or juvenile court or
+any duly appointed juvenile probation officer or youth
+counselor of the court who receives and places children under
+an order of the court.
+"(4) DAY CARE CENTER. Any child-care facility
+receiving more than 12 children for daytime care during all or
+part of a day. The term "day care center" includes, but is not
+limited to, facilities commonly called "child-care centers,"
+"day nurseries," "nursery schools," "pre-kindergartens,"
+"preschools," "kindergartens," and "play groups," with or
+without stated educational purposes. The term further
+includes, but is not limited to, pre-kindergarten, preschool,
+kindergarten, or nursery schools or other daytime programs
+operated as a part of a private school and receiving children
+younger than lawful school age for daytime care for more than
+four hours a day, with or without stated educational purposes.
+The term does not include any of the following:
+"a. Kindergartens or nursery schools or other
+daytime programs operated by public elementary systems or
+secondary level school units or institutions of higher
+learning.
+"b. Kindergartens or nursery schools or other
+daytime programs, with or without stated educational purposes,
+operating no more than four hours a day and receiving children
+younger than lawful school age.
+"c. Kindergartens or nursery schools or other
+daytime programs operated as a part of a private school and
+receiving children younger than lawful school age for four
+hours a day or less, with or without stated educational
+purposes.
+"d. Facilities operated for more than four hours a
+day in connection with a shopping center or service or other
+similar facility, where transient children are cared for
+temporarily while parents or custodians of the children are
+occupied on the premises or are in the immediate vicinity and
+readily available. The facilities shall meet local and state
+fire and health requirements.
+"e. Any type of day care center that is conducted on
+federal government premises.
+"f. Special activities programs for children of
+lawful school age including, but not limited to, athletics,
+crafts instruction and similar activities conducted on an
+organized and periodic basis by civic, charitable, and
+governmental organizations provided local and state fire and
+health requirements are met.
+"(5) DAY CARE HOME. A child-care facility which is a
+family home and which receives not more than six children for
+care during the day.
+"(6) DEPARTMENT. The Department of Human Resources
+of the State of Alabama.
+"(7) FACILITY FOR CHILD CARE or CHILD-CARE FACILITY.
+A facility established by any person, group of persons,
+agency, association, or organization, whether established for
+gain or otherwise, who or which receives or arranges for care
+or placement of one or more children, unrelated to the
+operator of the facility, apart from the parents, with or
+without the transfer of the right of custody, in any facility
+as defined in this chapter, established and maintained for the
+care of children.
+"(8) FOSTER FAMILY HOME. A child-care facility in a
+residence of a family where the family receives a child or
+children, unrelated to that family, for the purpose of
+providing family care or therapeutic family care and training,
+or transitional living program services on a full-time basis.
+The types of foster family homes are defined as follows:
+"a. Boarding home. A foster family home wherein the
+foster family receives a child or children and receives
+payment for their care. The number of children so received
+shall not exceed six, unless the children are of common
+parentage.
+"b. Free home. A foster home which does not receive
+payment for the care of a child or children and which may or
+may not receive the child or children for the purpose of
+adoption.
+"(9) GROUP DAY CARE HOME. A child-care facility
+which is a family home and which receives at least seven but
+no more than 12 children for care during part of the day where
+there are at least two adults present and supervising the
+activities.
+"(10) GROUP HOME. A child-care facility where at
+least seven but not more than 10 children are received and
+maintained for the purpose of providing them with care or
+training or both, or transitional living program services.
+"(11) MATERNITY CENTER. A facility in which any
+person, agency, or corporation receives or cares for one or
+more minor pregnant girls, except that the term does not
+include hospitals.
+"(12) NIGHT CARE FACILITY. A child-care facility
+which is a center or a family home receiving a child or
+children for care during the night. A "night care facility" is
+further defined as follows:
+"a. Nighttime center. A facility which is
+established to receive more than 12 children for nighttime
+care.
+"b. Nighttime home. A family home which receives no
+more than six children for nighttime care.
+"c. Group nighttime home. A child-care facility
+which is a family home which receives at least seven but no
+more than 12 children for nighttime care and where there are
+at least two adults present and supervising the activities.
+"(13) RELATED. Any of the following relationships by
+blood, marriage, or adoption: Parent, grandparent, brother,
+sister, stepparent, stepbrother, stepsister, half brother,
+half sister, uncle or aunt, and their spouses.
+"(14) TRANSITIONAL LIVING FACILITY. A child-care
+facility or program that is designed to give opportunities to
+practice independent living skills to eligible persons at
+least 16 years of age and under 21 years of age in foster care
+in a variety of residential settings with varying degrees of
+care and supervision.
+"§38-7-3.
+"(a) No person, group of persons, or corporation may
+operate or conduct any facility for child care, as defined in
+this chapter, without being licensed or approved as provided
+in this chapter. ; provided, however, that nothing in this
+section or in this chapter prohibits an employee of the
+department from carrying out the duties of the department as
+provided in this title. Provided, further, the provisions of
+this chapter shall
+"(b)(1) Except as provided in subdivision (2), the
+licensure requirements of this chapter do not apply to
+preschool programs which are a child care facility that is
+operating as an integral part of a local church ministry or a
+religious nonprofit elementary school, and are is so
+recognized in the church or school's documents, whether
+operated separately or as a part of a religious nonprofit
+elementary school unit, secondary school unit or institution
+of higher learning under the governing board or authority of
+said the local church or its convention, association, or
+regional body to which it may be subject.; provided that
+notice is filed by the governing board or authority of the
+church or school with the department that said church or
+school meets the definition of a local church ministry or a
+religious nonprofit elementary school under terms of this
+section and are exempt from regulation by the department.
+"(2) A child care facility that receives state or
+federal funds, is operating for profit, or has at least one
+child who receives a child care subsidy from the department is
+federal funds or is operating for profit is not exempt from
+licensure under this subsection.
+"(c) A child care facility exempt from licensure
+under subsection (b) shall do all of the following to maintain
+its license exempt status:
+"(1) and a notice of intent to operate said programs
+is given Provide notice of operation on an annual basis to the
+appropriate fire and health departments so that said
+facilities shall the facility may be inspected in accordance
+with the state and local fire and health requirements,
+provided the facility shall be inspected at least annually by
+the appropriate fire department and the appropriate health
+department. for such programs. In addition, all exempt
+churches hereunder shall publish annually, on church
+letterhead, a notice to the department certifying that the
+following records are being maintained by the church:
+"(2) Provide to the department on or before October
+1, 2018, and annually thereafter, the following records and
+certify that the records are being maintained by the church or
+school:
+"a. Documentation indicating the child care facility
+is in compliance with fire inspections and health inspection
+reports; inspections.
+"b. Employee names and their criminal history
+information pursuant to Section 38-13-3.
+"c. Proof of property, casualty, and liability
+insurance, as prescribed by the department.
+"(3) Provide to the department, upon request,
+immunization verifications for all children; and medical
+history forms for all staff and children, and that the
+following information shall be available to parents or
+guardian prior to enrolling their children in said church
+ministry; staff and certify that the records are being
+maintained by the church or school.
+"(4) Provide the department within 30 days of any
+updated fire inspection report, health inspection report, new
+criminal background check suitability letter, or receipt of
+updated insurance information as required under subdivision
+(2).
+"(5) Provide notice to parents or guardians of all
+of the following information prior to enrollment of a child in
+the child care facility:
+"a. Staff qualifications.;
+"b. pupil-staff Pupil-staff ratio.;
+"c. discipline Discipline policies.;
+"d. The type of curriculum used in the learning
+program.;
+"e. the The religious teachings to be given each
+child.;
+"f. and the The type of lunch program available. ;
+provided further that prior to enrolling and annually
+thereafter parents or guardian and a responsible individual
+representing the governing board as authority of the church or
+school be required to sign and file with the department the
+affidavits provided by this section that the parents or
+guardian have been notified by said responsible individual
+that the church or school has filed notice and is exempt from
+regulation by the department. The district attorney of the
+county in which the preschool program is located shall, upon
+proper presentment of charges, investigate at his discretion
+any allegations against any such church under the laws of the
+State of Alabama.
+"(6) Post in plain view in a public area a statement
+that the program is not regulated or licensed by the
+Department of Human Resources.
+"(7) Require a parent or guardian to sign an
+affidavit stating that the parent or guardian has been
+notified by the responsible individual of the church or school
+that the child care facility has filed notice to the
+department and is exempt from licensure and regulation by the
+department. The child care facility shall file the affidavits
+annually with the department. The affidavit shall be
+substantially in the following form:
+"Form of Affidavit for Parent/Guardian
+"STATE OF ALABAMA
+"COUNTY OF _____
+"Before me, a notary public in and for said state
+and county, appeared _____ and is known to me, after being
+duly sworn or affirmed, says as follows:
+"That affiant is the parent or legal guardian of the
+minor child/children _____; that affiant has been notified by
+_____, a representative of _____ church/school, that said
+church or school has filed notice and is exempt under law from
+regulation by the Department of Human Resources.
+"______ Parent/Legal Guardian
+"Sworn, or affirmed to and subscribed before me this
+_____ day of _____, 20__.
+"(8) A responsible individual of the child care
+facility shall file an affidavit annually with the department
+certifying that it has satisfied all of the requirements of
+this section. The affidavit shall be substantially in the
+following form:
+"Form of Affidavit for Church/School
+"STATE OF ALABAMA
+"COUNTY OF _____
+"Before me, a notary public in and for said state
+and county, appeared _____ and is known to me, after being
+duly sworn or affirmed says as follows:
+"That affiant is the designated representative of
+_____ church/school and that the below listed
+parents/guardians have been notified prior to
+enrollment/reenrollment that _____ church/school has filed
+notice with and is exempt under law from regulation by the
+Department of Human Resources: ______
+"_______________ Representative
+"The affiant certifies that the child care facility
+does not receive state or federal funds and, that to the best
+of the affiant's knowledge, no child enrolled in the program
+receives a child care subsidy from the Department of Human
+Resources; the facility is in compliance with all applicable
+building, fire, and health codes; the facility has provided
+the information requested under Section 38-7-3, Code of
+Alabama 1975, to all parents or guardians of children enrolled
+in the facility; and the facility has posted notice in plain
+view in a public area stating that the child care facility is
+not licensed or regulated by the Department of Human
+Resources.
+"Sworn or affirmed to and subscribed before me this
+____ day of ______, 20__.
+"_______________ Notary Public
+"(d)(1) On and after the effective date of the act
+adding this amendatory language, any church or nonprofit
+religious school intending to operate a new child care
+facility in the state shall notify the department at least 30
+days prior to operating, and the department shall inspect the
+facility and ensure compliance with this section before the
+facility may begin operating.
+"(2) The department shall inspect any child care
+facility that is exempt from licensure under subsection (b) at
+any time if it has reasonable cause to believe the facility is
+not in compliance with this section or the safety of a child
+is at risk. If the department finds there exists a situation
+that may put the safety of a child at risk, the department may
+refer to the fire or health department or to the local
+district attorney for the proper remedy or action.
+"(e) The district attorney of the county in which a
+child care facility that is exempt from licensure under
+subsection (b) is located, upon presentment of charges, shall
+investigate at his or her discretion, any allegations against
+the church or nonprofit religious school operating the
+facility under the laws of the state.
+"(f) The department, upon request, shall provide any
+documentation necessary to confirm any of the information
+relevant to a determination of whether a child care facility
+is exempt under subsection (b) to the district attorney.
+"(g) Any child care facility that is exempt from
+licensure under subsection (b), upon request by the
+department, shall provide the department with any information
+listed in subsection (c) within 15 days.
+"(h) Nothing in this section or in this chapter
+prohibits an employee of the department from carrying out the
+duties of the department as prescribed in this title.
+"(i) Nothing in this section or in this chapter
+infringes upon the religious teaching or practices of a
+licensed faith-based child care facility.
+"§38-13-2.
+"When used in this chapter, the following words
+shall have the following meanings:
+"(1) ADULT. An individual 19 years of age and older.
+"(2) ADULT CARE FACILITY. A person or entity holding
+a Department of Human Resources license or approval or
+certification to provide care, including foster care, for
+adults.
+"(3) APPLICANT. A person or entity who submits an
+application for license as a child care or adult care facility
+to the Department of Human Resources or a child placing
+agency, or an application for employment or for a volunteer
+position to a Department of Human Resources licensed child
+care or adult care facility. With regards to child care and
+adult care facilities in a home setting, the term includes an
+adult household member whose residence is in the home. The
+term also includes an individual who submits an application
+for a volunteer position or for employment with the Department
+of Human Resources in a position in which the person has
+unsupervised access to children, adults, or individuals with
+disabilities as one of the essential functions of the job. The
+term also includes an applicant for approval as an adoptive
+parent of a child or as a foster parent of an adult or child.
+"(4) AUTOMATED SYSTEM. The computerized, automated
+fingerprint identification system (AFIS) maintained by the
+Department of Public Safety Alabama State Law Enforcement
+Agency that allows for a computer search of the in-state
+database for criminal history background check information
+maintained by the Alabama Criminal Justice Information Center
+(ACJIC). The system contains criminal history background
+information for fingerprint-based and name-based searches.
+"(5) CARE. The provision of care, treatment,
+education, training, instruction, supervision, or recreation
+to children, adults, or individuals with disabilities.
+"(6) CARETAKER SETTING. A building, structure, or
+location, public or private property, or vehicle, utilized for
+or involved in the providing of care, education, training,
+instruction, or supervision of children, adults, or
+individuals with disabilities or transportation in connection
+with activity provided by a licensed, approved, or certified
+child or adult care facility.
+"(7) CHIEF EXECUTIVE OFFICER. The Commissioner of
+the Department of Human Resources, the director of a county
+department of human resources, or the head of an employer
+covered by this chapter, but not specifically enumerated.
+"(8) CHILD or CHILDREN. An individual under 19 years
+of age.
+"(9) CHILD CARE FACILITY. A person or entity holding
+a Department of Human Resources license, permit, or approval
+to provide child care, including foster care, under Chapter 7
+of this title. The term excludes includes exempt child care
+facilities.
+"(10) CHILD PLACING AGENCY. A person or entity
+licensed by the Department of Human Resources under Chapter 7
+of this title, issuing approvals to foster family homes and
+adoptive homes.
+"(11) CONVICTION. A determination of guilt as the
+result of a plea, including a plea of nolo contendere, or a
+trial.
+"(12) CRIMINAL HISTORY BACKGROUND INFORMATION CHECK.
+The review of any and all records containing any information
+collected and stored in the criminal record repository of the
+Federal Bureau of Investigation, the Alabama Criminal Justice
+Information Center, and the Alabama Department of Public
+Safety State Law Enforcement Agency involving an arrest or
+conviction by a criminal justice agency, including, but not
+limited to, child abuse crime information as defined by 42
+U.S.C. § 5119, the National Child Protection Act of 1993,
+conviction record information, fingerprint cards, correctional
+data and release information, and identifiable descriptions
+and notations of convictions. Criminal history background
+information shall not include any analytical records or
+investigative reports that contain intelligence information or
+criminal investigation information.
+"(13) CURRENT. An individual who is presently
+employed, licensed, or approved, or working as a volunteer on
+November 1, 2000.
+"(14) DAILY LIVING TASKS. Activities of daily
+living, including walking, working, learning, grooming and
+hygiene, bathing, dressing, eating, cooking, cleaning,
+shopping, transportation, managing money, maintaining a
+residence, writing, and using telephones, computers, and other
+automated communication devices.
+"(15) ELDERLY. An individual 65 years of age or
+older.
+"(16) EMPLOYEE. An individual currently in the
+service of an employer for compensation, full-time or
+part-time, and employed by contract or at will, in which the
+employer has the authority to control the person in the
+material details of how work shall be performed and when
+compensation shall be provided.
+"(17) EMPLOYER. An individual, person, group of
+persons, association, partnership, corporation, limited
+liability company or partnership, business, or other entity
+which hires employees, has volunteers, or contracts with
+others to provide personnel to work with or provide care to
+children, adults, or individuals with disabilities in a
+caretaker setting.
+"(18) ESSENTIAL FUNCTIONS. The fundamental, not
+merely marginal, job duties of the employment as determined by
+a written job description or the judgment of the employer.
+"(19) EXEMPT CARE FACILITY. A person or entity
+exempt by law from licensure by the Department of Human
+Resources, or a child placing agency, including church day
+care, child centers, or elder centers adult care facilities.
+"(20) INDIVIDUAL. A natural person.
+"(21) INDIVIDUAL WITH DISABILITIES. A person with a
+mental or physical impairment who requires assistance to
+perform one or more daily living tasks.
+"(22) LAW ENFORCEMENT. The sheriff's department of a
+county or the police department of a municipality.
+"(23) LICENSE. A license, permit, certification,
+approval, registration, or other form of permission required
+by law by whatever designation for a child care facility,
+adult care facility, child placing agency, foster parent or
+foster home, adoptive parent or adoptive home, or any other
+person or entity in which an individual has unsupervised
+access to children, the elderly, or individuals with
+disabilities.
+"(24) LICENSED SOCIAL WORKER. A social worker
+licensed by the Alabama State Board of Social Work Examiners
+to conduct family home studies and psychosocial assessments in
+adoptive or custody cases by court order or for treatment not
+otherwise required to conduct a criminal history check.
+"(25) LICENSEE. Holder of a license or approval and
+an adult household member whose residence is in the home in
+regards to child care and adult care facilities in a home
+setting.
+"(26) PERSON or ENTITY. A natural person, sometimes
+referred to as an individual, an owner or operator of any
+adult care facility, child care facility, child placing
+agency, exempt child care facility, or licensee, whether an
+individual, corporation, limited liability company or
+partnership, partnership, association, or other legal entity
+or group, and a board member, an officer, member, or partner
+of an entity who has direct contact with children, the
+elderly, or individuals with disabilities in care.
+"(27) REASONABLE SUSPICION. Belief by a prudent
+person that reasonable articulable grounds exist to suspect
+that the employee's past or present behavior should be
+reviewed to determine if such behavior or conduct bears upon
+the individual's fitness to teach or supervise or have
+responsibility for the safety and well-being of children, the
+elderly, or persons with disabilities as defined in this
+chapter.
+"(28) REPORT. A written statement of criminal
+history background information.
+"(29) RESIDENCE. Place of abode, domicile, or
+dwelling with intention to remain permanently and continuously
+or for an indefinite or uncertain length of time.
+"(30) SEX CRIME. Includes any sex crime listed in
+Section 15-20A-5. the following:
+"a. Enticing a child to enter a vehicle, room,
+house, office, or any other place for immoral purposes, as
+proscribed by Section 13A-6-69.
+"b. Incest, when the offender is an adult and the
+victim is a minor, as proscribed by Section 13A-13-3.
+"c. Kidnapping of a minor, except by a parent, in
+the first or second degree, as proscribed by Section 13A-6-43
+or Section 13A-6-44.
+"d. Promoting prostitution in the first or second
+degree, as proscribed by Section 13A-12-111 or Section
+13A-12-112.
+"e. Rape in the first or second degree, as
+proscribed by Section 13A-6-61 or Section 13A-6-62.
+"f. Sexual misconduct, as proscribed by Section
+13A-6-65.
+"g. Sexual torture, as proscribed by Section
+13A-6-65.1.
+"h. Sexual abuse in the first or second degree, as
+proscribed by Section 13A-6-66 or Section 13A-6-67.
+"i. Sodomy in the first or second degree, as
+proscribed by Section 13A-6-63 or Section 13A-6-64.
+"j. Soliciting a child by computer for the purposes
+of committing a sexual act and transmitting obscene material
+to a child by computer as proscribed by Sections 13A-6-110 and
+13A-6-111.
+"k. Violation of the Alabama Child Pornography Act,
+as proscribed by Section 13A-12-191, 13A-12-192, 13A-12-196,
+or 13A-12-197.
+"l. Any solicitation, attempt, or conspiracy to
+commit any of the offenses listed in paragraphs a. to k.,
+inclusive.
+"m. A crime listed in the Alabama Sex Offender
+Registration and Community Notification Act, Chapter 20A of
+Title 15.
+"n. Conviction for a violation or attempted
+violation of an offense committed outside the State of Alabama
+or under federal law is a sex crime or any other crime if the
+offense would be a crime in Alabama.
+"(31) SUITABILITY CRITERIA.
+"a. Convictions for any of the following crimes
+shall make an individual unsuitable for employment, volunteer
+work, approval, or licensure:
+"1. Murder, manslaughter, or criminally negligent
+homicide A violent offense as defined in Section 12-25-32.
+"2. A sex crime.
+"3. A crime that involves the physical or mental
+injury or maltreatment of a child, the elderly, or an
+individual with disabilities.
+"4. A crime committed against a child.
+"5. A crime involving the sale or distribution of a
+controlled substance.
+"6. Robbery.
+"7.6. A crime or offense committed in another state
+or under federal law which would constitute any of the above
+crimes in this state.
+"b. Conviction for any crime listed in the Adoption
+and Safe Families Act, 42 U.S.C. § 671(a)(20) shall disqualify
+a person from being approved or continuing to be approved as a
+foster parent or adoptive parent and a convicted person shall
+be deemed unsuitable for employment, volunteer work, approval,
+or licensure as a foster parent or adoptive parent.
+"c. The Department of Human Resources may set other
+disqualifying convictions by rule under the Administrative
+Procedure Act, Section 41-22-1, et seq., for Department of
+Human Resources licensed child or adult care facilities.
+"(32) SUITABILITY DETERMINATION. A decision that an
+individual is or is not suitable for employment, volunteer
+work, or licensure based upon the existence of a prohibited
+criminal conviction.
+"(33) UNSUPERVISED ACCESS TO A CHILD OR CHILDREN,
+THE ELDERLY, OR AN INDIVIDUAL WITH DISABILITIES. Contacts,
+interviews, questions, examinations, interaction, or
+communications outside the presence, supervision, and control
+of someone other than a child or elderly or disabled
+individual in care during the provision of care, education,
+training, instruction, supervision, or other employment or
+license related activities.
+"(34) VOLUNTEER. An individual who provides services
+without an express or implied promise of compensation, but
+shall not include the parent, family member, legal custodian,
+or legal guardian of a child, the elderly, or disabled
+individual in care.
+"(35) WRITTEN CONSENT. A signed statement by the
+applicant or employee containing all of the following:
+"a. The name, address, date of birth, race, gender,
+and Social Security number appearing on a valid identification
+document as defined in subsection (d) of 18 U.S.C. § 1028. If
+the applicant does not have a Social Security number because
+of sincerely held personal beliefs, the Social Security number
+shall not be required and the Department of Human Resources
+and the Department of Public Safety Alabama State Law
+Enforcement Agency shall provide an alternative means of
+identification and procedure.
+"b. Notice to the applicant or employee of the right
+to obtain a copy of the criminal history background
+information check report, challenge the accuracy and
+completeness of any information contained in the report, and
+to obtain a prompt determination as to the validity of a
+challenge.
+"c. Name, address, and telephone number of the
+employer or licensing entity for which the criminal history
+background information check report is being sought.
+"d. Release of the criminal history background
+information check report to the Department of Human Resources.
+"§38-13-3.
+"(a) On November 1, 2000, every employer, child care
+facility, adult care facility, the Department of Human
+Resources, and child placing agency shall request the
+Department of Public Safety Alabama State Law Enforcement
+Agency to conduct a criminal history background information
+check for the following:
+"(1) An employment applicant, employee or volunteer
+of an employer, child care facility, adult care facility, or
+child placing agency.
+"(2) A current foster parent for a child or adult or
+adult household member of a foster family or applicant and an
+adult household member of a foster family seeking approval to
+operate as a foster parent or foster family home for a child
+placing agency or the Department of Human Resources. Unless
+otherwise provided in this chapter, no criminal history
+background information check shall be conducted on a current
+foster parent or household member of a foster family if a
+Federal Bureau of Investigation and Alabama Department of
+Public Safety State Law Enforcement Agency criminal history
+background information check has already been conducted under
+other law that meets the suitability criteria as provided in
+this chapter. Subsequent arrests or convictions of foster
+parents, or arrests or convictions entered into the automated
+system subsequent to the initial report, shall be sent by the
+Department of Public Safety Alabama State Law Enforcement
+Agency to the Department of Human Resources as provided in
+this chapter.
+"(3) An applicant or employee, with the exception of
+those individuals on employed status on November 1, 2000, in a
+position in the Department of Human Resources which requires
+unsupervised access to children, the elderly, or individuals
+with disabilities as one of the essential functions of the
+job. All current employees of the Department of Human
+Resources shall be subjected to a criminal history background
+information check upon reasonable suspicion. Criminal history
+background information checks shall be required for
+prospective and current personnel under contract with the
+Department of Human Resources or working with another entity
+under contract with the Department of Human Resources,
+students, mentors, and volunteers in positions requiring
+unsupervised access to children, the elderly, or persons with
+disabilities as one of the essential functions of the job. The
+Department of Human Resources shall pay any fees related to
+checks required pursuant to this subdivision.
+"(4) A current licensee or applicant for a license
+through the Department of Human Resources to operate a child
+care or adult care facility.
+"(5) An adoptive parent applicant for a child
+adoptive placement through the Department of Human Resources
+or child placing agency and any Department of Human Resources
+or child placing agency approved adoptive parent prior to
+entry of a final decree of adoption. Unless otherwise provided
+in this chapter, no criminal history background information
+check shall be conducted on a current adoptive parent or
+household member of an adoptive family if a Federal Bureau of
+Investigation and Alabama Department of Public Safety State
+Law Enforcement Agency criminal history background information
+check has already been conducted under other law that meets
+the suitability criteria as provided in this chapter.
+Subsequent arrests or convictions of adoptive parents, or
+arrests or convictions entered into the automated system
+subsequent to the initial report, shall be sent by the
+Department of Public Safety Alabama State Law Enforcement
+Agency to the Department of Human Resources as elsewhere
+provided in this chapter.
+"(b) An employer, child care facility, adult care
+facility, the Department of Human Resources, or a child
+placing agency may only request a criminal history background
+information check by its chief executive officer, or his or
+her designee authorized in writing and notarized, and law
+enforcement shall render assistance, including assistance in
+obtaining fingerprints required for submission of a request to
+the Department of Public Safety Alabama State Law Enforcement
+Agency.
+"(c) Every employee, volunteer or applicant, for
+employment or a volunteer position, licensee, Department of
+Human Resources adoptive parent applicant or approved adoptive
+parent, or applicant for a license to the Department of Human
+Resources to operate a child care or adult care facility shall
+submit two sets of fingerprints and sign a written consent to
+obtain the criminal history background information.
+Fingerprints shall not be required when a disability prevents
+a person from being fingerprinted. Disabilities preventing
+fingerprinting include the loss of both hands, severe scarring
+of all fingers, closed paralytic hands, and similar
+disabilities. In cases involving disability, a written consent
+to obtain available criminal history background information by
+name only shall be obtained. No one who fails or refuses to
+give written consent or submit fingerprints necessary to
+obtain criminal history background information may be
+employed, allowed to perform volunteer or other work, approved
+or issued a license, or allowed to retain a license or
+approval by the Department of Human Resources, an employer,
+child care facility, adult care facility, or child placing
+agency.
+"(d) Child care facilities or adult Adult care
+facilities exempt from Department of Human Resources licensing
+shall not be required to comply with this chapter, but may
+voluntarily collect and forward two complete acceptable sets
+of fingerprints, the written consent, and nonrefundable fee
+from applicants or employees to the Department of Public
+Safety Alabama State Law Enforcement Agency to request a
+criminal history background information check which shall be
+processed pursuant to this chapter. Licensed social workers
+conducting home studies may also request a criminal history
+background check which shall be processed pursuant to this
+chapter. Provided, however, if a license-exempt child care
+facility operated as part of a church ministry or religious
+school does not choose to comply with this chapter on a
+voluntary basis, then the employee or prospective employee of
+the child care facility shall request a criminal history
+background check, and the request shall be processed in the
+same manner as for other employees or applicants under the
+provisions of this chapter. The Department of Human Resources
+shall, prior to the disbursement of any subsidized child care
+funds, require all employees and applicants of legally
+operating child care facilities to submit verification of the
+application for a criminal history background check and the
+results thereof when obtained. Upon reasonable suspicion that
+the individual has a criminal conviction or has not had a
+criminal history background check conducted, the Department of
+Human Resources shall have the right to require employees of
+license-exempt child care or adult care facilities to submit
+each application for a criminal history background check and
+the results thereof when obtained."
+Section 3. Section 38-7-21 is added to the Code of
+Alabama 1975, to read as follows:
+§38-7-21.
+A church, religious nonprofit entity, or religious
+nonprofit school that has been operating a day care center or
+preschool program without a license prior to the effective
+date of the act adding this section that chooses to become a
+licensed day care center under this chapter shall have 90 days
+from the effective date of the act adding this section to come
+into compliance with all licensing requirements of this
+chapter and related rules adopted by the department, except
+the church, religious nonprofit entity, or religious nonprofit
+school shall not be required to meet minimum standards for
+licensed day care centers or nighttime centers relating to
+physical building design, size, and fixtures for existing
+construction.
+Section 4. A child care facility that is an integral
+part of a church or nonprofit religious school, other than a
+child care facility exempt from licensure under subsection (b)
+of Section 38-7-3, Code of Alabama 1975, as amended by this
+act, shall be licensed in accordance with Chapter 7, Title 38,
+Code of Alabama 1975, no later than August 1, 2019.
+Section 5. This act shall become effective
+immediately following its passage and approval by the
+Governor, or its otherwise becoming law.
+House of Representatives
+Read for the first time and re-
+ferred to the House of Representa-
+tives committee on Children and Se-
+nior Advocacy......................    ....... 09-JAN-18
+Reported from Children and Senior
+Advocacy as Favorable with 1 sub-
+stitute............................    ....... 30-JAN-18
+Read for the third time and passed
+as amended.........................    ....... 01-FEB-18
+Yeas 86, Nays 5, Abstains 1
+Jeff Woodard
+Clerk

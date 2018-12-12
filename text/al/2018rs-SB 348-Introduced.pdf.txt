@@ -1,0 +1,291 @@
+SB348
+192262-1
+By Senators Beasley, McClendon, Allen, Dial, Holley, Stutts,
+Melson, Singleton, Dunn, Coleman-Madison and Smitherman
+RFD: Health and Human Services
+First Read: 27-FEB-18
+192262-1:n:02/26/2018:KBH/th LSA2018-1055
+SYNOPSIS:            Existing law provides auditing procedures
+for pharmacy records by or on behalf of certain
+entities.
+This bill would further provide auditing
+procedures for pharmacy records and would limit
+recoupment for certain errors by a pharmacy.
+A BILL
+TO BE ENTITLED
+AN ACT
+To amend Sections 34-23-181, 34-23-184, 34-23-185,
+and 34-23-186 of the Code of Alabama 1975, relating to
+auditing procedures for pharmacy records; to further provide
+for auditing procedures; and to limit recoupment for certain
+errors by a pharmacy.
+BE IT ENACTED BY THE LEGISLATURE OF ALABAMA:
+Section 1. Sections 34-23-181, 34-23-184, 34-23-185,
+and 34-23-186 of the Code of Alabama 1975, are amended to read
+as follows:
+"§34-23-181.
+"The following words shall have the following
+meanings as used in this article:
+"(1) HEALTH BENEFIT PLAN. Any individual or group
+plan, employee welfare benefit plan, policy, or contract for
+health care services issued, delivered, issued for delivery,
+or renewed in this state by a health care insurer, health
+maintenance organization, accident and sickness insurer,
+fraternal benefit society, nonprofit hospital service
+corporation, nonprofit medical service corporation, health
+care service plan, or any other person, firm, corporation,
+joint venture, or other similar business entity that pays for
+insureds or beneficiaries in this state. The term includes,
+but is not limited to, entities created pursuant to Article 6
+of Chapter 4 of Title 10. A health benefit plan located or
+domiciled outside of the State of Alabama is deemed to be
+subject to this article if it receives, processes,
+adjudicates, pays, or denies claims for health care services
+submitted by or on behalf of patients, insureds, or
+beneficiaries who reside in Alabama.
+"(2) PHARMACY. A place licensed by the Alabama State
+Board of Pharmacy in which prescriptions, drugs, medicines,
+medical devices, chemicals, and poisons are sold, offered for
+sale, compounded, or dispensed and shall include all places
+whose title may imply the sale, offering for sale,
+compounding, or dispensing of prescriptions, drugs, medicines,
+chemicals, or poisons.
+"(3) PHARMACY BENEFIT MANAGEMENT PLAN. An
+arrangement for the delivery of pharmacist services in which a
+pharmacy benefit manager undertakes to administer the payment
+or reimbursement of any of the costs of pharmacist services
+for an enrollee on a prepaid or insured basis that contains
+one or more incentive arrangements intended to influence the
+cost or level of pharmacist services between the plan sponsor
+and one or more pharmacies with respect to the delivery of
+pharmacist services and requires or creates benefit payment
+differential incentives for enrollees to use under contract
+with the pharmacy benefit manager.
+"(4) PHARMACY BENEFIT MANAGER. A business that
+administers the prescription drug or device portion of
+pharmacy benefit management plans or health insurance plans on
+behalf of plan sponsors, insurance companies, unions, and
+health maintenance organizations. The term includes a person
+or entity acting for a pharmacy benefit manager in a
+contractual or employment relationship in the performance of
+pharmacy benefits benefit management for a managed care
+company, nonprofit hospital or medical service organization,
+insurance company, or third-party payor.
+"(5) PHARMACIST SERVICES. Offering for sale,
+compounding, or dispensing of prescriptions, drugs, medicines,
+chemicals, or poisons pursuant to a prescription. Pharmacist
+services also includes the sale or provision of, counseling
+of, or fitting of medical devices, including prosthetics and
+durable medical equipment.
+"§34-23-184.
+"(a) The entity conducting an audit shall follow
+these procedures:
+"(1) The pharmacy contract shall identify and
+describe in detail the audit procedures.
+"(2) The entity conducting the on-site audit shall
+give the pharmacy written notice at least two weeks before
+conducting the initial on-site audit for each audit cycle. If
+the pharmacy benefit manager does not include their auditing
+guidelines within their provider manual, then the notice must
+include a documented checklist of all items being audited and
+the manual, including the name, date, and edition or volume,
+applicable to the audit and auditing guidelines. For on-site
+audits a pharmacy benefit manager shall also provide a list of
+material that is copied or removed during the course of an
+audit to the pharmacy. The pharmacy benefit manager may
+document this material on either a checklist or on an audit
+acknowledgement form. The pharmacy shall produce any items
+during the course of the audit or within 30 days of the
+on-site audit.
+"(3) The entity conducting the on-site audit may not
+interfere with the delivery of pharmacist services to a
+patient and shall utilize every effort to minimize
+inconvenience and disruption to pharmacy operations during the
+audit process.
+"(4) An audit that involves clinical or professional
+judgment shall be conducted by or in consultation with a
+licensed pharmacist.
+"(5) The audit shall not consider as fraud any
+clerical or record-keeping error, such as a typographical
+error, scrivener's error, or computer error regarding a
+required document or record; however, such errors may be
+subject to recoupment, provided that a pharmacy shall not be
+subject to a charge-back or recoupment for a clerical or
+record-keeping error in a required document or record,
+including a typographical or computer error, unless the error
+resulted in overpayment to the pharmacy. The pharmacy shall
+have the right to submit amended claims through an online
+submission to correct clerical or record-keeping errors in
+lieu of recoupment of a claim where no actual financial harm
+to the patient or plan has occurred, provided that the
+prescription was dispensed according to prescription
+documentation requirements set forth by the Alabama Pharmacy
+Act and within the plan limits. The pharmacy shall not be
+subject to recoupment of funds by the pharmacy benefits
+benefit manager unless the pharmacy benefits benefit manager
+can provide proof of intent to commit fraud or such error
+results in actual financial harm to the pharmacy benefits
+benefit manager, a health insurance plan managed by the
+pharmacy benefits benefit manager, or a consumer. A person
+shall not be subject to criminal penalties for errors provided
+for in this subsection without proof of intent to commit
+fraud, waste, or abuse.
+"a. Any amount to be charged back or recouped due to
+overpayment shall not exceed the amount the pharmacy was
+overpaid.
+"b. The auditing entity shall not include the
+dispensing fee in the calculation of an overpayment unless a
+prescription is considered a misfill. As used in this
+paragraph, misfill means a prescription that was not
+dispensed, a prescription in which the prescriber denied the
+authorization request, a prescription in which an additional
+dispensing fee was charged, or a prescription error, not
+including a clerical, record-keeping, typographical, or
+computer error.
+"(6) An entity conducting an audit shall not require
+any documentation that is not required by state and federal
+law or Alabama Medicaid. The information shall be considered
+to be valid if documented on the prescription, computerized
+treatment notes, pharmacy system, or other acceptable medical
+records.
+"(7) Unless superseded by state or federal law,
+auditors shall only have access to previous audit reports on a
+particular pharmacy conducted by the auditing entity for the
+same pharmacy benefits benefit manager, health plan, or
+insurer. An auditing vendor contracting with multiple pharmacy
+benefits benefit managers or health insurance plans shall not
+use audit reports or other information gained from an audit on
+a particular pharmacy to conduct another audit for a different
+pharmacy benefits benefit manager or health insurance plan.
+"(8) Audit results shall be disclosed to the health
+benefit plan in a manner pursuant to contract terms.
+"(9) A pharmacy may use the records of a hospital,
+physician, or other authorized practitioner of the healing
+arts for drugs or medicinal supplies written or transmitted by
+any means of communication for the purposes of validating the
+pharmacy record with respect to orders or refills of a legend
+or narcotic drug.
+"(10) If the pharmacy benefit manager or its
+representative conducts an audit, the sample size shall not be
+greater than 150 prescriptions, provided that a refill does
+not constitute a separate prescription for the purposes of
+this subdivision.
+"(10) (11) Reasonable costs associated with the
+audit shall be the responsibility of the auditing entity with
+the exception of Alabama Medicaid if the claims sample exceeds
+100 unique prescription hard copies.
+"(11) (12) A finding of an overpayment or an
+underpayment may be a projection based on the number of
+patients served having a similar diagnosis or on the number of
+similar orders or refills for similar drugs, except that
+recoupment shall be based on the actual overpayment or
+underpayment of actual claims.
+"(12) (13) A finding of an overpayment may not
+include the cost of the drugs that were dispensed in
+accordance with the prescriber's orders, provided the
+prescription was dispensed according to prescription
+documentation requirements set forth by the Alabama Pharmacy
+Act and within the plan limits. A finding of an overpayment
+may not include the dispensing fee amount unless any of the
+following apply:
+"a. A prescription was not actually dispensed.
+"b. The prescriber denied authorization.
+"c. The prescription dispensed was a medication
+error by the pharmacy.
+"d. The identified overpayment is solely based on an
+extra dispensing fee.
+"(13) (14) Each pharmacy shall be audited under the
+same standards and parameters as other similarly situated
+pharmacies audited by the entity and must be audited under
+rules applicable to the contractor and time period of the
+prescription.
+"(14) (15) Where not superseded by state or federal
+law, the period covered by an audit may not exceed two years
+from the date the claim was submitted to or adjudicated by a
+managed care company, nonprofit hospital or medical service
+organization, health benefit plan, third-party payor, pharmacy
+benefit manager, a health program administered by a department
+of the state, or any entity that represents those companies,
+groups, or department. An audit may not be conducted six
+months past the date the pharmacy benefit management plan
+terminated its contract to adjudicate claims with a pharmacy
+benefit manager, health plan administrator, or any other
+entity representing those companies.
+"(15) (16) An audit may not be initiated or
+scheduled during the first five calendar days of any month.
+"(b) The entity shall provide the pharmacy with a
+written report of the audit and comply with all of the
+following requirements:
+"(1) The preliminary audit report shall be delivered
+to the pharmacy within 90 days after the conclusion of the
+audit, with a reasonable extension to be granted upon request.
+"(2) A pharmacy shall be allowed at least 30 days
+following receipt of the preliminary audit report in which to
+produce documentation to address any discrepancy found during
+the audit, with a reasonable extension to be granted upon
+request.
+"(3) A final audit report shall be delivered to the
+pharmacy within 180 days after receipt of the preliminary
+audit report or final appeal, as provided for in Section
+34-23-185, whichever is later.
+"(4) The audit documents shall be signed by the
+auditors assigned to the audit. The acknowledgement or receipt
+shall be signed by the auditor and the audit report shall
+contain clear contact information of the representative of the
+auditing organization.
+"(5) Recoupments of any disputed funds, or repayment
+of funds to the entity by the pharmacy if permitted pursuant
+to contractual agreement, shall occur after final internal
+disposition of the audit, including the appeals process as set
+forth provided for in Section 34-23-185. If the identified
+discrepancy for an individual audit exceeds twenty-five
+thousand dollars ($25,000), future payments in excess of that
+amount to the pharmacy may be withheld pending finalization of
+the audit.
+"(6) Interest shall not accrue during the audit
+period.
+"(7) Each entity conducting an audit shall provide a
+copy of the final audit report, after completion of any review
+process, to the plan sponsor in a manner pursuant to a
+contract.
+"§34-23-185.
+"(a) Each entity conducting an audit shall establish
+a written appeals process under which a pharmacy may appeal an
+unfavorable preliminary audit report to the entity.
+"(b) If, following the appeal, Following the appeal,
+if the entity finds that an unfavorable audit report or any
+portion thereof is unsubstantiated, the entity shall dismiss
+the audit report or that portion without the necessity of any
+further action.
+"(c) If, following the appeal, Following the appeal,
+if any of the issues raised in the appeal are not resolved to
+the satisfaction of either party, that party may ask for
+mediation of those unresolved issues unless other remedies are
+granted under the terms of the contract. A certified mediator
+shall be chosen by agreement of the parties from the mediators
+list maintained by the Alabama Supreme Court. The cost of
+mediation shall be borne by agreement of the parties or by the
+decision of the mediator.
+"§34-23-186.
+"(a) Notwithstanding any other provision in this
+article or state or federal law, the entity conducting the
+audit may not use the accounting practice of extrapolation in
+calculating recoupments or penalties for audits. An
+extrapolation audit means an audit of a sample of prescription
+drug benefit claims submitted by a pharmacy to the entity
+conducting the audit that is then used to estimate audit
+results for a larger batch or group of claims not reviewed by
+the auditor. Future fills or refills beyond the current claim
+date may not be subject to recoupment due to an assumption of
+error under extrapolation procedure. The auditing entity shall
+not use extrapolation to calculate penalties or amounts to be
+charged back or recouped unless otherwise required by federal
+requirements or federal plans.
+"(b) The auditing entity conducting a pharmacy audit
+shall not compensate an employee or contractor with which an
+auditing entity contracts to conduct a pharmacy audit based on
+the amount claimed or the actual amount recouped by the
+pharmacy being audited."
+Section 2. This act shall become effective on the
+first day of the third month following its passage and
+approval by the Governor, or its otherwise becoming law.

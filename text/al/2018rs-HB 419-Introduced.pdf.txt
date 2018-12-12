@@ -1,0 +1,306 @@
+HB419
+191310-2
+By Representative South
+RFD: Insurance
+First Read: 15-FEB-18
+191310-2:n:02/13/2018:KMS/bm LSA2018-734R1
+SYNOPSIS:           This bill would recognize and clarify that,
+under existing law, self-service storage facilities
+are not engaged in the transaction of insurance
+business when they provide certain coverages for
+personal property in connection with and incidental
+to the rental of storage space in a self-service
+storage facility.
+This bill would provide for a limited
+license as an insurance agent for a self-service
+storage facility authorizing the sale of insurance
+related to the rental of storage space at a
+self-service storage facility.
+A BILL
+TO BE ENTITLED
+AN ACT
+Relating to insurance; to clarify that self-service
+storage facilities are not engaged in the transaction of
+insurance business under existing law; to amend Section
+27-7-1, Code of Alabama 1975, to include self-service storage
+facility insurance within the definition of limited lines
+insurance; and to add Section 27-7-5.3 to the Code of Alabama
+1975, to provide for a limited license as an insurance agent
+to self-service storage facilities.
+BE IT ENACTED BY THE LEGISLATURE OF ALABAMA:
+Section 1. Section 27-7-1 of the Code of Alabama
+1975, is amended to read as follows:
+"§27-7-1.
+"For the purposes of this chapter, the following
+terms shall have the meanings respectively ascribed to them by
+this section:
+"(1) BUSINESS ENTITY. A corporation, association,
+partnership, limited liability company, limited liability
+partnership, or other legal entity.
+"(2) COMMISSIONER. The Alabama Commissioner of
+Insurance.
+"(3) HOME STATE. The District of Columbia and any
+state or territory of the United States in which an insurance
+producer maintains his or her principal place of residence or
+principal place of business and is licensed to act as an
+insurance producer.
+"(4) INSURANCE. As defined in Section 27-1-2.
+"(5) INSURANCE PRODUCER or PRODUCER. A person
+required to be licensed under the laws of this state to sell,
+solicit, or negotiate insurance.
+"(6) INSURER. As defined in Section 27-1-2. For the
+purposes of this chapter, insurer shall also mean an insurance
+company licensed pursuant to Chapter 3, commencing with
+Section 27-3-1 of this title; a health care service plan
+licensed pursuant to Article 6, commencing with Section
+10A-20-6.01 of Chapter 20 of Title 10A; a dental service
+corporation licensed pursuant to Article 12, commencing with
+Section 22-21-360 of Chapter 21 of Title 22; a health
+maintenance organization licensed pursuant to Chapter 21A,
+commencing with Section 27-21A-1 of this title; a mutual aid
+association licensed pursuant to Chapter 30, commencing with
+Section 27-30-1 of this title; a fraternal benefit society
+licensed pursuant to Chapter 34, commencing with Section
+27-34-1 of this title; an automobile club or association
+licensed pursuant to Chapter 39, commencing with Section
+27-39-1 of this title; and a legal service insurance
+corporation licensed pursuant to Chapter 43, commencing with
+Section 27-43-1 of this title.
+"(7) LICENSE. A document issued by the commissioner
+authorizing a person to act as an insurance producer for the
+lines of authority specified in the document. The license
+itself does not create any authority, actual, apparent, or
+inherent, in the holder to represent or commit an insurance
+carrier.
+"(8) LICENSEE. A producer or service representative
+licensed in accordance with this chapter; a reinsurance
+intermediary licensed in accordance with Chapter 5A; a
+managing general agent licensed in accordance with Chapter 6A;
+and a surplus line broker licensed in accordance with Chapter
+10.
+"(9) LICENSEE PENALTIES. For a producer or service
+representative licensed in accordance with this chapter, the
+penalties set forth in Section 27-7-19; for a reinsurance
+intermediary licensed in accordance with Chapter 5A, the
+penalties set forth in Section 27-5A-11; for a managing
+general agent licensed in accordance with Chapter 6A, the
+penalties set forth in Section 27-6A-7; and for a surplus line
+broker licensed in accordance with Chapter 10, the penalties
+set forth in Section 27-10-32.
+"(10) LIFE LINES OF AUTHORITY. Any one or more of
+the following lines as defined in Section 27-7-14.1: Life;
+accident and health or sickness, also known as disability; and
+variable life and variable annuity products.
+"(11) LIMITED LINE CREDIT INSURANCE. Credit life,
+credit disability, credit property, credit unemployment,
+creditor-placed, also known as forced-placed, nonfiling,
+involuntary unemployment, mortgage life, mortgage guaranty,
+mortgage disability, guaranteed automobile protection (GAP),
+family and medical leave insurance, and any other form of
+insurance offered in connection with an extension of credit
+that is limited to partially or wholly extinguishing that
+credit obligation that the commissioner determines should be
+designated a form of limited line credit insurance.
+"(12) LIMITED LINE CREDIT INSURANCE PRODUCER. A
+person who sells, solicits, or negotiates one or more forms of
+limited line credit insurance coverage to individuals through
+a master, corporate, group, or individual policy.
+"(13) LIMITED LINES INSURANCE. Limited line credit
+insurance, insurance on rental vehicles as defined in Section
+27-7-5.1, travel insurance as defined in Section 27-7-5.2,
+self-service storage facility insurance as defined in Section
+27-7-5.3, crop insurance as defined in Section 27-7-14.1,
+portable electronics insurance as defined in Chapter 22A, and
+any other line of insurance that the commissioner deems
+necessary to recognize for the purposes of complying with
+subsection (e) of Section 27-7-28.
+"(14) LIMITED LINES PRODUCER. A person authorized by
+the commissioner to sell, solicit, or negotiate limited lines
+insurance.
+"(15) NAIC. The National Association of Insurance
+Commissioners.
+"(16) NEGOTIATE. The act of conferring directly with
+or offering advice directly to a purchaser or prospective
+purchaser of a particular contract of insurance concerning any
+of the substantive benefits, terms, or conditions of the
+contract, provided that the person engaged in that act either
+sells insurance or obtains insurance from insurers for
+purchasers.
+"(17) PERSON. An individual or a business entity.
+"(18) PROPERTY LINES OF AUTHORITY. Any one or more
+of the following lines as defined in Section 27-7-14.1:
+Property; casualty; and personal lines.
+"(19) SELL. To exchange a contract of insurance by
+any means, for money or its equivalent, on behalf of an
+insurance company.
+"(20) SERVICE REPRESENTATIVE. A natural person,
+other than an officer, manager, or managing general agent of
+the insurer, employed on salary or at an hourly rate by an
+insurer, managing general agent, or a captive producer to work
+for, with or through producers in selling, soliciting, or
+negotiating insurance in the insurer or in the insurers
+represented by the managing general agent or a captive
+producer, but only in the property lines of authority.
+Officers and salaried nonresident traveling representatives of
+a mutual insurer operating on the premium deposit plan or of a
+reciprocal insurer not using resident producers for the
+solicitation of business who inspect risks or solicit
+insurance in this state and who receive no commissions from
+the insurer shall be deemed also to be service
+representatives. A service representative shall otherwise
+qualify and be licensed as a service representative under this
+chapter, but shall not be required to take and pass an
+examination nor be a resident of Alabama if qualified as a
+service representative in the state of his or her domicile.
+The service representative must be appointed for each insurer
+or association of insurers represented and for each class of
+insurance handled by the insurer or insurers in this state.
+"(21) SOLICIT. Attempting to sell insurance or
+asking or urging a person to apply for a particular kind of
+insurance from a particular company.
+"(22) TERMINATE. The cancellation of the
+relationship between an insurance producer and the insurer or
+the termination of a producer's authority to transact
+insurance.
+"(23) UNIFORM BUSINESS ENTITY APPLICATION. The
+current version of the NAIC Uniform Business Entity
+Application for resident and nonresident business entities.
+"(24) UNIFORM APPLICATION. The current version of
+the NAIC Uniform Application for resident and nonresident
+producer licensing."
+Section 2. Section 27-7-5.3 is added to the Code of
+Alabama 1975, to read as follows:
+§27-7-5.3.
+(a) As used in this section, the following terms
+shall have the following meanings:
+(1) LIMITED LICENSEE. A person or entity authorized
+to sell certain coverages for personal property maintained in
+self-service storage facilities pursuant to this section.
+(2) OCCUPANT. A person, his or her sublessee,
+successor, or assign entitled to the use of storage space at a
+self-service storage facility under a rental agreement, to the
+exclusion of others.
+(3) OWNER. The owner, operator, lessor, or sublessor
+of a self-service storage facility, his or her agent, or any
+other person authorized by him or her to manage the
+self-service storage facility or to receive rent from an
+occupant under a rental agreement.
+(4) PERSONAL PROPERTY. Any movable property not
+affixed to land including, but not limited to, goods, wares,
+merchandise, motor vehicles, watercraft, and household items
+and furnishings.
+(5) RENTAL AGREEMENT. Any agreement or lease,
+written or oral, that establishes or modifies the terms,
+conditions, rules, or any other provisions concerning the use
+and occupancy of storage space at a self-service storage
+facility.
+(6) SELF-SERVICE STORAGE FACILITY. Any real property
+designed and used for the purpose of renting or leasing
+individual storage space to occupants who are to have access
+to the facility for the purpose of storing and removing
+personal property and not for residential purposes. The term
+does not include a safe-deposit box or vault maintained by
+banks, trust companies, or other financial entities or a
+public warehouse within the meaning of Article 1, commencing
+with Section 8-15-1, of Chapter 15, Title 8.
+(7) SUPERVISING ENTITY. Any business entity that is
+a licensed insurance producer or insurer.
+(b) Any other provision of law to the contrary
+notwithstanding, the commissioner may issue to an owner that
+is in compliance with the requirements of this section a
+limited license authorizing the limited licensee to offer,
+sell, solicit, or negotiate insurance through a licensed
+insurer in connection with a self-service storage facility.
+(c) All limited licensees shall be exempt from the
+40-hour pre-qualification course and written examination
+requirements of Section 27-7-5, and the continuing education
+requirements of Chapter 8A.
+(d) A limited licensee may offer, sell, solicit, or
+negotiate insurance on behalf of a licensed insurer, or as
+part of a group, commercial, or master policy to provide
+insurance for that limited licensee's occupants, only in
+connection with a rental agreement, and only for either an
+individual policy issued to an individual occupant or as a
+group, commercial, or master policy for occupants for personal
+property insurance. A limited licensee shall only be
+authorized to provide to occupants insurance coverage for the
+following:
+(1) The loss of or damage to personal property
+stored at a self-service storage facility where the loss or
+damage occurs at the self-service storage facility or while
+the personal property is in transit to or from the
+self-service storage facility during the time period covered
+by the occupant's rental agreement.
+(2) Other loss directly related to an occupant's
+rental agreement.
+(e) No insurance may be issued by a limited licensee
+pursuant to this section unless the limited licensee provides
+to a prospective purchaser written material that provides all
+of the following:
+(1) A summary of the terms of insurance coverage,
+including the identity of the insurer.
+(2) A conspicuous disclosure that the policy of
+insurance may provide a duplication of coverage already
+provided by an existing policy of insurance.
+(3) A description of the process for filing a claim
+in the event the occupant elects to purchase coverage and
+experiences a covered loss.
+(4) Information regarding the price, deductible,
+benefits, exclusions, conditions, and any other limitations of
+the policy.
+(5) A statement that the purchase by the occupant of
+the kinds of coverage specified in this section from the
+limited licensee is not required in order to rent storage
+space.
+(6) A statement that the limited licensee is not
+authorized to evaluate the adequacy of the occupant's existing
+insurance coverages, unless the limited licensee is otherwise
+licensed.
+(7) A statement that the occupant may cancel the
+insurance at any time, and any unearned premium shall be
+refunded in accordance with applicable law.
+(f) Any other provision of law to the contrary
+notwithstanding, if the kinds of coverage described in this
+section are required as a condition of a rental agreement,
+that requirement may be satisfied by an occupant or a
+prospective occupant:
+(1) Purchasing coverage that is offered, sold,
+solicited, or negotiated by the limited licensee; or
+(2) Presenting to the self-service storage facility
+evidence of other applicable insurance coverage.
+(g) Any other provision of law or any rule adopted
+by the commissioner to the contrary notwithstanding, a limited
+licensee licensed pursuant to this section may not be required
+to treat monies collected from occupants as funds received in
+a fiduciary capacity, provided that the charges for coverage
+shall be itemized and be ancillary to a rental agreement. The
+sale of insurance not in conjunction with a rental agreement
+is not permitted.
+(h) A limited licensee licensed pursuant to this
+section may authorize any employee or authorized
+representative of the limited licensee to act individually on
+behalf and under the supervision of the limited licensee with
+respect to the kinds of coverage specified in this section.
+(i) Each owner licensed pursuant to this section
+shall provide a training program, which may be provided to the
+owner by a supervising entity, in which employees and
+authorized representatives of the owner shall receive basic
+instruction about the kind of coverage authorized in this
+section and offered for purchase by occupants or prospective
+occupants.
+(j) As a prerequisite for issuance of a limited
+license under this section, there shall be filed with the
+commissioner an application for a limited license in such form
+or forms, and supplements thereto, and containing such
+information as the commissioner may prescribe.
+(k) No limited licensee licensed pursuant to this
+section shall advertise, represent, or otherwise hold itself
+or any of its employees out as licensed insurers, insurance
+agents, or insurance brokers.
+(l) A limited licensee may receive compensation from
+a supervising entity for sales, billing, and collection
+services. The compensation may be dependent on the sale of the
+types of coverage described in this section.
+Section 3. This act shall become effective on the
+first day of the third month following its passage and
+approval by the Governor, or its otherwise becoming law.

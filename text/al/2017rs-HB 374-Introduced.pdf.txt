@@ -1,0 +1,1998 @@
+HB374
+182171-1
+By Representative England
+RFD: Commerce and Small Business
+First Read: 07-MAR-17
+182171-1:n:03/07/2017:JMH/mfc LRS2017-438
+SYNOPSIS:           Under existing law, Alabama has adopted the
+Uniform Condominium Act, which provides provisions
+for the creation, management, and termination of a
+condominium association.
+This bill would make modifications to the
+Uniform Condominium Act. This bill would specify
+further the rights of the developer and rights of
+the unit owner with regard to a condominium that is
+part of a condominium association.
+A BILL
+TO BE ENTITLED
+AN ACT
+Relating to the Uniform Condominium Act; to amend
+Sections 35-8A-102, 35-8A-103, 35-8A-105, 35-8A-106,
+35-8A-107, 35-8A-201, 35-8A-205, 35-8A-208, 35-8A-209,
+35-8A-210, 35-8A-211, 35-8A-214, 35-8A-215, 35-8A-218,
+35-8A-220, 35-8A-302, 35-8A-303, 35-8A-304, 35-8A-305,
+35-8A-307, 35-8A-310, 35-8A-311, 35-8A-312, 35-8A-313,
+35-8A-314, 35-8A-315, 35-8A-316, 35-8A-317, 35-8A-318,
+35-8A-401, 35-8A-402, 35-8A-403, 35-8A-404, 35-8A-406,
+35-8A-407, 35-8A-408, 35-8A-409, 35-8A-411, 35-8A-412,
+35-8A-413, 35-8A-415, and 35-8A-417 of the Code of Alabama
+1975; to provide further for the creation, management, and
+termination of a condominium association; and to specify
+further the rights of the developer and rights of the unit
+owner with regard to a condominium that is part of a
+condominium association.
+BE IT ENACTED BY THE LEGISLATURE OF ALABAMA:
+Section 1. Sections 35-8A-102, 35-8A-103, 35-8A-105,
+35-8A-106, 35-8A-107, 35-8A-201, 35-8A-205, 35-8A-208,
+35-8A-209, 35-8A-210, 35-8A-211, 35-8A-214, 35-8A-215,
+35-8A-218, 35-8A-220, 35-8A-302, 35-8A-303, 35-8A-304,
+35-8A-305, 35-8A-307, 35-8A-310, 35-8A-311, 35-8A-312,
+35-8A-313, 35-8A-314, 35-8A-315, 35-8A-316, 35-8A-317,
+35-8A-318, 35-8A-401, 35-8A-402, 35-8A-403, 35-8A-404,
+35-8A-406, 35-8A-407, 35-8A-408, 35-8A-409, 35-8A-411,
+35-8A-412, 35-8A-413, 35-8A-415, and 35-8A-417 of the Code of
+Alabama 1975, are amended to read as follows:
+"§35-8A-102.
+"(a) This chapter applies to all condominiums
+created within this state after January 1, 1991. Sections
+35-8A-104 (Variation by agreement), 35-8A-105 (Separate titles
+and taxation), 35-8A-106 (Applicability of local ordinances,
+regulations, and building codes), 35-8A-107 (Eminent domain),
+35-8A-203 (Construction and validity of declaration and
+bylaws), 35-8A-204 (Description of units), 35-8A-302(a)(1)
+through (a)(6) and (a)(11) through (a)(16) (Powers of unit
+owners' association), 35-8A-311 (Tort and contract liability),
+35-8A-316 (Lien for assessments), 35-8A-318 (Association
+records), 35-8A-409 (Resales of units), and 35-8A-417
+(Substantial completion of units), and Section 35-8A-103
+(Definitions), to the extent necessary in construing any of
+those sections, apply to all condominiums created in this
+state before January 1, 1991; but those sections apply only
+with respect to events and circumstances occurring after
+January 1, 1991, and do not invalidate existing provisions of
+the declaration, bylaws, plats or plans of those condominiums.
+"(b) The provisions of Sections 35-8-1 through
+35-8-22 do not apply to condominiums created after January 1,
+1991, unless the declaration so provides in the case of a
+condominium containing four or fewer units and do not
+invalidate any amendment to the declaration, bylaws, plats, or
+plans of any condominium created before January 1, 1991, if
+the amendment would be permitted by this chapter. The
+amendment must be adopted in conformity with the procedures
+and requirements specified by those instruments and by
+Sections 35-8-1 through 35-8-22. If the amendment grants to
+any person any rights, powers, or privileges permitted by this
+chapter, all correlative obligations, liabilities, and
+restrictions in this chapter also apply to that person.
+"(c) This chapter does not apply to condominiums or
+units located outside this state, but the offering statement
+provisions (Sections 35-8A-402 through 35-8A-408) apply to all
+contracts for the disposition thereof signed in by a resident
+of this state by any party unless: (i) the transaction is
+exempt under Section 35-8A-401(b); (ii) the transaction is
+exempt pursuant to Section 35-8A-407; or (iii) the state in
+which the condominium is located has statutory disclosure
+requirements and all terms thereof have been met.
+"(d) This chapter does not apply if If a condominium
+contains no more than four units and is not subject to any
+development rights, unless the declaration provides that the
+entire chapter is applicable the condominium may be created
+pursuant to this chapter or pursuant to Sections 35-8-1 to
+35-8-22, inclusive, and the declaration of condominium shall
+declare the chapter that shall govern the condominium.
+"§35-8A-103.
+"In the declaration and bylaws, unless specifically
+provided otherwise or the context otherwise requires, and in
+this chapter, the following terms are defined as set forth
+below:
+"(1) AFFILIATE OF A DECLARANT. Any person who
+controls, is controlled by, or is under common control with a
+declarant. A person "controls" a declarant if the person (i)
+is a general partner, officer, director, or employer of the
+declarant, (ii) directly or indirectly or acting in concert
+with one or more other persons, or through one or more
+subsidiaries, owns, controls, holds with power to vote, or
+holds proxies representing more than 20 percent of the voting
+interest in the declarant, (iii) controls in any manner the
+election of a majority of the directors of the declarant, or
+(iv) has contributed more than 20 percent of the capital of
+the declarant. A person "is controlled by" a declarant if the
+declarant (i) is a general partner, officer, director, or
+employer of the person, (ii) directly or indirectly or acting
+in concert with one or more other persons, or through one or
+more subsidiaries, owns, controls, holds with power to vote,
+or holds proxies representing more than 20 percent of the
+voting interest in the person, (iii) controls in any manner
+the election of a majority of the directors of the person, or
+(iv) has contributed more than 20 percent of the capital of
+the person. Control does not exist if the powers described in
+this paragraph are held solely as security for an obligation
+and are not exercised.
+"(2) ALLOCATED INTERESTS. The undivided interest in
+the common elements, the common expense liability, and votes
+in the association allocated to each unit.
+"(3) ASSOCIATION or UNIT OWNERS' ASSOCIATION. The
+corporation organized under Section 35-8A-301.
+"(4) COMMON ELEMENTS. All portions of a condominium
+other than the units, and any other interests in real estate
+for the benefit of the unit owners which are declared to be
+subject to the declaration.
+"(5) COMMON EXPENSES. Expenditures made by or
+financial liabilities of the association, together with any
+allocations to reserves.
+"(6) COMMON EXPENSE LIABILITY. The liability for
+common expenses allocated to each unit pursuant to Section
+35-8A-207.
+"(7) CONDOMINIUM. Real estate, portions of which are
+designated for separate ownership and the remainder of which
+is designated for common ownership solely by the owners of
+those portions. Real estate is not a condominium unless the
+undivided interests in the common elements are vested in the
+unit owners.
+"(8) CONVERSION BUILDING. A building that at any
+time before creation of the condominium was occupied wholly or
+partially by persons other than purchasers and persons who
+occupy with the consent of purchasers.
+"(9) DECLARANT. Any person or group of persons
+acting in concert who (i) as part of a common promotional
+plan, who offers to dispose of his or its an interest in a
+condominium unit not previously disposed of, or (ii) reserves
+or who succeeds to any special declarant right.
+"(10) DECLARATION. Any instruments instrument,
+however denominated, that create creates a condominium, and
+any amendments to those instruments that instrument.
+"(11) DEVELOPMENT RIGHTS. Any right or combination
+of rights reserved by a declarant in the declaration to: (i)
+add real estate to a condominium; (ii) to create units, common
+elements, or limited common elements within a condominium;
+(iii) to subdivide units or convert units into common elements
+or common elements into units; or (iv) to withdraw real estate
+from a condominium.
+"(12) DISPOSE or DISPOSITION. A voluntary transfer
+to a purchaser of any legal or equitable interest title to in
+a unit, but does not include the transfer or release of a
+security interest.
+"(13) BOARD. The body, regardless of name,
+designated in the declaration to act on behalf of governing
+the association.
+"(14) IDENTIFYING NUMBER. A symbol or address
+number, letter, or combination thereof that identifies only
+one unit in a condominium.
+"(15) LEASEHOLD CONDOMINIUM. A condominium in which
+all or a portion of the real estate is subject to a lease, the
+expiration or termination of which will terminate the
+condominium or reduce its size.
+"(16) LIMITED COMMON ELEMENT ELEMENTS. A portion of
+the common elements allocated by the declaration or by
+operation of Section 35-8A-202(2) or (4) for the exclusive use
+of by one or more but fewer than all of the units.
+"(17) MASTER ASSOCIATION. An organization described
+in Section 35-8A-220, whether or not it is also an association
+described in Section 35-8A-301.
+"(18) OFFERING. Any advertisement, inducement,
+solicitation, or attempt to encourage any person to acquire
+any interest in a unit, other than as security for an
+obligation. An advertisement in a newspaper or other
+periodical of general circulation, or in any broadcast medium
+to the general public, of a condominium not located in this
+state, is not an offering if the advertisement states that an
+offering may be made only in compliance with the law of the
+jurisdiction in which the condominium is located.
+"(19) PERSON. A natural person, corporation,
+business trust, estate, trust, partnership, association, joint
+venture, government, governmental subdivision or agency, or
+other legal or commercial entity.
+"(20) PURCHASER. Any person, other than a declarant
+or a person in the business of selling real estate for his or
+her own account, who by means of a voluntary transfer acquires
+a legal or equitable interest in a unit other than: (i) a
+leasehold interest (including renewal options) of less than 20
+years, or (ii) as security for an obligation.
+"(21) REAL ESTATE. Any leasehold or other estate or
+interest in, over, or under land, including structures,
+fixtures, and other improvements and interests which by
+custom, usage, or law pass with a conveyance of land though
+not described in the contract of sale or instrument of
+conveyance. "Real estate" includes parcels with or without
+upper or lower boundaries, and spaces that may be filled with
+air or water.
+"(22) RESIDENTIAL PURPOSES. Use for dwelling or
+recreational purposes, or both.
+"(23) SECURITY INTEREST. An interest in real estate
+or personal property created by contract or conveyance, which
+secures payment or performance of an obligation. The term
+includes a lien created by a mortgage, vendor's lien, deed of
+trust, contract for deed, land sales contract, lease intended
+as security, assignment of lease, rents intended as security,
+or any similar security device, pledge of an ownership
+interest in an association, and any other consensual lien or
+title retention contract intended as security for an
+obligation.
+"(24) SPECIAL DECLARANT RIGHTS. Rights reserved for
+the benefit of a declarant (i) to complete improvements
+indicated on plats and plans filed with the declaration
+(Section 35-8A-209); (ii) to exercise any development right
+(Section 35-8A-210); (iii) to maintain sales offices,
+management offices, signs advertising the condominium, and
+models (Section 35-8A-215); (iv) to use easements through the
+common elements for the purpose of making improvements within
+the condominium or within real estate which may be added to
+the condominium (Section 35-8A-216); (v) to make the
+condominium subject to a master association (Section
+35-8A-220); (vi) or to appoint or remove any officer of the
+association or any master association or any board member
+during any period of declarant control (Section 35-8A-303(d)).
+"(25) TIME SHARE. A right to occupy a unit or any of
+several units during five or more separated time periods over
+a period of at least five years, including renewal options,
+whether or not coupled with an estate or interest in a
+condominium or a specified portion thereof.
+"(26) UNIT. A physical portion of the condominium
+designated for separate ownership or occupancy, the boundaries
+of which are described pursuant to Section 35-8A-205(a)(5).
+"(27) UNIT OWNER. A declarant or other person who
+owns a unit, or a lessee of the owner of the right to use a
+unit in a leasehold condominium whose lease interest expires
+simultaneously with any lease interest the expiration or
+termination of which will remove the unit from the
+condominium, but does not include a person having an interest
+in a unit solely as security for an obligation. In a
+condominium, the The declarant is the initial unit owner of
+any unit created by in the condominium.
+"§35-8A-105.
+"(a) If there is any unit owner other than a
+declarant, each unit that has been created, together with its
+interest in the common elements, constitutes for all purposes
+a separate parcel of real estate.
+"(b) In a condominium where If there is any unit
+owner other than a declarant:,
+"(1) Each unit that has been created together with
+its interest in the common elements, constitutes for all
+purposes a separate parcel of real estate; and
+"(2) Each each unit must be separately taxed and
+assessed, and no separate tax or assessment may be rendered
+against any common elements for which a declarant has reserved
+no development rights.
+"(c) Any portion of the common elements for which
+the declarant has reserved any development right must may be
+separately taxed and assessed against the declarant, and, if
+separately taxed and assessed, the declarant alone is would be
+liable for payment of those taxes.
+"(d) If there is no unit owner other than a
+declarant, the real estate comprising the condominium may be
+taxed and assessed in any manner provided by law.
+"(e) All laws authorizing exemptions or deductions
+from taxation shall be applicable to each individual unit to
+the same extent they are applicable to other property.
+"§35-8A-106.
+"(a) A building code may not impose any requirements
+upon any structure in a condominium which it would not impose
+upon a physically identical development structure under a
+different form of ownership.
+"(b) No zoning, subdivision, or other real estate
+use law, ordinance, or regulation may prohibit the condominium
+form of ownership or impose any requirement upon a condominium
+which it would not impose upon a physically identical
+development under a different form of ownership.
+"(c) Except as provided in subsections (a) and (b),
+the provisions of this chapter do not invalidate or modify any
+provision of any zoning, subdivision, building code, or other
+real estate use law, ordinance, rule, or regulation governing
+the use of real estate.
+"§35-8A-107.
+"(a) If a unit is acquired by eminent domain, or if
+part of a unit is acquired by eminent domain leaving the unit
+owner with a remnant which may not practically or lawfully be
+used for any purpose permitted by the declaration, the award
+must compensate the unit owner for the unit and its interest
+in the common elements, whether or not any common elements are
+acquired. Upon acquisition, unless the decree otherwise
+provides, that unit's allocated interests are automatically
+reallocated to the remaining units in proportion to the
+respective allocated interests of those units before the
+taking, and the association shall promptly prepare, execute,
+and record an amendment to the declaration reflecting the
+reallocations. Any remnant of a unit remaining after part of a
+unit is taken under this subsection is thereafter a common
+element.
+"(b) Except as provided in subsection (a), if part
+of a unit is acquired by eminent domain, the award must
+compensate the unit owner for the reduction in value of the
+unit and its interest in the common elements, whether or not
+any common elements are acquired. Upon acquisition, unless the
+decree otherwise provides, (i) that unit's allocated interests
+are reduced in proportion to the reduction in the size of the
+unit, or on any other basis specified in the declaration, and
+(ii) the portion of the allocated interests divested from the
+partially acquired unit are automatically reallocated to that
+unit and the remaining units in proportion to the respective
+allocated interests of those units before the taking, with the
+partially acquired unit participating in the reallocation on
+the basis of its reduced allocated interests.
+"(c) If part of the common elements is acquired by
+eminent domain the portion of the award attributable to the
+common elements taken must be paid to the association. Unless
+the declaration provides otherwise, any portion of the award
+attributable to the acquisition of a limited common element
+must be equally divided among the owners of the units in
+accordance with the value of the interest assigned to the unit
+in that particular limited common element to which that
+limited common element was allocated at the time of
+acquisition.
+"(d) The court decree shall be recorded in every
+county in which any portion of the condominium is located.
+"§35-8A-201.
+"(a) A condominium may be created pursuant to this
+chapter only by filing a declaration executed in the same
+manner as a deed with the judge of probate in every county in
+which any portion of the condominium is located. A duplicate
+of the declaration may be presented to the filing officer
+simultaneously for proper validation as to the date filed.
+Said duplicate shall be returned to the person who presented
+it.
+"(b) The judge of probate shall index the
+declaration of condominium in the grantee's index in the name
+of the condominium and the association and in the grantor's
+index in the name of each person executing the declaration. A
+well-bound book of suitable size for each condominium to be
+known as "Condominium Book No." shall be maintained by the
+judge of probate. Such book shall contain a copy of the
+declaration of condominium, all drawings, amendments,
+certificate of completion, certificate of termination, or
+other like instruments.
+"(c) A declaration or an amendment to a declaration
+adding units to a condominium, may not be recorded is not
+effective unless all structural components and mechanical
+systems of all buildings containing or comprising any units
+thereby created are substantially completed in accordance with
+the plans complete, as evidenced by a recorded certificate of
+substantial completion of structural and mechanical systems
+executed by an independent registered engineer or independent
+registered architect.
+"§35-8A-205.
+"(a) The declaration for a condominium must contain:
+"(1) The name of the condominium, which must include
+the word "condominium" or be followed by the words "a
+condominium," and the name of the association;
+"(2) The name of every county in which any part of
+the condominium is situated;
+"(3) A legally sufficient description of the real
+estate included in the condominium;
+"(4) A statement of the maximum number of units
+which the declarant reserves the right to create;
+"(5) A description of the boundaries of each unit
+created by the declaration, including the unit's identifying
+number;
+"(6) A description of any limited common elements,
+other than those specified in Section 35-8A-202(2) and (4), as
+provided in Section 35-8A-209(b)(10);
+"(7) A description of any real estate common
+elements (except real estate subject to development rights)
+which may be allocated subsequently as limited common
+elements, other than limited common elements specified in
+Section 35-8A-202(2) and (4), together with a statement that
+they may be so allocated;
+"(8) A description of any development rights
+specified in Section 35-8A-103(11) and other special declarant
+rights specified in Section 35-8A-103(24) reserved by the
+declarant, together with a legally sufficient description of
+the real estate to which each of those rights applies, and a
+time limit within which each of those rights must be
+exercised;
+"(9) If any development right may be exercised with
+respect to different parcels of real estate at different
+times, a statement to that effect together with (i) either a
+statement fixing the boundaries of those portions and
+regulating the order in which those portions may be subjected
+to the exercise of each development right, or a statement that
+no assurances are made in those regards, and (ii) a statement
+as to whether, if any development right is exercised in any
+portion of the real estate subject to that development right,
+that development right must be exercised in all or in any
+other portion of the remainder of that real estate;
+"(10) Any other conditions or limitations under
+which the rights described in subdivision (8) may be exercised
+or will lapse;
+"(11) An allocation to each unit of the allocated
+interests in the manner described in Section 35-8A-207;
+"(12) Any restrictions on (i) use, occupancy,
+leasing, or alienation of the units, provided that reasonable
+rules and regulations related to conduct by unit owners or
+esthetic aesthetic considerations which are adopted by the
+association from time to time need not be included in the
+declaration, and (ii) the amount for which a unit may be sold
+or the amount that may be received by a unit owner on sale,
+condemnation, casualty loss to the unit or to the condominium,
+or on the termination of the condominium;
+"(13) The recording data for recorded easements and
+licenses appurtenant to or included in the condominium or to
+which any portion of the condominium is or may become subject
+by virtue of a reservation in the declaration;
+"(14) A statement of the number and identity of
+units which the declarant reserves the right to dispose of in
+time shares; and
+"(15) All matters required by Sections 35-8A-206
+through 35-8A-209, 35-8A-215, 35-8A-216, and 35-8A-303(d).
+"(b) The declaration may contain any other matters
+the declarant deems appropriate.
+"§35-8A-208.
+"(a) Except for the limited common elements
+described in Section 35-8A-202(2) and (4), the declaration
+must specify to which unit or units each limited common
+element is allocated. An allocation may not be altered without
+the consent of the association and the unit owners whose units
+are affected by the amendment.
+"(b) Except as the declaration otherwise provides, a
+limited common element may be reallocated by an amendment to
+the declaration executed by the unit owners between or among
+whose units the reallocation is made. The persons executing
+the amendment shall provide it to the association, which shall
+prepare, execute, and record it the amendment which is subject
+to Section 35-8A-217(e), and the cost shall be borne by the
+persons unit owners executing the amendment. The amendment
+shall be recorded and indexed in the names of the parties and
+unit owners executing the amendment, the condominium, and the
+association.
+"(c) A common element not previously allocated as a
+limited common element may not be so allocated except pursuant
+to provisions in the declaration made in accordance with
+Section 35-8A-205(a)(7). The allocations must be made by
+amendments to the declaration.
+"§35-8A-209.
+"(a) Plats and plans are a part of the declaration.
+Separate plats and plans are not required by this chapter if
+all the information required by this section is contained in
+either a plat or plan. Each plat and plan must be clear and
+legible and A clear and legible plat of the condominium
+property and plans, if required under subsection (d), shall be
+recorded in the office of the judge of probate in every county
+in which any portion of the condominium is located and shall
+contain a certification that the plat or plan and plans, if
+any contain all information required by this section. If the
+plat contains all of the information required by this section
+described in subsections (b), (c), (d), and (g), plans are not
+required. The recorded plan and plans are part of the
+declaration.
+"(b) Each plat must show:
+"(1) The name of the condominium and a survey or
+general schematic map of the entire of the real property
+included in the condominium;
+"(2) The location and dimensions of all real estate
+not subject to development rights, or subject only to the
+development right to withdraw, and the location and dimensions
+of all existing improvements within that real estate located
+on the condominium property;
+"(3) A legally sufficient description The location
+and dimensions of any real estate subject to development
+rights reserved over any part of the condominium property,
+labeled to identify the rights applicable to each parcel
+identified portion, but the plat need not designate or label
+which development rights are applicable if that information is
+clearly described in the declaration;
+"(4) The extent of any encroachments by or upon any
+portion of the condominium property;
+"(5) To the extent feasible, a legally sufficient
+description any easements can be shown on the plat, the
+location and dimensions of all easements serving or burdening
+any portion of the condominium property;
+"(6) The To the extent they can be shown on the
+plat, the location and dimensions of any vertical unit
+boundaries not shown or projected on plans recorded pursuant
+to subsection (d) and that unit's and the identifying number
+of each unit;
+"(7) The location To the extent they can be shown on
+the plat, any horizontal unit boundaries with reference to an
+established datum of any horizontal unit boundaries not shown
+or projected on plans recorded pursuant to subsection (d) and
+that unit's and the identifying number of each unit;
+"(8) To the extent they can be shown on the plat,
+the location and dimensions of any limited common elements
+other than parking spaces and the limited common elements
+described in subdivisions (2) and (4) of Section 35-8A-202;
+"(8) (9) A legally sufficient description of any
+real estate in which the unit owners will own only an estate
+for years, labeled as "leasehold real estate";
+"(9) (10) The distance between noncontiguous parcels
+of real estate comprising property included in the
+condominium;
+"(10) The location and dimensions of limited common
+elements, including porches, balconies, and patios, other than
+parking spaces and the other limited common elements described
+in Section 35-8A-202(2) and (4);
+"(11) In the case of real estate not subject to
+development rights, all other matters customarily shown on
+land surveys.
+"(12) (11) A certification as to whether any portion
+of the real property subject to contained in the condominium
+is located within a flood zone as determined by the United
+States Department of Housing and Urban Development federal
+agency charged with implementation of the National Flood
+Insurance Act and, if so, the flood zone classification. When
+any portion of the condominium property is located within a
+flood zone, the flood zone boundary shall be shown on the
+plat, together with the elevations and locations of all
+proposed existing structures to be located within the flood
+zone area.;
+"(c) A plat may also show the (12) The intended
+location and dimensions of any contemplated improvement or
+proposed improvements to be constructed anywhere within on the
+condominium property pursuant to any development right. Any
+contemplated improvement shown, which must be clearly labeled
+either "MUST BE BUILT" or "NEED NOT BE BUILT.; and"
+"(13) All other matters customarily shown on land
+surveys.
+"(c) A general schematic map or a legal description
+of any real property that may be added to the condominium in
+the future pursuant to a development right reserved under
+Section 35-8A-205(a)(8) must either be included in the
+declaration or shown on an additional page of the plat. If the
+additional real property is shown on the plat, it must be
+clearly labeled that it is not part of the condominium
+property.
+"(d) To the extent not shown or projected contained
+on the plats plat of the condominium property, plans of the
+units must show or project condominium property improvements
+must be prepared and recorded that show:
+"(1) The location and dimensions of the vertical
+boundaries of each unit, and that unit's the identifying
+number for each unit;
+"(2) Any horizontal unit boundaries, with reference
+to an established datum, and that unit's the identifying
+number for each unit; and
+"(3) Any The location and dimensions of any limited
+common elements other than parking spaces and the limited
+common elements described in subdivisions (2) and (4) of
+Section 35-8A-202; and
+"(4) The location and dimensions of any units in
+which the declarant has reserved the right to create
+additional units or common elements described in Section
+35-8A-210(c) identified appropriately, unless the development
+rights are adequately described in the declaration.
+"(e) Unless the declaration provides otherwise, the
+horizontal boundaries of any part of a unit located outside of
+a building have the same elevation as the horizontal
+boundaries of the inside part the building, and need not be
+depicted on the plats and plans.
+"(f) Upon exercising any development right that
+affects the condominium property, the declarant shall record
+either new plats and plans necessary to conform to the
+requirements of subsections (a), (b), and (d) above, or new
+certifications of the plats and plans previously recorded if
+those plats and plans otherwise conform to the requirements of
+those subsections.
+"(g) Any certification of a plat or plan required by
+this section or Section 35-8A-201(b) must be made by an
+independent a registered engineer or, a registered architect,
+or a licensed surveyor.
+"§35-8A-210.
+"(a) To exercise any development right reserved
+under Section 35-8A-205(a)(8), the declarant shall prepare,
+execute, and record an amendment to the declaration as
+specified in Section 35-8A-217 and comply with Section
+35-8A-209. The declarant is the unit owner of any units
+thereby created. The amendment to the declaration must assign
+an identifying number to each new unit created, and, except in
+the case of subdivision or conversion of units described in
+subsection (b) subdivision (2) of subsection (c), reallocate
+the allocated interests among all units. The amendment must
+describe any common elements and any limited common elements
+thereby created and, in the case of limited common elements,
+designate the unit to which each is allocated to the extent
+required by Section 35-8A-208.
+"(b) Development rights may be reserved within any
+real estate added to the condominium if the amendment adding
+that real estate includes all matters required by Section
+35-8A-205 or 35-8A-206, as the case may be, and the plats and
+plans include all matters required by Section 35-8A-209. This
+provision does not extend the time limit on the exercise of
+development rights imposed by the declaration pursuant to
+Section 35-8A-205(a)(8).
+"(c) Whenever a declarant exercises a development
+right to subdivide or convert a unit previously created into
+additional units, common elements, or both:
+"(1) If the declarant converts the unit entirely to
+common elements, the amendment to the declaration must
+reallocate all the allocated interests of that unit among the
+other units as if that unit had been taken by eminent domain;
+and
+"(2) If the declarant subdivides the unit into two
+or more units, whether or not any part of the unit is
+converted into common elements, the amendment to the
+declaration must reallocate all the allocated interests of the
+unit among the units created by the subdivision in any
+reasonable manner prescribed by the declarant.
+"(d) If the declaration provides, pursuant to
+Section 35-8A-205(a)(8), that all or a portion of the real
+estate is subject to the development right of withdrawal:
+"(1) If all the real estate is subject to
+withdrawal, and the declaration does not describe separate
+portions of real estate subject to that right, none of the
+real estate may be withdrawn after a unit has been conveyed to
+a purchaser; and
+"(2) If a portion or portions are subject to
+withdrawal, no portion may be withdrawn after a unit in that
+portion has been conveyed to a purchaser.
+"§35-8A-211.
+"Subject to the provisions of the declaration and
+other provisions of law, a unit owner:
+"(1) May make any improvements or alterations to his
+or her unit that do not impair the structural integrity, or
+mechanical systems, or lessen the support of any portion of
+the condominium;
+"(2) May not substantially or adversely change the
+appearance of the common elements, or the exterior appearance
+of a unit or any other portion of the condominium, without
+permission of the association;
+"(3) After acquiring an adjoining unit, or an
+adjoining part of an adjoining unit, may remove or alter any
+intervening partition or create apertures therein, even if the
+partition in whole or in part is a common element, if those
+acts do not impair the structural integrity or mechanical
+systems or lessen the support of any portion of the
+condominium. Removal of partitions or creation of apertures
+under this subdivision is not an alteration of boundaries.
+"§35-8A-214.
+"The existing physical boundaries of a unit or the
+physical boundaries of a unit reconstructed in substantial
+accordance with the original plats and plans thereof become
+its boundaries rather than the metes and bounds expressed in
+the deed or plat or plan, regardless of settling or lateral
+movement of the building, or minor variance between boundaries
+shown on the plats or plans or in the deed and those of the
+building. This section does not relieve a unit owner of
+liability in case of his or her willful misconduct nor relieve
+a declarant or any other person of liability for failure to
+adhere to the plats and plans.
+"§35-8A-215.
+"A declarant may maintain sales offices, management
+offices, and models in units or on common elements in the
+condominium only if the declaration so provides and specifies
+the rights of a declarant with regard to the number, size,
+location, and relocation thereof. Any sales office, management
+office, or model not designated a unit by the declaration is a
+common element, and if a declarant ceases to be a unit owner,
+he or she ceases to have any rights with regard thereto unless
+it is removed promptly from the condominium in accordance with
+a right to remove reserved in the declaration. Subject to any
+limitations in the declaration, a declarant may maintain signs
+on the common elements advertising the condominium. The
+provisions of this section are subject to the provisions of
+other state law, and to local ordinances.
+"§35-8A-218.
+"(a) Except in the case of a taking of all the units
+by eminent domain specified in Section 35-8A-107, a
+condominium may be terminated only by agreement of unit owners
+of units to which at least 80 percent of the votes in the
+association are allocated, or any larger percentage the
+declaration specifies. The declaration may specify a smaller
+percentage only if all of the units in the condominium are
+restricted exclusively to nonresidential uses.
+"(b) An agreement to terminate must be evidenced by
+the execution of a termination agreement, or ratifications
+thereof, in the same manner as a deed, by the requisite number
+of unit owners. The termination agreement must specify a date
+after which the agreement will be void unless it is recorded
+before that date. A termination agreement and all
+ratifications thereof must be recorded in every county in
+which a portion of the condominium is situated, and is
+effective only upon recordation.
+"(c) In the case of a condominium containing only
+units having horizontal boundaries described in the
+declaration, a termination agreement may provide that all the
+common elements and units of the condominium shall be sold
+following termination. If, pursuant to the agreement, any real
+estate in the condominium is to be sold following termination,
+the termination agreement must set forth the minimum terms of
+the sale.
+"(d) In the case of a condominium containing any
+units not having horizontal boundaries described in the
+declaration, a termination agreement may provide for sale of
+the common elements, but may not require that the units be
+sold following termination, unless the declaration as
+originally recorded provided otherwise or unless all the unit
+owners consent to the sale.
+"(e) The association, on behalf of the unit owners,
+may contract for the sale of real estate in the condominium,
+but the contract is not binding on the unit owners until
+approved pursuant to subsections (a) and (b). If any real
+estate in the condominium is to be sold following termination,
+title to that real estate, upon termination, vests in the
+association as trustee for the holders of all interests in the
+units. Thereafter, the association has all powers necessary
+and appropriate to effect the sale. Until the sale has been
+concluded and the proceeds thereof distributed, the
+association continues in existence with all powers it had
+before termination. Proceeds of the sale must be distributed
+to unit owners and lien holders as their interests may appear,
+in accordance with subsections (i), (j), and (k). Unless
+otherwise specified in the termination agreement, as long as
+the association holds title to the real estate, each unit
+owner and his or her successors in interest have an exclusive
+right to occupancy of the portion of the real estate that
+formerly constituted his or her unit. During the period of
+that occupancy, each unit owner and his or her successors in
+interest remain liable for all assessments and other
+obligations imposed on unit owners by this chapter or the
+declaration.
+"(f) If the real estate constituting the condominium
+is not to be sold following termination, title to the common
+elements and, in a condominium containing only units having
+horizontal boundaries described in the declaration, title to
+all the real estate in the condominium, vests in the unit
+owners upon termination as tenants in common in proportion to
+their respective interests as provided in subsection (h), and
+liens on the units shift accordingly. While the tenancy in
+common exists, each unit owner and his or her successors in
+interest have an exclusive right to occupancy of the portion
+of the real estate that formerly constituted his or her unit.
+"(g) Following termination of the condominium, the
+proceeds of any sale of real estate, together with the assets
+of the association, are held by the association as trustee for
+unit owners and holders of liens on the units as their
+interests may appear.
+"(h) Following termination, creditors of the
+association holding liens on the units which were recorded
+before termination, may enforce those liens in the same manner
+as any lien holder. All other creditors of the association are
+to be treated as if they had perfected liens on the units
+immediately before termination.
+"(i) The respective interests of unit owners
+referred to in subsections (e), (f), (g), and (h) are as
+follows:
+"(1) Except as provided in subdivision (2), the
+respective interests of unit owners are the fair market values
+of their units, limited common elements, and common element
+interests immediately before the termination, as determined by
+one or more independent appraisers selected by the
+association. The decision of the independent appraisers shall
+be distributed to the unit owners and becomes final unless
+disapproved within 30 days after distribution by unit owners
+of units to which 25 percent of the votes in the association
+are allocated. The proportion of any unit owner's interest to
+that of all unit owners is determined by dividing the fair
+market value of that unit and common element interest by the
+total fair market values of all the units and common elements.
+"(2) If any unit or any limited common element is
+destroyed to the extent that an appraisal of the fair market
+value thereof before destruction cannot be made, the interests
+of all unit owners are their respective common element
+interests immediately before the termination.
+"(j) Except as provided in subsection (k),
+foreclosure or enforcement of a lien or encumbrance against
+the entire condominium does not of itself terminate the
+condominium, and foreclosure or enforcement of a lien or
+encumbrance against a portion of the condominium, other than
+withdrawable real estate, does not withdraw that portion from
+the condominium. Foreclosure or enforcement of a lien or
+encumbrance against withdrawable real estate does not of
+itself withdraw that real estate from the condominium, but the
+person taking title thereto has the right to require from the
+association, upon request, an amendment excluding the real
+estate from the condominium.
+"(k) If a lien or encumbrance against a portion of
+the real estate comprising the condominium has priority over
+the declaration, and the lien or encumbrance has not been
+partially released, the parties foreclosing the lien or
+encumbrance may upon foreclosure, record an instrument
+excluding the real estate subject to that lien or encumbrance
+from the condominium.
+"§35-8A-220.
+"(a) If the declaration for a condominium provides
+that any of the powers described in Section 35-8A-302 are to
+be exercised by or may be delegated to a profit or nonprofit
+corporation which exercises those or other powers on behalf of
+one or more condominiums or for the benefit of the unit owners
+of one or more condominiums, all provisions of this chapter
+applicable to unit owners' associations apply to any such
+corporation with regard to such delegated power except as
+modified by this section.
+"(b) Unless it is acting in the capacity of an
+association described in Section 35-8A-301, a master
+association may exercise the powers set forth in Section
+35-8A-302(a)(2) only to the extent expressly permitted in the
+declarations of condominiums which are part of the master
+association or expressly described in the delegations of power
+from those condominiums to the master association.
+"(c) If the declaration of any condominium provides
+that the board may delegate certain powers to a master
+association, the members of the board have no liability for
+the acts or omissions of the master association with respect
+to those powers following delegation.
+"(d) The rights and responsibilities of unit owners
+with respect to the unit owners' association set forth in
+Sections 35-8A-303, 35-8A-308 through 35-8A-310, and 35-8A-312
+apply in the conduct of the affairs of a master association
+only to those persons who elect the board of a master
+association, whether or not those persons are otherwise unit
+owners within the meaning of this chapter.
+"(e) Even if a master association is also an
+association described in Section 35-8A-301, the certificate of
+incorporation or other instrument creating the master
+association and the declaration of each condominium the powers
+of which are assigned by the declaration or delegated to the
+master association, may provide that the executive board of
+the master association must be elected after the period of
+declarant control in any of the following ways:
+"(1) All unit owners of all condominiums subject to
+the master association may elect all members of that executive
+board.
+"(2) All members of the executive boards of all
+condominiums subject to the master association may elect all
+members of that executive board.
+"(3) All unit owners of each condominium subject to
+the master association may elect specified members of that
+executive board.
+"(4) All members of the executive board of each
+condominium subject to the master association may elect
+specified members of that executive board.
+"§35-8A-302.
+"(a) Except as provided in subsection (b), and
+subject to the provisions of the declaration, the association
+may:
+"(1) Adopt and amend bylaws and rules and
+regulations, except that an association may not adopt a bylaw
+or enforce an existing bylaw to restrict an owner from
+renovating or decorating the interior walls, ceiling, or floor
+of his or her unit in a manner that does not substantially
+alter the exterior appearance of the condominium;
+"(2) Adopt and amend budgets for revenues,
+expenditures, and reserves and impose and collect assessments
+for common expenses from unit owners;
+"(3) Hire and discharge managing agents and other
+employees, agents, and independent contractors;
+"(4) Institute, defend, or intervene in litigation
+or administrative proceedings in its own name on behalf of
+itself or two or more unit owners on matters affecting the
+condominium;
+"(5) Make contracts and incur liabilities;
+"(6) Regulate the use, maintenance, repair,
+replacement, and modification of common elements;
+"(7) Cause additional improvements to be made as a
+part of the common elements;
+"(8) Acquire, hold, encumber, and convey in its own
+name any right, title, or interest to real or personal
+property, but interests in the common elements other than
+those set forth in subdivision (9) may be conveyed or
+subjected to a security interest only pursuant to Section
+35-8A-312;
+"(9) Grant easements, encroachments, leases,
+licenses, and concessions through or over the common elements;
+"(10) Impose and receive any payments, fees, or
+charges for the use, rental, or operation of the common
+elements, other than limited common elements described in
+Section 35-8A-202(2) and (4), and for services provided to
+unit owners;
+"(11) Impose against owners of units charges for
+late payment of assessments and, after notice and an
+opportunity to be heard, levy reasonable fines for violations
+of the declaration, bylaws, and rules and regulations of the
+association;
+"(12) Impose reasonable charges for the preparation
+and recordation of amendments to the declaration, resale
+certificates required by Section 35-8A-409, or statements of
+unpaid assessments;
+"(13) Provide for the indemnification of its
+officers and board and maintain directors' and officers'
+liability insurance;
+"(14) Assign its right to future income, including
+the right to receive common expense assessments, but only to
+the extent the declaration expressly so provides, or as
+required to secure a loan that is otherwise allowed or
+provided for in the governing documents;
+"(15) Exercise any other powers conferred by the
+declaration or bylaws;
+"(16) Exercise all other powers that may be
+exercised in this state by legal entities of the same type as
+the association; and
+"(17) Exercise any other powers necessary and proper
+for the governance and operation of the association.
+"(b) The declaration may not impose limitations on
+the power of the association to deal with the declarant which
+are more restrictive than the limitations imposed on the power
+of the association to deal with other persons.
+"§35-8A-303.
+"(a) Except as provided in the declaration, the
+bylaws, the articles of incorporation in subsection (b), or
+other provisions of this chapter, the board may act in all
+instances on behalf of the association. In the performance of
+their duties, the officers and members of the board are
+required to exercise (i) if appointed by the declarant, the
+care required of fiduciaries of the unit owners other than the
+declarant and (ii) if elected by the unit owners other than
+declarant, ordinary and reasonable care.
+"(b) The board may not act on behalf of the
+association to amend the declaration as specified in Section
+35-8A-217, to terminate the condominium described in Section
+35-8A-218, or to elect members of the board or to determine
+the qualifications, powers and duties, or terms of office of
+board members as provided in Section 35-8A-303(f), but the
+board may fill vacancies in its membership for the unexpired
+portion of any term.
+"(c) Within 30 days after adoption of any proposed
+budget for the condominium, the board shall provide a copy of
+the budget to all the unit owners, and shall set a date for a
+meeting of the unit owners to consider ratification of the
+budget not less than 14 10 nor more than 30 50 days after
+delivery or mailing of the budget to the unit owners. Unless
+at that meeting a majority of all the unit owners present in
+person or by proxy or any larger vote specified in the
+declaration reject the budget, the budget is ratified, whether
+or not a quorum is present. In the event the proposed budget
+is rejected, the periodic budget last ratified by the unit
+owners shall be continued until such time as the unit owners
+ratify a subsequent budget proposed by the board.
+"(d) Subject to subsection (e), the declaration may
+provide for a period of declarant control of the association,
+during which period a declarant, or persons designated by him
+or her, may appoint and remove the officers and members of the
+board. Regardless of the period provided in the declaration, a
+period of declarant control terminates no later than the
+earliest of (i) 60 days after conveyance of 75 percent of the
+units which may be created to unit owners other than a
+declarant; (ii) two years after all declarants have ceased to
+offer units for sale in the ordinary course of business; or
+(iii) two years after any development right to add new units
+was last exercised. A declarant may voluntarily surrender the
+right to appoint and remove officers and members of the board
+before termination of that period, but in that event he or she
+may require, for the duration of the period of declarant
+control, that specified actions of the association or board,
+as described in a recorded instrument executed by the
+declarant, be approved by the declarant before they become
+effective.
+"(e) Not later than 90 days after conveyance of 25
+percent of the units which may be created to unit owners other
+than a declarant, at least one member and not less than 25
+percent of the members of the board must be elected by unit
+owners other than the declarant. Not later than 90 days after
+conveyance of 50 percent of the units which may be created to
+unit owners other than a declarant, not less than 33 1/3
+percent of the members of the board must be elected by unit
+owners other than the declarant.
+"(f) Except as otherwise provided in Section
+35-8A-220(e), not later than the termination of any period of
+declarant control, the unit owners shall elect a board of at
+least three members, at least a majority of whom must be unit
+owners other than declarant. The board shall elect the
+officers. The board members and officers shall take office
+upon election.
+"(g) Notwithstanding any provision of the
+declaration or bylaws to the contrary, the unit owners, by a
+two-thirds vote of all persons present in person and entitled
+to vote at any meeting of the unit owners at which a quorum in
+person is present, may remove any member of the board with or
+without cause, other than a member appointed by the declarant.
+"§35-8A-304.
+"(a) No special declarant right specified in Section
+35-8A-103(24) created or reserved under this chapter may be
+transferred except by an instrument evidencing the transfer
+recorded in every county in which any portion of the
+condominium is located. The instrument is not effective unless
+executed by the transferor and the transferee in the same
+formality as a conveyance of real property.
+"(b) Upon transfer of any special declarant right,
+the liability of a transferor declarant is as follows:
+"(1) A transferor is not relieved of any obligation
+or liability arising before the transfer and remains liable
+for warranty obligations imposed upon him or her by this
+chapter. Lack of privity does not deprive any unit owner of
+standing to maintain an action to enforce any obligation of
+the transferor.
+"(2) If a successor to any special declarant right
+is an affiliate of a declarant specified in Section
+35-8A-103(1), the transferor is jointly and severally liable
+with the successor for any obligations or liabilities of the
+successor relating to the condominium.
+"(3) If a transferor retains any special declarant
+right, but transfers other special declarant rights to a
+successor who is not an affiliate of the declarant, the
+transferor is liable for any obligations or liabilities
+imposed on a declarant by this chapter or by the declaration
+relating to the retained special declarant rights and arising
+after the transfer.
+"(4) A transferor has no liability for any act or
+omission or any breach of a contractual or warranty obligation
+arising from the exercise of a special declarant right by a
+successor declarant who is not an affiliate of the transferor.
+"(c) Unless otherwise provided in a mortgage
+instrument or deed of trust or other agreement creating a
+security interest, in case of foreclosure of a security
+interest, sale by a trustee under an agreement creating a
+security interest, tax sale, judicial sale, or sale under
+federal bankruptcy law or receivership proceedings, of any
+units owned by a declarant or real estate in a condominium
+subject to development rights, a person acquiring title to all
+the real estate being foreclosed or sold succeeds to all
+special declarant rights related to that real estate held by
+that declarant, or only to any rights reserved in the
+declaration pursuant to Section 35-8A-215 and held by that
+declarant to maintain models, sales offices and signs.
+"(d) Upon foreclosure of a security interest, sale
+by a trustee under an agreement creating a security interest,
+tax sale, judicial sale, or sale under federal bankruptcy law
+or receivership proceedings, of all units and other real
+estate in a condominium owned by a declarant:
+"(1) The declarant ceases to have any special
+declarant rights, and
+"(2) The period of declarant control specified in
+Section 35-8A-303(d) terminates unless the judgment or
+instrument conveying title provides for transfer of all
+special declarant rights held by that declarant to a successor
+declarant.
+"(e) The liabilities and obligations of a person who
+succeeds to special declarant rights are as follows:
+"(1) A successor to any special declarant right who
+is an affiliate of a declarant is subject to all obligations
+and liabilities imposed on the transferor by this chapter or
+by the declaration.
+"(2) A successor to any special declarant right,
+other than a successor described in subdivisions (3) or (4),
+who is not an affiliate of a declarant, is subject to all
+obligations and liabilities imposed by this chapter or the
+declaration:
+"a. On a declarant which relates to his or her
+exercise or nonexercise of special declarant rights; or
+"b. On his or her transferor, other than:
+"1. Misrepresentations by any previous declarant;
+"2. Warranty obligations on improvements made by any
+previous declarant, or made before the condominium was
+created;
+"3. Breach of any fiduciary obligation by any
+previous declarant or his or her appointees to the board; or
+"4. Any liability or obligation imposed on the
+transferor as a result of the transferor's acts or omissions
+after the transfer.
+"(3) A successor to only a right reserved in the
+declaration to maintain models, sales offices, and signs
+pursuant to Section 35-8A-215, may not exercise any other
+special declarant right, and is not subject to any liability
+or obligation as a declarant, except the obligation to provide
+an offering statement and any liability arising as a result
+thereof.
+"(4) A successor to all special declarant rights
+held by his or her transferor who is not an affiliate of that
+declarant and who succeeded to those rights pursuant to a deed
+in lieu of foreclosure or a judgment or instrument conveying
+title to units under subsection (c), may declare the intention
+in a recorded instrument to hold those rights solely for
+transfer to another person. Thereafter, until transferring all
+special declarant rights to any person acquiring title to any
+unit owned by the successor, or until recording an instrument
+permitting exercise of all those rights, that successor may
+not exercise any of those rights other than any right held by
+his or her transferor to control the board in accordance with
+the provisions of Section 35-8A-303(d) for the duration of any
+period of declarant control, and any attempted exercise of
+those rights is void. So long as a successor declarant may not
+exercise special declarant rights under this subsection, he or
+she is not subject to any liability or obligation as a
+declarant other than liability for his or her acts and
+omissions under Section 35-8A-303(d).
+"(f) Nothing in this section subjects any successor
+to a special declarant right to any claims against or other
+obligations of a transferor declarant, other than claims and
+obligations arising under this chapter or the declaration.
+"§35-8A-305.
+"If entered into before the board elected by the
+unit owners pursuant to Section 35-8A-303(f) takes office, (i)
+any management contract, employment contract, or lease of
+recreational or parking areas or facilities, (ii) any other
+contract or lease between the association and a declarant or
+an affiliate of a declarant, or (iii) any contract or lease
+that is not bona fide or was unconscionable to the unit owners
+at the time entered into under the circumstances then
+prevailing, may be terminated without penalty by the
+association at any time during the current term of the
+contract or lease after the board elected by the unit owners
+pursuant to Section 35-8A-303(f) takes office upon not less
+than 90 days' notice to the other party. This section does not
+apply to any lease the termination of which would terminate
+the condominium or reduce its size, unless the real estate
+subject to that lease was included in the condominium for the
+purpose of avoiding the right of the association to terminate
+a lease under this section.
+"§35-8A-307.
+"(a) Except to the extent provided by the
+declaration, subsection (b), or Section 35-8A-313(h), the
+association is responsible for maintenance, repair, and
+replacement of the common elements, and each unit owner is
+responsible for maintenance, repair, and replacement of his or
+her unit. Each unit owner shall afford to the association and
+the other unit owners, and to their agents or employees,
+access through his or her unit reasonably necessary for those
+purposes. If damage is inflicted on the common elements, or on
+any unit through which access is taken, the unit owner
+responsible for the damage, or the association if it is
+responsible, is liable for the prompt repair thereof.
+"(b) In addition to the liability that a declarant
+as a unit owner has under this chapter, the declarant alone is
+liable for all expenses in connection with real estate subject
+to development rights. No other unit owner and no other
+portion of the condominium is subject to a claim for payment
+of those expenses. Unless the declaration provides otherwise,
+any income or proceeds from real estate subject to development
+rights inures to the declarant.
+"§35-8A-310.
+"(a) If only one of the multiple owners of a unit is
+present at a meeting of the association, he or she is entitled
+to cast all the votes allocated to that unit. If more than one
+of the multiple owners are present, the votes allocated to
+that unit may be cast only in accordance with the agreement of
+a majority in interest of the multiple owners, unless either
+the declaration or bylaws expressly provides otherwise. There
+is majority agreement if any one of the multiple owners casts
+the votes allocated to that unit without protest being made
+promptly to the person presiding over the meeting by any of
+the other owners of the unit.
+"(b) Votes allocated to a unit may be cast pursuant
+to a proxy duly executed by the unit owner except as provided
+in Section 35-8A-303(g). If a unit is owned by more than one
+person, each owner of the unit may vote or register protest to
+the casting of votes by the other owners of the unit through a
+duly executed proxy. A unit owner may not revoke a proxy given
+pursuant to this section except by actual notice of revocation
+to the person presiding over a meeting of the association. A
+proxy is void if it is not dated or purports to be revocable
+without notice. A proxy terminates one year after its date,
+unless it specifies a shorter term.
+"(c) If the declaration requires that votes on
+specified matters affecting the condominium be cast by lessees
+rather than unit owners of leased units: (i) the provisions of
+subsection subsections (a) and (b) apply to lessees as if they
+were unit owners; (ii) unit owners who have leased their units
+to other persons may not cast votes on those specified
+matters; and (iii) lessees are entitled to notice of meetings,
+access to records, and other rights respecting those matters
+as if they were unit owners. Unit owners must also be given
+notice, in the manner provided in Section 35-8A-308, of all
+meetings at which lessees may be entitled to vote.
+"(d) No votes allocated to a unit owned by the
+association may be cast.
+"§35-8A-311.
+"Neither the association, any association mortgagee,
+nor any unit owner except the declarant is liable for that
+declarant's torts in connection with any part of the
+condominium which that declarant has the responsibility to
+maintain. Otherwise, an action alleging a wrong done by the
+association shall be brought against the association and not
+against any unit owner. If the wrong occurred during any
+period of declarant control and the association gives the
+declarant reasonable notice of and an opportunity to defend
+against the action, the declarant who then controlled the
+association is liable to the association or to any unit owner:
+(i) for all tort losses not covered by insurance suffered by
+the association or that unit owner, and (ii) for all costs
+which the association would not have incurred but for a breach
+of contract or other wrongful act or omission. Whenever the
+declarant is liable to the association under this section, the
+declarant is also liable for all reasonable litigation
+expenses, including reasonable attorneys fees, incurred by the
+association. Any statute of limitation affecting the
+association's right of action under this section is tolled
+until the period of declarant control terminates. A unit owner
+is not precluded from bringing an action contemplated by this
+section solely because he or she is a unit owner, or a member
+or officer of the association. Liens resulting from judgments
+against the association are governed by Section 35-8A-317.
+"§35-8A-312.
+"(a) In a condominium portions of the common
+elements may be conveyed or subjected to a security interest
+by the association if persons entitled to cast at least 80
+percent of the votes in the association, including 80 percent
+of the votes allocated to units not owned by a declarant, or
+any larger percentage the declaration specifies, agree to that
+action; but all the owners of units to which any limited
+common element is allocated must agree in order to convey that
+limited common element or subject it to a security interest.
+The declaration may specify a smaller percentage only if all
+of the units are restricted exclusively to nonresidential
+uses. Proceeds of the sale or loan are an asset of the
+association.
+"(b) An agreement to convey common elements in a
+condominium or subject them to a security interest must be
+evidenced by the execution of an agreement, or ratifications
+thereof, in the same manner as a deed, by the requisite number
+of unit owners. The agreement must specify a date after which
+the agreement will be void unless recorded before that date.
+The agreement and all ratifications thereof must be recorded
+in every county in which a portion of the condominium is
+situated, and is effective only upon recordation.
+"(c) The association, on behalf of the unit owners,
+may contract to convey an interest in a condominium pursuant
+to subsection (a), but the contract is not enforceable against
+the association until approved pursuant to subsections (a) and
+(b). Thereafter, the association has all powers necessary and
+appropriate to effect the conveyance or encumbrance, including
+the power to execute deeds or other instruments.
+"(d) Any purported conveyance, encumbrance, judicial
+sale or other voluntary transfer of common elements, unless
+made pursuant to this section, is void.
+"(e) A conveyance or encumbrance of common elements
+pursuant to this section does not deprive any unit of its
+rights of access and support.
+"(f) Unless the declaration otherwise provides, a
+conveyance or encumbrance of common elements pursuant to this
+section does not affect the priority or validity of
+pre-existing encumbrances.
+"§35-8A-313.
+"(a) Commencing not later than the time of the first
+conveyance of a unit to a person other than a declarant, the
+association shall maintain, to the extent reasonably
+available:
+"(1) Property insurance on the common elements
+insuring against all risks of direct physical loss commonly
+insured against or, in the case of a conversion building,
+against fire and extended coverage perils. The total amount of
+insurance after application of any deductibles shall be not
+less than the greater of 80 percent of the actual cash value
+of the insured property at the time the insurance is purchased
+or such greater percentage of such actual cash value as may be
+necessary to prevent the applicability of any co-insurance
+provision and at each renewal date, exclusive of land,
+excavations, foundations and other items normally excluded
+from property policies; and
+"(2) Liability insurance, including medical payments
+insurance, in an amount determined by the board but not less
+than any amount specified in the declaration, covering all
+occurrences commonly insured against for death, bodily injury,
+and property damage arising out of or in connection with the
+use, ownership, or maintenance of the common elements.
+"(b) In the case of a building containing units
+having horizontal boundaries described in the declaration, the
+insurance maintained under subdivision (a)(1), to the extent
+reasonably available, must include the units, but need not
+include improvements and betterments installed by unit owners.
+"(c) If the insurance described in subsections (a)
+and (b) is not reasonably available, the association promptly
+shall cause notice of that fact to be hand-delivered or sent
+prepaid by United States mail to all unit owners. The
+declaration may require the association to carry any other
+insurance, and the association in any event may carry any
+other insurance it deems appropriate to protect the
+association or the unit owners.
+"(d) Insurance policies carried pursuant to
+subsection (a) must provide that:
+"(1) Each unit owner is an insured person under the
+policy with respect to liability arising out of his or her
+interest in the common elements or membership in the
+association;
+"(2) The insurer waives its right to subrogation
+under the policy against any unit owner or member of his or
+her household;
+"(3) No act or omission by any unit owner, unless
+acting within the scope of his or her authority on behalf of
+the association, will void the policy or be a condition to
+recovery under the policy; and
+"(4) If, at the time of a loss under the policy,
+there is other insurance in the name of a unit owner covering
+the same risk covered by the policy, the association's policy
+provides primary insurance.
+"(e) Any loss covered by the property policy under
+subsections (a)(1) and (b) must be adjusted with the
+association, but the insurance proceeds for that loss are
+payable to any insurance trustee designated for that purpose,
+or otherwise to the association, and not to any holder of a
+security interest. The insurance trustee or the association
+shall hold any insurance proceeds in trust for unit owners and
+lien holders as their interests may appear. Subject to the
+provisions of subsection (h), the proceeds must be disbursed
+first for the repair or restoration of the damaged property,
+and the association unit owners and lien holders are not
+entitled to receive payment of any portion of the proceeds
+unless there is a surplus of proceeds after the property has
+been completely repaired or restored, or the condominium is
+terminated.
+"(f) An insurance policy issued to the association
+does not prevent a unit owner from obtaining insurance for his
+or her own benefit.
+"(g) An insurer that has issued an insurance policy
+under this section shall issue certificates or memoranda of
+insurance to the association and, upon written request, to any
+unit owner, or holder of a security interest. The insurer
+issuing the policy may not cancel or refuse to renew it until
+30 days after notice of the proposed cancellation or
+nonrenewal has been mailed to the association, each unit owner
+and each mortgagee or beneficiary under a deed of trust to
+whom a certificate or memorandum of insurance has been issued
+at their respective last known addresses.
+"(h) Any portion of the condominium for which
+insurance is required under this section which is damaged or
+destroyed must be repaired or replaced promptly by the
+association unless:
+"(1) The condominium is terminated, in which case
+Section 35-8A-218 applies,
+"(2) Repair or replacement would be illegal under
+any state or local statute or ordinance governing health or
+safety, or
+"(3) Eighty percent of the unit owners, including
+every owner of a unit or assigned limited common element which
+will not be rebuilt, vote not to rebuild. The cost of repair
+or replacement in excess of insurance proceeds, including any
+deductible or retention under any contract of insurance, and
+reserves is a common expense.
+"If the entire condominium is not repaired or
+replaced, (i) the insurance proceeds attributable to the
+damaged common elements must be used to restore the damaged
+area to a condition compatible with the remainder of the
+condominium, (ii) except to the extent that other persons will
+be distributees under Section 35-8A-205(a)(12)(ii),
+"(1) The insurance proceeds attributable to units
+and limited common elements which are not rebuilt must be
+distributed to the owners of those units and the owners of the
+units to which those limited common elements were allocated,
+or to lienholders, as their interests may appear, and
+"(2) The remainder of the proceeds must be
+distributed to all the unit owners or lienholders, as their
+interests may appear, in proportion to the common element
+interests of all the units.
+"If the unit owners vote not to rebuild any unit,
+that unit's allocated interests are automatically reallocated
+upon the vote as if the unit had been condemned under Section
+35-8A-107(a), and the association promptly shall prepare,
+execute, and record an amendment to the declaration reflecting
+the reallocations.
+"(i) The provisions of this section may be varied or
+waived in the case of a condominium all of whose units are
+restricted to nonresidential use.
+"(j) Unless the declaration provides otherwise, the
+association shall pay any cost in excess of insurance
+proceeds, including any deductible or retention under any
+contract of insurance as a common expense.
+"§35-8A-314.
+"Unless otherwise provided in the declaration or
+bylaws, any surplus funds of the association remaining after
+payment of or provision for common expenses and any prepayment
+of reserves must be paid to the unit owners in proportion to
+their common expense liabilities or credited to them to reduce
+their future common expense assessments, or held in reserve.
+"§35-8A-315.
+"(a) Until the association makes a common expense
+assessment, the declarant must pay all common expenses. After
+any assessment has been made by the association, assessments
+must be made at least annually, based on a budget adopted at
+least annually by the association.
+"(b) Except for assessments under subsections (c),
+(d), and (e), all common expenses must be assessed against all
+the units in accordance with the allocations set forth in the
+declaration pursuant to Section 35-8A-207(a) and (b). Any past
+due common expense assessment or installment thereof bears
+interest at the rate established by the association not
+exceeding 18 percent per year.
+"(c) To the extent required by the declaration:
+"(1) Any common expense associated with the
+maintenance, repair, or replacement of a limited common
+element must be assessed against the units to which that
+limited common element is assigned, equally, or in any other
+proportion that the declaration provides;
+"(2) Any common expense or portion thereof
+benefiting fewer than all of the units must be assessed
+exclusively against the units benefited; and
+"(3) The costs of insurance must be assessed in
+proportion to risk and the costs of utilities must may be
+assessed in proportion to usage.
+"(d) Assessments to pay a judgment against the
+association under Section 35-8A-317(a) may be made only
+against the units in the condominium at the time the judgment
+was entered, in proportion to their common expense
+liabilities.
+"(e) If any common expense is caused by the
+misconduct of any unit owner or such unit owner's invitee, the
+association may assess that expense exclusively against his or
+her unit after notice and an opportunity to be heard.
+"(f) If common expense liabilities are reallocated,
+common expense assessments and any installment thereof not yet
+due shall be recalculated in accordance with the reallocated
+common expense liabilities.
+"(g) All assessments, including utilities, fees, and
+other charges shall also constitute the personal obligation of
+the unit owner to the association.
+"(h) No unit owner other than the association shall
+be exempted from any liability for any assessment under this
+code section or under any condominium instrument for any
+reason whatsoever, including, without limitation, abandonment,
+nonuse, or waiver of the use or enjoyment of his or her unit
+or any part of the common elements.
+"§35-8A-316.
+"(a) The association has a lien on a unit for any
+assessment and any other moneys due the association for
+special assessments or services or charges, such as water or
+repairs, levied against that unit or fines imposed against its
+unit owner from the time the assessment or fine becomes due is
+levied. The association's lien may be foreclosed in like
+manner as a mortgage on real estate but the and as provided in
+the declaration and in Section 35-10-11 or Article 1A of
+Chapter 10 of this title and subject to the right under
+Article 14A of Chapter 5 of Title 6. The association shall
+give send reasonable advance notice of its proposed action to
+the unit owner and all lienholders of record of who have
+provided a notice address in the record instrument evidencing
+the lien on the unit. Unless the declaration otherwise
+provides, fees, charges, late charges, fines, and interest
+charged pursuant to Section 35-8A-302(a)(10), (11), and (12)
+are enforceable as assessments under this section. If an
+assessment is payable in installments, the full amount of the
+assessment is a lien from the time the first installment
+thereof becomes due it is levied.
+"(b) A lien under this section is prior to all other
+liens and encumbrances on a unit except (i) liens and
+encumbrances recorded before the recordation of the
+declaration, (ii) a first security interest on the unit
+recorded before the date on which the assessment sought to be
+enforced became delinquent, and (iii) liens for real estate
+taxes and other governmental assessments or charges against
+the unit. The lien is also prior to the mortgages and deeds of
+trust described in clause (ii) above to the extent of the
+common expense assessments based on the periodic budget
+adopted by the association pursuant to Section 35-8A-315(a)
+which would have become due in the absence of acceleration
+during the six months immediately preceding institution of an
+action to enforce the lien. This subsection does not affect
+the priority of mechanics' or materialmen's liens, or the
+priority of liens for other assessments made by the
+association. The lien under this section is not subject to the
+provisions of homestead or other exemptions.
+"(c) Unless the declaration otherwise provides, if
+two or more associations have liens for assessments created at
+any time on the same real estate, those liens have equal
+priority.
+"(d) Recording of the declaration constitutes record
+notice and perfection of the lien. No further recordation of
+any claim of lien for assessment under this section is
+required.
+"(e) A lien for unpaid assessments is extinguished
+unless proceedings to enforce the lien are instituted within
+three years after the full amount of the assessments becomes
+due.
+"(f) This section does not prohibit actions to
+recover sums for which subsection (a) creates a lien or
+prohibit an association from taking a deed in lieu of
+foreclosure.
+"(g) A judgment or decree in any action brought
+under this or the preceding section must include costs and
+reasonable attorney's fees actually incurred for to the
+prevailing party.
+"(h) Any unit owner, mortgagee of a unit, person
+having executed a contract for the purchase of a condominium
+unit, or lender considering the loan of funds to be secured by
+a condominium unit shall be entitled upon request to a
+statement from the association or its management agent setting
+forth the amount of assessments levied against the unit,
+including information regarding whether such assessments are
+past due, and unpaid together with late charges and interest
+applicable thereto against that condominium unit. Such request
+shall be in writing, shall be delivered to the registered
+office of the association, and shall state an address to which
+the statement is to be directed. Failure on the part of the
+association to mail or otherwise furnish such statement
+regarding amounts due and payable if specified in the written
+request therefor within 10 business days from the receipt of
+such request releases the association's lien against the unit
+for the amount of the assessment as of that date, but does not
+discharge the unit owner's debt to the association. The
+information specified in such statement shall be binding upon
+the association and upon every unit owner. Payment of a
+reasonable fee not exceeding $10.00 may be required as a
+prerequisite to the issuance of such a statement if the
+condominium instruments so provide.
+"§35-8A-317.
+"(a) Except as provided in subsection (b), a
+judgment for money against the association if recorded is not
+a lien on the common elements, but is a lien in favor of the
+judgment lienholder against all of the units in the
+condominium at the time the judgment was entered. No other
+property of a unit owner is subject to the claims of creditors
+of the association.
+"(b) If the association has granted a security
+interest in the common elements to a creditor of the
+association pursuant to Section 35-8A-312, the holder of that
+security interest shall exercise its right against the common
+elements before its judgment lien on any unit may be enforced.
+"(c) Whether perfected before or after the creation
+of the condominium, if a lien other than a deed of trust or
+mortgage, including a judgment lien or lien attributable to
+work performed or materials supplied before creation of the
+condominium, becomes effective against two or more units, the
+unit owner of an affected unit may pay to the lienholder the
+amount of the lien attributable to his or her unit, and the
+lienholder, upon receipt of payment, promptly shall deliver a
+release of the lien covering that unit. The amount of the
+payment must be proportionate to the ratio which that unit
+owner's common expense liability bears to the common expense
+liabilities of all unit owners whose units are subject to the
+lien. After payment, the association may not assess or have a
+lien against that unit owner's unit for any portion of the
+common expenses incurred in connection with that lien.
+"(d) A judgment against the association must be
+indexed in the name of the condominium and the association
+and, when so indexed, is notice of the lien against the units.
+"§35-8A-318.
+"The association shall keep financial records
+sufficiently detailed to enable the association to comply with
+Section 35-8A-409. All financial and other records shall be
+made reasonably available for examination by any unit owner
+and his or her authorized agents and such records shall be
+made available in the county where the condominium is located.
+A reasonable fee or hourly charge may be assessed for this
+service.
+"§35-8A-401.
+"(a) This article applies to all units subject to
+this chapter, except as provided in subsection (b) or as
+modified or waived in writing by agreement of purchasers of
+units in a condominium in which all units are restricted to
+nonresidential use.
+"(b) Neither an offering statement nor a resale
+certificate need be prepared or delivered in the case of:
+"(1) A gratuitous disposition of a unit;
+"(2) A transfer pursuant to court order;
+"(3) A disposition by a government or governmental
+agency;
+"(4) A transfer by foreclosure or disposition by
+deed in lieu of foreclosure;
+"(5) A disposition to a person in the business of
+selling real estate who intends to offer those units to
+purchasers where the responsibility for preparing and
+delivering the offering statement has been transferred to the
+person pursuant to subsection (b) of Section 35-8A-402;
+"(6) A disposition that may be canceled at any time
+and for any reason by the purchaser without penalty; or
+"(7) A disposition of a time share interest in a
+unit.
+"§35-8A-402.
+"(a) Except as provided in subsection (b), a
+declarant, prior to the offering of any interest in a unit to
+the public, shall prepare an offering statement conforming to
+the requirements of Sections 35-8A-403 through 35-8A-406.
+"(b) A declarant may transfer responsibility for
+preparation of all or a part of the offering statement to a
+successor declarant specified in Section 35-8A-304 or to a
+person in the business of selling real estate who intends to
+offer units in the condominium for his the offeror's own
+account. In the event of any such transfer, the transferor
+shall provide the transferee with any information necessary to
+enable the transferee to fulfill the requirements of
+subsection (a).
+"(c) Any declarant or other person in the business
+of selling real estate who offers to a purchaser a unit for
+his the offeror's own account to a purchaser whom such
+responsibility for preparation and delivery of an offering
+statement has been transferred shall deliver an offering
+statement in the manner prescribed in Section 35-8A-408(a) and
+is liable under Sections 35-8A-408 and 35-8A-417 35-8A-414 for
+any false or misleading statement set forth therein or for any
+omission of material fact.
+"(d) If a unit is part of a condominium and is part
+of any other real estate regime in connection with the sale of
+which the delivery of an offering statement is required under
+the laws of this state, a single offering statement conforming
+to the requirements of Sections 35-8A-403 through 35-8A-406 as
+those requirements relate to each regime in which the unit is
+located, and to any other requirements imposed under the laws
+of this state, may be prepared and delivered in lieu of
+providing two or more offering statements.
+"§35-8A-403.
+"(a) Except as provided in subsection (b), an
+offering statement must contain or fully and accurately
+disclose the following information with regard to the
+condominium, including a proposed condominium:
+"(1) The name and principal address of the declarant
+and of the condominium;
+"(2) The name and the address, legal description, or
+other description of the location of the condominium, and the
+number and types of units in the condominium;
+"(3) A general description of the condominium,
+including to the extent possible, the types, number and types
+of buildings, structures, and amenities the declarant is
+obligated to build, and declarant's schedule of commencement
+and completion of construction of buildings, structures, and
+amenities that declarant anticipates including in the
+condominium; The number of units is obligated to include in
+the condominium;
+"(4) Copies of the declaration, other than the plats
+and plans, as well as any other recorded plats, plans,
+easements, covenants, conditions, restrictions, and
+reservations affecting the condominium; the bylaws, and
+certificate or the proposed certificate of formation and the
+bylaws of the association created or to be created to manage
+the condominium, any rules or regulations of the association;
+, a copy of the lease for any leasehold condominium, copies of
+any contracts and leases to be signed by purchasers at
+closing, and copies of any contracts or leases that will or
+may be subject to cancellation by the association under
+Section 35-8A-305;
+"(5) Any current balance sheet and a A projected
+budget for the association, either within or as an exhibit to
+the offering statement, for at least one year after the date
+or anticipated date of the first conveyance to a purchaser,
+and thereafter the current budget along with the current
+balance sheet of the association, a statement of who prepared
+the budget, and a statement of the budget's assumption
+concerning occupancy. The budget must include, without
+limitation:
+"a. A statement of the amount, or a statement that
+there is no amount, included in the budget as a reserve for
+repairs and replacement;
+"b. A statement of any other reserves included in
+the budget;
+"c. The projected common expense assessment expenses
+by category of expenditures for the association; and
+"d. The projected monthly common expense assessment
+for each type of unit;
+"(6) Any services not reflected in the budget that
+the declarant provides, or expenses that he or she pays, and
+that he or she expects may become at any subsequent time a
+common expense of the association and the projected common
+expense assessment attributable to each of those services or
+expenses for the association and for each type of unit;
+"(7) Any initial or special fee due from the
+purchaser at closing together with a description of the
+purpose and method of calculating the fee;
+"(8) A reference to, and a brief description of, any
+liens, known defects, or encumbrances on or affecting the
+title to the condominium;
+"(9) A description of any financing offered or
+arranged by the declarant and if the contract of sale offered
+to the purchaser does not contain a provision conditioning
+purchaser's obligation to perform the contract on obtaining
+financing, a statement that the purchaser will forfeit any
+deposit he or she has paid if the purchaser requires such
+financing but does not qualify for such financing as is
+offered or arranged by declarant;
+"(10) The terms and significant limitations of any
+warranties provided by the declarant, including statutory
+warranties provided in this chapter and limitations on the
+enforcement thereof or on damages;
+"(11) A statement that:
+"a. Within seven days after receipt of an offering
+statement a purchaser, before conveyance, may cancel any
+contract for purchase of a unit from a declarant,;
+"b. If a declarant fails to provide an offering
+statement to a purchaser before conveying a unit, that
+purchaser may rescind the conveyance within seven days after
+first receiving the offering statement,; and
+"c. If a purchaser receives the public offering
+statement more than seven days before signing a contract, he
+or she cannot cancel the contract;
+"(12) A statement of any unsatisfied judgments or
+pending suits lawsuits against the association; and the status
+of any pending suits lawsuits material to the condominium of
+which a declarant has actual knowledge;
+"(13) A statement that any deposit made in
+connection with the purchase of a unit will be held in an
+escrow account until closing and will be returned to the
+purchaser if the purchaser cancels the contract pursuant to
+Section 35-8A-408, together with the name and address of the
+escrow agent;
+"(14) Any restraints on sale or lease of any units
+in the condominium and any restrictions:
+"a. On use, occupancy or alienation of the units,
+and
+"b. On the amount for which a unit may be sold or on
+the amount that may be received by a unit owner on sale,
+condemnation, casualty loss to the unit or to the condominium
+or on the termination of the condominium;
+"(15) A brief description of the insurance coverage
+provided for the benefit of unit owners;
+"(16) Any current or expected fees or charges to be
+paid by unit owners for the use of the common elements and
+other facilities related to the condominium;
+"(17) The extent to which financial arrangements
+have been provided for completion of all improvements that the
+declarant is obligated to build pursuant to Section 35-8A-416
+(Declarant's obligation to complete and restore);
+"(18) A brief narrative description of any zoning
+affecting the condominium; and
+"(19) The applicable amendment requirements as
+provided in the declaration or as provided by Alabama law.
+"(b) If a condominium composed of not more than 12
+units is not subject to any development rights, and no power
+is reserved to a declarant to make the condominium part of a
+larger condominium, group of condominiums, or other real
+estate, an offering statement may but need not include the
+information otherwise required by subdivisions (9), (10),
+(15), (16), (17), and (18) of subsection (a).
+"(c) A declarant shall promptly amend the offering
+statement to report any material change in the information
+required by this section.
+"§35-8A-404.
+"If the declaration provides that a condominium is
+subject to any development rights, the offering statement must
+disclose, in addition to the information required by Section
+35-8A-403:
+"(1) The maximum number of units, and the maximum
+number of units per acre, that may be created;
+"(2) A statement of how many or what percentage of
+the units which may be created will be restricted exclusively
+to residential use, or a statement that no representations are
+made regarding use restrictions;
+"(3) If any of the units that may be built within
+real estate subject to development rights are not to be
+restricted exclusively to residential use, a statement, with
+respect to each portion of that real estate, of the as to
+whether there is a maximum percentage of the real estate
+areas, and the maximum percentage of the floor areas of all
+units that may be created therein, that are not restricted
+exclusively to residential use units which may be used for
+nonresidential purposes;
+"(4) A statement of any development rights reserved
+by a declarant and of any conditions relating to or
+limitations upon the exercise of development rights;
+"(5) A statement of the maximum extent to which each
+unit's the allocated interests of each unit may be changed by
+the exercise of any development right described in subdivision
+(3) (4);
+"(6) A statement of the extent to which any
+buildings or other improvements that may be erected pursuant
+to any development right in any part of the condominium will
+be compatible with existing buildings and improvements in the
+condominium in terms of architectural style, quality of
+construction, and size, or a statement that no assurances are
+made in those regards;
+"(7) General descriptions of all other improvements
+that may be made and limited common elements that may be
+created within any part of the condominium pursuant to any
+development right reserved by the declarant, or a statement
+that no assurances are made in that regard;
+"(8) A statement of any limitations as to the
+locations of any building or other improvement that may be
+made within any part of the condominium property that may be
+added to the condominium pursuant to any development right
+reserved by the declarant, or a statement that no assurances
+are made in that regard;
+"(9) A statement that any common elements or limited
+common elements created pursuant to any development right
+reserved by the declarant will be of the same general types
+and sizes as the common elements and the limited common
+elements within other parts of the condominium, or a statement
+of the types and sizes planned, or a statement that no
+assurances are made in that regard;
+"(10) A statement that the proportion of limited
+common elements to units created pursuant to any development
+right reserved by the declarant will be approximately equal to
+the proportion existing within other parts of the condominium,
+or a statement of any other assurances in that regard, or a
+statement that no assurances are made in that regard;
+"(11) A statement that all restrictions in the
+declaration affecting use, occupancy, and sale or lease of
+units will apply to any units created pursuant to any
+development right reserved by the declarant, or a statement of
+any differentiations that may be made as to those units, or a
+statement that no assurances are made in that regard; and
+"(12) A statement of the extent to which any
+assurances made pursuant to this section apply or do not apply
+in the event that any development right is not exercised by
+the declarant.
+"§35-8A-406.
+"The offering statement of a condominium containing
+any conversion building containing units that may be occupied
+for residential use must contain, in addition to the
+information required by Section 35-8A-402 Section 35-8A-403:
+"(1) A statement by the declarant, to the best of
+declarant's knowledge, of the approximate age of structural
+components and mechanical and electrical installations which
+are material to the use and enjoyment of the buildings or an
+affirmative statement in bold face print that no
+representations are made in that regard and;
+"(2) A list of any outstanding notices of uncured
+violations of building code or other municipal regulations,
+together with the estimated cost of curing those violations.
+"§35-8A-407.
+"If an interest in a condominium is currently
+registered with the securities and exchange commission
+Securities and Exchange Commission of the United States or
+registered pursuant to the Interstate Land Sales Full
+Disclosure Act, a declarant satisfies all requirements
+relating to the preparation and delivery of an offering
+statement of this chapter if he or she delivers to the
+purchaser a copy of the offering statement filed with the
+securities and exchange commission Securities and Exchange
+Commission or a copy of the property report approved in
+accordance with the Interstate Land Sales Full Disclosure Act
+as a part of the registration process.
+"§35-8A-408.
+"(a) A person required to deliver an offering
+statement the required documents or report pursuant to Section
+35-8A-402(c) or 35-8A-407 shall provide a purchaser of a unit
+with a copy of the offering statement and all amendments
+thereto before conveyance of that unit, and not later than the
+date of any contract of sale. Unless a purchaser is given the
+offering statement required documents more than seven days
+before execution of a contract for the purchase of a unit, the
+purchaser may cancel the contract, or rescind the conveyance
+if a conveyance has already occurred, within seven days after
+first receiving the offering statement required documents or
+report.
+"(b) If a purchaser elects to cancel a contract or
+conveyance pursuant to subsection (a), he or she may do so by
+hand-delivering notice thereof to the offeror or by mailing
+notice thereof by prepaid United States mail to the offeror or
+to his or her agent for service of process. Cancellation is
+without penalty, and all payments made by the purchaser before
+cancellation shall be refunded promptly.
+"(c) If a person required to deliver an offering
+statement or report pursuant to Section 35-8A-402(c) or
+35-8A-407 fails to provide a purchaser to whom a unit is
+conveyed with that offering statement and all amendments
+thereto as the documents required by subsection (a), the
+purchaser, at the purchaser's option and in lieu of any rights
+to damages or other relief, is entitled to receive from that
+person an amount equal to five percent of the sales price of
+the unit at anytime prior to the expiration of six months from
+if the purchaser provides notice of the election to that
+person in the same manner as described in subsection (b)
+within six months of the date of conveyance of the unit, plus
+five percent of the share, proportionate to his common expense
+liability, of any indebtedness of the association secured by
+security interests encumbering the condominium.
+"§35-8A-409.
+"(a) Except in the case of a sale where delivery of
+an offering statement is required, or unless exempt under
+Section 35-8A-401(b), a unit owner upon written request by the
+purchaser a purchaser of a unit previously disposed of, which
+written request must be made within 14 days of the date the
+purchaser signs the contract with a purchaser, shall furnish
+to a purchaser before the conveyance and in any event within
+15 days of receipt of the written request, a copy of the
+declaration, other than the plats and plans, the bylaws, the
+rules or, and the regulations of the association, and a
+certificate containing:
+"(1) A statement setting forth the amount of the
+monthly periodic common expense assessment and;
+"(2) A statement setting forth the amount of any
+unpaid common expense or special assessment currently due and
+payable from the selling unit owner assessments against the
+unit either past due or then due owing;
+"(2) A statement of any other fees payable by unit
+owners;
+"(3) A statement of any other assessments or fees
+assessed against the unit or the unit owner either past due or
+then due and owing;
+"(3) (4) The most recent regularly prepared balance
+sheet, and income and expense statement, if any, or any other
+reports regularly prepared showing cash flow of the
+association;
+"(4) (5) The current operating budget of the
+association;
+"(5) (6) A statement of any unsatisfied judgments
+against the association and any pending suit in which the
+association is a party;
+"(6) (7) A statement describing any insurance
+coverage provided for the benefit of unit owners;
+"(7) (8) A statement of the remaining term of any
+lease hold leasehold estate affecting the condominium and the
+provisions governing any extension or renewal thereof; and
+"(8) (9) A statement of any restrictions in the
+declaration affecting the amount that may be received by a
+unit owner upon sale, condemnation, casualty loss to the unit
+or condominium or on termination of the condominium.
+"(b) The association, within 10 days after a request
+by a unit owner, shall furnish a certificate containing the
+above listed information necessary to enable the unit owner to
+comply with this section. A unit owner providing a certificate
+pursuant to subsection (a) is not liable to the purchaser for
+any erroneous information provided by the association and
+included in the certificate.
+"(c) A purchaser who receives a copy of the
+certificate prepared by the association is not liable after
+closing for any unpaid assessment assessments or fee fees
+greater than the amount set forth in the certificate prepared
+by the association. A The unit owner is not liable to a
+purchaser for the failure or delay of the association to
+provide the certificate in a timely manner, but accordance
+with the time set forth in subsection (b). If the purchaser
+timely requested the information in accordance with subsection
+(a), the purchase contract is remains voidable by the
+purchaser until the certificate requested information has been
+provided and for five days thereafter or until conveyance,
+whichever first occurs.
+"§35-8A-411.
+"(a) In the case of a sale of a unit where delivery
+of an offering statement is required pursuant to Section
+35-8A-402(c) or a disclosure is made pursuant to Section
+35-8A-407, a seller shall before conveying a unit, (i) record
+or furnish to the purchaser releases of all liens or an
+agreement to release any liens that encumber that unit and its
+common element interest, except liens on real estate that a
+declarant has the right to withdraw from the condominium, that
+the purchaser does not expressly agree in a written contract
+of sale which specifically identifies such lien and its amount
+to take subject to or assume and that encumber a condominium,
+that unit and its common element interest, or (ii), or provide
+a surety bond or substitute collateral for or insurance
+against the lien in the manner provided for liens on real
+estate in Section 35-11-233(b).
+"(b) Before In conveying real estate to the
+association the declarant shall have that real estate released
+from: (i) all liens the foreclosure of which would deprive
+unit owners of any right of access to or easement of support
+of their units, and (ii) all other liens on that real estate
+unless the offering statement describes certain real estate
+which may be conveyed subject to liens in specified amounts.
+"§35-8A-412.
+"(a) A declarant of a condominium containing
+conversion buildings, and any person in the business of
+selling real estate for his or her own account who intends to
+offer units in such a condominium shall give each of the
+residential tenants and any residential subtenant in
+possession of a portion of a conversion building notice of the
+conversion no later than 60 days before the tenants and any
+subtenant in possession are required to vacate. The notice
+must set forth generally the rights of tenants and subtenants
+under this section and shall be hand-delivered to the unit or
+mailed by prepaid United States mail to the tenant and
+subtenant at the address of the unit or any other mailing
+address provided by a tenant. No tenant or subtenant may be
+required to vacate upon less than 60 days' notice, except by
+reason of nonpayment of rent, waste, or conduct that disturbs
+other tenants' peaceful enjoyment of the premises, and the
+terms of the tenancy may not be altered during that period.
+Failure to give notice as required by this section is a
+defense to an action for possession.
+"(b) If a notice of conversion specifies a date by
+which a unit or proposed unit must be vacated, and otherwise
+complies with the provisions of Section 35-9-80 Chapter 9A,
+the notice also constitutes a notice to terminate specified by
+that statute.
+"(c) Nothing in this section permits termination of
+a lease by a declarant in violation of the terms of the lease.
+"§35-8A-413.
+"(a) Express warranties made by declarant, his an
+affiliate of the declarant, and or any person in the business
+of selling real estate for his or her own account, to a
+purchaser of a unit, if relied upon by the purchaser, are
+created as follows:
+"(1) Any affirmation of material fact or material
+promise which relates to the unit, its use, or rights
+appurtenant thereto, improvements to the condominium that
+would directly benefit the unit, or the right to use or have
+the benefit of facilities not located in the condominium,
+creates an express warrant warranty that the unit and related
+rights and uses will conform to the affirmation or promise;
+"(2) Any model or description of the physical
+characteristics of the condominium, including plans and
+specifications of or for improvements, creates an express
+warranty that the condominium will substantially conform to
+the model or description;
+"(3) Any description of the quantity or extent of
+the real estate comprising the condominium, including plats or
+surveys, creates an express warranty that the condominium will
+conform to the description, subject to customary tolerances;
+and
+"(4) A provision statement that a buyer may put a
+unit only to a specified use is an express warranty that the
+specified use is lawful.
+"(b) Neither formal words, such as "warranty" or
+"guarantee," nor a specific intention to make a warranty, are
+necessary to create an express warranty of quality, but a
+statement purporting to be merely an opinion or commendation
+of the real estate or its value does not create a warranty.
+"§35-8A-415.
+"No promotional material may be displayed or
+delivered to prospective purchasers which describes or
+portrays an improvement that the declarant is not obligated to
+build unless the description or portrayal of the improvement
+that is not in existence and is displayed in the promotional
+material is conspicuously labeled or identified as, "NEED NOT
+BE BUILT."
+"§35-8A-417.
+"In the case of a sale of a unit where delivery of
+an offering statement is required or a disclosure is made
+pursuant to Section 35-8A-407, a contract of sale may be
+executed, but no interest in that unit may be conveyed, or
+voted until the declaration is recorded and the unit is
+substantially completed, as evidenced by a recorded
+certificate of substantial completion executed by an
+independent registered architect, or independent registered
+engineer, or by issuance of a certificate of occupancy
+authorized by law."
+Section 2. This act shall become effective on
+January 1, 2018.
