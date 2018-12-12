@@ -1,0 +1,80 @@
+SENATE BILL NO. 167                                                                         
+"An Act exempting identifying information of a person who reports criminal activity                                     
+from disclosure as public records."                                                                                     
+BE IT ENACTED BY THE LEGISLATURE OF THE STATE OF ALASKA:                                                                
+* Section 1. AS 40.25.120(a) is amended to read:                                                                   
+(a)  Every person has a right to inspect a public record in the state, including                             
+public records in recorders' offices, except                                                                      
+(1)  records of vital statistics and adoption proceedings, which shall be                               
+treated in the manner required by AS 18.50;                                                                       
+(2)  records pertaining to juveniles unless disclosure is authorized by                                 
+law;                                                                                                              
+(3)  medical and related public health records;                                                         
+(4)  records required to be kept confidential by a federal law or                                       
+regulation or by state law;                                                                                       
+(5)  to the extent the records are required to be kept confidential under                               
+20 U.S.C. 1232g and the regulations adopted under 20 U.S.C. 1232g in order to secure                              
+or retain federal assistance;                                                                                     
+(6)  records or information compiled for law enforcement purposes, but                                  
+only to the extent that the production of the law enforcement records or information                              
+(A)  could reasonably be expected to interfere with enforcement                                    
+proceedings;                                                                                                 
+(B)  would deprive a person of a right to a fair trial or an                                       
+impartial adjudication;                                                                                      
+(C)  could reasonably be expected to constitute an unwarranted                                     
+invasion of the personal privacy of a suspect, defendant, victim, or witness;                                
+(D)  could reasonably be expected to disclose the identity of a                                                         
+confidential source;                                                                                         
+(E)  would disclose confidential techniques and procedures for                                                          
+law enforcement investigations or prosecutions;                                                              
+(F)  would disclose guidelines for law enforcement                                                                      
+investigations or prosecutions if the disclosure could reasonably be expected to                                        
+risk circumvention of the law; or                                                                            
+(G)  could reasonably be expected to endanger the life or                                                               
+physical safety of an individual;                                                                            
+(7)  names, addresses, and other information identifying a person as a                                                  
+participant in the Alaska Higher Education Savings Trust under AS 14.40.802 or the                                      
+advance college tuition savings program under AS 14.40.803 - 14.40.817;                                           
+(8)  public records containing information that would disclose or might                                                 
+lead to the disclosure of a component in the process used to execute or adopt an                                        
+electronic signature if the disclosure would or might cause the electronic signature to                                 
+cease being under the sole control of the person using it;                                                        
+(9)  reports submitted under AS 05.25.030 concerning certain                                                            
+collisions, accidents, or other casualties involving boats;                                                       
+(10)  records or information pertaining to a plan, program, or                                                          
+procedures for establishing, maintaining, or restoring security in the state, or to a                                   
+detailed description or evaluation of systems, facilities, or infrastructure in the state,                              
+but only to the extent that the production of the records or information                                          
+(A)  could reasonably be expected to interfere with the                                            
+implementation or enforcement of the security plan, program, or procedures;                                  
+(B)  would disclose confidential guidelines for investigations or                                  
+enforcement and the disclosure could reasonably be expected to risk                                          
+circumvention of the law; or                                                                                 
+(C)  could reasonably be expected to endanger the life or                                          
+physical safety of an individual or to present a real and substantial risk to the                            
+public health and welfare;                                                                                   
+(11)  the written notification regarding a proposed regulation provided                                                 
+under AS 24.20.105 to the Department of Law and the affected state agency and                                           
+communications between the Legislative Affairs Agency, the Department of Law, and                                       
+the affected state agency under AS 24.20.105;                                                                     
+(12)  records that are                                                                                  
+(A)  proprietary, privileged, or a trade secret in accordance with                                                      
+AS 43.90.150 or 43.90.220(e);                                                                                
+(B)  applications that are received under AS 43.90 until notice is                                                      
+published under AS 43.90.160;                                                                                
+(13)  information of the Alaska Gasline Development Corporation                                                         
+created under AS 31.25.010 or a subsidiary of the Alaska Gasline Development                                            
+Corporation that is confidential by law or under a valid confidentiality agreement;                               
+(14)  information under AS 38.05.020(b)(11) that is subject to a                                                        
+confidentiality agreement under AS 38.05.020(b)(12);                                                              
+(15)  records relating to proceedings under AS 09.58 (Alaska Medical                                                    
+Assistance False Claim and Reporting Act);                                                                        
+(16)  names, addresses, and other information identifying a person as a                                                 
+participant in the Alaska savings program for eligible individuals under AS 06.65;                                
+(17)  artists' submissions made in response to an inquiry or solicitation                                               
+initiated by the Alaska State Council on the Arts under AS 44.27.060;                                         
+(18)  names, addresses, and other information identifying a person                                                  
+who reports criminal activity to a crime stopper or similar organization; in this                                   
+paragraph, "crime stopper or similar organization" means a not for profit                                     
+organization that receives tips regarding criminal activity from the public for the                           
+purpose of assisting law enforcement to prevent and solve crimes.                                             

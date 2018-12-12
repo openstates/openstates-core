@@ -4,7 +4,9 @@ This repo contains a sampling of Open States' bill versions, currently 25 bills 
 
 ## Setup
 
-Ensure you have ``scrapelib`` installed in a virtualenv- it is used for fetching files from HTTP & FTP sites.  Other libraries may be required depending on the state you're working on.
+Create a new virtualenv and then install the dependencies via `pip install -r requirements.txt`
+
+We use ``scrapelib`` - it is used for fetching files from HTTP & FTP sites. Other libraries may be required depending on the state you're working on.
 
 Please work on a branch & check in the text/ directory only when you're happy with the results.  This keeps the repo size down & will allow review of the results of extraction as part of the PR.
 

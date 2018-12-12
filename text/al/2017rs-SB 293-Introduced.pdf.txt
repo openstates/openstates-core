@@ -1,0 +1,340 @@
+SB293
+180643-2
+By Senators Marsh, Melson, Blackwell, Waggoner, McClendon,
+Livingston and Reed
+RFD: Finance and Taxation Education
+First Read: 09-MAR-17
+180643-2:n:02/07/2017:LFO-HP/jmb
+SYNOPSIS:           Currently, the State of Alabama allows a
+maximum standard deduction for taxpayers in a
+specified adjusted gross income range for Alabama
+individual income tax purposes.
+This bill would expand the adjusted gross
+income range allowable for a maximum standard
+deduction for Alabama individual income tax
+purposes.
+A BILL
+TO BE ENTITLED
+AN ACT
+To amend Section 40-18-15, Code of Alabama 1975, to
+expand the adjusted gross income range allowable for a maximum
+standard deduction.
+BE IT ENACTED BY THE LEGISLATURE OF ALABAMA:
+Section 1. 40-18-15, Code of Alabama 1975, is hereby
+amended as follows:
+"§40-18-15.
+"(a) No deduction shall be allowed for any losses,
+expenses, or interest deferred or disallowed pursuant to 26
+U.S.C. § 267 or for any cost required to be capitalized in
+accordance with 26 U.S.C. § 263A; otherwise, there shall be
+allowed as deductions:
+"(1) All ordinary and necessary expenses paid or
+incurred during the taxable year in carrying on any trade or
+business, as determined in accordance with 26 U.S.C. § 162.
+"(2) Interest paid or accrued within the taxable
+year on indebtedness, limited to the amount allowable as an
+interest deduction for federal income tax purposes in the
+corresponding tax year or period pursuant to the provisions of
+26 U.S.C. §§ 163, 264, and 265.
+"(3) The following taxes paid or accrued within the
+taxable year:
+"a. Income taxes, Federal Insurance Contribution Act
+taxes, taxes on self-employment income and estate and gift
+taxes imposed by authority of the United States or any
+possession of the United States.
+"b. State and local, and foreign, occupational
+license taxes, and contributions to state unemployment funds.
+"c. State and local, and foreign, real property
+taxes.
+"d. State and local personal property taxes.
+"e. The generation-skipping transfer (GST) tax
+imposed on income distributions by 26 U.S.C. § 2601.
+"f. The taxes described in paragraphs c., d., and e.
+shall be deductible only to the extent that the taxes are
+deductible for federal income tax purposes under 26 U.S.C. §
+164 (relating to taxes).
+"g. In addition, there shall be allowed as a
+deduction, state and local, and foreign taxes, except income
+taxes, and taxes imposed by authority of the United States or
+any possession of the United States, which are paid or accrued
+within the taxable year in carrying on a trade or business or
+an activity described in 26 U.S.C. § 212 (relating to expenses
+for the production of income).
+"h. Notwithstanding paragraph g., any tax described
+in any paragraph preceding paragraph g. that is paid or
+accrued in connection with an acquisition or disposition of
+property shall be treated as part of the cost of the acquired
+property or, in the case of a disposition, as a reduction in
+the amount realized on the disposition of that property.
+"(4) Losses sustained during the taxable year and
+not compensated for by insurance or otherwise if incurred in a
+trade or business, in accordance with 26 U.S.C. § 165(c)(1).
+"(5) Losses sustained during the taxable year and
+not compensated for by insurance or otherwise, if incurred in
+any transaction entered into for profit, though not connected
+with the trade or business in accordance with 26 U.S.C. §
+165(c)(2); but, in the case of a taxpayer other than a
+resident of the state, only as to those transactions within
+the state.
+"(6) Casualty and theft losses sustained during the
+taxable year of property not connected with the conduct of a
+trade or business or a transaction entered into for profit as
+determined in accordance with subsections (c)(3) and (h) of 26
+U.S.C. § 165. In the case of a nonresident, the deduction
+shall be allowed only for the losses arising from property
+located within the State of Alabama and the limitations in 26
+U.S.C. § 165 shall be applied with regard only to the
+taxpayer's Alabama adjusted gross income. No loss shall be
+allowed if at the time of filing the return, the loss has been
+claimed on a federal estate tax return.
+"(7) Losses from debts ascertained to be worthless
+and charged off during the taxable year of ascertainment, if
+sustained in the conduct of the regular trade or business of
+the taxpayer.
+"(8) A reasonable allowance for the exhaustion, wear
+and tear of property from which any income is derived,
+including a reasonable allowance for obsolescence, in
+accordance with 26 U.S.C. §§ 167 and 168, and an allowance for
+the amortization of intangibles determined in accordance with
+26 U.S.C. § 197.
+"(9) In the case of mines, oil, and gas wells, other
+natural deposits and timber, a reasonable allowance for
+depletion and for depreciation of improvements, according to
+the peculiar condition in each case based upon the cost,
+including the cost of development not otherwise deducted, such
+reasonable allowance in all cases to be made under rules and
+regulations to be prescribed by the Department of Revenue;
+and, in the case of leasehold interests, the deduction allowed
+by this section shall be equitably apportioned between the
+lessor and the lessee.
+"(10) Charitable contributions to the extent allowed
+for federal income tax purposes under 26 U.S.C. § 170
+(relating to charitable contributions and gifts).
+"(11) The deduction allowed to the individual for
+federal income tax purposes by 26 U.S.C. § 219 (relating to
+retirement savings).
+"(12) The deduction allowed for federal income tax
+purposes by 26 U.S.C. § 404 (relating to qualified pension,
+profit sharing, stock bonus, and annuity plans).
+"(13) For each individual income taxpayer, medical
+and dental expenses, including amounts paid for medicine and
+drugs and amounts paid for accident and health insurance, as
+determined in accordance with 26 U.S.C. § 213; provided,
+however, that the limitation of the deduction to the excess of
+those expenses over 7.5 percent of adjusted gross income as
+provided in 26 U.S.C. § 213 shall instead be limited to the
+excess of those expenses over 4.0 percent of adjusted gross
+income.
+"(14) For each individual income taxpayer, the
+deduction determined in accordance with 26 U.S.C. § 212 for
+all the ordinary and necessary expenses paid or incurred
+during the taxable year for the production or collection of
+income, or for the management, conservation, or maintenance of
+property held for the production of income, or in connection
+with the determination, collection, or refund of any tax.
+"(15) Any expense not exceeding $1,000 actually
+incurred during the taxable year in constructing on his or her
+property a family radioactive fallout shelter, as approved and
+certified by the State Department of Emergency Management, and
+any amount not exceeding $1,000 which he or she contributed
+during the taxable year toward the construction of a community
+radioactive fallout shelter.
+"(16) A deduction from the taxpayer's adjusted gross
+income for state income tax purposes of the total cost of
+installation for conversion from gas or electricity to wood as
+the primary energy source for heating their individual
+domestic homes for the taxable year during which a conversion
+was completed.
+"(17) Alimony and separate maintenance payments, the
+amount deductible to be the same as the amount deductible for
+federal income tax purposes under 26 U.S.C. § 215 (relating to
+alimony payments).
+"(18) Moving expenses paid or incurred during the
+taxable year as allowed under 26 U.S.C. § 217 (relating to
+moving expenses). However, in applying 26 U.S.C. § 217, the
+term "new principal place of work" means only places of work
+located within the State of Alabama.
+"(19) Any expense not exceeding $35,000 actually
+incurred during the taxable year in removing from his or her
+property any architectural or transportation barriers to
+handicapped persons with nonambulatory and semiambulatory
+disabilities; provided, however, that any improvements
+resulting from that expense shall not be eligible to be
+capitalized for depreciation.
+"(20) Notwithstanding subdivision (1), the deduction
+for expenses of travel, entertainment, and meals shall be
+determined in accordance with 26 U.S.C. § 274.
+"(21) The deduction allowed by 26 U.S.C. § 179
+(relating to expensing certain depreciable property), provided
+that no deduction shall be allowed under subdivision (8) for
+any amount allowed as a deduction under this subdivision.
+"(22) The deduction allowed by 26 U.S.C. § 195
+(relating to amortization of start-up expenditures), but in
+the case of a nonresident, only if the principal place of
+business of the business investigated, created, or acquired is
+located in the State of Alabama.
+"(23) The deduction allowed by subdivision (1), to
+the extent that it consists of unreimbursed employee business
+expenses, and the deduction allowed by subdivision (14) shall
+be allowed only to the extent that the aggregate of the
+deductions exceeds 2 percent of adjusted gross income.
+"(24) The reasonable medical and legal expenses paid
+or incurred by the taxpayer in connection with the adoption of
+a minor. For purposes of this subdivision, medical expenses
+shall include any medical and hospital expenses of the adoptee
+and the adoptee's biological mother which are incident to the
+adoptee's birth and subsequent medical care and which, in the
+case of the adoptee, are paid or incurred before the petition
+is granted.
+"(25) The amount of any aid or assistance, whether
+in the form of property, services, or monies, provided to the
+State Industrial Development Authority pursuant to Section
+41-10-44.8(d) in order to induce an approved company to
+undertake a major project within the state.
+"(26) The amount of premiums paid pursuant to a
+qualifying insurance contract for qualified long-term care
+coverage.
+"(27) The amount deductible by the taxpayer in
+accordance with 26 U.S.C. § 162(h).
+"(28) The amount, up to five thousand dollars
+($5,000) per annum, contributed subsequent to December 31,
+2007, to the Alabama Prepaid Affordable College Tuition
+Program or the Alabama College Education Savings Program as
+defined in Chapter 33C of Title 16. If the taxpayer makes a
+nonqualified withdrawal as defined by Section 529 of the
+Internal Revenue Code (26 U.S.C. 529), the amount of the
+nonqualified withdrawal, plus 10 percent of the amount
+withdrawn, shall be added back to the income of the
+contributing taxpayer in the year the nonqualified withdrawal
+was distributed.
+"(b)(1) In lieu of the deductions allowable to
+individual taxpayers, as provided in subdivision (1) of
+subsection (a) to the extent of unreimbursed employee business
+expenses, and as provided in subdivisions (2), (3), (5), (6),
+(10), (13), (14), (15), (16), (19), (22), and (26) of
+subsection (a), the taxpayer may elect to take the optional
+standard deduction of 20 percent of the adjusted gross income
+or $2,000, whichever is the lesser. Taxpayers filing jointly
+as defined in Section 40-18-27 may elect to take the optional
+standard deduction of 20 percent of the adjusted gross income
+or $4,000, whichever is the lesser.
+"(2) For tax years beginning after December 31,
+2006, the optional standard deduction shall be determined as
+follows:
+"a. The standard deduction for married taxpayers
+filing jointly with adjusted gross income of $20,000 or less
+shall be $7,500. For married taxpayers filing jointly with
+adjusted gross income of greater than $20,000, the standard
+deduction shall be reduced by $175 for each $500 of adjusted
+gross income in excess of $20,000. Notwithstanding the
+preceding sentence, the standard deduction shall not be less
+that than $4,000 for married taxpayers filing jointly.
+"b. The standard deduction for married taxpayers
+filing separate returns with adjusted gross income of $10,000
+or less shall be $3,750. For married taxpayers filing separate
+returns with adjusted gross income of greater than $10,000,
+the standard deduction shall be reduced by $88 for each $250
+of adjusted gross income in excess of $10,000. Notwithstanding
+the preceding sentence, the standard deduction shall not be
+less than $2,000 for married taxpayers filing separate
+returns.
+"c. The standard deduction for head of family
+taxpayers with adjusted gross income of $20,000 or less shall
+be $4,700. For head of family taxpayers with adjusted gross
+income of greater than $20,000, the standard deduction shall
+be reduced by $135 for each $500 of adjusted gross income in
+excess of $20,000. Notwithstanding the preceding sentence, the
+standard deduction shall not be less than $2,000 for head of
+family taxpayers.
+"d. The standard deduction for single taxpayers with
+adjusted gross income of $20,000 or less shall be $2,500. For
+single taxpayers with adjusted gross income of greater than
+$20,000, the standard deduction shall be reduced by $25 for
+each $500 of adjusted gross income in excess of $20,000.
+Notwithstanding the preceding sentence, the standard deduction
+shall not be less than $2,000 for single taxpayers.
+"(3) For tax years beginning after December 31,2017,
+the optional standard deduction shall be determined as
+follows:
+"a. The standard deduction for married taxpayers
+filing jointly with adjusted gross income of less than $23,000
+shall be $7,500. For married taxpayers filing jointly, the
+standard deduction shall be reduced further by $175 for each
+$500 of adjusted gross income in excess of $23,000.
+Notwithstanding the preceding sentence, the standard deduction
+shall not be less than $4,000 for married taxpayers filing
+jointly.
+"b. The standard deduction for married taxpayers
+filing separate returns with adjusted gross income of less
+than $10,500 shall be $3,750. For married taxpayers filing
+separate returns, the standard deduction shall be reduced
+further by $88 for each $250 of adjusted gross income in
+excess of $10,500. Notwithstanding the preceding sentence, the
+standard deduction shall not be less than $2,000 for married
+taxpayers filing separate returns.
+"c. The standard deduction for head of family
+taxpayers with adjusted gross income of less than $23,000
+shall be $4,700. For head of family taxpayers, the standard
+deduction shall be reduced further by $135 for each $500 of
+adjusted gross income in excess of $23,000. Notwithstanding
+the preceding sentence, the standard deduction shall not be
+less than $2,000 for head of family taxpayers.
+"d. The standard deduction for single taxpayers with
+adjusted gross income of less than $23,000 shall be $2,500.
+For single taxpayers, the standard deduction shall be reduced
+further by $25 for each $500 of adjusted gross income in
+excess of $23,000. Notwithstanding the preceding sentence, the
+standard deduction shall not be less than $2,000 for single
+taxpayers.
+"(c) A deduction is allowable for the amount of
+federal income tax paid or accrued within the taxable year. In
+the case of a nonresident taxpayer, the amount of federal
+income tax deductible to Alabama shall be determined by the
+ratio that the amount of adjusted gross income received from
+sources within the State of Alabama bears to the amount of
+adjusted gross income received from sources within and outside
+the State of Alabama.
+"(d) If separate returns are filed by husband and
+wife and one spouse elects to claim the optional standard
+deduction, the other spouse must also claim the optional
+standard deduction, unless, for the tax returns filed for the
+2014 and subsequent tax years, the spouses have lived apart
+for the entire year. In this case, each spouse may claim
+either the optional standard deduction or itemized deductions.
+Neither spouse may claim a deduction for expenses paid by the
+other spouse.
+"(e) In the case of a nonresident individual:
+"(1) The deductions allowed in subdivisions (1),
+(2), (3), (4), (5), (7), (8), (9), (11), (12), (19), (21),
+(23), and (25) of subsection (a) shall be allowed only to the
+extent that they are paid or incurred in carrying on a trade
+or business within the State of Alabama and the deduction
+allowed by Section 40-18-15.2 shall be allowed only to the
+extent it arose from a trade or business carried on in
+Alabama.
+"(2) The deductions allowed by subdivisions (2),
+(3), (5), (8), (9), (14), and (19) of subsection (a) shall be
+allowed only to the extent arising from property located in
+Alabama or transactions producing income that is subject to
+tax in the State of Alabama.
+"(3) The amount of the deductions allowed by
+subdivisions (2), (3), (6), (10), (13), (15), (16), (17),
+(19), (24), and (26) of subsection (a) (and not allowed by
+subdivisions (1) or (2) of this subsection), or by subsection
+(b) if the taxpayer elects the standard deduction, shall be
+limited to the amount determined by multiplying the total of
+such deductions by a fraction, the numerator of which is the
+taxpayer's adjusted gross income determined using the rules
+provided in subdivisions (1) and (2) of this subsection and
+the denominator of which is the taxpayer's adjusted gross
+income determined under Section 40-18-14.2. The deduction
+allowed in subdivision (17) of subsection (a) shall not be
+subtracted in calculating either the numerator or denominator
+in the previous sentence.
+"(f) Nothing in this section shall allow any item to
+be deducted more than once."
+Section 2. All laws or parts of laws which conflict
+with this act are repealed.
+Section 3. This act shall become effective
+immediately following its passage and approval by the
+Governor, or its otherwise becoming law.

@@ -1,0 +1,790 @@
+SB83
+188616-1
+By Senator Dial
+RFD: Health and Human Services
+First Read: 09-JAN-18
+188616-1:n:11/21/2017:KMS/tgw LSA2017-3209
+SYNOPSIS:          This bill would create the Alabama Medical
+Imaging and Radiation Therapy Patient Safety Act.
+This bill would provide for the standardized
+education and demonstration of competency by
+medical imaging and radiation therapy professionals
+under the jurisdiction of a licensing board.
+This bill would establish the Alabama
+Medical Imaging and Radiation Therapy Board to
+provide for the regulation and licensure of limited
+X-ray machine operators, magnetic resonance
+technologists, nuclear medicine technologists,
+radiation therapists, radiographers, and
+radiologist assistants.
+This bill would authorize the board to
+discipline licensees and individuals practicing
+without a license.
+Amendment 621 of the Constitution of Alabama
+of 1901, now appearing as Section 111.05 of the
+Official Recompilation of the Constitution of
+Alabama of 1901, as amended, prohibits a general
+law whose purpose or effect would be to require a
+new or increased expenditure of local funds from
+becoming effective with regard to a local
+governmental entity without enactment by a 2/3 vote
+unless: it comes within one of a number of
+specified exceptions; it is approved by the
+affected entity; or the Legislature appropriates
+funds, or provides a local source of revenue, to
+the entity for the purpose.
+The purpose or effect of this bill would be
+to require a new or increased expenditure of local
+funds within the meaning of the amendment. However,
+the bill does not require approval of a local
+governmental entity or enactment by a 2/3 vote to
+become effective because it comes within one of the
+specified exceptions contained in the amendment.
+A BILL
+TO BE ENTITLED
+AN ACT
+To create the Alabama Medical Imaging and Radiation
+Therapy Patient Safety Act; to provide for the standardized
+education and demonstration of competency by medical imaging
+and radiation therapy professionals; to establish the Alabama
+Medical Imaging and Radiation Therapy Board; to authorize the
+board to provide for the regulation and licensure of limited
+X-ray machine operators, magnetic resonance technologists,
+nuclear medicine technologists, radiation therapists,
+radiographers, and radiologist assistants; to authorize the
+board to discipline medical imaging and radiation therapy
+professionals who perform diagnostic imaging or radiation
+therapy procedures for medical purposes; to provide civil and
+criminal penalties for violations; and in connection therewith
+would have as its purpose or effect the requirement of a new
+or increased expenditure of local funds within the meaning of
+Amendment 621 of the Constitution of Alabama of 1901, now
+appearing as Section 111.05 of the Official Recompilation of
+the Constitution of Alabama of 1901, as amended.
+BE IT ENACTED BY THE LEGISLATURE OF ALABAMA:
+Section 1. This act shall be known and may be cited
+as the Alabama Medical Imaging and Radiation Therapy Patient
+Safety Act.
+Section 2. For the purposes of this act, the
+following terms shall have the following meanings:
+(1) ACCREDITED EDUCATIONAL PROGRAM. An educational
+program in medical imaging or radiation therapy that is
+accredited by an accrediting agency recognized and approved by
+the United States Department of Education or its successor.
+(2) BOARD. The Alabama Medical Imaging and Radiation
+Therapy Board created by this act.
+(3) BONE DENSITOMETRY. The determination of bone
+mass by means of the radiation absorption by a skeleton or
+part of a skeleton.
+(4) BONE DENSITOMETRY TECHNOLOGIST. A person who is
+licensed under this act as a limited X-ray machine operator
+with a permit to perform bone densitometry testing.
+(5) BUSINESS ENTITY. A corporation, partnership,
+association, limited liability company, or limited liability
+partnership.
+(6) CERTIFICATION ORGANIZATION. A national
+certification organization that specializes in the
+certification and registration of medical imaging or radiation
+therapy technical personnel and is accredited by the National
+Commission for Certifying Agencies, American National
+Standards Institute, the International Organization for
+Standardization, or other accreditation organization
+recognized by the board.
+(7) COMPUTED TOMOGRAPHY. The process of producing
+sectional and three-dimensional images using external ionizing
+radiation for diagnostic or therapeutic purposes.
+(8) COMPUTED TOMOGRAPHY TECHNOLOGIST. A person who
+is authorized by the board to perform computed tomography
+procedures as a licensed nuclear medicine technologist,
+licensed radiographer, or licensed radiation therapist.
+(9) FLUOROSCOPY. The exposure of a patient to X-rays
+in a fluoroscopy mode, including positioning the patient and
+fluoroscopy equipment and the selection of exposure factors.
+(10) HYBRID IMAGING. The combination of imaging
+technologies that allows information from different modalities
+to be presented as a single set of images.
+(11) IONIZING RADIATION. Radiation that may consist
+of alpha particles, beta particles, gamma rays, X-rays,
+neutrons, high-speed electrons, high-speed protons, or other
+particles capable of producing ions. Ionizing radiation does
+not include nonionizing radiation, such as high frequency
+sound waves, magnetic fields, microwaves, radio frequency
+signals, or visible, infrared, or ultraviolet light.
+(12) LICENSE. Authorization from the board to use
+radioactive substances or equipment emitting ionizing
+radiation, magnetic fields, or radio frequency signals for
+medical imaging or radiation therapy procedures on humans for
+diagnostic or therapeutic purposes in accordance with this act
+and rules adopted by the board.
+(13) LICENSED PRACTITIONER. A person licensed to
+practice medicine, dentistry, podiatry, chiropractic, or
+osteopathy in this state.
+(14) LICENSEE. A person who is licensed under this
+act to perform medical imaging or radiation therapy procedures
+and operate medical imaging or radiation therapy equipment.
+(15) LIMITED X-RAY MACHINE OPERATOR. A person who is
+licensed under this act to perform, under the supervision of a
+radiographer or licensed practitioner, diagnostic radiography
+or bone densitometry procedures using equipment that emits
+external ionizing radiation resulting in diagnostic
+radiographic images of selected specific parts of human
+anatomy or bone density measurements.
+(16) MAGNETIC RESONANCE IMAGING. The creation or
+acquisition of images generated by using radio frequency
+signals within a magnetic field for diagnostic or therapeutic
+purposes.
+(17) MAGNETIC RESONANCE TECHNOLOGIST. A person who
+is licensed under this act to perform magnetic resonance
+procedures using magnetic fields and radio frequency signals.
+(18) MEDICAL IMAGING. A procedure, device, or
+article that uses ionizing radiation, magnetic fields, or
+radio frequency signals to produce images of the internal
+structures of the human body for diagnostic or therapeutic
+purposes.
+(19) MOBILE IMAGING. Any arrangement in which
+medical imaging services are transported to various sites.
+Mobile imaging does not include movement within a hospital or
+movement to a site where the equipment will be located
+permanently.
+(20) MODALITY. Technologies used in the diagnosis or
+treatment of disease or other medical conditions in human
+beings, including any of the following:
+a. Magnetic resonance imaging and its
+specializations.
+b. Nuclear medicine and its specializations.
+c. Radiation therapy and its specializations.
+d. Radiography and its specializations.
+(21) NUCLEAR MEDICINE TECHNOLOGIST. A person who is
+licensed under this act to perform nuclear medicine and
+molecular imaging procedures.
+(22) NUCLEAR MEDICINE TECHNOLOGY. The performance,
+under the supervision of an authorized user named on a
+radioactive material license, of a variety of the following:
+a. Nuclear medicine and molecular imaging procedures
+using sealed and unsealed radiation sources, ionizing
+radiation, preparation of radio pharmaceuticals, and use of
+adjunctive medicines including contrast media and
+pharmaceuticals associated with nuclear medicine procedures.
+b. Therapeutic procedures using unsealed radioactive
+sources.
+(23) PUBLIC MEMBER. A person who is a resident of
+this state but who is not a licensed practitioner, licensed to
+perform medical imaging or radiation therapy procedures under
+this act, or affiliated with any group or profession that
+provides or regulates health care or in any way hinders the
+public member from representing the interests of the public on
+the board.
+(24) RADIATION THERAPIST. A person who is licensed
+under this act to perform procedures involving administration
+of ionizing radiation to human beings for therapeutic
+purposes.
+(25) RADIATION THERAPY. The application, under the
+supervision of a licensed practitioner or radiologist, of
+x-radiation and the ionizing radiation emitted from particle
+accelerators, cobalt 60 units, and sealed sources of
+radioactive material to human beings for therapeutic purposes.
+(26) RADIOGRAPHER. A person who is licensed under
+this act to perform diagnostic radiographic procedures using
+external ionizing radiation to produce bone density
+measurements or radiographic, fluoroscopic, or digital images.
+(27) RADIOGRAPHY. The process of obtaining an image
+using external ionizing radiation for diagnostic or
+therapeutic purposes.
+(28) RADIOLOGIST. A physician licensed in this state
+who is board-eligible for certification or certified by the
+American Board of Radiology, the American Osteopathic Board of
+Radiology, the British Royal College of Radiology, or the
+Royal College of Physicians and Surgeons of Canada.
+(29) RADIOLOGIST ASSISTANT. A licensed radiographer
+who is additionally licensed under this act to perform a
+variety of activities under the supervision of a radiologist
+in the areas of patient care, patient management, and medical
+imaging procedures.
+(30) SPECIALIZATION. A medical specialty area or
+type of equipment used within a medical imaging or radiation
+therapy modality, which has a corresponding certification from
+a certification organization recognized by the board.
+Section 3. (a) The Alabama Medical Imaging and
+Radiation Therapy Board is created. The members of the board
+shall be appointed by the Governor. The initial members of the
+board shall be appointed within 90 days following the
+effective date of this act and shall serve initial terms as
+provided in subsection (c). The members of the board shall
+include all of the following:
+(1) One licensed limited X-ray machine operator.
+(2) One licensed magnetic resonance technologist.
+(3) One licensed nuclear medicine technologist.
+(4) One licensed practitioner who is a radiologist
+and supervises medical imaging or radiation therapy
+professionals.
+(5) One licensed practitioner who is not a
+radiologist and supervises medical imaging or radiation
+therapy professionals.
+(6) One licensed radiation therapist.
+(7) One licensed radiographer.
+(8) One licensed radiologist assistant.
+(9) One public member.
+(b) In addition to the requirements of subsection
+(a), the qualifications for appointment to the board shall
+include all of the following:
+(1) Each board member shall be a resident of this
+state.
+(2) The public member shall be at least 21 years of
+age.
+(3) Except for the public member and the licensed
+practitioners, each board member shall have at least two years
+of experience performing medical imaging or radiation therapy
+in the modality for which he or she is appointed.
+(4) Except for the public member and the licensed
+practitioners, the Alabama Society of Radiologic Technologists
+shall nominate and submit a list of at least three names to
+the Governor for each appointment.
+(5) At least one of the board members appointed
+shall be a full-time educator in an accredited educational
+program in medical imaging or radiation therapy.
+(c) Three of the initial members shall be appointed
+for a term of one year, three shall be appointed for a term of
+two years, and three shall be appointed for a term of three
+years. Successor members shall serve terms of office of three
+years. An appointment made to fill a vacancy on the board
+shall possess the same qualifications as the original
+appointment and shall serve for the unexpired term. No member
+may serve more than two consecutive terms.
+(d) The initial member appointed to the board who
+performs medical imaging or radiation therapy procedures is
+not required to hold a valid license issued by the board until
+12 months after the first issuance of a license by the board.
+(e) Members of the board shall be paid reasonable
+travel, hotel, and other necessary expenses and may be
+provided per diem compensation at the rate authorized by the
+state while on board business.
+(f) The board shall meet at least annually in
+person, at a time and place of its choosing. The first meeting
+of the board each year shall be for organization only, in
+which the membership shall elect a chair and establish
+responsibilities and rules of procedure. The board may meet
+periodically by telephone or other electronic communication
+method to conduct the business of the board as authorized by
+the laws of this state.
+(g) A member of the board who fails to attend three
+meetings in an 18-month period shall forfeit his or her seat
+on the board unless the chair, upon written request from the
+member, finds that the member should be excused from a meeting
+because of illness or death of a family member.
+(h) A majority of the voting members of the board
+shall constitute a quorum. No action may be taken by the board
+except by affirmative vote of a majority of those present and
+voting.
+Section 4. The board may do all of the following:
+(1) Administer this act.
+(2) Issue interpretations of this act.
+(3) Establish the scope of practice for each license
+or permit issued by the board.
+(4) Adopt rules pursuant to the Alabama
+Administrative Procedure Act as necessary to implement this
+act.
+(5) Establish fees and fines as necessary to
+administer this act.
+(6) Establish requirements for the issuance and
+renewal of a license or permit.
+(7) Devise, contract, or adopt by rule an
+examination for licensure to determine the fitness of an
+applicant to perform medical imaging or radiation therapy.
+(8) Fine a licensee found to be in violation of this
+act and recover costs and fees incurred in the investigation
+of a licensee.
+(9) Obtain restraining orders and injunctions
+prohibiting conduct in violation of this act or any rule
+adopted by the board, conduct investigations, issue subpoenas,
+conduct a hearing, appoint a hearing officer, examine
+witnesses, and administer oaths concerning practices that are
+alleged to violate this act or any rule adopted by the board.
+(10) Maintain a written record of all proceedings
+and make an annual report of all board actions available to
+licensees and the public.
+(11) Develop standards and adopt rules for the
+improvement of the administration of medical imaging or
+radiation therapy procedures in this state. The board, by
+rule, may provide alternative licensing requirements for those
+areas of the state which the board determines lack an adequate
+number of qualified licensees to perform medical imaging or
+radiation therapy procedures on humans for diagnostic or
+therapeutic purposes.
+(12) Establish continuing education requirements for
+license renewal. The board may adopt the continuing education
+and recertification or continuing competency requirements
+established by a medical imaging or radiation therapy
+certification organization for license renewal.
+(13) Establish criteria and standards for
+educational programs offered in this state in medical imaging
+or radiation therapy. The board may adopt the accreditation
+criteria and standards established by an appropriate
+educational accreditation agency.
+(14) Approve medical imaging or radiation therapy
+educational programs that satisfy the criteria and standards
+established by the board.
+(15) Within 90 days after appointment of the initial
+members of the board, notify all practitioners of medical
+imaging and radiation therapy in the state, as identified by
+the American Registry of Radiologic Technologists, the Nuclear
+Medicine Technology Certification Board, or other appropriate
+certification organizations, of the requirements of this act.
+(16) Establish a budget.
+(17) Employ an executive director and any officers
+and employees as determined necessary, and determine their
+duties and fix their compensation in accordance with state
+law.
+Section 5. There is established a separate special
+trust fund in the State Treasury to be known as the Alabama
+Medical Imaging and Radiation Therapy Board Fund. All receipts
+collected by the board pursuant to this act shall be deposited
+in this fund and used only to implement this act. Receipts
+shall be disbursed only by warrant of the Comptroller upon the
+State Treasurer, upon itemized vouchers approved by the chair.
+No funds shall be withdrawn or expended except as budgeted and
+allotted according to Sections 41-4-80 to 41-4-96, inclusive,
+and Sections 41-19-1 to 41-19-12, inclusive, Code of Alabama
+1975, and only in amounts as stipulated in the general
+appropriations bill or other appropriation bills.
+Section 6. (a) Commencing on January 1, 2020, except
+as otherwise provided in this section, only a person licensed
+under this act may perform or offer to perform medical imaging
+or radiation therapy procedures on humans for diagnostic or
+therapeutic purposes or hold himself or herself out as
+licensed to perform medical imaging or radiation therapy
+procedures.
+(b) The board, by rule, shall establish the
+education, certification, continuing education, licensure, and
+scope of practice standards for a person performing limited
+X-ray machine operation, magnetic resonance imaging, nuclear
+medicine technology, radiation therapy, or radiography.
+(c) The board, by rule, shall establish the
+education, certification, continuing education, licensure, and
+scope of practice standards for a person performing
+radiologist assistant duties under the supervision of a
+radiologist.
+(d) No person or business entity shall knowingly
+employ an unlicensed person, who is not otherwise exempt under
+this act, to perform medical imaging or radiation therapy
+procedures on humans for diagnostic or therapeutic purposes.
+(e) Nothing in this act relating to medical imaging
+or radiation therapy shall limit or enlarge the practice of a
+licensed practitioner.
+(f) This act does not apply to any of the following:
+(1) A licensed practitioner performing medical
+imaging or radiation therapy procedures.
+(2) A licensed dental hygienist.
+(3) A licensed dental assistant.
+(4) A resident physician or a student enrolled in
+and attending a school or college of medicine, chiropractic,
+podiatry, medical imaging, or radiation therapy who performs
+authorized medical imaging or radiation therapy procedures on
+humans while under the supervision of a licensed practitioner
+or under the direct supervision of a person holding a license
+under this act in the supervised modality.
+(5) A person who is employed by the United States
+government to perform medical imaging or radiation therapy
+procedures associated with that employment.
+(6) A person performing medical imaging or radiation
+therapy procedures on nonhuman subjects or cadavers.
+Section 7. (a) The board shall establish scope of
+practice standards for each medical imaging and radiation
+therapy modality. The board, by rule, may adopt a scope of
+practice from a certification organization or a professional
+society or association.
+(b) Commencing on October 1, 2024, a licensee who
+performs computed tomography for diagnostic purposes shall be
+certified in computed tomography by the American Registry of
+Radiologic Technologists, the Nuclear Medicine Technologist
+Certification Board, or other certification organization
+recognized by the board.
+(c) A licensed radiographer may perform fluoroscopy.
+(d) A licensed limited X-ray machine operator may
+perform tasks or procedures only within the scope of the
+specific permit issued to him or her by the board for a
+particular area of the human anatomy as provided in this act
+and may not perform procedures involving the administration or
+utilization of contrast media or perform computed tomography,
+fluoroscopy, magnetic resonance imaging, mammography, mobile
+imaging, nuclear medicine, or radiation therapy.
+(e) A licensed nuclear medicine technologist may
+perform computed tomography or magnetic resonance imaging for
+attenuation correction on hybrid imaging equipment.
+(f) A licensed radiation therapist may perform
+computed tomography or magnetic resonance imaging for
+treatment planning purposes.
+(g)(1) A licensee may use radioactive substances or
+equipment emitting ionizing radiation or magnetic resonance
+and perform medical imaging and radiation therapy procedures
+on humans for diagnostic or therapeutic purposes only under
+all of the following conditions:
+a. With a valid prescription of a person authorized
+by this state to prescribe medical imaging or radiation
+therapy procedures.
+b. Under the supervision of a licensed practitioner.
+c. Within the scope of the license as specified in
+this act and pursuant to rules adopted by the board.
+(2) A licensee may only perform medical imaging or
+radiation therapy procedures in a modality for which they are
+licensed.
+(h) A licensee may not make a diagnostic
+interpretation of an image, make a diagnosis, or prescribe a
+medication or therapy.
+Section 8. (a) A limited X-ray machine operator
+license shall be limited in scope through the issuance of
+permits to perform diagnostic X-rays on specific anatomical
+areas of the human body.
+(1) The following permits may be issued:
+a. Chest radiography permit: Radiography of the
+thorax, heart, and lungs.
+b. Extremity radiography permit: Radiography of the
+upper and lower extremities, including the pectoral girdle.
+c. Spine radiography permit: Radiography of the
+vertebral column.
+d. Skull-sinus radiography permit: Radiography of
+the skull and facial structures.
+e. Podiatric permit: Radiography of the foot, ankle,
+and lower leg below the knee.
+f. Bone densitometry permit: A person who is
+certified by the International Society for Clinical
+Densitometry or the American Registry of Radiologic
+Technologists in bone densitometry shall be granted a permit
+to perform bone densitometry testing.
+(2) To be licensed by the board as a limited X-ray
+machine operator, an applicant shall submit the application
+fee and satisfy all of the following requirements:
+a. Be at least 18 years of age at the time of the
+application.
+b. Have a high school diploma or have passed an
+approved equivalency test.
+c. Have satisfactorily completed a course of study
+in limited X-ray machine operation, or its equivalent, as
+determined by the board. The curriculum for the course of
+study shall be no less stringent than the standards approved
+by the Joint Review Committee on Education in Radiologic
+Technology, or other appropriate educational accreditation
+agency recognized by the board.
+d. Pass an examination approved by the board.
+(b)(1) To be licensed by the board as a medical
+imaging therapist or radiation therapist, an applicant shall
+submit the application fee and satisfy all of the following
+requirements:
+a. Be at least 18 years of age at the time of
+application.
+b. Have a high school diploma or have passed an
+approved equivalency test.
+c. Have satisfactorily completed a course of study
+in magnetic resonance, nuclear medicine, radiation therapy, or
+radiography, respectively, or its equivalent, as determined by
+the board. The curriculum for each course of study shall be no
+less stringent than the standards approved by the Joint Review
+Committee on Education in Radiologic Technology, Joint Review
+Committee on Education in Nuclear Medicine Technology,
+regional accrediting agencies, or other appropriate
+educational accreditation agency recognized by certification
+organizations. A person who is certified and registered by a
+certification organization recognized by the board in a
+medical imaging or radiation therapy modality or
+specialization is deemed to have satisfied the requirement of
+this paragraph for successful completion of a course of study
+in the modality.
+d. Pass an applicable modality or specialization
+examination administered by a certification organization
+recognized by the board. A person who is certified and
+registered in a medical imaging or radiation therapy modality
+is deemed to have satisfied the requirements of this paragraph
+for successful completion of an examination.
+(c)(1) To be eligible for licensure by the board as
+a radiologist assistant, an applicant shall satisfy the
+requirements of subsection (b) and all of the following
+requirements:
+a. Is licensed as a radiographer and is certified
+and registered as a radiographer by the American Registry of
+Radiologic Technologists.
+b. Is certified and registered as a radiologist
+assistant by the American Registry of Radiologic Technologists
+or as a radiology practitioner assistant by the Certification
+Board of Radiology Practitioner Assistants.
+c. Submits to the board clinical protocols, signed
+by the supervising radiologist, specifying procedures that are
+performed by the radiologist assistant, levels of radiologist
+supervision, and locations of practice designated by the
+supervising radiologist. Updated protocols shall be submitted
+biannually consistent with license renewal. The radiologist
+assistant scope of practice shall be consistent with the most
+recent version of the Radiologist Assistant Practice Standards
+published by the American Society of Radiologic Technologists.
+(2) A licensed radiologist assistant may not
+interpret images, make diagnoses, or prescribe medications or
+therapies.
+(d) An applicant or licensee shall notify the board
+in writing within 30 days after any of the following:
+(1) A change in his or her name or address.
+(2) Failure to maintain a required certification and
+registration by a certification organization.
+(3) Any legal or disciplinary action against the
+applicant or licensee, other than minor traffic infractions,
+or a proceeding brought for any act or conduct substantially
+similar to any act or conduct that would constitute grounds
+for refusal to issue, refusal to renew, suspension,
+revocation, or other discipline of an applicant or licensee
+under this act by any of the following:
+a. A licensing jurisdiction, whether located within
+the United States or not.
+b. A health care institution.
+c. A professional society or association.
+d. A certification organization.
+e. A government agency.
+f. A law enforcement agency.
+g. A court of law.
+Section 9. A person who is engaged in the practice
+of medical imaging and radiation therapy, other than a
+radiologist assistant, who does not hold certification and
+registration by a certification organization recognized by the
+board on the effective date of this act, may continue to
+practice in the medical imaging or radiation therapy modality
+in which employed if he or she satisfies all of the following:
+(1) Registers with the board on or before January 1,
+2020.
+(2) Does not change employment or the scope of his
+or her practice.
+(3) Completes all continuing education requirements
+for his or her modality or specialization biannually as
+prescribed by the board.
+(4) Practices only under the supervision of a
+licensed practitioner.
+(5) Satisfies all licensure requirements imposed by
+this act and rules adopted by the board and obtains a license
+from the board on or before January 1, 2024.
+Section 10. (a) To satisfy the examination
+requirements of this act for licensure as a magnetic resonance
+technologist, nuclear medicine technologist, radiation
+therapist, radiographer, or radiologist assistant, the board
+shall accept certification and registration by a certification
+organization recognized by the board in the modality of the
+applicant or licensee.
+(b)(1) The board shall use a limited X-ray machine
+operator examination administered by the American Registry of
+Radiologic Technologists for persons applying for licensure as
+a limited X-ray machine operator and permit in chest,
+extremity, skull-sinus, podiatric, or spine radiography. The
+board, by rule, shall determine the examination score that
+constitutes successful completion of the examination.
+(2) If an examination for limited X-ray machine
+operator is administered by the board, the examination shall
+be given at least twice each year at a time and place, and
+under such supervision, as the board, by rule, may require.
+(c) The board may accept certification and
+registration from the American Chiropractic Registry of
+Radiologic Technologists to satisfy the requirement of this
+subsection for successful completion of an examination for a
+person applying for licensure as a limited X-ray machine
+operator and permit in spine radiography.
+(d) The board may accept certification from the
+American Society of Podiatric Medical Assistants to satisfy
+the requirement of this subsection for successful completion
+of an examination for a person applying for licensure as a
+limited X-ray machine operator and permit in podiatric
+radiography.
+(e) The board shall accept magnetic resonance
+certification and registration from the American Registry of
+Radiologic Technologists or other certification organization
+recognized by the board to satisfy the examination requirement
+of this section.
+(f) The board shall accept nuclear medicine
+certification and registration from the American Registry of
+Radiologic Technologists, the Nuclear Medicine Technologist
+Certification Board, or other certification organization
+recognized by the board to satisfy the examination requirement
+of this section.
+(g) The board shall accept radiation therapy
+certification and registration from the American Registry of
+Radiologic Technologists or other certification organization
+recognized by the board to satisfy the examination requirement
+of this section.
+(h) The board shall accept radiography certification
+and registration from the American Registry of Radiologic
+Technologists or other certification organization recognized
+by the board to satisfy the examination requirements of this
+section.
+Section 11. (a) The board shall issue a license to
+an applicant who satisfies the requirements for licensure
+specified in this act and by rules adopted by the board,
+verified by oath or affirmation, and upon payment of any fees
+required by rules adopted by the board. The board may issue a
+license with authorization to perform more than one medical
+imaging or radiation therapy modality if the applicant is
+qualified in each modality.
+(b) The board may issue a temporary license to any
+applicant whose license or license renewal is pending or who
+the board determines will provide medical imaging or radiation
+therapy services to a medically underserved area of the state.
+(1) A temporary license may only be issued if the
+board determines that the issuance does not violate the
+purpose of this act or endanger the public health and safety.
+(2) A temporary license in a modality may be issued
+to an applicant who is preparing for a certification
+examination in the modality.
+(3) A temporary license shall expire when the
+applicant is issued a license, denied a license, or 90
+calendar days after issuance, whichever occurs first. The
+board may extend a temporary license for an additional 90 days
+if the applicant fails to successfully complete the
+certification examination. A temporary license may only be
+extended one time.
+(c) Except for a limited X-ray machine operator
+licensee, a licensee may apply to the board for a temporary
+license in an additional medical imaging or radiation therapy
+modality for the purpose of completing clinical experience
+requirements for an applicable training pathway established by
+a certification organization recognized by the board. A
+temporary license issued pursuant to this subsection shall
+expire three years after issuance.
+(d) A licensee shall display his or her official
+license, or a verified copy of the official license, in each
+place of regular employment.
+Section 12. (a) The board, by rule, shall establish
+standards for medical imaging and radiation therapy
+educational programs. The standards shall be no less stringent
+than the standards approved by the Joint Review Committee on
+Education in Radiologic Technology, the Joint Review Committee
+on Education in Nuclear Medicine Technology, regional
+accrediting agencies, or other appropriate educational
+accreditation agencies recognized by certification
+organizations.
+(b) A program in magnetic resonance technology,
+nuclear medicine technology, radiation therapy, or radiography
+that is approved by the board shall be offered by a medical
+facility or educational institution. The program shall be
+affiliated with one or more hospitals or clinics approved by
+the board to provide the requisite clinical education.
+(c) The board, by rule, may establish a course of
+study for a limited X-ray machine operator.
+Section 13. (a) Unless otherwise provided, a license
+issued under this act shall be renewed every two years. The
+board may adjust the expiration date of a license by up to six
+months to allow coordination with certification and
+registration expiration dates. The license shall be renewed
+upon the payment of a renewal fee, established by rule of the
+board, and verification by oath or affirmation of the licensee
+that he or she is not in violation of this act or any rule
+adopted by the board.
+(b) The board shall notify a licensee at least 60
+days before the expiration of his or her license.
+(c) A licensee is responsible for renewing a license
+before the expiration date. A license that is not renewed
+before the expiration date shall automatically lapse.
+(d) The board, by rule, may provide for the late
+renewal of an automatically lapsed license upon the payment of
+a reinstatement fee. A license that has been expired for more
+than two years may not be reinstated.
+(e) Where applicable, a licensee shall maintain
+certification and registration by the applicable certification
+organization recognized by the board throughout the licensure
+period and may not be required to duplicate continuing
+education hours submitted to the certification organization.
+(f) The board may require a licensee to submit
+evidence of certification and registration by the applicable
+certification organization. The certification and registration
+shall be deemed equivalent to the continuing education
+requirements established by this act or by rule of the board.
+(g) As a condition of license renewal, a fluoroscopy
+operator or limited X-ray machine operator licensee shall
+complete continuing education requirements established by rule
+of the board.
+Section 14. Upon application and payment of proper
+fees, the board may issue a license to a person who has been
+licensed, registered, or certified to perform medical imaging
+or radiation therapy procedures in another jurisdiction if the
+standards of that jurisdiction are substantially equivalent to
+those required by this act and rules of the board.
+Section 15. The board, by rule, shall establish and
+collect all fees authorized by this act and necessary for the
+administration of this act. All fees are nonrefundable.
+Section 16. (a) The board may deny, suspend, revoke,
+or refuse to renew a license or impose probationary conditions
+on a license if the licensee or applicant for a license,
+renewal of a license, or reinstatement of a license has
+engaged in any of the following conduct:
+(1) Obtaining a license by means of fraud,
+misrepresentation, or concealment of material facts.
+(2) Engaging in unprofessional conduct as defined by
+rule of the board.
+(3) Having been convicted of or pleaded guilty or
+nolo contendere to a crime involving moral turpitude or any
+crime that indicates that the licensee or applicant is unfit
+or incompetent to perform medical imaging or radiation therapy
+procedures or that the licensee or applicant has deceived or
+defrauded the public.
+(4) Engaging in any act or practice in violation of
+this act or any rule adopted by the board, or aiding,
+abetting, or assisting any person in such a violation.
+(5) Committing an act of malpractice, gross
+negligence, or incompetence in performing medical imaging or
+radiation therapy procedures.
+(6) Practicing as a person licensed to perform
+medical imaging or radiation therapy procedures without a
+license.
+(7) Engaging in conduct that could result in harm or
+injury to the public.
+(8) Having a license issued under this act revoked
+or suspended or other disciplinary action taken, whether in
+this state or another jurisdiction.
+(9) Having been determined to be unfit or
+incompetent to perform medical imaging or radiation therapy
+procedures due to deliberate or negligent acts or omissions,
+regardless of whether actual injury to a patient is
+established.
+(b) An application for reinstatement of a revoked
+license may not be made to the board until two years after the
+date of revocation.
+Section 17. (a) The board may apply to any
+appropriate court for an order enjoining violations of this
+act or rule adopted by the board, and upon a showing by the
+board that a person has violated or is about to violate this
+act or any rule adopted by the board, the court may grant an
+injunction, restraining order, or take other appropriate
+action.
+(b) Any person who is found guilty of violating this
+act or any rule adopted by the board shall be guilty of a
+Class C misdemeanor. Each violation shall constitute a
+distinct and separate offense.
+Section 18. (a) The board may assess a civil penalty
+not in excess of the amount allowable under state law for the
+violation of this act or any rule adopted by the board. The
+proceeds of any civil penalty assessed under this section
+shall be paid into the Alabama Medical Imaging and Radiation
+Therapy Board Fund established by this act.
+(b) Before imposing and assessing a civil penalty,
+the board shall consider the following factors:
+(1) The nature, gravity, and persistence of the
+violation.
+(2) The appropriateness of the imposition of a civil
+penalty when considered alone or in combination with other
+punishment.
+(3) Whether the violation was willful and malicious.
+(4) Any other factor that would tend to mitigate or
+aggravate the violation if found to exist.
+(c) The board, by rule, shall establish a schedule
+of civil penalties for violation of this act and any rule
+adopted by the board.
+(d) The board may assess the costs of disciplinary
+actions against a person found to be in violation of this act
+or any rule adopted by the board.
+Section 19. The board shall be subject to the
+Alabama Sunset Law, Chapter 20, Title 41, Code of Alabama
+1975, as an enumerated agency as provided in Section 41-20-3,
+Code of Alabama 1975, and shall have a termination date of
+October 1, 2024, and every four years thereafter, unless
+continued pursuant to the Alabama Sunset Law.
+Section 20. Although this bill would have as its
+purpose or effect the requirement of a new or increased
+expenditure of local funds, the bill is excluded from further
+requirements and application under Amendment 621, now
+appearing as Section 111.05 of the Official Recompilation of
+the Constitution of Alabama of 1901, as amended, because the
+bill defines a new crime or amends the definition of an
+existing crime.
+Section 21. This act shall become effective on the
+first day of the third month following its passage and
+approval by the Governor, or its otherwise becoming law.
