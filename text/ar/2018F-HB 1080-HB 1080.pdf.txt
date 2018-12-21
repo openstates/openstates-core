@@ -1,0 +1,557 @@
+                    Stricken language will be deleted and underlined language will be added.
+
+
+
+State of Arkansas                       As Engrossed:       H2/14/18
+91st General Assembly                            A Bill
+Fiscal Session, 2018                                                                   HOUSE BILL 1080
+
+
+By: Joint Budget Committee
+
+
+                                     For An Act To Be Entitled
+                AN ACT TO MAKE AN APPROPRIATION FOR PERSONAL SERVICES
+                AND OPERATING EXPENSES FOR THE DEPARTMENT OF ARKANSAS
+                STATE POLICE FOR THE FISCAL YEAR ENDING JUNE 30,
+                2019; AND FOR OTHER PURPOSES.
+
+
+
+
+                                                  Subtitle
+                          AN ACT FOR THE DEPARTMENT OF ARKANSAS
+                          STATE POLICE APPROPRIATION FOR THE 2018-
+                          2019 FISCAL YEAR.
+
+
+
+
+BE IT ENACTED BY THE GENERAL ASSEMBLY OF THE STATE OF ARKANSAS:
+
+
+        SECTION 1. REGULAR SALARIES.               There is hereby established for the
+Department of Arkansas State Police for the 2018-2019 fiscal year, the
+following maximum number of regular employees.
+
+
+                                                                                     Maximum Annual
+                                                                   Maximum              Salary Rate
+ Item    Class                                                      No. of              Fiscal Year
+  No.    Code       Title                                        Employees                     2018-2019
+  (1)    U064U DIRECTOR STATE POLICE                                         1             GRADE SE04
+  (2)    N057N ASP DEPUTY DIRECTOR/LT. COLONEL                               2             GRADE SE02
+  (3)    D103C ASP CHIEF INFORMATION OFFICER                                 1             GRADE IT11
+  (4)    D012C DATABASE          SPECIALIST                                  1             GRADE IT08
+  (5)    D030C INFORMATION SYSTEMS COORDINATOR                               2             GRADE IT07
+  (6)    D038C SENIOR SOFTWARE SUPPORT ANALYST                               2             GRADE IT06
+  (7)    D052C SOFTWARE SUPPORT ANALYST                                      1             GRADE IT05
+
+
+
+*ALB029*                                                                         01-05-2017 16:11:15 ALB029
+As Engrossed:   H2/14/18                                                HB1080
+
+
+ (8)   D056C SYSTEMS COORDINATION ANALYST             1         GRADE IT05
+ (9)   D071C COMPUTER SUPPORT ANALYST                 9         GRADE IT03
+(10)   G031N ASP GENERAL COUNSEL                      1         GRADE GS14
+(11)   T001C ASP MAJOR                                6         GRADE GS14
+(12)   T003C ASP CAPTAIN                             19         GRADE GS13
+(13)   A011N ASP CHIEF FISCAL OFFICER                 1         GRADE GS13
+(14)   A021C AGENCY CONTROLLER I                      1         GRADE GS12
+(15)   T007C ASP LIEUTENANT                          25         GRADE GS12
+(16)   X003C ASP/CACD CHIEF ADMINISTRATOR             1         GRADE GS12
+(17)   R006C HUMAN RESOURCES ADMINISTRATOR            1         GRADE GS12
+(18)   R013C AGENCY HUMAN RESOURCES MANAGER           1         GRADE GS11
+(19)   C002C ASP HWY. SAFETY OFFICE ADMINISTRATOR     1         GRADE GS11
+(20)   T011C ASP SERGEANT                            64         GRADE GS11
+(21)   T009C ASP SPECIAL OPERATIONS ADMINISTRATOR     1         GRADE GS11
+(22)   X011C ASP/CACD INVESTIGATOR ADMINISTRATOR      1         GRADE GS11
+(23)   A031C ASSISTANT CONTROLLER                     2         GRADE GS11
+(24)   G047C ATTORNEY SPECIALIST                      2         GRADE GS11
+(25)   G156C ASP PROGRAM MANAGER                      3         GRADE GS10
+(26)   P067C ASP PUBLIC INFORMATION OFFICER           1         GRADE GS10
+(27)   T024C ASP/CACD HOTLINE ADMINISTRATOR           1         GRADE GS10
+(28)   A052C ACCOUNTING COORDINATOR                   1         GRADE GS09
+(29)   A050C AGENCY FISCAL MANAGER                    1         GRADE GS09
+(30)   C109C ASP CACD AREA MANAGER                   11         GRADE GS09
+(31)   T022C ASP CORPORAL                           474         GRADE GS09
+(32)   C110C ASP FLEET ADMINISTRATOR                  1         GRADE GS09
+(33)   G109C GRANTS MANAGER                           2         GRADE GS09
+(34)   B021C LICENSED ARCHITECT                       2         GRADE GS09
+(35)   G086C ASP PROGRAM ASST ADMINISTRATOR           1         GRADE GS08
+(36)   X035C ASP/CACD AREA MANAGER                    1         GRADE GS08
+(37)   R014C PERSONNEL MANAGER                        1         GRADE GS08
+(38)   V004C PROCUREMENT MANAGER                      1         GRADE GS08
+(39)   X108C ASP DL/CDL COORDINATOR                   4         GRADE GS07
+(40)   X090C ASP/CACD SENIOR INVESTIGATOR            73         GRADE GS07
+(41)   R024C ASSISTANT PERSONNEL MANAGER              1         GRADE GS07
+(42)   C010C EXECUTIVE ASSISTANT TO THE DIRECTOR      1         GRADE GS07
+(43)   G147C GRANTS COORDINATOR                       3         GRADE GS07
+
+                                      2             01-05-2017 16:11:15 ALB029
+As Engrossed:   H2/14/18                                                HB1080
+
+
+(44)   T044C IA SUPERVISOR                            1         GRADE GS07
+(45)   P013C PUBLIC INFORMATION COORDINATOR           1         GRADE GS07
+(46)   C037C ADMINISTRATIVE ANALYST                   8         GRADE GS06
+(47)   G191C ASP HIGHWAY SAFETY PROGRAM SPEC.         3         GRADE GS06
+(48)   T046C ASP/CACD HOTLINE SUPERVISOR              5         GRADE GS06
+(49)   S020C AVIATION TECHNICIAN                      1         GRADE GS06
+(50)   R022C BENEFITS COORDINATOR                     1         GRADE GS06
+(51)   A074C FISCAL SUPPORT SUPERVISOR                3         GRADE GS06
+(52)   G214C GRANTS SPECIALIST                        1         GRADE GS06
+(53)   R025C HUMAN RESOURCES ANALYST                  1         GRADE GS06
+(54)   S017C MAINTENANCE COORDINATOR                  1         GRADE GS06
+(55)   T061C SENIOR IA                                4         GRADE GS06
+(56)   D074C TELECOMMUNICATIONS SUPERVISOR           12         GRADE GS06
+(57)   B083C ASP AFIS COORDINATOR                     1         GRADE GS05
+(58)   S036C AUTO/DIESEL MECHANIC SUPERVISOR          1         GRADE GS05
+(59)   S024C CONSTRUCTION/MAINTENANCE COORD           4         GRADE GS05
+(60)   A091C FISCAL SUPPORT ANALYST                   5         GRADE GS05
+(61)   R032C HUMAN RESOURCES PROGRAM REP.             1         GRADE GS05
+(62)   C054C LOCAL OFFICE ADMINISTRATIVE SPEC.       22         GRADE GS05
+(63)   A090C PAYROLL SERVICES SPECIALIST              1         GRADE GS05
+(64)   D081C TELECOMMUNICATIONS SPECIALIST           68         GRADE GS05
+(65)   A101C ACCOUNTING TECHNICIAN                    2         GRADE GS04
+(66)   C056C ADMINISTRATIVE SPECIALIST III            6         GRADE GS04
+(67)   X189C ASP AFIS TECHNICIAN                     15         GRADE GS04
+(68)   T102C ASP CACD SR. HOTLINE OPERATOR           37         GRADE GS04
+(69)   X179C ASP COMMERCIAL DRIVER LICENSE EXAMIN    19         GRADE GS04
+(70)   X182C ASP DRIVERS LICENSE EXAMINER            34         GRADE GS04
+(71)   X160C ASP USED MOTOR VEHICLE INSPECTOR         9         GRADE GS04
+(72)   S053C AUTO/DIESEL MECHANIC                     1         GRADE GS04
+(73)   A098C FISCAL SUPPORT SPECIALIST                4         GRADE GS04
+(74)   S044C FOOD PREPARATION MANAGER                 1         GRADE GS04
+(75)   R036C HUMAN RESOURCES SPECIALIST               3         GRADE GS04
+(76)   C043C RECORDS MANAGEMENT ANALYST               9         GRADE GS04
+(77)   C073C ADMINISTRATIVE SPECIALIST II            20         GRADE GS03
+(78)   T082C ASP EXECUTIVE SECURITY GUARD             6         GRADE GS03
+(79)   X161C ASP INVESTIGATOR SPECIALIST              1         GRADE GS03
+
+                                      3             01-05-2017 16:11:15 ALB029
+As Engrossed:      H2/14/18                                                  HB1080
+
+
+ (80)    X188C FIRE MARSHAL INSPECTOR                     3         GRADE GS03
+ (81)    C087C ADMINISTRATIVE SPECIALIST I               12         GRADE GS02
+ (82)    C080C CREDENTIALING ASSISTANT                    1         GRADE GS02
+ (83)    X178C FINGERPRINT TECHNICIAN                     5         GRADE GS02
+         MAX. NO. OF EMPLOYEES                        1,063
+
+
+        SECTION 2. EXTRA HELP.    There is hereby authorized, for the Department
+of Arkansas State Police for the 2018-2019 fiscal year, the following maximum
+number of part-time or temporary employees, to be known as "Extra Help",
+payable from funds appropriated herein for such purposes:      twenty (20)
+temporary or part-time employees, when needed, at rates of pay not to exceed
+those provided in the Uniform Classification and Compensation Act, or its
+successor, or this act for the appropriate classification.
+
+
+        SECTION 3. APPROPRIATION - OPERATIONS.    There is hereby appropriated,
+to the Department of Arkansas State Police, to be payable from the Department
+of Arkansas State Police Fund, for personal services and operating expenses
+of the Department of Arkansas State Police - Operations for the fiscal year
+ending June 30, 2019, the following:
+
+
+ITEM                                                               FISCAL YEAR
+ NO.                                                                 2018-2019
+(01)    REGULAR SALARIES                                           $45,719,902
+(02)    EXTRA HELP                                                     100,000
+(03)    PERSONAL SERVICES MATCHING                                  31,593,325
+(04)    OVERTIME                                                       460,000
+(05)    MAINT. & GEN. OPERATION
+        (A) OPER. EXPENSE                                           12,570,020
+        (B) CONF. & TRAVEL                                             127,000
+        (C) PROF. FEES                                                 217,375
+        (D) CAP. OUTLAY                                              4,570,100
+        (E) DATA PROC.                                                        0
+(06)    COVERT OPERATIONS                                              125,000
+        TOTAL AMOUNT APPROPRIATED                                  $95,865,911
+
+
+        SECTION 4. APPROPRIATION - VARIOUS FEDERAL PROGRAMS.    There is hereby
+
+                                        4              01-05-2017 16:11:15 ALB029
+As Engrossed:     H2/14/18                                                HB1080
+
+
+appropriated, to the Department of Arkansas State Police, to be payable from
+the federal funds as designated by the Chief Fiscal Officer of the State, for
+personal services and operating expenses of the Department of Arkansas State
+Police - Various Federal Programs for the fiscal year ending June 30, 2019,
+the following:
+
+
+ITEM                                                            FISCAL YEAR
+ NO.                                                              2018-2019
+(01)   PERSONAL SERVICES MATCHING                                     $4,646
+(02)   OVERTIME                                                       15,000
+(03)   MAINT. & GEN. OPERATION
+       (A) OPER. EXPENSE                                            156,500
+       (B) CONF. & TRAVEL                                             63,900
+       (C) PROF. FEES                                                       0
+       (D) CAP. OUTLAY                                              135,000
+       (E) DATA PROC.                                                       0
+(04)   LOCAL LAW ENFORCEMENT AGENCY GRANTS                            125,000
+       TOTAL AMOUNT APPROPRIATED                                    $500,046
+
+
+       SECTION 5. APPROPRIATION - AUTOMATED FINGERPRINT IDENTIFICATION SYSTEM
+(AFIS).    There is hereby appropriated, to the Department of Arkansas State
+Police, to be payable from the State Police Equipment Fund, for operating
+expenses of the Department of Arkansas State Police - Automated Fingerprint
+Identification System for the fiscal year ending June 30, 2019, the
+following:
+
+
+ITEM                                                             FISCAL YEAR
+ NO.                                                              2018-2019
+(01)   MAINT. & GEN. OPERATION
+       (A) OPER. EXPENSE                                         $1,163,420
+       (B) CONF. & TRAVEL                                             12,100
+       (C) PROF. FEES                                                       0
+       (D) CAP. OUTLAY                                            1,571,048
+       (E) DATA PROC.                                                       0
+       TOTAL AMOUNT APPROPRIATED                                  $2,746,568
+
+
+
+                                     5               01-05-2017 16:11:15 ALB029
+As Engrossed:     H2/14/18                                               HB1080
+
+
+       SECTION 6. APPROPRIATION - CONFISCATED FUNDS TRANSFER.   There is hereby
+appropriated, to the Department of Arkansas State Police, to be payable from
+the Court Awards Fund, for personal services, maintenance and operations,
+fund transfers, refunds and investments of the Department of Arkansas State
+Police - Confiscated Funds Transfer for the fiscal year ending June 30, 2019,
+the following:
+
+
+ITEM                                                             FISCAL YEAR
+ NO.                                                               2018-2019
+(01)   PERSONAL SERVICES MATCHING                                   $80,000
+(02)   OVERTIME                                                     150,000
+(03)   MAINT. & GEN. OPERATION
+       (A) OPER. EXPENSE                                            800,000
+       (B) CONF. & TRAVEL                                           200,000
+       (C) PROF. FEES                                               100,000
+       (D) CAP. OUTLAY                                             1,000,000
+       (E) DATA PROC.                                                       0
+(04)   REFUNDS-INVESTS-TRANSFER                                      800,000
+       TOTAL AMOUNT APPROPRIATED                                  $3,130,000
+
+
+       SECTION 7. APPROPRIATION - CRIMINAL BACKGROUND CHECKS.   There is hereby
+appropriated, to the Department of Arkansas State Police, to be payable from
+the State Police Equipment Fund, for personal services and operating expenses
+of the Department of Arkansas State Police - Criminal Background Checks for
+the fiscal year ending June 30, 2019, the following:
+
+
+ITEM                                                             FISCAL YEAR
+ NO.                                                               2018-2019
+(01)   REGULAR SALARIES                                            $407,258
+(02)   PERSONAL SERVICES MATCHING                                    246,317
+(03)   OVERTIME                                                        1,000
+(04)   MAINT. & GEN. OPERATION
+       (A) OPER. EXPENSE                                           3,500,640
+       (B) CONF. & TRAVEL                                              8,700
+       (C) PROF. FEES                                                       0
+       (D) CAP. OUTLAY                                              900,000
+
+                                    6               01-05-2017 16:11:15 ALB029
+As Engrossed:     H2/14/18                                                 HB1080
+
+
+       (E) DATA PROC.                                                        0
+       TOTAL AMOUNT APPROPRIATED                                    $5,063,915
+
+
+       SECTION 8. APPROPRIATION - HIGHWAY SAFETY PROGRAM - FEDERAL.     There is
+hereby appropriated, to the Department of Arkansas State Police, to be
+payable from the Department of Arkansas State Police Fund, for personal
+services, operating expenses and Highway Safety Grants of the Department of
+Arkansas State Police - Highway Safety Program - Federal for the fiscal year
+ending June 30, 2019, the following:
+
+
+ITEM                                                            FISCAL YEAR
+ NO.                                                                2018-2019
+(01)   REGULAR SALARIES                                               $545,079
+(02)   EXTRA HELP                                                       76,630
+(03)   PERSONAL SERVICES MATCHING                                     548,501
+(04)   OVERTIME                                                       808,167
+(05)   MAINT. & GEN. OPERATION
+       (A) OPER. EXPENSE                                            4,982,559
+       (B) CONF. & TRAVEL                                             114,858
+       (C) PROF. FEES                                               3,442,750
+       (D) CAP. OUTLAY                                                 382,000
+       (E) DATA PROC.                                                        0
+(06)   HIGHWAY SAFETY GRANTS                                        32,640,834
+       TOTAL AMOUNT APPROPRIATED                                $43,541,378
+
+
+       SECTION 9. APPROPRIATION - HIGHWAY SAFETY PROGRAM - STATE.     There is
+hereby appropriated, to the Department of Arkansas State Police, to be
+payable from the Arkansas Child Passenger Protection Fund, for personal
+services, operating expenses and Highway Safety Program Grants of the
+Department of Arkansas State Police - Highway Safety Program - State for the
+fiscal year ending June 30, 2019, the following:
+
+
+ITEM                                                            FISCAL YEAR
+ NO.                                                                2018-2019
+(01)   REGULAR SALARIES                                               $62,751
+(02)   PERSONAL SERVICES MATCHING                                       29,801
+
+                                    7               01-05-2017 16:11:15 ALB029
+As Engrossed:    H2/14/18                                                  HB1080
+
+
+(03)   MAINT. & GEN. OPERATION
+       (A) OPER. EXPENSE                                               56,350
+       (B) CONF. & TRAVEL                                              18,000
+       (C) PROF. FEES                                                        0
+       (D) CAP. OUTLAY                                                       0
+       (E) DATA PROC.                                                        0
+(04)   HIGHWAY SAFETY PROGRAM GRANTS                                  219,533
+       TOTAL AMOUNT APPROPRIATED                                     $386,435
+
+
+       SECTION 10. APPROPRIATION - HOMELAND SECURITY - FEDERAL.   There is
+hereby appropriated, to the Department of Arkansas State Police, to be
+payable from the federal funds as designated by the Chief Fiscal Officer of
+the State, for operating expenses of the Department of Arkansas State Police
+ - Homeland Security for the fiscal year ending June 30, 2019, the following:
+
+
+ITEM                                                              FISCAL YEAR
+ NO.                                                                2018-2019
+(01)   MAINT. & GEN. OPERATION
+       (A) OPER. EXPENSE                                            $200,000
+       (B) CONF. & TRAVEL                                              90,000
+       (C) PROF. FEES                                                        0
+       (D) CAP. OUTLAY                                               210,000
+       (E) DATA PROC.                                                        0
+       TOTAL AMOUNT APPROPRIATED                                     $500,000
+
+
+       SECTION 11. APPROPRIATION - ARKANSAS WIRELESS INFORMATION NETWORK
+(AWIN) - GENERAL REVENUE.   There is hereby appropriated, to the Department of
+Arkansas State Police, to be payable from the Department of Arkansas State
+Police Fund, for operations, maintenance, equipment and various system
+requirements and expenses of the Department of Arkansas State Police -
+Arkansas Wireless Information Network for the fiscal year ending June 30,
+2019, the following:
+
+
+ITEM                                                              FISCAL YEAR
+ NO.                                                               2018-2019
+(01)   MAINT. & GEN. OPERATION
+
+                                       8            01-05-2017 16:11:15 ALB029
+As Engrossed:     H2/14/18                                                   HB1080
+
+
+       (A) OPER. EXPENSE                                            $7,357,888
+       (B) CONF. & TRAVEL                                                     0
+       (C) PROF. FEES                                                         0
+       (D) CAP. OUTLAY                                                        0
+       (E) DATA PROC.                                                         0
+       TOTAL AMOUNT APPROPRIATED                                     $7,357,888
+
+
+         SECTION 12. APPROPRIATION - ARKANSAS WIRELESS INFORMATION NETWORK
+(AWIN)     - CASH.    There is hereby appropriated, to the Department of Arkansas
+State Police, to be payable from the cash fund deposited in the State
+Treasury as determined by the Chief Fiscal Officer of the State, for
+operating expenses of the Department of Arkansas State Police - Arkansas
+Wireless Information Network - Cash for the fiscal year ending June 30, 2019,
+the following:
+
+
+ITEM                                                               FISCAL YEAR
+ NO.                                                                 2018-2019
+(01)     MAINT. & GEN. OPERATION
+       (A) OPER. EXPENSE                                             $1,000,000
+       (B) CONF. & TRAVEL                                                     0
+       (C) PROF. FEES                                                         0
+       (D) CAP. OUTLAY                                                        0
+       (E) DATA PROC.                                                         0
+       TOTAL AMOUNT APPROPRIATED                                     $1,000,000
+
+
+         SECTION 13. APPROPRIATION - CONCEALED HANDGUN LICENSING PROGRAM.    There
+is hereby appropriated, to the Department of Arkansas State Police, to be
+payable from the cash fund deposited in the State Treasury as determined by
+the Chief Fiscal Officer of the State, for extra help and personal services
+of the Department of Arkansas State Police - Concealed Handgun Licensing
+Program for the fiscal year ending June 30, 2019, the following:
+
+
+ITEM                                                               FISCAL YEAR
+ NO.                                                                 2018-2019
+(01)     EXTRA HELP                                                     $46,550
+(02)     PERSONAL SERVICES MATCHING                                       9,216
+
+                                        9               01-05-2017 16:11:15 ALB029
+As Engrossed:   H2/14/18                                                     HB1080
+
+
+    TOTAL AMOUNT APPROPRIATED                                         $55,766
+
+
+     SECTION 14. SPECIAL LANGUAGE.      NOT TO BE INCORPORATED INTO THE ARKANSAS
+CODE NOR PUBLISHED SEPARATELY AS SPECIAL, LOCAL AND TEMPORARY LAW.
+PROMOTIONAL ITEMS.   The Department of Arkansas State Police is hereby
+authorized to purchase from Maintenance & General Operations Classifications
+in the Operations Appropriation provided by this Act, up to an amount not to
+exceed $2,500 each fiscal year, promotional items, authorized by the Director
+of the Department to meet requirements of the Arkansas State Police Strategic
+Recruitment Plan.
+  The provisions of this section shall be in effect only from July 1, 2017
+2018 through June 30, 2018 2019.
+
+
+     SECTION 15. SPECIAL LANGUAGE.      NOT TO BE INCORPORATED INTO THE ARKANSAS
+CODE NOR PUBLISHED SEPARATELY AS SPECIAL, LOCAL AND TEMPORARY LAW.     OVERTIME.
+The Department of Arkansas State Police is hereby authorized to make overtime
+payments from such funds and appropriations provided for overtime payments to
+those officers or other employees that are currently assigned or may be
+assigned by the Director of the Department of Arkansas State Police to
+Special Law Enforcement Task Forces and other special programs reimbursable
+to Arkansas State Police by federal or local authorities as approved by the
+Director of the Department of Arkansas State Police.     All such overtime
+payments shall be processed through the State Accounting System and shall be
+in addition to the Regular Salaries and benefits accruing to the employee.
+Payment of overtime is the preferred method of implementing the provisions of
+this section.
+  The provisions of this section shall be in effect only from July 1, 2017
+2018 through June 30, 2018 2019.
+
+
+     SECTION 16. SPECIAL LANGUAGE.      NOT TO BE INCORPORATED INTO THE ARKANSAS
+CODE NOR PUBLISHED SEPARATELY AS SPECIAL, LOCAL AND TEMPORARY LAW.     MOTOR
+VEHICLE PURCHASE. The Department of Arkansas State Police is hereby
+authorized to purchase motor vehicles from the appropriations authorized for
+Capital Outlay in the State Police Operations and/or Confiscated Funds
+Transfer appropriation in this Act. Motor vehicles donated to Arkansas State
+Police and confiscated vehicles used for Arkansas State Police operations
+
+                                   10                 01-05-2017 16:11:15 ALB029
+As Engrossed:   H2/14/18                                                    HB1080
+
+
+shall not be included in the maximum number of authorized passenger vehicles.
+   The provisions of this section shall be in effect only from July 1, 2017
+2018 through June 30, 2018 2019.
+
+
+      SECTION 17. SPECIAL LANGUAGE.       NOT TO BE INCORPORATED INTO THE ARKANSAS
+CODE NOR PUBLISHED SEPARATELY AS SPECIAL, LOCAL AND TEMPORARY LAW.       UNIFORM
+EMPLOYEE HEALTH INSURANCE PROGRAM REPORTING.       The Department of Arkansas
+State Police shall report monthly to the Governor, the Chief Fiscal Officer
+of the State and to the Arkansas Legislative Council or Joint Budget
+Committee regarding the activity and condition for the uniformed employee
+health insurance plan.     The report shall include, but not limited to, the
+beginning reserve fund balance, contributions made during the month, claims
+paid, and the ending fund balance of the month. In the event it is determined
+that the cost to adequately maintain the uniform employee health insurance
+plan is not feasible within the existing resources available to the
+department, the 91st General Assembly shall study the feasibility and
+desirability of discontinuing the self-insurance program and instead provide
+medical and hospital insurance to uniform employees through the public
+employees insurance program.
+   The provisions of this section shall be in effect only from July 1, 2017
+2018 through June 30, 2018 2019.
+
+
+      SECTION 18. SPECIAL LANGUAGE.       NOT TO BE INCORPORATED INTO THE ARKANSAS
+CODE NOR PUBLISHED SEPARATELY AS SPECIAL, LOCAL AND TEMPORARY LAW.
+EXTRAORDINARY EXPENSES. The Department of Arkansas State Police is hereby
+authorized to purchase from Maintenance & Operations Classifications in the
+Operations Appropriation provided by this Act, up to an amount not to exceed
+two thousand five hundred dollars ($2,500) each fiscal year, for emergency
+purchases for food, drinks and other essential items during emergency
+operations only when authorized by the Agency Director. During an emergency,
+an ASP employee may be designated and authorized, by the Director, to incur
+expenses for all deployed personnel.
+   The provisions of this section shall be in effect only from July 1, 2017
+2018 through June 30, 2018 2019.
+
+
+      SECTION 19. SPECIAL LANGUAGE.       NOT TO BE INCORPORATED INTO THE ARKANSAS
+
+                                     11                 01-05-2017 16:11:15 ALB029
+As Engrossed:   H2/14/18                                                     HB1080
+
+
+CODE NOR PUBLISHED SEPARATELY AS SPECIAL, LOCAL AND TEMPORARY LAW.        ARKANSAS
+WIRELESS INFORMATION NETWORK.   Once the requirements of Arkansas Code §12-8-
+310 are satisfied, the second two million five hundred thousand dollars
+($2,500,000) deposited into the Department of Arkansas State Police Fund
+generated by Arkansas Code §27-16-801(a) shall be used for the operations,
+maintenance, equipment and various system requirements and expenses of the
+Department of Arkansas State Police - Arkansas Wireless Information Network.
+  The provisions of this section shall be in effect only from July 1, 2017
+2018 through June 30, 2018 2019.
+
+
+     SECTION 20. SPECIAL LANGUAGE.      NOT TO BE INCORPORATED INTO THE ARKANSAS
+CODE NOR PUBLISHED SEPARATELY AS SPECIAL, LOCAL AND TEMPORARY LAW. QUARTERLY
+REPORTING. The Department of Arkansas State Police shall on a quarterly basis
+provide to the Arkansas Legislative Council or Joint Budget Committee a
+report detailing expenditures from the Court Awards Fund of the Confiscated
+Funds Transfer appropriation of this Act. The report shall include the State
+Police division, purpose and amount of expenditures.
+The quarterly reports shall be provided no later than the 15th day of the
+month immediately following the end of each quarter.
+  The provisions of this section shall be in effect only from July 1, 2017
+2018 through June 30, 2018 2019.
+
+
+     SECTION 21. COMPLIANCE WITH OTHER LAWS.      Disbursement of funds
+authorized by this act shall be limited to the appropriation for such agency
+and funds made available by law for the support of such appropriations; and
+the restrictions of the State Procurement Law, the General Accounting and
+Budgetary Procedures Law, the Revenue Stabilization Law, the Regular Salary
+Procedures and Restrictions Act, or their successors, and other fiscal
+control laws of this State, where applicable, and regulations promulgated by
+the Department of Finance and Administration, as authorized by law, shall be
+strictly complied with in disbursement of said funds.
+
+
+     SECTION 22. LEGISLATIVE INTENT.     It is the intent of the General
+Assembly that any funds disbursed under the authority of the appropriations
+contained in this act shall be in compliance with the stated reasons for
+which this act was adopted, as evidenced by the Agency Requests, Executive
+
+                                   12                 01-05-2017 16:11:15 ALB029
+As Engrossed:    H2/14/18                                                   HB1080
+
+
+Recommendations and Legislative Recommendations contained in the budget
+manuals prepared by the Department of Finance and Administration, letters, or
+summarized oral testimony in the official minutes of the Arkansas Legislative
+Council or Joint Budget Committee which relate to its passage and adoption.
+
+
+        SECTION 23. EFFECTIVE DATE. This act is effective on and after July 1,
+2018.
+
+
+
+
+                            /s/Joint Budget Committee
+
+
+
+
+                                    13                  01-05-2017 16:11:15 ALB029
+

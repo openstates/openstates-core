@@ -1,0 +1,499 @@
+     Stricken language would be deleted from and underlined language would be added to present law.
+
+
+
+State of Arkansas                                                                           Call Item 5
+91st General Assembly                         A Bill
+Second Extraordinary Session, 2018                                                   HOUSE BILL 1010
+
+
+By: Representatives M. Gray, Wardlaw, Murdock, Gazaway, F. Allen, Baltz, Barker, Bentley, Blake,
+Boyd, Bragg, Brown, Capp, Cavenaugh, Coleman, Cozart, Dalby, Davis, Deffenbaugh, C. Douglas, D.
+Douglas, Drown, Eaves, Farrer, D. Ferguson, K. Ferguson, Fielding, C. Fite, L. Fite, V. Flowers, Fortner,
+Gates, Gillam, M.J. Gray, Hammer, Henderson, K. Hendren, Hillman, G. Hodges, M. Hodges, Holcomb,
+Hollowell, Jean, Jett, Leding, Lemons, Lowery, Lundstrum, Lynch, Maddox, Magie, A. Mayberry,
+McElroy, McNair, D. Meeks, S. Meeks, Miller, Nicks, Payton, Penzo, Petty, Pilkington, Richey,
+Richmond, Rushing, Rye, Sabin, B. Smith, Sorvillo, Speaks, Sturch, Sullivan, Tosh, Tucker, Vaught,
+Walker, Warren, Watson, D. Whitaker, Wing
+By: Senators Caldwell, Rapert, Bledsoe, Bond, E. Cheatham, L. Chesterfield, A. Clark, Collins-Smith, J.
+Cooper, L. Eads, Elliott, J. English, Flippo, T. Garner, J. Hendren, Hickey, J. Hutchinson, K. Ingram,
+Irvin, B. Johnson, B. King, U. Lindsey, Maloch, Rice, B. Sample, D. Sanders, G. Stubblefield, Teague, D.
+Wallace
+
+
+                                   For An Act To Be Entitled
+                AN ACT TO CREATE THE ARKANSAS PHARMACY BENEFITS
+                MANAGER LICENSURE ACT; TO REGULATE AND LICENSE
+                PHARMACY BENEFITS MANAGERS; TO AUTHORIZE PENALTIES
+                AND FINES REGARDING THE REGULATION AND LICENSURE OF
+                PHARMACY BENEFITS MANAGERS; TO DECLARE AN EMERGENCY;
+                AND FOR OTHER PURPOSES.
+
+
+
+
+                                                Subtitle
+                        TO CREATE THE ARKANSAS PHARMACY BENEFITS
+                        MANAGER LICENSURE ACT; AND TO DECLARE AN
+                        EMERGENCY.
+
+
+
+
+BE IT ENACTED BY THE GENERAL ASSEMBLY OF THE STATE OF ARKANSAS:
+
+
+        SECTION 1.      Arkansas Code Title 23, Chapter 92, is amended to add an
+additional subchapter to read as follows:
+
+
+
+*JMB589*                                                                   03/12/2018 4:26:39 PM JMB589
+                                                                             HB1010
+
+
+       Subchapter 5 — Arkansas Pharmacy Benefits Manager Licensure Act
+
+
+     23-92-501.     Title.
+     This subchapter shall be known and may be cited as the "Arkansas
+Pharmacy Benefits Manager Licensure Act".
+
+
+     23-92-502.     Purpose.
+     (a)    This subchapter establishes the standards and criteria for the
+regulation and licensure of pharmacy benefits managers providing claims
+processing services or other prescription drug or device services for health
+benefit plans.
+     (b)    The purpose of this subchapter is to:
+              (1)   Promote, preserve, and protect the public health, safety,
+and welfare through effective regulation and licensure of pharmacy benefits
+managers;
+              (2)   Provide for powers and duties of the Insurance Commissioner,
+the State Insurance Department, and other state agencies and officers; and
+              (3)   Prescribe penalties and fines for violations of this
+subchapter.
+
+
+     23-92-503.     Definitions.
+     As used in this subchapter:
+              (1)   "Claims processing services" means the administrative
+services performed in connection with the processing and adjudicating of
+claims relating to pharmacist services that include:
+                    (A)   Receiving payments for pharmacist services;
+                    (B)   Making payments to pharmacists or pharmacies for
+pharmacist services; or
+                    (C)   Both subdivisions (1)(A) and (B) of this section;
+              (2)(A)   "Health benefit plan" means any individual, blanket, or
+group plan, policy, or contract for healthcare services issued or delivered
+by a healthcare insurer in this state.
+                    (B)   “Health benefit plan” does not include:
+                           (i)    Accidental-only plans;
+                           (ii)    Specified disease plans;
+                           (iii)   Disability income plans;
+
+                                        2             03/12/2018 4:26:39 PM JMB589
+                                                                             HB1010
+
+
+                         (iv)    Plans that provide only for indemnity for
+hospital confinement;
+                         (v)    Long-term care only plans that do not include
+pharmacy benefits;
+                         (vi)    Other limited-benefit health insurance policies
+or plans; or
+                         (vii)   Health benefit plans provided under Arkansas
+Constitution, Article 5, § 32, the Workers' Compensation Law, § 11-9-101 et
+seq., and the Public Employee Workers' Compensation Act, § 21-5-601 et seq.;
+            (3)   "Healthcare insurer" means an insurance company, a health
+maintenance organization, or a hospital and medical service corporation;
+            (4)   "Other prescription drug or device services" means services
+other than claims processing services, provided directly or indirectly,
+whether in connection with or separate from claims processing services,
+including without limitation:
+                  (A)   Negotiating rebates, discounts, or other financial
+incentives and arrangements with drug companies;
+                  (B)   Disbursing or distributing rebates;
+                  (C)   Managing or participating in incentive programs or
+arrangements for pharmacist services;
+                  (D)   Negotiating or entering into contractual arrangements
+with pharmacists or pharmacies, or both;
+                  (E)   Developing formularies;
+                  (F)   Designing prescription benefit programs; or
+                  (G)   Advertising or promoting services;
+            (5)   "Pharmacist" means an individual licensed as a pharmacist by
+the Arkansas State Board of Pharmacy;
+            (6)   "Pharmacist services" means products, goods, and services,
+or any combination of products, goods, and services, provided as a part of
+the practice of pharmacy as defined in § 17-92-101;
+            (7)   "Pharmacy" means the same as defined in § 17-92-101;
+            (8)(A)   "Pharmacy benefits manager" means a person, business, or
+entity, including a wholly or partially owned or controlled subsidiary of a
+pharmacy benefits manager, that provides claims processing services or other
+prescription drug or device services, or both, for health benefit plans.
+                  (B)   "Pharmacy benefits manager" does not include any:
+
+                                      3             03/12/2018 4:26:39 PM JMB589
+                                                                            HB1010
+
+
+                         (i)    Healthcare facility licensed in Arkansas;
+                         (ii)    Healthcare professional licensed in Arkansas;
+                         (iii)   Consultant who only provides advice as to the
+selection or performance of a pharmacy benefits manager; or
+                         (iv)    Entity that provides claims processing services
+or other prescription drug or device services for the fee-for-service
+Arkansas Medicaid Program only in that capacity;
+           (9)    "Pharmacy benefits manager affiliate" means a pharmacy or
+pharmacist that directly or indirectly, through one (1) or more
+intermediaries, owns or controls, is owned or controlled by, or is under
+common ownership or control with a pharmacy benefits manager;
+           (10)   “Pharmacy benefits manager network” means a network of
+pharmacists or pharmacies that are offered by an agreement or insurance
+contract to provide pharmacist services for health benefit plans;
+           (11)   "Pharmacy benefits plan or program" means a plan or program
+that pays for, reimburses, covers the cost of, or otherwise provides for
+pharmacist services under a health benefit plan;
+           (12)   "Pharmacy services administrative organization" means an
+organization that helps community pharmacies and pharmacy benefits managers
+or third party payers achieve administrative efficiencies, including
+contracting and payment efficiencies;
+           (13)(A)     "Rebate" means a discount or other price concession
+based on utilization of a prescription drug that is paid by a manufacturer or
+third party, directly or indirectly, to a pharmacy benefits manager, pharmacy
+services administrative organization, or pharmacy after a claim has been
+processed and paid at a pharmacy.
+                  (B)   "Rebate" includes without limitation incentives,
+disbursements, and reasonable estimates of a volume-based discount; and
+           (14)   "Third party" means a person, business, or entity other
+than a pharmacy benefits manager that is not an enrollee or insured in a
+health benefit plan.
+
+
+     23-92-504.   License to do business — Annual statement — Assessment.
+     (a)(1)   A person or organization shall not establish or operate as a
+pharmacy benefits manager in Arkansas for health benefit plans without
+obtaining a license from the Insurance Commissioner under this subchapter.
+
+                                      4             03/12/2018 4:26:39 PM JMB589
+                                                                           HB1010
+
+
+           (2)    The commissioner shall prescribe the application for a
+license to operate in Arkansas as a pharmacy benefits manager and may charge
+application fees and renewal fees as established by rule.
+     (b)(1)   The commissioner shall issue rules establishing the licensing,
+fees, application, financial standards, and reporting requirements of
+pharmacy benefits managers under this subchapter.
+           (2)(A)   When adopting the initial rules to implement this
+subchapter, the final rule shall be filed with the Secretary of State for
+adoption under § 25-15-204(f):
+                         (i)    On or before September 1, 2018; or
+                         (ii)   If approval under § 10-3-309 has not occurred
+by September 1, 2018, as soon as practicable after approval under § 10-3-309.
+                  (B)   The State Insurance Department shall file the proposed
+rule with the Legislative Council under § 10-3-309(c) sufficiently in advance
+of September 1, 2018, so that the Legislative Council may consider the rule
+for approval before September 1, 2018.
+
+
+     23-92-505.   Pharmacy benefits manager network adequacy.
+     A pharmacy benefits manager shall provide:
+           (1)(A)   A reasonably adequate and accessible pharmacy benefits
+manager network for the provision of prescription drugs for a health benefit
+plan that shall provide for convenient patient access to pharmacies within a
+reasonable distance from a patient's residence.
+                  (B)   A mail-order pharmacy shall not be included in the
+calculations determining pharmacy benefits manager network adequacy; and
+           (2)    A pharmacy benefits manager network adequacy report
+describing the pharmacy benefits manager network and the pharmacy benefits
+manager network's accessibility in this state in the time and manner required
+by rule issued by the State Insurance Department.
+
+
+     23-92-506.   Compensation — Prohibited practices.
+     (a)(1)   The Insurance Commissioner may review and approve the
+compensation program of a pharmacy benefits manager with a health benefit
+plan to ensure that the reimbursement for pharmacist services paid to a
+pharmacist or pharmacy is fair and reasonable to provide an adequate pharmacy
+benefits manager network for a health benefit plan under the standards issued
+
+                                      5             03/12/2018 4:26:39 PM JMB589
+                                                                          HB1010
+
+
+by rule of the State Insurance Department.
+            (2)   All information and data acquired during the review under
+subdivision (a)(1) of this section is:
+                  (A)   Considered proprietary and confidential under § 23-61-
+107(a)(4) and § 23-61-207; and
+                  (B)   Not subject to the Freedom of Information Act of 1967,
+§ 25-19-101 et seq.
+     (b)   A pharmacy benefits manager or representative of a pharmacy
+benefits manager shall not:
+            (1)   Cause or knowingly permit the use of any advertisement,
+promotion, solicitation, representation, proposal, or offer that is untrue,
+deceptive, or misleading;
+            (2)   Unless reviewed and approved by the commissioner, charge a
+pharmacist or pharmacy a fee related to the adjudication of a claim,
+including without limitation a fee for:
+                  (A)   The receipt and processing of a pharmacy claim;
+                  (B)   The development or management of claims processing
+services in a pharmacy benefits manager network; or
+                  (C)   Participation in a pharmacy benefits manager network;
+            (3)   Unless reviewed and approved by the commissioner in
+coordination with the Arkansas State Board of Pharmacy, require pharmacy
+accreditation standards or certification requirements inconsistent with, more
+stringent than, or in addition to requirements of the board;
+            (4)(A)    Reimburse a pharmacy or pharmacist in the state an amount
+less than the amount that the pharmacy benefits manager reimburses a pharmacy
+benefits manager affiliate for providing the same pharmacist services.
+                  (B)   The amount shall be calculated on a per-unit basis
+using the same generic product identifier or generic code number; or
+            (5)   Do any combination of the actions listed in subdivisions
+(b)(1)-(4) of this section.
+     (c)   A claim for pharmacist services shall not be retroactively denied
+or reduced after adjudication of the claim, unless:
+            (1)   The original claim was submitted fraudulently;
+            (2)   The original claim payment was incorrect because the
+pharmacy or pharmacist had already been paid for the pharmacist services; or
+            (3)   The pharmacist services were not properly rendered by the
+
+                                     6             03/12/2018 4:26:39 PM JMB589
+                                                                           HB1010
+
+
+pharmacy or pharmacist.
+        (d)   Termination of a pharmacy or pharmacist from a pharmacy benefits
+manager network shall not release the pharmacy benefits manager from the
+obligation to make any payment due to the pharmacy or pharmacist for
+pharmacist services properly rendered.
+        (e)   The commissioner may issue a rule establishing prohibited
+practices of pharmacy benefits managers providing claims processing services
+or other prescription drug or device services for health benefit plans.
+
+
+        23-92-507.   Gag clauses prohibited.
+        (a)   The prohibitions under § 23-99-407 apply to participation
+contracts between pharmacy benefits managers and pharmacists or pharmacies
+providing prescription drug coverage for health benefit plans.
+        (b)   A pharmacy or pharmacist may provide to an insured information
+regarding the insured's total cost for pharmacist services for a prescription
+drug.
+        (c)   A pharmacy or pharmacist shall not be proscribed by a pharmacy
+benefits manager from discussing information regarding the total cost for
+pharmacist services for a prescription drug or from selling a more affordable
+alternative to the insured if a more affordable alternative is available.
+        (d)   A pharmacy benefits manager contract with a participating
+pharmacist or pharmacy shall not prohibit, restrict, or limit disclosure of
+information to the Insurance Commissioner, law enforcement, or state and
+federal governmental officials investigating or examining a complaint or
+conducting a review of a pharmacy benefits manager's compliance with the
+requirements under this subchapter.
+
+
+        23-92-508.   Enforcement.
+        (a)   The Insurance Commissioner shall enforce this subchapter.
+        (b)(1)   The commissioner may examine or audit the books and records of
+a pharmacy benefits manager providing claims processing services or other
+prescription drug or device services for a health benefit plan to determine
+if the pharmacy benefits manager is in compliance with this subchapter.
+               (2)   The information or data acquired during an examination under
+subdivision (b)(1) of this section is:
+                     (A)   Considered proprietary and confidential under § 23-61-
+
+                                       7             03/12/2018 4:26:39 PM JMB589
+                                                                           HB1010
+
+
+107(a)(4) and § 23-61-207; and
+                  (B)    Not subject to the Freedom of Information Act of 1967,
+§ 25-19-101 et seq.
+
+
+     23-92-509.   Rules.
+     (a)(1)   The Insurance Commissioner may adopt rules regulating pharmacy
+benefits managers that are not inconsistent with this subchapter.
+            (2)   Rules that the commissioner may adopt under this subchapter
+include without limitation rules relating to:
+                  (A)    Licensing;
+                  (B)    Application fees;
+                  (C)    Financial solvency requirements;
+                  (D)    Pharmacy benefits manager network adequacy;
+                  (E)    Prohibited market conduct practices;
+                  (F)    Data reporting requirements under § 4-88-803;
+                  (G)    Compliance and enforcement requirements under § 17-92-
+507 concerning Maximum Allowable Cost Lists;
+                  (H)    Rebates;
+                  (I)    Compensation; and
+                  (J)    Lists of health benefit plans administered by a
+pharmacy benefits manager in this state.
+     (b)   Rules adopted under this subchapter shall set penalties or fines,
+including without limitation monetary fines, suspension of licensure, and
+revocation of licensure for violations of this subchapter and rules adopted
+under this subchapter.
+     (c)(1)   In addition to the filing requirements under the Arkansas
+Administrative Procedure Act, § 25-15-201 et seq., and under § 10-3-309, the
+State Insurance Department shall file a proposed rule or a proposed amendment
+to an existing rule under this subchapter with the Senate Committee on
+Insurance and Commerce and the House Committee on Insurance and Commerce at
+least thirty (30) days before the expiration of the period for public comment
+under the Arkansas Administrative Procedure Act, § 25-15-201 et seq.
+            (2)   The Senate Committee on Insurance and Commerce and the House
+Committee on Insurance and Commerce shall review the proposed rule or
+proposed amendment to an existing rule within forty-five (45) days of the
+date the proposed rule or proposed amendment to an existing rule is filed
+
+                                      8            03/12/2018 4:26:39 PM JMB589
+                                                                              HB1010
+
+
+with the Senate Committee on Insurance and Commerce and the House Committee
+on Insurance and Commerce.
+             (3)(A)   If the department adopts an emergency rule under this
+subchapter, in addition to the filing requirements under the Arkansas
+Administrative Procedure Act, § 25-15-201 et seq., and under § 10-3-309, the
+department shall notify the following individuals of the emergency rule and
+provide each individual with a copy of the rule within five (5) business days
+of adopting the rule:
+                           (i)    The Speaker of the House of Representatives;
+                           (ii)    The President Pro Tempore of the Senate;
+                           (iii)   The Chair of the Senate Committee on Insurance
+and Commerce; and
+                           (iv)    The Chair of the House Committee on Insurance
+and Commerce.
+                    (B)   The Senate Committee on Insurance and Commerce and the
+House Committee on Insurance and Commerce shall review the emergency rule
+within forty-five (45) days of the date that the emergency rule is provided
+to the Chair of the Senate Committee on Insurance and Commerce and the Chair
+of the House Committee on Insurance and Commerce.
+
+
+      23-92-510.    Applicability.
+      (a)   This subchapter is applicable to a contract or health benefit plan
+issued, renewed, recredentialed, amended, or extended on and after September
+1, 2018.
+      (b)   A contract existing on the date of licensure of the pharmacy
+benefits manager shall comply with the requirements of this subchapter as a
+condition of licensure for the pharmacy benefits manager.
+
+
+      SECTION 2.    Arkansas Code § 4-88-803, concerning required practices
+under the Fair Disclosure of State Funded Payments for Pharmacists' Services
+Act, is amended to add a new subsection to read as follows:
+      (d)(1)    Unless otherwise required more frequently by the Insurance
+Commissioner, a pharmacy benefits manager shall file an annual report with
+the commissioner providing the information required under subsection (a) of
+this section pursuant to the timing, format, and requirements issued by rule
+of the State Insurance Department.
+
+                                        9             03/12/2018 4:26:39 PM JMB589
+                                                                           HB1010
+
+
+             (2)   The annual report is:
+                   (A)   Considered proprietary and confidential under § 23-61-
+107(a)(4) and § 23-61-207; and
+                   (B)   Not subject to the Freedom of Information Act of 1967,
+§ 25-19-101 et seq.
+             (3)   This section is not subject to § 4-88-113(f)(1)(B).
+
+
+     SECTION 3.    Arkansas Code § 17-92-507(g), concerning the Maximum
+Allowable Cost Lists, is amended to read as follows:
+     (g)(1)   A violation of this section is a deceptive and unconscionable
+trade practice under the Deceptive Trade Practices Act, § 4-88-101 et seq.,
+and a prohibited practice under the Arkansas Pharmacy Benefits Manager
+Licensure Act, § 23-92-501 et seq., and the Trade Practices Act, § 23-66-201
+et seq.
+             (2)   This section is not subject to § 4-88-113(f)(1)(B).
+
+
+     SECTION 4.    Effective on and after September 1, 2018, Arkansas Code §
+23-92-201 is amended to read as follows:
+     23-92-201.    Definitions Definition.
+     As used in this subchapter:, "third-party administrator":
+             (1)   “Pharmacy benefits manager” means an entity that administers
+or manages a pharmacy benefits plan or program;
+             (2)   “Pharmacy benefits plan or program” means a plan or program
+that pays for, reimburses, covers the cost of, or otherwise provides
+pharmacist services to individuals who reside in or are employed in this
+state; and
+             (3)(A)(1)   “Third-party administrator” means Means a person,
+firm, or partnership that collects or charges premiums from or adjusts or
+settles claims on residents of this state in connection with life or accident
+and health coverage provided by a self-insured plan or a multiple employer
+trust or multiple employer welfare arrangement.;
+                   (B)(2)   “Third-party administrator” includes: Includes
+                          (i)    An an administrative-services-only contract
+offered by insurers and health maintenance organizations; and
+                          (ii)   A pharmacy benefits manager that administers or
+manages a pharmacy benefits plan or program that furnishes, covers the cost
+
+                                      10             03/12/2018 4:26:39 PM JMB589
+                                                                             HB1010
+
+
+of, or otherwise provides for the practice of pharmacy as defined in § 17-92-
+101 under any life and accident and health coverage provided in this state by
+a self-insured plan, a multiple-employer trust, or a multiple-employer-
+welfare arrangement.
+                  (C)(3)   “Third-party administrator” does Does not include:
+                       (i)(A)    An employer, for its employees or for the
+employees of a subsidiary or affiliated corporation of the employer;
+                       (ii)(B)     A union, for its members;
+                       (iii)(C)    An insurer or health maintenance
+organization licensed to do business in this state;
+                       (iv)(D)     A creditor, for its debtors, regarding
+insurance covering a debt between the creditor and its debtors;
+                       (v)(E)    A credit-card-issuing company that advances
+for, or collects premiums or charges from, its credit card holders, as long
+as that company does not adjust or settle claims;
+                       (vi)(F)     An individual who adjusts or settles claims
+in the normal course of his or her practice or employment and who does not
+collect charges or premiums in connection with life or accident and health
+coverage; or
+                       (vii)(G)    An agency licensed by the Insurance
+Commissioner and performing duties pursuant to an agency contract with an
+insurer authorized to do business in this state.
+
+
+     SECTION 5.   DO NOT CODIFY.    SEVERABILITY CLAUSE.    If any provision of
+this act or the application of this act to any person or circumstance is held
+invalid, the invalidity shall not affect other provisions or applications of
+this act which can be given effect without the invalid provision or
+application, and to this end, the provisions of this act are declared
+severable.
+
+
+     SECTION 6.   EFFECTIVE DATE CLAUSE.
+     SECTION 4 of this act is effective on and after September 1, 2018.
+
+
+     SECTION 7.   EMERGENCY CLAUSE.      It is found and determined by the
+General Assembly of the State of Arkansas that the unregulated behavior of
+pharmacy benefits managers is threatening the sustainability of pharmacies in
+
+                                    11               03/12/2018 4:26:39 PM JMB589
+                                                                         HB1010
+
+
+Arkansas; that regulation of pharmacy benefits managers by the State
+Insurance Department will stabilize the pharmacy industry in this state; and
+that Section 1, 2, 3, and 5 of this act are immediately necessary to ensure
+that Arkansas residents have continued access to pharmacy services across the
+state. Therefore, an emergency is declared to exist, and Sections 1, 2, 3,
+and 5 of this act, being immediately necessary for the preservation of the
+public peace, health, and safety, shall become effective on:
+           (1)   The date of the act's approval by the Governor;
+           (2)   If the bill is neither approved nor vetoed by the Governor,
+the expiration of the period of time during which the Governor may veto the
+bill; or
+           (3)   If the bill is vetoed by the Governor and the veto is
+overridden, the date the last house overrides the veto.
+
+
+
+
+                                  12             03/12/2018 4:26:39 PM JMB589
+

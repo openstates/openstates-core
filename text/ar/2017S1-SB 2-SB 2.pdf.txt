@@ -1,0 +1,496 @@
+State of Arkansas                                                                        Call Item 3
+91st General Assembly                        A Bill
+First Extraordinary Session, 2017                                                    SENATE BILL 2
+By: Senator J. Dismang
+By: Representative Gillam
+For An Act To Be Entitled
+AN ACT TO MAKE TECHNICAL CORRECTIONS TO ARKANSAS
+CONSTITUTION, AMENDMENT 98, ALSO KNOWN AS THE
+"ARKANSAS MEDICAL MARIJUANA AMENDMENT OF 2016" TO
+INTEGRATE AND INCORPORATE THE PROVISIONS OF ACTS 4,
+438, 479, 593, 639, 641, 670, 740, 948, 1023, 1024,
+1098, AND 1100 OF 2017 INTO ARKANSAS CONSTITUTION,
+AMENDMENT 98; TO DECLARE AN EMERGENCY; AND FOR OTHER
+PURPOSES.
+Subtitle
+TO INTEGRATE AND INCORPORATE THE
+PROVISIONS OF ACTS OF 2017 INTO ARKANSAS
+CONSTITUTION, AMENDMENT 98, ALSO KNOWN AS
+THE "ARKANSAS MEDICAL MARIJUANA AMENDMENT
+OF 2016"; AND TO DECLARE AN EMERGENCY.
+BE IT ENACTED BY THE GENERAL ASSEMBLY OF THE STATE OF ARKANSAS:
+SECTION 1.        DO NOT CODIFY.      LEGISLATIVE INTENT.
+(a)    The General Assembly finds that:
+(1)    Arkansas Constitution, Amendment 98, § 23, empowers the
+General Assembly to amend certain sections of Arkansas Constitution,
+Amendment 98, so long as the amendments are germane to the section and
+consistent with its policy and purposes;
+(2)    Twenty-three (23) separate acts of the regular session of
+the Ninety-First General Assembly, Acts 2017, Nos. 4, 5, 438, 479, 544, 545,
+587, 593, 594, 638, 639, 640, 641, 642, 670, 740, 948, 1022, 1023, 1024,
+1098, 1099, and 1100, amended Arkansas Constitution, Amendment 98;
+(3)(A)     Twenty (20) of these twenty-three (23) acts were enacted
+independently of the other acts and do not reflect the language added by any
+of the other amendatory acts.
+(B)   However:
+(i)     Acts 2017, No. 438, § 1, was enacted as amended
+by Acts 2017, No. 5;
+(ii)    Acts 2017, No. 593, § 1, was enacted as amended
+by Acts 2017, No. 5; and
+(iii)    Acts 2017, No. 640, § 1, was enacted as
+amended by Acts 2017, No. 4;
+(4)   Thirteen (13) of the twenty-three (23) acts, Acts 2017, Nos.
+4, 438, 479, 593, 639, 641, 670, 740, 948, 1023, 1024, 1098, and 1100, have
+conflicting provisions such as the same numbering for new subsections or
+subdivisions within the same section or subsection;
+(5)(A)     Acts 2017, No. 1023, §§ 2 and 3, imposed additional
+requirements on both the Department of Health and the Alcoholic Beverage
+Control Division of the Department of Finance and Administration regarding
+labeling and testing of usable marijuana to ensure that food or drink that
+has been combined with usable marijuana does not exceed ten milligrams (10
+mg) of active tetrahydrocannabinol per portion.
+(B)   However, after further review, the additional
+requirements imposed on the Department of Health within Acts 2017, No. 1023,
+§ 2, are unnecessary to achieve this purpose as the Alcoholic Beverage
+Control Division of the Department of Finance and Administration must also
+meet these requirements for dispensaries and cultivation facilities;
+(6)   Arkansas Code § 1-2-207, which addresses codification upon
+the passage of multiple acts amending the same subject matter, only
+references amendments to the Arkansas Code and uncodified acts and does not
+address the treatment of acts amending the Arkansas Constitution;
+(7)   The applicability of Arkansas Code § 1-2-303(d)(1),
+concerning nonsubstantive technical corrections to provisions of the Arkansas
+Code and acts of the General Assembly made under the direction of the
+Arkansas Code Revision Commission, is equally uncertain;
+(8)   It is unclear whether the Arkansas Code Revision Commission
+05-01-2017 09:02:35 JMB531
+may exercise its authority under Arkansas Code §§ 1-2-207 and 1-2-303 and
+make the customary technical corrections, such as changes to numbering and
+formatting, that are made by the Arkansas Code Revision Commission to acts of
+the General Assembly that amend the same section of law; and
+(9)   Without technical corrections to the conflicting language in
+thirteen (13) of the twenty-three (23) amendatory acts of the 2017 regular
+session, Arkansas Constitution, Amendment 98, will not read coherently and
+will be difficult to interpret, utilize, and cite.
+(b)    The intent of this act is to:
+(1)   Supersede certain provisions of Acts 2017, Nos. 4, 438, 479,
+593, 639, 641, 670, 740, 948, 1023, 1024, 1098, and 1100, that conflict with
+or substantively duplicate the provisions of this act;
+(2)   Repeal Acts 2017, No. 1023, § 2, to ensure that the language
+incorporated within Arkansas Constitution, Amendment 98, is without
+conflicts; and
+(3)   Enact certain provisions of Acts 2017, Nos. 4, 438, 479,
+593, 639, 641, 670, 740, 948, 1023, 1024, 1098, and 1100, in a format that
+integrates and incorporates certain provisions of the thirteen (13) acts by
+restating certain provisions in a coherent, cohesive, and comprehensive
+manner.
+(c)    This act does not modify or supersede:
+(1)   Any emergency clause, effective date clause, or
+retroactivity clause, of Acts 2017, Nos. 4, 438, 479, 593, 639, 641, 670,
+740, 948, 1023, 1024, 1098, and 1100;
+(2)   Sections within Acts 2017, Nos. 4, 438, 479, 593, 639, 641,
+670, 740, 948, 1023, 1024, 1098, and 1100, that are not within this act; or
+(3)   Acts 2017, Nos. 5, 544, 545, 587, 594, 638, 640, 642, 1022,
+and 1099.
+SECTION 2.    Under the authority granted by § 23 of Arkansas
+Constitution, Amendment 98, also known as the "Arkansas Medical Marijuana
+Amendment of 2016", Arkansas Constitution, Amendment 98, § 2(18) and (19),
+concerning the definition of "written certification" within the Arkansas
+Medical Marijuana Amendment of 2016, are amended to reflect the changes
+enacted by Acts 2017, Nos. 438, as amended by Acts 2017, No. 5, and 593, as
+amended by Acts 2017, No. 5, to read as follows:
+05-01-2017 09:02:35 JMB531
+(18)   "Visiting qualifying patient" means a patient with a
+qualifying medical condition who is not a resident of Arkansas or who has
+been a resident of Arkansas for less than thirty (30) days and who is in
+actual possession of a registry identification card or its equivalent that is
+issued under the laws of another state, district, territory, commonwealth, or
+insular possession of the United States and pertains to a qualifying medical
+condition under this section; and
+(19)(A)      "Written certification" means a document signed by a
+physician stating that in the physician's professional opinion, after having
+completed an assessment of the qualifying patient's medical history and
+current medical condition made in the course of a physician-patient
+relationship, the qualifying patient has a qualifying medical condition.
+(B)    A written certification shall specify the qualifying
+patient's qualifying medical condition, which also shall be noted in the
+physician's records.
+(C)    A physician shall not issue a written certificate to a
+patient based on an assessment performed through telemedicine.
+(D)    A written certification is not a medical prescription;
+SECTION 3.    Acts 2017, No. 1023, § 2, is repealed.
+SECTION 2.    Pursuant to § 23 of Arkansas Constitution, Amendment 98,
+also known as the "Arkansas Medical Marijuana Amendment of 2016", Arkansas
+Constitution, Amendment 98, § 4(b)(2), concerning the rules of the Department
+of Health relating to qualifying patients, is amended to read as follows:
+(2)    Labeling and testing standards for marijuana distributed to
+qualifying patients, including without limitation:
+(A)    Before sale, food or drink that has been combined with
+usable marijuana shall not exceed ten milligrams (10 mg) of active
+tetrahydrocannabinol per portion and shall be physically demarked; and
+(B)    If portions cannot be physically determined, the
+entirety of the food or drink that has been combined with usable marijuana
+shall not contain more than ten milligrams (10 mg) of active
+tetrahydrocannabinol; and
+SECTION 4.    Under the authority granted by § 23 of Arkansas
+Constitution, Amendment 98, also known as the "Arkansas Medical Marijuana
+05-01-2017 09:02:35 JMB531
+Amendment of 2016", Arkansas Constitution, Amendment 98, § 4(b), concerning
+the rules regarding medical marijuana issued by the Department of Health, is
+amended to reflect the changes enacted by Acts 2017, Nos. 4 and 740, and to
+acknowledge the repeal of changes enacted by Acts 2017, No. 1023, § 2, to
+read as follows:
+(b)    Not later than one hundred twenty (120) days one hundred eighty
+(180) days after the effective date of this amendment, the department shall
+adopt rules governing:
+(1)   The manner in which it the department considers applications
+for and renewals of registry identification cards;
+(2)   Labeling and testing standards for marijuana distributed to
+qualifying patients, including a warning label on all marijuana for medical
+use that is processed or sold for smoking that communicates the health and
+safety risks associated with smoking and a list of places and conditions in
+which smoking marijuana for medical use is illegal in the State of Arkansas;
+and
+(3)   Any other matters necessary for the department's fair,
+impartial, stringent, and comprehensive administration of this amendment.
+SECTION 5.    Under the authority granted by § 23 of Arkansas
+Constitution, Amendment 98, also known as the "Arkansas Medical Marijuana
+Amendment of 2016", Arkansas Constitution, Amendment 98, § 6(a), is amended
+to reflect the changes enacted by Acts 2017, Nos. 479 and 740, to read as
+follows:
+(a)    This amendment does not permit a person to:
+(1)   Undertake any task under the influence of marijuana when
+doing so would constitute negligence or professional malpractice;
+(2)   Possess, smoke, or otherwise engage in the medical use of
+marijuana:
+(A)   On a school bus;
+(B)   On the grounds of a daycare center, preschool, primary
+or secondary school, college, or university;
+(C)   At a drug or alcohol treatment facility;
+(D)   At a community or recreation center;
+(E)   In a correctional facility;
+(F)   On any form of public transportation; or
+05-01-2017 09:02:35 JMB531
+(G)   In a public place; or
+(H)   On any property that is under control of the Arkansas
+National Guard or the United States military;
+(3)   Operate, navigate, or be in actual physical control of a
+motor vehicle, aircraft, motorized watercraft, or any other vehicle drawn by
+power other than muscle power while under the influence of marijuana;
+(4)   Smoke marijuana:
+(A)   In a place where the smoking of tobacco is prohibited
+by law;
+(B)   In the presence of a person who is under fourteen (14)
+years of age;
+(C)   Inside a motor vehicle, aircraft, motorized
+watercraft, or any vehicle drawn by power other than muscle power;
+(D)   Knowingly in the presence of a pregnant woman; or
+(E)   In a place where the smoking of marijuana for medical
+use is likely to cause another person not authorized to use marijuana to be
+under the influence of marijuana; or
+(5)   Smoke marijuana for medical use if the person is under
+twenty-one (21) years of age.
+SECTION 6.      Under the authority granted by § 23 of Arkansas
+Constitution, Amendment 98, also known as the "Arkansas Medical Marijuana
+Amendment of 2016", Arkansas Constitution, Amendment 98, § 8, is amended to
+reflect the changes enacted by Acts 2017, Nos. 639, 641, 948, 1024, and 1100
+to add additional subsections to read as follows:
+(p)   The commission and the division may collect fines or fees for any
+violation of a rule adopted under this section.
+(q)(1)     A license for a dispensary or cultivation facility shall only
+be issued to a natural person.
+(2)   A license issued for a dispensary or cultivation facility
+shall be transferable only to a natural person upon approval of the
+commission.
+(r)   Data or records submitted to the division or commission under
+rules adopted under this amendment may be shared with the Department of
+Health and the State Insurance Department for purposes of the Arkansas all-
+payer claims database established under the Arkansas Healthcare Transparency
+05-01-2017 09:02:35 JMB531
+Initiative Act of 2015, § 23-61-901 et seq.
+(s)(1)     A dispensary shall appoint a pharmacist consultant who is a
+pharmacist licensed with the Arkansas State Board of Pharmacy.
+(2)   A pharmacist consultant shall:
+(A)   Register as a dispensary agent under this amendment
+and follow all procedures;
+(B)   Develop and provide training to other dispensary
+agents at least one (1) time every twelve (12) months from the initial date
+of the opening of the dispensary on the following subjects:
+(i)     Guidelines for providing information to
+qualifying patients related to risks, benefits, and side effects associated
+with medical marijuana;
+(ii)    Recognizing the signs and symptoms of substance
+abuse; and
+(iii)    Guidelines for refusing to provide medical
+marijuana to an individual who appears to be impaired or abusing medical
+marijuana;
+(C)   Assist in the development and implementation of review
+and improvement processes for patient education and support provided by the
+dispensary;
+(D)   Provide oversight for the development and
+dissemination of:
+(i)     Education materials for qualifying patients and
+designated caregivers that include:
+(a)   Information about possible side effects
+and contraindications of medical marijuana;
+(b)   Guidelines for notifying the physician who
+provided the written certification for medical marijuana if side effects or
+contraindications occur;
+(c)   A description of the potential effects of
+differing strengths of medical marijuana strains and products;
+(d)   Information about potential drug-to-drug
+interactions, including interactions with alcohol, prescription drugs,
+nonprescription drugs, and supplements;
+(e)   Techniques for the use of medical
+marijuana and marijuana paraphernalia; and
+05-01-2017 09:02:35 JMB531
+(f)   Information about different methods,
+forms, and routes of medical marijuana administration;
+(ii)    Systems for documentation by a qualifying
+patient or designated caregiver of the symptoms of a qualifying patient that
+includes a logbook, rating scale for pain and symptoms, and guidelines for a
+patient's self-assessment; and
+(iii)    Policies and procedures for refusing to
+provide medical marijuana to an individual who appears to be impaired or
+abusing medical marijuana; and
+(E)   Be accessible to the dispensary or dispensary agent
+through:
+(i)     Telephonic means at all times during operating
+hours; and
+(ii)    Telephone or video conference for a patient
+consultation during operating hours.
+(t)(1)     A cultivation facility shall meet the following security
+requirements:
+(A)(i)     The physical security controls set forth in 21
+C.F.R. § 1301.72 — 1301.74, as existing on January 1, 2017.
+(ii)    The division shall adopt rules to implement
+subdivision (t)(1)(A)(i) of this section;
+(B)   All cultivation of marijuana occurs within a building,
+greenhouse, or other structure that:
+(i)     Has a complete roof enclosure supported by
+connecting walls that are constructed of solid material extending from the
+ground to the roof;
+(ii)    Is secure against unauthorized entry;
+(iii)    Has a foundation, slab, or equivalent base to
+which the floor is securely attached;
+(iv)    Meets performance standards ensuring that
+cultivation and processing activities cannot be and are not perceptible from
+the structure in terms of:
+(a)   Common visual observation;
+(b)   Odors, smells, fragrances, or other
+olfactory stimuli;
+(c)   Light pollution, glare, or brightness;
+05-01-2017 09:02:35 JMB531
+(d)   Adequate ventilation to prevent mold; and
+(e)   Noise;
+(v)     Provides complete visual screening; and
+(vi)     Is accessible only through one (1) or more
+lockable doors;
+(C)   Current detailed plans and elevation drawings of all
+operational areas involved with the production of medical marijuana are
+maintained on the premises of the cultivation facility, including:
+(i)     All storage areas, ventilation systems, and
+equipment used for production;
+(ii)     All entrances and exits to the cultivation
+facility;
+(iii)     All windows, skylights, and retractable
+mechanisms built into the roof;
+(iv)     The location of all required security cameras;
+(v)     The location of all alarm inputs, detectors, and
+sirens;
+(vi)     All video and alarm system surveillance areas;
+(vii)     All production areas labeled according to the
+specific activity occurring within the area;
+(viii)     All restricted and limited access areas
+identified; and
+(ix)     All nonproduction areas labeled according to
+purpose;
+(D)   Access to areas where marijuana is grown, harvested,
+processed, and stored is limited to authorized personnel and:
+(i)     Designated by clearly marked signage; and
+(ii)     Locked and accessible only by authorized
+personnel on a current roster of authorized personnel;
+(E)(i)     Written policies regarding any nonregistered agent
+who may visit the premises and a log of all visitors to the premises are
+developed and maintained.
+(ii)     The log shall consist of the visitor's name,
+purpose of visit, time of arrival, and time of departure.
+(iii)     Visitors to a cultivation facility shall be:
+(a)   Issued a visitor identification tag
+05-01-2017 09:02:35 JMB531
+containing the visitor's name that shall be worn for the duration of the
+visit on the premises; and
+(b)    Escorted by a cultivation facility agent
+at all times while present on the premises.
+(iv)(a)      However, contractors conducting repairs,
+maintenance, or other specific duties may be escorted to their work site and
+left unaccompanied while completing a job.
+(b)    Cultivation facility agents shall ensure
+that the contractor and area under repair are under video surveillance for
+the duration of the time spent on the premises by the contractor; and
+(F)(i)     An alarm system is equipped that upon attempted
+unauthorized entry, transmits a signal directly to a central protection
+company for a local or state police agency and a designated cultivation
+facility agent.
+(ii)   The alarm system shall:
+(a)    Provide coverage for all points of ingress
+and egress to the cultivation facility, including without limitation
+doorways, windows, loading bays, skylights, and retractable roof mechanisms;
+(b)    Provide coverage of any room with an
+exterior wall, any room containing a safe, and any room used to grow or store
+medical marijuana;
+(c)    Be equipped with a panic drive that upon
+activation will not only sound any audible alarm components but will also
+notify law enforcement;
+(d)    Have duress and hold up features to enable
+a cultivation facility agent to activate a silent alarm notifying law
+enforcement of an emergency;
+(e)    Be equipped with failure notification
+systems to notify cultivation facilities and law enforcement of any failure
+in the alarm system; and
+(f)    Have the ability to remain operational
+during a power outage.
+(2)    A cultivation facility shall maintain compliance with
+applicable city or county building or structure rules, regulations, or
+ordinances and any other applicable state laws or rules regarding buildings
+or structures.
+05-01-2017 09:02:35 JMB531
+SECTION 7.        Under the authority granted by § 23 of Arkansas
+Constitution, Amendment 98, also known as the "Arkansas Medical Marijuana
+Amendment of 2016", Arkansas Constitution, Amendment 98, § 17, concerning
+taxation and the distribution of proceeds, is amended to reflect the changes
+enacted by Acts 2017, Nos. 670 and 1098 to read as follows:
+§ 17.     Taxation and distribution of proceeds.
+(a)(1)      The sale of usable marijuana is subject to all state and local
+sales taxes at the same rate as other goods. tangible personal property.
+(2)   The sale of usable marijuana is also subject to the Arkansas
+Medical Marijuana Special Privilege Tax Act of 2017, § 26-57-1501 et seq., or
+its successor.
+(b)     The states state sales and special privilege tax revenues received
+by the Department of Finance and Administration from the sale of usable
+marijuana under this amendment shall be distributed as follows:
+(1)   All moneys received as part of this amendment are designated
+as special revenue and the funds collected shall be deposited into the State
+Treasury and credited to the Arkansas Medical Marijuana Implementation and
+Operations Fund;
+(2)   All moneys received as part of this amendment prior to the
+effective date of this section shall be immediately transferred to the
+Arkansas Medical Marijuana Implementation and Operations Fund upon the
+effective date of this section;
+(3)   In order for the Chief Fiscal Officer of the State to
+determine the expenses that state agencies incurred due to the passage of
+this amendment, the following state entities shall submit a report to the
+Chief Fiscal Officer of the State no later than May 1 of each year of the
+projected expenses for the next fiscal year, including without limitation
+expenses as set out in subdivision (b)(4) of this section:
+(A)   The Alcoholic Beverage Control Division of the
+Department of Finance and Administration;
+(B)   The Department of Health;
+(C)   The Medical Marijuana Commission; and
+(D)   Any other state agency that incurs implementation,
+administration, or enforcement expenses related to this amendment; and
+(4)(A)     From time to time, the Chief Fiscal Officer of the State
+05-01-2017 09:02:35 JMB531
+shall transfer on his or her books and those of the Treasurer of State and
+the Auditor of State the amounts as set out in subdivision (b)(3) of this
+section or so much as is available in proportion to the amount identified by
+each agency in subdivision (b)(3) of this section from the Arkansas Medical
+Marijuana Implementation and Operations Fund to the Miscellaneous Agencies
+Fund Account for the Alcoholic Beverage Control Division of the Department of
+Finance and Administration, the paying account as determined by the Chief
+Fiscal Officer for the Department of Health, the Medical Marijuana Commission
+Fund, and any other fund necessary to the implementation, administration, or
+enforcement of this amendment to pay for or reimburse personal services,
+operating expenses, professional fees, equipment, monitoring, auditing, and
+other miscellaneous expenses of this amendment.
+(B)   At the end of each fiscal year, any unobligated
+balances of the amounts transferred shall be deducted from the amount
+transferred in the next fiscal year as authorized in subdivision (b)(4)(A) of
+this section.
+(C)   Any unanticipated expenses or expenses over the amount
+transferred may be added from time to time to the transfer amount authorized
+in subdivision (b)(4)(A) of this section.
+(D)   The Department of Finance and Administration shall
+report at the end of the fiscal year to the Legislative Council, or to the
+Joint Budget Committee if during a legislative session, the following
+information:
+(i)     The total annual amount received as a result of
+this amendment;
+(ii)    The amount transferred to each agency; and
+(iii)    Copies of the report submitted to the Chief
+Fiscal Officer of the State identifying estimated expenses as set out in
+subdivision (b)(3) of this section.
+(c)   After the transfer described in subsection (b) of this section,
+the amounts remaining in the Arkansas Medical Marijuana Implementation and
+Operations Fund shall be distributed one hundred percent (100%) to the
+General Revenue Fund Account.
+(1)    Five percent (5%) to the Department of Health paying account
+or its successor fund or fund account;
+(2)    Two percent (2%) to the Miscellaneous Agencies Fund or its
+05-01-2017 09:02:35 JMB531
+successor fund or fund account to be used exclusively by the Department of
+Finance and Administration - Alcoholic Beverage Control Administration
+Division or its successor;
+(3)   Two percent (2%) to the Miscellaneous Agencies Fund or its
+successor fund or fund account to be used exclusively by the Department of
+Finance and Administration - Alcoholic Beverage Control Enforcement Division
+or its successor;
+(4)(A)     One percent (1%) to a special revenue account credited to
+the Medical Marijuana Commission Fund or its successor fund or fund account
+to be used exclusively by the Medical Marijuana Commission.
+(B)   The General Assembly shall by law created the Medical
+Marijuana Commission Fund no later than July 1, 2017;
+(5)(A)     Ten percent (10%) to the Skills Development Fund or its
+successor fund or fund account, to be used exclusively by the Office of
+Skills Development of the Department of Career Education or its successor for
+the development and implementation of workforce training programs.
+(B)   The Office of Skills Development of the Department of
+Career Education or its successor may use revenues received under subdivision
+(b)(6)(A) of this section to:
+(i)    Supplement or enhance existing programs,
+including without limitation grant programs; or
+(ii)   Establish new programs, including without
+limitation grant programs.
+(C)   If the Office of Skills Development of the Department
+of Career Education or its successor establishes a new program under
+subdivision (b)(6)(B) of this section, it shall promulgate rules to implement
+the program;
+(6)(A)     Fifty percent (50%) to a special revenue account credited
+to the Vocational and Technical Training Special Revenue Fund or its
+successor fund or fund account, to be used exclusively by the Department of
+Finance and Administration or its successor for grants to technical
+institutes and vocational-technical schools for personal services and
+operating expenses, scholarships, research, development and delivery of
+education coursework and math and science coursework, land acquisition,
+equipment acquisition, and infrastructure costs, including without limitation
+site development costs, construction, improvements, landscaping, renovation,
+05-01-2017 09:02:35 JMB531
+dormitory renovation, major maintenance, and the building of roads and
+parking lots.
+(B)   The General Assembly shall by law create the
+Vocational and Technical Training Special Revenue Fund no later than July 1,
+2017.
+(C) The Department of Finance and Administration or its
+successor shall promulgate rules to implement the grant program described in
+this subdivision (b)(7)        by July 1, 2017;
+(7)   Thirty percent (30%) to the General Revenue Fund.
+(c)(d)     An entity receiving a grant of state sales tax revenue under
+subsection (b) of this section may make one (1) or more successive grant
+applications for the same project or projects.
+SECTION 8.      EMERGENCY CLAUSE.    It is found and determined by the
+General Assembly of the State of Arkansas that twenty-three (23) separate
+acts of the regular session of the Ninety-First General Assembly amended the
+Arkansas Constitution, Amendment 98, also known as the "Arkansas Medical
+Marijuana Amendment of 2016"; that this act is intended to avoid difficulties
+in interpreting, utilizing, and citing Arkansas Constitution, Amendment 98,
+in the wake of passage of Acts 2017, Nos. 4, 438, 479, 593, 639, 641, 670,
+740, 948, 1023, 1024, 1098, and 1100; that this act enacts certain provisions
+of Acts 2017, Nos. 4, 438, 479, 593, 639, 641, 670, 740, 948, 1023, 1024,
+1098, and 1100, in a format that integrates and incorporates the provisions
+of the thirteen (13) acts by restating certain provisions of the thirteen
+(13) acts in a coherent, cohesive, and comprehensive manner; and that to
+avoid confusion in the law, this act should become effective on the same date
+as the majority of the thirteen (13) acts.          Therefore, an emergency is
+declared to exist, and this act being necessary for the preservation of the
+public peace, health, and safety shall become effective on July 31, 2017.
+05-01-2017 09:02:35 JMB531
