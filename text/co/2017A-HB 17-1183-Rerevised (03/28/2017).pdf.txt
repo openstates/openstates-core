@@ -1,0 +1,57 @@
+CONCERNING
+SATISFIED FOR A PROVISION OF LAW GOVERNING THE
+DISCLOSURE OF COMMUNICATIONS WITH MENTAL HEALTH
+PROFESSIONALS TO TAKE EFFECT.
+Be it enacted by the General Assembly of the State of Colorado:
+SECTION 1. Legislative declaration. (1) The general assembly
+finds that:
+(a) In 2016, the general assembly enacted, and the governor
+signed into law, House Bill 16-1063, which allows mental health
+professionals to disclose to school and school district personnel and law
+enforcement agencies communications with a client if the client makes
+statements or exhibits behaviors that create an articulable and significant
+threat against a school or its occupants;
+(b) Given concerns that the legislation conflicted with the privacy
+rule under the federal "Health Insurance Portability and Accountability
+Act of 1996" (HIPAA) and required a waiver from the privacy rule, the
+effect of the legislation was made contingent on receipt from the secretary
+of the federal department of health and human services (HHS) of an
+exception to the HIPAA privacy rule;
+(c) As directed by the legislation, in June 2016 the executive
+director of the department of human services submitted an application to
+the secretary of HHS for an exception for a provision of state law, House
+Bill 16-1063, from preemption under federal regulations 45 CFR 164;
+(d) By letter dated October 19, 2016, the director of the office for
+civil rights in the HHS, on behalf of the secretary of HHS, notified the
+HIPAA privacy and security officer for the department of human services
+that the office for civil rights determined that the provisions of House Bill
+16-1063 regarding disclosure of information for warning of threats to
+public safety are not contrary to the HIPAA privacy rule and thus do not
+qualify for an exception;
+(e) The letter from the office for civil rights further stated that
+"Colorado covered entities can comply with House Bill 16-1063 while
+also complying with the requirements of the Privacy Rule"; and
+(f)   Since the federal government has determined that the
+provisions of House Bill 16-1063 do not conflict with the HIPAA privacy
+rule, the contingency provision in House Bill 16-1063 is no longer
+necessary and should therefore be repealed.
+SECTION 2. In Colorado Revised Statutes, 12-43-218, repeal
+(2)(d)(VI) as follows:
+12-43-218.     Disclosure of confidential communications -
+definitions. (2) Subsection (1) of this section does not apply when:
+(d) (VI) (A) This paragraph (d) takes effect only if, in accordance
+with section 26-1-140, C.R.S., the department of human services applies
+for and is granted an exception to the privacy rule under HIPAA.
+(B) This subparagraph (VI) is repealed if the secretary of the
+federal department of health and human services grants the exception to
+the privacy rule under HIPAA. The executive director of the department
+of human services shall notify the revisor of statutes in writing if the
+condition specified in this sub-subparagraph (B) occurs.
+(C) This paragraph (d) is repealed if the secretary of the federal
+department of health and human services denies the request for an
+exception to the privacy rule under HIPAA. The executive director of the
+department of human services shall notify the revisor of statutes in
+writing if the condition specified in this sub-subparagraph (C) occurs.
+SECTION 3. Safety clause. The general assembly hereby finds,
+determines, and declares that this act is necessary for the immediate
+preservation of the public peace, health, and safety.

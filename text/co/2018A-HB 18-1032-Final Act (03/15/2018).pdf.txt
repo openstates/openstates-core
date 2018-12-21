@@ -1,0 +1,161 @@
+NOTE: This bill has been prepared for the signatures of the appropriate legislative
+officers and the Governor. To determine whether the Governor has signed the bill
+or taken other action on it, please consult the legislative status sheet, the legislative
+history, or the Session Laws.
+
+
+
+
+     HOUSE BILL 18-1032
+
+
+     BY REPRESENTATIVE(S) Kennedy and Thurlow, Becker K., Buckner,
+     Esgar, Ginal, Gray, Jackson, Kraft-Tharp, Michaelson Jenet, Rosenthal,
+     Singer;
+     also SENATOR(S) Fields and Tate, Aguilar, Court, Crowder, Garcia, Jones,
+     Kefalas, Martinez Humenik, Merrifield, Priola, Todd, Zenzinger.
+
+
+     CONCERNING     ACCESS TO MEDICAL RECORDS FROM THE DEPARTMENT OF
+              PUBLIC HEALTH AND ENVIRONMENT'S EMS AGENCY PATIENT CARE
+              DATABASE BY HEALTH INFORMATION ORGANIZATION NETWORKS.
+
+
+
+     Be it enacted by the General Assembly of the State of Colorado:
+
+            SECTION 1. In Colorado Revised Statutes, 25-3.5-103, amend the
+     introductory portion; and add (8.3) and (8.5) as follows:
+
+            25-3.5-103. Definitions. As used in this article ARTICLE 3.5, unless
+     the context otherwise requires:
+
+              (8.3)     AGENCY PATIENT CARE DATABASE" MEANS THE
+                        "EMS
+     DEPARTMENT'S DATABASE CONTAINING RECORDS REQUIRED TO BE
+     SUBMITTED IN ACCORDANCE WITH SECTION 25-3.5-501.
+
+              (8.5) "HEALTH INFORMATION ORGANIZATION NETWORK" MEANS AN
+
+     ________
+     Capital letters or bold & italic numbers indicate new material added to existing statutes; dashes
+     through words indicate deletions from existing statutes and such material not part of act.
+ORGANIZATION THAT OVERSEES AND GOVERNS THE EXCHANGE OF
+HEALTH-RELATED INFORMATION AMONG ORGANIZATIONS ACCORDING TO
+NATIONALLY RECOGNIZED STANDARDS.
+
+      SECTION 2. In Colorado Revised Statutes, 25-3.5-501, add (3) as
+follows:
+
+      25-3.5-501. Records - ambulance services to report - access to
+patient information. (3) THE DEPARTMENT SHALL MAKE INDIVIDUALIZED
+PATIENT INFORMATION FROM ITS EMS AGENCY PATIENT CARE DATABASE
+AVAILABLE TO HEALTH INFORMATION ORGANIZATION NETWORKS FOR USES
+ALLOWED UNDER THE FEDERAL "HEALTH INSURANCE PORTABILITY AND
+ACCOUNTABILITY ACT OF 1996", AS AMENDED, PUB.L. 104-191. THE
+DEPARTMENT SHALL CONTRACT WITH HEALTH INFORMATION ORGANIZATION
+NETWORKS REGARDING ACCESSING PATIENT INFORMATION AND LIMITING
+THE USE OF INFORMATION TO PURPOSES ALLOWED UNDER THE "HEALTH
+INSURANCE PORTABILITY AND ACCOUNTABILITY ACT OF 1996", AS
+AMENDED.
+
+       SECTION 3. In Colorado Revised Statutes, 25-3.5-704, amend
+(2)(h)(II); and add (2)(h)(I)(F) as follows:
+
+       25-3.5-704. Statewide emergency medical and trauma care
+system - development and implementation - duties of department -
+rules adopted by board. (2) The board shall adopt rules for the statewide
+emergency medical and trauma care system, including but not limited to the
+following:
+
+        (h) (I) Continuing quality improvement system (CQI). These
+rules require the department to oversee a continuing quality improvement
+system for the statewide emergency medical and trauma care system. The
+board shall specify the methods and periods for assessing the quality of
+regional emergency medical and trauma systems and the statewide
+emergency medical and trauma care system. These rules must include the
+following requirements:
+
+      (F) THAT NOTHING IN THIS SUBSECTION (2)(h)(I) PROHIBITS THE
+DEPARTMENT FROM PROVIDING INFORMATION TO HEALTH INFORMATION
+ORGANIZATION NETWORKS FROM ITS EMS AGENCY PATIENT CARE DATABASE
+INCLUDING ACCESS TO INDIVIDUALIZED PATIENT INFORMATION IN
+
+
+PAGE 2-HOUSE BILL 18-1032
+ACCORDANCE WITH SECTION 25-3.5-501 (3).
+
+       (II) Any Data or information related to the identification of
+individual patient's, provider's, or facility's care outcomes collected as a
+result of the continuing quality improvement system and any records or
+reports collected or compiled as a result of the continuing quality
+improvement system are confidential and are exempt from the open records
+law in part 2 of article 72 of title 24. C.R.S. Such Data, information,
+records, or reports shall ARE not be subject to subpoena or discovery and
+shall ARE not be admissible in any civil action, except pursuant to a court
+order that provides for the protection of sensitive information about
+interested parties. Nothing in this subparagraph (II) shall preclude
+SUBSECTION (2)(h)(II):
+
+       (A) PRECLUDES the patient or the patient's representative from
+obtaining the patient's medical records as provided in section 25-1-801;
+Nothing in this subparagraph (II)
+
+      (B) Shall be construed to allow access to confidential professional
+review committee records or reviews conducted under article 36.5 of title
+12; C.R.S. OR
+
+     (C) PROHIBITS THE DEPARTMENT FROM PROVIDING INFORMATION TO
+HEALTH INFORMATION ORGANIZATION NETWORKS FROM ITS EMS AGENCY
+PATIENT CARE DATABASE INCLUDING INDIVIDUALIZED                        PATIENT
+INFORMATION IN ACCORDANCE WITH SECTION 25-3.5-501 (3).
+
+       SECTION 4. Act subject to petition - effective date. This act
+takes effect at 12:01 a.m. on the day following the expiration of the
+ninety-day period after final adjournment of the general assembly (August
+8, 2018, if adjournment sine die is on May 9, 2018); except that, if a
+referendum petition is filed pursuant to section 1 (3) of article V of the state
+constitution against this act or an item, section, or part of this act within
+such period, then the act, item, section, or part will not take effect unless
+
+
+
+
+PAGE 3-HOUSE BILL 18-1032
+approved by the people at the general election to be held in November 2018
+and, in such case, will take effect on the date of the official declaration of
+the vote thereon by the governor.
+
+
+
+
+____________________________            ____________________________
+Crisanta Duran                                       Kevin J. Grantham
+SPEAKER OF THE HOUSE                                  PRESIDENT OF
+OF REPRESENTATIVES                                      THE SENATE
+
+
+
+
+____________________________            ____________________________
+Marilyn Eddins                                            Effie Ameen
+CHIEF CLERK OF THE HOUSE                             SECRETARY OF
+OF REPRESENTATIVES                                      THE SENATE
+
+
+
+
+       APPROVED________________________________________
+
+
+
+
+                   _________________________________________
+                   John W. Hickenlooper
+                   GOVERNOR OF THE STATE OF COLORADO
+
+
+
+
+PAGE 4-HOUSE BILL 18-1032
+
