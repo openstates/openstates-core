@@ -4,6 +4,7 @@ from .common import (
     extract_line_numbered_pdf,
     extract_pre_tag_html,
     extract_sometimes_numbered_pdf,
+    extract_from_p_tags_html,
 )
 from .az import extract_from_div_html
 
@@ -14,6 +15,7 @@ CONVERSION_FUNCTIONS = {
     "az": extract_from_div_html,
     "ar": extract_sometimes_numbered_pdf,
     "co": extract_sometimes_numbered_pdf,
+    "ct": extract_from_p_tags_html,
     "nc": extract_line_numbered_pdf,
 }
 

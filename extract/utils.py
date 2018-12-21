@@ -75,14 +75,25 @@ def text_after_line_numbers(lines):
     return "\n".join(text)
 
 
-def text_from_lxml(data, lxml_query):
+def text_from_element_lxml(data, lxml_query):
     html_document = html.fromstring(data)
-    matching_tags = html_document.findall(lxml_query)
+    matching_elements = html_document.findall(lxml_query)
 
-    # To ensure that we exit non-zero if there are multiple matching tags
+    # To ensure that we exit non-zero if there are multiple matching elements
     # on the page, raise an exception: this means that the extraction
     # code needs to be updated.
-    assert len(matching_tags) == 1
+    assert len(matching_elements) == 1
 
-    text_inside_tag = matching_tags[0].text_content()
-    return text_inside_tag
+    text_inside_element = matching_elements[0].text_content()
+    return text_inside_element
+
+
+def text_from_element_siblings_lxml(data, lxml_query):
+    html_document = html.fromstring(data)
+    matching_elements = html_document.findall(lxml_query)
+
+    text_inside_elements = ""
+    for element in matching_elements:
+        text_inside_elements += element.text_content() + '\n'
+
+    return text_inside_elements

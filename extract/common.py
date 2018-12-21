@@ -1,6 +1,11 @@
 import re
 
-from .utils import pdfdata_to_text, text_after_line_numbers, text_from_lxml
+from .utils import (
+    pdfdata_to_text,
+    text_after_line_numbers,
+    text_from_element_lxml,
+    text_from_element_siblings_lxml,
+)
 
 
 def extract_simple_pdf(data, metadata):
@@ -43,5 +48,15 @@ def extract_pre_tag_html(data, metadata):
     have the text inside <pre> tags (for preformatted text).
     """
 
-    text_inside_matching_tag = text_from_lxml(data, ".//pre")
+    text_inside_matching_tag = text_from_element_lxml(data, ".//pre")
     return text_after_line_numbers(text_inside_matching_tag)
+
+
+def extract_from_p_tags_html(data, metadata):
+    """
+    For a few states providing bill text in HTML, we just want to get all
+    the text in paragraph tags on the page. There may be several paragraphs.
+    """
+
+    text = text_from_element_siblings_lxml(data, ".//p")
+    return text
