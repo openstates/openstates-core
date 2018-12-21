@@ -1,4 +1,4 @@
-from bs4 import BeautifulSoup
+from lxml import html
 
 from .utils import pdfdata_to_text, text_after_line_numbers
 
@@ -17,14 +17,14 @@ def extract_pre_tag_html(data, metadata):
     have the text inside <pre> tags (for preformatted text).
     """
 
-    html_document = BeautifulSoup(data, "lxml")
-    pre_tags = html_document.find_all("pre")
+    html_document = html.fromstring(data)
+    pre_tags = html_document.findall(".//pre")
 
     # To ensure that we exit non-zero if there are multiple <pre> tags
     # on the page, raise an exception: this means that the extraction
     # code needs to be updated.
     assert len(pre_tags) == 1
 
-    text_inside_pre_tag = pre_tags[0].text
+    text_inside_pre_tag = pre_tags[0].text_content()
 
     return text_after_line_numbers(text_inside_pre_tag)
