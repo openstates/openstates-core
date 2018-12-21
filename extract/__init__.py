@@ -13,6 +13,7 @@ CONVERSION_FUNCTIONS = {
     "ak": extract_pre_tag_html,
     "az": extract_from_div_html,
     "ar": extract_sometimes_numbered_pdf,
+    "co": extract_sometimes_numbered_pdf,
     "nc": extract_line_numbered_pdf,
 }
 
