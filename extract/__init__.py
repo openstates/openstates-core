@@ -1,10 +1,12 @@
 from .utils import jid_to_abbr
 from .common import extract_simple_pdf, extract_line_numbered_pdf, extract_pre_tag_html
+from .az import extract_from_div_html
 
 
 CONVERSION_FUNCTIONS = {
     "al": extract_line_numbered_pdf,
     "ak": extract_pre_tag_html,
+    "az": extract_from_div_html,
     "nc": extract_line_numbered_pdf,
 }
 

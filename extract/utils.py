@@ -52,12 +52,9 @@ def worddata_to_text(data):
     return text.decode("utf8")
 
 
-PUNCTUATION = re.compile("[%s]" % re.escape(string.punctuation))
-
-
 def clean(text):
     text = text.replace("\xa0", " ")  # nbsp -> sp
-    text = PUNCTUATION.sub(" ", text)  # strip punctuation
+    text = text.replace("\r\n", "\n")  # replace carriage returns
     text = re.sub(r"[ \t]", " ", text)  # collapse spaces
     # collapse newlines too?
     return text
