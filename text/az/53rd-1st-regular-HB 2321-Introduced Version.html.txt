@@ -1,0 +1,198 @@
+
+
+Be it
+enacted by the Legislature of the State of Arizona:
+
+Section 1.  Section 33-1250, Arizona Revised
+Statutes, is amended to read:
+
+START_STATUTE33-1250.  Voting;
+proxies; absentee ballots; cumulative voting; applicability; definition
+
+A.  If
+only one of the multiple owners of a unit is present at a meeting of the
+association, the owner is entitled to cast all the votes allocated to that
+unit.  If more than one of the multiple owners are present, the votes
+allocated to that unit may be cast only in accordance with the agreement of a
+majority in interest of the multiple owners unless the declaration expressly
+provides otherwise.  There is majority agreement if any one of the multiple
+owners casts the votes allocated to that unit without protest being made
+promptly to the person presiding over the meeting by any of the other owners of
+the unit.
+
+B.  During
+the period of declarant control, votes allocated to a unit may be cast pursuant
+to a proxy duly executed by a unit owner.  If a unit is owned by more than one
+person, each owner of the unit may vote or register protest to the casting of
+votes by the other owners of the unit through a duly executed proxy.  A unit
+owner may not revoke a proxy given pursuant to this section except by actual
+notice of revocation to the person presiding over a meeting of the
+association.  A proxy is void if it is not dated or purports to be revocable
+without notice.  The proxy is revoked on presentation of a later
+dated proxy executed by the same unit owner.  A proxy terminates one year after
+its date, unless it specifies a shorter term or unless it states that it is
+coupled with an interest and is irrevocable.
+
+C.  Notwithstanding
+any provision in the condominium documents, after termination of the period of
+declarant control, votes allocated to a unit may not be cast pursuant to a
+proxy.  The association shall provide for votes to be cast in person
+and by absentee ballot and, in addition, the association may provide for voting
+by some other form of delivery, including the use of e-mail and fax
+delivery.  Notwithstanding section 10‑3708 or the provisions of
+the condominium documents, any action taken at an annual, regular or special
+meeting of the members shall comply with all of the following if absentee
+ballots or ballots provided by some other form of delivery are used:
+
+1.  The
+ballot shall set forth each proposed action.
+
+2.  The
+ballot shall provide an opportunity to vote for or against each proposed action.
+
+3.  The
+ballot is valid for only one specified election or meeting of the members and
+expires automatically after the completion of the election or meeting.
+
+4.  The
+ballot specifies the time and date by which the ballot must be delivered to the
+board of directors in order to be counted, which shall be at least seven days
+after the date that the board delivers the unvoted ballot to the member.
+
+5.  The
+ballot does not authorize another person to cast votes on behalf of the member.
+
+6.  The
+completed ballot and envelope and any related materials shall contain the name,
+the address and either the actual or
+electronic signature of the person voting, except that if the condominium
+documents permit secret ballots, only the envelope or any nonballot‑related
+materials shall contain the name, the
+address and either the actual or electronic signature of the voter.
+
+7.  Ballots,
+envelopes and related materials, including sign-in sheets if used, shall be
+retained in electronic or paper format and made available for unit owner
+inspection for at least one year after completion of the election.
+
+D.  Votes
+cast by absentee ballot or other form of delivery, including the use of e‑mail
+and fax delivery, are valid for the purpose of establishing a quorum.
+
+E.  Notwithstanding
+subsection C of this section, an association for a timeshare plan as defined in
+section 32‑2197 may permit votes by a proxy that is duly executed by a
+unit owner.
+
+F.  If
+the declaration requires that votes on specified matters affecting the
+condominium be cast by lessees rather than unit owners of leased units all of
+the following apply:
+
+1.  The
+provisions of subsections A and B of this section apply to lessees as if they
+were unit owners.
+
+2.  Unit
+owners who have leased their units to other persons shall not cast votes on
+those specified matters.
+
+3.  Lessees
+are entitled to notice of meetings, access to records and other rights
+respecting those matters as if they were unit owners.  Unit owners shall also
+be given notice, in the manner prescribed in section 33‑1248, of all
+meetings at which lessees may be entitled to vote.
+
+G.  Unless
+the declaration provides otherwise, votes allocated to a unit owned by the
+association shall not be cast.
+
+H.  Notwithstanding
+title 10, chapter 30 and any provision in the condominium documents, an
+association may not use a process whereby unit owners cumulate their votes by
+multiplying the number of votes they are entitled to cast by the number of
+directors for whom they are entitled to vote and cast the product for a single candidate
+or distribute the product among two or more candidates, otherwise known as
+cumulative voting.  this subsection does not prohibit a person who owns more
+than one unit from casting a ballot for each unit owned.
+
+H.  I.  This section does not apply to
+timeshare plans or associations that are subject to chapter 20 of this title.
+
+I.  J.  For the purposes of this section,
+"period of declarant control" means the time during which the
+declarant or persons designated by the declarant may elect or appoint the
+members of the board of directors pursuant to the condominium documents or by
+virtue of superior voting power. END_STATUTE
+
+Sec. 2.  Section 33-1812, Arizona Revised
+Statutes, is amended to read:
+
+START_STATUTE33-1812.  Proxies;
+absentee ballots; cumulative voting; definition
+
+A.  Notwithstanding
+any provision in the community documents, after termination of the period of
+declarant control, votes allocated to a unit may not be cast pursuant to a
+proxy.  The association shall provide for votes to be cast in person
+and by absentee ballot and, in addition, the association may provide for voting
+by some other form of delivery, including the use of e-mail and fax
+delivery.  Notwithstanding section 10‑3708 or the provisions of
+the community documents, any action taken at an annual, regular or special
+meeting of the members shall comply with all of the following if absentee
+ballots or ballots provided by some other form of delivery are used:
+
+1.  The
+ballot shall set forth each proposed action.
+
+2.  The
+ballot shall provide an opportunity to vote for or against each proposed
+action.
+
+3.  The
+ballot is valid for only one specified election or meeting of the members and
+expires automatically after the completion of the election or meeting.
+
+4.  The
+ballot specifies the time and date by which the ballot must be delivered to the
+board of directors in order to be counted, which shall be at least seven days
+after the date that the board delivers the unvoted ballot to the member.
+
+5.  The
+ballot does not authorize another person to cast votes on behalf of the member.
+
+6.  The
+completed ballot and envelope and any related materials shall contain the name,
+address and signature of the person voting, except that if the community
+documents permit secret ballots, only the envelope and any nonballot‑related
+materials shall contain the name, address and signature of the voter.
+
+7.  Ballots,
+envelopes and related materials, including sign-in sheets if used, shall be
+retained in electronic or paper format and made available for member inspection
+for at least one year after completion of the election.
+
+B.  Votes
+cast by absentee ballot or other form of delivery, including the use of e‑mail
+and fax delivery, are valid for the purpose of establishing a quorum.
+
+C.  Notwithstanding
+title 10, chapter 30 and any provision in the community documents, an
+association may not use a process whereby members cumulate their votes by
+multiplying the number of votes they are entitled to cast by the number of
+directors for whom they are entitled to vote and cast the product for a single
+candidate or distribute the product among two or more candidates, otherwise
+known as cumulative voting.  This subsection does not prohibit a
+person who owns more than one property from casting a ballot for each property
+owned.
+
+C.  D.  Notwithstanding subsection A of
+this section, an association for a timeshare plan as defined in section 32‑2197
+may permit votes by a proxy that is duly executed by a unit owner.
+
+D.  E.  For the purposes of this section,
+"period of declarant control" means the time during which the
+declarant or persons designated by the declarant may elect or appoint the
+members of the board of directors pursuant to the community documents or by
+virtue of superior voting power. END_STATUTE
+

@@ -1,0 +1,329 @@
+
+
+Be it
+enacted by the Legislature of the State of Arizona:
+
+Section 1.  Section 20-841.09, Arizona Revised
+Statutes, as amended by Laws 2016, chapter 278, section 1, is amended to read:
+
+START_STATUTE20-841.09.  Telemedicine;
+coverage of health care services; definitions
+
+A.  All
+contracts issued, delivered or renewed on or after January 1, 2018 must
+provide coverage for health care services that are provided through telemedicine
+if the health care service would be covered were it provided through in‑person
+consultation between the subscriber and a health care provider and provided to
+a subscriber receiving the service in this state.  The contract may
+limit the coverage to those health care providers who are members of the
+corporation's provider network. 
+
+B.  This
+section does not prevent a corporation from imposing deductibles, copayment or
+coinsurance requirements for a health care service provided through telemedicine
+if the deductible, copayment or coinsurance does not exceed the deductible,
+copayment or coinsurance applicable to an in‑person consultation for the
+same health care service.
+
+C.  Services
+provided through telemedicine or resulting from a telemedicine consultation
+shall comply with Arizona licensure requirements, accreditation standards and
+any practice guidelines of a national association of medical professionals
+promoting access to medical care for consumers via telecommunications
+technology or other qualified medical professional societies to ensure quality
+of care.
+
+D.  This
+section does not apply to limited benefit coverage as defined in section 20‑1137.
+
+e.  Payment
+or reimbursement of expenses for covered health care services delivered by
+means of telemedicine that are not included in health care services as defined
+in this section may be established through negotiations conducted by the
+subscriber with the health care providers in the same manner as the subscriber
+establishes payment or reimbursement of expenses for covered health care
+services that are delivered in person.
+
+E.  F.  For the purposes of this section:
+
+1.  "Health
+care services" means services provided for the following conditions or in
+the following settings:
+
+(a)  Trauma.
+
+(b)  Burn.
+
+(c)  Cardiology.
+
+(d)  Infectious
+diseases.
+
+(e)  Mental
+health disorders.
+
+(f)  Neurologic
+diseases including strokes.
+
+(g)  Dermatology.
+
+(h)  Pulmonology.
+
+(i)  Beginning on January
+1, 2019, Urology.
+
+2.  "Telemedicine":
+
+(a)  Means
+the interactive use of audio, video or other electronic media for the purpose
+of diagnosis, consultation or treatment.
+
+(b)  Does
+not include the sole use of an audio‑only telephone, a video‑only
+system, a facsimile machine, instant messages or electronic mail. END_STATUTE
+
+Sec. 2.  Section 20-1057.13, Arizona Revised
+Statutes, as amended by Laws 2016, chapter 278, section 2, is amended to read:
+
+START_STATUTE20-1057.13.  Telemedicine;
+coverage of health care services; definitions
+
+A.  An
+evidence of coverage issued, delivered or renewed by a health care services
+organization on or after January 1, 2018 must provide coverage for health care
+services that are provided through telemedicine if the health care service
+would be covered were it provided through in‑person consultation between
+the enrollee and a health care provider and provided to an enrollee receiving
+the service in this state.  The evidence of coverage may limit the
+coverage to those health care providers who are members of the health care
+services organization's provider network.
+
+B.  This
+section does not prevent a health care services organization from imposing
+deductibles, copayment or coinsurance requirements for a health care service provided
+through telemedicine if the deductible, copayment or coinsurance does not
+exceed the deductible, copayment or coinsurance applicable to an in‑person
+consultation for the same health care service.
+
+C.  Services
+provided through telemedicine or resulting from a telemedicine consultation
+shall comply with Arizona licensure requirements, accreditation standards and
+any practice guidelines of a national association of medical professionals
+promoting access to medical care for consumers via telecommunications
+technology or other qualified medical professional societies to ensure quality
+of care.
+
+D.  This
+section does not apply to limited benefit coverage as defined in section 20‑1137.
+
+e.  Payment
+or reimbursement of expenses for covered health care services delivered by
+means of telemedicine that are not included in health care services as defined
+in this section may be established through negotiations conducted by the health
+care services organization with the health care providers in the same manner as
+the health care services organization establishes payment or reimbursement of
+expenses for covered health care services that are delivered in person.
+
+E.  F.  For the purposes of this section:
+
+1.  "Health
+care services" means services provided for the following conditions or in
+the following settings:
+
+(a)  Trauma.
+
+(b)  Burn.
+
+(c)  Cardiology.
+
+(d)  Infectious
+diseases.
+
+(e)  Mental
+health disorders.
+
+(f)  Neurologic
+diseases including strokes.
+
+(g)  Dermatology.
+
+(h)  Pulmonology.
+
+(i)  Beginning on January
+1, 2019, Urology.
+
+2.  "Telemedicine":
+
+(a)  Means
+the interactive use of audio, video or other electronic media for the purpose
+of diagnosis, consultation or treatment.
+
+(b)  Does
+not include the sole use of an audio‑only telephone, a video‑only
+system, a facsimile machine, instant messages or electronic mail. END_STATUTE
+
+Sec. 3.  Section 20-1376.05, Arizona Revised
+Statutes, as amended by Laws 2016, chapter 278, section 3, is amended to read:
+
+START_STATUTE20-1376.05.  Telemedicine;
+coverage of health care services; definitions
+
+A.  All
+policies issued, delivered or renewed by a disability insurer on or after
+January 1, 2018 must provide coverage for health care services that are
+provided through telemedicine if the health care service would be covered were
+it provided through in‑person consultation between the insured and a
+health care provider and provided to an insured receiving the service in this
+state.  The policy may limit the coverage to those health care providers who
+are members of the disability insurer's provider network.
+
+B.  This
+section does not prevent a disability insurer from imposing deductibles,
+copayment or coinsurance requirements for a health care service provided
+through telemedicine if the deductible, copayment or coinsurance does not
+exceed the deductible, copayment or coinsurance applicable to an in‑person
+consultation for the same health care service.
+
+C.  Services
+provided through telemedicine or resulting from a telemedicine consultation
+shall comply with Arizona licensure requirements, accreditation standards and
+any practice guidelines of a national association of medical professionals
+promoting access to medical care for consumers via telecommunications
+technology or other qualified medical professional societies to ensure quality
+of care.
+
+D.  This
+section does not apply to limited benefit coverage as defined in section 20‑1137.
+
+e.  Payment
+or reimbursement of expenses for covered health care services delivered by
+means of telemedicine that are not included in health care services as defined
+in this section may be established through negotiations conducted by the
+disability insurer with the health care providers in the same manner as the
+disability insurer establishes payment or reimbursement of expenses for covered
+health care services that are delivered in person.
+
+E.  F.  For the purposes of this section:
+
+1.  "Health
+care services" means services provided for the following conditions or in
+the following settings:
+
+(a)  Trauma.
+
+(b)  Burn.
+
+(c)  Cardiology.
+
+(d)  Infectious
+diseases.
+
+(e)  Mental
+health disorders.
+
+(f)  Neurologic
+diseases including strokes.
+
+(g)  Dermatology.
+
+(h)  Pulmonology.
+
+(i)  Beginning on January
+1, 2019, Urology.
+
+2.  "Telemedicine":
+
+(a)  Means
+the interactive use of audio, video or other electronic media for the purpose
+of diagnosis, consultation or treatment.
+
+(b)  Does
+not include the sole use of an audio‑only telephone, a video‑only
+system, a facsimile machine, instant messages or electronic mail. END_STATUTE
+
+Sec. 4.  Section 20-1406.05, Arizona Revised
+Statutes, as amended by Laws 2016, chapter 278, section 4, is amended to read:
+
+START_STATUTE20-1406.05.  Telemedicine;
+coverage of health care services; definitions
+
+A.  All
+policies issued, delivered or renewed by a group disability insurer or a
+blanket disability insurer on or after January 1, 2018 must provide coverage
+for health care services that are provided through telemedicine if the health
+care service would be covered were it provided through in‑person
+consultation between the insured and a health care provider and provided to an
+insured receiving the service in this state.  The policy may limit
+the coverage to those health care providers who are members of the insurer's
+provider network.
+
+B.  This
+section does not prevent a group or blanket disability insurer from imposing
+deductibles, copayment or coinsurance requirements for a health care service
+provided through telemedicine if the deductible, copayment or coinsurance does
+not exceed the deductible, copayment or coinsurance applicable to an in‑person
+consultation for the same health care service.
+
+C.  Services
+provided through telemedicine or resulting from a telemedicine consultation
+shall comply with Arizona licensure requirements, accreditation standards and
+any practice guidelines of a national association of medical professionals
+promoting access to medical care for consumers via telecommunications
+technology or other qualified medical professional societies to ensure quality
+of care.
+
+D.  This
+section does not apply to limited benefit coverage as defined in section 20‑1137.
+
+e.  Payment
+or reimbursement of expenses for covered health care services delivered by
+means of telemedicine that are not included in health care services as defined
+in this section may be established through negotiations conducted by the group
+disability insurer or blanket disability insurer with the health care providers
+in the same manner as the group disability insurer or blanket disability
+insurer establishes payment or reimbursement of expenses for covered health
+care services that are delivered in person.
+
+E.  F.  For the purposes of this section:
+
+1.  "Health
+care services" means services provided for the following conditions or in
+the following settings:
+
+(a)  Trauma.
+
+(b)  Burn.
+
+(c)  Cardiology.
+
+(d)  Infectious
+diseases.
+
+(e)  Mental
+health disorders.
+
+(f)  Neurologic
+diseases including strokes.
+
+(g)  Dermatology.
+
+(h)  Pulmonology.
+
+(i)  Beginning on January
+1, 2019, Urology.
+
+2.  "Telemedicine":
+
+(a)  Means
+the interactive use of audio, video or other electronic media for the purpose
+of diagnosis, consultation or treatment.
+
+(b)  Does
+not include the sole use of an audio‑only telephone, a video‑only
+system, a facsimile machine, instant messages or electronic mail. END_STATUTE
+
+Sec. 5.  Effective date
+
+This act is
+effective from and after December 31, 2017.
+
