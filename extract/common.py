@@ -1,7 +1,6 @@
-from lxml import html
 import re
 
-from .utils import pdfdata_to_text, text_after_line_numbers
+from .utils import pdfdata_to_text, text_after_line_numbers, text_from_lxml
 
 
 def extract_simple_pdf(data, metadata):
@@ -44,14 +43,5 @@ def extract_pre_tag_html(data, metadata):
     have the text inside <pre> tags (for preformatted text).
     """
 
-    html_document = html.fromstring(data)
-    pre_tags = html_document.findall(".//pre")
-
-    # To ensure that we exit non-zero if there are multiple <pre> tags
-    # on the page, raise an exception: this means that the extraction
-    # code needs to be updated.
-    assert len(pre_tags) == 1
-
-    text_inside_pre_tag = pre_tags[0].text_content()
-
-    return text_after_line_numbers(text_inside_pre_tag)
+    text_inside_matching_tag = text_from_lxml(data, ".//pre")
+    return text_after_line_numbers(text_inside_matching_tag)

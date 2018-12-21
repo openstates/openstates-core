@@ -4,6 +4,8 @@ import string
 import tempfile
 import subprocess
 
+from lxml import html
+
 
 def jid_to_abbr(j):
     return j.split(":")[-1].split("/")[0]
@@ -71,3 +73,16 @@ def text_after_line_numbers(lines):
 
     # return all real bill text joined w/ newlines
     return "\n".join(text)
+
+
+def text_from_lxml(data, lxml_query):
+    html_document = html.fromstring(data)
+    matching_tags = html_document.findall(lxml_query)
+
+    # To ensure that we exit non-zero if there are multiple matching tags
+    # on the page, raise an exception: this means that the extraction
+    # code needs to be updated.
+    assert len(matching_tags) == 1
+
+    text_inside_tag = matching_tags[0].text_content()
+    return text_inside_tag

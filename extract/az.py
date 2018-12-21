@@ -1,6 +1,4 @@
-from lxml import html
-
-from .utils import clean
+from .utils import clean, text_from_lxml
 
 
 def extract_from_div_html(data, metadata):
@@ -8,11 +6,5 @@ def extract_from_div_html(data, metadata):
     AK has the bill text inside <div class="WordSection2">
     """
 
-    html_document = html.fromstring(data)
-    div_tags = html_document.findall(".//div[@class='WordSection2']")
-
-    # To ensure that we exit non-zero if there are multiple matching
-    # tags on the page, raise an exception: this means an update is needed.
-    assert len(div_tags) == 1
-
-    return clean(div_tags[0].text_content())
+    text_inside_matching_tag = text_from_lxml(data, ".//div[@class='WordSection2']")
+    return clean(text_inside_matching_tag)
