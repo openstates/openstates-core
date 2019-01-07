@@ -1,0 +1,90 @@
+
+
+Be it
+enacted by the Legislature of the State of Arizona:
+
+Section 1.  Section 20-359, Arizona Revised Statutes,
+is amended to read:
+
+START_STATUTE20-359.  Deviations
+from filed workers' compensation rates
+
+A.  Every
+insurer shall adhere to the filings made by the rating organization of which it
+is a member, except that any member insurer may file with the director:
+
+1.  A
+uniform percentage decrease or increase in any rate filing to
+be applied to the statewide rate portion of the rating
+organization's that rate filing.
+
+2.  A
+subclassification rate related rule that deviates from the rules or any schedule rating plan filed by the insurer's rating
+organization.  An insurer shall not apply a deviation and a schedule
+rating plan within the same insurance company rate filing.
+
+B.  Each
+deviation filed shall be on file with the director for a waiting period of at
+least thirty days before it becomes effective.  On written
+application by the insurer making the filing, the director may authorize a
+filing to become effective before the waiting period expires.  A deviation that
+is filed pursuant to subsection A, paragraph 1 of this section and that is not
+disapproved by the director expires the following December 31 at midnight in
+this state unless the director terminates the deviation sooner.  A
+deviation that is filed pursuant to subsection A, paragraph 2 of this section
+continues until the insurer withdraws the deviation or the director determines
+that the deviation no longer meets the standards prescribed in section 20‑356,
+paragraph 1.  At any time the director may require an insurer to actuarially
+support a deviation.  The insurer that files the deviation shall
+simultaneously send a copy of the filing to the rating organization of which it
+is a member and to any designated rating organization.
+
+C.  A
+rating organization shall notify the director if the organization disapproves
+any deviation relating to workers' compensation insurance.  The
+director shall notify the industrial commission of the disapproval within ten
+days of receipt of the disapproval from the rating organization. END_STATUTE
+
+Sec. 2.  Title 20, chapter 2, article 4, Arizona
+Revised Statutes, is amended by adding section 20-359.01, to read:
+
+START_STATUTE20-359.01.  Requirements
+for workers' compensation tiered rate filings
+
+A.  Subject
+to the other provisions of this article, an insurer transacting workers'
+compensation insurance may file with the director a rate filing for workers'
+compensation insurance that provides for a plan with more than one rate tier
+for that insurer or a group of insurers under common management if the filing
+complies with the following requirements:
+
+1.  Each
+tier is established consistent with underwriting rules that are based on
+criteria that would lead to a logical distinguishing of potential risk.
+
+2.  Supporting
+actuarial analysis or other information is provided that shows a clear
+distinction between the following for each tier:
+
+(a)  Expected
+losses and expenses.
+
+(b)  Actual
+losses and expenses.
+
+B.  An
+insurer filing tiered ratings pursuant to this section shall file with the
+director an update of the actuarial analysis or other information required
+under subsection A, paragraph 2 of this section at least every three years.
+
+C.  An
+insurer using tiered ratings may apply underwriting expertise and judgment in
+the tier placement process if the underwriting expertise and judgment:
+
+1.  Is
+applied in a consistent manner.
+
+2.  When
+applied, is fair, reasonable and fully documented.
+END_STATUTE
+

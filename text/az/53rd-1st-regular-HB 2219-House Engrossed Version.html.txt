@@ -1,0 +1,1205 @@
+
+
+Be it
+enacted by the Legislature of the State of Arizona:
+
+Section 1.  Section 15-213.01, Arizona Revised
+Statutes, is amended to read:
+
+START_STATUTE15-213.01.  Procurement
+practices; guaranteed energy cost savings contracts; definitions
+
+A.  Notwithstanding
+section 15‑213, subsection A, a school district may contract for the
+procurement of a guaranteed energy cost savings contract with a qualified
+provider through a competitive sealed proposal process as provided by the
+procurement practices adopted by the state board of education.
+
+B.  A
+school district may enter into a guaranteed energy cost savings contract with a
+qualified provider if it determines that the energy savings project pays for
+itself within the expected life, according to the manufacturer's equipment
+standards, of the energy cost savings measures implemented, the term of the
+financial agreement or twenty‑five years, whichever is shortest, if the
+recommendations in the proposal are followed.  The school district
+shall retain the cost savings achieved by a guaranteed energy cost saving savings contract, and these cost
+savings may be used to pay for the contract and project implementation.  
+
+C.  The
+school district shall use objective criteria in selecting the qualified
+provider, including the cost of the contract, the energy cost savings, the net
+projected energy savings, the quality of the technical approach, the quality of
+the project management plan, the financial solvency of the qualified provider
+and the experience of the qualified provider with projects of similar size and
+scope.  The school district shall set forth each criterion with its
+respective numerical weighting in the request for proposal.
+
+D.  In
+selecting a contractor to perform any construction work related to performing
+the guaranteed energy cost savings contract, the qualified provider may develop
+and use a prequalification process for contractors.  These
+prequalifications may require the contractor to demonstrate that the contractor
+is adequately bonded to perform the work and that the contractor has not failed
+to perform on a prior job. 
+
+E.  A
+study shall be performed by the selected qualified provider in order to
+establish the exact scope of the guaranteed energy cost savings contract, the
+fixed cost savings guarantee amount and the methodology for determining actual
+savings.  This report shall be reviewed and approved by the school
+district before the actual installation of any equipment.  The
+qualified provider shall transmit a copy of the approved study to the school
+facilities board and the governor's office of energy policy.
+
+F.  The
+guaranteed energy cost savings contract shall require that, in determining
+whether the projected energy savings calculations have been met, the energy
+savings shall be computed by comparing the energy baseline before installation
+or implementation of the energy cost savings measures with the energy consumed
+after installation or implementation of the energy cost savings
+measures.  The qualified provider and the school district may agree
+to make modifications to the energy baseline only for any of the following:
+
+1.  Changes
+in utility rates.
+
+2.  Changes
+in the number of days in the utility billing cycle.
+
+3.  Changes
+in the square footage of the facility.
+
+4.  Changes
+in the operational schedule of the facility.
+
+5.  Changes
+in facility temperature.
+
+6.  Significant
+changes in the weather.
+
+7.  Significant
+changes in the amount of equipment or lighting utilized used in the facility.
+
+8.  Significant
+changes in the nature or intensity of energy use, such as
+the change of classroom space to laboratory space.
+
+G.  The
+information to develop the energy baseline shall be derived from historical
+energy costs or actual energy measurements or shall be calculated from energy
+measurements at the facility where energy cost savings measures are to be
+installed or implemented.  The baseline shall be established before
+the installation or implementation of energy cost savings measures.
+
+H.  At
+the qualified provider's expense, the proposal shall include an independent
+third‑party validation of cost savings calculations associated with each
+proposed energy cost savings measure by a licensed, registered professional
+engineer, with credentials from the national association of energy engineers,
+who has demonstrated experience in energy analysis.  The school
+district must approve the selection of the credentialed engineer.
+
+I.  A
+school district, or two or more school districts, may enter into a financing
+agreement with a qualified provider or the financial institution, trustee or
+paying agent for the purchase and installation or implementation of energy cost
+savings measures.  The guaranteed energy cost savings contract may
+provide for payments over a period of not more than the expected life,
+according to the manufacturer's equipment standards, of the energy cost savings
+measures implemented, the term of the financial agreement or twenty‑five
+years, whichever is shortest.  The contract shall provide that all
+payments, except obligations on termination of the contract before its
+expiration, shall be made pursuant to the terms of the financing
+agreement.  If a school district purchases the energy cost savings
+measure, the qualified provider shall guarantee that the energy cost savings
+meet or exceed the school district's total cost of the energy savings project
+purchase.
+
+J.  The
+guaranteed energy cost savings contract shall include a written guarantee of
+the qualified provider that the energy savings will meet or exceed the costs of
+the energy cost savings measures over the expected life, according to the
+manufacturer's equipment standards, of the energy cost savings measures
+implemented, the term of the financial agreement or twenty‑five years,
+whichever is shortest.  The qualified provider shall:
+
+1.  For
+the term of the guaranteed energy cost savings contract,
+prepare a measurement and verification report on an annual basis in addition to
+an annual reconciliation of savings.
+
+2.  Reimburse
+the school district for any shortfall of guaranteed energy cost savings on an
+annual basis.
+
+3.  Use
+the international performance and measurement and verification protocol
+standards or the federal energy management program standards to validate the
+savings guarantee.
+
+K.  The
+school district may obtain any required financing as part of the original
+competitive sealed proposal process from the qualified provider or a
+third-party financing institution.
+
+L.  A
+qualified provider that is awarded the contract shall give a sufficient bond to
+the school district for its faithful performance of the equipment installment.
+
+M.  The
+qualified provider is required to make public the information
+in the subcontractor's bids only if the qualified provider is awarded the
+guaranteed energy cost savings contract by the school district.
+
+N.  For
+all projects carried out under this section, the district shall report to the
+governor's office of energy policy and the school facilities
+board:
+
+1.  The
+name of the project.
+
+2.  The
+name of the qualified provider.
+
+3.  The
+total cost of the project.
+
+4.  The
+expected energy cost savings and relevant escalators.
+
+5.  The
+agreed on agreed‑on baseline
+in the measurement and verification agreement in both kilowatt hours and
+dollars.
+
+O.  For
+all projects carried out under this section, the district shall report to the
+school facilities board, by October 15 each year, the actual energy cost
+savings.
+
+P.  O.  This
+section does not apply to the construction of new buildings.
+
+Q.  P.  A
+school district may utilize use a
+simplified energy performance contract for projects that are less
+than five hundred thousand dollars.  Simplified energy performance
+contracts are not required to include an energy savings guarantee and shall
+comply with all requirements in this section except for the requirements that
+are specifically related to the energy savings guarantee and the measurement
+and verification of the guaranteed savings.
+
+R.  Q.  For
+the purposes of this section:
+
+1.  "Construction"
+means the process of building, altering, repairing, improving or demolishing
+any school district structure or building, or other public improvements of any
+kind to any school district real property.  Construction does not
+include the routine operation, routine repair or routine maintenance of
+existing structures, buildings or real property.
+
+2.  "Energy
+baseline" means a calculation of the amount of energy used in an existing
+facility before the installation or implementation of the energy cost savings
+measures.
+
+3.  "Energy
+cost savings measure" means a training program or facility alteration
+designed to reduce energy consumption and may include one or more of the
+following, and any related meters or other measuring devices:
+
+(a)  Insulating
+the building structure or systems in the building.
+
+(b)  Storm
+windows or doors, caulking or weather stripping, multiglazed windows or door
+systems, additional glazing, reductions in glass area, or other window and door
+system modifications that reduce energy consumption.
+
+(c)  Automated
+or computerized energy control systems.
+
+(d)  Heating,
+ventilating or air conditioning system modifications or replacements, including
+geothermal.
+
+(e)  Replacing
+or modifying lighting fixtures to increase the energy efficiency of the
+lighting system without increasing the overall illumination of a facility
+unless an increase in illumination is necessary to conform to the applicable
+state or local building code for the lighting system after the proposed
+modifications are made.
+
+(f)  Indoor
+air quality improvements to increase air quality that conform to the applicable
+state or local building code requirements.
+
+(g)  Energy
+recovery systems.
+
+(h)  Installing
+a new or retrofitting an existing day lighting system.
+
+(i)  Procurement
+of low-cost utility supplies of all types, including electricity, natural gas,
+propane and water.
+
+(j)  Devices
+that reduce water consumption and water costs or that reduce sewer charges.
+
+(k)  Rainwater
+harvesting systems.
+
+(l)  Combined
+heat and power systems.
+
+(m)  Renewable
+and alternative energy projects and renewable energy power service agreements.
+
+(n)  Self-generation
+systems.
+
+(o)  Any
+additional building systems and infrastructure that produce energy, or that
+provide utility cost savings not specifically mentioned in this paragraph, if
+the improvements meet the life cycle life‑cycle
+cost requirement and enhance building system performance or occupant comfort
+and safety, excluding those systems that fall under section 15‑213.02.
+
+(p)  Geothermal.
+
+4.  "Guaranteed
+energy cost savings contract" means a contract for implementing one or
+more energy cost savings measures.
+
+5.  "Life cycle Life‑cycle cost"
+means the sum of present values of investment costs, capital costs,
+installation costs, energy costs, operating costs, maintenance costs and
+disposal costs and utility rebates over the life of the project, product or
+measure as provided by federal life cycle life‑cycle
+cost rules, regulations and criteria contained in the United States department
+of energy federal energy management program "guidance on life‑cycle
+cost analysis" required by executive order 13423, January 2007.
+
+6.  "Qualified
+provider" means a person or a business that is experienced in designing,
+implementing or installing energy cost savings measures, that has a record of
+established projects or measures of similar size and scope, that has
+demonstrated technical, operational, financial and managerial capabilities to
+design and operate energy cost savings measures and
+projects and that has the financial ability to satisfy guarantees for energy
+cost savings. END_STATUTE
+
+Sec. 2.  Section 15-910.02, Arizona Revised
+Statutes, is amended to read:
+
+START_STATUTE15-910.02.  Energy
+and water savings accounts
+
+A.  Each
+school district may establish an energy and water savings account that consists
+of a designated pool of capital investment monies to fund energy or water
+saving projects in school facilities.  A school district may deposit
+in the account monies generated from the energy or water savings projects or
+measures implemented in school facilities.  A school district may use
+monies in the energy and water savings account for payments under a performance
+contract entered into pursuant to section 15‑213 or 15‑213.01.
+
+B.  The
+auditor general and the department of education shall prescribe the appropriate
+designation of the energy and water savings accounts in the uniform system of
+financial records and shall prescribe reporting requirements on the appropriate
+budget forms and annual financial report forms.
+
+C.  Monies
+deposited in an energy and water savings account shall be used as a designated
+pool of capital investment monies to pay for the incremental cost of energy or
+water savings measures in school facilities that are owned by the school
+district.  Any contract entered into pursuant to this section shall contain an
+agreement between the qualified provider and the energy or water services
+company that both parties have performed a reasonable investigation to
+determine that the measures contemplated by the contract will result in stated
+energy or water savings.  Contract terms may extend the period of the
+capital investment repayment schedule prescribed in subsection G of this
+section up to the expected life, according to the manufacturer's equipment
+standards, of the energy cost savings measures implemented, the term of the
+financial agreement or twenty‑five years, whichever is shortest.
+
+D.  Expenditures
+from an energy and water savings account shall be used only for the following:
+
+1.  Projects
+or measures pursuant to a contract pursuant to this section or section 15‑213.01
+that save energy or water in school facilities that are owned by the school
+district.  Monies may be used pursuant to this paragraph to provide
+technical assistance regarding energy or water savings to school districts by a
+qualified provider or energy or water services company.
+
+2.  Payment
+of principal, interest, related financing costs and prepayment premiums.
+
+E.  School
+districts shall procure energy or water savings measures or services with
+monies distributed from the energy and water savings accounts.
+
+F.  Before
+the implementation of the energy or water savings measures or services, the
+qualified provider or energy or water services company shall compute, and the
+school district shall review and approve, the estimated amount of the energy or
+water savings and the associated impact on energy or water costs to be achieved
+by the school district on an annual and monthly basis over the term of the
+guaranteed energy cost savings contract and shall include
+these estimates in the contract.  The qualified provider and the
+school district shall update the annual and monthly energy or water savings and
+associated cost impact estimates annually based on actual experience for the
+term of the guaranteed energy cost savings contract.
+
+G.  Before
+the implementation of the energy or water savings measures or services, the
+qualified provider or financial institution, trustee or paying agent and the
+school district shall jointly develop a schedule of monthly or another mutually
+agreed on agreed‑on interval
+of payments for repayment of the capital investment monies.  The
+repayment schedule shall result in lower energy or water costs, which shall
+include the total cost of all the installed energy or water savings measures
+for the school district over the expected life, according to the manufacturer's
+equipment standards, of the energy cost savings measures implemented, the term
+of the financial agreement or twenty‑five years, whichever is
+shortest.  The repayment schedule shall be included in the contract.
+
+H.  The
+school district shall transfer on a monthly basis the
+amount of the monthly payment prescribed pursuant to
+subsection G of this section to the energy and water savings account from the
+maintenance and operation portion of the school district's budget to repay any
+unpaid balance of the capital investment previously deposited in the energy and
+water savings account from the qualified provider or energy or water services
+company plus a reasonable carrying charge.  For the period of time
+that the company's capital investment monies and reasonable carrying charge
+remain unpaid, the qualified provider or energy or water services company shall
+provide a separate billing or billing component to repay the capital investment
+on a monthly basis, pursuant to the repayment schedule
+prescribed pursuant to subsection G of this section, which shall be paid by the
+school district from the energy and water savings account.  The
+school district's general budget limit shall be reduced by the amount of monies
+transferred to the energy and water savings account pursuant to this section.
+
+I.  After
+the balance of the qualified provider's or energy or water services company's
+capital investment monies deposited in the energy and water savings account
+plus a reasonable carrying charge are repaid in full by the school district,
+the school district may discontinue the deposit in the energy and water savings
+account of amounts that are prescribed in subsection G of this section.
+
+J.  Any
+monies associated with an energy or water savings project remaining in the
+energy and water savings account after the capital investment monies of the
+qualified provider or energy or water services company plus a reasonable
+carrying charge are repaid in full may be transferred to the maintenance and
+operation portion of the school district's budget, and the general budget limit
+may be increased by the amount transferred.
+
+K.  School
+districts may deposit energy‑related rebate or grant monies in the energy
+and water savings account to assist in funding energy or water savings
+projects.  These rebate or grant monies may be used to reduce the total cost of
+energy or water savings projects and to reduce the amount of capital investment
+monies received from and repaid to utility, energy or water services
+companies.  School districts are not required to repay the rebate or
+grant monies in the manner described in subsection G of this section pursuant
+to the agreements with the providers of rebate or grant funds.
+
+L.  School
+districts shall not use or deposit any excess utilities monies budgeted
+pursuant to section 15-910 in the energy and water savings account.
+
+M.  School
+districts may deposit monies from other funding sources in the energy and water
+savings account to fund energy or water saving projects in school
+facilities.  These monies shall be repaid in a manner consistent with
+this section and pursuant to the contract between the school district and the
+provider of the funding.
+
+N.  This
+section does not impose an obligation on any energy utility, water utility,
+public service corporation or agricultural improvement district to invest
+monies or contract with any school district.
+
+O.  For
+all projects carried out under this section, the district shall report to the
+school facilities board:
+
+1.  The
+name of the project.
+
+2.  The
+qualified provider.
+
+3.  The
+total cost of the project.
+
+4.  The
+expected energy cost savings and relevant escalators.
+
+5.  The
+agreed on baseline in the measurement and verification agreement in both
+kilowatt hours and dollars.
+
+P.  For
+all projects carried out under this section, the district shall report to the
+school facilities board, by October 15 each year, the actual energy cost
+savings. END_STATUTE
+
+Sec. 3.  Section 15-995, Arizona Revised Statutes,
+is amended to read:
+
+START_STATUTE15-995.  Special
+district assessment for adjacent ways by school district
+
+A.  The
+governing board of a school district may contract for constructing, maintaining
+or otherwise improving any public way adjacent to any parcel of land owned by
+the school district or leased for school purposes by the school district, or an
+intersection of any public way adjoining a quarter block in which the parcel of
+land is situated, and for the construction of sidewalks, sewers, utility lines,
+roadways and other related improvements in or along such streets and
+intersections, and to pay for such improvements by the levy of a special
+assessment on the taxable property in the school district.  A school
+district shall not use any portion of the monies generated from the special
+assessment for any construction, maintenance or other improvements to the
+school district's property except improvements necessary to ensure the safe ingress
+to and egress from public school property directly adjacent to the public way
+for buses and fire equipment.  The assessment shall be made a part of
+the itemized statement that is regularly filed with the county school
+superintendent and that shows the amount of monies needed for the expenses of
+schools within the school district for the ensuing year.  Each adjacent ways
+project proposal to be funded through this special assessment must be filed
+with the school facilities board and include the project cost
+estimate.  If the entire project cost for the adjacent ways project
+is greater than fifty thousand dollars, the school facilities
+board shall approve or deny the project within sixty days after receipt of the
+filing of the project proposal by the school district and the
+expenditure shall not be made unless the school facilities board validates both
+of the following within sixty days after receipt of the
+filing of the proposal:
+
+1.  The
+project that is proposed to be funded by the assessment is in compliance with
+state laws relating to adjacent ways projects.
+
+2.  The
+proposal selected by the school district does not contain additional work that
+is not listed in the adjacent ways proposal submitted by the school district.
+
+B.  If
+any property that is owned by a school district or leased by a school district
+for school purposes from any city or county, the state or the United States is
+included within the assessment district to be assessed to pay the costs and
+expenses of any public improvements initiated by a city, in order to make the
+assessments thereon payable by the city in which the improvement is initiated,
+the governing board may contract with the municipality or its improvement
+district to reimburse it for the amount of the assessment against the property
+and to pay the amount so contracted for by the levy of a special assessment as
+provided by subsection A of this section.
+
+C.  The
+governing board of the school district shall follow the truth in taxation
+notice and hearing requirements prescribed in section 15‑905.01,
+subsection B.
+
+D.  The
+portion of the primary tax rate to fund adjacent ways as provided in this
+section shall not be included in the computation of additional state aid for
+education as prescribed in section 15‑972. END_STATUTE
+
+Sec. 4.  Section 15-1107, Arizona Revised
+Statutes, is amended to read:
+
+START_STATUTE15-1107.  Litigation
+recovery fund; disposition of proceeds
+
+A.  Monies
+received for and derived from settlement of legal controversies or from
+recovery of costs, attorney fees or damages by a school district in litigation
+by or against the school district shall be deposited with the county treasurer
+who shall credit the deposits to the litigation recovery fund of the school
+district.  The litigation recovery fund is a continuing fund that is
+not subject to reversion.
+
+B.  If
+a school district receives monies as provided in subsection A of this section
+for the purpose of replacing or repairing school buildings or other school
+property, the governing board, or the superintendent or chief administrative
+officer with the approval of the governing board, may only
+apply the proceeds only to:
+
+1.  Reimburse
+the school facilities board building renewal grant fund established by section
+15‑2032 OR the EMERGENCY DEFICIENCIES CORRECTION FUND established by
+section 15‑2022 to the extent that monies were received by the school
+district from the school facilities board for replacing or repairing school
+buildings or other school property that was the subject of the dispute and the
+monies recovered by the school district pursuant to subsection A of this
+section are designated for the replacement or repair.  The SCHOOL
+DISTRICT SHALL PRIORITIZE the REIMBURSEMENT of THE SCHOOL FACILITIES BOARD, IF
+APPLICABLE.
+
+1.  2.  Pay
+any outstanding bonded indebtedness of the school district that is payable from
+the levy of taxes on property within the school district.
+
+2.  3.  Construct,
+acquire, improve, repair or furnish school buildings after notice.  If the proceeds are applied to a
+project that costs more than two hundred fifty thousand dollars, the governing
+board, or the superintendent or chief administrative officer with the approval
+of the governing board, may apply the proceeds after notice and a hearing.
+
+3.  4.  Replace
+or repair the school property other than school buildings.
+
+C.  Except
+as provided in subsection B of this section, the governing board, or the
+superintendent or chief administrative officer with the approval of the
+governing board, may apply the proceeds of litigation recoveries to procure
+legal services or for the costs of litigation. END_STATUTE
+
+Sec. 5.  Section 15-2011, Arizona Revised
+Statutes, is amended to read:
+
+START_STATUTE15-2011.  Minimum
+school facility adequacy requirements; definition
+
+A.  The
+school facilities board, as determined and prescribed in this chapter, shall
+provide funding to school districts for new construction as the number of
+pupils in the district fills the existing school facilities and requires more
+pupil space.
+
+B.  School
+buildings in a school district are adequate if all of the following
+requirements are met:
+
+1.  The
+buildings contain sufficient and appropriate space and equipment that comply
+with the minimum school facility adequacy guidelines established pursuant to
+subsection F of this section.  The state shall not fund facilities for elective
+courses that require the school district facilities to exceed minimum school
+facility adequacy requirements.  The school facilities board shall
+determine whether a school building meets the requirements of this paragraph by
+analyzing the total square footage that is available for each pupil in
+conjunction with the need for specialized spaces and equipment.
+
+2.  The
+buildings are in compliance with federal, state and local building and fire
+codes and laws that are applicable to the particular building, except that a
+school with an aggregate area of less than five thousand square feet is subject
+to permitting and inspection by a local fire marshal and is only subject to
+regulation or inspection by the state fire marshal if the county, city or town
+in which the school is located does not employ a local fire
+marshal.  An existing school building is not required to comply with
+current requirements for new buildings unless this compliance is specifically
+mandated by law or by the building or fire code of the jurisdiction where the
+building is located.
+
+3.  The
+building systems, including roofs, plumbing, telephone systems, electrical
+systems, heating systems and cooling systems, are in working order and are
+capable of being properly maintained.
+
+4.  The
+buildings are structurally sound.
+
+C.  The
+standards that shall be used by the school facilities board to determine
+whether a school building meets the minimum adequate gross square footage
+requirements are as follows:
+
+1.  For
+a school district that provides instruction to pupils in programs for preschool
+children with disabilities, kindergarten programs and grades one through six,
+eighty square feet per pupil in programs for preschool children with
+disabilities, kindergarten programs and grades one through six.
+
+2.  For
+a school district that provides instruction to up to eight hundred pupils in
+grades seven and eight, eighty‑four square feet per pupil in grades seven
+and eight.
+
+3.  For
+a school district that provides instruction to more than eight hundred pupils
+in grades seven and eight, eighty square feet per pupil in grades seven and
+eight or sixty‑seven thousand two hundred square feet, whichever is more.
+
+4.  For
+a school district that provides instruction to up to four hundred pupils in
+grades nine through twelve, one hundred twenty‑five square feet per pupil
+in grades nine through twelve.
+
+5.  For
+a school district that provides instruction to more than four hundred and up to
+one thousand pupils in grades nine through twelve, one hundred twenty square
+feet per pupil in grades nine through twelve or fifty thousand square feet,
+whichever is more.
+
+6.  For
+a school district that provides instruction to more than one thousand and up to
+one thousand eight hundred pupils in grades nine through twelve, one hundred
+twelve square feet per pupil in grades nine through twelve or one hundred
+twenty thousand square feet, whichever is more.
+
+7.  For
+a school district that provides instruction to more than one thousand eight
+hundred pupils in grades nine through twelve, ninety‑four square feet per
+pupil in grades nine through twelve or two hundred one thousand six hundred
+square feet, whichever is more.
+
+D.  The
+school facilities board may modify the square footage requirements prescribed
+in subsection C of this section or modify the amount of monies awarded to cure
+the square footage deficiency pursuant to this section for particular school
+districts based on extraordinary circumstances for any of the following
+considerations:
+
+1.  The
+number of pupils served by the school district.
+
+2.  Geographic
+factors.
+
+3.  Grade
+configurations other than those prescribed in subsection C of this section.
+
+E.  In
+measuring the square footage per pupil requirements of subsection C of this
+section, the school facilities board shall:
+
+1.  Use
+the most recent one hundredth day average daily membership through the first one hundred days in session.
+
+2.  For
+each school, use the lesser of either:
+
+(a)  Total
+gross square footage.
+
+(b)  Student
+capacity multiplied by the appropriate square footage per pupil prescribed by
+subsection C of this section.
+
+3.  Consider
+the total space available in all schools in use in the school district, except
+that the school facilities board shall allow an exclusion of the square footage
+for certain schools and the pupils within the schools' boundaries if the school
+district demonstrates to the board's satisfaction unusual or excessive busing
+of pupils or unusual attendance boundary changes between schools.
+
+4.  Compute
+the gross square footage of all buildings by measuring from exterior wall to
+exterior wall.  Square footage used solely for district
+administration, storage of vehicles and other nonacademic purposes shall be
+excluded from the net square footage.
+
+5.  Include
+all portable and modular buildings.
+
+6.  Include
+in the net square footage new construction funded wholly or partially by the
+school facilities board based on the square footage funded by the school
+facilities board.  If the new construction is to exceed the square
+footage funded by the school facilities board, the excess square footage shall
+not be included in the net square footage if any of the following applies:
+
+(a)  The
+excess square footage was constructed before July 1, 2002 or funded by a class
+B bond, impact aid revenue bond or capital outlay override approved by the
+voters after August 1, 1998 and before June 30, 2002 or funded from
+unrestricted capital outlay expended before June 30, 2002.
+
+(b)  The
+excess square footage of new school facilities does not exceed twenty‑five
+percent of the minimum square footage requirements pursuant to subsection C of
+this section.
+
+(c)  The
+excess square footage of expansions to school facilities does not exceed twenty‑five
+percent of the minimum square footage requirements pursuant to subsection C of
+this section.
+
+7.  Exclude
+square footage built under a developer agreement according to section 15‑342,
+paragraph 33 until the school facilities board provides funding for the square
+footage under section 15‑2041, subsection O.
+
+8.  Include
+square footage that a school district has leased to another entity.
+
+F.  The
+school facilities board shall adopt rules establishing minimum school facility
+adequacy guidelines.  The guidelines shall provide the minimum
+quality and quantity of school buildings and facilities and equipment necessary
+and appropriate to enable pupils to achieve the academic standards pursuant to
+section 15‑203, subsection A, paragraphs 12 and 13 and sections 15‑701
+and 15‑701.01.  At a minimum, the school facilities board shall
+address all of the following in developing these guidelines:
+
+1.  School
+sites.
+
+2.  Classrooms.
+
+3.  Libraries
+and media centers, or both.
+
+4.  Cafeterias.
+
+5.  Auditoriums,
+multipurpose rooms or other multiuse space.
+
+6.  Technology.
+
+7.  Transportation.
+
+8.  Facilities
+for science, arts and physical education.
+
+9.  Other
+facilities and equipment that are necessary and appropriate to achieve the
+academic standards prescribed pursuant to section 15‑203, subsection A,
+paragraphs 12 and 13 and sections 15‑701 and 15‑701.01.
+
+10.  Appropriate
+combinations of facilities or uses listed in this section.
+
+G.  The
+board shall consider the facilities and equipment of the schools with the
+highest academic productivity scores, as prescribed in section 15‑2002,
+subsection A, paragraph 9, subdivision (d), and the highest parent quality
+ratings in the establishment of the guidelines.
+
+H.  The
+school facilities board may consider appropriate combinations of facilities or
+uses in making assessments of and curing existing deficiencies pursuant to
+section 15‑2002, subsection A, paragraph 1 and in certifying plans for new
+school facilities pursuant to section 15‑2002, subsection A, paragraph 5.
+
+I.  For
+the purposes of this section, "student capacity" means the capacity
+adjusted to include any additions to or deletions of space, including modular
+or portable buildings at the school.  The school facilities board
+shall determine the student capacity for each school in conjunction with each
+school district, recognizing each school's allocation of space as of July 1,
+1998, to achieve the academic standards prescribed pursuant to section 15‑203,
+subsection A, paragraphs 12 and 13 and sections 15‑701 and 15‑701.01.
+END_STATUTE
+
+Sec. 6.  Section 15-2041, Arizona Revised
+Statutes, is amended to read:
+
+START_STATUTE15-2041.  New
+school facilities fund; capital plan; report
+
+A.  A  The new school facilities fund is
+established consisting of monies appropriated by the legislature and monies
+credited to the fund pursuant to section 37‑221.  The school facilities
+board shall administer the fund and distribute monies, as a continuing
+appropriation, to school districts for the purpose of constructing new school
+facilities and for contracted expenses pursuant to section 15‑2002,
+subsection B, paragraphs 2, 3 and 4.  On June 30 of each fiscal year,
+any unobligated contract monies in the new school facilities fund shall be
+transferred to the capital reserve fund established by section 15‑2003.
+
+B.  The
+school facilities board shall prescribe a uniform format for use by the school
+district governing board in developing and annually updating a capital plan
+that consists of each of the following:
+
+1.  Enrollment
+projections for the next five years for elementary schools and eight years for
+middle and high schools, including a description of the methods used to make
+the projections.
+
+2.  A
+description of new schools or additions to existing schools needed to meet the
+building adequacy standards prescribed in section 15‑2011.  The
+description shall include:
+
+(a)  The
+grade levels and the total number of pupils that the school or addition is
+intended to serve.
+
+(b)  The
+year in which it is necessary for the school or addition to begin operations.
+
+(c)  A
+timeline that shows the planning and construction process for the school or
+addition.
+
+3.  Long‑term
+projections of the need for land for new schools.
+
+4.  Any
+other necessary information required by the school facilities board to evaluate
+a school district's capital plan.
+
+5.  If
+a school district pays tuition for all or a portion of the school district's
+high school pupils to another school district, the capital plan shall indicate
+the number of pupils for which the district pays tuition to another
+district.  If a school district accepts pupils from another school
+district pursuant to section 15‑824, subsection A, the school district
+shall indicate the projections for this population separately.  This
+paragraph does not apply to a small isolated school district as defined in
+section 15‑901.
+
+C.  If
+the capital plan indicates a need for a new school or an addition to an
+existing school within the next four years or a need for land within the next
+ten years, the school district shall submit its plan to the school facilities
+board by September 1 and shall request monies from the new school facilities
+fund for the new construction or land.  The school facilities board
+may require a school district to sell land that was previously purchased
+entirely with monies provided by the school facilities board if the school facilities
+board determines that the property is no longer needed within the ten‑year
+period specified in this subsection for a new school or no longer needed within
+that ten‑year period for an addition to an existing school.  The school facilities board may distribute monies from the new
+school facilities fund for land if the enrollment projections submitted by the
+school district or revised by the school facilities board pursuant to
+subsection D, paragraph 1 of this section indicate a need for a new school or
+an addition to an existing school within the next four years.  Monies
+provided for land shall be in addition to any monies provided pursuant to
+subsection D of this section.
+
+D.  The
+school facilities board shall distribute monies from the new school facilities
+fund for additional square footage as follows:
+
+1.  The
+school facilities board shall review and evaluate the enrollment
+projections.  On or before March 1, following the submission of the
+enrollment projections, the school facilities board shall either approve the
+projections as submitted or revise the projections.  In approving or
+revising the enrollment projections, the school facilities board shall use the
+most recent average daily membership data available.  On request from the
+school facilities board, the department of education shall make available the
+most recent average daily membership data for use in revising the enrollment
+projections.  In determining new construction requirements, the
+school facilities board shall determine the net new growth of pupils that will
+require additional square footage that exceeds the building adequacy standards
+prescribed in section 15‑2011.  If the projected growth and the
+existing number of pupils exceed three hundred fifty pupils who are served in a
+school district other than the pupil's resident school district, the school
+facilities board, the receiving school district and the resident school
+district shall develop a capital facilities plan on how to best serve those
+pupils.  A small isolated school district as defined in section 15‑901
+is not required to develop a capital facilities plan pursuant to this
+paragraph.
+
+2.  If
+the approved projections indicate that additional space would not have been
+needed during the current school year in order to meet the building adequacy
+standards prescribed in section 15‑2011, the request shall be held for
+consideration by the school facilities board for possible future funding and
+the school district shall annually submit an updated plan until the additional
+space is needed.
+
+3.  If
+the approved projections indicate that additional space would have been needed
+during the current school year in order to meet the building adequacy standards
+prescribed in section 15‑2011, the school facilities board shall provide
+an amount as follows:
+
+(a)  Determine
+the number of pupils requiring additional square footage to meet building
+adequacy standards.  This amount for elementary schools shall not be
+less than the number of new pupils for whom space will be needed in the next
+year and shall not exceed the number of new pupils for whom space will be
+needed in the next five years.  This amount for middle and high
+schools shall not be less than the number of new pupils for whom space will be
+needed in the next four years and shall not exceed the number of new pupils for
+whom space will be needed in the next eight years.
+
+(b)  Multiply
+the number of pupils determined in subdivision (a) of this paragraph by the
+square footage per pupil.  The square footage per pupil is ninety
+square feet per pupil for preschool children with disabilities, kindergarten
+programs and grades one through six, one hundred square feet for grades seven
+and eight, one hundred thirty‑four square feet for a school district that
+provides instruction in grades nine through twelve for fewer than one thousand
+eight hundred pupils and one hundred twenty‑five square feet for a school
+district that provides instruction in grades nine through twelve for at least
+one thousand eight hundred pupils.  The total number of pupils in
+grades nine through twelve in the district shall determine the square footage
+factor to use for net new pupils.  The school facilities board may
+modify the square footage requirements prescribed in this subdivision for
+particular schools based on any of the following factors:
+
+(i)  The
+number of pupils served or projected to be served by the school district.
+
+(ii)  Geographic
+factors.
+
+(iii)  Grade
+configurations other than those prescribed in this subdivision.
+
+(iv)  Compliance
+with minimum school facility adequacy requirements established pursuant to
+section 15‑2011.
+
+(c)  Multiply
+the product obtained in subdivision (b) of this paragraph by the cost per
+square foot.  The cost per square foot is ninety dollars for preschool children
+with disabilities, kindergarten programs and grades one through six, ninety‑five
+dollars for grades seven and eight and one hundred ten dollars for grades nine
+through twelve.  The cost per square foot shall be adjusted annually for
+construction market considerations based on an index identified or developed by
+the joint legislative budget committee as necessary but not less than once each
+year.  The school facilities board shall multiply the cost per square foot by
+1.05 for any school district located in a rural area.  The school
+facilities board may only modify the base cost per square foot prescribed in
+this subdivision for particular schools based on geographic conditions or site
+conditions.  For the purposes of this subdivision, "rural area" means
+an area outside a thirty‑five‑mile radius of a boundary of a
+municipality with a population of more than fifty thousand persons.
+
+(d)  Once
+the school district governing board obtains approval from the school facilities
+board for new facility construction monies, additional portable or modular
+square footage created for the express purpose of providing temporary space for
+pupils until the completion of the new facility and any
+additional space funded by the school district shall not be included by
+the school facilities board for the purpose of new construction funding
+calculations.  On completion of the new facility construction
+project, any additional space funded by the school district
+shall be included as prescribed by this chapter and, if the portable or
+modular facilities continue in use, the portable or modular facilities shall be
+included as prescribed by this chapter, unless the school facilities board
+approves their continued use for the purpose of providing temporary space for
+pupils until the completion of the next new facility that has been approved for
+funding from the new school facilities fund.
+
+4.  For
+projects approved after December 31, 2001, and notwithstanding paragraph 3 of
+this subsection, a unified school district that does not have a high school is
+not eligible to receive high school space as prescribed by section 15‑2011
+and this section unless the unified district qualifies for geographic factors
+prescribed by paragraph 3, subdivision (b), item (ii) of this subsection.
+
+5.  If
+a joint technical education district leases a building from a school district,
+that building shall be included in the school district's square footage
+calculation for the purposes of new construction pursuant to this section.
+
+6.  If
+a school district leases a building to another entity, that building shall be included
+in the school district's square footage calculation for purposes of new
+construction pursuant to this section.
+
+7.  A
+school district shall qualify for monies from the new school facilities fund for additional square footage in a fiscal year only if the
+school facilities board has approved or revised its enrollment projection under
+paragraph 3 of this subsection on or before March 1 of the prior fiscal year.
+
+E.  Monies
+for architectural and engineering fees, project management services and
+preconstruction services shall be distributed on the completion of the analysis
+by the school facilities board of the school district's
+request.  After receiving monies pursuant to this subsection, the
+school district shall submit a design development plan for the school or
+addition to the school facilities board before any monies for construction are
+distributed.  If the school district's request meets the building
+adequacy standards, the school facilities board may review and comment on the
+district's plan with respect to the efficiency and effectiveness of the plan in
+meeting state square footage and facility standards before distributing the
+remainder of the monies.  If the school facilities board modifies the
+cost per square foot as prescribed in subsection D, paragraph 3, subdivision
+(c) of this section, the school facilities board may deduct the cost of project
+management services and preconstruction services from the required cost per
+square foot.  The school facilities board may decline to fund the
+project if the square footage is no longer required due to revised enrollment
+projections.
+
+F.  The
+school facilities board shall distribute the monies needed for land for new
+schools so that land may be purchased at a price that is less than or equal to
+fair market value and in advance of the construction of the new
+school.  If necessary, the school facilities board may distribute
+monies for land to be leased for new schools if the duration of the lease
+exceeds the life expectancy of the school facility by at least fifty
+percent.  A school district shall not use land purchased or partially
+purchased with monies provided by the school facilities board for a purpose
+other than a site for a school facility without obtaining prior written
+approval from the school facilities board.  A school district shall
+not lease, sell or take any action that would diminish the value of land
+purchased or partially purchased with monies provided by the school facilities
+board without obtaining prior written approval from the school facilities
+board.  The proceeds derived through the sale of any land purchased
+or partially purchased, or the sale of buildings funded or partially funded,
+with monies provided by the school facilities board shall be returned to the
+state fund from which it was appropriated and to any other participating entity
+on a proportional basis.  Except as provided in section 15‑342,
+paragraph 33, if a school district acquires real property by donation at an
+appropriate school site approved by the school facilities board, the school
+facilities board shall distribute an amount equal to twenty percent of the fair
+market value of the donated real property that can be used for academic
+purposes.  The school district shall place the monies in the
+unrestricted capital outlay fund and increase the unrestricted capital budget
+limit by the amount of monies placed in the fund.  Monies distributed
+under this subsection shall be distributed from the new school facilities
+fund.  A school district that receives monies from the new school facilities
+fund for a donation of land pursuant to section 15‑342, paragraph 33
+shall not receive monies from the school facilities board for the donation of
+real property pursuant to this subsection.  A school district shall
+not pay a consultant a percentage of the value of any of the following:
+
+1.  Donations
+of real property, services or cash from any of the following:
+
+(a)  Entities
+that have offered to provide construction services to the school district.
+
+(b)  Entities
+that have been contracted to provide construction services to the school
+district.
+
+(c)  Entities
+that build residential units in that school district.
+
+(d)  Entities
+that develop land for residential use in that school district.
+
+2.  Monies
+received from the school facilities board on behalf of the school district.
+
+3.  Monies
+paid by the school facilities board on behalf of the school district.
+
+G.  In
+addition to distributions to school districts based on pupil growth
+projections, a school district may submit an application to the school
+facilities board for monies from the new school facilities fund if one or more
+school buildings have outlived their useful life.  If the school
+facilities board determines that the school district needs to build a new
+school building for these reasons, the school facilities board shall remove the
+square footage computations that represent the building from the computation of
+the school district's total square footage for purposes of this
+section.  If the square footage recomputation reflects that the school
+district no longer meets building adequacy standards, the school district
+qualifies for a distribution of monies from the new school construction formula
+in an amount determined pursuant to subsection D of this section.  The school
+facilities board may only modify the base cost per square foot prescribed in
+this subsection under extraordinary circumstances for geographic factors or
+site conditions.
+
+H.  School
+districts that receive monies from the new school facilities fund shall
+establish a district new school facilities fund and shall use the monies in the
+district new school facilities fund only for the purposes prescribed in this
+section.  By October 15 of each year, each school district shall report to the
+school facilities board the projects funded at each school in the previous
+fiscal year with monies from the district new school facilities fund and shall
+provide an accounting of the monies remaining in the new school facilities fund
+at the end of the previous fiscal year.
+
+I.  If
+a school district has surplus monies received from the new school facilities
+fund, the school district may use the surplus monies only for capital purposes
+for the project for up to one year after completion of the
+project.  If the school district possesses surplus monies from the
+new school construction project that have not been expended within one year of
+the completion of the project, the school district shall return the surplus
+monies to the school facilities board for deposit in the new school facilities
+fund.
+
+J.  The
+board's consideration of any application filed after December 31 of the
+year in which the property becomes territory in the vicinity of a military
+airport or ancillary military facility as defined in section 28‑8461 for
+monies to fund the construction of new school facilities proposed to be located
+in territory in the vicinity of a military airport or ancillary military
+facility shall include, if after notice is transmitted to the military airport
+pursuant to section 15‑2002 and before the public hearing the military
+airport provides comments and an analysis concerning compatibility of the
+proposed school facilities with the high noise or accident potential generated
+by military airport or ancillary military facility operations that may have an
+adverse effect on public health and safety, consideration and analysis of the
+comments and analysis provided by the military airport before making a final
+determination.
+
+K.  If
+a school district uses its own project manager for new school construction, the
+members of the school district governing board and the project manager shall
+sign an affidavit stating that the members and the project manager understand
+and will follow the minimum adequacy requirements prescribed in section 15‑2011.
+
+L.  The
+school facilities board shall establish a separate account in the new school
+facilities fund designated as the litigation account to pay attorney fees,
+expert witness fees and other costs associated with litigation in which the
+school facilities board pursues the recovery of damages for deficiencies
+correction that resulted from alleged construction defects or design defects
+that the school facilities board believes caused or contributed to a failure of
+the school building to conform to the building adequacy requirements prescribed
+in section 15‑2011.  Attorney fees paid pursuant to this
+subsection shall not exceed the market rate for similar types of
+litigation.  On or before December 1 of each year, the school
+facilities board shall report to the joint committee on capital review the
+costs associated with current and potential litigation that may be paid from
+the litigation account.
+
+M.  Until
+the state board of education and the auditor general adopt rules pursuant to
+section 15‑213, subsection I, the school facilities board may allow
+school districts to contract for construction services and materials through
+the qualified select bidders list method of project delivery for new school
+facilities pursuant to this section.
+
+N.  The
+school facilities board shall submit electronically a report on project
+management services and preconstruction services to the governor, the president
+of the senate and the speaker of the house of representatives by December 31 of
+each year.  The report shall compare projects that use project management
+and preconstruction services with those that do not.  The report
+shall address cost, schedule and other measurable components of a construction
+project.  School districts, construction manager at risk firms and
+project management firms that participate in a school facilities board funded
+project shall provide the information required by the school facilities board
+in relation to this report.
+
+O.  If
+a school district constructs new square footage according to section 15‑342,
+paragraph 33, the school facilities board shall review the design plans and
+location of any new school facility submitted by school districts and another
+party to determine whether the design plans comply with the adequacy standards
+prescribed in section 15‑2011 and the square footage per pupil
+requirements pursuant to subsection D, paragraph 3, subdivision (b) of this
+section.  When the school district qualifies for a distribution of monies from
+the new school facilities fund according to this section, the school facilities
+board shall distribute monies to the school district from the new school
+facilities fund for the square footage constructed under section 15‑342,
+paragraph 33 at the same cost per square foot established by this section that
+was in effect at the time of the beginning of the construction of the school
+facility.  Before the school facilities board distributes any monies
+pursuant to this subsection, the school district shall demonstrate to the
+school facilities board that the facilities to be funded pursuant to this section
+meet the minimum adequacy standards prescribed in section 15‑2011.  The
+agreement entered into pursuant to section 15‑342, paragraph 33 shall set
+forth the procedures for the allocation of these funds to the parties that
+participated in the agreement.
+
+P.  Accommodation
+schools are not eligible for monies from the new school facilities fund.
+
+Q.  If the school
+facilities board approves a school district for funding from the new school
+facilities fund and the full legislative appropriation is not available to the school
+district in the fiscal year following the approval by the school facilities
+board, the school district may use any legally available monies to pay for the
+land or the new construction project approved by the school facilities board
+and may reimburse the fund from which the monies were used in subsequent years
+with legislative appropriations when those appropriations are made available by
+this state. END_STATUTE
+

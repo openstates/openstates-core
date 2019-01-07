@@ -1,0 +1,1720 @@
+
+
+Be it
+enacted by the Legislature of the State of Arizona:
+
+Section 1.  Section 28-101, Arizona Revised Statutes,
+is amended to read:
+
+START_STATUTE28-101.  Definitions
+
+In
+this title, unless the context otherwise requires:
+
+1.  "Alcohol"
+means any substance containing any form of alcohol, including ethanol,
+methanol, propynol and isopropynol.
+
+2.  "Alcohol
+concentration" if expressed as a percentage means either:
+
+(a)  The
+number of grams of alcohol per one hundred milliliters of blood.
+
+(b)  The
+number of grams of alcohol per two hundred ten liters of breath.
+
+3.  "All‑terrain
+vehicle" means either of the following:
+
+(a)  A
+motor vehicle that satisfies all of the following:
+
+(i)  Is
+designed primarily for recreational nonhighway all‑terrain travel.
+
+(ii)  Is
+fifty or fewer inches in width.
+
+(iii)  Has
+an unladen weight of one thousand two hundred pounds or less.
+
+(iv)  Travels
+on three or more nonhighway tires.
+
+(v)  Is
+operated on a public highway.
+
+(b)  A
+recreational off-highway vehicle that satisfies all of the following:
+
+(i)  Is
+designed primarily for recreational nonhighway all-terrain travel.
+
+(ii)  Is
+sixty‑five or fewer inches in width.
+
+(iii)  Has
+an unladen weight of one thousand eight hundred pounds or less.
+
+(iv)  Travels
+on four or more nonhighway tires.
+
+4.  "Authorized
+emergency vehicle" means any of the following:
+
+(a)  A
+fire department vehicle.
+
+(b)  A
+police vehicle.
+
+(c)  An
+ambulance or emergency vehicle of a municipal department or public service
+corporation that is designated or authorized by the department or a local
+authority.
+
+(d)  Any
+other ambulance, fire truck or rescue vehicle that is authorized by the
+department in its sole discretion and that meets liability insurance
+requirements prescribed by the department.
+
+5.  "Autocycle"
+means a three‑wheeled motorcycle on which the driver and passengers ride
+in a fully or partially enclosed seating area that is equipped with a roll
+cage, safety belts for each occupant and antilock brakes and that is designed
+to be controlled with a steering wheel and pedals.
+
+6.  "Aviation
+fuel" means all flammable liquids composed of a mixture of selected
+hydrocarbons expressly manufactured and blended for the purpose of effectively
+and efficiently operating an internal combustion engine for use in an aircraft
+but does not include fuel for jet or turbine powered aircraft.
+
+7.  "Bicycle"
+means a device, including a racing wheelchair, that is propelled by human power
+and on which a person may ride and that has either:
+
+(a)  Two
+tandem wheels, either of which is more than sixteen inches in diameter.
+
+(b)  Three
+wheels in contact with the ground, any of which is more than sixteen inches in
+diameter.
+
+8.  "Board"
+means the transportation board.
+
+9.  "Bus"
+means a motor vehicle designed for carrying sixteen or more passengers,
+including the driver.
+
+10.  "Business
+district" means the territory contiguous to and including a highway if
+there are buildings in use for business or industrial purposes within any six
+hundred feet along the highway, including hotels, banks or office buildings,
+railroad stations and public buildings that occupy at least three hundred feet
+of frontage on one side or three hundred feet collectively on both sides of the
+highway.
+
+11.  "Certificate
+of ownership" means a paper or an electronic record that is issued in
+another state or a foreign jurisdiction and that indicates ownership of a
+vehicle.
+
+12.  "Certificate
+of title" means a paper document or an electronic record that is issued by
+the department and that indicates ownership of a vehicle.
+
+13.  "Combination
+of vehicles" means a truck or truck tractor and semitrailer and any
+trailer that it tows but does not include a forklift designed for the purpose
+of loading or unloading the truck, trailer or semitrailer.
+
+14.  "Controlled
+substance" means a substance so classified under section 102(6) of the
+controlled substances act (21 United States Code section 802(6)) and includes
+all substances listed in schedules I through V of 21 Code of Federal
+Regulations part 1308.
+
+15.  "Conviction"
+means:
+
+(a)  An
+unvacated adjudication of guilt or a determination that a person violated or
+failed to comply with the law in a court of original jurisdiction or by an
+authorized administrative tribunal.
+
+(b)  An
+unvacated forfeiture of bail or collateral deposited to secure the person's
+appearance in court.
+
+(c)  A
+plea of guilty or no contest accepted by the court.
+
+(d)  The
+payment of a fine or court costs.
+
+16.  "County
+highway" means a public road that is constructed and maintained by a
+county.
+
+17.  "Dealer"
+means a person who is engaged in the business of buying, selling or exchanging
+motor vehicles, trailers or semitrailers and who has an established place of
+business and has paid fees pursuant to
+section 28‑4302.
+
+18.  "Department"
+means the department of transportation acting directly or through its duly
+authorized officers and agents.
+
+19.  "Digital
+network or software application" has the same meaning prescribed in
+section 28‑9551.
+
+20.  "Director"
+means the director of the department of transportation.
+
+21.  "Drive"
+means to operate or be in actual physical control of a motor vehicle.
+
+22.  "Driver"
+means a person who drives or is in actual physical control of a vehicle.
+
+23.  "Driver
+license" means a license that is issued by a state to an individual and
+that authorizes the individual to drive a motor vehicle.
+
+24.  "Electric
+personal assistive mobility device" means a self‑balancing device
+with one wheel or two nontandem wheels and an electric propulsion system that
+limits the maximum speed of the device to fifteen miles per hour or less and
+that is designed to transport only one person.
+
+25.  "Evidence"
+includes both of the following:
+
+(a)  A
+display on a wireless communication device of a department‑generated
+driver license, nonoperating identification license, vehicle registration card
+or other official record of the department that is presented to a law
+enforcement officer or in a court or an administrative proceeding.
+
+(b)  An
+electronic or digital license plate authorized pursuant to section 28-364.
+
+25.  26.  "Farm"
+means any lands primarily used for agriculture production.
+
+26.  27.  "Farm
+tractor" means a motor vehicle designed and used primarily as a farm
+implement for drawing implements of husbandry.
+
+27.  28.  "Foreign
+vehicle" means a motor vehicle, trailer or semitrailer that is brought
+into this state other than in the ordinary course of business by or through a
+manufacturer or dealer and that has not been registered in this state.
+
+28.  29.  "Golf
+cart" means a motor vehicle that has not less than three wheels in contact
+with the ground, that has an unladen weight of less than one thousand eight
+hundred pounds, that is designed to be and is operated at not more than twenty‑five
+miles per hour and that is designed to carry not more than four persons including
+the driver.
+
+29.  30.  "Hazardous
+material" means a material, and its mixtures or solutions, that the United
+States department of transportation determines under 49 Code of Federal
+Regulations is, or any quantity of a material listed as a select agent or toxin
+under 42 Code of Federal Regulations part 73 that is, capable of posing an
+unreasonable risk to health, safety and property if transported in commerce and
+that is required to be placarded or marked as required by the department's
+safety rules prescribed pursuant to chapter 14 of this title.
+
+30.  31.  "Implement
+of husbandry" means a vehicle that is designed primarily for agricultural
+purposes and that is used exclusively in the conduct of agricultural
+operations, including an implement or vehicle whether self‑propelled or
+otherwise that meets both of the following conditions:
+
+(a)  Is
+used solely for agricultural purposes including the preparation or harvesting
+of cotton, alfalfa, grains and other farm crops.
+
+(b)  Is
+only incidentally operated or moved on a highway whether as a trailer or self‑propelled
+unit.  For the purposes of this subdivision, "incidentally
+operated or moved on a highway" means travel between a farm and another
+part of the same farm, from one farm to another farm or between a farm and a
+place of repair, supply or storage.
+
+31.  32.  "Limousine"
+means a motor vehicle providing prearranged ground transportation service for
+an individual passenger, or a group of passengers, that is arranged in advance
+or is operated on a regular route or between specified points and includes
+ground transportation under a contract or agreement for services that includes
+a fixed rate or time and is provided in a motor vehicle with a seating capacity
+not exceeding fifteen passengers including the driver.
+
+32.  33.  "Livery
+vehicle" means a motor vehicle that:
+
+(a)  Has
+a seating capacity not exceeding fifteen passengers including the driver.
+
+(b)  Provides
+passenger services for a fare determined by a flat rate or flat hourly rate
+between geographic zones or within a geographic area.
+
+(c)  Is
+available for hire on an exclusive or shared ride basis.
+
+(d)  May
+do any of the following:
+
+(i)  Operate
+on a regular route or between specified places.
+
+(ii)  Offer
+prearranged ground transportation service as defined in section 28‑141.
+
+(iii)  Offer
+on demand ground transportation service pursuant to a contract with a public
+airport, licensed business entity or organization.
+
+33.  34.  "Local
+authority" means any county, municipal or other local board or body
+exercising jurisdiction over highways under the constitution and laws of this
+state.
+
+34.  35.  "Manufacturer"
+means a person engaged in the business of manufacturing motor vehicles,
+trailers or semitrailers.
+
+35.  36.  "Moped"
+means a bicycle that is equipped with a helper motor if the vehicle has a
+maximum piston displacement of fifty cubic centimeters or less, a brake
+horsepower of one and one‑half or less and a maximum speed of twenty‑five
+miles per hour or less on a flat surface with less than a one percent grade.
+
+39.  37.  "Motorcycle"
+means a motor vehicle that has a seat or saddle for the use of the rider and
+that is designed to travel on not more than three wheels in contact with the
+ground but excludes a tractor and a moped.
+
+36.  38.  "Motor
+driven cycle" means a motorcycle, including every motor scooter, with a
+motor that produces not more than five horsepower.
+
+40.  39.  "Motorized
+quadricycle" means a self-propelled motor vehicle to which all of the
+following apply:
+
+(a)  The
+vehicle is self-propelled by an emission-free electric motor and may include
+pedals operated by the passengers.
+
+(b)  The
+vehicle has at least four wheels in contact with the ground.
+
+(c)  The
+vehicle seats at least eight passengers, including the driver.
+
+(d)  The
+vehicle is operable on a flat surface using solely the electric motor without
+assistance from the pedals or passengers.
+
+(e)  The
+vehicle is a commercial motor vehicle as defined in section 28‑5201.
+
+(f)  The
+vehicle is a limousine operating under a vehicle for hire company permit issued
+pursuant to section 28‑9503.
+
+(g)  The
+vehicle is manufactured by a motor vehicle manufacturer that is licensed
+pursuant to chapter 10 of this title.
+
+(h)  The
+vehicle complies with the definition and standards for low‑speed vehicles
+set forth in federal motor vehicle safety standard 500 and 49 Code of Federal
+Regulations sections 571.3(b) and 571.500, respectively.
+
+37.  40.  "Motor
+vehicle":
+
+(a)  Means
+either:
+
+(i)  A
+self‑propelled vehicle.
+
+(ii)  For
+the purposes of the laws relating to the imposition of a tax on motor vehicle
+fuel, a vehicle that is operated on the highways of this state and that is
+propelled by the use of motor vehicle fuel.
+
+(b)  Does
+not include a motorized wheelchair, an electric personal assistive mobility
+device or a motorized skateboard.  For the purposes of this subdivision:
+
+(i)  "Motorized
+skateboard" means a self‑propelled device that has a motor, a deck
+on which a person may ride and at least two tandem wheels in contact with the
+ground.
+
+(ii)  "Motorized
+wheelchair" means a self‑propelled wheelchair that is used by a
+person for mobility.
+
+38.  41.  "Motor
+vehicle fuel" includes all products that are commonly or commercially
+known or sold as gasoline, including casinghead gasoline, natural gasoline and
+all flammable liquids, and that are composed of a mixture of selected
+hydrocarbons expressly manufactured and blended for the purpose of effectively
+and efficiently operating internal combustion engines.  Motor vehicle
+fuel does not include inflammable liquids that are specifically manufactured
+for racing motor vehicles and that are distributed for and used by racing motor
+vehicles at a racetrack, use fuel as defined in section 28‑5601, aviation
+fuel, fuel for jet or turbine powered aircraft or the mixture created at the
+interface of two different substances being transported through a pipeline,
+commonly known as transmix.
+
+41.  42.  "Neighborhood
+electric vehicle" means a self‑propelled electrically powered motor
+vehicle to which all of the following apply:
+
+(a)  The
+vehicle is emission free.
+
+(b)  The
+vehicle has at least four wheels in contact with the ground.
+
+(c)  The
+vehicle complies with the definition and standards for low‑speed vehicles
+set forth in federal motor vehicle safety standard 500 and 49 Code of Federal
+Regulations sections 571.3(b) and 571.500, respectively.
+
+42.  43.  "Nonresident"
+means a person who is not a resident of this state as defined in section 28‑2001.
+
+43.  44.  "Off‑road
+recreational motor vehicle" means a motor vehicle that is designed
+primarily for recreational nonhighway all‑terrain travel and that is not
+operated on a public highway.  Off‑road recreational motor
+vehicle does not mean a motor vehicle used for construction, building trade,
+mining or agricultural purposes.
+
+44.  45.  "Operator"
+means a person who drives a motor vehicle on a highway, who is in actual
+physical control of a motor vehicle on a highway or who is exercising control
+over or steering a vehicle being towed by a motor vehicle.
+
+45.  46.  "Owner"
+means:
+
+(a)  A
+person who holds the legal title of a vehicle.
+
+(b)  If
+a vehicle is the subject of an agreement for the conditional sale or lease with
+the right of purchase on performance of the conditions stated in the agreement
+and with an immediate right of possession vested in the conditional vendee or
+lessee, the conditional vendee or lessee.
+
+(c)  If
+a mortgagor of a vehicle is entitled to possession of the vehicle, the
+mortgagor.
+
+46.  47.  "Pedestrian"
+means any person afoot.  A person who uses an electric personal
+assistive mobility device or a manual or motorized wheelchair is considered a
+pedestrian unless the manual wheelchair qualifies as a bicycle.  For
+the purposes of this paragraph, "motorized wheelchair" means a self‑propelled
+wheelchair that is used by a person for mobility.
+
+47.  48.  "Power
+sweeper" means an implement, with or without motive power, that is only
+incidentally operated or moved on a street or highway and that is designed for
+the removal of debris, dirt, gravel, litter or sand whether by broom, vacuum or
+regenerative air system from asphaltic concrete or cement concrete surfaces,
+including parking lots, highways, streets and warehouses, and a vehicle on
+which the implement is permanently mounted.
+
+48.  49.  "Public
+transit" means the transportation of passengers on scheduled routes by
+means of a conveyance on an individual passenger fare‑paying basis
+excluding transportation by a sightseeing bus, school bus or taxi or a vehicle
+not operated on a scheduled route basis.
+
+49.  50.  "Reconstructed
+vehicle" means a vehicle that has been assembled or constructed largely by
+means of essential parts, new or used, derived from vehicles or makes of
+vehicles of various names, models and types or that, if originally otherwise
+constructed, has been materially altered by the removal of essential parts or
+by the addition or substitution of essential parts, new or used, derived from
+other vehicles or makes of vehicles.  For the purposes of this
+paragraph, "essential parts" means integral and body parts, the
+removal, alteration or substitution of which will tend to conceal the identity
+or substantially alter the appearance of the vehicle.
+
+50.  51.  "Residence
+district" means the territory contiguous to and including a highway not
+comprising a business district if the property on the highway for a distance of
+three hundred feet or more is in the main improved with residences or
+residences and buildings in use for business.
+
+51.  52.  "Right‑of‑way"
+when used within the context of the regulation of the movement of traffic on a
+highway means the privilege of the immediate use of the
+highway.  Right‑of‑way when used within the context of
+the real property on which transportation facilities and appurtenances to the
+facilities are constructed or maintained means the lands or interest in lands
+within the right‑of‑way boundaries.
+
+52.  53.  "School
+bus" means a motor vehicle that is designed for carrying more than ten
+passengers and that is either:
+
+(a)  Owned
+by any public or governmental agency or other institution and operated for the
+transportation of children to or from home or school on a regularly scheduled
+basis.
+
+(b)  Privately
+owned and operated for compensation for the transportation of children to or
+from home or school on a regularly scheduled basis.
+
+53.  54.  "Semitrailer"
+means a vehicle that is with or without motive power, other than a pole
+trailer, that is designed for carrying persons or property and for being drawn
+by a motor vehicle and that is constructed so that some part of its weight and
+that of its load rests on or is carried by another vehicle.  For the purposes
+of this paragraph, "pole trailer" has the same meaning prescribed in
+section 28‑601.
+
+54.  55.  "State"
+means a state of the United States and the District of Columbia.
+
+55.  56.  "State
+highway" means a state route or portion of a state route that is accepted
+and designated by the board as a state highway and that is maintained by the
+state.
+
+56.  57.  "State
+route" means a right‑of‑way whether actually used as a highway
+or not that is designated by the board as a location for the construction of a
+state highway.
+
+57.  58.  "Street"
+or "highway" means the entire width between the boundary lines of
+every way if a part of the way is open to the use of the public for purposes of
+vehicular travel.
+
+58.  59.  "Taxi"
+means a motor vehicle that has a seating capacity not exceeding fifteen
+passengers, including the driver, that provides passenger services and that:
+
+(a)  Does
+not primarily operate on a regular route or between specified places.
+
+(b)  Offers
+local transportation for a fare determined on the basis of the distance
+traveled or prearranged ground transportation service as defined in section 28‑141
+for a predetermined fare.
+
+59.  60.  "Title
+transfer form" means a paper or an electronic form that is prescribed by
+the department for the purpose of transferring a certificate of title from one
+owner to another owner.
+
+60.  61.  "Traffic
+survival school" means a school that offers educational sessions to
+drivers who are required to attend and successfully complete educational
+sessions pursuant to this title that are designed to improve the safety and
+habits of drivers and that are approved by the department.
+
+61.  62.  "Trailer"
+means a vehicle that is with or without motive power, other than a pole
+trailer, that is designed for carrying persons or property and for being drawn
+by a motor vehicle and that is constructed so that no part of its weight rests
+on the towing vehicle.  A semitrailer equipped with an auxiliary front axle
+commonly known as a dolly is deemed to be a trailer.  For the purposes
+of this paragraph, "pole trailer" has the same meaning prescribed in
+section 28‑601.
+
+62.  63.  "Transportation
+network company" has the same meaning prescribed in section 28‑9551.
+
+63.  64.  "Transportation
+network company vehicle" has the same meaning prescribed in section 28‑9551.
+
+64.  65.  "Transportation
+network service" has the same meaning prescribed in section 28‑9551.
+
+65.  66.  "Truck"
+means a motor vehicle designed or used primarily for the carrying of property
+other than the effects of the driver or passengers and includes a motor vehicle
+to which has been added a box, a platform or other equipment for such carrying.
+
+66.  67.  "Truck
+tractor" means a motor vehicle that is designed and used primarily for
+drawing other vehicles and that is not constructed to carry a load other than a
+part of the weight of the vehicle and load drawn.
+
+67.  68.  "Vehicle"
+means a device in, on or by which a person or property is or may be transported
+or drawn on a public highway, excluding devices moved by human power or used
+exclusively on stationary rails or tracks.
+
+68.  69.  "Vehicle
+transporter" means either:
+
+(a)  A truck tractor
+capable of carrying a load and drawing a semitrailer.
+
+(b)  A
+truck tractor with a stinger‑steered fifth wheel capable of carrying a
+load and drawing a semitrailer or a truck tractor with a dolly mounted fifth
+wheel that is securely fastened to the truck tractor at two or more points and
+that is capable of carrying a load and drawing a semitrailer. END_STATUTE
+
+Sec. 2.  Section 28-364, Arizona Revised Statutes,
+is amended to read:
+
+START_STATUTE28-364.  Powers
+of the director
+
+A.  The
+director may provide technical transportation planning expertise to local
+governments when requested, coordinate local government transportation planning
+with regional and state transportation planning and guide local transportation
+planning to assure compliance with federal requirements.  The planning
+authority granted by this subsection does not preempt planning responsibilities
+and decisions of local governments.
+
+B.  If
+the governor declares a state of emergency, the director may contract and do
+all things necessary to provide emergency transportation services for the
+residents in the affected areas whether the emergency transportation is by
+street, rail or air.
+
+C.  On
+a determination that it is in this state's best interest, the director may
+authorize payment for necessary relocation costs in advance of work being
+performed if an existing facility owned by the United States must be relocated
+or adjusted due to construction, modification or improvement of a state
+highway.  The director shall base each advance payment on an estimate of cost
+of the proposed relocation or adjustment prepared by the federal government and
+acceptable to the director and shall base the final compensation on the actual
+agreed cost.
+
+D.  The
+director of the department of transportation in consultation with the director
+of the department of public safety shall develop procedures to exchange
+information for any purpose related to sections 28‑1324, 28‑1325,
+28‑1326, 28‑1462 and 28‑3318.
+
+E.  The director may
+establish a system or process that does all of the following: 
+
+1.  Allows for mailing
+notices of service or other legal documents or records of the department
+electronically or digitally to a person who consents to receiving these
+notices, documents or records through a secure electronic or digital system.
+
+2.  Enables a person to
+establish a financial account in the department's database.  The account shall
+be accessible by the person or the person's authorized representative to review
+statements of all transactions associated with the person's account and to make
+prepayments or payments for authorized transactions with the department. 
+Notwithstanding any other law, monies in financial accounts established
+pursuant to this section that remain unexpended for a period of five years or
+more revert to the Arizona highway user revenue fund and shall be distributed
+pursuant to section 28-6538.
+
+3.  Allows a person to
+comply with the photograph update and proof of vision test requirements
+prescribed by section 28-3173 through electronic or digital means that meet the
+department's standards.
+
+F.  The director, in
+consultation with the Arizona medical board or the state board of optometry,
+may do all of the following:
+
+1.  Establish medical
+and vision standards for driver license applicants and examinations.
+
+2.  Establish courses of
+training, training facilities and qualifications and methods of training for
+driver license examining personnel.
+
+3.  Establish procedures
+for the certification of driver license examining personnel and driver license
+instructors personnel.
+
+4.  Direct research in
+the field of licensing drivers.  The director may accept public or private
+grants for the research.
+
+5.  Conduct research in
+the field of examination or reexamination of licensing individual drivers with
+medical or vision problems.
+
+6.  Set minimum vision
+standards for the operation of a motor vehicle in this state.
+
+G.  The director may
+implement electronic or digital versions of driver licenses, nonoperating
+identification licenses, vehicle registration cards, license plates or any
+other official record of the department. END_STATUTE
+
+Sec. 3.  Section 28-442, Arizona Revised Statutes,
+is amended to read:
+
+START_STATUTE28-442.  Records;
+evidence
+
+A.  A certified duplicate is deemed an
+original for all purposes and is admissible in evidence without further
+foundation in all courts or administrative agencies.
+
+B.  The
+display by a person of evidence on a wireless communication device pursuant to
+this title does not constitute consent for law enforcement to access other
+content of the wireless communication device. END_STATUTE
+
+Sec. 4.  Section 28-448, Arizona Revised Statutes,
+is amended to read:
+
+START_STATUTE28-448.  Notice
+of address or name change; address update; civil traffic violation; definition
+
+A.  If
+a person's name or address changes after the person applies for or receives a
+driver license or nonoperating identification license or after the person
+applies for or receives a vehicle registration or vehicle title, the person
+shall notify the department within ten days after the change of the old and new
+address or the former and new name and the following:
+
+1.  If
+a registration or title is applied for or received, the number of vehicles
+registered to the person and the vehicle identification numbers of the
+vehicles.
+
+2.  If
+a driver license or nonoperating identification license is applied for or
+received, the person's date of birth and the number of each license held by the
+person or a statement that each license is suspended, revoked or canceled.
+
+B.  A
+person may notify the department of an address change by telephone, in writing,
+in person or by approved electronic means and may notify the
+department of a name change in person or in writing.
+
+C.  The
+department may update an address in a vehicle registration record or driver
+license record if a traffic citation received by the department or records of
+another consenting government agency indicate an address change after the date
+the address was stated in department records.
+
+D.  A
+violation of this section is a civil traffic violation.
+
+E.  For the purposes of
+this section, "address" means a legal street address, a post office
+box or an electronic or digital address that is provided by a person who
+consents to receive services of notice or other legal documents or records of
+the department electronically or digitally pursuant to section 28-364. END_STATUTE
+
+Sec. 5.  Section 28-1321, Arizona Revised
+Statutes, is amended to read:
+
+START_STATUTE28-1321.  Implied
+consent; tests; refusal to submit to test; order of suspension; hearing;
+review; temporary permit; notification of suspension; special ignition
+interlock restricted driver license
+
+A.  A
+person who operates a motor vehicle in this state gives consent, subject to
+section 4‑244, paragraph 34 or section 28‑1381, 28‑1382 or 28‑1383,
+to a test or tests of the person's blood, breath, urine or other bodily
+substance for the purpose of determining alcohol concentration or drug content
+if the person is arrested for any offense arising out of acts alleged to have
+been committed in violation of this chapter or section 4‑244, paragraph
+34 while the person was driving or in actual physical control of a motor
+vehicle while under the influence of intoxicating liquor or
+drugs.  The test or tests chosen by the law enforcement agency shall
+be administered at the direction of a law enforcement officer having reasonable
+grounds to believe that the person was driving or in actual physical control of
+a motor vehicle in this state either:
+
+1.  While
+under the influence of intoxicating liquor or drugs.
+
+2.  If
+the person is under twenty‑one years of age, with spirituous liquor in
+the person's body.
+
+B.  After
+an arrest a violator shall be requested to submit to and successfully complete
+any test or tests prescribed by subsection A of this section, and if the
+violator refuses the violator shall be informed that the violator's license or
+permit to drive will be suspended or denied for twelve months, or for two years
+for a second or subsequent refusal within a period of eighty-four months,
+unless the violator expressly agrees to submit to and successfully completes
+the test or tests.  A failure to expressly agree to the test or successfully
+complete the test is deemed a refusal.  The violator shall also be informed
+that:
+
+1.  If
+the test results show a blood or breath alcohol concentration of 0.08 or more,
+if the results show a blood or breath alcohol concentration of 0.04 or more and
+the violator was driving or in actual physical control of a commercial motor
+vehicle or if the results show there is any drug defined in section 13-3401 or
+its metabolite in the person's body and the person does not possess a valid
+prescription for the drug, the violator's license or permit to drive will be
+suspended or denied for not less than ninety consecutive days.
+
+2.  The
+violator's driving privilege, license, permit, right to apply for a license or
+permit or nonresident operating privilege may be issued or reinstated following
+the period of suspension only if the violator completes alcohol or other drug
+screening.
+
+C.  A
+person who is dead, unconscious or otherwise in a condition rendering the
+person incapable of refusal is deemed not to have withdrawn the consent
+provided by subsection A of this section and the test or tests may be
+administered, subject to section 4‑244, paragraph 34 or section 28‑1381,
+28‑1382 or 28‑1383.
+
+D.  If
+a person under arrest refuses to submit to the test designated by the law
+enforcement agency as provided in subsection A of this section:
+
+1.  The
+test shall not be given, except as provided in section 28‑1388,
+subsection E or pursuant to a search warrant.
+
+2.  The
+law enforcement officer directing the administration of the test shall:
+
+(a)  File
+a certified report of the refusal with the department.
+
+(b)  On
+behalf of the department, serve an order of suspension on the person that is
+effective fifteen days after the date the order is served.
+
+(c)  Require
+the immediate surrender of any license or permit to drive that is issued by
+this state and that is in the possession or control of the person.  The law enforcement agency may do either of the following to a
+driver license or permit taken into possession under this subdivision:
+
+(i)  In
+compliance with sections 41‑151.15 and 41‑151.19, destroy the
+driver license or permit.
+
+(ii)  Forward
+the driver license or permit to the department within five days after the
+issuance of the notice of suspension.
+
+(d)  If
+the license or permit is not surrendered, state the reason why it is not
+surrendered.
+
+(e)  If
+a valid license or permit is surrendered, issue a temporary driving permit that
+is valid for fifteen days.
+
+(f)  Forward
+the certified report of refusal, a copy of the completed notice of suspension,  and a copy of any completed
+temporary permit and any driver license or permit taken into
+possession under this section to the department within five days after
+the issuance of the notice of suspension.
+
+E.  The
+certified report is subject to the penalty for perjury as prescribed by section
+28‑1561 and shall state all of the following:
+
+1.  The
+officer's reasonable grounds to believe that the arrested person was driving or
+in actual physical control of a motor vehicle in this state either:
+
+(a)  While
+under the influence of intoxicating liquor or drugs.
+
+(b)  If
+the person is under twenty‑one years of age, with spirituous liquor in
+the person's body.
+
+2.  The
+manner in which the person refused to submit to the test or tests.
+
+3.  That
+the person was advised of the consequences of refusal.
+
+F.  On
+receipt of the certified report of refusal and a copy of the order of suspension
+and on the effective date stated on the order, the department shall enter the
+order of suspension on its records unless a written or online request for a
+hearing as provided in this section has been filed by the accused person.  If
+the department receives only the certified report of refusal, the department
+shall notify the person named in the report in writing sent by mail that:
+
+1.  Fifteen
+days after the date of issuance of the notice the department will suspend the
+person's license or permit, driving privilege or nonresident driving privilege.
+
+2.  The
+department will provide an opportunity for a hearing if the person requests a
+hearing in writing or online and the request is received by the department
+within fifteen days after the notice is sent.
+
+G.  The
+order of suspension issued by a law enforcement officer or the department under
+this section shall notify the person that:
+
+1.  The
+person may submit a written or online request for a hearing.
+
+2.  The
+request for a hearing must be received by the department within fifteen days
+after the date of the notice or the order of suspension will become final.
+
+3.  The
+affected person's license or permit to drive or right to apply for a license or
+permit or any nonresident operating privilege will be suspended for twelve
+months from that date or for two years from that date for a second or
+subsequent refusal within a period of eighty‑four months.
+
+4.  The
+person's driving privilege, license, permit, right to apply for a license or
+permit or nonresident operating privilege may be issued or reinstated following
+the period of suspension only if the person completes alcohol or other drug
+screening.
+
+H.  The
+order for suspension shall:
+
+1.  Be
+accompanied by printed forms that are ready to mail to the department, that may
+be filled out and signed by the person to indicate the person's desire for a
+hearing and that advise the person that the person may alternatively submit an
+online request for a hearing.
+
+2.  Advise
+the person that unless the person has surrendered any driver license or permit
+issued by this state the person's hearing request will not be accepted, except
+that the person may certify pursuant to section 28‑3170 that the license
+or permit is lost or destroyed.
+
+I.  On
+the receipt of a request for a hearing, the department shall set the hearing
+within sixty days.  The department may hold the hearing in person, by telephone
+or by videoconference.  If the department holds the hearing in
+person, the hearing shall be held in the county in which the person named in
+the report resides unless the law enforcement agency filing the certified
+report of refusal pursuant to subsection D of this section requests at the time
+of its filing that the hearing be held in the county where the refusal
+occurred.
+
+J.  A
+timely request for a hearing stays the suspension until a hearing is held,
+except that the department shall not return any surrendered license or permit
+to the person but may issue temporary permits to drive that expire no later
+than when the department has made its final decision.  If the person is a
+resident without a license or permit or has an expired license or permit, the
+department may allow the person to apply for a restricted license or
+permit.  If the department determines the person is otherwise
+entitled to the license or permit, the department shall issue and retain a
+restricted license or permit subject to this section.
+
+K.  Hearings
+requested under this section shall be conducted in the same manner and under
+the same conditions as provided in section 28‑3306.  For the purposes of
+this section, the scope of the hearing shall include only the issues of
+whether:
+
+1.  A
+law enforcement officer had reasonable grounds to believe that the person was
+driving or was in actual physical control of a motor vehicle in this state either:
+
+(a)  While
+under the influence of intoxicating liquor or drugs.
+
+(b)  If
+the person is under twenty‑one years of age, with spirituous liquor in
+the person's body.
+
+2.  The
+person was placed under arrest.
+
+3.  The
+person refused to submit to the test.
+
+4.  The
+person was informed of the consequences of refusal.
+
+L.  If
+the department determines at the hearing to suspend the affected person's
+privilege to operate a motor vehicle, the suspension provided in this section
+is effective fifteen days after giving written notice of the suspension, except
+that the department may issue or extend a temporary license that expires on the
+effective date of the suspension.  If the person is a resident without a
+license or permit or has an expired license or permit to operate a motor
+vehicle in this state, the department shall deny to the person the issuance of
+a license or permit for a period of twelve months after the order of suspension
+becomes effective or for a period of two years after the order of suspension
+becomes effective for a second or subsequent refusal within a period of
+eighty-four months, and may reinstate the person's driving privilege, license,
+permit, right to apply for a license or permit or nonresident operating
+privilege following the period of suspension only if the person completes
+alcohol or other drug screening.
+
+M.  If
+the suspension order is sustained after the hearing, a motion for rehearing is
+not required.  Within thirty days after a suspension order is sustained, the
+affected person may file a petition in the superior court to review the final
+order of suspension or denial by the department in the same manner provided in
+section 28‑3317.  The court shall hear the review of the final order of
+suspension or denial on an expedited basis.
+
+N.  If
+the suspension or determination that there should be a denial of issuance is
+not sustained, the ruling is not admissible in and has no effect on any
+administrative, civil or criminal court proceeding.
+
+O.  If
+it has been determined under the procedures of this section that a
+nonresident's privilege to operate a motor vehicle in this state has been
+suspended, the department shall give information either in writing or by
+electronic means of the action taken to the motor vehicle administrator of the
+state of the person's residence and of any state in which the person has a
+license.
+
+P.  After
+completing not less than ninety consecutive days of the period of suspension
+required by this section and any alcohol or other drug screening that is
+ordered by the department pursuant to this chapter, a person whose driving
+privilege is suspended pursuant to this section may apply to the department for
+a special ignition interlock restricted driver license pursuant to section 28‑1401.  Unless
+the certified ignition interlock period is extended by the department pursuant
+to section 28‑1461, a person who is issued a special ignition interlock
+restricted driver license as provided in this subsection shall maintain a
+functioning certified ignition interlock device in compliance with this chapter
+during the remaining period of the suspension prescribed by this section.  This
+subsection does not apply to a person whose driving privilege is suspended for
+a second or subsequent refusal within a period of eighty‑four months. END_STATUTE
+
+Sec. 6.  Section 28-1385, Arizona Revised
+Statutes, is amended to read:
+
+START_STATUTE28-1385.  Administrative
+license suspension for driving under the influence or for homicide or assault
+involving a motor vehicle; report; hearing; summary review; ignition interlock
+device requirement
+
+A.  A
+law enforcement officer shall forward to the department a certified report as
+prescribed in subsection B of this section, subject to the penalty for perjury
+prescribed by section 28‑1561, if both of the following occur:
+
+1.  The
+officer arrests a person for a violation of section 4‑244, paragraph 34,
+section 28‑1381, section 28‑1382 or section 28‑1383 or for a
+violation of title 13, chapter 11 or section 13‑1201 or 13‑1204
+involving a motor vehicle.
+
+2.  The
+person submits to a blood or breath alcohol test permitted by section 28‑1321
+or any other law or a sample of blood is obtained pursuant to section 28‑1388
+and the results are either not available or the results indicate any of the
+following:
+
+(a)  0.08
+or more alcohol concentration in the person's blood or breath.
+
+(b)  0.04
+or more alcohol concentration in the person's blood or breath if the person was
+driving or in actual physical control of a commercial motor vehicle.
+
+(c)  Any
+drug defined in section 13-3401 or its metabolite is in the person's body
+except if the person possesses a valid prescription for the drug.
+
+B.  The
+officer shall make the certified report required by subsection A of this
+section on forms supplied or approved by the department.  The report
+shall state information that is relevant to the enforcement action, including:
+
+1.  Information
+that adequately identifies the arrested person.
+
+2.  A
+statement of the officer's grounds for belief that the person was driving or in
+actual physical control of a motor vehicle in violation of section 4‑244,
+paragraph 34, section 28‑1381, section 28‑1382 or section 28‑1383
+or committed a violation of title 13, chapter 11 or section 13‑1201 or 13‑1204
+involving a motor vehicle.
+
+3.  A
+statement that the person was arrested for a violation of section 4‑244,
+paragraph 34, section 28‑1381, section 28‑1382 or section 28‑1383
+or for a violation of title 13, chapter 11 or section 13‑1201 or 13‑1204
+involving a motor vehicle.
+
+4.  A
+report of the results of the blood or breath alcohol test that was
+administered, if the results are available.
+
+C.  The
+officer shall also serve an order of suspension on the person on behalf of the
+department.  The order of suspension:
+
+1.  Is
+effective fifteen days after the date it is served.
+
+2.  Shall
+require the immediate surrender of any license or permit to drive that is
+issued by this state and that is in the possession or control of the person.
+
+3.  Shall
+contain information concerning the right to a summary review and hearing,
+including information concerning the hearing as required by section 28‑1321,
+subsections G and H.
+
+4.  Shall
+be accompanied by printed forms that are ready to mail to the department, that
+the person may fill out and sign to indicate the person's desire for a hearing
+and that advise the person that the person may alternatively submit an online
+request for a hearing.
+
+5.  Shall
+be entered on the department's records on receipt of the report by the officer
+and a copy of the order of suspension.
+
+6.  Shall
+inform the person that the person's driving privilege, license, permit, right
+to apply for a license or permit or nonresident operating privilege may be
+issued or reinstated following the period of suspension only if the person
+completes alcohol or other drug screening.
+
+7.  Shall
+contain information on alcohol or other drug education and treatment programs
+that are provided by a facility approved by the department of health services.
+
+D.  If
+the blood test result is unavailable at the time the test is administered, the
+result shall be forwarded to the department before the hearing held pursuant to
+this section in a form prescribed by the director.
+
+E.  If
+the license or permit is not surrendered pursuant to subsection C of this
+section, the officer shall state the reason for the nonsurrender.  If a valid
+license or permit is surrendered, the officer shall issue a temporary driving
+permit that is valid for fifteen days.  The officer shall forward a copy of the
+completed order of suspension,  and
+a copy of any completed temporary permit and any driver license
+or permit taken into possession under this section to the department
+within five days after the issuance of the order of suspension along with the
+report.  The law enforcement agency may do either of the
+following with a valid license or permit that is surrendered pursuant to this
+section:
+
+1.  In
+compliance with sections 41‑151.15 and 41‑151.19, Destroy the
+license or permit.
+
+2.  Forward
+the license or permit to the department within five days after the issuance of
+the notice of suspension.
+
+F.  The
+department shall suspend the affected person's license or permit to drive or
+right to apply for a license or permit or any nonresident operating privilege
+for not less than ninety consecutive days from that date. If the person is
+otherwise qualified, the department may reinstate the person's driving
+privilege, license, permit, right to apply for a license or permit or
+nonresident operating privilege following the period of suspension only if the
+violator completes alcohol or other drug screening.
+
+G.  Notwithstanding
+subsections A through F of this section, the department shall suspend the
+driving privileges of the person described in subsection A of this section for
+not less than thirty consecutive days and shall restrict the driving privileges
+of the person for not less than sixty consecutive additional days to travel
+between the person's place of employment and residence and during specified
+periods of time while at employment, to travel between the person's place of
+residence and the person's secondary or postsecondary school, according to the
+person's employment or educational schedule, to travel between the person's
+place of residence and the office of the person's probation officer for
+scheduled appointments or to travel between the person's place of residence and
+a screening, education or treatment facility for scheduled appointments if the
+person:
+
+1.  Did
+not cause death or serious physical injury as defined in section 13‑105
+to another person during the course of conduct out of which the current action
+arose.
+
+2.  Has
+not been convicted of a violation of section 4‑244, paragraph 34, section
+28‑1381, section 28‑1382 or section 28‑1383 within
+eighty-four months of the date of commission of the acts out of which the
+current action arose.  The dates of commission of the acts are the
+determining factor in applying the eighty-four month provision.
+
+3.  Has
+not had the person's privilege to drive suspended pursuant to this section or
+section 28‑1321 within eighty-four months of the date of commission of
+the acts out of which the current action arose.
+
+4.  Provides
+satisfactory evidence to the department of the person's completion of alcohol
+or other drug screening that is ordered by the department.  If the
+person does not complete alcohol or other drug screening, the department may
+impose a ninety day suspension pursuant to this section.
+
+H.  If
+the officer does not serve an order of suspension pursuant to subsection C of
+this section and if the department does not receive the report of the results
+of the blood or breath alcohol test pursuant to subsection B, paragraph 4 of
+this section, but subsequently receives the results and the results indicate
+0.08 or more alcohol concentration in the person's blood or breath, a blood or
+breath alcohol concentration of 0.04 or more and the person was driving or in
+actual physical control of a commercial motor vehicle or any drug defined in
+section 13‑3401 or its metabolite in the person's body and the person
+does not possess a valid prescription for the drug, the department shall notify
+the person named in the report in writing sent by mail that fifteen days after
+the date of issuance of the notice the department will suspend the person's
+license or permit, driving privilege or nonresident driving
+privilege.  The notice shall also state that the department will
+provide an opportunity for a hearing and administrative review if the person
+requests a hearing or review in writing and the request is received by the
+department within fifteen days after the notice is sent.
+
+I.  A
+timely request for a hearing stays the suspension until a hearing is held,
+except that the department shall not return any surrendered license or permit
+to the person but may issue temporary permits to drive that expire no later
+than when the department has made its final decision.  If the person is a
+resident without a license or permit or has an expired license or permit, the
+department may allow the person to apply for a restricted license or permit. 
+If the department determines the person is otherwise entitled to the restricted
+license or permit, the department shall issue, but retain, the license or
+permit, subject to this section.  All hearings requested under this section
+shall be conducted in the same manner and under the same conditions as provided
+in section 28‑3306.
+
+J.  For
+the purposes of this section, the scope of the hearing shall include only the
+following issues:
+
+1.  Whether
+the officer had reasonable grounds to believe the person was driving or was in
+actual physical control of a motor vehicle while under the influence of
+intoxicating liquor or drugs.
+
+2.  Whether
+the person was placed under arrest for a violation of section 4‑244,
+paragraph 34, section 28‑1381, section 28‑1382 or section 28‑1383
+or for a violation of title 13, chapter 11 or section 13‑1201 or 13‑1204
+involving a motor vehicle.
+
+3.  Whether
+a test was taken, the results of which indicated any of the following:
+
+(a)  An
+alcohol concentration in the person's blood or breath at the time the test was
+administered of either:
+
+(i)  0.08
+or more.
+
+(ii)  0.04
+or more if the person was driving or in actual physical control of a commercial
+motor vehicle.
+
+(b)  Any
+drug defined in section 13-3401 or its metabolite in the person's body except
+if the person possesses a valid prescription for the drug.
+
+4.  Whether
+the testing method used was valid and reliable.
+
+5.  Whether
+the test results were accurately evaluated.
+
+K.  The
+results of the blood or breath alcohol test shall be admitted on establishing
+the requirements in section 28‑1323 or 28‑1326.
+
+L.  If
+the department determines at the hearing to suspend the affected person's
+privilege to operate a motor vehicle, the suspension provided in this section
+is effective fifteen days after giving written notice of the suspension, except
+that the department may issue or extend a temporary license that expires on the
+effective date of the suspension.  If the person is a resident without a
+license or permit or has an expired license or permit to operate a motor
+vehicle in this state, the department shall deny the issuance of a license or
+permit to the person for not less than ninety consecutive days.  The
+department may reinstate the person's driving privilege, license, permit, right
+to apply for a license or permit or nonresident operating privilege following
+the period of suspension only if the violator completes alcohol or other drug
+screening.
+
+M.  A
+person may apply for a summary review of an order issued pursuant to this
+section instead of a hearing at any time before the effective date of the
+order.  The person shall submit the application in writing to any
+department driver license examining office together with any written
+explanation as to why the department should not suspend the driving
+privilege.  The agent of the department receiving the notice shall
+issue to the person an additional driving permit that expires twenty days from
+the date the request is received.  The department shall review all
+reports submitted by the officer and any written explanation submitted by the
+person and shall determine if the order of suspension should be sustained or
+cancelled.  The department shall not hold a hearing, and the review is not
+subject to title 41, chapter 6.  The department shall notify the person of its
+decision before the temporary driving permit expires.
+
+N.  If
+the suspension or determination that there should be a denial of issuance is
+not sustained after a hearing or review, the ruling is not admissible in and
+does not have any effect on any civil or criminal court proceeding.
+
+O.  If
+it has been determined under the procedures of this section that a
+nonresident's privilege to operate a motor vehicle in this state has been
+suspended, the department shall give information either in writing or by
+electronic means of the action taken to the motor vehicle administrator of the
+state of the person's residence and of any state in which the person has a
+license. END_STATUTE
+
+Sec. 7.  Section 28-2158, Arizona Revised
+Statutes, is amended to read:
+
+START_STATUTE28-2158.  Registration
+card
+
+A.  The
+department shall file each application for registration.  If
+satisfied that the application is genuine and regular, the department shall
+issue a registration card to the owner of the vehicle and shall assign license
+plates to the vehicle.
+
+B.  The
+registration card shall contain on the face of the card all of the following:
+
+1.  The
+date it is issued.
+
+2.  The
+registration number assigned to the owner and the vehicle.
+
+3.  The
+name and address of the owner.
+
+4.  A
+description of the registered vehicle, including the serial number.
+
+5.  The
+amount of fees paid for registration of the vehicle.
+
+C.  The
+registration card shall be carried at all times in the driver's compartment of
+the vehicle for which it is issued or displayed on a wireless
+communication device.  The registration card is subject to
+inspection by the director, members of the highway patrol or any peace officer.
+END_STATUTE
+
+Sec. 8.  Section 28-2356, Arizona Revised
+Statutes, is amended to read:
+
+START_STATUTE28-2356.  Transfer
+of license plates to another vehicle; credit
+
+A.  Except
+as otherwise provided in this chapter, the owner of a vehicle for which the
+department provided license plates pursuant to section 28‑2351 shall
+retain those license plates when the owner transfers the vehicle to another
+person.
+
+B.  The
+owner may apply for a refund or a credit that
+is posted to the owner's record or financial account of the unexpired
+portion of the vehicle license taxes, gross weight fees,
+commercial registration fees, special plate fees and motor carrier fees and taxes as prescribed in this section if both of
+the following apply:
+
+1.  The
+owner makes proper application to the director or to an authorized third party pursuant to chapter 13 of this title.
+
+2.  The
+owner agrees to allow the department to deduct a twelve dollar processing fee
+from the amount of the refund or credit.
+
+C.  If
+the owner applies for a credit as prescribed in this section, the department
+may assign the license plates retained pursuant to subsection A of this section
+to another vehicle that belongs to the owner if all of the following apply:
+
+1.  The
+other vehicle is of the same vehicle type.
+
+2.  The
+owner is applying the available credit for the fees and taxes to one other
+vehicle the owner owns or acquires.
+
+3.  If
+the available credit exceeds the amount required to pay the fees and taxes, the
+department shall issue a refund for the remaining amount of credit as
+prescribed in this section.  The department shall not charge an additional
+twelve dollar fee pursuant to subsection B of this section for issuing a refund
+under this paragraph.
+
+4.  If
+the vehicle license tax, gross weight fees, commercial registration fees,
+special plate fees and motor carrier fees are more than the similar fees and
+taxes required to register the vehicle to which the license plates were
+previously assigned, the owner pays any additional fees and taxes required
+after subtracting any credit allowed under this section. 
+
+D.  C.  If
+the other vehicle is not of the same vehicle type as the vehicle for which the
+license plates were provided by the department pursuant to section 28‑2351,
+the owner shall either surrender the license plates to the department or an
+authorized third party or submit an affidavit of license plate destruction as
+prescribed by the director.  On surrender of the license plates or submission
+of an affidavit of license plate destruction, the department shall provide new
+license plates of the proper vehicle type to the owner and credit
+the owner with an amount equal to the unexpended portion of the fees and taxes
+originally paid by the owner for registration and license plates toward fees
+and taxes charged for the registration and license plates of the appropriate
+new vehicle type.
+
+E.  D.  The
+owner of a registered vehicle who transfers license plates to another vehicle
+or who claims a refund credit
+pursuant to this section is entitled to a credit or a refund
+for the unexpired portion of the fees and taxes paid as required by law in
+accordance with the following conditions:
+
+1.  The
+fees and taxes are prorated on a monthly basis beginning on the first day of
+the registration month following the date of acquisition of the vehicle.
+
+2.  The
+credit or refund shall be an amount computed as follows:
+
+(a)  If
+the vehicle is registered on an annual basis, one‑twelfth for each full
+month of the registration period not yet expired.
+
+(b)  If
+the vehicle is registered on a biennial basis pursuant to section 28‑2159,
+one‑twenty‑fourth for each full month of the registration period
+not yet expired.
+
+(a)  For
+each full month remaining in the registration cycle, the record or financial
+account credit shall be prorated using the assessed value of the vehicle for
+the year that the full month is in.
+
+(c)  (b)  If the vehicle is permanently registered, one‑twenty‑fourth
+for each full month after acquisition of the vehicle to the twenty‑fourth
+month after the date of initial permanent registration of the vehicle.
+
+F.  E.  If
+the owner of a registered vehicle transfers the vehicle to another person but
+does not transfer the license plates to another vehicle,
+surrender the license plates to the department or an authorized third party or
+submit an affidavit of license plate destruction apply
+for a credit within thirty days of the transfer as required by section
+28‑2058, the unexpired portion of the fees and taxes shall decrement decrease pursuant to subsection D of this section until the
+owner either surrenders the license plates to the department or
+an authorized third party or submits an affidavit of license plate destruction applies for the credit.
+
+G.  Except
+as provided in subsection C of this section, an owner of a registered vehicle
+who transfers the vehicle to another person and either surrenders the license
+plates to the department or an authorized third party or submits an affidavit
+of license plate destruction may apply to the department for a refund of the
+unexpired portion of the fees and taxes paid if the owner does not claim a
+credit pursuant to this section and the refundable amount calculated pursuant
+to subsection D of this section exceeds the twelve dollar fee prescribed in
+subsection B of this section.  If the department determines that the owner is
+entitled to a refund, the department shall send the refund by first class mail
+to the address provided by the owner claiming the refund or, if no address is
+provided, to the latest address listed on the department's records for the
+owner claiming the refund.
+
+H.  F.  An
+owner who transfers license plates to another vehicle pursuant to this section
+is subject to the same penalties for the use of the license plates on another
+vehicle or for improper use of the license plates as the owner would have been
+subject to for use of the license plates on the vehicle to which the plates
+were previously assigned.
+
+I.  G.  The
+owner of a vehicle registered in this state is not entitled to a credit or a refund pursuant to this section if the vehicle is
+registered in another state unless the owner is applying the credit pursuant to
+this section to another vehicle the owner owns or acquires for registration in
+this state.
+
+J.  The
+director shall adopt rules necessary to administer this section. END_STATUTE
+
+Sec. 9.  Section 28-3306, Arizona Revised
+Statutes, is amended to read:
+
+START_STATUTE28-3306.  Discretionary
+license suspension or revocation; traffic survival school; hearing
+
+A.  The
+department may suspend or revoke the license of a driver or require a licensee
+to attend and successfully complete approved traffic survival school
+educational sessions designed to improve the safety and habits of drivers on a
+showing by department records or other sufficient evidence that the licensee:
+
+1.  Has
+committed an offense for which mandatory revocation of the license is required
+on conviction.
+
+2.  Has
+been involved as a driver in an accident resulting in the death or personal
+injury of another or serious property damage.
+
+3.  Has
+been convicted of or adjudged to have violated traffic regulations governing
+the movement of vehicles with such a frequency that it indicates a disrespect
+for traffic laws and a disregard for the safety of other persons on the highways.
+
+4.  Has
+been convicted of reckless driving as provided in section 28‑693 or is a
+habitually reckless or negligent driver of a motor vehicle.
+
+5.  Is
+medically, psychologically or physically incapable of operating a motor vehicle
+and, based on law enforcement, medical or other department information, the
+continued operation of a motor vehicle by the licensee would endanger the
+public health, safety and welfare.
+
+6.  Has
+committed or permitted an act involving an unlawful or fraudulent use of the
+license.
+
+7.  Has
+committed an offense in another jurisdiction that if committed in this state is
+grounds for suspension or revocation.
+
+8.  Has
+been convicted of a violation of section 28‑1381 or 28‑1382.
+
+9.  Has
+been convicted of a violation of section 28‑1464.
+
+B.  On
+receipt of satisfactory evidence of a violation of a driver license
+restriction, the department may suspend or revoke the driver license.
+
+C.  On
+suspending or revoking the license of a person or requiring a licensee to
+attend and successfully complete approved traffic survival school educational
+sessions designed to improve the safety and habits of drivers pursuant to this
+section, the department shall notify the licensee in writing immediately.
+
+D.  On
+the receipt of the person's request for a hearing, the department shall set the
+hearing within sixty days.  The department may hold the hearing in
+person, by telephone or by videoconference.  If the department holds the
+hearing in person, the department shall hold the hearing in the county where
+the licensee resides unless the law enforcement agency issuing the citation or
+affidavit that authorizes the suspension or revocation requests at the time of
+issuance that the hearing be held in the county where the violation allegedly
+occurred.
+
+E.  If
+a hearing is held, the department or its duly authorized agent may administer
+oaths, may issue subpoenas for the attendance of witnesses and the production
+of relevant books and papers and may require a reexamination of the licensee.
+
+F.  At
+the hearing, the department shall either rescind its order of suspension or its
+order requiring the licensee to attend and successfully complete approved
+traffic survival school educational sessions or, if good cause exists, the
+department may uphold or extend the order, revoke the license or make any order
+that is within its discretionary power under this section and that is in the
+interest of public safety.
+
+G.  If
+a licensee receives notice requiring the licensee to attend and successfully
+complete approved traffic survival school educational sessions and the
+department receives information of noncompliance with this order, the
+department may amend the order to suspend or revoke the license.
+
+H.  A
+person whose driver license is suspended or revoked as provided in subsection
+A, paragraph 5 of this section may submit a written request to the department
+for an administrative hearing.  The person shall submit the request
+for a hearing within fifteen days after the department provides the person with
+notice of suspension or revocation.  On receipt of a proper request
+for a hearing, the department shall provide the person with an opportunity for
+a hearing in the county where the person resides within thirty days after the
+department receives the request.  The request for a hearing does not
+stay a summary suspension issued by the department.
+
+I.  The
+department shall remove a suspension from a record if the person has completed
+all requirements imposed under this title or by a court in this state except
+for payment of reinstatement fees as prescribed by section 28‑3002.  The
+person shall pay the appropriate reinstatement fees that is required under
+section 28‑3002 when conducting a transaction with the department. END_STATUTE
+
+Sec. 10.  Section 28-3318, Arizona Revised
+Statutes, is amended to read:
+
+START_STATUTE28-3318.  Service
+of notice; definitions
+
+A.  The
+department shall provide written, electronic or digital notice to a person possessing a driver license, to
+an unlicensed driver or to a nonresident driver of the following:
+
+1.  A
+suspension, revocation, cancellation, disqualification or certified ignition
+interlock device limitation of the license or privilege to operate a motor
+vehicle.
+
+2.  Required
+attendance at training and education sessions.
+
+B.  The
+department may include additional information in the written,
+electronic or digital notice developed in
+consultation with the director of the department of public safety as prescribed
+in section 28‑1462 regarding certified ignition interlock devices.
+
+C.  The
+department shall send the notice by mail or electronically or
+digitally to the address provided to the department on the licensee's
+application or provided to the department pursuant to section 28‑448.  If
+an address has not been provided to the department as provided in this
+subsection, the department shall send the notice to any address known to the
+department, including the address listed on a traffic citation received by the
+department.
+
+D.  Service
+of the notice provided by this section is complete on mailing.  The
+department shall provide further service of notice only if the department is
+notified of a change of address pursuant to section 28‑448.
+
+E.  Compliance
+with the mailing provisions of this section constitutes notice of the
+suspension, revocation, cancellation, disqualification or certified ignition
+interlock device limitation for purposes of prosecution under section 28‑1383,
+28‑3473 or 28‑1464 or 28‑3473.  The
+state is not required to prove actual receipt of the notice or actual knowledge
+of the suspension, revocation, cancellation, disqualification or certified
+ignition interlock device limitation.
+
+F.  Compliance
+with the mailing provisions of this section constitutes notice of suspension or
+restriction for the purposes of suspension or restriction under section 28‑3320.  The
+state is not required to prove actual receipt of the notice or actual knowledge
+of the suspension or restriction.
+
+G.  For
+the purposes of this section: , 
+
+1.  "Certified ignition interlock
+device" has the same meaning prescribed in section 28‑1301.
+
+2.  "Mail"
+or "mailing" means delivery by first class or certified mail or
+through a department electronic or digital system. END_STATUTE
+
+Sec. 11.  Section 28-4133, Arizona Revised
+Statutes, is amended to read:
+
+START_STATUTE28-4133.  Insurance
+identification cards; documentary evidence; exception
+
+A.  An
+authorized insurer shall issue at least two motor vehicle insurance
+identification cards for a motor vehicle or automobile liability policy that
+meets the requirements of section 28‑4009 or section 28‑4033,
+subsection A, paragraph 2, subdivision (c).
+
+B.  The
+card shall state that:
+
+1.  A
+person is required to possess evidence of financial responsibility within the
+motor vehicle.
+
+2.  The
+card meets the requirement or an image of the card that is displayed on a
+wireless communication device meets the requirement.
+
+3.  The
+card or an image of the card that is displayed on a wireless communication
+device is satisfactory evidence if the person is asked by the department of
+transportation to verify financial responsibility on the motor vehicle.
+
+C.  All
+documentary evidence issued by an insurer or an authorized agent of the insurer
+shall indicate:
+
+1.  The
+name of the insurer as listed with the department of insurance.
+
+2.  the
+number that the department assigns to the insurer.
+
+2.  3.  For
+the purpose of verifying insurance coverage, the mailing address and telephone
+number of the insurer or an authorized agent of the insurer.
+
+3.  4.  In
+order to accurately verify insurance coverage, other information as required by
+the department of transportation.
+
+4.  5.  If
+a binder is issued by an authorized agent of an insurer, the name, address and
+telephone number of the agent.
+
+D.  This
+section does not apply to a commercial vehicle policy that provides automatic
+coverage for additional or newly acquired vehicles until the policy's
+expiration date. END_STATUTE
+
+Sec. 12.  Section 28-4147, Arizona Revised
+Statutes, is amended to read:
+
+START_STATUTE28-4147.  Service
+of notice; definition
+
+A.  The department shall send written
+notice to the owner or lessee of a motor vehicle registered pursuant to chapter
+7 of this title of any suspension or any financial responsibility
+verification.  The department shall send the notice electronically
+or digitally, by mail to the address provided to the department on the
+registration application or pursuant to section 28‑448.  Service
+of notice is complete on mailing.
+
+B.  For
+the purposes of this section, "mail" or "mailing" means
+delivery by first class or certified mail or through a department electronic or
+digital system.
+END_STATUTE 
+
+Sec. 13.  Effective date
+
+Section
+28-2356, Arizona Revised Statutes, as amended by this act, is effective from
+and after August 31, 2019.
+

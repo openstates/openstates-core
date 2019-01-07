@@ -1,0 +1,381 @@
+     Stricken language would be deleted from and underlined language would be added to present law.
+
+
+
+State of Arkansas                                                                        Call Item 9
+91st General Assembly                        A Bill
+Second Extraordinary Session, 2018                                                HOUSE BILL 1008
+
+
+By: Representative Gillam
+By: Senator Rapert
+
+
+                                  For An Act To Be Entitled
+               AN ACT TO AMEND THE ARKANSAS TAX-DEFERRED TUITION
+               SAVINGS PROGRAM ACT; AND FOR OTHER PURPOSES.
+
+
+
+
+                                              Subtitle
+                        TO AMEND THE ARKANSAS TAX-DEFERRED
+                        TUITION SAVINGS PROGRAM ACT.
+
+
+
+
+BE IT ENACTED BY THE GENERAL ASSEMBLY OF THE STATE OF ARKANSAS:
+
+
+       SECTION 1.       Arkansas Code §§ 6-84-102 and 6-84-103 are amended to read
+as follows:
+       6-84-102.      Purpose.
+       It is the intent and purpose of this chapter to create and establish
+the Arkansas Tax-Deferred Tuition Savings Program pursuant to 26 U.S.C. §
+529, as in effect on January 1, 2017 2018, to be administered by the Section
+529 Plan Review Committee through the adoption of rules and regulations for
+the administration of the program.
+
+
+       6-84-103.      Definitions.
+       As used in this chapter:
+               (1)    “Account” means an account established in accordance with
+this chapter;
+               (2)    “Account owner” means the person who, under this chapter or
+the rules promulgated by the Section 529 Plan Review Committee, is entitled
+to select or change the designated beneficiary of an account, to designate
+any person other than the designated beneficiary to whom funds may be paid
+
+
+
+*GRE021*                                                                 03/12/2018 5:13:10 PM GRE021
+                                                                             HB1008
+
+
+from the account, or to receive distributions from the account if no other
+person is designated;
+             (3)    “Act” means the Arkansas Tax-Deferred Tuition Savings
+Program Act, §     6-84-101 et seq.;
+             (4)(A)   “Arkansas Tax-Deferred Tuition Savings Program Trust” or
+“trust” means the trust created under § 6-84-104.
+                    (B)   Participation in the trust shall be open to Arkansas
+residents and nonresidents alike;
+             (5)    “Committee” means the Section 529 Plan Review Committee,
+provided for in § 6-84-105, that shall oversee the administration of the
+Arkansas Tax-Deferred Tuition Savings Program and ensure that the program
+complies with the provisions of this chapter and acts in accordance with 26
+U.S.C. § 529, as in effect on January 1, 2017 2018;
+             (6)    “Contribution” means:
+                    (A)   Any payment directly allocated to an account for the
+benefit of a designated beneficiary or used to pay administrative fees
+associated with an account; and
+                    (B)   That portion of any rollover amount treated as a
+contribution under 26 U.S.C. § 529, as in effect on January 1, 2017 2018;
+             (7)    “Contributor” means any person making a contribution to an
+account;
+             (8)    “Designated beneficiary” means, except as provided in § 6-
+84-108, the individual designated at the time the account is opened as having
+the right to receive a qualified withdrawal for the payment of qualified
+higher education expenses or, if the designated beneficiary is replaced in
+accordance with § 6-84-108, the replacement;
+             (9)    “Higher education institution” means an eligible education
+institution as defined in 26 U.S.C. § 135(c)(3), as in effect on January 1,
+2017 2018;
+             (10)   “Member of the family” shall have the same meaning as is
+contained in 26 U.S.C. § 529(e), as in effect on January 1, 2017 2018;
+             (11)   “Nonqualified withdrawal” means a withdrawal from an
+account that is not:
+                    (A)   A qualified withdrawal;
+                    (B)   A withdrawal made as the result of the death or
+disability of the designated beneficiary;
+
+                                       2            03/12/2018 5:13:10 PM GRE021
+                                                                           HB1008
+
+
+                   (C)   A withdrawal made as the result of a scholarship,
+allowance, or payment described in 26 U.S.C. § 135(d)(1)(B) or (d)(1)(C), as
+in effect on January 1, 2017 2018, received by the designated beneficiary but
+only to the extent of the amount of the scholarship, allowance, or payment;
+or
+                   (D)   A rollover or change in the designated beneficiary;
+            (12)   “Person” means a person as defined in 26 U.S.C. § 529, as
+in effect on January 1, 2017 2018;
+            (13)   “Program” means the Arkansas Tax-Deferred Tuition Savings
+Program established by this chapter;
+            (14)   “Qualified higher education expenses” means tuition and
+other permitted expenses as set forth in 26 U.S.C. § 529(e), as in effect on
+January 1, 2017 2018, for the enrollment or attendance of a designated
+beneficiary at a higher education institution;
+            (15)   “Qualified tuition program” means a qualified tuition
+program as defined in 26 U.S.C. § 529(b), as in effect on January 1, 2017
+2018;
+            (16)   “Qualified withdrawal” means a withdrawal from an account
+to pay the qualified higher education expenses of the designated beneficiary
+but only if the withdrawal is made in accordance with the requirements of the
+program; and
+            (17)   “Rollover” means a disbursement or transfer from an account
+that is transferred to or deposited within sixty (60) calendar days of the
+transfer:
+                   (A)   into Into an account of the same person for the
+benefit of the same designated beneficiary; or
+                   (B)   another To the credit of another person as a
+designated beneficiary if the transferee account was created under this
+chapter or under another qualified tuition program maintained in accordance
+with 26 U.S.C. § 529(c), as in effect on January 1, 2017. 2018; or
+                   (C)(i)   Before January 1, 2026, into an ABLE account under
+26 U.S.C. § 529A(e)(6), as in effect on January 1, 2018, of the designated
+beneficiary or a member of the family of the designated beneficiary.
+                          (ii)   Subdivision (17)(C)(i) of this section does not
+apply to so much of a distribution which, when added to all other
+contributions made to the ABLE account for the taxable year, exceeds the
+
+                                      3             03/12/2018 5:13:10 PM GRE021
+                                                                           HB1008
+
+
+limitation under 26 U.S.C. § 529A(b)(2)(B)(i), as in effect on January 1,
+2018.
+
+
+        SECTION 2.   Arkansas Code §§ 6-84-105 and 6-84-106 are amended to read
+as follows:
+        6-84-105.    Administration — Authority — Powers.
+        (a)   This chapter shall be administered by the Section 529 Plan Review
+Committee, which shall be composed of:
+               (1)   The Director of the Department of Higher Education;
+               (2)   The Executive Director of the Arkansas Teacher Retirement
+System; and
+               (3)   The Treasurer of State.
+        (b)   The committee shall adopt such rules and regulations as it deems
+necessary and proper to administer this chapter and to ensure the compliance
+of the Arkansas Tax-Deferred Tuition Savings Program with 26 U.S.C. § 529, as
+in effect on January 1, 2017 2018.
+        (c)   The committee shall have the following powers, duties, and
+functions:
+               (1)   To establish, develop, implement, and maintain the program
+in a manner consistent with the provisions of this chapter and 26 U.S.C. §
+529, as in effect on January 1, 2017 2018, and to obtain the benefits
+provided by 26 U.S.C. § 529 for the program, account owners, and designated
+beneficiaries;
+               (2)   To adopt rules and regulations for the general
+administration of the program;
+               (3)   To maintain, invest, and reinvest the funds contributed into
+the program consistent with the investment restrictions established by the
+committee and the standard of care described in the prudent investor rule
+under § 24-2-610; and
+               (4)(A)   To make and enter into any and all contracts, agreements,
+or arrangements and to retain, employ, and contract for the services of
+financial institutions, depositories, consultants, broker dealers, investment
+advisors or managers, third-party plan administrators, and research,
+technical, and other services necessary or desirable for carrying out the
+purposes of this chapter.
+                     (B)   Contracts entered into by the committee may be for a
+
+                                       4             03/12/2018 5:13:10 PM GRE021
+                                                                             HB1008
+
+
+term of from one (1) to ten (10) years.
+     (d)   The Treasurer of State shall provide office space, staff, and
+materials for the committee.
+     (e)   A member of the committee may expend funds appropriated for the
+member of the committee to provide the following for the benefit of the
+Arkansas Tax-Deferred Tuition Savings Program:
+              (1)   Office space;
+              (2)   Staffing;
+              (3)   Materials;
+              (4)   Marketing;
+              (5)   Education;
+              (6)   Financial literacy programs; and
+              (7)   Outreach measures.
+
+
+     6-84-106.      Investment direction.
+     Except as permitted in 26 U.S.C. § 529, as in effect on January 1, 2017
+2018, no person shall have the right to direct the investment of any
+contributions to or earnings from the Arkansas Tax-Deferred Tuition Savings
+Program.
+
+
+     SECTION 3.     Arkansas Code §§ 6-84-108 and 6-84-109 are amended to read
+as follows:
+     6-84-108.      Naming of designated beneficiary and transfers of accounts.
+     (a)   An account owner shall have the right to name the designated
+beneficiary of an account and at any time to change the designated
+beneficiary of an account to another individual who is a member of the family
+of the former designated beneficiary.
+     (b)   At the direction of an account owner, all or a portion of an
+account may be transferred to another account of which the designated
+beneficiary is a member of the family of the designated beneficiary of the
+transferee account if the transferee account was created by this chapter or
+under another qualified tuition program maintained in accordance with 26
+U.S.C. § 529, as in effect on January 1, 2017 2018.
+
+
+     6-84-109.      Account withdrawals.
+     (a)   Withdrawal from an account may be made on thirty (30) days'
+
+                                         5             03/12/2018 5:13:10 PM GRE021
+                                                                          HB1008
+
+
+written notice by the account owner to the Section 529 Plan Review Committee
+or on shorter notice as the committee may by regulation provide.
+      (b)(1)   An account withdrawal paid to or for the benefit of any person
+during any calendar year shall be reported to the person and to the Internal
+Revenue Service.
+            (2)    The report shall be made at the time required by the rules
+of the Internal Revenue Service as in effect on January 1, 2017 2018, and
+contain such information as is required by law.
+
+
+      SECTION 4.   Arkansas Code § 6-84-111 is amended to read as follows:
+      6-84-111.    Funds exempt from tax — Definitions.
+      (a)(1)   Except as otherwise indicated in this chapter, interest,
+dividends, and capital gains from funds invested in the Arkansas Tax-Deferred
+Tuition Savings Program or a tax-deferred tuition savings program established
+by another state under 26 U.S.C. § 529, as in effect on January 1, 2017 2018,
+shall be exempt from Arkansas income taxes.
+            (2)    For purposes of this section:
+                   (A)   “Taxpayer employee” means an employee of an employer
+with an account established under this chapter; and
+                   (B)   “Taxpayer employer” means a person that employs an
+individual with an account established under this chapter;
+      (b)(1)   For tax years beginning on or after January 1, 2005,
+contributions to a tuition savings account established under this program may
+be deducted from the taxpayer's adjusted gross income for the purpose of
+calculating Arkansas income tax under § 26-51-403(b).
+            (2)(A)   The deductible contributions shall not exceed five
+thousand dollars ($5,000) per taxpayer employee in any tax year.
+                   (B)   If the aggregate amount of contributions by a taxpayer
+during a tax year exceeds the limitation under subdivision (b)(2)(A) of this
+section, the unused aggregate amount may be carried forward to the next
+succeeding four (4) tax years.
+                   (C)   A taxpayer employer may make a matching contribution
+to the account of a taxpayer employee with an account established under this
+chapter that does not exceed five hundred dollars ($500) per contributing
+employee per year.
+            (3)    Contributions to this program that have been deducted from
+
+                                     6             03/12/2018 5:13:10 PM GRE021
+                                                                            HB1008
+
+
+the taxpayer employee's adjusted gross income for prior tax years shall be
+subject to recapture from the taxpayer employee if the taxpayer employee:
+                   (A)   Makes a subsequent nonqualified withdrawal from the
+account; or
+                   (B)   Rolls the account over to a tax-deferred tuition
+savings program established by another state or institution under 26 U.S.C. §
+529, as in effect on January 1, 2017 2018.
+              (4)(A)   The contribution shall be recaptured by adding the amount
+previously deducted, not to exceed the amount of the nonqualified withdrawal
+or rollover, to the taxpayer employee's adjusted gross income for the tax
+year in which the nonqualified withdrawal or rollover occurred.
+                   (B)   The nonqualified withdrawal or rollover shall be
+taxable to the taxpayer employee, party, account owner, or designated
+beneficiary who actually makes the nonqualified withdrawal or rollover.
+     (c)(1)(A)    For tax years beginning on or after January 1, 2017,
+contributions to a tuition savings account established under this program or
+a tax-deferred tuition savings program established by another state under 26
+U.S.C. § 529, as it existed on January 1, 2017, may be deducted from the
+taxpayer's adjusted gross income for the purpose of calculating Arkansas
+income tax under § 26-51-403(b).
+                   (B)   A taxpayer may not deduct from the taxpayer’s adjusted
+gross income a contribution to a tax-deferred tuition savings program
+established by another state if the taxpayer deducted the contribution in
+another state or on another’s state’s income taxes.
+              (2)(A)   The deductible contributions for a tuition savings
+account established under this chapter shall not exceed five thousand dollars
+($5,000) per taxpayer in any tax year.
+                   (B)   If the aggregate amount of contributions by a taxpayer
+during a tax year exceeds the limitation under subdivision (c)(2)(A) of this
+section, the unused aggregate amount may be carried forward to the next
+succeeding four (4) tax years.
+                   (C)   The deductible contributions for a tax-deferred
+tuition savings program established by another state under 26 U.S.C. § 529,
+as it existed on January 1, 2017, shall not exceed three thousand dollars
+($3,000) per taxpayer in any tax year.
+                   (D)   The deductible contributions for a tax-deferred
+
+                                      7             03/12/2018 5:13:10 PM GRE021
+                                                                          HB1008
+
+
+tuition savings program established by another state under 26 U.S.C. § 529,
+as it existed on January 1, 2017, that are rolled over into a tuition savings
+account established under this chapter shall not exceed seven thousand five
+hundred dollars ($7,500) per taxpayer in the tax year in which they were
+rolled.
+     (d)(1)(A)   For tax years beginning on or after January 1, 2018,
+contributions to a tuition savings account established under the program or a
+tax-deferred tuition savings program established by another state under 26
+U.S.C. § 529, as it existed on January 1, 2018, may be deducted from the
+taxpayer's adjusted gross income for the purpose of calculating Arkansas
+income tax under § 26-51-403(b).
+                 (B)   A taxpayer may not deduct from the taxpayer’s adjusted
+gross income a contribution to a tax-deferred tuition savings program
+established by another state if the taxpayer deducted the contribution in
+another state or on another’s state’s income taxes.
+           (2)(A)    The deductible contributions for a tuition savings
+account established under this chapter shall not exceed five thousand dollars
+($5,000) per taxpayer in any tax year.
+                 (B)   If the aggregate amount of contributions by a taxpayer
+during a tax year exceeds the limitation under subdivision (d)(2)(A) of this
+section, the unused aggregate amount may be carried forward to the next
+succeeding four (4) tax years.
+                 (C)   The deductible contributions for a tax-deferred
+tuition savings program established by another state under 26 U.S.C. § 529,
+as it existed on January 1, 2018, shall not exceed three thousand dollars
+($3,000) per taxpayer in any tax year.
+                 (D)   The deductible contributions for a tax-deferred
+tuition savings program established by another state under 26 U.S.C. § 529,
+as it existed on January 1, 2018, that are rolled over into a tuition savings
+account established under this chapter shall not exceed seven thousand five
+hundred dollars ($7,500) per taxpayer in the tax year in which they were
+rolled.
+     (d)(1) (e)(1)   Qualified withdrawals from a tuition savings account
+established under this program or a tax-deferred tuition savings program
+established by another state under 26 U.S.C. § 529, as in effect on January
+1, 2017 2018, will be exempt from Arkansas income tax with respect to the
+
+                                    8             03/12/2018 5:13:10 PM GRE021
+                                                                            HB1008
+
+
+designated beneficiary's income.
+              (2)(A)   Nonqualified withdrawals from a tuition savings account
+established under this program or a tax-deferred tuition savings program
+established by another state under 26 U.S.C. § 529, as in effect on January
+1, 2017 2018, will be subject to Arkansas income tax.
+                    (B)   The nonqualified withdrawal will be taxable to the
+party, account owner, or designated beneficiary who actually makes the
+withdrawal.
+     (e) (f)    Any earnings on the contribution that are included in the
+refund will be subject to Arkansas income tax if an account owner receives a
+refund of contributions to a tuition savings account established under this
+program or a tax-deferred tuition savings program established by another
+state under 26 U.S.C. § 529, as in effect on January 1, 2017 2018, because of
+either:
+              (1)   The death or disability of the designated beneficiary; or
+              (2)   A scholarship, allowance, or payment described in 26 U.S.C.
+§ 135(d)(1)(B) or (d)(1)(C), as in effect on January 1, 2017 2018, received
+by the designated beneficiary.
+
+
+     SECTION 5.     Arkansas Code § 6-84-113 is amended to read as follows:
+     6-84-113. Liberal construction.
+     This chapter shall be liberally construed to comply with the
+requirements of 26 U.S.C. § 529, as in effect on January 1, 2017 2018.
+
+
+     SECTION 6.     EFFECTIVE DATE.   This act is effective for tax years
+beginning on or after January 1, 2018.
+
+
+
+
+                                      9             03/12/2018 5:13:10 PM GRE021
+

@@ -1,0 +1,235 @@
+
+
+Be it
+enacted by the Legislature of the State of Arizona:
+
+Section 1.  Subject to the requirements of article
+IV, part 1, section 1, Constitution of Arizona, section 36-2801, Arizona
+Revised Statutes, is amended to read:
+
+START_STATUTE36-2801.  Definitions
+
+In this
+chapter, unless the context otherwise requires:
+
+1.  "Allowable
+amount of marijuana"
+
+(a)  With
+respect to a qualifying patient, the "allowable amount of marijuana"
+means: 
+
+(i)  Two-and-one-half
+ounces of usable marijuana; and
+
+(ii)  If
+the qualifying patient's registry identification card states that the
+qualifying patient is authorized to cultivate marijuana, twelve marijuana
+plants contained in an enclosed, locked facility, except that the plants are not
+required to be in an enclosed, locked facility if the plants are being
+transported because the qualifying patient is moving.
+
+(b)  With
+respect to a designated caregiver, the "allowable amount of
+marijuana" for each patient assisted by the designated caregiver under
+this chapter means: 
+
+(i)  Two-and-one-half
+ounces of usable marijuana; and
+
+(ii)  If
+the designated caregiver's registry identification card provides that the
+designated caregiver is authorized to cultivate marijuana, twelve marijuana
+plants contained in an enclosed, locked facility, except that the plants are not
+required to be in an enclosed, locked facility if the plants are being
+transported because the designated caregiver is moving.
+
+(c)  Marijuana
+that is incidental to medical use, but is not usable marijuana as defined in
+this chapter, shall not be counted toward a qualifying patient's or designated
+caregiver's allowable amount of marijuana.
+
+2.  "Cardholder"
+means a qualifying patient, a designated caregiver or a nonprofit medical
+marijuana dispensary agent who has been issued and possesses a valid registry
+identification card.
+
+3.  "Debilitating
+medical condition" means one or more of the following:
+
+(a)  Cancer,
+glaucoma, positive status for human immunodeficiency virus, acquired immune
+deficiency syndrome, hepatitis C, amyotrophic lateral sclerosis, Crohn's
+disease, opioid
+use disorder, agitation
+of Alzheimer's disease or the treatment of these conditions.
+
+(b)  A
+chronic or debilitating disease or medical condition or its treatment that
+produces one or more of the following: 
+
+(i)  Cachexia or wasting syndrome. ; 
+
+(ii)  Severe and chronic pain. ; 
+
+(iii)  Severe nausea. ; 
+
+(iv)  Seizures, including those
+characteristic of epilepsy.
+; or
+
+(v)  Severe and persistent muscle
+spasms, including those characteristic of multiple sclerosis.
+
+(c)  Any
+other medical condition or its treatment added by the department pursuant to
+section 36‑2801.01.
+
+4.  "Department"
+means the Arizona department of health services or
+its successor agency.
+
+5.  "Designated
+caregiver" means a person who: 
+
+(a)  Is
+at least twenty‑one years of age.
+
+(b)  Has
+agreed to assist with a patient's medical use of marijuana. 
+
+(c)  Has
+not been convicted of an excluded felony offense.
+
+(d)  Assists
+no more than five qualifying patients with the medical use of marijuana.
+
+(e)  May
+receive reimbursement for actual costs incurred in assisting a registered
+qualifying patient's medical use of marijuana if the registered designated
+caregiver is connected to the registered qualifying patient through the
+department's registration process. The designated caregiver may not be paid any
+fee or compensation for his service as a caregiver.  Payment
+for costs under this subdivision shall not constitute an offense under title
+13, chapter 34 or under title 36, chapter 27, article 4.
+
+6.  "Enclosed,
+locked facility" means a closet, room, greenhouse or other enclosed area
+equipped with locks or other security devices that permit access only by a
+cardholder.
+
+7.  "Excluded
+felony offense" means: 
+
+(a)  A
+violent crime as defined in section 13-901.03, subsection B, that was
+classified as a felony in the jurisdiction where the person was convicted. 
+
+(b)  A
+violation of a state or federal controlled substance law that was classified as
+a felony in the jurisdiction where the person was convicted but does not
+include:
+
+(i)  An
+offense for which the sentence, including any term of probation, incarceration
+or supervised release, was completed ten or more years earlier.
+
+(ii)  An
+offense involving conduct that would be immune from arrest, prosecution or
+penalty under section 36-2811,
+except that the conduct occurred before the effective date of this chapter December 14, 2010 or was prosecuted by an authority
+other than the state of Arizona.
+
+8.  "Marijuana"
+means all parts of any plant of the genus cannabis whether growing or not, and
+the seeds of such plant. 
+
+9.  "Medical
+use" means the acquisition, possession, cultivation, manufacture, use,
+administration, delivery, transfer or transportation of marijuana or
+paraphernalia relating to the administration of marijuana to treat or alleviate
+a registered qualifying patient's debilitating medical condition or symptoms associated
+with the patient's debilitating medical condition.
+
+11.  10.  "Nonprofit medical marijuana
+dispensary" means a not-for-profit entity that acquires, possesses,
+cultivates, manufactures, delivers, transfers, transports, supplies, sells or
+dispenses marijuana or related supplies and educational materials to
+cardholders.  A nonprofit medical marijuana dispensary may receive
+payment for all expenses incurred in its operation.
+
+10.  11.  "Nonprofit medical marijuana
+dispensary agent" means a principal officer, board member, employee or
+volunteer of a nonprofit medical marijuana dispensary who is at least
+twenty-one years of age and has not been convicted of an excluded felony
+offense.
+
+12.  "Physician"
+means a doctor of medicine who holds a valid and existing license to practice
+medicine pursuant to title 32, chapter 13 or its successor, a doctor of
+osteopathic medicine who holds a valid and existing license to practice
+osteopathic medicine pursuant to title 32, chapter 17 or its successor, a
+naturopathic physician who holds a valid and existing license to practice
+naturopathic medicine pursuant to title 32, chapter 14 or its successor or a
+homeopathic physician who holds a valid and existing license to practice
+homeopathic medicine pursuant to title 32, chapter 29 or its successor.
+
+13.  "Qualifying
+patient" means a person who has been diagnosed by a physician as having a
+debilitating medical condition.
+
+14.  "Registry
+identification card" means a document issued by the department that
+identifies a person as a registered qualifying patient, registered designated
+caregiver or a registered nonprofit medical marijuana dispensary agent.
+
+15.  "Usable
+marijuana" means the dried flowers of the marijuana plant, and any mixture
+or preparation thereof, but does not include the seeds, stalks and roots of the
+plant and does not include the weight of any non‑marijuana ingredients
+combined with marijuana and prepared for consumption as food or drink.
+
+16.  "Verification
+system" means a secure, password-protected, web‑based system
+established and maintained by the department that is available to law
+enforcement personnel and nonprofit medical marijuana dispensary agents on a twenty-four hour twenty‑four‑hour basis for verification of registry
+identification cards.
+
+17.  "Visiting
+qualifying patient" means a person:
+
+(a)  Who
+is not a resident of Arizona or who has been a resident of Arizona less than
+thirty days.
+
+(b)  Who
+has been diagnosed with a debilitating medical condition by a person who is
+licensed with authority to prescribe drugs to humans in the state of the
+person's residence or, in the case of a person who has been a resident of
+Arizona less than thirty days, the state of the person's former residence.
+
+18.  "Written
+certification" means a document dated and signed by a physician, stating
+that in the physician's professional opinion the patient is likely to receive
+therapeutic or palliative benefit from the medical use of marijuana to treat or
+alleviate the patient's debilitating medical condition or symptoms associated
+with the debilitating medical condition.  The physician must: 
+
+(a)  Specify
+the qualifying patient's debilitating medical condition in the written
+certification.
+
+(b)  Sign
+and date the written certification only in the course of a physician-patient
+relationship after the physician has completed a full assessment of the
+qualifying patient's medical history. END_STATUTE
+
+Sec. 2.  Requirements for
+enactment; three-fourths vote
+
+Pursuant to
+article IV, part 1, section 1, Constitution of Arizona, section 36-2801,
+Arizona Revised Statutes, as amended by this act, is effective only on the
+affirmative vote of at least three-fourths of the members of each house of the
+legislature.
+

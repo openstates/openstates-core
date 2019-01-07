@@ -1,3 +1,2 @@
 scrapelib
-beautifulsoup4
 lxml

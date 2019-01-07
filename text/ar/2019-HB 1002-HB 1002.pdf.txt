@@ -1,0 +1,204 @@
+     Stricken language would be deleted from and underlined language would be added to present law.
+
+
+
+State of Arkansas
+92nd General Assembly                        A Bill
+Regular Session, 2019                                                             HOUSE BILL 1002
+
+
+By: Representative D. Douglas
+
+
+                                   For An Act To Be Entitled
+               AN ACT TO AMEND THE LAW CONCERNING SALES AND USE TAX;
+               TO REQUIRE CERTAIN OUT-OF-STATE SELLERS TO COLLECT
+               AND REMIT ARKANSAS SALES AND USE TAX; TO REPEAL THE
+               SALES AND USE TAX LAW ON SELLERS AND AFFILIATED
+               PERSONS; AND FOR OTHER PURPOSES.
+
+
+
+
+                                              Subtitle
+                        TO REQUIRE CERTAIN OUT-OF-STATE SELLERS
+                        TO COLLECT AND REMIT ARKANSAS SALES AND
+                        USE TAX.
+
+
+
+
+BE IT ENACTED BY THE GENERAL ASSEMBLY OF THE STATE OF ARKANSAS:
+
+
+       SECTION 1.       DO NOT CODIFY.       Legislative findings.
+       The General Assembly finds that:
+               (1)      The inability to effectively collect any Arkansas sales or
+use tax from remote sellers who deliver tangible personal property, other
+property subject to Arkansas sales and use tax, or services directly into the
+state is seriously eroding the sales and use tax base of this state, causing
+revenue losses and imminent harm to the state through the loss of critical
+funding for state and local services;
+               (2)      The harm from the loss of revenue is especially serious in
+Arkansas because sales and use tax revenues are essential in funding state
+and local services;
+               (3)      Despite the fact that a use tax is owed on tangible personal
+property, certain other property, or services delivered for use in this
+state, many remote sellers actively market sales as tax-free or as
+
+
+
+*JLL022*                                                                  11/15/2018 8:17:16 AM JLL022
+                                                                            HB1002
+
+
+transactions not subject to sales and use tax;
+             (4)   The structural advantages of remote sellers, including the
+absence of point-of-sale tax collection and the general growth of online
+retail, make clear that further erosion of this state's sales and use tax
+base is likely to occur in the near future;
+             (5)   Remote sellers that make a substantial number of deliveries
+into Arkansas or collect large gross revenues from Arkansas benefit
+extensively from this state's market, economy, and infrastructure;
+             (6)   In contrast with the increasing harm caused to the state by
+the exemption of remote sellers from sales and use tax collection duties, the
+costs of such collection have decreased because advanced computing and
+software options have made it neither difficult nor burdensome for remote
+sellers to collect and remit sales and use taxes associated with sales of
+goods and services to residents of this state; and
+             (7)   The United States Supreme Court recently upheld the ability
+of states to compel out-of-state sellers with no physical presence in the
+state to collect state sales and use taxes.
+
+
+      SECTION 2.   Arkansas Code § 26-52-110 is repealed.
+      26-52-110.   Sellers and affiliated persons — Referral agreements —
+Notice required — Definitions.
+      (a)   As used in this section:
+             (1)   “Affiliated person” means:
+                   (A)   A person that is a member of the same controlled group
+of corporations as the seller; or
+                   (B)   Another entity that, notwithstanding its form of
+organization, bears the same ownership relationship to the seller as a
+corporation that is a member of the same controlled group of corporations;
+and
+             (2)   “Controlled group of corporations” means the same as in 26
+U.S.C. § 1563(a), as it existed on January 1, 2011.
+      (b)   A seller is presumed to be engaged in the business of selling
+tangible personal property, specified digital products, a digital code, or
+taxable services for use in the state if an affiliated person is subject to
+the sales and use tax jurisdiction of the state and the:
+             (1)   Seller sells a similar line of products as the affiliated
+
+                                       2           11/15/2018 8:17:16 AM JLL022
+                                                                          HB1002
+
+
+person and sells the products under the same business name or a similar
+business name;
+             (2)   Affiliated person uses his, her, or its in-state employees
+or in-state facilities to advertise, promote, or facilitate sales by the
+seller to consumers;
+             (3)   Affiliated person maintains an office, distribution
+facility, warehouse or storage place, or similar place of business to
+facilitate the delivery of property, specified digital products, a digital
+code, or services sold by the seller to the seller's business;
+             (4)   Affiliated person uses trademarks, service marks, or trade
+names in the state that are the same or substantially similar to those used
+by the seller; or
+             (5)   Affiliated person delivers, installs, assembles, or performs
+maintenance services for the seller's purchasers within the state.
+      (c)   The presumption in subsection (b) of this section may be rebutted
+by demonstrating that the affiliated person's activities in the state are not
+significantly associated with the seller's ability to establish or maintain a
+market in the state for the seller's sales.
+      (d)(1)     If there is not an affiliated person with respect to a seller
+in the state, the seller is presumed to be engaged in the business of selling
+tangible personal property, specified digital products, a digital code, or
+taxable services for use in the state if the seller enters into an agreement
+with one (1) or more residents of the state under which the residents, for a
+commission or other consideration, directly or indirectly refer potential
+purchasers, whether by a link on an Internet website or otherwise, to the
+seller.
+             (2)   However, subdivision (d)(1) of this section applies only if
+the cumulative gross receipts from sales by the seller to purchasers in the
+state who are referred to the seller by all residents according to the type
+of agreement described in subdivision (d)(1) of this section exceed ten
+thousand dollars ($10,000) during the preceding twelve (12) months.
+      (e)(1)   The presumption in subsection (d) of this section may be
+rebutted by submitting proof that the residents with whom the seller has an
+agreement did not engage in any activity within the state that was
+significantly associated with the seller's ability to establish or maintain
+the seller's market in the state during the preceding twelve (12) months.
+
+                                     3             11/15/2018 8:17:16 AM JLL022
+                                                                         HB1002
+
+
+            (2)   Proof provided under subdivision (e)(1) of this section may
+consist of written statements from all of the residents with whom the seller
+has an agreement stating that they did not engage in any solicitation in the
+state on behalf of the seller during the preceding twelve (12) months if the
+statements were provided and obtained in good faith.
+     (f)   The Director of the Department of Finance and Administration shall
+promulgate rules to implement this section.
+
+
+     SECTION 3.   Arkansas Code Title 26, Chapter 52, Subchapter 1, is
+amended to add an additional section to read as follows:
+     26-52-111.   Collection by remote sellers.
+     (a)   A seller selling tangible personal property, other property
+subject to Arkansas sales and use tax, or services for delivery into Arkansas
+that does not have a physical presence in this state:
+            (1)   Is subject to the provisions of this chapter and the
+Arkansas Compensating Tax Act of 1949, § 26-53-101 et seq.; and
+            (2)   Shall remit the sales and use tax and follow all applicable
+procedures and requirements of law as if the seller had a physical presence
+in the state if the seller meets either of the following criteria for the
+previous calendar year or the current calendar year:
+                  (A)   The seller's gross revenue from the sale of tangible
+personal property, other property subject to Arkansas sales and use tax, and
+services for delivery into Arkansas exceeds one hundred thousand dollars
+($100,000); or
+                  (B)   The seller sold tangible personal property, other
+property subject to Arkansas sales and use tax, or services or any
+combination of tangible personal property, other property subject to Arkansas
+sales and use tax, and services for delivery into Arkansas in at least two
+hundred (200) separate transactions.
+     (b)   The obligation to remit the sales and use tax required under this
+section shall not be applied retroactively.
+     (c)   A taxpayer complying with this section may seek a recovery of
+taxes, penalties, or interest only by following the procedures established in
+the Arkansas Tax Procedure Act, § 26-18-101 et seq.
+     (d)   This section does not limit the ability of a taxpayer to obtain a
+refund for any other reason, including without limitation a mistake of fact
+
+                                    4             11/15/2018 8:17:16 AM JLL022
+                                                                             HB1002
+
+
+or mathematical miscalculation of the applicable tax.
+     (e) A seller that remits sales and use tax under this section is not
+liable to a purchaser if the seller was not required to collect sales and use
+tax because a provision of this section is later deemed unlawful.
+     (f)   This section does not affect the obligation of a purchaser from
+this state to remit use tax on any applicable transaction in which the seller
+does not collect and remit sales and use tax.
+     (g)   This section does not affect or impair the:
+            (1)   Obligation of a seller, when the seller is transacting
+business in the state and a point-of-sale tax is collected on the
+transaction, to remit all state and local taxes on any applicable transaction
+in which the seller provides goods or furnishes services within the state; or
+            (2)   Ability of a state entity to immediately collect the taxes
+described in subdivision (g)(1) of this section.
+
+
+     SECTION 4.     EFFECTIVE DATE.   Sections 1 through 3 of this act are
+effective on the first day of the calendar quarter following the effective
+date of this act.
+
+
+
+
+                                      5             11/15/2018 8:17:16 AM JLL022
+

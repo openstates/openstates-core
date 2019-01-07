@@ -1,0 +1,15 @@
+
+
+General Assembly
+Proposed Bill No. 2 
+February Session, 2018
+LCO No. 390
+*00390*
+Referred to Committee on ENERGY AND TECHNOLOGY 
+Introduced by:
+SEN. DUFF, 25th Dist.
+AN ACT CONCERNING INTERNET SERVICE PROVIDERS AND NET NEUTRALITY PRINCIPLES.
+Be it enacted by the Senate and House of Representatives in General Assembly convened:
+That the general statutes be amended to require Internet service providers operating in the state to register with the Public Utilities Regulatory Authority and pay an annual registration fee, to require the Public Utilities Regulatory Authority to apply net neutrality principles to Internet service providers in Connecticut and to require a civil penalty be imposed by the Public Utilities Regulatory Authority for failure of an Internet service provider to comply with such principles where each day in violation is a separate offense.
+Statement of Purpose:  
+To require Internet service providers to register and pay registration fees and require the Public Utilities Regulatory Authority to apply net neutrality principles to Internet service providers and enforce such principles with civil penalties. 

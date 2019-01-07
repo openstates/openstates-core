@@ -1,0 +1,436 @@
+
+
+Be it
+enacted by the Legislature of the State of Arizona:
+
+Section 1.  Section 32-3248, Arizona Revised
+Statutes, as added by Laws 2018, first special session, chapter 1, section 29,
+is amended to read:
+
+START_STATUTE32-3248.  Health
+professionals; controlled substances; initial prescriptions; limits;
+exceptions; definition
+
+A.  A
+health professional who is authorized under this title to prescribe controlled
+substances shall limit the initial prescription for a patient for a schedule II
+controlled substance that is an opioid to not more than a five‑day
+supply, except that an initial prescription for a schedule II controlled
+substance that is an opioid following a surgical procedure is limited to not
+more than a fourteen‑day supply.
+
+B.  Subsection
+A of this section does not apply to initial prescriptions if the patient:
+
+1.  Has
+an active oncology diagnosis.
+
+2.  Has
+a traumatic injury, not including a surgical procedure.
+
+3.  Is
+receiving hospice care.
+
+4.  Is
+receiving end‑of‑life care.
+
+5.  Is
+receiving palliative care.
+
+6.  Is
+receiving skilled nursing facility care.
+
+7.  Is
+receiving treatment for burns.
+
+8.  Is
+receiving medication‑assisted treatment for a substance use disorder.
+
+9.  Is
+an infant who is being weaned off opioids at the time of hospital discharge.
+
+C.  If
+a health professional's prescribing authority under the relevant chapter of
+this title for schedule II controlled substances is more restrictive than the
+limit specified in subsection A of this section, the health professional's
+prescribing authority under the relevant chapter of this title applies.
+
+D.  An
+initial prescription for a schedule II controlled substance that is an opioid
+that is written for more than a five‑day supply is deemed to meet the
+requirements of an exemption under this section when the initial prescription
+is presented to the dispenser.  A pharmacist is not required to
+verify with the prescriber whether the initial prescription complies with this
+section.
+
+D.  E.  For the purposes of
+this section, "initial prescription" means a prescription for a
+schedule II controlled substance that is an opioid that has not covered any
+portion of the past sixty days before the date the pharmacy dispenses the
+current prescription as evidenced by the controlled substances prescription
+monitoring program's central database tracking system. END_STATUTE
+
+Sec. 2.  Section 32-3248.01, Arizona Revised
+Statutes, as added by Laws 2018, first special session, chapter 1, section 29,
+is amended to read:
+
+START_STATUTE32-3248.01.  Schedule
+II controlled substances; dosage limit; exceptions; morphine; opioid
+antagonist; definition
+
+A.  A
+health professional who is authorized under this title to prescribe controlled
+substances may not issue a new prescription order for a schedule II controlled
+substance that is an opioid that exceeds ninety morphine milligram equivalents
+per day.
+
+B.  The
+limit prescribed by subsection A of this section does not apply to:
+
+1.  A
+continuation of a prior prescription order that was issued within the previous
+sixty days.
+
+2.  An
+opioid with a maximum approved total daily dose in the labeling as approved by
+the United States food and drug administration.
+
+3.  A
+patient who:
+
+(a)  Has
+an active oncology diagnosis.
+
+(b)  Has
+a traumatic injury, not including a surgical procedure.
+
+(c)  Is
+receiving hospice care.
+
+(d)  Is
+receiving end‑of‑life care.
+
+(e)  Is
+receiving palliative care.
+
+(f)  Is
+receiving skilled nursing facility care.
+
+(g)  Is
+receiving treatment for burns.
+
+(h)  Is
+receiving medication‑assisted treatment for a substance use disorder.
+
+(i)  Is
+hospitalized.
+
+C.  If
+a health professional believes that a patient requires more than ninety
+morphine milligram equivalents per day and the patient is not exempt from the
+limit pursuant to subsection B of this section, the health professional shall
+first consult with a physician who is licensed pursuant to chapter 13 or 17 of
+this title and who is board‑certified in pain.  The consultation may be
+done by telephone or through telemedicine.  If the consulting
+physician is not available to consult within forty‑eight hours after the
+request, the health professional may prescribe the amount that the health
+professional believes the patient requires and subsequently have the
+consultation.  If the health professional is a physician who is licensed
+pursuant to chapter 13 or 17 of this title and is board‑certified in
+pain, the health professional may issue a prescription order for more than
+ninety morphine milligram equivalents per day without a consultation under this
+subsection.
+
+D.  If
+a patient is prescribed more than ninety morphine milligram equivalents per day
+pursuant to subsection B or C of this section, the prescribing health
+professional shall also prescribe for the patient naloxone hydrochloride or any
+other opioid antagonist that is approved by the United States food and drug
+administration for the treatment of opioid‑related overdoses.
+
+E.  A
+prescription order for a schedule II controlled substance that is an opioid
+that is written for more than ninety morphine milligram equivalents per day is
+deemed to meet the requirements of an exemption under this section when the
+prescription order is presented to the dispenser.  A pharmacist is
+not required to verify with the prescriber whether the prescription order
+complies with this section.
+
+E.  F.  For the purposes of
+this section, "prescription order" has the same meaning prescribed in
+section 32‑1901. END_STATUTE
+
+Sec. 3.  Section 36‑2525, Arizona Revised
+Statutes, as amended by Laws 2018, first special session, chapter 1, section
+37, is amended to read:
+
+START_STATUTE36-2525.  Prescription
+orders; labels; packaging; definition
+
+A.  In
+addition to the requirements of section 32‑1968 pertaining to
+prescription orders for prescription‑only drugs, the prescription order
+for a controlled substance shall bear the name, address and federal
+registration number of the prescriber.  A prescription order for a
+schedule II controlled substance drug other than a hospital drug order for a hospital
+inpatient shall contain only one drug order per prescription
+blank.  If authorized verbally by the prescriber, the pharmacist may
+make changes to correct errors or omissions made by the prescriber on the
+following parts of a written or electronic schedule II controlled substance
+prescription order:
+
+1.  The
+date issued.
+
+2.  The
+strength, dosage form or quantity of drug.
+
+3.  The
+directions for its use.
+
+B.  The
+pharmacist must document on the original prescription order the changes that
+were made pursuant to the verbal authorization and record the time and date the
+authorization was granted.
+
+C.  A
+person who is registered to dispense controlled substances under this chapter
+must keep and maintain prescription orders for controlled substances as follows:
+
+1.  Prescription
+orders for controlled substances listed in schedules I and II must be
+maintained in a separate prescription file for controlled substances listed in
+schedules I and II only.
+
+2.  Prescription
+orders for controlled substances listed in schedules III, IV and V must be
+maintained either in a separate prescription file for controlled substances
+listed in schedules III, IV and V only or in a form that allows them to be readily
+retrievable from the other prescription records of the
+registrant.  For the purposes of this paragraph, "readily
+retrievable" means that, when the prescription is initially filed, the
+face of the prescription is stamped in red ink in the lower right corner with
+the letter "C" in a font that is not less than one inch high and that
+the prescription is filed in the usual consecutively numbered prescription file
+for noncontrolled substance prescriptions.  The requirement to stamp the hard
+copy prescription with a red "C" is waived if a registrant employs an
+electronic data processing system or other electronic recordkeeping system for
+prescriptions that permits identification by prescription number and retrieval
+of original documents by the prescriber's name, patient's name, drug dispensed
+and date filled.
+
+D.  Except
+in emergency situations in conformity with subsection E of this section, under
+the conditions specified in subsections F and G of this section or when
+dispensed directly by a medical practitioner to an ultimate user, a controlled
+substance in schedule II shall not be dispensed without either the written
+prescription order in ink or indelible pencil or typewritten and manually
+signed by the medical practitioner or an electronic prescription order as prescribed
+by federal law or regulation.  Beginning January 1, 2019, a schedule II
+controlled substance that is an opioid may be dispensed in a county with a
+population of one hundred fifty thousand persons or more only with an
+electronic prescription order as prescribed by federal law or regulation. 
+Beginning July 1, 2019, a schedule II controlled substance that is an opioid
+may be dispensed in a county with a population of less than one hundred fifty
+thousand persons only with an electronic prescription order as prescribed by
+federal law or regulation.  A prescription order for a schedule II substance
+shall not be dispensed more than ninety days after the date on which the
+prescription order was issued.  NOTWITHSTANDING ANY
+OTHER PROVISION OF THIS SECTION, a
+limited service pharmacy as defined in
+section 32‑1901 may sell and dispense a schedule II controlled substance prescribed by a medical practitioner who
+is located in another county in this state or in another
+state if the prescription was issued to the patient according to and in
+compliance with the applicable laws of the state of the prescribing medical
+practitioner and federal law.  A
+prescription order for a schedule II controlled substance shall not be
+refilled.
+
+E.  In
+emergency situations, emergency quantities of schedule II controlled substances
+may be dispensed on an oral prescription order of a medical
+practitioner.  Such an emergency prescription order shall be
+immediately reduced to writing by the pharmacist and shall contain all the information
+required for schedule II controlled substances except for the manual signing of
+the order by the medical practitioner.  Within seven days after authorizing an
+emergency oral prescription order, the prescribing medical practitioner shall
+cause a written prescription order manually signed for the emergency quantity
+prescribed to be delivered to the dispensing pharmacist or an electronic
+prescription order to be transmitted to the dispensing
+pharmacist.  In addition to conforming to other requirements for
+prescription orders for schedule II controlled substances, the prescription
+order shall indicate electronically or have written on its face
+"authorization for emergency dispensing" and the date of the oral
+order.  If the prescribing medical practitioner fails to deliver such
+an emergency prescription order within seven days in conformance with board
+rules, the pharmacist shall notify the board.  Failure of the pharmacist to
+notify the board voids the authority conferred by this subsection to dispense
+without a prescription order of a medical practitioner that is electronic or
+that is written and manually signed.
+
+F.  The
+following may be transmitted to a pharmacy by fax by a patient's medical
+practitioner or the medical practitioner's agent:
+
+1.  A
+prescription order written for a schedule II controlled substance to be
+compounded for the direct administration to a patient by parenteral,
+intravenous, intramuscular, subcutaneous or intraspinal infusion.
+
+2.  A
+prescription order written for any schedule II controlled substance for a
+resident of a long-term care facility.
+
+3.  A
+prescription order written for a schedule II controlled substance for a patient
+enrolled in a hospice care program that is certified or paid for by medicare
+under title XVIII or a hospice program that is licensed by this state.  The
+medical practitioner or the medical practitioner's agent must note on the
+prescription that the patient is a hospice patient.
+
+G.  A
+fax transmitted pursuant to subsection F of this section is the original
+written prescription order for purposes of this section and must be maintained
+as required by subsection C of this section.
+
+H.  Except
+when dispensed directly by a medical practitioner to an ultimate user, a
+controlled substance included in schedule III or IV that requires a
+prescription order as determined under state or federal laws shall not be
+dispensed without a written or oral prescription order of a medical
+practitioner
+or an electronic prescription order as prescribed by federal law
+or regulation.  The prescription order shall not be filled or
+refilled more than six months after the date on which the prescription order
+was issued.  A prescription order authorized to be refilled shall not be
+refilled more than five times.  Additional quantities may only be authorized by
+the prescribing medical practitioner through issuance of a new prescription
+order that shall be treated by the pharmacist as a new and separate
+prescription order.
+
+I.  Except
+when dispensed directly by a medical practitioner to an ultimate user, a controlled
+substance that is included in schedule V and that requires a prescription order
+as determined under state or federal laws shall not be dispensed without a
+written or oral prescription order of a medical practitioner.  The
+prescription order may be refilled as authorized by the prescribing medical
+practitioner but shall not be filled or refilled more than one year after the
+date of issuance.
+
+J.  A
+controlled substance that is listed in schedule III, IV or V and that does not
+require a prescription order as determined under state or federal laws may be
+dispensed at retail by a pharmacist, a pharmacy intern or a graduate intern
+under the pharmacist's supervision without a prescription order to a purchaser
+who is at least eighteen years of age if all of the following are true:
+
+1.  It
+is for a legitimate medical purpose.
+
+2.  Not
+more than two hundred forty cubic centimeters (eight ounces) of any such
+controlled substance containing opium, nor more than one hundred twenty cubic
+centimeters (four ounces) of any other such controlled substance, nor more than
+forty‑eight dosage units of any such controlled substance containing
+opium, nor more than twenty‑four dosage units of any other controlled
+substance may be dispensed at retail to the same purchaser in any given forty‑eight-hour
+period.
+
+3.  No
+more than one hundred dosage units of any single active ingredient ephedrine
+preparation may be sold, offered for sale, bartered or given away to any one
+person in any one thirty‑day period.
+
+4.  The
+pharmacist, pharmacy intern or graduate intern requires every purchaser of a
+controlled substance under this subsection who is not known to that person to
+furnish suitable identification, including proof of age if appropriate.
+
+5.  A
+bound record book for dispensing controlled substances under this subsection is
+maintained by the pharmacist and contains the name and address of the
+purchaser, the name and quantity of the controlled substance purchased, the
+date of each purchase and the name or initials of the pharmacist, pharmacy
+intern or graduate intern who dispensed the substance to the purchaser.  The
+book shall be maintained in conformity with the recordkeeping requirements of
+section 36‑2523.
+
+K.  In
+the absence of a law requiring a prescription for a schedule V controlled substance,
+the board, by rules, may require, or remove the requirement of, a prescription
+order for a schedule V controlled substance.
+
+L.  The
+label on a container of a controlled substance that is directly dispensed by a
+medical practitioner or pharmacist and that is not for the immediate
+administration to the ultimate user, such as a bed patient in a hospital, shall
+bear the name and address of the dispensing medical practitioner or pharmacist,
+the serial number, the date of dispensing, the name of the prescriber, the name
+of the patient or, if an animal, the name of the owner of the animal and the
+species of the animal, the directions for use and cautionary statements, if
+any, contained in the prescription order or required by law.  If the controlled
+substance is included in schedule II, III or IV, the label shall bear a
+transfer warning to the effect:  "Caution:  federal law
+prohibits the transfer of this drug to any person other than the patient for
+whom it was prescribed".  The container of a schedule II controlled
+substance that is an opioid that is directly dispensed by a pharmacist and that
+is not for the immediate administration to the ultimate user shall have a red
+cap and a warning label prescribed by the board about potential addiction.  The board or the executive director, if delegated by the board, may
+waive the red cap requirement if implementing the requirement is not feasible
+because of the specific dosage form or packaging type.
+
+M.  Controlled
+substances in schedules II, III, IV and V may be dispensed as electronically
+transmitted prescriptions if the prescribing medical practitioner is all of the
+following:
+
+1.  Properly
+registered by the United States drug enforcement administration.
+
+2.  Licensed
+in good standing in the United States jurisdiction in which the medical
+practitioner practices.
+
+3.  Authorized
+to issue such prescriptions in the jurisdiction in which the medical
+practitioner is licensed.
+
+N.  Notwithstanding
+any other provision of this section, beginning January 1, 2019, each
+prescription order that is issued by a medical practitioner in a county with a
+population of one hundred fifty thousand persons or more for a schedule II
+controlled substance that is an opioid shall be transmitted electronically to
+the dispensing pharmacy.  Notwithstanding any other provision of this section,
+beginning July 1, 2019, each prescription order that is issued by a medical
+practitioner in a county with a population of less than one hundred fifty
+thousand persons for a schedule II controlled substance that is an opioid shall
+be transmitted electronically to the dispensing pharmacy.
+
+O.  The
+requirement in subsections D and N of this section for an electronic
+prescription order does not apply to a prescription order for a schedule II
+controlled substance that is an opioid that is issued for medication-assisted
+treatment for a substance use disorder.
+
+P.  The
+board, by rule, may provide additional requirements for prescribing and
+dispensing controlled substances. 
+
+Q.  The
+board shall establish a process to grant a waiver for the requirement in
+subsections D and N of this section for electronic prescription orders to a
+medical practitioner who lacks adequate access to broadband or faces other
+hardships that prevent the medical practitioner from implementing electronic
+prescription orders.  A pharmacist is not required to
+verify with a medical practitioner or the board whether the medical
+practitioner has received a waiver pursuant to this subsection.
+
+R.  For
+the purposes of this section, "medication‑assisted treatment"
+has the same meaning prescribed in section 32‑3201.01. END_STATUTE
+
+Sec. 4.  Retroactivity
+
+This act
+applies retroactively to from and after April 25, 2018.
+
