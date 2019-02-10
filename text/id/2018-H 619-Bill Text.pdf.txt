@@ -1,0 +1,95 @@
+AN ACT
+RELATING TO PUBLIC LIBRARIES; AMENDING SECTION 33-2741, IDAHO CODE, TO PRO-
+VIDE THAT A PUBLIC LIBRARY'S INTERNET SAFETY POLICY SHALL APPLY TO ANY
+PUBLICLY ACCESSIBLE WIRELESS INTERNET ACCESS PROVIDED BY THE LIBRARY
+AND TO MAKE A TECHNICAL CORRECTION.
+Be It Enacted by the Legislature of the State of Idaho:
+SECTION 1. That Section 33-2741, Idaho Code, be, and the same is hereby
+amended to read as follows:
+33-2741. PUBLIC LIBRARY -- INTERNET USE POLICY REQUIRED. (1) Public
+libraries receiving public moneys and governed by the provisions of chapters
+26 and 27, title 33, Idaho Code, that offer use of the internet or an online
+service to the public:
+(a) (i) Shall have in place a policy of internet safety for minors
+including the operation of a technology protection measure with
+respect to any publicly accessible wireless internet access or
+publicly accessible computers with internet access and that pro-
+tects against access through such computers or wireless internet
+access to visual depictions that are obscene or child pornography
+or harmful to minors; and
+(ii) Shall enforce the operation of such technology protection
+measure during any use of a computer or wireless internet access by
+a minor.
+(b) (i) Shall have in place a policy of internet safety, which may
+include the operation of a technology protection measure with re-
+spect to any publicly accessible wireless internet access or pub-
+licly accessible computers with internet access and that protects
+against access through such computers or wireless internet access
+to visual depictions that are obscene or child pornography; and
+(ii) May enforce the operation of such technology protection mea-
+sure during any use of a computer or wireless internet access.
+(2) The provisions of this section shall not prohibit a public library
+from limiting internet access or otherwise protecting against materials
+other than the materials specified in this section.
+(3) An administrator, supervisor or other authorized representative of
+a public library may disable a technology protection measure described in
+subsection (1) of this section at the request of a library patron to enable
+access for lawful purposes.
+(4) Each public library's policy shall be developed under the direction
+of the library's board of trustees, adopted in an open meeting and shall have
+an effective date. The board of trustees shall review the policy at least
+once every three (3) years. The policy shall reflect the most recent date of
+review.
+(5) Notice of the availability of the policy shall be posted in a con-
+spicuous place within the library for all patrons to observe. The board of
+trustees may issue any other public notice it considers appropriate to in-
+form the community about the policy.
+(6) The policy may:
+(a) State that it restricts access to internet or online sites that con-
+tain material described in subsection (1) of this section and how the
+policy meets the requirements provided for in this section;
+(b) Inform patrons that administrative procedures and guidelines for
+library staff to follow in enforcing the policy have been adopted and
+are available for review at the library; and
+(c) Inform patrons that procedures for use by patrons and staff to han-
+dle complaints about the policy, its enforcement or about observed pa-
+tron behavior have been adopted and are available for review at the li-
+brary.
+(7) For purposes of this section, the following terms shall have the
+following meanings:
+(a) "Child pornography" means any visual depiction, including any pho-
+tograph, film, video, picture, or computer or computer-generated im-
+age or picture, whether made or produced by electronic, mechanical, or
+other means, of sexually explicit conduct, where:
+(i) The production of such visual depiction involves the use of a
+minor engaging in sexually explicit conduct;
+(ii) Such visual depiction is a digital image, computer image, or
+computer-generated image that is, or is indistinguishable from,
+that of a minor engaging in sexually explicit conduct; or
+(iii) Such visual depiction has been created, adapted, or modified
+to appear that an identifiable minor is engaging in sexually ex-
+plicit conduct.
+(b) "Harmful to minors" means any picture, image, graphic image file or
+other visual depiction that:
+(i)   Taken as a whole and with respect to minors, appeals to a
+prurient interest in nudity, sex or excretion;
+(ii) Depicts, describes or represents, in a patently offensive
+way with respect to what is suitable for minors, an actual or sim-
+ulated sexual act or sexual contact, actual or simulated normal or
+perverted sexual acts, or a lewd exhibition of the genitals; and
+(iii) Taken as a whole, lacks serious literary, artistic, politi-
+cal or scientific value as to minors.
+(c) "Minor" means anyone who has not attained the age of eighteen (18)
+years.
+(d) "Obscene" means a depiction that:
+(i)   The average person, applying contemporary community stan-
+dards, would find to appeal to the prurient interest;
+(ii) Depicts or describes sexual conduct in a patently offensive
+way; and
+(iii) Lacks serious literary, artistic, political or scientific
+value.
+(e) "Public moneys" means any and all moneys belonging to or collected
+by the state or any political subdivision thereof including, but not
+necessarily limited to, any city, county, town or district therein.
+(8) The provisions of this section shall have no effect on the provi-
+sions of section 33-132, Idaho Code.

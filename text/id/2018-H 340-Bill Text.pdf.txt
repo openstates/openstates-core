@@ -1,0 +1,467 @@
+AN ACT
+RELATING TO CONTROLLED SUBSTANCES; AMENDING SECTION 37-2705, IDAHO CODE, TO
+REVISE THE LIST OF SCHEDULE I CONTROLLED SUBSTANCES; REPEALING SECTION
+37-2714, IDAHO CODE, RELATING TO REPUBLISHING OF SCHEDULES; REPEAL-
+ING SECTION 37-2721, IDAHO CODE, RELATING TO ORDER FORMS; AMENDING
+SECTION 37-2722, IDAHO CODE, TO REVISE PROVISIONS REGARDING THE ISSU-
+ING, DISTRIBUTING AND DISPENSING OF CONTROLLED SUBSTANCES; REPEALING
+SECTION 37-2723, IDAHO CODE, RELATING TO FORM AND CONTENT OF PRESCRIP-
+TIONS; REPEALING SECTION 37-2724, IDAHO CODE, RELATING TO ORDERS FOR
+A SCHEDULE II SUBSTANCE; AMENDING SECTION 37-2725, IDAHO CODE, TO RE-
+VISE PROVISIONS REGARDING PRESCRIPTION DRUG ORDER BLANKS; AMENDING
+SECTION 37-2727, IDAHO CODE, TO REVISE PROVISIONS REGARDING CONTROLLED
+SUBSTANCES IN OPIOID TREATMENT PROGRAMS; AMENDING SECTION 37-2731,
+IDAHO CODE, TO REVISE PROVISIONS REGARDING CONTROLLED SUBSTANCE PACK-
+AGE LABELS; AND AMENDING SECTION 37-2734, IDAHO CODE, TO REVISE A CODE
+REFERENCE AND TO MAKE TECHNICAL CORRECTIONS.
+Be It Enacted by the Legislature of the State of Idaho:
+SECTION 1. That Section 37-2705, Idaho Code, be, and the same is hereby
+amended to read as follows:
+37-2705. SCHEDULE I. (a) The controlled substances listed in this sec-
+tion are included in schedule I.
+(b) Any of the following opiates, including their isomers, esters,
+ethers, salts, and salts of isomers, esters, and ethers, unless specifically
+excepted, whenever the existence of these isomers, esters, ethers and salts
+is possible within the specific chemical designation:
+(1) Acetyl-alpha-methylfentanyl (N-[1-(1-methyl-2-phenethyl)-4-pip-
+eridinyl]-N-phenylacetamide);
+(2) Acetylmethadol;
+(3)    Acetyl fentanyl (N-(1-phenethylpiperidin-4-yl)-N-phenylac-
+etamide);
+(4) Allylprodine;
+(45) Alphacetylmethadol (except levo-alphacetylmethadol also known as
+levo-alpha-acetylmethadol, levomethadyl acetate or LAAM);
+(56) Alphameprodine;
+(67) Alphamethadol;
+(78) Alpha-methylfentanyl;
+(89)     Alpha-methylthiofentanyl (N-[1-methyl-2-(2-thienyl)ethyl-4-
+piperidinyl]-N-phenylpropanamide);
+(910) Benzethidine;
+(101) Betacetylmethadol;
+(112) Beta-hydroxyfentanyl (N-[1-(2-hydroxy-2-phenethyl)-4-piperid-
+inyl]-N-phenylpropanamide);
+(123) Beta-hydroxy-3-methylfentanyl (N-(1-(2-hydroxy-2-phenethyl)-
+3methyl-4-piperidinyl)-N-phenylpropanamide);
+(134) Betameprodine;
+(145) Betamethadol;
+(156) Betaprodine;
+(167) Clonitazene;
+(178) Dextromoramide;
+(189) Diampromide;
+(1920) Diethylthiambutene;
+(201) Difenoxin;
+(212) Dimenoxadol;
+(223) Dimepheptanol;
+(234) Dimethylthiambutene;
+(245) Dioxaphetyl butyrate;
+(256) Dipipanone;
+(267) Ethylmethylthiambutene;
+(278) Etonitazene;
+(289) Etoxeridine;
+(2930) Furethidine;
+(301) Hydroxypethidine;
+(312) Ketobemidone;
+(323) Levomoramide;
+(334) Levophenacylmorphan;
+(345) 3-Methylfentanyl;
+(356) 3-methylthiofentanyl (N-[(3-methyl-1-(2-thienyl)ethyl-4-pip-
+eridinyl]-N-phenylpropanamide);
+(367) Morpheridine;
+(378) MPPP (1-methyl-4-phenyl-4-propionoxypiperidine);
+(389) Noracymethadol;
+(3940) Norlevorphanol;
+(401) Normethadone;
+(412) Norpipanone;
+(423) Para-fluorofentanyl (N-(4-fluorophenyl)-N-[1-(2-phenethyl)-4-
+piperidinyl] propanamide);
+(434) PEPAP (1-(-2-phenethyl)-4-phenyl-4-acetoxypiperidine);
+(445) Phenadoxone;
+(456) Phenampromide;
+(467) Phenomorphan;
+(478) Phenoperidine;
+(489) Piritramide;
+(4950) Proheptazine;
+(501) Properidine;
+(512) Propiram;
+(523) Racemoramide;
+(534) Thiofentanyl (N-phenyl-N-[1-(2-thienyl)ethyl-4-piperidinyl]-
+propanamide);
+(545) Tilidine;
+(556) Trimeperidine;
+(567)   u-47700    (3,4-Dichloro-N-[2-(dimethylamino)cyclohexy1l]-N-
+methylbenzamide).
+(c) Any of the following opium derivatives, their salts, isomers and
+salts of isomers, unless specifically excepted, whenever the existence of
+these salts, isomers and salts of isomers is possible within the specific
+chemical designation:
+(1) Acetorphine;
+(2) Acetyldihydrocodeine;
+(3) Benzylmorphine;
+(4) Codeine methylbromide;
+(5) Codeine-N-Oxide;
+(6) Cyprenorphine;
+(7) Desomorphine;
+(8) Dihydromorphine;
+(9) Drotebanol;
+(10) Etorphine (except hydrochloride salt);
+(11) Heroin;
+(12) Hydromorphinol;
+(13) Methyldesorphine;
+(14) Methyldihydromorphine;
+(15) Morphine methylbromide;
+(16) Morphine methylsulfonate;
+(17) Morphine-N-Oxide;
+(18) Myrophine;
+(19) Nicocodeine;
+(20) Nicomorphine;
+(21) Normorphine;
+(22) Pholcodine;
+(23) Thebacon.
+(d) Hallucinogenic substances. Any material, compound, mixture or
+preparation which contains any quantity of the following hallucinogenic
+substances, their salts, isomers and salts of isomers, unless specifically
+excepted, whenever the existence of these salts, isomers, and salts of iso-
+mers is possible within the specific chemical designation (for purposes of
+this paragraph only, the term "isomer" includes the optical, position and
+geometric isomers):
+(1) Dimethoxyphenethylamine, or any compound not specifically
+excepted or listed in another schedule that can be formed from
+dimethoxyphenethylamine by replacement of one (1) or more hydrogen
+atoms with another atom(s), functional group(s) or substructure(s)
+including, but not limited to, compounds such as DOB, DOC, 2C-B,
+25B-NBOMe;
+(2) Methoxyamphetamine or any compound not specifically excepted or
+listed in another schedule that can be formed from methoxyamphetamine
+by replacement of one (1) or more hydrogen atoms with another atom(s),
+functional group(s) or substructure(s) including, but not limited to,
+compounds such as PMA and DOM;
+(3) 5-methoxy-3,4-methylenedioxy-amphetamine;
+(4) 5-methoxy-N,N-diisopropyltryptamine;
+(5) Amphetamine or methamphetamine with a halogen substitution on the
+benzyl ring, including compounds such as fluorinated amphetamine and
+fluorinated methamphetamine;
+(6) 3,4-methylenedioxy amphetamine;
+(7) 3,4-methylenedioxymethamphetamine (MDMA);
+(8) 3,4-methylenedioxy-N-ethylamphetamine (also known as N-et-
+hyl-alpha-methyl-3,4 (methylenedioxy) phenethylamine, and N-et-
+hyl MDA, MDE, MDEA);
+(9)     N-hydroxy-3,4-methylenedioxyamphetamine (also known as N-hyd-
+roxy-alpha-methyl-3,4(methylenedioxy) phenethylamine, and N-hyd-
+roxy MDA);
+(10) 3,4,5-trimethoxy amphetamine;
+(11) 5-methoxy-N,N-dimethyltryptamine (also known as 5-methoxy-3-2[2-
+(dimethylamino)ethyl]indole and 5-MeO-DMT);
+(12) Alpha-ethyltryptamine (some other names: etryptamine, 3-(2-am-
+inobutyl) indole);
+(13) Alpha-methyltryptamine;
+(14) Bufotenine;
+(15) Diethyltryptamine (DET);
+(16) Dimethyltryptamine (DMT);
+(17) Ibogaine;
+(18) Lysergic acid diethylamide;
+(19) Marihuana;
+(20) Mescaline;
+(21) Parahexyl;
+(22) Peyote;
+(23) N-ethyl-3-piperidyl benzilate;
+(24) N-methyl-3-piperidyl benzilate;
+(25) Psilocybin;
+(26) Psilocyn;
+(27) Tetrahydrocannabinols or synthetic equivalents of the substances
+contained in the plant, or in the resinous extractives of Cannabis, sp.
+and/or synthetic substances, derivatives, and their isomers with simi-
+lar chemical structure such as the following:
+i. Tetrahydrocannabinols:
+a. ∆ 1 cis or trans tetrahydrocannabinol, and their opti-
+cal isomers, excluding dronabinol in sesame oil and encapsu-
+lated in either a soft gelatin capsule or in an oral solution
+in a drug product approved by the U.S. Food and Drug Adminis-
+tration.
+b. ∆ 6 cis or trans tetrahydrocannabinol, and their optical
+isomers.
+c. ∆ 3,4 cis or trans tetrahydrocannabinol, and its optical
+isomers. (Since nomenclature of these substances is not in-
+ternationally standardized, compounds of these structures,
+regardless of numerical designation of atomic positions are
+covered.)
+d. [(6aR,10aR)-9-(hydroxymethyl)-6,6-dimethyl-3-(2methy-
+loctan-2-yl)-6a,7,10,10a-tetrahydrobenzo[c]chromen-
+1-o1)],    also known as 6aR-trans-3-(1,1-dimethylhep-
+tyl)-6a,7,10,10a-tetrahydro-1-hydroxy-6,6-dimethyl-6H-
+dibenzo[b,d]pyran-9-methanol (HU-210) and its geometric
+isomers (HU211 or dexanabinol).
+ii. The following synthetic drugs:
+a. Any compound structurally derived from (1H-indole-3-
+yl)(cycloalkyl, cycloalkenyl, aryl)methanone, or (1H-in-
+dole-3-yl)(cycloalkyl, cycloalkenyl, aryl)methane, or
+(1H-indole-3-yl)(cycloalkyl, cycloalkenyl, aryl), methyl
+or dimethyl butanoate, amino-methyl (or dimethyl)-1-oxobu-
+tan-2-yl) carboxamide by substitution at the nitrogen atoms
+of the indole ring or carboxamide to any extent, whether or
+not further substituted in or on the indole ring to any ex-
+tent, whether or not substituted to any extent in or on the
+cycloalkyl, cycloalkenyl, aryl ring(s) (substitution in the
+ring may include, but is not limited to, heteroatoms such as
+nitrogen, sulfur and oxygen).
+b. Any compound structurally derived from 3-(1-naph-
+thoyl)pyrrole by substitution at the nitrogen atom of the
+pyrrole ring to any extent, whether or not further sub-
+stituted in the pyrrole ring to any extent, whether or not
+substituted in the naphthyl ring to any extent.
+c. Any compound structurally derived from 1-(1-naphthyl-
+methyl)indene by substitution at the 3-position of the in-
+dene ring to any extent, whether or not further substituted
+in the indene ring to any extent, whether or not substituted
+in the naphthyl ring to any extent.
+d. Any compound structurally derived from 3-pheny-
+lacetylindole by substitution at the nitrogen atom of the
+indole ring to any extent, whether or not further substi-
+tuted in the indole ring to any extent, whether or not sub-
+stituted in the phenyl ring to any extent.
+e. Any compound structurally derived from 2-(3-hydroxycy-
+clohexyl)phenol by substitution at the 5-position of the
+phenolic ring to any extent, whether or not substituted in
+the cyclohexyl ring to any extent.
+f. Any compound structurally derived from 3-(benzoyl)in-
+dole structure with substitution at the nitrogen atom of
+the indole ring to any extent, whether or not further sub-
+stituted in the indole ring to any extent and whether or not
+substituted in the phenyl ring to any extent.
+g. [2,3-dihydro-5-methyl-3-(4-morpholinylmethyl)pyrrol-
+o[1,2,3-de]-1,4-benzoxazin-6-yl]-1-napthalenylmethanone
+(WIN-55,212-2).
+h. 3-dimethylheptyl-11-hydroxyhexahydrocannabinol (HU-
+243).
+i. [(6S, 6aR, 9R, 10aR)-9-hydroxy-6-methyl-3-[(2R)-
+5-phenylpentan-2-yl]oxy-5,6,6a,7,8,9,10,10a-octahy-
+drophenanthridin-1-yl]acetate (CP 50,5561).
+(28) Ethylamine analog of phencyclidine:N-ethyl-1-phenylcy-
+clohexylamine (1-phenylcyclohexyl) ethylamine; N-(1-phenylcy-
+clohexyl) ethylamine, cyclohexamine, PCE;
+(29) Pyrrolidine analog of phencyclidine: 1-(phenylcyclohexyl) -
+pyrrolidine, PCPy, PHP;
+(30) Thiophene analog of phencyclidine 1-[1-(2-thienyl)-cyclohexyl]-
+piperidine, 2-thienylanalog of phencyclidine, TPCP, TCP;
+(31) 1-[1-(2-thienyl) cyclohexyl] pyrrolidine another name: TCPy;
+(32) Spores or mycelium capable of producing mushrooms that contain
+psilocybin or psilocin.
+(e) Unless specifically excepted or unless listed in another schedule,
+any material, compound, mixture or preparation which contains any quantity
+of the following substances having a depressant effect on the central ner-
+vous system, including its salts, isomers, and salts of isomers whenever the
+existence of such salts, isomers, and salts of isomers is possible within the
+specific chemical designation:
+(1) Gamma hydroxybutyric acid (some other names include GHB; gam-
+ma-hydroxybutyrate, 4-hydroxybutyrate; 4-hyroxybutanoic acid; sod-
+ium oxybate; sodium oxybutyrate);
+(2) Flunitrazepam (also known as "R2," "Rohypnol");
+(3) Mecloqualone;
+(4) Methaqualone.
+(f) Stimulants. Unless specifically excepted or unless listed in an-
+other schedule, any material, compound, mixture, or preparation which con-
+tains any quantity of the following substances having a stimulant effect on
+the central nervous system, including its salts, isomers, and salts of iso-
+mers:
+(1) Aminorex (some other names: aminoxaphen, 2-amino-5-phenyl-2-ox-
+azoline, or 4,5-dihydro-5-phenyl-2-oxazolamine);
+(2) Cathinone (some other names: 2-amino-1-phenol-1-propanone, alp-
+ha-aminopropiophenone, 2-aminopropiophenone and norephedrone);
+(3) Substituted cathinones. Any compound, except bupropion or com-
+pounds listed under a different schedule, structurally derived from
+2-aminopropan-1-one by substitution at the 1-position with either
+phenyl, naphthyl or thiophene ring systems, whether or not the compound
+is further modified in any of the following ways:
+i. By substitution in the ring system to any extent with alkyl,
+alkylenedioxy, alkoxy, haloalkyl, hydroxyl or halide sub-
+stituents, whether or not further substituted in the ring system
+by one (1) or more other univalent substituents;
+ii. By substitution at the 3-position with an acyclic alkyl sub-
+stituent;
+iii. By substitution at the 2-amino nitrogen atom with alkyl,
+dialkyl, benzyl or methoxybenzyl groups, or by inclusion of the
+2-amino nitrogen atom in a cyclic structure.
+(4) Fenethylline;
+(5) Methcathinone (some other names: 2-(methyl-amino)-propioph-
+enone, alpha-(methylamino)-propiophenone, N-methylcathinone, AL-
+464, AL-422, AL-463 and UR1423);
+(6) (+/-)cis-4-methylaminorex [(+/-)cis-4,5-dihydro-4-methyl-5-
+phenyl-2-oxazolamine];
+(7) N-benzylpiperazine (also known as: BZP, 1-benzylpiperazine);
+(8) N-ethylamphetamine;
+(9) N,N-dimethylamphetamine (also known as: N,N-alpha-trimethyl-ben-
+zeneethanamine).
+SECTION 2. That Section 37-2714, Idaho Code, be, and the same is hereby
+repealed.
+SECTION 3. That Section 37-2721, Idaho Code, be, and the same is hereby
+repealed.
+SECTION 4. That Section 37-2722, Idaho Code, be, and the same is hereby
+amended to read as follows:
+37-2722. PRESCRIPTIONS ISSUING, DISTRIBUTING AND DISPENSING OF CON-
+TROLLED SUBSTANCES. No person shall issue or dispense a prescription drug
+order for a controlled substance unless it is in compliance with applicable
+state and federal law and rules of the board.
+(a) Except when dispensed directly by a practitioner, other than a
+pharmacy, to an ultimate user, no cControlled substances included in sched-
+ule II may be dispensed without the written prescription of a practitioner
+shall be distributed only by a registrant to another registrant pursuant to
+the federal drug enforcement administration (DEA) order form 222.
+(b) In emergency situations, as defined by rule of the board, schedule
+II drugs may Controlled substances included in schedule II shall:
+(1) Be distributed only by a registrant to another registrant pursuant
+to DEA order form 222.
+(2) bBe dispensed upon oral only pursuant to a valid prescription of a
+practitioner, reduced promptly to writing and filed by the pharmacy.
+Prescriptions shall be retained in conformity with the requirements
+of section 37-2720, Idaho Code. No prescription for a schedule II sub-
+stance may be refilled drug order, except when dispensed directly by a
+prescriber.
+(3) Not be refilled.
+(4) Include a quantity that is both spelled out in English and written
+in numerical form, when a written prescription drug order is required.
+(c) Except when dispensed directly by a practitioner, other than a
+pharmacy, to an ultimate user, a cControlled substances included in schedule
+III or IV, which is a prescription drug as determined under this act or regu-
+lation of the bureau or the board, shall:
+(1) not bBe dispensed without a written or oral only pursuant to a valid
+prescription of a practitioner drug order, except when dispensed di-
+rectly by a prescriber.
+(2) The prescription shall nNot be filled or refilled more than six (6)
+months after the date thereof or be refilled more than five (5) times,
+unless renewed by the practitioner.
+(d) A cControlled substances included in schedule V shall not be dis-
+tributed or dispensed other than for a medical purpose.
+(e) Solely for the purpose of allowing the dispensing of A pharmacist
+may dispense a controlled substances pursuant to the a valid prescription
+drug order of an individual licensed in a jurisdiction other than the state
+of Idaho, and for no other purpose under this act, with respect to the writ-
+ten or oral prescription of a "practitioner" as required under subsections
+(a), (b) and (c) of this section, the term "practitioner" shall also include
+a physician, dentist, veterinarian, scientific investigator or other indi-
+vidual, other than a pharmacy licensed in a jurisdiction other than the state
+of Idaho, and permitted by such license to dispense, conduct research with
+respect to or administer the prescribed controlled substance in the course
+of his professional practice or research in such jurisdiction, so as long as
+the individual is acting within the jurisdiction, scope and authority of his
+license when issuing the written or oral prescription.
+SECTION 5. That Section 37-2723, Idaho Code, be, and the same is hereby
+repealed.
+SECTION 6. That Section 37-2724, Idaho Code, be, and the same is hereby
+repealed.
+SECTION 7. That Section 37-2725, Idaho Code, be, and the same is hereby
+amended to read as follows:
+37-2725. PRESCRIPTION REQUIRED -- PRESCRIPTION DRUG ORDER BLANKS --
+POSSESSION -- TRANSFERENCE -- CONTENTS. (1) A prescription shall be required
+for all scheduled drugs. Paper prescriptions drug order blanks shall comply
+with federal law and shall utilize noncopyable paper that contains security
+provisions against copying that results in some indication on the copy that
+it is a copy and therefore rendering it null and void.
+(2) Prescription drug order blanks shall not be transferable. Any per-
+son possessing any such blank otherwise than is herein provided is guilty of
+a misdemeanor.
+(3) The prescription drug order blank shall contain the name and ad-
+dress of the practitioner prescriber. Prescription drug order blanks may
+contain the printed names of multiple practitioners prescribers who are af-
+filiated; provided however, such prescription drug order blanks shall con-
+tain a means, in addition to the signature of the practitioner prescriber,
+such as a box or a check, for clear identification of the printed name and ad-
+dress of the practitioner prescriber issuing the prescription.
+(4) Prescriptions written by a practitioner prescriber in a hospi-
+tal, nursing home, ambulatory surgery center an institutional facility or
+other health care facility in which a practitioner prescriber may attend
+a patient, other than his or her regular place of business, may be written
+on prescription drug order blanks kept or provided by that facility that
+contain the name and address of that facility, but not necessarily of the
+practitioner prescriber, provided the practitioner's prescriber's name
+must be stamped, written or printed on the completed prescription in a manner
+that is legible to a pharmacist.
+(5)    Failure of a practitioner prescriber to clearly mark the
+practitioner's prescriber's printed name and address on the prescription
+as required in subsection (3) of this section, or to stamp, write or print
+the practitioner's prescriber's name legibly as required in subsection (4)
+of this section shall subject the practitioner prescriber to appropriate
+discipline by the board. The disciplinary measures shall be established by
+the board in a rule developed through negotiated rulemaking.
+(6) Except as provided in section 37-2722, Idaho Code, if a paper pre-
+scription is for a schedule II substance, the practitioner shall indicate
+the desired quantity of the scheduled drug on the prescription blank by both
+writing out the quantity and by indicating or writing the quantity in numeri-
+cal form.
+(7) Prescription drug order blanks or drugs lost or stolen must be imme-
+diately reported to the board.
+SECTION 8. That Section 37-2727, Idaho Code, be, and the same is hereby
+amended to read as follows:
+37-2727. CONTROLLED SUBSTANCES IN OPIOID (NARCOTIC) TREATMENT PRO-
+GRAMS. (1) At a facility with a controlled substance registration certifi-
+cate issued by the United States department of justice, drug enforcement
+administration, for the operation of a narcotic treatment program, a nurse
+licensed under chapter 14, title 54, Idaho Code, may, pursuant to a valid
+order of a physician licensed under chapter 18, title 54, Idaho Code:
+(a) Prepare and administer to a patient at that facility a controlled
+substance whether or not a practitioner is present; and
+(b) Deliver at that facility to a patient for subsequent use by the
+patient off-site, take-home doses of a controlled substance, provided
+that:
+(i) The patient is entitled to receive take-home doses of the con-
+trolled substance;
+(ii) The take-home doses delivered by the nurse to the patient
+were obtained at the facility by the nurse from a locked stor-
+age area suitable to prevent unauthorized access and to ensure a
+proper environment for preservation of the drugs within such area;
+and
+(iii) The take-home doses were prepared pursuant to a valid
+prescription drug order of the physician by a pharmacist licensed
+under chapter 17, title 54, Idaho Code, and were delivered by the
+pharmacist to the locked storage area at the facility provided in a
+suitable container appropriately labeled for subsequent delivery
+by the nurse to the patient and for subsequent use by the patient
+entitled to receive the take-home doses of the controlled sub-
+stance.
+(2) A nurse acting under the authority of this section is exempt from
+the registration requirements imposed by this chapter.
+(3) The facility must be registered under chapter 17, title 54, Idaho
+Code.
+SECTION 9. That Section 37-2731, Idaho Code, be, and the same is hereby
+amended to read as follows:
+37-2731. INFORMATION REQUIRED ON LABEL. (a) The A practitioner
+dispensing with statutory authority to dispense a controlled substance
+listed in schedule II shall affix to the package a label showing date of
+dispensing, the dispenser's name and address, the serial number of the pre-
+scription if applicable, the name of the patient, the name of the prescribing
+practitioner, and directions for use and cautionary statements, if any,
+contained in such prescription as required by law pursuant to board rule.
+(b) The practitioner dispensing controlled substances listed in sched-
+ule III or IV shall affix to the package a label showing the dispenser's name
+and address, the serial number if applicable, and date of initial dispens-
+ing, the name of the patient, the name of the practitioner issuing the pre-
+scription, and directions for use and cautionary statements, if any, con-
+tained in such prescription as required by law.
+(c) The practitioner dispensing a controlled substance listed in
+schedule V pursuant to a prescription shall affix to the package a label
+showing the dispenser's name and address, the serial number if applicable,
+and the date of dispensing, the name of the patient, the name of the prac-
+titioner issuing the prescription, the directions for use and cautionary
+statements, if any, contained in such prescription as required by law.
+SECTION 10. That Section 37-2734, Idaho Code, be, and the same is hereby
+amended to read as follows:
+37-2734. PROHIBITED ACTS C -- PENALTIES. (a) It is unlawful for any
+person knowingly or intentionally:
+(1) tTo distribute as a registrant a controlled substance classified in
+schedules I or II, except pursuant to an order form as required by the
+requirements of section 37-27212, Idaho Code;
+(2) tTo use in the course of the manufacture or distribution of a con-
+trolled substance a registration number which is fictitious, revoked,
+suspended, or issued to another person;
+(3) tTo acquire or obtain possession of a controlled substance by mis-
+representation, fraud, forgery, deception or subterfuge;
+(4) tTo furnish false or fraudulent material information in, or omit
+any material information from, any application, report, or other docu-
+ment required to be kept or filed under this act, or any record required
+to be kept by this act; or
+(5) tTo make, distribute, or possess any punch, die, plate, stone, or
+other thing designed to print, imprint, or reproduce the trademark,
+trade name, or other identifying mark, imprint, or device of another or
+any likeness of any of the foregoing upon any drug or container or label-
+ing thereof so as to render the drug a counterfeit substance.
+(b) Any person who violates this section is guilty of a felony and upon
+conviction may be imprisoned for not more than four (4) years, or fined not
+more than thirty thousand dollars ($30,000), or both.
