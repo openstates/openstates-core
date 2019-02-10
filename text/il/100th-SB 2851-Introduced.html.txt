@@ -1,0 +1,325 @@
+
+  
+
+  
+
+ 
+ 
+215 ILCS 139/10
+ 
+215 ILCS 139/15
+
+ 
+    
+Amends the Uniform Health Care Services Benefits Information Card Act. 
+Includes dental service plans under the definition of "health benefit 
+plan". Requires a uniform health care benefit information card or other 
+technology for a dental service plan to include a statement that the dental 
+service plan is fully insured. Effective immediately.
+
+  
+
+  
+
+  
+    
+AN ACT concerning regulation.
+
+  
+    
+Be it enacted by the People of the State of Illinois,
+ 
+represented in the General Assembly:
+
+  
+
+ 
+    
+Section 5. 
+The Uniform Health Care Service Benefits 
+Information Card Act is amended  by changing Sections 10 and 15 
+as follows:
+
+
+
+
+
+
+    
+(215 ILCS 139/10)
+
+
+
+
+
+
+    
+Sec. 10. 
+Definitions. 
+As used in this Act, the following 
+terms have the
+meanings given in this Section.
+
+
+    
+"Department" means the Department of Insurance.
+
+
+    
+"Director" means the Director of Insurance.
+
+
+    
+"Health benefit plan" means an accident and health 
+insurance policy or
+certificate subject to the Illinois 
+Insurance Code, a voluntary health services
+plan subject to the 
+Voluntary Health Services Plans Act, a health maintenance
+
+organization subscriber contract subject to the Health 
+Maintenance
+Organization Act, a plan provided by a multiple 
+employer welfare arrangement, 
+a dental service plan subject to 
+the Dental Service Plan Act,
+
+or a plan provided by another 
+benefit arrangement.  Without limitation, "health
+benefit plan" 
+does not mean any of the following types of insurance:
+
+
+
+
+    
+    
+(1) accident;
+
+
+
+
+    
+    
+(2) credit;
+
+
+
+
+    
+    
+(3) disability income;
+
+
+
+
+    
+    
+(4) long-term or nursing home care;
+
+
+
+
+    
+    
+(5) specified disease;
+
+
+
+
+    
+    
+(6) 
+dental or
+ vision;
+
+
+
+
+    
+    
+(7) coverage issued as a supplement to liability 
+insurance;
+
+
+
+
+    
+    
+(8) medical payments under automobile or homeowners;
+
+
+
+
+    
+    
+(9) insurance under which benefits are payable with or 
+without regard to
+fault as statutorily required to be 
+contained in any liability policy or
+equivalent 
+self-insurance;
+
+
+
+
+    
+    
+(10) hospital income or indemnity; and
+
+
+
+
+    
+    
+(11) self-insured health benefit plans under the 
+federal Employee
+Retirement Income Security Act of 1974.
+
+
+(Source: P.A. 92-106, eff. 1-1-02.)
+
+
+    
+(215 ILCS 139/15)
+    
+Sec. 15. 
+Uniform health care benefit information cards 
+required. 
+    
+(a) A health benefit plan that issues a card or other 
+technology and
+provides coverage for health care services 
+including prescription drugs or
+devices also referred to as 
+health care benefits and an administrator of such a
+plan 
+including, but not limited to, third-party administrators for 
+self-insured
+plans and state-administered plans shall issue to 
+its insureds a card or other
+technology containing uniform 
+health care benefit information.  The health care
+benefit 
+information card or other technology shall specifically 
+identify and
+display the following mandatory data elements on 
+the card:
+    
+    
+(1) processor control number, if required for claims 
+adjudication;
+    
+    
+(2) group number;
+    
+    
+(3) card issuer identifier;
+    
+    
+(4) cardholder ID number; and
+    
+    
+(5) cardholder name.
+    
+(b) The uniform health care benefit information card or 
+other technology
+shall specifically identify and display the 
+following mandatory data elements
+on the back of the card:
+    
+    
+(1) claims submission names and addresses; and
+    
+    
+(2) help desk telephone numbers and names.
+    
+(b-5) A uniform health care benefit information card or 
+other technology for a dental service plan shall include a 
+statement that the dental service plan is fully insured.
+ 
+    
+(c) A new uniform health care benefit information card or 
+other technology
+shall be issued by a health benefit plan upon 
+enrollment and reissued upon any
+change in the insured's 
+coverage that affects mandatory data elements contained
+on the 
+card.
+    
+(d) Notwithstanding subsections (a), (b), and (c) of this 
+Section, a discounted health care services plan administrator 
+shall issue to its beneficiaries a card containing the 
+following mandatory data elements:
+    
+    
+(1) an Internet website for beneficiaries to access 
+up-to-date lists of preferred providers;
+    
+    
+(2) a toll-free help desk number for beneficiaries and 
+providers to access up-to-date lists of preferred 
+providers and additional information about the discounted 
+health care services plan;
+    
+    
+(3) the name or logo of the provider network;
+    
+    
+(4) a group number, if necessary for the processing of 
+benefits; 
+    
+    
+(5) a cardholder ID number;
+    
+    
+(6) the cardholder's name or a space to permit the 
+cardholder to print his or her name, if the cardholder pays 
+a periodic charge for use of the card; 
+    
+    
+(7) a processor control number, if required for claims 
+adjudication; and 
+    
+    
+(8) a statement that the plan is not insurance.
+    
+(e) As used in this Section, "discounted health care 
+services plan administrator" means any person, partnership, or 
+corporation, other than an insurer, health service 
+corporation, limited health service organization holding a 
+certificate of authority under the Limited Health Service 
+Organization Act, or health maintenance organization holding a 
+certificate of authority under the Health Maintenance 
+Organization Act that arranges, contracts with, or administers 
+contracts with a provider whereby insureds or beneficiaries are 
+provided an incentive to use health care services provided by 
+health care services providers under a discounted health care 
+services plan in which there are no other incentives, such as 
+copayment, coinsurance, or any other reimbursement 
+differential, for beneficiaries to utilize the provider. 
+"Discounted health care services plan administrator" also 
+includes any person, partnership, or corporation, other than an 
+insurer, health service corporation, limited health service 
+organization holding a certificate of authority under the 
+Limited Health Service Organization Act, or health maintenance 
+organization holding a certificate of authority under the 
+Health Maintenance Organization Act that enters into a contract 
+with another administrator to enroll beneficiaries or insureds 
+in a preferred provider program marketed as an independently 
+identifiable program based on marketing materials or member 
+benefit identification cards. 
+(Source: P.A. 96-1326, eff. 1-1-11.)
+
+ 
+    
+Section 99. 
+Effective date. 
+This Act takes effect upon 
+becoming law.
+ 
+
+  
+
+
