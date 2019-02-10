@@ -17,6 +17,7 @@ CONVERSION_FUNCTIONS = {
     "ar": extract_sometimes_numbered_pdf,
     "co": extract_sometimes_numbered_pdf,
     "ct": extract_from_p_tags_html,
+    "id": extract_line_numbered_pdf,
     "il": extract_from_code_tags_html,
     "nc": extract_line_numbered_pdf,
 }
