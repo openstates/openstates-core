@@ -4,7 +4,9 @@ from .utils import (
     pdfdata_to_text,
     text_after_line_numbers,
     text_from_element_lxml,
+    text_from_element_xpath,
     text_from_element_siblings_lxml,
+    clean
 )
 
 
@@ -60,3 +62,30 @@ def extract_from_p_tags_html(data, metadata):
 
     text = text_from_element_siblings_lxml(data, ".//p")
     return text
+
+
+def extractor_for_elements_by_class(bill_text_element_class):
+    return extractor_for_element_by_selector(".//div[@class='" + bill_text_element_class + "']")
+    # def _my_extractor(data, metadata):
+    #     text_inside_matching_tag = text_from_element_lxml(data, ".//div[@class='" + bill_text_element_class + "']")
+    #     return clean(text_inside_matching_tag)
+    # return _my_extractor
+
+def extractor_for_element_by_id(bill_text_element_id):
+    return extractor_for_element_by_selector(".//div[@id='"+bill_text_element_id+"']")
+    # def _my_extractor(data, metadata):
+    #     text_inside_matching_tag = text_from_element_lxml(data, ".//div[@id='"+bill_text_element_id+"']")
+    #     return clean(text_inside_matching_tag)
+    # return _my_extractor
+
+def extractor_for_element_by_selector(bill_text_element_selector):
+    def _my_extractor(data, metadata):
+        text_inside_matching_tag = text_from_element_lxml(data, bill_text_element_selector)
+        return clean(text_inside_matching_tag)
+    return _my_extractor
+
+def extractor_for_element_by_xpath(bill_text_element_selector):
+    def _my_extractor(data, metadata):
+        text_inside_matching_tag = text_from_element_xpath(data, bill_text_element_selector)
+        return clean(text_inside_matching_tag)
+    return _my_extractor

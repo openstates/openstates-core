@@ -31,7 +31,7 @@ def download(version):
         except OSError:
             pass
         _, resp = scraper.urlretrieve(version["url"], filename)
-        return filename, resp
+        return filename, resp.content
     else:
         with open(filename, "rb") as f:
             return filename, f.read()
@@ -39,6 +39,9 @@ def download(version):
 
 def extract_to_file(filename, data, version):
     text = extract_text(data, version)
+
+    if not text:
+        return None, 0
 
     text_filename = filename.replace("raw/", "text/") + ".txt"
     try:

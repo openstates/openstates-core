@@ -87,6 +87,18 @@ def text_from_element_lxml(data, lxml_query):
     text_inside_element = matching_elements[0].text_content()
     return text_inside_element
 
+def text_from_element_xpath(data, lxml_xpath_query):
+    html_document = html.fromstring(data)
+    matching_elements = html_document.xpath(lxml_xpath_query)
+
+    # To ensure that we exit non-zero if there are multiple matching elements
+    # on the page, raise an exception: this means that the extraction
+    # code needs to be updated.
+    assert len(matching_elements) == 1
+
+    text_inside_element = matching_elements[0].text_content()
+    return text_inside_element
+
 
 def text_from_element_siblings_lxml(data, lxml_query):
     html_document = html.fromstring(data)
