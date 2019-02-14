@@ -34,7 +34,7 @@ def pdfdata_to_text(data):
     with tempfile.NamedTemporaryFile(delete=True) as tmpf:
         tmpf.write(data)
         tmpf.flush()
-        return convert_pdf(tmpf.name, "text").decode("utf8")
+        return convert_pdf(tmpf.name, "text").decode("utf8","ignore")
 
 
 def worddata_to_text(data):

@@ -1,0 +1,633 @@
+A bill to be entitled                      
+An act relating to physician orders for life
+sustaining treatment; creating s. 401.451, F.S.;
+establishing the Physician Orders for Life-Sustaining
+Treatment (POLST) Program within the Department of
+Health; defining terms; providing duties of the
+department; providing requirements for POLST forms;
+providing a restriction on the use of POLST forms;
+requiring periodic review of POLST forms; providing
+for the revocation of POLST forms under certain
+circumstances; authorizing expedited judicial
+intervention under certain circumstances; specifying
+which document takes precedence when directives in
+POLST forms conflict with other advance directives;
+providing limited immunity for legal representatives
+and specified health care providers acting in good
+faith in reliance on POLST forms; specifying
+additional requirements for POLST forms executed on
+behalf of minor patients under certain circumstances;
+requiring the review of a POLST form upon the transfer
+of a patient; prohibiting POLST forms from being
+required as a condition for treatment or admission to
+health care facilities; providing that the presence or
+absence of POLST forms does not affect, impair, or
+modify certain insurance contracts; declaring a POLST
+form invalid if it is executed in exchange for payment
+or other remuneration; providing construction;
+creating s. 408.064, F.S.; defining terms; requiring
+the Agency for Health Care Administration to establish
+and maintain a database of compassionate and
+palliative care plans by a specified date; providing
+duties of the agency; authorizing the agency to
+subscribe to or participate in a public or private
+clearinghouse in lieu of establishing and maintaining
+an independent database; amending ss. 400.142 and
+400.487, F.S.; authorizing specified personnel to
+withhold or withdraw cardiopulmonary resuscitation if
+presented with a POLST form that contains an order not
+to resuscitate the patient; providing immunity from
+criminal prosecution or civil liability to such
+personnel for such actions; providing that the absence
+of a POLST form does not preclude physicians or home
+health agency personnel from withholding or
+withdrawing cardiopulmonary resuscitation under
+certain conditions; amending s. 400.605, F.S.;
+requiring the Department of Elderly Affairs, in
+consultation with the agency, to adopt by rule
+procedures for the implementation of POLST forms in
+hospice care; amending s. 400.6095, F.S.; authorizing
+hospice care teams to withhold or withdraw
+cardiopulmonary resuscitation if presented with POLST
+forms that contain an order not to resuscitate;
+providing immunity from criminal prosecution or civil
+liability to hospice staff for such actions; providing
+that the absence of a POLST form does not preclude
+physicians from withholding or withdrawing
+cardiopulmonary resuscitation; amending s. 401.35,
+F.S.; requiring the Department of Health to establish
+circumstances and procedures for honoring certain
+POLST forms; amending s. 401.45, F.S.; authorizing
+emergency medical personnel to withhold or withdraw
+cardiopulmonary resuscitation or other medical
+interventions if presented with POLST forms that
+contain an order not to resuscitate; amending s.
+429.255, F.S.; authorizing assisted living facility
+personnel to withhold or withdraw cardiopulmonary
+resuscitation or the use of an automated external
+defibrillator if presented with POLST forms that
+contain an order not to resuscitate; providing
+immunity from criminal prosecution or civil liability
+to facility staff and facilities for such actions;
+providing that the absence of a POLST form does not
+preclude physicians from withholding or withdrawing
+cardiopulmonary resuscitation or the use of an
+automated external defibrillator; amending s. 429.73,
+F.S.; requiring the Department of Elderly Affairs to
+adopt rules for the implementation of POLST forms in
+adult family-care homes; authorizing providers of such
+homes to withhold or withdraw cardiopulmonary
+resuscitation if presented with POLST forms that
+contain an order not to resuscitate; providing
+immunity from criminal prosecution or civil liability
+to providers for such actions; amending s. 456.072,
+F.S.; authorizing certain licensees to withhold or
+withdraw cardiopulmonary resuscitation or the use of
+an automated external defibrillator if presented with
+orders not to resuscitate or POLST forms that contain
+an order not to resuscitate; requiring the Department
+of Health to adopt rules providing for the
+implementation of such orders; providing immunity from
+criminal prosecution or civil liability to licensees
+for withholding or withdrawing cardiopulmonary
+resuscitation or the use of an automated external
+defibrillator or for carrying out specified orders
+under certain circumstances; providing that the
+absence of a POLST form does not preclude a licensee
+from withholding or withdrawing cardiopulmonary
+resuscitation or the use of an automated external
+defibrillator under certain conditions; amending s.
+765.205, F.S.; requiring health care surrogates to
+provide written consent for POLST forms under certain
+circumstances; providing an effective date.
+
+Be It Enacted by the Legislature of the State of Florida:
+
+Section 1. Section 401.451, Florida Statutes, is created to
+read:
+401.451 Physician Orders for Life-Sustaining Treatment
+Program.—The Physician Orders for Life-Sustaining Treatment
+Program is established within the Department of Health to
+implement and administer the development and use of physician
+orders for life-sustaining treatment consistent with this
+section and to collaborate with the Agency for Health Care
+Administration in the implementation and operation of the
+Clearinghouse for Compassionate and Palliative Care Plans
+created under s. 408.064.
+(1) DEFINITIONS.—As used in this section, the term:
+(a) “Advance directive” has the same meaning as provided in
+s. 765.101.
+(b) “Agency” means the Agency for Health Care
+Administration.
+(c) “Clearinghouse for Compassionate and Palliative Care
+Plans” or “clearinghouse” has the same meaning as provided in s.
+408.064.
+(d) “End-stage condition” has the same meaning as provided
+in s. 765.101.
+(e) “Examining physician” means a physician who examines a
+patient who wishes, or whose legal representative wishes, to
+execute a POLST form; who attests to the ability of the patient
+or the patient’s legal representative to make and communicate
+health care decisions; who signs the POLST form; and who attests
+to the execution of the POLST form by the patient or by the
+patient’s legal representative.
+(f) “Health care provider” has the same meaning as provided
+in s. 408.07.
+(g) “Legal representative” means a patient’s legally
+authorized health care surrogate or proxy as provided in chapter
+765, a patient’s court-appointed guardian as provided in chapter
+744 who has been delegated authority to make health care
+decisions on behalf of the patient, an attorney in fact under a
+durable power of attorney as provided in chapter 709 who has
+been delegated authority to make health care decisions on behalf
+of the patient, or a patient’s parent if the patient is under 18
+years of age.
+(h) “Order not to resuscitate” means an order issued under
+s. 401.45(3).
+(i) “Physician order for life-sustaining treatment” or
+“POLST” means an order issued pursuant to this section which
+specifies a patient with an end-stage condition and provides
+directives for that patient’s medical treatment and care under
+certain conditions.
+(2) DUTIES OF THE DEPARTMENT.—The department shall:
+(a) Adopt rules to implement and administer the POLST
+program.
+(b) Prescribe a standardized POLST form.
+(c) Provide the POLST form in an electronic format on the
+department’s website and prominently state on the website the
+requirements for a POLST form as specified under paragraph
+(3)(a).
+(d) Consult with health care professional licensing groups,
+provider advocacy groups, medical ethicists, and other
+appropriate stakeholders on the development of rules and forms
+to implement and administer the POLST program.
+(e) Collaborate with the agency to develop and maintain the
+clearinghouse.
+(f) Ensure that department staff receive ongoing training
+on the POLST program and are aware of the availability of POLST
+forms.
+(g) Recommend a statewide, uniform process for identifying
+a patient who has, or whose legal representative has, executed a
+POLST form and for providing the contact information for the
+examining physician to the health care providers currently
+treating the patient.
+(h) Adopt POLST-related continuing education requirements
+for health care providers licensed by the department.
+(i) Develop a process for collecting feedback from health
+care providers to facilitate the periodic redesign of the POLST
+form in accordance with current health care best practices.
+(3) POLST FORM.—
+(a) Requirements.—A POLST form may not include a directive
+regarding hydration or the preselection of any decision or
+directive. A POLST form must be voluntarily executed by the
+patient or, if the patient is incapacitated or a minor, the
+patient’s legal representative, and all directives included in
+the form must be made by the patient or, if the patient is
+incapacitated or a minor, the patient’s legal representative at
+the time of signing the form. A POLST form is not valid and may
+not be included in a patient’s medical records or submitted to
+the clearinghouse unless the form:
+1. Is clearly printed on one or both sides of a single
+piece of paper as determined by department rule;
+2. Includes the signatures of the patient and the patient’s
+examining physician or, if the patient is incapacitated or a
+minor, the patient’s legal representative and the patient’s
+examining physician. The POLST form may be executed only after
+the examining physician consults with the patient or the
+patient’s legal representative, as appropriate;
+3. Prominently states that completion of a POLST form is
+voluntary, that the execution or use of a POLST form may not be
+required as a condition for medical treatment, and that a POLST
+form may not be given effect if the patient is conscious and
+competent to make health care decisions;
+4. Prominently provides in a conspicuous location on the
+form a space for the patient’s examining physician to attest
+that, in his or her clinical judgment and with good faith, at
+the time the POLST form is completed and signed, the patient has
+the ability to make and communicate health care decisions or, if
+the patient is incapacitated or a minor, that the patient’s
+legal representative has such ability;
+5. Includes an expiration date, provided by the patient’s
+examining physician, that is within 1 year after the patient or
+the patient’s legal representative signs the form or that is
+contingent on completion of the course of treatment addressed in
+the POLST form, whichever occurs first; and
+6. Identifies the medical condition or conditions, provided
+by the patient’s examining physician, that necessitate the POLST
+form.
+(b) Restriction on the use of a POLST form.—A POLST form
+may be completed only by or for a patient determined by the
+patient’s examining physician to have an end-stage condition or
+a patient who, in the good faith clinical judgment of the
+examining physician, is suffering from a life-limiting medical
+condition that will likely result in the death of the patient
+within 1 year after the execution of the form.
+(c) Periodic review of a POLST form.—At a minimum, the
+patient’s examining physician must review the patient’s POLST
+form with the patient or the patient’s legal representative, as
+appropriate, when the patient:
+1. Is transferred from one health care facility or level of
+care to another in accordance with subsection (6);
+2. Is discharged from a health care facility to return home
+before the expiration of the POLST form;
+3. Experiences a substantial change in his or her condition
+as determined by the patient’s examining physician, in which
+case the review must occur within 24 hours after the substantial
+change; or
+4. Expresses an intent to change his or her medical
+treatment preferences.
+(d) Revocation of a POLST form.—
+1. A POLST form may be revoked at any time by the patient
+or the patient’s legal representative if the patient is a minor
+or if the patient is incapacitated and has granted the authority
+to revoke a POLST form to his or her legal representative.
+2. The execution of a POLST form by a patient and the
+patient’s examining physician or, if the patient is
+incapacitated or a minor, by the patient’s legal representative
+and the patient’s examining physician under this section
+automatically revokes all POLST forms previously executed by the
+patient.
+(e) Review of a legal representative’s decision on a POLST
+form.—If a family member of the patient, the health care
+facility providing services to the patient, or the patient’s
+physician who may reasonably be expected to be affected by the
+patient’s POLST form directives believes that directives
+executed by the patient’s legal representative are in conflict
+with the patient’s prior expressed desires regarding end-of-life
+care, the family member, facility, or physician may seek
+expedited judicial intervention pursuant to the Florida Probate
+Rules.
+(f) Conflicting advance directives.—To the extent that a
+directive made on a patient’s POLST form conflicts with another
+advance directive of the patient which addresses a substantially
+similar health care condition or treatment, the document most
+recently signed by the patient takes precedence. Such directives
+may include, but are not limited to:
+1. A living will.
+2. A health care power of attorney.
+3. A POLST form for the specific medical condition or
+treatment.
+4. An order not to resuscitate.
+(4) ACTING IN GOOD FAITH; LIMITED IMMUNITY.—
+(a) An individual acting in good faith as a legal
+representative who executes a POLST form on behalf of an
+incapacitated patient or a minor patient in accordance with this
+section and rules adopted by the department is not subject to
+criminal prosecution or civil liability for executing the POLST
+form.
+(b) A licensee, physician, medical director, emergency
+medical technician, paramedic, or registered nurse who in good
+faith complies with a POLST form is not subject to criminal
+prosecution or civil liability for complying with the POLST
+form, and has not engaged in negligent or unprofessional conduct
+as a result of carrying out the directives of a POLST form
+executed in accordance with this section and rules adopted by
+the department.
+(5) POLST FORM FOR A MINOR PATIENT.—If a medical order on a
+POLST form executed for a minor patient directs that life
+sustaining treatment may be withheld from the minor patient, the
+order must include certifications by the patient’s examining
+physician and a health care provider other than the examining
+physician stating that, in their clinical judgment, an order to
+withhold medical treatment is in the best interest of the minor
+patient. A POLST form for a minor patient must be signed by the
+minor patient’s legal representative. The minor patient’s
+examining physician must certify the basis for the authority of
+the minor patient’s legal representative to execute the POLST
+form on behalf of the minor patient, including the legal
+representative’s compliance with the relevant provisions of
+chapter 744 or chapter 765.
+(6) PATIENT TRANSFER; POLST FORM REVIEW REQUIRED.—If a
+patient whose goals and preferences for care have been entered
+in a valid POLST form is transferred from one health care
+facility or level of care to another, the health care facility
+or level of care initiating the transfer must communicate the
+existence of the POLST form to the receiving facility or level
+of care before the transfer. Upon the patient’s transfer, the
+treating health care provider at the receiving facility or level
+of care must review the POLST form with the patient or, if the
+patient is incapacitated or a minor, the patient’s legal
+representative.
+(7) POLST FORM NOT A PREREQUISITE.—A POLST form may not be
+a prerequisite for receiving medical services or for admission
+to a health care facility. A health care facility or health care
+provider may not require a person to complete, revise, or revoke
+a POLST form as a condition of receiving medical services or
+treatment or as a condition of admission. The execution,
+revision, or revocation of a POLST form must be a voluntary
+decision of the patient or, if the patient is incapacitated or a
+minor, the patient’s legal representative.
+(8) INSURANCE NOT AFFECTED.—The presence or absence of a
+POLST form does not affect, impair, or modify a contract of life
+or health insurance or annuity to which an individual is a party
+and may not serve as the basis for a delay in issuing or
+refusing to issue a policy of life or health insurance or an
+annuity or for an increase or decrease in premiums charged to
+the individual.
+(9) INVALIDITY.—A POLST form is invalid if payment or other
+remuneration was offered or made in exchange for execution of
+the form.
+(10) CONSTRUCTION.—This section may not be construed to
+condone, authorize, or approve mercy killing or euthanasia. The
+Legislature does not intend that this act be construed as
+authorizing an affirmative or deliberate act to end a person’s
+life, except to allow the natural process of dying.
+Section 2. Section 408.064, Florida Statutes, is created to
+read:
+408.064 Clearinghouse for Compassionate and Palliative Care
+Plans.—
+(1) DEFINITIONS.—As used in this section, the term:
+(a) “Advance directive” has the same meaning as provided in
+s. 765.101.
+(b) “Clearinghouse for Compassionate and Palliative Care
+Plans” or “clearinghouse” means the state’s electronic database
+of compassionate and palliative care plans submitted by
+residents of this state and managed by the agency pursuant to
+this section.
+(c) “Compassionate and palliative care plan” or “plan”
+means an end-of-life document or medical directive document
+recognized by this state and executed by a resident of this
+state, including, but not limited to, an advance directive, an
+order not to resuscitate, a physician order for life-sustaining
+treatment, or a health care surrogate designation.
+(d) “Department” means the Department of Health.
+(e) “End-stage condition” has the same meaning as provided
+in s. 765.101.
+(f) “Order not to resuscitate” means an order issued
+pursuant to s. 401.45(3).
+(g) “Physician order for life-sustaining treatment” or
+“POLST” means an order issued pursuant to s. 401.451 which
+specifies a patient with an end-stage condition and provides
+directions for that patient’s medical treatment and care under
+certain conditions.
+(2) ELECTRONIC DATABASE.—The Agency for Health Care
+Administration shall:
+(a) By January 1, 2019, establish and maintain the
+Clearinghouse for Compassionate and Palliative Care Plans, a
+reliable and secure database consisting of compassionate and
+palliative care plans submitted by residents of this state which
+is accessible to health care providers, health care facilities,
+and other authorized individuals through a secure electronic
+portal. The clearinghouse must allow the electronic submission,
+storage, indexing, and retrieval of such plans and allow access
+to them by the treating health care providers of the patients.
+(b) Develop and maintain a validation system that confirms
+the identity of the health care facility, health care provider,
+or other authorized individual seeking the retrieval of a plan
+and provides privacy protections that meet all state and federal
+privacy and security standards for the release of a patient’s
+personal and medical information to a third party.
+(c) Consult with compassionate and palliative care
+providers, health care facilities, and residents of this state
+as necessary and appropriate to facilitate the development and
+implementation of the clearinghouse.
+(d) Publish and disseminate to residents of this state
+information regarding the clearinghouse.
+(e) In collaboration with the department, develop and
+maintain a process for the submission of compassionate and
+palliative care plans by residents of this state or by health
+care providers on behalf of, and at the direction of, their
+patients, or the patients’ legal representatives as defined in
+s. 401.451, for inclusion in the clearinghouse.
+(f) Provide training to health care providers and health
+care facilities in this state on how to access plans in the
+clearinghouse.
+(3) ALTERNATIVE IMPLEMENTATION.—In lieu of establishing and
+maintaining the clearinghouse, the agency may subscribe to or
+otherwise participate in a database operated by a public or
+private entity if that database meets the requirements of this
+section. The alternative database must operate on a statewide
+basis in this state, and may operate on a nationwide or
+regionwide basis.
+Section 3. Subsection (3) of section 400.142, Florida
+Statutes, is amended to read:
+400.142 Emergency medication kits; orders not to
+resuscitate.—
+(3) Facility staff may withhold or withdraw cardiopulmonary
+resuscitation if presented with an order not to resuscitate
+executed pursuant to s. 401.45 or a physician order for life
+sustaining treatment (POLST) form executed pursuant to s.
+401.451 which contains an order not to resuscitate. Facility
+staff and facilities are not subject to criminal prosecution or
+civil liability, or considered to have engaged in negligent or
+unprofessional conduct, for withholding or withdrawing
+cardiopulmonary resuscitation pursuant to such an order or a
+POLST form. The absence of an order not to resuscitate executed
+pursuant to s. 401.45 or a POLST form executed pursuant to s.
+401.451 does not preclude a physician from withholding or
+withdrawing cardiopulmonary resuscitation as otherwise
+authorized permitted by law.
+Section 4. Section 400.487, Florida Statutes, is amended to
+read:
+400.487 Home health service agreements; physician’s,
+physician assistant’s, and advanced registered nurse
+practitioner’s treatment orders; patient assessment;
+establishment and review of plan of care; provision of services;
+orders not to resuscitate; physician orders for life-sustaining
+treatment.—
+(1) Services provided by a home health agency must be
+covered by an agreement between the home health agency and the
+patient or the patient’s legal representative specifying the
+home health services to be provided, the rates or charges for
+services paid with private funds, and the sources of payment,
+which may include Medicare, Medicaid, private insurance,
+personal funds, or a combination thereof. A home health agency
+providing skilled care must make an assessment of the patient’s
+needs within 48 hours after the start of services.
+(2) If When required by the provisions of chapter 464; part
+I, part III, or part V of chapter 468; or chapter 486, the
+attending physician, physician assistant, or advanced registered
+nurse practitioner, acting within his or her respective scope of
+practice, shall establish treatment orders for a patient who is
+to receive skilled care. The treatment orders must be signed by
+the physician, physician assistant, or advanced registered nurse
+practitioner before a claim for payment for the skilled services
+is submitted by the home health agency. If the claim is
+submitted to a managed care organization, the treatment orders
+must be signed within the time allowed under the provider
+agreement. The treatment orders shall be reviewed, as frequently
+as the patient’s illness requires, by the physician, physician
+assistant, or advanced registered nurse practitioner in
+consultation with the home health agency.
+(3) A home health agency shall arrange for supervisory
+visits by a registered nurse to the home of a patient receiving
+home health aide services in accordance with the patient’s
+direction, approval, and agreement to pay the charge for the
+visits.
+(4) Each patient has the right to be informed of and to
+participate in the planning of his or her care. Each patient
+must be provided, upon request, a copy of the plan of care
+established and maintained for that patient by the home health
+agency.
+(5) If When nursing services are ordered, the home health
+agency to which a patient has been admitted for care must
+provide the initial admission visit, all service evaluation
+visits, and the discharge visit by a direct employee. Services
+provided by others under contractual arrangements to a home
+health agency must be monitored and managed by the admitting
+home health agency. The admitting home health agency is fully
+responsible for ensuring that all care provided through its
+employees or contract staff is delivered in accordance with this
+part and applicable rules.
+(6) The skilled care services provided by a home health
+agency, directly or under contract, must be supervised and
+coordinated in accordance with the plan of care.
+(7) Home health agency personnel may withhold or withdraw
+cardiopulmonary resuscitation if presented with an order not to
+resuscitate executed pursuant to s. 401.45 or a physician order
+for life-sustaining treatment (POLST) form executed pursuant to
+s. 401.451 which contains an order not to resuscitate. The
+agency shall adopt rules providing for the implementation of
+such orders. Home health personnel and agencies are shall not be
+subject to criminal prosecution or civil liability, and are not
+nor be considered to have engaged in negligent or unprofessional
+conduct, for withholding or withdrawing cardiopulmonary
+resuscitation pursuant to such orders an order and rules adopted
+by the agency.
+Section 5. Paragraph (e) of subsection (1) of section
+400.605, Florida Statutes, is amended to read:
+400.605 Administration; forms; fees; rules; inspections;
+fines.—
+(1) The agency, in consultation with the department, may
+adopt rules to administer the requirements of part II of chapter
+408. The department, in consultation with the agency, shall by
+rule establish minimum standards and procedures for a hospice
+pursuant to this part. The rules must include:
+(e) Procedures relating to the implementation of advance
+advanced directives; physician orders for life-sustaining
+treatment (POLST) forms executed pursuant to s. 401.451; and
+orders not to resuscitate do-not-resuscitate orders.
+Section 6. Subsection (8) of section 400.6095, Florida
+Statutes, is amended to read:
+400.6095 Patient admission; assessment; plan of care;
+discharge; death.—
+(8) The hospice care team may withhold or withdraw
+cardiopulmonary resuscitation if presented with an order not to
+resuscitate executed pursuant to s. 401.45 or a physician order
+for life-sustaining treatment (POLST) form executed pursuant to
+s. 401.451 which contains an order not to resuscitate. The
+department shall adopt rules providing for the implementation of
+such orders. Hospice staff are shall not be subject to criminal
+prosecution or civil liability, and are not nor be considered to
+have engaged in negligent or unprofessional conduct, for
+withholding or withdrawing cardiopulmonary resuscitation
+pursuant to such orders an order and applicable rules. The
+absence of an order to resuscitate executed pursuant to s.
+401.45 or a POLST form executed pursuant to s. 401.451 does not
+preclude a physician from withholding or withdrawing
+cardiopulmonary resuscitation as otherwise authorized permitted
+by law.
+Section 7. Subsection (4) of section 401.35, Florida
+Statutes, is amended to read:
+401.35 Rules.—The department shall adopt rules, including
+definitions of terms, necessary to carry out the purposes of
+this part.
+(4) The rules must establish circumstances and procedures
+under which emergency medical technicians and paramedics may
+honor orders by the patient’s physician not to resuscitate
+executed pursuant to s. 401.45, or under a physician order for
+life-sustaining treatment (POLST) form executed pursuant to s.
+401.451 which contains an order not to resuscitate, or honor
+orders to withhold or withdraw other forms of medical
+intervention, and the documentation and reporting requirements
+for handling such requests.
+Section 8. Paragraph (a) of subsection (3) of section
+401.45, Florida Statutes, is amended to read:
+401.45 Denial of emergency treatment; civil liability.—
+(3)(a) Resuscitation or other forms of medical intervention
+may be withheld or withdrawn from a patient by an emergency
+medical technician, or paramedic, or other health care
+professional if the technician, paramedic, or professional is
+presented with evidence of an order not to resuscitate by the
+patient’s physician or evidence of a physician order for life
+sustaining treatment (POLST) form executed pursuant to s.
+401.451 which contains an order not to resuscitate or an order
+not to perform other medical intervention, as applicable is
+presented to the emergency medical technician or paramedic. To
+be valid, an order not to resuscitate or not to perform other
+medical intervention, to be valid, must be on the form adopted
+by rule of the department. The form must be signed by the
+patient’s physician and by the patient or, if the patient is
+incapacitated, the patient’s health care surrogate or proxy as
+provided in chapter 765, court-appointed guardian as provided in
+chapter 744, or attorney in fact under a durable power of
+attorney as provided in chapter 709 or, if the patient is a
+minor, the patient’s parent or legal guardian. The court
+appointed guardian or attorney in fact must have been delegated
+authority to make health care decisions on behalf of the
+patient.
+Section 9. Subsection (4) of section 429.255, Florida
+Statutes, is amended to read:
+429.255 Use of personnel; emergency care.—
+(4) Facility staff may withhold or withdraw cardiopulmonary
+resuscitation or the use of an automated external defibrillator
+if presented with an order not to resuscitate executed pursuant
+to s. 401.45 or a physician order for life-sustaining treatment
+(POLST) form executed pursuant to s. 401.451 which contains an
+order not to resuscitate. The department shall adopt rules
+providing for the implementation of such orders. Facility staff
+and facilities are shall not be subject to criminal prosecution
+or civil liability, and are not nor be considered to have
+engaged in negligent or unprofessional conduct, for withholding
+or withdrawing cardiopulmonary resuscitation or the use of an
+automated external defibrillator pursuant to such an order or a
+POLST form which contains an order not to resuscitate and rules
+adopted by the department. The absence of an order not to
+resuscitate executed pursuant to s. 401.45 or a POLST form
+executed pursuant to s. 401.451 does not preclude a physician
+from withholding or withdrawing cardiopulmonary resuscitation or
+the use of an automated external defibrillator as otherwise
+authorized permitted by law.
+Section 10. Subsection (3) of section 429.73, Florida
+Statutes, is amended to read:
+429.73 Rules and standards relating to adult family-care
+homes.—
+(3) The department shall adopt rules providing for the
+implementation of orders not to resuscitate and physician orders
+for life-sustaining treatment (POLST) forms executed pursuant to
+s. 401.451. The provider may withhold or withdraw
+cardiopulmonary resuscitation if presented with an order not to
+resuscitate executed pursuant to s. 401.45 or a POLST form
+executed pursuant to s. 401.451 which contains an order not to
+resuscitate. The provider is shall not be subject to criminal
+prosecution or civil liability, and is not nor be considered to
+have engaged in negligent or unprofessional conduct, for
+withholding or withdrawing cardiopulmonary resuscitation
+pursuant to such orders an order and applicable rules.
+Section 11. Present subsections (7) and (8) of section
+456.072, Florida Statutes, are redesignated as subsections (8)
+and (9), respectively, and a new subsection (7) is added to that
+section, to read:
+456.072 Grounds for discipline; penalties; enforcement.—
+(7) A licensee may withhold or withdraw cardiopulmonary
+resuscitation or the use of an automated external defibrillator
+if presented with an order not to resuscitate executed pursuant
+to s. 401.45 or a physician order for life-sustaining treatment
+(POLST) form executed pursuant to s. 401.451 which contains an
+order not to resuscitate. The department shall adopt rules
+providing for the implementation of such orders. A licensee is
+not subject to criminal prosecution or civil liability, and is
+not considered to have engaged in negligent or unprofessional
+conduct, for withholding or withdrawing cardiopulmonary
+resuscitation or the use of an automated external defibrillator,
+or otherwise carrying out an order in an order not to
+resuscitate executed pursuant to s. 401.45 or a POLST form
+executed pursuant to s. 401.451, pursuant to the order not to
+resuscitate or the POLST form and pursuant to rules adopted by
+the department. The absence of an order not to resuscitate
+executed pursuant to s. 401.45 or a POLST form executed pursuant
+to s. 401.451 does not preclude a licensee from withholding or
+withdrawing cardiopulmonary resuscitation or the use of an
+automated external defibrillator or otherwise carrying out a
+medical order authorized by law.
+Section 12. Paragraph (c) of subsection (1) of section
+765.205, Florida Statutes, is amended to read:
+765.205 Responsibility of the surrogate.—
+(1) The surrogate, in accordance with the principal’s
+instructions, unless such authority has been expressly limited
+by the principal, shall:
+(c) Provide written consent using an appropriate form
+whenever consent is required, including a physician’s order not
+to resuscitate or a physician order for life-sustaining
+treatment (POLST) form executed pursuant to s. 401.451.
+Section 13. This act shall take effect July 1, 2018.
