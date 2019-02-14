@@ -8,14 +8,13 @@ from .common import (
     extractor_for_elements_by_class,
     extractor_for_element_by_id
 )
-from .az import extract_from_div_html
 from .ca import handle_california
 
 
 CONVERSION_FUNCTIONS = {
     "al": extract_line_numbered_pdf,
     "ak": extract_pre_tag_html,
-    "az": extract_from_div_html,
+    "az": extractor_for_elements_by_class('WordSection2'),
     "ar": extract_sometimes_numbered_pdf,
     "co": extract_sometimes_numbered_pdf,
     "ct": extract_from_p_tags_html,
