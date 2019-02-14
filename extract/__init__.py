@@ -9,7 +9,7 @@ from .common import (
     extractor_for_element_by_id
 )
 from .ca import handle_california
-
+from .de import handle_delaware
 
 CONVERSION_FUNCTIONS = {
     "al": extract_line_numbered_pdf,
@@ -19,7 +19,10 @@ CONVERSION_FUNCTIONS = {
     "co": extract_sometimes_numbered_pdf,
     "ct": extract_from_p_tags_html,
     "nc": extract_line_numbered_pdf,
-    "ca": handle_california
+    # il done in PR from redshiftzero
+    # id done in PR from redshiftzero
+    "ca": handle_california,
+    "de": handle_delaware
 }
 
 

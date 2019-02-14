@@ -1,6 +1,5 @@
 from .common import (
-    extractor_for_element_by_xpath,
-    extract_simple_pdf
+    extractor_for_element_by_xpath
 )
 
 def handle_california(data, metadata):

@@ -109,3 +109,14 @@ def text_from_element_siblings_lxml(data, lxml_query):
         text_inside_elements += element.text_content() + '\n'
 
     return text_inside_elements
+
+
+def text_from_element_siblings_xpath(data, lxml_query):
+    html_document = html.fromstring(data)
+    matching_elements = html_document.xpath(lxml_query)
+
+    text_inside_elements = ""
+    for element in matching_elements:
+        text_inside_elements += element.text_content() + '\n'
+
+    return text_inside_elements

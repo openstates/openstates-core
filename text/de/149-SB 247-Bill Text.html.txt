@@ -1,0 +1,97 @@
+
+      
+        BE IT ENACTED BY THE GENERAL ASSEMBLY OF THE STATE OF DELAWARE:
+      
+      
+        Section 1. Amend Chapter 85, Title 11 of the Delaware Code concerning the State Bureau of Identification, by making deletions as shown by strike through and insertions as shown by underline as follows and by redesignating accordingly:
+      
+      
+        § 8502 Definitions.
+      
+      
+          (4)b. Original records of entry such as police blotters 
+        or other electronically stored information sources
+         maintained by criminal justice agencies which are 
+        compiled chronologically and
+         required by law with long-standing custom to be made public
+        , if such records are organized on a chronological basis.
+         
+        Notwithstanding any other provision of this Title,
+         
+        the arresting criminal justice agency may disclose to the public arrest data that is reasonably contemporaneous to the event for which an individual is currently involved in the criminal justice system;
+      
+      
+         (9
+        ) “FBI Criminal History Systems” shall mean the electronic clearinghouse of crime data accessible to criminal justice agencies nationwide that is maintained by the Federal Bureau of Investigation.
+      
+      
+         
+        (13) “Rap Back System” shall mean a service maintained by the FBI to provide authorized non-criminal and criminal justice agencies on-going status notifications of any criminal history subsequently reported to the FBI in its criminal history system after the initial criminal or civil transaction thus eliminating the need for repeated background checks on a person from the same applicant agency
+        .
+      
+      
+        § 8513
+         Dissemination of criminal history record information.
+      
+      
+        (d) Dissemination of criminal history record information, by any person or agency other than the Bureau or its designee is prohibited. 
+        This provision shall not prohibit dissemination by any criminal justice agency in those cases in which time is of the essence and the Bureau is technologically incapable of responding within the necessary time period. Under such circumstances the foregoing rules concerning dissemination are to be adhered to.  
+        Notwithstanding this prohibition, the dissemination of criminal history record information by any criminal justice agency is authorized:
+      
+      
+        (1) in those cases in which time is of the essence and the Bureau is technologically incapable of responding within the necessary time period, or
+      
+      
+        (2) whenever dissemination of arrest data to members of the public is authorized by this Chapter.
+      
+      
+        § 8527 Criminal history background checks; state and/or federal CHRI reports; receipt by government agencies; procedures.
+      
+      
+        (a)
+        (3) A report of an individual’s subsequent criminal history record information as part of on-going monitoring
+      
+      
+             
+        and reporting through the Bureau, the FBI’s criminal history systems or the Rap Back system.
+      
+      
+         
+        (h) Fingerprints and other associated information/biometrics collected within this section will be retained for the 
+      
+      
+             
+        purpose of continuous comparison to other fingerprints, associated information/biometrics, which are maintained by the
+      
+      
+             
+        Bureau and in the FBI’s Next Generation Identification (NGI) system or its successor systems (including civil, criminal,
+      
+      
+             
+        and latent fingerprint repositories). 
+      
+      
+         (
+        h)
+        (i)
+         This section shall apply to any recipient agency seeking a state or federal CHRI report for the purposes of 
+      
+      
+             employing or licensing any individual in this State.
+      
+      
+         
+      
+    
+
+      
+        SYNOPSIS
+      
+      
+        This Act, consistent with longstanding practice throughout the State expressly recognized in the existing statute, clarifies the manner in which criminal justice agencies may inform the public of information related to arrests.  In addition, this Act provides the State Bureau of Identification the ability to share information with the Federal government to maintain on-going monitoring of individuals who have already undergone background checks.  Finally, it provides that fingerprints and similar information collected will be retained for future comparison purposes.
+      
+      
+        Author: Senator Ennis
+      
+    
