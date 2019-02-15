@@ -11,6 +11,7 @@ from .common import (
 from .ca import handle_california
 from .de import handle_delaware
 from .fl import handle_florida
+from .hi import handle_hawaii
 
 CONVERSION_FUNCTIONS = {
     "al": extract_line_numbered_pdf,
@@ -24,7 +25,8 @@ CONVERSION_FUNCTIONS = {
     # id done in PR from redshiftzero
     "ca": handle_california,
     "de": handle_delaware,
-    "fl": handle_florida
+    "fl": handle_florida,
+    "hi": handle_hawaii
 }
 
 
