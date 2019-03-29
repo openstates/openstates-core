@@ -1,0 +1,509 @@
+
+  
+
+  
+
+ 
+ 
+35 ILCS 405/2
+  
+from Ch. 120, par. 405A-2
+ 
+ 
+35 ILCS 405/3
+  
+from Ch. 120, par. 405A-3
+ 
+ 
+35 ILCS 405/4
+  
+from Ch. 120, par. 405A-4
+ 
+
+ 
+    
+Amends the Illinois Estate and Generation-Skipping Transfer Tax Act.  
+Provides that no tax shall be imposed under the Act for persons dying on or 
+after the effective date of the amendatory Act or for transfers made on or 
+after the effective date of the amendatory Act.  Effective immediately.
+
+  
+
+  
+
+  
+    
+AN ACT concerning revenue.
+
+  
+    
+Be it enacted by the People of the State of Illinois,
+ 
+represented in the General Assembly:
+
+  
+
+ 
+    
+Section 5. 
+The Illinois Estate and Generation-Skipping 
+Transfer Tax Act is amended  by changing Sections 2, 3, and 4 as 
+follows:
+
+
+
+
+
+
+    
+(35 ILCS 405/2)
+  
+(from Ch. 120, par. 405A-2)
+
+
+
+
+
+
+    
+Sec. 2. 
+Definitions. 
+
+
+    
+"Federal estate tax" means the tax due to the United States 
+with respect
+to a taxable transfer under Chapter 11 of the 
+Internal Revenue Code.
+
+
+    
+"Federal generation-skipping transfer tax" means the tax 
+due to the
+United States with respect to a taxable transfer 
+under Chapter 13 of the
+Internal Revenue Code.
+
+
+    
+"Federal return" means the federal estate tax return with 
+respect to the
+federal estate tax and means the federal 
+generation-skipping transfer tax
+return
+with respect to the 
+federal generation-skipping transfer tax.
+
+
+    
+"Federal transfer tax" means the federal estate tax or the 
+federal
+generation-skipping transfer tax.
+
+
+    
+"Illinois estate tax" means the tax due to this State with 
+respect to a
+taxable transfer.
+
+
+    
+"Illinois generation-skipping transfer tax" means the tax 
+due to this State
+with respect to a taxable transfer that gives 
+rise to a federal
+generation-skipping transfer tax.
+
+
+    
+"Illinois transfer tax" means the Illinois estate tax or 
+the Illinois
+generation-skipping transfer tax.
+
+
+    
+"Internal Revenue Code" means, unless otherwise provided, 
+the Internal
+Revenue Code of 1986, as
+amended from time to 
+time.
+
+
+    
+"Non-resident trust" means a trust that is not a resident 
+of this State
+for purposes of the Illinois Income Tax Act, as 
+amended from time to time.
+
+
+    
+"Person" means and includes any individual, trust, estate, 
+partnership,
+association, company or corporation.
+
+
+    
+"Qualified heir" means a qualified heir as defined in 
+Section 2032A(e)(1)
+of the Internal Revenue Code.
+
+
+    
+"Resident trust" means a trust that is a resident of this 
+State for
+purposes of the Illinois Income Tax Act, as amended 
+from time to time.
+
+
+    
+"State" means any state, territory or possession of the 
+United States and
+the District of Columbia.
+
+
+    
+"State tax credit" means:
+
+
+    
+(a) For persons dying on or after January 1, 2003 and
+
+through December 31, 2005, an amount
+equal
+to the full credit 
+calculable under Section 2011 or Section 2604 of the
+Internal 
+Revenue
+Code as the credit would have been computed and allowed 
+under the Internal
+Revenue
+Code as in effect on December 31, 
+2001, without the reduction in the State
+Death Tax
+Credit as 
+provided in Section 2011(b)(2) or the termination of the State 
+Death
+Tax Credit
+as provided in Section 2011(f) as enacted by 
+the Economic Growth and Tax Relief
+Reconciliation Act of 2001, 
+but recognizing the increased applicable exclusion
+amount
+
+through December 31, 2005.
+
+
+    
+(b) For persons dying after December 31, 2005 and on or 
+before December 31,
+2009, and for persons dying after December 
+31, 2010 
+and prior to the effective date of this amendatory Act 
+of the 100th General Assembly
+, an amount equal to the full
+
+credit
+calculable under Section 2011 or 2604 of the Internal 
+Revenue Code as the
+credit would
+have been computed and allowed 
+under the Internal Revenue Code as in effect on
+December 31, 
+2001, without the reduction in the State Death Tax Credit as
+
+provided in
+Section 2011(b)(2) or the termination of the State 
+Death Tax Credit as provided
+in
+Section 2011(f) as enacted by 
+the Economic Growth and Tax Relief Reconciliation
+Act of
+2001, 
+but recognizing the exclusion amount of only (i) $2,000,000 for 
+persons dying prior to January 1, 2012, (ii) $3,500,000 for 
+persons dying on or after January 1, 2012 and prior to January 
+1, 2013, and (iii) $4,000,000 for persons dying on or after 
+January 1, 2013, and with reduction to the adjusted taxable 
+estate for any qualified terminable interest property election 
+as defined in subsection (b-1) of this Section.
+
+
+    
+(b-1) The person required to file the Illinois return may 
+elect on a timely filed Illinois return a marital deduction for 
+qualified terminable interest property under Section 
+2056(b)(7) of the Internal Revenue Code for purposes of the 
+Illinois estate tax that is separate and independent of any 
+qualified terminable interest property election for federal 
+estate tax purposes.  For purposes of the Illinois estate tax, 
+the inclusion of property in the gross estate of a surviving 
+spouse is the same as under Section 2044 of the Internal 
+Revenue Code. 
+    
+In the case of any trust for which a State or federal 
+qualified terminable interest property election is made, the 
+trustee may not retain non-income producing assets for more 
+than a reasonable amount of time without the consent of the 
+surviving spouse. 
+
+
+    
+"Taxable transfer" means an event that gives rise to a 
+state tax credit,
+including any credit as a result of the 
+imposition of an
+additional tax under Section 2032A(c) of the 
+Internal Revenue Code.
+
+
+    
+"Transferee" means a transferee within the meaning of 
+Section 2603(a)(1)
+and Section 6901(h) of the Internal Revenue 
+Code.
+
+
+    
+"Transferred property" means:
+
+
+
+
+    
+    
+(1) With respect to a taxable transfer occurring at the 
+death of an
+individual, the
+deceased individual's gross 
+estate as defined in Section 2031 of the
+Internal Revenue 
+Code.
+
+
+
+
+    
+    
+(2) With respect to a taxable transfer occurring as a 
+result of a
+taxable termination as defined in Section 
+2612(a) of the Internal Revenue Code,
+ the taxable amount 
+determined under Section 2622(a) of the Internal Revenue
+
+Code.
+
+
+
+
+    
+    
+(3) With respect to a taxable transfer occurring as a 
+result of a
+taxable distribution as defined in Section 
+2612(b) of the Internal Revenue Code,
+the taxable amount 
+determined under Section 2621(a) of the Internal Revenue
+
+Code.
+
+
+
+
+    
+    
+(4) With respect to an event which causes the 
+imposition of an
+additional estate tax under Section 
+2032A(c) of the Internal Revenue Code,
+the
+qualified real 
+property that was disposed of or which ceased to be used 
+for
+the qualified use, within the meaning of Section 
+2032A(c)(1) of the Internal
+Revenue Code.
+
+
+    
+"Trust" includes a trust as defined in Section 2652(b)(1) 
+of the Internal
+Revenue Code.
+
+
+(Source: P.A. 96-789, eff. 9-8-09; 96-1496, eff. 1-13-11; 
+97-636, eff. 6-1-12
+.)
+
+
+
+
+
+
+
+
+    
+(35 ILCS 405/3)
+  
+(from Ch. 120, par. 405A-3)
+
+
+
+
+
+
+    
+Sec. 3. 
+Illinois estate tax. 
+
+
+    
+(a) Imposition of Tax.  An Illinois estate tax is imposed on 
+every
+taxable transfer
+involving transferred
+property having a 
+tax situs within the State of Illinois.
+
+
+    
+(b) Amount of tax.  On estates of persons dying before 
+January 1, 2003, the amount of the Illinois estate tax shall be 
+the state
+tax credit, as defined in Section 2 of this Act, with 
+respect to the taxable
+transfer
+reduced by the lesser of:
+
+
+
+
+    
+    
+(1) the amount of the state tax credit paid to any 
+other state or states;
+and
+
+
+
+
+    
+    
+(2) the amount determined by multiplying the maximum 
+state tax
+credit allowable with respect to the taxable 
+transfer
+ by the percentage which the gross
+value of the 
+transferred property not having a tax situs in Illinois 
+bears
+to the gross value of the total transferred property.
+    
+(c) On estates of persons dying on or after January 1, 2003 
+and prior to the effective date of this amendatory Act of the 
+100th General Assembly
+, the amount of the Illinois estate tax 
+shall be the state
+tax credit, as defined in Section 2 of this 
+Act, reduced by the amount determined by multiplying the state 
+tax
+credit with respect to the taxable transfer
+ by the 
+percentage which the gross
+value of the transferred property 
+not having a tax situs in Illinois bears
+to the gross value of 
+the total transferred property.
+
+
+
+    
+(d)  No tax shall be imposed under this Act for persons 
+dying on or after the effective date of this amendatory Act of 
+the 100th General Assembly.
+ 
+(Source: P.A. 93-30, eff. 6-20-03; 94-419, eff. 8-2-05.)
+
+
+
+
+
+
+
+
+    
+(35 ILCS 405/4)
+  
+(from Ch. 120, par. 405A-4)
+
+
+
+
+
+
+    
+Sec. 4. 
+Illinois generation-skipping transfer tax. 
+
+
+    
+(a) Imposition of tax.  An Illinois generation-skipping 
+transfer tax is
+imposed on every taxable transfer resulting in 
+federal generation-skipping
+transfer tax involving transferred 
+property having a tax situs within the
+State of Illinois.
+
+
+    
+(b) Amount of tax.  The amount of the Illinois 
+generation-skipping transfer
+tax shall be the maximum state tax 
+credit allowable with respect to the
+taxable transfer, reduced 
+by the lesser of:
+
+
+
+
+    
+    
+(1) the amount of the state tax credit paid to any 
+other state or states; and
+
+
+
+
+    
+    
+(2) the amount determined by multiplying the maximum 
+state tax credit
+allowable with respect to the taxable 
+transfer by the percentage which the
+gross value of the 
+transferred property not having a tax situs in Illinois
+
+bears to the gross value of the total transferred property.
+
+
+    
+(c)  No tax shall be imposed under this Act for transfers 
+occurring on or after the effective date of this amendatory Act 
+of the 100th General Assembly.
+ 
+(Source: P.A. 86-737.)
+
+
+
+ 
+    
+Section 99. 
+Effective date. 
+This Act takes effect upon 
+becoming law.
+ 
+
+  
+
+

@@ -1,0 +1,400 @@
+
+  
+
+  
+
+ 
+220 ILCS 5/9-210.5
+
+ 
+    
+Amends the Public Utilities Act. Provides that an acquisition of a 
+water or sewer utility shall be paid for by shareholders and not existing 
+ratepayers (rather than charging ratepayers in the tariff group into which 
+the water or sewer utility is to be combined specific rates). Changes the 
+repeal date of provisions concerning valuation of water and sewer utilities 
+from June 1, 2018 to June 1, 2021. Effective May 31, 2018.
+
+  
+
+  
+
+  
+    
+AN ACT concerning regulation.
+
+  
+    
+Be it enacted by the People of the State of Illinois,
+ 
+represented in the General Assembly:
+
+  
+
+ 
+    
+Section 5. 
+The Public Utilities Act is amended  by changing 
+Section 9-210.5 as follows:
+    
+(220 ILCS 5/9-210.5)
+    
+(Section scheduled to be repealed on June 1, 2018)
+    
+Sec. 9-210.5. 
+Valuation of water and sewer utilities. 
+    
+(a) In this Section:
+    
+    
+"Disinterested" means that the person directly 
+involved (1) is not a director, officer, or an employee of 
+the large public utility or the water or sewer utility or 
+its direct affiliates or subsidiaries for at least 12 
+months before becoming engaged under this Section; (2) 
+shall not derive a material financial benefit from the sale 
+of the water or sewer utility other than fees for services 
+rendered, and (3) shall not have a member of the person's 
+immediate family, including a spouse, parents or spouse's 
+parents, children or spouses of children, or siblings and 
+their spouses or children, be a director, officer, or 
+employee of either the large public utility or water or 
+sewer utility or the water or sewer utility or its direct 
+affiliates or subsidiaries for at least 12 months before 
+becoming engaged under this Section  or receive a material 
+financial benefit from the sale of the water or sewer 
+utility other than fees for services rendered.
+    
+    
+"District" means a service area of a large public 
+utility whose customers are subject to the same rate 
+tariff.
+    
+    
+"Large public utility" means an investor-owned public 
+utility that:
+    
+    
+    
+(1) is subject to regulation by the Illinois 
+Commerce Commission under this Act;
+    
+    
+    
+(2) regularly provides water or sewer service to 
+more than 30,000 customer connections;
+    
+    
+    
+(3) provides safe and adequate service; and
+    
+    
+    
+(4) is not a water or sewer utility as defined in 
+this subsection (a).
+    
+    
+"Next rate case" means a large public utility's first 
+general rate case after the date the large public utility 
+acquires the water or sewer utility where the acquired 
+water or sewer utility's cost of service is considered as 
+part of determining the large public utility's resulting 
+rates.
+    
+    
+"Prior rate case" means a large public utility's 
+general rate case resulting in the rates in effect for the 
+large public utility at the time it acquires the water or 
+sewer utility.
+    
+    
+"Utility service source" means the water or sewer 
+utility or large public utility from which the customer 
+receives its utility service type.
+    
+    
+"Utility service type"  means water utility service or 
+sewer utility service or water and sewer utility service.
+    
+    
+"Water or sewer utility" means any of the following:
+    
+    
+    
+(1) a public utility that regularly provides water 
+or sewer service to 6,000 or fewer customer 
+connections;
+    
+    
+    
+(2) a water district, including, but not limited 
+to, a public water district, water service district, or 
+surface water protection district, or a sewer district 
+of any kind established as a special district under the 
+laws of this State that regularly provides water or 
+sewer service to 7,500 or fewer customer connections;
+    
+    
+    
+(3) a waterworks system or sewerage system 
+established under the Township Code that regularly 
+provides water or sewer service to 7,500 or fewer 
+customer connections; or
+    
+    
+    
+(4) a water system or sewer system owned by a 
+municipality that regularly provides water or sewer 
+service to 7,500 or fewer customer connections; and
+    
+    
+    
+(5) any other entity that regularly provides water 
+or sewer service to 7,500 or fewer customer 
+connections.
+    
+(b) Notwithstanding any other provision of this Act, a 
+large public utility that acquires a water or sewer utility may 
+request that the Commission use, and, if so requested, the 
+Commission shall use, the procedures set forth under this 
+Section to establish the ratemaking rate base of that water or 
+sewer utility at the time when it is acquired by the large 
+public utility.
+    
+(c) If a large public utility elects the procedures under 
+this Section to establish the rate base of a water or sewer 
+utility that it is acquiring, then 3 appraisals shall be 
+performed. The average of these 3 appraisals shall represent 
+the fair market value of the water or sewer utility that is 
+being acquired. The appraisals shall be performed by 3 
+appraisers selected by the Commission's water department 
+manager and engaged by either the water or sewer utility being 
+acquired or by the large public utility. The Commission's water 
+department manager shall select the appraisers within 30 days 
+after the water department manager is officially notified. Each 
+appraiser shall be engaged on reasonable terms approved by the 
+Commission. Each appraiser shall be a disinterested person 
+licensed as a State certified general real estate appraiser 
+under the Real Estate Appraiser Licensing Act of 2002.
+    
+Each appraiser shall:
+    
+    
+(1) be sworn to determine the fair market value of the 
+water or sewer utility by establishing the amount for which 
+the water or sewer utility would be sold in a voluntary 
+transaction between a willing buyer and willing seller 
+under no obligation to buy or sell;
+    
+    
+(2) determine fair market value in compliance with the 
+Uniform Standards of Professional Appraisal Practice;
+    
+    
+(3) engage one disinterested engineer who is licensed 
+in this State to prepare an assessment of the tangible 
+assets of the water or sewer utility, which is to be 
+incorporated into the appraisal under the cost approach;
+    
+    
+(4) if the water or sewer utility is a public utility 
+that is regulated by the Commission, request from the 
+manager of the Accounting Department a list of investments 
+made by the water or sewer utility that had been disallowed 
+previously and that shall be excluded from the calculation  
+of the large public utility's rate base in its next rate 
+case; and 
+    
+    
+(5) return their appraisal, in writing, to the water or 
+sewer utility and large public utility in a reasonable and 
+timely manner.
+    
+If the appraiser cannot engage an engineer, as described in 
+paragraph (3) of this subsection (c), within 30 days after the 
+appraiser is engaged, then the Commission's water department 
+manager shall recommend the engineer the appraiser should 
+engage. The Commission's water department manager shall 
+provide his or her recommendation within 30 days after he or 
+she is officially notified of the appraiser's failure to engage 
+an engineer and the appraiser shall promptly work to engage the 
+recommended engineer. If the appraiser is unable to negotiate 
+reasonable engagement terms with the recommended engineer 
+within 15 days after the recommendation by the Commission's 
+water department manager, then the appraiser shall notify the 
+Commission's water department manager and the process shall be 
+repeated until an engineer is successfully engaged.
+    
+(d) The lesser of (i) the purchase price or (ii) the fair 
+market value determined under subsection (c) of this Section 
+shall constitute the rate base associated with the water or 
+sewer utility as acquired by and incorporated into the rate 
+base of the district designated by the acquiring large public 
+utility under this Section, subject to any adjustments that the 
+Commission deems necessary to ensure such rate base reflects 
+prudent and useful investments in the provision of public 
+utility service.  The reasonable transaction and closing costs 
+incurred by the large public utility shall be treated 
+consistent with the applicable accounting standards under this 
+Act. The amount of the appraiser's fees to be included in the 
+transaction and closing costs shall not exceed the greater of 
+$15,000 or 5% of the appraised value of the water or sewer 
+utility being acquired. This rate base treatment shall not be 
+deemed to violate this Act, including, but not limited to, any 
+Sections in Articles VIII and IX of this Act that might be 
+affected by this Section.  Any acquisition of a water or sewer 
+utility 
+shall be paid for by shareholders and not existing 
+ratepayers
+ 
+that affects the cumulative base rates of the large 
+public utility's existing ratepayers in the tariff group into 
+which the water or sewer utility is to be combined by less than 
+(1) 2.5% at the time of the acquisition for any single 
+acquisition completed under this Section or (2) 5% for all 
+acquisitions completed under this Section before the 
+Commission's final order in the next rate case shall not be 
+deemed to violate Section 7-204 or any other provision of this 
+Act
+.
+    
+In the Commission's order that approves the large public 
+utility's acquisition of the water or sewer utility, the 
+Commission shall issue its decision establishing (1) the 
+ratemaking rate base of the water or sewer utility and (2) the 
+district or tariff group with which the water or sewer utility 
+shall be combined for ratemaking purposes.
+    
+(e) If the water or sewer utility being acquired is owned 
+by the State or any political subdivision thereof, then the 
+water or sewer utility must inform the public of  the terms of 
+its acquisition by the large public utility by (1) holding a 
+public meeting prior to the acquisition and (2) causing to be 
+published, in a newspaper of general circulation in the area 
+that the water or sewer utility operates, a notice setting 
+forth the terms of its acquisition by the large public utility 
+and options that shall be available to assist customers to pay 
+their bills after the acquisition. 
+    
+(f) The large public utility shall recommend the district 
+or tariff group of which the water or sewer utility shall, for 
+ratemaking purposes, become a part after the acquisition.  The 
+Commission's recommended district or tariff group shall be 
+consistent with the large public utility's recommendation, 
+unless such recommendation can be shown to be contrary to the 
+public interest.
+    
+(g) From the date of acquisition until the date that new 
+rates are effective in the acquiring large public utility's 
+next rate case, the customers of the acquired water or sewer 
+utility shall pay the then-existing rates of the district or 
+tariff group ordered by the Commission; provided, that, if the 
+application of such then-existing rates of the large public 
+utility to customers of the acquired water or sewer utility 
+using 54,000 gallons annually results in an increase to the 
+total annual bill of customers of the acquired water or sewer 
+utility, exclusive of fire service or related charges, then the 
+large public utility's rates charged to the customers of the 
+acquired water or sewer utility shall be uniformly reduced, if 
+any reduction is required, by the percent that results in the 
+total annual bill, exclusive of fire services or related 
+charges, for the customers of the acquired water or sewer 
+utility using 54,000 gallons being equal to 1.5% of the latest 
+median household income as reported by the United States Census 
+Bureau for the most applicable community or county.  For each 
+customer of the water or sewer utility with potable water usage 
+values that cannot be reasonably obtained, a value of 4,500 
+gallons per month shall be assigned.  These rates shall not be 
+deemed to violate this Act including, but not limited to, 
+Section 9-101 and any other applicable Sections in Articles 
+VIII and IX of this Act.  The Commission shall issue its 
+decision establishing the rates effective for the water or 
+sewer utility immediately following an acquisition in its order 
+approving the acquisition.
+    
+(h) In the acquiring large public utility's next rate case, 
+the water or sewer utility and the district or tariff group 
+ordered by the Commission and their costs of service shall be 
+combined under the same rate tariff.  This rate tariff shall be 
+based on allocation of costs of service of the acquired water 
+or sewer utility and the large public utility's district or 
+tariff group ordered by the Commission and utilizing a rate 
+design that does not distinguish among customers on the basis 
+of utility service source or type. This rate tariff shall not 
+be deemed to violate this Act including, but not limited to, 
+Section 9-101 of this Act.
+    
+(i) Any post-acquisition improvements made by the large 
+public utility in the water or sewer utility shall accrue a 
+cost for financing set at the large public utility's determined 
+rate for allowance for funds used during construction, 
+inclusive of the debt, equity, and income tax gross up 
+components, after the date on which the expenditure was 
+incurred by the large public utility until the investment has 
+been in service for a 4-year period or, if sooner, until the 
+time the rates are implemented in the large public utility's 
+next rate case.
+    
+Any post-acquisition improvements made by the large public 
+utility in the water or sewer utility shall not be depreciated 
+for ratemaking purposes from the date on which the expenditure 
+was incurred by the large public utility until the investment 
+has been in service for a 4-year period or, if sooner, until 
+the time the rates are implemented in the large public 
+utility's next rate case.
+    
+(j) This Section shall be exclusively applied to large 
+public utilities in the voluntary and mutually agreeable 
+acquisition of water or sewer utilities.  Any petitions filed 
+with the Commission related to the acquisitions described in 
+this Section, including petitions seeking approvals or 
+certificates required by this Act, shall be deemed approved 
+unless the Commission issues its final order within 11 months 
+after the date the large public utility filed its initial 
+petition.  This Section shall only apply to utilities providing 
+water or sewer service and shall not be construed in any manner 
+to apply to electric corporations, natural gas corporations, or 
+any other utility subject to this Act.
+    
+(k) Nothing in this Section shall prohibit a party from 
+declining to proceed with an acquisition or be deemed as 
+establishing the final purchase price of an acquisition.
+    
+(l) In the Commission's order that approves the large 
+utility's acquisition of the water or sewer utility, the 
+Commission shall address each aspect of the acquisition 
+transaction for which approval is required under the Act. 
+    
+(m) Any contractor or subcontractor that performs work on a 
+water or sewer utility acquired by a large public utility under 
+this Section shall be a responsible bidder as described in 
+Section 30-22 of the Illinois Procurement Code. The contractor 
+or subcontractor shall submit evidence of meeting the 
+requirements to be a responsible bidder as described in Section 
+30-22 to the water or sewer utility. Any new water or sewer 
+facility built as a result of the acquisition shall require the 
+contractor to enter into a project labor agreement. The large 
+public utility acquiring the water or sewer utility shall offer 
+employee positions to qualified employees of the acquired water 
+or sewer utility. 
+    
+(n) This Section is repealed on June 1, 
+2021
+ 
+2018
+. 
+
+
+(Source: P.A. 98-213, eff. 8-9-13.)
+
+  
+
+ 
+    
+Section 99. 
+Effective date. 
+This Act takes effect May 31, 
+2018.
+ 
+
+

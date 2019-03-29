@@ -60,3 +60,13 @@ def extract_from_p_tags_html(data, metadata):
 
     text = text_from_element_siblings_lxml(data, ".//p")
     return text
+
+
+def extract_from_code_tags_html(data, metadata):
+    """
+    Some states (e.g. IL) have the bill text inside
+    <code> tags (as it renders as fixed-width).
+    """
+
+    text = text_from_element_siblings_lxml(data, ".//code")
+    return text
