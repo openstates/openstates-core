@@ -1,0 +1,2248 @@
+A bill to be entitled                      
+An act relating to medical use of marijuana; providing
+legislative intent; amending s. 212.08, F.S.;
+providing an exemption from the state tax on sales,
+use, and other transactions for marijuana and
+marijuana delivery devices used for medical purposes;
+amending s. 381.986, F.S.; providing, revising, and
+deleting definitions; providing qualifying medical
+conditions for a patient to be eligible to receive
+marijuana or a marijuana delivery device; providing
+requirements for designating a qualified physician or
+medical director; providing criteria for certification
+of a patient for medical marijuana treatment by a
+qualified physician; providing for certain patients
+registered with the medical marijuana use registry to
+be deemed qualified; requiring the Department of
+Health to monitor physician registration and
+certifications in the medical marijuana use registry;
+requiring the Board of Medicine and the Board of
+Osteopathic Medicine to create a physician
+certification pattern review panel; providing
+rulemaking authority to the department and the boards;
+requiring the department to establish a medical
+marijuana use registry; specifying entities and
+persons who have access to the registry; providing
+requirements for registration of, and maintenance of
+registered status by, qualified patients and
+caregivers; providing criteria for nonresidents to
+prove residency for registration as a qualified
+patient; defining the term “seasonal resident”;
+authorizing the department to suspend or revoke the
+registration of a patient or caregiver under certain
+circumstances; providing requirements for the issuance
+of medical marijuana use registry identification
+cards; requiring the department to issue licenses to a
+certain number of medical marijuana treatment centers;
+providing for license renewal and revocation;
+providing conditions for change of ownership;
+providing for continuance of certain entities
+authorized to dispense low-THC cannabis, medical
+cannabis, and cannabis delivery devices; requiring a
+medical marijuana treatment center to comply with
+certain standards in the production and distribution
+of edibles; requiring the department to establish,
+maintain, and control a computer seed-to-sale
+marijuana tracking system; requiring background
+screening of owners, officers, board members, and
+managers of medical marijuana treatment centers;
+requiring the department to establish protocols and
+procedures for operation, conduct periodic
+inspections, and restrict location of medical
+marijuana treatment centers; providing a limit on
+county and municipal permit fees; authorizing counties
+and municipalities to determine the location of
+medical marijuana treatment centers by ordinance under
+certain conditions; providing penalties; authorizing
+the department to impose sanctions on persons or
+entities engaging in unlicensed activities; providing
+that a person is not exempt from prosecution for
+certain offenses and is not relieved from certain
+requirements of law under certain circumstances;
+providing for certain school personnel to possess
+marijuana pursuant to certain established policies and
+procedures; providing that certain research
+institutions may possess, test, transport, and dispose
+of marijuana subject to certain conditions; providing
+applicability; amending ss. 458.331 and 459.015, F.S.;
+providing additional acts by a physician or an
+osteopathic physician which constitute grounds for
+denial of a license or disciplinary action to which
+penalties apply; creating s. 381.988, F.S.; providing
+for the establishment of medical marijuana testing
+laboratories; requiring the Department of Health, in
+collaboration with the Department of Agriculture and
+Consumer Services and the Department of Environmental
+Protection, to develop certification standards and
+rules; providing limitations on the acquisition and
+distribution of marijuana by a testing laboratory;
+providing an exception for transfer of marijuana under
+certain conditions; requiring a testing laboratory to
+use a department-selected computer tracking system;
+providing grounds for disciplinary and administrative
+action; authorizing the department to refuse to issue
+or renew, or suspend or revoke, a testing laboratory
+license; creating s. 381.989, F.S.; defining terms;
+directing the department and the Department of Highway
+Safety and Motor Vehicles to institute public
+education campaigns relating to cannabis and marijuana
+and impaired driving; requiring evaluations of public
+education campaigns; authorizing the department and
+the Department of Highway Safety and Motor Vehicles to
+contract with vendors to implement and evaluate the
+campaigns; amending ss. 385.211, 499.0295, and 893.02,
+F.S.; conforming provisions to changes made by the
+act; creating s. 1004.4351, F.S.; providing a short
+title; providing legislative findings; defining terms;
+establishing the Coalition for Medical Marijuana
+Research and Education within the H. Lee Moffitt
+Cancer Center and Research Institute, Inc.; providing
+a purpose for the coalition; establishing the Medical
+Marijuana Research and Education Board to direct the
+operations of the coalition; providing for the
+appointment of board members; providing for terms of
+office, reimbursement for certain expenses, and
+meetings of the board; authorizing the board to
+appoint a coalition director; prescribing the duties
+of the coalition director; requiring the board to
+advise specified entities and officials regarding
+medical marijuana research and education in this
+state; requiring the board to annually adopt a Medical
+Marijuana Research and Education Plan; providing
+requirements for the plan; requiring the board to
+issue an annual report to the Governor and the
+Legislature by a specified date; requiring the
+Department of Health to submit reports to the board
+containing specified data; specifying responsibilities
+of the H. Lee Moffitt Cancer Center and Research
+Institute, Inc.; amending s. 1004.441, F.S.; revising
+definition; amending s. 1006.062, F.S.; requiring
+district school boards to adopt policies and
+procedures for access to medical marijuana by
+qualified patients who are students; providing
+emergency rulemaking authority; providing for venue
+for a cause of action against the department;
+providing for defense against certain causes of
+action; directing the Department of Law Enforcement to
+develop training for law enforcement officers and
+agencies; amending s. 385.212, F.S.; renaming the
+department’s Office of Compassionate Use; providing
+severability; providing a directive to the Division of
+Law Revision and Information; providing
+appropriations; providing an effective date.
+
+Be It Enacted by the Legislature of the State of Florida:
+
+Section 1. Legislative intent.—It is the intent of the
+Legislature to implement s. 29, Article X of the State
+Constitution by creating a unified regulatory structure. If s.
+29, Article X of the State Constitution is amended or a
+constitutional amendment related to cannabis or marijuana is
+adopted, this act shall expire 6 months after the effective date
+of such amendment.
+Section 2. Present paragraph (l) of subsection (2) of
+section 212.08, Florida Statutes, is redesignated as paragraph
+(m), and a new paragraph (l) is added to that subsection, to
+read:
+212.08 Sales, rental, use, consumption, distribution, and
+storage tax; specified exemptions.—The sale at retail, the
+rental, the use, the consumption, the distribution, and the
+storage to be used or consumed in this state of the following
+are hereby specifically exempt from the tax imposed by this
+chapter.
+(2) EXEMPTIONS; MEDICAL.—
+(l) Marijuana and marijuana delivery devices, as defined in
+s. 381.986, are exempt from the taxes imposed under this
+chapter.
+Section 3. Section 381.986, Florida Statutes, is amended to
+read:
+(Substantial rewording of section. See
+s. 381.986, F.S., for present text.)
+381.986 Medical use of marijuana.—
+(1) DEFINITIONS.—As used in this section, the term:
+(a) “Caregiver” means a resident of this state who has
+agreed to assist with a qualified patient’s medical use of
+marijuana, has a caregiver identification card, and meets the
+requirements of subsection (6).
+(b) “Chronic nonmalignant pain” means pain that is caused
+by a qualifying medical condition or that originates from a
+qualifying medical condition and persists beyond the usual
+course of that qualifying medical condition.
+(c) “Close relative” means a spouse, parent, sibling,
+grandparent, child, or grandchild, whether related by whole or
+half blood, by marriage, or by adoption.
+(d) “Edibles” means commercially produced food items made
+with marijuana oil, but no other form of marijuana, that are
+produced and dispensed by a medical marijuana treatment center.
+(e) “Low-THC cannabis” means a plant of the genus Cannabis,
+the dried flowers of which contain 0.8 percent or less of
+tetrahydrocannabinol and more than 10 percent of cannabidiol
+weight for weight; the seeds thereof; the resin extracted from
+any part of such plant; or any compound, manufacture, salt,
+derivative, mixture, or preparation of such plant or its seeds
+or resin that is dispensed from a medical marijuana treatment
+center.
+(f) “Marijuana” means all parts of any plant of the genus
+Cannabis, whether growing or not; the seeds thereof; the resin
+extracted from any part of the plant; and every compound,
+manufacture, salt, derivative, mixture, or preparation of the
+plant or its seeds or resin, including low-THC cannabis, which
+are dispensed from a medical marijuana treatment center for
+medical use by a qualified patient.
+(g) “Marijuana delivery device” means an object used,
+intended for use, or designed for use in preparing, storing,
+ingesting, inhaling, or otherwise introducing marijuana into the
+human body, and which is dispensed from a medical marijuana
+treatment center for medical use by a qualified patient.
+(h) “Marijuana testing laboratory” means a facility that
+collects and analyzes marijuana samples from a medical marijuana
+treatment center and has been certified by the department
+pursuant to s. 381.988.
+(i) “Medical director” means a person who holds an active,
+unrestricted license as an allopathic physician under chapter
+458 or osteopathic physician under chapter 459 and is in
+compliance with the requirements of paragraph (3)(c).
+(j) “Medical use” means the acquisition, possession, use,
+delivery, transfer, or administration of marijuana authorized by
+a physician certification. The term does not include:
+1. Possession, use, or administration of marijuana that was
+not purchased or acquired from a medical marijuana treatment
+center.
+2. Possession, use, or administration of marijuana in a
+form for smoking, in the form of commercially produced food
+items other than edibles, or of marijuana seeds or flower,
+except for flower in a sealed, tamper-proof receptacle for
+vaping.
+3. Use or administration of any form or amount of marijuana
+in a manner that is inconsistent with the qualified physician’s
+directions or physician certification.
+4. Transfer of marijuana to a person other than the
+qualified patient for whom it was authorized or the qualified
+patient’s caregiver on behalf of the qualified patient.
+5. Use or administration of marijuana in the following
+locations:
+a. On any form of public transportation, except for low-THC
+cannabis.
+b. In any public place, except for low-THC cannabis.
+c. In a qualified patient’s place of employment, except
+when permitted by his or her employer.
+d. In a state correctional institution, as defined in s.
+944.02, or a correctional institution, as defined in s. 944.241.
+e. On the grounds of a preschool, primary school, or
+secondary school, except as provided in s. 1006.062.
+f. In a school bus, a vehicle, an aircraft, or a motorboat,
+except for low-THC cannabis.
+(k) “Physician certification” means a qualified physician’s
+authorization for a qualified patient to receive marijuana and a
+marijuana delivery device from a medical marijuana treatment
+center.
+(l) “Qualified patient” means a resident of this state who
+has been added to the medical marijuana use registry by a
+qualified physician to receive marijuana or a marijuana delivery
+device for a medical use and who has a qualified patient
+identification card.
+(m) “Qualified physician” means a person who holds an
+active, unrestricted license as an allopathic physician under
+chapter 458 or as an osteopathic physician under chapter 459 and
+is in compliance with the physician education requirements of
+subsection (3).
+(n) “Smoking” means burning or igniting a substance and
+inhaling the smoke.
+(o) “Terminal condition” means a progressive disease or
+medical or surgical condition that causes significant functional
+impairment, is not considered by a treating physician to be
+reversible without the administration of life-sustaining
+procedures, and will result in death within 1 year after
+diagnosis if the condition runs its normal course.
+(2) QUALIFYING MEDICAL CONDITIONS.—A patient must be
+diagnosed with at least one of the following conditions to
+qualify to receive marijuana or a marijuana delivery device:
+(a) Cancer.
+(b) Epilepsy.
+(c) Glaucoma.
+(d) Positive status for human immunodeficiency virus.
+(e) Acquired immune deficiency syndrome.
+(f) Post-traumatic stress disorder.
+(g) Amyotrophic lateral sclerosis.
+(h) Crohn’s disease.
+(i) Parkinson’s disease.
+(j) Multiple sclerosis.
+(k) Medical conditions of the same kind or class as or
+comparable to those enumerated in paragraphs (a)-(j).
+(l) A terminal condition diagnosed by a physician other
+than the qualified physician issuing the physician
+certification.
+(m) Chronic nonmalignant pain.
+(3) QUALIFIED PHYSICIANS AND MEDICAL DIRECTORS.—
+(a) Before being approved as a qualified physician, as
+defined in paragraph (1)(m), and before each license renewal, a
+physician must successfully complete a 2-hour course and
+subsequent examination offered by the Florida Medical
+Association or the Florida Osteopathic Medical Association which
+encompass the requirements of this section and any rules adopted
+hereunder. The course and examination shall be administered at
+least annually and may be offered in a distance learning format,
+including an electronic, online format that is available upon
+request. The price of the course may not exceed $500. A
+physician who has met the physician education requirements of
+former s. 381.986(4), Florida Statutes 2016, before the
+effective date of this section, shall be deemed to be in
+compliance with this paragraph from the effective date of this
+act until 90 days after the course and examination required by
+this paragraph become available.
+(b) A qualified physician may not be employed by, or have
+any direct or indirect economic interest in, a medical marijuana
+treatment center or marijuana testing laboratory.
+(c) Before being employed as a medical director, as defined
+in paragraph (1)(i), and before each license renewal, a medical
+director must successfully complete a 2-hour course and
+subsequent examination offered by the Florida Medical
+Association or the Florida Osteopathic Medical Association which
+encompass the requirements of this section and any rules adopted
+hereunder. The course and examination shall be administered at
+least annually and may be offered in a distance learning format,
+including an electronic, online format that is available upon
+request. The price of the course may not exceed $500.
+(4) PHYSICIAN CERTIFICATION.—
+(a) A qualified physician may issue a physician
+certification only if the qualified physician:
+1. Conducted a physical examination while physically
+present in the same room as the patient and a full assessment of
+the medical history of the patient.
+2. Diagnosed the patient with at least one qualifying
+medical condition.
+3. Determined that the medical use of marijuana would
+likely outweigh the potential health risks for the patient, and
+such determination must be documented in the patient’s medical
+record. If a patient is younger than 18 years of age, a second
+physician must concur with this determination, and such
+concurrence must be documented in the patient’s medical record.
+4. Determined whether the patient is pregnant and
+documented such determination in the patient’s medical record. A
+physician may not issue a physician certification, except for
+low-THC cannabis, to a patient who is pregnant.
+5. Reviewed the patient’s controlled drug prescription
+history in the prescription drug monitoring program database
+established pursuant to s. 893.055.
+6. Reviews the medical marijuana use registry and confirmed
+that the patient does not have an active physician certification
+from another qualified physician.
+7. Registers as the issuer of the physician certification
+for the named qualified patient on the medical marijuana use
+registry in an electronic manner determined by the department,
+and:
+a. Enters into the registry the contents of the physician
+certification, including the patient’s qualifying condition and
+the dosage not to exceed the daily dose amount determined by the
+department, the amount and forms of marijuana authorized for the
+patient, and any types of marijuana delivery devices needed by
+the patient for the medical use of marijuana.
+b. Updates the registry within 7 days after any change is
+made to the original physician certification to reflect such
+change.
+c. Deactivates the registration of the qualified patient
+and the patient’s caregiver when the physician no longer
+recommends the medical use of marijuana for the patient.
+8. Obtains the voluntary and informed written consent of
+the patient for medical use of marijuana each time the qualified
+physician issues a physician certification for the patient,
+which shall be maintained in the patient’s medical record. The
+patient, or the patient’s parent or legal guardian if the
+patient is a minor, must sign the informed consent acknowledging
+that the qualified physician has sufficiently explained its
+content. The qualified physician must use a standardized
+informed consent form adopted in rule by the Board of Medicine
+and the Board of Osteopathic Medicine, which must include, at a
+minimum, information related to:
+a. The Federal Government’s classification of marijuana as
+a Schedule I controlled substance.
+b. The approval and oversight status of marijuana by the
+Food and Drug Administration.
+c. The current state of research on the efficacy of
+marijuana to treat the qualifying conditions set forth in this
+section.
+d. The potential for addiction.
+e. The potential effect that marijuana may have on a
+patient’s coordination, motor skills, and cognition, including a
+warning against operating heavy machinery, operating a motor
+vehicle, or engaging in activities that require a person to be
+alert or respond quickly.
+f. The potential side effects of marijuana use.
+g. The risks, benefits, and drug interactions of marijuana.
+h. That the patient’s de-identified health information
+contained in the physician certification and medical marijuana
+use registry may be used for research purposes.
+(b) If a qualified physician issues a physician
+certification for a qualified patient diagnosed with a
+qualifying medical condition pursuant to paragraph (2)(k), the
+physician must submit the following to the applicable board
+within 14 days after issuing the physician certification:
+1. Documentation supporting the qualified physician’s
+opinion that the medical condition is of the same kind or class
+as the conditions in paragraphs (2)(a)-(j).
+2. Documentation that establishes the efficacy of marijuana
+as treatment for the condition.
+3. Documentation supporting the qualified physician’s
+opinion that the benefits of medical use of marijuana would
+likely outweigh the potential health risks for the patient.
+4. Any other documentation as required by board rule.
+
+The department must submit such documentation to the Coalition
+for Medical Marijuana Research and Education established
+pursuant to s. 1004.4351.
+(c) A qualified physician may not issue a physician
+certification for more than three 70-day supply limits of
+marijuana. The department shall quantify by rule a daily dose
+amount with equivalent dose amounts for each allowable form of
+marijuana dispensed by a medical marijuana treatment center. The
+department shall use the daily dose amount to calculate a 70-day
+supply.
+1. A qualified physician may request an exception to the
+daily dose amount limit. The request shall be made
+electronically on a form adopted by the department in rule and
+must include, at a minimum:
+a. The qualified patient’s qualifying medical condition.
+b. The dosage and route of administration that was
+insufficient to provide relief to the qualified patient.
+c. A description of how the patient will benefit from an
+increased amount.
+d. The minimum daily dose amount of marijuana that would be
+sufficient for the treatment of the qualified patient’s
+qualifying medical condition.
+2. A qualified physician must provide the qualified
+patient’s records upon the request of the department.
+3. The department shall approve or disapprove the request
+within 14 days after receipt of the complete documentation
+required by this paragraph. The request shall be deemed approved
+if the department fails to act within this time period.
+(d) A qualified physician must evaluate an existing
+qualified patient at least once every 30 weeks before issuing a
+new physician certification. A physician must:
+1. Determine if the patient still meets the requirements to
+be issued a physician certification under paragraph (a).
+2. Identify and document in the qualified patient’s medical
+records whether the qualified patient experienced either of the
+following related to the medical use of marijuana:
+a. An adverse drug interaction with any prescription or
+nonprescription medication; or
+b. A reduction in the use of, or dependence on, other types
+of controlled substances as defined in s. 893.02.
+3. Submit a report with the findings required pursuant to
+subparagraph 2. to the department. The department shall submit
+such reports to the Coalition for Medical Marijuana Research and
+Education established pursuant to s. 1004.4351.
+(e) An active order for low-THC cannabis or medical
+cannabis issued pursuant to former s. 381.986, Florida Statutes
+2016, and registered with the compassionate use registry before
+the effective date of this section, is deemed a physician
+certification, and all patients possessing such orders are
+deemed qualified patients until the department begins issuing
+medical marijuana use registry identification cards.
+(f) The department shall monitor physician registration in
+the medical marijuana use registry and the issuance of physician
+certifications for practices that could facilitate unlawful
+diversion or misuse of marijuana or a marijuana delivery device
+and shall take disciplinary action as appropriate.
+(g) The Board of Medicine and the Board of Osteopathic
+Medicine shall jointly create a physician certification pattern
+review panel that shall review all physician certifications
+submitted to the medical marijuana use registry. The panel shall
+track and report the number of physician certifications and the
+qualifying medical conditions, dosage, supply amount, and form
+of marijuana certified. The panel shall report the data both by
+individual qualified physician and in the aggregate, by county,
+and statewide. The physician certification pattern review panel
+shall, beginning January 1, 2018, submit an annual report of its
+findings and recommendations to the Governor, the President of
+the Senate, and the Speaker of the House of Representatives.
+(h) The department, the Board of Medicine, and the Board of
+Osteopathic Medicine may adopt rules pursuant to ss. 120.536(1)
+and 120.54 to implement this subsection.
+(5) MEDICAL MARIJUANA USE REGISTRY.—
+(a) The department shall create and maintain a secure,
+electronic, and online medical marijuana use registry for
+physicians, patients, and caregivers as provided under this
+section. The medical marijuana use registry must be accessible
+to law enforcement agencies, qualified physicians, and medical
+marijuana treatment centers to verify the authorization of a
+qualified patient or a caregiver to possess marijuana or a
+marijuana delivery device and record the marijuana or marijuana
+delivery device dispensed. The medical marijuana use registry
+must also be accessible to practitioners licensed to prescribe
+prescription drugs to ensure proper care for patients before
+medications that may interact with the medical use of marijuana
+are prescribed. The medical marijuana use registry must prevent
+an active registration of a qualified patient by multiple
+physicians.
+(b) The department shall determine whether an individual is
+a resident of this state for the purpose of registration of
+qualified patients and caregivers in the medical marijuana use
+registry. To prove residency:
+1. An adult resident must provide the department with a
+copy of his or her valid Florida driver license issued under s.
+322.18 or a copy of a valid Florida identification card issued
+under s. 322.051.
+2. An adult seasonal resident who cannot meet the
+requirements of subparagraph 1. may provide the department with
+a copy of two of the following that show proof of residential
+address:
+a. A deed, mortgage, monthly mortgage statement, mortgage
+payment booklet or residential rental or lease agreement.
+b. One proof of residential address from the seasonal
+resident’s parent, step-parent, legal guardian or other person
+with whom the seasonal resident resides and a statement from the
+person with whom the seasonal resident resides stating that the
+seasonal resident does reside with him or her.
+c. A utility hookup or work order dated within 60 days
+before registration in the medical use registry.
+d. A utility bill, not more than 2 months old.
+e. Mail from a financial institution, including checking,
+savings, or investment account statements, not more than 2
+months old.
+f. Mail from a federal, state, county, or municipal
+government agency, not more than 2 months old.
+g. Any other documentation that provides proof of
+residential address as determined by department rule.
+3. A minor must provide the department with a certified
+copy of a birth certificate or a current record of registration
+from a Florida K-12 school and must have a parent or legal
+guardian who meets the requirements of subparagraph 1.
+
+For the purposes of this paragraph, the term “seasonal resident”
+means any person who temporarily resides in this state for a
+period of at least 31 consecutive days in each calendar year,
+maintains a temporary residence in this state, returns to the
+state or jurisdiction of his or her residence at least one time
+during each calendar year, and is registered to vote or pays
+income tax in another state or jurisdiction.
+(c) The department may suspend or revoke the registration
+of a qualified patient or caregiver if the qualified patient or
+caregiver:
+1. Provides misleading, incorrect, false, or fraudulent
+information to the department;
+2. Obtains a supply of marijuana in an amount greater than
+the amount authorized by the physician certification;
+3. Falsifies, alters, or otherwise modifies an
+identification card;
+4. Fails to timely notify the department of any changes to
+his or her qualified patient status; or
+5. Violates the requirements of this section or any rule
+adopted under this section.
+(d) The department shall immediately suspend the
+registration of a qualified patient charged with a violation of
+chapter 893 until final disposition of any alleged offense.
+Thereafter, the department may extend the suspension, revoke the
+registration, or reinstate the registration.
+(e) The department shall immediately suspend the
+registration of any caregiver charged with a violation of
+chapter 893 until final disposition of any alleged offense. The
+department shall revoke a caregiver registration if the
+caregiver does not meet the requirements of subparagraph
+(6)(b)6.
+(f) The department may revoke the registration of a
+qualified patient or caregiver who cultivates marijuana or who
+acquires, possesses, or delivers marijuana from any person or
+entity other than a medical marijuana treatment center.
+(g) The department shall revoke the registration of a
+qualified patient, and the patient’s associated caregiver, upon
+notification that the patient no longer meets the criteria of a
+qualified patient.
+(h) The department may adopt rules pursuant to ss.
+120.536(1) and 120.54 to implement this subsection.
+(6) CAREGIVERS.—
+(a) The department must register an individual as a
+caregiver on the medical marijuana use registry and issue a
+caregiver identification card if an individual designated by a
+qualified patient meets all of the requirements of this
+subsection and department rule.
+(b) A caregiver must:
+1. Not be a qualified physician and not be employed by or
+have an economic interest in a medical marijuana treatment
+center or a marijuana testing laboratory.
+2. Be 21 years of age or older and a resident of this
+state.
+3. Agree in writing to assist with the qualified patient’s
+medical use of marijuana.
+4. Be registered in the medical marijuana use registry as a
+caregiver for no more than one qualified patient, except as
+provided in this paragraph.
+5. Successfully complete a caregiver certification course
+developed and administered by the department or its designee,
+which must be renewed biennially. The price of the course may
+not exceed $100.
+6. Pass a background screening pursuant to subsection (9),
+unless the patient is a close relative of the caregiver.
+(c) A qualified patient may designate no more than one
+caregiver to assist with the qualified patient’s medical use of
+marijuana, unless:
+1. The qualified patient is a minor and the designated
+caregivers are parents or legal guardians of the qualified
+patient;
+2. The qualified patient is an adult who has an
+intellectual or developmental disability that prevents the
+patient from being able to protect or care for himself or
+herself without assistance or supervision and the designated
+caregivers are the parents or legal guardians of the qualified
+patient; or
+3. The qualified patient is admitted to a hospice program.
+(d) A caregiver may be registered in the medical marijuana
+use registry as a designated caregiver for no more than one
+qualified patient, unless:
+1. The caregiver is a parent or legal guardian of more than
+one minor who is a qualified patient;
+2. The caregiver is a parent or legal guardian of more than
+one adult who is a qualified patient and who has an intellectual
+or developmental disability that prevents the patient from being
+able to protect or care for himself or herself without
+assistance or supervision; or
+3. All qualified patients the caregiver has agreed to
+assist are admitted to a hospice program and have requested the
+assistance of that caregiver with the medical use of marijuana;
+the caregiver is an employee of the hospice; and the caregiver
+provides personal care or other services directly to clients of
+the hospice in the scope of that employment.
+(e) A caregiver may not receive compensation, other than
+actual expenses incurred, for any services provided to the
+qualified patient.
+(f) If a qualified patient is younger than 18 years of age,
+only a caregiver may purchase or administer marijuana for
+medical use by the qualified patient. The qualified patient may
+not purchase marijuana.
+(g) A caregiver must be in immediate possession of his or
+her medical marijuana use registry identification card at all
+times when in possession of marijuana or a marijuana delivery
+device and must present his or her medical marijuana use
+registry identification card upon the request of a law
+enforcement officer.
+(h) The department may adopt rules pursuant to ss.
+120.536(1) and 120.54 to implement this subsection.
+(7) IDENTIFICATION CARDS.—
+(a) The department shall issue medical marijuana use
+registry identification cards for qualified patients and
+caregivers who are residents of this state, which must be
+renewed annually. The identification cards must be resistant to
+counterfeiting and tampering and must include, at a minimum, the
+following:
+1. The name, address, and date of birth of the qualified
+patient or caregiver.
+2. A full-face, passport-type, color photograph of the
+qualified patient or caregiver taken within the 90 days
+immediately preceding registration or the Florida driver license
+or Florida identification card photograph of the qualified
+patient or caregiver obtained directly from the Department of
+Highway Safety and Motor Vehicles.
+3. Identification as a qualified patient or a caregiver.
+4. The unique numeric identifier used for the qualified
+patient in the medical marijuana use registry.
+5. For a caregiver, the name and unique numeric identifier
+of the caregiver and the qualified patient or patients that the
+caregiver is assisting.
+6. The expiration date of the identification card.
+(b) The department must receive written consent from a
+qualified patient’s parent or legal guardian before it may issue
+an identification card to a qualified patient who is a minor.
+(c) The department shall adopt rules pursuant to ss.
+120.536(1) and 120.54 establishing procedures for the issuance,
+renewal, suspension, replacement, surrender, and revocation of
+medical marijuana use registry identification cards pursuant to
+this section and shall begin issuing qualified patient
+identification cards by October 3, 2017.
+(d) Applications for identification cards must be submitted
+on a form prescribed by the department. The department may
+charge a reasonable fee associated with the issuance,
+replacement, and renewal of identification cards. The department
+shall allocate $10 of the identification card fee to the
+Division of Research at Florida Agricultural and Mechanical
+University for the purpose of educating minorities about
+marijuana for medical use and the impact of the unlawful use of
+marijuana on minority communities. The department shall contract
+with a third-party vendor to issue identification cards. The
+vendor selected by the department must have experience
+performing similar functions for other state agencies.
+(e) A qualified patient or caregiver shall return his or
+her identification card to the department within 5 business days
+after revocation.
+(8) MEDICAL MARIJUANA TREATMENT CENTERS.—
+(a) The department shall license medical marijuana
+treatment centers to ensure reasonable statewide accessibility
+and availability as necessary for qualified patients registered
+in the medical marijuana use registry and who are issued a
+physician certification under this section.
+1. As soon as practicable, but no later than July 3, 2017,
+the department shall license as a medical marijuana treatment
+center any entity that holds an active, unrestricted license to
+cultivate, process, transport, and dispense low-THC cannabis,
+medical cannabis, and cannabis delivery devices, under former s.
+381.986, Florida Statutes 2016, before July 1, 2017, and which
+meets the requirements of this section. In addition to the
+authority granted under this section, these entities are
+authorized to dispense low-THC cannabis, medical cannabis, and
+cannabis delivery devices ordered pursuant to former s. 381.986,
+Florida Statutes 2016, which were entered into the compassionate
+use registry before July 1, 2017, and are authorized to begin
+dispensing marijuana under this section on July 3, 2017. The
+department may grant variances from the representations made in
+such an entity’s original application for approval under former
+s. 381.986, Florida Statutes 2014, pursuant to paragraph (e).
+Within 12 months, all processing facilities of medical marijuana
+treatment centers licensed subject to this paragraph shall pass
+a Food Safety Good Manufacturing Practices, such as Global Food
+Safety Initiative or equivalent, inspection by a nationally
+accredited certifying body. A medical marijuana treatment center
+that fails to meet this requirement must immediately stop all
+processing until it provides notice to the department that these
+standards have been met.
+2. The department shall license as medical marijuana
+treatment centers 10 applicants that meet the requirements of
+this section, under the following parameters:
+a. As soon as practicable, but no later than August 1,
+2017, the department shall license any applicant whose
+application was reviewed, evaluated, and scored by the
+department and which was denied a dispensing organization
+license by the department under former s. 381.986, Florida
+Statutes 2014; which had one or more administrative or judicial
+challenges pending as of January 1, 2017, or had a final ranking
+within one point of the highest final ranking in its region
+under former s. 381.986, Florida Statutes 2014; which meets the
+requirements of this section; and which provides documentation
+to the department that it has the existing infrastructure and
+technical and technological ability to begin cultivating
+marijuana within 30 days after registration as a medical
+marijuana treatment center.
+b. As soon as practicable, but no later than October 3,
+2017, the department shall license one applicant that is a
+recognized class member of Pigford v. Glickman, 185 F.R.D. 82
+(D.D.C. 1999), or In Re Black Farmers Litig., 856 F. Supp. 2d 1
+(D.D.C. 2011) and is a member of the Black Farmers and
+Agriculturalists Association-Florida Chapter. An applicant
+licensed under this sub-subparagraph is exempt from the
+requirements of subparagraphs (b)1. and (b)2.
+c. As soon as practicable, but no later than October 3,
+2017, the department shall license applicants that meet the
+requirements of this section in sufficient numbers to result in
+10 total licenses issued under this subparagraph, while
+accounting for the number of licenses issued under sub
+subparagraphs a. and b.
+3. For up to two of the licenses issued under subparagraph
+2., the department shall give preference to applicants that
+demonstrate in their applications that they own one or more
+facilities that are, or were, used for the canning,
+concentrating, or otherwise processing of citrus fruit or citrus
+molasses and will use or convert the facility or facilities for
+the processing of marijuana.
+4. Within 6 months after the registration of 100,000 active
+qualified patients in the medical marijuana use registry, the
+department shall license four additional medical marijuana
+treatment centers that meet the requirements of this section.
+Thereafter, the department shall license four medical marijuana
+treatment centers within 6 months after the registration of each
+additional 100,000 active qualified patients in the medical
+marijuana use registry that meet the requirements of this
+section.
+5. Dispensing facilities are subject to the following
+requirements:
+a. A medical marijuana treatment center may not establish
+or operate more than a statewide maximum of 25 dispensing
+facilities, unless the medical marijuana use registry reaches a
+total of 100,000 active registered qualified patients. When the
+medical marijuana use registry reaches 100,000 active registered
+qualified patients, and then upon each further instance of the
+total active registered qualified patients increasing by
+100,000, the statewide maximum number of dispensing facilities
+that each licensed medical marijuana treatment center may
+establish and operate increases by five.
+b. A medical marijuana treatment center may not establish
+more than the maximum number of dispensing facilities allowed in
+each of the Northwest, Northeast, Central, Southwest, and
+Southeast Regions. The department shall determine a medical
+marijuana treatment center’s maximum number of dispensing
+facilities allowed in each region by calculating the percentage
+of the total statewide population contained within that region
+and multiplying that percentage by the medical marijuana
+treatment center’s statewide maximum number of dispensing
+facilities established under sub-subparagraph a., rounded to the
+nearest whole number. The department shall ensure that such
+rounding does not cause a medical marijuana treatment center’s
+total number of statewide dispensing facilities to exceed its
+statewide maximum. The department shall initially calculate the
+maximum number of dispensing facilities allowed in each region
+for each medical marijuana treatment center using county
+population estimates from the Florida Estimates of Population
+2016, as published by the Office of Economic and Demographic
+Research, and shall perform recalculations following the
+official release of county population data resulting from each
+United States Decennial Census. For the purposes of this
+subparagraph:
+(I) The Northwest Region consists of Bay, Calhoun,
+Escambia, Franklin, Gadsden, Gulf, Holmes, Jackson, Jefferson,
+Leon, Liberty, Madison, Okaloosa, Santa Rosa, Taylor, Wakulla,
+Walton, and Washington Counties.
+(II) The Northeast Region consists of Alachua, Baker,
+Bradford, Clay, Columbia, Dixie, Duval, Flagler, Gilchrist,
+Hamilton, Lafayette, Levy, Marion, Nassau, Putnam, St. Johns,
+Suwannee, and Union Counties.
+(III) The Central Region consists of Brevard, Citrus,
+Hardee, Hernando, Indian River, Lake, Orange, Osceola, Pasco,
+Pinellas, Polk, Seminole, St. Lucie, Sumter, and Volusia
+Counties.
+(IV) The Southwest Region consists of Charlotte, Collier,
+DeSoto, Glades, Hendry, Highlands, Hillsborough, Lee, Manatee,
+Okeechobee, and Sarasota Counties.
+(V) The Southeast Region consists of Broward, Miami-Dade,
+Martin, Monroe, and Palm Beach Counties.
+c. If a medical marijuana treatment center establishes a
+number of dispensing facilities within a region that is less
+than the number allowed for that region under sub-subparagraph
+b., the medical marijuana treatment center may sell one or more
+of its unused dispensing facility slots to other licensed
+medical marijuana treatment centers. For each dispensing
+facility slot that a medical marijuana treatment center sells,
+that medical marijuana treatment center’s statewide maximum
+number of dispensing facilities, as determined under sub
+subparagraph a., is reduced by one. The statewide maximum number
+of dispensing facilities for a medical marijuana treatment
+center that purchases an unused dispensing facility slot is
+increased by one per slot purchased. Additionally, the sale of a
+dispensing facility slot shall reduce the seller’s regional
+maximum and increase the purchaser’s regional maximum number of
+dispensing facilities, as determined in sub-subparagraph b., by
+one for that region. For any slot purchased under this sub
+subparagraph, the regional restriction applied to that slot’s
+location under sub-subparagraph b. before the purchase shall
+remain in effect following the purchase. A medical marijuana
+treatment center that sells or purchases a dispensing facility
+slot must notify the department within 3 days of sale.
+d. This subparagraph shall expire on April 1, 2020.
+
+If this subparagraph or its application to any person or
+circumstance is held invalid, the invalidity does not affect
+other provisions or applications of this act which can be given
+effect without the invalid provision or application, and to this
+end, the provisions of this subparagraph are severable.
+(b) An applicant for licensure as a medical marijuana
+treatment center shall apply to the department on a form
+prescribed by the department and adopted in rule. The department
+shall adopt rules pursuant to ss. 120.536(1) and 120.54
+establishing a procedure for the issuance and biennial renewal
+of licenses, including initial application and biennial renewal
+fees sufficient to cover the costs of implementing and
+administering this section, and establishing supplemental
+licensure fees for payment beginning May 1, 2018, sufficient to
+cover the costs of administering ss. 381.989 and 1004.4351. The
+department shall identify applicants with strong diversity plans
+reflecting this state’s commitment to diversity and implement
+training programs and other educational programs to enable
+minority persons and minority business enterprises, as defined
+in s. 288.703, and veteran business enterprises, as defined in
+s. 295.187, to compete for medical marijuana treatment center
+licensure and contracts. Subject to the requirements in
+subparagraphs (a)2.-4., the department shall issue a license to
+an applicant if the applicant meets the requirements of this
+section and pays the initial application fee. The department
+shall renew the licensure of a medical marijuana treatment
+center biennially if the licensee meets the requirements of this
+section and pays the biennial renewal fee. An individual may not
+be an applicant, owner, officer, board member, or manager on
+more than one application for licensure as a medical marijuana
+treatment center. An individual or entity may not be awarded
+more than one license as a medical marijuana treatment center.
+An applicant for licensure as a medical marijuana treatment
+center must demonstrate:
+1. That, for the 5 consecutive years before submitting the
+application, the applicant has been registered to do business in
+in the state.
+2. Possession of a valid certificate of registration issued
+by the Department of Agriculture and Consumer Services pursuant
+to s. 581.131.
+3. The technical and technological ability to cultivate and
+produce marijuana, including, but not limited to, low-THC
+cannabis.
+4. The ability to secure the premises, resources, and
+personnel necessary to operate as a medical marijuana treatment
+center.
+5. The ability to maintain accountability of all raw
+materials, finished products, and any byproducts to prevent
+diversion or unlawful access to or possession of these
+substances.
+6. An infrastructure reasonably located to dispense
+marijuana to registered qualified patients statewide or
+regionally as determined by the department.
+7. The financial ability to maintain operations for the
+duration of the 2-year approval cycle, including the provision
+of certified financial statements to the department.
+a. Upon approval, the applicant must post a $5 million
+performance bond issued by an authorized surety insurance
+company rated in one of the three highest rating categories by a
+nationally recognized rating service. However, a medical
+marijuana treatment center serving at least 1,000 qualified
+patients is only required to maintain a $2 million performance
+bond.
+b. In lieu of the performance bond required under sub
+subparagraph a., the applicant may provide an irrevocable letter
+of credit payable to the department or provide cash to the
+department. If provided with cash under this sub-subparagraph,
+the department shall deposit the cash in the Grants and
+Donations Trust Fund within the Department of Health, subject to
+the same conditions as the bond regarding requirements for the
+applicant to forfeit ownership of the funds. If the funds
+deposited under this sub-subparagraph generate interest, the
+amount of that interest shall be used by the department for the
+administration of this section.
+8. That all owners, officers, board members, and managers
+have passed a background screening pursuant to subsection (9).
+9. The employment of a medical director to supervise the
+activities of the medical marijuana treatment center.
+10. A diversity plan that promotes and ensures the
+involvement of minority persons and minority business
+enterprises, as defined in s. 288.703, or veteran business
+enterprises, as defined in s. 295.187, in ownership, management,
+and employment. An applicant for licensure renewal must show the
+effectiveness of the diversity plan by including the following
+with his or her application for renewal:
+a. Representation of minority persons and veterans in the
+medical marijuana treatment center’s workforce;
+b. Efforts to recruit minority persons and veterans for
+employment; and
+c. A record of contracts for services with minority
+business enterprises and veteran business enterprises.
+11. That all processing facilities have passed a Food
+Safety Good Manufacturing Practices, such as Global Food Safety
+Initiative or equivalent, inspection by a nationally recognized
+certifying body.
+(c) A medical marijuana treatment center may not make a
+wholesale purchase of marijuana from, or a distribution of
+marijuana to, another medical marijuana treatment center, unless
+the medical marijuana treatment center seeking to make a
+wholesale purchase of marijuana submits proof of harvest failure
+to the department.
+(d) The department shall establish, maintain, and control a
+computer software tracking system that traces marijuana from
+seed to sale and allows real-time, 24-hour access by the
+department to data from all medical marijuana treatment centers
+and marijuana testing laboratories. The tracking system must
+allow for integration of other seed-to-sale systems and, at a
+minimum, include notification of when marijuana seeds are
+planted, when marijuana plants are harvested and destroyed, and
+when marijuana is transported, sold, stolen, diverted, or lost.
+Each medical marijuana treatment center shall use the seed-to
+sale tracking system established by the department or integrate
+its own seed-to-sale tracking system with the seed-to-sale
+tracking system established by the department. Each medical
+marijuana treatment center may use its own seed-to-sale system
+until the department establishes a seed-to-sale tracking system.
+The department may contract with a vendor to establish the seed
+to-sale tracking system. The vendor selected by the department
+may not have a contractual relationship with the department to
+perform any services pursuant to this section other than the
+seed-to-sale tracking system. The vendor may not have a direct
+or indirect financial interest in a medical marijuana treatment
+center or a marijuana testing laboratory.
+(e) A licensed medical marijuana treatment center shall
+cultivate, process, transport, and dispense marijuana for
+medical use. A licensed medical marijuana treatment center may
+not contract for services directly related to the cultivation,
+processing, and dispensing of marijuana or marijuana delivery
+devices, except that a medical marijuana treatment center
+licensed pursuant to subparagraph (a)1. may contract with a
+single entity for the cultivation, processing, transporting, and
+dispensing of marijuana and marijuana delivery devices. A
+licensed medical marijuana treatment center must, at all times,
+maintain compliance with the criteria demonstrated and
+representations made in the initial application and the criteria
+established in this subsection. Upon request, the department may
+grant a medical marijuana treatment center a variance from the
+representations made in the initial application. Consideration
+of such a request shall be based upon the individual facts and
+circumstances surrounding the request. A variance may not be
+granted unless the requesting medical marijuana treatment center
+can demonstrate to the department that it has a proposed
+alternative to the specific representation made in its
+application which fulfills the same or a similar purpose as the
+specific representation in a way that the department can
+reasonably determine will not be a lower standard than the
+specific representation in the application. A variance may not
+be granted from the requirements in subparagraph 2. and
+subparagraphs (b)1. and 2.
+1. A licensed medical marijuana treatment center may
+transfer ownership to an individual or entity who meets the
+requirements of this section. A publicly traded corporation or
+publicly traded company that meets the requirements of this
+section is not precluded from ownership of a medical marijuana
+treatment center. To accommodate a change in ownership:
+a. The licensed medical marijuana treatment center shall
+notify the department in writing at least 60 days before the
+anticipated date of the change of ownership.
+b. The individual or entity applying for initial licensure
+due to a change of ownership must submit an application that
+must be received by the department at least 60 days before the
+date of change of ownership.
+c. Upon receipt of an application for a license, the
+department shall examine the application and, within 30 days
+after receipt, notify the applicant in writing of any apparent
+errors or omissions and request any additional information
+required.
+d. Requested information omitted from an application for
+licensure must be filed with the department within 21 days after
+the department’s request for omitted information or the
+application shall be deemed incomplete and shall be withdrawn
+from further consideration and the fees shall be forfeited.
+
+Within 30 days after the receipt of a complete application, the
+department shall approve or deny the application.
+2. A medical marijuana treatment center, and any individual
+or entity who directly or indirectly owns, controls, or holds
+with power to vote 5 percent or more of the voting shares of a
+medical marijuana treatment center, may not acquire direct or
+indirect ownership or control of any voting shares or other form
+of ownership of any other medical marijuana treatment center.
+3. A medical marijuana treatment center may not enter into
+any form of profit-sharing arrangement with the property owner
+or lessor of any of its facilities where cultivation,
+processing, storing, or dispensing of marijuana and marijuana
+delivery devices occurs.
+4. All employees of a medical marijuana treatment center
+must be 21 years of age or older and have passed a background
+screening pursuant to subsection (9).
+5. Each medical marijuana treatment center must adopt and
+enforce policies and procedures to ensure employees and
+volunteers receive training on the legal requirements to
+dispense marijuana to qualified patients.
+6. When growing marijuana, a medical marijuana treatment
+center:
+a. May use pesticides determined by the department, after
+consultation with the Department of Agriculture and Consumer
+Services, to be safely applied to plants intended for human
+consumption, but may not use pesticides designated as
+restricted-use pesticides pursuant to s. 487.042.
+b. Must grow marijuana within an enclosed structure and in
+a room separate from any other plant.
+c. Must inspect seeds and growing plants for plant pests
+that endanger or threaten the horticultural and agricultural
+interests of the state in accordance with chapter 581 and any
+rules adopted thereunder.
+d. Must perform fumigation or treatment of plants, or
+remove and destroy infested or infected plants, in accordance
+with chapter 581 and any rules adopted thereunder.
+7. Each medical marijuana treatment center must produce and
+make available for purchase at least one low-THC cannabis
+product.
+8. A medical marijuana treatment center that produces
+edibles must hold a permit to operate as a food establishment
+pursuant to chapter 500, the Florida Food Safety Act, and must
+comply with all the requirements for food establishments
+pursuant to chapter 500 and any rules adopted thereunder.
+Edibles may not contain more than 200 milligrams of
+tetrahydrocannabinol and a single serving portion of an edible
+may not exceed 10 milligrams of tetrahydrocannabinol. Edibles
+may have a potency variance of no greater than 15 percent.
+Edibles may not be attractive to children; be manufactured in
+the shape of humans, cartoons, or animals; be manufactured in a
+form that bears any reasonable resemblance to products available
+for consumption as commercially available candy; or contain any
+color additives. To discourage consumption of edibles by
+children, the department shall determine by rule any shapes,
+forms, and ingredients allowed and prohibited for edibles.
+Medical marijuana treatment centers may not begin processing or
+dispensing edibles until after the effective date of the rule.
+The department shall also adopt sanitation rules providing the
+standards and requirements for the storage, display, or
+dispensing of edibles.
+9. Before beginning medical marijuana treatment center
+related functions, all processing facilities of a medical
+marijuana treatment center must have passed a Food Safety Good
+Manufacturing Practices, such as Global Food Safety Initiative,
+inspection by a nationally recognized certifying body. A medical
+marijuana treatment center that fails to pass such an inspection
+must immediately stop all processing until such time as the
+medical marijuana treatment center provides notice to the
+department that these standards have been met.
+10. When processing marijuana, a medical marijuana
+treatment center must:
+a. Process the marijuana within an enclosed structure and
+in a room separate from other plants or products.
+b. Comply with department rules when processing marijuana
+with hydrocarbon solvents or other solvents or gases exhibiting
+potential toxicity to humans. The department shall determine by
+rule the requirements for medical marijuana treatment centers to
+use such solvents or gases exhibiting potential toxicity to
+humans.
+c. Comply with federal and state laws and regulations and
+department rules for solid and liquid wastes. The department
+shall determine by rule procedures for the storage, handling,
+transportation, management, and disposal of solid and liquid
+waste generated during marijuana production and processing. The
+Department of Environmental Protection shall assist the
+department in developing such rules.
+d. Test the processed marijuana using a medical marijuana
+testing laboratory before it is dispensed. Results must be
+verified and signed by two medical marijuana treatment center
+employees. Before dispensing, the medical marijuana treatment
+center must determine that the test results indicate that low
+THC cannabis meets the definition of low-THC cannabis, the
+concentration of tetrahydrocannabinol meets the potency
+requirements of this section, the labeling of the concentration
+of tetrahydrocannabinol and cannabidiol is accurate, and all
+marijuana is safe for human consumption and free from
+contaminants that are unsafe for human consumption. The
+department shall determine by rule which contaminants must be
+tested for and the maximum levels of each contaminant which are
+safe for human consumption. The Department of Agriculture and
+Consumer Services shall assist the department in developing the
+testing requirements for contaminants that are unsafe for human
+consumption in edibles. The department shall also determine by
+rule the procedures for the treatment of marijuana that fails to
+meet the testing requirements of this section, s. 381.988, or
+department rule. The department may select a random sample from
+edibles available for purchase in a dispensing facility which
+shall be tested by the department to determine that the edible
+meets the potency requirements of this section, is safe for
+human consumption, and the labeling of the tetrahydrocannabinol
+and cannabidiol concentration is accurate. A medical marijuana
+treatment center may not require payment from the department for
+the sample. A medical marijuana treatment center must recall
+edibles, including all edibles made from the same batch of
+marijuana, which fail to meet the potency requirements of this
+section, which are unsafe for human consumption, or for which
+the labeling of the tetrahydrocannabinol and cannabidiol
+concentration is inaccurate. The medical marijuana treatment
+center must retain records of all testing and samples of each
+homogenous batch of marijuana for at least 9 months. The medical
+marijuana treatment center must contract with a marijuana
+testing laboratory to perform audits on the medical marijuana
+treatment center’s standard operating procedures, testing
+records, and samples and provide the results to the department
+to confirm that the marijuana or low-THC cannabis meets the
+requirements of this section and that the marijuana or low-THC
+cannabis is safe for human consumption. A medical marijuana
+treatment center shall reserve two processed samples from each
+batch and retain such samples for at least 9 months for the
+purpose of such audits. A medical marijuana treatment center may
+use a laboratory that has not been certified by the department
+under s. 381.988 until such time as at least one laboratory
+holds the required certification, but in no event later than
+July 1, 2018.
+e. Package the marijuana in compliance with the United
+States Poison Prevention Packaging Act of 1970, 15 U.S.C. ss.
+1471 et seq.
+f. Package the marijuana in a receptacle that has a firmly
+affixed and legible label stating the following information:
+(I) The marijuana or low-THC cannabis meets the
+requirements of sub-subparagraph d.
+(II) The name of the medical marijuana treatment center
+from which the marijuana originates.
+(III) The batch number and harvest number from which the
+marijuana originates and the date dispensed.
+(IV) The name of the physician who issued the physician
+certification.
+(V) The name of the patient.
+(VI) The product name, if applicable, and dosage form,
+including concentration of tetrahydrocannabinol and cannabidiol.
+The product name may not contain wording commonly associated
+with products marketed by or to children.
+(VII) The recommended dose.
+(VIII) A warning that it is illegal to transfer medical
+marijuana to another person.
+(IX) A marijuana universal symbol developed by the
+department.
+11. The medical marijuana treatment center shall include in
+each package a patient package insert with information on the
+specific product dispensed related to:
+a. Clinical pharmacology.
+b. Indications and use.
+c. Dosage and administration.
+d. Dosage forms and strengths.
+e. Contraindications.
+f. Warnings and precautions.
+g. Adverse reactions.
+12. Each edible shall be individually sealed in plain,
+opaque wrapping marked only with the marijuana universal symbol.
+Where practical, each edible shall be marked with the marijuana
+universal symbol. In addition to the packaging and labeling
+requirements in subparagraphs 10. and 11., edible receptacles
+must be plain, opaque, and white without depictions of the
+product or images other than the medical marijuana treatment
+center’s department-approved logo and the marijuana universal
+symbol. The receptacle must also include a list all of the
+edible’s ingredients, storage instructions, an expiration date,
+a legible and prominent warning to keep away from children and
+pets, and a warning that the edible has not been produced or
+inspected pursuant to federal food safety laws.
+13. When dispensing marijuana or a marijuana delivery
+device, a medical marijuana treatment center:
+a. May dispense any active, valid order for low-THC
+cannabis, medical cannabis and cannabis delivery devices issued
+pursuant to former s. 381.986, Florida Statutes 2016, which was
+entered into the medical marijuana use registry before July 1,
+2017.
+b. May not dispense more than a 70-day supply of marijuana
+to a qualified patient or caregiver.
+c. Must have the medical marijuana treatment center’s
+employee who dispenses the marijuana or a marijuana delivery
+device enter into the medical marijuana use registry his or her
+name or unique employee identifier.
+d. Must verify that the qualified patient and the
+caregiver, if applicable, each has an active registration in the
+medical marijuana use registry and an active and valid medical
+marijuana use registry identification card, the amount and type
+of marijuana dispensed matches the physician certification in
+the medical marijuana use registry for that qualified patient,
+and the physician certification has not already been filled.
+e. May not dispense marijuana to a qualified patient who is
+younger than 18 years of age. If the qualified patient is
+younger than 18 years of age, marijuana may only be dispensed to
+the qualified patient’s caregiver.
+f. May not dispense or sell any other type of cannabis,
+alcohol, or illicit drug-related product, including pipes,
+bongs, or wrapping papers, other than a marijuana delivery
+device required for the medical use of marijuana and which is
+specified in a physician certification.
+g. Must, upon dispensing the marijuana or marijuana
+delivery device, record in the registry the date, time,
+quantity, and form of marijuana dispensed; the type of marijuana
+delivery device dispensed; and the name and medical marijuana
+use registry identification number of the qualified patient or
+caregiver to whom the marijuana delivery device was dispensed.
+h. Must ensure that patient records are not visible to
+anyone other than the qualified patient, his or her caregiver,
+and authorized medical marijuana treatment center employees.
+(f) To ensure the safety and security of premises where the
+cultivation, processing, storing, or dispensing of marijuana
+occurs, and to maintain adequate controls against the diversion,
+theft, and loss of marijuana or marijuana delivery devices, a
+medical marijuana treatment center shall:
+1.a. Maintain a fully operational security alarm system
+that secures all entry points and perimeter windows and is
+equipped with motion detectors; pressure switches; and duress,
+panic, and hold-up alarms; and
+b. Maintain a video surveillance system that records
+continuously 24 hours a day and meets the following criteria:
+(I) Cameras are fixed in a place that allows for the clear
+identification of persons and activities in controlled areas of
+the premises. Controlled areas include grow rooms, processing
+rooms, storage rooms, disposal rooms or areas, and point-of-sale
+rooms.
+(II) Cameras are fixed in entrances and exits to the
+premises, which shall record from both indoor and outdoor, or
+ingress and egress, vantage points.
+(III) Recorded images must clearly and accurately display
+the time and date.
+(IV) Retain video surveillance recordings for at least 45
+days or longer upon the request of a law enforcement agency.
+2. Ensure that the medical marijuana treatment center’s
+outdoor premises have sufficient lighting from dusk until dawn.
+3. Ensure that the indoor premises where dispensing occurs
+includes a waiting area with sufficient space and seating to
+accommodate qualified patients and caregivers and at least one
+private consultation area that is isolated from the waiting area
+and area where dispensing occurs. A medical marijuana treatment
+center may not display products or dispense marijuana or
+marijuana delivery devices in the waiting area.
+4. Not dispense from its premises marijuana or a marijuana
+delivery device between the hours of 9 p.m. and 7 a.m., but may
+perform all other operations and deliver marijuana to qualified
+patients 24 hours a day.
+5. Store marijuana in a secured, locked room or a vault.
+6. Require at least two of its employees, or two employees
+of a security agency with whom it contracts, to be on the
+premises at all times where cultivation, processing, or storing
+of marijuana occurs.
+7. Require each employee or contractor to wear a photo
+identification badge at all times while on the premises.
+8. Require each visitor to wear a visitor pass at all times
+while on the premises.
+9. Implement an alcohol and drug-free workplace policy.
+10. Report to local law enforcement within 24 hours after
+the medical marijuana treatment center is notified or becomes
+aware of the theft, diversion, or loss of marijuana.
+(g) To ensure the safe transport of marijuana and marijuana
+delivery devices to medical marijuana treatment centers,
+marijuana testing laboratories, or qualified patients, a medical
+marijuana treatment center must:
+1. Maintain a marijuana transportation manifest in any
+vehicle transporting marijuana. The marijuana transportation
+manifest must be generated from a medical marijuana treatment
+center’s seed-to-sale tracking system and include the:
+a. Departure date and approximate time of departure.
+b. Name, location address, and license number of the
+originating medical marijuana treatment center.
+c. Name and address of the recipient of the delivery.
+d. Quantity and form of any marijuana or marijuana delivery
+device being transported.
+e. Arrival date and estimated time of arrival.
+f. Delivery vehicle make and model and license plate
+number.
+g. Name and signature of the medical marijuana treatment
+center employees delivering the product.
+(I) A copy of the marijuana transportation manifest must be
+provided to each individual, medical marijuana treatment center,
+or marijuana testing laboratory that receives a delivery. The
+individual, or a representative of the center or laboratory,
+must sign a copy of the marijuana transportation manifest
+acknowledging receipt.
+(II) An individual transporting marijuana or a marijuana
+delivery device must present a copy of the relevant marijuana
+transportation manifest and his or her employee identification
+card to a law enforcement officer upon request.
+(III) Medical marijuana treatment centers and marijuana
+testing laboratories must retain copies of all marijuana
+transportation manifests for at least 3 years.
+2. Ensure only vehicles in good working order are used to
+transport marijuana.
+3. Lock marijuana and marijuana delivery devices in a
+separate compartment or container within the vehicle.
+4. Require employees to have possession of their employee
+identification card at all times when transporting marijuana or
+marijuana delivery devices.
+5. Require at least two persons to be in a vehicle
+transporting marijuana or marijuana delivery devices, and
+require at least one person to remain in the vehicle while the
+marijuana or marijuana delivery device is being delivered.
+6. Provide specific safety and security training to
+employees transporting or delivering marijuana and marijuana
+delivery devices.
+(h) A medical marijuana treatment center may not engage in
+advertising that is visible to members of the public from any
+street, sidewalk, park, or other public place, except:
+1. The dispensing location of a medical marijuana treatment
+center may have a sign that is affixed to the outside or hanging
+in the window of the premises which identifies the dispensary by
+the licensee’s business name, a department-approved trade name,
+or a department-approved logo. A medical marijuana treatment
+center’s trade name and logo may not contain wording or images
+commonly associated with marketing targeted toward children or
+which promote recreational use of marijuana.
+2. A medical marijuana treatment center may engage in
+Internet advertising and marketing under the following
+conditions:
+a. All advertisements must be approved by the department.
+b. An advertisement may not have any content that
+specifically targets individuals under the age of 18, including
+cartoon characters or similar images.
+c. An advertisement may not be an unsolicited pop-up
+advertisement.
+d. Opt-in marketing must include an easy and permanent opt
+out feature.
+(i) Each medical marijuana treatment center that dispenses
+marijuana and marijuana delivery devices shall make available to
+the public on its website:
+1. Each marijuana and low-THC product available for
+purchase, including the form, strain of marijuana from which it
+was extracted, cannabidiol content, tetrahydrocannabinol
+content, dose unit, total number of doses available, and the
+ratio of cannabidiol to tetrahydrocannabinol for each product.
+2. The price for a 30-day, 50-day, and 70-day supply at a
+standard dose for each marijuana and low-THC product available
+for purchase.
+3. The price for each marijuana delivery device available
+for purchase.
+4. If applicable, any discount policies and eligibility
+criteria for such discounts.
+(j) Medical marijuana treatment centers are the sole source
+from which a qualified patient may legally obtain marijuana.
+(k) The department may adopt rules pursuant to ss.
+120.536(1) and 120.54 to implement this subsection.
+(9) BACKGROUND SCREENING.-An individual required to undergo
+a background screening pursuant to this section must pass a
+level 2 background screening as provided under chapter 435,
+which, in addition to the disqualifying offenses provided in s.
+435.04, shall exclude an individual who has an arrest awaiting
+final disposition for, has been found guilty of, regardless of
+adjudication, or has entered a plea of nolo contendere or guilty
+to an offense under chapter 837, chapter 895, or chapter 896 or
+similar law of another jurisdiction.
+(a) Such individual must submit a full set of fingerprints
+to the department or to a vendor, entity, or agency authorized
+by s. 943.053(13). The department, vendor, entity, or agency
+shall forward the fingerprints to the Department of Law
+Enforcement for state processing, and the Department of Law
+Enforcement shall forward the fingerprints to the Federal Bureau
+of Investigation for national processing.
+(b) Fees for state and federal fingerprint processing and
+retention shall be borne by the individual. The state cost for
+fingerprint processing shall be as provided in s. 943.053(3)(e)
+for records provided to persons or entities other than those
+specified as exceptions therein.
+(c) Fingerprints submitted to the Department of Law
+Enforcement pursuant to this subsection shall be retained by the
+Department of Law Enforcement as provided in s. 943.05(2)(g) and
+(h) and, when the Department of Law Enforcement begins
+participation in the program, enrolled in the Federal Bureau of
+Investigation’s national retained print arrest notification
+program. Any arrest record identified shall be reported to the
+department.
+(10) MEDICAL MARIJUANA TREATMENT CENTER INSPECTIONS;
+ADMINISTRATIVE ACTIONS.—
+(a) The department shall conduct announced or unannounced
+inspections of medical marijuana treatment centers to determine
+compliance with this section or rules adopted pursuant to this
+section.
+(b) The department shall inspect a medical marijuana
+treatment center upon receiving a complaint or notice that the
+medical marijuana treatment center has dispensed marijuana
+containing mold, bacteria, or other contaminant that may cause
+or has caused an adverse effect to human health or the
+environment.
+(c) The department shall conduct at least a biennial
+inspection of each medical marijuana treatment center to
+evaluate the medical marijuana treatment center’s records,
+personnel, equipment, processes, security measures, sanitation
+practices, and quality assurance practices.
+(d) The Department of Agriculture and Consumer Services and
+the department shall enter into an interagency agreement to
+ensure cooperation and coordination in the performance of their
+obligations under this section and their respective regulatory
+and authorizing laws. The department, the Department of Highway
+Safety and Motor Vehicles, and the Department of Law Enforcement
+may enter into interagency agreements for the purposes specified
+in this subsection or subsection (7).
+(e) The department shall publish a list of all approved
+medical marijuana treatment centers, medical directors, and
+qualified physicians on its website.
+(f) The department may impose reasonable fines not to
+exceed $10,000 on a medical marijuana treatment center for any
+of the following violations:
+1. Violating this section or department rule.
+2. Failing to maintain qualifications for approval.
+3. Endangering the health, safety, or security of a
+qualified patient.
+4. Improperly disclosing personal and confidential
+information of the qualified patient.
+5. Attempting to procure medical marijuana treatment center
+approval by bribery, fraudulent misrepresentation, or extortion.
+6. Being convicted or found guilty of, or entering a plea
+of guilty or nolo contendere to, regardless of adjudication, a
+crime in any jurisdiction which directly relates to the business
+of a medical marijuana treatment center.
+7. Making or filing a report or record that the medical
+marijuana treatment center knows to be false.
+8. Willfully failing to maintain a record required by this
+section or department rule.
+9. Willfully impeding or obstructing an employee or agent
+of the department in the furtherance of his or her official
+duties.
+10. Engaging in fraud or deceit, negligence, incompetence,
+or misconduct in the business practices of a medical marijuana
+treatment center.
+11. Making misleading, deceptive, or fraudulent
+representations in or related to the business practices of a
+medical marijuana treatment center.
+12. Having a license or the authority to engage in any
+regulated profession, occupation, or business that is related to
+the business practices of a medical marijuana treatment center
+suspended, revoked, or otherwise acted against by the licensing
+authority of any jurisdiction, including its agencies or
+subdivisions, for a violation that would constitute a violation
+under Florida law.
+13. Violating a lawful order of the department or an agency
+of the state, or failing to comply with a lawfully issued
+subpoena of the department or an agency of the state.
+(g) The department may suspend, revoke, or refuse to renew
+a medical marijuana treatment center license if the medical
+marijuana treatment center commits any of the violations in
+paragraph (f).
+(h) The department may adopt rules pursuant to ss.
+120.536(1) and 120.54 to implement this subsection.
+(11) PREEMPTION.—Regulation of cultivation, processing, and
+delivery of marijuana by medical marijuana treatment centers is
+preempted to the state except as provided in this subsection.
+(a) A medical marijuana treatment center cultivating or
+processing facility may not be located within 500 feet of the
+real property that comprises a public or private elementary
+school, middle school, or secondary school.
+(b)1. A county or municipality may, by ordinance, ban
+medical marijuana treatment center dispensing facilities from
+being located within the boundaries of that county or
+municipality. A county or municipality that does not ban
+dispensing facilities under this subparagraph may not place
+specific limits, by ordinance, on the number of dispensing
+facilities that may locate within that county or municipality.
+2. A municipality may determine by ordinance the criteria
+for the location of, and other permitting requirements that do
+not conflict with state law or department rule for, medical
+marijuana treatment center dispensing facilities located within
+the boundaries of that municipality. A county may determine by
+ordinance the criteria for the location of, and other permitting
+requirements that do not conflict with state law or department
+rule for, all such dispensing facilities located within the
+unincorporated areas of that county. Except as provided in
+paragraph (c), a county or municipality may not enact ordinances
+for permitting or for determining the location of dispensing
+facilities which are more restrictive than its ordinances
+permitting or determining the locations for pharmacies licensed
+under chapter 465. A municipality or county may not charge a
+medical marijuana treatment center a license or permit fee in an
+amount greater than the fee charged by such municipality or
+county to pharmacies. A dispensing facility location approved by
+a municipality or county pursuant to former s. 381.986(8)(b),
+Florida Statutes 2016, is not subject to the location
+requirements of this subsection.
+(c) A medical marijuana treatment center dispensing
+facility may not be located within 500 feet of the real property
+that comprises a public or private elementary school, middle
+school, or secondary school unless the county or municipality
+approves the location through a formal proceeding open to the
+public at which the county or municipality determines that the
+location promotes the public health, safety, and general welfare
+of the community.
+(d) This subsection does not prohibit any local
+jurisdiction from ensuring medical marijuana treatment center
+facilities comply with the Florida Building Code, the Florida
+Fire Prevention Code, or any local amendments to the Florida
+Building Code or the Florida Fire Prevention Code.
+(12) PENALTIES.—
+(a) A qualified physician commits a misdemeanor of the
+first degree, punishable as provided in s. 775.082 or s.
+775.083, if the qualified physician issues a physician
+certification for the medical use of marijuana for a patient
+without a reasonable belief that the patient is suffering from a
+qualifying medical condition.
+(b) A person who fraudulently represents that he or she has
+a qualifying medical condition to a qualified physician for the
+purpose of being issued a physician certification commits a
+misdemeanor of the first degree, punishable as provided in s.
+775.082 or s. 775.083.
+(c) A qualified patient who uses marijuana, not including
+low-THC cannabis, or a caregiver who administers marijuana, not
+including low-THC cannabis, in plain view of or in a place open
+to the general public; in a school bus, a vehicle, an aircraft,
+or a boat; or on the grounds of a school except as provided in
+s. 1006.062, commits a misdemeanor of the first degree,
+punishable as provided in s. 775.082 or s. 775.083.
+(d) A qualified patient or caregiver who cultivates
+marijuana or who purchases or acquires marijuana from any person
+or entity other than a medical marijuana treatment center
+violates s. 893.13 and is subject to the penalties provided
+therein.
+(e)1. A qualified patient or caregiver in possession of
+marijuana or a marijuana delivery device who fails or refuses to
+present his or her marijuana use registry identification card
+upon the request of a law enforcement officer commits a
+misdemeanor of the second degree, punishable as provided in s.
+775.082 or s. 775.083, unless it can be determined through the
+medical marijuana use registry that the person is authorized to
+be in possession of that marijuana or marijuana delivery device.
+2. A person charged with a violation of this paragraph may
+not be convicted if, before or at the time of his or her court
+or hearing appearance, the person produces in court or to the
+clerk of the court in which the charge is pending a medical
+marijuana use registry identification card issued to him or her
+which is valid at the time of his or her arrest. The clerk of
+the court is authorized to dismiss such case at any time before
+the defendant’s appearance in court. The clerk of the court may
+assess a fee of $5 for dismissing the case under this paragraph.
+(f) A caregiver who violates any of the applicable
+provisions of this section or applicable department rules, for
+the first offense, commits a misdemeanor of the second degree,
+punishable as provided in s. 775.082 or s. 775.083 and, for a
+second or subsequent offense, commits a misdemeanor of the first
+degree, punishable as provided in s. 775.082 or s. 775.083.
+(g) A qualified physician who issues a physician
+certification for marijuana or a marijuana delivery device and
+receives compensation from a medical marijuana treatment center
+related to the issuance of a physician certification for
+marijuana or a marijuana delivery device is subject to
+disciplinary action under the applicable practice act and s.
+456.072(1)(n).
+(h) A person transporting marijuana or marijuana delivery
+devices on behalf of a medical marijuana treatment center or
+marijuana testing laboratory who fails or refuses to present a
+transportation manifest upon the request of a law enforcement
+officer commits a misdemeanor of the second degree, punishable
+as provided in s. 775.082 or s. 775.083.
+(i) Persons and entities conducting activities authorized
+and governed by this section and s. 381.988 are subject to ss.
+456.053, 456.054, and 817.505, as applicable.
+(j) A person or entity that cultivates, processes,
+distributes, sells, or dispenses marijuana, as defined in s.
+29(b)(4), Art. X of the State Constitution, and is not licensed
+as a medical marijuana treatment center violates s. 893.13 and
+is subject to the penalties provided therein.
+(k) A person who manufactures, distributes, sells, gives,
+or possesses with the intent to manufacture, distribute, sell,
+or give marijuana or a marijuana delivery device that he or she
+holds out to have originated from a licensed medical marijuana
+treatment center but that is counterfeit commits a felony of the
+third degree, punishable as provided in s. 775.082, s. 775.083,
+or s. 775.084. For the purposes of this paragraph, the term
+“counterfeit” means marijuana; a marijuana delivery device; or a
+marijuana or marijuana delivery device container, seal, or label
+which, without authorization, bears the trademark, trade name,
+or other identifying mark, imprint, or device, or any likeness
+thereof, of a licensed medical marijuana treatment center and
+which thereby falsely purports or is represented to be the
+product of, or to have been distributed by, that licensed
+medical marijuana treatment facility.
+(l) Any person who possesses or manufactures a blank,
+forged, stolen, fictitious, fraudulent, counterfeit, or
+otherwise unlawfully issued medical marijuana use registry
+identification card commits a felony of the third degree,
+punishable as provided in s. 775.082, s. 775.083, or s. 775.084.
+(13) UNLICENSED ACTIVITY.—
+(a) If the department has probable cause to believe that a
+person or entity that is not registered or licensed with the
+department has violated this section, s. 381.988, or any rule
+adopted pursuant to this section, the department may issue and
+deliver to such person or entity a notice to cease and desist
+from such violation. The department also may issue and deliver a
+notice to cease and desist to any person or entity who aids and
+abets such unlicensed activity. The issuance of a notice to
+cease and desist does not constitute agency action for which a
+hearing under s. 120.569 or s. 120.57 may be sought. For the
+purpose of enforcing a cease and desist order, the department
+may file a proceeding in the name of the state seeking issuance
+of an injunction or a writ of mandamus against any person or
+entity who violates any provisions of such order.
+(b) In addition to the remedies under paragraph (a), the
+department may impose by citation an administrative penalty not
+to exceed $5,000 per incident. The citation shall be issued to
+the subject and must contain the subject’s name and any other
+information the department determines to be necessary to
+identify the subject, a brief factual statement, the sections of
+the law allegedly violated, and the penalty imposed. If the
+subject does not dispute the matter in the citation with the
+department within 30 days after the citation is served, the
+citation shall become a final order of the department. The
+department may adopt rules pursuant to ss. 120.536(1) and 120.54
+to implement this section. Each day that the unlicensed activity
+continues after issuance of a notice to cease and desist
+constitutes a separate violation. The department shall be
+entitled to recover the costs of investigation and prosecution
+in addition to the fine levied pursuant to the citation. Service
+of a citation may be made by personal service or by mail to the
+subject at the subject’s last known address or place of
+practice. If the department is required to seek enforcement of
+the cease and desist or agency order, it shall be entitled to
+collect attorney fees and costs.
+(c) In addition to or in lieu of any other administrative
+remedy, the department may seek the imposition of a civil
+penalty through the circuit court for any violation for which
+the department may issue a notice to cease and desist. The civil
+penalty shall be no less than $5,000 and no more than $10,000
+for each offense. The court may also award to the prevailing
+party court costs and reasonable attorney fees and, in the event
+the department prevails, may also award reasonable costs of
+investigation and prosecution.
+(d) In addition to the other remedies provided in this
+section, the department or any state attorney may bring an
+action for an injunction to restrain any unlicensed activity or
+to enjoin the future operation or maintenance of the unlicensed
+activity or the performance of any service in violation of this
+section.
+(e) The department must notify local law enforcement of
+such unlicensed activity for a determination of any criminal
+violation of chapter 893.
+(14) EXCEPTIONS TO OTHER LAWS.—
+(a) Notwithstanding s. 893.13, s. 893.135, s. 893.147, or
+any other provision of law, but subject to the requirements of
+this section, a qualified patient and the qualified patient’s
+caregiver may purchase from a medical marijuana treatment center
+for the patient’s medical use a marijuana delivery device and up
+to the amount of marijuana authorized in the physician
+certification, but may not possess more than a 70-day supply of
+marijuana at any given time and all marijuana purchased must
+remain in its original packaging.
+(b) Notwithstanding s. 893.13, s. 893.135, s. 893.147, or
+any other provision of law, but subject to the requirements of
+this section, an approved medical marijuana treatment center and
+its owners, managers, and employees may manufacture, possess,
+sell, deliver, distribute, dispense, and lawfully dispose of
+marijuana or a marijuana delivery device as provided in this
+section, s. 381.988, and by department rule. For the purposes of
+this subsection, the terms “manufacture,” “possession,”
+“deliver,” “distribute,” and “dispense” have the same meanings
+as provided in s. 893.02.
+(c) Notwithstanding s. 893.13, s. 893.135, s. 893.147, or
+any other provision of law, but subject to the requirements of
+this section, a certified marijuana testing laboratory,
+including an employee of a certified marijuana testing
+laboratory acting within the scope of his or her employment, may
+acquire, possess, test, transport, and lawfully dispose of
+marijuana as provided in this section, in s. 381.988, and by
+department rule.
+(d) A licensed medical marijuana treatment center and its
+owners, managers, and employees are not subject to licensure or
+regulation under chapter 465 or chapter 499 for manufacturing,
+possessing, selling, delivering, distributing, dispensing, or
+lawfully disposing of marijuana or a marijuana delivery device,
+as provided in this section, s. 381.988, and by department rule.
+(e) This subsection does not exempt a person from
+prosecution for a criminal offense related to impairment or
+intoxication resulting from the medical use of marijuana or
+relieve a person from any requirement under law to submit to a
+breath, blood, urine, or other test to detect the presence of a
+controlled substance.
+(f) Notwithstanding s. 893.13, s. 893.135, s. 893.147, or
+any other provision of law, but subject to the requirements of
+this section and pursuant to policies and procedures established
+pursuant to s. 1006.62(8), school personnel may possess
+marijuana that is obtained for medical use pursuant to this
+section by a student who is a qualified patient.
+(g) Notwithstanding s. 893.13, s. 893.135, s. 893.147, or
+any other provision of law, but subject to the requirements of
+this section, a research institute established by a public
+postsecondary educational institution, such as the H. Lee
+Moffitt Cancer Center and Research Institute, Inc., established
+under s. 1004.43, or a state university that has achieved the
+preeminent state research university designation under s.
+1001.7065 may possess, test, transport, and lawfully dispose of
+marijuana for research purposes as provided by this section.
+(15) APPLICABILITY.—This section does not limit the ability
+of an employer to establish, continue, or enforce a drug-free
+workplace program or policy. This section does not require an
+employer to accommodate the medical use of marijuana in any
+workplace or any employee working while under the influence of
+marijuana. This section does not create a cause of action
+against an employer for wrongful discharge or discrimination.
+Marijuana, as defined in this section, is not reimbursable under
+chapter 440.
+(16) FINES AND FEES.—Fines and fees collected by the
+department under this section shall be deposited in the Grants
+and Donations Trust Fund within the Department of Health.
+Section 4. Paragraph (uu) is added to subsection (1) of
+section 458.331, Florida Statutes, to read:
+458.331 Grounds for disciplinary action; action by the
+board and department.—
+(1) The following acts constitute grounds for denial of a
+license or disciplinary action, as specified in s. 456.072(2):
+(uu) Issuing a physician certification, as defined in s.
+381.986, in a manner out of compliance with the requirements of
+that section and rules adopted thereunder.
+Section 5. Paragraph (ww) is added to subsection (1) of
+section 459.015, Florida Statutes, to read:
+459.015 Grounds for disciplinary action; action by the
+board and department.—
+(1) The following acts constitute grounds for denial of a
+license or disciplinary action, as specified in s. 456.072(2):
+(ww) Issuing a physician certification, as defined in s.
+381.986, in a manner not in compliance with the requirements of
+that section and rules adopted thereunder.
+Section 6. Section 381.988, Florida Statutes, is created to
+read:
+381.988 Medical marijuana testing laboratories; marijuana
+tests conducted by a certified laboratory.—
+(1) A person or entity seeking to be a certified marijuana
+testing laboratory must:
+(a) Not be owned or controlled by a medical marijuana
+treatment center.
+(b) Submit a completed application accompanied by an
+application fee, as established by department rule.
+(c) Submit proof of an accreditation or a certification
+approved by the department issued by an accreditation or a
+certification organization approved by the department. The
+department shall adopt by rule a list of approved laboratory
+accreditations or certifications and accreditation or
+certification organizations.
+(d) Require all owners and managers to submit to and pass a
+level 2 background screening pursuant to s. 435.04 and shall
+deny certification if the person or entity has been found guilty
+of, or has entered a plea of guilty or nolo contendere to,
+regardless of adjudication, any offense listed in chapter 837,
+chapter 895, or chapter 896 or similar law of another
+jurisdiction.
+1. Such owners and managers must submit a full set of
+fingerprints to the department or to a vendor, entity, or agency
+authorized by s. 943.053(13). The department, vendor, entity, or
+agency shall forward the fingerprints to the Department of Law
+Enforcement for state processing, and the Department of Law
+Enforcement shall forward the fingerprints to the Federal Bureau
+of Investigation for national processing.
+2. Fees for state and federal fingerprint processing and
+retention shall be borne by such owners or managers. The state
+cost for fingerprint processing shall be as provided in s.
+943.053(3)(e) for records provided to persons or entities other
+than those specified as exceptions therein.
+3. Fingerprints submitted to the Department of Law
+Enforcement pursuant to this paragraph shall be retained by the
+Department of Law Enforcement as provided in s. 943.05(2)(g) and
+(h) and, when the Department of Law Enforcement begins
+participation in the program, enrolled in the Federal Bureau of
+Investigation’s national retained print arrest notification
+program. Any arrest record identified shall be reported to the
+department.
+(e) Demonstrate to the department the capability of meeting
+the standards for certification required by this subsection, and
+the testing requirements of s. 381.986 and this section and
+rules adopted thereunder.
+(2) The department shall adopt rules pursuant to ss.
+120.536(1) and 120.54 establishing a procedure for initial
+certification and biennial renewal, including initial
+application and biennial renewal fees sufficient to cover the
+costs of administering this certification program. The
+department shall renew the certification biennially if the
+laboratory meets the requirements of this section and pays the
+biennial renewal fee.
+(3) The department shall adopt rules pursuant to ss.
+120.536(1) and 120.54 establishing the standards for
+certification of marijuana testing laboratories under this
+section. The Department of Agriculture and Consumer Services and
+the Department of Environmental Protection shall assist the
+department in developing the rule, which must include, but is
+not limited to:
+(a) Security standards.
+(b) Minimum standards for personnel.
+(c) Sample collection method and process standards.
+(d) Proficiency testing for tetrahydrocannabinol potency,
+concentration of cannabidiol, and contaminants unsafe for human
+consumption, as determined by department rule.
+(e) Reporting content, format, and frequency.
+(f) Audits and onsite inspections.
+(g) Quality assurance.
+(h) Equipment and methodology.
+(i) Chain of custody.
+(j) Any other standard the department deems necessary to
+ensure the health and safety of the public.
+(4) A marijuana testing laboratory may acquire marijuana
+only from a medical marijuana treatment center. A marijuana
+testing laboratory is prohibited from selling, distributing, or
+transferring marijuana received from a marijuana treatment
+center, except that a marijuana testing laboratory may transfer
+a sample to another marijuana testing laboratory in this state.
+(5) A marijuana testing laboratory must properly dispose of
+all samples it receives, unless transferred to another marijuana
+testing laboratory, after all necessary tests have been
+conducted and any required period of storage has elapsed, as
+established by department rule.
+(6) A marijuana testing laboratory shall use the computer
+software tracking system selected by the department under s.
+381.986.
+(7) The following acts constitute grounds for which
+disciplinary action specified in subsection (8) may be taken
+against a certified marijuana testing laboratory:
+(a) Permitting unauthorized persons to perform technical
+procedures or issue reports.
+(b) Demonstrating incompetence or making consistent errors
+in the performance of testing or erroneous reporting.
+(c) Performing a test and rendering a report thereon to a
+person or entity not authorized by law to receive such services.
+(d) Failing to file any report required under this section
+or s. 381.986 or the rules adopted thereunder.
+(e) Reporting a test result if the test was not performed.
+(f) Failing to correct deficiencies within the time
+required by the department.
+(g) Violating or aiding and abetting in the violation of
+any provision of s. 381.986 or this section or any rules adopted
+thereunder.
+(8) The department may refuse to issue or renew, or may
+suspend or revoke, the certification of a marijuana testing
+laboratory that is found to be in violation of this section or
+any rules adopted hereunder. The department may impose fines for
+violations of this section or rules adopted thereunder, based on
+a schedule adopted in rule. In determining the administrative
+action to be imposed for a violation, the department must
+consider the following factors:
+(a) The severity of the violation, including the
+probability of death or serious harm to the health or safety of
+any person that may result or has resulted; the severity or
+potential harm; and the extent to which s. 381.986 or this
+section were violated.
+(b) The actions taken by the marijuana testing laboratory
+to correct the violation or to remedy the complaint.
+(c) Any previous violation by the marijuana testing
+laboratory.
+(d) The financial benefit to the marijuana testing
+laboratory of committing or continuing the violation.
+(9) The department may adopt rules pursuant to ss.
+120.536(1) and 120.54 to implement this section.
+(10) Fees collected by the department under this section
+shall be deposited in the Grants and Donations Trust Fund within
+the Department of Health.
+Section 7. Section 381.989, Florida Statutes, is created to
+read:
+381.989 Public education campaigns.—
+(1) DEFINITIONS.—As used in this section, the term:
+(a) “Cannabis” has the same meaning as in s. 893.02.
+(b) “Department” means the Department of Health.
+(c) “Marijuana” has the same meaning as in s. 381.986.
+(2) STATEWIDE CANNABIS AND MARIJUANA EDUCATION AND ILLICIT
+USE PREVENTION CAMPAIGN.—
+(a) The department shall implement a statewide cannabis and
+marijuana education and illicit use prevention campaign to
+publicize accurate information regarding:
+1. The legal requirements for licit use and possession of
+marijuana in this state.
+2. Safe use of marijuana, including preventing access by
+persons other than qualified patients as defined in s. 381.986,
+particularly children.
+3. The short-term and long-term health effects of cannabis
+and marijuana use, particularly on minors and young adults.
+4. Other cannabis-related and marijuana-related education
+determined by the department to be necessary to the public
+health and safety.
+(b) The department shall provide educational materials
+regarding the eligibility for medical use of marijuana by
+individuals diagnosed with a terminal condition to individuals
+that provide palliative care or hospice services.
+(c) The department may use television messaging, radio
+broadcasts, print media, digital strategies, social media, and
+any other form of messaging deemed necessary and appropriate by
+the department to implement the campaign. The department may
+work with school districts, community organizations, and
+businesses and business organizations and other entities to
+provide training and programming.
+(d) The department may contract with one or more vendors to
+implement the campaign.
+(e) The department shall contract with an independent
+entity to conduct annual evaluations of the campaign. The
+evaluations shall assess the reach and impact of the campaign,
+success in educating the citizens of the state regarding the
+legal parameters for marijuana use, success in preventing
+illicit access by adults and youth, and success in preventing
+negative health impacts from the legalization of marijuana. The
+first year of the program, the evaluator shall conduct surveys
+to establish baseline data on youth and adult cannabis use, the
+attitudes of youth and the general public toward cannabis and
+marijuana, and any other data deemed necessary for long-term
+analysis. By January 31 of each year, the department shall
+submit to the Governor, the President of the Senate, and the
+Speaker of the House of Representatives the annual evaluation of
+the campaign.
+(3) STATEWIDE IMPAIRED DRIVING EDUCATION CAMPAIGN.—
+(a) The Department of Highway Safety and Motor Vehicles
+shall implement a statewide impaired driving education campaign
+to raise awareness and prevent marijuana-related and cannabis
+related impaired driving and may contract with one or more
+vendors to implement the campaign. The Department of Highway
+Safety and Motor Vehicles may use television messaging, radio
+broadcasts, print media, digital strategies, social media, and
+any other form of messaging deemed necessary and appropriate by
+the department to implement the campaign.
+(b) At a minimum, the Department of Highway Safety and
+Motor Vehicles or a contracted vendor shall establish baseline
+data on the number of marijuana-related citations for driving
+under the influence, marijuana-related traffic arrests,
+marijuana-related traffic accidents, and marijuana-related
+traffic fatalities, and shall track these measures annually
+thereafter. The Department of Highway Safety and Motor Vehicles
+or a contracted vendor shall annually evaluate and compile a
+report on the efficacy of the campaign based on those measures
+and other measures established by the Department of Highway
+Safety and Motor Vehicles. By January 31 of each year, the
+Department of Highway Safety and Motor Vehicles shall submit the
+report on the evaluation of the campaign to the Governor, the
+President of the Senate, and the Speaker of the House of
+Representatives.
+Section 8. Subsection (1) of section 385.211, Florida
+Statutes, is amended to read:
+385.211 Refractory and intractable epilepsy treatment and
+research at recognized medical centers.—
+(1) As used in this section, the term “low-THC cannabis”
+means “low-THC cannabis” as defined in s. 381.986 that is
+dispensed only from a dispensing organization as defined in
+former s. 381.986, Florida Statutes 2016, or a medical marijuana
+treatment center as defined in s. 381.986.
+Section 9. Paragraphs (b) through (e) of subsection (2) of
+section 499.0295, Florida Statutes, are redesignated as
+paragraphs (a) through (d), respectively, and present paragraphs
+(a) and (c) of that subsection, and subsection (3) of that
+section are amended, to read:
+499.0295 Experimental treatments for terminal conditions.—
+(2) As used in this section, the term:
+(a) “Dispensing organization” means an organization
+approved by the Department of Health under s. 381.986(5) to
+cultivate, process, transport, and dispense low-THC cannabis,
+medical cannabis, and cannabis delivery devices.
+(b)(c) “Investigational drug, biological product, or
+device” means:
+1. a drug, biological product, or device that has
+successfully completed phase 1 of a clinical trial but has not
+been approved for general use by the United States Food and Drug
+Administration and remains under investigation in a clinical
+trial approved by the United States Food and Drug
+Administration; or
+2. Medical cannabis that is manufactured and sold by a
+dispensing organization.
+(3) Upon the request of an eligible patient, a manufacturer
+may, or upon a physician’s order pursuant to s. 381.986, a
+dispensing organization may:
+(a) Make its investigational drug, biological product, or
+device available under this section.
+(b) Provide an investigational drug, biological product, or
+device, or cannabis delivery device as defined in s. 381.986 to
+an eligible patient without receiving compensation.
+(c) Require an eligible patient to pay the costs of, or the
+costs associated with, the manufacture of the investigational
+drug, biological product, or device, or cannabis delivery device
+as defined in s. 381.986.
+Section 10. Subsection (3) of section 893.02, Florida
+Statutes, is amended to read:
+893.02 Definitions.—The following words and phrases as used
+in this chapter shall have the following meanings, unless the
+context otherwise requires:
+(3) “Cannabis” means all parts of any plant of the genus
+Cannabis, whether growing or not; the seeds thereof; the resin
+extracted from any part of the plant; and every compound,
+manufacture, salt, derivative, mixture, or preparation of the
+plant or its seeds or resin. The term does not include
+“marijuana,” “low-THC cannabis,” as defined in s. 381.986, if
+manufactured, possessed, sold, purchased, delivered,
+distributed, or dispensed, in conformance with s. 381.986.
+Section 11. Section 1004.4351, Florida Statutes, is created
+to read:
+1004.4351 Medical marijuana research and education.—
+(1) SHORT TITLE.—This section shall be known and may be
+cited as the “Medical Marijuana Research and Education Act.”
+(2) LEGISLATIVE FINDINGS.—The Legislature finds that:
+(a) The present state of knowledge concerning the use of
+marijuana to alleviate pain and treat illnesses is limited
+because permission to perform clinical studies on marijuana is
+difficult to obtain, with access to research-grade marijuana so
+restricted that little or no unbiased studies have been
+performed.
+(b) Under the State Constitution, marijuana is available
+for the treatment of certain debilitating medical conditions.
+(c) Additional clinical studies are needed to ensure that
+the residents of this state obtain the correct dosing,
+formulation, route, modality, frequency, quantity, and quality
+of marijuana for specific illnesses.
+(d) An effective medical marijuana research and education
+program would mobilize the scientific, educational, and medical
+resources that presently exist in this state to determine the
+appropriate and best use of marijuana to treat illness.
+(3) DEFINITIONS.—As used in this section, the term:
+(a) “Board” means the Medical Marijuana Research and
+Education Board.
+(b) “Coalition” means the Coalition for Medical Marijuana
+Research and Education.
+(c) “Marijuana” has the same meaning as provided in s. 29,
+Art. X of the State Constitution.
+(4) COALITION FOR MEDICAL MARIJUANA RESEARCH AND
+EDUCATION.—
+(a) There is established within the H. Lee Moffitt Cancer
+Center and Research Institute, Inc., the Coalition for Medical
+Marijuana Research and Education. The purpose of the coalition
+is to conduct rigorous scientific research, provide education,
+disseminate research, and guide policy for the adoption of a
+statewide policy on ordering and dosing practices for the
+medical use of marijuana. The coalition shall be physically
+located at the H. Lee Moffitt Cancer Center and Research
+Institute, Inc.
+(b) The Medical Marijuana Research and Education Board is
+established to direct the operations of the coalition. The board
+shall be composed of seven members appointed by the chief
+executive officer of the H. Lee Moffitt Cancer Center and
+Research Institute, Inc. Board members must have experience in a
+variety of scientific and medical fields, including, but not
+limited to, oncology, neurology, psychology, pediatrics,
+nutrition, and addiction. Members shall be appointed to 4-year
+terms and may be reappointed to serve additional terms. The
+chair shall be elected by the board from among its members to
+serve a 2-year term. The board shall meet at least semiannually
+at the call of the chair or, in his or her absence or
+incapacity, the vice chair. Four members constitute a quorum. A
+majority vote of the members present is required for all actions
+of the board. The board may prescribe, amend, and repeal a
+charter governing the manner in which it conducts its business.
+A board member shall serve without compensation but is entitled
+to be reimbursed for travel expenses by the coalition or the
+organization he or she represents in accordance with s. 112.061.
+(c) The coalition shall be administered by a coalition
+director, who shall be appointed by and serve at the pleasure of
+the board. The coalition director shall, subject to the approval
+of the board:
+1. Propose a budget for the coalition.
+2. Foster the collaboration of scientists, researchers, and
+other appropriate personnel in accordance with the coalition’s
+charter.
+3. Identify and prioritize the research to be conducted by
+the coalition.
+4. Prepare the Medical Marijuana Research and Education
+Plan for submission to the board.
+5. Apply for grants to obtain funding for research
+conducted by the coalition.
+6. Perform other duties as determined by the board.
+(d) The board shall advise the Board of Governors, the
+State Surgeon General, the Governor, and the Legislature with
+respect to medical marijuana research and education in this
+state. The board shall explore methods of implementing and
+enforcing medical marijuana laws in relation to cancer control,
+research, treatment, and education.
+(e) The board shall annually adopt a plan for medical
+marijuana research, known as the “Medical Marijuana Research and
+Education Plan,” which must be in accordance with state law and
+coordinate with existing programs in this state. The plan must
+include recommendations for the coordination and integration of
+medical, pharmacological, nursing, paramedical, community, and
+other resources connected with the treatment of debilitating
+medical conditions; research related to the treatment of such
+medical conditions; and education.
+(f) By February 15 of each year, the board shall issue a
+report to the Governor, the President of the Senate, and the
+Speaker of the House of Representatives on research projects,
+community outreach initiatives, and future plans for the
+coalition.
+(g) Beginning January 15, 2018, and quarterly thereafter,
+the Department of Health shall submit to the board a data set
+that includes, for each patient registered in the medical
+marijuana use registry, the patient’s qualifying medical
+condition and the daily dose amount and forms of marijuana
+certified for the patient.
+(5) RESPONSIBILITIES OF THE H. LEE MOFFITT CANCER CENTER
+AND RESEARCH INSTITUTE, INC.—The H. Lee Moffitt Cancer Center
+and Research Institute, Inc., shall allocate staff and provide
+information and assistance, as the coalition’s budget permits,
+to assist the board in fulfilling its responsibilities.
+Section 12. Subsection (1) of section 1004.441, Florida
+Statutes, is amended to read:
+1004.441 Refractory and intractable epilepsy treatment and
+research.—
+(1) As used in this section, the term “low-THC cannabis”
+means “low-THC cannabis” as defined in s. 381.986 that is
+dispensed only from a dispensing organization as defined in
+former s. 381.986, Florida Statutes 2016, or a medical marijuana
+treatment center as defined in s. 381.986.
+Section 13. Subsection (8) is added to section 1006.062,
+Florida Statutes, to read:
+1006.062 Administration of medication and provision of
+medical services by district school board personnel.—
+(8) Each district school board shall adopt a policy and a
+procedure for allowing a student who is a qualified patient, as
+defined in s. 381.986, to use marijuana obtained pursuant to
+that section. Such policy and procedure shall ensure access by
+the qualified patient; identify how the marijuana will be
+received, accounted for, and stored; and establish processes to
+prevent access by other students and school personnel whose
+access would be unnecessary for the implementation of the
+policy.
+Section 14. Department of Health; authority to adopt rules;
+cause of action.—
+(1) EMERGENCY RULEMAKING.—
+(a) The Department of Health and the applicable boards
+shall adopt emergency rules pursuant to s. 120.54(4), Florida
+Statutes, and this section necessary to implement ss. 381.986
+and 381.988, Florida Statutes. If an emergency rule adopted
+under this section is held to be unconstitutional or an invalid
+exercise of delegated legislative authority, and becomes void,
+the department or the applicable boards may adopt an emergency
+rule pursuant to this section to replace the rule that has
+become void. If the emergency rule adopted to replace the void
+emergency rule is also held to be unconstitutional or an invalid
+exercise of delegated legislative authority and becomes void,
+the department and the applicable boards must follow the
+nonemergency rulemaking procedures of the Administrative
+Procedures Act to replace the rule that has become void.
+(b) For emergency rules adopted under this section, the
+department and the applicable boards need not make the findings
+required by s. 120.54(4)(a), Florida Statutes. Emergency rules
+adopted under this section are exempt from ss. 120.54(3)(b) and
+120.541, Florida Statutes. The department and the applicable
+boards shall meet the procedural requirements in s. 120.54(a),
+Florida Statutes, if the department or the applicable boards
+have, before the effective date of this act, held any public
+workshops or hearings on the subject matter of the emergency
+rules adopted under this subsection. Challenges to emergency
+rules adopted under this subsection are subject to the time
+schedules provided in s. 120.56(5), Florida Statutes.
+(c) Emergency rules adopted under this section are exempt
+from s. 120.54(4)(c), Florida Statutes, and shall remain in
+effect until replaced by rules adopted under the nonemergency
+rulemaking procedures of the Administrative Procedures Act. By
+January 1, 2018, the department and the applicable boards shall
+initiate nonemergency rulemaking pursuant to the Administrative
+Procedures Act to replace all emergency rules adopted under this
+section by publishing a notice of rule development in the
+Florida Administrative Register. Except as provided in paragraph
+(a), after January 1, 2018, the department and applicable boards
+may not adopt rules pursuant to the emergency rulemaking
+procedures provided in this section.
+(2) CAUSE OF ACTION.—
+(a) As used in s. 29(d)(3), Article X of the State
+Constitution, the term:
+1. “Issue regulations” means the filing by the department
+of a rule or emergency rule for adoption with the Department of
+State.
+2. “Judicial relief” means an action for declaratory
+judgment pursuant to chapter 86, Florida Statutes.
+(b) The venue for actions brought against the department
+pursuant to s. 29(d)(3), Article X of the State Constitution
+shall be in the circuit court in and for Leon County.
+(c) If the department is not issuing patient and caregiver
+identification cards or licensing medical marijuana treatment
+centers by October 3, 2017, the following shall be a defense to
+a cause of action brought under s. 29(d)(3), Article X of the
+State Constitution:
+1. The department is unable to issue patient and caregiver
+identification cards or license medical marijuana treatment
+centers due to litigation challenging a rule as an invalid
+exercise of delegated legislative authority or unconstitutional.
+2. The department is unable to issue patient or caregiver
+identification cards or license medical marijuana treatment
+centers due to a rule being held as an invalid exercise of
+delegated legislative authority or unconstitutional.
+Section 15. Department of Law Enforcement; training related
+to medical use of marijuana.-The Department of Law Enforcement
+shall develop a 4-hour online initial training course, and a 2
+hour online continuing education course, which shall be made
+available for use by all law enforcement agencies in this state.
+Such training shall cover the legal parameters of marijuana
+related activities governed by ss. 381.986 and 381.988, Florida
+Statutes, relating to criminal laws governing marijuana.
+Section 16. Section 385.212, Florida Statutes, is amended
+to read:
+385.212 Powers and duties of the Department of Health;
+Office of Medical Marijuana Compassionate Use.—
+(1) The Department of Health shall establish an Office of
+Medical Marijuana Compassionate Use under the direction of the
+Deputy State Health Officer.
+(2) The Office of Medical Marijuana Compassionate Use may
+enhance access to investigational new drugs for Florida patients
+through approved clinical treatment plans or studies. The Office
+of Medical Marijuana Compassionate Use may:
+(a) Create a network of state universities and medical
+centers recognized pursuant to s. 381.925.
+(b) Make any necessary application to the United States
+Food and Drug Administration or a pharmaceutical manufacturer to
+facilitate enhanced access to medical compassionate use of
+marijuana for Florida patients.
+(c) Enter into any agreements necessary to facilitate
+enhanced access to medical compassionate use of marijuana for
+Florida patients.
+(3) The department may adopt rules necessary to implement
+this section.
+(4)  The Office of Medical Marijuana Use shall administer
+and enforce s. 381.986.
+Section 17. If any provision of this act or its application
+to any person or circumstance is held invalid, the invalidity
+does not affect other provisions or applications of this act
+which can be given effect without the invalid provision or
+application, and to this end the provisions of this act are
+severable.
+Section 18. The Division of Law Revision and Information is
+directed to replace the phrase “the effective date of this act”
+wherever it occurs in this act with the date the act becomes a
+law.
+Section 19. (1) For the 2017-2018 fiscal year, 55 full-time
+equivalent positions, with associated salary rate of 2,198,860,
+are authorized and the sums of $3.5 million in nonrecurring
+funds from the General Revenue Fund and $4,055,292 in recurring
+funds and $1,238,148 in nonrecurring funds from the Grants and
+Donations Trust Fund are appropriated to the Department of
+Health for the purpose of implementing the requirements of this
+act. Of the funds appropriated, $3,158,572 in recurring funds
+and $1,238,148 in nonrecurring funds from the Grants and
+Donations Trust Fund and 27 full-time equivalent positions shall
+be placed in reserve. The Department of Health is authorized to
+submit budget amendments requesting the release of funds being
+held in reserve pursuant to chapter 216, Florida Statutes
+contingent upon need and demonstration of fee collections to
+support the budget authority.
+(2) For the 2017-2018 fiscal year, the sum of $500,000 in
+nonrecurring funds from the General Revenue Fund is appropriated
+to the Department of Health to implement the statewide cannabis
+and marijuana education and illicit use prevention campaign
+established under s. 381.989, Florida Statutes.
+(3) For the 2017-2018 fiscal year, the sum of $5 million in
+nonrecurring funds from the Highway Safety Operating Trust Fund
+are appropriated to the Department of Highway Safety and Motor
+Vehicles to implement the statewide impaired driving education
+campaign established under s. 381.989, Florida Statutes.
+(4) For the 2017-2018 fiscal year, the sum of $100,000 in
+recurring funds from the Highway Safety Operating Trust Fund is
+appropriated to the Department of Highway Safety and Motor
+Vehicles for the purpose of training additional law enforcement
+officers as drug recognition experts.
+(5) For the 2017-2018 fiscal year, the sum of $750,000 in
+nonrecurring funds from the General Revenue Fund is provided for
+the Coalition for Medicinal Cannabis Research and Education at
+the H. Lee Moffitt Cancer Center and Research Institute, Inc.,
+to conduct medical cannabis research.
+Section 20. This act shall take effect upon becoming a law.

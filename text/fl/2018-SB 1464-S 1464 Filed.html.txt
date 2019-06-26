@@ -1,0 +1,47 @@
+A bill to be entitled                      
+An act relating to the Florida False Claims Act;
+amending s. 68.084, F.S.; authorizing the Attorney
+General, on behalf of the Department of Legal Affairs,
+to voluntarily dismiss certain civil actions;
+providing an exception; providing that the department
+may not dismiss such actions on behalf of the state at
+a later date under certain circumstances; amending s.
+68.087, F.S.; deleting a provision prohibiting a court
+from having jurisdiction over an action brought by an
+employee or former employee of state government;
+providing an effective date.
+
+Be It Enacted by the Legislature of the State of Florida:
+
+Section 1. Paragraph (a) of subsection (2) and subsection
+(3) of section 68.084, Florida Statutes, are amended to read:
+68.084 Rights of the parties in civil actions.—
+(2)(a) The department, or the Attorney General, as head of
+the department, may at any point voluntarily dismiss the action
+notwithstanding the objections of the person initiating the
+action, unless the department elected not to proceed with the
+action and the person who initiated the action proceeds with the
+action under subsection (3).
+(3) If the department elects not to proceed with the
+action, the person who initiated the action has the right to
+conduct the action. If the Attorney General, as head of the
+department, or the Chief Financial Officer, as head of the
+Department of Financial Services, so requests, it shall be
+served with copies of all pleadings and motions filed in the
+action along with copies of all deposition transcripts at the
+requesting department’s expense. When a person proceeds with the
+action, the court, without limiting the rights of the person
+initiating the action, may nevertheless permit the department to
+intervene and take over the action, except to dismiss the
+action, on behalf of the state at a later date upon showing of
+good cause.
+Section 2. Subsection (4) of section 68.087, Florida
+Statutes, is amended to read:
+68.087 Exemptions to civil actions.—
+(4) No court shall have jurisdiction over an action where
+the person bringing the action under s. 68.083(2) is:
+(a) acting as an attorney for state government; or
+(b) An employee or former employee of state government, and
+the action is based, in whole or in part, upon information
+obtained in the course or scope of government employment.
+Section 3. This act shall take effect July 1, 2018.

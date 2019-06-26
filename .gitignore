@@ -1,3 +1,5 @@
 version-export.csv
 *.pyc
 raw/
+.DS_Store
+.python-version

@@ -1,0 +1,329 @@
+A bill to be entitled                      
+An act relating to determining bail; amending s.
+903.046, F.S.; revising the purpose of a bail
+determination; creating a presumption that individuals
+arrested for allegedly committing nonviolent
+misdemeanors be released on nonmonetary conditions or
+nonmonetary restrictions; defining the term
+“nonviolent misdemeanor”; restricting the
+determinations a court must consider for bail or other
+conditions for persons committing crimes other than
+nonviolent misdemeanor offenses; amending s. 903.0471,
+F.S.; authorizing a court to revoke pretrial release
+and order pretrial detention if the court finds
+probable cause to believe that the defendant committed
+a new violent crime or a new dangerous crime while on
+pretrial release; amending s. 907.041, F.S.; revising
+legislative intent; making technical changes; amending
+s. 790.065, F.S.; conforming a cross-reference;
+providing an effective date.
+
+Be It Enacted by the Legislature of the State of Florida:
+
+Section 1. Section 903.046, Florida Statutes, is amended to
+read:
+903.046 Purpose of, presumption in, and criteria for bail
+determination.—
+(1) The purpose of a bail determination in criminal
+proceedings is to ensure the appearance of a violent the
+criminal defendant at subsequent proceedings and to protect the
+community against unreasonable danger from the violent criminal
+defendant.
+(2) There is a presumption that an individual arrested for
+allegedly committing a nonviolent misdemeanor crime will be
+released on nonmonetary conditions or nonmonetary restrictions
+while he or she awaits trial. As used in this subsection, the
+term “nonviolent misdemeanor” excludes assault as defined in s.
+784.011.
+(3)(2) For an individual who is alleged to have committed a
+crime not included in subsection (2), when determining whether
+to release a defendant on bail or other conditions, and what
+that bail or those conditions may be, the court shall consider:
+(a) The nature and circumstances of the offense charged.
+(b) The weight of the evidence against the defendant.
+(c) The defendant’s family ties, length of residence in the
+community, employment history, financial resources, and mental
+condition.
+(d) The defendant’s past and present conduct, including any
+record of convictions, previous flight to avoid prosecution, or
+failure to appear at court proceedings. However, any defendant
+who had failed to appear on the day of any required court
+proceeding in the case at issue, but who had later voluntarily
+appeared or surrendered, shall not be eligible for a
+recognizance bond; and any defendant who failed to appear on the
+day of any required court proceeding in the case at issue and
+who was later arrested shall not be eligible for a recognizance
+bond or for any form of bond which does not require a monetary
+undertaking or commitment equal to or greater than $2,000 or
+twice the value of the monetary commitment or undertaking of the
+original bond, whichever is greater. Notwithstanding anything in
+this section, the court has discretion in determining conditions
+of release if the defendant proves circumstances beyond his or
+her control for the failure to appear. This section may not be
+construed as imposing additional duties or obligations on a
+governmental entity related to monetary bonds.
+(e) The nature and probability of danger which the
+defendant’s release poses to the community.
+(f) The source of funds used to post bail or procure an
+appearance bond, particularly whether the proffered funds, real
+property, property, or any proposed collateral or bond premium
+may be linked to or derived from the crime alleged to have been
+committed or from any other criminal or illicit activities. The
+burden of establishing the noninvolvement in or nonderivation
+from criminal or other illicit activity of such proffered funds,
+real property, property, or any proposed collateral or bond
+premium falls upon the defendant or other person proffering them
+to obtain the defendant’s release.
+(g) Whether the defendant is already on release pending
+resolution of another criminal proceeding or on probation,
+parole, or other release pending completion of a sentence.
+(h) The street value of any drug or controlled substance
+connected to or involved in the criminal charge. It is the
+finding and intent of the Legislature that crimes involving
+drugs and other controlled substances are of serious social
+concern, that the flight of defendants to avoid prosecution is
+of similar serious social concern, and that frequently such
+defendants are able to post monetary bail using the proceeds of
+their unlawful enterprises to defeat the social utility of
+pretrial bail. Therefore, the courts should carefully consider
+the utility and necessity of substantial bail in relation to the
+street value of the drugs or controlled substances involved.
+(i) The nature and probability of intimidation and danger
+to victims.
+(j) Whether there is probable cause to believe that the
+defendant committed a new crime while on pretrial release.
+(k) Any other facts that the court considers relevant.
+(l) Whether the crime charged is a violation of chapter 874
+or alleged to be subject to enhanced punishment under chapter
+874 or reclassification under s. 843.22. If any such violation
+is charged against a defendant or if the defendant is charged
+with a crime that is alleged to be subject to such enhancement
+or reclassification, he or she is not eligible for release on
+bail or surety bond until the first appearance on the case in
+order to ensure the full participation of the prosecutor and the
+protection of the public.
+(m) Whether the defendant, other than a defendant whose
+only criminal charge is a misdemeanor offense under chapter 316,
+is required to register as a sexual offender under s. 943.0435
+or a sexual predator under s. 775.21; and, if so, he or she is
+not eligible for release on bail or surety bond until the first
+appearance on the case in order to ensure the full participation
+of the prosecutor and the protection of the public.
+Section 2. Section 903.0471, Florida Statutes, is amended
+to read:
+903.0471 Violation of condition of pretrial release.
+Notwithstanding s. 907.041, A court may, on its own motion,
+revoke pretrial release and order pretrial detention if the
+court finds probable cause to believe that the defendant
+committed a new violent crime or a new dangerous crime, as
+defined in s. 907.041, while on pretrial release.
+Section 3. Subsection (1), paragraph (a) of subsection (3),
+and paragraphs (a), (b), and (c) of subsection (4) of section
+907.041, Florida Statutes, are amended to read:
+907.041 Pretrial detention and release.—
+(1) LEGISLATIVE INTENT.—It is the policy of this state that
+persons committing violent or serious criminal offenses, posing
+a threat to the safety of the community or the integrity of the
+judicial process, or failing to appear at trial be detained upon
+arrest. However, persons committing nonviolent misdemeanor
+offenses and not posing a threat to the safety of the community
+found to meet specified criteria shall be released under certain
+conditions until proceedings are concluded and adjudication has
+been determined. The Legislature finds that this policy of
+pretrial detention and release will assure the detention of
+those persons posing a threat to society while reducing the
+costs for incarceration by releasing, until trial, those persons
+not considered a danger to the community who meet certain
+criteria. It is the intent of the Legislature that the primary
+consideration for detaining an individual is whether the
+individual presents a be the protection of the community from
+risk of physical harm to persons.
+(3) RELEASE ON NONMONETARY CONDITIONS.—
+(a) It is the intent of the Legislature that individuals
+arrested for nonviolent misdemeanors who do not pose a threat to
+the safety of the community shall be released to create a
+presumption in favor of release on nonmonetary conditions while
+they await trial for any person who is granted pretrial release
+unless such person is charged with a dangerous crime as defined
+in subsection (4). Such person shall be released on monetary
+conditions if it is determined that such monetary conditions are
+necessary to assure the presence of the person at trial or at
+other proceedings, to protect the community from risk of
+physical harm to persons, to assure the presence of the accused
+at trial, or to assure the integrity of the judicial process.
+(4) PRETRIAL DETENTION.—
+(a) A person charged with a dangerous crime, as defined in
+paragraph (b), may not be granted pretrial release at a first
+appearance hearing; however, the court may release the accused
+person on electronic monitoring or on recognizance bond if the
+findings on the record of facts and circumstances warrant such a
+release.
+(b) As used in this subsection, “dangerous crime” means any
+of the following:
+1. Arson;
+2. Aggravated assault;
+3. Aggravated battery;
+4. Illegal use of explosives;
+5. Child abuse or aggravated child abuse;
+6. Abuse of an elderly person or disabled adult, or
+aggravated abuse of an elderly person or disabled adult;
+7. Aircraft piracy;
+8. Kidnapping;
+9. Homicide;
+10. Manslaughter;
+11. Sexual battery;
+12. Robbery;
+13. Carjacking;
+14. Lewd, lascivious, or indecent assault or act upon or in
+presence of a child under the age of 16 years;
+15. Sexual activity with a child, who is 12 years of age or
+older but less than 18 years of age, by or at solicitation of
+person in familial or custodial authority;
+16. Burglary of a dwelling;
+17. Stalking and aggravated stalking;
+18. Act of domestic violence as defined in s. 741.28;
+19. Home invasion robbery;
+20. Act of terrorism as defined in s. 775.30;
+21. Manufacturing any substances in violation of chapter
+893;
+22. Attempting or conspiring to commit any such crime; and
+23. Human trafficking.
+(b) No person charged with a dangerous crime shall be
+granted nonmonetary pretrial release at a first appearance
+hearing; however, the court shall retain the discretion to
+release an accused on electronic monitoring or on recognizance
+bond if the findings on the record of facts and circumstances
+warrant such a release.
+(c) The court may order pretrial detention if it finds a
+substantial probability, based on a defendant’s past and present
+patterns of behavior, the criteria in s. 903.046, and any other
+relevant facts, that any of the following circumstances exist:
+1. The defendant has previously violated conditions of
+release and that no further conditions of release are reasonably
+likely to assure the defendant’s appearance at subsequent
+proceedings;
+2. The defendant, with the intent to obstruct the judicial
+process, has threatened, intimidated, or injured any victim,
+potential witness, juror, or judicial officer, or has attempted
+or conspired to do so, and that no condition of release will
+reasonably prevent the obstruction of the judicial process;
+3. The defendant is charged with trafficking in controlled
+substances as defined by s. 893.135, that there is a substantial
+probability that the defendant has committed the offense, and
+that no conditions of release will reasonably assure the
+defendant’s appearance at subsequent criminal proceedings;
+4. The defendant is charged with DUI manslaughter, as
+defined by s. 316.193, and that there is a substantial
+probability that the defendant committed the crime and that the
+defendant poses a threat of harm to the community; a condition
+conditions that would support a finding by the court pursuant to
+this subparagraph that the defendant poses a threat of harm to
+the community is if include, but are not limited to, any of the
+following:
+a. the defendant has previously been convicted of any crime
+under s. 316.193, or of any crime in any other state or
+territory of the United States that is substantially similar to
+any crime under s. 316.193;
+b. The defendant was driving with a suspended driver
+license when the charged crime was committed; or
+c. The defendant has previously been found guilty of, or
+has had adjudication of guilt withheld for, driving while the
+defendant’s driver license was suspended or revoked in violation
+of s. 322.34;
+5. The defendant poses the threat of harm to the community.
+The court may so conclude, if it finds that the defendant is
+presently charged with a dangerous crime as defined in paragraph
+(b), that there is a substantial probability that the defendant
+committed such crime, that the factual circumstances of the
+crime indicate a disregard for the safety of the community, and
+that there are no conditions of release reasonably sufficient to
+protect the community from the risk of physical harm to persons;
+6. The defendant was on probation, parole, or other release
+pending completion of sentence or on pretrial release for a
+dangerous crime at the time the current offense was committed;
+7. The defendant has violated one or more conditions of
+pretrial release or bond for the offense currently before the
+court and the violation, in the discretion of the court,
+supports a finding that no conditions of release can reasonably
+protect the community from risk of physical harm to persons or
+assure the presence of the accused at trial; or
+8.a. The defendant has ever been sentenced pursuant to s.
+775.082(9) or s. 775.084 as a prison releasee reoffender,
+habitual violent felony offender, three-time violent felony
+offender, or violent career criminal, or the state attorney
+files a notice seeking that the defendant be sentenced pursuant
+to s. 775.082(9) or s. 775.084, as a prison releasee reoffender,
+habitual violent felony offender, three-time violent felony
+offender, or violent career criminal;
+b. There is a substantial probability that the defendant
+committed the offense; and
+c. There are no conditions of release that can reasonably
+protect the community from risk of physical harm or ensure the
+presence of the accused at trial.
+Section 4. Paragraph (c) of subsection (2) of section
+790.065, Florida Statutes, is amended to read:
+790.065 Sale and delivery of firearms.—
+(2) Upon receipt of a request for a criminal history record
+check, the Department of Law Enforcement shall, during the
+licensee’s call or by return call, forthwith:
+(c)1. Review any records available to it to determine
+whether the potential buyer or transferee has been indicted or
+has had an information filed against her or him for an offense
+that is a felony under either state or federal law, or, as
+mandated by federal law, has had an injunction for protection
+against domestic violence entered against the potential buyer or
+transferee under s. 741.30, has had an injunction for protection
+against repeat violence entered against the potential buyer or
+transferee under s. 784.046, or has been arrested for a
+dangerous crime as specified in s. 907.041(4)(b) s.
+907.041(4)(a) or for any of the following enumerated offenses:
+a. Criminal anarchy under ss. 876.01 and 876.02.
+b. Extortion under s. 836.05.
+c. Explosives violations under s. 552.22(1) and (2).
+d. Controlled substances violations under chapter 893.
+e. Resisting an officer with violence under s. 843.01.
+f. Weapons and firearms violations under this chapter.
+g. Treason under s. 876.32.
+h. Assisting self-murder under s. 782.08.
+i. Sabotage under s. 876.38.
+j. Stalking or aggravated stalking under s. 784.048.
+
+If the review indicates any such indictment, information, or
+arrest, the department shall provide to the licensee a
+conditional nonapproval number.
+2. Within 24 working hours, the department shall determine
+the disposition of the indictment, information, or arrest and
+inform the licensee as to whether the potential buyer is
+prohibited from receiving or possessing a firearm. For purposes
+of this paragraph, “working hours” means the hours from 8 a.m.
+to 5 p.m. Monday through Friday, excluding legal holidays.
+3. The office of the clerk of court, at no charge to the
+department, shall respond to any department request for data on
+the disposition of the indictment, information, or arrest as
+soon as possible, but in no event later than 8 working hours.
+4. The department shall determine as quickly as possible
+within the allotted time period whether the potential buyer is
+prohibited from receiving or possessing a firearm.
+5. If the potential buyer is not so prohibited, or if the
+department cannot determine the disposition information within
+the allotted time period, the department shall provide the
+licensee with a conditional approval number.
+6. If the buyer is so prohibited, the conditional
+nonapproval number shall become a nonapproval number.
+7. The department shall continue its attempts to obtain the
+disposition information and may retain a record of all approval
+numbers granted without sufficient disposition information. If
+the department later obtains disposition information which
+indicates:
+a. That the potential buyer is not prohibited from owning a
+firearm, it shall treat the record of the transaction in
+accordance with this section; or
+b. That the potential buyer is prohibited from owning a
+firearm, it shall immediately revoke the conditional approval
+number and notify local law enforcement.
+8. During the time that disposition of the indictment,
+information, or arrest is pending and until the department is
+notified by the potential buyer that there has been a final
+disposition of the indictment, information, or arrest, the
+conditional nonapproval number shall remain in effect.
+Section 5. This act shall take effect July 1, 2018.

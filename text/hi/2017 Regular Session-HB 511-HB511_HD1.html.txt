@@ -1,0 +1,293 @@
+
+
+     SECTION 1.  The legislature finds that Hawaii's
+lobbyist registration law is both under- and over-inclusive, such that amending
+the definitions of "expenditures", "lobbying", and
+"lobbyist" will provide additional transparency to the public while
+relieving some individuals, particularly certain representatives of charitable,
+nonprofit organizations, from having to register as lobbyists.  Similarly, the
+legislature finds that several provisions of the lobbyists law should be
+amended to avoid unnecessary paperwork and confusion.  Among other things, the
+legislature finds that the employer of a lobbyist should have the authority to
+terminate that lobbyist's registration if the lobbyist does not do so on their
+own.
+
+     Accordingly, the purpose of this Act is to
+provide additional clarity and consistency in the administration and
+enforcement of Hawaii’s lobbying laws.
+
+     SECTION 2.  Section 97-1, Hawaii Revised
+Statutes, is amended to read as follows:
+
+     "§97-1  Definitions.  When used in
+this chapter:
+
+    [(1)] "Administrative action" means
+the proposal, drafting, consideration, amendment, enactment, or defeat by any
+administrative agency of any rule, regulation, or other action governed by
+section 91-3.
+
+    [(2)] "Administrative agency" means a
+commission, board, agency, or other body, or official in the state government
+that is not a part of the legislative or judicial branch.
+
+    [(3)] "Contribution" includes a gift,
+subscription, forgiveness of a loan, advance, or deposit of money, or anything
+of value and includes a contract, promise, or agreement, whether or not enforceable,
+to make a contribution.
+
+    [(4)] "Expenditure" includes a
+payment, distribution, forgiveness of a loan, advance, deposit, or gift of
+money, or anything of value and includes a contract, promise, or agreement,
+whether or not enforceable, to make an expenditure.  "Expenditure"
+also includes compensation or other consideration paid to a lobbyist for the
+performance of lobbying services.  "Expenditure" excludes [the
+expenses of preparing written testimony and exhibits for a hearing before the
+legislature or an administrative agency.] any amounts expended:
+
+(1)  For
+intrastate travel costs, including incidental meals and lodging, provided that
+this exception does not apply to any amounts expended for the travel costs of
+state legislators, board and commission members, or any other employees of the
+State; or
+
+          (2)
+ By a nonprofit organization to prepare and submit an application for a
+grant pursuant to chapter 42F, and for each of the nonprofit organization’s
+employees to lobby a maximum of ten hours in a month for that application.
+
+    [(5)] "Legislative action" means the
+sponsorship, drafting, introduction, consideration, modification, enactment, or
+defeat of any bill, resolution, amendment, report, nomination, appointment, or
+any other matter pending or proposed in the legislature.
+
+          "Lobbying" means communicating
+directly or through an agent, or soliciting others to communicate, with any
+official in the legislative or executive branch, for the purpose of attempting
+to influence legislative or administrative action or a ballot issue.  "Lobbying"
+shall not include the preparation and submission of a grant application
+pursuant to chapter 42F by a representative of a nonprofit organization.
+
+    [(6)] "Lobbyist" means any individual
+who [for]: 
+
+     (1)  Receives or expects to receive, either
+by employment or contract, more than $1,000 in monetary or in-kind compensation
+in any calendar year for engaging in lobbying, either personally or through the
+lobbyist's agents; or
+
+     (2)  For pay or other consideration [engages],
+on behalf of another person: 
+
+         (A)  Engages in lobbying in
+excess of five hours in any month of any reporting period described in section
+97-3 [or spends];
+
+         (B)  Engages in lobbying in excess of
+ten hours during any calendar year;
+
+         (C)  Engages in lobbying on three or
+more bills, resolutions, or both, during any legislative session; or
+
+         (D)  Makes expenditures of more
+than [$750] $1,000 of the person's or any other person's money
+lobbying during any reporting period described in section 97-3[.];
+
+          provided that an employee of a nonprofit
+organization who spends fewer than ten hours in any month lobbying on a grant
+application submitted pursuant to chapter 42F is not a lobbyist if the employee
+does not lobby on matters that are unrelated to the grant application.
+
+    [(7)  "Lobbying" means
+communicating directly or through an agent, or soliciting others to
+communicate, with any official in the legislative or executive branch, for the
+purpose of attempting to influence legislative or administrative action or a
+ballot issue.]
+
+    [(8)] "Person" means a corporation,
+individual, union, association, firm, sole proprietorship, partnership,
+committee, club, or any other organization or a representative of a group of
+persons acting in concert."
+
+     SECTION 3.  Section 97-2, Hawaii Revised
+Statutes, is amended by amending subsections (d) and (e) to read as follows:
+
+     "(d)  A lobbyist shall file a notice of
+termination within ten days after the lobbyist ceases the activity which
+required the lobbyist's registration.  If the lobbyist fails to file a
+notice of termination, the person who employed or contracted for the services
+of the lobbyist may file the notice.  The lobbyist and the [employer]
+person who employed or contracted for the services of the lobbyist shall
+remain subject, however, to the requirements of this chapter [97]
+for the period during which the registration was effective.
+
+     (e)  This chapter shall not apply to:
+
+     (1)  Any individual who represents oneself and not any
+other person before the legislature or administrative agency; provided that [such]
+the individual [must nonetheless] shall file a
+statement of expenditures if the individual meets any of the provisions of
+section 97-3(a);
+
+     (2)  Any federal, state, or county official or
+employee acting in the official's or employee's official capacity, unless the
+federal, state or county official, or employee contracts for the services of a
+lobbyist;
+
+     (3)  Any elected public official acting in the public
+official's official capacity, unless the public official contracts for the
+services of a lobbyist;
+
+     (4)  Any newspaper or other regularly published
+periodical or radio or television station (including any individual who owns,
+publishes, or is employed by a newspaper or periodical or radio or television
+station) while publishing in the regular course of business news items,
+editorials, or other comments, or paid advertisements, which directly or
+indirectly urge the passage or defeat of legislative or administrative action;
+
+     (5)  Any attorney who advises the attorney's clients
+on the construction or effect of proposed legislative or administrative action;
+provided that such attorney must nonetheless register if the attorney meets [any
+of the provisions of section 97-1(6);] the definition of
+"lobbyist" as defined in section 97-1; and
+
+     (6)  Any person who possesses special skills and
+knowledge relevant to certain areas of legislation, whose skills and knowledge
+may be helpful to the legislative and executive branches of state government,
+and who makes an occasional appearance at the request of the legislature or an
+administrative agency, or the lobbyist even though receiving reimbursement or
+other payment from the legislature or administrative agency or the lobbyist for
+the appearance."
+
+     SECTION 4.  Section 97-3, Hawaii Revised
+Statutes, is amended by amending subsections (a), (b), and (c) to read as
+follows:
+
+     "(a)  The following persons shall file a
+statement of expenditures with the state ethics commission on March 31,
+May 31, and January 31 of each year and within thirty days after
+adjournment sine die of any special session of the legislature:
+
+     (1)  Each lobbyist;
+
+     (2)  Each person who [spends $750] makes
+expenditures of $1,000 or more of the person's or any other person's money
+in any [six-month period] reporting period described in this section
+for the purpose of [attempting to influence legislative or administrative
+action or a ballot issue by communicating or urging others to communicate with
+public officials; provided that any amounts expended for travel costs,
+including incidental meals and lodging, shall not be included in the tallying
+of the $750;] lobbying; and
+
+     (3)  Each person who employs or contracts for the
+services of one or more lobbyists, whether independently or jointly with other
+persons.  If the person is an industry, trade, or professional association,
+only the association is the employer of the lobbyist.
+
+     (b)  The March 31 report shall cover the
+period from January 1 through the last day of February.  The May 31 report
+shall cover the period from March 1 through April 30.  The January 31
+report shall cover the period from May 1 through December 31 of the
+previous year.  The report to be filed within thirty days after adjournment
+sine die of a special session of the legislature shall [cover]: 
+
+     (1)  Cover the period from May 1 through
+adjournment sine die of that special session [and shall apply];
+
+     (2)  Be filed only by persons listed in
+subsection (a) who engage in lobbying activities, or who make expenditures for
+the purpose of attempting to influence legislative action considered during a
+special session; and
+
+     (3)  Apply to and include only those
+expenditures and contributions that relate to legislative action considered
+during that special session[.]; 
+
+provided that those expenditures and
+contributions included in the report need not be included by the person filing
+the report in any subsequent statement of expenditures.
+
+     (c)  The statement shall contain the following
+information:
+
+     (1)  The name and address of each person with respect
+to whom expenditures for the purpose of lobbying in the total sum of $25 or
+more per day was made by the person filing the statement during the statement
+period and the amount or value of [such] the expenditure;
+
+     (2)  The name and address of each person with respect
+to whom expenditures for the purpose of lobbying in the aggregate of $150 or
+more was made by the person filing the statement during the statement period
+and the amount or value of [such] the expenditures;
+
+     (3)  The total sum or value of all expenditures for
+the purpose of lobbying made by the person filing the statement during the
+statement [period in excess of $750 during the statement] period;
+provided that the sum or value of each expenditure is itemized in the following
+categories, as applicable:
+
+         (A)  Preparation and distribution of lobbying
+materials;
+
+         (B)  Media advertising;
+
+         (C)  Compensation paid to lobbyists;
+
+         (D)  Fees paid to consultants [or] for
+services;
+
+         (E)  Entertainment and events;
+
+         (F)  Receptions, meals, food, and beverages;
+
+         (G)  Gifts;
+
+         (H)  Loans; [and]
+
+         (I)  Interstate transportation, including
+incidental meals and lodging; and
+
+         (J)  Other disbursements;
+
+     (4)  The name and address of each person making
+contributions to the person filing the statement for the purpose of lobbying in
+the total sum of $25 or more during the statement period and the amount or
+value of [such] the contributions; and
+
+     (5)  The subject area of the legislative and
+administrative action which was supported or opposed by the person filing the
+statement during the statement period."
+
+     SECTION 5.  Section 97-4.5, Hawaii Revised
+Statutes, is amended to read as follows:
+
+     "[[]§97-4.5[]]  Lobbyist
+list.  [As soon as is feasible after the commencement of each regular
+session of the legislature, the state ethics commission shall publish a list of
+registered lobbyists, the names of the persons whom they represent, and other
+pertinent information but shall not include in such list the addresses of the
+lobbyists.  The list shall be supplemented from time to time as may be
+necessary.]  All lobbyist registration statements shall be posted on the
+state ethics commission's website within a reasonable time after filing, and
+may be removed from the website after four years."
+
+     SECTION 6.  The state ethics commission, in its
+discretion, may make any changes that it deems necessary to internal procedures
+or forms to aid in the implementation of this Act.
+
+     SECTION 7.  If any provision of this Act, or
+the application thereof to any person or circumstance, is held invalid, the
+invalidity does not affect other provisions or applications of the Act that can
+be given effect without the invalid provision or application, and to this end
+the provisions of this Act are severable.
+
+     SECTION 8.  This Act does not affect rights and
+duties that matured, penalties that were incurred, and proceedings that were
+begun before its effective date.
+
+     SECTION 9.  Statutory material to be repealed
+is bracketed and stricken.  New statutory material is underscored.
+
+     SECTION 10.  This Act shall take effect upon
+its approval.
+

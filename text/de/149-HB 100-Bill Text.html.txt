@@ -1,0 +1,116 @@
+
+      
+        
+        WHEREAS, addiction to controlled substances is an epidemic in Delaware that has tragic consequences for families, the health care system, and the criminal justice system; and
+      
+      
+        WHEREAS, a broad consensus exists that many individuals who wish to receive treatment for substance abuse are not able to access appropriate, timely treatment; and
+      
+      
+        WHEREAS, one reason that has been offered by many persons seeking treatment for their inability to get necessary treatment has been the refusal by their health insurance provider to approve the appropriate type or duration of treatment; and
+      
+      
+        WHEREAS, health insurance providers in Delaware include traditional health insurance plans, federally-regulated employer-funded plans, and public plans such as Medicaid and the State Employee Benefits Program; and
+      
+      
+        WHEREAS, legal standards exist for both private plans and public plans with respect to benefits for treatment of controlled substance addiction, including requirements of parity with other coverages and requirements that treatment be approved to the extent that it is medically necessary; and
+      
+      
+        WHEREAS, most Delawareans do not have the means to challenge the denial by insurance plans of benefits for controlled substance addiction; and
+      
+      
+        WHEREAS, the state can create a structure whereby the Department of Insurance and Department of Justice can ensure that persons with controlled substance addictions are better able to enforce their legal rights to benefits for treatment.
+      
+      
+        NOW, THEREFORE:
+      
+      
+        BE IT ENACTED BY THE GENERAL ASSEMBLY OF THE STATE OF DELAWARE:
+      
+      
+        Section 1.  Amend Section 2527, Title 6 of the Delaware Code by making deletions as shown by strike through and insertions as shown by underline as follows:
+      
+      
+        § 2527. Consumer Protection Fund.
+      
+      
+        (c) Money in the Consumer Protection Fund shall be used for the payment of expenses incurred by the Attorney General in connection with activities under subchapter II of Chapter 25 of Title 29, this chapter, 
+        expenditures related to the retention and expense reimbursement of auditors, attorneys or experts for the purpose of ensuring appropriate coverage under public or private insurance plans (including employer funded plans regulated by federal law) for the treatment of substance use disorder or other drug addictions
+        ,
+         
+        or
+         the state or federal antitrust laws
+        ,
+         or, if approved by the Director of the Office of Management and Budget and the Controller General, for other Department of Justice expenses resulting from General Fund deficits. At the end of any fiscal year, if the balance in the Consumer Protection Fund exceeds $3,000,000, the excess shall be withdrawn from the Consumer Protection Fund and deposited in the General Fund.
+      
+      
+        (d) The Attorney General is authorized to expend from the Consumer Protection Fund such moneys as are necessary for the payment of salaries, costs, expenses and charges incurred in the preparation, institution and maintenance of consumer protection and antitrust actions under state or federal antitrust laws
+        , or other actions enumerated in subsection (c) of this section
+        .
+      
+      
+        Section 2.  Amend Chapter 22, Title 16 of the Delaware Code by making deletions as shown by strike through and insertions as shown by underline as follows:
+      
+      
+        2225.  Coverage of persons for substance abuse treatment.  
+      
+      
+        In cases involving the existence or scope of private or public coverage for substance abuse treatment, attorneys retained or employed by the Department of Justice may represent persons seeking such coverage if the Department of Insurance is unable to provide such persons timely assistance with coverage disputes under the Department of Insurance’s statutory authority vested by Title 18.  The Department of Justice shall take appropriate organizational measures to ensure the integrity of its representation of state agencies when representing such persons.  Attorneys shall certify when acting under this section that the treatments they are seeking pursuant to their representation are covered by the terms of the policies or plans at issue and are not experimental.
+      
+      
+        Section 3.  Amend Section 332, Title 18 of the Delaware Code by making deletions as shown by strike through and insertions as shown by underline as follows:
+      
+      
+        § 332. Arbitration of disputes involving health insurance coverage.
+      
+      
+        (c) The Insurance Commissioner shall approve those IRPs that meet the following minimum criteria:
+      
+      
+        (2) Requests for review of adverse determinations. — The IRP must permit covered persons to submit requests for internal reviews of adverse determinations ("grievances") orally or in writing. Grievances must be submitted within 30 days of receipt by the covered person of written notice of an adverse determination. The carrier must provide written forms for submission of grievances. 
+        The written forms provided by the carrier must inform the covered person of the availability of assistance in the preparation of an appeal of an adverse determination involving treatment for substance abuse, using language to be determined by the Insurance Commissioner by regulation.  
+        Upon receipt of an oral grievance or a written grievance that does not contain sufficient information, the carrier must immediately provide the covered person with a written form upon which to make his or her grievance, and the carrier may require that an oral or insufficient written grievance be submitted in writing within 10 days of the covered person's receipt of the written form. A grievance shall be considered as received by the carrier when a written form, which the covered person purports to be complete, is received by the carrier.
+      
+      
+        Section 4.  Amend Section 505, Title 31 of the Delaware Code by making deletions as shown by strike through and insertions as shown by underline as follows:
+      
+      
+        § 505. Categories of assistance.
+      
+      
+        Assistance may be granted, in accordance with rules and regulations established by the Department of Health and Social Services pursuant to § 503 of this title, in the following categories:
+      
+      
+        (3) Medicaid assistance
+        ;
+        .
+      
+      
+        a.
+         
+        assistance 
+        Assistance 
+        granted in the form of medical care to individuals eligible in accordance with Title IV-A, XVI, XIX of the Social Security Act [42 U.S.C. §§ 601 et seq., 1381 et seq., and 1396 et seq.], federally approved waivers, and rules and regulations established by the Department of Health and Social Services.
+      
+      
+        b. 
+        The Department of Health and Social Services shall ensure that any individual receiving medical assistance described in paragraph (3)a. of this section for whom substance abuse treatment is denied in whole or in part is notified that the person may be eligible to receive legal assistance from the Department of Justice in appealing said denial, and shall ensure that contact information for the Department of Justice is provided on a form to be designed by the Department of Justice.  This section does not create an obligation on the part of the Department of Justice to represent any individual.
+      
+      
+        Section 5.  The provisions of this Act shall be effective 120 days after it enactment.  The provisions of this Act shall expire on January 1, 2020 unless expressly reauthorized prior to that date.
+      
+      
+         
+      
+    
+
+      
+        SYNOPSIS
+      
+      
+        The denial by private and public health benefit administrators of adequate coverage for substance abuse treatment has been identified as a major source of failed treatment efforts by persons addicted to controlled substances.  These denials have also been identified as a cause of the shortage of adequate treatment facilities in Delaware.  This Act seeks to ensure that persons with private and public insurance coverage have the ability to insist that they receive the substance abuse coverage to which they are entitled by law and by their insurance plans.  It does so by (1) allowing the Department of Justice to provide legal assistance where appropriate to persons seeking benefits from the state’s Medicaid program, traditional health plans, or from employer-funded health benefit plans (which are exempt from state regulation), (2) requiring the state’s Medicaid program and private insurance carriers to provide notice to persons who are denied substance abuse treatment of the possibility of legal assistance in challenging those claim denials, and (3) permitting the Department of Justice to use funds in its Consumer Protection Fund to offset the cost of providing medical and legal expertise to DOJ and the Department of Insurance for the purpose of assisting persons with controlled substance addictions who are seeking treatment.  This Act contains a sunset provision so that the General Assembly can assess the impact of its provisions on private and public health care costs and effective treatment of substance abuse before making its provisions permanent.
+      
+      
+         
+      
+    

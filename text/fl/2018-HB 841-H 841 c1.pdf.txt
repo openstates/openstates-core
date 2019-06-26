@@ -1,0 +1,1648 @@
+A bill to be entitled
+An act relating to community associations; amending s.
+718.111, F.S.; revising condominium association
+recordkeeping and financial reporting requirements;
+revising record retention policies; revising the list
+of documents that the association is required to post
+online; limiting an association's liability for
+inadvertent disclosure of protected or restricted
+information; amending s. 718.112, F.S.; revising
+provisions relating to required association bylaws;
+removing board term limits; authorizing an association
+to adopt rules for posting certain notices on a
+website; providing responsibilities for unit owners
+who receive electronic notices; revising and providing
+board member recall and challenge requirements;
+authorizing the recovery of attorney fees and costs in
+an action to challenge the validity of a board member
+recall; amending s. 718.113, F.S.; revising voting
+requirements relating to alterations and additions to
+certain common elements or association property;
+amending s. 718.3026, F.S.; removing a provision
+relating to certain contracts or transactions
+regarding conflicts of interest; amending s. 718.3027,
+F.S.; providing requirements for proposed activity
+that is identified as a conflict of interest; amending
+s. 718.303, F.S.; revising fine and suspension
+requirements; amending s. 718.707, F.S.; revising the
+time period for classification as a bulk assignee or
+bulk buyer; amending s. 719.104, F.S.; revising
+cooperative association recordkeeping requirements;
+amending s. 719.106, F.S.; revising requirements to
+serve as a board member; prohibiting a board member
+from voting via e-mail; authorizing an association to
+adopt rules for posting certain notices on a website;
+providing responsibilities for unit owners who receive
+electronic notices; providing that directors or
+officers who are delinquent in certain payments owed
+in excess of certain periods of time be deemed to have
+abandoned their offices; amending s. 719.107, F.S.;
+specifying that certain services which are obtained
+pursuant to a bulk contract are deemed a common
+expense; amending s. 719.303, F.S.; revising fine and
+suspension requirements; amending s. 720.303, F.S.;
+prohibiting a board member from voting via e-mail;
+amending s. 720.305, F.S.; revising fine and
+suspension requirements; amending s. 720.306, F.S.;
+revising election requirements; amending s. 720.3085,
+F.S.; providing applicability; providing an effective
+date.
+Be It Enacted by the Legislature of the State of Florida:
+Section 1.         Subsection (3), paragraphs (a), (b), and (g) of
+subsection (12), and paragraph (e) of subsection (13) of section
+718.111, Florida Statutes, are amended to read:
+718.111       The association.--
+(3)     POWER TO MANAGE CONDOMINIUM PROPERTY AND TO CONTRACT,
+SUE, AND BE SUED; CONFLICT OF INTEREST.--
+(a)     The association may contract, sue, or be sued with
+respect to the exercise or nonexercise of its powers. For these
+purposes, the powers of the association include, but are not
+limited to, the maintenance, management, and operation of the
+condominium property. After control of the association is
+obtained by unit owners other than the developer, the
+association may institute, maintain, settle, or appeal actions
+or hearings in its name on behalf of all unit owners concerning
+matters of common interest to most or all unit owners,
+including, but not limited to, the common elements; the roof and
+structural components of a building or other improvements;
+mechanical, electrical, and plumbing elements serving an
+improvement or a building; representations of the developer
+pertaining to any existing or proposed commonly used facilities;
+and protesting ad valorem taxes on commonly used facilities and
+on units; and may defend actions in eminent domain or bring
+inverse condemnation actions. If the association has the
+authority to maintain a class action, the association may be
+joined in an action as representative of that class with
+reference to litigation and disputes involving the matters for
+which the association could bring a class action. Nothing herein
+limits any statutory or common-law right of any individual unit
+owner or class of unit owners to bring any action without
+participation by the association which may otherwise be
+available.
+(b)      An association may not hire an attorney who represents
+the management company of the association.
+(12)        OFFICIAL RECORDS.--
+(a)      From the inception of the association, the association
+shall maintain each of the following items, if applicable, which
+constitutes the official records of the association:
+1.      A copy of the plans, permits, warranties, and other
+items provided by the developer pursuant to s. 718.301(4).
+2.      A photocopy of the recorded declaration of condominium
+of each condominium operated by the association and each
+amendment to each declaration.
+3.      A photocopy of the recorded bylaws of the association
+and each amendment to the bylaws.
+4.      A certified copy of the articles of incorporation of
+the association, or other documents creating the association,
+and each amendment thereto.
+5.      A copy of the current rules of the association.
+6.      A book or books that contain the minutes of all
+meetings of the association, the board of administration, and
+the unit owners, which minutes must be retained for at least 7
+years.
+7.      A current roster of all unit owners and their mailing
+addresses, unit identifications, voting certifications, and, if
+known, telephone numbers. The association shall also maintain
+the e-mail electronic mailing addresses and facsimile numbers of
+unit owners consenting to receive notice by electronic
+transmission. The e-mail electronic mailing addresses and
+facsimile numbers are not accessible to unit owners if consent
+to receive notice by electronic transmission is not provided in
+accordance with sub-subparagraph (c)3.e. However, the
+association is not liable for an inadvertent disclosure of the
+e-mail electronic mail address or facsimile number for receiving
+electronic transmission of notices.
+8.      All current insurance policies of the association and
+condominiums operated by the association.
+9.      A current copy of any management agreement, lease, or
+other contract to which the association is a party or under
+which the association or the unit owners have an obligation or
+responsibility.
+10.      Bills of sale or transfer for all property owned by
+the association.
+11.      Accounting records for the association and separate
+accounting records for each condominium that the association
+operates. All accounting records must be maintained for at least
+7 years. Any person who knowingly or intentionally defaces or
+destroys such records, or who knowingly or intentionally fails
+to create or maintain such records, with the intent of causing
+harm to the association or one or more of its members, is
+personally subject to a civil penalty pursuant to s.
+718.501(1)(d). The accounting records must include, but are not
+limited to:
+a.      Accurate, itemized, and detailed records of all
+receipts and expenditures.
+b.      A current account and a monthly, bimonthly, or
+quarterly statement of the account for each unit designating the
+name of the unit owner, the due date and amount of each
+assessment, the amount paid on the account, and the balance due.
+c.      All audits, reviews, accounting statements, and
+financial reports of the association or condominium.
+d.      All contracts for work to be performed. Bids for work
+to be performed are also considered official records and must be
+maintained by the association.
+12.      Ballots, sign-in sheets, voting proxies, and all other
+papers and electronic records relating to voting by unit owners,
+which must be maintained for 1 year from the date of the
+election, vote, or meeting to which the document relates,
+notwithstanding paragraph (b).
+13.     All rental records if the association is acting as
+agent for the rental of condominium units.
+14.     A copy of the current question and answer sheet as
+described in s. 718.504.
+15.     All other written records of the association not
+specifically included in the foregoing which are related to the
+operation of the association.
+16.     A copy of the inspection report as described in s.
+718.301(4)(p).
+17.     Bids for materials, equipment, or services.
+(b)     The official records specified in subparagraphs (a)1.-
+6. must be permanently maintained from the inception of the
+association. All other official records of the association must
+be maintained within the state for at least 7 years, unless
+otherwise provided by general law. The records of the
+association shall be made available to a unit owner within 45
+miles of the condominium property or within the county in which
+the condominium property is located within 10 5 working days
+after receipt of a written request by the board or its designee.
+However, such distance requirement does not apply to an
+association governing a timeshare condominium. This paragraph
+may be complied with by having a copy of the official records of
+the association available for inspection or copying on the
+condominium property or association property, or the association
+may offer the option of making the records available to a unit
+owner electronically via the Internet or by allowing the records
+to be viewed in electronic format on a computer screen and
+printed upon request. The association is not responsible for the
+use or misuse of the information provided to an association
+member or his or her authorized representative pursuant to the
+compliance requirements of this chapter unless the association
+has an affirmative duty not to disclose such information
+pursuant to this chapter.
+(g)1.       By January July 1, 2019 2018, an association
+managing a condominium with 150 or more units which does not
+contain manage timeshare units shall post digital copies of the
+documents specified in subparagraph 2. on its website.
+a.      The association's website must be:
+(I)      An independent website or web portal wholly owned and
+operated by the association; or
+(II)        A website or web portal operated by a third-party
+provider with whom the association owns, leases, rents, or
+otherwise obtains the right to operate a web page, subpage, web
+portal, or collection of subpages or web portals dedicated to
+the association's activities and on which required notices,
+records, and documents may be posted by the association.
+b.      The association's website must be accessible through
+the Internet and must contain a subpage, web portal, or other
+protected electronic location that is inaccessible to the
+general public and accessible only to unit owners and employees
+of the association.
+c.      Upon a unit owner's written request, the association
+must provide the unit owner with a username and password and
+access to the protected sections of the association's website
+that contain any notices, records, or documents that must be
+electronically provided.
+2.      A current copy of the following documents must be
+posted in digital format on the association's website:
+a.      The recorded declaration of condominium of each
+condominium operated by the association and each amendment to
+each declaration.
+b.      The recorded bylaws of the association and each
+amendment to the bylaws.
+c.      The articles of incorporation of the association, or
+other documents creating the association, and each amendment
+thereto. The copy posted pursuant to this sub-subparagraph must
+be a copy of the articles of incorporation filed with the
+Department of State.
+d.      The rules of the association.
+e.      Any management agreement, lease, or other contract to
+which the association is a party or under which the association
+or the unit owners have an obligation or responsibility and,
+after bidding for the related materials, equipment, or services
+has closed, a list of bids received by the association within
+the past year. Summaries of bids for materials, equipment, or
+services must be maintained on the website for 1 year. In lieu
+of summaries, complete copies of the bids may be posted.
+f.      The annual budget required by s. 718.112(2)(f) and any
+proposed budget to be considered at the annual meeting.
+g.      The financial report required by subsection (13) and
+any proposed financial report to be considered at a meeting.
+h.      The certification of each director required by s.
+718.112(2)(d)4.b.
+i.      All contracts or transactions between the association
+and any director, officer, corporation, firm, or association
+that is not an affiliated condominium association or any other
+entity in which an association director is also a director or
+officer and financially interested.
+j.      Any contract or document regarding a conflict of
+interest or possible conflict of interest as provided in ss.
+468.436(2)(b)6. and 718.3027(3) ss. 468.436(2) and 718.3026(3).
+k.      The notice of any unit owner meeting and the agenda for
+the meeting, as required by s. 718.112(2)(d)3., no later than 14
+days before the meeting. The notice must be posted in plain view
+on the front page of the website, or on a separate subpage of
+the website labeled "Notices" which is conspicuously visible and
+linked from the front page. The association must also post on
+its website any document to be considered and voted on by the
+owners during the meeting or any document listed on the agenda
+at least 7 days before the meeting at which the document or the
+information within the document will be considered.
+l.      Notice of any board meeting, the agenda, and any other
+document required for the meeting as required by s.
+718.112(2)(c), which must be posted no later than the date
+required for notice pursuant to s. 718.112(2)(c).
+3.      The association shall ensure that the information and
+records described in paragraph (c), which are not allowed
+permitted to be accessible to unit owners, are not posted on the
+association's website. If protected information or information
+restricted from being accessible to unit owners is included in
+documents that are required to be posted on the association's
+website, the association shall ensure the information is
+redacted before posting the documents online. Notwithstanding
+the foregoing, the association or its agent is not liable for
+disclosing information that is protected or restricted pursuant
+to this paragraph unless such disclosure was made with a knowing
+or intentional disregard of the protected or restricted nature
+of such information.
+(13)        FINANCIAL REPORTING.--Within 90 days after the end of
+the fiscal year, or annually on a date provided in the bylaws,
+the association shall prepare and complete, or contract for the
+preparation and completion of, a financial report for the
+preceding fiscal year. Within 21 days after the final financial
+report is completed by the association or received from the
+third party, but not later than 120 days after the end of the
+fiscal year or other date as provided in the bylaws, the
+association shall mail to each unit owner at the address last
+furnished to the association by the unit owner, or hand deliver
+to each unit owner, a copy of the most recent financial report
+or a notice that a copy of the most recent financial report will
+be mailed or hand delivered to the unit owner, without charge,
+within 5 business days after receipt of a written request from
+the unit owner. The division shall adopt rules setting forth
+uniform accounting principles and standards to be used by all
+associations and addressing the financial reporting requirements
+for multicondominium associations. The rules must include, but
+not be limited to, standards for presenting a summary of
+association reserves, including a good faith estimate disclosing
+the annual amount of reserve funds that would be necessary for
+the association to fully fund reserves for each reserve item
+based on the straight-line accounting method. This disclosure is
+not applicable to reserves funded via the pooling method. In
+adopting such rules, the division shall consider the number of
+members and annual revenues of an association. Financial reports
+shall be prepared as follows:
+(e)     A unit owner may provide written notice to the
+division of the association's failure to mail or hand deliver
+him or her a copy of the most recent financial report within 5
+business days after he or she submitted a written request to the
+association for a copy of such report. If the division
+determines that the association failed to mail or hand deliver a
+copy of the most recent financial report to the unit owner, the
+division shall provide written notice to the association that
+the association must mail or hand deliver a copy of the most
+recent financial report to the unit owner and the division
+within 5 business days after it receives such notice from the
+division. An association that fails to comply with the
+division's request may not waive the financial reporting
+requirement provided in paragraph (d) for the fiscal year in
+which the unit owner's request was made and the following fiscal
+year. A financial report received by the division pursuant to
+this paragraph shall be maintained, and the division shall
+provide a copy of such report to an association member upon his
+or her request.
+Section 2.         Paragraphs (a), (c), (d), and (j) of subsection
+(2) of section 718.112, Florida Statutes, are amended to read:
+718.112       Bylaws.--
+(2)      REQUIRED PROVISIONS.--The bylaws shall provide for the
+following and, if they do not do so, shall be deemed to include
+the following:
+(a)      Administration.--
+1.      The form of administration of the association shall be
+described indicating the title of the officers and board of
+administration and specifying the powers, duties, manner of
+selection and removal, and compensation, if any, of officers and
+boards. In the absence of such a provision, the board of
+administration shall be composed of five members, unless the
+except in the case of a condominium which has five or fewer
+units. The board shall consist of not fewer than three members
+in condominiums with five or fewer units that are not-for-profit
+corporations, in which case in a not-for-profit corporation the
+board shall consist of not fewer than three members. In the
+absence of provisions to the contrary in the bylaws, the board
+of administration shall have a president, a secretary, and a
+treasurer, who shall perform the duties of such officers
+customarily performed by officers of corporations. Unless
+prohibited in the bylaws, the board of administration may
+appoint other officers and grant them the duties it deems
+appropriate. Unless otherwise provided in the bylaws, the
+officers shall serve without compensation and at the pleasure of
+the board of administration. Unless otherwise provided in the
+bylaws, the members of the board shall serve without
+compensation.
+2.      When a unit owner of a residential condominium files a
+written inquiry by certified mail with the board of
+administration, the board shall respond in writing to the unit
+owner within 30 days after receipt of the inquiry. The board's
+response shall either give a substantive response to the
+inquirer, notify the inquirer that a legal opinion has been
+requested, or notify the inquirer that advice has been requested
+from the division. If the board requests advice from the
+division, the board shall, within 10 days after its receipt of
+the advice, provide in writing a substantive response to the
+inquirer. If a legal opinion is requested, the board shall,
+within 60 days after the receipt of the inquiry, provide in
+writing a substantive response to the inquiry. The failure to
+provide a substantive response to the inquiry as provided herein
+precludes the board from recovering attorney fees and costs in
+any subsequent litigation, administrative proceeding, or
+arbitration arising out of the inquiry. The association may
+through its board of administration adopt reasonable rules and
+regulations regarding the frequency and manner of responding to
+unit owner inquiries, one of which may be that the association
+is only obligated to respond to one written inquiry per unit in
+any given 30-day period. In such a case, any additional inquiry
+or inquiries must be responded to in the subsequent 30-day
+period, or periods, as applicable.
+(c)     Board of administration meetings.--Meetings of the
+board of administration at which a quorum of the members is
+present are open to all unit owners. Members of the board of
+administration may use e-mail as a means of communication but
+may not cast a vote on an association matter via e-mail. A unit
+owner may tape record or videotape the meetings. The right to
+attend such meetings includes the right to speak at such
+meetings with reference to all designated agenda items. The
+division shall adopt reasonable rules governing the tape
+recording and videotaping of the meeting. The association may
+adopt written reasonable rules governing the frequency,
+duration, and manner of unit owner statements.
+1.      Adequate notice of all board meetings, which must
+specifically identify all agenda items, must be posted
+conspicuously on the condominium property at least 48 continuous
+hours before the meeting except in an emergency. If 20 percent
+of the voting interests petition the board to address an item of
+business, the board, within 60 days after receipt of the
+petition, shall place the item on the agenda at its next regular
+board meeting or at a special meeting called for that purpose.
+An item not included on the notice may be taken up on an
+emergency basis by a vote of at least a majority plus one of the
+board members. Such emergency action must be noticed and
+ratified at the next regular board meeting. However, Written
+notice of a meeting at which a nonemergency special assessment
+or an amendment to rules regarding unit use will be considered
+must be mailed, delivered, or electronically transmitted to the
+unit owners and posted conspicuously on the condominium property
+at least 14 days before the meeting. Evidence of compliance with
+this 14-day notice requirement must be made by an affidavit
+executed by the person providing the notice and filed with the
+official records of the association. Notice of any meeting in
+which regular or special assessments against unit owners are to
+be considered must specifically state that assessments will be
+considered and provide the estimated cost and description of the
+purposes for such assessments. Upon notice to the unit owners,
+the board shall, by duly adopted rule, designate a specific
+location on the condominium or association property where all
+notices of board meetings must be posted. If there is no
+condominium property or association property where notices can
+be posted, notices shall be mailed, delivered, or electronically
+transmitted to each unit owner at least 14 days before the
+meeting. In lieu of or in addition to the physical posting of
+the notice on the condominium property, the association may, by
+reasonable rule, adopt a procedure for conspicuously posting and
+repeatedly broadcasting the notice and the agenda on a closed-
+circuit cable television system serving the condominium
+association. However, if broadcast notice is used in lieu of a
+notice physically posted on condominium property, the notice and
+agenda must be broadcast at least four times every broadcast
+hour of each day that a posted notice is otherwise required
+under this section. If broadcast notice is provided, the notice
+and agenda must be broadcast in a manner and for a sufficient
+continuous length of time so as to allow an average reader to
+observe the notice and read and comprehend the entire content of
+the notice and the agenda. In addition to any of the authorized
+means of providing notice of a meeting of the board, the
+association may, by rule, adopt a procedure for conspicuously
+posting the meeting notice and the agenda on a website serving
+the condominium association for at least the minimum period of
+time for which a notice of a meeting is also required to be
+physically posted on the condominium property. Any rule adopted
+shall, in addition to other matters, include a requirement that
+the association send an electronic notice in the same manner as
+a notice for a meeting of the members, which must include a
+hyperlink to the website where the notice is posted, to unit
+owners whose e-mail addresses are included in the association's
+official records. Notice of any meeting in which regular or
+special assessments against unit owners are to be considered
+must specifically state that assessments will be considered and
+provide the nature, estimated cost, and description of the
+purposes for such assessments.
+2.      Meetings of a committee to take final action on behalf
+of the board or make recommendations to the board regarding the
+association budget are subject to this paragraph. Meetings of a
+committee that does not take final action on behalf of the board
+or make recommendations to the board regarding the association
+budget are subject to this section, unless those meetings are
+exempted from this section by the bylaws of the association.
+3.      Notwithstanding any other law, the requirement that
+board meetings and committee meetings be open to the unit owners
+does not apply to:
+a.      Meetings between the board or a committee and the
+association's attorney, with respect to proposed or pending
+litigation, if the meeting is held for the purpose of seeking or
+rendering legal advice; or
+b.      Board meetings held for the purpose of discussing
+personnel matters.
+(d)     Unit owner meetings.--
+1.      An annual meeting of the unit owners must shall be held
+at the location provided in the association bylaws and, if the
+bylaws are silent as to the location, the meeting must shall be
+held within 45 miles of the condominium property. However, such
+distance requirement does not apply to an association governing
+a timeshare condominium.
+2.      Unless the bylaws provide otherwise, a vacancy on the
+board caused by the expiration of a director's term must shall
+be filled by electing a new board member, and the election must
+be by secret ballot. An election is not required if the number
+of vacancies equals or exceeds the number of candidates. For
+purposes of this paragraph, the term "candidate" means an
+eligible person who has timely submitted the written notice, as
+described in sub-subparagraph 4.a., of his or her intention to
+become a candidate. Except in a timeshare or nonresidential
+condominium, or if the staggered term of a board member does not
+expire until a later annual meeting, or if all members' terms
+would otherwise expire but there are no candidates, the terms of
+all board members expire at the annual meeting, and such members
+may stand for reelection unless prohibited by the bylaws. Each
+term may not exceed 2 years, unless a shorter term is specified
+Board members may serve 2-year terms if permitted by the bylaws
+or articles of incorporation. A board member may not serve more
+than four consecutive 2-year terms, unless approved by an
+affirmative vote of two-thirds of the total voting interests of
+the association or unless there are not enough eligible
+candidates to fill the vacancies on the board at the time of the
+vacancy. If the number of board members whose terms expire at
+the annual meeting equals or exceeds the number of candidates,
+the candidates become members of the board effective upon the
+adjournment of the annual meeting. Unless the bylaws provide
+otherwise, any remaining vacancies shall be filled by the
+affirmative vote of the majority of the directors making up the
+newly constituted board even if the directors constitute less
+than a quorum or there is only one director. In a residential
+condominium association of more than 10 units or in a
+residential condominium association that does not include
+timeshare units or timeshare interests, coowners of a unit may
+not serve as members of the board of directors at the same time
+unless they own more than one unit or unless there are not
+enough eligible candidates to fill the vacancies on the board at
+the time of the vacancy. A unit owner in a residential
+condominium desiring to be a candidate for board membership must
+comply with sub-subparagraph 4.a. and must be eligible to be a
+candidate to serve on the board of directors at the time of the
+deadline for submitting a notice of intent to run in order to
+have his or her name listed as a proper candidate on the ballot
+or to serve on the board. A person who has been suspended or
+removed by the division under this chapter, or who is delinquent
+in the payment of any monetary obligation due to the
+association, is not eligible to be a candidate for board
+membership and may not be listed on the ballot. A person who has
+been convicted of any felony in this state or in a United States
+District or Territorial Court, or who has been convicted of any
+offense in another jurisdiction which would be considered a
+felony if committed in this state, is not eligible for board
+membership unless such felon's civil rights have been restored
+for at least 5 years as of the date such person seeks election
+to the board. The validity of an action by the board is not
+affected if it is later determined that a board member is
+ineligible for board membership due to having been convicted of
+a felony. This subparagraph does not limit the term of a member
+of the board of a nonresidential or timeshare condominium.
+3.      The bylaws must provide the method of calling meetings
+of unit owners, including annual meetings. Written notice must
+include an agenda, must be mailed, hand delivered, or
+electronically transmitted to each unit owner at least 14 days
+before the annual meeting, and must be posted in a conspicuous
+place on the condominium property at least 14 continuous days
+before the annual meeting. Upon notice to the unit owners, the
+board shall, by duly adopted rule, designate a specific location
+on the condominium property or association property where all
+notices of unit owner meetings must shall be posted. This
+requirement does not apply if there is no condominium property
+or association property for posting notices. In lieu of, or in
+addition to, the physical posting of meeting notices, the
+association may, by reasonable rule, adopt a procedure for
+conspicuously posting and repeatedly broadcasting the notice and
+the agenda on a closed-circuit cable television system serving
+the condominium association. However, if broadcast notice is
+used in lieu of a notice posted physically on the condominium
+property, the notice and agenda must be broadcast at least four
+times every broadcast hour of each day that a posted notice is
+otherwise required under this section. If broadcast notice is
+provided, the notice and agenda must be broadcast in a manner
+and for a sufficient continuous length of time so as to allow an
+average reader to observe the notice and read and comprehend the
+entire content of the notice and the agenda. In addition to any
+of the authorized means of providing notice of a meeting of the
+board, the association may, by rule, adopt a procedure for
+conspicuously posting the meeting notice and the agenda on a
+website serving the condominium association for at least the
+minimum period of time for which a notice of a meeting is also
+required to be physically posted on the condominium property.
+Any rule adopted shall, in addition to other matters, include a
+requirement that the association send an electronic notice in
+the same manner as a notice for a meeting of the members, which
+must include a hyperlink to the website where the notice is
+posted, to unit owners whose e-mail addresses are included in
+the association's official records. Unless a unit owner waives
+in writing the right to receive notice of the annual meeting,
+such notice must be hand delivered, mailed, or electronically
+transmitted to each unit owner. Notice for meetings and notice
+for all other purposes must be mailed to each unit owner at the
+address last furnished to the association by the unit owner, or
+hand delivered to each unit owner. However, if a unit is owned
+by more than one person, the association must provide notice to
+the address that the developer identifies for that purpose and
+thereafter as one or more of the owners of the unit advise the
+association in writing, or if no address is given or the owners
+of the unit do not agree, to the address provided on the deed of
+record. An officer of the association, or the manager or other
+person providing notice of the association meeting, must provide
+an affidavit or United States Postal Service certificate of
+mailing, to be included in the official records of the
+association affirming that the notice was mailed or hand
+delivered in accordance with this provision.
+4.      The members of the board of a residential condominium
+shall be elected by written ballot or voting machine. Proxies
+may not be used in electing the board in general elections or
+elections to fill vacancies caused by recall, resignation, or
+otherwise, unless otherwise provided in this chapter. This
+subparagraph does not apply to an association governing a
+timeshare condominium.
+a.      At least 60 days before a scheduled election, the
+association shall mail, deliver, or electronically transmit, by
+separate association mailing or included in another association
+mailing, delivery, or transmission, including regularly
+published newsletters, to each unit owner entitled to a vote, a
+first notice of the date of the election. A unit owner or other
+eligible person desiring to be a candidate for the board must
+give written notice of his or her intent to be a candidate to
+the association at least 40 days before a scheduled election.
+Together with the written notice and agenda as set forth in
+subparagraph 3., the association shall mail, deliver, or
+electronically transmit a second notice of the election to all
+unit owners entitled to vote, together with a ballot that lists
+all candidates. Upon request of a candidate, an information
+sheet, no larger than 8                   1/2 inches by 11 inches, which must be
+furnished by the candidate at least 35 days before the election,
+must be included with the mailing, delivery, or transmission of
+the ballot, with the costs of mailing, delivery, or electronic
+transmission and copying to be borne by the association. The
+association is not liable for the contents of the information
+sheets prepared by the candidates. In order to reduce costs, the
+association may print or duplicate the information sheets on
+both sides of the paper. The division shall by rule establish
+voting procedures consistent with this sub-subparagraph,
+including rules establishing procedures for giving notice by
+electronic transmission and rules providing for the secrecy of
+ballots. Elections shall be decided by a plurality of ballots
+cast. There is no quorum requirement; however, at least 20
+percent of the eligible voters must cast a ballot in order to
+have a valid election. A unit owner may not authorize permit any
+other person to vote his or her ballot, and any ballots
+improperly cast are invalid. A unit owner who violates this
+provision may be fined by the association in accordance with s.
+718.303. A unit owner who needs assistance in casting the ballot
+for the reasons stated in s. 101.051 may obtain such assistance.
+The regular election must occur on the date of the annual
+meeting. Notwithstanding this sub-subparagraph, an election is
+not required unless more candidates file notices of intent to
+run or are nominated than board vacancies exist.
+b.      Within 90 days after being elected or appointed to the
+board of an association of a residential condominium, each newly
+elected or appointed director shall certify in writing to the
+secretary of the association that he or she has read the
+association's declaration of condominium, articles of
+incorporation, bylaws, and current written policies; that he or
+she will work to uphold such documents and policies to the best
+of his or her ability; and that he or she will faithfully
+discharge his or her fiduciary responsibility to the
+association's members. In lieu of this written certification,
+within 90 days after being elected or appointed to the board,
+the newly elected or appointed director may submit a certificate
+of having satisfactorily completed the educational curriculum
+administered by a division-approved condominium education
+provider within 1 year before or 90 days after the date of
+election or appointment. The written certification or
+educational certificate is valid and does not have to be
+resubmitted as long as the director serves on the board without
+interruption. A director of an association of a residential
+condominium who fails to timely file the written certification
+or educational certificate is suspended from service on the
+board until he or she complies with this sub-subparagraph. The
+board may temporarily fill the vacancy during the period of
+suspension. The secretary shall cause the association to retain
+a director's written certification or educational certificate
+for inspection by the members for 5 years after a director's
+election or the duration of the director's uninterrupted tenure,
+whichever is longer. Failure to have such written certification
+or educational certificate on file does not affect the validity
+of any board action.
+c.      Any challenge to the election process must be commenced
+within 60 days after the election results are announced.
+5.      Any approval by unit owners called for by this chapter
+or the applicable declaration or bylaws, including, but not
+limited to, the approval requirement in s. 718.111(8), must be
+made at a duly noticed meeting of unit owners and is subject to
+all requirements of this chapter or the applicable condominium
+documents relating to unit owner decisionmaking, except that
+unit owners may take action by written agreement, without
+meetings, on matters for which action by written agreement
+without meetings is expressly allowed by the applicable bylaws
+or declaration or any law that provides for such action.
+6.      Unit owners may waive notice of specific meetings if
+allowed by the applicable bylaws or declaration or any law.
+Notice of meetings of the board of administration, unit owner
+meetings, except unit owner meetings called to recall board
+members under paragraph (j), and committee meetings may be given
+by electronic transmission to unit owners who consent to receive
+notice by electronic transmission. A unit owner who consents to
+receiving notices by electronic transmission is solely
+responsible for removing or bypassing filters that block receipt
+of mass emails sent to members on behalf of the association in
+the course of giving electronic notices.
+7.      Unit owners have the right to participate in meetings
+of unit owners with reference to all designated agenda items.
+However, the association may adopt reasonable rules governing
+the frequency, duration, and manner of unit owner participation.
+8.      A unit owner may tape record or videotape a meeting of
+the unit owners subject to reasonable rules adopted by the
+division.
+9.      Unless otherwise provided in the bylaws, any vacancy
+occurring on the board before the expiration of a term may be
+filled by the affirmative vote of the majority of the remaining
+directors, even if the remaining directors constitute less than
+a quorum, or by the sole remaining director. In the alternative,
+a board may hold an election to fill the vacancy, in which case
+the election procedures must conform to sub-subparagraph 4.a.
+unless the association governs 10 units or fewer and has opted
+out of the statutory election process, in which case the bylaws
+of the association control. Unless otherwise provided in the
+bylaws, a board member appointed or elected under this section
+shall fill the vacancy for the unexpired term of the seat being
+filled. Filling vacancies created by recall is governed by
+paragraph (j) and rules adopted by the division.
+10.      This chapter does not limit the use of general or
+limited proxies, require the use of general or limited proxies,
+or require the use of a written ballot or voting machine for any
+agenda item or election at any meeting of a timeshare
+condominium association or nonresidential condominium
+association.
+Notwithstanding subparagraph (b)2. and sub-subparagraph 4.a., an
+association of 10 or fewer units may, by affirmative vote of a
+majority of the total voting interests, provide for different
+voting and election procedures in its bylaws, which may be by a
+proxy specifically delineating the different voting and election
+procedures. The different voting and election procedures may
+provide for elections to be conducted by limited or general
+proxy.
+(j)      Recall of board members.--Subject to s. 718.301, any
+member of the board of administration may be recalled and
+removed from office with or without cause by the vote or
+agreement in writing by a majority of all the voting interests.
+A special meeting of the unit owners to recall a member or
+members of the board of administration may be called by 10
+percent of the voting interests giving notice of the meeting as
+required for a meeting of unit owners, and the notice shall
+state the purpose of the meeting. Electronic transmission may
+not be used as a method of giving notice of a meeting called in
+whole or in part for this purpose.
+1.      If the recall is approved by a majority of all voting
+interests by a vote at a meeting, the recall will be effective
+as provided in this paragraph. The board shall duly notice and
+hold a board meeting within 5 full business days after the
+adjournment of the unit owner meeting to recall one or more
+board members. Such member or members shall be recalled
+effective immediately upon conclusion of the board meeting
+provided that the recall is facially valid. A recalled member
+must and shall turn over to the board, within 10 full business
+days after the vote, any and all records and property of the
+association in their possession.
+2.      If the proposed recall is by an agreement in writing by
+a majority of all voting interests, the agreement in writing or
+a copy thereof shall be served on the association by certified
+mail or by personal service in the manner authorized by chapter
+48 and the Florida Rules of Civil Procedure. The board of
+administration shall duly notice and hold a meeting of the board
+within 5 full business days after receipt of the agreement in
+writing. Such member or members shall be recalled effective
+immediately upon the conclusion of the board meeting provided
+that the recall is facially valid. A recalled member must and
+shall turn over to the board, within 10 full business days, any
+and all records and property of the association in their
+possession.
+3.      If the board fails to duly notice and hold a board
+meeting within 5 full business days after service of an
+agreement in writing or within 5 full business days after the
+adjournment of the unit owner recall meeting, the recall shall
+be deemed effective and the board members so recalled shall turn
+over to the board within 10 full business days after the vote
+any and all records and property of the association.
+4.      If the board fails to duly notice and hold the required
+meeting or fails to file the required petition, the unit owner
+representative may file a petition pursuant to s. 718.1255
+challenging the board's failure to act. The petition must be
+filed within 60 days after the expiration of the applicable 5-
+full-business-day period. The review of a petition under this
+subparagraph is limited to the sufficiency of service on the
+board and the facial validity of the written agreement or
+ballots filed.
+5.      If a vacancy occurs on the board as a result of a
+recall or removal and less than a majority of the board members
+are removed, the vacancy may be filled by the affirmative vote
+of a majority of the remaining directors, notwithstanding any
+provision to the contrary contained in this subsection. If
+vacancies occur on the board as a result of a recall and a
+majority or more of the board members are removed, the vacancies
+shall be filled in accordance with procedural rules to be
+adopted by the division, which rules need not be consistent with
+this subsection. The rules must provide procedures governing the
+conduct of the recall election as well as the operation of the
+association during the period after a recall but before the
+recall election.
+6.      A board member who has been recalled may file a
+petition pursuant to s. 718.1255 challenging the validity of the
+recall. The petition must be filed within 60 days after the
+recall. The association and the unit owner representative shall
+be named as the respondents. The petition may challenge the
+facial validity of the written agreement or ballots filed or the
+substantial compliance with the procedural requirements for the
+recall. If the arbitrator determines the recall was invalid, the
+petitioning board member shall immediately be reinstated and the
+recall is null and void. A board member who is successful in
+challenging a recall is entitled to recover reasonable attorney
+fees and costs from the respondents. The arbitrator may award
+reasonable attorney fees and costs to the respondents if they
+prevail, if the arbitrator makes a finding that the petitioner's
+claim is frivolous.
+7.      The division may not accept for filing a recall
+petition, whether filed pursuant to subparagraph 1.,
+subparagraph 2., subparagraph 4., or subparagraph 6. when there
+are 60 or fewer days until the scheduled reelection of the board
+member sought to be recalled or when 60 or fewer days have
+elapsed since the election of the board member sought to be
+recalled.
+Section 3.         Subsection (2) of section 718.113, Florida
+Statutes, is amended to read:
+718.113       Maintenance; limitation upon improvement; display
+of flag; hurricane shutters and protection; display of religious
+decorations.--
+(2)(a)       Except as otherwise provided in this section, there
+shall be no material alteration or substantial additions to the
+common elements or to real property which is association
+property, except in a manner provided in the declaration as
+originally recorded or as amended under the procedures provided
+therein. If the declaration as originally recorded or as amended
+under the procedures provided therein does not specify the
+procedure for approval of material alterations or substantial
+additions, 75 percent of the total voting interests of the
+association must approve the alterations or additions before the
+material alterations or substantial additions are commenced.
+This paragraph is intended to clarify existing law and applies
+to associations existing on July 1, 2018 October 1, 2008.
+(b)     There shall not be any material alteration of, or
+substantial addition to, the common elements of any condominium
+operated by a multicondominium association unless approved in
+the manner provided in the declaration of the affected
+condominium or condominiums as originally recorded or as amended
+under the procedures provided therein. If a declaration as
+originally recorded or as amended under the procedures provided
+therein does not specify a procedure for approving such an
+alteration or addition, the approval of 75 percent of the total
+voting interests of each affected condominium is required before
+the material alterations or substantial additions are commenced.
+This subsection does not prohibit a provision in any
+declaration, articles of incorporation, or bylaws as originally
+recorded or as amended under the procedures provided therein
+requiring the approval of unit owners in any condominium
+operated by the same association or requiring board approval
+before a material alteration or substantial addition to the
+common elements is permitted. This paragraph is intended to
+clarify existing law and applies to associations existing on
+July 1, 2018 the effective date of this act.
+(c)     There shall not be any material alteration or
+substantial addition made to association real property operated
+by a multicondominium association, except as provided in the
+declaration, articles of incorporation, or bylaws as originally
+recorded or as amended under the procedures provided therein. If
+the declaration, articles of incorporation, or bylaws as
+originally recorded or as amended under the procedures provided
+therein do not specify the procedure for approving an alteration
+or addition to association real property, the approval of 75
+percent of the total voting interests of the association is
+required before the material alterations or substantial
+additions are commenced. This paragraph is intended to clarify
+existing law and applies to associations existing on July 1,
+2018 the effective date of this act.
+Section 4.          Subsection (3) of section 718.3026, Florida
+Statutes, is amended to read:
+718.3026          Contracts for products and services; in writing;
+bids; exceptions.--Associations with 10 or fewer units may opt
+out of the provisions of this section if two-thirds of the unit
+owners vote to do so, which opt-out may be accomplished by a
+proxy specifically setting forth the exception from this
+section.
+(3)     As to any contract or other transaction between an
+association and one or more of its directors or any other
+corporation, firm, association, or entity in which one or more
+of its directors are directors or officers or are financially
+interested:
+(a)     The association shall comply with the requirements of
+s. 617.0832.
+(b)     The disclosures required by s. 617.0832 shall be
+entered into the written minutes of the meeting.
+(c)     Approval of the contract or other transaction shall
+require an affirmative vote of two-thirds of the directors
+present.
+(d)     At the next regular or special meeting of the members,
+the existence of the contract or other transaction shall be
+disclosed to the members. Upon motion of any member, the
+contract or transaction shall be brought up for a vote and may
+be canceled by a majority vote of the members present. Should
+the members cancel the contract, the association shall only be
+liable for the reasonable value of goods and services provided
+up to the time of cancellation and shall not be liable for any
+termination fee, liquidated damages, or other form of penalty
+for such cancellation.
+Section 5.          Section 718.3027, Florida Statutes, is amended
+to read:
+718.3027          Conflicts of interest.--
+(1)     Directors and officers of a board of an association
+that is not a timeshare condominium association, and the
+relatives of such directors and officers, must disclose to the
+board any activity that may reasonably be construed to be a
+conflict of interest. A rebuttable presumption of a conflict of
+interest exists if any of the following occurs without prior
+notice, as required in subsection (5)(4):
+(a)         A director or an officer, or a relative of a director
+or an officer, enters into a contract for goods or services with
+the association.
+(b)         A director or an officer, or a relative of a director
+or an officer, holds an interest in a corporation, limited
+liability corporation, partnership, limited liability
+partnership, or other business entity that conducts business
+with the association or proposes to enter into a contract or
+other transaction with the association.
+(2)     If a director or an officer, or a relative of a
+director or an officer, proposes to engage in an activity that
+is a conflict of interest, as described in subsection (1), the
+proposed activity must be listed on, and all contracts and
+transactional documents related to the proposed activity must be
+attached to, the meeting agenda. The association shall comply
+with the requirements of s. 617.0832, and the disclosures
+required by s. 617.0832 shall be entered into the written
+minutes of the meeting. Approval of the contract or other
+transaction requires an affirmative vote of two-thirds of all
+other directors present. At the next regular or special meeting
+of the members, the existence of the contract or other
+transaction shall be disclosed to the members. Upon motion of
+any member, the contract or transaction shall be brought up for
+a vote and may be canceled by a majority vote of the members
+present. If the contract is canceled, the association is only
+liable for the reasonable value of the goods and services
+provided up to the time of cancellation and is not liable for
+any termination fee, liquidated damages, or other form of
+penalty for such cancellation.
+(3)     If the board votes against the proposed activity, the
+director or officer, or the relative of the director or officer,
+must notify the board in writing of his or her intention not to
+pursue the proposed activity or to withdraw from office. If the
+board finds that an officer or a director has violated this
+subsection, the officer or director shall be deemed removed from
+office. The vacancy shall be filled according to general law.
+(4)(3)       A director or an officer, or a relative of a
+director or an officer, who is a party to, or has an interest
+in, an activity that is a possible conflict of interest, as
+described in subsection (1), may attend the meeting at which the
+activity is considered by the board and is authorized to make a
+presentation to the board regarding the activity. After the
+presentation, the director or officer, or the relative of the
+director or officer, must leave the meeting during the
+discussion of, and the vote on, the activity. A director or an
+officer who is a party to, or has an interest in, the activity
+must recuse himself or herself from the vote.
+(5)(4)       A contract entered into between a director or an
+officer, or a relative of a director or an officer, and the
+association, which is not a timeshare condominium association,
+that has not been properly disclosed as a conflict of interest
+or potential conflict of interest as required by s.
+718.111(12)(g) is voidable and terminates upon the filing of a
+written notice terminating the contract with the board of
+directors which contains the consent of at least 20 percent of
+the voting interests of the association.
+(6)(5)       As used in this section, the term "relative" means
+a relative within the third degree of consanguinity by blood or
+marriage.
+Section 6.         Paragraph (b) of subsection (3) of section
+718.303, Florida Statutes, is amended to read:
+718.303       Obligations of owners and occupants; remedies.--
+(3)     The association may levy reasonable fines for the
+failure of the owner of the unit or its occupant, licensee, or
+invitee to comply with any provision of the declaration, the
+association bylaws, or reasonable rules of the association. A
+fine may not become a lien against a unit. A fine may be levied
+by the board on the basis of each day of a continuing violation,
+with a single notice and opportunity for hearing before a
+committee as provided in paragraph (b). However, the fine may
+not exceed $100 per violation, or $1,000 in the aggregate.
+(b)     A fine or suspension levied by the board of
+administration may not be imposed unless the board first
+provides at least 14 days' written notice and an opportunity for
+a hearing to the unit owner and, if applicable, any its
+occupant, licensee, or invitee of the unit owner sought to be
+fined or suspended and an opportunity for a hearing. The hearing
+must be held before a committee of at least three members
+appointed by the board who are not officers, directors, or
+employees of the association, or the spouse, parent, child,
+brother, or sister of an officer, director, or employee other
+unit owners who are neither board members nor persons residing
+in a board member's household. The role of the committee is
+limited to determining whether to confirm or reject the fine or
+suspension levied by the board. If the committee does not
+approve agree, the proposed fine or suspension by majority vote,
+the fine or suspension may not be imposed. If the proposed fine
+or suspension is approved by the committee, the fine payment is
+due 5 days after the date of the committee meeting at which the
+fine is approved. The association must provide written notice of
+such fine or suspension by mail or hand delivery to the unit
+owner and, if applicable, to any tenant, licensee, or invitee of
+the unit owner.
+Section 7.         Section 718.707, Florida Statutes, is amended
+to read:
+718.707       Time limitation for classification as bulk
+assignee or bulk buyer.--A person acquiring condominium parcels
+may not be classified as a bulk assignee or bulk buyer unless
+the condominium parcels were acquired on or after July 1, 2010,
+but before July 1, 2018. The date of such acquisition shall be
+determined by the date of recording a deed or other instrument
+of conveyance for such parcels in the public records of the
+county in which the condominium is located, or by the date of
+issuing a certificate of title in a foreclosure proceeding with
+respect to such condominium parcels.
+Section 8.         Paragraphs (a) and (b) of subsection (2) of
+section 719.104, Florida Statutes, are amended to read:
+719.104       Cooperatives; access to units; records; financial
+reports; assessments; purchase of leases.--
+(2)     OFFICIAL RECORDS.--
+(a)     From the inception of the association, the association
+shall maintain a copy of each of the following, where
+applicable, which shall constitute the official records of the
+association:
+1.      The plans, permits, warranties, and other items
+provided by the developer pursuant to s. 719.301(4).
+2.      A photocopy of the cooperative documents.
+3.      A copy of the current rules of the association.
+4.      A book or books containing the minutes of all meetings
+of the association, of the board of directors, and of the unit
+owners, which minutes shall be retained for a period of not less
+than 7 years.
+5.      A current roster of all unit owners and their mailing
+addresses, unit identifications, voting certifications, and, if
+known, telephone numbers. The association shall also maintain
+the e-mail electronic mailing addresses and the numbers
+designated by unit owners for receiving notice sent by
+electronic transmission of those unit owners consenting to
+receive notice by electronic transmission. The e-mail electronic
+mailing addresses and numbers provided by unit owners to receive
+notice by electronic transmission shall be removed from
+association records when consent to receive notice by electronic
+transmission is revoked. However, the association is not liable
+for an erroneous disclosure of the e-mail electronic mail
+address or the number for receiving electronic transmission of
+notices.
+6.      All current insurance policies of the association.
+7.      A current copy of any management agreement, lease, or
+other contract to which the association is a party or under
+which the association or the unit owners have an obligation or
+responsibility.
+8.      Bills of sale or transfer for all property owned by the
+association.
+9.      Accounting records for the association and separate
+accounting records for each unit it operates, according to good
+accounting practices. All accounting records shall be maintained
+for a period of not less than 7 years. The accounting records
+shall include, but not be limited to:
+a.      Accurate, itemized, and detailed records of all
+receipts and expenditures.
+b.      A current account and a monthly, bimonthly, or
+quarterly statement of the account for each unit designating the
+name of the unit owner, the due date and amount of each
+assessment, the amount paid upon the account, and the balance
+due.
+c.      All audits, reviews, accounting statements, and
+financial reports of the association.
+d.      All contracts for work to be performed. Bids for work
+to be performed shall also be considered official records and
+shall be maintained for a period of 1 year.
+10.      Ballots, sign-in sheets, voting proxies, and all other
+papers and electronic records relating to voting by unit owners,
+which shall be maintained for a period of 1 year after the date
+of the election, vote, or meeting to which the document relates.
+11.     All rental records where the association is acting as
+agent for the rental of units.
+12.     A copy of the current question and answer sheet as
+described in s. 719.504.
+13.     All other written records of the association not
+specifically included in the foregoing which are related to the
+operation of the association.
+(b)     The official records of the association must be
+maintained within the state for at least 7 years. The records of
+the association shall be made available to a unit owner within
+45 miles of the cooperative property or within the county in
+which the cooperative property is located within 10 5 working
+days after receipt of written request by the board or its
+designee. This paragraph may be complied with by having a copy
+of the official records of the association available for
+inspection or copying on the cooperative property or the
+association may offer the option of making the records available
+to a unit owner electronically via the Internet or by allowing
+the records to be viewed in an electronic format on a computer
+screen and printed upon request. The association is not
+responsible for the use or misuse of the information provided to
+an association member or his or her authorized representative
+pursuant to the compliance requirements of this chapter unless
+the association has an affirmative duty not to disclose such
+information pursuant to this chapter.
+Section 9.         Paragraphs (a), (c), and (d) of subsection (1)
+of section 719.106, Florida Statutes, are amended, and paragraph
+(m) is added to that subsection, to read:
+719.106       Bylaws; cooperative ownership.--
+(1)      MANDATORY PROVISIONS.--The bylaws or other cooperative
+documents shall provide for the following, and if they do not,
+they shall be deemed to include the following:
+(a)      Administration.--
+1.      The form of administration of the association shall be
+described, indicating the titles of the officers and board of
+administration and specifying the powers, duties, manner of
+selection and removal, and compensation, if any, of officers and
+board members. In the absence of such a provision, the board of
+administration shall be composed of five members, unless the
+cooperative except in the case of cooperatives has having five
+or fewer units., in which case in not-for-profit corporations,
+The board shall consist of not fewer than three members in
+cooperatives with five or fewer units that are not-for-profit
+corporations. In a residential cooperative association of more
+than 10 units, co-owners of a unit may not serve as members of
+the board of directors at the same time unless the co-owners own
+more than one unit or unless there are not enough eligible
+candidates to fill the vacancies on the board at the time of the
+vacancy. In the absence of provisions to the contrary, the board
+of administration shall have a president, a secretary, and a
+treasurer, who shall perform the duties of those offices
+customarily performed by officers of corporations. Unless
+prohibited in the bylaws, the board of administration may
+appoint other officers and grant them those duties it deems
+appropriate. Unless otherwise provided in the bylaws, the
+officers shall serve without compensation and at the pleasure of
+the board. Unless otherwise provided in the bylaws, the members
+of the board shall serve without compensation.
+2.      A person who has been suspended or removed by the
+division under this chapter, or who is delinquent in the payment
+of any monetary obligation due to the association, is not
+eligible to be a candidate for board membership and may not be
+listed on the ballot. A director or officer charged by
+information or indictment with a felony theft or embezzlement
+offense involving the association's funds or property is
+suspended from office. The board shall fill the vacancy
+according to general law until the end of the period of the
+suspension or the end of the director's term of office,
+whichever occurs first. However, if the charges are resolved
+without a finding of guilt or without acceptance of a plea of
+guilty or nolo contendere, the director or officer shall be
+reinstated for any remainder of his or her term of office. A
+member who has such criminal charges pending may not be
+appointed or elected to a position as a director or officer. A
+person who has been convicted of any felony in this state or in
+any United States District Court, or who has been convicted of
+any offense in another jurisdiction which would be considered a
+felony if committed in this state, is not eligible for board
+membership unless such felon's civil rights have been restored
+for at least 5 years as of the date such person seeks election
+to the board. The validity of an action by the board is not
+affected if it is later determined that a board member is
+ineligible for board membership due to having been convicted of
+a felony.
+3.      When a unit owner files a written inquiry by certified
+mail with the board of administration, the board shall respond
+in writing to the unit owner within 30 days of receipt of the
+inquiry. The board's response shall either give a substantive
+response to the inquirer, notify the inquirer that a legal
+opinion has been requested, or notify the inquirer that advice
+has been requested from the division. If the board requests
+advice from the division, the board shall, within 10 days of its
+receipt of the advice, provide in writing a substantive response
+to the inquirer. If a legal opinion is requested, the board
+shall, within 60 days after the receipt of the inquiry, provide
+in writing a substantive response to the inquirer. The failure
+to provide a substantive response to the inquirer as provided
+herein precludes the board from recovering attorney's fees and
+costs in any subsequent litigation, administrative proceeding,
+or arbitration arising out of the inquiry. The association may,
+through its board of administration, adopt reasonable rules and
+regulations regarding the frequency and manner of responding to
+the unit owners' inquiries, one of which may be that the
+association is obligated to respond to only one written inquiry
+per unit in any given 30-day period. In such case, any
+additional inquiry or inquiries must be responded to in the
+subsequent 30-day period, or periods, as applicable.
+(c)     Board of administration meetings.--Members of the board
+of administration may use e-mail as a means of communication but
+may not cast a vote on an association matter via e-mail.
+Meetings of the board of administration at which a quorum of the
+members is present shall be open to all unit owners. Any unit
+owner may tape record or videotape meetings of the board of
+administration. The right to attend such meetings includes the
+right to speak at such meetings with reference to all designated
+agenda items. The division shall adopt reasonable rules
+governing the tape recording and videotaping of the meeting. The
+association may adopt reasonable written rules governing the
+frequency, duration, and manner of unit owner statements.
+Adequate notice of all meetings shall be posted in a conspicuous
+place upon the cooperative property at least 48 continuous hours
+preceding the meeting, except in an emergency. Any item not
+included on the notice may be taken up on an emergency basis by
+at least a majority plus one of the members of the board. Such
+emergency action shall be noticed and ratified at the next
+regular meeting of the board. Notice of any meeting in which
+regular or special assessments against unit owners are to be
+considered must specifically state that assessments will be
+considered and provide the estimated cost and description of the
+purpose for such assessments. However, Written notice of any
+meeting at which nonemergency special assessments, or at which
+amendment to rules regarding unit use, will be considered shall
+be mailed, delivered, or electronically transmitted to the unit
+owners and posted conspicuously on the cooperative property not
+less than 14 days before the meeting. Evidence of compliance
+with this 14-day notice shall be made by an affidavit executed
+by the person providing the notice and filed among the official
+records of the association. Upon notice to the unit owners, the
+board shall by duly adopted rule designate a specific location
+on the cooperative property upon which all notices of board
+meetings shall be posted. In lieu of or in addition to the
+physical posting of notice of any meeting of the board of
+administration on the cooperative property, the association may,
+by reasonable rule, adopt a procedure for conspicuously posting
+and repeatedly broadcasting the notice and the agenda on a
+closed-circuit cable television system serving the cooperative
+association. However, if broadcast notice is used in lieu of a
+notice posted physically on the cooperative property, the notice
+and agenda must be broadcast at least four times every broadcast
+hour of each day that a posted notice is otherwise required
+under this section. When broadcast notice is provided, the
+notice and agenda must be broadcast in a manner and for a
+sufficient continuous length of time so as to allow an average
+reader to observe the notice and read and comprehend the entire
+content of the notice and the agenda. In addition to any of the
+authorized means of providing notice of a meeting of the board,
+the association may, by rule, adopt a procedure for
+conspicuously posting the meeting notice and the agenda on a
+website serving the cooperative association for at least the
+minimum period of time for which a notice of a meeting is also
+required to be physically posted on the cooperative property.
+Any rule adopted shall, in addition to other matters, include a
+requirement that the association send an electronic notice in
+the same manner as a notice for a meeting of the members, which
+must include a hyperlink to the website where the notice is
+posted, to unit owners whose e-mail addresses are included in
+the association's official records. Notice of any meeting in
+which regular assessments against unit owners are to be
+considered for any reason shall specifically contain a statement
+that assessments will be considered and the nature of any such
+assessments. Meetings of a committee to take final action on
+behalf of the board or to make recommendations to the board
+regarding the association budget are subject to the provisions
+of this paragraph. Meetings of a committee that does not take
+final action on behalf of the board or make recommendations to
+the board regarding the association budget are subject to the
+provisions of this section, unless those meetings are exempted
+from this section by the bylaws of the association.
+Notwithstanding any other law to the contrary, the requirement
+that board meetings and committee meetings be open to the unit
+owners does not apply to board or committee meetings held for
+the purpose of discussing personnel matters or meetings between
+the board or a committee and the association's attorney, with
+respect to proposed or pending litigation, if the meeting is
+held for the purpose of seeking or rendering legal advice.
+(d)     Shareholder meetings.--There shall be an annual meeting
+of the shareholders. All members of the board of administration
+shall be elected at the annual meeting unless the bylaws provide
+for staggered election terms or for their election at another
+meeting. Any unit owner desiring to be a candidate for board
+membership must comply with subparagraph 1. The bylaws must
+provide the method for calling meetings, including annual
+meetings. Written notice, which must incorporate an
+identification of agenda items, shall be given to each unit
+owner at least 14 days before the annual meeting and posted in a
+conspicuous place on the cooperative property at least 14
+continuous days preceding the annual meeting. Upon notice to the
+unit owners, the board must by duly adopted rule designate a
+specific location on the cooperative property upon which all
+notice of unit owner meetings are posted. In lieu of or in
+addition to the physical posting of the meeting notice, the
+association may, by reasonable rule, adopt a procedure for
+conspicuously posting and repeatedly broadcasting the notice and
+the agenda on a closed-circuit cable television system serving
+the cooperative association. However, if broadcast notice is
+used in lieu of a posted notice, the notice and agenda must be
+broadcast at least four times every broadcast hour of each day
+that a posted notice is otherwise required under this section.
+If broadcast notice is provided, the notice and agenda must be
+broadcast in a manner and for a sufficient continuous length of
+time to allow an average reader to observe the notice and read
+and comprehend the entire content of the notice and the agenda.
+In addition to any of the authorized means of providing notice
+of a meeting of the shareholders, the association may, by rule,
+adopt a procedure for conspicuously posting the meeting notice
+and the agenda on a website serving the cooperative association
+for at least the minimum period of time for which a notice of a
+meeting is also required to be physically posted on the
+cooperative property. Any rule adopted shall, in addition to
+other matters, include a requirement that the association send
+an electronic notice in the same manner as a notice for a
+meeting of the members, which must include a hyperlink to the
+website where the notice is posted, to unit owners whose e-mail
+addresses are included in the association's official records.
+Unless a unit owner waives in writing the right to receive
+notice of the annual meeting, the notice of the annual meeting
+must be sent by mail, hand delivered, or electronically
+transmitted to each unit owner. An officer of the association
+must provide an affidavit or United States Postal Service
+certificate of mailing, to be included in the official records
+of the association, affirming that notices of the association
+meeting were mailed, hand delivered, or electronically
+transmitted, in accordance with this provision, to each unit
+owner at the address last furnished to the association.
+1.      The board of administration shall be elected by written
+ballot or voting machine. A proxy may not be used in electing
+the board of administration in general elections or elections to
+fill vacancies caused by recall, resignation, or otherwise
+unless otherwise provided in this chapter.
+a.      At least 60 days before a scheduled election, the
+association shall mail, deliver, or transmit, whether by
+separate association mailing, delivery, or electronic
+transmission or included in another association mailing,
+delivery, or electronic transmission, including regularly
+published newsletters, to each unit owner entitled to vote, a
+first notice of the date of the election. Any unit owner or
+other eligible person desiring to be a candidate for the board
+of administration must give written notice to the association at
+least 40 days before a scheduled election. Together with the
+written notice and agenda as set forth in this section, the
+association shall mail, deliver, or electronically transmit a
+second notice of election to all unit owners entitled to vote,
+together with a ballot that lists all candidates. Upon request
+of a candidate, the association shall include an information
+sheet, no larger than 8                   1/2 inches by 11 inches, which must be
+furnished by the candidate at least 35 days before the election,
+to be included with the mailing, delivery, or electronic
+transmission of the ballot, with the costs of mailing, delivery,
+or transmission and copying to be borne by the association. The
+association is not liable for the contents of the information
+sheets provided by the candidates. In order to reduce costs, the
+association may print or duplicate the information sheets on
+both sides of the paper. The division shall by rule establish
+voting procedures consistent with this subparagraph, including
+rules establishing procedures for giving notice by electronic
+transmission and rules providing for the secrecy of ballots.
+Elections shall be decided by a plurality of those ballots cast.
+There is no quorum requirement. However, at least 20 percent of
+the eligible voters must cast a ballot in order to have a valid
+election. A unit owner may not permit any other person to vote
+his or her ballot, and any such ballots improperly cast are
+invalid. A unit owner who needs assistance in casting the ballot
+for the reasons stated in s. 101.051 may obtain assistance in
+casting the ballot. Any unit owner violating this provision may
+be fined by the association in accordance with s. 719.303. The
+regular election must occur on the date of the annual meeting.
+This subparagraph does not apply to timeshare cooperatives.
+Notwithstanding this subparagraph, an election and balloting are
+not required unless more candidates file a notice of intent to
+run or are nominated than vacancies exist on the board. Any
+challenge to the election process must be commenced within 60
+days after the election results are announced.
+b.      Within 90 days after being elected or appointed to the
+board, each new director shall certify in writing to the
+secretary of the association that he or she has read the
+association's bylaws, articles of incorporation, proprietary
+lease, and current written policies; that he or she will work to
+uphold such documents and policies to the best of his or her
+ability; and that he or she will faithfully discharge his or her
+fiduciary responsibility to the association's members. Within 90
+days after being elected or appointed to the board, in lieu of
+this written certification, the newly elected or appointed
+director may submit a certificate of having satisfactorily
+completed the educational curriculum administered by an
+education provider as approved by the division pursuant to the
+requirements established in chapter 718 within 1 year before or
+90 days after the date of election or appointment. The
+educational certificate is valid and does not have to be
+resubmitted as long as the director serves on the board without
+interruption. A director who fails to timely file the written
+certification or educational certificate is suspended from
+service on the board until he or she complies with this sub-
+subparagraph. The board may temporarily fill the vacancy during
+the period of suspension. The secretary of the association shall
+cause the association to retain a director's written
+certification or educational certificate for inspection by the
+members for 5 years after a director's election or the duration
+of the director's uninterrupted tenure, whichever is longer.
+Failure to have such written certification or educational
+certificate on file does not affect the validity of any board
+action.
+2.      Any approval by unit owners called for by this chapter,
+or the applicable cooperative documents, must be made at a duly
+noticed meeting of unit owners and is subject to this chapter or
+the applicable cooperative documents relating to unit owner
+decisionmaking, except that unit owners may take action by
+written agreement, without meetings, on matters for which action
+by written agreement without meetings is expressly allowed by
+the applicable cooperative documents or law which provides for
+the unit owner action.
+3.      Unit owners may waive notice of specific meetings if
+allowed by the applicable cooperative documents or law. Notice
+of meetings of the board of administration, shareholder
+meetings, except shareholder meetings called to recall board
+members under paragraph (f), and committee meetings may be given
+by electronic transmission to unit owners who consent to receive
+notice by electronic transmission. A unit owner who consents to
+receiving notices by electronic transmission is solely
+responsible for removing or bypassing filters that may block
+receipt of mass emails sent to members on behalf of the
+association in the course of giving electronic notices.
+4.      Unit owners have the right to participate in meetings
+of unit owners with reference to all designated agenda items.
+However, the association may adopt reasonable rules governing
+the frequency, duration, and manner of unit owner participation.
+5.      Any unit owner may tape record or videotape meetings of
+the unit owners subject to reasonable rules adopted by the
+division.
+6.      Unless otherwise provided in the bylaws, a vacancy
+occurring on the board before the expiration of a term may be
+filled by the affirmative vote of the majority of the remaining
+directors, even if the remaining directors constitute less than
+a quorum, or by the sole remaining director. In the alternative,
+a board may hold an election to fill the vacancy, in which case
+the election procedures must conform to the requirements of
+subparagraph 1. unless the association has opted out of the
+statutory election process, in which case the bylaws of the
+association control. Unless otherwise provided in the bylaws, a
+board member appointed or elected under this subparagraph shall
+fill the vacancy for the unexpired term of the seat being
+filled. Filling vacancies created by recall is governed by
+paragraph (f) and rules adopted by the division.
+Notwithstanding subparagraphs (b)2. and (d)1., an association
+may, by the affirmative vote of a majority of the total voting
+interests, provide for a different voting and election procedure
+in its bylaws, which vote may be by a proxy specifically
+delineating the different voting and election procedures. The
+different voting and election procedures may provide for
+elections to be conducted by limited or general proxy.
+(m)     Director or officer delinquencies.--A director or
+officer more than 90 days delinquent in the payment of any
+monetary obligation due the association shall be deemed to have
+abandoned the office, creating a vacancy in the office to be
+filled according to law.
+Section 10.           Paragraph (b) of subsection (1) of section
+719.107, Florida Statutes, is amended to read:
+719.107       Common expenses; assessment.--
+(1)
+(b)     If so provided in the bylaws, the cost of
+communications services as defined in chapter 202, information
+services or Internet services a master antenna television system
+or duly franchised cable television service obtained pursuant to
+a bulk contract shall be deemed a common expense, and if not
+obtained pursuant to a bulk contract, such cost shall be
+considered common expense if it is designated as such in a
+written contract between the board of administration and the
+company providing the communications services as defined in
+chapter 202, information services or Internet services master
+television antenna system or the cable television service. The
+contract shall be for a term of not less than 2 years.
+1.      Any contract made by the board after April 2, 1992, for
+a community antenna system or duly franchised cable television
+service, communications services as defined in chapter 202,
+information services or Internet services may be canceled by a
+majority of the voting interests present at the next regular or
+special meeting of the association. Any member may make a motion
+to cancel the contract, but if no motion is made or if such
+motion fails to obtain the required majority at the next regular
+or special meeting, whichever is sooner, following the making of
+the contract, then such contract shall be deemed ratified for
+the term therein expressed.
+2.      Any such contract shall provide, and shall be deemed to
+provide if not expressly set forth, that any hearing impaired or
+legally blind unit owner who does not occupy the unit with a
+nonhearing impaired or sighted person may discontinue the
+service without incurring disconnect fees, penalties, or
+subsequent service charges, and as to such units, the owners
+shall not be required to pay any common expenses charge related
+to such service. If less than all members of an association
+share the expenses of cable television, the expense shall be
+shared equally by all participating unit owners. The association
+may use the provisions of s. 719.108 to enforce payment of the
+shares of such costs by the unit owners receiving cable
+television.
+Section 11.           Paragraph (b) of subsection (3) of section
+719.303, Florida Statutes, is amended to read:
+719.303       Obligations of owners.--
+(3)     The association may levy reasonable fines for failure
+of the unit owner or the unit's occupant, licensee, or invitee
+to comply with any provision of the cooperative documents or
+reasonable rules of the association. A fine may not become a
+lien against a unit. A fine may be levied by the board on the
+basis of each day of a continuing violation, with a single
+notice and opportunity for hearing before a committee as
+provided in paragraph (b). However, the fine may not exceed $100
+per violation, or $1,000 in the aggregate.
+(b)     A fine or suspension levied by the board of
+administration may not be imposed unless the board first
+provides at least 14 days' written notice and an opportunity for
+a hearing to the unit owner and, if applicable, any its
+occupant, licensee, or invitee of the unit owner sought to be
+fined or suspended and an opportunity for a hearing. The hearing
+must be held before a committee of at least three members
+appointed by the board who are not officers, directors, or
+employees of the association, or the spouse, parent, child,
+brother, or sister of an officer, director, or employee other
+unit owners who are neither board members nor persons residing
+in a board member's household. The role of the committee is
+limited to determining whether to confirm or reject the fine or
+suspension levied by the board. If the committee does not
+approve agree with the proposed fine or suspension by majority
+vote, the fine or suspension it may not be imposed. If the
+proposed fine or suspension is approved by the committee, the
+fine payment is due 5 days after the date of the committee
+meeting at which the fine is approved. The association must
+provide written notice of such fine or suspension by mail or
+hand delivery to the unit owner and, if applicable, to any
+tenant, licensee, or invitee of the unit owner.
+Section 12.           Paragraphs (a) and (c) of subsection (2) of
+section 720.303, Florida Statutes, are amended, to read:
+720.303       Association powers and duties; meetings of board;
+official records; budgets; financial reporting; association
+funds; recalls.--
+(2)     BOARD MEETINGS.--
+(a)     Members of the board of administration may use e-mail
+as a means of communication, but may not cast a vote on an
+association matter via e-mail. A meeting of the board of
+directors of an association occurs whenever a quorum of the
+board gathers to conduct association business. Meetings of the
+board must be open to all members, except for meetings between
+the board and its attorney with respect to proposed or pending
+litigation where the contents of the discussion would otherwise
+be governed by the attorney-client privilege. A meeting of the
+board must be held at a location that is accessible to a
+physically handicapped person if requested by a physically
+handicapped person who has a right to attend the meeting. The
+provisions of this subsection shall also apply to the meetings
+of any committee or other similar body when a final decision
+will be made regarding the expenditure of association funds and
+to meetings of any body vested with the power to approve or
+disapprove architectural decisions with respect to a specific
+parcel of residential property owned by a member of the
+community.
+(c)     The bylaws shall provide the following for giving
+notice to parcel owners and members of all board meetings and,
+if they do not do so, shall be deemed to include provide the
+following:
+1.      Notices of all board meetings must be posted in a
+conspicuous place in the community at least 48 hours in advance
+of a meeting, except in an emergency. In the alternative, if
+notice is not posted in a conspicuous place in the community,
+notice of each board meeting must be mailed or delivered to each
+member at least 7 days before the meeting, except in an
+emergency. Notwithstanding this general notice requirement, for
+communities with more than 100 members, the association bylaws
+may provide for a reasonable alternative to posting or mailing
+of notice for each board meeting, including publication of
+notice, provision of a schedule of board meetings, or the
+conspicuous posting and repeated broadcasting of the notice on a
+closed-circuit cable television system serving the homeowners'
+association. However, if broadcast notice is used in lieu of a
+notice posted physically in the community, the notice must be
+broadcast at least four times every broadcast hour of each day
+that a posted notice is otherwise required. When broadcast
+notice is provided, the notice and agenda must be broadcast in a
+manner and for a sufficient continuous length of time so as to
+allow an average reader to observe the notice and read and
+comprehend the entire content of the notice and the agenda. The
+association may provide notice by electronic transmission in a
+manner authorized by law for meetings of the board of directors,
+committee meetings requiring notice under this section, and
+annual and special meetings of the members to any member who has
+provided a facsimile number or e-mail address to the association
+to be used for such purposes; however, a member must consent in
+writing to receiving notice by electronic transmission.
+2.      An assessment may not be levied at a board meeting
+unless the notice of the meeting includes a statement that
+assessments will be considered and the nature of the
+assessments. Written notice of any meeting at which special
+assessments will be considered or at which amendments to rules
+regarding parcel use will be considered must be mailed,
+delivered, or electronically transmitted to the members and
+parcel owners and posted conspicuously on the property or
+broadcast on closed-circuit cable television not less than 14
+days before the meeting.
+3.      Directors may not vote by proxy or by secret ballot at
+board meetings, except that secret ballots may be used in the
+election of officers. This subsection also applies to the
+meetings of any committee or other similar body, when a final
+decision will be made regarding the expenditure of association
+funds, and to any body vested with the power to approve or
+disapprove architectural decisions with respect to a specific
+parcel of residential property owned by a member of the
+community.
+Section 13.           Paragraph (b) of subsection (2) of section
+720.305, Florida Statutes, is amended to read:
+720.305       Obligations of members; remedies at law or in
+equity; levy of fines and suspension of use rights.--
+(2)      The association may levy reasonable fines. A fine may
+not exceed $100 per violation against any member or any member's
+tenant, guest, or invitee for the failure of the owner of the
+parcel or its occupant, licensee, or invitee to comply with any
+provision of the declaration, the association bylaws, or
+reasonable rules of the association unless otherwise provided in
+the governing documents. A fine may be levied by the board for
+each day of a continuing violation, with a single notice and
+opportunity for hearing, except that the fine may not exceed
+$1,000 in the aggregate unless otherwise provided in the
+governing documents. A fine of less than $1,000 may not become a
+lien against a parcel. In any action to recover a fine, the
+prevailing party is entitled to reasonable attorney fees and
+costs from the nonprevailing party as determined by the court.
+(b)     A fine or suspension levied may not be imposed by the
+board of administration may not be imposed unless the board
+first provides without at least 14 days' notice to the parcel
+owner and, if applicable, any occupant, licensee, or invitee of
+the parcel owner, person sought to be fined or suspended and an
+opportunity for a hearing before a committee of at least three
+members appointed by the board who are not officers, directors,
+or employees of the association, or the spouse, parent, child,
+brother, or sister of an officer, director, or employee. If the
+committee, by majority vote, does not approve a proposed fine or
+suspension, the proposed fine or suspension it may not be
+imposed. The role of the committee is limited to determining
+whether to confirm or reject the fine or suspension levied by
+the board. If the proposed board of administration imposes a
+fine or suspension levied by the board is approved by the
+committee, the fine payment is due 5 days after the date of the
+committee meeting at which the fine is approved. The association
+must provide written notice of such fine or suspension by mail
+or hand delivery to the parcel owner and, if applicable, to any
+tenant, licensee, or invitee of the parcel owner.
+Section 14.           Paragraph (a) of subsection (9) of section
+720.306, Florida Statutes, is amended to read:
+720.306       Meetings of members; voting and election
+procedures; amendments.--
+(9)     ELECTIONS AND BOARD VACANCIES.--
+(a)     Elections of directors must be conducted in accordance
+with the procedures set forth in the governing documents of the
+association. Except as provided in paragraph (b), all members of
+the association are eligible to serve on the board of directors,
+and a member may nominate himself or herself as a candidate for
+the board at a meeting where the election is to be held;
+provided, however, that if the election process allows
+candidates to be nominated in advance of the meeting, the
+association is not required to allow nominations at the meeting.
+An election is not required unless more candidates are nominated
+than vacancies exist. If an election is not required because
+there are either an equal number or fewer qualified candidates
+than vacancies exist, and if nominations from the floor are not
+required pursuant to this section or the bylaws, write-in
+nominations are not permitted and such qualified candidates
+shall commence service on the board of directors, regardless of
+whether a quorum is attained at the annual meeting. Except as
+otherwise provided in the governing documents, boards of
+directors must be elected by a plurality of the votes cast by
+eligible voters. Any challenge to the election process must be
+commenced within 60 days after the election results are
+announced.
+Section 15.            Paragraph (b) of subsection (3) of section
+720.3085, Florida Statutes, is amended to read:
+720.3085          Payment for assessments; lien claims.--
+(3)     Assessments and installments on assessments that are
+not paid when due bear interest from the due date until paid at
+the rate provided in the declaration of covenants or the bylaws
+of the association, which rate may not exceed the rate allowed
+by law. If no rate is provided in the declaration or bylaws,
+interest accrues at the rate of 18 percent per year.
+(b)     Any payment received by an association and accepted
+shall be applied first to any interest accrued, then to any
+administrative late fee, then to any costs and reasonable
+attorney fees incurred in collection, and then to the delinquent
+assessment. This paragraph applies notwithstanding any
+restrictive endorsement, designation, or instruction placed on
+or accompanying a payment. A late fee is not subject to the
+provisions of chapter 687 and is not a fine. The foregoing is
+applicable notwithstanding s. 673.3111, any purported accord and
+satisfaction, or any restrictive endorsement, designation, or
+instruction placed on or accompanying a payment. The preceding
+sentence is intended to clarify existing law.
+Section 16.           This act shall take effect July 1, 2018.

@@ -1,0 +1,740 @@
+
+
+     SECTION 1.  The legislature finds that states fail to collect
+more than $23,000,000,000 annually in sales taxes from remote sales over the Internet
+and through catalogs.  Hawaii and its
+local governments will lose out on an estimated $60,000,000 in sales and use
+taxes from remote sales, reducing funds that would otherwise be available for
+the public education system, health care services, infrastructure, and other
+vital public services.
+
+     The legislature further finds that
+Colorado adopted a law requiring out-of-state retailers that do not collect
+Colorado's state sales tax to report tax-related information to their Colorado
+customers and the Colorado department of revenue.  In 2016, the United States court of appeals
+for the tenth circuit upheld that law.
+
+     The intent of this Act is to address
+the significant harm and unfairness brought about by the physical presence
+nexus rule.  To achieve this objective,
+this Act adopts a new program that requires remote sellers who meet a specified
+threshold of gross receipts from sales into the State to have the option to collect
+general excise or use tax on taxable sales into the State or comply with
+certain general excise and use tax notice and reporting provisions.  This option is also available to other
+persons, such as marketplace facilitators, for facilitated sales on behalf of
+third-party remote sellers.
+
+     SECTION 2.  Chapter 237, Hawaii Revised Statutes, is
+amended by adding two new sections to be appropriately designated and to read
+as follows:
+
+     "§237-A  Election by
+remote sellers, referrers, and marketplace facilitators.  (a) 
+Beginning on January 1, 2018, and for any calendar year thereafter,
+remote sellers, referrers, and marketplace facilitators shall elect to collect
+and remit general excise tax on all taxable sales into the State pursuant to
+this chapter or comply with section 237-B.
+
+     (b)  For marketplace facilitators, the
+requirements of subsection (a) shall apply only with respect to:
+
+     (1)  Retail sales
+through the marketplace facilitator's marketplace by or on behalf of
+marketplace sellers who do not have a physical presence in the State; and
+
+     (2)  A marketplace
+facilitator's own retail sales, if the marketplace facilitator does not have a
+physical presence in the State.
+
+     (c)  For referrers, the requirements of subsection
+(a) shall apply only with respect to:
+
+     (1)  Retail sales
+directly resulting from a referral of the purchaser to a marketplace seller who
+does not have a physical presence in the State; and
+
+     (2)  A referrer's
+own retail sales, if the referrer does not have a physical presence in the State.
+
+A referrer may make different elections pursuant
+to subsection (a) with respect to retail sales described in paragraphs (1) and
+(2).
+
+     §237-B  Information reporting.  (a) 
+Except as otherwise provided in subsection (e), a seller that does not
+collect the tax imposed under this chapter on a taxable sale shall comply with
+the applicable notice and reporting requirements of this section.  For taxable sales made through a marketplace
+facilitator, or other agent, the marketplace facilitator, or other agent, shall
+comply with the notice and reporting requirements of this section, and the seller
+is not subject to the notice and reporting requirements of this section with
+respect to those sales.  If a referrer
+makes an election to comply with the applicable notice and reporting requirements
+of this section, a marketplace seller to whom a referral is made by the
+referrer shall remain subject to the applicable notice and reporting
+requirements pursuant to this section for their sales, unless the marketplace
+seller collects the tax imposed under this chapter on taxable retail sales
+sourced to the State.
+
+     (b)  A seller, other than a referrer acting in its
+capacity as a referrer, subject to the notice and reporting requirements of
+this section shall:
+
+     (1)  Post a
+conspicuous notice on its marketplace, platform, website, catalog, or any other
+similar medium that informs Hawaii purchasers that:
+
+          (A)  General
+excise tax is due on certain purchases;
+
+          (B)  The
+State of Hawaii requires the purchaser to file a general excise tax return; and
+
+          (C)  The
+notice is provided under the requirements of this section; and
+
+     (2)  Provide a
+notice to each consumer at the time of each sale that includes the following
+information:
+
+          (A)  A
+statement that general excise tax is not being collected or remitted upon the
+sale;
+
+          (B)  A
+statement that the consumer may be required to remit general excise tax
+directly to the department of taxation; and
+
+          (C)  Instructions
+for obtaining additional information from the department regarding whether and
+how to remit general excise tax to the department of taxation;
+
+provided that the notice pursuant to paragraph
+(2) shall be prominently displayed on all invoices and order forms, including,
+where applicable, electronic and catalog invoices and order forms and upon each
+sales receipt or similar document provided to the purchaser, whether in paper
+or electronic form.  No indication shall
+be made that general excise tax is not imposed upon the transaction unless such
+indication is followed immediately with the notice required pursuant to
+paragraph (2) or the transaction with respect to which the indication is given
+is exempt from general excise tax pursuant to law.
+
+     (c)  A referrer subject to the notice and
+reporting requirements of this section shall post a conspicuous notice on its platform
+that informs Hawaii purchasers:
+
+     (1)  That general
+excise tax is due on certain purchases;
+
+     (2)  That the seller
+may or may not collect and remit general excise tax on a purchase;
+
+     (3)  That the State
+of Hawaii requires the purchaser to file a general excise tax return if tax is
+not assessed at the time of a taxable sale by the seller;
+
+     (4)  That the notice
+is provided under the requirements of this section;
+
+     (5)  Of the
+instructions for obtaining additional information from the department of
+taxation regarding whether and how to remit the general excise tax to the
+department; and
+
+     (6)  That if the
+seller to whom the purchaser is referred does not collect general excise tax on
+a subsequent purchase by the purchaser, the seller may be required to provide information
+to the purchaser and the department of taxation about the purchaser's potential
+general excise tax liability;
+
+provided that the notice shall be prominently
+displayed on the platform and may include pop-up boxes or notification by other
+means that appear when the referrer transfers a purchaser to a marketplace
+seller or an affiliated person to complete the sale.
+
+     (d)  A seller, other than a referrer acting it its
+capacity as a referrer, subject to the notice and reporting requirements of
+subsection (b) shall, no later than February 28 of each year, provide a report
+to each consumer for whom the seller was required to provide a notice under
+subsection (b)(2).  The report under this
+subsection shall include:
+
+     (1)  A statement
+that the seller did not collect general excise tax on the consumer's
+transactions with the seller and that the consumer may be required to remit
+such tax directly to the department of taxation;
+
+     (2)  A list, by
+date, generally indicating the type of product purchased or leased during the
+immediately preceding calendar year by the consumer from the seller sourced to
+this State and the price of each product;
+
+     (3)  Instructions
+for obtaining additional information from the department of taxation regarding
+whether and how to remit the sales tax to the department;
+
+     (4)  A statement
+that the seller is required to submit a report to the department of taxation pursuant
+to subsection (f) stating the total dollar amount of the consumer's purchases
+from the seller; and
+
+     (5)  Any information
+as the department of taxation may reasonably require.
+
+     The report required under this
+subsection shall be sent to the consumer's billing address or, if unknown, the
+consumer's shipping address, by first-class mail, in an envelope marked
+prominently with words indicating important tax information is enclosed.  If no billing or shipping address is known,
+the report shall be sent electronically to the consumer's last known electronic
+mail address with a subject heading indicating important tax information is
+enclosed.
+
+     (e)  A referrer subject to the notice requirements
+pursuant to subsection (c) shall, no later than February 28 of each year,
+provide notice to each marketplace seller to whom the referrer transferred a
+potential purchaser located in Hawaii during the previous calendar year.  The notice under this subsection shall
+include:
+
+     (1)  A statement
+that Hawaii imposes a general excise tax on gross receipts;
+
+     (2)  A statement
+that a seller, meeting the threshold pursuant to section 237-2, is required to
+either collect and remit general excise tax on all taxable gross receipts sourced
+to this State or to comply with this section; and
+
+     (3)  Instructions
+for obtaining additional information from the department of taxation.
+
+     By February 28 of each year, a
+referrer required to provide notice pursuant to this subsection shall provide
+the department with a list of sellers who received the referrer's notice under
+this section and an affidavit signed under penalty of perjury from an officer
+of the referrer affirming that the referrer made reasonable efforts to comply
+with the applicable general excise tax notice and reporting requirements of
+this section; provided that the list of sellers who received the referrer's
+notice shall be provided electronically in a form and manner required by the
+department of taxation.
+
+     (f)  A seller, other than a referrer acting in its
+capacity as a referrer, subject to the notice and reporting requirements of
+this section shall, no later than February 28 of each year, file a report with
+the department of taxation.  The report
+shall include, with respect to each consumer to whom the seller is required to
+provide a report pursuant to subsection (d) by February 28 of the current
+calendar year:
+
+     (1)  The consumer's
+name;
+
+     (2)  The billing
+address and, if different, the last known mailing address;
+
+     (3)  The shipping
+address for each product sold or leased to the consumer for delivery to a
+location in the State during the immediately preceding calendar year; and
+
+     (4)  The total
+dollar amount of all such purchases by the consumer.
+
+     The report pursuant to this
+subsection shall include an affidavit signed under penalty of perjury from an
+officer of the seller affirming that the seller made reasonable efforts to
+comply with the applicable general excise tax notice and reporting requirements
+pursuant to this section.  Except for the
+affidavit, the report pursuant to this subsection shall be filed electronically
+in a form and manner required by the department of taxation.
+
+     (g)  A seller who is registered with the department
+of taxation to collect and remit general excise tax, and who makes a reasonable
+effort to comply with the requirements of this chapter, is not required to
+provide notice or file reports under this section.
+
+     (h)  Every seller subject to this section and
+section 237-A shall keep and preserve, for a period of five years, suitable
+records as may be necessary for the department of taxation to verify the
+seller's compliance with this section and section 237-A.  All of the seller's books, records, and invoices
+shall be open for examination at any reasonable time by the department of
+taxation.  The department of taxation may
+require the attendance of any officer of the seller or any employee of the
+seller having knowledge pertinent to the department's investigation of the
+seller's compliance with this section and section 237-A, at a time and place
+fixed in a subpoena, and may take the person's testimony under oath.
+
+     (i)  In exercising discretion in enforcing this
+section and section 237-A, the department of taxation may take into
+consideration available resources, whether the anticipated benefits from any
+potential enforcement activities are likely to exceed the department's expected
+enforcement costs, and any other factors the department deems appropriate."
+
+     SECTION 3.  Chapter 238,
+Hawaii Revised Statutes, is amended by adding two new sections to be
+appropriately designated and to read as follows:
+
+     "§238-A  Election by
+remote sellers, referrers, and marketplace facilitators.  (a) 
+Beginning on January 1, 2018, and for any calendar year thereafter,
+remote sellers, referrers, and marketplace facilitators shall elect to collect
+and remit use tax on all taxable sales into the State pursuant to this chapter
+or comply with section 238-B.
+
+     (b)  For marketplace facilitators, the
+requirements of subsection (a) shall apply only with respect to:
+
+     (1)  Retail sales
+through the marketplace facilitator's marketplace by or on behalf of
+marketplace sellers who do not have a physical presence in this State; and
+
+     (2)  A marketplace
+facilitator's own retail sales, if the marketplace facilitator does not have a
+physical presence in this State.
+
+     (c)  For referrers, the requirements of subsection
+(a) shall apply only with respect to:
+
+     (1)  Retail sales
+directly resulting from a referral of the purchaser to a marketplace seller who
+does not have a physical presence in this State; and
+
+     (2)  A referrer's
+own retail sales, if the referrer does not have a physical presence in this State.
+
+A referrer may make different elections pursuant
+to subsection (a) with respect to retail sales described in paragraphs (1) and
+(2).
+
+     §238-B  Information reporting.  (a) 
+Except as otherwise provided in subsection (e), a seller that does not
+collect the tax imposed under this chapter on a taxable sale shall comply with
+the applicable notice and reporting requirements of this section.  For taxable sales made through a marketplace
+facilitator, or other agent, the marketplace facilitator, or other agent, shall
+comply with the notice and reporting requirements of this section, and the seller
+is not subject to the notice and reporting requirements of this section with
+respect to those sales.  If a referrer
+makes an election to comply with the applicable notice and reporting
+requirements of this section, a marketplace seller to whom a referral is made
+by the referrer shall remain subject to the applicable notice and reporting
+requirements pursuant to this section for their sales, unless the marketplace
+seller collects the tax imposed under this chapter on taxable retail sales
+sourced to this State.
+
+     (b)  A seller, other than a referrer acting in its
+capacity as a referrer, subject to the notice and reporting requirements of
+this section shall:
+
+     (1)  Post a
+conspicuous notice on its marketplace, platform, website, catalog, or any other
+similar medium that informs Hawaii purchasers that:
+
+          (A)  Use
+tax is due on certain purchases;
+
+          (B)  The
+State of Hawaii requires the purchaser to file a use tax return; and
+
+          (C)  The
+notice is provided under the requirements of this section; and
+
+     (2)  Provide a
+notice to each consumer at the time of each sale that includes the following
+information:
+
+          (A)  A
+statement that use tax is not being collected or remitted upon the sale;
+
+          (B)  A
+statement that the consumer may be required to remit use tax directly to the
+department of taxation; and
+
+          (C)  Instructions
+for obtaining additional information from the department regarding whether and
+how to remit use tax to the department of taxation;
+
+provided that the notice pursuant to paragraph
+(2) shall be prominently displayed on all invoices and order forms, including,
+where applicable, electronic and catalog invoices and order forms and upon each
+sales receipt or similar document provided to the purchaser, whether in paper
+or electronic form.  No indication shall
+be made that use tax is not imposed upon the transaction unless such indication
+is followed immediately with the notice required pursuant to paragraph (2) or
+the transaction with respect to which the indication is given is exempt from
+use tax pursuant to law.
+
+     (c)  A referrer subject to the notice and
+reporting requirements of this section shall post a conspicuous notice on its
+platform that informs Hawaii purchasers:
+
+     (1)  That use tax is
+due on certain purchases;
+
+     (2)  That the seller
+may or may not collect and remit use tax on a purchase;
+
+     (3)  That the State
+of Hawaii requires the purchaser to file a use tax return if tax is not
+assessed at the time of a taxable sales by the seller;
+
+     (4)  That the notice
+is provided under the requirements of this section;
+
+     (5)  Of the
+instructions for obtaining additional information from the department of
+taxation regarding whether and how to remit the use tax to the department; and
+
+     (6)  That if the
+seller to whom the purchaser is referred does not collect use tax on a
+subsequent purchase by the purchaser, the seller may be required to provide
+information to the purchaser and the department of taxation about the
+purchaser's potential use tax liability;
+
+provided that the notice shall be prominently
+displayed on the platform and may include pop-up boxes or notification by other
+means that appear when the referrer transfers a purchaser to a marketplace
+seller or an affiliated person to complete the sale.
+
+     (d)  A seller, other than a referrer acting it its
+capacity as a referrer, subject to the notice and reporting requirements of
+subsection (b) shall, no later than February 28 of each year, provide a report
+to each consumer for whom the seller was required to provide a notice under
+subsection (b)(2).  The report under this
+subsection shall include:
+
+     (1)  A statement
+that the seller did not collect use tax on the consumer's transactions with the
+seller and that the consumer may be required to remit such tax directly to the
+department of taxation;
+
+     (2)  A list, by
+date, generally indicating the type of product purchased or leased during the
+immediately preceding calendar year by the consumer from the seller sourced to
+this State and the price of each product;
+
+     (3)  Instructions
+for obtaining additional information from the department of taxation regarding
+whether and how to remit the use tax to the department;
+
+     (4)  A statement
+that the seller is required to submit a report to the department of taxation pursuant
+to subsection (f) stating the total dollar amount of the consumer's purchases
+from the seller; and
+
+     (5)  Any information
+as the department of taxation may reasonably require.
+
+     The report required under this
+subsection shall be sent to the consumer's billing address or, if unknown, the
+consumer's shipping address, by first-class mail, in an envelope marked
+prominently with words indicating important tax information is enclosed.  If no billing or shipping address is known,
+the report shall be sent electronically to the consumer's last known electronic
+mail address with a subject heading indicating important tax information is
+enclosed.
+
+     (e)  A referrer subject to the notice requirements
+pursuant to subsection (c) shall, no later than February 28 of each year,
+provide notice to each marketplace seller to whom the referrer transferred a
+potential purchaser located in Hawaii during the previous calendar year.  The notice under this subsection shall
+include:
+
+     (1)  A statement
+that Hawaii imposes a use tax on the landed value of purchases;
+
+     (2)  A statement
+that a seller, meeting the threshold pursuant to section 237-2, is required to
+either collect and remit use tax on the landed value of purchases sourced to
+this State or to comply with this section; and
+
+     (3)  Instructions
+for obtaining additional information from the department of taxation.
+
+     By February 28 of each year, a
+referrer required to provide notice pursuant to this subsection shall provide
+the department with a list of sellers who received the referrer's notice under
+this section and an affidavit signed under penalty of perjury from an officer
+of the referrer affirming that the referrer made reasonable efforts to comply
+with the applicable use tax notice and reporting requirements of this section;
+provided that the list of sellers who received the referrer's notice shall be
+provided electronically in a form and manner required by the department of
+taxation.
+
+     (f)  A seller, other than a referrer acting in its
+capacity as a referrer, subject to the notice and reporting requirements of
+this section shall, no later than February 28 of each year, file a report with
+the department of taxation.  The report
+shall include, with respect to each consumer to whom the seller is required to
+provide a report pursuant to subsection (d) by February 28 of the current
+calendar year:
+
+     (1)  The consumer's
+name;
+
+     (2)  The billing
+address and, if different, the last known mailing address;
+
+     (3)  The shipping
+address for each product sold or leased to the consumer for delivery to a
+location in this State during the immediately preceding calendar year; and
+
+     (4)  The total
+dollar amount of all such purchases by the consumer.
+
+     The report pursuant to this
+subsection shall include an affidavit signed under penalty of perjury from an
+officer of the seller affirming that the seller made reasonable efforts to
+comply with the applicable use tax notice and reporting requirements pursuant
+to this section.  Except for the
+affidavit, the report pursuant to this subsection shall be filed electronically
+in a form and manner required by the department of taxation.
+
+     (g)  A seller who is registered with the
+department of taxation to collect and remit use tax, and who makes a reasonable
+effort to comply with the requirements of this chapter, is not required to
+provide notice or file reports under this section.
+
+     (h)  Every seller subject to this section and
+section 238-A shall keep and preserve, for a period of five years, suitable
+records as may be necessary for the department of taxation to verify the
+seller's compliance with this section and section 238-A.  All of the seller's books, records, and
+invoices shall be open for examination at any reasonable time by the department
+of taxation.  The department of taxation may
+require the attendance of any officer of the seller or any employee of the
+seller having knowledge pertinent to the department's investigation of the
+seller's compliance with this section and section 238-A, at a time and place
+fixed in a subpoena, and may take the person's testimony under oath.
+
+     (i)  In exercising discretion in enforcing this
+section and section 238-A, the department of taxation may take into
+consideration available resources, whether the anticipated benefits from any
+potential enforcement activities are likely to exceed the department's expected
+enforcement costs, and any other factors the department deems appropriate."
+
+     SECTION 4.  Section 237-1,
+Hawaii Revised Statutes, is amended by adding six new definitions to be
+appropriately inserted and to read as follows:
+
+     ""Marketplace
+facilitator" means a person that contracts with sellers to facilitate for
+consideration, regardless of whether deducted as fees from the transaction, the
+sale of the seller's products through a physical or electronic marketplace
+operated by the person, and engages:
+
+     (1)  Directly or
+indirectly through one or more affiliated persons in any of the following:
+
+          (A)  Transmitting
+or otherwise communicating the offer or acceptance between the buyer and
+seller;
+
+          (B)  Owning
+or operating the infrastructure, electronic or physical, or technology that
+brings buyers and sellers together; or
+
+          (C)  Providing
+a virtual currency that buyers are allowed or required to use to purchase
+products from the seller; and
+
+     (2)  In any of the
+following activities with respect to the seller's products:
+
+          (A)  Payment
+processing services;
+
+          (B)  Fulfillment
+or storage services;
+
+          (C)  Listing
+products for sale;
+
+          (D)  Setting
+prices;
+
+          (E)  Branding
+sales as those of the marketplace facilitator;
+
+          (F)  Order
+taking;
+
+          (G)  Advertising
+or promotion; or
+
+          (H)  Providing
+customer service or accepting or assisting with returns or exchanges.
+
+     "Marketplace seller"
+means a seller that makes retail sales through any physical or electronic
+marketplace operated by a marketplace facilitator or directly resulting from a
+referral by a referrer.
+
+     "Platform" means an
+electronic or physical medium, including a website or catalog, operated by a
+referrer.
+
+     "Referral" means the
+transfer by a referrer of a potential customer to a marketplace seller who
+advertises or lists products for sale on the referrer's platform.
+
+     "Referrer" means a person,
+other than a person engaging in the business of printing a newspaper or
+publishing a newspaper, who contracts or otherwise agrees with a seller to list
+or advertise for sale one or more items in any medium, including a website or
+catalog; receives a commission, fee, or other consideration from the seller for
+the listing or advertisement; transfers, via telephone, internet link, or other
+means, a purchaser to a seller or an affiliated person to complete the sale;
+and does not collect receipts from the purchasers for the transaction.
+
+     "Referrer" shall not
+include a person that:
+
+     (1)  Provides
+important advertising services; and
+
+     (2)  Does not
+provide the marketplace seller's shipping terms or advertise whether a
+marketplace seller charges tax.
+
+     "Remote seller" means
+any seller, other than a marketplace facilitator or referrer, who does not have
+a physical presence in this State and makes retail sales to purchasers."
+
+     SECTION 5.  Section 237-2,
+Hawaii Revised Statutes, is amended to read as follows:
+
+     "§237-2  "Business", "engaging"
+in business, defined.  As used in
+this chapter:
+
+     "Business" includes all
+activities (personal, professional, or corporate) engaged in or caused to be
+engaged in with the object of gain or economic benefit either direct or
+indirect, without regard to physical presence in the State, but does not
+include casual sales[.]; provided that the following businesses are
+engaged in "business" in the State:
+
+     (1)  A remote seller
+if, during the current or immediately preceding calendar year, its gross
+receipts from sales sourced to the State are at least $10,000;
+
+     (2)  A marketplace
+facilitator if, during the current or immediately preceding calendar year, the
+gross receipts from sales sourced to the State by the marketplace facilitator,
+whether in its own name or as an agent of a marketplace seller, total at least
+$10,000; and
+
+     (3)  A referrer if,
+during the current or immediately preceding calendar year, the gross income of
+the business received from the referrer's referral services apportioned in the
+State, whether or not subject to tax and from sales sourced to the State, if
+any, is at least $267,000.
+
+     "Engaging", with reference
+to engaging or continuing in business, includes the exercise of corporate or
+franchise powers."
+
+     SECTION 6.  Section 238-1,
+Hawaii Revised Statutes, is amended by adding six new definitions to be
+appropriately inserted and to read as follows:
+
+     ""Marketplace
+facilitator" shall have the same meaning as in section 237-1.
+
+     "Marketplace seller" shall
+have the same meaning as in section 237-1.
+
+     "Platform" shall have
+the same meaning as in section 237-1.
+
+     "Referral" shall have
+the same meaning as in section 237-1.
+
+     "Referrer" shall have
+the same meaning as in section 237-1.
+
+     "Remote seller" shall
+have the same meaning as in section 237-1."
+
+     SECTION 7.  If any provision of this Act, or the
+application thereof to any person or circumstance, is held invalid, the
+invalidity does not affect other provisions or applications of the Act that can
+be given effect without the invalid provision or application, and to this end
+the provisions of this Act are severable.
+
+     SECTION
+8.  In codifying the new sections added
+by sections 2 and 3 of this Act, the revisor of statutes shall substitute
+appropriate section numbers for the letters used in designating the new
+sections in this Act.
+
+     SECTION 9.  Statutory material to be repealed is
+bracketed and stricken.  New statutory
+material is underscored.
+
+     SECTION 10.  This Act, upon its approval, shall apply to
+taxable years beginning after December 31, 2019.
+
+ 
+
+
+ 
+  
+  INTRODUCED BY:
+  
+  
+  _____________________________
+  
+ 
+ 
+  
+   
+  
+  
+   
+  
+ 
+ 
+  
+   
+  
+  
+   
+  
+ 
+ 
+  
+   
+  
+  
+   
+  
+ 
+ 
+  
+   
+  
+  
+   
+  
+ 
+ 
+  
+   
+  
+  
+   
+  
+ 
+ 
+  
+   
+  
+  
+   
+  
+ 
+ 
+  
+   
+  
+  
+   
+  
+ 
+
+

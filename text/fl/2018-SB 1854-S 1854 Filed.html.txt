@@ -1,0 +1,200 @@
+A bill to be entitled                      
+An act relating to broadband service privacy; creating
+s. 364.0131, F.S.; defining terms; prohibiting
+Internet service providers from using, disclosing,
+selling, or permitting external access to certain
+customer information, except under specified
+conditions; specifying an effective date for the
+prohibition; requiring providers to furnish a prior
+opt-in consent; specifying requirements and
+disclosures for the consent; prohibiting providers
+from retaining customer information any longer than
+necessary; providing exceptions; requiring providers
+to implement and maintain certain security procedures
+and practices; specifying that providers may not
+penalize customers for refusing to provide consent or
+offer customers discounts for providing consent;
+prohibiting providers from refusing or failing to
+disclose customer personal information upon written
+request from the customer; clarifying that generating,
+using, disclosing, selling, or permitting access to
+aggregate customer information is permissible;
+specifying that providers may use customer information
+to market communication-related services to the
+customer under certain conditions; authorizing
+providers to employ security measures; providing
+applicability; specifying that customer waivers are
+void and unenforceable; requiring the Public Service
+Commission to administer and enforce the act and to
+impose and collect certain penalties; authorizing the
+commission to adopt rules; providing effective dates.
+
+Be It Enacted by the Legislature of the State of Florida:
+
+Section 1. Section 364.0131, Florida Statutes, is created
+to read:
+364.0131 Broadband service privacy.—
+(1) As used in this section, the term:
+(a) “Aggregate customer information” means collective data
+that relates to a group or category of customers, from which
+individual customer identities and characteristics have been
+removed, and which is not linked or reasonably linkable to any
+individual person, household, or device. The term does not
+include individual customer records that have been deidentified.
+(b) “Customer” means a current or former subscriber to the
+broadband service, or an applicant for broadband service.
+(c) “Customer personal information” means information
+collected from or about an individual customer or user of the
+customer’s subscription which is made available to the Internet
+service provider by a customer or user of the customer’s
+subscription solely by virtue of the provider-customer
+relationship, including:
+1. Name and billing information.
+2. Government-issued identifiers such as, but not limited
+to, a social security number, driver license number, military
+identification, or passport number.
+3. Information that could facilitate the physical or
+electronic contacting of an individual, such as a physical
+address, e-mail address, phone number, or Internet Protocol (IP)
+address.
+4. Demographic information, such as date of birth, age,
+gender, race, ethnicity, nationality, religion, or sexual
+orientation.
+5. Financial information.
+6. Health information.
+7. Information pertaining to a minor child with whom the
+customer or user has a parental, legal custodianship, permanent
+guardianship, or foster parent relationship.
+8. Geolocation information.
+9. Information relating to individual customer user
+behavior, such as Internet browsing history, application usage
+history, content of communications, and origin and destination
+IP addresses of all traffic.
+10. Device identifiers, such as a media access control
+(MAC) address or Internet mobile equipment identity (IMEI).
+11. Any other information concerning a customer or user of
+the customer’s subscription which is collected or made available
+and is maintained in personally identifiable form.
+(d) “Deidentified” means the details making it possible to
+recognize a particular person have been removed from a record,
+piece of information, or data set.
+(e) “Internet service provider” means a person engaged in
+providing broadband service. This only includes the extent of
+the person’s business engaged in or supporting the provision of
+broadband services.
+(2) Effective July 1, 2019:
+(a) An Internet service provider may not use, disclose,
+sell, or permit external access to customer personal
+information, except as provided in this section or other law.
+(b) An Internet service provider may use, disclose, sell,
+or permit access to customer personal information if the
+customer gives the Internet service provider prior opt-in
+consent. The customer may revoke this consent at any time. The
+mechanism provided by the Internet service provider for
+requesting and revoking consent under this subsection must be
+clear and conspicuous, not misleading, in the language primarily
+used to conduct business with the customer, and made available
+to the customer at no additional cost. The mechanism must also
+be persistently available on or through the Internet service
+provider’s Internet website or mobile application if it provides
+such a site or application for account management purposes. If
+the Internet service provider does not have an Internet website,
+it must provide a persistently available mechanism by another
+means, such as a toll-free telephone number. The customer’s
+granting, denial, or withdrawal of consent must be given effect
+promptly and remain in effect until the customer revokes or
+limits the granting, denial, or withdrawal of consent.
+(c) An Internet service provider may not retain a
+customer’s information for longer than is reasonably necessary
+to accomplish the purposes for which the information was
+collected, unless the information is aggregate customer
+information or is otherwise required by this section or other
+law.
+(d) An Internet service provider must implement and
+maintain reasonable security procedures and practices
+appropriate to the nature of the information to protect customer
+personal information from unauthorized use, disclosure, access,
+destruction, or modification.
+(3) The request for consent specified in paragraph (2)(b)
+must disclose to the customer all of the following:
+(a) The types of customer personal information for which
+the Internet service provider is seeking customer approval to
+use, disclose, sell, or permit external access.
+(b) The purposes for which the customer personal
+information will be used.
+(c) The categories of entities to which the Internet
+service provider intends to disclose, sell, or permit access to
+the customer personal information.
+(4) An Internet service provider may not:
+(a) Refuse to serve a customer, or in any way limit or
+reduce services to a customer, who does not provide consent
+under paragraph (2)(b).
+(b) Charge a customer a penalty, or penalize a customer in
+any way, or offer a customer a discount or another benefit based
+on the customer’s decision to provide or not provide consent
+under paragraph (2)(b).
+(c) Refuse or fail to disclose the customer personal
+information of a customer upon affirmative written request from
+such customer, to any person designated by such customer.
+(5) An Internet service provider may use, disclose, or
+permit access to customer personal information without customer
+consent, unless otherwise prohibited by law, only to the extent
+necessary to achieve the stated purpose in one or more of the
+following circumstances:
+(a) To provide the broadband service from which the
+information is derived, or business functions necessary for
+providing that service.
+(b) To comply with a legal process or other law, court
+order, administrative order, or by order of the commission.
+(c) To initiate, render, bill for, and collect payment for
+broadband service.
+(d) To protect the rights or property of the Internet
+service, or to protect customers of those services and other
+carriers from fraudulent, abusive, or unlawful use of or
+subscription to those services.
+(e) To provide location information concerning the customer
+as follows:
+1. To a public safety answering point, emergency medical
+service provider, or emergency dispatch provider, public safety,
+fire service, or law enforcement official, or hospital emergency
+or trauma care facility, in order to respond to the customer’s
+request for emergency services.
+2. To inform the customer’s legal guardian, members of the
+customer’s family, or a person reasonably believed by the
+Internet service provider to be a close personal friend of the
+customer of the customer’s location in an emergency situation
+that involves the risk of death or life-threatening harm.
+3. To providers of information or database management
+services solely for purposes of assisting in the delivery of
+emergency services in response to an emergency.
+(6) This section does not restrict an Internet service
+provider from generating an aggregate customer information
+dataset using customer personal information, or using,
+disclosing, selling, or permitting access to the aggregate
+customer information dataset it generated.
+(7) Unless otherwise prohibited by law, an Internet service
+provider may use, disclose, or permit access to customer
+personal information to advertise or market the provider’s
+communications-related services to the customer, provided that
+the customer may opt out of that use, disclosure, or access at
+any time, and the customer is notified of the right to opt out
+in a manner that is clear and conspicuous, not misleading, in
+the language primarily used to conduct business with the
+consumer, persistently available, and made available to the
+customer at no additional cost.
+(8) An Internet service provider may employ any lawful
+security measures to comply with the requirements of this
+section.
+(9) The requirements of this section apply to Internet
+service providers operating within this state when providing
+broadband service to their customers who are residents of and
+physically located in this state. Any waiver by the customer of
+the provisions of this section is against the public policy of
+this state and shall be void and unenforceable.
+(10) The commission shall:
+(a) Administer and enforce this section and any rules
+adopted pursuant to this section.
+(b) Impose and collect penalties relating to violations of
+this section pursuant to s. 364.285.
+(c) Adopt rules necessary to implement this section.
+Section 2. This act shall take effect July 1, 2018.
