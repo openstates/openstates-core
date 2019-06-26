@@ -7,6 +7,7 @@ from .common import (
     extract_from_p_tags_html,
     extractor_for_elements_by_class,
     extractor_for_element_by_id
+    extract_from_code_tags_html,
 )
 from .ca import handle_california
 from .de import handle_delaware
@@ -20,9 +21,9 @@ CONVERSION_FUNCTIONS = {
     "ar": extract_sometimes_numbered_pdf,
     "co": extract_sometimes_numbered_pdf,
     "ct": extract_from_p_tags_html,
+    "id": extract_line_numbered_pdf,
+    "il": extract_from_code_tags_html,
     "nc": extract_line_numbered_pdf,
-    # il done in PR from redshiftzero
-    # id done in PR from redshiftzero
     "ca": handle_california,
     "de": handle_delaware,
     "fl": handle_florida,
