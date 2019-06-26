@@ -1,0 +1,1334 @@
+
+  
+
+  
+
+  
+
+  
+    
+AN ACT concerning local government.
+
+  
+    
+Be it enacted by the People of the State of Illinois,
+ 
+represented in the General Assembly:
+
+  
+
+ 
+    
+Section 5. 
+The Public Building Commission Act is amended  by 
+changing Sections 2.5, 3, 20, 20.3, 20.4, 20.5, 20.10, 20.15, 
+20.20, 20.25, and 23.5 as follows:
+    
+(50 ILCS 20/2.5)
+
+
+    
+(Section scheduled to be repealed on June 1, 2018)
+    
+Sec. 2.5. 
+Legislative policy; conditions for use of 
+design-build. 
+It is the intent of the General Assembly that a 
+commission be allowed to use the design-build delivery method 
+for public projects if
+
+it is shown to be in the commission's 
+best interest for that particular project.
+    
+It shall be the policy of the commission in the procurement 
+of design-build services to publicly announce all requirements 
+for design-build services and to procure these services on the 
+basis of demonstrated competence and qualifications and with 
+due regard for the principles of competitive selection.
+    
+The commission shall, prior to issuing requests for 
+proposals, promulgate and publish procedures for the 
+solicitation and award of contracts pursuant to this Act.
+    
+The commission shall, for each public project or projects 
+permitted under this Act, make a written determination, 
+including a description as to the particular
+
+advantages of the 
+design-build procurement method, that it is in the best 
+interests of the commission to enter into a design-build 
+contract for the project or projects.
+    
+In making that determination, the following factors shall 
+be considered:
+    
+    
+(1) The probability that the design-build procurement 
+method will be in the best interests of the commission by 
+providing a material savings of time or cost over the 
+design-bid-build or other delivery system.
+    
+    
+(2) The type and size of the project and its 
+suitability to the design-build procurement method.
+    
+    
+(3) The ability of the design-build entity to define 
+and provide comprehensive scope and performance criteria 
+for the project.
+    
+The commission shall require the design-build entity to 
+comply with the utilization goals established by the corporate 
+authorities of the commission for minority and women business 
+enterprises and to comply with Section 2-105 of the Illinois 
+Human Rights Act.
+    
+This Section is repealed on June 1, 
+2023
+ 
+2018
+; provided 
+that any design-build contracts entered into before such date 
+or any procurement of a project under this Act commenced before 
+such date, and the contracts resulting from those procurements, 
+shall remain effective.
+
+
+(Source: P.A. 98-299, eff. 8-9-13; reenacted by P.A. 98-619, 
+eff. 1-7-14.)
+
+
+
+
+    
+(50 ILCS 20/3)
+  
+(from Ch. 85, par. 1033)
+
+
+
+
+
+    
+Sec. 3. 
+The following terms, wherever used, or referred to 
+in this Act,
+mean unless the context clearly requires a 
+different meaning:
+
+
+    
+    
+(a) "Commission" means a Public Building Commission 
+created pursuant to
+this Act.
+
+
+    
+    
+(b) "Commissioner" or "Commissioners" means a 
+Commissioner or
+Commissioners of a Public Building 
+Commission.
+
+
+    
+    
+(c) "County seat" means a city, village or town which 
+is the county seat
+of a county.
+
+
+    
+    
+(d) "Municipality" means any city, village or 
+incorporated town of the
+State of Illinois.
+
+
+    
+    
+(e) "Municipal corporation" includes a county, city, 
+village, town,
+(including a county seat), park district,
+
+school district in a county of 3,000,000 or more 
+population, board of
+education of a school district in a 
+county of 3,000,000 or more population,
+sanitary district,
+
+airport authority contiguous with the County
+Seat as of 
+July 1, 1969 and any other municipal body or governmental 
+agency
+of the State, and until July 1, 2011, a school 
+district that (i) was organized prior to 1860, (ii) is 
+located in part in a city originally incorporated prior to 
+1840, and (iii) entered into a lease with a Commission 
+prior to 1993, and its board of education, but does not 
+include a school district in a county of less
+than 
+3,000,000 population, a board of education of a school 
+district in a
+county of less than 3,000,000 population, or 
+a community college district in
+a county of less than 
+3,000,000 population, except that until July 1, 2011, a 
+school district that (i) was organized prior to 1860, (ii) 
+is located in part in a city originally incorporated prior 
+to 1840, and (iii) entered into a lease with a Commission 
+prior to 1993, and its board of education, are included.
+
+
+    
+    
+(f) "Governing body" includes a city council, county 
+board, or any other
+body or board, by whatever name it may 
+be known, charged with the governing
+of a municipal 
+corporation.
+
+
+    
+    
+(g) "Presiding officer" includes the mayor or 
+president of a city,
+village or town, the presiding officer 
+of a county board, or the presiding
+officer of any other 
+board or commission, as the case may be.
+
+
+    
+    
+(h) "Oath" means oath or affirmation.
+
+
+    
+    
+(i) "Building" means an improvement to real estate to 
+be made available
+for use by a municipal corporation for 
+the furnishing of governmental
+services to its citizens, 
+together with any land or interest in land
+necessary or 
+useful in connection with the improvement.
+
+
+    
+    
+(j) "Delivery system" means the design and 
+construction approach used to develop
+and construct a 
+project.
+
+    
+    
+(k) "Design-bid-build" means the traditional delivery 
+system used on public
+projects that incorporates the Local 
+Government Professional Services Selection Act (50 ILCS 
+510/) and the
+principles of competitive selection.
+
+    
+    
+(l) "Design-build" means a delivery system that 
+provides responsibility within a
+single contract for the 
+furnishing of architecture, engineering, land surveying
+
+and related services as required, and the labor, materials, 
+equipment, and
+other construction services for the 
+project.
+
+    
+    
+(m) "Design-build contract" means a contract for a 
+public project under this Act
+between the Commission and a 
+design-build entity to furnish
+architecture,
+engineering, 
+land surveying, and related services as required, and to 
+furnish
+the labor, materials, equipment, and other 
+construction services for the
+project. The design-build 
+contract may be conditioned upon subsequent
+refinements in 
+scope and price and may allow the Commission to
+make
+
+modifications in the project scope without invalidating 
+the design-build
+contract.
+
+    
+    
+(n) "Design-build entity" means any individual, sole 
+proprietorship, firm,
+partnership, joint venture, 
+corporation, professional corporation, or other
+entity 
+that proposes to design and construct any public project 
+under this Act.
+
+A design-build entity and associated 
+design-build professionals shall conduct themselves in 
+accordance with the laws of this State and the related 
+provisions of the Illinois Administrative Code, as 
+referenced by the licensed design professionals Acts of 
+this State.
+
+    
+    
+(o) "Design professional" means any individual, sole 
+proprietorship, firm,
+partnership, joint venture, 
+corporation, professional corporation, or other
+entity 
+that offers services under the Illinois Architecture 
+Practice Act of
+1989 (225 ILCS 305/), the Professional 
+Engineering Practice Act of 1989 (225
+ILCS 325/),
+the 
+Structural Engineering Licensing Act of 1989 (225 ILCS 
+340/), or the
+Illinois Professional
+Land Surveyor Act of 
+1989 (225 ILCS 330/).
+
+    
+    
+(p) "Evaluation criteria" means the requirements for 
+the separate phases of the
+selection process for 
+design-build proposals as defined in this Act and may 
+include the specialized
+experience, technical 
+qualifications and competence, capacity to perform, past
+
+performance, experience with similar projects, assignment 
+of personnel to the
+project, and other appropriate factors. 
+Price may not be used as a factor in
+the evaluation of 
+Phase I proposals.
+
+    
+    
+(q) "Proposal" means the offer to enter into a 
+design-build contract as submitted
+by a design-build 
+entity in accordance with this Act.
+
+    
+    
+(r) "Request for proposal" means the document used by 
+the Commission
+to solicit
+proposals for a design-build 
+contract.
+
+    
+    
+(s) "Scope and performance criteria" means the 
+requirements for the public
+project, including but not 
+limited to, the intended usage, capacity, size,
+scope, 
+quality and performance standards, life-cycle costs, and 
+other
+programmatic criteria that are expressed in 
+performance-oriented and
+quantifiable specifications and 
+drawings that can be reasonably inferred and
+are suited to 
+allow a design-build entity to develop a proposal.
+
+    
+    
+(t) "Guaranteed maximum price" means a form of contract 
+in which compensation may vary according to the scope of 
+work involved but in any case may not exceed an agreed 
+total amount.
+
+    
+Definitions in this Section with respect to design-build 
+shall have no effect beginning on June 1, 
+2023
+ 
+2018
+; provided 
+that any design-build contracts entered into before such date 
+or any procurement of a project under this Act commenced before 
+such date, and the contracts resulting from those procurements, 
+shall remain effective.
+The actions of any person or entity 
+taken on or after June 1, 2013 and before the effective date of 
+this amendatory Act of the 98th General Assembly in reliance on 
+the provisions of this Section with respect to design-build 
+continuing to be effective are hereby validated. 
+(Source: P.A. 98-299, eff. 8-9-13; 98-619, eff. 1-7-14.)
+
+
+
+
+
+
+
+
+    
+(50 ILCS 20/20)
+  
+(from Ch. 85, par. 1050)
+
+
+
+
+    
+Sec. 20. 
+Contracts let to lowest responsible bidder; 
+competitive bidding; advertisement for bids; design-build 
+contracts.
+    
+(a) All contracts to be let for the construction, 
+alteration,
+improvement, repair, enlargement, demolition or 
+removal of any buildings or
+other facilities, or for materials 
+or supplies to be furnished, where the
+amount thereof is in 
+excess of $20,000, shall be awarded as a design-build contract 
+in accordance with Sections 20.3 through 20.20 or shall be let 
+to the lowest
+responsible bidder, or bidders, on open 
+competitive bidding.
+    
+(b) A contract awarded on the basis of competitive bidding 
+shall be awarded after public
+advertisement published at least 
+once in each week for three consecutive
+weeks prior to the 
+opening of bids, in a daily newspaper of general
+circulation in 
+the county where the commission is located, except in the case 
+of an emergency situation, as determined by the chief executive 
+officer. If a contract is awarded in an emergency situation, 
+(i) the contract accepted must be based on the lowest 
+responsible proposal after the commission has made a diligent 
+effort to solicit multiple proposals by telephone, facsimile, 
+or other efficient means and (ii) the chief executive officer 
+must submit a report at the next regular meeting of the Board, 
+to be ratified by the Board and entered into the official 
+record, that states the chief executive officer's reason for 
+declaring an emergency situation, the names of all parties 
+solicited for proposals, and their proposals and that includes 
+a copy of the contract awarded. Nothing
+contained in this 
+Section shall be construed to prohibit the Board of
+
+Commissioners from placing additional advertisements in 
+recognized trade
+journals. Advertisements for bids shall 
+describe the character of the
+proposed contract in sufficient 
+detail to enable the bidders thereon to
+know what their 
+obligation will be, either in the advertisement itself, or
+by 
+reference to detailed plans and specifications on file in the 
+office of
+the Public Building Commission at the time of the 
+publication of the first
+announcement. Such advertisement 
+shall also state the date, time, and place
+assigned for the 
+opening of bids. No bids shall be received at any time
+
+subsequent to the time indicated in said advertisement.
+    
+(c) In addition to the requirements of Section 20.3, the 
+Commission shall advertise a design-build solicitation at 
+least once in a daily newspaper of general circulation in the 
+county where the Commission is located.  The date that Phase I 
+submissions by design-build entities are due must be at least 
+14 calendar days after the date the newspaper advertisement for 
+design-build proposals is first published.  The advertisement 
+shall identify the design-build project, the due date, the 
+place and time for Phase I submissions, and the place where 
+proposers can obtain a complete copy of the request for 
+design-build proposals, including the criteria for evaluation 
+and the scope and performance criteria.  The Commission is not 
+precluded from using other media or from placing advertisements 
+in addition to the one required under this subsection.
+    
+(d) The Board of
+Commissioners may reject any and all bids 
+and proposals received and may readvertise for
+bids or issue a 
+new request for design-build proposals.
+    
+(e) All bids shall be open to public inspection in the 
+office of the
+Public Building Commission after an award or 
+final selection has been made. The successful bidder for such 
+work shall enter into
+contracts furnished and prescribed by the 
+Board of Commissioners and in
+addition to any other bonds 
+required under this Act the successful bidder
+shall execute and 
+give bond, payable to and to be approved by the
+Commission, 
+with a corporate surety authorized to do business under the
+
+laws of the State of Illinois, in an amount to be determined by 
+the Board
+of Commissioners, conditioned upon the payment of all 
+labor furnished and
+materials supplied in the prosecution of 
+the contracted work. If the bidder
+whose bid has been accepted 
+shall neglect or refuse to accept the contract
+within five (5) 
+days after written notice that the same has been awarded to
+
+him, or if he accepts but does not execute the contract and 
+give the proper
+security, the Commission may accept the next 
+lowest bidder, or readvertise
+and relet in manner above 
+provided.
+    
+(f) In case any work shall be abandoned by
+any contractor 
+or design-build entity, the Commission may, if the best 
+interests of the Commission
+be thereby served, adopt on behalf 
+of the Commission all subcontracts made
+by such contractor or 
+design-build entity for such work and all such sub-contractors 
+shall be
+bound by such adoption if made; and the Commission 
+shall, in the manner
+provided in this Act, readvertise and 
+relet, or request proposals and award design-build contracts 
+for, the work specified in the original
+contract exclusive of 
+so much thereof as shall be accepted. Every contract
+when made 
+and entered into, as provided in this Section or Section 20.20, 
+shall be executed, held by the Commission, and filed
+in
+its 
+records, and one copy of which shall be given to the contractor 
+or design-build entity.
+
+
+    
+(g) The provisions of this Section with respect to 
+design-build shall have no effect beginning on June 1, 
+2023
+ 
+2018
+; provided that any design-build contracts entered into 
+before such date or any procurement of a project under this Act 
+commenced before such date, and the contracts resulting from 
+those procurements, shall remain effective. The actions of any 
+person or entity taken on or after June 1, 2013 and before the 
+effective date of this amendatory Act of the 98th General 
+Assembly in reliance on the provisions of this Section with 
+respect to design-build continuing to be effective are hereby 
+validated. 
+(Source: P.A. 98-299, eff. 8-9-13; 98-619, eff. 1-7-14.)
+
+
+    
+(50 ILCS 20/20.3)
+
+
+    
+(Section scheduled to be repealed on June 1, 2018)
+    
+Sec. 20.3. 
+Solicitation of design-build proposals.
+
+
+
+
+    
+(a) When the Commission elects to use the design-build 
+delivery
+method, it must
+issue a notice of intent to receive 
+proposals for the project at
+least 14 days before issuing the 
+request for the proposal. The Commission
+must publish the 
+advance notice in a daily newspaper of general circulation in 
+the county where the Commission is located. The
+Commission is 
+encouraged to use publication of the notice in related 
+construction
+industry service publications. A brief 
+description of the proposed procurement
+must be included in the 
+notice. The Commission must provide a
+copy of the
+request for 
+proposal to any party requesting a copy.
+
+
+
+    
+(b) The request for proposal shall be prepared for each 
+project and must
+contain, without limitation, the following 
+information:
+
+
+
+    
+    
+(1) The name of the Commission.
+
+
+
+    
+    
+(2) A preliminary schedule for the completion of the 
+contract.
+
+
+
+    
+    
+(3) The proposed budget for the project, the source of 
+funds, and the
+currently available funds at the time the 
+request for proposal is submitted.
+
+
+
+    
+    
+(4) Prequalification criteria for design-build 
+entities wishing to submit
+proposals.
+The Commission shall 
+include, at a minimum, its normal
+prequalification, 
+licensing, registration, and other requirements, but 
+nothing
+contained herein precludes the use of additional 
+prequalification criteria
+by the Commission.
+
+
+
+    
+    
+(5) Material requirements of the contract, including 
+but not limited to,
+the proposed terms and conditions, 
+required performance and payment bonds,
+insurance, and the 
+entity's plan to comply with the utilization goals 
+established by the corporate authorities of the Commission 
+for minority and women business enterprises and to comply 
+with Section 2-105 of the Illinois Human Rights Act.
+
+
+
+    
+    
+(6) The performance criteria.
+
+
+
+    
+    
+(7) The evaluation criteria for each phase of the 
+solicitation.
+
+
+
+    
+    
+(8) The number of entities that will be considered for 
+the technical and
+cost
+evaluation phase.
+
+
+
+    
+(c) The Commission may include any other relevant 
+information
+that it
+chooses to supply. The design-build entity 
+shall be entitled to rely upon the
+accuracy of this 
+documentation in the development of its proposal.
+
+
+
+    
+(d) The date that proposals are due must be at least 21 
+calendar days after
+the date of the issuance of the request for 
+proposal. In the event the cost of
+the project
+is estimated to 
+exceed $12,000,000, then the proposal due date must be at least
+
+28 calendar days after the date of the issuance of the request 
+for proposal.
+The Commission shall include in the request for 
+proposal a
+minimum of 30 days
+to develop the Phase II 
+submissions after the selection of entities
+from the Phase I 
+evaluation is completed.
+
+
+
+    
+(e) This Section is repealed on June 1, 
+2023
+ 
+2018
+; provided 
+that any design-build contracts entered into before such date 
+or any procurement of a project under this Act commenced before 
+such date, and the contracts resulting from those procurements, 
+shall remain effective.
+
+
+
+(Source: P.A. 98-299, eff. 8-9-13; reenacted by P.A. 98-619, 
+eff. 1-7-14.)
+    
+(50 ILCS 20/20.4)
+
+
+    
+(Section scheduled to be repealed on June 1, 2018)
+    
+Sec. 20.4. 
+Development of design-build scope and 
+performance criteria.
+
+    
+(a) The Commission shall develop, with the assistance of a
+
+licensed design professional, a request
+for proposal, which 
+shall include scope and performance criteria.
+The scope and 
+performance criteria must be in sufficient detail and contain
+
+adequate information to reasonably apprise the qualified 
+design-build entities
+of the Commission's overall programmatic 
+needs and goals,
+including criteria and preliminary design 
+plans,
+general budget parameters, schedule, and delivery 
+requirements.
+
+
+
+    
+(b) Each request for proposal shall also include a 
+description of the level
+of design to be provided in the 
+proposals. This description must include the
+scope and type of 
+renderings, drawings, and specifications that, at a minimum,
+
+will be required by the Commission to be produced by the
+
+design-build entities.
+
+
+
+    
+(c) The scope and performance criteria shall be prepared by 
+a design
+professional who is an employee of the Commission, or 
+the Commission may
+contract with an independent design 
+professional selected under the
+Local Government Professional 
+Services Selection Act (50 ILCS 510/) to provide these 
+services.
+
+
+
+    
+(d) The design professional that prepares the scope and 
+performance criteria
+is prohibited from participating in any 
+design-build entity proposal for the
+project.
+
+
+
+    
+(e) This Section is repealed on June 1, 
+2023
+ 
+2018
+; provided 
+that any design-build contracts entered into before such date 
+or any procurement of a project under this Act commenced before 
+such date, and the contracts resulting from those procurements, 
+shall remain effective.
+
+
+
+(Source: P.A. 98-299, eff. 8-9-13; reenacted by P.A. 98-619, 
+eff. 1-7-14.)
+    
+(50 ILCS 20/20.5)
+    
+(Section scheduled to be repealed on June 1, 2018)
+    
+Sec. 20.5. 
+Procedures for design-build selection.
+    
+(a) The Commission must use a two-phase procedure for the
+
+selection of the
+successful design-build entity. Phase I of the 
+procedure will evaluate and
+shortlist the design-build 
+entities based on qualifications, and Phase II
+will
+evaluate 
+the technical and cost proposals.
+    
+(b) The Commission shall include in the request for 
+proposal
+the
+evaluating factors to be used in Phase I. These 
+factors are in addition to any
+prequalification requirements of 
+design-build entities that the Commission has set
+forth. Each 
+request for proposal shall establish the relative importance
+
+assigned to each evaluation factor and subfactor, including any 
+weighting of
+criteria to be employed by the Commission. The 
+Commission must maintain a
+record of the evaluation scoring to 
+be disclosed in event of a protest
+regarding the solicitation.
+
+    
+The Commission shall include the following criteria in 
+every
+Phase I
+evaluation of design-build entities: (1) 
+experience of personnel; (2)
+successful
+experience with 
+similar project types; (3) financial capability; (4) 
+timeliness
+of past performance; (5) experience with similarly 
+sized projects; (6)
+successful reference checks of the firm;  
+(7) commitment to assign personnel
+for the duration of the 
+project and qualifications of the entity's consultants; and (8) 
+ability or past performance in meeting or exhausting good faith 
+efforts to meet the utilization goals for minority and women 
+business enterprises established by the corporate authorities 
+of the Commission and in complying with Section 2-105 of the 
+Illinois Human Rights Act.  The Commission may include any 
+additional relevant criteria in Phase I that it deems necessary 
+for a proper qualification review.
+
+
+    
+The Commission may not consider any design-build entity for
+
+evaluation or
+award if the entity has any pecuniary interest in 
+the project or has other
+relationships or circumstances, 
+including but not limited to, long-term
+leasehold, mutual 
+performance, or development contracts with the Commission,
+
+that may give the design-build entity a financial or tangible 
+advantage over
+other design-build entities in the preparation, 
+evaluation, or performance of
+the
+design-build contract or that 
+create the appearance of impropriety. No design-build proposal 
+shall be considered that does not include an entity's plan to 
+comply with the requirements established in the minority and 
+women business enterprises and economically disadvantaged 
+firms established by the corporate authorities of the 
+Commission and with Section 2-105 of the Illinois Human Rights 
+Act.
+
+    
+Upon completion of the qualifications evaluation, the 
+Commission shall
+create a shortlist of the most highly 
+qualified design-build entities. The
+Commission, in its 
+discretion, is not required to shortlist the
+maximum number of
+
+entities as identified for Phase II evaluation, provided 
+however, no less than
+2
+design-build entities nor more than 6 
+are selected to submit Phase II
+proposals.
+
+    
+The Commission shall notify the entities selected for the
+
+shortlist in
+writing. This notification shall commence the 
+period for the preparation of the
+Phase II technical and cost 
+evaluations. The Commission must
+allow sufficient
+time for the 
+shortlist entities to prepare their Phase II submittals
+
+considering
+the scope and detail requested by the Commission.
+
+    
+(c) The Commission shall include in the request for 
+proposal
+the
+evaluating factors to be used in the technical and 
+cost submission components
+of Phase II.  Each request for 
+proposal shall establish, for both the technical
+and cost 
+submission components of Phase II, the relative importance 
+assigned to
+each evaluation factor and subfactor, including any 
+weighting of criteria to be
+employed by the Commission. The 
+Commission must
+maintain a record of the
+evaluation scoring to 
+be disclosed in event of a protest regarding the
+solicitation.
+
+    
+The Commission shall include the following criteria in 
+every
+Phase II
+technical evaluation of design-build entities: 
+(1) compliance with objectives
+of
+the
+project; (2) compliance 
+of proposed services to the request for proposal
+requirements; 
+(3) quality of products or materials proposed; (4) quality of
+
+design parameters; (5) design concepts; (6) innovation in 
+meeting the scope and
+performance criteria; and (7) 
+constructability of the
+proposed project. The Commission may 
+include any additional
+relevant
+technical evaluation factors 
+it deems necessary for proper selection.
+
+    
+The Commission shall include the following criteria in 
+every
+Phase II cost
+evaluation: the guaranteed maximum project 
+cost and the time of
+completion. The Commission may include any 
+additional relevant
+technical
+evaluation factors it deems 
+necessary for proper selection. The guaranteed maximum project 
+cost criteria weighing factor shall not exceed 30%.
+
+    
+The Commission shall directly employ or retain a licensed
+
+design
+professional to evaluate the technical and cost 
+submissions to determine if the
+technical submissions are in 
+accordance with generally
+accepted industry standards.
+
+    
+Upon completion of the technical submissions and cost 
+submissions evaluation,
+the Commission may award the 
+design-build contract to the
+highest
+overall ranked entity.
+
+    
+(d) This Section is repealed on June 1, 
+2023
+ 
+2018
+; provided 
+that any design-build contracts entered into before such date 
+or any procurement of a project under this Act commenced before 
+such date, and the contracts resulting from those procurements, 
+shall remain effective.
+
+
+
+(Source: P.A. 100-201, eff. 8-18-17.)
+    
+(50 ILCS 20/20.10)
+
+
+    
+(Section scheduled to be repealed on June 1, 2018)
+    
+Sec. 20.10. 
+Small design-build projects. 
+ In any case where 
+the total overall cost of the
+project is estimated to be less 
+than $12,000,000, the Commission
+may combine
+the two-phase 
+procedure for design-build selection described in Section 20.5 
+into one combined
+step, provided that all the requirements of 
+evaluation are performed in
+accordance with Section 20.5.
+    
+This Section is repealed on June 1, 
+2023
+ 
+2018
+; provided 
+that any design-build contracts entered into before such date 
+or any procurement of a project under this Act commenced before 
+such date, and the contracts resulting from those procurements, 
+shall remain effective.
+
+
+
+(Source: P.A. 98-299, eff. 8-9-13; reenacted by P.A. 98-619, 
+eff. 1-7-14.)
+    
+(50 ILCS 20/20.15)
+
+
+    
+(Section scheduled to be repealed on June 1, 2018)
+    
+Sec. 20.15. 
+Submission of design-build proposals. 
+Design-build proposals must be properly identified
+and sealed. 
+Proposals may not be reviewed until after the deadline for
+
+submission has passed as set forth in the request for 
+proposals. All
+design-build entities submitting proposals 
+shall be disclosed after the
+deadline
+for submission, and all 
+design-build entities who are selected for Phase II
+evaluation 
+shall also be disclosed at the time of that determination.
+    
+Phase II design-build proposals shall include a bid bond in 
+the form and security as designated in
+the request for 
+proposals. Proposals shall also contain a separate sealed
+
+envelope with the cost information within the overall proposal 
+submission.
+Proposals shall include a list of all design 
+professionals and other entities
+to which any work identified 
+in Section 30-30 of the Illinois Procurement Code as a 
+subdivision of construction work may be subcontracted during 
+the performance of the contract.
+
+    
+Proposals must meet all material requirements of the 
+request for proposal or
+they may be rejected as non-responsive. 
+The Commission shall
+have the right
+to reject any and all 
+proposals.
+
+    
+The drawings and specifications of any unsuccessful 
+design-build proposal shall remain the property of
+the 
+design-build entity.
+
+    
+The Commission shall review the proposals for compliance 
+with
+the
+performance criteria and evaluation factors.
+
+    
+Proposals may be withdrawn prior to the due date and time 
+for submissions for any cause. After
+evaluation begins by the 
+Commission, clear and convincing
+evidence of error
+is required 
+for withdrawal.
+
+    
+This Section is repealed on June 1, 
+2023
+ 
+2018
+; provided 
+that any design-build contracts entered into before such date 
+or any procurement of a project under this Act commenced before 
+such date, and the contracts resulting from those procurements, 
+shall remain effective.
+
+
+
+(Source: P.A. 98-299, eff. 8-9-13; reenacted by P.A. 98-619, 
+eff. 1-7-14.)
+    
+(50 ILCS 20/20.20)
+
+
+    
+(Section scheduled to be repealed on June 1, 2018)
+    
+Sec. 20.20. 
+Design-build award. 
+The Commission may award a 
+design-build contract to
+the highest
+overall ranked entity. 
+Notice of award shall be made in writing. Unsuccessful
+entities 
+shall also be notified in writing. The Commission may
+not 
+request a
+best and final offer after the receipt of proposals. 
+The Commission may
+negotiate with the selected design-build 
+entity after award but prior to
+contract
+execution for the 
+purpose of securing better terms than originally proposed,
+
+provided that the salient features of the request for proposal 
+are not
+diminished.
+    
+This Section is repealed on June 1, 
+2023
+ 
+2018
+; provided 
+that any design-build contracts entered into before such date 
+or any procurement of a project under this Act commenced before 
+such date, and the contracts resulting from those procurements, 
+shall remain effective.
+
+
+
+(Source: P.A. 98-299, eff. 8-9-13; reenacted by P.A. 98-619, 
+eff. 1-7-14.)
+    
+(50 ILCS 20/20.25)
+
+
+    
+(Section scheduled to be repealed on June 1, 2018)
+    
+Sec. 20.25. 
+Minority and female owned enterprises; total 
+construction budget.
+    
+(a) Each year, within 60 days following the end of a 
+commission's fiscal year, the commission shall provide a report 
+to the General Assembly addressing the utilization of minority 
+and female owned business enterprises on design-build 
+projects.
+    
+(b) The payments for design-build projects by any 
+commission in one fiscal year shall not exceed 50% of the 
+moneys spent on construction projects during the same fiscal 
+year.
+    
+(c) This Section is repealed on June 1, 
+2023
+ 
+2018
+; provided 
+that any design-build contracts entered into before such date 
+or any procurement of a project under this Act commenced before 
+such date, and the contracts resulting from those procurements, 
+shall remain effective.
+
+
+(Source: P.A. 98-299, eff. 8-9-13; reenacted by P.A. 98-619, 
+eff. 1-7-14.)
+    
+(50 ILCS 20/23.5)
+    
+Sec. 23.5. 
+Continuation of Sections 2.5, 20.3, 20.4, 20.5, 
+20.10, 20.15, 20.20, and 20.25 of this Act; validation.
+ 
+    
+(a) The General Assembly finds and declares that:
+    
+    
+(1) When Public Act 95-595 (effective June 1, 2008) 
+amended the Public Building Commission Act, it provided 
+repeal dates for Sections 2.5, 20.3, 20.4, 20.5, 20.10, 
+20.15, 20.20, and 20.25 of this Act of 5 years after the 
+effective date of Public Act 95-595 (June 1, 2013). 
+    
+    
+(2) Senate Bill 2233 of the 98th General Assembly 
+contained provisions that would have changed the repeal 
+dates of  Sections 2.5, 20.3, 20.4, 20.5, 20.10, 20.15, 
+20.20, and 20.25 of this Act from 5 years after the 
+effective date of Public Act 95-595 to June 1, 2018. Senate 
+Bill 2233 passed both houses on May 31, 2013. Senate Bill 
+2233 provided that it took effect upon becoming law. Senate 
+Bill 2233 was sent to the Governor on June 10, 2013. Senate 
+Bill 2233 was approved by the Governor on August 9, 2013. 
+Senate Bill 2233 became Public Act 98-299. 
+    
+    
+(3) The Statute on Statutes sets forth general rules on
+    
+the repeal of statutes and the construction of multiple
+    
+amendments, but Section 1 of that Act also states that
+    
+these rules will not be observed when the result would be
+    
+"inconsistent with the manifest intent of the General
+    
+Assembly or repugnant to the context of the statute". 
+    
+    
+(4) The actions of the General Assembly
+    clearly 
+manifest the intention of the General Assembly to extend
+    
+the repeal of Sections 2.5, 20.3, 20.4, 20.5, 20.10, 20.15, 
+20.20, and 20.25 of this Act and have those Sections
+    
+continue in effect 
+until June 1, 2018
+. 
+    
+    
+(5) Sections 2.5, 20.3, 20.4, 20.5, 20.10, 20.15, 
+20.20, and 20.25 of this Act were
+    originally enacted to 
+protect, promote, and preserve the
+    general welfare. Any 
+construction of this Act that results
+    in the repeal of 
+those Sections on June 1, 2013 would be
+    inconsistent with 
+the manifest intent of the General
+    Assembly and repugnant 
+to the context of this  Act. 
+    
+(b) It is hereby declared to have been the intent of the
+
+General Assembly, in enacting Public Act  98-299, that Sections 
+2.5, 20.3, 20.4, 20.5, 20.10, 20.15, 20.20, and 20.25 of this 
+Act be changed to make June 1, 2018 the repeal date of Sections 
+2.5, 20.3, 20.4, 20.5, 20.10, 20.15, 20.20, and 20.25 of this 
+Act, and that  Sections 2.5, 20.3, 20.4, 20.5, 20.10, 20.15, 
+20.20, and 20.25 of this Act therefore not be subject to repeal 
+on June 1, 2013.
+    
+(c) Sections 2.5, 20.3, 20.4, 20.5, 20.10, 20.15, 20.20, 
+and 20.25 of this Act shall be
+deemed to have been in 
+continuous effect since June 1, 2008
+(the effective date of 
+Public Act 95-595), and shall
+continue to be in effect 
+henceforward 
+until June 1, 2018, unless they are otherwise
+
+lawfully repealed
+. All previously enacted amendments to this 
+Act
+taking effect on or after June 1, 2013 are hereby
+
+validated. 
+    
+(d) All actions taken in reliance on or pursuant to 
+Sections 2.5, 20.3, 20.4, 20.5, 20.10, 20.15, 20.20, and 20.25 
+of this Act by the Public Building Commission or any other 
+person or entity are hereby validated.
+    
+(e) In order to ensure the continuing effectiveness of 
+Sections 2.5, 20.3, 20.4, 20.5, 20.10, 20.15, 20.20, and 20.25 
+of this Act, those Sections are set forth in
+full and reenacted 
+by this amendatory Act of the 98th General
+Assembly. This 
+reenactment is intended as a continuation of
+those Sections. It 
+is not intended to supersede any amendment to the
+Act that is 
+enacted by the 98th General Assembly.
+    
+(f) In this amendatory Act of the 98th General Assembly, 
+the base text of the reenacted Sections is set forth as amended 
+by Public Act 98-299.  Striking and underscoring is used only to 
+show changes being made to the base text. In this instance, no 
+underscoring or striking is shown in the base text because no 
+additional changes are being made. 
+    
+(g) Sections 2.5, 20.3, 20.4, 20.5, 20.10, 20.15, 20.20, 
+and 20.25 of this Act apply
+to all claims, civil actions, and 
+proceedings pending on or
+filed on or before the effective date 
+of this amendatory Act of the 98th General Assembly. 
+
+
+(Source: P.A. 98-619, eff. 1-7-14.)
+
+  
+
+
