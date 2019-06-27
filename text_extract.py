@@ -7,6 +7,7 @@ import django
 import scrapelib
 from django.conf import settings
 from django.db.models import F
+from django.contrib.postgres.search import SearchVector
 
 from extract.utils import jid_to_abbr
 from extract import extract_text
@@ -70,6 +71,44 @@ def extract_to_file(filename, data, version):
     return text_filename, len(text)
 
 
+def update_bill(bill):
+    from opencivicdata.legislative.models import SearchableBill
+
+    latest_version = bill.versions.order_by("-date", "-note").prefetch_related("links")[0]
+
+    # check if there's an old entry and we can use it
+    # if bill.searchable:
+    #     if bill.searchable.version_id == latest_version.id and not bill.searchable.is_error:
+    #         return      # nothing to do
+    #     bill.searchable.delete()
+
+    # iterate through versions until we extract some good text
+    is_error = True
+    for link in latest_version.links.all():
+        data = scraper.get(link.url).content
+        metadata = {
+            "url": link.url,
+            "media_type": link.media_type,
+            "title": bill.title,
+            "jurisdiction_id": bill.legislative_session.jurisdiction_id
+        }
+        # TODO: clean up whitespace
+        raw_text = extract_text(data, metadata)
+        if raw_text:
+            is_error = False
+            break
+
+    sb = SearchableBill.objects.create(
+        bill=bill,
+        version_link=link,
+        all_titles=bill.title,       # TODO: add other titles
+        raw_text=raw_text,
+        is_error=is_error,
+        search_vector="",
+    )
+    return sb.id
+
+
 @click.group()
 def cli():
     init_django()
@@ -78,17 +117,18 @@ def cli():
 @cli.command()
 @click.argument("state")
 def stats(state):
-    from opencivicdata.legislative.models import BillVersionLink
+    from opencivicdata.legislative.models import Bill
 
-    all_versions = BillVersionLink.objects.filter(
-        version__bill__legislative_session__jurisdiction__name=state
+    all_bills = Bill.objects.filter(
+        legislative_session__jurisdiction__name=state
     )
-    missing_text_versions = BillVersionLink.objects.filter(
-        version__bill__legislative_session__jurisdiction__name=state, text=""
+    missing_search = Bill.objects.filter(
+        legislative_session__jurisdiction__name=state,
+        searchable__isnull=True,
     )
 
     print(
-        f"{state} is missing text for {missing_text_versions.count()} out of {all_versions.count()}"
+        f"{state} is missing text for {missing_search.count()} out of {all_bills.count()}"
     )
 
 
@@ -105,30 +145,29 @@ def sample(state):
                 print(f"{filename} => {text_filename} ({bytes} bytes)")
 
 
-def extract_metadata(vlink):
-    return {
-        "url": vlink.url,
-        "jurisdiction_id": vlink.version.bill.legislative_session.jurisdiction_id,
-    }
-
-
 @cli.command()
 @click.argument("state")
 @click.option("-n", default=100)
 def update(state, n):
-    from opencivicdata.legislative.models import BillVersionLink
+    from opencivicdata.legislative.models import Bill, SearchableBill
 
-    missing_text_versions = BillVersionLink.objects.filter(
-        version__bill__legislative_session__jurisdiction__name=state, text=""
+    missing_search = Bill.objects.filter(
+        legislative_session__jurisdiction__name=state,
+        searchable__isnull=True,
     )[:n]
 
-    print(missing_text_versions.count())
+    ids_to_update = []
+    for b in missing_search:
+        ids_to_update.append(update_bill(b))
 
-    for v in missing_text_versions:
-        data = scraper.get(v.url).content
-        metadata = extract_metadata(v)
-        v.text = extract_text(data, metadata)
-        v.save()
+    print(f"updating {len(ids_to_update)} search vectors")
+    SearchableBill.objects.filter(id__in=ids_to_update).update(
+        search_vector = (
+            SearchVector("all_titles", weight='A', config='english') +
+            SearchVector("raw_text", weight='B', config='english')
+        ),
+    )
+
 
 if __name__ == "__main__":
     cli()
