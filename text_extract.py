@@ -1,13 +1,16 @@
-#!/usr/bin/env python
+import os
 
 import csv
-import os
-import sys
-import argparse
+import click
+import dj_database_url
+import django
 import scrapelib
+from django.conf import settings
 
-from extract import extract_text, jid_to_abbr
+from extract.utils import jid_to_abbr
+from extract import extract_text
 
+scraper = scrapelib.Scraper()
 
 MIMETYPES = {
     "application/pdf": "pdf",
@@ -17,7 +20,14 @@ MIMETYPES = {
     "application/vnd.openxmlformats-officedocument.wordprocessingml.document": "docx",
 }
 
-scraper = scrapelib.Scraper()
+
+def init_django():
+    DATABASE_URL = os.environ.get("DATABASE_URL", "postgis://localhost/cleanos")
+    DATABASES = {"default": dj_database_url.parse(DATABASE_URL)}
+    settings.configure(
+        DATABASES=DATABASES, INSTALLED_APPS=("opencivicdata.core", "opencivicdata.legislative")
+    )
+    django.setup()
 
 
 def download(version):
@@ -32,8 +42,8 @@ def download(version):
             pass
         try:
             _, resp = scraper.urlretrieve(version["url"], filename)
-        except Exception as e:
-            print('could not fetch', version['id'])
+        except Exception:
+            print("could not fetch", version["id"])
             return None, None
 
         return filename, resp.content
@@ -59,14 +69,34 @@ def extract_to_file(filename, data, version):
     return text_filename, len(text)
 
 
-def main():
-    parser = argparse.ArgumentParser(description="Test text extraction.")
-    parser.add_argument("state", type=str, help="state to run")
-    args = parser.parse_args()
+@click.group()
+def cli():
+    init_django()
 
+
+@cli.command()
+@click.argument("state")
+def stats(state):
+    from opencivicdata.legislative.models import BillVersionLink
+
+    all_versions = BillVersionLink.objects.filter(
+        version__bill__legislative_session__jurisdiction__name=state
+    )
+    missing_text_versions = BillVersionLink.objects.filter(
+        version__bill__legislative_session__jurisdiction__name=state, text=""
+    )
+
+    print(
+        f"{state} is missing text for {missing_text_versions.count()} out of {all_versions.count()}"
+    )
+
+
+@cli.command()
+@click.argument("state")
+def sample(state):
     with open("sample.csv") as f:
         for version in csv.DictReader(f):
-            if jid_to_abbr(version["jurisdiction_id"]) == args.state:
+            if jid_to_abbr(version["jurisdiction_id"]) == state:
                 filename, data = download(version)
                 if not filename:
                     continue
@@ -75,4 +105,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    cli()

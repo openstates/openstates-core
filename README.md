@@ -13,7 +13,7 @@ Please work on a branch & check in the text/ directory only when you're happy wi
 
 ## Usage
 
-Run ``pipenv run python ./demo.py nc`` (replacing nc with whichever state you're interested in working on)
+Run ``pipenv run python ./text_extract.py sample nc`` (replacing nc with whichever state you're interested in working on)
 
    *The first time this is run this will populate the directory ``raw/nc`` with sample files, should you ever need to regenerate those feel free to erase that directory & it will be recreated on the next run*
    
