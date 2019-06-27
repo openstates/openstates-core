@@ -41,3 +41,7 @@ Other metadata values should generally not be used to alter behavior.  In partic
 - Removal of section headers/etc. is fine, but if the only reason you're writing a new function instead of using a common one is to do this, reconsider.
 
 When in doubt, **ask**, you may have encountered something we haven't considered yet and we can discuss the best practice and add it here.
+
+**Should we include bill digests?**
+
+There isn't a need to, but it doesn't hurt if separating the two is difficult.
