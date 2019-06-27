@@ -30,7 +30,12 @@ def download(version):
             os.makedirs(os.path.dirname(filename))
         except OSError:
             pass
-        _, resp = scraper.urlretrieve(version["url"], filename)
+        try:
+            _, resp = scraper.urlretrieve(version["url"], filename)
+        except Exception as e:
+            print('could not fetch', version['id'])
+            return None, None
+
         return filename, resp.content
     else:
         with open(filename, "rb") as f:
@@ -63,6 +68,8 @@ def main():
         for version in csv.DictReader(f):
             if jid_to_abbr(version["jurisdiction_id"]) == args.state:
                 filename, data = download(version)
+                if not filename:
+                    continue
                 text_filename, bytes = extract_to_file(filename, data, version)
                 print(f"{filename} => {text_filename} ({bytes} bytes)")
 
