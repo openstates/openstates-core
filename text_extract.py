@@ -6,6 +6,7 @@ import dj_database_url
 import django
 import scrapelib
 from django.conf import settings
+from django.db.models import F
 
 from extract.utils import jid_to_abbr
 from extract import extract_text
@@ -103,6 +104,31 @@ def sample(state):
                 text_filename, bytes = extract_to_file(filename, data, version)
                 print(f"{filename} => {text_filename} ({bytes} bytes)")
 
+
+def extract_metadata(vlink):
+    return {
+        "url": vlink.url,
+        "jurisdiction_id": vlink.version.bill.legislative_session.jurisdiction_id,
+    }
+
+
+@cli.command()
+@click.argument("state")
+@click.option("-n", default=100)
+def update(state, n):
+    from opencivicdata.legislative.models import BillVersionLink
+
+    missing_text_versions = BillVersionLink.objects.filter(
+        version__bill__legislative_session__jurisdiction__name=state, text=""
+    )[:n]
+
+    print(missing_text_versions.count())
+
+    for v in missing_text_versions:
+        data = scraper.get(v.url).content
+        metadata = extract_metadata(v)
+        v.text = extract_text(data, metadata)
+        v.save()
 
 if __name__ == "__main__":
     cli()
