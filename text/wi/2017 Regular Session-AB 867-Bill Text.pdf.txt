@@ -1,0 +1,27 @@
+- 2018 LEGISLATURE
+ASSEMBLY BILL 867
+AN ACT to renumber and amend 341.35 (1); and to create 341.35 (1r) of the
+statutes; relating to: authorized bases of local motor vehicle registration fees.
+- 2018 Legislature                  -2-                             LRB-0447/1
+SECTION 1. 341.35 (1) of the statutes is renumbered 341.35 (1) (intro.) and
+amended to read:
+341.35 (1) ANNUAL     REGISTRATION FEE    DEFINITIONS. (intro.) In this section
+“municipality":
+(b) “Municipality” means a town, village, or city and “motor.
+(a) “Motor vehicle" means an automobile or motor truck registered under s.
+341.25 (1) (c) at a gross weight of not more than 8,000 pounds.
+(1g) ANNUAL REGISTRATION FEE. The governing body of a municipality or county
+may enact an ordinance imposing an annual flat municipal or county registration fee
+on all motor vehicles registered in this state which are customarily kept in the
+municipality or county. A registration fee imposed under this section shall be in
+addition to state registration fees.
+SECTION 2. 341.35 (1r) of the statutes is created to read:
+341.35 (1r) AUTHORIZED FEES. A municipal or county registration fee under this
+section shall be any of the following:
+(a) A flat fee.
+(b) A variable fee based on any of the following:
+1. The value of the motor vehicle.
+2. The weight of the motor vehicle.
+3. The number of axles of the motor vehicle.
+4. The income of the motor vehicle's owner.
+(END)

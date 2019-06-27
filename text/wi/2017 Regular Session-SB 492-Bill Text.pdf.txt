@@ -1,0 +1,190 @@
+- 2018 LEGISLATURE
+SENATE BILL 492
+AN ACT      to create 950.04 (1v) (df), 971.313 and 974.05 (1) (e) of the statutes;
+relating to: obtaining crime victim mental health treatment records.
+- 2018 Legislature               -2-                                 LRB-0532/3
+SECTION 1. 950.04 (1v) (df) of the statutes is created to read:
+950.04 (1v) (df) To privacy in his or her confidential mental health treatment
+records, in accordance with the procedure under s. 971.313.
+SECTION 2. 971.313 of the statutes is created to read:
+971.313     Obtaining victim mental health treatment records.                  (1)
+DEFINITIONS. In this section:
+(a) “Crime victim” has the meaning given for “victim” in s. 950.02 (4) or a
+guardian ad litem appointed under sub. (3) (c) 2. if a person identified under s. 950.02
+(4) (a) 2. has interests that are adverse to a child victim.
+(b) “Mental health treatment records” means all records that are not in the
+possession of a government agency that are created in the course of providing
+services to individuals for mental illness, developmental disabilities, alcoholism,
+drug dependence, or other mental health issues and that are maintained by
+treatment facilities as defined in s. 51.01 (19), by psychologists licensed under s.
+- 2018 Legislature               -3-                           MLJ&TJD:klm&wlj
+455.04 (1), or by licensed mental health professionals as defined in s. 51.01 (11m).
+“Mental health treatment records” does not include psychotherapy notes, as defined
+in 45 CFR 164.501, that are maintained for personal use and kept separate from
+other mental health treatment records.
+(c) “Necessary to any articulated defense” means that the evidence supports
+any articulated defense by tending to create reasonable doubt that would not
+otherwise exist.
+(2)   MOTION      FOR DISCOVERY OF MENTAL HEALTH TREATMENT RECORDS.            (a)
+Notwithstanding ss. 51.30 (4) (b) 4. and 146.82 (2) (a) 4., a defendant seeking
+discovery of a person's mental health treatment records shall file a confidential
+motion, sealed under s. 801.20, at least 45 days before trial, unless the court extends
+the time for filing upon a specific finding of good cause, including when there has
+been new discovery.
+(b) In a motion under par. (a), the defendant shall submit a good faith offer of
+proof and a supporting affidavit from someone with personal knowledge that
+indicates all of the following:
+1. The specific information that is sought from the mental health treatment
+records.
+2. That there are mental health treatment records that are reasonably likely
+to contain the information sought under subd. 1.
+3. That the specific information sought under subd. 1. is necessary to any
+articulated defense.
+4. That the mental health treatment records are the only source for the
+information sought under subd. 1.
+- 2018 Legislature              -4-                                LRB-0532/3
+5. That the information sought under subd. 1. is not cumulative to evidence
+already available.
+(c) The following offers of proof alone are not sufficient to determine whether
+the defendant has met his or her burden of proof to obtain a person's mental health
+treatment records under par. (b):
+1. That the crime victim reported or failed to report a victimization.
+2. That the crime victim sought or received counseling or mental health
+treatment for a prior or current victimization.
+3. That the crime victim received counseling or mental health treatment to
+address personal or family issues.
+(3) NOTIFICATION REQUIRED; CRIME VICTIM RIGHTS. (a) The prosecuting attorney
+shall notify the crime victim whose mental health treatment records are being
+sought of all of the following:
+1. That a motion has been filed under sub. (2) (a) requesting his or her mental
+health treatment records.
+2. That he or she has the right to the assistance of counsel regarding the issue
+of access to his or her mental health treatment records.
+3. That he or she may consent or decline to consent to an in camera review of
+his or her mental health treatment records.
+4. That by consenting to an in camera review, he or she has not waived any
+privilege under s. 905.11 or 905.12 to object to redisclosure of the privileged
+information or the use of any privileged information in a subsequent court
+proceeding after the court's review and determination under sub. (4).
+- 2018 Legislature              -5-                            MLJ&TJD:klm&wlj
+(b) The prosecuting attorney may respond to the motion made under sub. (2)
+(a) with affidavits or written arguments, which shall be filed confidentially and
+sealed under s. 801.20.
+(c) 1. The crime victim whose mental health treatment records are being sought
+has the right to counsel. The crime victim may retain counsel who may intervene in
+this proceeding on his or her behalf. The court shall provide the crime victim
+reasonable time to secure counsel and may appoint counsel upon the victim's request.
+The counsel may file a response to the filing made under sub. (2) (a) with affidavits
+or written arguments, which shall be filed confidentially and sealed under s. 801.20.
+2. If the victim of the crime is a child, and the court determines that a person
+identified under s. 950.02 (4) (a) 2. has interests that are adverse to the child, the
+court shall appoint a guardian ad litem. The guardian ad litem shall be an advocate
+for the best interests of the child.       The guardian ad litem shall function
+independently in the same manner as the counsel identified under subd. 1.
+(4) IN CAMERA REVIEW; DETERMINATION OF WHETHER DISCLOSURE IS WARRANTED. (a)
+If the court concludes by a preponderance of the evidence both that the defendant has
+made the showing required by sub. (2) (b) and that the potential benefit to the
+defendant from disclosure outweighs the harm to the crime victim from disclosure,
+the court shall inquire as to whether the crime victim consents to an in camera review
+of the mental health treatment records by the court.
+(b) 1. If the crime victim does not consent to an in camera review of his or her
+mental health treatment records by the court, the court shall follow the procedures
+in sub. (6) (a).
+2. If the crime victim consents to an in camera review of his or her mental health
+treatment records by the court, the court shall examine the mental health treatment
+- 2018 Legislature                -6-                                 LRB-0532/3
+records in camera for the presence of any evidence that is necessary to any
+articulated defense.
+(c) Following an in camera review of the mental health treatment records under
+par. (b) 2., the court may order the disclosure of the relevant records only if the court
+determines by clear and convincing evidence one of the following:
+1. That the information in the mental health treatment records is necessary to
+any articulated defense and that the benefit to the defendant from disclosure
+outweighs the harm to the crime victim from disclosure.
+2. That the information in the mental health treatment records is exculpatory
+by tending to create reasonable doubt that would not otherwise exist.
+(d) If the court determines under par. (c) that some or all of the mental health
+treatment records are eligible for disclosure, the crime victim shall have the
+opportunity to review the records identified for disclosure. Within 45 days from the
+date of the order under par. (c), the crime victim and the state shall notify the court
+whether the crime victim or the state intends to appeal the order pursuant to s.
+974.05, and if neither the crime victim nor the state intends to appeal the order, the
+crime victim shall indicate whether he or she consents or declines to consent to the
+disclosure of the relevant records. If the crime victim or the state appeals the order
+under par. (c) within 45 days, the crime victim's mental health treatment records
+may not be disclosed until the appeal has concluded.
+(e) 1. After the appeal under par. (d) has concluded, the crime victim shall
+indicate whether he or she consents to the disclosure of his or her mental health
+treatment records.
+2. If the crime victim does not consent to the disclosure of the mental health
+treatment records under par. (d) after the appeal has concluded or after the state and
+- 2018 Legislature               -7-                            MLJ&TJD:klm&wlj
+the crime victim each indicate that he or she or it does not intend to appeal the order,
+the court shall follow the procedures in sub. (6) (b).
+3. If the crime victim consents to the disclosure of the mental health treatment
+records after the appeal has concluded or after the state and the crime victim each
+indicate that he or she or it does not intend to appeal the order, the court shall order
+disclosure of those records to the prosecuting attorney and to the defendant's
+attorney in accordance with the procedures in sub. (5).
+(5) DISCLOSURE    OF INFORMATION; DISSEMINATION PROHIBITED.      (a) If the court
+orders disclosure of mental health treatment records, the order may include only
+those mental health treatment records or portions of mental health treatment
+records that are necessary to any articulated defense or are otherwise exculpatory.
+(b) If the court orders disclosure of mental health treatment records, the court
+shall enter a protective order under s. 971.23 (6) that provides that any record or
+information provided to the prosecuting attorney and to the defendant's attorney
+shall be confidential and may not be redisclosed or disseminated by the prosecuting
+attorney or the defendant's attorney unless specifically authorized by the court. Any
+provided record or information in paper form shall be returned to the court at the
+conclusion of representation. Any provided or stored electronic record or information
+shall be deleted at the conclusion of the representation by the prosecuting attorney
+and the defendant's attorney, both of whom shall provide the court with an affidavit
+affirming that the records or information have been deleted.
+(c) The court shall determine the admissibility of any disclosed mental health
+treatment records under the applicable rules of evidence.
+(d) The court shall retain any mental health treatment records under seal for
+the applicable period of time as specified in SCR 72.01.
+- 2018 Legislature                -8-                                 LRB-0532/3
+(6) CRIME   VICTIM NONCONSENT; APPEALS OF COURT DECISIONS REGARDING MENTAL
+HEALTH TREATMENT RECORDS.      (a) If the crime victim does not consent to in camera
+review of his or her mental health treatment records, the court shall do all of the
+following:
+1. Abide by the declination of the crime victim.
+2. Permit the crime victim to testify at the trial.
+3. If the case is tried by a jury, inform the jury of all of the following:
+a. That the crime victim declined to disclose mental health treatment records
+for inspection by the court.
+b. That the crime victim has the right to decline an in camera review of the
+mental health treatment records.
+4. Notwithstanding any prohibition under s. 905.11 or 905.12, permit comment
+on the declination by the crime victim and allow the defendant to draw any
+reasonable inference therefrom.
+(b) If the crime victim does not consent to disclosure of his or her mental health
+treatment records following an in camera review, the court shall prohibit the crime
+victim from testifying at the trial and the court may not order disclosure of the crime
+victim's mental health treatment records.
+(c) Any of the following orders of the court may be appealed to the court of
+appeals as a matter of right by the state under s. 974.05 or by the crime victim in the
+manner under s. 974.05:
+1. The order of the court determining that the defendant has met his or her
+burden of proof under sub. (2) (b), triggering an in camera review of mental health
+treatment records.
+- 2018 Legislature              -9-                             MLJ&TJD:klm&wlj
+2. The order of the court determining that the mental health treatment records
+should be disclosed under sub. (4) (c).
+(7) PRIVILEGE. The consent of a crime victim to review of mental health
+treatment records under sub. (4) (a) or disclosure of mental health treatment records
+under sub. (4) (d) does not waive any privilege under s. 905.11 or 905.12. A crime
+victim may still claim any applicable privilege for confidential communications or for
+information reviewed or disclosed under this section.
+(8) PSYCHOTHERAPY NOTES. Except for uses or disclosures described in 45 CFR
+164.508 (a) (2) (i) and (ii), a defendant may not obtain and a court may not order
+disclosure of psychotherapy notes, as defined in 45 CFR 164.501, that are
+maintained for personal use and kept separate from other mental health treatment
+records unless the crime victim voluntarily provides an authorization in accordance
+with 45 CFR 164.508 to disclose psychotherapy notes.
+SECTION 3. 974.05 (1) (e) of the statutes is created to read:
+974.05 (1) (e) Order granting relief under s. 971.313 (6) (c) 1. or 2.
+SECTION 4.0Effective date.
+(1) This act takes effect on October 1, 2017.
+(END)

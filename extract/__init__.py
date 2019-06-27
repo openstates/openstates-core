@@ -7,7 +7,7 @@ from .common import (
     extract_from_p_tags_html,
     extractor_for_elements_by_class,
     extractor_for_element_by_id,
-    extractor_for_element_by_xpath
+    extractor_for_element_by_xpath,
     extract_from_code_tags_html,
 )
 from .de import handle_delaware
@@ -32,7 +32,11 @@ CONVERSION_FUNCTIONS = {
     },
     "hi": {
         "text/html": extractor_for_element_by_xpath('.//*[@class="Section2"] | .//*[@class="WordSection2"]')
-    }
+    },
+    "wi": {
+        "application/pdf": extract_sometimes_numbered_pdf,
+    },
+    "wy": extract_sometimes_numbered_pdf,
 }
 
 

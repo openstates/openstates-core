@@ -1,0 +1,109 @@
+18LSO-0295
+AN     ACT   relating    to    industrial       siting;    expanding       the
+jurisdiction       of   the    industrial      siting   council    over   wind
+energy facilities as specified; providing for hearings to
+require permitting of wind energy facilities that do not
+meet    existing     thresholds as          specified; authorizing        fees;
+authorizing     rulemaking;       and       providing   for   an   effective
+date.
+Be It Enacted by the Legislature of the State of Wyoming:
+Section 1.       W.S. 35-12-120 is created to read:
+35-12-120.       Wind      energy        facilities;         hearings;
+application forms; fees; findings.
+SF0051
+STATE OF WYOMING                        18LSO-0295
+(a)   Any person may apply to the council for a hearing
+to determine that a wind energy facility that does not meet
+the    definition      of    a     facility      as      provided       in     W.S.
+35-12-102(a)(vii)(E)(I) or (II) should be permitted under
+this act.     The application for hearing form shall set forth
+the following information:
+(i)     The name and address of the applicant;
+(ii)    The    name     and       address     of     the        person
+responsible for the planned or existing facility;
+(iii)     A description of the nature and location
+of the facility;
+(iv)    A statement and any documentary evidence as
+to why the facility should be required to be permitted;
+(v)     Any    other      information          the     applicant
+considers     relevant      or      required      by     council        rule    or
+regulation.
+SF0051
+STATE OF WYOMING                           18LSO-0295
+(b)    At the time of filing an application as provided
+by this section, the applicant may be required to pay a fee
+as determined by the director and credited and expended as
+provided in W.S. 35-12-109(b).
+(c)    On receipt of an application, the director shall
+conduct      a review of        the   application        to determine          if it
+contains all the information required by this section and
+the rules and regulations.              Within fifteen (15) days after
+receipt, the director shall:
+(i)    Reject     the     application        if      the    director
+determines that it is incomplete and give written notice to
+the    applicant       of     the     specific       deficiencies          in    the
+application; or
+(ii)    Schedule a public hearing and give written
+notice of the time and date of the hearing to the applicant
+and    the   person    responsible       for   the       planned    or    existing
+facility.
+(d)    The    council     may,     after      a    hearing        has     been
+scheduled     as     provided    in   this     section      or   upon      its   own
+SF0051
+STATE OF WYOMING                        18LSO-0295
+motion, hold a hearing to determine whether the evidence
+presented    to     the    council   demonstrates        that   the    facility
+should be permitted under this act.
+(e)   The council shall find that a facility should be
+permitted under this act if the evidence demonstrates that:
+(i)    Reasonably foreseeable future phases of the
+planned or existing facility will make the total number of
+turbines greater than or equal to the threshold in W.S.
+35-12-102(a)(vii)(E)(I); or
+(ii)    The planned or existing installation is or
+may    reasonably     be    expected      to   become    part   of    a   larger
+project with other planned or existing installations owned
+by separate persons and the total number of turbines in the
+larger project is or will be greater than or equal to the
+threshold in W.S. 35-12-102(a)(vii)(E)(I).
+(f)   Within       thirty   (30)    days   from    the   date      of   the
+council's finding that the facility should be permitted,
+the person responsible for the planned or existing facility
+SF0051
+STATE OF WYOMING                                18LSO-0295
+shall apply for an industrial siting permit as provided by
+this act.
+Section 2.       W.S. 35-12-102(a)(vii)(E)(I), (II) and by
+creating a new subdivision (III) is amended to read:
+35-12-102.       Definitions.
+(a)     As used in this chapter:
+(vii)    "Industrial facility" or "facility" means
+any industrial facility with an estimated construction cost
+of     at    least     ninety-six      million        nine        hundred       thousand
+dollars       ($96,900,000.00)         as     of     May     30,        1987.       Exempt
+activities       shall       not    be      included         in        the     estimated
+construction cost of an industrial facility.                                 The council
+shall       adjust    this   amount,     up    or     down,       each       year   using
+recognized       construction        cost          indices        as     the     council
+determines       to     be   relevant         to     the     actual          change    in
+construction         cost    applicable        to     the     general           type    of
+construction covered under this chapter.                           "Facility" also
+includes, regardless of construction cost:
+SF0051
+STATE OF WYOMING                     18LSO-0295
+(E)     Any    commercial        facility     generating
+electricity   from    wind    and   associated     collector      systems
+that:
+(I)     Consists    of   thirty     (30)   or   more
+wind turbines in all planned phases of the installation; or
+(II)    Expand     an    existing    installation
+not previously defined as a facility to include a total
+number of turbines greater than or equal to the thresholds
+threshold in subdivision (a)(vii)(E)(I) of this section;.
+or
+(III)    Has      been    determined       by   the
+council to require permitting under this act as provided in
+W.S. 35-12-120.
+Section 2.    This act is effective July 1, 2018.
+(END)
+SF0051
