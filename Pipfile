@@ -8,7 +8,7 @@ verify_ssl = true
 [packages]
 scrapelib = "*"
 lxml = "*"
-opencivicdata = "*"
+opencivicdata = "==2.4.0"
 dj-database-url = "*"
 click = "*"
 flake8 = "*"

@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "1bd4de60cca7be81422847e5249800ef6ffa7b069f32dfe2703760bd1145989f"
+            "sha256": "c990d6cc3c768ce798e7efaf3d931e0e253731e8015565be471563af0fcf7b99"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -109,10 +109,10 @@
         },
         "django": {
             "hashes": [
-                "sha256:753d30d3eb078064d2ddadfea65083c9848074a7f93d7b4dc7fa6b1380d278f5",
-                "sha256:7cb67e8b934fab23b6daed7144da52e8a25a47eba7f360ca43d2b448506b01ad"
+                "sha256:4d23f61b26892bac785f07401bc38cbf8fa4cec993f400e9cd9ddf28fd51c0ea",
+                "sha256:6e974d4b57e3b29e4882b244d40171d6a75202ab8d2402b8e8adbd182e25cf0c"
             ],
-            "version": "==2.2.2"
+            "version": "==2.2.3"
         },
         "entrypoints": {
             "hashes": [
@@ -123,11 +123,11 @@
         },
         "flake8": {
             "hashes": [
-                "sha256:859996073f341f2670741b51ec1e67a01da142831aa1fdc6242dbf88dffbe661",
-                "sha256:a796a115208f5c03b18f332f7c11729812c8c3ded6c46319c59b53efd3819da8"
+                "sha256:19241c1cbc971b9962473e4438a2ca19749a7dd002dd1a946eaba171b4114548",
+                "sha256:8e9dfa3cecb2400b3738a42c54c3043e821682b9c840b0448c0503f781130696"
             ],
             "index": "pypi",
-            "version": "==3.7.7"
+            "version": "==3.7.8"
         },
         "idna": {
             "hashes": [
@@ -175,11 +175,11 @@
         },
         "opencivicdata": {
             "hashes": [
-                "sha256:2a72c96752483b3f87de1d2a79ecb282d8de8842635c9a951c7a8b0962c5e619",
-                "sha256:e170f99d1f7f75dc439b5bcc5d971667ef9f741c790efa86e2514a0a7108f54f"
+                "sha256:547f1798886cc497894d8fddaf88bd413c51aac9187ffee7adc7f0054b6eec53",
+                "sha256:cbb909b369530a26f64b5181cdc223dd379e9fb0c57a6021bfd8490398842c01"
             ],
             "index": "pypi",
-            "version": "==2.3.0"
+            "version": "==2.4.0"
         },
         "psycopg2-binary": {
             "hashes": [
