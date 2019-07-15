@@ -9,7 +9,7 @@ ADD . /opt/text-extraction
 WORKDIR /opt/text-extraction
 
 RUN apt update && \
-        apt install -y software-properties-common libgdal20 && \
+        apt install -y software-properties-common libgdal20 poppler-utils && \
         add-apt-repository ppa:deadsnakes/ppa && \
         apt install -y python3-pip python3.7 && \
         pip3 install pipenv
