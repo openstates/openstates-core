@@ -74,7 +74,10 @@ def extract_to_file(filename, data, version):
 def update_bill(bill):
     from opencivicdata.legislative.models import SearchableBill
 
-    latest_version = bill.versions.order_by("-date", "-note").prefetch_related("links")[0]
+    try:
+        latest_version = bill.versions.order_by("-date", "-note").prefetch_related("links")[0]
+    except IndexError:
+        return
 
     # check if there's an old entry and we can use it
     # if bill.searchable:
@@ -84,8 +87,12 @@ def update_bill(bill):
 
     # iterate through versions until we extract some good text
     is_error = True
+    raw_text = ""
     for link in latest_version.links.all():
-        data = scraper.get(link.url).content
+        try:
+            data = scraper.get(link.url).content
+        except Exception as e:
+            continue
         metadata = {
             "url": link.url,
             "media_type": link.media_type,
@@ -93,7 +100,12 @@ def update_bill(bill):
             "jurisdiction_id": bill.legislative_session.jurisdiction_id
         }
         # TODO: clean up whitespace
-        raw_text = extract_text(data, metadata)
+        try:
+            raw_text = extract_text(data, metadata)
+        except Exception as e:
+            print(e)
+            continue
+
         if raw_text:
             is_error = False
             break
