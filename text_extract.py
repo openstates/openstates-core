@@ -97,7 +97,7 @@ def update_bill(bill):
             "url": link.url,
             "media_type": link.media_type,
             "title": bill.title,
-            "jurisdiction_id": bill.legislative_session.jurisdiction_id
+            "jurisdiction_id": bill.legislative_session.jurisdiction_id,
         }
         # TODO: clean up whitespace
         try:
@@ -113,7 +113,7 @@ def update_bill(bill):
     sb = SearchableBill.objects.create(
         bill=bill,
         version_link=link,
-        all_titles=bill.title,       # TODO: add other titles
+        all_titles=bill.title,  # TODO: add other titles
         raw_text=raw_text,
         is_error=is_error,
         search_vector="",
@@ -131,17 +131,12 @@ def cli():
 def stats(state):
     from opencivicdata.legislative.models import Bill
 
-    all_bills = Bill.objects.filter(
-        legislative_session__jurisdiction__name=state
-    )
+    all_bills = Bill.objects.filter(legislative_session__jurisdiction__name=state)
     missing_search = Bill.objects.filter(
-        legislative_session__jurisdiction__name=state,
-        searchable__isnull=True,
+        legislative_session__jurisdiction__name=state, searchable__isnull=True
     )
 
-    print(
-        f"{state} is missing text for {missing_search.count()} out of {all_bills.count()}"
-    )
+    print(f"{state} is missing text for {missing_search.count()} out of {all_bills.count()}")
 
 
 @cli.command()
@@ -164,8 +159,7 @@ def update(state, n):
     from opencivicdata.legislative.models import Bill, SearchableBill
 
     missing_search = Bill.objects.filter(
-        legislative_session__jurisdiction__name=state,
-        searchable__isnull=True,
+        legislative_session__jurisdiction__name=state, searchable__isnull=True
     )[:n]
 
     ids_to_update = []
@@ -174,10 +168,10 @@ def update(state, n):
 
     print(f"updating {len(ids_to_update)} search vectors")
     SearchableBill.objects.filter(id__in=ids_to_update).update(
-        search_vector = (
-            SearchVector("all_titles", weight='A', config='english') +
-            SearchVector("raw_text", weight='B', config='english')
-        ),
+        search_vector=(
+            SearchVector("all_titles", weight="A", config="english")
+            + SearchVector("raw_text", weight="B", config="english")
+        )
     )
 
 

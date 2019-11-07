@@ -15,7 +15,7 @@ from .de import handle_delaware
 CONVERSION_FUNCTIONS = {
     "al": extract_line_numbered_pdf,
     "ak": extract_pre_tag_html,
-    "az": extractor_for_elements_by_class('WordSection2'),
+    "az": extractor_for_elements_by_class("WordSection2"),
     "ar": extract_sometimes_numbered_pdf,
     "co": extract_sometimes_numbered_pdf,
     "ct": extract_from_p_tags_html,
@@ -23,19 +23,18 @@ CONVERSION_FUNCTIONS = {
     "il": extract_from_code_tags_html,
     "nc": extract_line_numbered_pdf,
     "ca": {
-        "text/html": extractor_for_element_by_xpath('.//div[@id="bill"] | .//span[@class="Resolution"]'),    
+        "text/html": extractor_for_element_by_xpath(
+            './/div[@id="bill"] | .//span[@class="Resolution"]'
+        )
     },
     "de": handle_delaware,
-    "fl": {
-        "text/html": extract_pre_tag_html,
-        "application/pdf":  extract_line_numbered_pdf,
-    },
+    "fl": {"text/html": extract_pre_tag_html, "application/pdf": extract_line_numbered_pdf},
     "hi": {
-        "text/html": extractor_for_element_by_xpath('.//*[@class="Section2"] | .//*[@class="WordSection2"]')
+        "text/html": extractor_for_element_by_xpath(
+            './/*[@class="Section2"] | .//*[@class="WordSection2"]'
+        )
     },
-    "wi": {
-        "application/pdf": extract_sometimes_numbered_pdf,
-    },
+    "wi": {"application/pdf": extract_sometimes_numbered_pdf},
     "wy": extract_sometimes_numbered_pdf,
 }
 
