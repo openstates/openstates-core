@@ -4,7 +4,7 @@ This repo contains a sampling of Open States' bill versions, currently 25 bills 
 
 ## Setup
 
-Run `pipenv install` to set up the environment.
+Run `poetry install` to set up the environment.
 
 We use ``scrapelib`` - it is used for fetching files from HTTP & FTP sites. Other libraries may be required depending on the state you're working on. Please avoid using BeautifulSoup in favor of ``lxml`` for
 stability and speed considerations.
@@ -13,7 +13,7 @@ Please work on a branch & check in the text/ directory only when you're happy wi
 
 ## Usage
 
-Run ``pipenv run python ./text_extract.py sample nc`` (replacing nc with whichever state you're interested in working on)
+Run ``poetry run ./text_extract.py sample nc`` (replacing nc with whichever state you're interested in working on)
 
    *The first time this is run this will populate the directory ``raw/nc`` with sample files, should you ever need to regenerate those feel free to erase that directory & it will be recreated on the next run*
    
