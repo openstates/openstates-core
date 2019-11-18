@@ -1,14 +1,11 @@
 #!/usr/bin/env python
-
 import os
-
 import csv
 import click
 import dj_database_url
 import django
 import scrapelib
 from django.conf import settings
-from django.db.models import F
 from django.contrib.postgres.search import SearchVector
 
 from extract.utils import jid_to_abbr
@@ -93,7 +90,7 @@ def update_bill(bill):
     for link in latest_version.links.all():
         try:
             data = scraper.get(link.url).content
-        except Exception as e:
+        except Exception:
             continue
         metadata = {
             "url": link.url,
@@ -143,6 +140,48 @@ def stats(state):
 
 @cli.command()
 @click.argument("state")
+def resample(state):
+    from opencivicdata.legislative.models import BillVersion
+
+    versions = BillVersion.objects.filter(
+        bill__legislative_session__jurisdiction__name=state
+    ).order_by("?")[:50]
+
+    count = 0
+    fieldnames = [
+        "id",
+        "session",
+        "identifier",
+        "title",
+        "jurisdiction_id",
+        "media_type",
+        "url",
+        "note",
+    ]
+
+    with open("sample.csv", "w") as outf:
+        out = csv.DictWriter(outf, fieldnames=fieldnames)
+        out.writeheader()
+        for v in versions:
+            for link in v.links.all():
+                out.writerow(
+                    {
+                        "id": v.id,
+                        "session": v.bill.legislative_session.identifier,
+                        "jurisdiction_id": v.bill.legislative_session.jurisdiction_id,
+                        "identifier": v.bill.identifier,
+                        "title": v.bill.title,
+                        "url": link.url,
+                        "media_type": link.media_type,
+                        "note": v.note,
+                    }
+                )
+                count += 1
+    print(f"wrote new sample.csv with {count} records")
+
+
+@cli.command()
+@click.argument("state")
 def sample(state):
     with open("sample.csv") as f:
         for version in csv.DictReader(f):
@@ -163,6 +202,7 @@ def update(state, n):
     missing_search = Bill.objects.filter(
         legislative_session__jurisdiction__name=state, searchable__isnull=True
     )[:n]
+    print(f"selected {len(missing_search)} bills without search results for updating")
 
     ids_to_update = []
     for b in missing_search:
