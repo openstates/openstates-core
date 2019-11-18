@@ -8,7 +8,7 @@ import scrapelib
 from django.conf import settings
 from django.contrib.postgres.search import SearchVector
 
-from extract.utils import jid_to_abbr
+from extract.utils import jid_to_abbr, abbr_to_jid
 from extract import extract_text
 
 scraper = scrapelib.Scraper()
@@ -23,7 +23,7 @@ MIMETYPES = {
 
 
 def init_django():
-    DATABASE_URL = os.environ.get("DATABASE_URL", "postgis://localhost/cleanos")
+    DATABASE_URL = os.environ.get("DATABASE_URL", "postgis://localhost/openstatesorg")
     DATABASES = {"default": dj_database_url.parse(DATABASE_URL)}
     settings.configure(
         DATABASES=DATABASES, INSTALLED_APPS=("opencivicdata.core", "opencivicdata.legislative")
@@ -138,13 +138,12 @@ def stats(state):
     print(f"{state} is missing text for {missing_search.count()} out of {all_bills.count()}")
 
 
-@cli.command()
-@click.argument("state")
-def resample(state):
+def _resample(state):
     from opencivicdata.legislative.models import BillVersion
 
+    print(abbr_to_jid(state))
     versions = BillVersion.objects.filter(
-        bill__legislative_session__jurisdiction__name=state
+        bill__legislative_session__jurisdiction_id=abbr_to_jid(state)
     ).order_by("?")[:50]
 
     count = 0
@@ -159,7 +158,7 @@ def resample(state):
         "note",
     ]
 
-    with open("sample.csv", "w") as outf:
+    with open(f"raw/{state}.csv", "w") as outf:
         out = csv.DictWriter(outf, fieldnames=fieldnames)
         out.writeheader()
         for v in versions:
@@ -177,13 +176,16 @@ def resample(state):
                     }
                 )
                 count += 1
-    print(f"wrote new sample.csv with {count} records")
+    print(f"wrote new sample csv with {count} records")
 
 
 @cli.command()
 @click.argument("state")
-def sample(state):
-    with open("sample.csv") as f:
+@click.option("--resample/--no-resample", default=False)
+def sample(state, resample):
+    if resample:
+        _resample(state)
+    with open(f"raw/{state}.csv") as f:
         for version in csv.DictReader(f):
             if jid_to_abbr(version["jurisdiction_id"]) == state:
                 filename, data = download(version)
@@ -200,7 +202,7 @@ def update(state, n):
     from opencivicdata.legislative.models import Bill, SearchableBill
 
     missing_search = Bill.objects.filter(
-        legislative_session__jurisdiction__name=state, searchable__isnull=True
+        legislative_session__jurisdiction_id=abbr_to_jid(state), searchable__isnull=True
     )[:n]
     print(f"selected {len(missing_search)} bills without search results for updating")
 
