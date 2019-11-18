@@ -9,8 +9,6 @@ Run `poetry install` to set up the environment.
 We use ``scrapelib`` - it is used for fetching files from HTTP & FTP sites. Other libraries may be required depending on the state you're working on. Please avoid using BeautifulSoup in favor of ``lxml`` for
 stability and speed considerations.
 
-Please work on a branch & check in the text/ directory only when you're happy with the results.  This keeps the repo size down & will allow review of the results of extraction as part of the PR.
-
 ## Usage
 
 Run ``poetry run ./text_extract.py sample nc`` (replacing nc with whichever state you're interested in working on)
