@@ -1,0 +1,103 @@
+An Act concerning county supervisor districting plans.
+BE IT ENACTED BY THE GENERAL ASSEMBLY OF THE STATE OF IOWA:
+Section 1. Section 68B.32A, subsection 16, Code 2018, is
+amended to read as follows:
+16. Establish an expedited procedure for reviewing
+complaints forwarded by the state commissioner of elections
+to the board for a determination as to whether a supervisor
+district plan adopted pursuant to section 331.210A that differs
+from a supervisor district plan prepared by the legislative
+services agency was drawn for improper political reasons
+as described in section 42.4, subsection 5. The expedited
+procedure shall be substantially similar to the process used
+for other complaints filed with the board except that the
+provisions of section 68B.32D shall not apply.
+Sec. 2. Section 331.209, subsection 4, Code 2018, is amended
+to read as follows:
+4. Each temporary county redistricting commission shall
+notify the state commissioner of elections when the boundaries
+of supervisor districts are changed, shall provide a map
+delineating the new boundary lines, and shall certify to
+the state commissioner of elections the populations of the
+new supervisor districts as determined under the latest
+federal decennial census. Upon failure of a temporary county
+redistricting commission to make the required changes by
+the dates specified by this section and sections 331.203
+and 331.204 as determined by the state commissioner of
+elections, the state commissioner of elections shall make or
+cause to be made the necessary changes as soon as possible,
+and shall assess to the county the expenses incurred in so
+doing. The Except for a representation plan drawn pursuant
+to section 331.210A, subsection 2, paragraph “f”, the state
+commissioner of elections may request the services of personnel
+and materials available to the legislative services agency
+to assist the state commissioner in making required changes
+in supervisor district boundaries which become the state
+commissioner’s responsibility.
+Sec. 3. Section 331.210A, subsection 2, paragraph f,
+subparagraph (1), Code 2018, is amended to read as follows:
+(1) (a) Notwithstanding the provisions of this section
+to the contrary, for For purposes of this paragraph “f”,
+“qualifying county” means a county with a population of one
+hundred fifty thousand or more based on the most recent federal
+decennial census that elects supervisors under plan “three”
+as defined in section 331.206, or a county with a population
+of one hundred eighty thousand or more that has adopted a
+charter for a city-county consolidated form of government or
+a community commonwealth form of government and which charter
+provides for representation by districts,.
+(b) Notwithstanding any provision of this section to the
+contrary, for a qualifying county, the legislative services
+agency, and not the temporary county redistricting commission,
+shall draw a representation plan as provided by paragraph “a”
+pursuant to a contract executed with the county.
+(c) A county subject to the requirements of this paragraph
+“f” shall notify the state commissioner of elections that a
+representation plan to be drawn pursuant to this paragraph
+“f” is required and shall submit to the state commissioner
+of elections the precinct plan to be used to draw the
+representation plan. Upon notification and submission of a
+precinct plan, the state commissioner of elections shall review
+and approve the precinct plan to be used. Following approval
+of the precinct plan to be used, the state commissioner
+of elections shall notify the legislative council which
+shall direct the legislative services agency to prepare a
+representation plan for the county.
+(d) The plan drawn by the legislative services agency
+shall be based upon the precinct plan adopted and approved
+for use by the county and shall be drawn in accordance with
+section 42.4, to the extent applicable. After the legislative
+services agency has drawn the plan, the legislative services
+agency shall at the earliest feasible time make available to
+the public all of the information required to be made public
+by paragraph “b”.
+EXPLANATION
+The inclusion of this explanation does not constitute agreement with
+the explanation’s substance by the members of the general assembly.
+This bill concerns county supervisor districting plans for
+certain counties.
+Code section 331.210A(2)(f) is amended to provide that the
+procedure for adopting a representation plan for a county that
+has a population that exceeds 180,000 or that has adopted a
+charter for a city-county consolidation form or community
+commonwealth form that provides for representation by districts
+shall also apply to a county with a population of 150,000 or
+more that has adopted a plan “three” form of representation.
+The procedure provides that the county’s initial plan for
+districts, and the county’s first plan for districts after each
+federal decennial census, shall be drawn by the legislative
+services agency based upon an approved precinct plan for
+the county and the standards applicable to congressional
+and legislative redistricting. If the plan drawn by the
+legislative services agency is rejected by the governing body,
+the governing body shall direct the legislative services agency
+to prepare another plan as provided by current law.
+Code section 68B.32A, concerning complaints for improper
+political reasons relative to an adopted supervisor district
+plan, is amended to make the complaint process inapplicable
+to plans prepared by the legislative services agency. In
+addition, Code section 331.209 is amended to provide that
+the state commissioner of elections shall not be permitted
+to request assistance from the legislative services agency
+relating to a representation plan drawn pursuant to Code
+section 331.210A(2)(f).

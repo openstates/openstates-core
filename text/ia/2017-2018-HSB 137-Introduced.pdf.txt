@@ -1,0 +1,76 @@
+An Act relating to pari-mutuel wagering, including horse and
+dog racing medication requirements and the applicability
+of certain setoff procedures to advance deposit wagering
+operators.
+BE IT ENACTED BY THE GENERAL ASSEMBLY OF THE STATE OF IOWA:
+Section 1. Section 99D.25, subsection 1, paragraph b, Code
+2017, is amended to read as follows:
+b. “Numbing” means the applying of ice or a freezing device
+or substance to the limbs of a horse or dog within two hours
+before the start of a race, or a surgical or other procedure
+which was, at any time, performed in which the nerves of a
+horse or dog were severed, destroyed, injected, or removed.
+For purposes of this paragraph, ice is not a freezing device
+or substance.
+Sec. 2. Section 99D.25A, subsections 2 and 7, Code 2017, are
+amended to read as follows:
+2. Phenylbutazone shall not may be administered to a
+horse in dosages which would result in concentrations of more
+than five micrograms of the substance or its metabolites
+per milliliter of blood dosage amounts as set by rule
+by the commission. In races recognized as graded stakes
+thoroughbred races, the commission may establish restrictions
+on dosage amounts for phenylbutazone which would result in
+concentrations of less than five micrograms of the substance or
+its metabolites per milliliter of blood.
+7. A horse entered to race with furosemide must be treated
+at least four hours prior to post time. The furosemide shall
+be administered intravenously by a veterinarian employed by the
+owner or trainer of the horse issued a current occupational
+license by the commission. The commission shall adopt rules
+to ensure that furosemide is administered as provided in this
+section. The commission shall require that the practicing
+veterinarian deliver an affidavit signed by the veterinarian
+which certifies information regarding the treatment of the
+horse. The affidavit must be delivered to a commission
+veterinarian within twenty minutes following the treatment.
+The statement affidavit must at least include the name of the
+practicing veterinarian, the tattoo number of the horse, the
+location of the barn and stall where the treatment occurred,
+the race number of the horse, the name of the trainer, and
+the time that the furosemide was administered. Furosemide
+shall only be administered in a dose level of no less than
+one hundred fifty milligrams and no more than five hundred
+milligrams.
+Sec. 3. Section 99D.28, Code 2017, is amended by adding the
+following new subsection:
+NEW SUBSECTION. 8. For purposes of this section, “licensee”
+shall also include an advance deposit wagering operator.
+EXPLANATION
+The inclusion of this explanation does not constitute agreement with
+the explanation’s substance by the members of the general assembly.
+This bill concerns pari-mutuel wagering under Code chapter
+99D.
+Code section 99D.25, regulating the drugging or numbing of
+race horses or dogs, is amended to provide that in defining
+numbing, ice is not a freezing device or substance.
+Code section 99D.25A, concerning the administration of
+furosemide or phenylbutazone to race horses, is amended. The
+bill provides that phenylbutazone may be administered to
+a horse in dosage amounts as set by the racing and gaming
+commission by rule. Current law specifies dosage amounts
+in Code. The bill also provides that furosemide shall be
+administered to a horse by a veterinarian licensed by the
+commission instead of by a veterinarian employed by the owner
+or trainer of the horse. The bill retains the requirement
+that the treating veterinarian submit an affidavit about the
+treatment to a commission veterinarian, but eliminates the
+requirement that the affidavit be delivered within 20 minutes
+of the treatment.
+Code section 99D.28, concerning setoff requirements, is
+amended. The setoff requirements provide that if a person
+wins $1,200 or more in one occurrence and owes money to an
+eligible public agency, the licensee is required to collect
+from the winnings the full amount of the debt prior to paying
+any winnings to the person. The bill provides that these
+requirements apply to advance deposit wagering operators.
