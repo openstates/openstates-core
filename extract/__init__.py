@@ -55,6 +55,7 @@ CONVERSION_FUNCTIONS = {
         "application/rtf": DoNotDownload,
         "application/pdf": DoNotDownload,
     },
+    "mi": {"text/html": extractor_for_element_by_xpath('.//*[@class="WordSection1"]')},
     "nc": {"application/pdf": extract_line_numbered_pdf},
     "wi": {"application/pdf": extract_sometimes_numbered_pdf, "text/html": DoNotDownload},
     "wy": {"application/pdf": extract_sometimes_numbered_pdf},
