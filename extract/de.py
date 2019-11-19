@@ -13,8 +13,6 @@ def handle_delaware(data, metadata):
             data, metadata
         )
     elif metadata["media_type"] == "application/pdf" and "HCR" not in metadata["title"]:
-        # return extract_simple_pdf(data, metadata)
-
         # Del., like many states, appears to publish all bills as both text and HTML
         # so we don't *need* to extract from PDF.
         pass
@@ -24,8 +22,6 @@ def handle_delaware(data, metadata):
         # as HTML. Just PDF and MSWord.
         # so we handle these here and ignore docx (below)
         return extract_line_numbered_pdf(data, metadata)
-    elif metadata["media_type"] == "application/msword":
-        pass
     else:
         print("unexpected media type in delaware", metadata["media_type"])
         assert False

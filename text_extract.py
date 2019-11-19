@@ -9,7 +9,7 @@ import scrapelib
 from django.contrib.postgres.search import SearchVector
 
 from extract.utils import jid_to_abbr, abbr_to_jid
-from extract import extract_text
+from extract import get_extract_func, DoNotDownload
 
 scraper = scrapelib.Scraper()
 
@@ -57,7 +57,11 @@ def download(version):
 
 def extract_to_file(filename, data, version):
     try:
-        text = extract_text(data, version)
+        func = get_extract_func(version)
+        if func == DoNotDownload:
+            return DoNotDownload, 0
+        else:
+            text = func(data, version)
     except Exception as e:
         click.secho(f"exception processing {version['url']}: {e}", fg="red")
         text = None
@@ -94,20 +98,22 @@ def update_bill(bill):
     is_error = True
     raw_text = ""
     for link in latest_version.links.all():
-        try:
-            data = scraper.get(link.url).content
-        except Exception:
-            # OK, just try the next one
-            continue
         metadata = {
             "url": link.url,
             "media_type": link.media_type,
             "title": bill.title,
             "jurisdiction_id": bill.legislative_session.jurisdiction_id,
         }
+        func = get_extract_func(metadata)
+        if func == DoNotDownload:
+            continue
+        try:
+            data = scraper.get(link.url).content
+        except Exception:
+            continue
         # TODO: clean up whitespace
         try:
-            raw_text = extract_text(data, metadata)
+            raw_text = func(data, metadata)
         except Exception as e:
             click.secho(f"exception processing {metadata['url']}: {e}", fg="red")
             raw_text = None
@@ -197,7 +203,7 @@ def _resample(state, n=50):
 def sample(state, resample, quiet):
     if resample:
         _resample(state)
-    count = missing = empty = 0
+    count = missing = empty = skipped = 0
     with open(f"raw/{state}.csv") as f:
         for version in csv.DictReader(f):
             count += 1
@@ -206,7 +212,9 @@ def sample(state, resample, quiet):
                 missing += 1
                 continue
             text_filename, n_bytes = extract_to_file(filename, data, version)
-            if not n_bytes:
+            if text_filename == DoNotDownload:
+                skipped += 1
+            elif not n_bytes:
                 empty += 1
             if not quiet:
                 click.secho(f"{filename} => {text_filename} ({n_bytes} bytes)")
@@ -216,7 +224,10 @@ def sample(state, resample, quiet):
         status = "red"
     elif missing:
         status = "yellow"
-    click.secho(f"{state}: processed {count}, {missing} missing, {empty} empty", fg=status)
+    click.secho(
+        f"{state}: processed {count}, {skipped} skipped, {missing} missing, {empty} empty",
+        fg=status,
+    )
     if status == "red":
         return 1
     return 0

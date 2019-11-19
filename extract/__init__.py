@@ -12,19 +12,33 @@ from .common import (
 )
 from .de import handle_delaware
 
+
+class DoNotDownload:
+    """ Sentinel to indicate that nothing should be downloaded """
+
+    pass
+
+
 CONVERSION_FUNCTIONS = {
-    "al": extract_line_numbered_pdf,
-    "ak": extract_pre_tag_html,
-    "az": extractor_for_elements_by_class("WordSection2"),
-    "ar": extract_sometimes_numbered_pdf,
+    "al": {"application/pdf": extract_line_numbered_pdf},
+    "ak": {"text/html": extract_pre_tag_html},
+    "az": {
+        "text/html": extractor_for_elements_by_class("WordSection2"),
+        "application/pdf": DoNotDownload,
+    },
+    "ar": {"application/pdf": extract_sometimes_numbered_pdf},
     "ca": {
         "text/html": extractor_for_element_by_xpath(
             './/div[@id="bill"] | .//span[@class="Resolution"]'
         )
     },
-    "co": extract_sometimes_numbered_pdf,
-    "ct": extract_from_p_tags_html,
-    "de": handle_delaware,
+    "co": {"application/pdf": extract_sometimes_numbered_pdf},
+    "ct": {"text/html": extract_from_p_tags_html, "application/pdf": DoNotDownload},
+    "de": {
+        "text/html": handle_delaware,
+        "application/pdf": handle_delaware,
+        "application/msword": DoNotDownload,
+    },
     "fl": {"text/html": extract_pre_tag_html, "application/pdf": extract_line_numbered_pdf},
     "hi": {
         "text/html": extractor_for_element_by_xpath(
@@ -32,20 +46,20 @@ CONVERSION_FUNCTIONS = {
         )
     },
     "ia": {"application/pdf": extract_line_numbered_pdf},
-    "id": extract_line_numbered_pdf,
-    "il": extract_from_code_tags_html,
-    "nc": extract_line_numbered_pdf,
+    "id": {"application/pdf": extract_line_numbered_pdf},
+    "il": {"text/html": extract_from_code_tags_html},
+    "nc": {"application/pdf": extract_line_numbered_pdf},
     "wi": {"application/pdf": extract_sometimes_numbered_pdf},
-    "wy": extract_sometimes_numbered_pdf,
+    "wy": {"application/pdf": extract_sometimes_numbered_pdf},
 }
 
 
-def extract_text(data, metadata):
-    func_or_dict = CONVERSION_FUNCTIONS.get(
-        jid_to_abbr(metadata["jurisdiction_id"]), lambda data, metadata: ""
-    )
-    if isinstance(func_or_dict, dict):
-        func = func_or_dict.get(metadata["media_type"], lambda data, metadata: "")
-    else:
-        func = func_or_dict
-    return func(data, metadata)
+def get_extract_func(metadata):
+    try:
+        state = jid_to_abbr(metadata["jurisdiction_id"])
+        func = CONVERSION_FUNCTIONS[state][metadata["media_type"]]
+    except KeyError:
+        # TODO: log missing functions once we're further along
+        print(f"no function for {state}, {metadata['media_type']}")
+        return lambda data, metadata: ""
+    return func
