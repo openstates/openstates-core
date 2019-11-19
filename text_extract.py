@@ -97,6 +97,7 @@ def update_bill(bill):
         try:
             data = scraper.get(link.url).content
         except Exception:
+            # OK, just try the next one
             continue
         metadata = {
             "url": link.url,
@@ -108,8 +109,8 @@ def update_bill(bill):
         try:
             raw_text = extract_text(data, metadata)
         except Exception as e:
-            click.secho(e, fg="red")
-            continue
+            click.secho(f"exception processing {metadata['url']}: {e}", fg="red")
+            raw_text = None
 
         if raw_text:
             is_error = False
