@@ -1,0 +1,69 @@
+dist: xenial
+language: python
+sudo: false
+python: 3.7
+install: 
+  - pip install poetry
+  - poetry install
+notifications:
+    email:
+        - james@openstates.org
+env:
+  - STATE=ak
+  - STATE=al
+  - STATE=ar
+  - STATE=az
+  - STATE=ca
+  # - STATE=co
+  # - STATE=ct
+  # - STATE=dc
+  # - STATE=de
+  # - STATE=fl
+  # - STATE=ga
+  # - STATE=hi
+  # - STATE=ia
+  # - STATE=id
+  # - STATE=il
+  # - STATE=in
+  # - STATE=ks
+  # - STATE=ky
+  # - STATE=la
+  # - STATE=ma
+  # - STATE=md
+  # - STATE=me
+  # - STATE=mi
+  # - STATE=mn
+  # - STATE=mo
+  # - STATE=ms
+  # - STATE=mt
+  # - STATE=nc
+  # - STATE=nd
+  # - STATE=ne
+  # - STATE=nh
+  # - STATE=nj
+  # - STATE=nm
+  # - STATE=nv
+  # - STATE=ny
+  # - STATE=oh
+  # - STATE=ok
+  # - STATE=or
+  # - STATE=pa
+  # - STATE=pr
+  # - STATE=ri
+  # - STATE=sc
+  # - STATE=sd
+  # - STATE=tn
+  # - STATE=tx
+  # - STATE=ut
+  # - STATE=va
+  # - STATE=vt
+  # - STATE=wa
+  # - STATE=wi
+  - STATE=wv
+  - STATE=wy
+jobs:
+  include:
+    - script: poetry run flake8 .
+      name: "Flake8 Python"
+    - script: poetry run ./text_extract.py sample 
+      name: "Test Extraction"

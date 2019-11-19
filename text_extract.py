@@ -138,13 +138,15 @@ def stats(state):
     print(f"{state} is missing text for {missing_search.count()} out of {all_bills.count()}")
 
 
-def _resample(state):
+def _resample(state, n=50):
+    """
+    Grab new versions for a state from the database.
+    """
     from opencivicdata.legislative.models import BillVersion
 
-    print(abbr_to_jid(state))
     versions = BillVersion.objects.filter(
         bill__legislative_session__jurisdiction_id=abbr_to_jid(state)
-    ).order_by("?")[:50]
+    ).order_by("?")[:n]
 
     count = 0
     fieldnames = [
@@ -185,14 +187,28 @@ def _resample(state):
 def sample(state, resample):
     if resample:
         _resample(state)
+    count = missing = empty = 0
     with open(f"raw/{state}.csv") as f:
         for version in csv.DictReader(f):
-            if jid_to_abbr(version["jurisdiction_id"]) == state:
-                filename, data = download(version)
-                if not filename:
-                    continue
-                text_filename, bytes = extract_to_file(filename, data, version)
-                print(f"{filename} => {text_filename} ({bytes} bytes)")
+            count += 1
+            filename, data = download(version)
+            if not filename:
+                missing += 1
+                continue
+            text_filename, n_bytes = extract_to_file(filename, data, version)
+            if not n_bytes:
+                empty += 1
+            print(f"{filename} => {text_filename} ({n_bytes} bytes)")
+
+    # decide and print result
+    status = "green"
+    if empty or missing > 10:  # arbitrary threshold for now
+        status = "red"
+    elif missing:
+        status = "yellow"
+    click.secho(f"processed {count}, {missing} missing, {empty} empty", fg=status)
+    if status == "red":
+        return 1
 
 
 @cli.command()
