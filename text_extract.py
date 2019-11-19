@@ -45,7 +45,7 @@ def download(version):
         try:
             _, resp = scraper.urlretrieve(version["url"], filename)
         except Exception:
-            print("could not fetch", version["id"])
+            click.secho("could not fetch", version["url"], fg="yellow")
             return None, None
 
         return filename, resp.content
@@ -103,7 +103,7 @@ def update_bill(bill):
         try:
             raw_text = extract_text(data, metadata)
         except Exception as e:
-            print(e)
+            click.secho(e, fg="red")
             continue
 
         if raw_text:
@@ -181,13 +181,14 @@ def _resample(state, n=50):
                     }
                 )
                 count += 1
-    print(f"wrote new sample csv with {count} records")
+    click.secho(f"wrote new sample csv with {count} records")
 
 
 @cli.command()
 @click.argument("state")
 @click.option("--resample/--no-resample", default=False)
-def sample(state, resample):
+@click.option("--quiet/--no-quiet", default=False)
+def sample(state, resample, quiet):
     if resample:
         _resample(state)
     count = missing = empty = 0
@@ -201,8 +202,8 @@ def sample(state, resample):
             text_filename, n_bytes = extract_to_file(filename, data, version)
             if not n_bytes:
                 empty += 1
-            print(f"{filename} => {text_filename} ({n_bytes} bytes)")
-
+            if not quiet:
+                click.secho(f"{filename} => {text_filename} ({n_bytes} bytes)")
     # decide and print result
     status = "green"
     if empty or missing > 10:  # arbitrary threshold for now
