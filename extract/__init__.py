@@ -47,6 +47,11 @@ CONVERSION_FUNCTIONS = {
     "ia": {"application/pdf": extract_line_numbered_pdf, "text/html": DoNotDownload},
     "id": {"application/pdf": extract_line_numbered_pdf},
     "il": {"text/html": extract_from_code_tags_html},
+    "me": {
+        "text/html": extractor_for_elements_by_class("billtextbody"),
+        "application/rtf": DoNotDownload,
+        "application/pdf": DoNotDownload,
+    },
     "nc": {"application/pdf": extract_line_numbered_pdf},
     "wi": {"application/pdf": extract_sometimes_numbered_pdf, "text/html": DoNotDownload},
     "wy": {"application/pdf": extract_sometimes_numbered_pdf},
