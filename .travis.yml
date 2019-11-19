@@ -8,62 +8,61 @@ install:
 notifications:
     email:
         - james@openstates.org
-env:
-  - STATE=ak
-  - STATE=al
-  - STATE=ar
-  - STATE=az
-  - STATE=ca
-  # - STATE=co
-  # - STATE=ct
-  # - STATE=dc
-  # - STATE=de
-  # - STATE=fl
-  # - STATE=ga
-  # - STATE=hi
-  # - STATE=ia
-  # - STATE=id
-  # - STATE=il
-  # - STATE=in
-  # - STATE=ks
-  # - STATE=ky
-  # - STATE=la
-  # - STATE=ma
-  # - STATE=md
-  # - STATE=me
-  # - STATE=mi
-  # - STATE=mn
-  # - STATE=mo
-  # - STATE=ms
-  # - STATE=mt
-  # - STATE=nc
-  # - STATE=nd
-  # - STATE=ne
-  # - STATE=nh
-  # - STATE=nj
-  # - STATE=nm
-  # - STATE=nv
-  # - STATE=ny
-  # - STATE=oh
-  # - STATE=ok
-  # - STATE=or
-  # - STATE=pa
-  # - STATE=pr
-  # - STATE=ri
-  # - STATE=sc
-  # - STATE=sd
-  # - STATE=tn
-  # - STATE=tx
-  # - STATE=ut
-  # - STATE=va
-  # - STATE=vt
-  # - STATE=wa
-  # - STATE=wi
-  - STATE=wv
-  - STATE=wy
 jobs:
   include:
     - script: poetry run flake8 .
       name: "Flake8 Python"
-    - script: poetry run ./text_extract.py sample 
+    - script:
+       - poetry run ./text_extract.py sample ak
+       - poetry run ./text_extract.py sample al
+       - poetry run ./text_extract.py sample ar
+       - poetry run ./text_extract.py sample az
+       - poetry run ./text_extract.py sample ca
+       - poetry run ./text_extract.py sample co
+       - poetry run ./text_extract.py sample ct
+       - poetry run ./text_extract.py sample dc
+       - poetry run ./text_extract.py sample de
+       - poetry run ./text_extract.py sample fl
+       - poetry run ./text_extract.py sample ga
+       - poetry run ./text_extract.py sample hi
+       - poetry run ./text_extract.py sample ia
+       - poetry run ./text_extract.py sample id
+       - poetry run ./text_extract.py sample il
+       - poetry run ./text_extract.py sample in
+       - poetry run ./text_extract.py sample ks
+       - poetry run ./text_extract.py sample ky
+       - poetry run ./text_extract.py sample la
+       - poetry run ./text_extract.py sample ma
+       - poetry run ./text_extract.py sample md
+       - poetry run ./text_extract.py sample me
+       - poetry run ./text_extract.py sample mi
+       - poetry run ./text_extract.py sample mn
+       - poetry run ./text_extract.py sample mo
+       - poetry run ./text_extract.py sample ms
+       - poetry run ./text_extract.py sample mt
+       - poetry run ./text_extract.py sample nc
+       - poetry run ./text_extract.py sample nd
+       - poetry run ./text_extract.py sample ne
+       - poetry run ./text_extract.py sample nh
+       - poetry run ./text_extract.py sample nj
+       - poetry run ./text_extract.py sample nm
+       - poetry run ./text_extract.py sample nv
+       - poetry run ./text_extract.py sample ny
+       - poetry run ./text_extract.py sample oh
+       - poetry run ./text_extract.py sample ok
+       - poetry run ./text_extract.py sample or
+       - poetry run ./text_extract.py sample pa
+       - poetry run ./text_extract.py sample pr
+       - poetry run ./text_extract.py sample ri
+       - poetry run ./text_extract.py sample sc
+       - poetry run ./text_extract.py sample sd
+       - poetry run ./text_extract.py sample tn
+       - poetry run ./text_extract.py sample tx
+       - poetry run ./text_extract.py sample ut
+       - poetry run ./text_extract.py sample va
+       - poetry run ./text_extract.py sample vt
+       - poetry run ./text_extract.py sample wa
+       - poetry run ./text_extract.py sample wi
+       - poetry run ./text_extract.py sample wv
+       - poetry run ./text_extract.py sample wy
       name: "Test Extraction"
