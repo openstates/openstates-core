@@ -5,7 +5,7 @@ python: 3.7
 before_install:
   - sudo apt-get -y install poppler-utils
   - pip install poetry
-install: 
+install:
   - poetry install
 notifications:
     email:
@@ -14,57 +14,5 @@ jobs:
   include:
     - script: poetry run flake8 .
       name: "Flake8 Python"
-    - script:
-       - poetry run ./text_extract.py sample ak --quiet
-       - poetry run ./text_extract.py sample al --quiet 
-       - poetry run ./text_extract.py sample ar --quiet 
-       - poetry run ./text_extract.py sample az --quiet 
-       - poetry run ./text_extract.py sample ca --quiet 
-       - poetry run ./text_extract.py sample co --quiet 
-       - poetry run ./text_extract.py sample ct --quiet 
-       - poetry run ./text_extract.py sample dc --quiet 
-       - poetry run ./text_extract.py sample de --quiet 
-       - poetry run ./text_extract.py sample fl --quiet 
-       - poetry run ./text_extract.py sample ga --quiet 
-       - poetry run ./text_extract.py sample hi --quiet 
-       - poetry run ./text_extract.py sample ia --quiet 
-       - poetry run ./text_extract.py sample id --quiet 
-       - poetry run ./text_extract.py sample il --quiet 
-       - poetry run ./text_extract.py sample in --quiet 
-       - poetry run ./text_extract.py sample ks --quiet 
-       - poetry run ./text_extract.py sample ky --quiet 
-       - poetry run ./text_extract.py sample la --quiet 
-       - poetry run ./text_extract.py sample ma --quiet 
-       - poetry run ./text_extract.py sample md --quiet 
-       - poetry run ./text_extract.py sample me --quiet 
-       - poetry run ./text_extract.py sample mi --quiet 
-       - poetry run ./text_extract.py sample mn --quiet 
-       - poetry run ./text_extract.py sample mo --quiet 
-       - poetry run ./text_extract.py sample ms --quiet 
-       - poetry run ./text_extract.py sample mt --quiet 
-       - poetry run ./text_extract.py sample nc --quiet 
-       - poetry run ./text_extract.py sample nd --quiet 
-       - poetry run ./text_extract.py sample ne --quiet 
-       - poetry run ./text_extract.py sample nh --quiet 
-       - poetry run ./text_extract.py sample nj --quiet 
-       - poetry run ./text_extract.py sample nm --quiet 
-       - poetry run ./text_extract.py sample nv --quiet 
-       - poetry run ./text_extract.py sample ny --quiet 
-       - poetry run ./text_extract.py sample oh --quiet 
-       - poetry run ./text_extract.py sample ok --quiet 
-       - poetry run ./text_extract.py sample or --quiet 
-       - poetry run ./text_extract.py sample pa --quiet 
-       - poetry run ./text_extract.py sample pr --quiet 
-       - poetry run ./text_extract.py sample ri --quiet 
-       - poetry run ./text_extract.py sample sc --quiet 
-       - poetry run ./text_extract.py sample sd --quiet 
-       - poetry run ./text_extract.py sample tn --quiet 
-       - poetry run ./text_extract.py sample tx --quiet 
-       - poetry run ./text_extract.py sample ut --quiet 
-       - poetry run ./text_extract.py sample va --quiet 
-       - poetry run ./text_extract.py sample vt --quiet 
-       - poetry run ./text_extract.py sample wa --quiet 
-       - poetry run ./text_extract.py sample wi --quiet 
-       - poetry run ./text_extract.py sample wv --quiet 
-       - poetry run ./text_extract.py sample wy --quiet 
+    - script: poetry run ./text_extract.py test
       name: "Test Extraction"

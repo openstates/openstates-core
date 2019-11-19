@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 import os
+import sys
 import csv
 import click
 import dj_database_url
@@ -45,7 +46,7 @@ def download(version):
         try:
             _, resp = scraper.urlretrieve(version["url"], filename)
         except Exception:
-            click.secho("could not fetch", version["url"], fg="yellow")
+            click.secho("could not fetch " + version["url"], fg="yellow")
             return None, None
 
         return filename, resp.content
@@ -55,7 +56,11 @@ def download(version):
 
 
 def extract_to_file(filename, data, version):
-    text = extract_text(data, version)
+    try:
+        text = extract_text(data, version)
+    except Exception as e:
+        click.secho(f"exception processing {version['url']}: {e}", fg="red")
+        text = None
 
     if not text:
         return None, 0
@@ -210,9 +215,23 @@ def sample(state, resample, quiet):
         status = "red"
     elif missing:
         status = "yellow"
-    click.secho(f"processed {count}, {missing} missing, {empty} empty", fg=status)
+    click.secho(f"{state}: processed {count}, {missing} missing, {empty} empty", fg=status)
     if status == "red":
         return 1
+    return 0
+
+
+@cli.command()
+@click.pass_context
+def test(ctx):
+    failures = 0
+    from extract import CONVERSION_FUNCTIONS
+
+    states = CONVERSION_FUNCTIONS.keys()
+    click.secho(f"testing {len(states)} states...", fg="white")
+    for state in states:
+        failures += ctx.invoke(sample, state=state, quiet=True)
+    sys.exit(failures)
 
 
 @cli.command()
