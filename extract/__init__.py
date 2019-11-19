@@ -48,6 +48,7 @@ CONVERSION_FUNCTIONS = {
     "id": {"application/pdf": extract_line_numbered_pdf},
     "il": {"text/html": extract_from_code_tags_html},
     "la": {"application/pdf": extract_sometimes_numbered_pdf},
+    "ma": {"application/pdf": extract_line_numbered_pdf},
     "md": {"application/pdf": extract_line_numbered_pdf},
     "me": {
         "text/html": extractor_for_elements_by_class("billtextbody"),
