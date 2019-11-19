@@ -2,8 +2,10 @@ dist: xenial
 language: python
 sudo: false
 python: 3.7
-install: 
+before_install:
+  - sudo apt-get -y install poppler-utils
   - pip install poetry
+install: 
   - poetry install
 notifications:
     email:
