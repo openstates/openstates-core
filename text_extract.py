@@ -5,7 +5,6 @@ import click
 import dj_database_url
 import django
 import scrapelib
-from django.conf import settings
 from django.contrib.postgres.search import SearchVector
 
 from extract.utils import jid_to_abbr, abbr_to_jid
@@ -23,6 +22,8 @@ MIMETYPES = {
 
 
 def init_django():
+    from django.conf import settings
+
     DATABASE_URL = os.environ.get("DATABASE_URL", "postgis://localhost/openstatesorg")
     DATABASES = {"default": dj_database_url.parse(DATABASE_URL)}
     settings.configure(
@@ -122,12 +123,13 @@ def update_bill(bill):
 
 @click.group()
 def cli():
-    init_django()
+    pass
 
 
 @cli.command()
 @click.argument("state")
 def stats(state):
+    init_django()
     from opencivicdata.legislative.models import Bill
 
     all_bills = Bill.objects.filter(legislative_session__jurisdiction__name=state)
@@ -142,6 +144,7 @@ def _resample(state, n=50):
     """
     Grab new versions for a state from the database.
     """
+    init_django()
     from opencivicdata.legislative.models import BillVersion
 
     versions = BillVersion.objects.filter(
