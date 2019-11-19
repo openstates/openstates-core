@@ -16,12 +16,10 @@ from .de import handle_delaware
 class DoNotDownload:
     """ Sentinel to indicate that nothing should be downloaded """
 
-    pass
-
 
 CONVERSION_FUNCTIONS = {
     "al": {"application/pdf": extract_line_numbered_pdf},
-    "ak": {"text/html": extract_pre_tag_html},
+    # "ak": {"text/html": extract_pre_tag_html},
     "az": {
         "text/html": extractor_for_elements_by_class("WordSection2"),
         "application/pdf": DoNotDownload,
@@ -43,13 +41,14 @@ CONVERSION_FUNCTIONS = {
     "hi": {
         "text/html": extractor_for_element_by_xpath(
             './/*[@class="Section2"] | .//*[@class="WordSection2"]'
-        )
+        ),
+        "application/pdf": DoNotDownload,
     },
-    "ia": {"application/pdf": extract_line_numbered_pdf},
+    "ia": {"application/pdf": extract_line_numbered_pdf, "text/html": DoNotDownload},
     "id": {"application/pdf": extract_line_numbered_pdf},
     "il": {"text/html": extract_from_code_tags_html},
     "nc": {"application/pdf": extract_line_numbered_pdf},
-    "wi": {"application/pdf": extract_sometimes_numbered_pdf},
+    "wi": {"application/pdf": extract_sometimes_numbered_pdf, "text/html": DoNotDownload},
     "wy": {"application/pdf": extract_sometimes_numbered_pdf},
 }
 
