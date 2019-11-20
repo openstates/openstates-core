@@ -75,10 +75,13 @@ CONVERSION_FUNCTIONS = {
     "nm": {"application/pdf": extract_sometimes_numbered_pdf, "text/html": DoNotDownload},
     "nv": {"application/pdf": extract_sometimes_numbered_pdf},
     "oh": {"application/pdf": extract_line_post_numbered_pdf},
+    "or": {"application/pdf": extract_sometimes_numbered_pdf},
     "ok": {"application/pdf": extract_sometimes_numbered_pdf},
     "sc": {"text/html": extract_from_p_tags_html},
     "sd": {"text/html": extractor_for_elements_by_class("fullContent")},
     "ri": {"application/pdf": extract_sometimes_numbered_pdf},
+    # aggressive, but the Washington HTML is basically bare
+    "wa": {"text/html": extractor_for_element_by_xpath("//html")},
     "wi": {"application/pdf": extract_sometimes_numbered_pdf, "text/html": DoNotDownload},
     "wy": {"application/pdf": extract_sometimes_numbered_pdf},
 }
