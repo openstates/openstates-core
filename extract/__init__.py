@@ -38,6 +38,7 @@ CONVERSION_FUNCTIONS = {
         "application/msword": DoNotDownload,
     },
     "fl": {"text/html": extract_pre_tag_html, "application/pdf": extract_line_numbered_pdf},
+    "ga": {"application/pdf": extract_sometimes_numbered_pdf},
     "hi": {
         "text/html": extractor_for_element_by_xpath(
             './/*[@class="Section2"] | .//*[@class="WordSection2"]'
