@@ -73,6 +73,8 @@ CONVERSION_FUNCTIONS = {
         "text/html": extract_from_p_tags_html,
     },
     "nj": {"text/html": extractor_for_element_by_xpath('.//*[@class="WordSection3"]')},
+    # NY HTML is just summaries
+    "ny": {"text/html": DoNotDownload, "application/pdf": extract_sometimes_numbered_pdf},
     "nm": {"application/pdf": extract_sometimes_numbered_pdf, "text/html": DoNotDownload},
     "nv": {"application/pdf": extract_sometimes_numbered_pdf},
     "oh": {"application/pdf": extract_line_post_numbered_pdf},
