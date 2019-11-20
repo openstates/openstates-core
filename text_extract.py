@@ -37,6 +37,7 @@ def download(version):
     abbr = jid_to_abbr(version["jurisdiction_id"])
     ext = MIMETYPES[version["media_type"]]
     filename = f'raw/{abbr}/{version["session"]}-{version["identifier"]}-{version["note"]}.{ext}'
+    filename.replace("#", "__")
 
     if not os.path.exists(filename):
         try:

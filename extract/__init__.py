@@ -66,6 +66,12 @@ CONVERSION_FUNCTIONS = {
     "nc": {"application/pdf": extract_sometimes_numbered_pdf},
     "nd": {"application/pdf": extract_sometimes_numbered_pdf},
     "ne": {"application/pdf": extract_sometimes_numbered_pdf},
+    "nh": {
+        "application/pdf": extract_sometimes_numbered_pdf,
+        "text/html": extract_from_p_tags_html,
+    },
+    "nj": {"text/html": extractor_for_element_by_xpath('.//*[@class="WordSection3"]')},
+    "nm": {"application/pdf": extract_sometimes_numbered_pdf, "text/html": DoNotDownload},
     "nv": {"application/pdf": extract_sometimes_numbered_pdf},
     "ok": {"application/pdf": extract_sometimes_numbered_pdf},
     "sc": {"text/html": extract_from_p_tags_html},
