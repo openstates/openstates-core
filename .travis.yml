@@ -14,5 +14,5 @@ jobs:
   include:
     - script: poetry run flake8 .
       name: "Flake8 Python"
-    - script: poetry run ./text_extract.py test
-      name: "Test Extraction"
+    # - script: poetry run ./text_extract.py test
+    #   name: "Test Extraction"
