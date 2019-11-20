@@ -68,6 +68,8 @@ CONVERSION_FUNCTIONS = {
     "ne": {"application/pdf": extract_sometimes_numbered_pdf},
     "nv": {"application/pdf": extract_sometimes_numbered_pdf},
     "ok": {"application/pdf": extract_sometimes_numbered_pdf},
+    "sc": {"text/html": extract_from_p_tags_html},
+    "sd": {"text/html": extractor_for_elements_by_class("fullContent")},
     "ri": {"application/pdf": extract_sometimes_numbered_pdf},
     "wi": {"application/pdf": extract_sometimes_numbered_pdf, "text/html": DoNotDownload},
     "wy": {"application/pdf": extract_sometimes_numbered_pdf},
