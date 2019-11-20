@@ -1,13 +1,13 @@
 from .utils import jid_to_abbr
 from .common import (
-    # extract_simple_pdf,
+    extract_simple_pdf,
     extract_line_numbered_pdf,
     extract_line_post_numbered_pdf,
     extract_pre_tag_html,
     extract_sometimes_numbered_pdf,
     extract_from_p_tags_html,
     extractor_for_elements_by_class,
-    # extractor_for_element_by_id,
+    extractor_for_element_by_id,
     extractor_for_element_by_xpath,
     extract_from_code_tags_html,
 )
@@ -59,6 +59,7 @@ CONVERSION_FUNCTIONS = {
         "application/pdf": DoNotDownload,
     },
     "mi": {"text/html": extractor_for_element_by_xpath('.//*[@class="WordSection1"]')},
+    "mn": {"text/html": extractor_for_element_by_id("document")},
     "ms": {
         "text/html": extractor_for_element_by_xpath('.//*[@class="WordSection1"]'),
         "application/pdf": extract_line_numbered_pdf,
@@ -79,8 +80,11 @@ CONVERSION_FUNCTIONS = {
     "ok": {"application/pdf": extract_sometimes_numbered_pdf},
     "sc": {"text/html": extract_from_p_tags_html},
     "sd": {"text/html": extractor_for_elements_by_class("fullContent")},
+    "tn": {"application/pdf": extract_simple_pdf},
+    "ut": {"application/pdf": extract_line_numbered_pdf},
     "ri": {"application/pdf": extract_sometimes_numbered_pdf},
-    # aggressive, but the Washington HTML is basically bare
+    # aggressive, but the Washington & Texas HTML are both basically bare
+    "tx": {"text/html": extractor_for_element_by_xpath("//html")},
     "wa": {"text/html": extractor_for_element_by_xpath("//html")},
     "wi": {"application/pdf": extract_sometimes_numbered_pdf, "text/html": DoNotDownload},
     "wy": {"application/pdf": extract_sometimes_numbered_pdf},
