@@ -1,6 +1,7 @@
 import os
 import re
 import tempfile
+import functools
 import subprocess
 
 from lxml import html
@@ -70,17 +71,22 @@ def clean(text):
     return text
 
 
-def text_after_line_numbers(lines):
+def _text_near_line_numbers(lines, regex):
+    """ used for before & after line numbers """
     text = []
     for line in lines.splitlines():
         # real bill text starts with an optional space, line number,
         # more spaces, then real text
-        match = re.match(r"\s*\d+\s+(.*)", line)
+        match = re.match(regex, line)
         if match:
             text.append(match.group(1))
 
     # return all real bill text joined w/ newlines
     return "\n".join(text)
+
+
+text_after_line_numbers = functools.partial(_text_near_line_numbers, regex=r"\s*\d+\s+(.*)")
+text_before_line_numbers = functools.partial(_text_near_line_numbers, regex=r"(.*?)\s+\d+\s*")
 
 
 def text_from_element_lxml(data, lxml_query):

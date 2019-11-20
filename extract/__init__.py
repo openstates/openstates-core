@@ -2,6 +2,7 @@ from .utils import jid_to_abbr
 from .common import (
     # extract_simple_pdf,
     extract_line_numbered_pdf,
+    extract_line_post_numbered_pdf,
     extract_pre_tag_html,
     extract_sometimes_numbered_pdf,
     extract_from_p_tags_html,
@@ -73,6 +74,7 @@ CONVERSION_FUNCTIONS = {
     "nj": {"text/html": extractor_for_element_by_xpath('.//*[@class="WordSection3"]')},
     "nm": {"application/pdf": extract_sometimes_numbered_pdf, "text/html": DoNotDownload},
     "nv": {"application/pdf": extract_sometimes_numbered_pdf},
+    "oh": {"application/pdf": extract_line_post_numbered_pdf},
     "ok": {"application/pdf": extract_sometimes_numbered_pdf},
     "sc": {"text/html": extract_from_p_tags_html},
     "sd": {"text/html": extractor_for_elements_by_class("fullContent")},
