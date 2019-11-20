@@ -12,6 +12,7 @@ from extract.utils import jid_to_abbr, abbr_to_jid
 from extract import get_extract_func, DoNotDownload
 
 scraper = scrapelib.Scraper(verify=False)
+scraper.user_agent = "Mozilla"
 
 MIMETYPES = {
     "application/pdf": "pdf",

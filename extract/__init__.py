@@ -60,6 +60,7 @@ CONVERSION_FUNCTIONS = {
         "application/pdf": DoNotDownload,
     },
     "mi": {"text/html": extractor_for_element_by_xpath('.//*[@class="WordSection1"]')},
+    "mo": {"application/pdf": extract_line_numbered_pdf},
     "mn": {"text/html": extractor_for_element_by_id("document")},
     "ms": {
         "text/html": extractor_for_element_by_xpath('.//*[@class="WordSection1"]'),
