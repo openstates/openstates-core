@@ -82,11 +82,18 @@ CONVERSION_FUNCTIONS = {
     "sd": {"text/html": extractor_for_elements_by_class("fullContent")},
     "tn": {"application/pdf": extract_simple_pdf},
     "ut": {"application/pdf": extract_line_numbered_pdf},
+    "pa": {
+        "application/msword": DoNotDownload,
+        "text/html": DoNotDownload,
+        "application/pdf": extract_line_numbered_pdf,
+    },
     "ri": {"application/pdf": extract_sometimes_numbered_pdf},
     # aggressive, but the Washington & Texas HTML are both basically bare
     "tx": {"text/html": extractor_for_element_by_xpath("//html")},
+    "va": {"text/html": extractor_for_element_by_id("mainC")},
     "wa": {"text/html": extractor_for_element_by_xpath("//html")},
     "wi": {"application/pdf": extract_sometimes_numbered_pdf, "text/html": DoNotDownload},
+    "wv": {"text/html": extractor_for_element_by_xpath('.//*[@class="textcontainer"]')},
     "wy": {"application/pdf": extract_sometimes_numbered_pdf},
 }
 
