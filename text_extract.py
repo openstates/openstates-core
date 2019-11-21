@@ -2,6 +2,7 @@
 import os
 import sys
 import csv
+import warnings
 import click
 import dj_database_url
 import django
@@ -46,7 +47,9 @@ def download(version):
         except OSError:
             pass
         try:
-            _, resp = scraper.urlretrieve(version["url"], filename)
+            # ignore noisy urllib3 stuff
+            with warnings.catch_warnings():
+                _, resp = scraper.urlretrieve(version["url"], filename)
         except Exception:
             click.secho("could not fetch " + version["url"], fg="yellow")
             return None, None
@@ -237,17 +240,37 @@ def test(ctx):
 @click.option("-n", default=None)
 def update(state, n):
     init_django()
-    from opencivicdata.legislative.models import Bill, SearchableBill
+    from opencivicdata.legislative.models import Bill
+
+    # configure how often to print and checkpoint
+    STATUS_NUM = 100
+    CHECKPOINT_NUM = 500
 
     all_bills = Bill.objects.filter(legislative_session__jurisdiction_id=abbr_to_jid(state))
     missing_search = all_bills.filter(searchable__isnull=True)
     print(f"{state}: {len(all_bills)} bills, {len(missing_search)} without search results")
     if n:
         missing_search = missing_search[:n]
+    else:
+        n = len(missing_search)
 
     ids_to_update = []
+    updated_count = 0
     for b in missing_search:
         ids_to_update.append(update_bill(b))
+        updated_count += 1
+        if updated_count % STATUS_NUM == 0:
+            print(f"{state}: updated {updated_count} out of {n}")
+        if updated_count % CHECKPOINT_NUM == 0:
+            reindex(ids_to_update)
+            ids_to_update = []
+
+    # be sure to reindex final set
+    reindex(ids_to_update)
+
+
+def reindex(ids_to_update):
+    from opencivicdata.legislative.models import SearchableBill
 
     print(f"updating {len(ids_to_update)} search vectors")
     SearchableBill.objects.filter(id__in=ids_to_update).update(
