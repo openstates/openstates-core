@@ -8,6 +8,7 @@ import dj_database_url
 import django
 import scrapelib
 from django.contrib.postgres.search import SearchVector
+from django.db import transaction
 
 from extract.utils import jid_to_abbr, abbr_to_jid
 from extract import get_extract_func, DoNotDownload
@@ -256,6 +257,10 @@ def update(state, n):
 
     ids_to_update = []
     updated_count = 0
+
+    # going to manage our own transactions here so we can save in chunks
+    transaction.set_autocommit(False)
+
     for b in missing_search:
         ids_to_update.append(update_bill(b))
         updated_count += 1
@@ -263,10 +268,13 @@ def update(state, n):
             print(f"{state}: updated {updated_count} out of {n}")
         if updated_count % CHECKPOINT_NUM == 0:
             reindex(ids_to_update)
+            transaction.commit()
             ids_to_update = []
 
     # be sure to reindex final set
     reindex(ids_to_update)
+    transaction.commit()
+    transaction.set_autocommit(True)
 
 
 def reindex(ids_to_update):
