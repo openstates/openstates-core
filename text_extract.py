@@ -241,8 +241,8 @@ def status():
     from opencivicdata.legislative.models import Bill
 
     states = sorted(CONVERSION_FUNCTIONS.keys())
-    click.secho("state |  bills  | missing | errors", fg="white")
-    click.secho("==================================", fg="white")
+    click.secho("state |  bills  | missing | errors ", fg="white")
+    click.secho("===================================", fg="white")
     for state in states:
         all_bills = Bill.objects.filter(legislative_session__jurisdiction_id=abbr_to_jid(state))
         missing_search = all_bills.filter(searchable__isnull=True).count()
@@ -262,8 +262,8 @@ def status():
         click.echo(
             f"{state:5} | {all_bills:7} | "
             + click.style(f"{missing_search:7}", fg=mscolor)
-            + "| "
-            + click.style(f"{errors:5}", fg=errcolor)
+            + " | "
+            + click.style(f"{errors:7}", fg=errcolor)
         )
 
 
