@@ -13,8 +13,11 @@ from django.db import transaction
 from extract.utils import jid_to_abbr, abbr_to_jid
 from extract import get_extract_func, DoNotDownload
 
+# disable SSL validation and ignore warnings
 scraper = scrapelib.Scraper(verify=False)
 scraper.user_agent = "Mozilla"
+warnings.filterwarnings("ignore", module="urllib3")
+
 
 MIMETYPES = {
     "application/pdf": "pdf",
@@ -48,9 +51,7 @@ def download(version):
         except OSError:
             pass
         try:
-            # ignore noisy urllib3 stuff
-            with warnings.catch_warnings():
-                _, resp = scraper.urlretrieve(version["url"], filename)
+            _, resp = scraper.urlretrieve(version["url"], filename)
         except Exception:
             click.secho("could not fetch " + version["url"], fg="yellow")
             return None, None
