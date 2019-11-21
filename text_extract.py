@@ -140,18 +140,6 @@ def cli():
     pass
 
 
-@cli.command()
-@click.argument("state")
-def stats(state):
-    init_django()
-    from opencivicdata.legislative.models import Bill
-
-    all_bills = Bill.objects.filter(legislative_session__jurisdiction_id=abbr_to_jid(state))
-    missing_search = all_bills.filter(searchable__isnull=True)
-
-    print(f"{state} is missing text for {missing_search.count()} out of {all_bills.count()}")
-
-
 def _resample(state, n=50):
     """
     Grab new versions for a state from the database.
@@ -246,15 +234,16 @@ def test(ctx):
 
 @cli.command()
 @click.argument("state")
-@click.option("-n", default=100)
+@click.option("-n", default=None)
 def update(state, n):
     init_django()
     from opencivicdata.legislative.models import Bill, SearchableBill
 
-    missing_search = Bill.objects.filter(
-        legislative_session__jurisdiction_id=abbr_to_jid(state), searchable__isnull=True
-    )[:n]
-    print(f"selected {len(missing_search)} bills without search results for updating")
+    all_bills = Bill.objects.filter(legislative_session__jurisdiction_id=abbr_to_jid(state))
+    missing_search = all_bills.filter(searchable__isnull=True)
+    print(f"{state}: {len(all_bills)} bills, {len(missing_search)} without search results")
+    if n:
+        missing_search = missing_search[:n]
 
     ids_to_update = []
     for b in missing_search:
