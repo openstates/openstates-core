@@ -11,7 +11,7 @@ from django.contrib.postgres.search import SearchVector
 from django.db import transaction
 
 from extract.utils import jid_to_abbr, abbr_to_jid
-from extract import get_extract_func, DoNotDownload
+from extract import get_extract_func, DoNotDownload, CONVERSION_FUNCTIONS
 
 # disable SSL validation and ignore warnings
 scraper = scrapelib.Scraper(verify=False)
@@ -228,13 +228,43 @@ def sample(state, resample, quiet):
 @click.pass_context
 def test(ctx):
     failures = 0
-    from extract import CONVERSION_FUNCTIONS
-
-    states = CONVERSION_FUNCTIONS.keys()
+    states = sorted(CONVERSION_FUNCTIONS.keys())
     click.secho(f"testing {len(states)} states...", fg="white")
     for state in states:
         failures += ctx.invoke(sample, state=state, quiet=True)
     sys.exit(failures)
+
+
+@cli.command()
+def status():
+    init_django()
+    from opencivicdata.legislative.models import Bill
+
+    states = sorted(CONVERSION_FUNCTIONS.keys())
+    click.secho("state |  bills  | missing | errors", fg="white")
+    click.secho("==================================", fg="white")
+    for state in states:
+        all_bills = Bill.objects.filter(legislative_session__jurisdiction_id=abbr_to_jid(state))
+        missing_search = all_bills.filter(searchable__isnull=True).count()
+        errors = all_bills.filter(searchable__is_error=True).count()
+        all_bills = all_bills.count()
+
+        errcolor = mscolor = "green"
+        if missing_search > 0:
+            mscolor = "yellow"
+        if missing_search > 10:
+            mscolor = "red"
+        if errors > 0:
+            errcolor = "yellow"
+        if errors > 100:
+            errcolor = "red"
+
+        click.echo(
+            f"{state:5} | {all_bills:7} | "
+            + click.style(f"{missing_search:7}", fg=mscolor)
+            + "| "
+            + click.style(f"{errors:5}", fg=errcolor)
+        )
 
 
 @cli.command()
