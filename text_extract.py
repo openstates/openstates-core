@@ -146,10 +146,8 @@ def stats(state):
     init_django()
     from opencivicdata.legislative.models import Bill
 
-    all_bills = Bill.objects.filter(legislative_session__jurisdiction__name=state)
-    missing_search = Bill.objects.filter(
-        legislative_session__jurisdiction__name=state, searchable__isnull=True
-    )
+    all_bills = Bill.objects.filter(legislative_session__jurisdiction_id=abbr_to_jid(state))
+    missing_search = all_bills.filter(searchable__isnull=True)
 
     print(f"{state} is missing text for {missing_search.count()} out of {all_bills.count()}")
 
@@ -222,10 +220,8 @@ def sample(state, resample, quiet):
                 click.secho(f"{filename} => {text_filename} ({n_bytes} bytes)")
     # decide and print result
     status = "green"
-    if empty or missing > 10:  # arbitrary threshold for now
+    if empty or missing:  # arbitrary threshold for now
         status = "red"
-    elif missing:
-        status = "yellow"
     click.secho(
         f"{state}: processed {count}, {skipped} skipped, {missing} missing, {empty} empty",
         fg=status,
@@ -252,6 +248,7 @@ def test(ctx):
 @click.argument("state")
 @click.option("-n", default=100)
 def update(state, n):
+    init_django()
     from opencivicdata.legislative.models import Bill, SearchableBill
 
     missing_search = Bill.objects.filter(
