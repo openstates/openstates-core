@@ -15,7 +15,7 @@ def handle_delaware(data, metadata):
     elif metadata["media_type"] == "application/pdf" and "HCR" not in metadata["title"]:
         # Del., like many states, appears to publish all bills as both text and HTML
         # so we don't *need* to extract from PDF.
-        pass
+        return ""
     elif metadata["media_type"] == "application/pdf" and "HCR" in metadata["title"]:
         # haha, but Delaware does NOT appear to publish concurrent resolutions
         # (honoring people and recognizing the contributions of general aviation, etc.)

@@ -123,7 +123,6 @@ def update_bill(bill):
             raw_text = func(data, metadata)
         except Exception as e:
             click.secho(f"exception processing {metadata['url']}: {e}", fg="red")
-            raw_text = None
 
         if raw_text:
             is_error = False
