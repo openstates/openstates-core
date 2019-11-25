@@ -34,6 +34,7 @@ CONVERSION_FUNCTIONS = {
     },
     "co": {"application/pdf": extract_sometimes_numbered_pdf},
     "ct": {"text/html": extract_from_p_tags_html, "application/pdf": DoNotDownload},
+    "dc": {"application/pdf": DoNotDownload},
     "de": {
         "text/html": handle_delaware,
         "application/pdf": handle_delaware,
