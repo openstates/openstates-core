@@ -286,7 +286,7 @@ def update(state, n):
     missing_search = all_bills.filter(searchable__isnull=True)
     print(f"{state}: {len(all_bills)} bills, {len(missing_search)} without search results")
     if n:
-        missing_search = missing_search[:n]
+        missing_search = missing_search[: int(n)]
     else:
         n = len(missing_search)
 
