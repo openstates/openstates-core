@@ -21,7 +21,7 @@ class DoNotDownload:
 
 CONVERSION_FUNCTIONS = {
     "al": {"application/pdf": extract_line_numbered_pdf},
-    # "ak": {"text/html": extract_pre_tag_html},
+    "ak": {"text/html": extractor_for_element_by_id("draftOverlay")},
     "az": {
         "text/html": extractor_for_elements_by_class("WordSection2"),
         "application/pdf": DoNotDownload,
