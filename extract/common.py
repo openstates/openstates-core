@@ -2,6 +2,7 @@ import re
 
 from .utils import (
     pdfdata_to_text,
+    worddata_to_text,
     text_after_line_numbers,
     text_before_line_numbers,
     text_from_element_lxml,
@@ -10,6 +11,10 @@ from .utils import (
     text_from_element_siblings_xpath,
     clean,
 )
+
+
+def extract_simple_word(data, metadata):
+    return worddata_to_text(data)
 
 
 def extract_simple_pdf(data, metadata):

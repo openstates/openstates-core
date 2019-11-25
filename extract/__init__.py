@@ -1,5 +1,6 @@
 from .utils import jid_to_abbr
 from .common import (
+    extract_simple_word,
     extract_simple_pdf,
     extract_line_numbered_pdf,
     extract_line_post_numbered_pdf,
@@ -86,6 +87,7 @@ CONVERSION_FUNCTIONS = {
     "sd": {"text/html": extractor_for_elements_by_class("fullContent")},
     "tn": {"application/pdf": extract_simple_pdf},
     "ut": {"application/pdf": extract_line_numbered_pdf},
+    "pr": {"application/msword": extract_simple_word},
     "pa": {
         "application/msword": DoNotDownload,
         "text/html": DoNotDownload,

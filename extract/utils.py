@@ -53,14 +53,13 @@ def worddata_to_text(data):
             tmpf.write(data)
             tmpf.flush()
             subprocess.check_call(["timeout", "10", "abiword", "--to=%s" % txtfile, tmpf.name])
-            f = open(txtfile)
-            text = f.read()
+            with open(txtfile) as f:
+                text = f.read()
             tmpf.close()
-            f.close()
     finally:
         os.remove(txtfile)
         os.close(desc)
-    return text.decode("utf8")
+    return text
 
 
 def clean(text):

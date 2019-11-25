@@ -12,4 +12,4 @@ ADD . /opt/text-extraction
 WORKDIR /opt/text-extraction
 RUN poetry install
 
-ENTRYPOINT ["pipenv", "run", "python", "./text_extract.py"]
+ENTRYPOINT ["poetry", "run", "python", "./text_extract.py"]
