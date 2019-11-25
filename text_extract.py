@@ -274,15 +274,20 @@ def status():
 @cli.command()
 @click.argument("state")
 @click.option("-n", default=None)
-def update(state, n):
+@click.option("--clear-errors/--no-clear-errors", default=False)
+def update(state, n, clear_errors):
     init_django()
-    from opencivicdata.legislative.models import Bill
+    from opencivicdata.legislative.models import Bill, SearchableBill
 
     # configure how often to print and checkpoint
     STATUS_NUM = 100
     CHECKPOINT_NUM = 500
 
     all_bills = Bill.objects.filter(legislative_session__jurisdiction_id=abbr_to_jid(state))
+    if clear_errors:
+        errs = SearchableBill.objects.filter(bill__in=all_bills, is_error=True)
+        print(f"clearing {len(errs)} errors")
+        errs.delete()
     missing_search = all_bills.filter(searchable__isnull=True)
     print(f"{state}: {len(all_bills)} bills, {len(missing_search)} without search results")
     if n:
