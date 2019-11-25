@@ -2,6 +2,7 @@
 import os
 import sys
 import csv
+import math
 import warnings
 import click
 import dj_database_url
@@ -92,8 +93,9 @@ def update_bill(bill):
 
     try:
         latest_version = bill.versions.order_by("-date", "-note").prefetch_related("links")[0]
+        links = latest_version.links.all()
     except IndexError:
-        return
+        links = []
 
     # check if there's an old entry and we can use it
     # if bill.searchable:
@@ -104,7 +106,8 @@ def update_bill(bill):
     # iterate through versions until we extract some good text
     is_error = True
     raw_text = ""
-    for link in latest_version.links.all():
+    link = None
+    for link in links:
         metadata = {
             "url": link.url,
             "media_type": link.media_type,
@@ -250,19 +253,21 @@ def status():
 
         errcolor = mscolor = "green"
         if missing_search > 0:
+            missing_search = math.ceil(missing_search / all_bills * 100)
             mscolor = "yellow"
-        if missing_search > 10:
+        if missing_search > 1:
             mscolor = "red"
         if errors > 0:
             errcolor = "yellow"
-        if errors > 100:
+            errors = math.ceil(errors / all_bills * 100)
+        if errors > 5:
             errcolor = "red"
 
         click.echo(
             f"{state:5} | {all_bills:7} | "
-            + click.style(f"{missing_search:7}", fg=mscolor)
+            + click.style(f"{missing_search:6}%", fg=mscolor)
             + " | "
-            + click.style(f"{errors:7}", fg=errcolor)
+            + click.style(f"{errors:6}%", fg=errcolor)
         )
 
 
