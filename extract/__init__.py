@@ -98,6 +98,7 @@ CONVERSION_FUNCTIONS = {
     # aggressive, but the Washington & Texas HTML are both basically bare
     "tx": {"text/html": extractor_for_element_by_xpath("//html")},
     "va": {"text/html": extractor_for_element_by_id("mainC")},
+    "vt": {"application/pdf": extract_sometimes_numbered_pdf},
     "wa": {"text/html": extractor_for_element_by_xpath("//html")},
     "wi": {"application/pdf": extract_sometimes_numbered_pdf, "text/html": DoNotDownload},
     "wv": {"text/html": extractor_for_element_by_xpath('.//*[@class="textcontainer"]')},
