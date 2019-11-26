@@ -5,7 +5,7 @@ ENV PYTHONIOENCODING 'utf-8'
 ENV LANG 'C.UTF-8'
 ENV LC_ALL 'C.UTF-8'
 
-RUN apt update && apt install -y libgdal-dev poppler-utils abiword
+RUN apt update && apt install -y libgdal-dev poppler-utils antiword tesseract-ocr
 RUN pip install poetry
 
 ADD . /opt/text-extraction
