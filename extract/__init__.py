@@ -1,6 +1,5 @@
 from .utils import jid_to_abbr
 from .common import (
-    extract_simple_word,
     extract_simple_pdf,
     extract_line_numbered_pdf,
     extract_line_post_numbered_pdf,
@@ -11,6 +10,7 @@ from .common import (
     extractor_for_element_by_id,
     extractor_for_element_by_xpath,
     extract_from_code_tags_html,
+    textract_extractor,
 )
 from .de import handle_delaware
 
@@ -18,6 +18,8 @@ from .de import handle_delaware
 class DoNotDownload:
     """ Sentinel to indicate that nothing should be downloaded """
 
+
+DOCX_MIMETYPE = "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
 
 CONVERSION_FUNCTIONS = {
     "al": {"application/pdf": extract_line_numbered_pdf},
@@ -34,7 +36,7 @@ CONVERSION_FUNCTIONS = {
     },
     "co": {"application/pdf": extract_sometimes_numbered_pdf},
     "ct": {"text/html": extract_from_p_tags_html, "application/pdf": DoNotDownload},
-    "dc": {"application/pdf": DoNotDownload},
+    "dc": {"application/pdf": textract_extractor(extension="pdf", method="tesseract")},
     "de": {
         "text/html": handle_delaware,
         "application/pdf": handle_delaware,
@@ -89,7 +91,10 @@ CONVERSION_FUNCTIONS = {
     "sd": {"text/html": extractor_for_elements_by_class("fullContent")},
     "tn": {"application/pdf": extract_simple_pdf},
     "ut": {"application/pdf": extract_line_numbered_pdf},
-    "pr": {"application/msword": extract_simple_word},
+    "pr": {
+        "application/msword": textract_extractor(extension="doc"),
+        DOCX_MIMETYPE: textract_extractor(extension="docx"),
+    },
     "pa": {
         "application/msword": DoNotDownload,
         "text/html": DoNotDownload,

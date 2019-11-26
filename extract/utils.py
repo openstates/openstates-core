@@ -1,4 +1,3 @@
-import os
 import re
 import tempfile
 import functools
@@ -20,46 +19,19 @@ def abbr_to_jid(abbr):
         return f"ocd-jurisdiction/country:us/state:{abbr}/government"
 
 
-# from pupa.utils.generic import convert_pdf
-def convert_pdf(filename, type="xml"):
-    commands = {
-        "text": ["pdftotext", "-layout", filename, "-"],
-        "text-nolayout": ["pdftotext", filename, "-"],
-        "xml": ["pdftohtml", "-xml", "-stdout", filename],
-        "html": ["pdftohtml", "-stdout", filename],
-    }
-    try:
-        pipe = subprocess.Popen(commands[type], stdout=subprocess.PIPE, close_fds=True).stdout
-    except OSError as e:
-        raise EnvironmentError(
-            "error running %s, missing executable? [%s]" % " ".join(commands[type]), e
-        )
-    data = pipe.read()
-    pipe.close()
-    return data
-
-
 def pdfdata_to_text(data):
     with tempfile.NamedTemporaryFile(delete=True) as tmpf:
         tmpf.write(data)
         tmpf.flush()
-        return convert_pdf(tmpf.name, "text").decode("utf8", "ignore")
-
-
-def worddata_to_text(data):
-    desc, txtfile = tempfile.mkstemp(prefix="tmp-worddata-", suffix=".txt")
-    try:
-        with tempfile.NamedTemporaryFile(delete=True) as tmpf:
-            tmpf.write(data)
-            tmpf.flush()
-            subprocess.check_call(["timeout", "10", "abiword", "--to=%s" % txtfile, tmpf.name])
-            with open(txtfile) as f:
-                text = f.read()
-            tmpf.close()
-    finally:
-        os.remove(txtfile)
-        os.close(desc)
-    return text
+        try:
+            pipe = subprocess.Popen(
+                ["pdftotext", "-layout", tmpf.name, "-"], stdout=subprocess.PIPE, close_fds=True
+            ).stdout
+        except OSError as e:
+            raise EnvironmentError(f"error running pdftotext, missing executable? [{e}]")
+        data = pipe.read()
+        pipe.close()
+        return data.decode("utf8", "ignore")
 
 
 def clean(text):
