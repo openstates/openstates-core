@@ -112,7 +112,6 @@ def get_extract_func(metadata):
         state = jid_to_abbr(metadata["jurisdiction_id"])
         func = CONVERSION_FUNCTIONS[state][metadata["media_type"]]
     except KeyError:
-        # TODO: log missing functions once we're further along
         print(f"no function for {state}, {metadata['media_type']}")
         return lambda data, metadata: ""
     return func

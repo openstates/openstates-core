@@ -283,13 +283,25 @@ def update(state, n, clear_errors):
     STATUS_NUM = 100
     CHECKPOINT_NUM = 500
 
-    all_bills = Bill.objects.filter(legislative_session__jurisdiction_id=abbr_to_jid(state))
+    if state == "all":
+        all_bills = Bill.objects.all()
+    else:
+        all_bills = Bill.objects.filter(legislative_session__jurisdiction_id=abbr_to_jid(state))
+
     if clear_errors:
+        if state == "all":
+            print("--clear-errors only works with specific states, not --all")
+            return
         errs = SearchableBill.objects.filter(bill__in=all_bills, is_error=True)
         print(f"clearing {len(errs)} errors")
         errs.delete()
+
     missing_search = all_bills.filter(searchable__isnull=True)
-    print(f"{state}: {len(all_bills)} bills, {len(missing_search)} without search results")
+    if state == "all":
+        print(f"{len(missing_search)} missing, updating")
+    else:
+        print(f"{state}: {len(all_bills)} bills, {len(missing_search)} without search results")
+
     if n:
         missing_search = missing_search[: int(n)]
     else:
