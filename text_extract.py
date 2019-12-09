@@ -273,6 +273,21 @@ def status():
 
 @cli.command()
 @click.argument("state")
+def reindex_state(state):
+    init_django()
+    from opencivicdata.legislative.models import SearchableBill
+
+    ids = list(
+        SearchableBill.objects.filter(
+            bill__legislative_session__jurisdiction_id=abbr_to_jid(state)
+        ).values_list("id", flat=True)
+    )
+    print(f"reindexing {len(ids)} bills for state")
+    reindex(ids)
+
+
+@cli.command()
+@click.argument("state")
 @click.option("-n", default=None)
 @click.option("--clear-errors/--no-clear-errors", default=False)
 @click.option("--checkpoint", default=500)
@@ -333,12 +348,13 @@ def reindex(ids_to_update):
     from opencivicdata.legislative.models import SearchableBill
 
     print(f"updating {len(ids_to_update)} search vectors")
-    SearchableBill.objects.filter(id__in=ids_to_update).update(
+    res = SearchableBill.objects.filter(id__in=ids_to_update).update(
         search_vector=(
             SearchVector("all_titles", weight="A", config="english")
             + SearchVector("raw_text", weight="B", config="english")
         )
     )
+    print(f"updated {res}")
 
 
 if __name__ == "__main__":
