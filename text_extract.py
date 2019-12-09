@@ -275,13 +275,13 @@ def status():
 @click.argument("state")
 @click.option("-n", default=None)
 @click.option("--clear-errors/--no-clear-errors", default=False)
-def update(state, n, clear_errors):
+@click.option("--checkpoint", default=500)
+def update(state, n, clear_errors, checkpoint):
     init_django()
     from opencivicdata.legislative.models import Bill, SearchableBill
 
-    # configure how often to print and checkpoint
-    STATUS_NUM = 100
-    CHECKPOINT_NUM = 500
+    # print status within checkpoints
+    status_num = checkpoint / 5
 
     if state == "all":
         all_bills = Bill.objects.all()
@@ -316,9 +316,9 @@ def update(state, n, clear_errors):
     for b in missing_search:
         ids_to_update.append(update_bill(b))
         updated_count += 1
-        if updated_count % STATUS_NUM == 0:
+        if updated_count % status_num == 0:
             print(f"{state}: updated {updated_count} out of {n}")
-        if updated_count % CHECKPOINT_NUM == 0:
+        if updated_count % checkpoint == 0:
             reindex(ids_to_update)
             transaction.commit()
             ids_to_update = []
