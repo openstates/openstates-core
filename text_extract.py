@@ -10,6 +10,7 @@ import django
 import scrapelib
 from django.contrib.postgres.search import SearchVector
 from django.db import transaction
+from django.db.models import Count
 
 from extract.utils import jid_to_abbr, abbr_to_jid
 from extract import get_extract_func, DoNotDownload, CONVERSION_FUNCTIONS
@@ -300,12 +301,14 @@ def update(state, n, clear_errors, checkpoint):
 
     if state == "all":
         all_bills = Bill.objects.all()
+        all_bills = all_bills.exclude(legislative_session__jurisdiction_id=abbr_to_jid("dc"))
+        all_bills = all_bills.exclude(legislative_session__jurisdiction_id=abbr_to_jid("ny"))
     else:
         all_bills = Bill.objects.filter(legislative_session__jurisdiction_id=abbr_to_jid(state))
 
     if clear_errors:
         if state == "all":
-            print("--clear-errors only works with specific states, not --all")
+            print("--clear-errors only works with specific states, not all")
             return
         errs = SearchableBill.objects.filter(bill__in=all_bills, is_error=True)
         print(f"clearing {len(errs)} errors")
@@ -313,6 +316,18 @@ def update(state, n, clear_errors, checkpoint):
 
     missing_search = all_bills.filter(searchable__isnull=True)
     if state == "all":
+        MAX_UPDATE = 500
+        aggregates = missing_search.values("legislative_session__jurisdiction__name").annotate(
+            count=Count("id")
+        )
+        bail = False
+        for agg in aggregates:
+            state_name = agg["legislative_session__jurisdiction__name"]
+            if agg["count"] > MAX_UPDATE:
+                click.secho(f"Too many bills to update for {state_name}: {agg['count']}", fg="red")
+                bail = True
+        if bail:
+            sys.exit(1)
         print(f"{len(missing_search)} missing, updating")
     else:
         print(f"{state}: {len(all_bills)} bills, {len(missing_search)} without search results")
