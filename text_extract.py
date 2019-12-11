@@ -301,7 +301,6 @@ def update(state, n, clear_errors, checkpoint):
 
     if state == "all":
         all_bills = Bill.objects.all()
-        all_bills = all_bills.exclude(legislative_session__jurisdiction_id=abbr_to_jid("dc"))
     else:
         all_bills = Bill.objects.filter(legislative_session__jurisdiction_id=abbr_to_jid(state))
 
