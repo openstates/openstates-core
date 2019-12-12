@@ -192,7 +192,7 @@ def _resample(state, n=50):
     click.secho(f"wrote new sample csv with {count} records")
 
 
-@cli.command()
+@cli.command(help="obtain a sample of bills to extract text from")
 @click.argument("state")
 @click.option("--resample/--no-resample", default=False)
 @click.option("--quiet/--no-quiet", default=False)
@@ -227,7 +227,7 @@ def sample(state, resample, quiet):
     return 0
 
 
-@cli.command()
+@cli.command(help="run sample on all states, used for CI")
 @click.pass_context
 def test(ctx):
     failures = 0
@@ -238,7 +238,7 @@ def test(ctx):
     sys.exit(failures)
 
 
-@cli.command()
+@cli.command(help="print a status table showing the current condition of states")
 def status():
     init_django()
     from opencivicdata.legislative.models import Bill
@@ -272,7 +272,7 @@ def status():
         )
 
 
-@cli.command()
+@cli.command(help="rebuild the search index objects for a given state")
 @click.argument("state")
 def reindex_state(state):
     init_django()
@@ -287,7 +287,7 @@ def reindex_state(state):
     reindex(ids)
 
 
-@cli.command()
+@cli.command(help="update the saved bill text in the database")
 @click.argument("state")
 @click.option("-n", default=None)
 @click.option("--clear-errors/--no-clear-errors", default=False)
