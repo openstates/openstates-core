@@ -1,0 +1,7 @@
+legislature_name: Pennsylvania General Assembly
+lower_seats: 203
+upper_seats: 50
+vacancies:
+- chamber: upper
+  district: 48
+  vacant_until: 2021-01-01
