@@ -1,7 +1,0 @@
-legislature_name: North Carolina General Assembly
-lower_seats: 120
-upper_seats: 50
-vacancies:
-- chamber: upper
-  district: 7
-  vacant_until: 2021-01-01
