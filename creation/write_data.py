@@ -32,7 +32,7 @@ def seats_to_args(seats):
 if __name__ == "__main__":
     settings = yaml.load(open(f'../people/settings.yml'))
 
-    for state in us.STATES:
+    for state in us.STATES + [us.states.lookup("PR")]:
 
         obj = settings[state.abbr.lower()]
         leg_name = obj.pop("legislature_name")
