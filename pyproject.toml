@@ -11,6 +11,7 @@ django = "^3.0"
 attrs = "^19.3"
 us = "^1.0"
 pytest = "^5.3"
+flake8 = "^3.7"
 
 [tool.poetry.dev-dependencies]
 
