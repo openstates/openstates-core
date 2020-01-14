@@ -22,10 +22,16 @@ def test_basics():
 def test_district_numbers():
     for state in STATES:
         if state.unicameral:
-            assert state.legislature.num_seats == sum(d.num_seats for d in state.legislature.districts)
+            assert state.legislature.num_seats == sum(
+                d.num_seats for d in state.legislature.districts
+            )
         else:
-            assert state.upper.num_seats == sum(d.num_seats for d in state.upper.districts)
-            assert state.lower.num_seats == sum(d.num_seats for d in state.lower.districts)
+            assert state.upper.num_seats == sum(
+                d.num_seats for d in state.upper.districts
+            )
+            assert state.lower.num_seats == sum(
+                d.num_seats for d in state.lower.districts
+            )
 
 
 def test_simple_numbered_districts():

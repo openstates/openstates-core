@@ -81,8 +81,10 @@ if __name__ == "__main__":
                 extra_import += ", simple_numbered_districts"
 
             seats_block = f"""
-                lower=Chamber(chamber_type="lower", name="{lower_name}", num_seats={num_lower_seats}, title="{lower_title}", districts={lower_ds}),
-                upper=Chamber(chamber_type="upper", name="{upper_name}", num_seats={num_upper_seats}, title="{upper_title}", districts={upper_ds},),
+                lower=Chamber(chamber_type="lower", name="{lower_name}",
+                   num_seats={num_lower_seats}, title="{lower_title}", districts={lower_ds}),
+                upper=Chamber(chamber_type="upper", name="{upper_name}",
+                   num_seats={num_upper_seats}, title="{upper_title}", districts={upper_ds},),
         """
         else:
             num_leg_seats, leg_seats = seats_to_args(obj.pop("legislature_seats"))
@@ -96,7 +98,8 @@ if __name__ == "__main__":
                 extra_import += ", simple_numbered_districts"
 
             seats_block = f"""
-                legislature=Chamber(chamber_type="unicameral", name="{leg_name}", num_seats={num_leg_seats}, title="{leg_title}", districts={districts}),
+                legislature=Chamber(chamber_type="unicameral", name="{leg_name}",
+                     num_seats={num_leg_seats}, title="{leg_title}", districts={districts}),
                 """
 
         # ensure we got it all
