@@ -33,15 +33,27 @@ def make_districts(seats, division_ids):
     if not seats and not division_ids:
         return "None"
     elif seats and not division_ids:
-        return "[" + "\n".join((f'District("{seat}", {num}),' for seat, num in seats.items())) + "]"
+        return (
+            "["
+            + "\n".join((f'District("{seat}", {num}),' for seat, num in seats.items()))
+            + "]"
+        )
     else:
         # seats and division_ids together
-        return "[" + "\n".join((f'District("{seat}", {num}, "{division_ids[seat]}"),'
-                         for seat, num in seats.items())) + "]"
+        return (
+            "["
+            + "\n".join(
+                (
+                    f'District("{seat}", {num}, "{division_ids[seat]}"),'
+                    for seat, num in seats.items()
+                )
+            )
+            + "]"
+        )
 
 
 if __name__ == "__main__":
-    settings = yaml.load(open(f'../people/settings.yml'))
+    settings = yaml.load(open(f"../people/settings.yml"))
 
     for state in us.STATES + [us.states.lookup("PR")]:
 
@@ -86,7 +98,8 @@ if __name__ == "__main__":
         else:
             fname = f"openstates_metadata/data/{state.abbr.lower()}.py"
         with open(fname, "w") as f:
-            f.write(f"""from ..models import State, Chamber, District
+            f.write(
+                f"""from ..models import State, Chamber, District
 
 {state.abbr} = State(
     name="{state.name}",
@@ -97,4 +110,5 @@ if __name__ == "__main__":
     unicameral={unicameral},
     legislature_name="{leg_name}",
     {seats_block}
-)""")
+)"""
+            )
