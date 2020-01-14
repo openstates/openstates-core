@@ -3,13 +3,19 @@ import typing
 
 
 @attr.s(auto_attribs=True)
+class District:
+    name: str
+    num_seats: int = 1
+    division_id: str = None
+
+
+@attr.s(auto_attribs=True)
 class Chamber:
     chamber_type: str
     name: str
     title: str
     num_seats: int
-    seats: typing.Mapping[str, int]
-    division_ids: typing.Mapping[str, str]
+    districts: typing.List[District]
 
 
 @attr.s(auto_attribs=True)

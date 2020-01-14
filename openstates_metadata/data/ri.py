@@ -1,4 +1,4 @@
-from ..models import State, Chamber
+from ..models import State, Chamber, District
 
 RI = State(
     name="Rhode Island",
@@ -12,16 +12,14 @@ RI = State(
         chamber_type="lower",
         name="House",
         num_seats=75,
-        seats=None,
-        division_ids=None,
         title="Representative",
+        districts=None,
     ),
     upper=Chamber(
         chamber_type="upper",
         name="Senate",
         num_seats=38,
-        seats=None,
-        division_ids=None,
         title="Senator",
+        districts=None,
     ),
 )

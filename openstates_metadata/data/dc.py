@@ -1,4 +1,4 @@
-from ..models import State, Chamber
+from ..models import State, Chamber, District
 
 DC = State(
     name="District of Columbia",
@@ -12,30 +12,18 @@ DC = State(
         chamber_type="unicameral",
         name="Council of the District of Columbia",
         num_seats=13,
-        seats={
-            "Ward 1": 1,
-            "Ward 2": 1,
-            "Ward 3": 1,
-            "Ward 4": 1,
-            "Ward 5": 1,
-            "Ward 6": 1,
-            "Ward 7": 1,
-            "Ward 8": 1,
-            "Chairman": 1,
-            "At-Large": 4,
-        },
-        division_ids={
-            "Ward 1": "ocd-division/country:us/district:dc/ward:1",
-            "Ward 2": "ocd-division/country:us/district:dc/ward:2",
-            "Ward 3": "ocd-division/country:us/district:dc/ward:3",
-            "Ward 4": "ocd-division/country:us/district:dc/ward:4",
-            "Ward 5": "ocd-division/country:us/district:dc/ward:5",
-            "Ward 6": "ocd-division/country:us/district:dc/ward:6",
-            "Ward 7": "ocd-division/country:us/district:dc/ward:7",
-            "Ward 8": "ocd-division/country:us/district:dc/ward:8",
-            "Chairman": "ocd-division/country:us/district:dc",
-            "At-Large": "ocd-division/country:us/district:dc",
-        },
         title="Councilmember",
+        districts=[
+            District("Ward 1", 1, "ocd-division/country:us/district:dc/ward:1"),
+            District("Ward 2", 1, "ocd-division/country:us/district:dc/ward:2"),
+            District("Ward 3", 1, "ocd-division/country:us/district:dc/ward:3"),
+            District("Ward 4", 1, "ocd-division/country:us/district:dc/ward:4"),
+            District("Ward 5", 1, "ocd-division/country:us/district:dc/ward:5"),
+            District("Ward 6", 1, "ocd-division/country:us/district:dc/ward:6"),
+            District("Ward 7", 1, "ocd-division/country:us/district:dc/ward:7"),
+            District("Ward 8", 1, "ocd-division/country:us/district:dc/ward:8"),
+            District("Chairman", 1, "ocd-division/country:us/district:dc"),
+            District("At-Large", 4, "ocd-division/country:us/district:dc"),
+        ],
     ),
 )

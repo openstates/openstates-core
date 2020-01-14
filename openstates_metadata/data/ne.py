@@ -1,4 +1,4 @@
-from ..models import State, Chamber
+from ..models import State, Chamber, District
 
 NE = State(
     name="Nebraska",
@@ -12,8 +12,7 @@ NE = State(
         chamber_type="unicameral",
         name="Nebraska Legislature",
         num_seats=49,
-        seats=None,
-        division_ids=None,
         title="Senator",
+        districts=None,
     ),
 )

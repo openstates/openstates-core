@@ -1,4 +1,4 @@
-from ..models import State, Chamber
+from ..models import State, Chamber, District
 
 VA = State(
     name="Virginia",
@@ -12,16 +12,14 @@ VA = State(
         chamber_type="lower",
         name="House",
         num_seats=100,
-        seats=None,
-        division_ids=None,
         title="Delegate",
+        districts=None,
     ),
     upper=Chamber(
         chamber_type="upper",
         name="Senate",
         num_seats=40,
-        seats=None,
-        division_ids=None,
         title="Senator",
+        districts=None,
     ),
 )

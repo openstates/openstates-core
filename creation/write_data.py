@@ -29,6 +29,17 @@ def seats_to_args(seats):
         return sum(seats.values()), seats
 
 
+def make_districts(seats, division_ids):
+    if not seats and not division_ids:
+        return "None"
+    elif seats and not division_ids:
+        return "[" + "\n".join((f'District("{seat}", {num}),' for seat, num in seats.items())) + "]"
+    else:
+        # seats and division_ids together
+        return "[" + "\n".join((f'District("{seat}", {num}, "{division_ids[seat]}"),'
+                         for seat, num in seats.items())) + "]"
+
+
 if __name__ == "__main__":
     settings = yaml.load(open(f'../people/settings.yml'))
 
@@ -47,17 +58,20 @@ if __name__ == "__main__":
             upper_title = obj.pop("upper_title", "Senator")
             num_upper_seats, upper_seats = seats_to_args(obj.pop("upper_seats"))
             upper_div_ids = obj.pop("upper_division_ids", None)
+            lower_ds = make_districts(lower_seats, lower_div_ids)
+            upper_ds = make_districts(upper_seats, upper_div_ids)
 
             seats_block = f"""
-                lower=Chamber(chamber_type="lower", name="{lower_name}", num_seats={num_lower_seats}, seats={lower_seats}, division_ids={lower_div_ids}, title="{lower_title}"),
-                upper=Chamber(chamber_type="upper", name="{upper_name}", num_seats={num_upper_seats}, seats={upper_seats}, division_ids={upper_div_ids}, title="{upper_title}"),
+                lower=Chamber(chamber_type="lower", name="{lower_name}", num_seats={num_lower_seats}, title="{lower_title}", districts={lower_ds}),
+                upper=Chamber(chamber_type="upper", name="{upper_name}", num_seats={num_upper_seats}, title="{upper_title}", districts={upper_ds},),
         """
         else:
             num_leg_seats, leg_seats = seats_to_args(obj.pop("legislature_seats"))
             leg_title = obj.pop("legislature_title")
             div_ids = obj.pop("legislature_division_ids", None)
+            districts = make_districts(leg_seats, div_ids)
             seats_block = f"""
-                legislature=Chamber(chamber_type="unicameral", name="{leg_name}", num_seats={num_leg_seats}, seats={leg_seats}, division_ids={div_ids}, title="{leg_title}"),
+                legislature=Chamber(chamber_type="unicameral", name="{leg_name}", num_seats={num_leg_seats}, title="{leg_title}", districts={districts}),
                 """
 
         # ensure we got it all
@@ -72,7 +86,7 @@ if __name__ == "__main__":
         else:
             fname = f"openstates_metadata/data/{state.abbr.lower()}.py"
         with open(fname, "w") as f:
-            f.write(f"""from ..models import State, Chamber
+            f.write(f"""from ..models import State, Chamber, District
 
 {state.abbr} = State(
     name="{state.name}",
