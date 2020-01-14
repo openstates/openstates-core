@@ -1,0 +1,53 @@
+jurisdiction_id,state,url,division_id
+ocd-jurisdiction/country:us/state:ar/government,Arkansas,http://www.arkleg.state.ar.us,ocd-division/country:us/state:ar
+ocd-jurisdiction/country:us/state:ne/government,Nebraska,http://nebraskalegislature.gov/,ocd-division/country:us/state:ne
+ocd-jurisdiction/country:us/state:az/government,Arizona,http://www.azleg.gov/,ocd-division/country:us/state:az
+ocd-jurisdiction/country:us/state:mn/government,Minnesota,http://state.mn.us/,ocd-division/country:us/state:mn
+ocd-jurisdiction/country:us/state:ky/government,Kentucky,http://www.lrc.ky.gov/,ocd-division/country:us/state:ky
+ocd-jurisdiction/country:us/state:sd/government,South Dakota,http://www.sdlegislature.gov/,ocd-division/country:us/state:sd
+ocd-jurisdiction/country:us/state:md/government,Maryland,http://mgaleg.maryland.gov/,ocd-division/country:us/state:md
+ocd-jurisdiction/country:us/state:or/government,Oregon,https://olis.leg.state.or.us,ocd-division/country:us/state:or
+ocd-jurisdiction/country:us/state:nj/government,New Jersey,http://www.njleg.state.nj.us/,ocd-division/country:us/state:nj
+ocd-jurisdiction/country:us/state:al/government,Alabama,http://www.legislature.state.al.us/,ocd-division/country:us/state:al
+ocd-jurisdiction/country:us/state:co/government,Colorado,http://leg.colorado.gov/,ocd-division/country:us/state:co
+ocd-jurisdiction/country:us/state:ri/government,Rhode Island,http://www.ri.gov/,ocd-division/country:us/state:ri
+ocd-jurisdiction/country:us/state:tn/government,Tennessee,http://www.capitol.tn.gov/,ocd-division/country:us/state:tn
+ocd-jurisdiction/country:us/state:il/government,Illinois,http://www.ilga.gov/,ocd-division/country:us/state:il
+ocd-jurisdiction/country:us/state:de/government,Delaware,http://legis.delaware.gov/,ocd-division/country:us/state:de
+ocd-jurisdiction/country:us/state:ct/government,Connecticut,http://www.cga.ct.gov/,ocd-division/country:us/state:ct
+ocd-jurisdiction/country:us/state:id/government,Idaho,http://www.legislature.idaho.gov,ocd-division/country:us/state:id
+ocd-jurisdiction/country:us/state:hi/government,Hawaii,http://capitol.hawaii.gov,ocd-division/country:us/state:hi
+ocd-jurisdiction/country:us/state:ut/government,Utah,http://le.utah.gov/,ocd-division/country:us/state:ut
+ocd-jurisdiction/country:us/state:ny/government,New York,http://public.leginfo.state.ny.us/,ocd-division/country:us/state:ny
+ocd-jurisdiction/country:us/state:sc/government,South Carolina,http://www.scstatehouse.gov/,ocd-division/country:us/state:sc
+ocd-jurisdiction/country:us/state:ok/government,Oklahoma,http://www.oklegislature.gov/,ocd-division/country:us/state:ok
+ocd-jurisdiction/country:us/state:nd/government,North Dakota,http://www.legis.nd.gov/,ocd-division/country:us/state:nd
+ocd-jurisdiction/country:us/state:mt/government,Montana,http://leg.mt.gov/,ocd-division/country:us/state:mt
+ocd-jurisdiction/country:us/state:pa/government,Pennsylvania,http://www.legis.state.pa.us/,ocd-division/country:us/state:pa
+ocd-jurisdiction/country:us/state:vt/government,Vermont,http://legislature.vermont.gov/,ocd-division/country:us/state:vt
+ocd-jurisdiction/country:us/district:dc/government,District of Columbia,https://dc.gov,ocd-division/country:us/district:dc
+ocd-jurisdiction/country:us/state:ga/government,Georgia,http://www.legis.ga.gov/,ocd-division/country:us/state:ga
+ocd-jurisdiction/country:us/state:ia/government,Iowa,https://www.legis.iowa.gov/,ocd-division/country:us/state:ia
+ocd-jurisdiction/country:us/state:in/government,Indiana,http://www.in.gov/,ocd-division/country:us/state:in
+ocd-jurisdiction/country:us/state:fl/government,Florida,http://myflorida.com,ocd-division/country:us/state:fl
+ocd-jurisdiction/country:us/state:nh/government,New Hampshire,http://gencourt.state.nh.us,ocd-division/country:us/state:nh
+ocd-jurisdiction/country:us/state:ms/government,Mississippi,http://www.legislature.ms.gov/,ocd-division/country:us/state:ms
+ocd-jurisdiction/country:us/state:la/government,Louisiana,http://www.legis.la.gov/,ocd-division/country:us/state:la
+ocd-jurisdiction/country:us/state:mo/government,Missouri,http://www.moga.mo.gov/,ocd-division/country:us/state:mo
+ocd-jurisdiction/country:us/state:va/government,Virginia,http://virginiageneralassembly.gov/,ocd-division/country:us/state:va
+ocd-jurisdiction/country:us/state:mi/government,Michigan,http://www.legislature.mi.gov,ocd-division/country:us/state:mi
+ocd-jurisdiction/country:us/state:wy/government,Wyoming,http://legisweb.state.wy.us/,ocd-division/country:us/state:wy
+ocd-jurisdiction/country:us/state:me/government,Maine,http://legislature.maine.gov,ocd-division/country:us/state:me
+ocd-jurisdiction/country:us/state:wa/government,Washington,http://www.leg.wa.gov,ocd-division/country:us/state:wa
+ocd-jurisdiction/country:us/state:ks/government,Kansas,http://www.kslegislature.org/,ocd-division/country:us/state:ks
+ocd-jurisdiction/country:us/state:nv/government,Nevada,http://www.leg.state.nv.us/,ocd-division/country:us/state:nv
+ocd-jurisdiction/country:us/state:ak/government,Alaska,http://w3.legis.state.ak.us/,ocd-division/country:us/state:ak
+ocd-jurisdiction/country:us/state:nm/government,New Mexico,https://www.nmlegis.gov,ocd-division/country:us/state:nm
+ocd-jurisdiction/country:us/state:wv/government,West Virginia,http://www.legis.state.wv.us/,ocd-division/country:us/state:wv
+ocd-jurisdiction/country:us/state:tx/government,Texas,https://capitol.texas.gov/,ocd-division/country:us/state:tx
+ocd-jurisdiction/country:us/state:wi/government,Wisconsin,http://legis.wisconsin.gov/,ocd-division/country:us/state:wi
+ocd-jurisdiction/country:us/state:nc/government,North Carolina,http://www.ncleg.net/,ocd-division/country:us/state:nc
+ocd-jurisdiction/country:us/territory:pr/government,Puerto Rico,http://www.oslpr.org/,ocd-division/country:us/territory:pr
+ocd-jurisdiction/country:us/state:ca/government,California,http://www.legislature.ca.gov/,ocd-division/country:us/state:ca
+ocd-jurisdiction/country:us/state:oh/government,Ohio,http://www.legislature.state.oh.us/,ocd-division/country:us/state:oh
+ocd-jurisdiction/country:us/state:ma/government,Massachusetts,http://mass.gov,ocd-division/country:us/state:ma

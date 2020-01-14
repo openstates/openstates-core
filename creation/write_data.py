@@ -1,4 +1,5 @@
 import us
+import csv
 import yaml
 
 
@@ -54,6 +55,8 @@ def make_districts(num, seats, division_ids):
 
 if __name__ == "__main__":
     settings = yaml.load(open(f"../people/settings.yml"))
+    jurisdictions = csv.DictReader(open("creation/jurisdictions.csv"))
+    jurisdictions_by_name = {j["state"]: j for j in jurisdictions}
 
     for state in us.STATES + [us.states.lookup("PR")]:
 
@@ -107,6 +110,8 @@ if __name__ == "__main__":
         if obj:
             raise Exception(obj)
 
+        j = jurisdictions_by_name[state.name]
+
         if state.abbr == "OR":
             fname = f"openstates_metadata/data/ore.py"
         elif state.abbr == "IN":
@@ -125,6 +130,9 @@ if __name__ == "__main__":
     fips="{state.fips}",
     unicameral={unicameral},
     legislature_name="{leg_name}",
+    division_id="{j['division_id']}",
+    jurisdiction_id="{j['jurisdiction_id']}",
+    url="{j['url']}",
     {seats_block}
 )"""
             )
