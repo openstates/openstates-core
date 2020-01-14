@@ -31,11 +31,9 @@ def seats_to_args(seats):
 
 if __name__ == "__main__":
     settings = yaml.load(open(f'../people/settings.yml'))
-    print("""from .models import State, Chamber
-
-states = [""")
 
     for state in us.STATES:
+
         obj = settings[state.abbr.lower()]
         leg_name = obj.pop("legislature_name")
         unicameral = state.abbr in ("DC", "NE")
@@ -67,15 +65,16 @@ states = [""")
         if obj:
             raise Exception(obj)
 
-        print(f"""State(
-        name="{state.name}",
-        abbr="{state.abbr}",
-        capital="{state.capital}",
-        capital_tz="{state.capital_tz}",
-        fips="{state.fips}",
-        unicameral={unicameral},
-        legislature_name="{leg_name}",
-        {seats_block}
-    ),""")
+        with open(f"openstates_metadata/data/{state.abbr.lower()}.py", "w") as f:
+            f.write(f"""from ..models import State, Chamber
 
-    print("]")
+{state.abbr} = State(
+    name="{state.name}",
+    abbr="{state.abbr}",
+    capital="{state.capital}",
+    capital_tz="{state.capital_tz}",
+    fips="{state.fips}",
+    unicameral={unicameral},
+    legislature_name="{leg_name}",
+    {seats_block}
+)""")

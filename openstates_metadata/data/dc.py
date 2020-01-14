@@ -1,0 +1,41 @@
+from ..models import State, Chamber
+
+DC = State(
+    name="District of Columbia",
+    abbr="DC",
+    capital="None",
+    capital_tz="America/New_York",
+    fips="11",
+    unicameral=True,
+    legislature_name="Council of the District of Columbia",
+    legislature=Chamber(
+        chamber_type="unicameral",
+        name="Council of the District of Columbia",
+        num_seats=13,
+        seats={
+            "Ward 1": 1,
+            "Ward 2": 1,
+            "Ward 3": 1,
+            "Ward 4": 1,
+            "Ward 5": 1,
+            "Ward 6": 1,
+            "Ward 7": 1,
+            "Ward 8": 1,
+            "Chairman": 1,
+            "At-Large": 4,
+        },
+        division_ids={
+            "Ward 1": "ocd-division/country:us/district:dc/ward:1",
+            "Ward 2": "ocd-division/country:us/district:dc/ward:2",
+            "Ward 3": "ocd-division/country:us/district:dc/ward:3",
+            "Ward 4": "ocd-division/country:us/district:dc/ward:4",
+            "Ward 5": "ocd-division/country:us/district:dc/ward:5",
+            "Ward 6": "ocd-division/country:us/district:dc/ward:6",
+            "Ward 7": "ocd-division/country:us/district:dc/ward:7",
+            "Ward 8": "ocd-division/country:us/district:dc/ward:8",
+            "Chairman": "ocd-division/country:us/district:dc",
+            "At-Large": "ocd-division/country:us/district:dc",
+        },
+        title="Councilmember",
+    ),
+)

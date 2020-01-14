@@ -1,0 +1,27 @@
+from ..models import State, Chamber
+
+VA = State(
+    name="Virginia",
+    abbr="VA",
+    capital="Richmond",
+    capital_tz="America/New_York",
+    fips="51",
+    unicameral=False,
+    legislature_name="Virginia General Assembly",
+    lower=Chamber(
+        chamber_type="lower",
+        name="House",
+        num_seats=100,
+        seats=None,
+        division_ids=None,
+        title="Delegate",
+    ),
+    upper=Chamber(
+        chamber_type="upper",
+        name="Senate",
+        num_seats=40,
+        seats=None,
+        division_ids=None,
+        title="Senator",
+    ),
+)
