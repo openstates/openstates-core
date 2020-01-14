@@ -27,6 +27,9 @@ class State:
     fips: str
     unicameral: bool
     legislature_name: str
+    division_id: str
+    jurisdiction_id: str
+    url: str
     lower: Chamber = None
     upper: Chamber = None
     legislature: Chamber = None
