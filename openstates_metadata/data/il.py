@@ -1,4 +1,4 @@
-from ..models import State, Chamber, District
+from ..models import State, Chamber, simple_numbered_districts
 
 IL = State(
     name="Illinois",
@@ -13,13 +13,13 @@ IL = State(
         name="House",
         num_seats=118,
         title="Representative",
-        districts=None,
+        districts=simple_numbered_districts(118),
     ),
     upper=Chamber(
         chamber_type="upper",
         name="Senate",
         num_seats=59,
         title="Senator",
-        districts=None,
+        districts=simple_numbered_districts(59),
     ),
 )

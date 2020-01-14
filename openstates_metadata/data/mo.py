@@ -1,4 +1,4 @@
-from ..models import State, Chamber, District
+from ..models import State, Chamber, simple_numbered_districts
 
 MO = State(
     name="Missouri",
@@ -13,13 +13,13 @@ MO = State(
         name="House",
         num_seats=163,
         title="Representative",
-        districts=None,
+        districts=simple_numbered_districts(163),
     ),
     upper=Chamber(
         chamber_type="upper",
         name="Senate",
         num_seats=34,
         title="Senator",
-        districts=None,
+        districts=simple_numbered_districts(34),
     ),
 )

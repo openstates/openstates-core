@@ -1,4 +1,4 @@
-from ..models import State, Chamber, District
+from ..models import State, Chamber, District, simple_numbered_districts
 
 MN = State(
     name="Minnesota",
@@ -155,6 +155,6 @@ MN = State(
         name="Senate",
         num_seats=67,
         title="Senator",
-        districts=None,
+        districts=simple_numbered_districts(67),
     ),
 )

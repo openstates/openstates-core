@@ -1,4 +1,4 @@
-from ..models import State, Chamber, District
+from ..models import State, Chamber, District, simple_numbered_districts
 
 AK = State(
     name="Alaska",
@@ -13,7 +13,7 @@ AK = State(
         name="House",
         num_seats=40,
         title="Representative",
-        districts=None,
+        districts=simple_numbered_districts(40),
     ),
     upper=Chamber(
         chamber_type="upper",

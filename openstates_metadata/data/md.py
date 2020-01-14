@@ -1,4 +1,4 @@
-from ..models import State, Chamber, District
+from ..models import State, Chamber, District, simple_numbered_districts
 
 MD = State(
     name="Maryland",
@@ -88,6 +88,6 @@ MD = State(
         name="Senate",
         num_seats=47,
         title="Senator",
-        districts=None,
+        districts=simple_numbered_districts(47),
     ),
 )

@@ -1,4 +1,4 @@
-from ..models import State, Chamber, District
+from ..models import State, Chamber, simple_numbered_districts
 
 HI = State(
     name="Hawaii",
@@ -13,13 +13,13 @@ HI = State(
         name="House",
         num_seats=51,
         title="Representative",
-        districts=None,
+        districts=simple_numbered_districts(51),
     ),
     upper=Chamber(
         chamber_type="upper",
         name="Senate",
         num_seats=25,
         title="Senator",
-        districts=None,
+        districts=simple_numbered_districts(25),
     ),
 )

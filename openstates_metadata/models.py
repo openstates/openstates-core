@@ -30,3 +30,7 @@ class State:
     lower: Chamber = None
     upper: Chamber = None
     legislature: Chamber = None
+
+
+def simple_numbered_districts(total, *, num_seats=1):
+    return [District(str(n), num_seats) for n in range(1, total+1)]
