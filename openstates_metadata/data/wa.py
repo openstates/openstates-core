@@ -17,7 +17,7 @@ WA = State(
         num_seats=98,
         title="Representative",
         districts=simple_numbered_districts(
-            "ocd-division/country:us/state:wa", "lower", 49, num_seats=2,
+            "ocd-division/country:us/state:wa", "lower", 49, num_seats=2
         ),
     ),
     upper=Chamber(

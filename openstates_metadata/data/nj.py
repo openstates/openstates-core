@@ -17,7 +17,7 @@ NJ = State(
         num_seats=80,
         title="Assembly Member",
         districts=simple_numbered_districts(
-            "ocd-division/country:us/state:nj", "lower", 40, num_seats=2,
+            "ocd-division/country:us/state:nj", "lower", 40, num_seats=2
         ),
     ),
     upper=Chamber(

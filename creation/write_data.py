@@ -37,13 +37,18 @@ def slugify(name):
 def make_districts(parent_id, chamber_type, num, seats, division_ids):
     if not seats and not division_ids:
         return f"simple_numbered_districts('{parent_id}', '{chamber_type}', {num})"
+    elif (
+        parent_id.split(":")[-1] in ("az", "id", "nd", "nj", "wa")
+        and chamber_type == "lower"
+    ):
+        return f"simple_numbered_districts('{parent_id}', '{chamber_type}', {num//2}, num_seats=2)"
     elif seats and not division_ids:
         prefix = "sldl" if chamber_type == "lower" else "sldu"
         return (
             "["
             + "\n".join(
                 (
-                    f'District("{seat}", "{chamber_type}", {num}, "{parent_id}/{prefix}:{slugify(seat)}"),'
+                    f'District("{seat}", "{chamber_type}", "{parent_id}/{prefix}:{slugify(seat)}", {num}),'
                     for seat, num in seats.items()
                 )
             )
@@ -55,7 +60,7 @@ def make_districts(parent_id, chamber_type, num, seats, division_ids):
             "["
             + "\n".join(
                 (
-                    f'District("{seat}", "{chamber_type}", {num}, "{division_ids[seat]}"),'
+                    f'District("{seat}", "{chamber_type}", "{division_ids[seat]}", {num}),'
                     for seat, num in seats.items()
                 )
             )

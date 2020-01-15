@@ -17,7 +17,7 @@ ID = State(
         num_seats=70,
         title="Representative",
         districts=simple_numbered_districts(
-            "ocd-division/country:us/state:id", "lower", 35, num_seats=2,
+            "ocd-division/country:us/state:id", "lower", 35, num_seats=2
         ),
     ),
     upper=Chamber(

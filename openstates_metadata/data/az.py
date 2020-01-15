@@ -17,7 +17,7 @@ AZ = State(
         num_seats=60,
         title="Representative",
         districts=simple_numbered_districts(
-            "ocd-division/country:us/state:az", "lower", 30, num_seats=2,
+            "ocd-division/country:us/state:az", "lower", 30, num_seats=2
         ),
     ),
     upper=Chamber(
