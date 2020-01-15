@@ -16,13 +16,13 @@ NM = State(
         name="House",
         num_seats=70,
         title="Representative",
-        districts=simple_numbered_districts(70),
+        districts=simple_numbered_districts("lower", 70),
     ),
     upper=Chamber(
         chamber_type="upper",
         name="Senate",
         num_seats=42,
         title="Senator",
-        districts=simple_numbered_districts(42),
+        districts=simple_numbered_districts("upper", 42),
     ),
 )

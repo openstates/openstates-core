@@ -16,13 +16,13 @@ RI = State(
         name="House",
         num_seats=75,
         title="Representative",
-        districts=simple_numbered_districts(75),
+        districts=simple_numbered_districts("lower", 75),
     ),
     upper=Chamber(
         chamber_type="upper",
         name="Senate",
         num_seats=38,
         title="Senator",
-        districts=simple_numbered_districts(38),
+        districts=simple_numbered_districts("upper", 38),
     ),
 )

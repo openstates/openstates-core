@@ -30,13 +30,18 @@ def seats_to_args(seats):
         return sum(seats.values()), seats
 
 
-def make_districts(num, seats, division_ids):
+def make_districts(chamber_type, num, seats, division_ids):
     if not seats and not division_ids:
-        return f"simple_numbered_districts({num})"
+        return f"simple_numbered_districts('{chamber_type}', {num})"
     elif seats and not division_ids:
         return (
             "["
-            + "\n".join((f'District("{seat}", {num}),' for seat, num in seats.items()))
+            + "\n".join(
+                (
+                    f'District("{seat}", "{chamber_type}", {num}),'
+                    for seat, num in seats.items()
+                )
+            )
             + "]"
         )
     else:
@@ -45,7 +50,7 @@ def make_districts(num, seats, division_ids):
             "["
             + "\n".join(
                 (
-                    f'District("{seat}", {num}, "{division_ids[seat]}"),'
+                    f'District("{seat}", "{chamber_type}", {num}, "{division_ids[seat]}"),'
                     for seat, num in seats.items()
                 )
             )
@@ -75,8 +80,12 @@ if __name__ == "__main__":
             num_upper_seats, upper_seats = seats_to_args(obj.pop("upper_seats"))
             upper_div_ids = obj.pop("upper_division_ids", None)
 
-            lower_ds = make_districts(num_lower_seats, lower_seats, lower_div_ids)
-            upper_ds = make_districts(num_upper_seats, upper_seats, upper_div_ids)
+            lower_ds = make_districts(
+                "lower", num_lower_seats, lower_seats, lower_div_ids
+            )
+            upper_ds = make_districts(
+                "upper", num_upper_seats, upper_seats, upper_div_ids
+            )
 
             if "District" in lower_ds + upper_ds:
                 extra_import += ", District"
@@ -93,7 +102,7 @@ if __name__ == "__main__":
             num_leg_seats, leg_seats = seats_to_args(obj.pop("legislature_seats"))
             leg_title = obj.pop("legislature_title")
             div_ids = obj.pop("legislature_division_ids", None)
-            districts = make_districts(num_leg_seats, leg_seats, div_ids)
+            districts = make_districts("legislature", num_leg_seats, leg_seats, div_ids)
 
             if "District" in districts:
                 extra_import += ", District"

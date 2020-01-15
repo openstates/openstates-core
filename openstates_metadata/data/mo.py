@@ -16,13 +16,13 @@ MO = State(
         name="House",
         num_seats=163,
         title="Representative",
-        districts=simple_numbered_districts(163),
+        districts=simple_numbered_districts("lower", 163),
     ),
     upper=Chamber(
         chamber_type="upper",
         name="Senate",
         num_seats=34,
         title="Senator",
-        districts=simple_numbered_districts(34),
+        districts=simple_numbered_districts("upper", 34),
     ),
 )

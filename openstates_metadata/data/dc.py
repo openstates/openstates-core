@@ -17,16 +17,36 @@ DC = State(
         num_seats=13,
         title="Councilmember",
         districts=[
-            District("Ward 1", 1, "ocd-division/country:us/district:dc/ward:1"),
-            District("Ward 2", 1, "ocd-division/country:us/district:dc/ward:2"),
-            District("Ward 3", 1, "ocd-division/country:us/district:dc/ward:3"),
-            District("Ward 4", 1, "ocd-division/country:us/district:dc/ward:4"),
-            District("Ward 5", 1, "ocd-division/country:us/district:dc/ward:5"),
-            District("Ward 6", 1, "ocd-division/country:us/district:dc/ward:6"),
-            District("Ward 7", 1, "ocd-division/country:us/district:dc/ward:7"),
-            District("Ward 8", 1, "ocd-division/country:us/district:dc/ward:8"),
-            District("Chairman", 1, "ocd-division/country:us/district:dc"),
-            District("At-Large", 4, "ocd-division/country:us/district:dc"),
+            District(
+                "Ward 1", "legislature", 1, "ocd-division/country:us/district:dc/ward:1"
+            ),
+            District(
+                "Ward 2", "legislature", 1, "ocd-division/country:us/district:dc/ward:2"
+            ),
+            District(
+                "Ward 3", "legislature", 1, "ocd-division/country:us/district:dc/ward:3"
+            ),
+            District(
+                "Ward 4", "legislature", 1, "ocd-division/country:us/district:dc/ward:4"
+            ),
+            District(
+                "Ward 5", "legislature", 1, "ocd-division/country:us/district:dc/ward:5"
+            ),
+            District(
+                "Ward 6", "legislature", 1, "ocd-division/country:us/district:dc/ward:6"
+            ),
+            District(
+                "Ward 7", "legislature", 1, "ocd-division/country:us/district:dc/ward:7"
+            ),
+            District(
+                "Ward 8", "legislature", 1, "ocd-division/country:us/district:dc/ward:8"
+            ),
+            District(
+                "Chairman", "legislature", 1, "ocd-division/country:us/district:dc"
+            ),
+            District(
+                "At-Large", "legislature", 4, "ocd-division/country:us/district:dc"
+            ),
         ],
     ),
 )

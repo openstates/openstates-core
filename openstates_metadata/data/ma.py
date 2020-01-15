@@ -18,702 +18,962 @@ MA = State(
         title="Representative",
         districts=[
             District(
-                "Tenth Bristol", 1, "ocd-division/country:us/state:ma/sldl:10th_bristol"
+                "Tenth Bristol",
+                "lower",
+                1,
+                "ocd-division/country:us/state:ma/sldl:10th_bristol",
             ),
             District(
-                "Tenth Essex", 1, "ocd-division/country:us/state:ma/sldl:10th_essex"
+                "Tenth Essex",
+                "lower",
+                1,
+                "ocd-division/country:us/state:ma/sldl:10th_essex",
             ),
             District(
-                "Tenth Hampden", 1, "ocd-division/country:us/state:ma/sldl:10th_hampden"
+                "Tenth Hampden",
+                "lower",
+                1,
+                "ocd-division/country:us/state:ma/sldl:10th_hampden",
             ),
             District(
                 "Tenth Middlesex",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:10th_middlesex",
             ),
             District(
-                "Tenth Norfolk", 1, "ocd-division/country:us/state:ma/sldl:10th_norfolk"
+                "Tenth Norfolk",
+                "lower",
+                1,
+                "ocd-division/country:us/state:ma/sldl:10th_norfolk",
             ),
             District(
                 "Tenth Plymouth",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:10th_plymouth",
             ),
             District(
-                "Tenth Suffolk", 1, "ocd-division/country:us/state:ma/sldl:10th_suffolk"
+                "Tenth Suffolk",
+                "lower",
+                1,
+                "ocd-division/country:us/state:ma/sldl:10th_suffolk",
             ),
             District(
                 "Tenth Worcester",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:10th_worcester",
             ),
             District(
                 "Eleventh Bristol",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:11th_bristol",
             ),
             District(
-                "Eleventh Essex", 1, "ocd-division/country:us/state:ma/sldl:11th_essex"
+                "Eleventh Essex",
+                "lower",
+                1,
+                "ocd-division/country:us/state:ma/sldl:11th_essex",
             ),
             District(
                 "Eleventh Hampden",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:11th_hampden",
             ),
             District(
                 "Eleventh Middlesex",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:11th_middlesex",
             ),
             District(
                 "Eleventh Norfolk",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:11th_norfolk",
             ),
             District(
                 "Eleventh Plymouth",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:11th_plymouth",
             ),
             District(
                 "Eleventh Suffolk",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:11th_suffolk",
             ),
             District(
                 "Eleventh Worcester",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:11th_worcester",
             ),
             District(
                 "Twelfth Bristol",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:12th_bristol",
             ),
             District(
-                "Twelfth Essex", 1, "ocd-division/country:us/state:ma/sldl:12th_essex"
+                "Twelfth Essex",
+                "lower",
+                1,
+                "ocd-division/country:us/state:ma/sldl:12th_essex",
             ),
             District(
                 "Twelfth Hampden",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:12th_hampden",
             ),
             District(
                 "Twelfth Middlesex",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:12th_middlesex",
             ),
             District(
                 "Twelfth Norfolk",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:12th_norfolk",
             ),
             District(
                 "Twelfth Plymouth",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:12th_plymouth",
             ),
             District(
                 "Twelfth Suffolk",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:12th_suffolk",
             ),
             District(
                 "Twelfth Worcester",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:12th_worcester",
             ),
             District(
                 "Thirteenth Bristol",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:13th_bristol",
             ),
             District(
                 "Thirteenth Essex",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:13th_essex",
             ),
             District(
                 "Thirteenth Middlesex",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:13th_middlesex",
             ),
             District(
                 "Thirteenth Norfolk",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:13th_norfolk",
             ),
             District(
                 "Thirteenth Suffolk",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:13th_suffolk",
             ),
             District(
                 "Thirteenth Worcester",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:13th_worcester",
             ),
             District(
                 "Fourteenth Bristol",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:14th_bristol",
             ),
             District(
                 "Fourteenth Essex",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:14th_essex",
             ),
             District(
                 "Fourteenth Middlesex",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:14th_middlesex",
             ),
             District(
                 "Fourteenth Norfolk",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:14th_norfolk",
             ),
             District(
                 "Fourteenth Suffolk",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:14th_suffolk",
             ),
             District(
                 "Fourteenth Worcester",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:14th_worcester",
             ),
             District(
-                "Fifteenth Essex", 1, "ocd-division/country:us/state:ma/sldl:15th_essex"
+                "Fifteenth Essex",
+                "lower",
+                1,
+                "ocd-division/country:us/state:ma/sldl:15th_essex",
             ),
             District(
                 "Fifteenth Middlesex",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:15th_middlesex",
             ),
             District(
                 "Fifteenth Norfolk",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:15th_norfolk",
             ),
             District(
                 "Fifteenth Suffolk",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:15th_suffolk",
             ),
             District(
                 "Fifteenth Worcester",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:15th_worcester",
             ),
             District(
-                "Sixteenth Essex", 1, "ocd-division/country:us/state:ma/sldl:16th_essex"
+                "Sixteenth Essex",
+                "lower",
+                1,
+                "ocd-division/country:us/state:ma/sldl:16th_essex",
             ),
             District(
                 "Sixteenth Middlesex",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:16th_middlesex",
             ),
             District(
                 "Sixteenth Suffolk",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:16th_suffolk",
             ),
             District(
                 "Sixteenth Worcester",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:16th_worcester",
             ),
             District(
                 "Seventeenth Essex",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:17th_essex",
             ),
             District(
                 "Seventeenth Middlesex",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:17th_middlesex",
             ),
             District(
                 "Seventeenth Suffolk",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:17th_suffolk",
             ),
             District(
                 "Seventeenth Worcester",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:17th_worcester",
             ),
             District(
                 "Eighteenth Essex",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:18th_essex",
             ),
             District(
                 "Eighteenth Middlesex",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:18th_middlesex",
             ),
             District(
                 "Eighteenth Suffolk",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:18th_suffolk",
             ),
             District(
                 "Eighteenth Worcester",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:18th_worcester",
             ),
             District(
                 "Nineteenth Middlesex",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:19th_middlesex",
             ),
             District(
                 "Nineteenth Suffolk",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:19th_suffolk",
             ),
             District(
                 "First Barnstable",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:1st_barnstable",
             ),
             District(
                 "First Berkshire",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:1st_berkshire",
             ),
             District(
-                "First Bristol", 1, "ocd-division/country:us/state:ma/sldl:1st_bristol"
+                "First Bristol",
+                "lower",
+                1,
+                "ocd-division/country:us/state:ma/sldl:1st_bristol",
             ),
             District(
-                "First Essex", 1, "ocd-division/country:us/state:ma/sldl:1st_essex"
+                "First Essex",
+                "lower",
+                1,
+                "ocd-division/country:us/state:ma/sldl:1st_essex",
             ),
             District(
                 "First Franklin",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:1st_franklin",
             ),
             District(
-                "First Hampden", 1, "ocd-division/country:us/state:ma/sldl:1st_hampden"
+                "First Hampden",
+                "lower",
+                1,
+                "ocd-division/country:us/state:ma/sldl:1st_hampden",
             ),
             District(
                 "First Hampshire",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:1st_hampshire",
             ),
             District(
                 "First Middlesex",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:1st_middlesex",
             ),
             District(
-                "First Norfolk", 1, "ocd-division/country:us/state:ma/sldl:1st_norfolk"
+                "First Norfolk",
+                "lower",
+                1,
+                "ocd-division/country:us/state:ma/sldl:1st_norfolk",
             ),
             District(
                 "First Plymouth",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:1st_plymouth",
             ),
             District(
-                "First Suffolk", 1, "ocd-division/country:us/state:ma/sldl:1st_suffolk"
+                "First Suffolk",
+                "lower",
+                1,
+                "ocd-division/country:us/state:ma/sldl:1st_suffolk",
             ),
             District(
                 "First Worcester",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:1st_worcester",
             ),
             District(
                 "Twentieth Middlesex",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:20th_middlesex",
             ),
             District(
                 "Twenty-First Middlesex",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:21st_middlesex",
             ),
             District(
                 "Twenty-Second Middlesex",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:22nd_middlesex",
             ),
             District(
                 "Twenty-Third Middlesex",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:23rd_middlesex",
             ),
             District(
                 "Twenty-Fourth Middlesex",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:24th_middlesex",
             ),
             District(
                 "Twenty-Fifth Middlesex",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:25th_middlesex",
             ),
             District(
                 "Twenty-Sixth Middlesex",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:26th_middlesex",
             ),
             District(
                 "Twenty-Seventh Middlesex",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:27th_middlesex",
             ),
             District(
                 "Twenty-Eighth Middlesex",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:28th_middlesex",
             ),
             District(
                 "Twenty-Ninth Middlesex",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:29th_middlesex",
             ),
             District(
                 "Second Barnstable",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:2nd_barnstable",
             ),
             District(
                 "Second Berkshire",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:2nd_berkshire",
             ),
             District(
-                "Second Bristol", 1, "ocd-division/country:us/state:ma/sldl:2nd_bristol"
+                "Second Bristol",
+                "lower",
+                1,
+                "ocd-division/country:us/state:ma/sldl:2nd_bristol",
             ),
             District(
-                "Second Essex", 1, "ocd-division/country:us/state:ma/sldl:2nd_essex"
+                "Second Essex",
+                "lower",
+                1,
+                "ocd-division/country:us/state:ma/sldl:2nd_essex",
             ),
             District(
                 "Second Franklin",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:2nd_franklin",
             ),
             District(
-                "Second Hampden", 1, "ocd-division/country:us/state:ma/sldl:2nd_hampden"
+                "Second Hampden",
+                "lower",
+                1,
+                "ocd-division/country:us/state:ma/sldl:2nd_hampden",
             ),
             District(
                 "Second Hampshire",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:2nd_hampshire",
             ),
             District(
                 "Second Middlesex",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:2nd_middlesex",
             ),
             District(
-                "Second Norfolk", 1, "ocd-division/country:us/state:ma/sldl:2nd_norfolk"
+                "Second Norfolk",
+                "lower",
+                1,
+                "ocd-division/country:us/state:ma/sldl:2nd_norfolk",
             ),
             District(
                 "Second Plymouth",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:2nd_plymouth",
             ),
             District(
-                "Second Suffolk", 1, "ocd-division/country:us/state:ma/sldl:2nd_suffolk"
+                "Second Suffolk",
+                "lower",
+                1,
+                "ocd-division/country:us/state:ma/sldl:2nd_suffolk",
             ),
             District(
                 "Second Worcester",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:2nd_worcester",
             ),
             District(
                 "Thirtieth Middlesex",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:30th_middlesex",
             ),
             District(
                 "Thirty-First Middlesex",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:31st_middlesex",
             ),
             District(
                 "Thirty-Second Middlesex",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:32nd_middlesex",
             ),
             District(
                 "Thirty-Third Middlesex",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:33rd_middlesex",
             ),
             District(
                 "Thirty-Fourth Middlesex",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:34th_middlesex",
             ),
             District(
                 "Thirty-Fifth Middlesex",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:35th_middlesex",
             ),
             District(
                 "Thirty-Sixth Middlesex",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:36th_middlesex",
             ),
             District(
                 "Thirty-Seventh Middlesex",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:37th_middlesex",
             ),
             District(
                 "Third Barnstable",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:3rd_barnstable",
             ),
             District(
                 "Third Berkshire",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:3rd_berkshire",
             ),
             District(
-                "Third Bristol", 1, "ocd-division/country:us/state:ma/sldl:3rd_bristol"
+                "Third Bristol",
+                "lower",
+                1,
+                "ocd-division/country:us/state:ma/sldl:3rd_bristol",
             ),
             District(
-                "Third Essex", 1, "ocd-division/country:us/state:ma/sldl:3rd_essex"
+                "Third Essex",
+                "lower",
+                1,
+                "ocd-division/country:us/state:ma/sldl:3rd_essex",
             ),
             District(
-                "Third Hampden", 1, "ocd-division/country:us/state:ma/sldl:3rd_hampden"
+                "Third Hampden",
+                "lower",
+                1,
+                "ocd-division/country:us/state:ma/sldl:3rd_hampden",
             ),
             District(
                 "Third Hampshire",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:3rd_hampshire",
             ),
             District(
                 "Third Middlesex",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:3rd_middlesex",
             ),
             District(
-                "Third Norfolk", 1, "ocd-division/country:us/state:ma/sldl:3rd_norfolk"
+                "Third Norfolk",
+                "lower",
+                1,
+                "ocd-division/country:us/state:ma/sldl:3rd_norfolk",
             ),
             District(
                 "Third Plymouth",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:3rd_plymouth",
             ),
             District(
-                "Third Suffolk", 1, "ocd-division/country:us/state:ma/sldl:3rd_suffolk"
+                "Third Suffolk",
+                "lower",
+                1,
+                "ocd-division/country:us/state:ma/sldl:3rd_suffolk",
             ),
             District(
                 "Third Worcester",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:3rd_worcester",
             ),
             District(
                 "Fourth Barnstable",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:4th_barnstable",
             ),
             District(
                 "Fourth Berkshire",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:4th_berkshire",
             ),
             District(
-                "Fourth Bristol", 1, "ocd-division/country:us/state:ma/sldl:4th_bristol"
+                "Fourth Bristol",
+                "lower",
+                1,
+                "ocd-division/country:us/state:ma/sldl:4th_bristol",
             ),
             District(
-                "Fourth Essex", 1, "ocd-division/country:us/state:ma/sldl:4th_essex"
+                "Fourth Essex",
+                "lower",
+                1,
+                "ocd-division/country:us/state:ma/sldl:4th_essex",
             ),
             District(
-                "Fourth Hampden", 1, "ocd-division/country:us/state:ma/sldl:4th_hampden"
+                "Fourth Hampden",
+                "lower",
+                1,
+                "ocd-division/country:us/state:ma/sldl:4th_hampden",
             ),
             District(
                 "Fourth Middlesex",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:4th_middlesex",
             ),
             District(
-                "Fourth Norfolk", 1, "ocd-division/country:us/state:ma/sldl:4th_norfolk"
+                "Fourth Norfolk",
+                "lower",
+                1,
+                "ocd-division/country:us/state:ma/sldl:4th_norfolk",
             ),
             District(
                 "Fourth Plymouth",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:4th_plymouth",
             ),
             District(
-                "Fourth Suffolk", 1, "ocd-division/country:us/state:ma/sldl:4th_suffolk"
+                "Fourth Suffolk",
+                "lower",
+                1,
+                "ocd-division/country:us/state:ma/sldl:4th_suffolk",
             ),
             District(
                 "Fourth Worcester",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:4th_worcester",
             ),
             District(
                 "Fifth Barnstable",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:5th_barnstable",
             ),
             District(
-                "Fifth Bristol", 1, "ocd-division/country:us/state:ma/sldl:5th_bristol"
+                "Fifth Bristol",
+                "lower",
+                1,
+                "ocd-division/country:us/state:ma/sldl:5th_bristol",
             ),
             District(
-                "Fifth Essex", 1, "ocd-division/country:us/state:ma/sldl:5th_essex"
+                "Fifth Essex",
+                "lower",
+                1,
+                "ocd-division/country:us/state:ma/sldl:5th_essex",
             ),
             District(
-                "Fifth Hampden", 1, "ocd-division/country:us/state:ma/sldl:5th_hampden"
+                "Fifth Hampden",
+                "lower",
+                1,
+                "ocd-division/country:us/state:ma/sldl:5th_hampden",
             ),
             District(
                 "Fifth Middlesex",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:5th_middlesex",
             ),
             District(
-                "Fifth Norfolk", 1, "ocd-division/country:us/state:ma/sldl:5th_norfolk"
+                "Fifth Norfolk",
+                "lower",
+                1,
+                "ocd-division/country:us/state:ma/sldl:5th_norfolk",
             ),
             District(
                 "Fifth Plymouth",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:5th_plymouth",
             ),
             District(
-                "Fifth Suffolk", 1, "ocd-division/country:us/state:ma/sldl:5th_suffolk"
+                "Fifth Suffolk",
+                "lower",
+                1,
+                "ocd-division/country:us/state:ma/sldl:5th_suffolk",
             ),
             District(
                 "Fifth Worcester",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:5th_worcester",
             ),
             District(
-                "Sixth Bristol", 1, "ocd-division/country:us/state:ma/sldl:6th_bristol"
+                "Sixth Bristol",
+                "lower",
+                1,
+                "ocd-division/country:us/state:ma/sldl:6th_bristol",
             ),
             District(
-                "Sixth Essex", 1, "ocd-division/country:us/state:ma/sldl:6th_essex"
+                "Sixth Essex",
+                "lower",
+                1,
+                "ocd-division/country:us/state:ma/sldl:6th_essex",
             ),
             District(
-                "Sixth Hampden", 1, "ocd-division/country:us/state:ma/sldl:6th_hampden"
+                "Sixth Hampden",
+                "lower",
+                1,
+                "ocd-division/country:us/state:ma/sldl:6th_hampden",
             ),
             District(
                 "Sixth Middlesex",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:6th_middlesex",
             ),
             District(
-                "Sixth Norfolk", 1, "ocd-division/country:us/state:ma/sldl:6th_norfolk"
+                "Sixth Norfolk",
+                "lower",
+                1,
+                "ocd-division/country:us/state:ma/sldl:6th_norfolk",
             ),
             District(
                 "Sixth Plymouth",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:6th_plymouth",
             ),
             District(
-                "Sixth Suffolk", 1, "ocd-division/country:us/state:ma/sldl:6th_suffolk"
+                "Sixth Suffolk",
+                "lower",
+                1,
+                "ocd-division/country:us/state:ma/sldl:6th_suffolk",
             ),
             District(
                 "Sixth Worcester",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:6th_worcester",
             ),
             District(
                 "Seventh Bristol",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:7th_bristol",
             ),
             District(
-                "Seventh Essex", 1, "ocd-division/country:us/state:ma/sldl:7th_essex"
+                "Seventh Essex",
+                "lower",
+                1,
+                "ocd-division/country:us/state:ma/sldl:7th_essex",
             ),
             District(
                 "Seventh Hampden",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:7th_hampden",
             ),
             District(
                 "Seventh Middlesex",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:7th_middlesex",
             ),
             District(
                 "Seventh Norfolk",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:7th_norfolk",
             ),
             District(
                 "Seventh Plymouth",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:7th_plymouth",
             ),
             District(
                 "Seventh Suffolk",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:7th_suffolk",
             ),
             District(
                 "Seventh Worcester",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:7th_worcester",
             ),
             District(
-                "Eighth Bristol", 1, "ocd-division/country:us/state:ma/sldl:8th_bristol"
+                "Eighth Bristol",
+                "lower",
+                1,
+                "ocd-division/country:us/state:ma/sldl:8th_bristol",
             ),
             District(
-                "Eighth Essex", 1, "ocd-division/country:us/state:ma/sldl:8th_essex"
+                "Eighth Essex",
+                "lower",
+                1,
+                "ocd-division/country:us/state:ma/sldl:8th_essex",
             ),
             District(
-                "Eighth Hampden", 1, "ocd-division/country:us/state:ma/sldl:8th_hampden"
+                "Eighth Hampden",
+                "lower",
+                1,
+                "ocd-division/country:us/state:ma/sldl:8th_hampden",
             ),
             District(
                 "Eighth Middlesex",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:8th_middlesex",
             ),
             District(
-                "Eighth Norfolk", 1, "ocd-division/country:us/state:ma/sldl:8th_norfolk"
+                "Eighth Norfolk",
+                "lower",
+                1,
+                "ocd-division/country:us/state:ma/sldl:8th_norfolk",
             ),
             District(
                 "Eighth Plymouth",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:8th_plymouth",
             ),
             District(
-                "Eighth Suffolk", 1, "ocd-division/country:us/state:ma/sldl:8th_suffolk"
+                "Eighth Suffolk",
+                "lower",
+                1,
+                "ocd-division/country:us/state:ma/sldl:8th_suffolk",
             ),
             District(
                 "Eighth Worcester",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:8th_worcester",
             ),
             District(
-                "Ninth Bristol", 1, "ocd-division/country:us/state:ma/sldl:9th_bristol"
+                "Ninth Bristol",
+                "lower",
+                1,
+                "ocd-division/country:us/state:ma/sldl:9th_bristol",
             ),
             District(
-                "Ninth Essex", 1, "ocd-division/country:us/state:ma/sldl:9th_essex"
+                "Ninth Essex",
+                "lower",
+                1,
+                "ocd-division/country:us/state:ma/sldl:9th_essex",
             ),
             District(
-                "Ninth Hampden", 1, "ocd-division/country:us/state:ma/sldl:9th_hampden"
+                "Ninth Hampden",
+                "lower",
+                1,
+                "ocd-division/country:us/state:ma/sldl:9th_hampden",
             ),
             District(
                 "Ninth Middlesex",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:9th_middlesex",
             ),
             District(
-                "Ninth Norfolk", 1, "ocd-division/country:us/state:ma/sldl:9th_norfolk"
+                "Ninth Norfolk",
+                "lower",
+                1,
+                "ocd-division/country:us/state:ma/sldl:9th_norfolk",
             ),
             District(
                 "Ninth Plymouth",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:9th_plymouth",
             ),
             District(
-                "Ninth Suffolk", 1, "ocd-division/country:us/state:ma/sldl:9th_suffolk"
+                "Ninth Suffolk",
+                "lower",
+                1,
+                "ocd-division/country:us/state:ma/sldl:9th_suffolk",
             ),
             District(
                 "Ninth Worcester",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:9th_worcester",
             ),
             District(
                 "Barnstable, Dukes and Nantucket",
+                "lower",
                 1,
                 "ocd-division/country:us/state:ma/sldl:barnstable_dukes_and_nantucket",
             ),
@@ -727,187 +987,238 @@ MA = State(
         districts=[
             District(
                 "Bristol and Norfolk",
+                "upper",
                 1,
                 "ocd-division/country:us/state:ma/sldu:bristol_and_norfolk",
             ),
             District(
                 "Cape and Islands",
+                "upper",
                 1,
                 "ocd-division/country:us/state:ma/sldu:cape_and_islands",
             ),
             District(
                 "Fifth Middlesex",
+                "upper",
                 1,
                 "ocd-division/country:us/state:ma/sldu:5th_middlesex",
             ),
             District(
                 "First Bristol and Plymouth",
+                "upper",
                 1,
                 "ocd-division/country:us/state:ma/sldu:1st_bristol_and_plymouth",
             ),
             District(
-                "First Essex", 1, "ocd-division/country:us/state:ma/sldu:1st_essex"
+                "First Essex",
+                "upper",
+                1,
+                "ocd-division/country:us/state:ma/sldu:1st_essex",
             ),
             District(
                 "First Essex and Middlesex",
+                "upper",
                 1,
                 "ocd-division/country:us/state:ma/sldu:1st_essex_and_middlesex",
             ),
             District(
                 "First Hampden and Hampshire",
+                "upper",
                 1,
                 "ocd-division/country:us/state:ma/sldu:1st_hampden_and_hampshire",
             ),
             District(
                 "First Middlesex",
+                "upper",
                 1,
                 "ocd-division/country:us/state:ma/sldu:1st_middlesex",
             ),
             District(
                 "First Middlesex and Norfolk",
+                "upper",
                 1,
                 "ocd-division/country:us/state:ma/sldu:1st_middlesex_and_norfolk",
             ),
             District(
                 "First Plymouth and Bristol",
+                "upper",
                 1,
                 "ocd-division/country:us/state:ma/sldu:1st_plymouth_and_bristol",
             ),
             District(
-                "First Suffolk", 1, "ocd-division/country:us/state:ma/sldu:1st_suffolk"
+                "First Suffolk",
+                "upper",
+                1,
+                "ocd-division/country:us/state:ma/sldu:1st_suffolk",
             ),
             District(
                 "First Suffolk and Middlesex",
+                "upper",
                 1,
                 "ocd-division/country:us/state:ma/sldu:1st_suffolk_and_middlesex",
             ),
             District(
                 "First Worcester",
+                "upper",
                 1,
                 "ocd-division/country:us/state:ma/sldu:1st_worcester",
             ),
             District(
                 "Fourth Middlesex",
+                "upper",
                 1,
                 "ocd-division/country:us/state:ma/sldu:4th_middlesex",
             ),
-            District("Hampden", 1, "ocd-division/country:us/state:ma/sldu:hampden"),
+            District(
+                "Hampden", "upper", 1, "ocd-division/country:us/state:ma/sldu:hampden"
+            ),
             District(
                 "Berkshire, Hampshire, Franklin and Hampden",
+                "upper",
                 1,
                 "ocd-division/country:us/state:ma/sldu:berkshire_hampshire_franklin_and_hampden",
             ),
             District(
                 "Middlesex and Suffolk",
+                "upper",
                 1,
                 "ocd-division/country:us/state:ma/sldu:middlesex_and_suffolk",
             ),
             District(
                 "Middlesex and Worcester",
+                "upper",
                 1,
                 "ocd-division/country:us/state:ma/sldu:middlesex_and_worcester",
             ),
             District(
                 "Norfolk, Bristol and Middlesex",
+                "upper",
                 1,
                 "ocd-division/country:us/state:ma/sldu:norfolk_bristol_and_middlesex",
             ),
             District(
                 "Norfolk, Bristol and Plymouth",
+                "upper",
                 1,
                 "ocd-division/country:us/state:ma/sldu:norfolk_bristol_and_plymouth",
             ),
             District(
                 "Norfolk and Plymouth",
+                "upper",
                 1,
                 "ocd-division/country:us/state:ma/sldu:norfolk_and_plymouth",
             ),
             District(
                 "Norfolk and Suffolk",
+                "upper",
                 1,
                 "ocd-division/country:us/state:ma/sldu:norfolk_and_suffolk",
             ),
             District(
                 "Plymouth and Barnstable",
+                "upper",
                 1,
                 "ocd-division/country:us/state:ma/sldu:plymouth_and_barnstable",
             ),
             District(
                 "Plymouth and Norfolk",
+                "upper",
                 1,
                 "ocd-division/country:us/state:ma/sldu:plymouth_and_norfolk",
             ),
             District(
                 "Second Bristol and Plymouth",
+                "upper",
                 1,
                 "ocd-division/country:us/state:ma/sldu:2nd_bristol_and_plymouth",
             ),
             District(
-                "Second Essex", 1, "ocd-division/country:us/state:ma/sldu:2nd_essex"
+                "Second Essex",
+                "upper",
+                1,
+                "ocd-division/country:us/state:ma/sldu:2nd_essex",
             ),
             District(
                 "Second Essex and Middlesex",
+                "upper",
                 1,
                 "ocd-division/country:us/state:ma/sldu:2nd_essex_and_middlesex",
             ),
             District(
                 "Second Hampden and Hampshire",
+                "upper",
                 1,
                 "ocd-division/country:us/state:ma/sldu:2nd_hampden_and_hampshire",
             ),
             District(
                 "Second Middlesex",
+                "upper",
                 1,
                 "ocd-division/country:us/state:ma/sldu:2nd_middlesex",
             ),
             District(
                 "Second Middlesex and Norfolk",
+                "upper",
                 1,
                 "ocd-division/country:us/state:ma/sldu:2nd_middlesex_and_norfolk",
             ),
             District(
                 "Second Plymouth and Bristol",
+                "upper",
                 1,
                 "ocd-division/country:us/state:ma/sldu:2nd_plymouth_and_bristol",
             ),
             District(
-                "Second Suffolk", 1, "ocd-division/country:us/state:ma/sldu:2nd_suffolk"
+                "Second Suffolk",
+                "upper",
+                1,
+                "ocd-division/country:us/state:ma/sldu:2nd_suffolk",
             ),
             District(
                 "Second Suffolk and Middlesex",
+                "upper",
                 1,
                 "ocd-division/country:us/state:ma/sldu:2nd_suffolk_and_middlesex",
             ),
             District(
                 "Second Worcester",
+                "upper",
                 1,
                 "ocd-division/country:us/state:ma/sldu:2nd_worcester",
             ),
             District(
-                "Third Essex", 1, "ocd-division/country:us/state:ma/sldu:3rd_essex"
+                "Third Essex",
+                "upper",
+                1,
+                "ocd-division/country:us/state:ma/sldu:3rd_essex",
             ),
             District(
                 "Third Middlesex",
+                "upper",
                 1,
                 "ocd-division/country:us/state:ma/sldu:3rd_middlesex",
             ),
             District(
                 "Worcester and Middlesex",
+                "upper",
                 1,
                 "ocd-division/country:us/state:ma/sldu:worcester_and_middlesex",
             ),
             District(
                 "Worcester and Norfolk",
+                "upper",
                 1,
                 "ocd-division/country:us/state:ma/sldu:worcester_and_norfolk",
             ),
             District(
                 "Worcester, Hampden, Hampshire and Middlesex",
+                "upper",
                 1,
                 "ocd-division/country:us/state:ma/sldu:worcester_hampden_hampshire_and_middlesex",
             ),
             District(
                 "Hampshire, Franklin and Worcester",
+                "upper",
                 1,
                 "ocd-division/country:us/state:ma/sldu:hampshire_franklin_and_worcester",
             ),

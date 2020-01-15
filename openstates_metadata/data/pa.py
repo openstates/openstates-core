@@ -16,13 +16,13 @@ PA = State(
         name="House",
         num_seats=203,
         title="Representative",
-        districts=simple_numbered_districts(203),
+        districts=simple_numbered_districts("lower", 203),
     ),
     upper=Chamber(
         chamber_type="upper",
         name="Senate",
         num_seats=50,
         title="Senator",
-        districts=simple_numbered_districts(50),
+        districts=simple_numbered_districts("upper", 50),
     ),
 )

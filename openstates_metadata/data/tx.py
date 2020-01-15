@@ -16,13 +16,13 @@ TX = State(
         name="House",
         num_seats=150,
         title="Representative",
-        districts=simple_numbered_districts(150),
+        districts=simple_numbered_districts("lower", 150),
     ),
     upper=Chamber(
         chamber_type="upper",
         name="Senate",
         num_seats=31,
         title="Senator",
-        districts=simple_numbered_districts(31),
+        districts=simple_numbered_districts("upper", 31),
     ),
 )

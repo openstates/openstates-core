@@ -16,13 +16,13 @@ AR = State(
         name="House",
         num_seats=100,
         title="Representative",
-        districts=simple_numbered_districts(100),
+        districts=simple_numbered_districts("lower", 100),
     ),
     upper=Chamber(
         chamber_type="upper",
         name="Senate",
         num_seats=35,
         title="Senator",
-        districts=simple_numbered_districts(35),
+        districts=simple_numbered_districts("upper", 35),
     ),
 )

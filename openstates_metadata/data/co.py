@@ -16,13 +16,13 @@ CO = State(
         name="House",
         num_seats=65,
         title="Representative",
-        districts=simple_numbered_districts(65),
+        districts=simple_numbered_districts("lower", 65),
     ),
     upper=Chamber(
         chamber_type="upper",
         name="Senate",
         num_seats=35,
         title="Senator",
-        districts=simple_numbered_districts(35),
+        districts=simple_numbered_districts("upper", 35),
     ),
 )

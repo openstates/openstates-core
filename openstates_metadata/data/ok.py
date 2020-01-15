@@ -16,13 +16,13 @@ OK = State(
         name="House",
         num_seats=101,
         title="Representative",
-        districts=simple_numbered_districts(101),
+        districts=simple_numbered_districts("lower", 101),
     ),
     upper=Chamber(
         chamber_type="upper",
         name="Senate",
         num_seats=48,
         title="Senator",
-        districts=simple_numbered_districts(48),
+        districts=simple_numbered_districts("upper", 48),
     ),
 )

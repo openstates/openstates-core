@@ -25,6 +25,7 @@ def test_district_numbers():
             assert state.legislature.num_seats == sum(
                 d.num_seats for d in state.legislature.districts
             )
+            assert state.legislature.num_seats > 0
         else:
             assert state.upper.num_seats == sum(
                 d.num_seats for d in state.upper.districts
@@ -32,8 +33,26 @@ def test_district_numbers():
             assert state.lower.num_seats == sum(
                 d.num_seats for d in state.lower.districts
             )
+            assert state.lower.num_seats > state.upper.num_seats > 10
 
 
 def test_simple_numbered_districts():
     assert NC.lower.districts[0].name == "1"
     assert NC.lower.districts[0].num_seats == 1
+    assert NC.lower.districts[-1].name == "120"
+    assert NC.lower.districts[0].num_seats == 1
+
+
+def test_everything_has_division_id():
+    for state in STATES:
+        if state.unicameral:
+            for d in state.legislature.districts:
+                assert d.num_seats
+                assert d.division_id
+        else:
+            for d in state.lower.districts:
+                assert d.num_seats
+                assert d.division_id.startswith("{state.division_id}/sldl:")
+            for d in state.upper.districts:
+                assert d.num_seats
+                assert d.division_id.startswith("{state.division_id}/sldu:")

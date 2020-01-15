@@ -2,11 +2,19 @@ import attr
 import typing
 
 
-@attr.s(auto_attribs=True)
+@attr.s
 class District:
-    name: str
-    num_seats: int = 1
-    division_id: str = None
+    name = attr.ib()
+    chamber_type = attr.ib()
+    num_seats = attr.ib(default=1)
+    division_id = attr.ib()
+
+    @division_id.default
+    def _default_div_id(self):
+        # default is parent/sld[ul]:prefix
+        prefix = "sldl" if self.chamber_type == "lower" else "sldu"
+        slug = self.name.lower().replace(" ", "_")
+        return f"TODOparent/{prefix}:{slug}"
 
 
 @attr.s(auto_attribs=True)
@@ -35,5 +43,5 @@ class State:
     legislature: Chamber = None
 
 
-def simple_numbered_districts(total, *, num_seats=1):
-    return [District(str(n), num_seats) for n in range(1, total + 1)]
+def simple_numbered_districts(chamber_type, total, *, num_seats=1):
+    return [District(str(n), chamber_type, num_seats) for n in range(1, total + 1)]

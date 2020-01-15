@@ -16,13 +16,13 @@ WI = State(
         name="Assembly",
         num_seats=99,
         title="Representative",
-        districts=simple_numbered_districts(99),
+        districts=simple_numbered_districts("lower", 99),
     ),
     upper=Chamber(
         chamber_type="upper",
         name="Senate",
         num_seats=33,
         title="Senator",
-        districts=simple_numbered_districts(33),
+        districts=simple_numbered_districts("upper", 33),
     ),
 )

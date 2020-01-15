@@ -16,13 +16,13 @@ FL = State(
         name="House",
         num_seats=120,
         title="Representative",
-        districts=simple_numbered_districts(120),
+        districts=simple_numbered_districts("lower", 120),
     ),
     upper=Chamber(
         chamber_type="upper",
         name="Senate",
         num_seats=40,
         title="Senator",
-        districts=simple_numbered_districts(40),
+        districts=simple_numbered_districts("upper", 40),
     ),
 )
