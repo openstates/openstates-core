@@ -1,4 +1,4 @@
-from ..models import State, Chamber, District, simple_numbered_districts
+from ..models import State, Chamber, simple_numbered_districts
 
 AZ = State(
     name="Arizona",
@@ -16,38 +16,9 @@ AZ = State(
         name="House",
         num_seats=60,
         title="Representative",
-        districts=[
-            District("1", "lower", 2, "ocd-division/country:us/state:az/sldl:1"),
-            District("2", "lower", 2, "ocd-division/country:us/state:az/sldl:2"),
-            District("3", "lower", 2, "ocd-division/country:us/state:az/sldl:3"),
-            District("4", "lower", 2, "ocd-division/country:us/state:az/sldl:4"),
-            District("5", "lower", 2, "ocd-division/country:us/state:az/sldl:5"),
-            District("6", "lower", 2, "ocd-division/country:us/state:az/sldl:6"),
-            District("7", "lower", 2, "ocd-division/country:us/state:az/sldl:7"),
-            District("8", "lower", 2, "ocd-division/country:us/state:az/sldl:8"),
-            District("9", "lower", 2, "ocd-division/country:us/state:az/sldl:9"),
-            District("10", "lower", 2, "ocd-division/country:us/state:az/sldl:10"),
-            District("11", "lower", 2, "ocd-division/country:us/state:az/sldl:11"),
-            District("12", "lower", 2, "ocd-division/country:us/state:az/sldl:12"),
-            District("13", "lower", 2, "ocd-division/country:us/state:az/sldl:13"),
-            District("14", "lower", 2, "ocd-division/country:us/state:az/sldl:14"),
-            District("15", "lower", 2, "ocd-division/country:us/state:az/sldl:15"),
-            District("16", "lower", 2, "ocd-division/country:us/state:az/sldl:16"),
-            District("17", "lower", 2, "ocd-division/country:us/state:az/sldl:17"),
-            District("18", "lower", 2, "ocd-division/country:us/state:az/sldl:18"),
-            District("19", "lower", 2, "ocd-division/country:us/state:az/sldl:19"),
-            District("20", "lower", 2, "ocd-division/country:us/state:az/sldl:20"),
-            District("21", "lower", 2, "ocd-division/country:us/state:az/sldl:21"),
-            District("22", "lower", 2, "ocd-division/country:us/state:az/sldl:22"),
-            District("23", "lower", 2, "ocd-division/country:us/state:az/sldl:23"),
-            District("24", "lower", 2, "ocd-division/country:us/state:az/sldl:24"),
-            District("25", "lower", 2, "ocd-division/country:us/state:az/sldl:25"),
-            District("26", "lower", 2, "ocd-division/country:us/state:az/sldl:26"),
-            District("27", "lower", 2, "ocd-division/country:us/state:az/sldl:27"),
-            District("28", "lower", 2, "ocd-division/country:us/state:az/sldl:28"),
-            District("29", "lower", 2, "ocd-division/country:us/state:az/sldl:29"),
-            District("30", "lower", 2, "ocd-division/country:us/state:az/sldl:30"),
-        ],
+        districts=simple_numbered_districts(
+            "ocd-division/country:us/state:az", "lower", 30, num_seats=2,
+        ),
     ),
     upper=Chamber(
         chamber_type="upper",
