@@ -35,6 +35,13 @@ class State:
     upper: Chamber = None
     legislature: Chamber = None
 
+    @property
+    def chambers(self):
+        if self.unicameral:
+            return [self.legislature]
+        else:
+            return [self.lower, self.upper]
+
 
 def simple_numbered_districts(parent_id, chamber_type, total, *, num_seats=1):
     prefix = "sldl" if chamber_type == "lower" else "sldu"

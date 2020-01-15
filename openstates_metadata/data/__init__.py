@@ -106,3 +106,6 @@ STATES = [
     WV,
     WY,
 ]
+
+STATES_BY_ABBR = {s.abbr: s for s in STATES}
+STATES_BY_JID = {s.jurisdiction_id: s for s in STATES}
