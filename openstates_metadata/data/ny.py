@@ -16,13 +16,17 @@ NY = State(
         name="Assembly",
         num_seats=150,
         title="Assembly Member",
-        districts=simple_numbered_districts("lower", 150),
+        districts=simple_numbered_districts(
+            "ocd-division/country:us/state:ny", "lower", 150
+        ),
     ),
     upper=Chamber(
         chamber_type="upper",
         name="Senate",
         num_seats=63,
         title="Senator",
-        districts=simple_numbered_districts("upper", 63),
+        districts=simple_numbered_districts(
+            "ocd-division/country:us/state:ny", "upper", 63
+        ),
     ),
 )

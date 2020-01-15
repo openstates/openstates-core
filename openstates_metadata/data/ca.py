@@ -16,13 +16,17 @@ CA = State(
         name="Assembly",
         num_seats=80,
         title="Assemblymember",
-        districts=simple_numbered_districts("lower", 80),
+        districts=simple_numbered_districts(
+            "ocd-division/country:us/state:ca", "lower", 80
+        ),
     ),
     upper=Chamber(
         chamber_type="upper",
         name="Senate",
         num_seats=40,
         title="Senator",
-        districts=simple_numbered_districts("upper", 40),
+        districts=simple_numbered_districts(
+            "ocd-division/country:us/state:ca", "upper", 40
+        ),
     ),
 )

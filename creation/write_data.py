@@ -30,15 +30,20 @@ def seats_to_args(seats):
         return sum(seats.values()), seats
 
 
-def make_districts(chamber_type, num, seats, division_ids):
+def slugify(name):
+    return name.lower().replace(" ", "_")
+
+
+def make_districts(parent_id, chamber_type, num, seats, division_ids):
     if not seats and not division_ids:
-        return f"simple_numbered_districts('{chamber_type}', {num})"
+        return f"simple_numbered_districts('{parent_id}', '{chamber_type}', {num})"
     elif seats and not division_ids:
+        prefix = "sldl" if chamber_type == "lower" else "sldu"
         return (
             "["
             + "\n".join(
                 (
-                    f'District("{seat}", "{chamber_type}", {num}),'
+                    f'District("{seat}", "{chamber_type}", {num}, "{parent_id}/{prefix}:{slugify(seat)}"),'
                     for seat, num in seats.items()
                 )
             )
@@ -66,6 +71,8 @@ if __name__ == "__main__":
     for state in us.STATES + [us.states.lookup("PR")]:
 
         obj = settings[state.abbr.lower()]
+        j = jurisdictions_by_name[state.name]
+
         leg_name = obj.pop("legislature_name")
         unicameral = state.abbr in ("DC", "NE")
         extra_import = ""
@@ -81,10 +88,10 @@ if __name__ == "__main__":
             upper_div_ids = obj.pop("upper_division_ids", None)
 
             lower_ds = make_districts(
-                "lower", num_lower_seats, lower_seats, lower_div_ids
+                j["division_id"], "lower", num_lower_seats, lower_seats, lower_div_ids
             )
             upper_ds = make_districts(
-                "upper", num_upper_seats, upper_seats, upper_div_ids
+                j["division_id"], "upper", num_upper_seats, upper_seats, upper_div_ids
             )
 
             if "District" in lower_ds + upper_ds:
@@ -102,7 +109,9 @@ if __name__ == "__main__":
             num_leg_seats, leg_seats = seats_to_args(obj.pop("legislature_seats"))
             leg_title = obj.pop("legislature_title")
             div_ids = obj.pop("legislature_division_ids", None)
-            districts = make_districts("legislature", num_leg_seats, leg_seats, div_ids)
+            districts = make_districts(
+                j["division_id"], "legislature", num_leg_seats, leg_seats, div_ids
+            )
 
             if "District" in districts:
                 extra_import += ", District"
@@ -118,8 +127,6 @@ if __name__ == "__main__":
         obj.pop("vacancies", None)
         if obj:
             raise Exception(obj)
-
-        j = jurisdictions_by_name[state.name]
 
         if state.abbr == "OR":
             fname = f"openstates_metadata/data/ore.py"

@@ -16,13 +16,17 @@ KS = State(
         name="House",
         num_seats=125,
         title="Representative",
-        districts=simple_numbered_districts("lower", 125),
+        districts=simple_numbered_districts(
+            "ocd-division/country:us/state:ks", "lower", 125
+        ),
     ),
     upper=Chamber(
         chamber_type="upper",
         name="Senate",
         num_seats=40,
         title="Senator",
-        districts=simple_numbered_districts("upper", 40),
+        districts=simple_numbered_districts(
+            "ocd-division/country:us/state:ks", "upper", 40
+        ),
     ),
 )

@@ -16,13 +16,17 @@ MI = State(
         name="House",
         num_seats=110,
         title="Representative",
-        districts=simple_numbered_districts("lower", 110),
+        districts=simple_numbered_districts(
+            "ocd-division/country:us/state:mi", "lower", 110
+        ),
     ),
     upper=Chamber(
         chamber_type="upper",
         name="Senate",
         num_seats=38,
         title="Senator",
-        districts=simple_numbered_districts("upper", 38),
+        districts=simple_numbered_districts(
+            "ocd-division/country:us/state:mi", "upper", 38
+        ),
     ),
 )

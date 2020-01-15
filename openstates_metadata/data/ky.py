@@ -16,13 +16,17 @@ KY = State(
         name="House",
         num_seats=100,
         title="Representative",
-        districts=simple_numbered_districts("lower", 100),
+        districts=simple_numbered_districts(
+            "ocd-division/country:us/state:ky", "lower", 100
+        ),
     ),
     upper=Chamber(
         chamber_type="upper",
         name="Senate",
         num_seats=38,
         title="Senator",
-        districts=simple_numbered_districts("upper", 38),
+        districts=simple_numbered_districts(
+            "ocd-division/country:us/state:ky", "upper", 38
+        ),
     ),
 )

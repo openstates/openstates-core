@@ -16,13 +16,17 @@ GA = State(
         name="House",
         num_seats=180,
         title="Representative",
-        districts=simple_numbered_districts("lower", 180),
+        districts=simple_numbered_districts(
+            "ocd-division/country:us/state:ga", "lower", 180
+        ),
     ),
     upper=Chamber(
         chamber_type="upper",
         name="Senate",
         num_seats=56,
         title="Senator",
-        districts=simple_numbered_districts("upper", 56),
+        districts=simple_numbered_districts(
+            "ocd-division/country:us/state:ga", "upper", 56
+        ),
     ),
 )

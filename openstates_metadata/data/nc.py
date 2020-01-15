@@ -16,13 +16,17 @@ NC = State(
         name="House",
         num_seats=120,
         title="Representative",
-        districts=simple_numbered_districts("lower", 120),
+        districts=simple_numbered_districts(
+            "ocd-division/country:us/state:nc", "lower", 120
+        ),
     ),
     upper=Chamber(
         chamber_type="upper",
         name="Senate",
         num_seats=50,
         title="Senator",
-        districts=simple_numbered_districts("upper", 50),
+        districts=simple_numbered_districts(
+            "ocd-division/country:us/state:nc", "upper", 50
+        ),
     ),
 )

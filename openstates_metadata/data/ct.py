@@ -16,13 +16,17 @@ CT = State(
         name="House",
         num_seats=151,
         title="Representative",
-        districts=simple_numbered_districts("lower", 151),
+        districts=simple_numbered_districts(
+            "ocd-division/country:us/state:ct", "lower", 151
+        ),
     ),
     upper=Chamber(
         chamber_type="upper",
         name="Senate",
         num_seats=36,
         title="Senator",
-        districts=simple_numbered_districts("upper", 36),
+        districts=simple_numbered_districts(
+            "ocd-division/country:us/state:ct", "upper", 36
+        ),
     ),
 )

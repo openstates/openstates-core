@@ -16,13 +16,17 @@ ME = State(
         name="House",
         num_seats=151,
         title="Representative",
-        districts=simple_numbered_districts("lower", 151),
+        districts=simple_numbered_districts(
+            "ocd-division/country:us/state:me", "lower", 151
+        ),
     ),
     upper=Chamber(
         chamber_type="upper",
         name="Senate",
         num_seats=35,
         title="Senator",
-        districts=simple_numbered_districts("upper", 35),
+        districts=simple_numbered_districts(
+            "ocd-division/country:us/state:me", "upper", 35
+        ),
     ),
 )

@@ -16,13 +16,17 @@ MS = State(
         name="House",
         num_seats=122,
         title="Representative",
-        districts=simple_numbered_districts("lower", 122),
+        districts=simple_numbered_districts(
+            "ocd-division/country:us/state:ms", "lower", 122
+        ),
     ),
     upper=Chamber(
         chamber_type="upper",
         name="Senate",
         num_seats=52,
         title="Senator",
-        districts=simple_numbered_districts("upper", 52),
+        districts=simple_numbered_districts(
+            "ocd-division/country:us/state:ms", "upper", 52
+        ),
     ),
 )

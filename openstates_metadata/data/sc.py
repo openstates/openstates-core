@@ -16,13 +16,17 @@ SC = State(
         name="House",
         num_seats=124,
         title="Representative",
-        districts=simple_numbered_districts("lower", 124),
+        districts=simple_numbered_districts(
+            "ocd-division/country:us/state:sc", "lower", 124
+        ),
     ),
     upper=Chamber(
         chamber_type="upper",
         name="Senate",
         num_seats=46,
         title="Senator",
-        districts=simple_numbered_districts("upper", 46),
+        districts=simple_numbered_districts(
+            "ocd-division/country:us/state:sc", "upper", 46
+        ),
     ),
 )

@@ -16,13 +16,17 @@ LA = State(
         name="House",
         num_seats=105,
         title="Representative",
-        districts=simple_numbered_districts("lower", 105),
+        districts=simple_numbered_districts(
+            "ocd-division/country:us/state:la", "lower", 105
+        ),
     ),
     upper=Chamber(
         chamber_type="upper",
         name="Senate",
         num_seats=39,
         title="Senator",
-        districts=simple_numbered_districts("upper", 39),
+        districts=simple_numbered_districts(
+            "ocd-division/country:us/state:la", "upper", 39
+        ),
     ),
 )

@@ -16,13 +16,17 @@ NV = State(
         name="Assembly",
         num_seats=42,
         title="Assembly Member",
-        districts=simple_numbered_districts("lower", 42),
+        districts=simple_numbered_districts(
+            "ocd-division/country:us/state:nv", "lower", 42
+        ),
     ),
     upper=Chamber(
         chamber_type="upper",
         name="Senate",
         num_seats=21,
         title="Senator",
-        districts=simple_numbered_districts("upper", 21),
+        districts=simple_numbered_districts(
+            "ocd-division/country:us/state:nv", "upper", 21
+        ),
     ),
 )

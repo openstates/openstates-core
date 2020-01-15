@@ -16,6 +16,8 @@ NE = State(
         name="Nebraska Legislature",
         num_seats=49,
         title="Senator",
-        districts=simple_numbered_districts("legislature", 49),
+        districts=simple_numbered_districts(
+            "ocd-division/country:us/state:ne", "legislature", 49
+        ),
     ),
 )

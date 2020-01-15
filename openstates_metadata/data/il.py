@@ -16,13 +16,17 @@ IL = State(
         name="House",
         num_seats=118,
         title="Representative",
-        districts=simple_numbered_districts("lower", 118),
+        districts=simple_numbered_districts(
+            "ocd-division/country:us/state:il", "lower", 118
+        ),
     ),
     upper=Chamber(
         chamber_type="upper",
         name="Senate",
         num_seats=59,
         title="Senator",
-        districts=simple_numbered_districts("upper", 59),
+        districts=simple_numbered_districts(
+            "ocd-division/country:us/state:il", "upper", 59
+        ),
     ),
 )

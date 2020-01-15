@@ -16,13 +16,17 @@ HI = State(
         name="House",
         num_seats=51,
         title="Representative",
-        districts=simple_numbered_districts("lower", 51),
+        districts=simple_numbered_districts(
+            "ocd-division/country:us/state:hi", "lower", 51
+        ),
     ),
     upper=Chamber(
         chamber_type="upper",
         name="Senate",
         num_seats=25,
         title="Senator",
-        districts=simple_numbered_districts("upper", 25),
+        districts=simple_numbered_districts(
+            "ocd-division/country:us/state:hi", "upper", 25
+        ),
     ),
 )

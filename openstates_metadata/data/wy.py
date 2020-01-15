@@ -16,13 +16,17 @@ WY = State(
         name="House",
         num_seats=60,
         title="Representative",
-        districts=simple_numbered_districts("lower", 60),
+        districts=simple_numbered_districts(
+            "ocd-division/country:us/state:wy", "lower", 60
+        ),
     ),
     upper=Chamber(
         chamber_type="upper",
         name="Senate",
         num_seats=30,
         title="Senator",
-        districts=simple_numbered_districts("upper", 30),
+        districts=simple_numbered_districts(
+            "ocd-division/country:us/state:wy", "upper", 30
+        ),
     ),
 )
