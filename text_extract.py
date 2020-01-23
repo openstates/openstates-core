@@ -36,7 +36,7 @@ def init_django():
     DATABASE_URL = os.environ.get("DATABASE_URL", "postgis://localhost/openstatesorg")
     DATABASES = {"default": dj_database_url.parse(DATABASE_URL)}
     settings.configure(
-        DATABASES=DATABASES, INSTALLED_APPS=("opencivicdata.core", "opencivicdata.legislative")
+        DATABASES=DATABASES, INSTALLED_APPS=("opencivicdata.core", "opencivicdata.legislative"),
     )
     django.setup()
 
@@ -318,14 +318,14 @@ def update(state, n, clear_errors, checkpoint):
         aggregates = missing_search.values("legislative_session__jurisdiction__name").annotate(
             count=Count("id")
         )
-        bail = False
         for agg in aggregates:
             state_name = agg["legislative_session__jurisdiction__name"]
             if agg["count"] > MAX_UPDATE:
-                click.secho(f"Too many bills to update for {state_name}: {agg['count']}", fg="red")
-                bail = True
-        if bail:
-            sys.exit(1)
+                click.secho(
+                    f"Too many bills to update for {state_name}: {agg['count']}, skipping",
+                    fg="red",
+                )
+                all_bills = all_bills.exclude(legislative_session__jurisdiction__name=state_name)
         print(f"{len(missing_search)} missing, updating")
     else:
         print(f"{state}: {len(all_bills)} bills, {len(missing_search)} without search results")
