@@ -43,6 +43,12 @@ class State:
         else:
             return [self.lower, self.upper]
 
+    @property
+    def legacy_districts(self):
+        from .data.legacy_districts import legacy_districts
+
+        return legacy_districts.get(self.abbr.lower(), [])
+
 
 def simple_numbered_districts(parent_id, chamber_type, total, *, num_seats=1):
     prefix = "sldl" if chamber_type == "lower" else "sldu"

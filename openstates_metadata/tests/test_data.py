@@ -1,4 +1,4 @@
-from ..data import STATES, NC
+from ..data import STATES, NC, VT
 
 
 def test_basics():
@@ -68,3 +68,8 @@ def test_everything_has_organization_id():
         else:
             assert len(state.lower.organization_id) == 53
             assert len(state.upper.organization_id) == 53
+
+
+def test_legacy_ids():
+    assert not NC.legacy_districts
+    assert len(VT.legacy_districts) == 38
