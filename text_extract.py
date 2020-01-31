@@ -314,7 +314,7 @@ def update(state, n, clear_errors, checkpoint):
 
     missing_search = all_bills.filter(searchable__isnull=True)
     if state == "all":
-        MAX_UPDATE = 500
+        MAX_UPDATE = 1000
         aggregates = missing_search.values("legislative_session__jurisdiction__name").annotate(
             count=Count("id")
         )
@@ -325,7 +325,9 @@ def update(state, n, clear_errors, checkpoint):
                     f"Too many bills to update for {state_name}: {agg['count']}, skipping",
                     fg="red",
                 )
-                all_bills = all_bills.exclude(legislative_session__jurisdiction__name=state_name)
+                missing_search = missing_search.exclude(
+                    legislative_session__jurisdiction__name=state_name
+                )
         print(f"{len(missing_search)} missing, updating")
     else:
         print(f"{state}: {len(all_bills)} bills, {len(missing_search)} without search results")
