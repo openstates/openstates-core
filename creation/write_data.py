@@ -1,6 +1,7 @@
 import us
 import csv
 import yaml
+from collections import defaultdict
 
 
 def calc_seats(data):
@@ -69,9 +70,13 @@ def make_districts(parent_id, chamber_type, num, seats, division_ids):
 
 
 if __name__ == "__main__":
-    settings = yaml.load(open(f"../people/settings.yml"))
+    settings = yaml.load(open(f"creation/settings.yml"))
     jurisdictions = csv.DictReader(open("creation/jurisdictions.csv"))
     jurisdictions_by_name = {j["state"]: j for j in jurisdictions}
+    org_ids = defaultdict(dict)
+    for org in csv.DictReader(open("creation/orgs.csv")):
+        if org["jurisdiction_id"]:
+            org_ids[org["jurisdiction_id"]][org["classification"]] = org["id"]
 
     for state in us.STATES + [us.states.lookup("PR")]:
 
@@ -99,15 +104,18 @@ if __name__ == "__main__":
                 j["division_id"], "upper", num_upper_seats, upper_seats, upper_div_ids
             )
 
+            lower_org_id = org_ids[j["jurisdiction_id"]]["lower"]
+            upper_org_id = org_ids[j["jurisdiction_id"]]["upper"]
+
             if "District" in lower_ds + upper_ds:
                 extra_import += ", District"
             if "simple_numbered_districts" in lower_ds + upper_ds:
                 extra_import += ", simple_numbered_districts"
 
             seats_block = f"""
-                lower=Chamber(chamber_type="lower", name="{lower_name}",
+                lower=Chamber(chamber_type="lower", name="{lower_name}", organization_id="{lower_org_id}",
                    num_seats={num_lower_seats}, title="{lower_title}", districts={lower_ds}),
-                upper=Chamber(chamber_type="upper", name="{upper_name}",
+                upper=Chamber(chamber_type="upper", name="{upper_name}", organization_id="{upper_org_id}",
                    num_seats={num_upper_seats}, title="{upper_title}", districts={upper_ds},),
         """
         else:
@@ -123,8 +131,10 @@ if __name__ == "__main__":
             if "simple_numbered_districts" in districts:
                 extra_import += ", simple_numbered_districts"
 
+            org_id = org_ids[j["jurisdiction_id"]]["legislature"]
+
             seats_block = f"""
-                legislature=Chamber(chamber_type="unicameral", name="{leg_name}",
+                legislature=Chamber(chamber_type="unicameral", name="{leg_name}", organization_id="{org_id}",
                      num_seats={num_leg_seats}, title="{leg_title}", districts={districts}),
                 """
 

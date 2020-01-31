@@ -1,0 +1,191 @@
+id,name,classification,jurisdiction_id
+ocd-organization/a0563aa3-1ab5-4e1e-afd1-643aca03b3b8,Nebraska Legislature,legislature,ocd-jurisdiction/country:us/state:ne/government
+ocd-organization/4ba67f40-0330-4d5a-ac31-8a939768d90b,Office of the Governor,executive,ocd-jurisdiction/country:us/state:ne/government
+ocd-organization/0e851bc8-ddf5-4b69-a5d4-7a1c99bfe8c4,Nonpartisan,party,
+ocd-organization/94bfa494-f58a-4120-8e79-cf1d4705d8fe,Libertarian,party,
+ocd-organization/d8dce079-d59d-407c-be93-9d3fce72bd48,New Hampshire General Court,legislature,ocd-jurisdiction/country:us/state:nh/government
+ocd-organization/c95932a0-2ac1-4f14-a0c4-ade8568daac6,Senate,upper,ocd-jurisdiction/country:us/state:nh/government
+ocd-organization/3b857974-4029-4508-94d4-ce3b86c64602,House,lower,ocd-jurisdiction/country:us/state:nh/government
+ocd-organization/920fc27e-e574-4700-8ada-221fdf683268,Arizona State Legislature,legislature,ocd-jurisdiction/country:us/state:az/government
+ocd-organization/69fd6d9c-6730-42a7-ae22-31a4a111603c,Office of the Governor,executive,ocd-jurisdiction/country:us/state:az/government
+ocd-organization/c3d4c85b-888e-4188-b903-a251b957c162,Senate,upper,ocd-jurisdiction/country:us/state:az/government
+ocd-organization/474ab9de-3ab4-4294-88c1-43ffd506870a,Connecticut General Assembly,legislature,ocd-jurisdiction/country:us/state:ct/government
+ocd-organization/46a37f5a-a01b-4905-b023-a443b5be41c6,Senate,upper,ocd-jurisdiction/country:us/state:ct/government
+ocd-organization/8e8c6d29-dcc1-4d2f-9ca5-82a4a3d3b962,House,lower,ocd-jurisdiction/country:us/state:ct/government
+ocd-organization/cc568975-7e60-4e1a-8799-63028b9ad960,Republican,party,
+ocd-organization/4d1533a8-8d01-41f1-8b2a-4f07e41b5ed2,Arkansas General Assembly,legislature,ocd-jurisdiction/country:us/state:ar/government
+ocd-organization/20889c0b-bb05-4d82-bce1-e2072fcd53aa,Democratic,party,
+ocd-organization/9e2c94af-8e67-438b-8a47-7eac48112403,House,lower,ocd-jurisdiction/country:us/state:ar/government
+ocd-organization/f80b9e71-0c25-4b8b-a87d-7266a3f84313,Senate,upper,ocd-jurisdiction/country:us/state:ar/government
+ocd-organization/8de9200f-a2e2-4f92-9950-e6c63f265248,Alabama Legislature,legislature,ocd-jurisdiction/country:us/state:al/government
+ocd-organization/d6ca7a45-3984-4da6-a7f8-0c0c846a8a41,Independent,party,
+ocd-organization/ddf820b5-5246-46b3-a807-99b5914ad39f,Senate,upper,ocd-jurisdiction/country:us/state:al/government
+ocd-organization/b00585a8-0bd5-4a6b-bde1-1c96400f882f,House,lower,ocd-jurisdiction/country:us/state:az/government
+ocd-organization/74ad748b-f0a1-408f-9aa6-3319a868fd55,House,lower,ocd-jurisdiction/country:us/state:al/government
+ocd-organization/8815f4a0-d799-45d1-980e-3d53e3b26b1d,New Jersey Legislature,legislature,ocd-jurisdiction/country:us/state:nj/government
+ocd-organization/bdfb4b37-b604-4fff-8515-e7646b6f4db6,Governor of New Jersey,executive,ocd-jurisdiction/country:us/state:nj/government
+ocd-organization/0461b3ba-ecad-4ed3-bc89-056dbaa698d1,Senate,upper,ocd-jurisdiction/country:us/state:nj/government
+ocd-organization/68d34c4f-e59d-42a2-bcfe-fbf7f8cc8f15,Assembly,lower,ocd-jurisdiction/country:us/state:nj/government
+ocd-organization/3c509bec-a8f0-4422-a17f-5f11bfe88f26,Louisiana Legislature,legislature,ocd-jurisdiction/country:us/state:la/government
+ocd-organization/643af5ff-e840-4ff1-95a8-e47a40dd0730,Iowa General Assembly,legislature,ocd-jurisdiction/country:us/state:ia/government
+ocd-organization/bd11534f-0c3b-4321-8d04-6a42f212bf77,House,lower,ocd-jurisdiction/country:us/state:ia/government
+ocd-organization/a9ad8273-4a86-4544-9bed-09ccb48ebabc,Senate,upper,ocd-jurisdiction/country:us/state:ia/government
+ocd-organization/b47d8d36-68d9-4bf0-807a-5b9c9ed2d99f,Wyoming State Legislature,legislature,ocd-jurisdiction/country:us/state:wy/government
+ocd-organization/997c6150-6c45-4178-82dd-e111c0029554,Missouri General Assembly,legislature,ocd-jurisdiction/country:us/state:mo/government
+ocd-organization/dcfaf7fc-52ad-4a49-b88a-3a6fcea19248,Office of the Governor,executive,ocd-jurisdiction/country:us/state:de/government
+ocd-organization/d2671846-0bc5-4082-b96d-989b31cc037f,Delaware General Assembly,legislature,ocd-jurisdiction/country:us/state:de/government
+ocd-organization/099db7ce-13e0-4865-98ef-9787f65705c4,Senate,upper,ocd-jurisdiction/country:us/state:de/government
+ocd-organization/2fc73234-69ce-4a42-b85a-4a52a676e6e9,Colorado General Assembly,legislature,ocd-jurisdiction/country:us/state:co/government
+ocd-organization/1f6f6532-1bc8-4ddb-8350-27fcd47c6795,Office of the Governor,executive,ocd-jurisdiction/country:us/state:co/government
+ocd-organization/98d43d46-9571-4a40-9007-581d84d41bb8,Senate,upper,ocd-jurisdiction/country:us/state:co/government
+ocd-organization/e047d0e5-2c93-4e39-bea3-04c0d9d11b20,House,lower,ocd-jurisdiction/country:us/state:co/government
+ocd-organization/378d45a3-b3f9-41d5-b4f1-6fcf2979666c,House,lower,ocd-jurisdiction/country:us/state:de/government
+ocd-organization/04a9a79b-2dc8-4969-b09e-1190dad5b973,Governor of Ohio,executive,ocd-jurisdiction/country:us/state:oh/government
+ocd-organization/3ecd0c76-5e2c-4e7c-9882-615d64fd0f47,Office of the Governor,executive,ocd-jurisdiction/country:us/state:in/government
+ocd-organization/c0ac26ed-60ea-42b7-bd02-20213257dbc5,Hawaii State Legislature,legislature,ocd-jurisdiction/country:us/state:hi/government
+ocd-organization/73058dca-37f9-4907-ac94-1f4ffd680586,Senate,upper,ocd-jurisdiction/country:us/state:hi/government
+ocd-organization/52cba4e0-aaeb-4d15-944b-089d559e97b6,House,lower,ocd-jurisdiction/country:us/state:hi/government
+ocd-organization/654d4d38-e413-4307-a420-6f1ee2594673,Idaho State Legislature,legislature,ocd-jurisdiction/country:us/state:id/government
+ocd-organization/e8c4c8ae-7ba0-4116-9865-5d34fcc6e681,Senate,upper,ocd-jurisdiction/country:us/state:id/government
+ocd-organization/7de4a037-2e98-46d0-975c-67d42eaff437,Indiana General Assembly,legislature,ocd-jurisdiction/country:us/state:in/government
+ocd-organization/10bc85d1-df30-4bb9-a8d0-e158225b4431,House,lower,ocd-jurisdiction/country:us/state:in/government
+ocd-organization/b8946e05-f621-442a-8352-cc51db92980c,Senate,upper,ocd-jurisdiction/country:us/state:in/government
+ocd-organization/a0b3ad5f-c852-483b-b746-444d3d795701,Florida Legislature,legislature,ocd-jurisdiction/country:us/state:fl/government
+ocd-organization/c540c1bb-d614-4174-86db-a146526169f8,Florida Senate,upper,ocd-jurisdiction/country:us/state:fl/government
+ocd-organization/8b0147dc-8942-4fd5-91c4-a72a92a8e1fe,Florida House of Representatives,lower,ocd-jurisdiction/country:us/state:fl/government
+ocd-organization/7a59916c-201a-49b2-9288-776ffea9f6cb,House,lower,ocd-jurisdiction/country:us/state:id/government
+ocd-organization/2d23c3ec-897d-4ef8-85a5-0acb24328d5f,Office of the Governor,executive,ocd-jurisdiction/country:us/state:ms/government
+ocd-organization/f2b7fee5-8da1-431d-8ea1-19b7709194cc,Mississippi Legislature,legislature,ocd-jurisdiction/country:us/state:ms/government
+ocd-organization/7e3c07c9-91ff-4445-8cef-57f85ab6ae9f,Senate,upper,ocd-jurisdiction/country:us/state:ms/government
+ocd-organization/47c2e037-ffe3-46c3-9399-8feb1f7d4988,House,lower,ocd-jurisdiction/country:us/state:ms/government
+ocd-organization/700d3e60-3b1a-4cba-9aa4-06278aa7605d,New York Legislature,legislature,ocd-jurisdiction/country:us/state:ny/government
+ocd-organization/26bb6306-85f0-4d10-bff7-d1cd5bdc0865,Assembly,lower,ocd-jurisdiction/country:us/state:ny/government
+ocd-organization/8291a233-623d-40e8-882d-21ec2d382c87,Senate,upper,ocd-jurisdiction/country:us/state:ny/government
+ocd-organization/3c6b003d-47bf-44ca-a3cf-fe7a53780cc8,Office of the Governor,executive,ocd-jurisdiction/country:us/state:ri/government
+ocd-organization/86e53984-1898-47b4-b74b-b3de66455937,Executive Office of the Mayor,executive,ocd-jurisdiction/country:us/district:dc/government
+ocd-organization/393504d5-b5ba-446f-908b-9868996bf3f7,Council of the District of Columbia,legislature,ocd-jurisdiction/country:us/district:dc/government
+ocd-organization/683ca907-05d4-4c84-8d7b-f04f73e295ad,House,lower,ocd-jurisdiction/country:us/state:wy/government
+ocd-organization/15f3b217-1d89-40dd-ab4e-d5ed2ffe5322,Maryland General Assembly,legislature,ocd-jurisdiction/country:us/state:md/government
+ocd-organization/8af93cc2-fc5f-48b9-abc9-53b7a56b2beb,Office of the Governor,executive,ocd-jurisdiction/country:us/state:md/government
+ocd-organization/1186f244-c9f8-46de-a453-c58d6de050d7,Georgia General Assembly,legislature,ocd-jurisdiction/country:us/state:ga/government
+ocd-organization/3b9777f2-c2fb-48e1-83bf-66fc7a17492e,Senate,upper,ocd-jurisdiction/country:us/state:ga/government
+ocd-organization/6328292e-c35e-4187-903c-75829a17d5d8,Senate,upper,ocd-jurisdiction/country:us/state:md/government
+ocd-organization/f94ae35f-f161-4599-b603-e7737dc8c93f,House,lower,ocd-jurisdiction/country:us/state:ga/government
+ocd-organization/bd8388d3-8fcd-4e28-9c1b-f23f0e376544,House,lower,ocd-jurisdiction/country:us/state:md/government
+ocd-organization/b5a82ff4-4fd3-41c8-bb44-32ad2e499482,Kentucky General Assembly,legislature,ocd-jurisdiction/country:us/state:ky/government
+ocd-organization/523aa254-9d04-4641-9770-6488b5f4fb0e,Senate,upper,ocd-jurisdiction/country:us/state:ky/government
+ocd-organization/4e2398aa-4ffd-4e2c-8089-7a0cb64f1bc9,House,lower,ocd-jurisdiction/country:us/state:ky/government
+ocd-organization/aa301a79-0ad8-4905-818c-0cd5f1ce5946,North Dakota Legislative Assembly,legislature,ocd-jurisdiction/country:us/state:nd/government
+ocd-organization/79645ed7-6baa-4842-ac97-09b444c4020b,Senate,upper,ocd-jurisdiction/country:us/state:nd/government
+ocd-organization/ef8bc870-8b19-4f99-a410-310d0ead92f4,Governor of Wyoming,executive,ocd-jurisdiction/country:us/state:wy/government
+ocd-organization/b9f9b32c-a2cc-4cca-941f-862aecc30617,House,lower,ocd-jurisdiction/country:us/state:nd/government
+ocd-organization/ebc2f274-ac99-40a5-ae55-19e896936bc7,Senate,upper,ocd-jurisdiction/country:us/state:la/government
+ocd-organization/d711b9b2-6668-470d-83a7-92d73b24f94a,House,lower,ocd-jurisdiction/country:us/state:la/government
+ocd-organization/57920b9f-163e-4cc3-9642-e616579b47ee,South Carolina Legislature,legislature,ocd-jurisdiction/country:us/state:sc/government
+ocd-organization/705ec497-4b18-4a39-a0e0-ce114a2f3c78,Senate,upper,ocd-jurisdiction/country:us/state:sc/government
+ocd-organization/11144d16-6b61-4e2a-94fe-6f9c24e36193,House,lower,ocd-jurisdiction/country:us/state:sc/government
+ocd-organization/dd35cadb-0d6f-4a80-a84a-6ab08c2701b8,Office of the Governor,executive,ocd-jurisdiction/country:us/state:mo/government
+ocd-organization/8ff25b39-cd33-4cee-a2a9-d88b80b2c6fe,Senate,upper,ocd-jurisdiction/country:us/state:mo/government
+ocd-organization/b028938f-599d-4b3a-8d53-fdb9de12e759,House,lower,ocd-jurisdiction/country:us/state:mo/government
+ocd-organization/f1c6eb47-c439-42e5-9b6f-d7f6121f20e9,California State Legislature,legislature,ocd-jurisdiction/country:us/state:ca/government
+ocd-organization/b7f8d62d-b8f0-4eba-8de3-a42c1f64f9fe,Office of the Governor,executive,ocd-jurisdiction/country:us/state:ca/government
+ocd-organization/98623fa0-f9c3-47ae-80bb-51465349ed71,Senate,upper,ocd-jurisdiction/country:us/state:ca/government
+ocd-organization/e70e812e-44d2-46b0-9eae-2f3b9a1d5150,Assembly,lower,ocd-jurisdiction/country:us/state:ca/government
+ocd-organization/803c558f-dec2-4f43-9c35-e73a6e849408,Montana Legislature,legislature,ocd-jurisdiction/country:us/state:mt/government
+ocd-organization/c70eb47a-43c1-4aa1-95a6-2aea30da8e82,Michigan Legislature,legislature,ocd-jurisdiction/country:us/state:mi/government
+ocd-organization/d387cf69-631c-4013-bb32-4a00c848fcc4,House,lower,ocd-jurisdiction/country:us/state:mi/government
+ocd-organization/7cf9891c-6c1f-45ec-b24c-7aa9be45e9cc,Senate,upper,ocd-jurisdiction/country:us/state:mi/government
+ocd-organization/1381ca6d-dedf-4bd3-8755-6f846f9e4848,Maine Legislature,legislature,ocd-jurisdiction/country:us/state:me/government
+ocd-organization/1cb3f814-aad2-4343-8556-a2eb92f46230,Office of the Governor,executive,ocd-jurisdiction/country:us/state:me/government
+ocd-organization/a26314f0-dc6f-4cfc-99ca-dee4bafc9d4c,House,lower,ocd-jurisdiction/country:us/state:me/government
+ocd-organization/fe33521e-3c48-445a-adf7-75ff8a7674e4,Senate,upper,ocd-jurisdiction/country:us/state:me/government
+ocd-organization/36f78a21-d16b-42a3-9b14-5265b4ebf59e,Office of the Governor,executive,ocd-jurisdiction/country:us/state:nm/government
+ocd-organization/7a5a12b7-e955-4999-a469-df3748934953,New Mexico Legislature,legislature,ocd-jurisdiction/country:us/state:nm/government
+ocd-organization/af9a59f2-c6b2-4bb1-b270-85f5d40605b4,House,lower,ocd-jurisdiction/country:us/state:nm/government
+ocd-organization/a6719ff4-d604-4144-95e3-453a03672dfd,Senate,upper,ocd-jurisdiction/country:us/state:nm/government
+ocd-organization/5baae940-2a55-49f9-8e8b-7d321ac539b4,Oregon Legislative Assembly,legislature,ocd-jurisdiction/country:us/state:or/government
+ocd-organization/9b08e1e9-5a70-48c1-983d-508a3281c378,House,lower,ocd-jurisdiction/country:us/state:or/government
+ocd-organization/bfb1aaad-4896-4399-b12f-64b8b4ab1b30,Senate,upper,ocd-jurisdiction/country:us/state:or/government
+ocd-organization/7b114895-6d62-4b8d-b391-b170fa9011d2,South Dakota State Legislature,legislature,ocd-jurisdiction/country:us/state:sd/government
+ocd-organization/5a7260e0-bd1e-4f37-949f-ebb386e8bacc,Senate,upper,ocd-jurisdiction/country:us/state:sd/government
+ocd-organization/6ee5506b-e33f-45c3-965e-59a531f249e6,Kansas State Legislature,legislature,ocd-jurisdiction/country:us/state:ks/government
+ocd-organization/c1d465f9-fab5-4cc0-aded-270423bf31ba,Senate,upper,ocd-jurisdiction/country:us/state:ks/government
+ocd-organization/31d2e44e-f94c-4971-83ea-e1fe29613c73,House,lower,ocd-jurisdiction/country:us/state:ks/government
+ocd-organization/2432bd5a-3c3f-4784-b1f5-c6134171162b,House,lower,ocd-jurisdiction/country:us/state:sd/government
+ocd-organization/1251b370-e115-4240-bd6c-68bfe247050e,Office of the Governor,executive,ocd-jurisdiction/country:us/state:va/government
+ocd-organization/770c2aae-0332-4f24-a8e0-e0bf666dc992,Nevada Legislature,legislature,ocd-jurisdiction/country:us/state:nv/government
+ocd-organization/0328f08e-ceb3-4d5c-a8d3-a73a3443e02e,Office of the Governor,executive,ocd-jurisdiction/country:us/state:nv/government
+ocd-organization/258cdef7-dac8-4ec1-8f74-00a70ee10269,Assembly,lower,ocd-jurisdiction/country:us/state:nv/government
+ocd-organization/c4400c7b-157d-442a-b688-543ffb989967,Senate,upper,ocd-jurisdiction/country:us/state:nv/government
+ocd-organization/c6e0fb4e-6cf7-4025-896c-f8cec8ad8cda,Office of the Governor,executive,ocd-jurisdiction/country:us/state:sd/government
+ocd-organization/32aab083-d7a0-44e0-9b95-a7790c542605,North Carolina General Assembly,legislature,ocd-jurisdiction/country:us/state:nc/government
+ocd-organization/6e0e804b-be2d-408b-9dc4-d8e3739915bd,Senate,upper,ocd-jurisdiction/country:us/state:wy/government
+ocd-organization/fce467b7-470b-41c2-be23-0ed00804b512,Rhode Island General Assembly,legislature,ocd-jurisdiction/country:us/state:ri/government
+ocd-organization/097fcec3-4290-42eb-927f-0a786b873093,Executive Office of the Governor,executive,ocd-jurisdiction/country:us/state:nc/government
+ocd-organization/a720b7e9-ab67-405a-a209-473e9d6a6036,Oklahoma Legislature,legislature,ocd-jurisdiction/country:us/state:ok/government
+ocd-organization/5c78775c-6ff3-4cf8-a5f2-4e5e550861f3,Senate,upper,ocd-jurisdiction/country:us/state:ok/government
+ocd-organization/cba1f18c-65a2-4eb0-886d-eada16da3d8a,House,lower,ocd-jurisdiction/country:us/state:ok/government
+ocd-organization/7508efaf-3ca6-436d-8858-45b2f73a78d9,House,lower,ocd-jurisdiction/country:us/state:mt/government
+ocd-organization/1cf80fcd-e90e-4d0b-87d6-304fad2262f9,Senate,upper,ocd-jurisdiction/country:us/state:mt/government
+ocd-organization/ba73a081-69ab-42c3-bf47-7620fec808cf,House of Representatives,lower,ocd-jurisdiction/country:us/state:ri/government
+ocd-organization/300018cf-7c78-415b-8a3c-b00f1a0eb2fa,Office of the Governor,executive,ocd-jurisdiction/country:us/state:vt/government
+ocd-organization/4861d484-9f30-411a-baaf-c2c12d4d174f,House,lower,ocd-jurisdiction/country:us/state:nc/government
+ocd-organization/bea6e1af-6d6b-4a81-8040-499daf785244,Senate,upper,ocd-jurisdiction/country:us/state:ri/government
+ocd-organization/2b7ff8a2-fde2-43bf-a411-8ea97cf30288,Progressive,party,
+ocd-organization/3f26dc84-921f-48db-a9c9-ff843594ea85,Vermont General Assembly,legislature,ocd-jurisdiction/country:us/state:vt/government
+ocd-organization/61ad7dba-ef4f-46a6-973b-e891601209ae,Democratic/Progressive,party,
+ocd-organization/c07a7946-9eb1-454f-9b70-c2200e74a9bc,Progressive/Democratic,party,
+ocd-organization/4a283791-567b-48b8-aac3-c94c36e3e63a,Pennsylvania General Assembly,legislature,ocd-jurisdiction/country:us/state:pa/government
+ocd-organization/9443a886-8032-4502-b99d-551735ec9606,Senate,upper,ocd-jurisdiction/country:us/state:pa/government
+ocd-organization/0f78429d-ec86-4333-9338-17708fe11914,House,lower,ocd-jurisdiction/country:us/state:pa/government
+ocd-organization/6347dffa-4778-4dc0-97d7-fd4db3ff5328,Senate,upper,ocd-jurisdiction/country:us/state:nc/government
+ocd-organization/21504998-e5c7-44b4-8ebe-99fe57ef520c,Senate,upper,ocd-jurisdiction/country:us/state:vt/government
+ocd-organization/1bba67ba-1a0c-4edc-a9de-32c2e5c13c6e,House,lower,ocd-jurisdiction/country:us/state:vt/government
+ocd-organization/2010a137-d178-48fe-a66e-692e97a12fcf,Tennessee General Assembly,legislature,ocd-jurisdiction/country:us/state:tn/government
+ocd-organization/d4c442c8-d4d7-4ea9-a3fd-b856b2904d8b,Senate,upper,ocd-jurisdiction/country:us/state:tn/government
+ocd-organization/47760e16-8071-49dd-bd9f-354198c8b653,House,lower,ocd-jurisdiction/country:us/state:tn/government
+ocd-organization/e56c1fc3-f311-4a51-a693-05c3e922f1b7,Virginia General Assembly,legislature,ocd-jurisdiction/country:us/state:va/government
+ocd-organization/0c3daf42-2835-49cf-8f58-b1d771dae687,House,lower,ocd-jurisdiction/country:us/state:va/government
+ocd-organization/9f1a0a17-d2fb-4d0c-90fb-119004411b83,Senate,upper,ocd-jurisdiction/country:us/state:va/government
+ocd-organization/7971e631-d3d5-41e4-a83c-60ed2368e115,Alaska State Legislature,legislature,ocd-jurisdiction/country:us/state:ak/government
+ocd-organization/85b8d5c1-0dde-4280-8528-9ef5d9fb5b5e,Senate,upper,ocd-jurisdiction/country:us/state:ak/government
+ocd-organization/9c84bc85-9bb0-4f31-99ad-5fed91afdc28,House,lower,ocd-jurisdiction/country:us/state:ak/government
+ocd-organization/58fd9e6c-78ea-42ff-b58b-4f80d307cf19,Utah State Legislature,legislature,ocd-jurisdiction/country:us/state:ut/government
+ocd-organization/75532e47-e012-442d-b2de-f650c124c0b9,Office of the Governor,executive,ocd-jurisdiction/country:us/state:ut/government
+ocd-organization/98cb21d7-f3ae-416b-93e7-df3da962aff9,Senate,upper,ocd-jurisdiction/country:us/state:ut/government
+ocd-organization/c7625e7e-dc12-49cf-aa73-fa96c5bf4b11,House,lower,ocd-jurisdiction/country:us/state:ut/government
+ocd-organization/8971de37-3aaf-4edb-894f-fd63036afc53,Partido Independentista Puertorriqueño,party,
+ocd-organization/c0dbab0c-4fe6-464e-aa44-6bd2cf725c55,Office of the Governor,executive,ocd-jurisdiction/country:us/territory:pr/government
+ocd-organization/9e20e686-c08c-4d0b-8c0d-27349c301613,Partido Popular Democrático,party,
+ocd-organization/684985de-c806-4e1c-bde5-47fdd0f172c1,Partido Nuevo Progresista,party,
+ocd-organization/172e46ae-bd24-406a-a754-e243e5fab319,Legislative Assembly of Puerto Rico,legislature,ocd-jurisdiction/country:us/territory:pr/government
+ocd-organization/c187ea65-5cd6-42fb-b08b-18e487855526,Senate,upper,ocd-jurisdiction/country:us/territory:pr/government
+ocd-organization/f932d329-15b2-4385-9d7d-d4b8a7ed8495,House,lower,ocd-jurisdiction/country:us/territory:pr/government
+ocd-organization/a7819d04-7b5e-4d2e-b47f-5dca9f09fc81,Washington State Legislature,legislature,ocd-jurisdiction/country:us/state:wa/government
+ocd-organization/ddae63d3-9f3e-4c46-a00f-703fe21b54d1,Senate,upper,ocd-jurisdiction/country:us/state:wa/government
+ocd-organization/7417a716-eba8-4437-a6e9-df14694bcb79,House,lower,ocd-jurisdiction/country:us/state:wa/government
+ocd-organization/f100d930-e312-4544-a8d5-710dc5d12ae2,Ohio General Assembly,legislature,ocd-jurisdiction/country:us/state:oh/government
+ocd-organization/401c065d-0f85-4c93-b87b-1675a7ef6c1a,Senate,upper,ocd-jurisdiction/country:us/state:oh/government
+ocd-organization/3cb2bb10-f68b-4a7d-a7c5-41986e71ff3a,House,lower,ocd-jurisdiction/country:us/state:oh/government
+ocd-organization/237dc1a5-2314-433e-887e-d63a970cf67d,West Virginia Legislature,legislature,ocd-jurisdiction/country:us/state:wv/government
+ocd-organization/8ab77a54-0646-413c-a63a-dc85154282b7,Texas Legislature,legislature,ocd-jurisdiction/country:us/state:tx/government
+ocd-organization/4c8c2a9c-f33c-476d-bf81-266eb72193f0,Office of the Governor,executive,ocd-jurisdiction/country:us/state:tx/government
+ocd-organization/cabf1716-c572-406a-bfdd-1917c11ac629,Senate,upper,ocd-jurisdiction/country:us/state:tx/government
+ocd-organization/d6189dbb-417e-429e-ae4b-2ee6747eddc0,House,lower,ocd-jurisdiction/country:us/state:tx/government
+ocd-organization/660bc141-f4cb-4d98-b334-b12b637776ba,Senate,upper,ocd-jurisdiction/country:us/state:wv/government
+ocd-organization/3fcd7789-fa25-4d8b-a4b9-7c0d1d0f8bc4,House,lower,ocd-jurisdiction/country:us/state:wv/government
+ocd-organization/682ed8d9-85ba-4f9e-b392-b74e48e7f17e,Democratic-Farmer-Labor,party,
+ocd-organization/c5dddecb-4365-441f-bb5b-251dc6828d14,Minnesota Legislature,legislature,ocd-jurisdiction/country:us/state:mn/government
+ocd-organization/e91db6f8-2232-49cd-91af-fdb5adb4ac3b,Minnesota House of Representatives,lower,ocd-jurisdiction/country:us/state:mn/government
+ocd-organization/1cba9936-eb76-4465-acb5-50c93cd4e8c9,Wisconsin State Legislature,legislature,ocd-jurisdiction/country:us/state:wi/government
+ocd-organization/2d0dada5-8153-44aa-b436-c92a90db0a9e,Assembly,lower,ocd-jurisdiction/country:us/state:wi/government
+ocd-organization/c8a757e6-378e-468c-a526-e81ca083124b,Senate,upper,ocd-jurisdiction/country:us/state:wi/government
+ocd-organization/6a026144-758d-4d57-b856-9c60dce3c4b5,Minnesota Senate,upper,ocd-jurisdiction/country:us/state:mn/government
+ocd-organization/61a1385f-f512-4d4b-826f-3118c9a775bf,Office of the Governor,executive,ocd-jurisdiction/country:us/state:ma/government
+ocd-organization/9c4e7b53-9912-4394-a40a-14b5ecdb8aba,Massachusetts General Court,legislature,ocd-jurisdiction/country:us/state:ma/government
+ocd-organization/1a75ab3a-669b-43fe-ac8d-31a2d6923d9a,Senate,upper,ocd-jurisdiction/country:us/state:ma/government
+ocd-organization/ca38ad9c-c3d5-4c4f-bc2f-d885218ed802,House,lower,ocd-jurisdiction/country:us/state:ma/government
+ocd-organization/339ea74e-8ea4-4ce3-902d-6fd7a5bc571b,Governor of Minnesota,executive,ocd-jurisdiction/country:us/state:mn/government
+ocd-organization/52332da7-9146-412e-bf64-a291e2757b63,Illinois General Assembly,legislature,ocd-jurisdiction/country:us/state:il/government
+ocd-organization/20782ae5-cc22-4470-846b-fd9788ad3db7,Illinois Senate,upper,ocd-jurisdiction/country:us/state:il/government
+ocd-organization/76120f9a-2982-4cc5-a6e2-de7401fa0d38,Illinois House of Representatives,lower,ocd-jurisdiction/country:us/state:il/government
