@@ -14,6 +14,7 @@ NE = State(
     legislature=Chamber(
         chamber_type="unicameral",
         name="Nebraska Legislature",
+        organization_id="ocd-organization/a0563aa3-1ab5-4e1e-afd1-643aca03b3b8",
         num_seats=49,
         title="Senator",
         districts=simple_numbered_districts(

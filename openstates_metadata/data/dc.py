@@ -14,6 +14,7 @@ DC = State(
     legislature=Chamber(
         chamber_type="unicameral",
         name="Council of the District of Columbia",
+        organization_id="ocd-organization/393504d5-b5ba-446f-908b-9868996bf3f7",
         num_seats=13,
         title="Councilmember",
         districts=[

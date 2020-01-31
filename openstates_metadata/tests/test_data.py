@@ -59,3 +59,12 @@ def test_everything_has_division_id():
                     assert d.division_id == state.division_id
                 else:
                     assert d.division_id.startswith(f"{state.division_id}/sldu:")
+
+
+def test_everything_has_organization_id():
+    for state in STATES:
+        if state.unicameral:
+            assert len(state.legislature.organization_id) == 53
+        else:
+            assert len(state.lower.organization_id) == 53
+            assert len(state.upper.organization_id) == 53

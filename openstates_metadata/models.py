@@ -16,6 +16,7 @@ class Chamber:
     name: str
     title: str
     num_seats: int
+    organization_id: str
     districts: typing.List[District]
 
 
