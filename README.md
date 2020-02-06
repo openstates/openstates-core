@@ -13,6 +13,10 @@ This repository contains state metadata that powers Open States.
 
 Releases use YYYY.MM.patch versioning.
 
+### 2020.02.2 - Feb 6 2020
+
+* lower minimum Python version to 3.6
+
 ### 2020.02.1 - Feb 5 2020
 
 * remove unnecessary dependencies
