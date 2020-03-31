@@ -115,9 +115,9 @@ class RelatedEntityBase(RelatedBase):
     # for these two on_delete is SET_NULL so that deletion of a linked entity doesn't
     # delete this object- it should instead just become unresolved (NULL)
     organization = models.ForeignKey(
-        "core.Organization", null=True, on_delete=models.SET_NULL
+        "data.Organization", null=True, on_delete=models.SET_NULL
     )
-    person = models.ForeignKey("core.Person", null=True, on_delete=models.SET_NULL)
+    person = models.ForeignKey("data.Person", null=True, on_delete=models.SET_NULL)
 
     @property
     def entity_name(self):
