@@ -6,7 +6,7 @@ from pupa.data.models import (
     PersonVote,
     BillSponsorship,
 )
-from ..models import SessionDataQualityReport
+from .models import SessionDataQualityReport
 
 
 def _simple_count(ModelCls, session, **filter):

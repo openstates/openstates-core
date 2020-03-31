@@ -13,7 +13,7 @@ from pupa.data.models import LegislativeSession
 from pupa.exceptions import DuplicateItemError
 from pupa.utils import get_pseudo_id, utcnow
 from pupa.exceptions import UnresolvedIdError, DataImportError
-from pupa.models import Identifier
+from pupa.reports.models import Identifier
 
 
 def omnihash(obj):

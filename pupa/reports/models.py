@@ -2,7 +2,7 @@ from django.db import models
 from django.contrib.postgres.fields import JSONField
 from django.contrib.contenttypes.fields import GenericForeignKey
 from django.contrib.contenttypes.models import ContentType
-from .data.models import Jurisdiction, LegislativeSession
+from pupa.data.models import Jurisdiction, LegislativeSession
 
 
 OBJECT_TYPES = (
