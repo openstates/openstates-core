@@ -1,11 +1,5 @@
 from django.db.models import Count, Subquery, OuterRef, Q, F
-from pupa.data.models import (
-    Bill,
-    VoteEvent,
-    VoteCount,
-    PersonVote,
-    BillSponsorship,
-)
+from pupa.data.models import Bill, VoteEvent, VoteCount, PersonVote, BillSponsorship
 from .models import SessionDataQualityReport
 
 

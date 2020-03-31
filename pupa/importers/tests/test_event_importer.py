@@ -15,7 +15,7 @@ from pupa.data.models import (
     Division,
     VoteEvent,
     Bill,
-    Event
+    Event,
 )
 
 

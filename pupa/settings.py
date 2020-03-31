@@ -4,15 +4,9 @@ import importlib
 
 import dj_database_url
 
-DATABASE_URL = os.environ.get(
-    "DATABASE_URL", "postgis://pupa:pupa@localhost/pupa"
-)
+DATABASE_URL = os.environ.get("DATABASE_URL", "postgis://pupa:pupa@localhost/pupa")
 SECRET_KEY = "non-secret"
-INSTALLED_APPS = (
-    "django.contrib.contenttypes",
-    "pupa.data",
-    "pupa",
-)
+INSTALLED_APPS = ("django.contrib.contenttypes", "pupa.data", "pupa")
 
 # scrape settings
 

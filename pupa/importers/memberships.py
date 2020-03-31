@@ -1,9 +1,5 @@
 from .base import BaseImporter
-from ..data.models import (
-    Membership,
-    MembershipContactDetail,
-    MembershipLink,
-)
+from ..data.models import Membership, MembershipContactDetail, MembershipLink
 from ..utils import get_pseudo_id
 from ..exceptions import NoMembershipsError
 

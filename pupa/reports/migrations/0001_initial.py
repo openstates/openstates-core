@@ -10,82 +10,213 @@ class Migration(migrations.Migration):
     initial = True
 
     dependencies = [
-        ('data', '0001_initial'),
-        ('contenttypes', '0002_remove_content_type_name'),
+        ("data", "0001_initial"),
+        ("contenttypes", "0002_remove_content_type_name"),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='RunPlan',
+            name="RunPlan",
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('success', models.BooleanField(default=True)),
-                ('start_time', models.DateTimeField()),
-                ('end_time', models.DateTimeField()),
-                ('exception', models.TextField(blank=True, default='')),
-                ('traceback', models.TextField(blank=True, default='')),
-                ('jurisdiction', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='runs', to='data.Jurisdiction')),
+                (
+                    "id",
+                    models.AutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("success", models.BooleanField(default=True)),
+                ("start_time", models.DateTimeField()),
+                ("end_time", models.DateTimeField()),
+                ("exception", models.TextField(blank=True, default="")),
+                ("traceback", models.TextField(blank=True, default="")),
+                (
+                    "jurisdiction",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE,
+                        related_name="runs",
+                        to="data.Jurisdiction",
+                    ),
+                ),
             ],
         ),
         migrations.CreateModel(
-            name='SessionDataQualityReport',
+            name="SessionDataQualityReport",
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('bills_missing_actions', models.PositiveIntegerField()),
-                ('bills_missing_sponsors', models.PositiveIntegerField()),
-                ('bills_missing_versions', models.PositiveIntegerField()),
-                ('votes_missing_voters', models.PositiveIntegerField()),
-                ('votes_missing_bill', models.PositiveIntegerField()),
-                ('votes_missing_yes_count', models.PositiveIntegerField()),
-                ('votes_missing_no_count', models.PositiveIntegerField()),
-                ('votes_with_bad_counts', models.PositiveIntegerField()),
-                ('unmatched_sponsor_people', django.contrib.postgres.fields.jsonb.JSONField()),
-                ('unmatched_sponsor_organizations', django.contrib.postgres.fields.jsonb.JSONField()),
-                ('unmatched_voters', django.contrib.postgres.fields.jsonb.JSONField()),
-                ('legislative_session', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='data.LegislativeSession')),
+                (
+                    "id",
+                    models.AutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("bills_missing_actions", models.PositiveIntegerField()),
+                ("bills_missing_sponsors", models.PositiveIntegerField()),
+                ("bills_missing_versions", models.PositiveIntegerField()),
+                ("votes_missing_voters", models.PositiveIntegerField()),
+                ("votes_missing_bill", models.PositiveIntegerField()),
+                ("votes_missing_yes_count", models.PositiveIntegerField()),
+                ("votes_missing_no_count", models.PositiveIntegerField()),
+                ("votes_with_bad_counts", models.PositiveIntegerField()),
+                (
+                    "unmatched_sponsor_people",
+                    django.contrib.postgres.fields.jsonb.JSONField(),
+                ),
+                (
+                    "unmatched_sponsor_organizations",
+                    django.contrib.postgres.fields.jsonb.JSONField(),
+                ),
+                ("unmatched_voters", django.contrib.postgres.fields.jsonb.JSONField()),
+                (
+                    "legislative_session",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE,
+                        to="data.LegislativeSession",
+                    ),
+                ),
             ],
         ),
         migrations.CreateModel(
-            name='ScrapeReport',
+            name="ScrapeReport",
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('scraper', models.CharField(max_length=300)),
-                ('args', models.CharField(max_length=300)),
-                ('start_time', models.DateTimeField()),
-                ('end_time', models.DateTimeField()),
-                ('plan', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='scrapers', to='reports.RunPlan')),
+                (
+                    "id",
+                    models.AutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("scraper", models.CharField(max_length=300)),
+                ("args", models.CharField(max_length=300)),
+                ("start_time", models.DateTimeField()),
+                ("end_time", models.DateTimeField()),
+                (
+                    "plan",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE,
+                        related_name="scrapers",
+                        to="reports.RunPlan",
+                    ),
+                ),
             ],
         ),
         migrations.CreateModel(
-            name='ScrapeObjects',
+            name="ScrapeObjects",
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('object_type', models.CharField(choices=[('jurisdiction', 'Jurisdiction'), ('person', 'Person'), ('organization', 'Organization'), ('post', 'Post'), ('membership', 'Membership'), ('bill', 'Bill'), ('vote_event', 'VoteEvent'), ('event', 'Event')], max_length=20)),
-                ('count', models.PositiveIntegerField()),
-                ('report', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='scraped_objects', to='reports.ScrapeReport')),
+                (
+                    "id",
+                    models.AutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                (
+                    "object_type",
+                    models.CharField(
+                        choices=[
+                            ("jurisdiction", "Jurisdiction"),
+                            ("person", "Person"),
+                            ("organization", "Organization"),
+                            ("post", "Post"),
+                            ("membership", "Membership"),
+                            ("bill", "Bill"),
+                            ("vote_event", "VoteEvent"),
+                            ("event", "Event"),
+                        ],
+                        max_length=20,
+                    ),
+                ),
+                ("count", models.PositiveIntegerField()),
+                (
+                    "report",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE,
+                        related_name="scraped_objects",
+                        to="reports.ScrapeReport",
+                    ),
+                ),
             ],
         ),
         migrations.CreateModel(
-            name='ImportObjects',
+            name="ImportObjects",
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('object_type', models.CharField(choices=[('jurisdiction', 'Jurisdiction'), ('person', 'Person'), ('organization', 'Organization'), ('post', 'Post'), ('membership', 'Membership'), ('bill', 'Bill'), ('vote_event', 'VoteEvent'), ('event', 'Event')], max_length=20)),
-                ('insert_count', models.PositiveIntegerField()),
-                ('update_count', models.PositiveIntegerField()),
-                ('noop_count', models.PositiveIntegerField()),
-                ('start_time', models.DateTimeField()),
-                ('end_time', models.DateTimeField()),
-                ('report', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='imported_objects', to='reports.RunPlan')),
+                (
+                    "id",
+                    models.AutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                (
+                    "object_type",
+                    models.CharField(
+                        choices=[
+                            ("jurisdiction", "Jurisdiction"),
+                            ("person", "Person"),
+                            ("organization", "Organization"),
+                            ("post", "Post"),
+                            ("membership", "Membership"),
+                            ("bill", "Bill"),
+                            ("vote_event", "VoteEvent"),
+                            ("event", "Event"),
+                        ],
+                        max_length=20,
+                    ),
+                ),
+                ("insert_count", models.PositiveIntegerField()),
+                ("update_count", models.PositiveIntegerField()),
+                ("noop_count", models.PositiveIntegerField()),
+                ("start_time", models.DateTimeField()),
+                ("end_time", models.DateTimeField()),
+                (
+                    "report",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE,
+                        related_name="imported_objects",
+                        to="reports.RunPlan",
+                    ),
+                ),
             ],
         ),
         migrations.CreateModel(
-            name='Identifier',
+            name="Identifier",
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('identifier', models.CharField(max_length=300)),
-                ('object_id', models.CharField(max_length=300)),
-                ('content_type', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='contenttypes.ContentType')),
-                ('jurisdiction', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='pupa_ids', to='data.Jurisdiction')),
+                (
+                    "id",
+                    models.AutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("identifier", models.CharField(max_length=300)),
+                ("object_id", models.CharField(max_length=300)),
+                (
+                    "content_type",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE,
+                        to="contenttypes.ContentType",
+                    ),
+                ),
+                (
+                    "jurisdiction",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE,
+                        related_name="pupa_ids",
+                        to="data.Jurisdiction",
+                    ),
+                ),
             ],
         ),
     ]

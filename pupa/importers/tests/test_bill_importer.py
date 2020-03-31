@@ -10,7 +10,7 @@ from pupa.data.models import (
     Organization,
     Membership,
     Division,
-    Bill
+    Bill,
 )
 
 

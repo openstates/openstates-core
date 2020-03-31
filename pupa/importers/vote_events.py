@@ -1,13 +1,7 @@
 from pupa.utils import get_pseudo_id, _make_pseudo_id
 from .base import BaseImporter
 from ..exceptions import InvalidVoteEventError
-from ..data.models import (
-    VoteEvent,
-    VoteCount,
-    PersonVote,
-    VoteSource,
-    BillAction,
-)
+from ..data.models import VoteEvent, VoteCount, PersonVote, VoteSource, BillAction
 
 
 class VoteEventImporter(BaseImporter):

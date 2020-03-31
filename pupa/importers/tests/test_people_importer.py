@@ -1,13 +1,7 @@
 import pytest
 from pupa.scrape import Person as ScrapePerson
 from pupa.importers import PersonImporter
-from pupa.data.models import (
-    Person,
-    Organization,
-    Membership,
-    Division,
-    Jurisdiction,
-)
+from pupa.data.models import Person, Organization, Membership, Division, Jurisdiction
 from pupa.exceptions import UnresolvedIdError, SameNameError
 
 

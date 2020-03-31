@@ -1,6 +1,13 @@
 import pytest
 import django
-from pupa.data.models import Jurisdiction, Division, Organization, Person, Bill, VoteEvent
+from pupa.data.models import (
+    Jurisdiction,
+    Division,
+    Organization,
+    Person,
+    Bill,
+    VoteEvent,
+)
 from pupa.reports.session import generate_session_report
 
 
