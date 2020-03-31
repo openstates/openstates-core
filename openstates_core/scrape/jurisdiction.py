@@ -1,7 +1,5 @@
-import warnings
 from .base import BaseModel, Scraper
 from .schemas.jurisdiction import schema
-from .popolo import Organization
 
 
 class Jurisdiction(BaseModel):

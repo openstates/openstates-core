@@ -87,7 +87,7 @@ class Migration(migrations.Migration):
                     ),
                 ),
             ],
-            options={"db_table": "opencivicdata_bill",},
+            options={"db_table": "opencivicdata_bill"},
         ),
         migrations.CreateModel(
             name="BillAction",
@@ -128,7 +128,7 @@ class Migration(migrations.Migration):
                     ),
                 ),
             ],
-            options={"db_table": "opencivicdata_billaction", "ordering": ["order"],},
+            options={"db_table": "opencivicdata_billaction", "ordering": ["order"]},
         ),
         migrations.CreateModel(
             name="BillDocument",
@@ -159,7 +159,7 @@ class Migration(migrations.Migration):
                     ),
                 ),
             ],
-            options={"db_table": "opencivicdata_billdocument",},
+            options={"db_table": "opencivicdata_billdocument"},
         ),
         migrations.CreateModel(
             name="BillVersion",
@@ -190,7 +190,7 @@ class Migration(migrations.Migration):
                     ),
                 ),
             ],
-            options={"db_table": "opencivicdata_billversion",},
+            options={"db_table": "opencivicdata_billversion"},
         ),
         migrations.CreateModel(
             name="BillVersionLink",
@@ -216,7 +216,7 @@ class Migration(migrations.Migration):
                     ),
                 ),
             ],
-            options={"db_table": "opencivicdata_billversionlink",},
+            options={"db_table": "opencivicdata_billversionlink"},
         ),
         migrations.CreateModel(
             name="Division",
@@ -359,7 +359,7 @@ class Migration(migrations.Migration):
                     ),
                 ),
             ],
-            options={"db_table": "opencivicdata_division",},
+            options={"db_table": "opencivicdata_division"},
         ),
         migrations.CreateModel(
             name="Event",
@@ -426,7 +426,7 @@ class Migration(migrations.Migration):
                     ),
                 ),
             ],
-            options={"db_table": "opencivicdata_event",},
+            options={"db_table": "opencivicdata_event"},
         ),
         migrations.CreateModel(
             name="EventAgendaItem",
@@ -484,7 +484,7 @@ class Migration(migrations.Migration):
                     ),
                 ),
             ],
-            options={"db_table": "opencivicdata_eventagendaitem",},
+            options={"db_table": "opencivicdata_eventagendaitem"},
         ),
         migrations.CreateModel(
             name="EventAgendaMedia",
@@ -510,7 +510,7 @@ class Migration(migrations.Migration):
                     ),
                 ),
             ],
-            options={"db_table": "opencivicdata_eventagendamedia",},
+            options={"db_table": "opencivicdata_eventagendamedia"},
         ),
         migrations.CreateModel(
             name="EventDocument",
@@ -548,7 +548,7 @@ class Migration(migrations.Migration):
                     ),
                 ),
             ],
-            options={"db_table": "opencivicdata_eventdocument",},
+            options={"db_table": "opencivicdata_eventdocument"},
         ),
         migrations.CreateModel(
             name="EventMedia",
@@ -585,7 +585,7 @@ class Migration(migrations.Migration):
                     ),
                 ),
             ],
-            options={"db_table": "opencivicdata_eventmedia",},
+            options={"db_table": "opencivicdata_eventmedia"},
         ),
         migrations.CreateModel(
             name="Jurisdiction",
@@ -686,7 +686,7 @@ class Migration(migrations.Migration):
                     ),
                 ),
             ],
-            options={"db_table": "opencivicdata_jurisdiction",},
+            options={"db_table": "opencivicdata_jurisdiction"},
         ),
         migrations.CreateModel(
             name="LegislativeSession",
@@ -721,7 +721,7 @@ class Migration(migrations.Migration):
                     ),
                 ),
             ],
-            options={"db_table": "opencivicdata_legislativesession",},
+            options={"db_table": "opencivicdata_legislativesession"},
         ),
         migrations.CreateModel(
             name="Membership",
@@ -811,7 +811,7 @@ class Migration(migrations.Migration):
                     ),
                 ),
             ],
-            options={"db_table": "opencivicdata_membership",},
+            options={"db_table": "opencivicdata_membership"},
         ),
         migrations.CreateModel(
             name="Organization",
@@ -931,7 +931,7 @@ class Migration(migrations.Migration):
                     ),
                 ),
             ],
-            options={"db_table": "opencivicdata_organization",},
+            options={"db_table": "opencivicdata_organization"},
         ),
         migrations.CreateModel(
             name="Person",
@@ -1171,7 +1171,7 @@ class Migration(migrations.Migration):
                     ),
                 ),
             ],
-            options={"db_table": "opencivicdata_post",},
+            options={"db_table": "opencivicdata_post"},
         ),
         migrations.CreateModel(
             name="VoteEvent",
@@ -1315,7 +1315,7 @@ class Migration(migrations.Migration):
                     ),
                 ),
             ],
-            options={"db_table": "opencivicdata_votesource",},
+            options={"db_table": "opencivicdata_votesource"},
         ),
         migrations.CreateModel(
             name="VoteCount",
@@ -1355,7 +1355,7 @@ class Migration(migrations.Migration):
                     ),
                 ),
             ],
-            options={"db_table": "opencivicdata_votecount",},
+            options={"db_table": "opencivicdata_votecount"},
         ),
         migrations.CreateModel(
             name="SearchableBill",
@@ -1396,7 +1396,7 @@ class Migration(migrations.Migration):
                     ),
                 ),
             ],
-            options={"db_table": "opencivicdata_searchablebill",},
+            options={"db_table": "opencivicdata_searchablebill"},
         ),
         migrations.CreateModel(
             name="RelatedBill",
@@ -1442,7 +1442,7 @@ class Migration(migrations.Migration):
                     ),
                 ),
             ],
-            options={"db_table": "opencivicdata_relatedbill",},
+            options={"db_table": "opencivicdata_relatedbill"},
         ),
         migrations.CreateModel(
             name="PostLink",
@@ -1480,7 +1480,7 @@ class Migration(migrations.Migration):
                     ),
                 ),
             ],
-            options={"db_table": "opencivicdata_postlink",},
+            options={"db_table": "opencivicdata_postlink"},
         ),
         migrations.CreateModel(
             name="PostContactDetail",
@@ -1545,7 +1545,7 @@ class Migration(migrations.Migration):
                     ),
                 ),
             ],
-            options={"db_table": "opencivicdata_postcontactdetail",},
+            options={"db_table": "opencivicdata_postcontactdetail"},
         ),
         migrations.CreateModel(
             name="PersonVote",
@@ -1595,7 +1595,7 @@ class Migration(migrations.Migration):
                     ),
                 ),
             ],
-            options={"db_table": "opencivicdata_personvote",},
+            options={"db_table": "opencivicdata_personvote"},
         ),
         migrations.CreateModel(
             name="PersonSource",
@@ -1633,7 +1633,7 @@ class Migration(migrations.Migration):
                     ),
                 ),
             ],
-            options={"db_table": "opencivicdata_personsource",},
+            options={"db_table": "opencivicdata_personsource"},
         ),
         migrations.CreateModel(
             name="PersonName",
@@ -1687,7 +1687,7 @@ class Migration(migrations.Migration):
                     ),
                 ),
             ],
-            options={"db_table": "opencivicdata_personname",},
+            options={"db_table": "opencivicdata_personname"},
         ),
         migrations.CreateModel(
             name="PersonLink",
@@ -1725,7 +1725,7 @@ class Migration(migrations.Migration):
                     ),
                 ),
             ],
-            options={"db_table": "opencivicdata_personlink",},
+            options={"db_table": "opencivicdata_personlink"},
         ),
         migrations.CreateModel(
             name="PersonIdentifier",
@@ -1763,7 +1763,7 @@ class Migration(migrations.Migration):
                     ),
                 ),
             ],
-            options={"db_table": "opencivicdata_personidentifier",},
+            options={"db_table": "opencivicdata_personidentifier"},
         ),
         migrations.CreateModel(
             name="PersonContactDetail",
@@ -1828,7 +1828,7 @@ class Migration(migrations.Migration):
                     ),
                 ),
             ],
-            options={"db_table": "opencivicdata_personcontactdetail",},
+            options={"db_table": "opencivicdata_personcontactdetail"},
         ),
         migrations.CreateModel(
             name="OrganizationSource",
@@ -1866,7 +1866,7 @@ class Migration(migrations.Migration):
                     ),
                 ),
             ],
-            options={"db_table": "opencivicdata_organizationsource",},
+            options={"db_table": "opencivicdata_organizationsource"},
         ),
         migrations.CreateModel(
             name="OrganizationName",
@@ -1920,7 +1920,7 @@ class Migration(migrations.Migration):
                     ),
                 ),
             ],
-            options={"db_table": "opencivicdata_organizationname",},
+            options={"db_table": "opencivicdata_organizationname"},
         ),
         migrations.CreateModel(
             name="OrganizationLink",
@@ -1958,7 +1958,7 @@ class Migration(migrations.Migration):
                     ),
                 ),
             ],
-            options={"db_table": "opencivicdata_organizationlink",},
+            options={"db_table": "opencivicdata_organizationlink"},
         ),
         migrations.CreateModel(
             name="OrganizationIdentifier",
@@ -1996,7 +1996,7 @@ class Migration(migrations.Migration):
                     ),
                 ),
             ],
-            options={"db_table": "opencivicdata_organizationidentifier",},
+            options={"db_table": "opencivicdata_organizationidentifier"},
         ),
         migrations.CreateModel(
             name="OrganizationContactDetail",
@@ -2061,7 +2061,7 @@ class Migration(migrations.Migration):
                     ),
                 ),
             ],
-            options={"db_table": "opencivicdata_organizationcontactdetail",},
+            options={"db_table": "opencivicdata_organizationcontactdetail"},
         ),
         migrations.CreateModel(
             name="MembershipLink",
@@ -2099,7 +2099,7 @@ class Migration(migrations.Migration):
                     ),
                 ),
             ],
-            options={"db_table": "opencivicdata_membershiplink",},
+            options={"db_table": "opencivicdata_membershiplink"},
         ),
         migrations.CreateModel(
             name="MembershipContactDetail",
@@ -2164,7 +2164,7 @@ class Migration(migrations.Migration):
                     ),
                 ),
             ],
-            options={"db_table": "opencivicdata_membershipcontactdetail",},
+            options={"db_table": "opencivicdata_membershipcontactdetail"},
         ),
         migrations.AddField(
             model_name="membership",
@@ -2244,7 +2244,7 @@ class Migration(migrations.Migration):
                     ),
                 ),
             ],
-            options={"db_table": "opencivicdata_eventsource",},
+            options={"db_table": "opencivicdata_eventsource"},
         ),
         migrations.CreateModel(
             name="EventRelatedEntity",
@@ -2302,7 +2302,7 @@ class Migration(migrations.Migration):
                     ),
                 ),
             ],
-            options={"db_table": "opencivicdata_eventrelatedentity",},
+            options={"db_table": "opencivicdata_eventrelatedentity"},
         ),
         migrations.CreateModel(
             name="EventParticipant",
@@ -2344,7 +2344,7 @@ class Migration(migrations.Migration):
                     ),
                 ),
             ],
-            options={"db_table": "opencivicdata_eventparticipant",},
+            options={"db_table": "opencivicdata_eventparticipant"},
         ),
         migrations.CreateModel(
             name="EventMediaLink",
@@ -2370,7 +2370,7 @@ class Migration(migrations.Migration):
                     ),
                 ),
             ],
-            options={"db_table": "opencivicdata_eventmedialink",},
+            options={"db_table": "opencivicdata_eventmedialink"},
         ),
         migrations.CreateModel(
             name="EventLocation",
@@ -2401,7 +2401,7 @@ class Migration(migrations.Migration):
                     ),
                 ),
             ],
-            options={"db_table": "opencivicdata_eventlocation",},
+            options={"db_table": "opencivicdata_eventlocation"},
         ),
         migrations.CreateModel(
             name="EventLink",
@@ -2438,7 +2438,7 @@ class Migration(migrations.Migration):
                     ),
                 ),
             ],
-            options={"db_table": "opencivicdata_eventlink",},
+            options={"db_table": "opencivicdata_eventlink"},
         ),
         migrations.CreateModel(
             name="EventDocumentLink",
@@ -2464,7 +2464,7 @@ class Migration(migrations.Migration):
                     ),
                 ),
             ],
-            options={"db_table": "opencivicdata_eventdocumentlink",},
+            options={"db_table": "opencivicdata_eventdocumentlink"},
         ),
         migrations.CreateModel(
             name="EventAgendaMediaLink",
@@ -2490,7 +2490,7 @@ class Migration(migrations.Migration):
                     ),
                 ),
             ],
-            options={"db_table": "opencivicdata_eventagendamedialink",},
+            options={"db_table": "opencivicdata_eventagendamedialink"},
         ),
         migrations.AddField(
             model_name="event",
@@ -2533,7 +2533,7 @@ class Migration(migrations.Migration):
                     ),
                 ),
             ],
-            options={"db_table": "opencivicdata_billtitle",},
+            options={"db_table": "opencivicdata_billtitle"},
         ),
         migrations.CreateModel(
             name="BillSponsorship",
@@ -2576,7 +2576,7 @@ class Migration(migrations.Migration):
                     ),
                 ),
             ],
-            options={"db_table": "opencivicdata_billsponsorship",},
+            options={"db_table": "opencivicdata_billsponsorship"},
         ),
         migrations.CreateModel(
             name="BillSource",
@@ -2613,7 +2613,7 @@ class Migration(migrations.Migration):
                     ),
                 ),
             ],
-            options={"db_table": "opencivicdata_billsource",},
+            options={"db_table": "opencivicdata_billsource"},
         ),
         migrations.CreateModel(
             name="BillIdentifier",
@@ -2651,7 +2651,7 @@ class Migration(migrations.Migration):
                     ),
                 ),
             ],
-            options={"db_table": "opencivicdata_billidentifier",},
+            options={"db_table": "opencivicdata_billidentifier"},
         ),
         migrations.CreateModel(
             name="BillDocumentLink",
@@ -2677,7 +2677,7 @@ class Migration(migrations.Migration):
                     ),
                 ),
             ],
-            options={"db_table": "opencivicdata_billdocumentlink",},
+            options={"db_table": "opencivicdata_billdocumentlink"},
         ),
         migrations.CreateModel(
             name="BillActionRelatedEntity",
@@ -2718,7 +2718,7 @@ class Migration(migrations.Migration):
                     ),
                 ),
             ],
-            options={"db_table": "opencivicdata_billactionrelatedentity",},
+            options={"db_table": "opencivicdata_billactionrelatedentity"},
         ),
         migrations.AddField(
             model_name="billaction",
@@ -2753,7 +2753,7 @@ class Migration(migrations.Migration):
                     ),
                 ),
             ],
-            options={"db_table": "opencivicdata_billabstract",},
+            options={"db_table": "opencivicdata_billabstract"},
         ),
         migrations.AddField(
             model_name="bill",
@@ -2781,7 +2781,7 @@ class Migration(migrations.Migration):
             ),
         ),
         migrations.AlterIndexTogether(
-            name="post", index_together={("organization", "label")},
+            name="post", index_together={("organization", "label")}
         ),
         migrations.AlterIndexTogether(
             name="organization",
@@ -2795,7 +2795,7 @@ class Migration(migrations.Migration):
             index_together={("organization", "person", "label", "post")},
         ),
         migrations.AlterIndexTogether(
-            name="event", index_together={("jurisdiction", "start_date", "name")},
+            name="event", index_together={("jurisdiction", "start_date", "name")}
         ),
         migrations.AlterIndexTogether(
             name="bill",
