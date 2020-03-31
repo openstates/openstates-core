@@ -1,10 +1,6 @@
 from django.contrib import admin
 from django.template import defaultfilters
-from pupa.data.admin.base import (
-    ModelAdmin,
-    ReadOnlyTabularInline,
-    IdentifierInline,
-)
+from pupa.data.admin.base import ModelAdmin, ReadOnlyTabularInline, IdentifierInline
 from .. import models
 
 

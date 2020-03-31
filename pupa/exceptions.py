@@ -1,5 +1,3 @@
-
-
 class PupaError(Exception):
     """ Base class for exceptions from within Pupa """
 
@@ -27,8 +25,8 @@ class NoMembershipsError(DataImportError):
     """ An attempt was made to import a person without any memberships. """
 
     def __init__(self, ids):
-        super(NoMembershipsError, self).__init__('no memberships for {} people: \n{}'.format(
-            len(ids), ', '.join(ids))
+        super(NoMembershipsError, self).__init__(
+            "no memberships for {} people: \n{}".format(len(ids), ", ".join(ids))
         )
 
 
@@ -36,17 +34,19 @@ class SameNameError(DataImportError):
     """ Attempt was made to import two people with the same name. """
 
     def __init__(self, name):
-        super(SameNameError, self).__init__('multiple people with same name "{}" in Jurisdiction '
-                                            '- must provide birth_date to disambiguate'
-                                            .format(name))
+        super(SameNameError, self).__init__(
+            'multiple people with same name "{}" in Jurisdiction '
+            "- must provide birth_date to disambiguate".format(name)
+        )
 
 
 class SameOrgNameError(DataImportError):
     """ Attempt was made to import two orgs with the same name. """
 
     def __init__(self, name):
-        super(SameOrgNameError, self).__init__('multiple orgs with same name "{}" in Jurisdiction '
-                                               .format(name))
+        super(SameOrgNameError, self).__init__(
+            'multiple orgs with same name "{}" in Jurisdiction '.format(name)
+        )
 
 
 class DuplicateItemError(DataImportError):
@@ -54,16 +54,20 @@ class DuplicateItemError(DataImportError):
 
     def __init__(self, data, obj, data_sources=None):
         super(DuplicateItemError, self).__init__(
-            'attempt to import data that would conflict with '
-            'data already in the import: {} '
-            '(already imported as {})\n'
-            'obj1 sources: {}\nobj2 sources: {}'.format(
+            "attempt to import data that would conflict with "
+            "data already in the import: {} "
+            "(already imported as {})\n"
+            "obj1 sources: {}\nobj2 sources: {}".format(
                 data,
                 obj,
-                list(obj.sources.values_list('url', flat=True)
-                     if hasattr(obj, 'sources') else []),
-                [s['url'] for s in data_sources or []]
-            ))
+                list(
+                    obj.sources.values_list("url", flat=True)
+                    if hasattr(obj, "sources")
+                    else []
+                ),
+                [s["url"] for s in data_sources or []],
+            )
+        )
 
 
 class UnresolvedIdError(DataImportError):

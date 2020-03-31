@@ -8,6 +8,7 @@ class CyclicGraphError(ValueError):
     sorting algorithm *knows* that the graph is Cyclic by hitting a snag
     in the top-sort)
     """
+
     pass
 
 
@@ -60,9 +61,11 @@ class Network(object):
         if not remove_backrefs:
             for fro, connections in self.edges.items():
                 if node in self.edges[fro]:
-                    raise ValueError("""Attempting to remove a node with
+                    raise ValueError(
+                        """Attempting to remove a node with
                                      backrefs. You may consider setting
-                                     `remove_backrefs` to true.""")
+                                     `remove_backrefs` to true."""
+                    )
 
         # OK. Otherwise, let's do our removal.
 
@@ -128,8 +131,7 @@ class Network(object):
                     yield (node,) + cycle
 
         # First, let's get a iterable of all known cycles.
-        cycles = chain.from_iterable(
-            (walk_node(node, set()) for node in self.nodes))
+        cycles = chain.from_iterable((walk_node(node, set()) for node in self.nodes))
 
         shortest = set()
         # Now, let's go through and sift through the cycles, finding

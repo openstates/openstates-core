@@ -1,8 +1,6 @@
 # not tests, just Django settings
 SECRET_KEY = "test"
-INSTALLED_APPS = (
-    "pupa.data",
-)
+INSTALLED_APPS = ("pupa.data",)
 DATABASES = {
     "default": {
         "ENGINE": "django.contrib.gis.db.backends.postgis",
