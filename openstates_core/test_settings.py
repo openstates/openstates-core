@@ -1,6 +1,10 @@
 # django settings for tests
 SECRET_KEY = "test"
-INSTALLED_APPS = ("django.contrib.contenttypes", "pupa.data", "pupa.reports")
+INSTALLED_APPS = (
+    "django.contrib.contenttypes",
+    "openstates_core.data",
+    "openstates_core.reports",
+)
 DATABASES = {
     "default": {
         "ENGINE": "django.contrib.gis.db.backends.postgis",

@@ -106,7 +106,7 @@ class BaseImporter(object):
         self.duplicates = {}
         self.pseudo_id_cache = {}
         self.session_cache = {}
-        self.logger = logging.getLogger("pupa")
+        self.logger = logging.getLogger("openstates")
         self.info = self.logger.info
         self.debug = self.logger.debug
         self.warning = self.logger.warning

@@ -67,7 +67,7 @@ class Scraper(scrapelib.Scraper):
         self.output_names = defaultdict(set)
 
         # logging convenience methods
-        self.logger = logging.getLogger("pupa")
+        self.logger = logging.getLogger("openstates")
         self.info = self.logger.info
         self.debug = self.logger.debug
         self.warning = self.logger.warning

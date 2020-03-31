@@ -77,7 +77,7 @@ def save_report(report, jurisdiction):
     try:
         JurisdictionModel.objects.get(pk=jurisdiction)
     except JurisdictionModel.DoesNotExist:
-        logger = logging.getLogger("pupa")
+        logger = logging.getLogger("openstates")
         logger.warning(
             "could not save RunPlan, no successful runs of {} yet".format(jurisdiction)
         )
@@ -120,7 +120,7 @@ def save_report(report, jurisdiction):
 
 class Command(BaseCommand):
     name = "update"
-    help = "update pupa data"
+    help = "update data"
 
     def add_args(self):
         # what to scrape

@@ -10,7 +10,7 @@ from ..data.models import (
 )
 from ..utils import get_pseudo_id
 from ..utils.topsort import Network
-from ..exceptions import UnresolvedIdError, PupaInternalError, SameOrgNameError
+from ..exceptions import UnresolvedIdError, InternalError, SameOrgNameError
 
 
 class OrganizationImporter(BaseImporter):
@@ -123,6 +123,6 @@ class OrganizationImporter(BaseImporter):
 
         # ensure all data made it into network (paranoid check, should never fail)
         if in_network != set(prepared.keys()):  # pragma: no cover
-            raise PupaInternalError("import is missing nodes in network set")
+            raise InternalError("import is missing nodes in network set")
 
         return import_order

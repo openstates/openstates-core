@@ -1,19 +1,19 @@
-class PupaError(Exception):
-    """ Base class for exceptions from within Pupa """
+class OpenStatesError(Exception):
+    """ Base class for exceptions from core """
 
 
-class PupaInternalError(PupaError):
-    """ Indication something went wrong inside of Pupa that never should happen """
+class InternalError(OpenStatesError):
+    """ Indication something went wrong inside the backend that never should happen """
 
 
-class CommandError(PupaError):
-    """ Errors from within pupa CLI """
+class CommandError(OpenStatesError):
+    """ Errors from within CLI """
 
 
 # import-related errors
 
 
-class DataImportError(PupaError):
+class DataImportError(OpenStatesError):
     """ A generic error related to the import process. """
 
 
@@ -77,9 +77,9 @@ class UnresolvedIdError(DataImportError):
 # scrape-related errors
 
 
-class ScrapeError(PupaError):
+class ScrapeError(OpenStatesError):
     """ A generic error related to the scrape process. """
 
 
-class ScrapeValueError(PupaError, ValueError):
-    """ An invalid value was passed to a pupa scrape object. """
+class ScrapeValueError(OpenStatesError, ValueError):
+    """ An invalid value was passed to a scrape object. """

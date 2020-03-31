@@ -4,7 +4,9 @@ import importlib
 
 import dj_database_url
 
-DATABASE_URL = os.environ.get("DATABASE_URL", "postgis://pupa:pupa@localhost/pupa")
+DATABASE_URL = os.environ.get(
+    "DATABASE_URL", "postgis://openstates:openstates@localhost/openstates"
+)
 SECRET_KEY = "non-secret"
 INSTALLED_APPS = (
     "django.contrib.contenttypes",

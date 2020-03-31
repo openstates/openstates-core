@@ -177,7 +177,7 @@ def test_vote_event_pupa_identifier_dedupe():
     assert what == "update"
     assert VoteEvent.objects.count() == 1
 
-    # new pupa identifier, insert
+    # new identifier, insert
     vote_event.pupa_id = "bar"
     _, what = VoteEventImporter("jid", dmi, oi, bi).import_item(vote_event.as_dict())
     assert what == "insert"

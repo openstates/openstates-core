@@ -7,7 +7,7 @@ import traceback
 from django.conf import settings
 from ..exceptions import CommandError
 
-logger = logging.getLogger("pupa")
+logger = logging.getLogger("openstates")
 
 COMMAND_MODULES = (
     "openstates_core.cli.commands.update",
@@ -16,7 +16,7 @@ COMMAND_MODULES = (
 
 
 def main():
-    parser = argparse.ArgumentParser("pupa", description="pupa CLI")
+    parser = argparse.ArgumentParser("openstates", description="openstates CLI")
     parser.add_argument("--debug", action="store_true", help="open debugger on error")
     parser.add_argument(
         "--loglevel",
@@ -31,7 +31,7 @@ def main():
 
     # configure Django before model imports
     if os.environ.get("DJANGO_SETTINGS_MODULE") is None:
-        os.environ["DJANGO_SETTINGS_MODULE"] = "pupa.settings"
+        os.environ["DJANGO_SETTINGS_MODULE"] = "openstates_core.settings"
 
     subcommands = {}
     for mod in COMMAND_MODULES:
