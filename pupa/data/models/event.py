@@ -1,6 +1,6 @@
 from django.contrib.gis.db import models
 from django.contrib.postgres.fields import ArrayField, JSONField
-from opencivicdata.core.models.base import (
+from .base import (
     OCDBase,
     LinkBase,
     OCDIDField,
@@ -8,7 +8,7 @@ from opencivicdata.core.models.base import (
     RelatedEntityBase,
     MimetypeLinkBase,
 )
-from opencivicdata.core.models import Jurisdiction
+from .jurisdiction import Jurisdiction
 from .bill import Bill
 from .vote import VoteEvent
 from ...common import (

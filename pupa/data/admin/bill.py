@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.template import defaultfilters
-from opencivicdata.core.admin.base import (
+from pupa.data.admin.base import (
     ModelAdmin,
     ReadOnlyTabularInline,
     IdentifierInline,

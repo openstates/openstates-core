@@ -1,6 +1,6 @@
 from django.db import models
-from opencivicdata.core.models.base import RelatedBase
-from opencivicdata.core.models import Jurisdiction
+from .base import RelatedBase
+from .jurisdiction import Jurisdiction
 from ...common import SESSION_CLASSIFICATION_CHOICES
 
 

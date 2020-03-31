@@ -1,6 +1,6 @@
 #!/u/bin/env python
 # -*- coding: utf-8 -*-
-from opencivicdata.divisions import Division
+from pupa.data.divisions import Division
 
 
 def test_get():

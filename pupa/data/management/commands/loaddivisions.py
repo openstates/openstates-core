@@ -3,7 +3,7 @@ from __future__ import print_function
 from django.db import transaction
 from django.core.management.base import BaseCommand
 
-from opencivicdata.divisions import Division as FileDivision
+from pupa.data.divisions import Division as FileDivision
 from ...models import Division
 
 

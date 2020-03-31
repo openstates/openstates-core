@@ -5,7 +5,7 @@ from django.contrib.postgres.search import SearchVectorField
 from django.contrib.postgres.indexes import GinIndex
 
 
-from opencivicdata.core.models.base import (
+from .base import (
     OCDBase,
     LinkBase,
     OCDIDField,
@@ -14,7 +14,7 @@ from opencivicdata.core.models.base import (
     MimetypeLinkBase,
     IdentifierBase,
 )
-from opencivicdata.core.models import Organization
+from .people_orgs import Organization
 from .session import LegislativeSession
 from ... import common
 

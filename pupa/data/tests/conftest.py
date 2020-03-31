@@ -1,21 +1,20 @@
 import pytest
 from datetime import date, datetime
 from django.contrib.gis.geos import Point
-from opencivicdata.core.models import (
+from pupa.data.models import (
     Jurisdiction,
     Division,
     Membership,
     Organization,
     Person,
     Post,
-)
-from opencivicdata.legislative.models import (
     LegislativeSession,
     Event,
     EventLocation,
     VoteEvent,
     Bill,
 )
+
 
 @pytest.fixture
 def division():

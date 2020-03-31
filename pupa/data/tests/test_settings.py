@@ -1,8 +1,7 @@
 # not tests, just Django settings
 SECRET_KEY = "test"
 INSTALLED_APPS = (
-    "opencivicdata.core.apps.BaseConfig",
-    "opencivicdata.legislative.apps.BaseConfig",
+    "pupa.data",
 )
 DATABASES = {
     "default": {

@@ -1,8 +1,8 @@
 from django.db import models
 from django.contrib.postgres.fields import ArrayField, JSONField
 
-from opencivicdata.core.models.base import OCDBase, LinkBase, OCDIDField, RelatedBase
-from opencivicdata.core.models import Organization, Person
+from .base import OCDBase, LinkBase, OCDIDField, RelatedBase
+from .people_orgs import Organization, Person
 from .session import LegislativeSession
 from .bill import Bill, BillAction
 from ... import common

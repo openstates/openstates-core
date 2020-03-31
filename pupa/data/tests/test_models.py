@@ -1,5 +1,5 @@
 import pytest
-from opencivicdata.core.models import Jurisdiction, Division, Organization, Person
+from pupa.data.models import Jurisdiction, Division, Organization, Person
 from django.core.exceptions import ValidationError
 
 
