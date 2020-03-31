@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 from setuptools import setup, find_packages
 
-install_requires = ["Django>=2.2", "psycopg2-binary"]
+install_requires = ["Django>=2.2", "psycopg2-binary", 'dj_database_url>=0.3.0', 'scrapelib>=1.0',
+                    'jsonschema>=3.0.0', 'pytz', ]
 
 extras_require = {
     "dev": ["pytest>=3.6", "pytest-cov", "pytest-django", "coveralls", "flake8"]
