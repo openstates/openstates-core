@@ -228,7 +228,7 @@ class Command(BaseCommand):
             VoteEventImporter,
             EventImporter,
         )
-        from pupa.reports import generate_session_report
+        from pupa.reports.session import generate_session_report
         from pupa.models import SessionDataQualityReport
 
         datadir = os.path.join(settings.SCRAPED_DATA_DIR, args.module)

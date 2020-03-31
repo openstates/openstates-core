@@ -3,7 +3,7 @@ SECRET_KEY = "test"
 INSTALLED_APPS = (
     "django.contrib.contenttypes",
     "pupa.data",
-    "pupa",
+    "pupa.reports",
 )
 DATABASES = {
     "default": {
