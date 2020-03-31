@@ -45,7 +45,7 @@ LOGGING = {
     "handlers": {
         "default": {
             "level": "DEBUG",
-            "class": "pupa.ext.ansistrm.ColorizingStreamHandler",
+            "class": "pupa.utils.ansistrm.ColorizingStreamHandler",
             "formatter": "standard",
         }
     },
