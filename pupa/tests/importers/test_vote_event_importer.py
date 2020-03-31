@@ -13,8 +13,15 @@ from pupa.importers import (
     OrganizationImporter,
     PersonImporter,
 )
-from opencivicdata.core.models import Jurisdiction, Person, Organization, Division
-from opencivicdata.legislative.models import VoteEvent, LegislativeSession, Bill
+from pupa.data.models import (
+    Jurisdiction,
+    Person,
+    Organization,
+    Division,
+    VoteEvent,
+    LegislativeSession,
+    Bill,
+)
 
 
 class DumbMockImporter(object):

@@ -1,4 +1,6 @@
-from opencivicdata.legislative.models import (
+from .base import BaseImporter
+from ..exceptions import PupaInternalError
+from ..data.models import (
     Bill,
     RelatedBill,
     BillAbstract,
@@ -13,8 +15,6 @@ from opencivicdata.legislative.models import (
     BillDocumentLink,
     BillVersionLink,
 )
-from .base import BaseImporter
-from ..exceptions import PupaInternalError
 
 
 class BillImporter(BaseImporter):

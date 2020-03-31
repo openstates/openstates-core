@@ -7,13 +7,15 @@ from pupa.importers import (
     BillImporter,
     VoteEventImporter,
 )
-from opencivicdata.legislative.models import VoteEvent, Bill, Event
-from opencivicdata.core.models import (
+from pupa.data.models import (
     Person,
     Membership,
     Organization,
     Jurisdiction,
     Division,
+    VoteEvent,
+    Bill,
+    Event
 )
 
 

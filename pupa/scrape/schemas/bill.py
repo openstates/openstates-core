@@ -3,7 +3,7 @@
 """
 
 from .common import sources, extras, fuzzy_date_blank, fuzzy_datetime
-from opencivicdata import common
+from pupa.data import common
 
 versions_or_documents = {
     "items": {

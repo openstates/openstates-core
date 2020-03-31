@@ -13,7 +13,7 @@ class Command(BaseCommand):
 
     def handle(self, args, other):
         django.setup()
-        from opencivicdata.core.models import Organization
+        from pupa.data.models import Organization
 
         if args.action == "add":
             o, created = Organization.objects.get_or_create(

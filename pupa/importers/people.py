@@ -1,6 +1,8 @@
 from collections import defaultdict
 from django.db.models import Q
-from opencivicdata.core.models import (
+from .base import BaseImporter
+from ..exceptions import SameNameError
+from ..data.models import (
     Person,
     PersonIdentifier,
     PersonName,
@@ -8,8 +10,6 @@ from opencivicdata.core.models import (
     PersonLink,
     PersonSource,
 )
-from .base import BaseImporter
-from ..exceptions import SameNameError
 
 
 class PersonImporter(BaseImporter):

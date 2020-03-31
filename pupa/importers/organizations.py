@@ -1,5 +1,6 @@
 from django.db.models import Q
-from opencivicdata.core.models import (
+from .base import BaseImporter
+from ..data.models import (
     Organization,
     OrganizationIdentifier,
     OrganizationName,
@@ -7,7 +8,6 @@ from opencivicdata.core.models import (
     OrganizationLink,
     OrganizationSource,
 )
-from .base import BaseImporter
 from ..utils import get_pseudo_id
 from ..utils.topsort import Network
 from ..exceptions import UnresolvedIdError, PupaInternalError, SameOrgNameError

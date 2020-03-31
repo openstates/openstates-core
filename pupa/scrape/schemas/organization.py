@@ -7,7 +7,7 @@ from .common import (
     extras,
     fuzzy_date_blank,
 )
-from opencivicdata import common
+from pupa.data import common
 
 schema = {
     "properties": {

@@ -1,7 +1,6 @@
 import pytest
 import django
-from opencivicdata.core.models import Jurisdiction, Division, Organization, Person
-from opencivicdata.legislative.models import Bill, VoteEvent
+from pupa.data.models import Jurisdiction, Division, Organization, Person, Bill, VoteEvent
 from pupa.reports import generate_session_report
 
 

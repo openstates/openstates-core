@@ -2,8 +2,7 @@ from django.db import models
 from django.contrib.postgres.fields import JSONField
 from django.contrib.contenttypes.fields import GenericForeignKey
 from django.contrib.contenttypes.models import ContentType
-from opencivicdata.core.models import Jurisdiction
-from opencivicdata.legislative.models import LegislativeSession
+from .data.models import Jurisdiction, LegislativeSession
 
 
 OBJECT_TYPES = (

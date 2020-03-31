@@ -1,7 +1,7 @@
 import pytest
 from pupa.scrape import Person as ScrapePerson
 from pupa.importers import PersonImporter
-from opencivicdata.core.models import (
+from pupa.data.models import (
     Person,
     Organization,
     Membership,

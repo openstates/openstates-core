@@ -1,9 +1,9 @@
-from opencivicdata.core.models import (
+from .base import BaseImporter
+from ..data.models import (
     Membership,
     MembershipContactDetail,
     MembershipLink,
 )
-from .base import BaseImporter
 from ..utils import get_pseudo_id
 from ..exceptions import NoMembershipsError
 

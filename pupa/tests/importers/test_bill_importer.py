@@ -4,14 +4,14 @@ from pupa.scrape import Bill as ScrapeBill
 from pupa.scrape import Person as ScrapePerson
 from pupa.scrape import Organization as ScrapeOrganization
 from pupa.importers import BillImporter, OrganizationImporter, PersonImporter
-from opencivicdata.core.models import (
+from pupa.data.models import (
     Jurisdiction,
     Person,
     Organization,
     Membership,
     Division,
+    Bill
 )
-from opencivicdata.legislative.models import Bill
 
 
 def create_jurisdiction():

@@ -1,4 +1,4 @@
-from opencivicdata import common
+from pupa.data import common
 
 contact_details = {
     "type": "array",

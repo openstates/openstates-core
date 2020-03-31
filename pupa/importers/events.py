@@ -1,6 +1,6 @@
 from .base import BaseImporter
 from pupa.utils import get_pseudo_id, _make_pseudo_id
-from opencivicdata.legislative.models import (
+from ..data.models import (
     Event,
     EventLocation,
     EventSource,

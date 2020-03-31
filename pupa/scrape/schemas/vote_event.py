@@ -1,5 +1,5 @@
 from .common import sources, extras, fuzzy_datetime_blank
-from opencivicdata import common
+from pupa.data import common
 
 
 schema = {

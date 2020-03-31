@@ -8,8 +8,8 @@ from django.db.models import Q
 from django.db.models.signals import post_save
 from django.contrib.contenttypes.models import ContentType
 
-from opencivicdata.legislative.models import LegislativeSession
 from pupa import settings
+from pupa.data.models import LegislativeSession
 from pupa.exceptions import DuplicateItemError
 from pupa.utils import get_pseudo_id, utcnow
 from pupa.exceptions import UnresolvedIdError, DataImportError

@@ -67,7 +67,7 @@ def print_report(report):
 @transaction.atomic
 def save_report(report, jurisdiction):
     from pupa.models import RunPlan
-    from opencivicdata.core.models import Jurisdiction as JurisdictionModel
+    from pupa.data.models import Jurisdiction as JurisdictionModel
 
     # set end time
     report["end"] = utils.utcnow()

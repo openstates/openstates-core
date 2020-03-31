@@ -1,13 +1,13 @@
-from opencivicdata.legislative.models import (
+from pupa.utils import get_pseudo_id, _make_pseudo_id
+from .base import BaseImporter
+from ..exceptions import InvalidVoteEventError
+from ..data.models import (
     VoteEvent,
     VoteCount,
     PersonVote,
     VoteSource,
     BillAction,
 )
-from pupa.utils import get_pseudo_id, _make_pseudo_id
-from .base import BaseImporter
-from ..exceptions import InvalidVoteEventError
 
 
 class VoteEventImporter(BaseImporter):

@@ -1,5 +1,5 @@
 from django.db.models import Count, Subquery, OuterRef, Q, F
-from opencivicdata.legislative.models import (
+from pupa.data.models import (
     Bill,
     VoteEvent,
     VoteCount,
