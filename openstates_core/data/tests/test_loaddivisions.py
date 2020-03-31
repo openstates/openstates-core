@@ -1,6 +1,6 @@
 import pytest
 from django.core.management import call_command
-from pupa.data.models import Division
+from openstates_core.data.models import Division
 
 
 @pytest.mark.django_db

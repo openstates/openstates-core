@@ -1,8 +1,8 @@
 import pytest
-from pupa.data.models import Organization, Jurisdiction, Division
-from pupa.scrape import Organization as ScrapeOrganization
-from pupa.importers import OrganizationImporter
-from pupa.exceptions import UnresolvedIdError, SameOrgNameError
+from openstates_core.data.models import Organization, Jurisdiction, Division
+from openstates_core.scrape import Organization as ScrapeOrganization
+from openstates_core.importers import OrganizationImporter
+from openstates_core.exceptions import UnresolvedIdError, SameOrgNameError
 
 
 def create_jurisdictions():

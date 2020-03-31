@@ -1,7 +1,7 @@
 import pytest
-from pupa.scrape import Jurisdiction as JurisdictionBase
-from pupa.importers import JurisdictionImporter
-from pupa.data.models import Jurisdiction, Division, LegislativeSession
+from openstates_core.scrape import Jurisdiction as JurisdictionBase
+from openstates_core.importers import JurisdictionImporter
+from openstates_core.data.models import Jurisdiction, Division, LegislativeSession
 
 
 class FakeJurisdiction(JurisdictionBase):

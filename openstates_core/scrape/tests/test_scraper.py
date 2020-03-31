@@ -1,7 +1,7 @@
 import pytest
 from unittest import mock
-from pupa.scrape import Person, Organization, Bill, Jurisdiction
-from pupa.scrape.base import Scraper, ScrapeError, BaseBillScraper
+from openstates_core.scrape import Person, Organization, Bill, Jurisdiction
+from openstates_core.scrape.base import Scraper, ScrapeError, BaseBillScraper
 
 
 class FakeJurisdiction(Jurisdiction):

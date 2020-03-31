@@ -1,19 +1,19 @@
 import re
 import pytest
-from pupa.scrape import (
+from openstates_core.scrape import (
     VoteEvent as ScrapeVoteEvent,
     Bill as ScrapeBill,
     Organization as ScrapeOrganization,
     Person as ScrapePerson,
 )
-from pupa.importers import (
+from openstates_core.importers import (
     VoteEventImporter,
     BillImporter,
     MembershipImporter,
     OrganizationImporter,
     PersonImporter,
 )
-from pupa.data.models import (
+from openstates_core.data.models import (
     Jurisdiction,
     Person,
     Organization,
@@ -561,7 +561,7 @@ def test_fix_bill_id():
 
     oi.import_data([org1.as_dict()])
 
-    from pupa.settings import IMPORT_TRANSFORMERS
+    from openstates_core.settings import IMPORT_TRANSFORMERS
 
     IMPORT_TRANSFORMERS["bill"] = {
         "identifier": lambda x: re.sub(r"([A-Z]*)\s*0*([-\d]+)", r"\1 \2", x, 1)

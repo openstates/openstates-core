@@ -1,13 +1,13 @@
 import pytest
-from pupa.scrape import Event as ScrapeEvent
-from pupa.importers import (
+from openstates_core.scrape import Event as ScrapeEvent
+from openstates_core.importers import (
     EventImporter,
     OrganizationImporter,
     PersonImporter,
     BillImporter,
     VoteEventImporter,
 )
-from pupa.data.models import (
+from openstates_core.data.models import (
     Person,
     Membership,
     Organization,

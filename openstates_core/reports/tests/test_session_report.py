@@ -1,6 +1,6 @@
 import pytest
 import django
-from pupa.data.models import (
+from openstates_core.data.models import (
     Jurisdiction,
     Division,
     Organization,
@@ -8,7 +8,7 @@ from pupa.data.models import (
     Bill,
     VoteEvent,
 )
-from pupa.reports.session import generate_session_report
+from openstates_core.reports.session import generate_session_report
 
 
 def create_data():

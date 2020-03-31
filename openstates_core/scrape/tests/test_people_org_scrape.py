@@ -1,8 +1,8 @@
 import datetime
 import pytest
-from pupa.scrape import Person, Organization, Membership, Post
-from pupa.utils import get_pseudo_id
-from pupa.exceptions import ScrapeValueError
+from openstates_core.scrape import Person, Organization, Membership, Post
+from openstates_core.utils import get_pseudo_id
+from openstates_core.exceptions import ScrapeValueError
 
 
 def test_basic_post():

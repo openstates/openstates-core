@@ -1,7 +1,7 @@
 import pytest
-from pupa.scrape import Bill
-from pupa.utils.generic import get_pseudo_id
-from pupa.exceptions import ScrapeValueError
+from openstates_core.scrape import Bill
+from openstates_core.utils.generic import get_pseudo_id
+from openstates_core.exceptions import ScrapeValueError
 
 
 def toy_bill():

@@ -1,6 +1,6 @@
 import pytest
-from pupa.scrape import VoteEvent, Bill, Organization, OrderVoteEvent
-from pupa.utils import get_pseudo_id
+from openstates_core.scrape import VoteEvent, Bill, Organization, OrderVoteEvent
+from openstates_core.utils import get_pseudo_id
 
 
 def toy_vote_event():

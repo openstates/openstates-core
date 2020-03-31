@@ -1,8 +1,14 @@
 import pytest
-from pupa.scrape import Person as ScrapePerson
-from pupa.importers import PersonImporter
-from pupa.data.models import Person, Organization, Membership, Division, Jurisdiction
-from pupa.exceptions import UnresolvedIdError, SameNameError
+from openstates_core.scrape import Person as ScrapePerson
+from openstates_core.importers import PersonImporter
+from openstates_core.data.models import (
+    Person,
+    Organization,
+    Membership,
+    Division,
+    Jurisdiction,
+)
+from openstates_core.exceptions import UnresolvedIdError, SameNameError
 
 
 def create_jurisdiction():

@@ -1,6 +1,6 @@
 #!/u/bin/env python
 # -*- coding: utf-8 -*-
-from pupa.data.divisions import Division
+from openstates_core.data.divisions import Division
 
 
 def test_get():

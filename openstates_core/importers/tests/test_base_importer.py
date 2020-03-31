@@ -4,12 +4,12 @@ import shutil
 import tempfile
 import pytest
 from unittest import mock
-from pupa.data.models import Person, Organization, Jurisdiction, Division
-from pupa.scrape import Person as ScrapePerson
-from pupa.scrape import Organization as ScrapeOrganization
-from pupa.importers.base import omnihash, BaseImporter
-from pupa.importers import PersonImporter, OrganizationImporter
-from pupa.exceptions import UnresolvedIdError, DataImportError
+from openstates_core.data.models import Person, Organization, Jurisdiction, Division
+from openstates_core.scrape import Person as ScrapePerson
+from openstates_core.scrape import Organization as ScrapeOrganization
+from openstates_core.importers.base import omnihash, BaseImporter
+from openstates_core.importers import PersonImporter, OrganizationImporter
+from openstates_core.exceptions import UnresolvedIdError, DataImportError
 
 
 def create_jurisdiction():

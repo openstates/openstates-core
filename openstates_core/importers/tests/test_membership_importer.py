@@ -1,9 +1,19 @@
 import pytest
-from pupa.scrape import Membership as ScrapeMembership
-from pupa.scrape import Person as ScrapePerson
-from pupa.importers import MembershipImporter, PersonImporter, OrganizationImporter
-from pupa.exceptions import NoMembershipsError
-from pupa.data.models import Organization, Post, Person, Division, Jurisdiction
+from openstates_core.scrape import Membership as ScrapeMembership
+from openstates_core.scrape import Person as ScrapePerson
+from openstates_core.importers import (
+    MembershipImporter,
+    PersonImporter,
+    OrganizationImporter,
+)
+from openstates_core.exceptions import NoMembershipsError
+from openstates_core.data.models import (
+    Organization,
+    Post,
+    Person,
+    Division,
+    Jurisdiction,
+)
 
 
 class DumbMockImporter(object):
