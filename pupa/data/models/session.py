@@ -1,7 +1,7 @@
 from django.db import models
 from .base import RelatedBase
 from .jurisdiction import Jurisdiction
-from ...common import SESSION_CLASSIFICATION_CHOICES
+from ..common import SESSION_CLASSIFICATION_CHOICES
 
 
 class LegislativeSession(RelatedBase):

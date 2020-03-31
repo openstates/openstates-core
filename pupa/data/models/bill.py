@@ -1,4 +1,3 @@
-from __future__ import unicode_literals
 from django.db import models
 from django.contrib.postgres.fields import ArrayField, JSONField
 from django.contrib.postgres.search import SearchVectorField
@@ -16,7 +15,7 @@ from .base import (
 )
 from .people_orgs import Organization
 from .session import LegislativeSession
-from ... import common
+from .. import common
 
 
 class Bill(OCDBase):

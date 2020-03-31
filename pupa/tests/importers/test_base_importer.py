@@ -2,8 +2,8 @@ import os
 import json
 import shutil
 import tempfile
-import mock
 import pytest
+from unittest import mock
 from pupa.data.models import Person, Organization, Jurisdiction, Division
 from pupa.scrape import Person as ScrapePerson
 from pupa.scrape import Organization as ScrapeOrganization

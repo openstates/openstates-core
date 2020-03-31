@@ -1,11 +1,9 @@
-from __future__ import unicode_literals
 import re
 import uuid
 from django.db import models
 from django.contrib.postgres.fields import ArrayField, JSONField
 from django.core.validators import RegexValidator
-
-from ... import common
+from .. import common
 
 
 class OCDIDField(models.CharField):

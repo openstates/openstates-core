@@ -5,13 +5,12 @@ import importlib
 import dj_database_url
 
 DATABASE_URL = os.environ.get(
-    "DATABASE_URL", "postgis://pupa:pupa@localhost/opencivicdata"
+    "DATABASE_URL", "postgis://pupa:pupa@localhost/pupa"
 )
 SECRET_KEY = "non-secret"
 INSTALLED_APPS = (
     "django.contrib.contenttypes",
-    "opencivicdata.core.apps.BaseConfig",
-    "opencivicdata.legislative.apps.BaseConfig",
+    "pupa.data",
     "pupa",
 )
 

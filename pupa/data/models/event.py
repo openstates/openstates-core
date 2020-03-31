@@ -11,7 +11,7 @@ from .base import (
 from .jurisdiction import Jurisdiction
 from .bill import Bill
 from .vote import VoteEvent
-from ...common import (
+from ..common import (
     EVENT_MEDIA_CLASSIFICATION_CHOICES,
     EVENT_DOCUMENT_CLASSIFICATION_CHOICES,
 )

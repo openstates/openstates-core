@@ -2,8 +2,7 @@
 SECRET_KEY = "test"
 INSTALLED_APPS = (
     "django.contrib.contenttypes",
-    "opencivicdata.core.apps.BaseConfig",
-    "opencivicdata.legislative.apps.BaseConfig",
+    "pupa.data",
     "pupa",
 )
 DATABASES = {

@@ -1,5 +1,5 @@
-import mock
 import pytest
+from unittest import mock
 from pupa.scrape import Person, Organization, Bill, Jurisdiction
 from pupa.scrape.base import Scraper, ScrapeError, BaseBillScraper
 
