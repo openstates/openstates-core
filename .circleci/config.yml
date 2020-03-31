@@ -1,4 +1,6 @@
-version: 2
+version: 2.1
+orbs:
+  codecov: codecov/codecov@1.0.2
 jobs:
   build:
     docker:
@@ -36,7 +38,7 @@ jobs:
             psql -h localhost -c "CREATE EXTENSION postgis;" -U postgres -d test
       - run:
           name: test
-          command: poetry run pytest --junitxml=test_results.xml --ds=openstates_core.test_settings --reuse-db -v openstates_core
+          command: poetry run pytest --cov-report=xml --cov=openstates_core --junitxml=test_results.xml --ds=openstates_core.test_settings --reuse-db -v openstates_core
           environment:
             DATABASE_URL: postgis://test:test@localhost/test
       - run:
@@ -44,6 +46,8 @@ jobs:
           command: poetry run flake8 --ignore=E203,E501,W503
 
       # store results
+      - codecov/upload:
+          file: coverage.xml
       - store_test_results:
           path: test_results.xml
       - store_artifacts:
