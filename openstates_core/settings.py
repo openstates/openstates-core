@@ -1,8 +1,6 @@
 import os
-import sys
-import importlib
-
 import dj_database_url
+from .utils import transformers
 
 DATABASE_URL = os.environ.get(
     "DATABASE_URL", "postgis://openstates:openstates@localhost/openstates"
@@ -27,12 +25,12 @@ SCRAPED_DATA_DIR = os.path.join(os.getcwd(), "_data")
 
 # import settings
 
-ENABLE_PEOPLE_AND_ORGS = True
 ENABLE_BILLS = True
 ENABLE_VOTES = True
-ENABLE_EVENTS = True
+ENABLE_PEOPLE_AND_ORGS = False
+ENABLE_EVENTS = False
 
-IMPORT_TRANSFORMERS = {"bill": []}
+IMPORT_TRANSFORMERS = {"bill": {"identifier": transformers.fix_bill_id}}
 
 # Django settings
 DEBUG = False
@@ -62,15 +60,6 @@ LOGGING = {
         "boto": {"handlers": ["default"], "level": "WARN", "propagate": False},
     },
 }
-
-
-sys.path.insert(1, os.getcwd())
-loader = importlib.util.find_spec("pupa_settings")
-if loader is None:
-    print("no pupa_settings on path, using defaults")
-else:
-    from pupa_settings import *  # NOQA
-
 
 DATABASES = {"default": dj_database_url.parse(DATABASE_URL)}
 DATABASES["default"]["ENGINE"] = "django.contrib.gis.db.backends.postgis"
