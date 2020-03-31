@@ -1,16 +1,5 @@
 import os
-import dj_database_url
 from .utils import transformers
-
-DATABASE_URL = os.environ.get(
-    "DATABASE_URL", "postgis://openstates:openstates@localhost/openstates"
-)
-SECRET_KEY = "non-secret"
-INSTALLED_APPS = (
-    "django.contrib.contenttypes",
-    "openstates_core.data",
-    "openstates_core.reports",
-)
 
 # scrape settings
 
@@ -33,10 +22,6 @@ ENABLE_EVENTS = False
 IMPORT_TRANSFORMERS = {"bill": {"identifier": transformers.fix_bill_id}}
 
 # Django settings
-DEBUG = False
-TEMPLATE_DEBUG = False
-
-MIDDLEWARE_CLASSES = ()
 LOGGING = {
     "version": 1,
     "disable_existing_loggers": False,
@@ -60,6 +45,3 @@ LOGGING = {
         "boto": {"handlers": ["default"], "level": "WARN", "propagate": False},
     },
 }
-
-DATABASES = {"default": dj_database_url.parse(DATABASE_URL)}
-DATABASES["default"]["ENGINE"] = "django.contrib.gis.db.backends.postgis"

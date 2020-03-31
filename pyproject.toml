@@ -5,6 +5,9 @@ description = "core infrastructure for the openstates project"
 authors = ["James Turk <james@openstates.org>"]
 license = "MIT"
 
+[tool.poetry.scripts]
+os-update = 'openstates_core.cli.update:main'
+
 [tool.poetry.dependencies]
 python = "^3.7"
 psycopg2-binary = "^2.8.4"
