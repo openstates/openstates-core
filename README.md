@@ -1,15 +1,10 @@
-python-opencivicdata
-====================
+# openstates-core
 
-[![Build Status](https://travis-ci.com/opencivicdata/python-opencivicdata.svg?branch=master)](https://travis-ci.com/opencivicdata/python-opencivicdata)
-[![Coverage Status](https://coveralls.io/repos/opencivicdata/python-opencivicdata/badge.png?branch=master)](https://coveralls.io/r/opencivicdata/python-opencivicdata?branch=master)
-[![PyPI](https://img.shields.io/pypi/v/opencivicdata.svg)](https://pypi.python.org/pypi/opencivicdata)
+This repository contains the Open States data model and scraper backend.
 
-Python utilities (including Django models) for implementing the
-Open Civic Data specification.
+[![CircleCI](https://circleci.com/gh/openstates/openstates-core.svg?style=svg)](https://circleci.com/gh/openstates/openstates-core)
 
-**Requires Django >=2.2 and Python >= 3.6, pin to <3.0 for older versions**
+## Links
 
-The Organization, Person, Membership, Post, and VoteEvent models and related models are based on the [Popolo specification](http://popoloproject.com/).
-
-To run tests on this project: ./run-tests.sh
+* [Open States Discourse](https://discourse.openstates.org)
+* [Code of Conduct](https://docs.openstates.org/en/latest/contributing/code-of-conduct.html)
