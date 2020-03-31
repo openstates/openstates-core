@@ -2,7 +2,7 @@
 name = "text-extraction"
 version = "1.0"
 description = ""
-authors = ["Your Name <you@example.com>"]
+authors = ["James Turk <james@openstates.org>"]
 license = "MIT"
 
 [tool.poetry.dependencies]
