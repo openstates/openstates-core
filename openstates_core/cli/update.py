@@ -244,12 +244,12 @@ def do_import(juris, args):
 
 
 def check_session_list(juris):
-    # if get_session_list is not defined, let it slide
-    if not hasattr(juris, "get_session_list"):
-        print("Not checking sessions...")
-        return
-
     scraper = type(juris).__name__
+
+    # if get_session_list is not defined
+    if not hasattr(juris, "get_session_list"):
+        raise CommandError(f"{scraper}.get_session_list() is not provided")
+
     scraped_sessions = juris.get_session_list()
 
     if not scraped_sessions:
