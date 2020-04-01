@@ -103,7 +103,6 @@ def do_import(juris, args):
         VoteEventImporter,
         EventImporter,
     )
-    from openstates_core.reports.models import SessionDataQualityReport
 
     datadir = os.path.join(settings.SCRAPED_DATA_DIR, args.module)
 
@@ -155,12 +154,7 @@ def do_import(juris, args):
     seen_sessions.update(bill_importer.get_seen_sessions())
     seen_sessions.update(vote_event_importer.get_seen_sessions())
     for session in seen_sessions:
-        new_report = generate_session_report(session)
-        with transaction.atomic():
-            SessionDataQualityReport.objects.filter(
-                legislative_session=session
-            ).delete()
-            new_report.save()
+        generate_session_report(session)
 
     return report
 

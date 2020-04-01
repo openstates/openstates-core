@@ -178,4 +178,10 @@ def generate_session_report(session):
     )
     report["unmatched_voters"] = {item["name"]: item["num"] for item in queryset}
 
-    return SessionDataQualityReport(legislative_session_id=session, **report)
+    # atomically replace the report if it exists
+    new_report = SessionDataQualityReport(legislative_session_id=session, **report)
+    with transaction.atomic():
+        SessionDataQualityReport.objects.filter(legislative_session=session).delete()
+        new_report.save()
+
+    return new_report
