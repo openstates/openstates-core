@@ -8,7 +8,7 @@ from openstates_core.data.models import (
     Bill,
     VoteEvent,
 )
-from openstates_core.reports.session import generate_session_report
+from openstates_core.cli.reports import generate_session_report
 
 
 def create_data():

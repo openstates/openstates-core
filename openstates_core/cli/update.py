@@ -15,6 +15,7 @@ from ..exceptions import CommandError
 from ..scrape import Jurisdiction, JurisdictionScraper
 from ..utils.django import init_django
 from .. import utils, settings
+from .reports import generate_session_report, print_report, save_report
 
 logger = logging.getLogger("openstates")
 
@@ -41,84 +42,6 @@ def override_settings(settings, overrides):
             delattr(settings, key)
         else:
             setattr(settings, key, value)
-
-
-def print_report(report):
-    plan = report["plan"]
-    print("{} ({})".format(plan["module"], ", ".join(plan["actions"])))
-    for scraper, args in plan["scrapers"].items():
-        print("  {}: {}".format(scraper, args))
-    if "scrape" in report:
-        for type, details in sorted(report["scrape"].items()):
-            print(type + " scrape:")
-            print("  duration: ", (details["end"] - details["start"]))
-            print("  objects:")
-            for objtype, num in sorted(details["objects"].items()):
-                print("    {}: {}".format(objtype, num))
-    if "import" in report:
-        print("import:")
-        for type, changes in sorted(report["import"].items()):
-            if changes["insert"] or changes["update"] or changes["noop"]:
-                print(
-                    "  {}: {} new {} updated {} noop".format(
-                        type, changes["insert"], changes["update"], changes["noop"]
-                    )
-                )
-
-
-@transaction.atomic
-def save_report(report, jurisdiction):
-    from openstates_core.reports.models import RunPlan
-    from openstates_core.data.models import Jurisdiction as JurisdictionModel
-
-    # set end time
-    report["end"] = utils.utcnow()
-
-    # if there's an error on the first run, the jurisdiction doesn't exist
-    # yet, we opt for skipping creation of RunPlan until there's been at least
-    # one good run
-    try:
-        JurisdictionModel.objects.get(pk=jurisdiction)
-    except JurisdictionModel.DoesNotExist:
-        logger = logging.getLogger("openstates")
-        logger.warning(
-            "could not save RunPlan, no successful runs of {} yet".format(jurisdiction)
-        )
-        return
-
-    plan = RunPlan.objects.create(
-        jurisdiction_id=jurisdiction,
-        success=report["success"],
-        start_time=report["start"],
-        end_time=report["end"],
-        exception=report.get("exception", ""),
-        traceback=report.get("traceback", ""),
-    )
-
-    for scraper, details in report.get("scrape", {}).items():
-        args = " ".join(
-            "{k}={v}".format(k=k, v=v)
-            for k, v in report["plan"]["scrapers"].get(scraper, {}).items()
-        )
-        sr = plan.scrapers.create(
-            scraper=scraper,
-            args=args,
-            start_time=details["start"],
-            end_time=details["end"],
-        )
-        for object_type, num in details["objects"].items():
-            sr.scraped_objects.create(object_type=object_type, count=num)
-
-    for object_type, changes in report.get("import", {}).items():
-        if changes["insert"] or changes["update"] or changes["noop"]:
-            plan.imported_objects.create(
-                object_type=object_type,
-                insert_count=changes["insert"],
-                update_count=changes["update"],
-                noop_count=changes["noop"],
-                start_time=changes["start"],
-                end_time=changes["end"],
-            )
 
 
 def get_jurisdiction(module_name):
@@ -180,7 +103,6 @@ def do_import(juris, args):
         VoteEventImporter,
         EventImporter,
     )
-    from openstates_core.reports.session import generate_session_report
     from openstates_core.reports.models import SessionDataQualityReport
 
     datadir = os.path.join(settings.SCRAPED_DATA_DIR, args.module)

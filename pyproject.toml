@@ -30,7 +30,6 @@ omit = [
   "openstates_core/data/admin/*",
   "openstates_core/reports/admin.py",
   "openstates_core/utils/ansistrm.py",
-  "openstates_core/cli/*",
 ]
 
 [build-system]
