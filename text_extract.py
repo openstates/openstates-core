@@ -5,13 +5,11 @@ import csv
 import math
 import warnings
 import click
-import dj_database_url
-import django
 import scrapelib
 from django.contrib.postgres.search import SearchVector
 from django.db import transaction
 from django.db.models import Count
-
+from openstates_core.utils.django import init_django
 from extract.utils import jid_to_abbr, abbr_to_jid
 from extract import get_extract_func, DoNotDownload, CONVERSION_FUNCTIONS
 
@@ -28,17 +26,6 @@ MIMETYPES = {
     "application/rtf": "rtf",
     "application/vnd.openxmlformats-officedocument.wordprocessingml.document": "docx",
 }
-
-
-def init_django():
-    from django.conf import settings
-
-    DATABASE_URL = os.environ.get("DATABASE_URL", "postgis://localhost/openstatesorg")
-    DATABASES = {"default": dj_database_url.parse(DATABASE_URL)}
-    settings.configure(
-        DATABASES=DATABASES, INSTALLED_APPS=("opencivicdata.core", "opencivicdata.legislative"),
-    )
-    django.setup()
 
 
 def download(version):
@@ -90,7 +77,7 @@ def extract_to_file(filename, data, version):
 
 
 def update_bill(bill):
-    from opencivicdata.legislative.models import SearchableBill
+    from openstates_core.data.models import SearchableBill
 
     try:
         latest_version = bill.versions.order_by("-date", "-note").prefetch_related("links")[0]
@@ -153,7 +140,7 @@ def _resample(state, n=50):
     Grab new versions for a state from the database.
     """
     init_django()
-    from opencivicdata.legislative.models import BillVersion
+    from openstates_core.data.models import BillVersion
 
     versions = BillVersion.objects.filter(
         bill__legislative_session__jurisdiction_id=abbr_to_jid(state)
@@ -241,7 +228,7 @@ def test(ctx):
 @cli.command(help="print a status table showing the current condition of states")
 def status():
     init_django()
-    from opencivicdata.legislative.models import Bill
+    from openstates_core.data.models import Bill
 
     states = sorted(CONVERSION_FUNCTIONS.keys())
     click.secho("state |  bills  | missing | errors ", fg="white")
@@ -276,7 +263,7 @@ def status():
 @click.argument("state")
 def reindex_state(state):
     init_django()
-    from opencivicdata.legislative.models import SearchableBill
+    from openstates_core.data.models import SearchableBill
 
     ids = list(
         SearchableBill.objects.filter(
@@ -294,7 +281,7 @@ def reindex_state(state):
 @click.option("--checkpoint", default=500)
 def update(state, n, clear_errors, checkpoint):
     init_django()
-    from opencivicdata.legislative.models import Bill, SearchableBill
+    from openstates_core.data.models import Bill, SearchableBill
 
     # print status within checkpoints
     status_num = checkpoint / 5
@@ -360,7 +347,7 @@ def update(state, n, clear_errors, checkpoint):
 
 
 def reindex(ids_to_update):
-    from opencivicdata.legislative.models import SearchableBill
+    from openstates_core.data.models import SearchableBill
 
     print(f"updating {len(ids_to_update)} search vectors")
     res = SearchableBill.objects.filter(id__in=ids_to_update).update(
