@@ -6,7 +6,7 @@ jobs:
     environment:
       CODECOV_TOKEN: "4116c2aa-5968-44f9-98a6-678f98358015"
     docker:
-      - image: circleci/python:3.7
+      - image: circleci/python:3.6
       - image: circleci/postgres:11-postgis-ram
         environment:
           POSTGRES_USER: postgres

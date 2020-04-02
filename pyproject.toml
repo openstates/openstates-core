@@ -9,7 +9,7 @@ license = "MIT"
 os-update = 'openstates_core.cli.update:main'
 
 [tool.poetry.dependencies]
-python = "^3.7"
+python = "^3.6"
 psycopg2-binary = "^2.8.4"
 dj_database_url = "^0.5.0"
 Django = ">=2.2"
