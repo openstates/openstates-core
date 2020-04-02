@@ -1,11 +1,11 @@
 # Changelog
 
-## 4.0.0
+## 4.0.0 - April 2, 2020
 
-* WIP
+* first release of combined project - essentially without changes
 
-Prior to 4.0, was two projects:
-  * https://github.com/opencivicdata/python-opencivicdata/blob/master/CHANGELOG.md
-  * https://github.com/opencivicdata/pupa/blob/master/CHANGELOG.md
+  Prior to 4.0, was two projects:
+    * https://github.com/opencivicdata/python-opencivicdata/blob/master/CHANGELOG.md
+    * https://github.com/opencivicdata/pupa/blob/master/CHANGELOG.md
 
-Code in those projects is subject to the license files in the root of the repository.
+  Code in those projects is subject to the license files in the root of the repository.
