@@ -277,7 +277,7 @@ version = "0.46"
 [[package]]
 category = "main"
 description = "core infrastructure for the openstates project"
-name = "openstates-core"
+name = "openstates"
 optional = false
 python-versions = ">=3.6,<4.0"
 version = "4.0.0"
@@ -559,7 +559,7 @@ docs = ["sphinx", "jaraco.packaging (>=3.2)", "rst.linker (>=1.9)"]
 testing = ["jaraco.itertools", "func-timeout"]
 
 [metadata]
-content-hash = "5f0721e06fa4f2bc86adf621fabaedff50a4f7703dd3dc0c6780eeafa74467ed"
+content-hash = "fb4c902da95643a704fe522e0211161ee2ce2b2d871c4c6a1604ee74e2070b88"
 python-versions = "^3.7"
 
 [metadata.files]
@@ -721,9 +721,9 @@ mccabe = [
 olefile = [
     {file = "olefile-0.46.zip", hash = "sha256:133b031eaf8fd2c9399b78b8bc5b8fcbe4c31e85295749bb17a87cba8f3c3964"},
 ]
-openstates-core = [
-    {file = "openstates-core-4.0.0.tar.gz", hash = "sha256:1fe0f4402c5980fa4ca9f2b9026ad6e34c6330f548a368dc860579d2035d560d"},
-    {file = "openstates_core-4.0.0-py3-none-any.whl", hash = "sha256:33b5e06898313fd3a42ce0aded99696addb667b65c7d4f9fc00463c4ec9e10a0"},
+openstates = [
+    {file = "openstates-4.0.0-py3-none-any.whl", hash = "sha256:bf766360a1ec9fcc0a242d76ec5b0a6269288a3b6d4234b4673f41c1018faa23"},
+    {file = "openstates-4.0.0.tar.gz", hash = "sha256:a951fedd197b292f59a813526e993e8d1a049186904e7f26483c9870885d7368"},
 ]
 "pdfminer.six" = [
     {file = "pdfminer.six-20181108-py2-none-any.whl", hash = "sha256:d12653375fcc00615d76dbd48fc551a2d5ffd6f572c11660d417ccf91a600f9b"},
