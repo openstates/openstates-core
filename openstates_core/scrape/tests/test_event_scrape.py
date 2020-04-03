@@ -1,6 +1,6 @@
 import pytest
 import datetime
-from openstates_core.scrape import Event
+from openstates.scrape import Event
 
 
 def event_obj():

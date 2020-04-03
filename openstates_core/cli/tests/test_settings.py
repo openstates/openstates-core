@@ -1,5 +1,5 @@
 import pytest
-from openstates_core.cli.update import override_settings
+from openstates.cli.update import override_settings
 
 
 class _Settings:

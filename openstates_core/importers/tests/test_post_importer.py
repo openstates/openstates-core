@@ -1,7 +1,7 @@
 import pytest
-from openstates_core.scrape import Post as ScrapePost
-from openstates_core.importers import PostImporter, OrganizationImporter
-from openstates_core.data.models import Organization, Post, Division, Jurisdiction
+from openstates.scrape import Post as ScrapePost
+from openstates.importers import PostImporter, OrganizationImporter
+from openstates.data.models import Organization, Post, Division, Jurisdiction
 import datetime
 
 

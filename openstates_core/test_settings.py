@@ -2,8 +2,8 @@
 SECRET_KEY = "test"
 INSTALLED_APPS = (
     "django.contrib.contenttypes",
-    "openstates_core.data",
-    "openstates_core.reports",
+    "openstates.data",
+    "openstates.reports",
 )
 DATABASES = {
     "default": {

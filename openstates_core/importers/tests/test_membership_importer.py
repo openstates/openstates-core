@@ -1,13 +1,13 @@
 import pytest
-from openstates_core.scrape import Membership as ScrapeMembership
-from openstates_core.scrape import Person as ScrapePerson
-from openstates_core.importers import (
+from openstates.scrape import Membership as ScrapeMembership
+from openstates.scrape import Person as ScrapePerson
+from openstates.importers import (
     MembershipImporter,
     PersonImporter,
     OrganizationImporter,
 )
-from openstates_core.exceptions import NoMembershipsError
-from openstates_core.data.models import (
+from openstates.exceptions import NoMembershipsError
+from openstates.data.models import (
     Organization,
     Post,
     Person,

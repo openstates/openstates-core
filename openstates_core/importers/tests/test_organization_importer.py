@@ -1,8 +1,8 @@
 import pytest
-from openstates_core.data.models import Organization, Jurisdiction, Division
-from openstates_core.scrape import Organization as ScrapeOrganization
-from openstates_core.importers import OrganizationImporter
-from openstates_core.exceptions import UnresolvedIdError, SameOrgNameError
+from openstates.data.models import Organization, Jurisdiction, Division
+from openstates.scrape import Organization as ScrapeOrganization
+from openstates.importers import OrganizationImporter
+from openstates.exceptions import UnresolvedIdError, SameOrgNameError
 
 
 def create_jurisdictions():

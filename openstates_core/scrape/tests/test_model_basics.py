@@ -1,6 +1,6 @@
 import pytest
-from openstates_core.scrape.schemas.person import schema
-from openstates_core.scrape.base import (
+from openstates.scrape.schemas.person import schema
+from openstates.scrape.base import (
     BaseModel,
     SourceMixin,
     ContactDetailMixin,

@@ -16,8 +16,8 @@ def init_django():  # pragma: no cover
         DEBUG=False,
         INSTALLED_APPS=(
             "django.contrib.contenttypes",
-            "openstates_core.data",
-            "openstates_core.reports",
+            "openstates.data",
+            "openstates.reports",
         ),
         DATABASES=DATABASES,
         MIDDLEWARE_CLASSES=(),

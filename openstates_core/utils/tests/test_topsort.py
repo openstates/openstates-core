@@ -1,5 +1,5 @@
 import pytest
-from openstates_core.utils.topsort import Network, CyclicGraphError
+from openstates.utils.topsort import Network, CyclicGraphError
 
 
 def chash(cycles):

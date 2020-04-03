@@ -1,14 +1,14 @@
 import pytest
-from openstates_core.scrape import Person as ScrapePerson
-from openstates_core.importers import PersonImporter
-from openstates_core.data.models import (
+from openstates.scrape import Person as ScrapePerson
+from openstates.importers import PersonImporter
+from openstates.data.models import (
     Person,
     Organization,
     Membership,
     Division,
     Jurisdiction,
 )
-from openstates_core.exceptions import UnresolvedIdError, SameNameError
+from openstates.exceptions import UnresolvedIdError, SameNameError
 
 
 def create_jurisdiction():

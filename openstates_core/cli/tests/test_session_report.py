@@ -1,6 +1,6 @@
 import pytest
 import django
-from openstates_core.data.models import (
+from openstates.data.models import (
     Jurisdiction,
     Division,
     Organization,
@@ -8,7 +8,7 @@ from openstates_core.data.models import (
     Bill,
     VoteEvent,
 )
-from openstates_core.cli.reports import generate_session_report
+from openstates.cli.reports import generate_session_report
 
 
 def create_data():

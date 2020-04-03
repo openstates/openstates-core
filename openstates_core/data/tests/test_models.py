@@ -1,5 +1,5 @@
 import pytest
-from openstates_core.data.models import Jurisdiction, Division, Organization, Person
+from openstates.data.models import Jurisdiction, Division, Organization, Person
 from django.core.exceptions import ValidationError
 
 

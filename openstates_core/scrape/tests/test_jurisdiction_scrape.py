@@ -1,5 +1,5 @@
 from collections import defaultdict
-from openstates_core.scrape import Jurisdiction, Organization, JurisdictionScraper
+from openstates.scrape import Jurisdiction, Organization, JurisdictionScraper
 
 
 class FakeJurisdiction(Jurisdiction):

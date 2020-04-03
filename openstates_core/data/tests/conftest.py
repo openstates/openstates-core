@@ -1,7 +1,7 @@
 import pytest
 from datetime import datetime
 from django.contrib.gis.geos import Point
-from openstates_core.data.models import (
+from openstates.data.models import (
     Jurisdiction,
     Division,
     Membership,

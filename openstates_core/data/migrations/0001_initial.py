@@ -8,7 +8,7 @@ import django.contrib.postgres.search
 import django.core.validators
 from django.db import migrations, models
 import django.db.models.deletion
-import openstates_core.data.models.base
+import openstates.data.models.base
 import re
 import uuid
 
@@ -54,7 +54,7 @@ class Migration(migrations.Migration):
                 ),
                 (
                     "id",
-                    openstates_core.data.models.base.OCDIDField(
+                    openstates.data.models.base.OCDIDField(
                         ocd_type="bill",
                         serialize=False,
                         validators=[
@@ -395,7 +395,7 @@ class Migration(migrations.Migration):
                 ),
                 (
                     "id",
-                    openstates_core.data.models.base.OCDIDField(
+                    openstates.data.models.base.OCDIDField(
                         ocd_type="event",
                         serialize=False,
                         validators=[
@@ -621,7 +621,7 @@ class Migration(migrations.Migration):
                 ),
                 (
                     "id",
-                    openstates_core.data.models.base.OCDIDField(
+                    openstates.data.models.base.OCDIDField(
                         ocd_type="jurisdiction",
                         serialize=False,
                         validators=[
@@ -757,7 +757,7 @@ class Migration(migrations.Migration):
                 ),
                 (
                     "id",
-                    openstates_core.data.models.base.OCDIDField(
+                    openstates.data.models.base.OCDIDField(
                         ocd_type="membership",
                         serialize=False,
                         validators=[
@@ -847,7 +847,7 @@ class Migration(migrations.Migration):
                 ),
                 (
                     "id",
-                    openstates_core.data.models.base.OCDIDField(
+                    openstates.data.models.base.OCDIDField(
                         ocd_type="organization",
                         serialize=False,
                         validators=[
@@ -967,7 +967,7 @@ class Migration(migrations.Migration):
                 ),
                 (
                     "id",
-                    openstates_core.data.models.base.OCDIDField(
+                    openstates.data.models.base.OCDIDField(
                         ocd_type="person",
                         serialize=False,
                         validators=[
@@ -1100,7 +1100,7 @@ class Migration(migrations.Migration):
                 ),
                 (
                     "id",
-                    openstates_core.data.models.base.OCDIDField(
+                    openstates.data.models.base.OCDIDField(
                         ocd_type="post",
                         serialize=False,
                         validators=[
@@ -1199,7 +1199,7 @@ class Migration(migrations.Migration):
                 ),
                 (
                     "id",
-                    openstates_core.data.models.base.OCDIDField(
+                    openstates.data.models.base.OCDIDField(
                         ocd_type="vote",
                         serialize=False,
                         validators=[

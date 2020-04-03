@@ -34,7 +34,7 @@ LOGGING = {
     "handlers": {
         "default": {
             "level": "DEBUG",
-            "class": "openstates_core.utils.ansistrm.ColorizingStreamHandler",
+            "class": "openstates.utils.ansistrm.ColorizingStreamHandler",
             "formatter": "standard",
         }
     },

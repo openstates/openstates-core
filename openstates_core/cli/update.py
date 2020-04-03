@@ -93,7 +93,7 @@ def do_scrape(juris, args, scrapers):
 
 def do_import(juris, args):
     # import inside here because to avoid loading Django code unnecessarily
-    from openstates_core.importers import (
+    from openstates.importers import (
         JurisdictionImporter,
         OrganizationImporter,
         PersonImporter,

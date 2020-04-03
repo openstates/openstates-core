@@ -1,7 +1,7 @@
 import pytest
-from openstates_core.scrape import Jurisdiction as JurisdictionBase
-from openstates_core.importers import JurisdictionImporter
-from openstates_core.data.models import Jurisdiction, Division, LegislativeSession
+from openstates.scrape import Jurisdiction as JurisdictionBase
+from openstates.importers import JurisdictionImporter
+from openstates.data.models import Jurisdiction, Division, LegislativeSession
 
 
 class FakeJurisdiction(JurisdictionBase):

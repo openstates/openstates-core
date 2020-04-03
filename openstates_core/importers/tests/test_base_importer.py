@@ -4,12 +4,12 @@ import shutil
 import tempfile
 import pytest
 from unittest import mock
-from openstates_core.data.models import Person, Organization, Jurisdiction, Division
-from openstates_core.scrape import Person as ScrapePerson
-from openstates_core.scrape import Organization as ScrapeOrganization
-from openstates_core.importers.base import omnihash, BaseImporter
-from openstates_core.importers import PersonImporter, OrganizationImporter
-from openstates_core.exceptions import UnresolvedIdError, DataImportError
+from openstates.data.models import Person, Organization, Jurisdiction, Division
+from openstates.scrape import Person as ScrapePerson
+from openstates.scrape import Organization as ScrapeOrganization
+from openstates.importers.base import omnihash, BaseImporter
+from openstates.importers import PersonImporter, OrganizationImporter
+from openstates.exceptions import UnresolvedIdError, DataImportError
 
 
 def create_jurisdiction():
