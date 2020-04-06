@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.0.1 - April 6, 2020
+
+* fix reports tablenames to match old pupa tablenames for now to keep backwards compatibility
+
 ## 4.0.0 - April 2, 2020
 
 * first release of combined project - essentially without changes
