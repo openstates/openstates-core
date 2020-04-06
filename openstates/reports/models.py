@@ -27,6 +27,9 @@ class RunPlan(models.Model):
     exception = models.TextField(blank=True, default="")
     traceback = models.TextField(blank=True, default="")
 
+    class Meta:
+        db_table = "pupa_runplan"
+
 
 class ScrapeReport(models.Model):
     plan = models.ForeignKey(RunPlan, related_name="scrapers", on_delete=models.CASCADE)
@@ -35,6 +38,9 @@ class ScrapeReport(models.Model):
     start_time = models.DateTimeField()
     end_time = models.DateTimeField()
 
+    class Meta:
+        db_table = "pupa_scrapereport"
+
 
 class ScrapeObjects(models.Model):
     report = models.ForeignKey(
@@ -42,6 +48,9 @@ class ScrapeObjects(models.Model):
     )
     object_type = models.CharField(max_length=20, choices=OBJECT_TYPES)
     count = models.PositiveIntegerField()
+
+    class Meta:
+        db_table = "pupa_scrapeobjects"
 
 
 class ImportObjects(models.Model):
@@ -55,6 +64,9 @@ class ImportObjects(models.Model):
     start_time = models.DateTimeField()
     end_time = models.DateTimeField()
 
+    class Meta:
+        db_table = "pupa_importobjects"
+
 
 class Identifier(models.Model):
     identifier = models.CharField(max_length=300)
@@ -67,6 +79,9 @@ class Identifier(models.Model):
 
     def __str__(self):  # __unicode__ on Python 2
         return self.identifier
+
+    class Meta:
+        db_table = "pupa_identifier"
 
 
 class SessionDataQualityReport(models.Model):
@@ -88,3 +103,6 @@ class SessionDataQualityReport(models.Model):
     unmatched_sponsor_people = JSONField()
     unmatched_sponsor_organizations = JSONField()
     unmatched_voters = JSONField()
+
+    class Meta:
+        db_table = "pupa_sessiondataqualityreport"
