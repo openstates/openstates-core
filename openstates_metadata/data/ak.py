@@ -8,6 +8,7 @@ AK = State(
     fips="02",
     unicameral=False,
     legislature_name="Alaska State Legislature",
+    legislature_organization_id="ocd-organization/7971e631-d3d5-41e4-a83c-60ed2368e115",
     division_id="ocd-division/country:us/state:ak",
     jurisdiction_id="ocd-jurisdiction/country:us/state:ak/government",
     url="http://w3.legis.state.ak.us/",

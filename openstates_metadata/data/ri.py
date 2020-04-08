@@ -8,6 +8,7 @@ RI = State(
     fips="44",
     unicameral=False,
     legislature_name="Rhode Island General Assembly",
+    legislature_organization_id="ocd-organization/fce467b7-470b-41c2-be23-0ed00804b512",
     division_id="ocd-division/country:us/state:ri",
     jurisdiction_id="ocd-jurisdiction/country:us/state:ri/government",
     url="http://www.ri.gov/",

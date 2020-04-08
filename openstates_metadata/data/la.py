@@ -8,6 +8,7 @@ LA = State(
     fips="22",
     unicameral=False,
     legislature_name="Louisiana Legislature",
+    legislature_organization_id="ocd-organization/3c509bec-a8f0-4422-a17f-5f11bfe88f26",
     division_id="ocd-division/country:us/state:la",
     jurisdiction_id="ocd-jurisdiction/country:us/state:la/government",
     url="http://www.legis.la.gov/",

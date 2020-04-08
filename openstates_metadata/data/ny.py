@@ -8,6 +8,7 @@ NY = State(
     fips="36",
     unicameral=False,
     legislature_name="New York Legislature",
+    legislature_organization_id="ocd-organization/700d3e60-3b1a-4cba-9aa4-06278aa7605d",
     division_id="ocd-division/country:us/state:ny",
     jurisdiction_id="ocd-jurisdiction/country:us/state:ny/government",
     url="http://public.leginfo.state.ny.us/",

@@ -8,6 +8,7 @@ NJ = State(
     fips="34",
     unicameral=False,
     legislature_name="New jersey Legislature",
+    legislature_organization_id="ocd-organization/8815f4a0-d799-45d1-980e-3d53e3b26b1d",
     division_id="ocd-division/country:us/state:nj",
     jurisdiction_id="ocd-jurisdiction/country:us/state:nj/government",
     url="http://www.njleg.state.nj.us/",

@@ -8,6 +8,7 @@ KS = State(
     fips="20",
     unicameral=False,
     legislature_name="Kansas State Legislature",
+    legislature_organization_id="ocd-organization/6ee5506b-e33f-45c3-965e-59a531f249e6",
     division_id="ocd-division/country:us/state:ks",
     jurisdiction_id="ocd-jurisdiction/country:us/state:ks/government",
     url="http://www.kslegislature.org/",

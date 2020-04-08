@@ -8,6 +8,7 @@ NC = State(
     fips="37",
     unicameral=False,
     legislature_name="North Carolina General Assembly",
+    legislature_organization_id="ocd-organization/32aab083-d7a0-44e0-9b95-a7790c542605",
     division_id="ocd-division/country:us/state:nc",
     jurisdiction_id="ocd-jurisdiction/country:us/state:nc/government",
     url="http://www.ncleg.net/",

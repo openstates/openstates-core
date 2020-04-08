@@ -8,6 +8,7 @@ VT = State(
     fips="50",
     unicameral=False,
     legislature_name="Vermont General Assembly",
+    legislature_organization_id="ocd-organization/3f26dc84-921f-48db-a9c9-ff843594ea85",
     division_id="ocd-division/country:us/state:vt",
     jurisdiction_id="ocd-jurisdiction/country:us/state:vt/government",
     url="http://legislature.vermont.gov/",

@@ -8,6 +8,7 @@ ND = State(
     fips="38",
     unicameral=False,
     legislature_name="North Dakota Legislative Assembly",
+    legislature_organization_id="ocd-organization/aa301a79-0ad8-4905-818c-0cd5f1ce5946",
     division_id="ocd-division/country:us/state:nd",
     jurisdiction_id="ocd-jurisdiction/country:us/state:nd/government",
     url="http://www.legis.nd.gov/",

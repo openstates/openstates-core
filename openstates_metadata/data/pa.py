@@ -8,6 +8,7 @@ PA = State(
     fips="42",
     unicameral=False,
     legislature_name="Pennsylvania General Assembly",
+    legislature_organization_id="ocd-organization/4a283791-567b-48b8-aac3-c94c36e3e63a",
     division_id="ocd-division/country:us/state:pa",
     jurisdiction_id="ocd-jurisdiction/country:us/state:pa/government",
     url="http://www.legis.state.pa.us/",

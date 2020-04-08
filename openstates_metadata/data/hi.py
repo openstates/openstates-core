@@ -8,6 +8,7 @@ HI = State(
     fips="15",
     unicameral=False,
     legislature_name="Hawaii State Legislature",
+    legislature_organization_id="ocd-organization/c0ac26ed-60ea-42b7-bd02-20213257dbc5",
     division_id="ocd-division/country:us/state:hi",
     jurisdiction_id="ocd-jurisdiction/country:us/state:hi/government",
     url="http://capitol.hawaii.gov",

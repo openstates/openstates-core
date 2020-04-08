@@ -8,6 +8,7 @@ MA = State(
     fips="25",
     unicameral=False,
     legislature_name="Massachusetts General Court",
+    legislature_organization_id="ocd-organization/9c4e7b53-9912-4394-a40a-14b5ecdb8aba",
     division_id="ocd-division/country:us/state:ma",
     jurisdiction_id="ocd-jurisdiction/country:us/state:ma/government",
     url="http://mass.gov",

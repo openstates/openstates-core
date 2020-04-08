@@ -8,6 +8,7 @@ IN = State(
     fips="18",
     unicameral=False,
     legislature_name="Indiana General Assembly",
+    legislature_organization_id="ocd-organization/7de4a037-2e98-46d0-975c-67d42eaff437",
     division_id="ocd-division/country:us/state:in",
     jurisdiction_id="ocd-jurisdiction/country:us/state:in/government",
     url="http://www.in.gov/",

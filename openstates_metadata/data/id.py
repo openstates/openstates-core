@@ -8,6 +8,7 @@ ID = State(
     fips="16",
     unicameral=False,
     legislature_name="Idaho State Legislature",
+    legislature_organization_id="ocd-organization/654d4d38-e413-4307-a420-6f1ee2594673",
     division_id="ocd-division/country:us/state:id",
     jurisdiction_id="ocd-jurisdiction/country:us/state:id/government",
     url="http://www.legislature.idaho.gov",

@@ -8,6 +8,7 @@ NM = State(
     fips="35",
     unicameral=False,
     legislature_name="New Mexico Legislature",
+    legislature_organization_id="ocd-organization/7a5a12b7-e955-4999-a469-df3748934953",
     division_id="ocd-division/country:us/state:nm",
     jurisdiction_id="ocd-jurisdiction/country:us/state:nm/government",
     url="https://www.nmlegis.gov",

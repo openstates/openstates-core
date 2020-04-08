@@ -8,6 +8,7 @@ MS = State(
     fips="28",
     unicameral=False,
     legislature_name="Mississippi Legislature",
+    legislature_organization_id="ocd-organization/f2b7fee5-8da1-431d-8ea1-19b7709194cc",
     division_id="ocd-division/country:us/state:ms",
     jurisdiction_id="ocd-jurisdiction/country:us/state:ms/government",
     url="http://www.legislature.ms.gov/",

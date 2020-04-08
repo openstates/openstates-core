@@ -8,6 +8,7 @@ SD = State(
     fips="46",
     unicameral=False,
     legislature_name="South Dakota State Legislature",
+    legislature_organization_id="ocd-organization/7b114895-6d62-4b8d-b391-b170fa9011d2",
     division_id="ocd-division/country:us/state:sd",
     jurisdiction_id="ocd-jurisdiction/country:us/state:sd/government",
     url="http://www.sdlegislature.gov/",

@@ -8,6 +8,7 @@ GA = State(
     fips="13",
     unicameral=False,
     legislature_name="Georgia General Assembly",
+    legislature_organization_id="ocd-organization/1186f244-c9f8-46de-a453-c58d6de050d7",
     division_id="ocd-division/country:us/state:ga",
     jurisdiction_id="ocd-jurisdiction/country:us/state:ga/government",
     url="http://www.legis.ga.gov/",

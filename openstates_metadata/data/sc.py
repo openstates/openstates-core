@@ -8,6 +8,7 @@ SC = State(
     fips="45",
     unicameral=False,
     legislature_name="South Carolina Legislature",
+    legislature_organization_id="ocd-organization/57920b9f-163e-4cc3-9642-e616579b47ee",
     division_id="ocd-division/country:us/state:sc",
     jurisdiction_id="ocd-jurisdiction/country:us/state:sc/government",
     url="http://www.scstatehouse.gov/",

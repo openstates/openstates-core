@@ -8,6 +8,7 @@ WA = State(
     fips="53",
     unicameral=False,
     legislature_name="Washington State Legislature",
+    legislature_organization_id="ocd-organization/a7819d04-7b5e-4d2e-b47f-5dca9f09fc81",
     division_id="ocd-division/country:us/state:wa",
     jurisdiction_id="ocd-jurisdiction/country:us/state:wa/government",
     url="http://www.leg.wa.gov",

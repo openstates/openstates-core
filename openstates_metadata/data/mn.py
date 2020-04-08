@@ -8,6 +8,7 @@ MN = State(
     fips="27",
     unicameral=False,
     legislature_name="Minnesota State Legislature",
+    legislature_organization_id="ocd-organization/c5dddecb-4365-441f-bb5b-251dc6828d14",
     division_id="ocd-division/country:us/state:mn",
     jurisdiction_id="ocd-jurisdiction/country:us/state:mn/government",
     url="http://state.mn.us/",

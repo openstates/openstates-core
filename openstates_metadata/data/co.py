@@ -8,6 +8,7 @@ CO = State(
     fips="08",
     unicameral=False,
     legislature_name="Colorado General Assembly",
+    legislature_organization_id="ocd-organization/2fc73234-69ce-4a42-b85a-4a52a676e6e9",
     division_id="ocd-division/country:us/state:co",
     jurisdiction_id="ocd-jurisdiction/country:us/state:co/government",
     url="http://leg.colorado.gov/",

@@ -8,6 +8,7 @@ TX = State(
     fips="48",
     unicameral=False,
     legislature_name="Texas Legislature",
+    legislature_organization_id="ocd-organization/8ab77a54-0646-413c-a63a-dc85154282b7",
     division_id="ocd-division/country:us/state:tx",
     jurisdiction_id="ocd-jurisdiction/country:us/state:tx/government",
     url="https://capitol.texas.gov/",

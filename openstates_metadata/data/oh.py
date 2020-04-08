@@ -8,6 +8,7 @@ OH = State(
     fips="39",
     unicameral=False,
     legislature_name="Ohio General Assembly",
+    legislature_organization_id="ocd-organization/f100d930-e312-4544-a8d5-710dc5d12ae2",
     division_id="ocd-division/country:us/state:oh",
     jurisdiction_id="ocd-jurisdiction/country:us/state:oh/government",
     url="http://www.legislature.state.oh.us/",

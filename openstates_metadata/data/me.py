@@ -8,6 +8,7 @@ ME = State(
     fips="23",
     unicameral=False,
     legislature_name="Maine Legislature",
+    legislature_organization_id="ocd-organization/1381ca6d-dedf-4bd3-8755-6f846f9e4848",
     division_id="ocd-division/country:us/state:me",
     jurisdiction_id="ocd-jurisdiction/country:us/state:me/government",
     url="http://legislature.maine.gov",

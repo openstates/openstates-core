@@ -8,6 +8,7 @@ CA = State(
     fips="06",
     unicameral=False,
     legislature_name="California State Legislature",
+    legislature_organization_id="ocd-organization/f1c6eb47-c439-42e5-9b6f-d7f6121f20e9",
     division_id="ocd-division/country:us/state:ca",
     jurisdiction_id="ocd-jurisdiction/country:us/state:ca/government",
     url="http://www.legislature.ca.gov/",

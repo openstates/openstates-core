@@ -8,6 +8,7 @@ NH = State(
     fips="33",
     unicameral=False,
     legislature_name="New Hampshire General Court",
+    legislature_organization_id="ocd-organization/d8dce079-d59d-407c-be93-9d3fce72bd48",
     division_id="ocd-division/country:us/state:nh",
     jurisdiction_id="ocd-jurisdiction/country:us/state:nh/government",
     url="http://gencourt.state.nh.us",

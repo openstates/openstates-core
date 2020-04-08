@@ -8,6 +8,7 @@ OK = State(
     fips="40",
     unicameral=False,
     legislature_name="Oklahoma Legislature",
+    legislature_organization_id="ocd-organization/a720b7e9-ab67-405a-a209-473e9d6a6036",
     division_id="ocd-division/country:us/state:ok",
     jurisdiction_id="ocd-jurisdiction/country:us/state:ok/government",
     url="http://www.oklegislature.gov/",

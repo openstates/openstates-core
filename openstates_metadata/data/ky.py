@@ -8,6 +8,7 @@ KY = State(
     fips="21",
     unicameral=False,
     legislature_name="Kentucky General Assembly",
+    legislature_organization_id="ocd-organization/b5a82ff4-4fd3-41c8-bb44-32ad2e499482",
     division_id="ocd-division/country:us/state:ky",
     jurisdiction_id="ocd-jurisdiction/country:us/state:ky/government",
     url="http://www.lrc.ky.gov/",

@@ -8,6 +8,7 @@ WI = State(
     fips="55",
     unicameral=False,
     legislature_name="Wisconsin State Legislature",
+    legislature_organization_id="ocd-organization/1cba9936-eb76-4465-acb5-50c93cd4e8c9",
     division_id="ocd-division/country:us/state:wi",
     jurisdiction_id="ocd-jurisdiction/country:us/state:wi/government",
     url="http://legis.wisconsin.gov/",

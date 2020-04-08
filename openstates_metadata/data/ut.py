@@ -8,6 +8,7 @@ UT = State(
     fips="49",
     unicameral=False,
     legislature_name="Utah State Legislature",
+    legislature_organization_id="ocd-organization/58fd9e6c-78ea-42ff-b58b-4f80d307cf19",
     division_id="ocd-division/country:us/state:ut",
     jurisdiction_id="ocd-jurisdiction/country:us/state:ut/government",
     url="http://le.utah.gov/",

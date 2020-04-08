@@ -8,6 +8,7 @@ MI = State(
     fips="26",
     unicameral=False,
     legislature_name="Michigan Legislature",
+    legislature_organization_id="ocd-organization/c70eb47a-43c1-4aa1-95a6-2aea30da8e82",
     division_id="ocd-division/country:us/state:mi",
     jurisdiction_id="ocd-jurisdiction/country:us/state:mi/government",
     url="http://www.legislature.mi.gov",

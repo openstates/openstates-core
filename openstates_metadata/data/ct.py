@@ -8,6 +8,7 @@ CT = State(
     fips="09",
     unicameral=False,
     legislature_name="Connecticut General Assembly",
+    legislature_organization_id="ocd-organization/474ab9de-3ab4-4294-88c1-43ffd506870a",
     division_id="ocd-division/country:us/state:ct",
     jurisdiction_id="ocd-jurisdiction/country:us/state:ct/government",
     url="http://www.cga.ct.gov/",

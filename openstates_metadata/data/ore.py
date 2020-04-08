@@ -8,6 +8,7 @@ OR = State(
     fips="41",
     unicameral=False,
     legislature_name="Oregon Legislative Assembly",
+    legislature_organization_id="ocd-organization/5baae940-2a55-49f9-8e8b-7d321ac539b4",
     division_id="ocd-division/country:us/state:or",
     jurisdiction_id="ocd-jurisdiction/country:us/state:or/government",
     url="https://olis.leg.state.or.us",

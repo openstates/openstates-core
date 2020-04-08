@@ -8,6 +8,7 @@ IA = State(
     fips="19",
     unicameral=False,
     legislature_name="Iowa General Assembly",
+    legislature_organization_id="ocd-organization/643af5ff-e840-4ff1-95a8-e47a40dd0730",
     division_id="ocd-division/country:us/state:ia",
     jurisdiction_id="ocd-jurisdiction/country:us/state:ia/government",
     url="https://www.legis.iowa.gov/",

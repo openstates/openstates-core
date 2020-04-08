@@ -8,6 +8,7 @@ WV = State(
     fips="54",
     unicameral=False,
     legislature_name="West Virginia Legislature",
+    legislature_organization_id="ocd-organization/237dc1a5-2314-433e-887e-d63a970cf67d",
     division_id="ocd-division/country:us/state:wv",
     jurisdiction_id="ocd-jurisdiction/country:us/state:wv/government",
     url="http://www.legis.state.wv.us/",

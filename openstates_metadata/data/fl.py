@@ -8,6 +8,7 @@ FL = State(
     fips="12",
     unicameral=False,
     legislature_name="Florida Legislature",
+    legislature_organization_id="ocd-organization/a0b3ad5f-c852-483b-b746-444d3d795701",
     division_id="ocd-division/country:us/state:fl",
     jurisdiction_id="ocd-jurisdiction/country:us/state:fl/government",
     url="http://myflorida.com",

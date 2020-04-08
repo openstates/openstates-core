@@ -8,6 +8,7 @@ AR = State(
     fips="05",
     unicameral=False,
     legislature_name="Arkansas General Assembly",
+    legislature_organization_id="ocd-organization/4d1533a8-8d01-41f1-8b2a-4f07e41b5ed2",
     division_id="ocd-division/country:us/state:ar",
     jurisdiction_id="ocd-jurisdiction/country:us/state:ar/government",
     url="http://www.arkleg.state.ar.us",

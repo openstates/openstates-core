@@ -8,6 +8,7 @@ TN = State(
     fips="47",
     unicameral=False,
     legislature_name="Tennessee General Assembly",
+    legislature_organization_id="ocd-organization/2010a137-d178-48fe-a66e-692e97a12fcf",
     division_id="ocd-division/country:us/state:tn",
     jurisdiction_id="ocd-jurisdiction/country:us/state:tn/government",
     url="http://www.capitol.tn.gov/",

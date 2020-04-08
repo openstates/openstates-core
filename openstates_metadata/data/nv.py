@@ -8,6 +8,7 @@ NV = State(
     fips="32",
     unicameral=False,
     legislature_name="Nevada Legislature",
+    legislature_organization_id="ocd-organization/770c2aae-0332-4f24-a8e0-e0bf666dc992",
     division_id="ocd-division/country:us/state:nv",
     jurisdiction_id="ocd-jurisdiction/country:us/state:nv/government",
     url="http://www.leg.state.nv.us/",

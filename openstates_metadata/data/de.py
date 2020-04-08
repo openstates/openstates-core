@@ -8,6 +8,7 @@ DE = State(
     fips="10",
     unicameral=False,
     legislature_name="Delaware General Assembly",
+    legislature_organization_id="ocd-organization/d2671846-0bc5-4082-b96d-989b31cc037f",
     division_id="ocd-division/country:us/state:de",
     jurisdiction_id="ocd-jurisdiction/country:us/state:de/government",
     url="http://legis.delaware.gov/",

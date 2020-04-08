@@ -8,6 +8,7 @@ MO = State(
     fips="29",
     unicameral=False,
     legislature_name="Missouri General Assembly",
+    legislature_organization_id="ocd-organization/997c6150-6c45-4178-82dd-e111c0029554",
     division_id="ocd-division/country:us/state:mo",
     jurisdiction_id="ocd-jurisdiction/country:us/state:mo/government",
     url="http://www.moga.mo.gov/",

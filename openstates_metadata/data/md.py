@@ -8,6 +8,7 @@ MD = State(
     fips="24",
     unicameral=False,
     legislature_name="Maryland General Assembly",
+    legislature_organization_id="ocd-organization/15f3b217-1d89-40dd-ab4e-d5ed2ffe5322",
     division_id="ocd-division/country:us/state:md",
     jurisdiction_id="ocd-jurisdiction/country:us/state:md/government",
     url="http://mgaleg.maryland.gov/",

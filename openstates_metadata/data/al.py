@@ -8,6 +8,7 @@ AL = State(
     fips="01",
     unicameral=False,
     legislature_name="Alabama Legislature",
+    legislature_organization_id="ocd-organization/8de9200f-a2e2-4f92-9950-e6c63f265248",
     division_id="ocd-division/country:us/state:al",
     jurisdiction_id="ocd-jurisdiction/country:us/state:al/government",
     url="http://www.legislature.state.al.us/",

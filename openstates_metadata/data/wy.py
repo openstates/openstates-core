@@ -8,6 +8,7 @@ WY = State(
     fips="56",
     unicameral=False,
     legislature_name="Wyoming State Legislature",
+    legislature_organization_id="ocd-organization/b47d8d36-68d9-4bf0-807a-5b9c9ed2d99f",
     division_id="ocd-division/country:us/state:wy",
     jurisdiction_id="ocd-jurisdiction/country:us/state:wy/government",
     url="http://legisweb.state.wy.us/",

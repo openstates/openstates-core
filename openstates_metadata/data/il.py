@@ -8,6 +8,7 @@ IL = State(
     fips="17",
     unicameral=False,
     legislature_name="Illinois General Assembly",
+    legislature_organization_id="ocd-organization/52332da7-9146-412e-bf64-a291e2757b63",
     division_id="ocd-division/country:us/state:il",
     jurisdiction_id="ocd-jurisdiction/country:us/state:il/government",
     url="http://www.ilga.gov/",

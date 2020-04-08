@@ -8,6 +8,7 @@ MT = State(
     fips="30",
     unicameral=False,
     legislature_name="Montana Legislature",
+    legislature_organization_id="ocd-organization/803c558f-dec2-4f43-9c35-e73a6e849408",
     division_id="ocd-division/country:us/state:mt",
     jurisdiction_id="ocd-jurisdiction/country:us/state:mt/government",
     url="http://leg.mt.gov/",

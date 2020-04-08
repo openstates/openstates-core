@@ -8,6 +8,7 @@ VA = State(
     fips="51",
     unicameral=False,
     legislature_name="Virginia General Assembly",
+    legislature_organization_id="ocd-organization/e56c1fc3-f311-4a51-a693-05c3e922f1b7",
     division_id="ocd-division/country:us/state:va",
     jurisdiction_id="ocd-jurisdiction/country:us/state:va/government",
     url="http://virginiageneralassembly.gov/",

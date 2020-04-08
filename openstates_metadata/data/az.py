@@ -8,6 +8,7 @@ AZ = State(
     fips="04",
     unicameral=False,
     legislature_name="Arizona State Legislature",
+    legislature_organization_id="ocd-organization/920fc27e-e574-4700-8ada-221fdf683268",
     division_id="ocd-division/country:us/state:az",
     jurisdiction_id="ocd-jurisdiction/country:us/state:az/government",
     url="http://www.azleg.gov/",
