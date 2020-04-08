@@ -74,7 +74,7 @@ class PersonAdmin(ModelAdmin):
         SHOW_N = 5
         for memb in memberships[:SHOW_N]:
             org = memb.organization
-            admin_url = reverse("admin:core_organization_change", args=(org.pk,))
+            admin_url = reverse("admin:data_organization_change", args=(org.pk,))
             tmpl = '<a href="%s">%s%s</a>\n'
             html.append(
                 tmpl

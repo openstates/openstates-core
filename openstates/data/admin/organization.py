@@ -92,7 +92,7 @@ class OrganizationAdmin(ModelAdmin):
         jurisdiction = obj.jurisdiction
         if jurisdiction:
             admin_url = reverse(
-                "admin:core_jurisdiction_change", args=(jurisdiction.pk,)
+                "admin:data_jurisdiction_change", args=(jurisdiction.pk,)
             )
             tmpl = '<a href="%s">%s</a>'
             return tmpl % (admin_url, jurisdiction.name)
