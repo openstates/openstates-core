@@ -7,6 +7,7 @@ license = "MIT"
 
 [tool.poetry.scripts]
 os-update = 'openstates.cli.update:main'
+os-initdb = 'openstates.cli.initdb:main'
 
 [tool.poetry.dependencies]
 python = "^3.6"
@@ -16,6 +17,7 @@ Django = ">=2.2"
 scrapelib = "^1.2.0"
 jsonschema = "^3.2.0"
 pytz = "^2019.3"
+openstates-metadata = "^2020.2.2"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.4.1"
