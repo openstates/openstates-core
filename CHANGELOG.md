@@ -4,6 +4,7 @@
 
 * add os-initdb to get a database with core models in place
 * remove old loaddivisions management command
+* bugfixes for admin view URLs
 
 ## 4.0.1 - April 6, 2020
 
