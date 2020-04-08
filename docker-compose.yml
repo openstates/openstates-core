@@ -1,0 +1,16 @@
+version: "3.5"
+
+networks:
+  openstates-network:
+      name: openstates-network
+
+services:
+  core:
+    build: .
+    environment:
+    - DATABASE_URL=postgres://openstates:openstates@db/openstatesorg
+    volumes:
+    - .:/opt/openstates-core
+    entrypoint: ["poetry", "run"]
+    networks:
+    - openstates-network
