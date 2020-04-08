@@ -106,6 +106,7 @@ if __name__ == "__main__":
 
             lower_org_id = org_ids[j["jurisdiction_id"]]["lower"]
             upper_org_id = org_ids[j["jurisdiction_id"]]["upper"]
+            leg_org_id = org_ids[j["jurisdiction_id"]]["legislature"]
 
             if "District" in lower_ds + upper_ds:
                 extra_import += ", District"
@@ -131,10 +132,8 @@ if __name__ == "__main__":
             if "simple_numbered_districts" in districts:
                 extra_import += ", simple_numbered_districts"
 
-            org_id = org_ids[j["jurisdiction_id"]]["legislature"]
-
             seats_block = f"""
-                legislature=Chamber(chamber_type="unicameral", name="{leg_name}", organization_id="{org_id}",
+                legislature=Chamber(chamber_type="unicameral", name="{leg_name}", organization_id="{leg_org_id}",
                      num_seats={num_leg_seats}, title="{leg_title}", districts={districts}),
                 """
 
@@ -161,6 +160,7 @@ if __name__ == "__main__":
     fips="{state.fips}",
     unicameral={unicameral},
     legislature_name="{leg_name}",
+    legislature_organization_id="{leg_org_id}",
     division_id="{j['division_id']}",
     jurisdiction_id="{j['jurisdiction_id']}",
     url="{j['url']}",
