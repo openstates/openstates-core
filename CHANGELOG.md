@@ -1,5 +1,10 @@
 # Changelog
 
+## 4.1.0 - April 8, 2020
+
+* add os-initdb to get a database with core models in place
+* remove old loaddivisions management command
+
 ## 4.0.1 - April 6, 2020
 
 * fix reports tablenames to match old pupa tablenames for now to keep backwards compatibility
