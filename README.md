@@ -13,6 +13,10 @@ This repository contains state metadata that powers Open States.
 
 Releases use YYYY.MM.patch versioning.
 
+### 2020.04.4 - Apr 8 2020
+
+* add State.legislature_organization_id
+
 ### 2020.02.2 - Feb 6 2020
 
 * lower minimum Python version to 3.6
