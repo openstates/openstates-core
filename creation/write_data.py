@@ -127,6 +127,8 @@ if __name__ == "__main__":
                 j["division_id"], "legislature", num_leg_seats, leg_seats, div_ids
             )
 
+            leg_org_id = org_ids[j["jurisdiction_id"]]["legislature"]
+
             if "District" in districts:
                 extra_import += ", District"
             if "simple_numbered_districts" in districts:
