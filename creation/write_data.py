@@ -1,5 +1,6 @@
 import us
 import csv
+import uuid
 import yaml
 from collections import defaultdict
 
@@ -84,6 +85,16 @@ if __name__ == "__main__":
         j = jurisdictions_by_name[state.name]
 
         leg_name = obj.pop("legislature_name")
+        leg_org_id = org_ids[j["jurisdiction_id"]]["legislature"]
+        try:
+            exec_org_id = org_ids[j["jurisdiction_id"]]["executive"]
+        except KeyError:
+            # for the ones that didn't have an org id before, need a consistent id here
+            # we'll just use the state name + "executive"
+            namespace = uuid.UUID("877e004a-9993-5b24-8339-f83d10658258")
+            exec_org_id = "ocd-organization/" + str(
+                uuid.uuid5(namespace, state.name + "executive")
+            )
         unicameral = state.abbr in ("DC", "NE")
         extra_import = ""
 
@@ -106,7 +117,6 @@ if __name__ == "__main__":
 
             lower_org_id = org_ids[j["jurisdiction_id"]]["lower"]
             upper_org_id = org_ids[j["jurisdiction_id"]]["upper"]
-            leg_org_id = org_ids[j["jurisdiction_id"]]["legislature"]
 
             if "District" in lower_ds + upper_ds:
                 extra_import += ", District"
@@ -126,8 +136,6 @@ if __name__ == "__main__":
             districts = make_districts(
                 j["division_id"], "legislature", num_leg_seats, leg_seats, div_ids
             )
-
-            leg_org_id = org_ids[j["jurisdiction_id"]]["legislature"]
 
             if "District" in districts:
                 extra_import += ", District"
@@ -163,6 +171,8 @@ if __name__ == "__main__":
     unicameral={unicameral},
     legislature_name="{leg_name}",
     legislature_organization_id="{leg_org_id}",
+    executive_name="Office of the Governor",
+    executive_organization_id="{exec_org_id}",
     division_id="{j['division_id']}",
     jurisdiction_id="{j['jurisdiction_id']}",
     url="{j['url']}",
