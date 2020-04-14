@@ -30,6 +30,8 @@ class State:
     unicameral: bool
     legislature_name: str
     legislature_organization_id: str
+    executive_name: str
+    executive_organization_id: str
     division_id: str
     jurisdiction_id: str
     url: str
