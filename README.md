@@ -13,6 +13,10 @@ This repository contains state metadata that powers Open States.
 
 Releases use YYYY.MM.patch versioning.
 
+### 2020.04.3
+
+* add executive_organization_id and executive_name to State
+
 ### 2020.04.2 - Apr 8 2020
 
 * fix unicameral legislature ids
