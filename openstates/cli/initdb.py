@@ -55,7 +55,8 @@ def load_jurisdictions():
             classification="legislature",
             jurisdiction=juris,
         )
-        executive = Organization.objects.create(
+        # create executive
+        Organization.objects.create(
             id=state.executive_organization_id,
             name=state.executive_name,
             classification="executive",
