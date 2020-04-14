@@ -55,6 +55,12 @@ def load_jurisdictions():
             classification="legislature",
             jurisdiction=juris,
         )
+        executive = Organization.objects.create(
+            id=state.executive_organization_id,
+            name=state.executive_name,
+            classification="executive",
+            jurisdiction=juris,
+        )
 
         if state.unicameral:
             create_chamber(juris, leg, state.legislature)
