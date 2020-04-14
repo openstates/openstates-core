@@ -1,4 +1,5 @@
 import os
+import importlib
 import json
 import uuid
 import logging
@@ -74,6 +75,13 @@ class Scraper(scrapelib.Scraper):
         self.error = self.logger.error
         self.critical = self.logger.critical
 
+        modname = os.environ.get("SCRAPE_OUTPUT_HANDLER")
+        if modname is None:
+            self.scrape_output_handler = None
+        else:
+            handler = importlib.import_module(modname)
+            self.scrape_output_handler = handler.Handler(self)
+
     def save_object(self, obj):
         """
             Save object to disk as JSON.
@@ -96,8 +104,11 @@ class Scraper(scrapelib.Scraper):
 
         self.output_names[obj._type].add(filename)
 
-        with open(os.path.join(self.datadir, filename), "w") as f:
-            json.dump(obj.as_dict(), f, cls=utils.JSONEncoderPlus)
+        if self.scrape_output_handler is None:
+            with open(os.path.join(self.datadir, filename), "w") as f:
+                json.dump(obj.as_dict(), f, cls=utils.JSONEncoderPlus)
+        else:
+            self.scrape_output_handler.handle(obj)
 
         # validate after writing, allows for inspection on failure
         try:
