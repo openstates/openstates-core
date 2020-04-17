@@ -13,6 +13,10 @@ This repository contains state metadata that powers Open States.
 
 Releases use YYYY.MM.patch versioning.
 
+### 2020.04.4
+
+* add lookup_district helper function
+
 ### 2020.04.3
 
 * add executive_organization_id and executive_name to State
