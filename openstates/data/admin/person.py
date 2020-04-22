@@ -52,7 +52,7 @@ class PersonAdmin(ModelAdmin):
         "id",
         "image",
         ("birth_date", "death_date"),
-        ("gender", "national_identity", "sort_name", "summary"),
+        ("gender", "summary"),
         "biography",
         "extras",
     )

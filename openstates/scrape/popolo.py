@@ -70,7 +70,6 @@ class Membership(BaseModel, ContactDetailMixin, LinkMixin):
         label="",
         start_date="",
         end_date="",
-        on_behalf_of_id=None,
         person_name=""
     ):
         """
@@ -89,7 +88,6 @@ class Membership(BaseModel, ContactDetailMixin, LinkMixin):
         self.end_date = end_date
         self.role = role
         self.label = label
-        self.on_behalf_of_id = on_behalf_of_id
 
     def __str__(self):
         return self.person_id + " membership in " + self.organization_id
@@ -120,7 +118,6 @@ class Person(
         summary="",
         image="",
         gender="",
-        national_identity="",
         # specialty fields
         district=None,
         party=None,
@@ -138,7 +135,6 @@ class Person(
         self.summary = summary
         self.image = image
         self.gender = gender
-        self.national_identity = national_identity
         if primary_org:
             self.add_term(
                 role,

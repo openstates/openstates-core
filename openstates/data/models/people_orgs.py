@@ -270,12 +270,6 @@ class Person(OCDBase):
     name = models.CharField(
         max_length=300, db_index=True, help_text="A Person's preferred full name."
     )
-    sort_name = models.CharField(
-        max_length=100,
-        default="",
-        blank=True,
-        help_text="A version of a Person's full name rearranged for alphabetical sorting.",
-    )
     family_name = models.CharField(
         max_length=100, blank=True, help_text="A Person's family name."
     )
@@ -292,9 +286,6 @@ class Person(OCDBase):
         max_length=500,
         blank=True,
         help_text="A short, one-line account of a Person's life.",
-    )
-    national_identity = models.CharField(
-        max_length=300, blank=True, help_text="The nation a Person is identified with."
     )
     biography = models.TextField(
         blank=True, help_text="An extended account of a Person's life."
@@ -435,14 +426,6 @@ class Membership(OCDBase):
         # Membership will just unlink if the post goes away
         on_delete=models.SET_NULL,
         help_text="	The Post held by the member in the Organization.",
-    )
-    on_behalf_of = models.ForeignKey(
-        Organization,
-        related_name="memberships_on_behalf_of",
-        null=True,
-        help_text="The Organization on whose behalf the Person is a member of the Organization.",
-        # Membership will just unlink if the org goes away
-        on_delete=models.SET_NULL,
     )
     label = models.CharField(
         max_length=300, blank=True, help_text="A label describing the membership."
