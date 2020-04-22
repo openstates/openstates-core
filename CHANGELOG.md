@@ -1,6 +1,6 @@
 # Changelog
 
-## 4.2.0 - 
+## 4.2.0 - April 22 2020
 
 * remove some completely unused fields & models
 * add Person current_role, active, current_legislators_with_roles, and search helpers
