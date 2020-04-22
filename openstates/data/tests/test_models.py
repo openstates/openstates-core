@@ -229,6 +229,14 @@ def test_person_get_current_role(senator):
 
 
 @pytest.mark.django_db
+def test_person_search(senator, person):
+    assert Person.objects.search("Worm").count() == 1
+    assert Person.objects.search("Worm", state="mo").count() == 1
+    assert Person.objects.search("Worm", state="wy").count() == 0
+    assert Person.objects.search("Pig").count() == 0
+
+
+@pytest.mark.django_db
 def test_person_str(person):
     assert person.name in str(person)
 

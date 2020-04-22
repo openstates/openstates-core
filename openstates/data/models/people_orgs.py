@@ -5,7 +5,7 @@ from .base import OCDBase, LinkBase, OCDIDField, RelatedBase, IdentifierBase
 from .division import Division
 from .jurisdiction import Jurisdiction
 from .. import common
-from ...utils import jid_to_abbr
+from ...utils import jid_to_abbr, abbr_to_jid
 
 # abstract models
 
@@ -274,6 +274,29 @@ class PersonQuerySet(QuerySet):
                 "memberships", "memberships__organization", "memberships__post"
             )
         )
+
+    def search(self, query, *, state=None, current=True):
+        if current:
+            people = self.active().filter(
+                memberships__organization__classification__in=[
+                    "upper",
+                    "lower",
+                    "legislature",
+                ],
+                name__icontains=query,
+            )
+        else:
+            people = self.filter(name__icontains=query)
+
+        if state:
+            people = people.filter(
+                memberships__organization__jurisdiction_id=abbr_to_jid(state)
+            )
+
+        people = people.prefetch_related(
+            "memberships", "memberships__organization", "memberships__post"
+        )
+        return people
 
 
 class Person(OCDBase):
