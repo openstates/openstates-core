@@ -97,8 +97,6 @@ def do_import(juris, args):
         JurisdictionImporter,
         OrganizationImporter,
         PersonImporter,
-        PostImporter,
-        MembershipImporter,
         BillImporter,
         VoteEventImporter,
         EventImporter,
@@ -109,10 +107,6 @@ def do_import(juris, args):
     juris_importer = JurisdictionImporter(juris.jurisdiction_id)
     org_importer = OrganizationImporter(juris.jurisdiction_id)
     person_importer = PersonImporter(juris.jurisdiction_id)
-    post_importer = PostImporter(juris.jurisdiction_id, org_importer)
-    membership_importer = MembershipImporter(
-        juris.jurisdiction_id, person_importer, org_importer, post_importer
-    )
     bill_importer = BillImporter(juris.jurisdiction_id, org_importer, person_importer)
     vote_event_importer = VoteEventImporter(
         juris.jurisdiction_id, person_importer, org_importer, bill_importer
@@ -130,15 +124,6 @@ def do_import(juris, args):
     with transaction.atomic():
         print("import jurisdictions...")
         report.update(juris_importer.import_directory(datadir))
-        if settings.ENABLE_PEOPLE_AND_ORGS:
-            print("import organizations...")
-            report.update(org_importer.import_directory(datadir))
-            print("import people...")
-            report.update(person_importer.import_directory(datadir))
-            print("import posts...")
-            report.update(post_importer.import_directory(datadir))
-            print("import memberships...")
-            report.update(membership_importer.import_directory(datadir))
         if settings.ENABLE_BILLS:
             print("import bills...")
             report.update(bill_importer.import_directory(datadir))

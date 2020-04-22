@@ -9,7 +9,6 @@ from openstates.scrape import (
 from openstates.importers import (
     VoteEventImporter,
     BillImporter,
-    MembershipImporter,
     OrganizationImporter,
     PersonImporter,
 )
@@ -65,8 +64,10 @@ def test_full_vote_event():
     pi = PersonImporter("jid")
     pi.import_data([sp1.as_dict(), sp2.as_dict()])
 
-    mi = MembershipImporter("jid", pi, oi, DumbMockImporter())
-    mi.import_data([sp1._related[0].as_dict(), sp2._related[0].as_dict()])
+    for person in Person.objects.all():
+        person.memberships.create(
+            organization=Organization.objects.get(classification="lower")
+        )
 
     bi = BillImporter("jid", oi, pi)
     bi.import_data([bill.as_dict()])

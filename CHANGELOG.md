@@ -4,6 +4,7 @@
 
 * remove some completely unused fields & models
 * add Person current_role, active, current_legislators_with_roles, and search helpers
+* remove some unused importer code for Memberships and Posts
 
 ## 4.1.1 - April 14 2020
 
