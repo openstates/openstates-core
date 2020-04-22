@@ -107,9 +107,7 @@ def party():
 
 @pytest.fixture
 def person():
-    p = Person.objects.create(
-        name="Arnold Schwarzenegger",
-    )
+    p = Person.objects.create(name="Arnold Schwarzenegger",)
     return p
 
 

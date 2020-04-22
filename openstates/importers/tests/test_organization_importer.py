@@ -2,7 +2,7 @@ import pytest
 from openstates.data.models import Organization, Jurisdiction, Division
 from openstates.scrape import Organization as ScrapeOrganization
 from openstates.importers import OrganizationImporter
-from openstates.exceptions import UnresolvedIdError, SameOrgNameError
+from openstates.exceptions import UnresolvedIdError
 
 
 def create_jurisdictions():
@@ -81,7 +81,9 @@ def test_deduplication_overlap_name_distinct_juris():
         jurisdiction_id="jid1",
     )
 
-    org = ScrapeOrganization(name="World Wrestling Federation", classification="international")
+    org = ScrapeOrganization(
+        name="World Wrestling Federation", classification="international"
+    )
 
     oi1 = OrganizationImporter("jid1")
     oi1.import_item(org.as_dict())

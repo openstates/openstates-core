@@ -19,8 +19,11 @@ class OrganizationImporter(BaseImporter):
     }
 
     def get_object(self, org):
-        spec = {"classification": org["classification"], "parent_id": org["parent_id"],
-                "name": org["name"]}
+        spec = {
+            "classification": org["classification"],
+            "parent_id": org["parent_id"],
+            "name": org["name"],
+        }
 
         # add jurisdiction_id unless this is a party
         jid = org.get("jurisdiction_id")

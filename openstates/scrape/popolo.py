@@ -233,9 +233,7 @@ class Person(
 
 
 class Organization(
-    BaseModel,
-    SourceMixin,
-    LinkMixin,
+    BaseModel, SourceMixin, LinkMixin,
 ):
     """
     A single popolo-style Organization

@@ -6,18 +6,11 @@ from django.db import migrations
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('data', '0002_auto_20200422_0028'),
+        ("data", "0002_auto_20200422_0028"),
     ]
 
     operations = [
-        migrations.RemoveField(
-            model_name='membershiplink',
-            name='membership',
-        ),
-        migrations.DeleteModel(
-            name='MembershipContactDetail',
-        ),
-        migrations.DeleteModel(
-            name='MembershipLink',
-        ),
+        migrations.RemoveField(model_name="membershiplink", name="membership",),
+        migrations.DeleteModel(name="MembershipContactDetail",),
+        migrations.DeleteModel(name="MembershipLink",),
     ]

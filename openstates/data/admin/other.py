@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.apps import apps
 from .. import models
-from .base import ModelAdmin, ReadOnlyTabularInline, ContactDetailInline, LinkInline
+from .base import ModelAdmin, ReadOnlyTabularInline
 
 
 @admin.register(models.Division)

@@ -5,8 +5,7 @@ from .base import BaseImporter
 class PostImporter(BaseImporter):
     _type = "post"
     model_class = Post
-    related_models = {
-    }
+    related_models = {}
 
     def __init__(self, jurisdiction_id, org_importer):
         super(PostImporter, self).__init__(jurisdiction_id)

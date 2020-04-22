@@ -54,9 +54,6 @@ class OrganizationAdmin(ModelAdmin):
     list_filter = ("jurisdiction__name",)
 
     inlines = [
-        OrganizationIdentifierInline,
-        OrganizationNameInline,
-        OrganizationContactDetailInline,
         OrganizationLinkInline,
         OrganizationSourceInline,
         PostInline,

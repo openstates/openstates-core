@@ -6,39 +6,19 @@ from django.db import migrations
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('data', '0001_initial'),
+        ("data", "0001_initial"),
     ]
 
     operations = [
         migrations.RemoveField(
-            model_name='organizationidentifier',
-            name='organization',
+            model_name="organizationidentifier", name="organization",
         ),
-        migrations.RemoveField(
-            model_name='organizationname',
-            name='organization',
-        ),
-        migrations.RemoveField(
-            model_name='postcontactdetail',
-            name='post',
-        ),
-        migrations.RemoveField(
-            model_name='postlink',
-            name='post',
-        ),
-        migrations.DeleteModel(
-            name='OrganizationContactDetail',
-        ),
-        migrations.DeleteModel(
-            name='OrganizationIdentifier',
-        ),
-        migrations.DeleteModel(
-            name='OrganizationName',
-        ),
-        migrations.DeleteModel(
-            name='PostContactDetail',
-        ),
-        migrations.DeleteModel(
-            name='PostLink',
-        ),
+        migrations.RemoveField(model_name="organizationname", name="organization",),
+        migrations.RemoveField(model_name="postcontactdetail", name="post",),
+        migrations.RemoveField(model_name="postlink", name="post",),
+        migrations.DeleteModel(name="OrganizationContactDetail",),
+        migrations.DeleteModel(name="OrganizationIdentifier",),
+        migrations.DeleteModel(name="OrganizationName",),
+        migrations.DeleteModel(name="PostContactDetail",),
+        migrations.DeleteModel(name="PostLink",),
     ]
