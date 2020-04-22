@@ -19,23 +19,22 @@ class OrganizationImporter(BaseImporter):
     }
 
     def get_object(self, org):
-        spec = {"classification": org["classification"], "parent_id": org["parent_id"]}
+        spec = {"classification": org["classification"], "parent_id": org["parent_id"],
+                "name": org["name"]}
 
         # add jurisdiction_id unless this is a party
         jid = org.get("jurisdiction_id")
         if jid:
             spec["jurisdiction_id"] = jid
 
-        all_names = [org["name"]] + [o["name"] for o in org["other_names"]]
-
-        query = Q(**spec) & (Q(name__in=all_names) | Q(other_names__name__in=all_names))
+        query = Q(**spec)
         matches = list(self.model_class.objects.filter(query).distinct("id"))
         matches_length = len(matches)
         if matches_length == 1:
             return matches[0]
         elif matches_length == 0:
             raise self.model_class.DoesNotExist(
-                "No Organization: {} in {}".format(all_names, self.jurisdiction_id)
+                "No Organization: {} in {}".format(org["name"], self.jurisdiction_id)
             )
         else:
             raise SameOrgNameError(org["name"])
