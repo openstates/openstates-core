@@ -27,7 +27,7 @@ def division():
 @pytest.fixture
 def jurisdiction(division):
     juris = Jurisdiction.objects.create(
-        id="ocd-division/country:us/state:mo",
+        id="ocd-jurisdiction/country:us/state:mo/government",
         name="Missouri State Senate",
         url="http://www.senate.mo.gov",
         division=division,
@@ -109,6 +109,23 @@ def party():
 def person():
     p = Person.objects.create(name="Arnold Schwarzenegger",)
     return p
+
+
+@pytest.fixture
+def senator(jurisdiction, party):
+    person = Person.objects.create(name="Willy Worm")
+    senate = Organization.objects.create(
+        classification="upper", name="Senate", jurisdiction=jurisdiction
+    )
+    division = Division.objects.create(
+        id="ocd-division/country:us/state:mo/sldu:1", name="MO 1"
+    )
+    post = Post.objects.create(
+        organization=senate, division=division, role="Senator", label="1",
+    )
+    person.memberships.create(organization=senate, post=post)
+    person.memberships.create(organization=party)
+    return person
 
 
 @pytest.fixture

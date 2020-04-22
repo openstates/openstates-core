@@ -193,6 +193,42 @@ def test_organization_membership():
 
 
 @pytest.mark.django_db
+def test_person_query_active_members(senator):
+    assert Person.objects.count() == 1
+    people = Person.objects.active()
+    assert len(people) == 1
+    assert people[0].name == "Willy Worm"
+
+
+@pytest.mark.django_db
+def test_person_query_current_with_roles(senator, django_assert_num_queries):
+    senate = senator.memberships.filter(organization__classification="upper")[
+        0
+    ].organization
+
+    # prefetch grabs membership, org, post too
+    with django_assert_num_queries(4):
+        willy = Person.objects.current_legislators_with_roles([senate])[0]
+    assert willy.name == "Willy Worm"
+
+    # already prefetched
+    with django_assert_num_queries(0):
+        willy.current_role
+
+
+@pytest.mark.django_db
+def test_person_get_current_role(senator):
+    assert senator.current_role == {
+        "party": "Republican",
+        "chamber": "upper",
+        "role": "Senator",
+        "state": "mo",
+        "district": 1,  # should be integer for sorting reasons
+        "division_id": "ocd-division/country:us/state:mo/sldu:1",
+    }
+
+
+@pytest.mark.django_db
 def test_person_str(person):
     assert person.name in str(person)
 

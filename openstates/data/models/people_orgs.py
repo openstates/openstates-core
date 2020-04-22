@@ -5,6 +5,7 @@ from .base import OCDBase, LinkBase, OCDIDField, RelatedBase, IdentifierBase
 from .division import Division
 from .jurisdiction import Jurisdiction
 from .. import common
+from ...utils import jid_to_abbr
 
 # abstract models
 
@@ -258,6 +259,22 @@ class PersonQuerySet(QuerySet):
             )
         return qs
 
+    def active(self):
+        today = datetime.date.today().isoformat()
+        return self.filter(
+            Q(memberships__start_date="") | Q(memberships__start_date__lte=today),
+            Q(memberships__end_date="") | Q(memberships__end_date__gte=today),
+        ).distinct()
+
+    def current_legislators_with_roles(self, chambers):
+        return (
+            self.active()
+            .filter(memberships__organization__in=chambers)
+            .prefetch_related(
+                "memberships", "memberships__organization", "memberships__post"
+            )
+        )
+
 
 class Person(OCDBase):
     """
@@ -307,9 +324,54 @@ class Person(OCDBase):
     def add_other_name(self, name, note=""):
         PersonName.objects.create(name=name, note=note, person_id=self.id)
 
+    @property
+    def current_role(self):
+        if not getattr(self, "_current_role", None):
+            self._current_role = self._get_current_role()
+        return self._current_role
+
     class Meta:
         db_table = "opencivicdata_person"
         verbose_name_plural = "people"
+
+    def _get_current_role(person):
+        today = datetime.date.today().strftime("%Y-%m-%d")
+        party = None
+        post = None
+        state = None
+        chamber = None
+
+        # assume that this person object was fetched with appropriate
+        # related data, if not this can get expensive
+        for membership in person.memberships.all():
+            print(membership.organization.classification)
+            if not membership.end_date or membership.end_date > today:
+                if membership.organization.classification == "party":
+                    party = membership.organization.name
+                elif membership.organization.classification in (
+                    "upper",
+                    "lower",
+                    "legislature",
+                ):
+                    chamber = membership.organization.classification
+                    state = jid_to_abbr(membership.organization.jurisdiction_id)
+                    post = membership.post
+
+        district = post.label if post else ""
+        # try to convert to int for sorting purposes if district is numeric
+        try:
+            district = int(district)
+        except ValueError:
+            pass
+
+        return {
+            "party": party,
+            "chamber": chamber,
+            "state": state,
+            "district": district,
+            "division_id": post.division_id if post else "",
+            "role": post.role if post else "",
+        }
 
 
 class PersonIdentifier(IdentifierBase):
