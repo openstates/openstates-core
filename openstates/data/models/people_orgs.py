@@ -152,58 +152,6 @@ class Organization(OCDBase):
         ]
 
 
-class OrganizationIdentifier(IdentifierBase):
-    """
-    Upstream identifiers of an Organization.
-    """
-
-    organization = models.ForeignKey(
-        Organization,
-        related_name="identifiers",
-        help_text="Reference to the Organization identified by this alternative identifier.",
-        on_delete=models.CASCADE,
-    )
-
-    def __str__(self):
-        tmpl = "%s identifies %s"
-        return tmpl % (self.identifier, self.organization)
-
-    class Meta:
-        db_table = "opencivicdata_organizationidentifier"
-
-
-class OrganizationName(OtherNameBase):
-    """
-    Alternate or former name for an Organization.
-    """
-
-    organization = models.ForeignKey(
-        Organization,
-        related_name="other_names",
-        help_text="A link to the Organization with this alternative name.",
-        on_delete=models.CASCADE,
-    )
-
-    class Meta:
-        db_table = "opencivicdata_organizationname"
-
-
-class OrganizationContactDetail(ContactDetailBase):
-    """
-    Contact information for an Organization.
-    """
-
-    organization = models.ForeignKey(
-        Organization,
-        related_name="contact_details",
-        help_text="A link to the Organization connected to this contact.",
-        on_delete=models.CASCADE,
-    )
-
-    class Meta:
-        db_table = "opencivicdata_organizationcontactdetail"
-
-
 class OrganizationLink(LinkBase):
     """
     URL for a document about an Organization.
@@ -284,38 +232,6 @@ class Post(OCDBase):
 
     def __str__(self):
         return "{} - {} - {}".format(self.role, self.label, self.organization)
-
-
-class PostContactDetail(ContactDetailBase):
-    """
-    Contact information for whoever currently occupies a Post.
-    """
-
-    post = models.ForeignKey(
-        Post,
-        related_name="contact_details",
-        help_text="A link to the Post connected to this contact.",
-        on_delete=models.CASCADE,
-    )
-
-    class Meta:
-        db_table = "opencivicdata_postcontactdetail"
-
-
-class PostLink(LinkBase):
-    """
-    URL for a document about a Post.
-    """
-
-    post = models.ForeignKey(
-        Post,
-        related_name="links",
-        on_delete=models.CASCADE,
-        help_text="A reference to the Post connected to this link.",
-    )
-
-    class Meta:
-        db_table = "opencivicdata_postlink"
 
 
 class PersonQuerySet(QuerySet):

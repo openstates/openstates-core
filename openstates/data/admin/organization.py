@@ -4,23 +4,8 @@ from .. import models
 from .base import (
     ModelAdmin,
     ReadOnlyTabularInline,
-    IdentifierInline,
     LinkInline,
-    ContactDetailInline,
-    OtherNameInline,
 )
-
-
-class OrganizationIdentifierInline(IdentifierInline):
-    model = models.OrganizationIdentifier
-
-
-class OrganizationNameInline(OtherNameInline):
-    model = models.OrganizationName
-
-
-class OrganizationContactDetailInline(ContactDetailInline):
-    model = models.OrganizationContactDetail
 
 
 class OrganizationLinkInline(LinkInline):

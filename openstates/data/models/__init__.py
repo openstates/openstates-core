@@ -3,9 +3,6 @@ from .jurisdiction import Jurisdiction
 from .division import Division
 from .people_orgs import (
     Organization,
-    OrganizationIdentifier,
-    OrganizationName,
-    OrganizationContactDetail,
     OrganizationLink,
     OrganizationSource,
     Person,
@@ -15,8 +12,6 @@ from .people_orgs import (
     PersonLink,
     PersonSource,
     Post,
-    PostContactDetail,
-    PostLink,
     Membership,
     MembershipContactDetail,
     MembershipLink,

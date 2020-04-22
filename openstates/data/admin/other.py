@@ -49,14 +49,6 @@ class JurisdictionAdmin(ModelAdmin):
     inlines = jurisdiction_inlines
 
 
-class PostContactDetailInline(ContactDetailInline):
-    model = models.PostContactDetail
-
-
-class PostLinkInline(LinkInline):
-    model = models.PostLink
-
-
 @admin.register(models.Post)
 class PostAdmin(ModelAdmin):
     readonly_fields = ("id", "label", "organization", "division", "extras", "role")
@@ -64,5 +56,4 @@ class PostAdmin(ModelAdmin):
     list_display = ("label", "organization", "division")
     list_filter = ("organization__jurisdiction__name",)
     ordering = ("organization__name",)
-    inlines = [PostContactDetailInline, PostLinkInline]
     search_fields = ("organization__name", "label")
