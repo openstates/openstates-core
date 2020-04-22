@@ -2,9 +2,6 @@ from django.db.models import Q
 from .base import BaseImporter
 from ..data.models import (
     Organization,
-    OrganizationIdentifier,
-    OrganizationName,
-    OrganizationContactDetail,
     OrganizationLink,
     OrganizationSource,
 )
@@ -17,9 +14,6 @@ class OrganizationImporter(BaseImporter):
     _type = "organization"
     model_class = Organization
     related_models = {
-        "identifiers": (OrganizationIdentifier, "organization_id", {}),
-        "other_names": (OrganizationName, "organization_id", {}),
-        "contact_details": (OrganizationContactDetail, "organization_id", {}),
         "links": (OrganizationLink, "organization_id", {}),
         "sources": (OrganizationSource, "organization_id", {}),
     }

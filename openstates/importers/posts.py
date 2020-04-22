@@ -1,4 +1,4 @@
-from ..data.models import Post, PostContactDetail, PostLink
+from ..data.models import Post
 from .base import BaseImporter
 
 
@@ -6,8 +6,6 @@ class PostImporter(BaseImporter):
     _type = "post"
     model_class = Post
     related_models = {
-        "contact_details": (PostContactDetail, "post_id", {}),
-        "links": (PostLink, "post_id", {}),
     }
 
     def __init__(self, jurisdiction_id, org_importer):
