@@ -12,19 +12,15 @@ def create_jurisdictions():
 
 
 def create_org():
-    o = Organization.objects.create(
+    Organization.objects.create(
         name="United Nations", jurisdiction_id="jid1", classification="international"
     )
-    o.other_names.create(name="UN")
 
 
 @pytest.mark.django_db
 def test_full_organization():
     create_jurisdictions()
     org = ScrapeOrganization("United Nations", classification="international")
-    org.add_identifier("un")
-    org.add_name("UN", start_date="1945")
-    org.add_contact_detail(type="phone", value="555-555-1234", note="this is fake")
     org.add_link("http://example.com/link")
     org.add_source("http://example.com/source")
 
@@ -36,16 +32,6 @@ def test_full_organization():
     o = Organization.objects.get()
     assert "ocd-organization" in o.id
     assert o.name == org.name
-
-    assert o.identifiers.all()[0].identifier == "un"
-    assert o.identifiers.all()[0].scheme == ""
-
-    assert o.other_names.all()[0].name == "UN"
-    assert o.other_names.all()[0].start_date == "1945"
-
-    assert o.contact_details.all()[0].type == "phone"
-    assert o.contact_details.all()[0].value == "555-555-1234"
-    assert o.contact_details.all()[0].note == "this is fake"
 
     assert o.links.all()[0].url == "http://example.com/link"
     assert o.sources.all()[0].url == "http://example.com/source"
@@ -76,28 +62,17 @@ def test_deduplication_similar_but_different():
 
 
 @pytest.mark.django_db
-def test_deduplication_other_name_exists():
+def test_deduplication_name_exists():
     create_jurisdictions()
     create_org()
-    org = ScrapeOrganization("UN", classification="international")
+    org = ScrapeOrganization("United Nations", classification="international")
     od = org.as_dict()
     OrganizationImporter("jid1").import_data([od])
     assert Organization.objects.all().count() == 1
 
 
 @pytest.mark.django_db
-def test_deduplication_other_name_overlaps():
-    create_jurisdictions()
-    create_org()
-    org = ScrapeOrganization("The United Nations", classification="international")
-    org.add_name("United Nations")
-    od = org.as_dict()
-    OrganizationImporter("jid1").import_data([od])
-    assert Organization.objects.all().count() == 1
-
-
-@pytest.mark.django_db
-def test_deduplication_error_overlaps():
+def test_deduplication_overlap_name_distinct_juris():
     create_jurisdictions()
 
     Organization.objects.create(
@@ -105,35 +80,8 @@ def test_deduplication_error_overlaps():
         classification="international",
         jurisdiction_id="jid1",
     )
-    wildlife = Organization.objects.create(
-        name="World Wildlife Fund",
-        classification="international",
-        jurisdiction_id="jid1",
-    )
-    wildlife.other_names.create(name="WWF")
 
-    org = ScrapeOrganization(
-        "World Wrestling Federation", classification="international"
-    )
-    org.add_name("WWF")
-    od = org.as_dict()
-    with pytest.raises(SameOrgNameError):
-        OrganizationImporter("jid1").import_data([od])
-
-
-@pytest.mark.django_db
-def test_deduplication_overlap_name_distinct_juris():
-    create_jurisdictions()
-
-    org_jid_1 = Organization.objects.create(
-        name="World Wrestling Federation",
-        classification="international",
-        jurisdiction_id="jid1",
-    )
-    org_jid_1.other_names.create(name="WWF")
-
-    org = ScrapeOrganization(name="WWF", classification="international")
-    org.add_name("WWF")
+    org = ScrapeOrganization(name="World Wrestling Federation", classification="international")
 
     oi1 = OrganizationImporter("jid1")
     oi1.import_item(org.as_dict())

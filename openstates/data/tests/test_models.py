@@ -169,32 +169,6 @@ def test_organization_str():
 
 
 @pytest.mark.django_db
-def test_organization_contact_details():
-    o = Organization.objects.create(name="test org")
-    o.contact_details.create(type="email", value="info@test.org")
-
-    assert "Email" in str(o.contact_details.all()[0])
-    assert "info@test.org" in str(o.contact_details.all()[0])
-
-
-@pytest.mark.django_db
-def test_organization_other_name():
-    o = Organization.objects.create(name="test org")
-    o.other_names.create(name="tester org")
-
-    assert "tester org" in str(o.other_names.all()[0])
-
-
-@pytest.mark.django_db
-def test_organization_identifier():
-    o = Organization.objects.create(name="test org")
-    o.identifiers.create(identifier="US0123456789", scheme="ISIN")
-
-    assert "US0123456789" in str(o.identifiers.all()[0])
-    assert "test org" in str(o.identifiers.all()[0])
-
-
-@pytest.mark.django_db
 def test_organization_post():
     o = Organization.objects.create(name="test org")
     o.posts.create(label="CEO")

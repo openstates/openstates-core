@@ -19,7 +19,7 @@ org_schema_no_sources = copy.deepcopy(org_schema)
 org_schema_no_sources["properties"].pop("sources")
 
 
-class Post(BaseModel, LinkMixin, ContactDetailMixin):
+class Post(BaseModel):
     """
     A popolo-style Post
     """
@@ -52,7 +52,7 @@ class Post(BaseModel, LinkMixin, ContactDetailMixin):
         return self.label
 
 
-class Membership(BaseModel, ContactDetailMixin, LinkMixin):
+class Membership(BaseModel):
     """
     A popolo-style Membership.
     """
@@ -235,10 +235,7 @@ class Person(
 class Organization(
     BaseModel,
     SourceMixin,
-    ContactDetailMixin,
     LinkMixin,
-    IdentifierMixin,
-    OtherNameMixin,
 ):
     """
     A single popolo-style Organization

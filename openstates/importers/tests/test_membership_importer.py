@@ -47,8 +47,6 @@ def test_full_membership():
 
     # add a membership through a post
     m1 = ScrapeMembership(person_id=hari.id, organization_id=org.id, post_id=post.id)
-    m1.add_contact_detail(type="phone", value="555-555-1234", note="this is fake")
-    m1.add_link("http://example.com/link")
 
     # add a membership direct to an organization
     m2 = ScrapeMembership(
@@ -64,14 +62,6 @@ def test_full_membership():
     assert hari.memberships.count() == 1
     assert robot.memberships.count() == 1
     assert post.memberships.count() == 1
-
-    # ensure that the first membership has contact details and links
-    m = hari.memberships.get()
-    cd = m.contact_details.get()
-    assert cd.type == "phone"
-    assert cd.value == "555-555-1234"
-    assert cd.note == "this is fake"
-    assert m.links.all()[0].url == "http://example.com/link"
 
 
 @pytest.mark.django_db

@@ -189,13 +189,13 @@ def test_locked_field():
 def test_locked_field_subitem():
     create_jurisdiction()
     org = ScrapeOrganization("SHIELD")
-    org.add_name("S.H.I.E.L.D.")
+    org.add_source("https://example.com")
     oi = OrganizationImporter("jid")
     oi.import_data([org.as_dict()])
 
     # lock the field
     o = Organization.objects.get()
-    o.locked_fields = ["other_names"]
+    o.locked_fields = ["sources"]
     o.save()
 
     # reimport
@@ -204,4 +204,4 @@ def test_locked_field_subitem():
     oi.import_data([org])
 
     o = Organization.objects.get()
-    assert o.other_names.get().name == "S.H.I.E.L.D."
+    assert o.sources.get().url == "https://example.com"
