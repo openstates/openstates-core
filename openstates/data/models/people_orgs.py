@@ -469,35 +469,3 @@ class Membership(OCDBase):
 
     def __str__(self):
         return "{} in {} ({})".format(self.person, self.organization, self.role)
-
-
-class MembershipContactDetail(ContactDetailBase):
-    """
-    Contact information for Person at an Organization.
-    """
-
-    membership = models.ForeignKey(
-        Membership,
-        related_name="contact_details",
-        help_text="A link to the Membership connected to this contact.",
-        on_delete=models.CASCADE,
-    )
-
-    class Meta:
-        db_table = "opencivicdata_membershipcontactdetail"
-
-
-class MembershipLink(LinkBase):
-    """
-    URL for a document about a Person's relationship to an Organization.
-    """
-
-    membership = models.ForeignKey(
-        Membership,
-        related_name="links",
-        help_text="A reference to the Membership connected to this link.",
-        on_delete=models.CASCADE,
-    )
-
-    class Meta:
-        db_table = "opencivicdata_membershiplink"

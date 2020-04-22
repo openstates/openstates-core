@@ -1,5 +1,5 @@
 from .base import BaseImporter
-from ..data.models import Membership, MembershipContactDetail, MembershipLink
+from ..data.models import Membership
 from ..utils import get_pseudo_id
 from ..exceptions import NoMembershipsError
 
@@ -7,10 +7,7 @@ from ..exceptions import NoMembershipsError
 class MembershipImporter(BaseImporter):
     _type = "membership"
     model_class = Membership
-    related_models = {
-        "contact_details": (MembershipContactDetail, "membership_id", {}),
-        "links": (MembershipLink, "membership_id", {}),
-    }
+    related_models = {}
 
     def __init__(self, jurisdiction_id, person_importer, org_importer, post_importer):
         super(MembershipImporter, self).__init__(jurisdiction_id)

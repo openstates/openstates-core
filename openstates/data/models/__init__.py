@@ -13,8 +13,6 @@ from .people_orgs import (
     PersonSource,
     Post,
     Membership,
-    MembershipContactDetail,
-    MembershipLink,
 )
 from .session import LegislativeSession
 from .bill import (
