@@ -1,4 +1,5 @@
-from .. import lookup
+import pytest
+from .. import lookup, lookup_district_with_ancestors
 from ..data import NC, NE
 
 
@@ -35,5 +36,39 @@ def test_lookup_district():
     )
 
 
-def test_lookup_missing():
+def test_lookup_missing_district():
     assert NE.lookup_district("ocd-division/country:us/state:ne/sldl:1") is None
+
+
+def test_lookup_district_with_ancestors():
+    state, chamber, district = lookup_district_with_ancestors(
+        division_id="ocd-division/country:us/state:nc/sldl:1"
+    )
+    assert state.name == "North Carolina"
+    assert chamber.chamber_type == "lower"
+    assert district.name == "1"
+
+    state, chamber, district = lookup_district_with_ancestors(
+        division_id="ocd-division/country:us/state:ne/sldu:1"
+    )
+    assert state.name == "Nebraska"
+    assert chamber.chamber_type == "unicameral"
+    assert district.name == "1"
+
+
+def test_lookup_district_with_ancestors_invalid():
+    # bad id
+    with pytest.raises(ValueError):
+        state, chamber, district = lookup_district_with_ancestors(
+            division_id="invalid id"
+        )
+    # bad state
+    with pytest.raises(ValueError):
+        state, chamber, district = lookup_district_with_ancestors(
+            division_id="ocd-division/country:us/state:xy/sldl:1"
+        )
+    # bad district
+    with pytest.raises(ValueError):
+        state, chamber, district = lookup_district_with_ancestors(
+            division_id="ocd-division/country:us/state:nc/sldl:999"
+        )
