@@ -367,7 +367,6 @@ class Person(OCDBase):
         # assume that this person object was fetched with appropriate
         # related data, if not this can get expensive
         for membership in person.memberships.all():
-            print(membership.organization.classification)
             if not membership.end_date or membership.end_date > today:
                 if membership.organization.classification == "party":
                     party = membership.organization.name
