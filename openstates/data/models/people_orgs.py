@@ -1,11 +1,12 @@
 import datetime
 from django.db import models
 from django.db.models import Q, QuerySet
+import openstates_metadata as metadata
 from .base import OCDBase, LinkBase, OCDIDField, RelatedBase, IdentifierBase
 from .division import Division
 from .jurisdiction import Jurisdiction
 from .. import common
-from ...utils import jid_to_abbr, abbr_to_jid
+from ...utils import abbr_to_jid
 
 # abstract models
 
@@ -341,8 +342,20 @@ class Person(OCDBase):
         help_text="The date of a Person's death in YYYY[-MM[-DD]] string format.",
     )
 
+    # computed fields
+    primary_party = models.CharField(
+        max_length=100,
+        default="",
+        help_text="Primary party an individual is associated with.",
+    )
+    current_role_division_id = models.CharField(max_length=100, default="")
+
     def __str__(self):
         return self.name
+
+    class Meta:
+        db_table = "opencivicdata_person"
+        verbose_name_plural = "people"
 
     def add_other_name(self, name, note=""):
         PersonName.objects.create(name=name, note=note, person_id=self.id)
@@ -353,46 +366,30 @@ class Person(OCDBase):
             self._current_role = self._get_current_role()
         return self._current_role
 
-    class Meta:
-        db_table = "opencivicdata_person"
-        verbose_name_plural = "people"
-
-    def _get_current_role(person):
-        today = datetime.date.today().strftime("%Y-%m-%d")
-        party = None
-        post = None
-        state = None
-        chamber = None
-
-        # assume that this person object was fetched with appropriate
-        # related data, if not this can get expensive
-        for membership in person.memberships.all():
-            if not membership.end_date or membership.end_date > today:
-                if membership.organization.classification == "party":
-                    party = membership.organization.name
-                elif membership.organization.classification in (
-                    "upper",
-                    "lower",
-                    "legislature",
-                ):
-                    chamber = membership.organization.classification
-                    state = jid_to_abbr(membership.organization.jurisdiction_id)
-                    post = membership.post
-
-        district = post.label if post else ""
-        # try to convert to int for sorting purposes if district is numeric
-        try:
-            district = int(district)
-        except ValueError:
-            pass
+    def _get_current_role(self):
+        if self.current_role_division_id:
+            state, chamber, district = metadata.lookup_district_with_ancestors(
+                division_id=self.current_role_division_id
+            )
+            state = state.abbr.lower()
+            role = chamber.title
+            chamber = chamber.chamber_type
+            district = district.name
+            try:
+                # convert to integer for sorting if numeric
+                district = int(district)
+            except ValueError:
+                pass
+        else:
+            state = chamber = district = role = ""
 
         return {
-            "party": party,
+            "party": self.primary_party,
             "chamber": chamber,
             "state": state,
             "district": district,
-            "division_id": post.division_id if post else "",
-            "role": post.role if post else "",
+            "division_id": self.current_role_division_id,
+            "role": role,
         }
 
 

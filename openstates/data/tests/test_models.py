@@ -211,14 +211,15 @@ def test_person_query_current_with_roles(senator, django_assert_num_queries):
         willy = Person.objects.current_legislators_with_roles([senate])[0]
     assert willy.name == "Willy Worm"
 
-    # already prefetched
-    with django_assert_num_queries(0):
-        willy.current_role
-
 
 @pytest.mark.django_db
-def test_person_get_current_role(senator):
-    assert senator.current_role == {
+def test_person_get_current_role():
+    p = Person(
+        name="Someone",
+        current_role_division_id="ocd-division/country:us/state:mo/sldu:1",
+        primary_party="Republican",
+    )
+    assert p.current_role == {
         "party": "Republican",
         "chamber": "upper",
         "role": "Senator",

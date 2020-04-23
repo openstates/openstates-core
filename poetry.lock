@@ -212,7 +212,7 @@ description = "metadata for the openstates project"
 name = "openstates-metadata"
 optional = false
 python-versions = ">=3.6,<4.0"
-version = "2020.4.3"
+version = "2020.4.6"
 
 [package.dependencies]
 attrs = ">=19.3,<20.0"
@@ -558,8 +558,8 @@ more-itertools = [
     {file = "more_itertools-8.2.0-py3-none-any.whl", hash = "sha256:5dd8bcf33e5f9513ffa06d5ad33d78f31e1931ac9a18f33d37e77a180d393a7c"},
 ]
 openstates-metadata = [
-    {file = "openstates_metadata-2020.4.3-py3-none-any.whl", hash = "sha256:0eded9a6d4d2e3cddbc3ede87f8cbfcc13cb6aeab06258867ca5c71665d38f57"},
-    {file = "openstates_metadata-2020.4.3.tar.gz", hash = "sha256:5ee38adb85ee920747c2311aea54252968e9a1432603d50d2790d12af807cb45"},
+    {file = "openstates_metadata-2020.4.6-py3-none-any.whl", hash = "sha256:fbe39e068c6f3947cd9b095233ce597f2517ce963293386f2d867ecb7f038b16"},
+    {file = "openstates_metadata-2020.4.6.tar.gz", hash = "sha256:3270c80049d320a08ee79a9916c477794531f2234cd949ccda6b7dba77fddd96"},
 ]
 packaging = [
     {file = "packaging-20.3-py2.py3-none-any.whl", hash = "sha256:82f77b9bee21c1bafbf35a84905d604d5d1223801d639cf3ed140bd651c08752"},
