@@ -41,6 +41,12 @@ class Bill(OCDBase):
     classification = ArrayField(base_field=models.TextField(), blank=True, default=list)
     subject = ArrayField(base_field=models.TextField(), blank=True, default=list)
 
+    # computed fields
+    first_action_date = models.CharField(max_length=25, default="")
+    latest_action_date = models.CharField(max_length=25, default="")
+    latest_action_description = models.TextField(default="")
+    latest_passage_date = models.CharField(max_length=25, default="")
+
     def __str__(self):
         return "{} in {}".format(self.identifier, self.legislative_session)
 
