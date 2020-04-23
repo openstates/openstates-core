@@ -1,7 +1,7 @@
 import sys
 from django.db import transaction
 import openstates_metadata as metadata
-from ..data.models import Bill
+from ..utils.django import init_django
 
 
 def update_bill_fields(bill):
@@ -40,6 +40,9 @@ def update_bill_fields(bill):
 def main():
     """ takes state abbr as param """
     state = metadata.lookup(abbr=sys.argv[1])
+    init_django()
+
+    from ..data.models import Bill
 
     with transaction.atomic():
         for bill in Bill.objects.filter(
