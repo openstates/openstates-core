@@ -16,7 +16,7 @@ def test_chambers():
     assert len(NE.chambers) == 1
 
 
-def test_lookup_district():
+def test_lookup_district_by_division_id():
     # lookup works
     assert NC.lookup_district("ocd-division/country:us/state:nc/sldl:1") is not None
     assert NC.lookup_district("ocd-division/country:us/state:nc/sldl:1").name == "1"
@@ -36,8 +36,26 @@ def test_lookup_district():
     )
 
 
+def test_lookup_district_by_name():
+    assert (
+        NC.lookup_district(chamber="upper", name="1").division_id
+        == "ocd-division/country:us/state:nc/sldu:1"
+    )
+    assert (
+        NC.lookup_district(chamber="lower", name="1").division_id
+        == "ocd-division/country:us/state:nc/sldl:1"
+    )
+    assert (
+        NE.lookup_district(name="1").division_id
+        == "ocd-division/country:us/state:ne/sldu:1"
+    )
+
+
 def test_lookup_missing_district():
     assert NE.lookup_district("ocd-division/country:us/state:ne/sldl:1") is None
+    assert NE.lookup_district(name="999") is None
+    assert NC.lookup_district(name="999") is None
+    assert NC.lookup_district(name="999", chamber="lower") is None
 
 
 def test_lookup_district_with_ancestors():

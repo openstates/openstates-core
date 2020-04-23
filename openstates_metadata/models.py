@@ -19,9 +19,11 @@ class Chamber:
     organization_id: str
     districts: typing.List[District]
 
-    def lookup_district(self, division_id):
+    def lookup_district(self, division_id=None, *, name=None):
         for d in self.districts:
-            if d.division_id == division_id:
+            if division_id and d.division_id == division_id:
+                return d
+            if name and d.name == name:
                 return d
 
 
@@ -57,13 +59,13 @@ class State:
 
         return legacy_districts.get(self.abbr.lower(), [])
 
-    def lookup_district(self, division_id):
+    def lookup_district(self, division_id=None, *, name=None, chamber=None):
         if self.unicameral:
-            return self.legislature.lookup_district(division_id)
-        elif "sldl" in division_id:
-            return self.lower.lookup_district(division_id)
-        elif "sldu" in division_id:
-            return self.upper.lookup_district(division_id)
+            return self.legislature.lookup_district(division_id=division_id, name=name)
+        elif division_id and "sldl" in division_id or chamber == "lower":
+            return self.lower.lookup_district(division_id=division_id, name=name)
+        elif division_id and "sldu" in division_id or chamber == "upper":
+            return self.upper.lookup_district(division_id=division_id, name=name)
 
 
 def simple_numbered_districts(parent_id, chamber_type, total, *, num_seats=1):
