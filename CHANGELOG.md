@@ -1,5 +1,10 @@
 # Changelog
 
+## 4.3.1 - April 23 2020
+
+* make new fields temporarily nullable
+* fix updated-computed init_django bug
+
 ## 4.3.0 - April 23 2020
 
 * add computed fields on Person model
