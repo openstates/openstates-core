@@ -18,6 +18,7 @@ schema = {
         "legislative_session": {"type": "string", "minLength": 1},
         "bill": {"type": ["string", "null"], "minLength": 1},
         "bill_action": {"type": ["string", "null"], "minLength": 1},
+        "bill_identifier": {"type": "string"},
         "votes": {
             "items": {
                 "type": "object",
