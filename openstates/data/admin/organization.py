@@ -1,11 +1,7 @@
 from django.urls import reverse
 from django.contrib import admin
 from .. import models
-from .base import (
-    ModelAdmin,
-    ReadOnlyTabularInline,
-    LinkInline,
-)
+from .base import ModelAdmin, ReadOnlyTabularInline, LinkInline
 
 
 class OrganizationLinkInline(LinkInline):

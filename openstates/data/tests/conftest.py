@@ -107,7 +107,7 @@ def party():
 
 @pytest.fixture
 def person():
-    p = Person.objects.create(name="Arnold Schwarzenegger",)
+    p = Person.objects.create(name="Arnold Schwarzenegger")
     return p
 
 
@@ -121,7 +121,7 @@ def senator(jurisdiction, party):
         id="ocd-division/country:us/state:mo/sldu:1", name="MO 1"
     )
     post = Post.objects.create(
-        organization=senate, division=division, role="Senator", label="1",
+        organization=senate, division=division, role="Senator", label="1"
     )
     person.memberships.create(organization=senate, post=post)
     person.memberships.create(organization=party)

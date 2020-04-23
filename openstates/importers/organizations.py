@@ -1,10 +1,6 @@
 from django.db.models import Q
 from .base import BaseImporter
-from ..data.models import (
-    Organization,
-    OrganizationLink,
-    OrganizationSource,
-)
+from ..data.models import Organization, OrganizationLink, OrganizationSource
 from ..utils import get_pseudo_id
 from ..utils.topsort import Network
 from ..exceptions import UnresolvedIdError, InternalError, SameOrgNameError

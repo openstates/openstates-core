@@ -232,9 +232,7 @@ class Person(
         return self.name
 
 
-class Organization(
-    BaseModel, SourceMixin, LinkMixin,
-):
+class Organization(BaseModel, SourceMixin, LinkMixin):
     """
     A single popolo-style Organization
     """
