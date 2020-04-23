@@ -1,5 +1,11 @@
 # Changelog
 
+## 4.3.0 - 
+
+* add computed fields on Person model
+* add computed fields on Bill model
+* Person.current_role no longer requires database lookups
+
 ## 4.2.0 - April 22 2020
 
 * remove some completely unused fields & models
