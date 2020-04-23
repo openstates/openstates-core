@@ -56,14 +56,12 @@ class VoteEvent(BaseModel, SourceMixin):
     def set_bill(self, bill_or_identifier, *, chamber=None):
         if not bill_or_identifier:
             self.bill = None
-            self.bill_identifier = ""
         elif isinstance(bill_or_identifier, Bill):
             if chamber:
                 raise ScrapeValueError(
                     "set_bill takes no arguments when using a `Bill` object"
                 )
             self.bill = bill_or_identifier._id
-            self.bill_identifier = bill_or_identifier.identifier
         else:
             if chamber is None:
                 chamber = "legislature"
@@ -73,7 +71,6 @@ class VoteEvent(BaseModel, SourceMixin):
                 "legislative_session__identifier": self.legislative_session,
             }
             self.bill = _make_pseudo_id(**kwargs)
-            self.bill_identifier = bill_or_identifier
 
     def vote(self, option, voter, *, note=""):
         self.votes.append(
