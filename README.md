@@ -13,6 +13,10 @@ This repository contains state metadata that powers Open States.
 
 Releases use YYYY.MM.patch versioning.
 
+### 2020.4.7
+
+* add support for looking up districts by name/chamber
+
 ### 2020.4.6
 
 * add support for looking up districts by name/chamber
