@@ -77,16 +77,29 @@ def test_lookup_district_with_ancestors():
 def test_lookup_district_with_ancestors_invalid():
     # bad id
     with pytest.raises(ValueError):
-        state, chamber, district = lookup_district_with_ancestors(
-            division_id="invalid id"
-        )
+        lookup_district_with_ancestors(division_id="invalid id")
     # bad state
     with pytest.raises(ValueError):
-        state, chamber, district = lookup_district_with_ancestors(
+        lookup_district_with_ancestors(
             division_id="ocd-division/country:us/state:xy/sldl:1"
         )
     # bad district
     with pytest.raises(ValueError):
-        state, chamber, district = lookup_district_with_ancestors(
+        lookup_district_with_ancestors(
             division_id="ocd-division/country:us/state:nc/sldl:999"
         )
+
+
+def test_lookup_district_with_ancestors_dc_pr():
+    state, chamber, district = lookup_district_with_ancestors(
+        division_id="ocd-division/country:us/district:dc"
+    )
+    assert state.name == "District of Columbia"
+    assert chamber.chamber_type == "unicameral"
+    assert district.name == "At-Large"
+    state, chamber, district = lookup_district_with_ancestors(
+        division_id="ocd-division/country:us/territory:pr"
+    )
+    assert state.name == "Puerto Rico"
+    assert chamber.chamber_type == "upper"
+    assert district.name == "At-Large"
