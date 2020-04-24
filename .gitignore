@@ -5,6 +5,7 @@
 .coverage
 .python-version
 .tox
+.venv/
 __pycache__
 _cache/
 _data/
