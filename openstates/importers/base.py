@@ -213,6 +213,8 @@ class BaseImporter(object):
 
         for data in dicts:
             json_id = data.pop("_id")
+            if self._type == "vote_event":
+                data.pop("bill_identifier", None)
 
             # map duplicates (using omnihash to tell if json dicts are identical-ish)
             objhash = omnihash(data)
@@ -252,6 +254,8 @@ class BaseImporter(object):
 
         # remove the JSON _id (may still be there if called directly)
         data.pop("_id", None)
+        if self._type == "vote_event":
+            data.pop("bill_identifier", None)
 
         # add fields/etc.
         data = self.apply_transformers(data)
