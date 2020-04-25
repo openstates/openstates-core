@@ -91,6 +91,7 @@ class BaseImporter(object):
         limit_spec(spec)                [optional, required if pseudo_ids are used]
         prepare_for_db(data)            [optional]
         postimport()                    [optional]
+        update_computed_fields(obj)     [optional]
     """
 
     _type = None
@@ -129,6 +130,9 @@ class BaseImporter(object):
         return data
 
     def postimport(self):
+        pass
+
+    def update_computed_fields(self, obj):
         pass
 
     def resolve_json_id(self, json_id, allow_no_match=False):
@@ -289,18 +293,24 @@ class BaseImporter(object):
                 what = "update"
 
             if what == "update":
+                # make sure to do this after create related
+                self.update_computed_fields(obj)
                 obj.save()
 
         # need to create the data
         else:
             what = "insert"
             try:
-                obj = self.model_class.objects.create(**data)
+                obj = self.model_class(**data)
+                obj.save()
             except Exception as e:
                 raise DataImportError(
                     "{} while importing {} as {}".format(e, data, self.model_class)
                 )
             self._create_related(obj, related, self.related_models)
+
+            # make sure to do this after create related
+            self.update_computed_fields(obj)
 
             # Fire post-save signal after related objects are created to allow
             # for handlers make use of related objects

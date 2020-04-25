@@ -15,6 +15,7 @@ from ..data.models import (
     BillDocumentLink,
     BillVersionLink,
 )
+from .computed_fields import update_bill_fields
 
 
 class BillImporter(BaseImporter):
@@ -125,3 +126,6 @@ class BillImporter(BaseImporter):
                 raise InternalError(
                     "multiple related_bill candidates found for {}".format(rb)
                 )
+
+    def update_computed_fields(self, obj):
+        update_bill_fields(obj, save=False)

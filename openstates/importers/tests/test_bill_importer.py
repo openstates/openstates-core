@@ -120,6 +120,11 @@ def test_full_bill():
         classification="committee"
     )
 
+    # action computed fields
+    assert b.first_action_date == "1900-04-01"
+    assert b.latest_action_date == "1900-04-04"
+    assert b.latest_action_description == "sent to arbitrary committee"
+
     # related_bills were added
     rb = b.related_bills.get()
     assert rb.identifier == "HB 99"

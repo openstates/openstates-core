@@ -1,6 +1,6 @@
 import pytest
 from openstates.data.models import Jurisdiction, Division, Organization, Bill
-from ..update_computed import update_bill_fields
+from ..computed_fields import update_bill_fields
 
 
 def create_data():
