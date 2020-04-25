@@ -1,5 +1,11 @@
 # Changelog
 
+## 4.3.2 - April 25 2020
+
+* improve update computed command
+* add BaseImporter.update_computed_fields
+* fix return code
+
 ## 4.3.1 - April 23 2020
 
 * make new fields temporarily nullable

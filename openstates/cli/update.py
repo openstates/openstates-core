@@ -333,7 +333,12 @@ def main():
         {key: value for key, value in vars(args).items() if value is not None}
     )
     with override_settings(settings, overrides):
-        return do_update(args, other, juris)
+        report = do_update(args, other, juris)
+
+    if report.get("success", False):
+        return 0
+    else:
+        return 1
 
 
 if __name__ == "__main__":
