@@ -4,7 +4,13 @@ import shutil
 import tempfile
 import pytest
 from unittest import mock
-from openstates.data.models import Bill, Jurisdiction, Division, LegislativeSession
+from openstates.data.models import (
+    Bill,
+    Jurisdiction,
+    Division,
+    LegislativeSession,
+    Organization,
+)
 from openstates.scrape import Bill as ScrapeBill
 from openstates.importers.base import omnihash, BaseImporter
 from openstates.importers import BillImporter
@@ -14,6 +20,7 @@ from openstates.exceptions import UnresolvedIdError, DataImportError
 def create_jurisdiction():
     Division.objects.create(id="ocd-division/country:us", name="USA")
     Jurisdiction.objects.create(id="jid", division_id="ocd-division/country:us")
+    Organization.objects.create(jurisdiction_id="jid", classification="legislature")
     LegislativeSession.objects.create(
         jurisdiction_id="jid", name="2020", identifier="2020"
     )

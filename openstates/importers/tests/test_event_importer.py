@@ -43,8 +43,8 @@ def ge():
 
 oi = OrganizationImporter("jid")
 pi = PersonImporter("jid")
-bi = BillImporter("jid", oi, pi)
-vei = VoteEventImporter("jid", pi, oi, bi)
+bi = BillImporter("jid")
+vei = VoteEventImporter("jid", bi)
 
 
 @pytest.mark.django_db
