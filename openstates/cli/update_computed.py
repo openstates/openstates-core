@@ -2,11 +2,11 @@ import click
 from django.db import transaction
 import openstates_metadata as metadata
 from ..utils.django import init_django
-from ..importers.postprocessing import update_bill_fields
 
 
 def update_bill_fields_for_state(abbr):
     from ..data.models import Bill
+    from ..importers.computed_fields import update_bill_fields
 
     state = metadata.lookup(abbr=abbr)
 
