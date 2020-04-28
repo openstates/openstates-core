@@ -2,6 +2,8 @@ from .base import BaseImporter
 from ..utils import get_pseudo_id, _make_pseudo_id
 from ..exceptions import InvalidVoteEventError
 from ..data.models import VoteEvent, VoteCount, PersonVote, VoteSource, BillAction
+from .people import PersonImporter
+from .organizations import OrganizationImporter
 
 
 class VoteEventImporter(BaseImporter):
@@ -13,12 +15,12 @@ class VoteEventImporter(BaseImporter):
         "sources": (VoteSource, "vote_event_id", {}),
     }
 
-    def __init__(self, jurisdiction_id, person_importer, org_importer, bill_importer):
+    def __init__(self, jurisdiction_id, bill_importer):
 
         super(VoteEventImporter, self).__init__(jurisdiction_id)
-        self.person_importer = person_importer
+        self.org_importer = OrganizationImporter(jurisdiction_id)
+        self.person_importer = PersonImporter(jurisdiction_id)
         self.bill_importer = bill_importer
-        self.org_importer = org_importer
         self.seen_bill_ids = set()
         self.seen_action_ids = set()
         self.vote_events_to_delete = set()

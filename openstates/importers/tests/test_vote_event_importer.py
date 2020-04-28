@@ -1,17 +1,7 @@
 import re
 import pytest
-from openstates.scrape import (
-    VoteEvent as ScrapeVoteEvent,
-    Bill as ScrapeBill,
-    Organization as ScrapeOrganization,
-    Person as ScrapePerson,
-)
-from openstates.importers import (
-    VoteEventImporter,
-    BillImporter,
-    OrganizationImporter,
-    PersonImporter,
-)
+from openstates.scrape import VoteEvent as ScrapeVoteEvent, Bill as ScrapeBill
+from openstates.importers import VoteEventImporter, BillImporter
 from openstates.data.models import (
     Jurisdiction,
     Person,
@@ -33,17 +23,16 @@ class DumbMockImporter(object):
 def create_jurisdiction():
     Division.objects.create(id="ocd-division/country:us", name="USA")
     j = Jurisdiction.objects.create(id="jid", division_id="ocd-division/country:us")
+    j.legislative_sessions.create(name="1900", identifier="1900")
+    Organization.objects.create(name="House", classification="lower", jurisdiction=j)
+    Organization.objects.create(name="Senate", classification="upper", jurisdiction=j)
     return j
 
 
 @pytest.mark.django_db
 def test_full_vote_event():
-    j = create_jurisdiction()
-    j.legislative_sessions.create(name="1900", identifier="1900")
-    sp1 = ScrapePerson("John Smith", primary_org="lower")
-    sp2 = ScrapePerson("Adam Smith", primary_org="lower")
-    org = ScrapeOrganization(name="House", classification="lower")
-    bill = ScrapeBill("HB 1", "1900", "Axe & Tack Tax Act", from_organization=org._id)
+    create_jurisdiction()
+    bill = ScrapeBill("HB 1", "1900", "Axe & Tack Tax Act", chamber="lower")
     vote_event = ScrapeVoteEvent(
         legislative_session="1900",
         motion_text="passage",
@@ -52,27 +41,23 @@ def test_full_vote_event():
         result="pass",
         bill_chamber="lower",
         bill="HB 1",
-        organization=org._id,
+        chamber="lower",
     )
     vote_event.set_count("yes", 20)
     vote_event.yes("John Smith")
     vote_event.no("Adam Smith")
 
-    oi = OrganizationImporter("jid")
-    oi.import_data([org.as_dict()])
-
-    pi = PersonImporter("jid")
-    pi.import_data([sp1.as_dict(), sp2.as_dict()])
-
+    Person.objects.create(name="John Smith")
+    Person.objects.create(name="Adam Smith")
     for person in Person.objects.all():
         person.memberships.create(
             organization=Organization.objects.get(classification="lower")
         )
 
-    bi = BillImporter("jid", oi, pi)
+    bi = BillImporter("jid")
     bi.import_data([bill.as_dict()])
 
-    VoteEventImporter("jid", pi, oi, bi).import_data([vote_event.as_dict()])
+    VoteEventImporter("jid", bi).import_data([vote_event.as_dict()])
 
     assert VoteEvent.objects.count() == 1
     ve = VoteEvent.objects.get()
@@ -96,7 +81,6 @@ def test_full_vote_event():
 @pytest.mark.django_db
 def test_vote_event_identifier_dedupe():
     j = create_jurisdiction()
-    j.legislative_sessions.create(name="1900", identifier="1900")
     Organization.objects.create(
         id="org-id", name="Legislature", classification="legislature", jurisdiction=j
     )
@@ -109,28 +93,26 @@ def test_vote_event_identifier_dedupe():
         motion_text="a vote on something",
         identifier="Roll Call No. 1",
     )
-    dmi = DumbMockImporter()
-    oi = OrganizationImporter("jid")
-    bi = BillImporter("jid", dmi, oi)
+    bi = BillImporter("jid")
 
-    _, what = VoteEventImporter("jid", dmi, oi, bi).import_item(vote_event.as_dict())
+    _, what = VoteEventImporter("jid", bi).import_item(vote_event.as_dict())
     assert what == "insert"
     assert VoteEvent.objects.count() == 1
 
     # same exact vote event, no changes
-    _, what = VoteEventImporter("jid", dmi, oi, bi).import_item(vote_event.as_dict())
+    _, what = VoteEventImporter("jid", bi).import_item(vote_event.as_dict())
     assert what == "noop"
     assert VoteEvent.objects.count() == 1
 
     # new info, update
     vote_event.result = "failed"
-    _, what = VoteEventImporter("jid", dmi, oi, bi).import_item(vote_event.as_dict())
+    _, what = VoteEventImporter("jid", bi).import_item(vote_event.as_dict())
     assert what == "update"
     assert VoteEvent.objects.count() == 1
 
     # new bill, insert
     vote_event.identifier = "Roll Call 2"
-    _, what = VoteEventImporter("jid", dmi, oi, bi).import_item(vote_event.as_dict())
+    _, what = VoteEventImporter("jid", bi).import_item(vote_event.as_dict())
     assert what == "insert"
     assert VoteEvent.objects.count() == 2
 
@@ -138,7 +120,6 @@ def test_vote_event_identifier_dedupe():
 @pytest.mark.django_db
 def test_vote_event_pupa_identifier_dedupe():
     j = create_jurisdiction()
-    j.legislative_sessions.create(name="1900", identifier="1900")
     Organization.objects.create(
         id="org-id", name="Legislature", classification="legislature", jurisdiction=j
     )
@@ -153,56 +134,49 @@ def test_vote_event_pupa_identifier_dedupe():
     )
     vote_event.pupa_id = "foo"
 
-    dmi = DumbMockImporter()
-    oi = OrganizationImporter("jid")
-    bi = BillImporter("jid", dmi, oi)
-
-    _, what = VoteEventImporter("jid", dmi, oi, bi).import_item(vote_event.as_dict())
+    bi = BillImporter("jid")
+    _, what = VoteEventImporter("jid", bi).import_item(vote_event.as_dict())
     assert what == "insert"
     assert VoteEvent.objects.count() == 1
 
     # same exact vote event, no changes
-    _, what = VoteEventImporter("jid", dmi, oi, bi).import_item(vote_event.as_dict())
+    _, what = VoteEventImporter("jid", bi).import_item(vote_event.as_dict())
     assert what == "noop"
     assert VoteEvent.objects.count() == 1
 
     # new info, update
     vote_event.result = "failed"
-    _, what = VoteEventImporter("jid", dmi, oi, bi).import_item(vote_event.as_dict())
+    _, what = VoteEventImporter("jid", bi).import_item(vote_event.as_dict())
     assert what == "update"
     assert VoteEvent.objects.count() == 1
 
     # new bill identifier, update
     vote_event.identifier = "First Roll Call"
-    _, what = VoteEventImporter("jid", dmi, oi, bi).import_item(vote_event.as_dict())
+    _, what = VoteEventImporter("jid", bi).import_item(vote_event.as_dict())
     assert what == "update"
     assert VoteEvent.objects.count() == 1
 
     # new identifier, insert
     vote_event.pupa_id = "bar"
-    _, what = VoteEventImporter("jid", dmi, oi, bi).import_item(vote_event.as_dict())
+    _, what = VoteEventImporter("jid", bi).import_item(vote_event.as_dict())
     assert what == "insert"
     assert VoteEvent.objects.count() == 2
 
 
 @pytest.mark.django_db
 def test_vote_event_bill_id_dedupe():
-    j = create_jurisdiction()
-    session = j.legislative_sessions.create(name="1900", identifier="1900")
-    org = Organization.objects.create(
-        id="org-id", name="House", classification="lower", jurisdiction=j
-    )
+    create_jurisdiction()
     bill = Bill.objects.create(
         id="bill-1",
         identifier="HB 1",
-        legislative_session=session,
-        from_organization=org,
+        legislative_session=LegislativeSession.objects.get(),
+        from_organization=Organization.objects.get(classification="lower"),
     )
     bill2 = Bill.objects.create(
         id="bill-2",
         identifier="HB 2",
-        legislative_session=session,
-        from_organization=org,
+        legislative_session=LegislativeSession.objects.get(),
+        from_organization=Organization.objects.get(classification="lower"),
     )
 
     vote_event = ScrapeVoteEvent(
@@ -215,22 +189,20 @@ def test_vote_event_bill_id_dedupe():
         bill_chamber="lower",
         chamber="lower",
     )
-    dmi = DumbMockImporter()
-    oi = OrganizationImporter("jid")
-    bi = BillImporter("jid", dmi, oi)
+    bi = BillImporter("jid")
 
-    _, what = VoteEventImporter("jid", dmi, oi, bi).import_item(vote_event.as_dict())
+    _, what = VoteEventImporter("jid", bi).import_item(vote_event.as_dict())
     assert what == "insert"
     assert VoteEvent.objects.count() == 1
 
     # same exact vote event, no changes
-    _, what = VoteEventImporter("jid", dmi, oi, bi).import_item(vote_event.as_dict())
+    _, what = VoteEventImporter("jid", bi).import_item(vote_event.as_dict())
     assert what == "noop"
     assert VoteEvent.objects.count() == 1
 
     # new info, update
     vote_event.result = "failed"
-    _, what = VoteEventImporter("jid", dmi, oi, bi).import_item(vote_event.as_dict())
+    _, what = VoteEventImporter("jid", bi).import_item(vote_event.as_dict())
     assert what == "update"
     assert VoteEvent.objects.count() == 1
 
@@ -245,7 +217,7 @@ def test_vote_event_bill_id_dedupe():
         bill_chamber="lower",
         chamber="lower",
     )
-    _, what = VoteEventImporter("jid", dmi, oi, bi).import_item(vote_event.as_dict())
+    _, what = VoteEventImporter("jid", bi).import_item(vote_event.as_dict())
     assert what == "insert"
     assert VoteEvent.objects.count() == 2
 
@@ -254,26 +226,20 @@ def test_vote_event_bill_id_dedupe():
 def test_vote_event_bill_clearing():
     # ensure that we don't wind up with vote events sitting around forever on bills as
     # changes make it look like there are multiple vote events
-    j = create_jurisdiction()
-    session = j.legislative_sessions.create(name="1900", identifier="1900")
-    org = Organization.objects.create(
-        id="org-id", name="House", classification="lower", jurisdiction=j
-    )
+    create_jurisdiction()
     bill = Bill.objects.create(
         id="bill-1",
         identifier="HB 1",
-        legislative_session=session,
-        from_organization=org,
+        legislative_session=LegislativeSession.objects.get(),
+        from_organization=Organization.objects.get(classification="lower"),
     )
     Bill.objects.create(
         id="bill-2",
         identifier="HB 2",
-        legislative_session=session,
-        from_organization=org,
+        legislative_session=LegislativeSession.objects.get(),
+        from_organization=Organization.objects.get(classification="lower"),
     )
-    oi = OrganizationImporter("jid")
-    dmi = DumbMockImporter()
-    bi = BillImporter("jid", dmi, oi)
+    bi = BillImporter("jid")
 
     vote_event1 = ScrapeVoteEvent(
         legislative_session="1900",
@@ -297,14 +263,14 @@ def test_vote_event_bill_clearing():
     )
 
     # have to use import_data so postimport is called
-    VoteEventImporter("jid", dmi, oi, bi).import_data(
+    VoteEventImporter("jid", bi).import_data(
         [vote_event1.as_dict(), vote_event2.as_dict()]
     )
     assert VoteEvent.objects.count() == 2
 
     # a typo is fixed, we don't want 3 vote events now
     vote_event1.motion_text = "a vote on something"
-    VoteEventImporter("jid", dmi, oi, bi).import_data(
+    VoteEventImporter("jid", bi).import_data(
         [vote_event1.as_dict(), vote_event2.as_dict()]
     )
     assert VoteEvent.objects.count() == 2
@@ -312,11 +278,8 @@ def test_vote_event_bill_clearing():
 
 @pytest.mark.django_db
 def test_vote_event_bill_actions():
-    j = create_jurisdiction()
-    j.legislative_sessions.create(name="1900", identifier="1900")
-    org1 = ScrapeOrganization(name="House", classification="lower")
-    org2 = ScrapeOrganization(name="Senate", classification="upper")
-    bill = ScrapeBill("HB 1", "1900", "Axe & Tack Tax Act", from_organization=org1._id)
+    create_jurisdiction()
+    bill = ScrapeBill("HB 1", "1900", "Axe & Tack Tax Act", chamber="lower")
 
     # add actions, passage of upper & lower on same day, something else,
     # then passage in upper again on a different day
@@ -335,7 +298,7 @@ def test_vote_event_bill_actions():
         bill_chamber="lower",
         bill="HB 1",
         bill_action="passage",
-        organization=org1._id,
+        chamber="lower",
     )
     ve2 = ScrapeVoteEvent(
         legislative_session="1900",
@@ -346,7 +309,7 @@ def test_vote_event_bill_actions():
         bill_chamber="lower",
         bill="HB 1",
         bill_action="passage",
-        organization=org2._id,
+        chamber="upper",
     )
     ve3 = ScrapeVoteEvent(
         legislative_session="1900",
@@ -357,7 +320,7 @@ def test_vote_event_bill_actions():
         bill_chamber="lower",
         bill="HB 1",
         bill_action="passage",
-        organization=org1._id,
+        chamber="lower",
     )
     ve4 = ScrapeVoteEvent(
         legislative_session="1900",
@@ -368,16 +331,13 @@ def test_vote_event_bill_actions():
         bill_chamber="lower",
         bill="HB 1",
         bill_action="passage",
-        organization=org2._id,
+        chamber="upper",
     )
 
-    oi = OrganizationImporter("jid")
-    oi.import_data([org1.as_dict(), org2.as_dict()])
-
-    bi = BillImporter("jid", oi, DumbMockImporter())
+    bi = BillImporter("jid")
     bi.import_data([bill.as_dict()])
 
-    VoteEventImporter("jid", DumbMockImporter(), oi, bi).import_data(
+    VoteEventImporter("jid", bi).import_data(
         [ve1.as_dict(), ve2.as_dict(), ve3.as_dict(), ve4.as_dict()]
     )
 
@@ -404,10 +364,8 @@ def test_vote_event_bill_actions_two_stage():
     # ve3 and ve4, that two bills that reference the same action won't conflict w/ the
     # OneToOneField, but in this case we do it in two stages so that the conflict is found
     # even if the votes weren't in the same scrape
-    j = create_jurisdiction()
-    j.legislative_sessions.create(name="1900", identifier="1900")
-    org1 = ScrapeOrganization(name="House", classification="lower")
-    bill = ScrapeBill("HB 1", "1900", "Axe & Tack Tax Act", from_organization=org1._id)
+    create_jurisdiction()
+    bill = ScrapeBill("HB 1", "1900", "Axe & Tack Tax Act", chamber="lower")
 
     bill.add_action(description="passage", date="1900-04-02", chamber="lower")
 
@@ -420,7 +378,7 @@ def test_vote_event_bill_actions_two_stage():
         bill_chamber="lower",
         bill="HB 1",
         bill_action="passage",
-        organization=org1._id,
+        chamber="lower",
     )
     ve2 = ScrapeVoteEvent(
         legislative_session="1900",
@@ -431,29 +389,24 @@ def test_vote_event_bill_actions_two_stage():
         bill_chamber="lower",
         bill="HB 1",
         bill_action="passage",
-        organization=org1._id,
+        chamber="lower",
     )
     # disambiguate them
     ve1.pupa_id = "one"
     ve2.pupa_id = "two"
 
-    oi = OrganizationImporter("jid")
-    oi.import_data([org1.as_dict()])
-
-    bi = BillImporter("jid", oi, DumbMockImporter())
+    bi = BillImporter("jid")
     bi.import_data([bill.as_dict()])
 
     # first imports just fine
-    VoteEventImporter("jid", DumbMockImporter(), oi, bi).import_data([ve1.as_dict()])
+    VoteEventImporter("jid", bi).import_data([ve1.as_dict()])
     votes = list(VoteEvent.objects.all())
     assert len(votes) == 1
     assert votes[0].bill_action is not None
 
     # when second is imported, ensure that action stays pinned to first just as it would
     # have if they were both in same import
-    VoteEventImporter("jid", DumbMockImporter(), oi, bi).import_data(
-        [ve1.as_dict(), ve2.as_dict()]
-    )
+    VoteEventImporter("jid", bi).import_data([ve1.as_dict(), ve2.as_dict()])
     votes = list(VoteEvent.objects.all())
     assert len(votes) == 2
     assert votes[0].bill_action is not None
@@ -462,11 +415,8 @@ def test_vote_event_bill_actions_two_stage():
 
 @pytest.mark.django_db
 def test_vote_event_bill_actions_errors():
-    j = create_jurisdiction()
-    j.legislative_sessions.create(name="1900", identifier="1900")
-    org1 = ScrapeOrganization(name="House", classification="lower")
-    org2 = ScrapeOrganization(name="Senate", classification="upper")
-    bill = ScrapeBill("HB 1", "1900", "Axe & Tack Tax Act", from_organization=org1._id)
+    create_jurisdiction()
+    bill = ScrapeBill("HB 1", "1900", "Axe & Tack Tax Act", chamber="lower")
 
     # for this bill, two identical actions, so vote matching will fail
     bill.add_action(description="passage", date="1900-04-01", chamber="lower")
@@ -485,7 +435,7 @@ def test_vote_event_bill_actions_errors():
         bill="HB 1",
         identifier="1",
         bill_action="passage",
-        organization=org1._id,
+        chamber="lower",
     )
     # will match no actions
     ve2 = ScrapeVoteEvent(
@@ -498,7 +448,7 @@ def test_vote_event_bill_actions_errors():
         bill="HB 1",
         identifier="2",
         bill_action="committee result",
-        organization=org1._id,
+        chamber="lower",
     )
     # these two votes will both match the same action
     ve3 = ScrapeVoteEvent(
@@ -511,7 +461,7 @@ def test_vote_event_bill_actions_errors():
         bill="HB 1",
         identifier="3",
         bill_action="passage",
-        organization=org1._id,
+        chamber="lower",
     )
     ve4 = ScrapeVoteEvent(
         legislative_session="1900",
@@ -523,15 +473,13 @@ def test_vote_event_bill_actions_errors():
         bill="HB 1",
         identifier="4",
         bill_action="passage",
-        organization=org1._id,
+        chamber="lower",
     )
 
-    oi = OrganizationImporter("jid")
-    oi.import_data([org1.as_dict(), org2.as_dict()])
-    bi = BillImporter("jid", oi, DumbMockImporter())
+    bi = BillImporter("jid")
     bi.import_data([bill.as_dict()])
 
-    VoteEventImporter("jid", DumbMockImporter(), oi, bi).import_data(
+    VoteEventImporter("jid", bi).import_data(
         [ve1.as_dict(), ve2.as_dict(), ve3.as_dict(), ve4.as_dict()]
     )
 
@@ -550,17 +498,10 @@ def test_vote_event_bill_actions_errors():
 
 @pytest.mark.django_db
 def test_fix_bill_id():
-    j = create_jurisdiction()
-    j.legislative_sessions.create(name="1900", identifier="1900")
-
-    org1 = ScrapeOrganization(name="House", classification="lower")
+    create_jurisdiction()
     bill = ScrapeBill(
         "HB 1", "1900", "Test Bill ID", classification="bill", chamber="lower"
     )
-
-    oi = OrganizationImporter("jid")
-
-    oi.import_data([org1.as_dict()])
 
     from openstates.settings import IMPORT_TRANSFORMERS
 
@@ -568,7 +509,7 @@ def test_fix_bill_id():
         "identifier": lambda x: re.sub(r"([A-Z]*)\s*0*([-\d]+)", r"\1 \2", x, 1)
     }
 
-    bi = BillImporter("jid", oi, DumbMockImporter())
+    bi = BillImporter("jid")
     bi.import_data([bill.as_dict()])
 
     ve = ScrapeVoteEvent(
@@ -581,10 +522,10 @@ def test_fix_bill_id():
         bill="HB1",
         identifier="4",
         bill_action="passage",
-        organization=org1._id,
+        chamber="lower",
     )
 
-    VoteEventImporter("jid", DumbMockImporter(), oi, bi).import_data([ve.as_dict()])
+    VoteEventImporter("jid", bi).import_data([ve.as_dict()])
 
     IMPORT_TRANSFORMERS["bill"] = {}
 
