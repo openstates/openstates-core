@@ -16,6 +16,8 @@ from ..data.models import (
     BillVersionLink,
 )
 from .computed_fields import update_bill_fields
+from .people import PersonImporter
+from .organizations import OrganizationImporter
 
 
 class BillImporter(BaseImporter):
@@ -46,10 +48,10 @@ class BillImporter(BaseImporter):
     }
     preserve_order = {"actions"}
 
-    def __init__(self, jurisdiction_id, org_importer, person_importer):
+    def __init__(self, jurisdiction_id):
         super(BillImporter, self).__init__(jurisdiction_id)
-        self.org_importer = org_importer
-        self.person_importer = person_importer
+        self.org_importer = OrganizationImporter(jurisdiction_id)
+        self.person_importer = PersonImporter(jurisdiction_id)
 
     def get_object(self, bill):
         spec = {
