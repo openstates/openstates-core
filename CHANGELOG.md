@@ -5,6 +5,7 @@
 * simplify org and person import code as part of refactor
 * bugfix for os-update-computed
 * add Person.current_state
+* update Person queries to make use of new computed fields
 
 ## 4.3.2 - April 25 2020
 
