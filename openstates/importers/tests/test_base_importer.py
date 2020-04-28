@@ -4,17 +4,19 @@ import shutil
 import tempfile
 import pytest
 from unittest import mock
-from openstates.data.models import Person, Organization, Jurisdiction, Division
-from openstates.scrape import Person as ScrapePerson
-from openstates.scrape import Organization as ScrapeOrganization
+from openstates.data.models import Bill, Jurisdiction, Division, LegislativeSession
+from openstates.scrape import Bill as ScrapeBill
 from openstates.importers.base import omnihash, BaseImporter
-from openstates.importers import PersonImporter, OrganizationImporter
+from openstates.importers import BillImporter
 from openstates.exceptions import UnresolvedIdError, DataImportError
 
 
 def create_jurisdiction():
     Division.objects.create(id="ocd-division/country:us", name="USA")
     Jurisdiction.objects.create(id="jid", division_id="ocd-division/country:us")
+    LegislativeSession.objects.create(
+        jurisdiction_id="jid", name="2020", identifier="2020"
+    )
 
 
 class FakeImporter(BaseImporter):
@@ -83,17 +85,18 @@ def test_apply_transformers():
     assert output["nested"]["replace"] == "replaced"
 
 
-# doing these next few tests just on a Person because it is the same code that handles it
+# doing these next few tests just on a Bill because it is the same code that handles it
 # but for completeness maybe it is better to do these on each type?
 
 
 @pytest.mark.django_db
 def test_deduplication_identical_object():
-    p1 = ScrapePerson("Dwayne").as_dict()
-    p2 = ScrapePerson("Dwayne").as_dict()
-    PersonImporter("jid").import_data([p1, p2])
+    create_jurisdiction()
+    p1 = ScrapeBill("HB 1", "2020", "Title").as_dict()
+    p2 = ScrapeBill("HB 1", "2020", "Title").as_dict()
+    BillImporter("jid").import_data([p1, p2])
 
-    assert Person.objects.count() == 1
+    assert Bill.objects.count() == 1
 
 
 @pytest.mark.django_db
@@ -101,107 +104,109 @@ def test_exception_on_identical_objects_in_import_stream():
     create_jurisdiction()
     # these two objects aren't identical, but refer to the same thing
     # at the moment we consider this an error (but there may be a better way to handle this?)
-    o1 = ScrapeOrganization("X-Men", classification="unknown").as_dict()
-    o2 = ScrapeOrganization(
-        "X-Men", founding_date="1970", classification="unknown"
-    ).as_dict()
+    b1 = ScrapeBill("HB 1", "2020", "Title", chamber="upper").as_dict()
+    b2 = ScrapeBill("HB 1", "2020", "Title", chamber="lower").as_dict()
 
     with pytest.raises(Exception):
-        OrganizationImporter("jid").import_data([o1, o2])
+        BillImporter("jid").import_data([b1, b2])
 
 
 @pytest.mark.django_db
 def test_resolve_json_id():
-    p1 = ScrapePerson("Dwayne").as_dict()
-    p2 = ScrapePerson("Dwayne").as_dict()
-    pi = PersonImporter("jid")
+    create_jurisdiction()
+    p1 = ScrapeBill("HB 1", "2020", "Title").as_dict()
+    p2 = ScrapeBill("HB 1", "2020", "Title").as_dict()
+    bi = BillImporter("jid")
 
     # do import and get database id
     p1_id = p1["_id"]
     p2_id = p2["_id"]
-    pi.import_data([p1, p2])
-    db_id = Person.objects.get().id
+    bi.import_data([p1, p2])
+    db_id = Bill.objects.get().id
 
     # simplest case
-    assert pi.resolve_json_id(p1_id) == db_id
+    assert bi.resolve_json_id(p1_id) == db_id
     # duplicate should resolve to same id
-    assert pi.resolve_json_id(p2_id) == db_id
+    assert bi.resolve_json_id(p2_id) == db_id
     # a null id should map to None
-    assert pi.resolve_json_id(None) is None
+    assert bi.resolve_json_id(None) is None
     # no such id
     with pytest.raises(UnresolvedIdError):
-        pi.resolve_json_id("this-is-invalid")
+        bi.resolve_json_id("this-is-invalid")
 
 
 @pytest.mark.django_db
 def test_invalid_fields():
-    p1 = ScrapePerson("Dwayne").as_dict()
+    create_jurisdiction()
+    p1 = ScrapeBill("HB 1", "2020", "Title").as_dict()
     p1["newfield"] = "shouldn't happen"
 
     with pytest.raises(DataImportError):
-        PersonImporter("jid").import_data([p1])
+        BillImporter("jid").import_data([p1])
 
 
 @pytest.mark.django_db
 def test_invalid_fields_related_item():
-    p1 = ScrapePerson("Dwayne")
-    p1.add_link("http://example.com")
+    create_jurisdiction()
+    p1 = ScrapeBill("HB 1", "2020", "Title")
+    p1.add_source("http://example.com")
     p1 = p1.as_dict()
-    p1["links"][0]["test"] = 3
+    p1["sources"][0]["test"] = 3
 
     with pytest.raises(DataImportError):
-        PersonImporter("jid").import_data([p1])
+        BillImporter("jid").import_data([p1])
 
 
 @pytest.mark.django_db
 def test_locked_field():
     create_jurisdiction()
-    org = ScrapeOrganization("SHIELD").as_dict()
-    oi = OrganizationImporter("jid")
-    oi.import_data([org])
+    bill = ScrapeBill("HB 1", "2020", "Title").as_dict()
+    bi = BillImporter("jid")
+    bi.import_data([bill])
 
-    # set date and lock field
-    o = Organization.objects.get()
-    o.dissolution_date = "2015"
-    o.locked_fields = ["dissolution_date"]
-    o.save()
+    # set classification and lock field
+    b = Bill.objects.get()
+    b.classification = ["locked"]
+    b.locked_fields = ["classification"]
+    b.save()
 
     # reimport
-    org = ScrapeOrganization("SHIELD").as_dict()
-    oi = OrganizationImporter("jid")
-    oi.import_data([org])
+    bill = ScrapeBill("HB 1", "2020", "Title").as_dict()
+    bi = BillImporter("jid")
+    bi.import_data([bill])
 
-    o = Organization.objects.get()
-    assert o.dissolution_date == "2015"
-    assert o.locked_fields == ["dissolution_date"]
+    b = Bill.objects.get()
+    assert b.classification == ["locked"]
+    assert b.locked_fields == ["classification"]
 
     # do it a third time to check for the locked_fields reversion issue
-    org = ScrapeOrganization("SHIELD").as_dict()
-    oi = OrganizationImporter("jid")
-    oi.import_data([org])
+    bill = ScrapeBill("HB 1", "2020", "Title").as_dict()
+    bi = BillImporter("jid")
+    bi.import_data([bill])
 
-    o = Organization.objects.get()
-    assert o.dissolution_date == "2015"
-    assert o.locked_fields == ["dissolution_date"]
+    b = Bill.objects.get()
+    assert b.classification == ["locked"]
+    assert b.locked_fields == ["classification"]
 
 
 @pytest.mark.django_db
 def test_locked_field_subitem():
     create_jurisdiction()
-    org = ScrapeOrganization("SHIELD")
-    org.add_source("https://example.com")
-    oi = OrganizationImporter("jid")
-    oi.import_data([org.as_dict()])
+    bill = ScrapeBill("HB 1", "2020", "Title")
+    bill.add_source("https://example.com")
+    bi = BillImporter("jid")
+    bi.import_data([bill.as_dict()])
 
     # lock the field
-    o = Organization.objects.get()
-    o.locked_fields = ["sources"]
-    o.save()
+    b = Bill.objects.get()
+    b.locked_fields = ["sources"]
+    b.save()
 
-    # reimport
-    org = ScrapeOrganization("SHIELD").as_dict()
-    oi = OrganizationImporter("jid")
-    oi.import_data([org])
+    # reimport (without source)
+    bill = ScrapeBill("HB 1", "2020", "Title")
+    bi = BillImporter("jid")
+    bi.import_data([bill.as_dict()])
 
-    o = Organization.objects.get()
-    assert o.sources.get().url == "https://example.com"
+    b = Bill.objects.get()
+    assert b.sources.count() == 1
+    assert b.locked_fields == ["sources"]
