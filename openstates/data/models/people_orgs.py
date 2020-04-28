@@ -348,6 +348,7 @@ class Person(OCDBase):
         default="",
         help_text="Primary party an individual is associated with.",
     )
+    current_state = models.CharField(max_length=2, default="")
     current_role_division_id = models.CharField(max_length=100, default="")
 
     def __str__(self):

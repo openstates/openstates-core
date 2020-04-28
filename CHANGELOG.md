@@ -1,5 +1,11 @@
 # Changelog
 
+## 4.4
+
+* simplify org and person import code as part of refactor
+* bugfix for os-update-computed
+* add Person.current_state
+
 ## 4.3.2 - April 25 2020
 
 * improve update computed command

@@ -13,3 +13,4 @@ dist/
 graph
 htmlcov/
 coverage.xml
+pip-wheel-metadata/
