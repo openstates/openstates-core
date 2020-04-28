@@ -21,13 +21,11 @@ def update_bill_fields_for_state(abbr):
 
 
 @click.command()
-@click.argument("state", default="all")
-def main(state):
+@click.argument("abbrs", nargs=-1)
+def main(abbrs):
     """ updates computed fields """
     init_django()
-    if state == "all":
+    if not abbrs:
         abbrs = metadata.STATES_BY_ABBR.keys()
-        for abbr in abbrs:
-            update_bill_fields_for_state(abbr)
-    else:
-        update_bill_fields_for_state(state)
+    for abbr in abbrs:
+        update_bill_fields_for_state(abbr)
