@@ -14,7 +14,7 @@ from .base import (
     IdentifierBase,
 )
 from .people_orgs import Organization
-from .session import LegislativeSession
+from .jurisdiction import LegislativeSession
 from .. import common
 
 
