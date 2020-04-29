@@ -1,3 +1,5 @@
+import os
+
 # django settings for tests
 SECRET_KEY = "test"
 INSTALLED_APPS = (
@@ -11,7 +13,7 @@ DATABASES = {
         "NAME": "test",
         "USER": "test",
         "PASSWORD": "test",
-        "HOST": "localhost",
+        "HOST": os.environ.get("POSTGRES_HOST", "localhost"),
     }
 }
 MIDDLEWARE_CLASSES = ()
