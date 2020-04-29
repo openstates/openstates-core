@@ -3,10 +3,11 @@
 ## 4.4
 
 * simplify org and person import code as part of refactor
-* bugfix for os-update-computed
 * add Person.current_state
-* update Person queries to make use of new computed fields
 * alter Bill computed fields to be null if unset
+* update Person queries to make use of new computed fields
+* bugfix for os-update-computed
+* bugfix for LegislativeSession in admin
 
 ## 4.3.2 - April 25 2020
 

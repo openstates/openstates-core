@@ -1,5 +1,4 @@
 from django.contrib import admin
-from django.apps import apps
 from .. import models
 from .base import ModelAdmin, ReadOnlyTabularInline
 
@@ -12,25 +11,10 @@ class DivisionAdmin(ModelAdmin):
     ordering = ("id",)
 
 
-# have to handle this special since LegislativeSession might not be present
-try:
-    LegislativeSession = apps.get_model("legislative", "LegislativeSession")
-
-    class LegislativeSessionInline(ReadOnlyTabularInline):
-        model = LegislativeSession
-        readonly_fields = (
-            "identifier",
-            "name",
-            "classification",
-            "start_date",
-            "end_date",
-        )
-        ordering = ("-identifier",)
-
-    jurisdiction_inlines = [LegislativeSessionInline]
-
-except LookupError:
-    jurisdiction_inlines = []
+class LegislativeSessionInline(ReadOnlyTabularInline):
+    model = models.LegislativeSession
+    readonly_fields = ("identifier", "name", "classification", "start_date", "end_date")
+    ordering = ("-identifier",)
 
 
 @admin.register(models.Jurisdiction)
@@ -46,7 +30,7 @@ class JurisdictionAdmin(ModelAdmin):
         "url",
     )
     ordering = ("id",)
-    inlines = jurisdiction_inlines
+    inlines = [LegislativeSessionInline]
 
 
 @admin.register(models.Post)
