@@ -8,71 +8,6 @@ from .jurisdiction import Jurisdiction
 from .. import common
 from ...utils import abbr_to_jid
 
-# abstract models
-
-
-class ContactDetailBase(RelatedBase):
-    """
-    A base class for ContactDetail models.
-    """
-
-    type = models.CharField(
-        max_length=50,
-        choices=common.CONTACT_TYPE_CHOICES,
-        help_text="The type of Contact being defined.",
-    )
-    value = models.CharField(
-        max_length=300,
-        help_text="The content of the Contact information like a phone number or email address.",
-    )
-    note = models.CharField(
-        max_length=300,
-        blank=True,
-        help_text="A short, optional note about the Contact value.",
-    )
-    label = models.CharField(
-        max_length=300, blank=True, help_text="A title for the content of the Contact."
-    )
-
-    class Meta:
-        abstract = True
-
-    def __str__(self):
-        return "{}: {}".format(self.get_type_display(), self.value)
-
-
-class OtherNameBase(RelatedBase):
-    """
-    A base class for OtherName models.
-    """
-
-    name = models.CharField(
-        max_length=500, db_index=True, help_text="An alternative name."
-    )
-    note = models.CharField(
-        max_length=500,
-        blank=True,
-        help_text="A short, optional note about alternative name.",
-    )
-    start_date = models.CharField(
-        max_length=10,
-        blank=True,
-        help_text="An optional start date for usage of the alternative name "
-        "in YYYY[-MM[-DD]] string format.",
-    )
-    end_date = models.CharField(
-        max_length=10,
-        blank=True,
-        help_text="An optional end date for usage of the alternative name in "
-        "YYYY[-MM[-DD]] string format.",
-    )
-
-    class Meta:
-        abstract = True
-
-    def __str__(self):
-        return "{} ({})".format(self.name, self.note)
-
 
 # the actual models
 
@@ -391,11 +326,31 @@ class PersonIdentifier(IdentifierBase):
         db_table = "opencivicdata_personidentifier"
 
 
-class PersonName(OtherNameBase):
+class PersonName(RelatedBase):
     """
     Alternate or former name of a Person.
     """
 
+    name = models.CharField(
+        max_length=500, db_index=True, help_text="An alternative name."
+    )
+    note = models.CharField(
+        max_length=500,
+        blank=True,
+        help_text="A short, optional note about alternative name.",
+    )
+    start_date = models.CharField(
+        max_length=10,
+        blank=True,
+        help_text="An optional start date for usage of the alternative name "
+        "in YYYY[-MM[-DD]] string format.",
+    )
+    end_date = models.CharField(
+        max_length=10,
+        blank=True,
+        help_text="An optional end date for usage of the alternative name in "
+        "YYYY[-MM[-DD]] string format.",
+    )
     person = models.ForeignKey(
         Person,
         related_name="other_names",
@@ -406,11 +361,32 @@ class PersonName(OtherNameBase):
     class Meta:
         db_table = "opencivicdata_personname"
 
+    def __str__(self):
+        return "{} ({})".format(self.name, self.note)
 
-class PersonContactDetail(ContactDetailBase):
+
+class PersonContactDetail(RelatedBase):
     """
     Contact information for a Person.
     """
+
+    type = models.CharField(
+        max_length=50,
+        choices=common.CONTACT_TYPE_CHOICES,
+        help_text="The type of Contact being defined.",
+    )
+    value = models.CharField(
+        max_length=300,
+        help_text="The content of the Contact information like a phone number or email address.",
+    )
+    note = models.CharField(
+        max_length=300,
+        blank=True,
+        help_text="A short, optional note about the Contact value.",
+    )
+    label = models.CharField(
+        max_length=300, blank=True, help_text="A title for the content of the Contact."
+    )
 
     person = models.ForeignKey(
         Person,
@@ -421,6 +397,9 @@ class PersonContactDetail(ContactDetailBase):
 
     class Meta:
         db_table = "opencivicdata_personcontactdetail"
+
+    def __str__(self):
+        return "{}: {}".format(self.get_type_display(), self.value)
 
 
 class PersonLink(LinkBase):
