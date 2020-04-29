@@ -13,7 +13,7 @@ DATABASES = {
         "NAME": "test",
         "USER": "test",
         "PASSWORD": "test",
-        "HOST": os.environ.get("DB_HOST", "localhost"),
+        "HOST": os.environ.get("POSTGRES_HOST", "localhost"),
     }
 }
 MIDDLEWARE_CLASSES = ()
