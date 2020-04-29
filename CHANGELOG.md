@@ -1,6 +1,6 @@
 # Changelog
 
-## 4.4
+## 4.4.0 - April 29 2020
 
 * simplify org and person import code as part of refactor
 * add Person.current_state
