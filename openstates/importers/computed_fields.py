@@ -8,10 +8,10 @@ but can be set to True to force a save if changes were made
 
 
 def update_bill_fields(bill, *, save=False):
-    first_action_date = ""
-    latest_action_date = ""
+    first_action_date = None
+    latest_action_date = None
     latest_action_description = ""
-    latest_passage_date = ""
+    latest_passage_date = None
 
     # iterate over according to order
     # first action date will use first by order (<)

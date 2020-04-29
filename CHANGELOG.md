@@ -6,6 +6,7 @@
 * bugfix for os-update-computed
 * add Person.current_state
 * update Person queries to make use of new computed fields
+* alter Bill computed fields to be null if unset
 
 ## 4.3.2 - April 25 2020
 
