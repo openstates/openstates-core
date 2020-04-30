@@ -173,34 +173,37 @@ class Post(OCDBase):
 
 class PersonQuerySet(QuerySet):
     def member_of(self, organization_name, current_only=True, post=None):
+        if organization_name.startswith("ocd-organization/"):
+            org_filter = Q(memberships__organization_id=organization_name)
+        else:
+            org_filter = Q(memberships__organization__name=organization_name)
+
         qs = self
 
         if current_only:
             today = datetime.date.today().isoformat()
-
             qs = qs.filter(
+                org_filter,
                 Q(memberships__start_date="") | Q(memberships__start_date__lte=today),
                 Q(memberships__end_date="") | Q(memberships__end_date__gte=today),
             )
+        else:
+            qs = qs.filter(org_filter)
         if post:
             qs = qs.filter(memberships__post__label=post)
-
-        if organization_name.startswith("ocd-organization/"):
-            qs = qs.filter(memberships__organization_id=organization_name)
-        else:
-            qs = qs.filter(memberships__organization__name=organization_name)
-        return qs
+        return qs.distinct()
 
     def active(self):
         return self.exclude(current_role_division_id="")
 
     def current_legislators_with_roles(self, chambers):
-        return (
-            self.active()
-            .filter(memberships__organization__in=chambers)
-            .prefetch_related(
-                "memberships", "memberships__organization", "memberships__post"
-            )
+        today = datetime.date.today().isoformat()
+        return self.filter(
+            Q(memberships__organization__in=chambers),
+            Q(memberships__start_date="") | Q(memberships__start_date__lte=today),
+            Q(memberships__end_date="") | Q(memberships__end_date__gte=today),
+        ).prefetch_related(
+            "memberships", "memberships__organization", "memberships__post"
         )
 
     def search(self, query, *, state=None, current=True):
