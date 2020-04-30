@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.4.1 - April 30 2020
+
+* bugfix for Person.member_of returning duplicates
+
 ## 4.4.0 - April 29 2020
 
 * simplify org and person import code as part of refactor
