@@ -95,30 +95,15 @@ def do_import(juris, args):
     # import inside here because to avoid loading Django code unnecessarily
     from openstates.importers import (
         JurisdictionImporter,
-        OrganizationImporter,
-        PersonImporter,
         BillImporter,
         VoteEventImporter,
-        EventImporter,
     )
 
     datadir = os.path.join(settings.SCRAPED_DATA_DIR, args.module)
 
     juris_importer = JurisdictionImporter(juris.jurisdiction_id)
-    org_importer = OrganizationImporter(juris.jurisdiction_id)
-    person_importer = PersonImporter(juris.jurisdiction_id)
-    bill_importer = BillImporter(juris.jurisdiction_id, org_importer, person_importer)
-    vote_event_importer = VoteEventImporter(
-        juris.jurisdiction_id, person_importer, org_importer, bill_importer
-    )
-    event_importer = EventImporter(
-        juris.jurisdiction_id,
-        org_importer,
-        person_importer,
-        bill_importer,
-        vote_event_importer,
-    )
-
+    bill_importer = BillImporter(juris.jurisdiction_id)
+    vote_event_importer = VoteEventImporter(juris.jurisdiction_id, bill_importer)
     report = {}
 
     with transaction.atomic():
@@ -127,9 +112,6 @@ def do_import(juris, args):
         if settings.ENABLE_BILLS:
             print("import bills...")
             report.update(bill_importer.import_directory(datadir))
-        if settings.ENABLE_EVENTS:
-            print("import events...")
-            report.update(event_importer.import_directory(datadir))
         if settings.ENABLE_VOTES:
             print("import vote events...")
             report.update(vote_event_importer.import_directory(datadir))

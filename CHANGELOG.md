@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.4.2 - May 1 2020
+
+* bugfix for os-update importer crashing
+
 ## 4.4.1 - April 30 2020
 
 * bugfix for Person.member_of returning duplicates
