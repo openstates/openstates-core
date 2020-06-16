@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.4.3 - June 16 2020
+
+* bugfix for member_of with post
+
 ## 4.4.2 - May 1 2020
 
 * bugfix for os-update importer crashing
