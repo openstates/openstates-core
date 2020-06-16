@@ -1,5 +1,5 @@
 import pytest
-from openstates.data.models import Jurisdiction, Division, Organization, Person
+from openstates.data.models import Jurisdiction, Division, Organization, Person, Post
 from django.core.exceptions import ValidationError
 
 
@@ -190,6 +190,39 @@ def test_organization_membership():
     assert len(o.get_current_members()) == 1
     assert len(Person.objects.member_of("test org")) == 1
     assert len(Person.objects.member_of(o.id)) == 1
+
+
+@pytest.mark.django_db
+def test_member_of_with_post():
+    o = Organization.objects.create(name="The Org")
+    p = Post.objects.create(organization=o, label="1")
+    cur = Person.objects.create(name="current")
+    prev = Person.objects.create(name="previous")
+    o.memberships.create(person=cur, post=p)
+    o.memberships.create(person=prev, post=p, end_date="2019-01-01")
+
+    assert len(o.get_current_members()) == 1
+    assert len(Person.objects.member_of("The Org")) == 1
+    assert len(Person.objects.member_of("The Org", post="1")) == 1
+    assert len(Person.objects.member_of("The Org", current_only=False)) == 2
+
+
+@pytest.mark.django_db
+def test_member_of_prior_role_conflict():
+    # test for https://github.com/openstates/openstates.org/issues/304
+    o = Organization.objects.create(name="The Org")
+    p = Post.objects.create(organization=o, label="1")
+    p2 = Post.objects.create(organization=o, label="2")
+    cur = Person.objects.create(name="current")
+    prev = Person.objects.create(name="previous")
+    o.memberships.create(person=cur, post=p)
+    o.memberships.create(person=prev, post=p, end_date="2019-01-01")
+    o.memberships.create(person=prev, post=p2)
+
+    assert len(o.get_current_members()) == 2
+    assert len(Person.objects.member_of("The Org")) == 2
+    assert len(Person.objects.member_of("The Org", post="1")) == 1
+    assert len(Person.objects.member_of("The Org", post="1", current_only=False)) == 2
 
 
 @pytest.mark.django_db

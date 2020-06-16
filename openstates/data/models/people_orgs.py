@@ -182,16 +182,12 @@ class PersonQuerySet(QuerySet):
 
         if current_only:
             today = datetime.date.today().isoformat()
-            qs = qs.filter(
-                org_filter,
-                Q(memberships__start_date="") | Q(memberships__start_date__lte=today),
-                Q(memberships__end_date="") | Q(memberships__end_date__gte=today),
-            )
-        else:
-            qs = qs.filter(org_filter)
+            org_filter &= (
+                Q(memberships__start_date="") | Q(memberships__start_date__lte=today)
+            ) & Q(memberships__end_date="") | Q(memberships__end_date__gte=today)
         if post:
-            qs = qs.filter(memberships__post__label=post)
-        return qs.distinct()
+            org_filter &= Q(memberships__post__label=post)
+        return qs.filter(org_filter).distinct()
 
     def active(self):
         return self.exclude(current_role_division_id="")
