@@ -41,7 +41,7 @@ class EventAgendaItem(dict, AssociatedLinkMixin):
         self.add_entity(name=person, entity_type="person", id=id, note=note)
 
     def add_media_link(
-        self, note, url, media_type, *, text="", type="media", on_duplicate="error"
+        self, note, url, media_type, *, text="", type="media", on_duplicate="warn"
     ):
         return self._add_associated_link(
             collection="media",

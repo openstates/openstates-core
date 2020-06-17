@@ -306,10 +306,10 @@ class OtherNameMixin(object):
 
 class AssociatedLinkMixin(object):
     def _add_associated_link(
-        self, collection, note, url, *, media_type, text, on_duplicate, date=""
+        self, collection, note, url, *, media_type, text, on_duplicate="warn", date=""
     ):
-        if on_duplicate not in ["error", "ignore"]:
-            raise ScrapeValueError("on_duplicate must be 'error' or 'ignore'")
+        if on_duplicate not in ["error", "ignore", "warn"]:
+            raise ScrapeValueError("on_duplicate must be 'warn', 'error' or 'ignore'")
 
         try:
             associated = getattr(self, collection)
@@ -340,6 +340,10 @@ class AssociatedLinkMixin(object):
                 raise ScrapeValueError(
                     "Duplicate entry in '%s' - URL: '%s'" % (collection, url)
                 )
+            elif on_duplicate == "warn":
+                # default behavior: same as ignore but logs an warning so people can fix
+                self.warning(f"Duplicate entry in '{collection}' - URL: {url}")
+                return None
             else:
                 # This means we're in ignore mode. This situation right here
                 # means we should *skip* adding this link silently and continue

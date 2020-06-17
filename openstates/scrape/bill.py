@@ -144,7 +144,7 @@ class Bill(SourceMixin, AssociatedLinkMixin, BaseModel):
         )
 
     def add_document_link(
-        self, note, url, *, date="", media_type="", text="", on_duplicate="error"
+        self, note, url, *, date="", media_type="", text="", on_duplicate="warn"
     ):
         return self._add_associated_link(
             collection="documents",
@@ -157,7 +157,7 @@ class Bill(SourceMixin, AssociatedLinkMixin, BaseModel):
         )
 
     def add_version_link(
-        self, note, url, *, date="", media_type="", text="", on_duplicate="error"
+        self, note, url, *, date="", media_type="", text="", on_duplicate="warn"
     ):
         return self._add_associated_link(
             collection="versions",
