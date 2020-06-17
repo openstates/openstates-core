@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.5.0 - WIP
+
+* add 'warn' behavior, now default, to add_version_link/add_document_link
+
 ## 4.4.3 - June 16 2020
 
 * bugfix for member_of with post
