@@ -197,8 +197,18 @@ def test_versions():
     b = toy_bill()
 
     # only one document, multiple links
-    b.add_version_link(url="http://pault.ag/", note="Final Version", date="2013-04")
-    b.add_version_link(url="http://pault.ag/foo", note="Final Version", date="2013-04")
+    b.add_version_link(
+        url="http://pault.ag/",
+        note="Final Version",
+        date="2013-04",
+        on_duplicate="error",
+    )
+    b.add_version_link(
+        url="http://pault.ag/foo",
+        note="Final Version",
+        date="2013-04",
+        on_duplicate="error",
+    )
     b.validate()
     assert len(b.versions) == 1
     assert len(b.versions[0]["links"]) == 2
@@ -206,7 +216,10 @@ def test_versions():
     # duplicate!
     with pytest.raises(ValueError):
         b.add_version_link(
-            url="http://pault.ag/foo", note="Final Version", date="2013-04"
+            url="http://pault.ag/foo",
+            note="Final Version",
+            date="2013-04",
+            on_duplicate="error",
         )
 
     # ignore duplicate - nothing should change
@@ -222,7 +235,10 @@ def test_versions():
     # duplicate URL
     with pytest.raises(ValueError):
         b.add_version_link(
-            url="http://pault.ag/foo", note="Finals Versions", date="2013-04"
+            url="http://pault.ag/foo",
+            note="Finals Versions",
+            date="2013-04",
+            on_duplicate="error",
         )
     assert len(b.versions) == 1
     assert len(b.versions[0]["links"]) == 2

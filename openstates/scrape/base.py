@@ -342,7 +342,9 @@ class AssociatedLinkMixin(object):
                 )
             elif on_duplicate == "warn":
                 # default behavior: same as ignore but logs an warning so people can fix
-                self.warning(f"Duplicate entry in '{collection}' - URL: {url}")
+                logging.getLogger("openstates").warning(
+                    f"Duplicate entry in '{collection}' - URL: {url}"
+                )
                 return None
             else:
                 # This means we're in ignore mode. This situation right here
