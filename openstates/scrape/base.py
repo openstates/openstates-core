@@ -117,7 +117,7 @@ class Scraper(scrapelib.Scraper):
             if self.strict_validation:
                 raise ve
             else:
-                self.warning(ve)
+                logging.getLogger("openstates").warning(ve)
 
         # after saving and validating, save subordinate objects
         for obj in obj._related:
