@@ -19,7 +19,6 @@ class Jurisdiction(BaseModel):
     # non-db properties
     scrapers = {}
     default_scrapers = None
-    parties = []
     ignored_scraped_sessions = []
 
     def __init__(self):
@@ -66,6 +65,3 @@ class JurisdictionScraper(Scraper):
         # yield all organizations
         for org in self.jurisdiction.get_organizations():
             yield org
-
-        if self.jurisdiction.parties:
-            raise ValueError("including parties on Jurisdiction is no longer supported")
