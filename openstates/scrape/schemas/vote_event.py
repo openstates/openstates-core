@@ -8,7 +8,7 @@ schema = {
         "identifier": {"type": "string"},
         "motion_text": {"type": "string", "minLength": 1},
         "motion_classification": {
-            "items": {"type": "string", "minLength": 1},
+            "items": {"type": "string", "enum": common.VOTE_CLASSIFICATIONS},
             "type": "array",
         },
         "start_date": fuzzy_datetime_blank,

@@ -9,7 +9,7 @@ def toy_vote_event():
         motion_text="passage of the bill",
         start_date="2009-01-07",
         result="pass",
-        classification="bill-passage",
+        classification="passage",
     )
     ve.add_source("http://uri.example.com/", note="foo")
     return ve
@@ -41,7 +41,7 @@ def test_vote_event_org_obj():
         motion_text="passage of the bill",
         start_date="2009-01-07",
         result="pass",
-        classification="bill-passage",
+        classification="passage",
         organization=o,
     )
     assert ve.organization == o._id
@@ -54,7 +54,7 @@ def test_vote_event_org_dict():
         motion_text="passage of the bill",
         start_date="2009-01-07",
         result="pass",
-        classification="bill-passage",
+        classification="passage",
         organization=odict,
     )
     assert get_pseudo_id(ve.organization) == odict
@@ -66,7 +66,7 @@ def test_vote_event_org_chamber():
         motion_text="passage of the bill",
         start_date="2009-01-07",
         result="pass",
-        classification="bill-passage",
+        classification="passage",
         chamber="upper",
     )
     assert get_pseudo_id(ve.organization) == {"classification": "upper"}

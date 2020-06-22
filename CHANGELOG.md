@@ -4,6 +4,7 @@
 
 * add 'warn' behavior, now default, to add_version_link/add_document_link
 * strip whitespace from all data when being saved
+* re-enable VoteEvent classification validation
 
 ## 4.4.3 - June 16 2020
 
