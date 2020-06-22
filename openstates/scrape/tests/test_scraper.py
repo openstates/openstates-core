@@ -128,3 +128,18 @@ def test_bill_scraper():
     assert len(json_dump.mock_calls) == 1
     assert record["objects"]["bill"] == 1
     assert record["skipped"] == 1
+
+
+def test_whitespace_is_stripped():
+    s = Scraper(juris, "/tmp/")
+    b = Bill(" HB 11", "2020", " a short title     ")
+    b.subject = [" one", "two ", "   three "]
+    b.add_source("https://example.com/     ")
+
+    s.save_object(b)
+
+    # the simple cases, and nested lists / objects
+    assert b.identifier == "HB 11"
+    assert b.title == "a short title"
+    assert b.sources[0]["url"] == "https://example.com/"
+    assert b.subject == ["one", "two", "three"]
