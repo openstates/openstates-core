@@ -1,5 +1,7 @@
 from collections import defaultdict
 from openstates.scrape import Jurisdiction, Organization, JurisdictionScraper
+from openstates.exceptions import ScrapeValueError
+import pytest
 
 
 class FakeJurisdiction(Jurisdiction):
@@ -70,3 +72,19 @@ def test_jurisdiction_bicameral_scrape():
     assert obj_names == {"Test", "Congress", "House", "Senate"}
     assert obj_types[FakeJurisdiction] == 1
     assert obj_types[Organization] == 3
+
+
+def test_jurisdiction_validate_sessions():
+    j = FakeJurisdiction()
+    j.legislative_sessions = [
+        {
+            "_scraped_name": "s1",
+            "classification": "primary",
+            "name": "First Session",
+            "start_date": "2020-01-01",
+        }
+    ]
+    with pytest.raises(ScrapeValueError):
+        j.validate()
+    j.legislative_sessions[0]["end_date"] = "2020-02-01"
+    j.validate()

@@ -1,4 +1,4 @@
-from .common import extras, fuzzy_date_blank
+from .common import extras, fuzzy_date_string
 
 schema = {
     "type": "object",
@@ -14,8 +14,11 @@ schema = {
                 "properties": {
                     "name": {"type": "string", "minLength": 1},
                     "type": {"type": "string", "enum": ["primary", "special"]},
-                    "start_date": fuzzy_date_blank,
-                    "end_date": fuzzy_date_blank,
+                    "start_date": {
+                        "type": [fuzzy_date_string, "date"],
+                        "required": True,
+                    },
+                    "end_date": {"type": [fuzzy_date_string, "date"], "required": True},
                 },
             },
         },
