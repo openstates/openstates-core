@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.5.1 - June 23 2020
+
+* fix clean_whitespace type issues
+
 ## 4.5.0 - June 22 2020
 
 * add 'warn' behavior, now default, to add_version_link/add_document_link
