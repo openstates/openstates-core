@@ -44,11 +44,9 @@ def clean_whitespace(obj):
         use_setattr = True
 
     for k, v in items:
-        if not v:
-            continue
-        elif isinstance(v, str):
+        if isinstance(v, str) and v:
             newv = v.strip()
-        elif isinstance(v, list):
+        elif isinstance(v, list) and v:
             if not v:
                 continue
             elif isinstance(v[0], str):
@@ -58,7 +56,7 @@ def clean_whitespace(obj):
             else:
                 raise ValueError(f"Unhandled case, {k} is list of {type(v[0])}")
         else:
-            raise ValueError(f"Unhandled case, {k} is {type(v)}")
+            continue
 
         if use_setattr:
             setattr(obj, k, newv)
