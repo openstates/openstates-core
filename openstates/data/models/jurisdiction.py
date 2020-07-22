@@ -40,6 +40,7 @@ class Jurisdiction(OCDBase):
         Division,
         related_name="jurisdictions",
         db_index=True,
+        null=True,
         help_text="A link to a Division related to this Jurisdiction.",
         # don't allow deletion of a division that a Jurisdiction depends upon
         on_delete=models.PROTECT,
