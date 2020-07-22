@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.6.0 - July 22 2020
+
+* allow Jurisdictions to exist without Divisions
+
 ## 4.5.1 - June 23 2020
 
 * fix clean_whitespace type issues
