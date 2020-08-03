@@ -1,27 +1,29 @@
 from openstates_metadata import STATES_BY_ABBR
 from ..utils.django import init_django
-
-
-init_django()
-from ..data.models import Jurisdiction, Division, Organization, Post  # noqa
+from django.db import transaction
 
 
 def create_division(division_id, name):
+    from ..data.models import Division
+
     return Division.objects.get_or_create(
         id=division_id,
-        defaults=dict(name=name, country="us"),
-        # **Division.subtypes_from_id(division_id)[0]
+        country="us",
+        # TODO: allow changing name
+        defaults=dict(name=name),
     )[0]
 
 
 def create_chamber(juris, parent, chamber):
+    from ..data.models import Organization, Post
+
     if chamber.chamber_type != "unicameral":
-        post_parent = Organization.objects.create(
+        post_parent, created = Organization.objects.get_or_create(
             id=chamber.organization_id,
-            name=chamber.name,
             classification=chamber.chamber_type,
             parent_id=parent.id,
             jurisdiction_id=juris.id,
+            name=chamber.name,
         )
     else:
         # parent is unicameral org
@@ -32,43 +34,53 @@ def create_chamber(juris, parent, chamber):
         post_div = create_division(
             district.division_id, f"{juris.name} {chamber.name} {district.name}"
         )
-        Post.objects.create(
+        Post.objects.get_or_create(
             label=district.name,
-            role=chamber.title,
             organization=post_parent,
             division=post_div,
-            maximum_memberships=district.num_seats,
+            # TODO: allow changing role & max_memberships
+            defaults=dict(role=chamber.title, maximum_memberships=district.num_seats),
         )
+
+
+def create_full_jurisdiction(state):
+    from ..data.models import Jurisdiction, Organization
+
+    div = create_division(state.division_id, state.name)
+    juris, created = Jurisdiction.objects.get_or_create(
+        id=state.jurisdiction_id,
+        name=state.name,
+        division=div,
+        defaults=dict(url=state.url),
+    )
+    leg, created = Organization.objects.get_or_create(
+        id=state.legislature_organization_id,
+        classification="legislature",
+        jurisdiction=juris,
+        defaults=dict(name=state.legislature_name),
+    )
+    # create executive
+    Organization.objects.get_or_create(
+        id=state.executive_organization_id,
+        classification="executive",
+        jurisdiction=juris,
+        defaults=dict(name=state.executive_name),
+    )
+
+    if state.unicameral:
+        create_chamber(juris, leg, state.legislature)
+    else:
+        create_chamber(juris, leg, state.lower)
+        create_chamber(juris, leg, state.upper)
 
 
 def load_jurisdictions():
     for name, state in STATES_BY_ABBR.items():
-        print("creating", name)
-
-        div = create_division(state.division_id, state.name)
-        juris = Jurisdiction.objects.create(
-            id=state.jurisdiction_id, name=state.name, url=state.url, division=div
-        )
-        leg = Organization.objects.create(
-            id=state.legislature_organization_id,
-            name=state.legislature_name,
-            classification="legislature",
-            jurisdiction=juris,
-        )
-        # create executive
-        Organization.objects.create(
-            id=state.executive_organization_id,
-            name=state.executive_name,
-            classification="executive",
-            jurisdiction=juris,
-        )
-
-        if state.unicameral:
-            create_chamber(juris, leg, state.legislature)
-        else:
-            create_chamber(juris, leg, state.lower)
-            create_chamber(juris, leg, state.upper)
+        print("loading", name)
+        create_full_jurisdiction(state)
 
 
 def main():
-    load_jurisdictions()
+    init_django()
+    with transaction.atomic():
+        load_jurisdictions()
