@@ -48,20 +48,23 @@ def create_full_jurisdiction(state):
 
     div = create_division(state.division_id, state.name)
     juris, created = Jurisdiction.objects.get_or_create(
-        id=state.jurisdiction_id, name=state.name, url=state.url, division=div
+        id=state.jurisdiction_id,
+        name=state.name,
+        division=div,
+        defaults=dict(url=state.url),
     )
     leg, created = Organization.objects.get_or_create(
         id=state.legislature_organization_id,
-        name=state.legislature_name,
         classification="legislature",
         jurisdiction=juris,
+        defaults=dict(name=state.legislature_name),
     )
     # create executive
     Organization.objects.get_or_create(
         id=state.executive_organization_id,
         classification="executive",
         jurisdiction=juris,
-        name=state.executive_name,
+        defaults=dict(name=state.executive_name),
     )
 
     if state.unicameral:
@@ -73,7 +76,7 @@ def create_full_jurisdiction(state):
 
 def load_jurisdictions():
     for name, state in STATES_BY_ABBR.items():
-        print("creating", name)
+        print("loading", name)
         create_full_jurisdiction(state)
 
 
