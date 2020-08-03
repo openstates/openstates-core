@@ -91,3 +91,25 @@ def test_create_chamber_duplicate_with_changes():
         create_chamber(juris, leg, nc.lower)  # unsupported, should definitely be loud
 
     assert Organization.objects.filter(classification="lower").count() == 1
+
+
+@pytest.mark.django_db
+def test_create_chamber_unicam():
+    ne = lookup(abbr="NE")
+
+    juris = Jurisdiction.objects.create(
+        id=ne.jurisdiction_id, name=ne.name, division=None
+    )
+    leg = Organization.objects.create(
+        id=ne.legislature_organization_id,
+        name=ne.legislature_name,
+        classification="legislature",
+        jurisdiction=juris,
+    )
+
+    create_chamber(juris, leg, ne.legislature)
+
+    # no org was created, but posts were
+    assert Organization.objects.count() == 1
+    org = Organization.objects.get(classification="legislature")
+    assert org.posts.count() == 49
