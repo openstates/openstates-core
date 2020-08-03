@@ -1,12 +1,16 @@
 from openstates_metadata import STATES_BY_ABBR
 from ..utils.django import init_django
+from django.db import transaction
 
 
 def create_division(division_id, name):
     from ..data.models import Division
 
     return Division.objects.get_or_create(
-        id=division_id, defaults=dict(name=name, country="us")
+        id=division_id,
+        country="us",
+        # TODO: allow changing name
+        defaults=dict(name=name),
     )[0]
 
 
@@ -75,4 +79,5 @@ def load_jurisdictions():
 
 def main():
     init_django()
-    load_jurisdictions()
+    with transaction.atomic():
+        load_jurisdictions()
