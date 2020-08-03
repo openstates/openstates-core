@@ -47,21 +47,21 @@ def create_full_jurisdiction(state):
     from ..data.models import Jurisdiction, Organization
 
     div = create_division(state.division_id, state.name)
-    juris = Jurisdiction.objects.create(
+    juris, created = Jurisdiction.objects.get_or_create(
         id=state.jurisdiction_id, name=state.name, url=state.url, division=div
     )
-    leg = Organization.objects.create(
+    leg, created = Organization.objects.get_or_create(
         id=state.legislature_organization_id,
         name=state.legislature_name,
         classification="legislature",
         jurisdiction=juris,
     )
     # create executive
-    Organization.objects.create(
+    Organization.objects.get_or_create(
         id=state.executive_organization_id,
-        name=state.executive_name,
         classification="executive",
         jurisdiction=juris,
+        name=state.executive_name,
     )
 
     if state.unicameral:
