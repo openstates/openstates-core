@@ -2,11 +2,9 @@ from openstates_metadata import STATES_BY_ABBR
 from ..utils.django import init_django
 
 
-init_django()
-from ..data.models import Jurisdiction, Division, Organization, Post  # noqa
-
-
 def create_division(division_id, name):
+    from ..data.models import Division
+
     return Division.objects.get_or_create(
         id=division_id,
         defaults=dict(name=name, country="us"),
@@ -15,6 +13,8 @@ def create_division(division_id, name):
 
 
 def create_chamber(juris, parent, chamber):
+    from ..data.models import Organization, Post
+
     if chamber.chamber_type != "unicameral":
         post_parent = Organization.objects.create(
             id=chamber.organization_id,
@@ -42,6 +42,8 @@ def create_chamber(juris, parent, chamber):
 
 
 def load_jurisdictions():
+    from ..data.models import Jurisdiction, Organization
+
     for name, state in STATES_BY_ABBR.items():
         print("creating", name)
 
@@ -71,4 +73,5 @@ def load_jurisdictions():
 
 
 def main():
+    init_django()
     load_jurisdictions()
