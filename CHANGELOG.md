@@ -1,5 +1,9 @@
 # Changelog
 
+## ???
+
+* make os-initdb idempotent (and test it!)
+
 ## 4.6.0 - July 22 2020
 
 * allow Jurisdictions to exist without Divisions
