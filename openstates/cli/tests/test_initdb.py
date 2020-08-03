@@ -1,6 +1,10 @@
 import pytest
-from openstates.data.models import Jurisdiction, Division, Organization
-from openstates.cli.initdb import create_division, create_chamber
+from openstates.data.models import Jurisdiction, Division, Organization, Post
+from openstates.cli.initdb import (
+    create_division,
+    create_chamber,
+    create_full_jurisdiction,
+)
 from openstates_metadata import lookup
 from django.db.utils import IntegrityError
 
@@ -113,3 +117,47 @@ def test_create_chamber_unicam():
     assert Organization.objects.count() == 1
     org = Organization.objects.get(classification="legislature")
     assert org.posts.count() == 49
+
+
+@pytest.mark.django_db
+def test_create_full_jurisdiction_basic():
+    nc = lookup(abbr="NC")
+    create_full_jurisdiction(nc)
+
+    assert Jurisdiction.objects.count() == 1
+    juris = Jurisdiction.objects.get()
+    assert juris.name == nc.name
+    assert juris.organizations.count() == 4
+    assert (
+        juris.organizations.get(classification="executive").id
+        == nc.executive_organization_id
+    )
+    assert (
+        juris.organizations.get(classification="legislature").id
+        == nc.legislature_organization_id
+    )
+    # 120 + 50
+    assert Post.objects.count() == 170
+
+
+@pytest.mark.django_db
+def test_create_full_jurisdiction_idempotent():
+    nc = lookup(abbr="NC")
+    create_full_jurisdiction(nc)
+    # second call, does nothing
+    create_full_jurisdiction(nc)
+
+    assert Jurisdiction.objects.count() == 1
+    juris = Jurisdiction.objects.get()
+    assert juris.name == nc.name
+    assert juris.organizations.count() == 4
+    assert (
+        juris.organizations.get(classification="executive").id
+        == nc.executive_organization_id
+    )
+    assert (
+        juris.organizations.get(classification="legislature").id
+        == nc.legislature_organization_id
+    )
+    # 120 + 50
+    assert Post.objects.count() == 170
