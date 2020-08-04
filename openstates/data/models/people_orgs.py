@@ -265,6 +265,13 @@ class Person(OCDBase):
     )
     current_state = models.CharField(max_length=2, default="")
     current_role_division_id = models.CharField(max_length=100, default="")
+    current_jurisdiction = models.ForeignKey(
+        Jurisdiction,
+        related_name="current_people",
+        on_delete=models.PROTECT,
+        null=True,
+        default=None,
+    )
 
     def __str__(self):
         return self.name
