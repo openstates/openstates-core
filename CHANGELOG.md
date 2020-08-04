@@ -1,14 +1,13 @@
 # Changelog
 
-## 4.7.0
+## 4.7.0 - August 4 2020
 
 * make os-initdb idempotent (and test it!)
-* add Person.current_jurisdiction_id (replacing Person.current_state)
-* add Person.current_role
+* schema change: add Person.current_jurisdiction_id & Person.current_role
 
 ## 4.6.0 - July 22 2020
 
-* allow Jurisdictions to exist without Divisions
+* schema change: allow Jurisdictions to exist without Divisions
 
 ## 4.5.1 - June 23 2020
 
