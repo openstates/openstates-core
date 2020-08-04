@@ -246,23 +246,6 @@ def test_person_query_current_with_roles(senator, django_assert_num_queries):
 
 
 @pytest.mark.django_db
-def test_person_get_current_role():
-    p = Person(
-        name="Someone",
-        current_role_division_id="ocd-division/country:us/state:mo/sldu:1",
-        primary_party="Republican",
-    )
-    assert p.current_role == {
-        "party": "Republican",
-        "chamber": "upper",
-        "role": "Senator",
-        "state": "mo",
-        "district": 1,  # should be integer for sorting reasons
-        "division_id": "ocd-division/country:us/state:mo/sldu:1",
-    }
-
-
-@pytest.mark.django_db
 def test_person_search(senator, person):
     assert Person.objects.search("Worm").count() == 1
     assert Person.objects.search("Worm", state="mo").count() == 1
