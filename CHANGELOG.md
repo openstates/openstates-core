@@ -1,8 +1,10 @@
 # Changelog
 
-## ???
+## 4.7.0
 
 * make os-initdb idempotent (and test it!)
+* add Person.current_jurisdiction_id (replacing Person.current_state)
+* add Person.current_role
 
 ## 4.6.0 - July 22 2020
 

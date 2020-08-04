@@ -1,6 +1,7 @@
 import datetime
 from django.db import models
 from django.db.models import Q, QuerySet
+from django.contrib.postgres.fields import JSONField
 import openstates_metadata as metadata
 from .base import OCDBase, LinkBase, OCDIDField, RelatedBase, IdentifierBase
 from .division import Division
@@ -272,6 +273,7 @@ class Person(OCDBase):
         null=True,
         default=None,
     )
+    current_role = JSONField(null=True, default=None)
 
     def __str__(self):
         return self.name
@@ -282,12 +284,6 @@ class Person(OCDBase):
 
     def add_other_name(self, name, note=""):
         PersonName.objects.create(name=name, note=note, person_id=self.id)
-
-    @property
-    def current_role(self):
-        if not getattr(self, "_current_role", None):
-            self._current_role = self._get_current_role()
-        return self._current_role
 
     def _get_current_role(self):
         if self.current_role_division_id:
