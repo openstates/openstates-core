@@ -1,5 +1,10 @@
 # Changelog
 
+## 4.7.1 - August 5 2020
+
+* remove person_role_division_id
+* fix Person.objects.active()
+
 ## 4.7.0 - August 4 2020
 
 * make os-initdb idempotent (and test it!)
