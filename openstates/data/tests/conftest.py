@@ -114,7 +114,9 @@ def person():
 @pytest.fixture
 def senator(jurisdiction, party):
     div_id = "ocd-division/country:us/state:mo/sldu:1"
-    person = Person.objects.create(name="Willy Worm", current_role_division_id=div_id)
+    person = Person.objects.create(
+        name="Willy Worm", current_role={"org_classification": "upper", "district": 1}
+    )
     senate = Organization.objects.create(
         classification="upper", name="Senate", jurisdiction=jurisdiction
     )

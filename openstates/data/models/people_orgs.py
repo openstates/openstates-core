@@ -2,7 +2,6 @@ import datetime
 from django.db import models
 from django.db.models import Q, QuerySet
 from django.contrib.postgres.fields import JSONField
-import openstates_metadata as metadata
 from .base import OCDBase, LinkBase, OCDIDField, RelatedBase, IdentifierBase
 from .division import Division
 from .jurisdiction import Jurisdiction
@@ -191,7 +190,7 @@ class PersonQuerySet(QuerySet):
         return qs.filter(org_filter).distinct()
 
     def active(self):
-        return self.exclude(current_role_division_id="")
+        return self.exclude(current_role=None)
 
     def current_legislators_with_roles(self, chambers):
         today = datetime.date.today().isoformat()
@@ -264,7 +263,6 @@ class Person(OCDBase):
         default="",
         help_text="Primary party an individual is associated with.",
     )
-    current_role_division_id = models.CharField(max_length=100, default="")
     current_jurisdiction = models.ForeignKey(
         Jurisdiction,
         related_name="current_people",
@@ -283,32 +281,6 @@ class Person(OCDBase):
 
     def add_other_name(self, name, note=""):
         PersonName.objects.create(name=name, note=note, person_id=self.id)
-
-    def _get_current_role(self):
-        if self.current_role_division_id:
-            state, chamber, district = metadata.lookup_district_with_ancestors(
-                division_id=self.current_role_division_id
-            )
-            state = state.abbr.lower()
-            role = chamber.title
-            chamber = chamber.chamber_type
-            district = district.name
-            try:
-                # convert to integer for sorting if numeric
-                district = int(district)
-            except ValueError:
-                pass
-        else:
-            state = chamber = district = role = ""
-
-        return {
-            "party": self.primary_party,
-            "chamber": chamber,
-            "state": state,
-            "district": district,
-            "division_id": self.current_role_division_id,
-            "role": role,
-        }
 
 
 class PersonIdentifier(IdentifierBase):
