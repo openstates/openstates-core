@@ -442,9 +442,6 @@ class Membership(OCDBase):
         on_delete=models.SET_NULL,
         help_text="	The Post held by the member in the Organization.",
     )
-    label = models.CharField(
-        max_length=300, blank=True, help_text="A label describing the membership."
-    )
     role = models.CharField(
         max_length=300,
         blank=True,
