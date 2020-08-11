@@ -27,7 +27,7 @@ class Bill(SourceMixin, AssociatedLinkMixin, BaseModel):
         *,
         chamber=None,
         from_organization=None,
-        classification=None
+        classification=None,
     ):
         super(Bill, self).__init__()
 
@@ -58,7 +58,6 @@ class Bill(SourceMixin, AssociatedLinkMixin, BaseModel):
         chamber=None,
         classification=None,
         related_entities=None,
-        extras=None
     ):
         action = Action(
             description=description,
@@ -66,7 +65,6 @@ class Bill(SourceMixin, AssociatedLinkMixin, BaseModel):
             organization_id=pseudo_organization(organization, chamber, "legislature"),
             classification=cleanup_list(classification, []),
             related_entities=[],
-            extras=extras or {},
         )
         self.actions.append(action)
         return action
@@ -89,7 +87,7 @@ class Bill(SourceMixin, AssociatedLinkMixin, BaseModel):
         primary,
         *,
         chamber=None,
-        entity_id=None
+        entity_id=None,
     ):
         sp = {
             "name": name,
@@ -116,7 +114,7 @@ class Bill(SourceMixin, AssociatedLinkMixin, BaseModel):
         *,
         scheme,
         identifier,
-        chamber=None
+        chamber=None,
     ):
         return self.add_sponsorship(
             name,
