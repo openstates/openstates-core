@@ -17,7 +17,6 @@ class VoteEvent(OCDBase):
         base_field=models.TextField(), blank=True, default=list
     )
     start_date = models.CharField(max_length=25)  # YYYY-MM-DD HH:MM:SS+HH:MM
-    end_date = models.CharField(max_length=25, blank=True)  # YYYY-MM-DD HH:MM:SS+HH:MM
 
     result = models.CharField(max_length=50, choices=common.VOTE_RESULT_CHOICES)
     organization = models.ForeignKey(
@@ -47,6 +46,7 @@ class VoteEvent(OCDBase):
         # if an action goes away - VoteEvent should stay
         on_delete=models.SET_NULL,
     )
+    order = models.PositiveIntegerField(default=0)
 
     extras = JSONField(default=dict, blank=True)
 
@@ -62,6 +62,7 @@ class VoteEvent(OCDBase):
             ["legislative_session", "identifier", "bill"],
             ["legislative_session", "bill"],
         ]
+        ordering = ["start_date", "order"]
 
 
 class VoteCount(RelatedBase):
