@@ -11,7 +11,6 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.RemoveField(model_name="billaction", name="extras",),
-        migrations.RemoveField(model_name="billdocument", name="extras",),
         migrations.AlterIndexTogether(
             name="membership", index_together={("organization", "person", "post")},
         ),

@@ -4,7 +4,6 @@
 
 * lots of schema changes:
   * remove unused BillAction.extras
-  * remove unused BillDocument.extras
   * remove unused Membership.label
   * remove unused VoteEvent.end_date
   * add VoteEvent.order
