@@ -1,5 +1,14 @@
 # Changelog
 
+## 5.0
+
+* lots of schema changes:
+  * remove unused BillAction.extras
+  * remove unused BillDocument.extras
+  * remove unused Membership.label
+  * remove unused VoteEvent.end_date
+  * add VoteEvent.order
+
 ## 4.7.1 - August 5 2020
 
 * remove person_role_division_id
