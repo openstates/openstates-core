@@ -460,7 +460,7 @@ class Membership(OCDBase):
 
     class Meta:
         db_table = "opencivicdata_membership"
-        index_together = [["organization", "person", "label", "post"]]
+        index_together = [["organization", "person", "post"]]
 
     def __str__(self):
         return "{} in {} ({})".format(self.person, self.organization, self.role)
