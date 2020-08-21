@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.8.0 - August 21 2020
+
+* remove GIS dependency, alter (unused) EventLocation model accordingly
+
 ## 4.7.1 - August 5 2020
 
 * remove person_role_division_id

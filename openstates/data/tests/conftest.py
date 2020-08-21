@@ -9,6 +9,7 @@ from openstates.data.models import (
     Post,
     LegislativeSession,
     Event,
+    EventLocation,
     VoteEvent,
     Bill,
 )
@@ -71,6 +72,14 @@ def vote_event(legislative_session, organization):
         legislative_session=legislative_session,
     )
     return v_e
+
+
+@pytest.fixture
+def event_location(jurisdiction):
+    loc = EventLocation.objects.create(
+        name="State Legislative Building", jurisdiction=jurisdiction,
+    )
+    return loc
 
 
 @pytest.fixture
