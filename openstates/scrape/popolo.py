@@ -115,7 +115,6 @@ class Person(
         birth_date="",
         death_date="",
         biography="",
-        summary="",
         image="",
         gender="",
         # specialty fields
@@ -132,7 +131,6 @@ class Person(
         self.birth_date = birth_date
         self.death_date = death_date
         self.biography = biography
-        self.summary = summary
         self.image = image
         self.gender = gender
         if primary_org:

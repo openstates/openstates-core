@@ -19,7 +19,6 @@ schema = {
         "birth_date": fuzzy_date_blank,
         "death_date": fuzzy_date_blank,
         "image": {"format": "uri-blank", "type": "string"},
-        "summary": {"type": "string"},
         "biography": {"type": "string"},
         "contact_details": contact_details,
         "links": links,

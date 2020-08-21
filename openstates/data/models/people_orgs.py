@@ -238,11 +238,6 @@ class Person(OCDBase):
         help_text="A URL leading to an image that identifies the Person visually.",
     )
     gender = models.CharField(max_length=100, blank=True, help_text="A Person's gender")
-    summary = models.CharField(
-        max_length=500,
-        blank=True,
-        help_text="A short, one-line account of a Person's life.",
-    )
     biography = models.TextField(
         blank=True, help_text="An extended account of a Person's life."
     )
