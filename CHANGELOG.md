@@ -5,6 +5,7 @@
 * remove unused fields: 
   * BillAction.extras
   * BillAbstract.date
+  * BillIdentifier.scheme & BillIdentifier.note
   * Membership.label
   * VoteEvent.end_date
   * *.locked_fields

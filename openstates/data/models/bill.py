@@ -11,7 +11,6 @@ from .base import (
     RelatedBase,
     RelatedEntityBase,
     MimetypeLinkBase,
-    IdentifierBase,
 )
 from .people_orgs import Organization
 from .jurisdiction import LegislativeSession
@@ -81,11 +80,14 @@ class BillTitle(RelatedBase):
         db_table = "opencivicdata_billtitle"
 
 
-class BillIdentifier(IdentifierBase):
+class BillIdentifier(RelatedBase):
     bill = models.ForeignKey(
         Bill, related_name="other_identifiers", on_delete=models.CASCADE
     )
-    note = models.TextField(blank=True)
+    identifier = models.CharField(
+        max_length=300,
+        help_text="A unique identifier developed by an upstream or third party source.",
+    )
 
     class Meta:
         db_table = "opencivicdata_billidentifier"

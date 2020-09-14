@@ -136,10 +136,8 @@ class Bill(SourceMixin, AssociatedLinkMixin, BaseModel):
     def add_title(self, title, note=""):
         self.other_titles.append({"note": note, "title": title})
 
-    def add_identifier(self, identifier, note="", scheme=""):
-        self.other_identifiers.append(
-            {"note": note, "identifier": identifier, "scheme": scheme}
-        )
+    def add_identifier(self, identifier):
+        self.other_identifiers.append({"identifier": identifier})
 
     def add_document_link(
         self, note, url, *, date="", media_type="", text="", on_duplicate="warn"
