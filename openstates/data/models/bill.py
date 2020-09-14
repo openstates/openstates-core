@@ -59,7 +59,6 @@ class BillAbstract(RelatedBase):
     bill = models.ForeignKey(Bill, related_name="abstracts", on_delete=models.CASCADE)
     abstract = models.TextField()
     note = models.TextField(blank=True)
-    date = models.TextField(max_length=10, blank=True)  # YYYY[-MM[-DD]]
 
     def __str__(self):
         return "{0} abstract".format(self.bill.identifier)

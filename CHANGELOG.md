@@ -2,12 +2,13 @@
 
 ## 5.0
 
-* lots of schema changes:
-  * remove unused BillAction.extras
-  * remove unused Membership.label
-  * remove unused VoteEvent.end_date
-  * remove locked_fields
-  * add VoteEvent.order
+* remove unused fields: 
+  * BillAction.extras
+  * BillAbstract.date
+  * Membership.label
+  * VoteEvent.end_date
+  * *.locked_fields
+* add VoteEvent.order
 
 ## 4.8.0 - August 21 2020
 
