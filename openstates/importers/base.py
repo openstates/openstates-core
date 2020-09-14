@@ -284,7 +284,7 @@ class BaseImporter(object):
                 raise DuplicateItemError(data, obj, related.get("sources", []))
             # check base object for changes
             for key, value in data.items():
-                if getattr(obj, key) != value and key not in obj.locked_fields:
+                if getattr(obj, key) != value:
                     setattr(obj, key, value)
                     what = "update"
 
@@ -337,10 +337,6 @@ class BaseImporter(object):
 
         # for each related field - check if there are differences
         for field, items in related.items():
-            # skip subitem check if it's locked anyway
-            if field in obj.locked_fields:
-                continue
-
             # get items from database
             dbitems = list(getattr(obj, field).all())
             dbitems_count = len(dbitems)

@@ -6,6 +6,7 @@
   * remove unused BillAction.extras
   * remove unused Membership.label
   * remove unused VoteEvent.end_date
+  * remove locked_fields
   * add VoteEvent.order
 
 ## 4.8.0 - August 21 2020
