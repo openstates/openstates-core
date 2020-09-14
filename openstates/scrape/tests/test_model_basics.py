@@ -84,7 +84,6 @@ def test_add_associated_link_match():
         "_associated",
         "something",
         "http://example.com/1.txt",
-        text="",
         media_type="text/plain",
         on_duplicate="error",
     )
@@ -92,7 +91,6 @@ def test_add_associated_link_match():
         "_associated",
         "something",
         "http://example.com/1.pdf",
-        text="",
         media_type="application/pdf",
         on_duplicate="error",
     )
@@ -109,7 +107,6 @@ def test_add_associated_link_on_duplicate_bad():
             "_associated",
             "something",
             "http://example.com",
-            text="",
             media_type="text/html",
             on_duplicate="idk",
         )
@@ -121,7 +118,6 @@ def test_add_associated_link_on_duplicate_error():
         "_associated",
         "something",
         "http://example.com",
-        text="",
         media_type="text/html",
         on_duplicate="error",
     )
@@ -131,7 +127,6 @@ def test_add_associated_link_on_duplicate_error():
             "_associated",
             "something else",
             "http://example.com",
-            text="",
             media_type="text/html",
             on_duplicate="error",
         )
@@ -143,7 +138,6 @@ def test_add_associated_link_on_duplicate_ignore():
         "_associated",
         "something",
         "http://example.com",
-        text="",
         media_type="text/html",
         on_duplicate="ignore",
     )
@@ -151,7 +145,6 @@ def test_add_associated_link_on_duplicate_ignore():
         "_associated",
         "something else",
         "http://example.com",
-        text="",
         media_type="text/html",
         on_duplicate="ignore",
     )

@@ -339,7 +339,7 @@ class OtherNameMixin(object):
 
 class AssociatedLinkMixin(object):
     def _add_associated_link(
-        self, collection, note, url, *, media_type, text, on_duplicate="warn", date=""
+        self, collection, note, url, *, media_type, on_duplicate="warn", date=""
     ):
         if on_duplicate not in ["error", "ignore", "warn"]:
             raise ScrapeValueError("on_duplicate must be 'warn', 'error' or 'ignore'")
@@ -390,7 +390,7 @@ class AssociatedLinkMixin(object):
                 return None
 
         # OK. This is either new or old. Let's just go for it.
-        ret = {"url": url, "media_type": media_type, "text": text}
+        ret = {"url": url, "media_type": media_type}
 
         ver["links"].append(ret)
 

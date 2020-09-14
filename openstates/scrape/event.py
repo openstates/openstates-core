@@ -47,7 +47,6 @@ class EventAgendaItem(dict, AssociatedLinkMixin):
             collection="media",
             note=note,
             url=url,
-            text=text,
             media_type=media_type,
             on_duplicate=on_duplicate,
         )
@@ -152,7 +151,6 @@ class Event(BaseModel, SourceMixin, AssociatedLinkMixin, LinkMixin):
             collection="media",
             note=note,
             url=url,
-            text=text,
             media_type=media_type,
             on_duplicate=on_duplicate,
             date=date,
@@ -165,7 +163,6 @@ class Event(BaseModel, SourceMixin, AssociatedLinkMixin, LinkMixin):
             collection="documents",
             note=note,
             url=url,
-            text=text,
             media_type=media_type,
             on_duplicate=on_duplicate,
             date=date,

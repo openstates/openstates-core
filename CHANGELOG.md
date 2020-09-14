@@ -13,6 +13,7 @@
   * PersonContactDetail.label
   * Post.start_date & end_date
   * VoteEvent.end_date
+  * BillDocumentLink & BillVersionLink.text
   * *.locked_fields
 * add VoteEvent.order
 
