@@ -1,21 +1,23 @@
 # Changelog
 
-## 5.0
+## 5.0.0 - September 14 2020
 
-* remove unused fields: 
-  * BillAbstract.date
-  * BillAction.extras
-  * BillIdentifier.scheme & note
-  * Jurisdiction.feature_flags
-  * Membership.label
-  * Organization.image, founding_date, dissolution_date
-  * Person.summary
-  * PersonContactDetail.label
-  * Post.start_date & end_date
-  * VoteEvent.end_date
-  * BillDocumentLink & BillVersionLink.text
-  * *.locked_fields
-* add VoteEvent.order
+* merge openstates_metadata into openstates.metadata
+* large database cleanup:
+  * remove unused fields:
+    * BillAbstract.date
+    * BillAction.extras
+    * BillIdentifier.scheme & note
+    * Jurisdiction.feature_flags
+    * Membership.label
+    * Organization.image, founding_date, dissolution_date
+    * Person.summary
+    * PersonContactDetail.label
+    * Post.start_date & end_date
+    * VoteEvent.end_date
+    * BillDocumentLink & BillVersionLink.text
+    * *.locked_fields
+  * add VoteEvent.order
 
 ## 4.8.0 - August 21 2020
 
