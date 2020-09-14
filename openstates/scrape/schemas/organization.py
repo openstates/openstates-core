@@ -5,7 +5,6 @@ from .common import (
     other_names,
     sources,
     extras,
-    fuzzy_date_blank,
 )
 from ...data import common
 
@@ -19,9 +18,6 @@ schema = {
             "enum": common.ORGANIZATION_CLASSIFICATIONS,
         },
         "parent_id": {"type": ["string", "null"]},
-        "founding_date": fuzzy_date_blank,
-        "dissolution_date": fuzzy_date_blank,
-        "image": {"type": "string", "format": "uri-blank"},
         "contact_details": contact_details,
         "links": links,
         "sources": sources,

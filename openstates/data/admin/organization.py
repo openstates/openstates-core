@@ -45,7 +45,7 @@ class OrganizationAdmin(ModelAdmin):
         "jurisdiction",
         "extras",
     )
-    fields = readonly_fields + (("founding_date", "dissolution_date"), "image")
+    fields = readonly_fields
     search_fields = ("name",)
     list_filter = ("jurisdiction__name",)
 

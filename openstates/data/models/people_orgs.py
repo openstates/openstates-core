@@ -19,11 +19,6 @@ class Organization(OCDBase):
 
     id = OCDIDField(ocd_type="organization")
     name = models.CharField(max_length=300, help_text="The name of the Organization.")
-    image = models.URLField(
-        blank=True,
-        max_length=2000,
-        help_text="A URL leading to an image that identifies the Organization visually.",
-    )
     parent = models.ForeignKey(
         "self",
         related_name="children",
@@ -45,16 +40,6 @@ class Organization(OCDBase):
         blank=True,
         choices=common.ORGANIZATION_CLASSIFICATION_CHOICES,
         help_text="The type of Organization being defined.",
-    )
-    founding_date = models.CharField(
-        max_length=10,
-        blank=True,
-        help_text="The founding date of the Organization in YYYY[-MM[-DD]] string format.",
-    )
-    dissolution_date = models.CharField(
-        max_length=10,
-        blank=True,
-        help_text="The dissolution date of the Organization in YYYY[-MM[-DD]] string format.",
     )
 
     def __str__(self):

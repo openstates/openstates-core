@@ -5,10 +5,11 @@
 * remove unused fields: 
   * BillAction.extras
   * BillAbstract.date
-  * BillIdentifier.scheme & BillIdentifier.note
+  * BillIdentifier.scheme & note
   * Membership.label
   * VoteEvent.end_date
   * Jurisdiction.feature_flags
+  * Organization.image, founding_date, dissolution_date
   * *.locked_fields
 * add VoteEvent.order
 

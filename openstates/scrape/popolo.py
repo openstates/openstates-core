@@ -238,27 +238,14 @@ class Organization(BaseModel, SourceMixin, LinkMixin):
     _type = "organization"
     _schema = org_schema
 
-    def __init__(
-        self,
-        name,
-        *,
-        classification="",
-        parent_id=None,
-        founding_date="",
-        dissolution_date="",
-        image="",
-        chamber=None
-    ):
+    def __init__(self, name, *, classification="", parent_id=None, chamber=None):
         """
         Constructor for the Organization object.
         """
         super(Organization, self).__init__()
         self.name = name
         self.classification = classification
-        self.founding_date = founding_date
-        self.dissolution_date = dissolution_date
         self.parent_id = pseudo_organization(parent_id, chamber)
-        self.image = image
 
     def __str__(self):
         return self.name
