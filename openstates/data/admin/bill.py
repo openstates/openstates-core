@@ -18,7 +18,7 @@ class BillTitleInline(ReadOnlyTabularInline):
 
 class BillIdentifierInline(IdentifierInline):
     model = models.BillIdentifier
-    fields = readonly_fields = "identifier"
+    fields = readonly_fields = ["identifier"]
 
 
 class BillActionInline(ReadOnlyTabularInline):
