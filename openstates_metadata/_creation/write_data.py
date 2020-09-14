@@ -71,7 +71,7 @@ def make_districts(parent_id, chamber_type, num, seats, division_ids):
 
 
 if __name__ == "__main__":
-    settings = yaml.load(open(f"creation/settings.yml"))
+    settings = yaml.load(open("creation/settings.yml"))
     jurisdictions = csv.DictReader(open("creation/jurisdictions.csv"))
     jurisdictions_by_name = {j["state"]: j for j in jurisdictions}
     org_ids = defaultdict(dict)
@@ -153,9 +153,9 @@ if __name__ == "__main__":
             raise Exception(obj)
 
         if state.abbr == "OR":
-            fname = f"openstates_metadata/data/ore.py"
+            fname = "openstates_metadata/data/ore.py"
         elif state.abbr == "IN":
-            fname = f"openstates_metadata/data/ind.py"
+            fname = "openstates_metadata/data/ind.py"
         else:
             fname = f"openstates_metadata/data/{state.abbr.lower()}.py"
         with open(fname, "w") as f:
