@@ -3,13 +3,15 @@
 ## 5.0
 
 * remove unused fields: 
-  * BillAction.extras
   * BillAbstract.date
+  * BillAction.extras
   * BillIdentifier.scheme & note
-  * Membership.label
-  * VoteEvent.end_date
   * Jurisdiction.feature_flags
+  * Membership.label
   * Organization.image, founding_date, dissolution_date
+  * Person.summary
+  * PersonContactDetail.label
+  * VoteEvent.end_date
   * *.locked_fields
 * add VoteEvent.order
 

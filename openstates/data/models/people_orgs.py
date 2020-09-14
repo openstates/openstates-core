@@ -337,9 +337,6 @@ class PersonContactDetail(RelatedBase):
         blank=True,
         help_text="A short, optional note about the Contact value.",
     )
-    label = models.CharField(
-        max_length=300, blank=True, help_text="A title for the content of the Contact."
-    )
 
     person = models.ForeignKey(
         Person,
