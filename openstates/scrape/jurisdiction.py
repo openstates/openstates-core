@@ -13,7 +13,6 @@ class Jurisdiction(BaseModel):
     name = None
     url = None
     legislative_sessions = []
-    feature_flags = []
     extras = {}
 
     # non-db properties
@@ -44,7 +43,6 @@ class Jurisdiction(BaseModel):
             "division_id": self.division_id,
             "classification": self.classification,
             "legislative_sessions": self.legislative_sessions,
-            "feature_flags": self.feature_flags,
             "extras": self.extras,
         }
 

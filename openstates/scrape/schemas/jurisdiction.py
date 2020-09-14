@@ -22,7 +22,6 @@ schema = {
                 },
             },
         },
-        "feature_flags": {"type": "array", "items": {"type": "string", "minLength": 1}},
         "extras": extras,
     },
 }

@@ -25,7 +25,6 @@ class JurisdictionAdmin(ModelAdmin):
         "name",
         "division",
         "classification",
-        "feature_flags",
         "extras",
         "url",
     )

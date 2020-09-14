@@ -1,6 +1,4 @@
 from django.db import models
-from django.contrib.postgres.fields import ArrayField
-
 from ..common import JURISDICTION_CLASSIFICATION_CHOICES, SESSION_CLASSIFICATION_CHOICES
 from .base import OCDBase, OCDIDField, RelatedBase
 from .division import Division
@@ -29,12 +27,6 @@ class Jurisdiction(OCDBase):
         default="government",
         db_index=True,
         help_text="The type of Jurisdiction being defined.",
-    )
-    feature_flags = ArrayField(
-        base_field=models.TextField(),
-        blank=True,
-        default=list,
-        help_text="A list of features that are present for data in this jurisdiction.",
     )
     division = models.ForeignKey(
         Division,

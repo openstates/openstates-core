@@ -32,7 +32,6 @@ def test_as_dict():
     assert d["name"] == j.name
     assert d["url"] == j.url
     assert d["legislative_sessions"] == []
-    assert d["feature_flags"] == []
 
 
 def test_jurisdiction_unicam_scrape():

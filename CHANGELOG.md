@@ -8,6 +8,7 @@
   * BillIdentifier.scheme & BillIdentifier.note
   * Membership.label
   * VoteEvent.end_date
+  * Jurisdiction.feature_flags
   * *.locked_fields
 * add VoteEvent.order
 
