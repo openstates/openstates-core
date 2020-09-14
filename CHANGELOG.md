@@ -11,6 +11,7 @@
   * Organization.image, founding_date, dissolution_date
   * Person.summary
   * PersonContactDetail.label
+  * Post.start_date & end_date
   * VoteEvent.end_date
   * *.locked_fields
 * add VoteEvent.order

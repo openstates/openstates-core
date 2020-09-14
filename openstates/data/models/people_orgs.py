@@ -134,16 +134,6 @@ class Post(OCDBase):
         # if the division goes away the post is just jurisdiction-less
         on_delete=models.SET_NULL,
     )
-    start_date = models.CharField(
-        max_length=10,
-        blank=True,
-        help_text="An optional start date for the Post in YYYY[-MM[-DD]] string format.",
-    )
-    end_date = models.CharField(
-        max_length=10,
-        blank=True,
-        help_text="An optional end date for the Post in YYYY[-MM[-DD]] string format.",
-    )
     maximum_memberships = models.PositiveIntegerField(
         default=1, help_text="The maximum number of people who can hold this Post."
     )
