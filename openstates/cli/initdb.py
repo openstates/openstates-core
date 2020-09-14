@@ -1,4 +1,4 @@
-from openstates_metadata import STATES_BY_ABBR
+from ..metadata import STATES_BY_ABBR
 from ..utils.django import init_django
 from django.db import transaction
 

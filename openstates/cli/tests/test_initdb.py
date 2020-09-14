@@ -5,7 +5,7 @@ from openstates.cli.initdb import (
     create_chamber,
     create_full_jurisdiction,
 )
-from openstates_metadata import lookup
+from openstates.metadata import lookup
 from django.db.utils import IntegrityError
 
 

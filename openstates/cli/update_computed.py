@@ -1,6 +1,6 @@
 import click
 from django.db import transaction
-import openstates_metadata as metadata
+from .. import metadata
 from ..utils.django import init_django
 
 

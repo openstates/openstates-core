@@ -18,8 +18,8 @@ Django = ">=2.2"
 scrapelib = "^1.2.0"
 jsonschema = "^3.2.0"
 pytz = "^2019.3"
-openstates-metadata = "^2020.4.3"
 click = "^7.1.1"
+attrs = "^20.2.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.4.1"

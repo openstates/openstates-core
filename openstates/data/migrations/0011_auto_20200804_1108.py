@@ -1,6 +1,6 @@
 from django.db import migrations, models
 import django.db.models.deletion
-from openstates_metadata import lookup
+from ...metadata import lookup
 
 
 def forwards_func(apps, schema_editor):

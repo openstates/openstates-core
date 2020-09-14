@@ -153,11 +153,11 @@ if __name__ == "__main__":
             raise Exception(obj)
 
         if state.abbr == "OR":
-            fname = "openstates_metadata/data/ore.py"
+            fname = "metadata/data/ore.py"
         elif state.abbr == "IN":
-            fname = "openstates_metadata/data/ind.py"
+            fname = "metadata/data/ind.py"
         else:
-            fname = f"openstates_metadata/data/{state.abbr.lower()}.py"
+            fname = f"metadata/data/{state.abbr.lower()}.py"
         with open(fname, "w") as f:
             f.write(
                 f"""from ..models import State, Chamber{extra_import}
