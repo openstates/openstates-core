@@ -29,7 +29,7 @@ class PostInline(admin.TabularInline):
 class OrgMembershipInline(ReadOnlyTabularInline):
     model = models.Membership
     fk_name = "organization"
-    readonly_fields = ("id", "person", "post", "label", "role", "start_date")
+    readonly_fields = ("id", "person", "post", "role", "start_date")
     fields = readonly_fields + ("end_date",)
     extra = 0
     can_delete = False
