@@ -13,7 +13,7 @@ click = "^7.0"
 flake8 = "^3.7"
 textract = "^1.6"
 chardet = "^3.0"
-openstates = "^4.0"
+openstates = "^5.0"
 
 [tool.poetry.dev-dependencies]
 
