@@ -1,6 +1,5 @@
 import pytest
 from datetime import datetime
-from django.contrib.gis.geos import Point
 from openstates.data.models import (
     Jurisdiction,
     Division,
@@ -78,9 +77,7 @@ def vote_event(legislative_session, organization):
 @pytest.fixture
 def event_location(jurisdiction):
     loc = EventLocation.objects.create(
-        name="State Legislative Building",
-        coordinates=Point(33.448040, -112.097379),
-        jurisdiction=jurisdiction,
+        name="State Legislative Building", jurisdiction=jurisdiction,
     )
     return loc
 

@@ -1,4 +1,4 @@
-from django.contrib.gis.db import models
+from django.db import models
 from django.contrib.postgres.fields import ArrayField, JSONField
 from .base import (
     OCDBase,
@@ -36,7 +36,6 @@ class EventMediaBase(RelatedBase):
 class EventLocation(RelatedBase):
     name = models.CharField(max_length=200)
     url = models.URLField(blank=True, max_length=2000)
-    coordinates = models.PointField(null=True)
     jurisdiction = models.ForeignKey(
         Jurisdiction, related_name="event_locations", on_delete=models.CASCADE
     )
