@@ -322,8 +322,8 @@ def test_bill_sponsorship(bill):
 
 @pytest.mark.django_db
 def test_bill_identifier(bill):
-    bill.other_identifiers.create(identifier="1001", scheme="senate_clerk_id")
-    assert "1001" in str(bill.other_identifiers.all()[0])
+    bill.other_identifiers.create(identifier="1001")
+    assert "1001" == bill.other_identifiers.all()[0].identifier
 
 
 @pytest.mark.django_db
