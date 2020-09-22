@@ -1,5 +1,14 @@
 # Changelog
 
+## 5.0.3 - September 21 2020
+
+* fix Jurisdiction creation classification
+
+## 5.0.2 - September 14 2020
+
+* fix typo in admin.py for bills
+* removed some bad field references
+
 ## 5.0.0 - September 14 2020
 
 * merge openstates_metadata into openstates.metadata
