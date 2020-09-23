@@ -69,6 +69,14 @@ class VoteEventImporter(BaseImporter):
         spec["legislative_session__jurisdiction_id"] = self.jurisdiction_id
         return spec
 
+    def _resolve_bill_id(self, bill_id):
+        if bill_id and bill_id.startswith("~"):
+            # unpack psuedo id and apply filter in case there are any that alter it
+            bill_id = get_pseudo_id(bill_id)
+            self.bill_importer.apply_transformers(bill_id)
+            bill_id = _make_pseudo_id(**bill_id)
+        return self.bill_importer.resolve_json_id(bill_id)
+
     def prepare_for_db(self, data):
         data["legislative_session_id"] = self.get_session_id(
             data.pop("legislative_session")
@@ -77,14 +85,13 @@ class VoteEventImporter(BaseImporter):
             data.pop("organization")
         )
 
-        bill = data.pop("bill")
-        if bill and bill.startswith("~"):
-            # unpack psuedo id and apply filter in case there are any that alter it
-            bill = get_pseudo_id(bill)
-            self.bill_importer.apply_transformers(bill)
-            bill = _make_pseudo_id(**bill)
+        data["bill_id"] = self._resolve_bill_id(data.pop("bill"))
 
-        data["bill_id"] = self.bill_importer.resolve_json_id(bill)
+        # multiple bill ids
+        data["bill_ids"] = [
+            self._resolve_bill_id(bid) for bid in data.pop("related_bill_ids")
+        ]
+
         bill_action = data.pop("bill_action")
         if bill_action:
             try:
@@ -106,14 +113,14 @@ class VoteEventImporter(BaseImporter):
             except BillAction.DoesNotExist:
                 self.warning(
                     "could not match VoteEvent to %s %s %s",
-                    bill,
+                    data["bill_id"],
                     bill_action,
                     data["start_date"],
                 )
             except BillAction.MultipleObjectsReturned as e:
                 self.warning(
                     "could not match VoteEvent to %s %s %s: %s",
-                    bill,
+                    data["bill_id"],
                     bill_action,
                     data["start_date"],
                     e,
