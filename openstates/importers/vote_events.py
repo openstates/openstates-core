@@ -87,8 +87,8 @@ class VoteEventImporter(BaseImporter):
 
         data["bill_id"] = self._resolve_bill_id(data.pop("bill"))
 
-        # multiple bill ids
-        data["bill_ids"] = [
+        # multiple bill ids -- doesn't work yet because we need to rig to use bills.set()
+        data["bills"] = [
             self._resolve_bill_id(bid) for bid in data.pop("related_bill_ids")
         ]
 

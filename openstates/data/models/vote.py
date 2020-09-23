@@ -38,6 +38,7 @@ class VoteEvent(OCDBase):
         # if a bill was linked, the vote isn't meaningful without it
         on_delete=models.CASCADE,
     )
+    bills = models.ManyToManyField(Bill, related_name="multi_bill_votes",)
     bill_action = models.OneToOneField(
         BillAction,
         related_name="vote",
