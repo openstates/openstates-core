@@ -41,14 +41,8 @@ CONTACT_TYPES = _keys(CONTACT_TYPE_CHOICES)
 
 
 JURISDICTION_CLASSIFICATION_CHOICES = (
-    ("government", "Government"),
-    ("legislature", "Legislature"),
-    ("executive", "Executive"),
-    ("school", "School System"),
-    ("park", "Park District"),
-    ("sewer", "Sewer District"),
-    ("forest", "Forest Preserve District"),
-    ("transit_authority", "Transit Authority"),
+    ("state", "State"),
+    ("municipality", "Municipality"),
 )
 JURISDICTION_CLASSIFICATIONS = _keys(JURISDICTION_CLASSIFICATION_CHOICES)
 
@@ -64,11 +58,7 @@ ORGANIZATION_CLASSIFICATION_CHOICES = (
     ("lower", "Lower Chamber"),
     ("party", "Party"),
     ("committee", "Committee"),
-    ("commission", "Commission"),
-    ("corporation", "Corporation"),
-    ("agency", "Agency"),
-    ("department", "Department"),
-    ("judiciary", "Judiciary"),
+    ("government", "Government"),
 )
 ORGANIZATION_CLASSIFICATIONS = _keys(ORGANIZATION_CLASSIFICATION_CHOICES)
 
