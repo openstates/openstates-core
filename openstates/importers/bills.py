@@ -58,8 +58,8 @@ class BillImporter(BaseImporter):
             "legislative_session_id": bill["legislative_session_id"],
             "identifier": bill["identifier"],
         }
-        if "from_organization_id" in bill:
-            spec["from_organization_id"] = bill["from_organization_id"]
+        # bills should be unique per session + identifier, no need to use organization
+        #   (note: this used to be different, but allowed duplicates)
 
         return self.model_class.objects.prefetch_related(
             "actions__related_entities", "versions__links", "documents__links"
