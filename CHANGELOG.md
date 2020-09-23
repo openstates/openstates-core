@@ -1,5 +1,9 @@
 # Changelog
 
+## 5.1 
+
+* make bill import less likely to allow duplicates by not checking chamber, just using session & id
+
 ## 5.0.3 - September 21 2020
 
 * fix Jurisdiction creation classification

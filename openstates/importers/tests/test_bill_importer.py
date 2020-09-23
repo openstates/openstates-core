@@ -11,6 +11,7 @@ from openstates.data.models import (
 )
 from openstates.utils.transformers import fix_bill_id
 from openstates.utils.generic import _make_pseudo_id
+from openstates.exceptions import DuplicateItemError
 
 
 def create_jurisdiction():
@@ -163,6 +164,21 @@ def test_bill_chamber_param():
     BillImporter("jid").import_data([bill.as_dict()])
 
     assert Bill.objects.get().from_organization_id == org.id
+
+
+@pytest.mark.django_db
+def test_duplicate_bill_different_chamber():
+    create_jurisdiction()
+    create_org()
+    Organization.objects.create(
+        id="upper-id", name="Senate", classification="upper", jurisdiction_id="jid"
+    )
+
+    b1 = ScrapeBill("HB 1", "1900", "Axe & Tack Tax Act", chamber="lower")
+    b2 = ScrapeBill("HB 1", "1900", "Axe & Tack Tax Act", chamber="upper")
+
+    with pytest.raises(DuplicateItemError):
+        BillImporter("jid").import_data([b1.as_dict(), b2.as_dict()])
 
 
 @pytest.mark.django_db
