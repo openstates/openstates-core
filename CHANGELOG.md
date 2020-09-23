@@ -1,10 +1,11 @@
 # Changelog
 
-## 5.1 
+## 5.1.0 - September 23 2020
 
 * disallow bill duplicates that are in opposite chambers
 * correct issues with jurisdiction and organization enums
-* add enumerations for bill versions and documents
+* schema change: add BillDocument and BillVersion classification options
+* fix Django 3.1 warnings
 
 ## 5.0.3 - September 21 2020
 
