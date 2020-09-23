@@ -42,5 +42,10 @@ schema = {
         "sources": sources,
         "extras": extras,
         "pupa_id": {"type": ["string", "null"], "minLength": 1},
+        # just like bill_identifier, either psuedo-ids or full ocd-bill ids
+        "related_bill_ids": {
+            "items": {"type": "string", "minLength": 1},
+            "type": "array",
+        },
     },
 }

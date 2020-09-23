@@ -47,6 +47,7 @@ class VoteEvent(BaseModel, SourceMixin):
         self.organization = pseudo_organization(organization, chamber, "legislature")
         self.votes = []
         self.counts = []
+        self.related_bill_ids = []
 
     def __str__(self):
         return "{0} - {1} - {2}".format(
@@ -74,6 +75,22 @@ class VoteEvent(BaseModel, SourceMixin):
             }
             self.bill = _make_pseudo_id(**kwargs)
             self.bill_identifier = bill_or_identifier
+
+    def add_bill(self, bill_or_identifier):
+        if self.bill:
+            raise ValueError(
+                "can not use add_bill when setting a singular bill as well"
+            )
+        if not bill_or_identifier:
+            raise ValueError("must pass a valid Bill object or identifier")
+        elif isinstance(bill_or_identifier, Bill):
+            self.related_bill_ids.append(bill_or_identifier._id)
+        else:
+            kwargs = {
+                "identifier": bill_or_identifier,
+                "legislative_session__identifier": self.legislative_session,
+            }
+            self.related_bill_ids.append(_make_pseudo_id(**kwargs))
 
     def vote(self, option, voter, *, note=""):
         self.votes.append(
