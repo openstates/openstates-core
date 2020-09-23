@@ -1,4 +1,3 @@
-import re
 import pytest
 from openstates.scrape import Bill as ScrapeBill
 from openstates.importers import BillImporter
@@ -10,6 +9,7 @@ from openstates.data.models import (
     Division,
     Bill,
 )
+from openstates.utils.transformers import fix_bill_id
 from openstates.utils.generic import _make_pseudo_id
 
 
@@ -403,13 +403,13 @@ def test_fix_bill_id():
     create_org()
 
     bill = ScrapeBill(
-        "HB1", "1900", "Test Bill ID", classification="bill", chamber="lower"
+        "hb1", "1900", "Test Bill ID", classification="bill", chamber="lower"
     )
 
     from openstates.settings import IMPORT_TRANSFORMERS
 
     IMPORT_TRANSFORMERS["bill"] = {
-        "identifier": lambda x: re.sub(r"([A-Z]*)\s*0*([-\d]+)", r"\1 \2", x, 1)
+        "identifier": fix_bill_id,
     }
     bi = BillImporter("jid")
     bi.import_data([bill.as_dict()])

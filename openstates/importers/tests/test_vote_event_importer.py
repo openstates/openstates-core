@@ -1,4 +1,3 @@
-import re
 import pytest
 from openstates.scrape import VoteEvent as ScrapeVoteEvent, Bill as ScrapeBill
 from openstates.importers import VoteEventImporter, BillImporter
@@ -11,6 +10,7 @@ from openstates.data.models import (
     LegislativeSession,
     Bill,
 )
+from openstates.utils.transformers import fix_bill_id
 
 
 class DumbMockImporter(object):
@@ -506,7 +506,7 @@ def test_fix_bill_id():
     from openstates.settings import IMPORT_TRANSFORMERS
 
     IMPORT_TRANSFORMERS["bill"] = {
-        "identifier": lambda x: re.sub(r"([A-Z]*)\s*0*([-\d]+)", r"\1 \2", x, 1)
+        "identifier": fix_bill_id,
     }
 
     bi = BillImporter("jid")
