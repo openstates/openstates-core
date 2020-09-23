@@ -208,6 +208,7 @@ class EventAgendaMedia(EventMediaBase):
     agenda_item = models.ForeignKey(
         EventAgendaItem, related_name="media", on_delete=models.CASCADE
     )
+    classification = models.CharField(max_length=100, blank=True, default="")
 
     def __str__(self):
         return "{0} for {1}".format(self.note, self.agenda_item)
