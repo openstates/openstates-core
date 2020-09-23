@@ -16,6 +16,7 @@ class Migration(migrations.Migration):
             field=models.CharField(
                 blank=True,
                 choices=[
+                    ("", "Unknown"),
                     ("fiscal-note", "Fiscal Note"),
                     ("committee-report", "Committee Report"),
                     ("summary", "Summary"),
@@ -33,6 +34,7 @@ class Migration(migrations.Migration):
             field=models.CharField(
                 blank=True,
                 choices=[
+                    ("", "Unknown"),
                     ("filed", "Filed"),
                     ("introduced", "Introduced"),
                     ("amendment", "Amendment"),

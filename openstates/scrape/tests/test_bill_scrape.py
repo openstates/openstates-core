@@ -188,12 +188,14 @@ def test_versions():
         note="Final Version",
         date="2013-04",
         on_duplicate="error",
+        classification="filed",
     )
     b.add_version_link(
         url="http://pault.ag/foo",
         note="Final Version",
         date="2013-04",
         on_duplicate="error",
+        classification="filed",
     )
     b.validate()
     assert len(b.versions) == 1
@@ -213,6 +215,7 @@ def test_versions():
         url="http://pault.ag/foo",
         note="Final Version",
         date="2013-04",
+        classification="filed",
         on_duplicate="ignore",
     )
     assert len(b.versions) == 1

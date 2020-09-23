@@ -339,7 +339,15 @@ class OtherNameMixin(object):
 
 class AssociatedLinkMixin(object):
     def _add_associated_link(
-        self, collection, note, url, *, media_type, on_duplicate="warn", date=""
+        self,
+        collection,
+        note,
+        url,
+        *,
+        media_type,
+        on_duplicate="warn",
+        date="",
+        classification="",
     ):
         if on_duplicate not in ["error", "ignore", "warn"]:
             raise ScrapeValueError("on_duplicate must be 'warn', 'error' or 'ignore'")
@@ -349,7 +357,12 @@ class AssociatedLinkMixin(object):
         except AttributeError:
             associated = self[collection]
 
-        ver = {"note": note, "links": [], "date": date}
+        ver = {
+            "note": note,
+            "links": [],
+            "date": date,
+            "classification": classification,
+        }
 
         # keep a list of the links we've seen, we need to iterate over whole list on each add
         # unfortunately this means adds are O(n)
@@ -360,7 +373,9 @@ class AssociatedLinkMixin(object):
             for link in item["links"]:
                 seen_links.add(link["url"])
 
-            if all(ver.get(x) == item.get(x) for x in ["note", "date"]):
+            if all(
+                ver.get(x) == item.get(x) for x in ["note", "date", "classification"]
+            ):
                 matches = matches + 1
                 ver = item
 

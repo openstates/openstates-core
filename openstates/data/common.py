@@ -160,6 +160,7 @@ VOTE_RESULT_CHOICES = (("pass", "Pass"), ("fail", "Fail"))
 VOTE_RESULTS = _keys(VOTE_RESULT_CHOICES)
 
 BILL_VERSION_CHOICES = (
+    ("", "Unknown"),
     ("filed", "Filed"),
     ("introduced", "Introduced"),
     ("amendment", "Amendment"),
@@ -170,6 +171,7 @@ BILL_VERSION_CHOICES = (
 BILL_VERSION_CLASSIFICATIONS = _keys(BILL_VERSION_CHOICES)
 
 BILL_DOCUMENT_CHOICES = (
+    ("", "Unknown"),
     ("fiscal-note", "Fiscal Note"),
     ("committee-report", "Committee Report"),
     ("summary", "Summary"),

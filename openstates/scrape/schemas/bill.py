@@ -31,7 +31,7 @@ versions["items"]["properties"]["classification"][
     "enum"
 ] = common.BILL_VERSION_CLASSIFICATIONS
 documents = copy.deepcopy(versions_or_documents)
-versions["items"]["properties"]["classification"][
+documents["items"]["properties"]["classification"][
     "enum"
 ] = common.BILL_DOCUMENT_CLASSIFICATIONS
 
