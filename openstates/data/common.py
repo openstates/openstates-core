@@ -159,11 +159,31 @@ VOTE_OPTIONS = _keys(VOTE_OPTION_CHOICES)
 VOTE_RESULT_CHOICES = (("pass", "Pass"), ("fail", "Fail"))
 VOTE_RESULTS = _keys(VOTE_RESULT_CHOICES)
 
+BILL_VERSION_CHOICES = (
+    ("filed", "Filed"),
+    ("introduced", "Introduced"),
+    ("amendment", "Amendment"),
+    ("substituted", "Substituted"),
+    ("enrolled", "Enrolled"),
+    ("became-law", "Became Law"),
+)
+BILL_VERSION_CLASSIFICATIONS = _keys(BILL_VERSION_CHOICES)
+
+BILL_DOCUMENT_CHOICES = (
+    ("fiscal-note", "Fiscal Note"),
+    ("committee-report", "Committee Report"),
+    ("summary", "Summary"),
+    ("digest", "Digest"),
+    ("veto-message", "Veto Message"),
+    ("analysis", "Analysis"),
+    ("law", "Law"),
+)
+BILL_DOCUMENT_CLASSIFICATIONS = _keys(BILL_DOCUMENT_CHOICES)
+
 EVENT_MEDIA_CLASSIFICATION_CHOICES = (
     ("audio recording", "Audio Recording"),
     ("video recording", "Video Recording"),
 )
-
 EVENT_MEDIA_CLASSIFICATIONS = _keys(EVENT_MEDIA_CLASSIFICATION_CHOICES)
 
 EVENT_DOCUMENT_CLASSIFICATION_CHOICES = (
@@ -172,5 +192,4 @@ EVENT_DOCUMENT_CLASSIFICATION_CHOICES = (
     ("transcript", "Transcript"),
     ("testimony", "Testimony"),
 )
-
 EVENT_DOCUMENT_CLASSIFICATIONS = _keys(EVENT_DOCUMENT_CLASSIFICATION_CHOICES)

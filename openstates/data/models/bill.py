@@ -175,6 +175,9 @@ class BillDocument(RelatedBase):
     bill = models.ForeignKey(Bill, related_name="documents", on_delete=models.CASCADE)
     note = models.CharField(max_length=300)
     date = models.CharField(max_length=10)  # YYYY[-MM[-DD]]
+    classification = models.CharField(
+        max_length=100, choices=common.BILL_DOCUMENT_CHOICES, blank=True
+    )
     extras = JSONField(default=dict, blank=True)
 
     def __str__(self):
@@ -188,6 +191,9 @@ class BillVersion(RelatedBase):
     bill = models.ForeignKey(Bill, related_name="versions", on_delete=models.CASCADE)
     note = models.CharField(max_length=300)
     date = models.CharField(max_length=10)  # YYYY[-MM[-DD]]
+    classification = models.CharField(
+        max_length=100, choices=common.BILL_VERSION_CHOICES, blank=True
+    )
     extras = JSONField(default=dict, blank=True)
 
     def __str__(self):

@@ -1,7 +1,7 @@
 """
     Schema for bill objects.
 """
-
+import copy
 from .common import sources, extras, fuzzy_date_blank, fuzzy_datetime
 from ...data import common
 
@@ -10,6 +10,7 @@ versions_or_documents = {
         "properties": {
             "note": {"type": "string", "minLength": 1},
             "date": fuzzy_date_blank,
+            "classification": {"type": "string"},
             "links": {
                 "items": {
                     "properties": {
@@ -25,6 +26,14 @@ versions_or_documents = {
     },
     "type": "array",
 }
+versions = copy.deepcopy(versions_or_documents)
+versions["items"]["properties"]["classification"][
+    "enum"
+] = common.BILL_VERSION_CLASSIFICATIONS
+documents = copy.deepcopy(versions_or_documents)
+versions["items"]["properties"]["classification"][
+    "enum"
+] = common.BILL_DOCUMENT_CLASSIFICATIONS
 
 schema = {
     "type": "object",
@@ -134,8 +143,8 @@ schema = {
             },
             "type": "array",
         },
-        "versions": versions_or_documents,
-        "documents": versions_or_documents,
+        "versions": versions,
+        "documents": documents,
         "sources": sources,
         "extras": extras,
     },

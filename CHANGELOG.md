@@ -2,7 +2,9 @@
 
 ## 5.1 
 
-* make bill import less likely to allow duplicates by not checking chamber, just using session & id
+* disallow bill duplicates that are in opposite chambers
+* correct issues with jurisdiction and organization enums
+* add enumerations for bill versions and documents
 
 ## 5.0.3 - September 21 2020
 

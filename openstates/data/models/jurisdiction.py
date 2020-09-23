@@ -24,7 +24,7 @@ class Jurisdiction(OCDBase):
     classification = models.CharField(
         max_length=50,
         choices=JURISDICTION_CLASSIFICATION_CHOICES,
-        default="government",
+        default="state",
         db_index=True,
         help_text="The type of Jurisdiction being defined.",
     )
