@@ -28,6 +28,11 @@ MIMETYPES = {
 }
 
 
+def _cleanup(text):
+    # strip nulls
+    return text.replace("\0", "")
+
+
 def download(version):
     abbr = jid_to_abbr(version["jurisdiction_id"])
     ext = MIMETYPES[version["media_type"]]
@@ -109,11 +114,13 @@ def update_bill(bill):
             data = scraper.get(link.url).content
         except Exception:
             continue
-        # TODO: clean up whitespace
         try:
             raw_text = func(data, metadata)
         except Exception as e:
             click.secho(f"exception processing {metadata['url']}: {e}", fg="red")
+
+        # TODO: clean up whitespace
+        raw_text = _cleanup(raw_text)
 
         if raw_text:
             is_error = False
