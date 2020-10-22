@@ -212,6 +212,12 @@ class Person(OCDBase):
         max_length=2000,
         help_text="A URL leading to an image that identifies the Person visually.",
     )
+    email = models.CharField(
+        max_length=300,
+        help_text="The official email address of the Person.",
+        blank=True,
+        default="",
+    )
     gender = models.CharField(max_length=100, blank=True, help_text="A Person's gender")
     biography = models.TextField(
         blank=True, help_text="An extended account of a Person's life."
@@ -320,7 +326,7 @@ class PersonContactDetail(RelatedBase):
     )
     value = models.CharField(
         max_length=300,
-        help_text="The content of the Contact information like a phone number or email address.",
+        help_text="The content of the Contact information like a phone number or address.",
     )
     note = models.CharField(
         max_length=300,
