@@ -1,5 +1,9 @@
 # Changelog
 
+## 5.2.0 - October 28 2020
+
+* add top-level email field to Person
+
 ## 5.1.0 - September 23 2020
 
 * disallow bill duplicates that are in opposite chambers
