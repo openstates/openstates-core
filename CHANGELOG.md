@@ -1,5 +1,14 @@
 # Changelog
 
+## 5.2.1 - November 30 2020
+
+* set Django time zone to UTC by default
+* remove unused OrderVoteEvent class
+
+## 5.2.0 - October 28 2020
+
+* add top-level email field to Person
+
 ## 5.2.0 - October 28 2020
 
 * add top-level email field to Person
