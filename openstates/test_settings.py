@@ -18,6 +18,7 @@ DATABASES = {
         "HOST": os.environ.get("POSTGRES_HOST", "localhost"),
     }
 }
+TIME_ZONE = "UTC"
 DATABASE_URL = os.environ.get("OVERRIDE_DATABASE_URL")
 if DATABASE_URL:
     DATABASES = {"default": dj_database_url.parse(DATABASE_URL)}
