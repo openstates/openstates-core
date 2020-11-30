@@ -3,7 +3,7 @@ Release Process:
 * bump version in pyproject.toml
 * update changelog
 * tag & push tag
-* poetry build --publish
+* poetry publish --build
 
 Post-Release updates:
 
