@@ -109,7 +109,8 @@ def generate_session_report(session):
     }
 
     voteevents = VoteEvent.objects.filter(legislative_session_id=session)
-    queryset = voteevents.annotate(
+    # explicitly remove ordering pre-Django 3.1
+    queryset = voteevents.order_by().annotate(
         yes_sum=Count("pk", filter=Q(votes__option="yes")),
         no_sum=Count("pk", filter=Q(votes__option="no")),
         other_sum=Count("pk", filter=Q(votes__option="other")),

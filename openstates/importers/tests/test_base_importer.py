@@ -2,6 +2,7 @@ import os
 import json
 import shutil
 import tempfile
+import datetime
 import pytest
 from unittest import mock
 from openstates.data.models import (
@@ -162,3 +163,11 @@ def test_invalid_fields_related_item():
 
     with pytest.raises(DataImportError):
         BillImporter("jid").import_data([p1])
+
+
+@pytest.mark.django_db
+def test_automatic_updated_at():
+    create_jurisdiction()
+    difference = Organization.objects.get().updated_at - datetime.datetime.utcnow()
+    # updated_at should be in UTC, a bit of clock drift notwithstanding
+    assert abs(difference) < datetime.timedelta(minutes=5)

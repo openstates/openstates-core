@@ -20,6 +20,7 @@ def init_django():  # pragma: no cover
             "openstates.reports",
         ),
         DATABASES=DATABASES,
+        TIME_ZONE="UTC",
         MIDDLEWARE_CLASSES=(),
     )
     django.setup()
