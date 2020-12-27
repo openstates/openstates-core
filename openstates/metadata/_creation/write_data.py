@@ -71,11 +71,11 @@ def make_districts(parent_id, chamber_type, num, seats, division_ids):
 
 
 if __name__ == "__main__":
-    settings = yaml.load(open("creation/settings.yml"))
-    jurisdictions = csv.DictReader(open("creation/jurisdictions.csv"))
+    settings = yaml.load(open("metadata/_creation/settings.yml"))
+    jurisdictions = csv.DictReader(open("metadata/_creation/jurisdictions.csv"))
     jurisdictions_by_name = {j["state"]: j for j in jurisdictions}
     org_ids = defaultdict(dict)
-    for org in csv.DictReader(open("creation/orgs.csv")):
+    for org in csv.DictReader(open("metadata/_creation/orgs.csv")):
         if org["jurisdiction_id"]:
             org_ids[org["jurisdiction_id"]][org["classification"]] = org["id"]
 
