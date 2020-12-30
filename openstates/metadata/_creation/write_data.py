@@ -148,7 +148,6 @@ if __name__ == "__main__":
                 """
 
         # ensure we got it all
-        obj.pop("vacancies", None)
         if obj:
             raise Exception(obj)
 

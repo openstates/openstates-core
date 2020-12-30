@@ -28,22 +28,6 @@ ct:
   legislature_name: Connecticut General Assembly
   lower_seats: 151
   upper_seats: 36
-  vacancies:
-    - chamber: lower
-      district: 39
-      vacant_until: 2021-01-01
-    - chamber: lower
-      district: 99
-      vacant_until: 2021-01-01
-    - chamber: upper
-      district: 3
-      vacant_until: 2021-01-01
-    - chamber: upper
-      district: 5
-      vacant_until: 2021-01-01
-    - chamber: upper
-      district: 6
-      vacant_until: 2021-01-01
 dc:
   legislature_name: Council of the District of Columbia
   legislature_seats: {'Ward 1': 1, 'Ward 2': 1, 'Ward 3': 1, 'Ward 4': 1, 'Ward 5': 1, 'Ward 6': 1, 'Ward 7': 1, 'Ward 8': 1, 'Chairman': 1, 'At-Large': 4}
@@ -87,10 +71,6 @@ il:
   legislature_name: Illinois General Assembly
   lower_seats: 118
   upper_seats: 59
-  vacancies:
-    - chamber: upper
-      district: 11
-      vacant_until: 2020-05-01
 in:
   legislature_name: Indiana General Assembly
   lower_seats: 100
@@ -313,22 +293,6 @@ ma:
     "9th Suffolk": "ocd-division/country:us/state:ma/sldl:9th_suffolk"
     "9th Worcester": "ocd-division/country:us/state:ma/sldl:9th_worcester"
     "Barnstable, Dukes and Nantucket": "ocd-division/country:us/state:ma/sldl:barnstable_dukes_and_nantucket"
-  vacancies:
-    - chamber: upper
-      district: Plymouth and Barnstable
-      vacant_until: 2020-05-01
-    - chamber: upper
-      district: Second Hampden and Hampshire
-      vacant_until: 2020-05-01
-    - chamber: lower
-      district: 3rd Bristol
-      vacant_until: 2020-05-01
-    - chamber: lower
-      district: 32nd Middlesex
-      vacant_until: 2020-05-01
-    - chamber: lower
-      district: 37th Middlesex
-      vacant_until: 2020-05-01
 md:
   legislature_name: Maryland General Assembly
   lower_seats: {'1A': 1, '1B': 1, '1C': 1, '2A': 2, '2B': 1, '3A': 2, '3B': 1, '4': 3, '5': 3, '6': 3, '7': 3, '8': 3, '9A': 2, '9B': 1, '10': 3, '11': 3, '12': 3, '13': 3, '14': 3, '15': 3, '16': 3, '17': 3, '18': 3, '19': 3, '20': 3, '21': 3, '22': 3, '23A': 1, '23B': 2, '24': 3, '25': 3, '26': 3, '27A': 1, '27B': 1, '27C': 1, '28': 3, '29A': 1, '29B': 1, '29C': 1, '30A': 2, '30B': 1, '31A': 1, '31B': 2, '32': 3, '33': 3, '34A': 2, '34B': 1, '35A': 1, '35B': 2, '36': 3, '37A': 1, '37B': 2, '38A': 1, '38B': 1, '38C': 1, '39': 3, '40': 3, '41': 3, '42A': 1, '42B': 2, '43': 3, '44A': 1, '44B': 2, '45': 3, '46': 3, '47A': 2, '47B': 1}
@@ -354,10 +318,6 @@ mo:
   legislature_name: Missouri General Assembly
   lower_seats: 163
   upper_seats: 34
-  vacancies:
-    - chamber: lower
-      district: 158
-      vacant_until: 2021-01-01
 ms:
   legislature_name: Mississippi Legislature
   lower_seats: 122
@@ -366,10 +326,6 @@ nc:
   legislature_name: North Carolina General Assembly
   lower_seats: 120
   upper_seats: 50
-  vacancies:
-      - chamber: upper
-        district: 7
-        vacant_until: 2021-01-01
 nd:
   legislature_name: North Dakota Legislative Assembly
   lower_seats: {'1': 2, '2': 2, '3': 2, '4': 2, '5': 2, '6': 2, '7': 2, '8': 2, '9': 2, '10': 2, '11': 2, '12': 2, '13': 2, '14': 2, '15': 2, '16': 2, '17': 2, '18': 2, '19': 2, '20': 2, '21': 2, '22': 2, '23': 2, '24': 2, '25': 2, '26': 2, '27': 2, '28': 2, '29': 2, '30': 2, '31': 2, '32': 2, '33': 2, '34': 2, '35': 2, '36': 2, '37': 2, '38': 2, '39': 2, '40': 2, '41': 2, '42': 2, '43': 2, '44': 2, '45': 2, '46': 2, '47': 2}
@@ -420,10 +376,6 @@ pa:
   legislature_name: Pennsylvania General Assembly
   lower_seats: 203
   upper_seats: 50
-  vacancies:
-    - chamber: upper
-      district: 48
-      vacant_until: 2021-01-01
 pr:
   legislature_name: Legislative Assembly of Puerto Rico
   lower_seats: {'1': 1, '2': 1, '3': 1, '4': 1, '5': 1, '6': 1, '7': 1, '8': 1, '9': 1, '10': 1, '11': 1, '12': 1, '13': 1, '14': 1, '15': 1, '16': 1, '17': 1, '18': 1, '19': 1, '20': 1, '21': 1, '22': 1, '23': 1, '24': 1, '25': 1, '26': 1, '27': 1, '28': 1, '29': 1, '30': 1, '31': 1, '32': 1, '33': 1, '34': 1, '35': 1, '36': 1, '37': 1, '38': 1, '39': 1, '40': 1, 'At-Large': 11}
