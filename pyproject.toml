@@ -20,6 +20,8 @@ jsonschema = "^3.2.0"
 pytz = "^2019.3"
 click = "^7.1.1"
 attrs = "^20.2.0"
+us = "^2.0.2"
+PyYAML = "^5.3.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.4.1"
@@ -28,6 +30,7 @@ pytest-django = "^3.8.0"
 coveralls = "^1.11.1"
 flake8 = "^3.7.9"
 coverage = {extras = ["toml"], version = "^5.0.4"}
+black = "^20.8b1"
 
 [tool.coverage.run]
 omit = [
