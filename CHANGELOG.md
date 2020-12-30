@@ -1,5 +1,10 @@
 # Changelog
 
+## 5.3.0 - December 30 2020
+
+* update MA district metadata, openstates-core#18
+* AZ & NM timezone updates from upstream python-us
+
 ## 5.2.1 - November 30 2020
 
 * set Django time zone to UTC by default
