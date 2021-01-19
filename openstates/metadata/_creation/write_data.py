@@ -5,6 +5,26 @@ import yaml
 from collections import defaultdict
 
 
+def make_federal_data():
+    _US = us.states.State(
+        **{
+            "name": "United States",
+            "abbr": "US",
+            "fips": 00,
+            "is_territory": False,
+            "is_obsolete": False,
+            "is_contiguous": False,
+            "is_continental": False,
+            "statehood_year": None,
+            "capital": "Washington DC",
+            "capital_tz": "America/New_York",
+            "time_zones": ["America/New_York"],
+            "ap_abbr": None,
+        }
+    )
+    return _US
+    
+    
 def calc_seats(data):
     chamber_seats = {}
     for key in ("upper", "lower", "legislature"):
@@ -68,10 +88,11 @@ def make_districts(parent_id, chamber_type, num, seats, division_ids):
             )
             + "]"
         )
-
+    
 
 if __name__ == "__main__":
-    settings = yaml.load(open("metadata/_creation/settings.yml"))
+    _US = make_federal_data()
+    settings = yaml.load(open("metadata/_creation/settings.yml"), Loader=yaml.FullLoader)
     jurisdictions = csv.DictReader(open("metadata/_creation/jurisdictions.csv"))
     jurisdictions_by_name = {j["state"]: j for j in jurisdictions}
     org_ids = defaultdict(dict)
@@ -79,7 +100,7 @@ if __name__ == "__main__":
         if org["jurisdiction_id"]:
             org_ids[org["jurisdiction_id"]][org["classification"]] = org["id"]
 
-    for state in us.STATES + [us.states.lookup("PR")]:
+    for state in us.STATES + [us.states.lookup("PR")] + [_US]:
 
         obj = settings[state.abbr.lower()]
         j = jurisdictions_by_name[state.name]

@@ -51,3 +51,4 @@ ocd-jurisdiction/country:us/territory:pr/government,Puerto Rico,http://www.oslpr
 ocd-jurisdiction/country:us/state:ca/government,California,http://www.legislature.ca.gov/,ocd-division/country:us/state:ca
 ocd-jurisdiction/country:us/state:oh/government,Ohio,http://www.legislature.state.oh.us/,ocd-division/country:us/state:oh
 ocd-jurisdiction/country:us/state:ma/government,Massachusetts,http://mass.gov,ocd-division/country:us/state:ma
+ocd-jurisdiction/country:us/state:us/government,United States,http://us.gov,ocd-division/country:us/state:us

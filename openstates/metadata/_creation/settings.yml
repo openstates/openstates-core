@@ -411,6 +411,10 @@ tx:
   legislature_name: Texas Legislature
   lower_seats: 150
   upper_seats: 31
+us:
+  legislature_name: US Congress
+  lower_seats: 435
+  upper_seats: 100
 ut:
   legislature_name: Utah State Legislature
   lower_seats: 75
