@@ -10,7 +10,7 @@ def make_federal_data():
         **{
             "name": "United States",
             "abbr": "US",
-            "fips": 00,
+            "fips": "00",
             "is_territory": False,
             "is_obsolete": False,
             "is_contiguous": False,
@@ -106,7 +106,15 @@ if __name__ == "__main__":
         j = jurisdictions_by_name[state.name]
 
         leg_name = obj.pop("legislature_name")
-        leg_org_id = org_ids[j["jurisdiction_id"]]["legislature"]
+        try:
+            leg_org_id = org_ids[j["jurisdiction_id"]]["legislature"]
+        except KeyError: 
+            # for the ones that didn't have a leg org id before, need a consistent id here
+            # we'll just use the state name + "executive"
+            namespace = uuid.UUID("877e004a-9993-5b24-8339-f83d10658258")
+            leg_org_id = "ocd-organization/" + str(
+                uuid.uuid5(namespace, state.name + "legislature")
+            )
         try:
             exec_org_id = org_ids[j["jurisdiction_id"]]["executive"]
         except KeyError:
@@ -136,8 +144,24 @@ if __name__ == "__main__":
                 j["division_id"], "upper", num_upper_seats, upper_seats, upper_div_ids
             )
 
-            lower_org_id = org_ids[j["jurisdiction_id"]]["lower"]
-            upper_org_id = org_ids[j["jurisdiction_id"]]["upper"]
+            try:
+                lower_org_id = org_ids[j["jurisdiction_id"]]["lower"]
+            except KeyError:
+                # for the ones that didn't have an org id before, need a consistent id here
+                # we'll just use the state name + "lower"
+                namespace = uuid.UUID("877e004a-9993-5b24-8339-f83d10658258")
+                lower_org_id = "ocd-organization/" + str(
+                    uuid.uuid5(namespace, state.name + "lower")
+                )
+            try:
+                upper_org_id = org_ids[j["jurisdiction_id"]]["upper"]
+            except KeyError:
+                # for the ones that didn't have an org id before, need a consistent id here
+                # we'll just use the state name + "upper"
+                namespace = uuid.UUID("877e004a-9993-5b24-8339-f83d10658258")
+                exec_org_id = "ocd-organization/" + str(
+                    uuid.uuid5(namespace, state.name + "upper")
+                )
 
             if "District" in lower_ds + upper_ds:
                 extra_import += ", District"
