@@ -43,6 +43,7 @@ from .sc import SC
 from .sd import SD
 from .tn import TN
 from .tx import TX
+from .us import US
 from .ut import UT
 from .va import VA
 from .vt import VT
@@ -98,6 +99,7 @@ STATES = [
     SD,
     TN,
     TX,
+    US,
     UT,
     VA,
     VT,
