@@ -159,7 +159,7 @@ if __name__ == "__main__":
                 # for the ones that didn't have an org id before, need a consistent id here
                 # we'll just use the state name + "upper"
                 namespace = uuid.UUID("877e004a-9993-5b24-8339-f83d10658258")
-                exec_org_id = "ocd-organization/" + str(
+                upper_org_id = "ocd-organization/" + str(
                     uuid.uuid5(namespace, state.name + "upper")
                 )
 
