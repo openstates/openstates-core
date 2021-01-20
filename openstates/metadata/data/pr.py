@@ -73,7 +73,7 @@ PR = State(
         chamber_type="upper",
         name="Senate",
         organization_id="ocd-organization/c187ea65-5cd6-42fb-b08b-18e487855526",
-        num_seats=30,
+        num_seats=27,
         title="Senator",
         districts=[
             District("I", "upper", "ocd-division/country:us/territory:pr/sldu:1", 2),
