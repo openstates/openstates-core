@@ -1,5 +1,9 @@
 # Changelog
 
+## 5.4.0 - January 20 2020
+
+* update PR senate at-large, 11 senators again
+
 ## 5.3.0 - December 30 2020
 
 * update MA district metadata, openstates-core#18
