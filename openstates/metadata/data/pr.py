@@ -84,7 +84,7 @@ PR = State(
             District("VI", "upper", "ocd-division/country:us/territory:pr/sldu:6", 2),
             District("VII", "upper", "ocd-division/country:us/territory:pr/sldu:7", 2),
             District("VIII", "upper", "ocd-division/country:us/territory:pr/sldu:8", 2),
-            District("At-Large", "upper", "ocd-division/country:us/territory:pr", 14),
+            District("At-Large", "upper", "ocd-division/country:us/territory:pr", 11),
         ],
     ),
 )
