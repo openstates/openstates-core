@@ -48,9 +48,6 @@ def get_jurisdiction(module_name):
     # get the jurisdiction object
     module = importlib.import_module(module_name)
     for obj in module.__dict__.values():
-    print(obj)
-    print(module)
-    isinstance(obj, type)
         # ensure we're dealing with a subclass of Jurisdiction
         if (
             isinstance(obj, type)
