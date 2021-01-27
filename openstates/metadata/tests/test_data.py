@@ -16,7 +16,7 @@ def test_basics():
             assert state.lower
             assert state.upper
     assert unicam_count == 2
-    assert bicam_count == 50
+    assert bicam_count == 51
 
 
 def test_district_numbers():
