@@ -16,7 +16,7 @@ US = State(
     url="http://congress.gov",
 
                 lower=Chamber(chamber_type="lower", name="House", organization_id="ocd-organization/24af4233-d9b5-5933-91b2-51d29f721037",
-                     num_seats=435, title="Representative", districts=simple_numbered_districts('ocd-division/country:us/state:us', 'lower', 435)),
+                        num_seats=435, title="Representative", districts=simple_numbered_districts('ocd-division/country:us/state:us', 'lower', 435)),
                 upper=Chamber(chamber_type="upper", name="Senate", organization_id="ocd-organization/072da2ce-df81-52c3-9cc8-323e208cdf10",
-                     num_seats=100, title="Senator", districts=simple_numbered_districts('ocd-division/country:us/state:us', 'upper', 100),),
+                        num_seats=100, title="Senator", districts=simple_numbered_districts('ocd-division/country:us/state:us', 'upper', 100),),
 )
