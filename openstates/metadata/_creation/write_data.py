@@ -23,8 +23,8 @@ def make_federal_data():
         }
     )
     return _US
-    
-    
+
+
 def calc_seats(data):
     chamber_seats = {}
     for key in ("upper", "lower", "legislature"):
@@ -88,7 +88,7 @@ def make_districts(parent_id, chamber_type, num, seats, division_ids):
             )
             + "]"
         )
-    
+
 
 if __name__ == "__main__":
     _US = make_federal_data()
@@ -108,7 +108,7 @@ if __name__ == "__main__":
         leg_name = obj.pop("legislature_name")
         try:
             leg_org_id = org_ids[j["jurisdiction_id"]]["legislature"]
-        except KeyError: 
+        except KeyError:
             # for the ones that didn't have a leg org id before, need a consistent id here
             # we'll just use the state name + "executive"
             namespace = uuid.UUID("877e004a-9993-5b24-8339-f83d10658258")
