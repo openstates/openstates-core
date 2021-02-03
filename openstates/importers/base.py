@@ -66,9 +66,11 @@ def items_differ(jsonitems, dbitems, subfield_dict):
         # if we have an order, we can just check one item
         if order is not None:
             # use original so that pop calls don't affect ordering
-            if _match(dbitem, original_jsonitems[order], keys, subfield_dict):
-                match = order
+            if not _match(dbitem, original_jsonitems[order], keys, subfield_dict):
+                # short circuit if there isn't a match in the right spot
+                return True
 
+        # need to get position of match to remove
         for i, jsonitem in enumerate(jsonitems):
             if _match(dbitem, jsonitem, keys, subfield_dict):
                 match = i
