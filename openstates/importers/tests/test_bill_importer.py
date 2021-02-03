@@ -433,3 +433,36 @@ def test_fix_bill_id():
 
     b = Bill.objects.get()
     assert b.identifier == "HB 1"
+
+
+@pytest.mark.django_db
+def test_bill_duplicate_actions_ordering():
+    create_jurisdiction()
+    create_org()
+
+    def _problem_bill():
+        bill = ScrapeBill(
+            "HB 1",
+            "1900",
+            "Axe & Tack Tax Act",
+            classification="tax bill",
+            chamber="lower",
+        )
+        # two identical actions, and one differs
+        bill.add_action("identical action", "1900-04-01", chamber="lower")
+        bill.add_action("different action", "1900-04-01", chamber="lower")
+        bill.add_action("identical action", "1900-04-01", chamber="lower")
+        return bill
+
+    # import bill
+    bill = _problem_bill()
+    result = BillImporter("jid").import_data([bill.as_dict()])
+    assert result["bill"]["insert"] == 1
+    assert result["bill"]["update"] == 0
+    assert result["bill"]["noop"] == 0
+
+    bill = _problem_bill()
+    result = BillImporter("jid").import_data([bill.as_dict()])
+    assert result["bill"]["insert"] == 0
+    assert result["bill"]["update"] == 0
+    assert result["bill"]["noop"] == 1
