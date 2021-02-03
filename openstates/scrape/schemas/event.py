@@ -102,7 +102,7 @@ schema = {
                         "items": {"type": "string", "minLength": 1},
                         "type": "array",
                     },
-                    "order": {"type": ["string", "null"]},
+                    "order": {"type": "integer"},
                     "subjects": {
                         "items": {"type": "string", "minLength": 1},
                         "type": "array",

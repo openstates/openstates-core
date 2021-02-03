@@ -16,7 +16,7 @@ class EventAgendaItem(dict, AssociatedLinkMixin):
                 "subjects": [],
                 "media": [],
                 "notes": [],
-                "order": str(len(event.agenda)),
+                "order": len(event.agenda),
                 "extras": {},
             }
         )
