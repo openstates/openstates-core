@@ -1,5 +1,10 @@
 # Changelog
 
+## 5.4.1 - February 3 2020
+
+* bugfix for openstates/issues#171 where updated_at is churning
+  when there are two identical actions
+
 ## 5.4.0 - January 20 2020
 
 * update PR senate at-large, 11 senators again
