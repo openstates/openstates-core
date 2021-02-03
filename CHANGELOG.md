@@ -1,5 +1,9 @@
 # Changelog
 
+## 5.5.0 - February 3 2020
+
+* EventAgendaItem.order converted to be an integer (migration required)
+
 ## 5.4.1 - February 3 2020
 
 * bugfix for openstates/issues#171 where updated_at is churning
