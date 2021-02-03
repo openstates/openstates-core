@@ -25,6 +25,23 @@ def omnihash(obj):
         return hash(obj)
 
 
+def _match(dbitem, jsonitem, keys, subfield_dict):
+    # check if all keys (excluding subfields) match
+    for k in keys:
+        if k not in subfield_dict and getattr(dbitem, k) != jsonitem.get(k, None):
+            return False
+
+    # all fields match so far, possibly equal, just check subfields now
+    for k in subfield_dict:
+        jsonsubitems = jsonitem[k]
+        dbsubitems = list(getattr(dbitem, k).all())
+        if items_differ(jsonsubitems, dbsubitems, subfield_dict[k][2]):
+            return False
+
+    # if we got here, item values match
+    return True
+
+
 def items_differ(jsonitems, dbitems, subfield_dict):
     """ check whether or not jsonitems and dbitems differ """
 
@@ -43,30 +60,18 @@ def items_differ(jsonitems, dbitems, subfield_dict):
     # go over dbitems looking for matches
     for dbitem in dbitems:
         order = getattr(dbitem, "order", None)
+
         match = None
+
+        # if we have an order, we can just check one item
+        if order is not None:
+            # use original so that pop calls don't affect ordering
+            if _match(dbitem, original_jsonitems[order], keys, subfield_dict):
+                match = order
+
         for i, jsonitem in enumerate(jsonitems):
-            # check if all keys (excluding subfields) match
-            for k in keys:
-                if k not in subfield_dict and getattr(dbitem, k) != jsonitem.get(
-                    k, None
-                ):
-                    break
-            else:
-                # all fields match so far, possibly equal, just check subfields now
-                for k in subfield_dict:
-                    jsonsubitems = jsonitem[k]
-                    dbsubitems = list(getattr(dbitem, k).all())
-                    if items_differ(jsonsubitems, dbsubitems, subfield_dict[k][2]):
-                        break
-                else:
-                    # if the dbitem sets 'order', then the order matters
-                    if order is not None and int(order) != original_jsonitems.index(
-                        jsonitem
-                    ):
-                        break
-                    # these items are equal, so let's mark it for removal
-                    match = i
-                    break
+            if _match(dbitem, jsonitem, keys, subfield_dict):
+                match = i
 
         if match is not None:
             # item exists in both, remove from jsonitems
