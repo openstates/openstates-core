@@ -31,7 +31,7 @@ def cleanup_list(obj, default):
         obj = [obj]
     elif not isinstance(obj, list):
         obj = list(obj)
-    return obj
+    return sorted(obj)
 
 
 def clean_whitespace(obj):
