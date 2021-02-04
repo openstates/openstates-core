@@ -1,5 +1,9 @@
 # Changelog
 
+## 5.5.1 - February 4 2020
+
+* classifications are now sorted automatically in output JSON
+
 ## 5.5.0 - February 3 2020
 
 * EventAgendaItem.order converted to be an integer (migration required)
