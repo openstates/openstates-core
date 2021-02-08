@@ -1,5 +1,9 @@
 # Changelog
 
+## 5.5.2 - February 8 2020
+
+* subjects are now sorted automatically in output JSON
+
 ## 5.5.1 - February 4 2020
 
 * classifications are now sorted automatically in output JSON
