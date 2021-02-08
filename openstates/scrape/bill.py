@@ -49,6 +49,10 @@ class Bill(SourceMixin, AssociatedLinkMixin, BaseModel):
         self.abstracts = []
         self.versions = []
 
+    def pre_save(self, jurisdiction_id):
+        # ensure subject is sorted for idempotent JSON output
+        self.subject = sorted(self.subject)
+
     def add_action(
         self,
         description,

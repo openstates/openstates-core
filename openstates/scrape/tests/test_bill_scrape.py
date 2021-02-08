@@ -247,3 +247,12 @@ def test_versions():
 def test_str():
     b = toy_bill()
     assert b.identifier in str(b)
+
+
+def test_pre_save():
+    b = toy_bill()
+    b.add_subject("ZZZ")
+    b.add_subject("AAA")
+    b.add_subject("MMM")
+    b.pre_save(None)
+    assert b.subject == ["AAA", "MMM", "ZZZ"]
