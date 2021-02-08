@@ -142,4 +142,5 @@ def test_whitespace_is_stripped():
     assert b.identifier == "HB 11"
     assert b.title == "a short title"
     assert b.sources[0]["url"] == "https://example.com/"
-    assert b.subject == ["one", "two", "three"]
+    # subject got sorted by pre_save
+    assert b.subject == ["one", "three", "two"]

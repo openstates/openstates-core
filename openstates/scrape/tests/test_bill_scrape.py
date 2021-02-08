@@ -53,7 +53,7 @@ def test_bill_type_setting():
         title="the title",
         classification=("two", "items"),
     )
-    assert b.classification == ["two", "items"]
+    assert b.classification == ["items", "two"]
 
 
 def test_basic_invalid_bill():
