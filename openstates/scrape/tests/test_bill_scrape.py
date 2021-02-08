@@ -43,7 +43,8 @@ def test_bill_type_setting():
         title="the title",
         classification=["two", "items"],
     )
-    assert b.classification == ["two", "items"]
+    # will be sorted
+    assert b.classification == ["items", "two"]
 
     # tuple -> list
     b = Bill(
