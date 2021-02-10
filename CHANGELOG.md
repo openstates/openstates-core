@@ -1,5 +1,9 @@
 # Changelog
 
+## 5.5.3 - February 10 2020
+
+* add 'related' as additional bill relation type (openstates/issues#181)
+
 ## 5.5.2 - February 8 2020
 
 * subjects are now sorted automatically in output JSON
