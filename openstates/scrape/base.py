@@ -116,9 +116,9 @@ class Scraper(scrapelib.Scraper):
 
     def save_object(self, obj):
         """
-            Save object to disk as JSON.
+        Save object to disk as JSON.
 
-            Generally shouldn't be called directly.
+        Generally shouldn't be called directly.
         """
         clean_whitespace(obj)
         obj.pre_save(self.jurisdiction.jurisdiction_id)

@@ -10,9 +10,24 @@ class Migration(migrations.Migration):
     ]
 
     operations = [
-        migrations.RemoveField(model_name="billdocumentlink", name="text",),
-        migrations.RemoveField(model_name="billversionlink", name="text",),
-        migrations.RemoveField(model_name="eventagendamedialink", name="text",),
-        migrations.RemoveField(model_name="eventdocumentlink", name="text",),
-        migrations.RemoveField(model_name="eventmedialink", name="text",),
+        migrations.RemoveField(
+            model_name="billdocumentlink",
+            name="text",
+        ),
+        migrations.RemoveField(
+            model_name="billversionlink",
+            name="text",
+        ),
+        migrations.RemoveField(
+            model_name="eventagendamedialink",
+            name="text",
+        ),
+        migrations.RemoveField(
+            model_name="eventdocumentlink",
+            name="text",
+        ),
+        migrations.RemoveField(
+            model_name="eventmedialink",
+            name="text",
+        ),
     ]

@@ -91,7 +91,7 @@ def items_differ(jsonitems, dbitems, subfield_dict):
 
 
 class BaseImporter(object):
-    """ BaseImporter
+    """BaseImporter
 
     Override:
         get_object(data)
@@ -144,17 +144,17 @@ class BaseImporter(object):
 
     def resolve_json_id(self, json_id, allow_no_match=False):
         """
-            Given an id found in scraped JSON, return a DB id for the object.
+        Given an id found in scraped JSON, return a DB id for the object.
 
-            params:
-                json_id:        id from json
-                allow_no_match: just return None if id can't be resolved
+        params:
+            json_id:        id from json
+            allow_no_match: just return None if id can't be resolved
 
-            returns:
-                database id
+        returns:
+            database id
 
-            raises:
-                ValueError if id couldn't be resolved
+        raises:
+            ValueError if id couldn't be resolved
         """
         if not json_id:
             return None
@@ -214,7 +214,7 @@ class BaseImporter(object):
 
     def _prepare_imports(self, dicts):
 
-        """ filters the import stream to remove duplicates
+        """filters the import stream to remove duplicates
 
         also serves as a good place to override if anything special has to be done to the
         order of the import stream (see OrganizationImporter)

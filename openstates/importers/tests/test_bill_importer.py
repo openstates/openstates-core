@@ -77,7 +77,8 @@ def test_full_bill():
         "Jane Smith", classification="lead sponsor", entity_type="person", primary=True
     )
     bill.add_abstract(
-        "This is an act about axes and taxes and tacks.", note="official",
+        "This is an act about axes and taxes and tacks.",
+        note="official",
     )
     bill.add_document_link(
         "Fiscal Note", "http://example.com/fn.pdf", media_type="application/pdf"

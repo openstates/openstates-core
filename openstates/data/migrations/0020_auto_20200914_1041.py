@@ -10,6 +10,12 @@ class Migration(migrations.Migration):
     ]
 
     operations = [
-        migrations.RemoveField(model_name="billidentifier", name="note",),
-        migrations.RemoveField(model_name="billidentifier", name="scheme",),
+        migrations.RemoveField(
+            model_name="billidentifier",
+            name="note",
+        ),
+        migrations.RemoveField(
+            model_name="billidentifier",
+            name="scheme",
+        ),
     ]

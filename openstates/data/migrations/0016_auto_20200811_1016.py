@@ -11,9 +11,13 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.AlterModelOptions(
-            name="voteevent", options={"ordering": ["start_date", "order"]},
+            name="voteevent",
+            options={"ordering": ["start_date", "order"]},
         ),
-        migrations.RemoveField(model_name="voteevent", name="end_date",),
+        migrations.RemoveField(
+            model_name="voteevent",
+            name="end_date",
+        ),
         migrations.AddField(
             model_name="voteevent",
             name="order",

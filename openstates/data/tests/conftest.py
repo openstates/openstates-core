@@ -77,7 +77,8 @@ def vote_event(legislative_session, organization):
 @pytest.fixture
 def event_location(jurisdiction):
     loc = EventLocation.objects.create(
-        name="State Legislative Building", jurisdiction=jurisdiction,
+        name="State Legislative Building",
+        jurisdiction=jurisdiction,
     )
     return loc
 

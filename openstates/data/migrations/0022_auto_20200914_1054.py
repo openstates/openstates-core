@@ -10,7 +10,16 @@ class Migration(migrations.Migration):
     ]
 
     operations = [
-        migrations.RemoveField(model_name="organization", name="dissolution_date",),
-        migrations.RemoveField(model_name="organization", name="founding_date",),
-        migrations.RemoveField(model_name="organization", name="image",),
+        migrations.RemoveField(
+            model_name="organization",
+            name="dissolution_date",
+        ),
+        migrations.RemoveField(
+            model_name="organization",
+            name="founding_date",
+        ),
+        migrations.RemoveField(
+            model_name="organization",
+            name="image",
+        ),
     ]

@@ -10,12 +10,36 @@ class Migration(migrations.Migration):
     ]
 
     operations = [
-        migrations.RemoveField(model_name="bill", name="locked_fields",),
-        migrations.RemoveField(model_name="event", name="locked_fields",),
-        migrations.RemoveField(model_name="jurisdiction", name="locked_fields",),
-        migrations.RemoveField(model_name="membership", name="locked_fields",),
-        migrations.RemoveField(model_name="organization", name="locked_fields",),
-        migrations.RemoveField(model_name="person", name="locked_fields",),
-        migrations.RemoveField(model_name="post", name="locked_fields",),
-        migrations.RemoveField(model_name="voteevent", name="locked_fields",),
+        migrations.RemoveField(
+            model_name="bill",
+            name="locked_fields",
+        ),
+        migrations.RemoveField(
+            model_name="event",
+            name="locked_fields",
+        ),
+        migrations.RemoveField(
+            model_name="jurisdiction",
+            name="locked_fields",
+        ),
+        migrations.RemoveField(
+            model_name="membership",
+            name="locked_fields",
+        ),
+        migrations.RemoveField(
+            model_name="organization",
+            name="locked_fields",
+        ),
+        migrations.RemoveField(
+            model_name="person",
+            name="locked_fields",
+        ),
+        migrations.RemoveField(
+            model_name="post",
+            name="locked_fields",
+        ),
+        migrations.RemoveField(
+            model_name="voteevent",
+            name="locked_fields",
+        ),
     ]

@@ -147,8 +147,8 @@ class Person(
 
     def add_membership(self, name_or_org, role="member", **kwargs):
         """
-            add a membership in an organization and return the membership
-            object in case there are more details to add
+        add a membership in an organization and return the membership
+        object in case there are more details to add
         """
         if isinstance(name_or_org, Organization):
             membership = Membership(

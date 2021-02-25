@@ -10,5 +10,8 @@ class Migration(migrations.Migration):
     ]
 
     operations = [
-        migrations.RemoveField(model_name="jurisdiction", name="feature_flags",),
+        migrations.RemoveField(
+            model_name="jurisdiction",
+            name="feature_flags",
+        ),
     ]

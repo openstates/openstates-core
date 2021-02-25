@@ -10,9 +10,16 @@ class Migration(migrations.Migration):
     ]
 
     operations = [
-        migrations.RemoveField(model_name="billaction", name="extras",),
-        migrations.AlterIndexTogether(
-            name="membership", index_together={("organization", "person", "post")},
+        migrations.RemoveField(
+            model_name="billaction",
+            name="extras",
         ),
-        migrations.RemoveField(model_name="membership", name="label",),
+        migrations.AlterIndexTogether(
+            name="membership",
+            index_together={("organization", "person", "post")},
+        ),
+        migrations.RemoveField(
+            model_name="membership",
+            name="label",
+        ),
     ]
