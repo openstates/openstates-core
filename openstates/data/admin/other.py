@@ -30,13 +30,3 @@ class JurisdictionAdmin(ModelAdmin):
     )
     ordering = ("id",)
     inlines = [LegislativeSessionInline]
-
-
-@admin.register(models.Post)
-class PostAdmin(ModelAdmin):
-    readonly_fields = ("id", "label", "organization", "division", "extras", "role")
-    fields = readonly_fields + (("start_date", "end_date"),)
-    list_display = ("label", "organization", "division")
-    list_filter = ("organization__jurisdiction__name",)
-    ordering = ("organization__name",)
-    search_fields = ("organization__name", "label")
