@@ -1,27 +1,31 @@
 # Changelog
 
-## 5.5.3 - February 10 2020
+## 5.6.0 - March 23 2021
+
+* add support for US jurisdiction
+
+## 5.5.3 - February 10 2021
 
 * add 'related' as additional bill relation type (openstates/issues#181)
 
-## 5.5.2 - February 8 2020
+## 5.5.2 - February 8 2021
 
 * subjects are now sorted automatically in output JSON
 
-## 5.5.1 - February 4 2020
+## 5.5.1 - February 4 2021
 
 * classifications are now sorted automatically in output JSON
 
-## 5.5.0 - February 3 2020
+## 5.5.0 - February 3 2021
 
 * EventAgendaItem.order converted to be an integer (migration required)
 
-## 5.4.1 - February 3 2020
+## 5.4.1 - February 3 2021
 
 * bugfix for openstates/issues#171 where updated_at is churning
   when there are two identical actions
 
-## 5.4.0 - January 20 2020
+## 5.4.0 - January 20 2021
 
 * update PR senate at-large, 11 senators again
 
