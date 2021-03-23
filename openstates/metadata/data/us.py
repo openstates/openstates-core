@@ -61,8 +61,18 @@ def us_house_districts():
 
     # TODO: add other territories
     territories = [
-        District("DC-AL", "lower", "ocd-division/country:us/district:dc"),
-        District("PR-AL", "lower", "ocd-division/country:us/territory:pr"),
+        District(
+            "DC-AL",
+            "lower",
+            "ocd-division/country:us/district:dc",
+            title_override="Delegate",
+        ),
+        District(
+            "PR-AL",
+            "lower",
+            "ocd-division/country:us/territory:pr",
+            title_override="Resident Commissioner",
+        ),
     ]
     districts += territories
 

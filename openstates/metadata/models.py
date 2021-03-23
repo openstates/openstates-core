@@ -8,6 +8,7 @@ class District:
     chamber_type = attr.ib()
     division_id = attr.ib()
     num_seats = attr.ib(default=1)
+    title_override = attr.ib(default=None)
 
 
 @attr.s(auto_attribs=True)

@@ -39,7 +39,10 @@ def create_chamber(juris, parent, chamber):
             organization=post_parent,
             division=post_div,
             # TODO: allow changing role & max_memberships
-            defaults=dict(role=chamber.title, maximum_memberships=district.num_seats),
+            defaults=dict(
+                role=district.title_override or chamber.title,
+                maximum_memberships=district.num_seats,
+            ),
         )
 
 
