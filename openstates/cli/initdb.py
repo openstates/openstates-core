@@ -51,7 +51,7 @@ def create_full_jurisdiction(state):
         id=state.jurisdiction_id,
         name=state.name,
         division=div,
-        classification="state",
+        classification="state" if state.abbr != "US" else "country",
         defaults=dict(url=state.url),
     )
     leg, created = Organization.objects.get_or_create(

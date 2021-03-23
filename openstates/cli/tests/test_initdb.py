@@ -161,3 +161,25 @@ def test_create_full_jurisdiction_idempotent():
     )
     # 120 + 50
     assert Post.objects.count() == 170
+
+
+@pytest.mark.django_db
+def test_create_federal_jurisdiction():
+    us = lookup(abbr="US")
+    create_full_jurisdiction(us)
+
+    assert Jurisdiction.objects.count() == 1
+    juris = Jurisdiction.objects.get()
+    assert juris.name == us.name
+    assert juris.classification == "country"
+    assert juris.organizations.count() == 4
+    assert (
+        juris.organizations.get(classification="executive").id
+        == us.executive_organization_id
+    )
+    assert (
+        juris.organizations.get(classification="legislature").id
+        == us.legislature_organization_id
+    )
+    # 435 House + 50 Senate posts
+    assert Post.objects.count() == 485

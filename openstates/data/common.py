@@ -42,6 +42,7 @@ CONTACT_TYPES = _keys(CONTACT_TYPE_CHOICES)
 
 JURISDICTION_CLASSIFICATION_CHOICES = (
     ("state", "State"),
+    ("country", "Country"),
     ("municipality", "Municipality"),
 )
 JURISDICTION_CLASSIFICATIONS = _keys(JURISDICTION_CLASSIFICATION_CHOICES)
