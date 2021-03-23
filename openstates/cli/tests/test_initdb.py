@@ -181,5 +181,5 @@ def test_create_federal_jurisdiction():
         juris.organizations.get(classification="legislature").id
         == us.legislature_organization_id
     )
-    # 435 House + 50 Senate posts
-    assert Post.objects.count() == 485
+    # 435 House + 50 Senate posts + 2 territories (DC & PR for now)
+    assert Post.objects.count() == 487

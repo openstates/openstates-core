@@ -58,6 +58,14 @@ seats_by_state = {
 
 def us_house_districts():
     districts = []
+
+    # TODO: add other territories
+    territories = [
+        District("DC-AL", "lower", "ocd-division/country:us/district:dc"),
+        District("PR-AL", "lower", "ocd-division/country:us/territory:pr"),
+    ]
+    districts += territories
+
     for abbr, num_districts in seats_by_state.items():
         if num_districts == 1:
             districts.append(
@@ -106,7 +114,7 @@ US = State(
         chamber_type="lower",
         name="House",
         organization_id="ocd-organization/24af4233-d9b5-5933-91b2-51d29f721037",
-        num_seats=435,
+        num_seats=437,
         title="Representative",
         districts=us_house_districts(),
     ),

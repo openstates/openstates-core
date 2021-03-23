@@ -53,7 +53,10 @@ def test_everything_has_division_id():
         elif state.abbr == "US":
             for d in state.lower.districts:
                 assert d.num_seats == 1
-                assert re.match(r"ocd-division/country:us/state:\w\w/cd:", d.division_id)
+                assert re.match(
+                    r"ocd-division/country:us/(district:dc|territory:pr|state:\w\w/cd:)",
+                    d.division_id,
+                )
             for d in state.upper.districts:
                 assert d.num_seats == 2
                 assert re.match(r"ocd-division/country:us/state:\w\w$", d.division_id)
