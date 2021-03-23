@@ -1,3 +1,4 @@
+import re
 from ..data import STATES, NC, VT
 
 
@@ -16,7 +17,7 @@ def test_basics():
             assert state.lower
             assert state.upper
     assert unicam_count == 2
-    assert bicam_count == 50
+    assert bicam_count == 51
 
 
 def test_district_numbers():
@@ -49,6 +50,13 @@ def test_everything_has_division_id():
             for d in state.legislature.districts:
                 assert d.num_seats
                 assert d.division_id.startswith(state.division_id)
+        elif state.abbr == "US":
+            for d in state.lower.districts:
+                assert d.num_seats == 1
+                assert re.match(r"ocd-division/country:us/state:\w\w/cd:", d.division_id)
+            for d in state.upper.districts:
+                assert d.num_seats == 2
+                assert re.match(r"ocd-division/country:us/state:\w\w$", d.division_id)
         else:
             for d in state.lower.districts:
                 assert d.num_seats

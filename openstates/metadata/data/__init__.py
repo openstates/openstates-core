@@ -50,6 +50,7 @@ from .wa import WA
 from .wi import WI
 from .wv import WV
 from .wy import WY
+from .us import US
 
 
 STATES = [
@@ -105,6 +106,7 @@ STATES = [
     WI,
     WV,
     WY,
+    US,
 ]
 
 STATES_BY_ABBR = {s.abbr: s for s in STATES}
