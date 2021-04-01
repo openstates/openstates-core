@@ -1,5 +1,9 @@
 # Changelog
 
+## 5.7.0 
+
+* added VoteEvent.dedupe_key to replace pupa_identifier
+
 ## 5.6.0 - March 23 2021
 
 * add support for US jurisdiction

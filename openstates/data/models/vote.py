@@ -47,6 +47,7 @@ class VoteEvent(OCDBase):
         on_delete=models.SET_NULL,
     )
     order = models.PositiveIntegerField(default=0)
+    dedupe_key = models.CharField(max_length=500, null=True)
 
     extras = JSONField(default=dict, blank=True)
 
