@@ -16,7 +16,6 @@ class VoteEventImporter(BaseImporter):
     }
 
     def __init__(self, jurisdiction_id, bill_importer):
-
         super(VoteEventImporter, self).__init__(jurisdiction_id)
         self.org_importer = OrganizationImporter(jurisdiction_id)
         self.person_importer = PersonImporter(jurisdiction_id)
@@ -44,12 +43,9 @@ class VoteEventImporter(BaseImporter):
                 )
             spec["bill_id"] = vote_event["bill_id"]
 
-        if vote_event.get("pupa_id"):
-            ve_id = self.lookup_obj_id(vote_event["pupa_id"], VoteEvent)
-            if ve_id:
-                spec = {"id": ve_id}
-            else:
-                return None
+        if vote_event.get("dedupe_key"):
+            # replace entire spec with dedupe key
+            spec = {"dedupe_key": vote_event.get("dedupe_key")}
         elif vote_event["identifier"]:
             # if there's an identifier, just use it and the bill_id and the session
             spec["identifier"] = vote_event["identifier"]

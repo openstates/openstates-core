@@ -60,12 +60,11 @@ class EventImporter(BaseImporter):
         self.vote_event_importer = vote_event_importer
 
     def get_object(self, event):
-        if event.get("pupa_id"):
-            e_id = self.lookup_obj_id(event["pupa_id"], Event)
-            if e_id:
-                spec = {"id": e_id}
-            else:
-                return None
+        if event.get("dedupe_key"):
+            spec = {
+                "dedupe_key": event.get("dedupe_key"),
+                "jurisdiction_id": self.jurisdiction_id,
+            }
         else:
             spec = {
                 "name": event["name"],

@@ -5,11 +5,9 @@ import json
 import logging
 from django.db.models import Q
 from django.db.models.signals import post_save
-from django.contrib.contenttypes.models import ContentType
 from .. import settings
 from ..data.models import LegislativeSession
 from ..exceptions import DuplicateItemError, UnresolvedIdError, DataImportError
-from ..reports.models import Identifier
 from ..utils import get_pseudo_id, utcnow
 
 
@@ -272,13 +270,14 @@ class BaseImporter(object):
         data = self.apply_transformers(data)
         data = self.prepare_for_db(data)
 
+        # temporary shim to put pupa_id into dedupe_key
+        if not data.get("dedupe_key") and data.get("pupa_id"):
+            data["dedupe_key"] = data.pop("pupa_id")
+
         try:
             obj = self.get_object(data)
         except self.model_class.DoesNotExist:
             obj = None
-
-        # remove pupa_id which does not belong in the OCD data models
-        pupa_id = data.pop("pupa_id", None)
 
         # pull related fields off
         related = {}
@@ -322,13 +321,6 @@ class BaseImporter(object):
             # Fire post-save signal after related objects are created to allow
             # for handlers make use of related objects
             post_save.send(sender=self.model_class, instance=obj, created=True)
-
-        if pupa_id:
-            Identifier.objects.get_or_create(
-                identifier=pupa_id,
-                jurisdiction_id=self.jurisdiction_id,
-                defaults={"content_object": obj},
-            )
 
         return obj.id, what
 
@@ -440,19 +432,6 @@ class BaseImporter(object):
             # after import the subobjects, import their subsubobjects
             for subobj, subrel in zip(subobjects, all_subrelated):
                 self._create_related(subobj, subrel, subsubdict)
-
-    def lookup_obj_id(self, pupa_id, model):
-        content_type = ContentType.objects.get_for_model(model)
-        try:
-            obj_id = Identifier.objects.get(
-                identifier=pupa_id,
-                content_type=content_type,
-                jurisdiction_id=self.jurisdiction_id,
-            ).object_id
-        except Identifier.DoesNotExist:
-            obj_id = None
-
-        return obj_id
 
     def apply_transformers(self, data, transformers=None):
         if transformers is None:
