@@ -1,8 +1,11 @@
 # Changelog
 
-## 5.7.0 
+## 5.7.0 - April 2 2021
 
-* added VoteEvent.dedupe_key to replace pupa_identifier
+* Implementation of OSEP #5
+  * migration: added dedupe_key to replace pupa_id
+  * added dedupe_key to replace pupa_id in scrape as well
+  * alter import logic to stop using reports.Identifier
 
 ## 5.6.0 - March 23 2021
 
