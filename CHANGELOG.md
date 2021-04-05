@@ -1,5 +1,9 @@
 # Changelog
 
+## 5.7.1 - April 5 2021
+
+* bugfix for typo in scrape schema in 5.7.0
+
 ## 5.7.0 - April 2 2021
 
 * Implementation of OSEP #5
