@@ -41,7 +41,6 @@ schema = {
         },
         "sources": sources,
         "extras": extras,
-        "pupa_id": {"type": ["string", "null"], "minLength": 1},
         "dedupe-key": {"type": ["string", "null"], "minLength": 1},
     },
 }
