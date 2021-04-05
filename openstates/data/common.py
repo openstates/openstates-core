@@ -142,6 +142,8 @@ VOTE_CLASSIFICATION_CHOICES = (
     ("amendment", "Amendment"),
     ("reading-1", "First Reading"),
     ("reading-3", "Third Reading"),
+    ("veto", "Veto"),
+    ("veto-override", "Veto Override"),
 )
 VOTE_CLASSIFICATIONS = _keys(VOTE_CLASSIFICATION_CHOICES)
 
