@@ -270,10 +270,6 @@ class BaseImporter(object):
         data = self.apply_transformers(data)
         data = self.prepare_for_db(data)
 
-        # temporary shim to put pupa_id into dedupe_key
-        if not data.get("dedupe_key") and data.get("pupa_id"):
-            data["dedupe_key"] = data.pop("pupa_id")
-
         try:
             obj = self.get_object(data)
         except self.model_class.DoesNotExist:

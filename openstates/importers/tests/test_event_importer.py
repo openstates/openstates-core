@@ -251,7 +251,7 @@ def test_full_event():
 
 
 @pytest.mark.django_db
-def test_pupa_identifier_event():
+def test_dedupe_key_event():
     create_jurisdiction()
     create_other_jurisdiction()
     george = Person.objects.create(id="gw", name="George Washington")
@@ -259,7 +259,7 @@ def test_pupa_identifier_event():
     Membership.objects.create(person=george, organization=o)
 
     event = ge()
-    event.pupa_id = "foo"
+    event.dedupe_key = "foo"
 
     result = EventImporter("jid", oi, pi, bi, vei).import_data([event.as_dict()])
     assert result["event"]["insert"] == 1
@@ -272,7 +272,7 @@ def test_pupa_identifier_event():
     result = EventImporter("jid", oi, pi, bi, vei).import_data([event.as_dict()])
     assert result["event"]["update"] == 1
 
-    event.pupa_id = "bar"
+    event.dedupe_key = "bar"
     result = EventImporter("jid", oi, pi, bi, vei).import_data([event.as_dict()])
     assert result["event"]["insert"] == 1
 

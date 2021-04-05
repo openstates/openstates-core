@@ -118,7 +118,7 @@ def test_vote_event_identifier_dedupe():
 
 
 @pytest.mark.django_db
-def test_vote_event_pupa_identifier_dedupe():
+def test_vote_event_dedupe_key_dedupe():
     j = create_jurisdiction()
     Organization.objects.create(
         id="org-id", name="Legislature", classification="legislature", jurisdiction=j
@@ -132,7 +132,7 @@ def test_vote_event_pupa_identifier_dedupe():
         motion_text="a vote on something",
         identifier="Roll Call No. 1",
     )
-    vote_event.pupa_id = "foo"
+    vote_event.dedupe_key = "foo"
 
     bi = BillImporter("jid")
     _, what = VoteEventImporter("jid", bi).import_item(vote_event.as_dict())
@@ -157,7 +157,7 @@ def test_vote_event_pupa_identifier_dedupe():
     assert VoteEvent.objects.count() == 1
 
     # new identifier, insert
-    vote_event.pupa_id = "bar"
+    vote_event.dedupe_key = "bar"
     _, what = VoteEventImporter("jid", bi).import_item(vote_event.as_dict())
     assert what == "insert"
     assert VoteEvent.objects.count() == 2
@@ -392,8 +392,8 @@ def test_vote_event_bill_actions_two_stage():
         chamber="lower",
     )
     # disambiguate them
-    ve1.pupa_id = "one"
-    ve2.pupa_id = "two"
+    ve1.dedupe_key = "one"
+    ve2.dedupe_key = "two"
 
     bi = BillImporter("jid")
     bi.import_data([bill.as_dict()])
