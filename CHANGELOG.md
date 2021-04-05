@@ -5,6 +5,7 @@
 * remaining implementation of OSEP #5
   * remove pupa_id backwards compatibility
   * migration: drop reports.Identifier
+* Add veto and veto-override vote classifications
 
 ## 5.7.1 - April 5 2021
 
