@@ -1,7 +1,5 @@
 from django.db import models
 from django.contrib.postgres.fields import JSONField
-from django.contrib.contenttypes.fields import GenericForeignKey
-from django.contrib.contenttypes.models import ContentType
 from ..data.models import Jurisdiction, LegislativeSession
 
 
@@ -66,22 +64,6 @@ class ImportObjects(models.Model):
 
     class Meta:
         db_table = "pupa_importobjects"
-
-
-class Identifier(models.Model):
-    identifier = models.CharField(max_length=300)
-    jurisdiction = models.ForeignKey(
-        Jurisdiction, related_name="pupa_ids", on_delete=models.CASCADE
-    )
-    content_type = models.ForeignKey(ContentType, on_delete=models.CASCADE)
-    object_id = models.CharField(max_length=300)
-    content_object = GenericForeignKey("content_type", "object_id")
-
-    def __str__(self):  # __unicode__ on Python 2
-        return self.identifier
-
-    class Meta:
-        db_table = "pupa_identifier"
 
 
 class SessionDataQualityReport(models.Model):
