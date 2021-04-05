@@ -1,5 +1,11 @@
 # Changelog
 
+## 5.8.0 - April 5 2021
+
+* remaining implementation of OSEP #5
+  * remove pupa_id backwards compatibility
+  * migration: drop reports.Identifier
+
 ## 5.7.1 - April 5 2021
 
 * bugfix for typo in scrape schema in 5.7.0
