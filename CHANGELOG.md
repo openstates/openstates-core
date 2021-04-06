@@ -1,8 +1,9 @@
 # Changelog
 
-## 5.8.1
+## 5.8.1 - April 6 2021
 
 * fix_bill_id fixed for US bills
+* strip microseconds from datetimes in JSON output
 
 ## 5.8.0 - April 5 2021
 
