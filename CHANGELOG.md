@@ -1,5 +1,9 @@
 # Changelog
 
+## 5.8.1
+
+* fix_bill_id fixed for US bills
+
 ## 5.8.0 - April 5 2021
 
 * remaining implementation of OSEP #5
