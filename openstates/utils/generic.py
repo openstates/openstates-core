@@ -36,9 +36,9 @@ class JSONEncoderPlus(json.JSONEncoder):
             if obj.tzinfo is None:
                 raise TypeError("date '%s' is not fully timezone qualified." % (obj))
             obj = obj.astimezone(pytz.UTC)
-            return "{}".format(obj.isoformat())
+            return "{}".format(obj.replace(microsecond=0).isoformat())
         elif isinstance(obj, datetime.date):
-            return "{}".format(obj.isoformat())
+            return "{}".format(obj.replace(microsecond=0).isoformat())
         return super(JSONEncoderPlus, self).default(obj, **kwargs)
 
 
