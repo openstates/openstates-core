@@ -1,5 +1,9 @@
 # Changelog
 
+## 5.8.2 - April 7 2021
+
+* fix for microsecond replacement on date
+
 ## 5.8.1 - April 6 2021
 
 * fix_bill_id fixed for US bills
