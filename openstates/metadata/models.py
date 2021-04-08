@@ -69,14 +69,14 @@ class State:
     def lookup_district(
         self, division_id: str = None, *, name: str = None, chamber: str = None
     ) -> typing.Optional[District]:
-        if self.unicameral and self.legislature:
+        if self.legislature and self.unicameral:
             return self.legislature.lookup_district(division_id=division_id, name=name)
-        elif (
-            division_id and ("sldl" in division_id or chamber == "lower") and self.lower
+        elif self.lower and (
+            division_id and "sldl" in division_id or chamber == "lower"
         ):
             return self.lower.lookup_district(division_id=division_id, name=name)
-        elif (
-            division_id and ("sldu" in division_id or chamber == "upper") and self.upper
+        elif self.upper and (
+            division_id and "sldu" in division_id or chamber == "upper"
         ):
             return self.upper.lookup_district(division_id=division_id, name=name)
         return None
