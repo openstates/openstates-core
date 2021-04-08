@@ -1,4 +1,5 @@
 from .base import BaseImporter
+from ._types import _JsonDict, Model
 from ..exceptions import InternalError
 from ..data.models import (
     Bill,
@@ -48,12 +49,12 @@ class BillImporter(BaseImporter):
     }
     preserve_order = {"actions"}
 
-    def __init__(self, jurisdiction_id):
+    def __init__(self, jurisdiction_id: str):
         super(BillImporter, self).__init__(jurisdiction_id)
         self.org_importer = OrganizationImporter(jurisdiction_id)
         self.person_importer = PersonImporter(jurisdiction_id)
 
-    def get_object(self, bill):
+    def get_object(self, bill: _JsonDict) -> Model:
         spec = {
             "legislative_session_id": bill["legislative_session_id"],
             "identifier": bill["identifier"],
@@ -65,11 +66,11 @@ class BillImporter(BaseImporter):
             "actions__related_entities", "versions__links", "documents__links"
         ).get(**spec)
 
-    def limit_spec(self, spec):
+    def limit_spec(self, spec: _JsonDict) -> _JsonDict:
         spec["legislative_session__jurisdiction_id"] = self.jurisdiction_id
         return spec
 
-    def prepare_for_db(self, data):
+    def prepare_for_db(self, data: _JsonDict) -> _JsonDict:
         data["legislative_session_id"] = self.get_session_id(
             data.pop("legislative_session")
         )
@@ -106,7 +107,7 @@ class BillImporter(BaseImporter):
 
         return data
 
-    def postimport(self):
+    def postimport(self) -> None:
         # go through all RelatedBill objs that are attached to a bill in this jurisdiction and
         # are currently unresolved
         for rb in RelatedBill.objects.filter(
@@ -129,5 +130,5 @@ class BillImporter(BaseImporter):
                     "multiple related_bill candidates found for {}".format(rb)
                 )
 
-    def update_computed_fields(self, obj):
+    def update_computed_fields(self, obj: Model) -> None:
         update_bill_fields(obj, save=False)

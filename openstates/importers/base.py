@@ -3,15 +3,17 @@ import copy
 import glob
 import json
 import logging
-from django.db.models import Q
+import typing
+from django.db.models import Q, Model
 from django.db.models.signals import post_save
 from .. import settings
 from ..data.models import LegislativeSession
 from ..exceptions import DuplicateItemError, UnresolvedIdError, DataImportError
 from ..utils import get_pseudo_id, utcnow
+from ._types import _ID, _JsonDict, _RelatedModels, _TransformerMapping
 
 
-def omnihash(obj):
+def omnihash(obj: typing.Any) -> int:
     """ recursively hash unhashable objects """
     if isinstance(obj, set):
         return hash(frozenset(omnihash(e) for e in obj))
@@ -23,7 +25,12 @@ def omnihash(obj):
         return hash(obj)
 
 
-def _match(dbitem, jsonitem, keys, subfield_dict):
+def _match(
+    dbitem: Model,
+    jsonitem: _JsonDict,
+    keys: typing.Iterable[str],
+    subfield_dict: typing.Dict[str, typing.Any],
+) -> bool:
     # check if all keys (excluding subfields) match
     for k in keys:
         if k not in subfield_dict and getattr(dbitem, k) != jsonitem.get(k, None):
@@ -40,7 +47,11 @@ def _match(dbitem, jsonitem, keys, subfield_dict):
     return True
 
 
-def items_differ(jsonitems, dbitems, subfield_dict):
+def items_differ(
+    jsonitems: typing.List[_JsonDict],
+    dbitems: typing.List[Model],
+    subfield_dict: _JsonDict,
+) -> bool:
     """ check whether or not jsonitems and dbitems differ """
 
     # short circuit common cases
@@ -88,7 +99,7 @@ def items_differ(jsonitems, dbitems, subfield_dict):
     return False
 
 
-class BaseImporter(object):
+class BaseImporter:
     """BaseImporter
 
     Override:
@@ -99,19 +110,19 @@ class BaseImporter(object):
         update_computed_fields(obj)     [optional]
     """
 
-    _type = None
-    model_class = None
-    related_models = {}
-    preserve_order = set()
-    merge_related = {}
-    cached_transformers = {}
+    _type: str
+    model_class: Model = None
+    related_models: _RelatedModels = {}
+    preserve_order: typing.Set[str] = set()
+    merge_related: typing.Dict[str, typing.List[str]] = {}
+    cached_transformers: _TransformerMapping = {}
 
-    def __init__(self, jurisdiction_id):
+    def __init__(self, jurisdiction_id: str) -> None:
         self.jurisdiction_id = jurisdiction_id
-        self.json_to_db_id = {}
-        self.duplicates = {}
-        self.pseudo_id_cache = {}
-        self.session_cache = {}
+        self.json_to_db_id: typing.Dict[str, _ID] = {}
+        self.duplicates: typing.Dict[str, str] = {}
+        self.pseudo_id_cache: typing.Dict[str, typing.Optional[_ID]] = {}
+        self.session_cache: typing.Dict[str, int] = {}
         self.logger = logging.getLogger("openstates")
         self.info = self.logger.info
         self.debug = self.logger.debug
@@ -123,24 +134,32 @@ class BaseImporter(object):
         if settings.IMPORT_TRANSFORMERS.get(self._type):
             self.cached_transformers = settings.IMPORT_TRANSFORMERS[self._type]
 
-    def get_session_id(self, identifier):
+    def get_session_id(self, identifier: str) -> int:
         if identifier not in self.session_cache:
             self.session_cache[identifier] = LegislativeSession.objects.get(
                 identifier=identifier, jurisdiction_id=self.jurisdiction_id
             ).id
         return self.session_cache[identifier]
 
+    def limit_spec(self, spec: _JsonDict) -> _JsonDict:
+        raise NotImplementedError()
+
+    def get_object(self, object: _JsonDict) -> Model:
+        raise NotImplementedError()
+
     # no-ops to be overriden
-    def prepare_for_db(self, data):
+    def prepare_for_db(self, data: _JsonDict) -> _JsonDict:
         return data
 
-    def postimport(self):
+    def postimport(self) -> None:
         pass
 
-    def update_computed_fields(self, obj):
+    def update_computed_fields(self, obj: Model) -> None:
         pass
 
-    def resolve_json_id(self, json_id, allow_no_match=False):
+    def resolve_json_id(
+        self, json_id: str, allow_no_match: bool = False
+    ) -> typing.Optional[_ID]:
         """
         Given an id found in scraped JSON, return a DB id for the object.
 
@@ -199,10 +218,10 @@ class BaseImporter(object):
         except KeyError:
             raise UnresolvedIdError("cannot resolve id: {}".format(json_id))
 
-    def import_directory(self, datadir):
+    def import_directory(self, datadir: str) -> typing.Dict[str, typing.Dict]:
         """ import a JSON directory into the database """
 
-        def json_stream():
+        def json_stream() -> typing.Iterator[_JsonDict]:
             # load all json, mapped by json_id
             for fname in glob.glob(os.path.join(datadir, self._type + "_*.json")):
                 with open(fname) as f:
@@ -210,8 +229,9 @@ class BaseImporter(object):
 
         return self.import_data(json_stream())
 
-    def _prepare_imports(self, dicts):
-
+    def _prepare_imports(
+        self, dicts: typing.Iterable[_JsonDict]
+    ) -> typing.Iterator[typing.Tuple[str, _JsonDict]]:
         """filters the import stream to remove duplicates
 
         also serves as a good place to override if anything special has to be done to the
@@ -233,7 +253,9 @@ class BaseImporter(object):
             else:
                 self.duplicates[json_id] = seen_hashes[objhash]
 
-    def import_data(self, data_items):
+    def import_data(
+        self, data_items: typing.Iterable[_JsonDict]
+    ) -> typing.Dict[str, typing.Dict]:
         """ import a bunch of dicts together """
         # keep counts of all actions
         record = {
@@ -257,7 +279,7 @@ class BaseImporter(object):
 
         return {self._type: record}
 
-    def import_item(self, data):
+    def import_item(self, data: _JsonDict) -> typing.Tuple[_ID, str]:
         """ function used by import_data """
         what = "noop"
 
@@ -320,7 +342,12 @@ class BaseImporter(object):
 
         return obj.id, what
 
-    def _update_related(self, obj, related, subfield_dict):
+    def _update_related(
+        self,
+        obj: Model,
+        related: typing.Dict[str, typing.List[Model]],
+        subfield_dict: _JsonDict,
+    ) -> bool:
         """
         update DB objects related to a base object
             obj:            a base object to create related
@@ -387,7 +414,12 @@ class BaseImporter(object):
 
         return updated
 
-    def _create_related(self, obj, related, subfield_dict):
+    def _create_related(
+        self,
+        obj: Model,
+        related: typing.Dict[str, typing.List[Model]],
+        subfield_dict: _JsonDict,
+    ) -> None:
         """
         create DB objects related to a base object
             obj:            a base object to create related
@@ -429,7 +461,9 @@ class BaseImporter(object):
             for subobj, subrel in zip(subobjects, all_subrelated):
                 self._create_related(subobj, subrel, subsubdict)
 
-    def apply_transformers(self, data, transformers=None):
+    def apply_transformers(
+        self, data: _JsonDict, transformers: typing.Optional[_TransformerMapping] = None
+    ) -> _JsonDict:
         if transformers is None:
             transformers = self.cached_transformers
 
@@ -446,5 +480,5 @@ class BaseImporter(object):
 
         return data
 
-    def get_seen_sessions(self):
+    def get_seen_sessions(self) -> typing.ValuesView[int]:
         return self.session_cache.values()

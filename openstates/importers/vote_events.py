@@ -1,30 +1,33 @@
+import typing
 from .base import BaseImporter
+from ._types import _JsonDict, _DBSpec, _RelatedModels
 from ..utils import get_pseudo_id, _make_pseudo_id
 from ..exceptions import InvalidVoteEventError
 from ..data.models import VoteEvent, VoteCount, PersonVote, VoteSource, BillAction
 from .people import PersonImporter
 from .organizations import OrganizationImporter
+from .bills import BillImporter
 
 
 class VoteEventImporter(BaseImporter):
     _type = "vote_event"
     model_class = VoteEvent
-    related_models = {
+    related_models: _RelatedModels = {
         "counts": (VoteCount, "vote_event_id", {}),
         "votes": (PersonVote, "vote_event_id", {}),
         "sources": (VoteSource, "vote_event_id", {}),
     }
 
-    def __init__(self, jurisdiction_id, bill_importer):
+    def __init__(self, jurisdiction_id: str, bill_importer: BillImporter):
         super(VoteEventImporter, self).__init__(jurisdiction_id)
         self.org_importer = OrganizationImporter(jurisdiction_id)
         self.person_importer = PersonImporter(jurisdiction_id)
         self.bill_importer = bill_importer
-        self.seen_bill_ids = set()
-        self.seen_action_ids = set()
-        self.vote_events_to_delete = set()
+        self.seen_bill_ids: typing.Set[str] = set()
+        self.seen_action_ids: typing.Set[str] = set()
+        self.vote_events_to_delete: typing.Set[str] = set()
 
-    def get_object(self, vote_event):
+    def get_object(self, vote_event: _JsonDict) -> VoteEvent:
         spec = {"legislative_session_id": vote_event["legislative_session_id"]}
 
         if not vote_event["identifier"] and not vote_event["bill_id"]:
@@ -61,11 +64,11 @@ class VoteEventImporter(BaseImporter):
 
         return self.model_class.objects.prefetch_related("votes__voter").get(**spec)
 
-    def limit_spec(self, spec):
+    def limit_spec(self, spec: _JsonDict) -> _DBSpec:
         spec["legislative_session__jurisdiction_id"] = self.jurisdiction_id
         return spec
 
-    def prepare_for_db(self, data):
+    def prepare_for_db(self, data: _JsonDict) -> _JsonDict:
         data["legislative_session_id"] = self.get_session_id(
             data.pop("legislative_session")
         )
@@ -121,7 +124,7 @@ class VoteEventImporter(BaseImporter):
             )
         return data
 
-    def postimport(self):
+    def postimport(self) -> None:
         # be sure not to delete vote events that were imported (meaning updated) this time through
         self.vote_events_to_delete.difference_update(self.json_to_db_id.values())
         # everything remaining, goodbye

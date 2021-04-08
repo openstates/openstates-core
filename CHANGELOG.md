@@ -1,5 +1,10 @@
 # Changelog
 
+## 5.8.3
+
+* added typing to openstates.metadata
+* added typing to openstates.importers
+
 ## 5.8.2 - April 7 2021
 
 * fix for microsecond replacement on date
