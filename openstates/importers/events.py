@@ -16,6 +16,10 @@ from ..data.models import (
     EventAgendaMedia,
     EventAgendaMediaLink,
 )
+from .people import PersonImporter
+from .organizations import OrganizationImporter
+from .vote_events import VoteEventImporter
+from .bills import BillImporter
 
 
 class EventImporter(BaseImporter):
@@ -49,10 +53,10 @@ class EventImporter(BaseImporter):
     def __init__(
         self,
         jurisdiction_id: str,
-        org_importer,
-        person_importer,
-        bill_importer,
-        vote_event_importer,
+        org_importer: OrganizationImporter,
+        person_importer: PersonImporter,
+        bill_importer: BillImporter,
+        vote_event_importer: VoteEventImporter,
     ):
         super(EventImporter, self).__init__(jurisdiction_id)
         self.org_importer = org_importer

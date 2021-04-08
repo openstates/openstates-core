@@ -6,6 +6,7 @@ from ..exceptions import InvalidVoteEventError
 from ..data.models import VoteEvent, VoteCount, PersonVote, VoteSource, BillAction
 from .people import PersonImporter
 from .organizations import OrganizationImporter
+from .bills import BillImporter
 
 
 class VoteEventImporter(BaseImporter):
@@ -17,7 +18,7 @@ class VoteEventImporter(BaseImporter):
         "sources": (VoteSource, "vote_event_id", {}),
     }
 
-    def __init__(self, jurisdiction_id: str, bill_importer):
+    def __init__(self, jurisdiction_id: str, bill_importer: BillImporter):
         super(VoteEventImporter, self).__init__(jurisdiction_id)
         self.org_importer = OrganizationImporter(jurisdiction_id)
         self.person_importer = PersonImporter(jurisdiction_id)

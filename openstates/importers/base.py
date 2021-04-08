@@ -10,7 +10,7 @@ from .. import settings
 from ..data.models import LegislativeSession
 from ..exceptions import DuplicateItemError, UnresolvedIdError, DataImportError
 from ..utils import get_pseudo_id, utcnow
-from ._types import _ID, _JsonDict, _RelatedModels
+from ._types import _ID, _JsonDict, _RelatedModels, _TransformerMapping
 
 
 def omnihash(obj: typing.Any) -> int:
@@ -110,12 +110,12 @@ class BaseImporter:
         update_computed_fields(obj)     [optional]
     """
 
-    _type: str = None
+    _type: str
     model_class: Model = None
     related_models: _RelatedModels = {}
     preserve_order: typing.Set[str] = set()
     merge_related: typing.Dict[str, typing.List[str]] = {}
-    cached_transformers = {}
+    cached_transformers: _TransformerMapping = {}
 
     def __init__(self, jurisdiction_id: str) -> None:
         self.jurisdiction_id = jurisdiction_id
@@ -461,7 +461,9 @@ class BaseImporter:
             for subobj, subrel in zip(subobjects, all_subrelated):
                 self._create_related(subobj, subrel, subsubdict)
 
-    def apply_transformers(self, data: _JsonDict, transformers=None) -> _JsonDict:
+    def apply_transformers(
+        self, data: _JsonDict, transformers: typing.Optional[_TransformerMapping] = None
+    ) -> _JsonDict:
         if transformers is None:
             transformers = self.cached_transformers
 
