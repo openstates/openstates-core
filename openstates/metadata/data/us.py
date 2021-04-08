@@ -1,3 +1,4 @@
+import typing
 from ..models import State, Chamber, District
 from us import STATES
 
@@ -56,7 +57,7 @@ seats_by_state = {
 }
 
 
-def us_house_districts():
+def us_house_districts() -> typing.List[District]:
     districts = []
 
     # TODO: add other territories
@@ -99,7 +100,7 @@ def us_house_districts():
     return districts
 
 
-def us_senate_districts():
+def us_senate_districts() -> typing.List[District]:
     return [
         District(s.name, "upper", f"ocd-division/country:us/state:{s.abbr.lower()}", 2)
         for s in STATES

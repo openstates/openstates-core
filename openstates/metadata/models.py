@@ -4,11 +4,11 @@ import typing
 
 @attr.s
 class District:
-    name = attr.ib()
-    chamber_type = attr.ib()
-    division_id = attr.ib()
-    num_seats = attr.ib(default=1)
-    title_override = attr.ib(default=None)
+    name: str = attr.ib()
+    chamber_type: str = attr.ib()
+    division_id: typing.Optional[str] = attr.ib()
+    num_seats: int = attr.ib(default=1)
+    title_override: typing.Optional[str] = attr.ib(default=None)
 
 
 @attr.s(auto_attribs=True)
@@ -20,12 +20,18 @@ class Chamber:
     organization_id: str
     districts: typing.List[District]
 
-    def lookup_district(self, division_id=None, *, name=None):
+    def lookup_district(
+        self,
+        division_id: typing.Optional[str] = None,
+        *,
+        name: typing.Optional[str] = None,
+    ) -> typing.Optional[District]:
         for d in self.districts:
             if division_id and d.division_id == division_id:
                 return d
             if name and d.name == name:
                 return d
+        return None
 
 
 @attr.s(auto_attribs=True)
@@ -43,33 +49,42 @@ class State:
     division_id: str
     jurisdiction_id: str
     url: str
-    lower: Chamber = None
-    upper: Chamber = None
-    legislature: Chamber = None
+    lower: typing.Optional[Chamber] = None
+    upper: typing.Optional[Chamber] = None
+    legislature: typing.Optional[Chamber] = None
 
     @property
-    def chambers(self):
+    def chambers(self) -> typing.List[Chamber]:
         if self.unicameral:
-            return [self.legislature]
+            return [typing.cast(Chamber, self.legislature)]
         else:
-            return [self.lower, self.upper]
+            return [typing.cast(Chamber, self.lower), typing.cast(Chamber, self.upper)]
 
     @property
-    def legacy_districts(self):
+    def legacy_districts(self) -> typing.List[District]:
         from .data.legacy_districts import legacy_districts
 
         return legacy_districts.get(self.abbr.lower(), [])
 
-    def lookup_district(self, division_id=None, *, name=None, chamber=None):
-        if self.unicameral:
+    def lookup_district(
+        self, division_id: str = None, *, name: str = None, chamber: str = None
+    ) -> typing.Optional[District]:
+        if self.legislature and self.unicameral:
             return self.legislature.lookup_district(division_id=division_id, name=name)
-        elif division_id and "sldl" in division_id or chamber == "lower":
+        elif self.lower and (
+            division_id and "sldl" in division_id or chamber == "lower"
+        ):
             return self.lower.lookup_district(division_id=division_id, name=name)
-        elif division_id and "sldu" in division_id or chamber == "upper":
+        elif self.upper and (
+            division_id and "sldu" in division_id or chamber == "upper"
+        ):
             return self.upper.lookup_district(division_id=division_id, name=name)
+        return None
 
 
-def simple_numbered_districts(parent_id, chamber_type, total, *, num_seats=1):
+def simple_numbered_districts(
+    parent_id: str, chamber_type: str, total: int, *, num_seats: int = 1
+) -> typing.List[District]:
     prefix = "sldl" if chamber_type == "lower" else "sldu"
     return [
         District(str(n), chamber_type, f"{parent_id}/{prefix}:{n}", num_seats)
