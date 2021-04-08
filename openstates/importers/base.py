@@ -10,10 +10,7 @@ from .. import settings
 from ..data.models import LegislativeSession
 from ..exceptions import DuplicateItemError, UnresolvedIdError, DataImportError
 from ..utils import get_pseudo_id, utcnow
-
-# type aliases
-_ID = typing.Union[int, str]
-_JsonDict = typing.Dict[str, typing.Any]
+from ._types import _ID, _JsonDict, _RelatedModels
 
 
 def omnihash(obj: typing.Any) -> int:
@@ -115,9 +112,9 @@ class BaseImporter:
 
     _type: str = None
     model_class: Model = None
-    related_models = {}
+    related_models: _RelatedModels = {}
     preserve_order: typing.Set[str] = set()
-    merge_related = {}
+    merge_related: typing.Dict[str, typing.List[str]] = {}
     cached_transformers = {}
 
     def __init__(self, jurisdiction_id: str) -> None:
@@ -143,6 +140,12 @@ class BaseImporter:
                 identifier=identifier, jurisdiction_id=self.jurisdiction_id
             ).id
         return self.session_cache[identifier]
+
+    def limit_spec(self, spec: _JsonDict) -> _JsonDict:
+        raise NotImplementedError()
+
+    def get_object(self, object: _JsonDict) -> Model:
+        raise NotImplementedError()
 
     # no-ops to be overriden
     def prepare_for_db(self, data: _JsonDict) -> _JsonDict:

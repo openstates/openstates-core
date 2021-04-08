@@ -1,4 +1,5 @@
 from django.db.models import Q
+from ._types import _DBSpec, _JsonDict
 from .base import BaseImporter
 from ..data.models import Person
 
@@ -7,7 +8,7 @@ class PersonImporter(BaseImporter):
     _type = "person"
     model_class = Person
 
-    def limit_spec(self, spec):
+    def limit_spec(self, spec: _JsonDict) -> _DBSpec:
         """
         Whenever we do a Pseudo ID lookup from the database, we need to limit
         based on the memberships -> organization -> jurisdiction, so we scope

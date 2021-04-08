@@ -5,9 +5,10 @@ optionally, they can take a save parameter, that should default to False
 but can be set to True to force a save if changes were made
 (this allows for usage from CLI)
 """
+from ._types import Model
 
 
-def update_bill_fields(bill, *, save=False):
+def update_bill_fields(bill: Model, *, save: bool = False) -> None:
     first_action_date = None
     latest_action_date = None
     latest_action_description = ""

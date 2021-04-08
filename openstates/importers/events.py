@@ -1,4 +1,5 @@
 from .base import BaseImporter
+from ._types import _JsonDict
 from ..utils import get_pseudo_id, _make_pseudo_id
 from ..data.models import (
     Event,
@@ -43,11 +44,11 @@ class EventImporter(BaseImporter):
             },
         ),
     }
-    preserve_order = ("agenda",)
+    preserve_order = {"agenda"}
 
     def __init__(
         self,
-        jurisdiction_id,
+        jurisdiction_id: str,
         org_importer,
         person_importer,
         bill_importer,
@@ -59,7 +60,7 @@ class EventImporter(BaseImporter):
         self.bill_importer = bill_importer
         self.vote_event_importer = vote_event_importer
 
-    def get_object(self, event):
+    def get_object(self, event: _JsonDict) -> Event:
         if event.get("dedupe_key"):
             spec = {
                 "dedupe_key": event.get("dedupe_key"),
@@ -75,7 +76,7 @@ class EventImporter(BaseImporter):
             }
         return self.model_class.objects.get(**spec)
 
-    def get_location(self, location_data):
+    def get_location(self, location_data: _JsonDict) -> EventLocation:
         obj, created = EventLocation.objects.get_or_create(
             name=location_data["name"],
             url=location_data.get("url", ""),
@@ -84,7 +85,7 @@ class EventImporter(BaseImporter):
         # TODO: geocode here?
         return obj
 
-    def prepare_for_db(self, data):
+    def prepare_for_db(self, data: _JsonDict) -> _JsonDict:
         data["jurisdiction_id"] = self.jurisdiction_id
         data["location"] = self.get_location(data["location"])
 
