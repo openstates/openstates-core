@@ -16,7 +16,6 @@ from ..data.models import (
     EventAgendaMedia,
     EventAgendaMediaLink,
 )
-from .people import PersonImporter
 from .organizations import OrganizationImporter
 from .vote_events import VoteEventImporter
 from .bills import BillImporter
@@ -54,13 +53,11 @@ class EventImporter(BaseImporter):
         self,
         jurisdiction_id: str,
         org_importer: OrganizationImporter,
-        person_importer: PersonImporter,
         bill_importer: BillImporter,
         vote_event_importer: VoteEventImporter,
     ):
         super(EventImporter, self).__init__(jurisdiction_id)
         self.org_importer = org_importer
-        self.person_importer = person_importer
         self.bill_importer = bill_importer
         self.vote_event_importer = vote_event_importer
 
@@ -98,9 +95,7 @@ class EventImporter(BaseImporter):
 
         for participant in data["participants"]:
             if "person_id" in participant:
-                participant["person_id"] = self.person_importer.resolve_json_id(
-                    participant["person_id"], allow_no_match=True
-                )
+                participant["person_id"] = self.resolve_person(participant["person_id"])
             elif "organization_id" in participant:
                 participant["organization_id"] = self.org_importer.resolve_json_id(
                     participant["organization_id"], allow_no_match=True
@@ -109,9 +104,7 @@ class EventImporter(BaseImporter):
         for item in data["agenda"]:
             for entity in item["related_entities"]:
                 if "person_id" in entity:
-                    entity["person_id"] = self.person_importer.resolve_json_id(
-                        entity["person_id"], allow_no_match=True
-                    )
+                    entity["person_id"] = self.resolve_person(entity["person_id"])
                 elif "organization_id" in entity:
                     entity["organization_id"] = self.org_importer.resolve_json_id(
                         entity["organization_id"], allow_no_match=True

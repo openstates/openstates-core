@@ -416,6 +416,54 @@ def test_bill_sponsor_limit_lookup_by_jurisdiction():
 
 
 @pytest.mark.django_db
+def disable_test_bill_sponsor_limit_lookup_within_session():
+    j = create_jurisdiction()
+    org = create_org()
+    j.legislative_sessions.create(identifier="2021", name="2021")
+
+    old_bill = ScrapeBill(
+        "HB 1", "1900", "Axe & Tack Tax Act", classification="tax bill", chamber="lower"
+    )
+    new_bill = ScrapeBill(
+        "HB 9000",
+        "2021",
+        "Laser Regulations",
+        classification="tax bill",
+        chamber="lower",
+    )
+    old_bill.add_sponsorship(
+        name="Springfield",
+        classification="sponsor",
+        entity_type="person",
+        primary=True,
+    )
+
+    jeb = Person.objects.create(
+        name="Jebediah Springfield", birth_date="1850-01-01", family_name="Springfield"
+    )
+    Membership.objects.create(
+        person_id=jeb.id, organization_id=org.id, end_date="1910-01-01"
+    )
+
+    futuro = Person.objects.create(
+        name="Futuro Springfield", birth_date="2000-01-01", family_name="Springfield"
+    )
+    Membership.objects.create(person_id=futuro.id, organization_id=org.id)
+
+    BillImporter("jid").import_data([old_bill.as_dict(), new_bill.as_dict()])
+
+    # get old bill and ensure Jeb is sponsor
+    old_bill_obj = Bill.objects.get(identifier="HB 1")
+    (entry,) = old_bill_obj.sponsorships.all()
+    assert entry.person.name == jeb.name
+
+    # get new bill and ensure Futuro is sponsor
+    new_bill_obj = Bill.objects.get(identifier="HB 9000")
+    (entry,) = new_bill_obj.sponsorships.all()
+    assert entry.person.name == futuro.name
+
+
+@pytest.mark.django_db
 def test_fix_bill_id():
     create_jurisdiction()
     create_org()
