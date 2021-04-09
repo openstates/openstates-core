@@ -7,7 +7,7 @@ import typing
 from django.db.models import Q, Model
 from django.db.models.signals import post_save
 from .. import settings
-from ..data.models import LegislativeSession
+from ..data.models import LegislativeSession, Person
 from ..exceptions import DuplicateItemError, UnresolvedIdError, DataImportError
 from ..utils import get_pseudo_id, utcnow
 from ._types import _ID, _JsonDict, _RelatedModels, _TransformerMapping
@@ -122,6 +122,7 @@ class BaseImporter:
         self.json_to_db_id: typing.Dict[str, _ID] = {}
         self.duplicates: typing.Dict[str, str] = {}
         self.pseudo_id_cache: typing.Dict[str, typing.Optional[_ID]] = {}
+        self.person_cache: typing.Dict[str, typing.Optional[str]] = {}
         self.session_cache: typing.Dict[str, int] = {}
         self.logger = logging.getLogger("openstates")
         self.info = self.logger.info
@@ -482,3 +483,39 @@ class BaseImporter:
 
     def get_seen_sessions(self) -> typing.ValuesView[int]:
         return self.session_cache.values()
+
+    def resolve_person(self, psuedo_person_id: str) -> str:
+        if psuedo_person_id in self.person_cache:
+            return self.person_cache[psuedo_person_id]
+
+        # turn spec into DB query
+        spec = get_pseudo_id(psuedo_person_id)
+        if list(spec.keys()) == ["name"]:
+            # if we're just resolving on name, include other names and family name
+            name = spec["name"]
+            spec = Q(name=name) | Q(other_names__name=name) | Q(family_name=name)
+        else:
+            spec = Q(**spec)
+
+        spec &= Q(
+            memberships__organization__jurisdiction_id=self.jurisdiction_id,
+        )
+
+        print("SPEC", spec)
+
+        ids = set(Person.objects.filter(spec).values_list("id", flat=True))
+        if len(ids) == 1:
+            self.person_cache[psuedo_person_id] = ids.pop()
+            errmsg = None
+        elif not ids:
+            errmsg = f"no people returned for {psuedo_person_id}"
+        else:
+            errmsg = f"multiple people returned for {psuedo_person_id}"
+
+        # either raise or log error
+        if errmsg:
+            self.error(errmsg)
+            self.person_cache[psuedo_person_id] = None
+
+        # return the newly-cached object
+        return self.person_cache[psuedo_person_id]

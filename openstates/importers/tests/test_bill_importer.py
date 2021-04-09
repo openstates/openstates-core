@@ -14,11 +14,12 @@ from openstates.utils.generic import _make_pseudo_id
 from openstates.exceptions import DuplicateItemError
 
 
-def create_jurisdiction():
+def create_jurisdiction() -> Jurisdiction:
     Division.objects.create(id="ocd-division/country:us", name="USA")
     j = Jurisdiction.objects.create(id="jid", division_id="ocd-division/country:us")
     j.legislative_sessions.create(identifier="1899", name="1899")
     j.legislative_sessions.create(identifier="1900", name="1900")
+    return j
 
 
 def create_org():
@@ -380,7 +381,7 @@ def test_bill_sponsor_by_identifier():
 
 
 @pytest.mark.django_db
-def test_bill_sponsor_limit_lookup():
+def test_bill_sponsor_limit_lookup_by_jurisdiction():
     create_jurisdiction()
     org = create_org()
 
