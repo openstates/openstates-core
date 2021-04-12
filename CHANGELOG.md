@@ -1,5 +1,9 @@
 # Changelog
 
+## 5.9.3 - April 12 2021
+
+* improvement for person matching to restrict to legislative roles
+
 ## 5.9.2 - April 12 2021
 
 * fix for organization sponsors on import
