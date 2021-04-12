@@ -4,7 +4,6 @@ from ._types import _JsonDict, _DBSpec, _RelatedModels
 from ..utils import get_pseudo_id, _make_pseudo_id
 from ..exceptions import InvalidVoteEventError
 from ..data.models import VoteEvent, VoteCount, PersonVote, VoteSource, BillAction
-from .people import PersonImporter
 from .organizations import OrganizationImporter
 from .bills import BillImporter
 
@@ -21,7 +20,6 @@ class VoteEventImporter(BaseImporter):
     def __init__(self, jurisdiction_id: str, bill_importer: BillImporter):
         super(VoteEventImporter, self).__init__(jurisdiction_id)
         self.org_importer = OrganizationImporter(jurisdiction_id)
-        self.person_importer = PersonImporter(jurisdiction_id)
         self.bill_importer = bill_importer
         self.seen_bill_ids: typing.Set[str] = set()
         self.seen_action_ids: typing.Set[str] = set()
@@ -69,9 +67,8 @@ class VoteEventImporter(BaseImporter):
         return spec
 
     def prepare_for_db(self, data: _JsonDict) -> _JsonDict:
-        data["legislative_session_id"] = self.get_session_id(
-            data.pop("legislative_session")
-        )
+        session = self.get_session(data.pop("legislative_session"))
+        data["legislative_session_id"] = session.id
         data["organization_id"] = self.org_importer.resolve_json_id(
             data.pop("organization")
         )
@@ -119,9 +116,7 @@ class VoteEventImporter(BaseImporter):
                 )
 
         for vote in data["votes"]:
-            vote["voter_id"] = self.person_importer.resolve_json_id(
-                vote["voter_id"], allow_no_match=True
-            )
+            vote["voter_id"] = self.resolve_person(vote["voter_id"])
         return data
 
     def postimport(self) -> None:

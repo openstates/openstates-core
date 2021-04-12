@@ -17,7 +17,6 @@ from ..data.models import (
     BillVersionLink,
 )
 from .computed_fields import update_bill_fields
-from .people import PersonImporter
 from .organizations import OrganizationImporter
 
 
@@ -52,7 +51,6 @@ class BillImporter(BaseImporter):
     def __init__(self, jurisdiction_id: str):
         super(BillImporter, self).__init__(jurisdiction_id)
         self.org_importer = OrganizationImporter(jurisdiction_id)
-        self.person_importer = PersonImporter(jurisdiction_id)
 
     def get_object(self, bill: _JsonDict) -> Model:
         spec = {
@@ -71,9 +69,8 @@ class BillImporter(BaseImporter):
         return spec
 
     def prepare_for_db(self, data: _JsonDict) -> _JsonDict:
-        data["legislative_session_id"] = self.get_session_id(
-            data.pop("legislative_session")
-        )
+        session = self.get_session(data.pop("legislative_session"))
+        data["legislative_session_id"] = session.id
 
         if data["from_organization"]:
             data["from_organization_id"] = self.org_importer.resolve_json_id(
@@ -90,14 +87,16 @@ class BillImporter(BaseImporter):
                         entity["organization_id"]
                     )
                 elif "person_id" in entity:
-                    entity["person_id"] = self.person_importer.resolve_json_id(
-                        entity["person_id"]
+                    entity["person_id"] = self.resolve_person(
+                        entity["person_id"], session.start_date, session.end_date
                     )
 
         for sponsor in data["sponsorships"]:
             if "person_id" in sponsor:
-                sponsor["person_id"] = self.person_importer.resolve_json_id(
-                    sponsor["person_id"], allow_no_match=True
+                sponsor["person_id"] = self.resolve_person(
+                    sponsor["person_id"],
+                    session.start_date,
+                    session.end_date,
                 )
 
             if "organization_id" in sponsor:
