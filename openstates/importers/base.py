@@ -512,15 +512,16 @@ class BaseImporter:
         # we don't know what dates we have available to us... it can be any configuration
         # of start/end dates or they can all be null.  Instead of requiring a strict overlap
         # we use them to exclude people that are definitely not serving in the session:
-        #   - if we know when the session started, exclude anyone that left office before then
+        # if we know when the session started, ensure they are either in office still or
+        #   that their end date was after the start of the session
         if start_date:
-            spec &= Q(memberships__end_date="") | ~Q(
-                memberships__end_date__lt=start_date
+            spec &= Q(memberships__end_date="") | Q(
+                memberships__end_date__gt=start_date
             )
-        #   - if we know when the session ended, exclude anyone that took office after that
+        # if we know when the session ended, ensure that they didn't start after it ended
         if end_date:
-            spec &= Q(memberships__start_date="") | ~Q(
-                memberships__start_date__gt=end_date
+            spec &= Q(memberships__start_date="") | Q(
+                memberships__start_date__lt=end_date
             )
 
         ids = set(Person.objects.filter(spec).values_list("id", flat=True))
