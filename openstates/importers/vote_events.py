@@ -116,7 +116,9 @@ class VoteEventImporter(BaseImporter):
                 )
 
         for vote in data["votes"]:
-            vote["voter_id"] = self.resolve_person(vote["voter_id"])
+            vote["voter_id"] = self.resolve_person(
+                vote["voter_id"], session.start_date, session.end_date
+            )
         return data
 
     def postimport(self) -> None:

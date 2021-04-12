@@ -1,7 +1,8 @@
 # Changelog
 
-## 5.8.3
+## 5.9.0
 
+* improved Person resolution in importers
 * added typing to openstates.metadata
 * added typing to openstates.importers
 
