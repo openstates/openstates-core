@@ -1,6 +1,6 @@
 # Changelog
 
-## 5.9.0
+## 5.9.0 - April 12 2021
 
 * improved Person resolution in importers
 * added typing to openstates.metadata
