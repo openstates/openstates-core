@@ -92,14 +92,13 @@ class BillImporter(BaseImporter):
                     )
 
         for sponsor in data["sponsorships"]:
-            if "person_id" in sponsor:
+            if sponsor.get("person_id"):
                 sponsor["person_id"] = self.resolve_person(
                     sponsor["person_id"],
                     session.start_date,
                     session.end_date,
                 )
-
-            if "organization_id" in sponsor:
+            if sponsor.get("organization_id"):
                 sponsor["organization_id"] = self.org_importer.resolve_json_id(
                     sponsor["organization_id"], allow_no_match=True
                 )

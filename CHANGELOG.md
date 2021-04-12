@@ -1,5 +1,9 @@
 # Changelog
 
+## 5.9.2 - April 12 2021
+
+* fix for organization sponsors on import
+
 ## 5.9.1 - April 12 2021
 
 * fix for get_seen_sessions error introduced in 5.9.0
