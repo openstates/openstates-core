@@ -50,7 +50,9 @@ def test_related_people_event():
     create_jurisdiction()
     george = Person.objects.create(id="gw", name="George Washington")
     john = Person.objects.create(id="jqp", name="John Q. Public")
-    o = Organization.objects.create(name="Merica", jurisdiction_id="jid")
+    o = Organization.objects.create(
+        name="Merica", jurisdiction_id="jid", classification="legislature"
+    )
 
     Membership.objects.create(person=george, organization=o)
     Membership.objects.create(person=john, organization=o)

@@ -491,6 +491,7 @@ class BaseImporter:
         psuedo_person_id: str,
         start_date: typing.Optional[str] = None,
         end_date: typing.Optional[str] = None,
+        org_classification: typing.Optional[str] = None,
     ) -> str:
         cache_key = (psuedo_person_id, start_date, end_date)
         if cache_key in self.person_cache:
@@ -508,6 +509,17 @@ class BaseImporter:
         spec &= Q(
             memberships__organization__jurisdiction_id=self.jurisdiction_id,
         )
+
+        if org_classification:
+            spec &= Q(memberships__organization__classification=org_classification)
+        else:
+            spec &= Q(
+                memberships__organization__classification__in=(
+                    "upper",
+                    "lower",
+                    "legislature",
+                )
+            )
 
         # we don't know what dates we have available to us... it can be any configuration
         # of start/end dates or they can all be null.  Instead of requiring a strict overlap
