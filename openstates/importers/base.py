@@ -483,8 +483,8 @@ class BaseImporter:
 
         return data
 
-    def get_seen_sessions(self) -> typing.ValuesView[int]:
-        return self.session_cache.values()
+    def get_seen_sessions(self) -> typing.List[int]:
+        return [s.id for s in self.session_cache.values()]
 
     def resolve_person(
         self,
