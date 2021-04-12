@@ -17,8 +17,12 @@ from openstates.exceptions import DuplicateItemError
 def create_jurisdiction() -> Jurisdiction:
     Division.objects.create(id="ocd-division/country:us", name="USA")
     j = Jurisdiction.objects.create(id="jid", division_id="ocd-division/country:us")
-    j.legislative_sessions.create(identifier="1899", name="1899")
-    j.legislative_sessions.create(identifier="1900", name="1900")
+    j.legislative_sessions.create(
+        identifier="1899", name="1899", start_date="1899", end_date="1900"
+    )
+    j.legislative_sessions.create(
+        identifier="1900", name="1900", start_date="1900", end_date="1901"
+    )
     return j
 
 
@@ -416,13 +420,21 @@ def test_bill_sponsor_limit_lookup_by_jurisdiction():
 
 
 @pytest.mark.django_db
-def disable_test_bill_sponsor_limit_lookup_within_session():
+def test_bill_sponsor_limit_lookup_within_session():
     j = create_jurisdiction()
     org = create_org()
-    j.legislative_sessions.create(identifier="2021", name="2021")
+    j.legislative_sessions.create(
+        identifier="2021", name="2021", start_date="2021", end_date="2022"
+    )
 
     old_bill = ScrapeBill(
         "HB 1", "1900", "Axe & Tack Tax Act", classification="tax bill", chamber="lower"
+    )
+    old_bill.add_sponsorship(
+        name="Springfield",
+        classification="sponsor",
+        entity_type="person",
+        primary=True,
     )
     new_bill = ScrapeBill(
         "HB 9000",
@@ -431,7 +443,7 @@ def disable_test_bill_sponsor_limit_lookup_within_session():
         classification="tax bill",
         chamber="lower",
     )
-    old_bill.add_sponsorship(
+    new_bill.add_sponsorship(
         name="Springfield",
         classification="sponsor",
         entity_type="person",
@@ -448,7 +460,9 @@ def disable_test_bill_sponsor_limit_lookup_within_session():
     futuro = Person.objects.create(
         name="Futuro Springfield", birth_date="2000-01-01", family_name="Springfield"
     )
-    Membership.objects.create(person_id=futuro.id, organization_id=org.id)
+    Membership.objects.create(
+        person_id=futuro.id, organization_id=org.id, start_date="2020-04-01"
+    )
 
     BillImporter("jid").import_data([old_bill.as_dict(), new_bill.as_dict()])
 

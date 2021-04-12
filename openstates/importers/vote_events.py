@@ -67,9 +67,8 @@ class VoteEventImporter(BaseImporter):
         return spec
 
     def prepare_for_db(self, data: _JsonDict) -> _JsonDict:
-        data["legislative_session_id"] = self.get_session_id(
-            data.pop("legislative_session")
-        )
+        session = self.get_session(data.pop("legislative_session"))
+        data["legislative_session_id"] = session.id
         data["organization_id"] = self.org_importer.resolve_json_id(
             data.pop("organization")
         )

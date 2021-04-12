@@ -69,9 +69,8 @@ class BillImporter(BaseImporter):
         return spec
 
     def prepare_for_db(self, data: _JsonDict) -> _JsonDict:
-        data["legislative_session_id"] = self.get_session_id(
-            data.pop("legislative_session")
-        )
+        session = self.get_session(data.pop("legislative_session"))
+        data["legislative_session_id"] = session.id
 
         if data["from_organization"]:
             data["from_organization_id"] = self.org_importer.resolve_json_id(
@@ -88,11 +87,17 @@ class BillImporter(BaseImporter):
                         entity["organization_id"]
                     )
                 elif "person_id" in entity:
-                    entity["person_id"] = self.resolve_person(entity["person_id"])
+                    entity["person_id"] = self.resolve_person(
+                        entity["person_id"], session.start_date, session.end_date
+                    )
 
         for sponsor in data["sponsorships"]:
             if "person_id" in sponsor:
-                sponsor["person_id"] = self.resolve_person(sponsor["person_id"])
+                sponsor["person_id"] = self.resolve_person(
+                    sponsor["person_id"],
+                    session.start_date,
+                    session.end_date,
+                )
 
             if "organization_id" in sponsor:
                 sponsor["organization_id"] = self.org_importer.resolve_json_id(

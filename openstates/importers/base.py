@@ -12,6 +12,8 @@ from ..exceptions import DuplicateItemError, UnresolvedIdError, DataImportError
 from ..utils import get_pseudo_id, utcnow
 from ._types import _ID, _JsonDict, _RelatedModels, _TransformerMapping
 
+_PersonCacheKey = typing.Tuple[str, typing.Optional[str], typing.Optional[str]]
+
 
 def omnihash(obj: typing.Any) -> int:
     """ recursively hash unhashable objects """
@@ -122,8 +124,8 @@ class BaseImporter:
         self.json_to_db_id: typing.Dict[str, _ID] = {}
         self.duplicates: typing.Dict[str, str] = {}
         self.pseudo_id_cache: typing.Dict[str, typing.Optional[_ID]] = {}
-        self.person_cache: typing.Dict[str, typing.Optional[str]] = {}
-        self.session_cache: typing.Dict[str, int] = {}
+        self.person_cache: typing.Dict[_PersonCacheKey, typing.Optional[str]] = {}
+        self.session_cache: typing.Dict[str, LegislativeSession] = {}
         self.logger = logging.getLogger("openstates")
         self.info = self.logger.info
         self.debug = self.logger.debug
@@ -135,11 +137,11 @@ class BaseImporter:
         if settings.IMPORT_TRANSFORMERS.get(self._type):
             self.cached_transformers = settings.IMPORT_TRANSFORMERS[self._type]
 
-    def get_session_id(self, identifier: str) -> int:
+    def get_session(self, identifier: str) -> LegislativeSession:
         if identifier not in self.session_cache:
             self.session_cache[identifier] = LegislativeSession.objects.get(
                 identifier=identifier, jurisdiction_id=self.jurisdiction_id
-            ).id
+            )
         return self.session_cache[identifier]
 
     def limit_spec(self, spec: _JsonDict) -> _JsonDict:
@@ -484,9 +486,15 @@ class BaseImporter:
     def get_seen_sessions(self) -> typing.ValuesView[int]:
         return self.session_cache.values()
 
-    def resolve_person(self, psuedo_person_id: str) -> str:
-        if psuedo_person_id in self.person_cache:
-            return self.person_cache[psuedo_person_id]
+    def resolve_person(
+        self,
+        psuedo_person_id: str,
+        start_date: typing.Optional[str] = None,
+        end_date: typing.Optional[str] = None,
+    ) -> str:
+        cache_key = (psuedo_person_id, start_date, end_date)
+        if cache_key in self.person_cache:
+            return self.person_cache[cache_key]
 
         # turn spec into DB query
         spec = get_pseudo_id(psuedo_person_id)
@@ -501,21 +509,33 @@ class BaseImporter:
             memberships__organization__jurisdiction_id=self.jurisdiction_id,
         )
 
-        print("SPEC", spec)
+        # we don't know what dates we have available to us... it can be any configuration
+        # of start/end dates or they can all be null.  Instead of requiring a strict overlap
+        # we use them to exclude people that are definitely not serving in the session:
+        #   - if we know when the session started, exclude anyone that left office before then
+        if start_date:
+            spec &= Q(memberships__end_date="") | ~Q(
+                memberships__end_date__lt=start_date
+            )
+        #   - if we know when the session ended, exclude anyone that took office after that
+        if end_date:
+            spec &= Q(memberships__start_date="") | ~Q(
+                memberships__start_date__gt=end_date
+            )
 
         ids = set(Person.objects.filter(spec).values_list("id", flat=True))
         if len(ids) == 1:
-            self.person_cache[psuedo_person_id] = ids.pop()
+            self.person_cache[cache_key] = ids.pop()
             errmsg = None
         elif not ids:
-            errmsg = f"no people returned for {psuedo_person_id}"
+            errmsg = f"no people returned for {spec}"
         else:
-            errmsg = f"multiple people returned for {psuedo_person_id}"
+            errmsg = f"multiple people returned for {spec}"
 
         # either raise or log error
         if errmsg:
             self.error(errmsg)
-            self.person_cache[psuedo_person_id] = None
+            self.person_cache[cache_key] = None
 
         # return the newly-cached object
-        return self.person_cache[psuedo_person_id]
+        return self.person_cache[cache_key]
