@@ -1,5 +1,9 @@
 # Changelog
 
+## 5.9.1 - April 12 2021
+
+* fix for get_seen_sessions error introduced in 5.9.0
+
 ## 5.9.0 - April 12 2021
 
 * improved Person resolution in importers
