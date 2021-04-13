@@ -502,7 +502,11 @@ class BaseImporter:
         if list(spec.keys()) == ["name"]:
             # if we're just resolving on name, include other names and family name
             name = spec["name"]
-            spec = Q(name=name) | Q(other_names__name=name) | Q(family_name=name)
+            spec = (
+                Q(name__iexact=name)
+                | Q(other_names__name__iexact=name)
+                | Q(family_name__iexact=name)
+            )
         else:
             spec = Q(**spec)
 

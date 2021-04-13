@@ -11,6 +11,7 @@ from openstates.data.models import (
     Division,
     LegislativeSession,
     Organization,
+    Person,
 )
 from openstates.scrape import Bill as ScrapeBill
 from openstates.importers.base import omnihash, BaseImporter
@@ -171,3 +172,25 @@ def test_automatic_updated_at():
     difference = Organization.objects.get().updated_at - datetime.datetime.utcnow()
     # updated_at should be in UTC, a bit of clock drift notwithstanding
     assert abs(difference) < datetime.timedelta(minutes=5)
+
+
+@pytest.mark.django_db
+def test_resolve_person_normal():
+    create_jurisdiction()
+    bi = BillImporter("jid")
+    org = Organization.objects.get(jurisdiction_id="jid", classification="legislature")
+    p = Person.objects.create(name="John McGuirk")
+    p.memberships.create(organization=org)
+
+    assert bi.resolve_person('~{"name": "John McGuirk"}') == p.id
+
+
+@pytest.mark.django_db
+def test_resolve_person_case_insensitive():
+    create_jurisdiction()
+    bi = BillImporter("jid")
+    org = Organization.objects.get(jurisdiction_id="jid", classification="legislature")
+    p = Person.objects.create(name="John McGuirk")
+    p.memberships.create(organization=org)
+
+    assert bi.resolve_person('~{"name": "JohN mCgUIrk"}') == p.id
