@@ -1,5 +1,9 @@
 # Changelog
 
+## 5.9.5
+
+* warnings on duplicate sponsors
+
 ## 5.9.4 - April 13 2021
 
 * case-insensitive person matching

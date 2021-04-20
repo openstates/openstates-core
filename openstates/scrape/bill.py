@@ -1,3 +1,4 @@
+import warnings
 from ..utils import _make_pseudo_id
 from .popolo import pseudo_organization
 from .base import BaseModel, SourceMixin, AssociatedLinkMixin, cleanup_list
@@ -107,6 +108,8 @@ class Bill(SourceMixin, AssociatedLinkMixin, BaseModel):
             if not entity_id:
                 entity_id = _make_pseudo_id(name=name)
             sp[entity_type + "_id"] = entity_id
+        if sp in self.sponsorships:
+            warnings.warn(f"duplicate sponsor {sp}", RuntimeWarning)
         self.sponsorships.append(sp)
 
     def add_sponsorship_by_identifier(

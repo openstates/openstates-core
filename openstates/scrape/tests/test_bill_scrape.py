@@ -1,4 +1,5 @@
 import pytest
+import warnings
 from openstates.scrape import Bill
 from openstates.utils.generic import get_pseudo_id
 from openstates.exceptions import ScrapeValueError
@@ -256,3 +257,24 @@ def test_pre_save():
     b.add_subject("MMM")
     b.pre_save(None)
     assert b.subject == ["AAA", "MMM", "ZZZ"]
+
+
+def test_duplicate_sponsor_warning():
+    b = toy_bill()
+    b.add_sponsorship(
+        name="Joe Bleu",
+        classification="Author",
+        entity_type="person",
+        primary=True,
+        chamber="upper",
+    )
+    with warnings.catch_warnings(record=True) as w:
+        b.add_sponsorship(
+            name="Joe Bleu",
+            classification="Author",
+            entity_type="person",
+            primary=True,
+            chamber="upper",
+        )
+        assert len(w) == 1
+        assert "duplicate sponsor" in str(w[0].message)
