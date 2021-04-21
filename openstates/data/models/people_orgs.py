@@ -43,6 +43,7 @@ class Organization(OCDBase):
     )
     sources = JSONField(default=list, blank=True)
     links = JSONField(default=list, blank=True)
+    other_names = JSONField(default=list, blank=True)
 
     def __str__(self):
         return self.name
