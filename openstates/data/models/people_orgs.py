@@ -41,6 +41,9 @@ class Organization(OCDBase):
         choices=common.ORGANIZATION_CLASSIFICATION_CHOICES,
         help_text="The type of Organization being defined.",
     )
+    sources = JSONField(default=list, blank=True)
+    links = JSONField(default=list, blank=True)
+    other_names = JSONField(default=list, blank=True)
 
     def __str__(self):
         return self.name
@@ -72,38 +75,6 @@ class Organization(OCDBase):
             ["jurisdiction", "classification", "name"],
             ["classification", "name"],
         ]
-
-
-class OrganizationLink(LinkBase):
-    """
-    URL for a document about an Organization.
-    """
-
-    organization = models.ForeignKey(
-        Organization,
-        related_name="links",
-        help_text="A reference to the Organization connected to this link.",
-        on_delete=models.CASCADE,
-    )
-
-    class Meta:
-        db_table = "opencivicdata_organizationlink"
-
-
-class OrganizationSource(LinkBase):
-    """
-    Source used in assembling an Organization.
-    """
-
-    organization = models.ForeignKey(
-        Organization,
-        related_name="sources",
-        help_text="A link to the Organization connected to this source.",
-        on_delete=models.CASCADE,
-    )
-
-    class Meta:
-        db_table = "opencivicdata_organizationsource"
 
 
 class Post(OCDBase):
