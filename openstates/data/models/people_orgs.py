@@ -41,8 +41,8 @@ class Organization(OCDBase):
         choices=common.ORGANIZATION_CLASSIFICATION_CHOICES,
         help_text="The type of Organization being defined.",
     )
-    sources = JSONField(default=list)
-    links = JSONField(default=list)
+    sources = JSONField(default=list, blank=True)
+    links = JSONField(default=list, blank=True)
 
     def __str__(self):
         return self.name
