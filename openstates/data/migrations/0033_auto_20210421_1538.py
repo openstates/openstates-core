@@ -19,11 +19,13 @@ class Migration(migrations.Migration):
             model_name="organization",
             name="links",
             field=django.contrib.postgres.fields.jsonb.JSONField(default=list),
+            blank=True,
         ),
         migrations.AddField(
             model_name="organization",
             name="sources",
             field=django.contrib.postgres.fields.jsonb.JSONField(default=list),
+            blank=True,
         ),
         migrations.DeleteModel(
             name="OrganizationLink",
