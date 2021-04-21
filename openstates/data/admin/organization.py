@@ -1,15 +1,7 @@
 from django.urls import reverse
 from django.contrib import admin
 from .. import models
-from .base import ModelAdmin, ReadOnlyTabularInline, LinkInline
-
-
-class OrganizationLinkInline(LinkInline):
-    model = models.OrganizationLink
-
-
-class OrganizationSourceInline(LinkInline):
-    model = models.OrganizationSource
+from .base import ModelAdmin, ReadOnlyTabularInline
 
 
 class PostInline(admin.TabularInline):
@@ -50,8 +42,6 @@ class OrganizationAdmin(ModelAdmin):
     list_filter = ("jurisdiction__name",)
 
     inlines = [
-        OrganizationLinkInline,
-        OrganizationSourceInline,
         PostInline,
         OrgMembershipInline,
     ]
