@@ -4,6 +4,7 @@
 
 * warnings on duplicate sponsors
 * backwards incompatible migration needed: Organization fields JSON-ized (part of OSEP #4)
+* updates to work with Django 3.2
 
 ## 5.9.4 - April 13 2021
 
