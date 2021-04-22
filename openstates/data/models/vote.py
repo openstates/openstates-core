@@ -1,5 +1,5 @@
 from django.db import models
-from django.contrib.postgres.fields import ArrayField, JSONField
+from django.contrib.postgres.fields import ArrayField
 
 from .base import OCDBase, LinkBase, OCDIDField, RelatedBase
 from .people_orgs import Organization, Person
@@ -49,7 +49,7 @@ class VoteEvent(OCDBase):
     order = models.PositiveIntegerField(default=0)
     dedupe_key = models.CharField(max_length=500, null=True)
 
-    extras = JSONField(default=dict, blank=True)
+    extras = models.JSONField(default=dict, blank=True)
 
     def __str__(self):
         if self.identifier:

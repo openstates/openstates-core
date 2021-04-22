@@ -1,7 +1,6 @@
 import datetime
 from django.db import models
 from django.db.models import Q, QuerySet
-from django.contrib.postgres.fields import JSONField
 from .base import OCDBase, LinkBase, OCDIDField, RelatedBase, IdentifierBase
 from .division import Division
 from .jurisdiction import Jurisdiction
@@ -41,9 +40,9 @@ class Organization(OCDBase):
         choices=common.ORGANIZATION_CLASSIFICATION_CHOICES,
         help_text="The type of Organization being defined.",
     )
-    sources = JSONField(default=list, blank=True)
-    links = JSONField(default=list, blank=True)
-    other_names = JSONField(default=list, blank=True)
+    sources = models.JSONField(default=list, blank=True)
+    links = models.JSONField(default=list, blank=True)
+    other_names = models.JSONField(default=list, blank=True)
 
     def __str__(self):
         return self.name
@@ -217,7 +216,7 @@ class Person(OCDBase):
         null=True,
         default=None,
     )
-    current_role = JSONField(null=True, default=None)
+    current_role = models.JSONField(null=True, default=None)
 
     def __str__(self):
         return self.name
