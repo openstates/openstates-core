@@ -1,7 +1,6 @@
 import re
 import uuid
 from django.db import models
-from django.contrib.postgres.fields import JSONField
 from django.core.validators import RegexValidator
 from .. import common
 
@@ -47,7 +46,7 @@ class OCDBase(models.Model):
     updated_at = models.DateTimeField(
         auto_now=True, help_text="The date and time of the last update."
     )
-    extras = JSONField(
+    extras = models.JSONField(
         default=dict,
         blank=True,
         help_text="A key-value store for storing arbitrary information not covered elsewhere.",

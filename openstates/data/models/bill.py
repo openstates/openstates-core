@@ -1,5 +1,5 @@
 from django.db import models
-from django.contrib.postgres.fields import ArrayField, JSONField
+from django.contrib.postgres.fields import ArrayField
 from django.contrib.postgres.search import SearchVectorField
 from django.contrib.postgres.indexes import GinIndex
 
@@ -178,7 +178,7 @@ class BillDocument(RelatedBase):
     classification = models.CharField(
         max_length=100, choices=common.BILL_DOCUMENT_CHOICES, blank=True
     )
-    extras = JSONField(default=dict, blank=True)
+    extras = models.JSONField(default=dict, blank=True)
 
     def __str__(self):
         return "{0} document of {1}".format(self.date, self.bill)
@@ -194,7 +194,7 @@ class BillVersion(RelatedBase):
     classification = models.CharField(
         max_length=100, choices=common.BILL_VERSION_CHOICES, blank=True
     )
-    extras = JSONField(default=dict, blank=True)
+    extras = models.JSONField(default=dict, blank=True)
 
     def __str__(self):
         return "{0} version of {1}".format(self.date, self.bill)

@@ -3,7 +3,7 @@
 ## 5.10.0
 
 * warnings on duplicate sponsors
-* migration: Organization fields JSON-ized (part of OSEP #4)
+* backwards incompatible migration needed: Organization fields JSON-ized (part of OSEP #4)
 
 ## 5.9.4 - April 13 2021
 
