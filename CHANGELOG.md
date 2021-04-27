@@ -1,10 +1,10 @@
 # Changelog
 
-## 5.10.0
+## 5.10.0 - April 27 2021
 
-* warnings on duplicate sponsors
 * backwards incompatible migration needed: Organization fields JSON-ized (part of OSEP #4)
 * updates to work with Django 3.2
+* warnings on duplicate sponsors
 
 ## 5.9.4 - April 13 2021
 
