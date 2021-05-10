@@ -1,6 +1,0 @@
-version-export.csv
-*.pyc
-raw/
-text/
-.DS_Store
-.python-version

@@ -15,3 +15,5 @@ graph
 htmlcov/
 coverage.xml
 pip-wheel-metadata/
+version-export.csv
+.DS_Store
