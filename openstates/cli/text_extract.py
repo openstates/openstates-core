@@ -6,6 +6,7 @@ import math
 import warnings
 import click
 import scrapelib
+from pathlib import Path
 from django.contrib.postgres.search import SearchVector
 from django.db import transaction
 from django.db.models import Count
@@ -17,6 +18,10 @@ from openstates.fulltext import get_extract_func, DoNotDownload, CONVERSION_FUNC
 scraper = scrapelib.Scraper(verify=False)
 scraper.user_agent = "Mozilla"
 warnings.filterwarnings("ignore", module="urllib3")
+
+
+def get_raw_dir():
+    return Path(__file__).parent / ".." / "fulltext" / "raw"
 
 
 MIMETYPES = {
@@ -36,7 +41,10 @@ def _cleanup(text):
 def download(version):
     abbr = jid_to_abbr(version["jurisdiction_id"])
     ext = MIMETYPES[version["media_type"]]
-    filename = f'raw/{abbr}/{version["session"]}-{version["identifier"]}-{version["note"]}.{ext}'
+    filename = (
+        get_raw_dir()
+        / f'{abbr}/{version["session"]}-{version["identifier"]}-{version["note"]}.{ext}'
+    )
     filename.replace("#", "__")
 
     if not os.path.exists(filename):
@@ -140,7 +148,7 @@ def update_bill(bill):
 
 
 @click.group()
-def cli():
+def main():
     pass
 
 
@@ -167,7 +175,7 @@ def _resample(state, n=50):
         "note",
     ]
 
-    with open(f"raw/{state}.csv", "w") as outf:
+    with open(get_raw_dir() / f"{state}.csv", "w") as outf:
         out = csv.DictWriter(outf, fieldnames=fieldnames)
         out.writeheader()
         for v in versions:
@@ -188,7 +196,7 @@ def _resample(state, n=50):
     click.secho(f"wrote new sample csv with {count} records")
 
 
-@cli.command(help="obtain a sample of bills to extract text from")
+@main.command(help="obtain a sample of bills to extract text from")
 @click.argument("state")
 @click.option("--resample/--no-resample", default=False)
 @click.option("--quiet/--no-quiet", default=False)
@@ -196,7 +204,7 @@ def sample(state, resample, quiet):
     if resample:
         _resample(state)
     count = missing = empty = skipped = 0
-    with open(f"raw/{state}.csv") as f:
+    with open(get_raw_dir() / f"{state}.csv") as f:
         for version in csv.DictReader(f):
             count += 1
             filename, data = download(version)
@@ -223,7 +231,7 @@ def sample(state, resample, quiet):
     return 0
 
 
-@cli.command(help="run sample on all states, used for CI")
+@main.command(help="run sample on all states, used for CI")
 @click.pass_context
 def test(ctx):
     failures = 0
@@ -234,7 +242,7 @@ def test(ctx):
     sys.exit(failures)
 
 
-@cli.command(help="print a status table showing the current condition of states")
+@main.command(help="print a status table showing the current condition of states")
 def status():
     init_django()
     from openstates.data.models import Bill
@@ -270,7 +278,7 @@ def status():
         )
 
 
-@cli.command(help="rebuild the search index objects for a given state")
+@main.command(help="rebuild the search index objects for a given state")
 @click.argument("state")
 def reindex_state(state):
     init_django()
@@ -285,7 +293,7 @@ def reindex_state(state):
     reindex(ids)
 
 
-@cli.command(help="update the saved bill text in the database")
+@main.command(help="update the saved bill text in the database")
 @click.argument("state")
 @click.option("-n", default=None)
 @click.option("--clear-errors/--no-clear-errors", default=False)
@@ -375,4 +383,4 @@ def reindex(ids_to_update):
 
 
 if __name__ == "__main__":
-    cli()
+    main()
