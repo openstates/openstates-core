@@ -79,4 +79,14 @@ legacy_districts = {
         District("Windsor-6-1", "lower", division_id=None),
         District("Windsor-6-2", "lower", division_id=None),
     ],
+    "us": [
+        District("IL-20", "lower", division_id=None),
+        District("MA-10", "lower", division_id=None),
+        District("MO-9", "lower", division_id=None),
+        District("NJ-13", "lower", division_id=None),
+        District("NY-29", "lower", division_id=None),
+        District("OH-17", "lower", division_id=None),
+        District("OH-18", "lower", division_id=None),
+        District("OK-6", "lower", division_id=None),
+    ],
 }
