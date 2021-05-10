@@ -1,0 +1,16 @@
+version: "3.5"
+
+networks:
+  openstates-network:
+      name: openstates-network
+
+services:
+  text-extract:
+    build: .
+    environment:
+    - DATABASE_URL=postgres://openstates:openstates@db/openstatesorg
+    volumes:
+    - .:/opt/text-extraction
+    entrypoint: ["poetry", "run", "python", "./text_extract.py"]
+    networks:
+    - openstates-network
