@@ -1,5 +1,9 @@
 # Changelog
 
+## 5.11.0 - May 10 2021
+
+* add US territories to metadata
+
 ## 5.10.0 - April 27 2021
 
 * backwards incompatible migration needed: Organization fields JSON-ized (part of OSEP #4)
