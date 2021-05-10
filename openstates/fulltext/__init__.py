@@ -1,4 +1,4 @@
-from .utils import jid_to_abbr
+from openstates.utils import jid_to_abbr
 from .common import (
     extract_simple_pdf,
     extract_line_numbered_pdf,
@@ -19,7 +19,9 @@ class DoNotDownload:
     """ Sentinel to indicate that nothing should be downloaded """
 
 
-DOCX_MIMETYPE = "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+DOCX_MIMETYPE = (
+    "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+)
 
 CONVERSION_FUNCTIONS = {
     "al": {"application/pdf": extract_line_numbered_pdf},
@@ -42,7 +44,10 @@ CONVERSION_FUNCTIONS = {
         "application/pdf": handle_delaware,
         "application/msword": DoNotDownload,
     },
-    "fl": {"text/html": extract_pre_tag_html, "application/pdf": extract_line_numbered_pdf},
+    "fl": {
+        "text/html": extract_pre_tag_html,
+        "application/pdf": extract_line_numbered_pdf,
+    },
     "ga": {"application/pdf": extract_sometimes_numbered_pdf},
     "hi": {
         "text/html": extractor_for_element_by_xpath(
@@ -81,8 +86,14 @@ CONVERSION_FUNCTIONS = {
     },
     "nj": {"text/html": extractor_for_element_by_xpath('.//*[@class="WordSection3"]')},
     # NY HTML is just summaries
-    "ny": {"text/html": DoNotDownload, "application/pdf": extract_sometimes_numbered_pdf},
-    "nm": {"application/pdf": extract_sometimes_numbered_pdf, "text/html": DoNotDownload},
+    "ny": {
+        "text/html": DoNotDownload,
+        "application/pdf": extract_sometimes_numbered_pdf,
+    },
+    "nm": {
+        "application/pdf": extract_sometimes_numbered_pdf,
+        "text/html": DoNotDownload,
+    },
     "nv": {"application/pdf": extract_sometimes_numbered_pdf},
     "oh": {"application/pdf": extract_line_post_numbered_pdf},
     "or": {"application/pdf": extract_sometimes_numbered_pdf},
@@ -106,7 +117,10 @@ CONVERSION_FUNCTIONS = {
     "va": {"text/html": extractor_for_element_by_id("mainC")},
     "vt": {"application/pdf": extract_sometimes_numbered_pdf},
     "wa": {"text/html": extractor_for_element_by_xpath("//html")},
-    "wi": {"application/pdf": extract_sometimes_numbered_pdf, "text/html": DoNotDownload},
+    "wi": {
+        "application/pdf": extract_sometimes_numbered_pdf,
+        "text/html": DoNotDownload,
+    },
     "wv": {"text/html": extractor_for_element_by_xpath('.//*[@class="textcontainer"]')},
     "wy": {"application/pdf": extract_sometimes_numbered_pdf},
 }

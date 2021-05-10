@@ -10,8 +10,8 @@ from django.contrib.postgres.search import SearchVector
 from django.db import transaction
 from django.db.models import Count
 from openstates.utils.django import init_django
-from extract.utils import jid_to_abbr, abbr_to_jid
-from extract import get_extract_func, DoNotDownload, CONVERSION_FUNCTIONS
+from openstates.utils import jid_to_abbr, abbr_to_jid
+from openstates.fulltext import get_extract_func, DoNotDownload, CONVERSION_FUNCTIONS
 
 # disable SSL validation and ignore warnings
 scraper = scrapelib.Scraper(verify=False)
@@ -85,7 +85,9 @@ def update_bill(bill):
     from openstates.data.models import SearchableBill
 
     try:
-        latest_version = bill.versions.order_by("-date", "-note").prefetch_related("links")[0]
+        latest_version = bill.versions.order_by("-date", "-note").prefetch_related(
+            "links"
+        )[0]
         links = latest_version.links.all()
     except IndexError:
         links = []
@@ -241,7 +243,9 @@ def status():
     click.secho("state |  bills  | missing | errors ", fg="white")
     click.secho("===================================", fg="white")
     for state in states:
-        all_bills = Bill.objects.filter(legislative_session__jurisdiction_id=abbr_to_jid(state))
+        all_bills = Bill.objects.filter(
+            legislative_session__jurisdiction_id=abbr_to_jid(state)
+        )
         missing_search = all_bills.filter(searchable__isnull=True).count()
         errors = all_bills.filter(searchable__is_error=True).count()
         all_bills = all_bills.count()
@@ -296,7 +300,9 @@ def update(state, n, clear_errors, checkpoint):
     if state == "all":
         all_bills = Bill.objects.all()
     else:
-        all_bills = Bill.objects.filter(legislative_session__jurisdiction_id=abbr_to_jid(state))
+        all_bills = Bill.objects.filter(
+            legislative_session__jurisdiction_id=abbr_to_jid(state)
+        )
 
     if clear_errors:
         if state == "all":
@@ -309,9 +315,9 @@ def update(state, n, clear_errors, checkpoint):
     missing_search = all_bills.filter(searchable__isnull=True)
     if state == "all":
         MAX_UPDATE = 1000
-        aggregates = missing_search.values("legislative_session__jurisdiction__name").annotate(
-            count=Count("id")
-        )
+        aggregates = missing_search.values(
+            "legislative_session__jurisdiction__name"
+        ).annotate(count=Count("id"))
         for agg in aggregates:
             state_name = agg["legislative_session__jurisdiction__name"]
             if agg["count"] > MAX_UPDATE:
@@ -324,7 +330,9 @@ def update(state, n, clear_errors, checkpoint):
                 )
         print(f"{len(missing_search)} missing, updating")
     else:
-        print(f"{state}: {len(all_bills)} bills, {len(missing_search)} without search results")
+        print(
+            f"{state}: {len(all_bills)} bills, {len(missing_search)} without search results"
+        )
 
     if n:
         missing_search = missing_search[: int(n)]
