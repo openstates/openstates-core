@@ -11,7 +11,7 @@ os-initdb = 'openstates.cli.initdb:main'
 os-update-computed = 'openstates.cli.update_computed:main'
 
 [tool.poetry.dependencies]
-python = "^3.7"
+python = "^3.9"
 psycopg2-binary = "^2.8.4"
 dj_database_url = "^0.5.0"
 Django = "^3.2.0"
