@@ -9,6 +9,7 @@ license = "MIT"
 os-update = 'openstates.cli.update:main'
 os-initdb = 'openstates.cli.initdb:main'
 os-update-computed = 'openstates.cli.update_computed:main'
+os-text-extract = 'openstates.cli.text_extract:main'
 
 [tool.poetry.dependencies]
 python = "^3.9"
