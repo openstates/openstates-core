@@ -17,3 +17,5 @@ coverage.xml
 pip-wheel-metadata/
 version-export.csv
 .DS_Store
+raw/
+text/
