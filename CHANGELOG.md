@@ -1,5 +1,9 @@
 # Changelog
 
+## 5.11.1 - May 10 2021
+
+* add obsolete US districts to metadata
+
 ## 5.11.0 - May 10 2021
 
 * add US territories to metadata
