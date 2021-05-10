@@ -74,6 +74,30 @@ def us_house_districts() -> typing.List[District]:
             "ocd-division/country:us/territory:pr",
             title_override="Resident Commissioner",
         ),
+        District(
+            "AS-AL",
+            "lower",
+            "ocd-division/country:us/territory:as",
+            title_override="Delegate",
+        ),
+        District(
+            "GU-AL",
+            "lower",
+            "ocd-division/country:us/territory:gu",
+            title_override="Delegate",
+        ),
+        District(
+            "MP-AL",
+            "lower",
+            "ocd-division/country:us/territory:mp",
+            title_override="Delegate",
+        ),
+        District(
+            "VI-AL",
+            "lower",
+            "ocd-division/country:us/territory:vi",
+            title_override="Delegate",
+        ),
     ]
     districts += territories
 
@@ -125,7 +149,7 @@ US = State(
         chamber_type="lower",
         name="House",
         organization_id="ocd-organization/24af4233-d9b5-5933-91b2-51d29f721037",
-        num_seats=437,
+        num_seats=441,  # includes 6 non-voting
         title="Representative",
         districts=us_house_districts(),
     ),
