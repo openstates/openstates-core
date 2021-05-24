@@ -1,12 +1,12 @@
-from ospeople.cli.people import Summarizer
-from ospeople.models.people import (
+from openstates.cli.people import Summarizer
+from openstates.people.models.people import (
     Person,
     Party,
     ContactDetail,
     OtherIdentifier,
     PersonIdBlock,
 )
-from ospeople.utils import ocd_uuid
+from openstates.people.utils import ocd_uuid
 
 
 def test_person_summary():

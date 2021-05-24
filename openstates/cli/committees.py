@@ -12,10 +12,10 @@ import click
 import yaml
 from yaml.representer import Representer
 from pydantic import ValidationError
-from openstates.metadata import lookup
-from ..utils import get_data_path, get_all_abbreviations
-from ..models.committees import Committee, ScrapeCommittee
-from ..models.people import Person
+from ..metadata import lookup
+from ..people.utils import get_data_path, get_all_abbreviations
+from ..people.models.committees import Committee, ScrapeCommittee
+from ..people.models.people import Person
 
 yaml.SafeDumper.add_representer(defaultdict, Representer.represent_dict)
 yaml.SafeDumper.add_multi_representer(Enum, Representer.represent_str)

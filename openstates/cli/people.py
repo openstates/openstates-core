@@ -9,10 +9,10 @@ import click
 import boto3
 import yaml
 from django.db import transaction  # type: ignore
-from openstates.utils import abbr_to_jid
-from openstates.utils.django import init_django  # type: ignore
-from ..models.people import Person, Role, Party, Link
-from ..utils import (
+from ..utils import abbr_to_jid
+from ..utils.django import init_django  # type: ignore
+from ..people.models.people import Person, Role, Party, Link
+from ..people.utils import (
     ocd_uuid,
     get_data_path,
     dump_obj,
@@ -20,9 +20,9 @@ from ..utils import (
     download_state_images,
     load_municipalities,
 )
-from ..utils.retire import retire_person, add_vacancy, retire_file
-from ..utils.lint_people import Validator, BadVacancy, PersonType, PersonData
-from ..utils.to_database import (
+from ..people.utils.retire import retire_person, add_vacancy, retire_file
+from ..people.utils.lint_people import Validator, BadVacancy, PersonType, PersonData
+from ..people.utils.to_database import (
     create_municipalities,
     create_parties,
     load_person,

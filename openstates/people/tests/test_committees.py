@@ -2,8 +2,13 @@ import pytest
 from unittest.mock import patch
 from pathlib import Path
 from pydantic import ValidationError
-from ospeople.cli.committees import CommitteeDir, PersonMatcher, merge_committees
-from ospeople.models.committees import Committee, Link, ScrapeCommittee, Membership
+from openstates.cli.committees import CommitteeDir, PersonMatcher, merge_committees
+from openstates.people.models.committees import (
+    Committee,
+    Link,
+    ScrapeCommittee,
+    Membership,
+)
 
 JURISDICTION_ID = "ocd-jurisdiction/country:us/state:wa/government"
 

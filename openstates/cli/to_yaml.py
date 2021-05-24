@@ -6,16 +6,16 @@ import itertools
 from pathlib import Path
 from collections import defaultdict
 from pydantic import BaseModel
-from openstates import metadata
-from openstates.utils import abbr_to_jid
-from ..utils import (
+from .. import metadata
+from ..utils import abbr_to_jid
+from ..people.utils import (
     get_new_filename,
     get_data_path,
     dump_obj,
     ocd_uuid,
 )
-from ..utils.retire import retire_person, retire_file
-from ..models.people import (
+from ..people.utils.retire import retire_person, retire_file
+from ..people.models.people import (
     ScrapePerson,
     Person,
     Role,

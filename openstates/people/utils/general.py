@@ -2,7 +2,6 @@ import re
 import uuid
 import typing
 import yaml
-import yamlordereddictloader  # type: ignore
 from pathlib import Path
 from enum import Enum
 from collections import defaultdict
@@ -12,7 +11,7 @@ from openstates import metadata
 
 # set up defaultdict representation
 yaml.add_representer(defaultdict, Representer.represent_dict)
-yamlordereddictloader.SafeDumper.add_multi_representer(Enum, Representer.represent_str)
+yaml.add_multi_representer(Enum, Representer.represent_str)
 
 
 def ocd_uuid(type: str) -> str:
@@ -41,11 +40,10 @@ def dump_obj(
     if not filename:
         raise ValueError("must provide output_dir or filename parameter")
     with open(filename, "w") as f:
-        yaml.dump(
+        yaml.safe_dump(
             obj,
             f,
             default_flow_style=False,
-            Dumper=yamlordereddictloader.SafeDumper,
             sort_keys=False,
         )
 

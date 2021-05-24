@@ -1,7 +1,7 @@
 import pytest
 import datetime
 from pathlib import Path
-from ospeople.utils.lint_people import (
+from openstates.people.utils.lint_people import (
     validate_name,
     validate_roles,
     validate_offices,
