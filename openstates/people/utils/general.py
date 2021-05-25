@@ -32,10 +32,10 @@ def get_data_path(abbr: str) -> Path:
         sibling_directory = Path(__file__).parents[4] / "people"
         if sibling_directory.exists():
             base_dir = sibling_directory
-
-        raise EnvironmentError(
-            "could not find openstates/people checkout, set OS_PEOPLE_DIRECTORY env variable"
-        )
+        else:
+            raise EnvironmentError(
+                "could not find openstates/people checkout, set OS_PEOPLE_DIRECTORY env variable"
+            )
 
     # data path is the base directory's data/{abbr} subdirectory
     return base_dir / "data" / abbr

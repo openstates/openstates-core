@@ -1,7 +1,7 @@
 import os
 from pathlib import Path
 import pytest
-from openstates.cli.to_yaml import (
+from openstates.cli.legacy_people_to_yaml import (
     reformat_phone_number,
     reformat_address,
     compute_merge,

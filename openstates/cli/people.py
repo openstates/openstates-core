@@ -246,7 +246,8 @@ def lint_dir(
     municipality_filenames = (state_dir / "municipalities").glob("*.yml")
     retired_filenames = (state_dir / "retired").glob("*.yml")
 
-    settings_file = Path(__file__).parents[3] / "settings.yml"
+    # a hack... need to get data path then traverse up
+    settings_file = get_data_path("tx").parents[1] / "settings.yml"
     with open(settings_file) as f:
         settings = yaml.safe_load(f)
 
