@@ -33,7 +33,9 @@ def get_data_path(abbr: str) -> Path:
         if sibling_directory.exists():
             base_dir = sibling_directory
 
-    print(base_dir)
+        raise EnvironmentError(
+            "could not find openstates/people checkout, set OS_PEOPLE_DIRECTORY env variable"
+        )
 
     # data path is the base directory's data/{abbr} subdirectory
     return base_dir / "data" / abbr

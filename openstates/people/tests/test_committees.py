@@ -1,3 +1,4 @@
+import os
 import pytest
 from unittest.mock import patch
 from pathlib import Path
@@ -260,6 +261,7 @@ def test_ingest_scraped_json():
         abbr="wa",
         directory=TEST_DATA_PATH / "committees",
     )
+    os.environ["OS_PEOPLE_DIRECTORY"] = "not-used-but-must-be-set"
     committees = comdir.ingest_scraped_json(TEST_DATA_PATH / "scraped-committees")
     assert len(committees) == 2
     assert {"Judiciary 2", "Judiciary 4"} == {c.name for c in committees}
