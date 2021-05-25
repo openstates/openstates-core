@@ -19,7 +19,7 @@ def ocd_uuid(type: str) -> str:
     return "ocd-{}/{}".format(type, uuid.uuid4())
 
 
-def get_data_path(abbr: str) -> Path:
+def get_base_path() -> Path:
     # there are two options for where the people utilities look for their data:
 
     if "OS_PEOPLE_DIRECTORY" in os.environ:
@@ -37,12 +37,15 @@ def get_data_path(abbr: str) -> Path:
                 "could not find openstates/people checkout, set OS_PEOPLE_DIRECTORY env variable"
             )
 
-    # data path is the base directory's data/{abbr} subdirectory
-    return base_dir / "data" / abbr
+    return base_dir
+
+
+def get_data_path(abbr: str) -> Path:
+    return get_base_path() / "data" / abbr
 
 
 def get_all_abbreviations() -> list[str]:
-    return sorted(x.name for x in (Path(__file__).parents[3] / "data").iterdir())
+    return sorted(x.name for x in (get_base_path() / "data").iterdir())
 
 
 def dump_obj(
