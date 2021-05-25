@@ -12,10 +12,12 @@ from openstates.people.models.committees import (
 
 JURISDICTION_ID = "ocd-jurisdiction/country:us/state:wa/government"
 
+TEST_DATA_PATH = Path(__file__).parent / "testdata"
+
 
 @pytest.fixture
 def person_matcher():
-    pm = PersonMatcher("wa", Path("tests/testdata/no-such-dir"))
+    pm = PersonMatcher("wa", TEST_DATA_PATH / "no-such-dir")
     pm.add_name("lower", "Jones", "ocd-person/00000000-0000-0000-0000-111111111111")
     pm.add_name("lower", "Nguyen", "ocd-person/00000000-0000-0000-0000-222222222222")
     pm.add_name("lower", "Green", "ocd-person/00000000-0000-0000-0000-333333333333")
@@ -137,7 +139,7 @@ def test_merge_committees_members():
 
 
 def test_load_data():
-    comdir = CommitteeDir(abbr="wa", directory=Path("tests/testdata/committees"))
+    comdir = CommitteeDir(abbr="wa", directory=TEST_DATA_PATH / "committees")
 
     assert len(comdir.coms_by_chamber_and_name["lower"]) == 3
     assert len(comdir.coms_by_chamber_and_name["upper"]) == 1
@@ -147,7 +149,7 @@ def test_load_data():
 def test_load_data_with_errors():
     comdir = CommitteeDir(
         abbr="wa",
-        directory=Path("tests/testdata/broken-committees"),
+        directory=TEST_DATA_PATH / "broken-committees",
         raise_errors=False,
     )
 
@@ -172,14 +174,14 @@ def test_load_data_with_errors_raised():
     with pytest.raises(ValidationError):
         CommitteeDir(
             abbr="wa",
-            directory=Path("tests/testdata/broken-committees"),
+            directory=TEST_DATA_PATH / "broken-committees",
         )
 
 
 def test_get_new_filename():
     comdir = CommitteeDir(
         abbr="wa",
-        directory=Path("tests/testdata/committees"),
+        directory=TEST_DATA_PATH / "committees",
     )
     simple = Committee(
         id="ocd-organization/00001111-2222-3333-4444-555566667777",
@@ -206,15 +208,13 @@ def test_get_new_filename():
 def test_get_filename_by_id():
     comdir = CommitteeDir(
         abbr="wa",
-        directory=Path("tests/testdata/committees"),
+        directory=TEST_DATA_PATH / "committees",
     )
-    assert (
-        str(
-            comdir.get_filename_by_id(
-                "ocd-organization/11111111-2222-3333-4444-111111111111"
-            )
-        )
-        == "tests/testdata/committees/lower-Agriculture-11111111-2222-3333-4444-111111111111.yml"
+    assert comdir.get_filename_by_id(
+        "ocd-organization/11111111-2222-3333-4444-111111111111"
+    ) == (
+        TEST_DATA_PATH
+        / "committees/lower-Agriculture-11111111-2222-3333-4444-111111111111.yml"
     )
 
     with pytest.raises(FileNotFoundError):
@@ -226,11 +226,11 @@ def test_get_filename_by_id():
 def test_get_filename_by_name():
     comdir = CommitteeDir(
         abbr="wa",
-        directory=Path("tests/testdata/committees"),
+        directory=TEST_DATA_PATH / "committees",
     )
-    assert (
-        str(comdir.get_filename_by_name("lower", "Agriculture"))
-        == "tests/testdata/committees/lower-Agriculture-11111111-2222-3333-4444-111111111111.yml"
+    assert comdir.get_filename_by_name("lower", "Agriculture") == (
+        TEST_DATA_PATH
+        / "committees/lower-Agriculture-11111111-2222-3333-4444-111111111111.yml"
     )
 
     with pytest.raises(FileNotFoundError):
@@ -243,7 +243,7 @@ def test_get_filename_by_name():
 def test_add_committee():
     comdir = CommitteeDir(
         abbr="wa",
-        directory=Path("tests/testdata/committees"),
+        directory=TEST_DATA_PATH / "committees",
     )
     with patch.object(comdir, "save_committee") as patch_obj:
         sc = ScrapeCommittee(parent="lower", name="New Business")
@@ -258,9 +258,9 @@ def test_add_committee():
 def test_ingest_scraped_json():
     comdir = CommitteeDir(
         abbr="wa",
-        directory=Path("tests/testdata/committees"),
+        directory=TEST_DATA_PATH / "committees",
     )
-    committees = comdir.ingest_scraped_json("tests/testdata/scraped-committees")
+    committees = comdir.ingest_scraped_json(TEST_DATA_PATH / "scraped-committees")
     assert len(committees) == 2
     assert {"Judiciary 2", "Judiciary 4"} == {c.name for c in committees}
 
@@ -268,12 +268,12 @@ def test_ingest_scraped_json():
 def test_ingest_scraped_json_names_resolved():
     comdir = CommitteeDir(
         abbr="wa",
-        directory=Path("tests/testdata/committees"),
+        directory=TEST_DATA_PATH / "committees",
     )
     richardson_id = "ocd-person/11111111-0000-0000-0000-555555555555"
-    comdir.person_matcher = PersonMatcher("wa", Path("tests/testdata/no-such-dir"))
+    comdir.person_matcher = PersonMatcher("wa", TEST_DATA_PATH / "no-such-dir")
     comdir.person_matcher.add_name("lower", "Richardson", richardson_id)
-    committees = comdir.ingest_scraped_json("tests/testdata/scraped-committees")
+    committees = comdir.ingest_scraped_json(TEST_DATA_PATH / "scraped-committees")
     assert len(committees) == 2
     committees = sorted(committees, key=lambda c: c.name)
     assert committees[0].name == "Judiciary 2"
@@ -287,7 +287,7 @@ def test_ingest_scraped_json_names_resolved():
 def test_get_merge_plan_by_chamber(person_matcher):
     comdir = CommitteeDir(
         abbr="wa",
-        directory=Path("tests/testdata/committees"),
+        directory=TEST_DATA_PATH / "committees",
     )
     comdir.person_matcher = person_matcher
 
