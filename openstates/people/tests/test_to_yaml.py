@@ -1,3 +1,5 @@
+import os
+from pathlib import Path
 import pytest
 from openstates.cli.to_yaml import (
     reformat_phone_number,
@@ -329,6 +331,7 @@ def test_merge_extras():
 
 
 def test_find_file_good():
+    os.environ["OS_PEOPLE_DIRECTORY"] = str(Path(__file__).parent / "testdata/people")
     filename = find_file("a2e4a1b2-f0fd-4c35-9e0c-bb009778792f", state="pa")
     assert "Pam-Snyder" in str(filename)
     filename = find_file("a2e4a1b2-f0fd-4c35-9e0c-bb009778792f")

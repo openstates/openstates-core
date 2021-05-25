@@ -1,4 +1,5 @@
 import re
+import os
 import uuid
 import typing
 import yaml
@@ -19,8 +20,23 @@ def ocd_uuid(type: str) -> str:
 
 
 def get_data_path(abbr: str) -> Path:
-    # 4 parents up to get from this file to /data dir
-    return Path(__file__).parents[3] / "data" / abbr
+    # there are two options for where the people utilities look for their data:
+
+    if "OS_PEOPLE_DIRECTORY" in os.environ:
+        # 1. use the environment variable OS_PEOPLE_DIRECTORY
+        base_dir = Path(os.environ["OS_PEOPLE_DIRECTORY"])
+    else:
+        # 2. if not set, we'll look in a sibling directory
+        # this is a nice fallback for local development, but not intended to work
+        # in production environments
+        sibling_directory = Path(__file__).parents[4] / "people"
+        if sibling_directory.exists():
+            base_dir = sibling_directory
+
+    print(base_dir)
+
+    # data path is the base directory's data/{abbr} subdirectory
+    return base_dir / "data" / abbr
 
 
 def get_all_abbreviations() -> list[str]:
