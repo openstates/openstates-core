@@ -1,7 +1,8 @@
 # Changelog
 
-## 6.0.0
+## 6.0.0 - May 25 2021
 
+* bump to Python 3.9
 * move openstates/text-extraction repository into openstates.fulltext
 * move openstates/people tools into openstates.cli and openstates.people
 
