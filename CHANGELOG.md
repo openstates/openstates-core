@@ -1,5 +1,10 @@
 # Changelog
 
+## 6.0.0
+
+* move openstates/text-extraction repository into openstates.fulltext
+* move openstates/people tools into openstates.cli and openstates.people
+
 ## 5.11.1 - May 10 2021
 
 * add obsolete US districts to metadata
