@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.0.1 - May 25 2021
+
+* bugfix for os-people's get_all_abbreviations()
+
 ## 6.0.0 - May 25 2021
 
 * bump to Python 3.9
