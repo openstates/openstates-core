@@ -143,7 +143,7 @@ def validate_jurisdictions(person: Person, municipalities: list[str]) -> list[st
             metadata.lookup(jurisdiction_id=role.jurisdiction)
         except KeyError:
             if role.jurisdiction not in municipalities:
-                errors.append(f"{role.jurisdiction_id} is not a valid jurisdiction_id")
+                errors.append(f"{role.jurisdiction} is not a valid jurisdiction_id")
     return errors
 
 
@@ -221,7 +221,7 @@ def compare_districts(
 class Validator:
     def __init__(self, abbr: str, settings: dict, fix: bool, save_all: bool):
         self.fix = fix
-        self.save_all = fix
+        self.save_all = save_all
         self.expected = get_expected_districts(settings, abbr)
         self.errors: defaultdict[str, list[str]] = defaultdict(list)
         self.warnings: defaultdict[str, list[str]] = defaultdict(list)
@@ -298,29 +298,34 @@ class Validator:
         for ident in person.other_identifiers:
             self.duplicate_values[ident.scheme][ident.identifier].append(print_filename)
 
-        # special case for the auto-retirement fix
-        if MOVED_TO_RETIRED in self.fixes[print_filename]:
-            retire_file(filename)
-
         # update active legislators
         if person_type == PersonType.LEGISLATIVE:
             role_type = district = None
             for role in person.roles:
                 if role.is_active():
-                    role_type = role.type
+                    role_type = role.type.value
                     district = role.district
                     break
             self.active_legislators[str(role_type)][str(district)].append(
                 print_filename
             )
 
+        # special case for the auto-retirement fix
+        if MOVED_TO_RETIRED in self.fixes[print_filename]:
+            retire_file(filename)
+
+        if self.save_all:
+            # save person if save_all, will re-order fields/etc.
+            click.secho(f"re-saving {filename}", fg="green")
+            dump_obj(person, filename=filename)
+
     def validate_old_district_names(self, person: Person) -> list[str]:
         errors = []
         for role in person.roles:
             if (
                 role.district
-                and role.district not in self.expected[role.type]
-                and role.district not in self.legacy_districts[role.type]
+                and role.district not in self.expected[role.type.value]
+                and role.district not in self.legacy_districts[role.type.value]
             ):
                 errors.append(f"unknown district name: {role.type} {role.district}")
         return errors

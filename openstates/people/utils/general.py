@@ -5,14 +5,15 @@ import typing
 import yaml
 from pathlib import Path
 from enum import Enum
-from collections import defaultdict
-from yaml.representer import Representer
 from ... import metadata
 from ..models.common import BaseModel
 
-# set up defaultdict & enum representation
-yaml.add_representer(defaultdict, Representer.represent_dict)
-yaml.add_multi_representer(Enum, Representer.represent_str)
+
+class EnumDumper(yaml.SafeDumper):
+    def represent_data(self, data):
+        if isinstance(data, Enum):
+            return self.represent_data(data.value)
+        return super().represent_data(data)
 
 
 def ocd_uuid(type: str) -> str:
@@ -60,11 +61,12 @@ def dump_obj(
     if not filename:
         raise ValueError("must provide output_dir or filename parameter")
     with open(filename, "w") as f:
-        yaml.safe_dump(
+        yaml.dump(
             obj_dict,
             f,
             default_flow_style=False,
             sort_keys=False,
+            Dumper=EnumDumper,
         )
 
 
