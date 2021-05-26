@@ -279,6 +279,9 @@ class Validator:
                 f"  {'.'.join(str(l) for l in error['loc'])}: {error['msg']}"
                 for error in ve.errors()
             ]
+            # if we couldn't create a valid person, bail now
+            return
+
         uid = data["id"].split("/")[1]
         if uid not in print_filename:
             self.errors[print_filename].append(f"id piece {uid} not in filename")
