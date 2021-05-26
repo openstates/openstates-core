@@ -11,7 +11,7 @@ from openstates.people.utils.lint_people import (
     BadVacancy,
     PersonType,
 )  # noqa
-from openstates.people.models.people import Person, Role, Party
+from openstates.people.models.people import Person, Role, Party, ContactDetail
 
 
 EXAMPLE_OCD_JURISDICTION_ID = "ocd-jurisdiction/country:us/government"
@@ -155,41 +155,41 @@ def test_validate_roles_retired(roles, expected):
 
 
 @pytest.mark.parametrize(
-    "person,expected",
+    "contacts,expected",
     [
-        ({"contact_details": []}, []),
+        ([], []),
         (
-            {
-                "contact_details": [
-                    {"note": "Capitol Office"},
-                    {"note": "Capitol Office"},
-                ]
-            },
+            [
+                {"note": "Capitol Office", "voice": "111-222-3333"},
+                {"note": "Capitol Office", "fax": "111-222-5555"},
+            ],
             ["Multiple capitol offices, condense to one."],
         ),
         (
-            {
-                "contact_details": [
-                    {"note": "District Office"},
-                    {"note": "District Office"},
-                ]
-            },
+            [
+                {"note": "District Office", "voice": "111-222-4333"},
+                {"note": "District Office", "voice": "555-555-5555"},
+            ],
             [],
         ),
         (
-            {
-                "contact_details": [
-                    {"note": "District Office", "phone": "123"},
-                    {"note": "Capitol Office", "phone": "123"},
-                ]
-            },
             [
-                "Value '123' used multiple times: District Office phone and Capitol Office phone"
+                {"note": "District Office", "voice": "123-444-4444"},
+                {"note": "Capitol Office", "voice": "123-444-4444"},
+            ],
+            [
+                "Value '123-444-4444' used multiple times: District Office voice and Capitol Office voice"
             ],
         ),
     ],
 )
-def test_validate_offices(person, expected):
+def test_validate_offices(contacts, expected):
+    person = Person(
+        id=EXAMPLE_OCD_PERSON_ID,
+        name="Example Person",
+        roles=[],
+        contact_details=[ContactDetail(**c) for c in contacts],
+    )
     assert validate_offices(person) == expected
 
 

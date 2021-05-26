@@ -47,14 +47,6 @@ class Missing:
     pass
 
 
-def _role_is_active(role: dict, date: typing.Optional[str] = None) -> bool:
-    if date is None:
-        date = datetime.datetime.utcnow().date().isoformat()
-    return (role.get("end_date") is None or str(role.get("end_date")) > date) and (
-        role.get("start_date") is None or str(role.get("start_date")) <= date
-    )
-
-
 def validate_roles(
     person: Person,
     roles_key: str,
@@ -93,18 +85,17 @@ def validate_roles_key(
     return resp
 
 
-def validate_offices(person: dict) -> list[str]:
+def validate_offices(person: Person) -> list[str]:
     errors = []
-    contact_details = person.get("contact_details", [])
     type_counter: Counter[str] = Counter()
     seen_values: dict[str, str] = {}
-    for office in contact_details:
-        type_counter[office["note"]] += 1
-        for key, value in office.items():
-            if key == "note":
+    for office in person.contact_details:
+        type_counter[office.note] += 1
+        for key, value in office.dict().items():
+            if key == "note" or not value:
                 continue
             # reverse lookup to see if we've used this phone number/etc. before
-            location_str = f"{office['note']} {key}"
+            location_str = f"{office.note} {key}"
             if value in seen_values:
                 errors.append(
                     f"Value '{value}' used multiple times: {seen_values[value]} and {location_str}"
@@ -145,15 +136,14 @@ def validate_name(person: Person, person_type: PersonType, fix: bool) -> CheckRe
     return CheckResult(errors, [], fixes)
 
 
-def validate_jurisdictions(person: dict, municipalities: list[str]) -> list[str]:
+def validate_jurisdictions(person: Person, municipalities: list[str]) -> list[str]:
     errors = []
-    for role in person.get("roles", []):
-        jid = role.get("jurisdiction")
+    for role in person.roles:
         try:
-            metadata.lookup(jurisdiction_id=jid)
+            metadata.lookup(jurisdiction_id=role.jurisdiction)
         except KeyError:
-            if jid not in municipalities:
-                errors.append(f"{jid} is not a valid jurisdiction_id")
+            if role.jurisdiction not in municipalities:
+                errors.append(f"{role.jurisdiction_id} is not a valid jurisdiction_id")
     return errors
 
 
@@ -282,30 +272,31 @@ class Validator:
             # if we couldn't create a valid person, bail now
             return
 
-        uid = data["id"].split("/")[1]
+        uid = person.id.split("/")[1]
         if uid not in print_filename:
             self.errors[print_filename].append(f"id piece {uid} not in filename")
 
         self.errors[print_filename].extend(
-            validate_jurisdictions(data, self.municipalities)
+            validate_jurisdictions(person, self.municipalities)
         )
 
         # looser validation for upstream-maintained unitedstates.io data
         if "/us/legislature" not in str(filename):
-            self.errors[print_filename].extend(validate_offices(data))
+            self.errors[print_filename].extend(validate_offices(person))
 
         self.process_validator_result(validate_roles_key, person, person_type, filename)
         self.process_validator_result(validate_name, person, person_type, filename)
 
         if person_type == PersonType.RETIRED:
-            self.errors[print_filename].extend(self.validate_old_district_names(data))
+            self.errors[print_filename].extend(self.validate_old_district_names(person))
 
         # check duplicate IDs
-        self.duplicate_values["openstates"][data["id"]].append(print_filename)
-        for scheme, value in data.get("ids", {}).items():
-            self.duplicate_values[scheme][value].append(print_filename)
-        for id in data.get("other_identifiers", []):
-            self.duplicate_values[id["scheme"]][id["identifier"]].append(print_filename)
+        self.duplicate_values["openstates"][person.id].append(print_filename)
+        for scheme, value in person.ids.dict().items():
+            if value:
+                self.duplicate_values[scheme][value].append(print_filename)
+        for ident in person.other_identifiers:
+            self.duplicate_values[ident.scheme][ident.identifier].append(print_filename)
 
         # special case for the auto-retirement fix
         if MOVED_TO_RETIRED in self.fixes[print_filename]:
@@ -314,26 +305,24 @@ class Validator:
         # update active legislators
         if person_type == PersonType.LEGISLATIVE:
             role_type = district = None
-            for role in data.get("roles", []):
-                if _role_is_active(role):
-                    role_type = role["type"]
-                    district = role.get("district")
+            for role in person.roles:
+                if role.is_active():
+                    role_type = role.type
+                    district = role.district
                     break
             self.active_legislators[str(role_type)][str(district)].append(
                 print_filename
             )
 
-    def validate_old_district_names(self, person: dict) -> list[str]:
+    def validate_old_district_names(self, person: Person) -> list[str]:
         errors = []
-        for role in person.get("roles", []):
+        for role in person.roles:
             if (
-                "district" in role
-                and role["district"] not in self.expected[role["type"]]
-                and role["district"] not in self.legacy_districts[role["type"]]
+                role.district
+                and role.district not in self.expected[role.type]
+                and role.district not in self.legacy_districts[role.type]
             ):
-                errors.append(
-                    f"unknown district name: {role['type']} {role['district']}"
-                )
+                errors.append(f"unknown district name: {role.type} {role.district}")
         return errors
 
     def check_duplicates(self) -> list[str]:
