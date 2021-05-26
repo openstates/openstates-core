@@ -66,17 +66,6 @@ def _role_is_active(role: dict, date: typing.Optional[str] = None) -> bool:
     )
 
 
-def validate_person_data(person_data: dict) -> list[str]:
-    try:
-        Person(**person_data)
-        return []
-    except ValidationError as ve:
-        return [
-            f"  {'.'.join(str(l) for l in error['loc'])}: {error['msg']}"
-            for error in ve.errors()
-        ]
-
-
 def validate_roles(
     person: dict,
     roles_key: str,
@@ -173,11 +162,10 @@ def validate_jurisdictions(person: dict, municipalities: list[str]) -> list[str]
     for role in person.get("roles", []):
         jid = role.get("jurisdiction")
         try:
-            state = metadata.lookup(jurisdiction_id=jid)
+            metadata.lookup(jurisdiction_id=jid)
         except KeyError:
-            state = None
-        if jid and (not state and jid not in municipalities):
-            errors.append(f"{jid} is not a valid jurisdiction_id")
+            if jid not in municipalities:
+                errors.append(f"{jid} is not a valid jurisdiction_id")
     return errors
 
 
@@ -253,7 +241,9 @@ def compare_districts(
 
 
 class Validator:
-    def __init__(self, abbr: str, settings: dict, fix: bool):
+    def __init__(self, abbr: str, settings: dict, fix: bool, save_all: bool):
+        self.fix = fix
+        self.save_all = fix
         self.expected = get_expected_districts(settings, abbr)
         self.errors: defaultdict[str, list[str]] = defaultdict(list)
         self.warnings: defaultdict[str, list[str]] = defaultdict(list)
@@ -268,7 +258,6 @@ class Validator:
         ] = defaultdict(lambda: defaultdict(list))
         self.legacy_districts = legacy_districts(abbr=abbr)
         self.municipalities = [m["id"] for m in load_municipalities(abbr=abbr)]
-        self.fix = fix
         for m in self.municipalities:
             if not JURISDICTION_RE.match(m):
                 raise ValueError(f"invalid municipality id {m}")
@@ -288,10 +277,18 @@ class Validator:
     def validate_person(
         self, person: PersonData, date: typing.Optional[str] = None
     ) -> None:
-        self.errors[person.print_filename] = validate_person_data(person.data)
+        try:
+            Person(**person.data)
+            self.errors[person.print_filename] = []
+        except ValidationError as ve:
+            self.errors[person.print_filename] = [
+                f"  {'.'.join(str(l) for l in error['loc'])}: {error['msg']}"
+                for error in ve.errors()
+            ]
         uid = person.data["id"].split("/")[1]
         if uid not in person.print_filename:
             self.errors[person.print_filename].append(f"id piece {uid} not in filename")
+
         self.errors[person.print_filename].extend(
             validate_jurisdictions(person.data, self.municipalities)
         )
@@ -299,6 +296,7 @@ class Validator:
         # looser validation for upstream-maintained unitedstates.io data
         if "/us/legislature" not in str(person.filename):
             self.errors[person.print_filename].extend(validate_offices(person.data))
+
         self.process_validator_result(validate_roles_key, person)
         self.process_validator_result(validate_name, person)
 

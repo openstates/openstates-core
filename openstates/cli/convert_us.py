@@ -12,7 +12,7 @@ from ..models.people import (
     Link,
     PersonIdBlock,
 )
-from ..utils import dump_obj, get_data_path
+from ..people.utils import dump_obj, get_data_path
 
 # chosen at random, but needs to be constant
 US_UUID_NAMESPACE = uuid.UUID("bf6b57c6-8cfe-454c-bd26-9c2b508c30b2")

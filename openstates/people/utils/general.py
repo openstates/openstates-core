@@ -7,10 +7,10 @@ from pathlib import Path
 from enum import Enum
 from collections import defaultdict
 from yaml.representer import Representer
-from pydantic import BaseModel
-from openstates import metadata
+from ... import metadata
+from ..models.common import BaseModel
 
-# set up defaultdict representation
+# set up defaultdict & enum representation
 yaml.add_representer(defaultdict, Representer.represent_dict)
 yaml.add_multi_representer(Enum, Representer.represent_str)
 
@@ -49,20 +49,19 @@ def get_all_abbreviations() -> list[str]:
 
 
 def dump_obj(
-    obj: typing.Union[dict, BaseModel],
+    obj: BaseModel,
     *,
     output_dir: typing.Optional[Path] = None,
     filename: typing.Union[Path, str, None] = None,
 ) -> None:
-    if isinstance(obj, BaseModel):
-        obj = obj.to_dict()
+    obj_dict = obj.to_dict()
     if output_dir:
-        filename = output_dir / get_new_filename(obj)
+        filename = output_dir / get_new_filename(obj_dict)
     if not filename:
         raise ValueError("must provide output_dir or filename parameter")
     with open(filename, "w") as f:
         yaml.safe_dump(
-            obj,
+            obj_dict,
             f,
             default_flow_style=False,
             sort_keys=False,
