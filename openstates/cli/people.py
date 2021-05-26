@@ -6,7 +6,7 @@ import itertools
 from collections import Counter, defaultdict
 from pathlib import Path
 import click
-import boto3
+import boto3  # type: ignore
 import yaml
 from django.db import transaction  # type: ignore
 from ..utils import abbr_to_jid
@@ -21,7 +21,7 @@ from ..people.utils import (
     load_municipalities,
 )
 from ..people.utils.retire import retire_person, add_vacancy, retire_file
-from ..people.utils.lint_people import Validator, BadVacancy, PersonType, PersonData
+from ..people.utils.lint_people import Validator, BadVacancy, PersonType
 from ..people.utils.to_database import (
     create_municipalities,
     create_parties,
@@ -271,8 +271,7 @@ def lint_dir(
             # catch errors
             with open(filename) as file:
                 data = yaml.safe_load(file)
-            person = PersonData(data=data, filename=filename, person_type=person_type)
-            validator.validate_person(person, date)
+            validator.validate_person(data, filename, person_type)
 
     error_count = validator.print_validation_report(verbose)
 

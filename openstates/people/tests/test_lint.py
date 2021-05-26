@@ -1,4 +1,4 @@
-import pytest
+import pytest  # type: ignore
 import datetime
 from pathlib import Path
 from openstates.people.utils.lint_people import (
@@ -10,8 +10,8 @@ from openstates.people.utils.lint_people import (
     Validator,
     BadVacancy,
     PersonType,
-    PersonData,
 )  # noqa
+from openstates.people.models.people import Person
 
 
 EXAMPLE_OCD_PERSON_ID = "ocd-person/12345678-0000-1111-2222-1234567890ab"
@@ -21,42 +21,53 @@ EXAMPLE_OCD_ORG_ID = "ocd-organization/00001111-2222-3333-aaaa-444455556666"
 @pytest.mark.parametrize(
     "person,expected",
     [
-        ({"name": "Phillip J Swoozle"}, []),
+        (Person(id=EXAMPLE_OCD_PERSON_ID, name="Phillip J Swoozle", roles=[]),),
         (
-            {"name": "Phillip Swoozle"},
+            Person(id=EXAMPLE_OCD_PERSON_ID, name="Phillip Swoozle", roles=[]),
             [
                 "missing given_name that could be set to 'Phillip', run with --fix",
                 "missing family_name that could be set to 'Swoozle', run with --fix",
             ],
         ),
         (
-            {"name": "Phillip Swoozle", "given_name": "Phil"},
+            Person(
+                id=EXAMPLE_OCD_PERSON_ID,
+                name="Phillip Swoozle",
+                given_name="Phil",
+                roles=[],
+            ),
             [
                 "missing family_name that could be set to 'Swoozle', run with --fix",
             ],
         ),
         (
-            {"name": "Phillip Swoozle", "given_name": "Phil", "family_name": "Swoozle"},
+            Person(
+                id=EXAMPLE_OCD_PERSON_ID,
+                name="Phillip Swoozle",
+                given_name="Phil",
+                family_name="Swoozle",
+                roles=[],
+            ),
             [],
         ),
     ],
 )
 def test_validate_name_errors(person, expected):
-    assert validate_name(PersonData(person, "", ""), fix=False).errors == expected
-    assert validate_name(PersonData(person, "", ""), fix=False).warnings == []
-    assert validate_name(PersonData(person, "", ""), fix=False).fixes == []
+    assert validate_name(person, PersonType.LEGISLATIVE, fix=False).errors == expected
+    assert validate_name(person, PersonType.LEGISLATIVE, fix=False).warnings == []
+    assert validate_name(person, PersonType.LEGISLATIVE, fix=False).fixes == []
 
 
 def test_validate_name_fixes():
-    person = PersonData({"name": "Phillip Swoozle"}, "", "")
-    result = validate_name(person, fix=True)
+    person = Person(id=EXAMPLE_OCD_PERSON_ID, name="Phillip Swoozle", roles=[])
+    result = validate_name(person, PersonType.LEGISLATIVE, fix=True)
     assert result.errors == []
     assert len(result.fixes) == 2
     assert person.data["given_name"] == "Phillip"
     assert person.data["family_name"] == "Swoozle"
 
     # no fixes on an OK name
-    result = validate_name(person, fix=True)
+    result = validate_name(person, PersonType.LEGISLATIVE, fix=True)
     assert result.errors == result.fixes == []
 
 
@@ -222,10 +233,9 @@ def test_person_duplicates():
         },
         {"id": "ocd-person/4", "name": "Four", "ids": {"twitter": "no-twitter"}},
     ]
-    for person in people:
-        v.validate_person(
-            PersonData(person, Path(person["name"] + ".yml"), PersonType.LEGISLATIVE)
-        )
+    for p in people:
+        person = Person(**p)
+        v.validate_person(person, Path(p["name"] + ".yml"), PersonType.LEGISLATIVE)
     errors = v.check_duplicates()
     assert len(errors) == 3
     assert 'duplicate youtube: "fake" One.yml, Two.yml' in errors
@@ -237,14 +247,13 @@ def test_person_duplicates():
 
 
 def test_filename_id_test():
-    person = {
-        "id": EXAMPLE_OCD_PERSON_ID,
-        "name": "Jane Smith",
-        "roles": [],
-        "party": [],
-    }
+    person = Person(
+        id=EXAMPLE_OCD_PERSON_ID,
+        name="Jane Smith",
+        roles=[],
+    )
     v = Validator("ak", {"parties": []}, False)
-    v.validate_person(PersonData(person, Path("bad-filename"), PersonType.LEGISLATIVE))
+    v.validate_person(person, Path("bad-filename"), PersonType.LEGISLATIVE)
     for err in v.errors["bad-filename"]:
         if "not in filename" in err:
             break

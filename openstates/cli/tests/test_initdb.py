@@ -1,4 +1,4 @@
-import pytest
+import pytest  # type: ignore
 from openstates.data.models import Jurisdiction, Division, Organization, Post
 from openstates.cli.initdb import (
     create_division,
@@ -6,7 +6,7 @@ from openstates.cli.initdb import (
     create_full_jurisdiction,
 )
 from openstates.metadata import lookup
-from django.db.utils import IntegrityError
+from django.db.utils import IntegrityError  # type: ignore
 
 
 @pytest.mark.django_db

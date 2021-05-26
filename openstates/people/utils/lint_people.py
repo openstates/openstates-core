@@ -35,17 +35,6 @@ class CheckResult:
     fixes: list[str]
 
 
-@dataclass
-class PersonData:
-    data: dict[str, typing.Any]
-    filename: Path
-    person_type: PersonType
-
-    @property
-    def print_filename(self) -> str:
-        return self.filename.name
-
-
 JURISDICTION_RE = re.compile(
     r"ocd-jurisdiction/country:us/(state|district|territory):\w\w/((place|county):[a-z_]+/)?government"
 )
@@ -67,14 +56,11 @@ def _role_is_active(role: dict, date: typing.Optional[str] = None) -> bool:
 
 
 def validate_roles(
-    person: dict,
+    person: Person,
     roles_key: str,
     retired: bool = False,
-    date: typing.Optional[str] = None,
 ) -> list[str]:
-    active = [
-        role for role in person.get(roles_key, []) if _role_is_active(role, date=date)
-    ]
+    active = [role for role in getattr(person, roles_key) if role.is_active()]
     if len(active) == 0 and not retired:
         return [f"no active {roles_key}"]
     elif roles_key == "roles" and retired and len(active) > 0:
@@ -85,16 +71,18 @@ def validate_roles(
 
 
 def validate_roles_key(
-    person: PersonData, fix: bool, date: typing.Optional[str] = None
+    person: Person,
+    person_type: PersonType,
+    fix: bool,
 ) -> CheckResult:
     resp = CheckResult([], [], [])
     role_issues = validate_roles(
-        person.data, "roles", person.person_type == PersonType.RETIRED, date=date
+        person,
+        "roles",
+        person_type == PersonType.RETIRED,
     )
 
-    if person.person_type == PersonType.MUNICIPAL and role_issues == [
-        "no active roles"
-    ]:
+    if person_type == PersonType.MUNICIPAL and role_issues == ["no active roles"]:
         # municipals missing roles is a warning to avoid blocking lint
         if fix:
             resp.fixes = [MOVED_TO_RETIRED]
@@ -129,18 +117,18 @@ def validate_offices(person: dict) -> list[str]:
     return errors
 
 
-def validate_name(person: PersonData, fix: bool) -> CheckResult:
+def validate_name(person: Person, person_type: PersonType, fix: bool) -> CheckResult:
     """ some basic checks on a persons name """
     errors = []
     fixes = []
-    spaces_in_name = person.data["name"].count(" ")
+    spaces_in_name = person.name.count(" ")
     if spaces_in_name == 1:
-        given_cand, family_cand = person.data["name"].split()
-        given = person.data.get("given_name")
-        family = person.data.get("family_name")
+        given_cand, family_cand = person.name.split()
+        given = person.given_name
+        family = person.family_name
         if not given and not family and fix:
-            person.data["given_name"] = given = given_cand
-            person.data["family_name"] = family = family_cand
+            person.given_name = given = given_cand
+            person.family_name = family = family_cand
             fixes.append(f"set given_name={given}")
             fixes.append(f"set family_name={family}")
         if not given:
@@ -264,72 +252,72 @@ class Validator:
 
     def process_validator_result(
         self,
-        validator_func: typing.Callable[[PersonData, bool], CheckResult],
-        person: PersonData,
+        validator_func: typing.Callable[[Person, PersonType, bool], CheckResult],
+        person: Person,
+        person_type: PersonType,
+        original_filename: Path,
     ) -> None:
-        result = validator_func(person, self.fix)
-        self.errors[person.print_filename].extend(result.errors)
-        self.warnings[person.print_filename].extend(result.warnings)
+        result = validator_func(person, person_type, self.fix)
+        self.errors[original_filename.name].extend(result.errors)
+        self.warnings[original_filename.name].extend(result.warnings)
         if result.fixes:
-            self.fixes[person.print_filename].extend(result.fixes)
-            dump_obj(person.data, filename=person.filename)
+            self.fixes[original_filename.name].extend(result.fixes)
+            dump_obj(person, filename=original_filename)
 
     def validate_person(
-        self, person: PersonData, date: typing.Optional[str] = None
+        self,
+        data: dict[str, typing.Any],
+        filename: Path,
+        person_type: PersonType,
     ) -> None:
+        print_filename = filename.name
         try:
-            Person(**person.data)
-            self.errors[person.print_filename] = []
+            person = Person(**data)
+            self.errors[print_filename] = []
         except ValidationError as ve:
-            self.errors[person.print_filename] = [
+            self.errors[print_filename] = [
                 f"  {'.'.join(str(l) for l in error['loc'])}: {error['msg']}"
                 for error in ve.errors()
             ]
-        uid = person.data["id"].split("/")[1]
-        if uid not in person.print_filename:
-            self.errors[person.print_filename].append(f"id piece {uid} not in filename")
+        uid = data["id"].split("/")[1]
+        if uid not in print_filename:
+            self.errors[print_filename].append(f"id piece {uid} not in filename")
 
-        self.errors[person.print_filename].extend(
-            validate_jurisdictions(person.data, self.municipalities)
+        self.errors[print_filename].extend(
+            validate_jurisdictions(data, self.municipalities)
         )
 
         # looser validation for upstream-maintained unitedstates.io data
-        if "/us/legislature" not in str(person.filename):
-            self.errors[person.print_filename].extend(validate_offices(person.data))
+        if "/us/legislature" not in str(filename):
+            self.errors[print_filename].extend(validate_offices(data))
 
-        self.process_validator_result(validate_roles_key, person)
-        self.process_validator_result(validate_name, person)
+        self.process_validator_result(validate_roles_key, person, person_type, filename)
+        self.process_validator_result(validate_name, person, person_type, filename)
 
-        if person.person_type == PersonType.RETIRED:
-            self.errors[person.print_filename].extend(
-                self.validate_old_district_names(person.data)
-            )
+        if person_type == PersonType.RETIRED:
+            self.errors[print_filename].extend(self.validate_old_district_names(data))
 
         # check duplicate IDs
-        self.duplicate_values["openstates"][person.data["id"]].append(
-            person.print_filename
-        )
-        for scheme, value in person.data.get("ids", {}).items():
-            self.duplicate_values[scheme][value].append(person.print_filename)
-        for id in person.data.get("other_identifiers", []):
-            self.duplicate_values[id["scheme"]][id["identifier"]].append(
-                person.print_filename
-            )
+        self.duplicate_values["openstates"][data["id"]].append(print_filename)
+        for scheme, value in data.get("ids", {}).items():
+            self.duplicate_values[scheme][value].append(print_filename)
+        for id in data.get("other_identifiers", []):
+            self.duplicate_values[id["scheme"]][id["identifier"]].append(print_filename)
 
         # special case for the auto-retirement fix
-        if MOVED_TO_RETIRED in self.fixes[person.print_filename]:
-            retire_file(person.filename)
+        if MOVED_TO_RETIRED in self.fixes[print_filename]:
+            retire_file(filename)
 
         # update active legislators
-        if person.person_type == PersonType.LEGISLATIVE:
+        if person_type == PersonType.LEGISLATIVE:
             role_type = district = None
-            for role in person.data.get("roles", []):
-                if _role_is_active(role, date=date):
+            for role in data.get("roles", []):
+                if _role_is_active(role):
                     role_type = role["type"]
                     district = role.get("district")
                     break
             self.active_legislators[str(role_type)][str(district)].append(
-                person.print_filename
+                print_filename
             )
 
     def validate_old_district_names(self, person: dict) -> list[str]:

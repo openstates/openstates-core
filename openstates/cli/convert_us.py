@@ -1,9 +1,9 @@
 import uuid
 from collections import defaultdict
-import us
+import us  # type: ignore
 import requests
 import click
-from ..models.people import (
+from ..people.models.people import (
     Person,
     OtherIdentifier,
     Role,
@@ -11,7 +11,7 @@ from ..models.people import (
     ContactDetail,
     Link,
     PersonIdBlock,
-)
+)  # type: ignore
 from ..people.utils import dump_obj, get_data_path
 
 # chosen at random, but needs to be constant
