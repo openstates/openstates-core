@@ -6,7 +6,7 @@ import itertools
 from collections import Counter, defaultdict
 from pathlib import Path
 import click
-import boto3
+import boto3  # type: ignore
 import yaml
 from django.db import transaction  # type: ignore
 from ..utils import abbr_to_jid
@@ -21,7 +21,7 @@ from ..people.utils import (
     load_municipalities,
 )
 from ..people.utils.retire import retire_person, add_vacancy, retire_file
-from ..people.utils.lint_people import Validator, BadVacancy, PersonType, PersonData
+from ..people.utils.lint_people import Validator, BadVacancy, PersonType
 from ..people.utils.to_database import (
     create_municipalities,
     create_parties,
@@ -238,7 +238,7 @@ def write_csv(files: list[Path], jurisdiction_id: str, output_filename: str) -> 
 
 
 def lint_dir(
-    abbr: str, verbose: bool, municipal: bool, date: str, fix: bool
+    abbr: str, verbose: bool, municipal: bool, date: str, fix: bool, save_all: bool
 ) -> int:  # pragma: no cover
     state_dir = get_data_path(abbr)
     legislative_filenames = (state_dir / "legislature").glob("*.yml")
@@ -247,12 +247,12 @@ def lint_dir(
     retired_filenames = (state_dir / "retired").glob("*.yml")
 
     # a hack... need to get data path then traverse up
-    settings_file = get_data_path("tx").parents[1] / "settings.yml"
+    settings_file = state_dir.parents[1] / "settings.yml"
     with open(settings_file) as f:
         settings = yaml.safe_load(f)
 
     try:
-        validator = Validator(abbr, settings, fix)
+        validator = Validator(abbr, settings, fix, save_all)
     except BadVacancy:
         sys.exit(-1)
 
@@ -271,8 +271,7 @@ def lint_dir(
             # catch errors
             with open(filename) as file:
                 data = yaml.safe_load(file)
-            person = PersonData(data=data, filename=filename, person_type=person_type)
-            validator.validate_person(person, date)
+            validator.validate_person(data, filename, person_type)
 
     error_count = validator.print_validation_report(verbose)
 
@@ -582,6 +581,11 @@ def sync_images(abbreviations: list[str], skip_existing: bool) -> None:
     "--fix/--no-fix", default=False, help="Enable/disable automatic fixing of data."
 )
 @click.option(
+    "--save-all/--no-save-all",
+    default=False,
+    help="Enable/disable automatic reforamting of YAML.",
+)
+@click.option(
     "--municipal/--no-municipal",
     default=True,
     help="Enable/disable linting of municipal data.",
@@ -593,7 +597,12 @@ def sync_images(abbreviations: list[str], skip_existing: bool) -> None:
     help="Lint roles using a certain date instead of today.",
 )
 def lint(
-    abbreviations: list[str], verbose: bool, municipal: bool, date: str, fix: bool
+    abbreviations: list[str],
+    verbose: bool,
+    municipal: bool,
+    date: str,
+    fix: bool,
+    save_all: bool,
 ) -> None:
     """
     Lint YAML files.
@@ -607,7 +616,7 @@ def lint(
 
     for abbr in abbreviations:
         click.secho("==== {} ====".format(abbr), bold=True)
-        error_count += lint_dir(abbr, verbose, municipal, date, fix)
+        error_count += lint_dir(abbr, verbose, municipal, date, fix, save_all)
 
     if error_count:
         click.secho(f"exiting with {error_count} errors", fg="red")

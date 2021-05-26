@@ -9,7 +9,7 @@ import os
 import sys
 import traceback
 
-from django.db import transaction
+from django.db import transaction  # type: ignore
 
 from ..exceptions import CommandError
 from ..scrape import Jurisdiction, JurisdictionScraper

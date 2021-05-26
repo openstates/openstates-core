@@ -1,6 +1,6 @@
 import os
 from pathlib import Path
-import pytest
+import pytest  # type: ignore
 from openstates.cli.legacy_people_to_yaml import (
     reformat_phone_number,
     reformat_address,

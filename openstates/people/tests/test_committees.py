@@ -1,5 +1,5 @@
 import os
-import pytest
+import pytest  # type: ignore
 from unittest.mock import patch
 from pathlib import Path
 from pydantic import ValidationError

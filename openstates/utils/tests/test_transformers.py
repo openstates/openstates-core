@@ -1,4 +1,4 @@
-import pytest
+import pytest  # type: ignore
 from openstates.utils.transformers import fix_bill_id, collapse_whitespace
 
 

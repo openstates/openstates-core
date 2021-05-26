@@ -1,5 +1,10 @@
 # Changelog
 
+## next
+
+* improved use of typing, which will now be enforced going forward
+* added --save-all flag to os-people lint
+
 ## 6.0.1 - May 25 2021
 
 * bugfix for os-people's get_all_abbreviations()

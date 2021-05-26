@@ -1,4 +1,4 @@
-import pytest
+import pytest  # type: ignore
 import datetime
 from pathlib import Path
 from openstates.people.utils.lint_people import (
@@ -10,10 +10,11 @@ from openstates.people.utils.lint_people import (
     Validator,
     BadVacancy,
     PersonType,
-    PersonData,
 )  # noqa
+from openstates.people.models.people import Person, Role, Party, ContactDetail
 
 
+EXAMPLE_OCD_JURISDICTION_ID = "ocd-jurisdiction/country:us/government"
 EXAMPLE_OCD_PERSON_ID = "ocd-person/12345678-0000-1111-2222-1234567890ab"
 EXAMPLE_OCD_ORG_ID = "ocd-organization/00001111-2222-3333-aaaa-444455556666"
 
@@ -21,111 +22,175 @@ EXAMPLE_OCD_ORG_ID = "ocd-organization/00001111-2222-3333-aaaa-444455556666"
 @pytest.mark.parametrize(
     "person,expected",
     [
-        ({"name": "Phillip J Swoozle"}, []),
+        (Person(id=EXAMPLE_OCD_PERSON_ID, name="Phillip J Swoozle", roles=[]), []),
         (
-            {"name": "Phillip Swoozle"},
+            Person(id=EXAMPLE_OCD_PERSON_ID, name="Phillip Swoozle", roles=[]),
             [
                 "missing given_name that could be set to 'Phillip', run with --fix",
                 "missing family_name that could be set to 'Swoozle', run with --fix",
             ],
         ),
         (
-            {"name": "Phillip Swoozle", "given_name": "Phil"},
+            Person(
+                id=EXAMPLE_OCD_PERSON_ID,
+                name="Phillip Swoozle",
+                given_name="Phil",
+                roles=[],
+            ),
             [
                 "missing family_name that could be set to 'Swoozle', run with --fix",
             ],
         ),
         (
-            {"name": "Phillip Swoozle", "given_name": "Phil", "family_name": "Swoozle"},
+            Person(
+                id=EXAMPLE_OCD_PERSON_ID,
+                name="Phillip Swoozle",
+                given_name="Phil",
+                family_name="Swoozle",
+                roles=[],
+            ),
             [],
         ),
     ],
 )
 def test_validate_name_errors(person, expected):
-    assert validate_name(PersonData(person, "", ""), fix=False).errors == expected
-    assert validate_name(PersonData(person, "", ""), fix=False).warnings == []
-    assert validate_name(PersonData(person, "", ""), fix=False).fixes == []
+    assert validate_name(person, PersonType.LEGISLATIVE, fix=False).errors == expected
+    assert validate_name(person, PersonType.LEGISLATIVE, fix=False).warnings == []
+    assert validate_name(person, PersonType.LEGISLATIVE, fix=False).fixes == []
 
 
 def test_validate_name_fixes():
-    person = PersonData({"name": "Phillip Swoozle"}, "", "")
-    result = validate_name(person, fix=True)
+    person = Person(id=EXAMPLE_OCD_PERSON_ID, name="Phillip Swoozle", roles=[])
+    result = validate_name(person, PersonType.LEGISLATIVE, fix=True)
     assert result.errors == []
     assert len(result.fixes) == 2
-    assert person.data["given_name"] == "Phillip"
-    assert person.data["family_name"] == "Swoozle"
+    assert person.given_name == "Phillip"
+    assert person.family_name == "Swoozle"
 
     # no fixes on an OK name
-    result = validate_name(person, fix=True)
+    result = validate_name(person, PersonType.LEGISLATIVE, fix=True)
     assert result.errors == result.fixes == []
 
 
 @pytest.mark.parametrize(
-    "person,expected",
+    "roles,expected",
     [
-        ({"roles": [{"name": "House"}]}, []),
-        ({"roles": [{"name": "House"}, {"name": "Senate"}]}, ["2 active roles"]),
-        ({"roles": []}, ["no active roles"]),
-        ({"roles": [{"name": "House", "end_date": "1990"}]}, ["no active roles"]),
+        (
+            [Role(type="lower", jurisdiction=EXAMPLE_OCD_JURISDICTION_ID, district=3)],
+            [],
+        ),
+        (
+            [
+                Role(
+                    type="upper", jurisdiction=EXAMPLE_OCD_JURISDICTION_ID, district=3
+                ),
+                Role(
+                    type="lower", jurisdiction=EXAMPLE_OCD_JURISDICTION_ID, district=3
+                ),
+            ],
+            ["2 active roles"],
+        ),
+        ([], ["no active roles"]),
+        (
+            [
+                Role(
+                    type="governor",
+                    jurisdiction=EXAMPLE_OCD_JURISDICTION_ID,
+                    end_date="1990",
+                )
+            ],
+            ["no active roles"],
+        ),
     ],
 )
-def test_validate_roles_roles(person, expected):
+def test_validate_roles_roles(roles, expected):
+    person = Person(
+        id=EXAMPLE_OCD_PERSON_ID,
+        name="Example Person",
+        roles=roles,
+        party=[Party(name="Republican")],
+    )
     assert validate_roles(person, "roles") == expected
 
 
 @pytest.mark.parametrize(
-    "person,expected",
+    "roles,expected",
     [
-        ({"contact_details": []}, []),
         (
-            {
-                "contact_details": [
-                    {"note": "Capitol Office"},
-                    {"note": "Capitol Office"},
-                ]
-            },
+            [Role(type="lower", jurisdiction=EXAMPLE_OCD_JURISDICTION_ID, district=3)],
+            ["1 active roles on retired person"],
+        ),
+        (
+            [
+                Role(
+                    type="upper", jurisdiction=EXAMPLE_OCD_JURISDICTION_ID, district=3
+                ),
+                Role(
+                    type="lower", jurisdiction=EXAMPLE_OCD_JURISDICTION_ID, district=3
+                ),
+            ],
+            ["2 active roles on retired person"],
+        ),
+        ([], []),
+        (
+            [
+                Role(
+                    type="governor",
+                    jurisdiction=EXAMPLE_OCD_JURISDICTION_ID,
+                    end_date="1990",
+                )
+            ],
+            [],
+        ),
+    ],
+)
+def test_validate_roles_retired(roles, expected):
+    person = Person(
+        id=EXAMPLE_OCD_PERSON_ID,
+        name="Example Person",
+        roles=roles,
+        party=[Party(name="Republican")],
+    )
+    assert validate_roles(person, "roles", retired=True) == expected
+
+
+@pytest.mark.parametrize(
+    "contacts,expected",
+    [
+        ([], []),
+        (
+            [
+                {"note": "Capitol Office", "voice": "111-222-3333"},
+                {"note": "Capitol Office", "fax": "111-222-5555"},
+            ],
             ["Multiple capitol offices, condense to one."],
         ),
         (
-            {
-                "contact_details": [
-                    {"note": "District Office"},
-                    {"note": "District Office"},
-                ]
-            },
+            [
+                {"note": "District Office", "voice": "111-222-4333"},
+                {"note": "District Office", "voice": "555-555-5555"},
+            ],
             [],
         ),
         (
-            {
-                "contact_details": [
-                    {"note": "District Office", "phone": "123"},
-                    {"note": "Capitol Office", "phone": "123"},
-                ]
-            },
             [
-                "Value '123' used multiple times: District Office phone and Capitol Office phone"
+                {"note": "District Office", "voice": "123-444-4444"},
+                {"note": "Capitol Office", "voice": "123-444-4444"},
+            ],
+            [
+                "Value '123-444-4444' used multiple times: District Office voice and Capitol Office voice"
             ],
         ),
     ],
 )
-def test_validate_offices(person, expected):
+def test_validate_offices(contacts, expected):
+    person = Person(
+        id=EXAMPLE_OCD_PERSON_ID,
+        name="Example Person",
+        roles=[],
+        contact_details=[ContactDetail(**c) for c in contacts],
+    )
     assert validate_offices(person) == expected
-
-
-@pytest.mark.parametrize(
-    "person,expected",
-    [
-        ({"roles": [{"name": "House"}]}, ["1 active roles on retired person"]),
-        (
-            {"roles": [{"name": "House"}, {"name": "Senate"}]},
-            ["2 active roles on retired person"],
-        ),
-        ({"roles": []}, []),
-        ({"roles": [{"name": "House", "end_date": "1990"}]}, []),
-    ],
-)
-def test_validate_roles_retired(person, expected):
-    assert validate_roles(person, "roles", retired=True) == expected
 
 
 def test_get_expected_districts():
@@ -195,37 +260,42 @@ def test_compare_districts_overfill():
 
 
 def test_person_duplicates():
-    settings = {"http_allow": ["http://bad.example.com"], "parties": []}
-    v = Validator("ak", settings, False)
+    v = Validator("ak", {}, False, False)
 
     people = [
         # duplicates across people
         {
-            "id": "ocd-person/1",
+            "id": "ocd-person/11111111-1111-1111-1111-111111111111",
             "name": "One",
             "ids": {"twitter": "no-twitter", "youtube": "fake"},
+            "roles": [],
         },
         {
-            "id": "ocd-person/2",
+            "id": "ocd-person/22222222-2222-2222-2222-222222222222",
             "name": "Two",
             "ids": {"twitter": "no-twitter", "youtube": "fake"},
+            "roles": [],
         },
         # duplicate on same person
         {
-            "id": "ocd-person/3",
+            "id": "ocd-person/33333333-3333-3333-3333-333333333333",
             "name": "Three",
             "ids": {"twitter": "no-twitter"},
             "other_identifiers": [
                 {"scheme": "external_service_id", "identifier": "XYZ"},
                 {"scheme": "external_service_id", "identifier": "XYZ"},
             ],
+            "roles": [],
         },
-        {"id": "ocd-person/4", "name": "Four", "ids": {"twitter": "no-twitter"}},
+        {
+            "id": "ocd-person/44444444-4444-4444-4444-444444444444",
+            "name": "Four",
+            "ids": {"twitter": "no-twitter"},
+            "roles": [],
+        },
     ]
-    for person in people:
-        v.validate_person(
-            PersonData(person, Path(person["name"] + ".yml"), PersonType.LEGISLATIVE)
-        )
+    for p in people:
+        v.validate_person(p, Path(p["name"] + ".yml"), PersonType.LEGISLATIVE)
     errors = v.check_duplicates()
     assert len(errors) == 3
     assert 'duplicate youtube: "fake" One.yml, Two.yml' in errors
@@ -237,14 +307,13 @@ def test_person_duplicates():
 
 
 def test_filename_id_test():
-    person = {
-        "id": EXAMPLE_OCD_PERSON_ID,
-        "name": "Jane Smith",
-        "roles": [],
-        "party": [],
-    }
-    v = Validator("ak", {"parties": []}, False)
-    v.validate_person(PersonData(person, Path("bad-filename"), PersonType.LEGISLATIVE))
+    person = dict(
+        id=EXAMPLE_OCD_PERSON_ID,
+        name="Jane Smith",
+        roles=[],
+    )
+    v = Validator("ak", {}, False, False)
+    v.validate_person(person, Path("bad-filename"), PersonType.LEGISLATIVE)
     for err in v.errors["bad-filename"]:
         if "not in filename" in err:
             break

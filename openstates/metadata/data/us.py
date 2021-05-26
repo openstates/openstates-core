@@ -1,6 +1,6 @@
 import typing
 from ..models import State, Chamber, District
-from us import STATES
+from us import STATES  # type: ignore
 
 
 seats_by_state = {

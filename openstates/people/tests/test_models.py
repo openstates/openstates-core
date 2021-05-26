@@ -1,4 +1,4 @@
-import pytest
+import pytest  # type: ignore
 import datetime
 from pydantic import ValidationError
 from openstates.people.models.common import (

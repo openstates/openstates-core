@@ -1,4 +1,4 @@
-import us
+import us  # type: ignore
 import csv
 import uuid
 import yaml
@@ -74,7 +74,7 @@ if __name__ == "__main__":
     settings = yaml.load(open("metadata/_creation/settings.yml"))
     jurisdictions = csv.DictReader(open("metadata/_creation/jurisdictions.csv"))
     jurisdictions_by_name = {j["state"]: j for j in jurisdictions}
-    org_ids = defaultdict(dict)
+    org_ids: defaultdict[str, dict] = defaultdict(dict)
     for org in csv.DictReader(open("metadata/_creation/orgs.csv")):
         if org["jurisdiction_id"]:
             org_ids[org["jurisdiction_id"]][org["classification"]] = org["id"]

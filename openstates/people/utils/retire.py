@@ -5,7 +5,6 @@ import yaml
 from pathlib import Path
 from datetime import datetime
 from openstates import metadata
-from ..utils import dump_obj
 from ..models.people import Person
 
 
@@ -23,7 +22,8 @@ def add_vacancy(person: Person, until: datetime) -> None:
             "vacant_until": until.date(),
         }
     )
-    dump_obj(settings, filename="settings.yml")
+    with open("settings.yml", "w") as f:
+        yaml.safe_dump(settings, f)
 
 
 def retire_person(

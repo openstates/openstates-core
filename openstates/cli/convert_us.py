@@ -1,9 +1,9 @@
 import uuid
 from collections import defaultdict
-import us
+import us  # type: ignore
 import requests
 import click
-from ..models.people import (
+from ..people.models.people import (
     Person,
     OtherIdentifier,
     Role,
@@ -11,8 +11,8 @@ from ..models.people import (
     ContactDetail,
     Link,
     PersonIdBlock,
-)
-from ..utils import dump_obj, get_data_path
+)  # type: ignore
+from ..people.utils import dump_obj, get_data_path
 
 # chosen at random, but needs to be constant
 US_UUID_NAMESPACE = uuid.UUID("bf6b57c6-8cfe-454c-bd26-9c2b508c30b2")

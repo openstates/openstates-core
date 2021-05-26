@@ -1,5 +1,5 @@
 import click
-from django.db import transaction
+from django.db import transaction  # type: ignore
 from .. import metadata
 from ..utils.django import init_django
 

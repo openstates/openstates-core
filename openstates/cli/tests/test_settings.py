@@ -1,4 +1,4 @@
-import pytest
+import pytest  # type: ignore
 from openstates.cli.update import override_settings
 
 

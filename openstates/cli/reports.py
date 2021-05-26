@@ -1,6 +1,6 @@
 import logging
-from django.db import transaction
-from django.db.models import Count, Subquery, OuterRef, Q, F
+from django.db import transaction  # type: ignore
+from django.db.models import Count, Subquery, OuterRef, Q, F  # type: ignore
 from .. import utils
 
 # model imports are inside functions since this file is imported pre-init

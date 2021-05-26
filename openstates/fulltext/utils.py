@@ -2,7 +2,7 @@ import re
 import tempfile
 import functools
 import subprocess
-from lxml import html
+from lxml import html  # type: ignore
 
 
 def pdfdata_to_text(data):

@@ -250,7 +250,9 @@ def incoming_merge(
             for role in existing.roles:
                 if role.type == "mayor" or role.type == "governor":
                     continue
-                seats = seats_for_district[role.type].get(role.district, 1)
+                seats = seats_for_district[role.type].get(
+                    typing.cast(str, role.district), 1
+                )
                 if roles_equalish(new.roles[0], role) and seats == 1:
                     role_match = True
                     # if they match without start date, copy the start date over so it isn't

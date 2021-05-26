@@ -7,9 +7,9 @@ import warnings
 import click
 import scrapelib
 from pathlib import Path
-from django.contrib.postgres.search import SearchVector
-from django.db import transaction
-from django.db.models import Count
+from django.contrib.postgres.search import SearchVector  # type: ignore
+from django.db import transaction  # type: ignore
+from django.db.models import Count  # type: ignore
 from openstates.utils.django import init_django
 from openstates.utils import jid_to_abbr, abbr_to_jid
 from openstates.fulltext import get_extract_func, DoNotDownload, CONVERSION_FUNCTIONS

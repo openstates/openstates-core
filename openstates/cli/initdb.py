@@ -1,6 +1,6 @@
 from ..metadata import STATES_BY_ABBR
 from ..utils.django import init_django
-from django.db import transaction
+from django.db import transaction  # type: ignore
 
 
 def create_division(division_id, name):

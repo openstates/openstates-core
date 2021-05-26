@@ -1,5 +1,5 @@
-import pytest
-import django
+import pytest  # type: ignore
+import django  # type: ignore
 from openstates.data.models import (
     Jurisdiction,
     Division,
