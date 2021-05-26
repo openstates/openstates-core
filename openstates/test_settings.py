@@ -1,5 +1,5 @@
 import os
-import dj_database_url
+import dj_database_url  # type: ignore
 
 # django settings for tests
 SECRET_KEY = "test"

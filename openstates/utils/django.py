@@ -1,7 +1,7 @@
 import os
-import django
-from django import conf
-import dj_database_url
+import django  # type: ignore
+from django import conf  # type: ignore
+import dj_database_url  # type: ignore
 
 
 def init_django():  # pragma: no cover

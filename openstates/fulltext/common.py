@@ -1,6 +1,6 @@
 import re
 import tempfile
-import textract
+import textract  # type: ignore
 
 from .utils import (
     pdfdata_to_text,
