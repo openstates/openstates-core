@@ -1,4 +1,5 @@
 # flake8: NOQA
+# type: ignore
 #
 # Copyright (C) 2010-2012 Vinay Sajip. All rights reserved.
 # Licensed under the new BSD license.

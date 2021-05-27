@@ -12,7 +12,7 @@ from openstates.utils.transformers import fix_bill_id, collapse_whitespace
         ("SJRA", "SJR A"),
     ],
 )
-def test_fix_bill_id(orig, exp):
+def test_fix_bill_id(orig: str, exp: str) -> None:
     assert fix_bill_id(orig) == exp
 
 
@@ -29,7 +29,7 @@ def test_fix_bill_id(orig, exp):
         ("SRES 1", "SRES 1"),
     ],
 )
-def test_fix_bill_id_federal(orig, exp):
+def test_fix_bill_id_federal(orig: str, exp: str) -> None:
     assert fix_bill_id(orig) == exp
 
 
@@ -43,5 +43,5 @@ def test_fix_bill_id_federal(orig, exp):
         ("Many  Breaks \rto  \t  Fix", "Many Breaks to Fix"),
     ],
 )
-def test_collapse_whitespace(orig, exp):
+def test_collapse_whitespace(orig: str, exp: str) -> None:
     assert collapse_whitespace(orig) == exp

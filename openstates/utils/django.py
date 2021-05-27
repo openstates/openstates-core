@@ -4,7 +4,7 @@ from django import conf  # type: ignore
 import dj_database_url  # type: ignore
 
 
-def init_django():  # pragma: no cover
+def init_django() -> None:  # pragma: no cover
     DATABASE_URL = os.environ.get(
         "DATABASE_URL", "postgis://openstates:openstates@localhost/openstates"
     )
