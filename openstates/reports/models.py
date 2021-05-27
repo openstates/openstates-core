@@ -1,4 +1,4 @@
-from django.db import models
+from django.db import models  # type: ignore
 from ..data.models import Jurisdiction, LegislativeSession
 
 
