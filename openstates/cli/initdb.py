@@ -1,9 +1,11 @@
+# type: ignore
+# too many django types in this to type for now
 from ..metadata import STATES_BY_ABBR
 from ..utils.django import init_django
 from django.db import transaction  # type: ignore
 
 
-def create_division(division_id, name):
+def create_division(division_id: str, name: str):
     from ..data.models import Division
 
     return Division.objects.get_or_create(
@@ -14,7 +16,7 @@ def create_division(division_id, name):
     )[0]
 
 
-def create_chamber(juris, parent, chamber):
+def create_chamber(juris, parent, chamber) -> None:
     from ..data.models import Organization, Post
 
     if chamber.chamber_type != "unicameral":
@@ -46,7 +48,7 @@ def create_chamber(juris, parent, chamber):
         )
 
 
-def create_full_jurisdiction(state):
+def create_full_jurisdiction(state) -> None:
     from ..data.models import Jurisdiction, Organization
 
     div = create_division(state.division_id, state.name)
@@ -78,13 +80,13 @@ def create_full_jurisdiction(state):
         create_chamber(juris, leg, state.upper)
 
 
-def load_jurisdictions():
+def load_jurisdictions() -> None:
     for name, state in STATES_BY_ABBR.items():
         print("loading", name)
         create_full_jurisdiction(state)
 
 
-def main():
+def main() -> None:
     init_django()
     with transaction.atomic():
         load_jurisdictions()

@@ -1,3 +1,4 @@
+import typing
 import logging
 from django.db import transaction  # type: ignore
 from django.db.models import Count, Subquery, OuterRef, Q, F  # type: ignore
@@ -8,7 +9,7 @@ from .. import utils
 logger = logging.getLogger("openstates")
 
 
-def print_report(report):
+def print_report(report: dict[str, typing.Any]) -> None:
     plan = report["plan"]
     print("{} ({})".format(plan["module"], ", ".join(plan["actions"])))
     for scraper, args in plan["scrapers"].items():
@@ -32,7 +33,7 @@ def print_report(report):
 
 
 @transaction.atomic
-def save_report(report, jurisdiction):
+def save_report(report: dict[str, typing.Any], jurisdiction: str) -> typing.Any:
     from ..reports.models import RunPlan
     from ..data.models import Jurisdiction
 
@@ -85,17 +86,17 @@ def save_report(report, jurisdiction):
             )
 
 
-def _simple_count(ModelCls, session, **filter):
+def _simple_count(ModelCls: typing.Any, session: str, **filter: typing.Any) -> int:
     return (
         ModelCls.objects.filter(legislative_session_id=session).filter(**filter).count()
     )
 
 
-def generate_session_report(session):
+def generate_session_report(session: str) -> typing.Any:
     from ..data.models import Bill, VoteEvent, VoteCount, PersonVote, BillSponsorship
     from ..reports.models import SessionDataQualityReport
 
-    report = {
+    report: dict[str, typing.Any] = {
         "bills_missing_actions": _simple_count(Bill, session, actions__isnull=True),
         "bills_missing_sponsors": _simple_count(
             Bill, session, sponsorships__isnull=True
