@@ -1,3 +1,4 @@
+import typing
 import uuid
 from collections import defaultdict
 import us  # type: ignore
@@ -18,7 +19,7 @@ from ..people.utils import dump_obj, get_data_path
 US_UUID_NAMESPACE = uuid.UUID("bf6b57c6-8cfe-454c-bd26-9c2b508c30b2")
 
 
-def get_district_offices():
+def get_district_offices() -> defaultdict[str, list[ContactDetail]]:
     district_offices = defaultdict(list)
     url = "https://theunitedstates.io/congress-legislators/legislators-district-offices.json"
     entries = requests.get(url).json()
@@ -41,8 +42,8 @@ def get_district_offices():
     return district_offices
 
 
-def get_social():
-    social = defaultdict(list)
+def get_social() -> dict[str, PersonIdBlock]:
+    social: dict[str, PersonIdBlock] = {}
     url = (
         "https://theunitedstates.io/congress-legislators/legislators-social-media.json"
     )
@@ -56,14 +57,14 @@ def get_social():
     return social
 
 
-def fetch_current():
+def fetch_current() -> typing.Iterable[tuple[str, Person]]:
     url = "https://theunitedstates.io/congress-legislators/legislators-current.json"
     legislators = requests.get(url).json()
     for leg in legislators:
         yield current_to_person(leg)
 
 
-def current_to_person(current):
+def current_to_person(current: dict[str, typing.Any]) -> tuple[str, Person]:
     full_name = current["name"].get(
         "official_full", f"{current['name']['first']} {current['name']['last']}"
     )
@@ -88,7 +89,7 @@ def current_to_person(current):
             p.other_identifiers.append(OtherIdentifier(scheme=key, identifier=value))
 
     # keep mapping of start & end dates of party memberships
-    parties = defaultdict(dict)
+    parties: dict[str, dict[str, str]] = defaultdict(dict)
     for term in current["terms"]:
         if term["start"] < parties[term["party"]].get("start", "9999-99-99"):
             parties[term["party"]]["start"] = term["start"]

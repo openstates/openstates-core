@@ -10,7 +10,7 @@ from ..models.common import BaseModel
 
 
 class EnumDumper(yaml.SafeDumper):
-    def represent_data(self, data):
+    def represent_data(self, data):  # type: ignore
         if isinstance(data, Enum):
             return self.represent_data(data.value)
         return super().represent_data(data)

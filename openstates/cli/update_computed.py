@@ -4,7 +4,7 @@ from .. import metadata
 from ..utils.django import init_django
 
 
-def update_bill_fields_for_state(abbr):
+def update_bill_fields_for_state(abbr: str) -> None:
     from ..data.models import Bill
     from ..importers.computed_fields import update_bill_fields
 
@@ -22,10 +22,10 @@ def update_bill_fields_for_state(abbr):
 
 @click.command()
 @click.argument("abbrs", nargs=-1)
-def main(abbrs):
+def main(abbrs: list[str]) -> None:
     """ updates computed fields """
     init_django()
     if not abbrs:
-        abbrs = metadata.STATES_BY_ABBR.keys()
+        abbrs = list(metadata.STATES_BY_ABBR.keys())
     for abbr in abbrs:
         update_bill_fields_for_state(abbr)

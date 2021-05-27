@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 import os
+import typing
 import sys
 import csv
 import math
@@ -12,7 +13,12 @@ from django.db import transaction  # type: ignore
 from django.db.models import Count  # type: ignore
 from openstates.utils.django import init_django
 from openstates.utils import jid_to_abbr, abbr_to_jid
-from openstates.fulltext import get_extract_func, DoNotDownload, CONVERSION_FUNCTIONS
+from openstates.fulltext import (
+    get_extract_func,
+    DoNotDownload,
+    CONVERSION_FUNCTIONS,
+    Metadata,
+)
 
 # disable SSL validation and ignore warnings
 scraper = scrapelib.Scraper(verify=False)
@@ -20,7 +26,7 @@ scraper.user_agent = "Mozilla"
 warnings.filterwarnings("ignore", module="urllib3")
 
 
-def get_raw_dir():
+def get_raw_dir() -> Path:
     return Path(__file__).parent / ".." / "fulltext" / "raw"
 
 
@@ -33,15 +39,17 @@ MIMETYPES = {
 }
 
 
-def _cleanup(text):
+def _cleanup(text: str) -> str:
     # strip nulls
     return text.replace("\0", "")
 
 
-def download(version):
+def download(
+    version: dict[str, str]
+) -> tuple[typing.Optional[str], typing.Optional[bytes]]:
     abbr = jid_to_abbr(version["jurisdiction_id"])
     ext = MIMETYPES[version["media_type"]]
-    filename = (
+    filename = str(
         get_raw_dir()
         / f'{abbr}/{version["session"]}-{version["identifier"]}-{version["note"]}.{ext}'
     )
@@ -64,7 +72,10 @@ def download(version):
             return filename, f.read()
 
 
-def extract_to_file(filename, data, version):
+def extract_to_file(
+    filename: str, data: bytes, version: Metadata
+) -> tuple[typing.Union[None, str, typing.Type[DoNotDownload]], int]:
+    text: typing.Optional[str]
     try:
         func = get_extract_func(version)
         if func == DoNotDownload:
@@ -89,7 +100,7 @@ def extract_to_file(filename, data, version):
     return text_filename, len(text)
 
 
-def update_bill(bill):
+def update_bill(bill: typing.Any) -> int:
     from openstates.data.models import SearchableBill
 
     try:
@@ -111,7 +122,7 @@ def update_bill(bill):
     raw_text = ""
     link = None
     for link in links:
-        metadata = {
+        metadata: Metadata = {
             "url": link.url,
             "media_type": link.media_type,
             "title": bill.title,
@@ -148,11 +159,11 @@ def update_bill(bill):
 
 
 @click.group()
-def main():
+def main() -> None:
     pass
 
 
-def _resample(state, n=50):
+def _resample(state: str, n: int = 50) -> None:
     """
     Grab new versions for a state from the database.
     """
@@ -200,7 +211,7 @@ def _resample(state, n=50):
 @click.argument("state")
 @click.option("--resample/--no-resample", default=False)
 @click.option("--quiet/--no-quiet", default=False)
-def sample(state, resample, quiet):
+def sample(state: str, resample: bool, quiet: bool) -> int:
     if resample:
         _resample(state)
     count = missing = empty = skipped = 0
@@ -208,10 +219,12 @@ def sample(state, resample, quiet):
         for version in csv.DictReader(f):
             count += 1
             filename, data = download(version)
-            if not filename:
+            if not filename or not data:
                 missing += 1
                 continue
-            text_filename, n_bytes = extract_to_file(filename, data, version)
+            text_filename, n_bytes = extract_to_file(
+                filename, data, typing.cast(Metadata, version)
+            )
             if text_filename == DoNotDownload:
                 skipped += 1
             elif not n_bytes:
@@ -233,7 +246,7 @@ def sample(state, resample, quiet):
 
 @main.command(help="run sample on all states, used for CI")
 @click.pass_context
-def test(ctx):
+def test(ctx: typing.Any) -> None:
     failures = 0
     states = sorted(CONVERSION_FUNCTIONS.keys())
     click.secho(f"testing {len(states)} states...", fg="white")
@@ -243,7 +256,7 @@ def test(ctx):
 
 
 @main.command(help="print a status table showing the current condition of states")
-def status():
+def status() -> None:
     init_django()
     from openstates.data.models import Bill
 
@@ -280,7 +293,7 @@ def status():
 
 @main.command(help="rebuild the search index objects for a given state")
 @click.argument("state")
-def reindex_state(state):
+def reindex_state(state: str) -> None:
     init_django()
     from openstates.data.models import SearchableBill
 
@@ -298,7 +311,7 @@ def reindex_state(state):
 @click.option("-n", default=None)
 @click.option("--clear-errors/--no-clear-errors", default=False)
 @click.option("--checkpoint", default=500)
-def update(state, n, clear_errors, checkpoint):
+def update(state: str, n: int, clear_errors: bool, checkpoint: int) -> None:
     init_django()
     from openstates.data.models import Bill, SearchableBill
 
@@ -369,7 +382,7 @@ def update(state, n, clear_errors, checkpoint):
     transaction.set_autocommit(True)
 
 
-def reindex(ids_to_update):
+def reindex(ids_to_update: list[int]) -> None:
     from openstates.data.models import SearchableBill
 
     print(f"updating {len(ids_to_update)} search vectors")
