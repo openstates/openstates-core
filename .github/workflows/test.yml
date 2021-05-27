@@ -51,7 +51,7 @@ jobs:
     - name: lint with flake8
       run: poetry run flake8 --show-source --statistics --ignore=E203,E501,W503
     - name: lint with mypy
-      run: poetry run mypy openstates --exclude "openstates/(data|reports|importers|scrape)"
+      run: poetry run mypy openstates
     - name: pytest
       run: poetry run pytest --cov-report=xml --cov=openstates --ds=openstates.test_settings --reuse-db -v openstates
       env:
