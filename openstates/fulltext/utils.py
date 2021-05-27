@@ -5,7 +5,7 @@ import subprocess
 from lxml import html  # type: ignore
 
 
-def pdfdata_to_text(data):
+def pdfdata_to_text(data: bytes) -> str:
     with tempfile.NamedTemporaryFile(delete=True) as tmpf:
         tmpf.write(data)
         tmpf.flush()
@@ -19,12 +19,14 @@ def pdfdata_to_text(data):
             raise EnvironmentError(
                 f"error running pdftotext, missing executable? [{e}]"
             )
+        if not pipe:
+            raise EnvironmentError("could not open pipe")
         data = pipe.read()
         pipe.close()
         return data.decode("utf8", "ignore")
 
 
-def clean(text):
+def clean(text: str) -> str:
     text = text.replace("\xa0", " ")  # nbsp -> sp
     text = text.replace("\r\n", "\n")  # replace carriage returns
     text = re.sub(r"[ \t]", " ", text)  # collapse spaces
@@ -32,7 +34,7 @@ def clean(text):
     return text
 
 
-def _text_near_line_numbers(lines, regex):
+def _text_near_line_numbers(lines: str, regex: str) -> str:
     """ used for before & after line numbers """
     text = []
     for line in lines.splitlines():
@@ -54,7 +56,7 @@ text_before_line_numbers = functools.partial(
 )
 
 
-def text_from_element_lxml(data, lxml_query):
+def text_from_element_lxml(data: bytes, lxml_query: str) -> str:
     html_document = html.fromstring(data)
     matching_elements = html_document.findall(lxml_query)
 
@@ -69,7 +71,7 @@ def text_from_element_lxml(data, lxml_query):
     return text_inside_element
 
 
-def text_from_element_xpath(data, lxml_xpath_query):
+def text_from_element_xpath(data: bytes, lxml_xpath_query: str) -> str:
     html_document = html.fromstring(data)
     matching_elements = html_document.xpath(lxml_xpath_query)
 
@@ -84,7 +86,7 @@ def text_from_element_xpath(data, lxml_xpath_query):
     return text_inside_element
 
 
-def text_from_element_siblings_lxml(data, lxml_query):
+def text_from_element_siblings_lxml(data: bytes, lxml_query: str) -> str:
     html_document = html.fromstring(data)
     matching_elements = html_document.findall(lxml_query)
 
@@ -95,7 +97,7 @@ def text_from_element_siblings_lxml(data, lxml_query):
     return text_inside_elements
 
 
-def text_from_element_siblings_xpath(data, lxml_query):
+def text_from_element_siblings_xpath(data: bytes, lxml_query: str) -> str:
     html_document = html.fromstring(data)
     matching_elements = html_document.xpath(lxml_query)
 

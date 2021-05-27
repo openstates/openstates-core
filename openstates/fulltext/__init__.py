@@ -11,6 +11,8 @@ from .common import (
     extractor_for_element_by_xpath,
     extract_from_code_tags_html,
     textract_extractor,
+    Metadata,
+    ExtractorFunc,
 )
 from .de import handle_delaware
 
@@ -126,10 +128,11 @@ CONVERSION_FUNCTIONS = {
 }
 
 
-def get_extract_func(metadata):
+def get_extract_func(metadata: Metadata) -> ExtractorFunc:
     try:
         state = jid_to_abbr(metadata["jurisdiction_id"])
-        func = CONVERSION_FUNCTIONS[state][metadata["media_type"]]
+        # ignore type here because DoNotDownload sentinels were in the way
+        func = CONVERSION_FUNCTIONS[state][metadata["media_type"]]  # type: ignore
     except KeyError:
         print(f"no function for {state}, {metadata['media_type']}")
         return lambda data, metadata: ""

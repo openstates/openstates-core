@@ -1,4 +1,4 @@
-from .common import extractor_for_elements_by_xpath, extract_line_numbered_pdf
+from .common import extractor_for_elements_by_xpath, extract_line_numbered_pdf, Metadata
 
 # the sample.csv includes only MSWord files for some Delaware laws
 # (actually "HCR" resolutions honoring folks)
@@ -7,7 +7,7 @@ from .common import extractor_for_elements_by_xpath, extract_line_numbered_pdf
 # Docxes are ignored, PDFs will be handled IFF 'HCR' is in the title.
 
 
-def handle_delaware(data, metadata):
+def handle_delaware(data: bytes, metadata: Metadata) -> str:
     if metadata["media_type"] == "text/html" and "HCR" not in metadata["title"]:
         return extractor_for_elements_by_xpath("/html/body/div[2] | /html/body/div[3]")(
             data, metadata
