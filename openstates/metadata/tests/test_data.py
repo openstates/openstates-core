@@ -1,8 +1,9 @@
+# type: ignore
 import re
 from ..data import STATES, NC, VT
 
 
-def test_basics():
+def test_basics() -> None:
     unicam_count = 0
     bicam_count = 0
     for state in STATES:
@@ -20,7 +21,7 @@ def test_basics():
     assert bicam_count == 51
 
 
-def test_district_numbers():
+def test_district_numbers() -> None:
     for state in STATES:
         if state.unicameral:
             assert state.legislature.num_seats == sum(
@@ -37,14 +38,14 @@ def test_district_numbers():
             assert state.lower.num_seats > state.upper.num_seats > 10
 
 
-def test_simple_numbered_districts():
+def test_simple_numbered_districts() -> None:
     assert NC.lower.districts[0].name == "1"
     assert NC.lower.districts[0].num_seats == 1
     assert NC.lower.districts[-1].name == "120"
     assert NC.lower.districts[0].num_seats == 1
 
 
-def test_everything_has_division_id():
+def test_everything_has_division_id() -> None:
     for state in STATES:
         if state.unicameral:
             for d in state.legislature.districts:
@@ -72,7 +73,7 @@ def test_everything_has_division_id():
                     assert d.division_id.startswith(f"{state.division_id}/sldu:")
 
 
-def test_everything_has_organization_id():
+def test_everything_has_organization_id() -> None:
     for state in STATES:
         if state.unicameral:
             assert len(state.legislature.organization_id) == 53
@@ -81,6 +82,6 @@ def test_everything_has_organization_id():
             assert len(state.upper.organization_id) == 53
 
 
-def test_legacy_ids():
+def test_legacy_ids() -> None:
     assert not NC.legacy_districts
     assert len(VT.legacy_districts) == 38

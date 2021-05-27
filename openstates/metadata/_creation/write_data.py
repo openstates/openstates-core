@@ -1,11 +1,12 @@
 import us  # type: ignore
+import typing
 import csv
 import uuid
 import yaml
 from collections import defaultdict
 
 
-def calc_seats(data):
+def calc_seats(data: dict) -> dict[str, dict[str, int]]:
     chamber_seats = {}
     for key in ("upper", "lower", "legislature"):
         seats = data.get(key + "_seats")
@@ -23,7 +24,8 @@ def calc_seats(data):
     return chamber_seats
 
 
-def seats_to_args(seats):
+# loosely typed... not worth the hassle
+def seats_to_args(seats: typing.Union[int, list, dict]) -> tuple[int, typing.Any]:
     if isinstance(seats, int):
         return seats, None
     elif isinstance(seats, list):
@@ -32,11 +34,17 @@ def seats_to_args(seats):
         return sum(seats.values()), seats
 
 
-def slugify(name):
+def slugify(name: str) -> str:
     return name.lower().replace(" ", "_")
 
 
-def make_districts(parent_id, chamber_type, num, seats, division_ids):
+def make_districts(
+    parent_id: str,
+    chamber_type: str,
+    num: int,
+    seats: typing.Any,
+    division_ids: list[str],
+) -> str:
     if not seats and not division_ids:
         return f"simple_numbered_districts('{parent_id}', '{chamber_type}', {num})"
     elif (

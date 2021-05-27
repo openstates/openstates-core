@@ -3,7 +3,7 @@ from .. import lookup, lookup_district_with_ancestors
 from ..data import NC, NE
 
 
-def test_lookup():
+def test_lookup() -> None:
     assert lookup(abbr="nc") == NC
     assert lookup(abbr="NC") == NC
     assert (
@@ -11,12 +11,12 @@ def test_lookup():
     )
 
 
-def test_chambers():
+def test_chambers() -> None:
     assert len(NC.chambers) == 2
     assert len(NE.chambers) == 1
 
 
-def test_lookup_district_by_division_id():
+def test_lookup_district_by_division_id():  # type: ignore
     # lookup works
     assert NC.lookup_district("ocd-division/country:us/state:nc/sldl:1") is not None
     assert NC.lookup_district("ocd-division/country:us/state:nc/sldl:1").name == "1"
@@ -36,7 +36,7 @@ def test_lookup_district_by_division_id():
     )
 
 
-def test_lookup_district_by_name():
+def test_lookup_district_by_name():  # type: ignore
     assert (
         NC.lookup_district(chamber="upper", name="1").division_id
         == "ocd-division/country:us/state:nc/sldu:1"
@@ -51,14 +51,14 @@ def test_lookup_district_by_name():
     )
 
 
-def test_lookup_missing_district():
+def test_lookup_missing_district() -> None:
     assert NE.lookup_district("ocd-division/country:us/state:ne/sldl:1") is None
     assert NE.lookup_district(name="999") is None
     assert NC.lookup_district(name="999") is None
     assert NC.lookup_district(name="999", chamber="lower") is None
 
 
-def test_lookup_district_with_ancestors():
+def test_lookup_district_with_ancestors() -> None:
     state, chamber, district = lookup_district_with_ancestors(
         division_id="ocd-division/country:us/state:nc/sldl:1"
     )
@@ -74,7 +74,7 @@ def test_lookup_district_with_ancestors():
     assert district.name == "1"
 
 
-def test_lookup_district_with_ancestors_invalid():
+def test_lookup_district_with_ancestors_invalid() -> None:
     # bad id
     with pytest.raises(ValueError):
         lookup_district_with_ancestors(division_id="invalid id")
@@ -90,7 +90,7 @@ def test_lookup_district_with_ancestors_invalid():
         )
 
 
-def test_lookup_district_with_ancestors_dc_pr():
+def test_lookup_district_with_ancestors_dc_pr() -> None:
     state, chamber, district = lookup_district_with_ancestors(
         division_id="ocd-division/country:us/district:dc"
     )
