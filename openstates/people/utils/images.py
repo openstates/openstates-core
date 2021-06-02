@@ -13,7 +13,6 @@ from ..models.people import Person
 
 
 ALLOWED_CONTENT_TYPES = ("image/jpeg", "image/png", "image/gif", "image/jpg")
-s3 = boto3.client("s3")
 
 
 _IMAGE_RETURN_TYPE = tuple[typing.Optional[bytes], typing.Optional[str]]
@@ -26,6 +25,7 @@ def upload(
 ) -> typing.Optional[bytes]:
     """upload works as a sort of decorator around img_callable, which is
     only called if necessary after checking if there's already an image"""
+    s3 = boto3.client("s3")
     try:
         obj = s3.head_object(Bucket=os.environ["S3_BUCKET"], Key=key_name)
     except ClientError:
