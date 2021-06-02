@@ -1,9 +1,11 @@
 # Changelog
 
-## next
+## 6.0.2 - June 2 2021
 
 * improved use of typing, which will now be enforced going forward
 * added --save-all flag to os-people lint
+* us legislators script fixes
+* fix boto being initialized if not used
 
 ## 6.0.1 - May 25 2021
 
