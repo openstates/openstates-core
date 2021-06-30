@@ -10,10 +10,13 @@ from dataclasses import dataclass
 from collections import defaultdict
 import click
 import yaml
+from django.db import transaction  # type: ignore
 from yaml.representer import Representer
 from pydantic import ValidationError
 from ..metadata import lookup
+from ..utils.django import init_django  # type: ignore
 from ..people.utils import get_data_path, get_all_abbreviations
+from ..people.utils.to_database import CancelTransaction
 from ..people.models.committees import Committee, ScrapeCommittee
 from ..people.models.people import Person
 
@@ -85,6 +88,29 @@ class PersonMatcher:
 
     def id_exists(self, id_: str) -> bool:
         return id_ in self.all_ids
+
+
+def committee_to_db(com: Committee) -> tuple[bool, bool]:
+    from openstates.data.models import Organization
+
+    updated = False
+
+    db_com, created = Organization.objects.get_or_create(
+        id=com.id,
+        jurisdiction_id=com.jurisdiction,
+        classification=com.classification,
+        defaults=dict(name=com.name),
+    )
+
+    for key_name in ("links", "sources", "other_names"):
+        list_json = [n.dict() for n in getattr(com, key_name)]
+        if list_json != getattr(db_com, key_name):
+            setattr(db_com, key_name, list_json)
+            updated = True
+
+    # TODO: memberships
+
+    return created, updated
 
 
 def merge_lists(orig: list, new: list, key_attr: str) -> list:
@@ -257,6 +283,53 @@ class CommitteeDir:
             to_merge=to_merge,
         )
 
+    def to_database(self, purge: bool) -> None:
+        from openstates.data.models import Organization
+
+        ids = set()
+        created_count = 0
+        updated_count = 0
+
+        existing_ids = set(
+            Organization.objects.filter(
+                jurisdiction_id=lookup(abbr=self.abbr).jurisdiction_id,
+                classification="committee",
+            ).values_list("id", flat=True)
+        )
+
+        for chamber, committees in self.coms_by_chamber_and_name.items():
+            for name, committee in committees.items():
+                ids.add(committee.id)
+                created, updated = committee_to_db(committee)
+
+                if created:
+                    click.secho(f"created committee {name}", fg="cyan", bold=True)
+                    created_count += 1
+                elif updated:
+                    click.secho(f"updated committee {name}", fg="cyan")
+                    updated_count += 1
+
+        missing_ids = existing_ids - ids
+
+        # ids that are missing need to be purged
+        if missing_ids and not purge:
+            click.secho(
+                f"{len(missing_ids)} went missing, run with --purge to remove", fg="red"
+            )
+            for id in missing_ids:
+                mobj = Organization.objects.get(pk=id)
+                click.secho(f"  {id}: {mobj}")
+            raise CancelTransaction()
+        elif missing_ids and purge:
+            click.secho(f"{len(missing_ids)} purged", fg="yellow")
+            Organization.objects.filter(id__in=missing_ids).delete()
+
+        click.secho(
+            f"processed {len(ids)} person files, {created_count} created, "
+            f"{updated_count} updated",
+            fg="green",
+        )
+
 
 @click.group()
 def main() -> None:
@@ -340,6 +413,44 @@ def lint(abbreviations: list[str]) -> None:
                 errors += 1
         if errors:
             click.secho(f"exiting with {errors} errors", fg="red")
+            sys.exit(1)
+
+
+@main.command()
+@click.argument("abbreviations", nargs=-1)
+@click.option(
+    "--purge/--no-purge",
+    default=False,
+    help="Purge all committees from DB that aren't in YAML.",
+)
+@click.option(
+    "--safe/--no-safe",
+    default=False,
+    help="Operate in safe mode, no changes will be written to database.",
+)
+def to_database(abbreviations: list[str], purge: bool, safe: bool) -> None:
+    """
+    Sync YAML files to DB.
+    """
+    init_django()
+
+    if not abbreviations:
+        abbreviations = get_all_abbreviations()
+
+    for abbr in abbreviations:
+        click.secho("==== {} ====".format(abbr), bold=True)
+        comdir = CommitteeDir(abbr)
+
+        if safe:
+            click.secho("running in safe mode, no changes will be made", fg="magenta")
+
+        try:
+            with transaction.atomic():
+                comdir.to_database(purge=purge)
+                if safe:
+                    click.secho("ran in safe mode, no changes were made", fg="magenta")
+                    raise CancelTransaction()
+        except CancelTransaction:
             sys.exit(1)
 
 
