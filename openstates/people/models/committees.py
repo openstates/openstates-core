@@ -40,10 +40,10 @@ class ScrapeCommittee(BaseModel):
     def add_member(self, name: str, role: str = "member") -> None:
         self.members.append(Membership(name=name, role=role))
 
-    def add_link(self, url: str, note: typing.Optional[str] = None) -> None:
+    def add_link(self, url: str, note: str = "") -> None:
         self.links.append(Link(url=url, note=note))
 
-    def add_source(self, url: str, note: typing.Optional[str] = None) -> None:
+    def add_source(self, url: str, note: str = "") -> None:
         self.sources.append(Link(url=url, note=note))
 
 
