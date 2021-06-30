@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.0.3 - June 3 2021
+
+* fix for ScrapeCommittee add_link/add_source
+
 ## 6.0.2 - June 2 2021
 
 * improved use of typing, which will now be enforced going forward
