@@ -11,6 +11,8 @@ from openstates.people.models.people import (
     OtherIdentifier,
     ContactDetail,
 )
+from openstates.people.models.committees import Committee
+from openstates.cli.committees import committee_to_db
 
 
 def setup():
@@ -309,3 +311,54 @@ def test_person_mayor_role(person):
         p.current_jurisdiction_id
         == "ocd-jurisdiction/country:us/state:nc/place:cary/government"
     )
+
+
+@pytest.mark.django_db
+def test_committee_to_db_simple():
+    com_id = "ocd-organization/00000000-1111-1111-1111-222222222222"
+    new_com = Committee(
+        id=com_id,
+        name="Education",
+        parent="lower",
+        jurisdiction="ocd-jurisdiction/country:us/state:nc/government",
+        sources=[{"url": "https://example.com"}],
+    )
+    created, updated = committee_to_db(new_com)
+    assert created and not updated
+    org = Organization.objects.get(pk=com_id)
+    assert org.sources == new_com.sources
+
+    new_com.links = [{"url": "https://example.com"}]
+    created, updated = committee_to_db(new_com)
+    assert updated and not created
+    org = Organization.objects.get(pk=com_id)
+    assert org.links == new_com.links
+
+
+@pytest.mark.django_db
+def test_committee_to_db_memberships():
+    com_id = "ocd-organization/00000000-1111-1111-1111-222222222222"
+    new_com = Committee(
+        id=com_id,
+        name="Education",
+        parent="lower",
+        jurisdiction="ocd-jurisdiction/country:us/state:nc/government",
+    )
+    new_com.add_member("Steve", role="chair")
+    created, updated = committee_to_db(new_com)
+    org = Organization.objects.get(pk=com_id)
+    assert org.memberships.count() == 1
+    s_mem = org.memberships.get()
+    assert s_mem.person_name == "Steve"
+    assert s_mem.role == "chair"
+
+    person_id = "ocd-person/33333333-4444-4444-4444-555555555555"
+    wendy = DjangoPerson.objects.create(id=person_id, name="Wendy")
+    new_com.add_member("Wendy", role="chair")
+    new_com.members[-1].person_id = person_id
+    created, updated = committee_to_db(new_com)
+    assert updated and not created
+    org = Organization.objects.get(pk=com_id)
+    assert org.memberships.count() == 2
+    w_mem = org.memberships.filter(person_name="Wendy")[0]
+    assert w_mem.person == wendy
