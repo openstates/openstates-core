@@ -109,10 +109,10 @@ def committee_to_db(com: Committee) -> tuple[bool, bool]:
             updated = True
 
     existing_members = {
-        (m.person_name, m.role)
+        (m.person_id, m.person_name, m.role)
         for m in db_com.memberships.all().select_related("person")
     }
-    scraped_members = {(m.name, m.role) for m in com.members}
+    scraped_members = {(m.person_id, m.name, m.role) for m in com.members}
 
     if existing_members != scraped_members:
         # replace members
@@ -131,6 +131,9 @@ def committee_to_db(com: Committee) -> tuple[bool, bool]:
 
     if updated:
         db_com.save()
+        # don't set updated to true in return if created
+        if created:
+            updated = False
     return created, updated
 
 
