@@ -91,7 +91,7 @@ class PersonMatcher:
 
 
 def committee_to_db(com: Committee) -> tuple[bool, bool]:
-    from openstates.data.models import Organization
+    from openstates.data.models import Organization, Membership
 
     updated = False
 
@@ -108,8 +108,29 @@ def committee_to_db(com: Committee) -> tuple[bool, bool]:
             setattr(db_com, key_name, list_json)
             updated = True
 
-    # TODO: memberships
+    existing_members = {
+        (m.person_name, m.role)
+        for m in db_com.memberships.all().select_related("person")
+    }
+    scraped_members = {(m.name, m.role) for m in com.members}
 
+    if existing_members != scraped_members:
+        # replace members
+        updated = True
+        new_memberships = [
+            Membership(
+                role=m.role,
+                person_name=m.name,
+                person_id=m.person_id,
+                organization=db_com,
+            )
+            for m in com.members
+        ]
+        db_com.memberships.all().delete()
+        Membership.objects.bulk_create(new_memberships)
+
+    if updated:
+        db_com.save()
     return created, updated
 
 
@@ -325,7 +346,7 @@ class CommitteeDir:
             Organization.objects.filter(id__in=missing_ids).delete()
 
         click.secho(
-            f"processed {len(ids)} person files, {created_count} created, "
+            f"processed {len(ids)} committees, {created_count} created, "
             f"{updated_count} updated",
             fg="green",
         )
