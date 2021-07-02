@@ -21,7 +21,7 @@ from ..models.committees import Committee, ScrapeCommittee
 from ..models.people import Person
 
 yaml.SafeDumper.add_representer(defaultdict, Representer.represent_dict)
-yaml.SafeDumper.add_multi_representer(Enum, Representer.represent_str)
+yaml.SafeDumper.add_multi_representer(Enum, Representer.represent_str)  # type: ignore
 
 
 @dataclass
