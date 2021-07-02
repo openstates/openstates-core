@@ -35,6 +35,7 @@ class ScrapeCommittee(BaseModel):
     links: typing.List[Link] = []
     other_names: typing.List[OtherName] = []
     members: typing.List[Membership] = []
+    extras: dict = {}
 
     _validate_strs = validator("name", allow_reuse=True)(validate_str_no_newline)
 
