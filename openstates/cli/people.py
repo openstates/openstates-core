@@ -437,7 +437,10 @@ def to_csv(abbreviations: list[str], upload: bool) -> None:
                 fname,
                 "data.openstates.org",
                 f"people/current/{abbr}.csv",
-                ExtraArgs={"ContentType": "text/csv", "ACL": "public-read"},
+                ExtraArgs={
+                    "ContentType": "text/csv; charset=UTF-8",
+                    "ACL": "public-read",
+                },
             )
             click.secho(
                 f"uploaded to data.openstates.org/people/current/{abbr}.csv", fg="green"
