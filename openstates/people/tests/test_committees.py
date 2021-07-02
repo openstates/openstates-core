@@ -16,6 +16,25 @@ JURISDICTION_ID = "ocd-jurisdiction/country:us/state:wa/government"
 TEST_DATA_PATH = Path(__file__).parent / "testdata"
 
 
+def test_parent_validation_chamber():
+    ScrapeCommittee(name="Education", parent="lower")
+    ScrapeCommittee(name="Education", parent="upper")
+    ScrapeCommittee(name="Education", parent="legislature")
+    with pytest.raises(ValidationError):
+        ScrapeCommittee(name="Education", parent="joint")
+    # not a subcommittee
+    with pytest.raises(ValidationError):
+        ScrapeCommittee(name="Education", parent="Supercommittee")
+
+
+def test_parent_validation_subcommittee():
+    # subcommittees can be any string...
+    ScrapeCommittee(name="Pre-K", parent="Education", classification="subcommittee")
+    # except subcommittees can't use the 3 chambers
+    with pytest.raises(ValidationError):
+        ScrapeCommittee(name="Pre-K", parent="lower", classification="subcommittee")
+
+
 @pytest.fixture
 def person_matcher():
     pm = PersonMatcher("wa", TEST_DATA_PATH / "no-such-dir")
@@ -166,7 +185,7 @@ def test_load_data_with_errors():
     assert "members -> 3 -> who" in str(msg0)
     assert "members -> 3 -> name" in str(msg0)
     assert "2 validation errors" in str(msg1)
-    assert "value is not a valid enumeration member" in str(msg1)
+    assert "committees must have a parent in" in str(msg1)
     assert "extra fields not permitted" in str(msg1)
 
 

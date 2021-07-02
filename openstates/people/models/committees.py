@@ -1,6 +1,6 @@
 import typing
 from enum import Enum
-from pydantic import validator
+from pydantic import validator, root_validator
 from .common import (
     BaseModel,
     ORG_ID_RE,
@@ -11,11 +11,12 @@ from .common import (
     validate_str_no_newline,
 )
 
+COMMITTEE_PARENTS = ("upper", "lower", "legislature")
 
-class Parent(str, Enum):
-    UPPER = "upper"
-    LOWER = "lower"
-    JOINT = "legislature"
+
+class CommitteeType(str, Enum):
+    COMMITTEE = "committee"
+    SUBCOMMITTEE = "subcommittee"
 
 
 class Membership(BaseModel):
@@ -28,14 +29,30 @@ class Membership(BaseModel):
 
 class ScrapeCommittee(BaseModel):
     name: str
-    parent: Parent
-    classification: str = "committee"
+    parent: str
+    classification: CommitteeType = "committee"
     sources: typing.List[Link] = []
     links: typing.List[Link] = []
     other_names: typing.List[OtherName] = []
     members: typing.List[Membership] = []
 
     _validate_strs = validator("name", allow_reuse=True)(validate_str_no_newline)
+
+    @root_validator
+    def validate_parent_and_classification(
+        cls, values: dict[str, typing.Any]
+    ) -> dict[str, typing.Any]:
+        if (
+            values.get("classification") == "subcommittee"
+            and values.get("parent") in COMMITTEE_PARENTS
+        ):
+            raise ValueError("subcommittees must have a committee parent")
+        if (
+            values.get("classification") == "committee"
+            and values.get("parent") not in COMMITTEE_PARENTS
+        ):
+            raise ValueError(f"committees must have a parent in {COMMITTEE_PARENTS}")
+        return values
 
     def add_member(self, name: str, role: str = "member") -> None:
         self.members.append(Membership(name=name, role=role))
