@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.2.0 - July 5 2021
+
+* refactor openstates.people into openstates.models and openstates.utils
+
 ## 6.1.0 - July 2 2021
 
 * committee database imports
