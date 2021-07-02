@@ -62,6 +62,7 @@ class BaseModel(PydanticBaseModel):
         anystr_strip_whitespace = True
         extra = "forbid"
         validate_assignment = True
+        use_enum_values = True
 
     def to_dict(self) -> dict[str, typing.Any]:
         # TODO: replace this with first class pydantic support in spatula
