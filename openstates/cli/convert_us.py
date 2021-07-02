@@ -4,7 +4,7 @@ from collections import defaultdict
 import us  # type: ignore
 import requests
 import click
-from ..people.models.people import (
+from ..models.people import (
     Person,
     OtherIdentifier,
     Role,
