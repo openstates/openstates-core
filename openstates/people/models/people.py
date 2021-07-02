@@ -181,21 +181,28 @@ class ScrapePerson(BaseModel):
     extras: dict = {}
 
     @validator("party", pre=True)
-    def common_abbreviations(cls, val):
+    def common_abbreviations(cls, val: str) -> str:
         # replace with proper name if one exists
         return PARTY_ABBREVS.get(val.lower(), val)
 
     @validator("name")
-    def collapse_spaces(cls, val):
+    def collapse_spaces(cls, val: str) -> str:
         return re.sub(r"\s+", " ", val).strip()
 
-    def add_link(self, url, note=""):
+    def add_link(self, url: str, note: str = "") -> None:
         self.links.append(Link(url=url, note=note))
 
-    def add_source(self, url, note=""):
+    def add_source(self, url: str, note: str = "") -> None:
         self.sources.append(Link(url=url, note=note))
 
-    def add_office(self, contact_type: ContactType, *, address="", voice="", fax=""):
+    def add_office(
+        self,
+        contact_type: ContactType,
+        *,
+        address: str = "",
+        voice: str = "",
+        fax: str = "",
+    ) -> None:
         self.additional_offices.append(
             ScrapeContactDetail(
                 note=contact_type, address=address, voice=voice, fax=fax
