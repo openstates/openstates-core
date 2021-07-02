@@ -30,7 +30,7 @@ class Membership(BaseModel):
 class ScrapeCommittee(BaseModel):
     name: str
     parent: str
-    classification: CommitteeType = "committee"
+    classification: CommitteeType = CommitteeType.COMMITTEE
     sources: typing.List[Link] = []
     links: typing.List[Link] = []
     other_names: typing.List[OtherName] = []
