@@ -1,5 +1,11 @@
 # Changelog
 
+## 6.1.0 - July 2 2021
+
+* committee database imports
+* add support for scraping subcommittees
+* set charset on CSV uploads
+
 ## 6.0.3 - June 3 2021
 
 * fix for ScrapeCommittee add_link/add_source
