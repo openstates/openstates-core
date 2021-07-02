@@ -4,7 +4,7 @@ from functools import lru_cache
 import click
 from openstates import metadata
 from ..utils import legacy_districts
-from ..models.people import MAJOR_PARTIES, Person, PartyName
+from ...models.people import MAJOR_PARTIES, Person, PartyName
 
 
 DataDict = dict[str, typing.Any]

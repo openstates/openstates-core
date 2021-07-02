@@ -17,8 +17,8 @@ from ..metadata import lookup
 from ..utils.django import init_django  # type: ignore
 from ..people.utils import get_data_path, get_all_abbreviations
 from ..people.utils.to_database import CancelTransaction
-from ..people.models.committees import Committee, ScrapeCommittee
-from ..people.models.people import Person
+from ..models.committees import Committee, ScrapeCommittee
+from ..models.people import Person
 
 yaml.SafeDumper.add_representer(defaultdict, Representer.represent_dict)
 yaml.SafeDumper.add_multi_representer(Enum, Representer.represent_str)

@@ -11,7 +11,7 @@ from openstates.people.utils.lint_people import (
     BadVacancy,
     PersonType,
 )  # noqa
-from openstates.people.models.people import Person, Role, Party, ContactDetail
+from openstates.models.people import Person, Role, Party, ContactDetail
 
 
 EXAMPLE_OCD_JURISDICTION_ID = "ocd-jurisdiction/country:us/government"

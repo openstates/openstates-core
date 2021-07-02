@@ -4,7 +4,7 @@ from unittest.mock import patch
 from pathlib import Path
 from pydantic import ValidationError
 from openstates.cli.committees import CommitteeDir, PersonMatcher, merge_committees
-from openstates.people.models.committees import (
+from openstates.models.committees import (
     Committee,
     Link,
     ScrapeCommittee,

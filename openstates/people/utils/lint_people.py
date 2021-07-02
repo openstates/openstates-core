@@ -14,7 +14,7 @@ from .general import (
     legacy_districts,
     load_municipalities,
 )
-from ..models.people import Person
+from ...models.people import Person
 
 
 class BadVacancy(Exception):

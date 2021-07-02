@@ -1,5 +1,5 @@
 from openstates.cli.people import Summarizer
-from openstates.people.models.people import (
+from openstates.models.people import (
     Person,
     Party,
     ContactDetail,

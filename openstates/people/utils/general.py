@@ -6,7 +6,7 @@ import yaml
 from pathlib import Path
 from enum import Enum
 from ... import metadata
-from ..models.common import BaseModel
+from ...models.common import BaseModel
 
 
 class EnumDumper(yaml.SafeDumper):

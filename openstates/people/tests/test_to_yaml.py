@@ -11,7 +11,7 @@ from openstates.cli.legacy_people_to_yaml import (
     merge_contact_details,
     find_file,
 )
-from openstates.people.models.people import OtherName, OtherIdentifier, ContactDetail
+from openstates.models.people import OtherName, OtherIdentifier, ContactDetail
 from pydantic import BaseModel
 
 

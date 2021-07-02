@@ -1,7 +1,7 @@
 import pytest  # type: ignore
 import datetime
 from pydantic import ValidationError
-from openstates.people.models.common import (
+from openstates.models.common import (
     validate_fuzzy_date,
     validate_ocd_jurisdiction,
     validate_ocd_person,
@@ -11,7 +11,7 @@ from openstates.people.models.common import (
     OtherName,
     OtherIdentifier,
 )
-from openstates.people.models.people import (
+from openstates.models.people import (
     Person,
     Party,
     RoleType,
@@ -20,7 +20,7 @@ from openstates.people.models.people import (
     PersonIdBlock,
     Role,
 )
-from openstates.people.models.committees import (
+from openstates.models.committees import (
     Membership,
     ScrapeCommittee,
     Committee,

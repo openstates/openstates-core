@@ -4,8 +4,8 @@ import os
 import yaml
 from pathlib import Path
 from datetime import datetime
-from openstates import metadata
-from ..models.people import Person
+from ... import metadata
+from ...models.people import Person
 
 
 def add_vacancy(person: Person, until: datetime) -> None:

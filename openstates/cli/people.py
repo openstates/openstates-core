@@ -11,7 +11,7 @@ import yaml
 from django.db import transaction  # type: ignore
 from ..utils import abbr_to_jid
 from ..utils.django import init_django  # type: ignore
-from ..people.models.people import Person, Role, Party, Link
+from ..models.people import Person, Role, Party, Link
 from ..people.utils import (
     ocd_uuid,
     get_data_path,

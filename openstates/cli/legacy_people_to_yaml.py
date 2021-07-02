@@ -15,7 +15,7 @@ from ..people.utils import (
     ocd_uuid,
 )
 from ..people.utils.retire import retire_person, retire_file
-from ..people.models.people import (
+from ..models.people import (
     Person,
     Role,
     Party,
