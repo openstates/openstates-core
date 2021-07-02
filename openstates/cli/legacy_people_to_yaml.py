@@ -16,7 +16,6 @@ from ..people.utils import (
 )
 from ..people.utils.retire import retire_person, retire_file
 from ..people.models.people import (
-    ScrapePerson,
     Person,
     Role,
     Party,
@@ -448,15 +447,13 @@ def process_pupa_scrape_dir(
         scrape_id = person["_id"]
         person["memberships"] = person_memberships[scrape_id]
         scrape_person = process_pupa_person(person, jurisdiction_id)
-        person = Person(**scrape_person.dict(), id=ocd_uuid("person"))
-        new_people.append(person)
-
+        new_people.append(scrape_person)
         dump_obj(person, output_dir=output_dir)
 
     return new_people
 
 
-def process_pupa_person(person: dict, jurisdiction_id: str) -> ScrapePerson:
+def process_pupa_person(person: dict, jurisdiction_id: str) -> Person:
     optional_keys = (
         "image",
         "gender",
@@ -471,7 +468,8 @@ def process_pupa_person(person: dict, jurisdiction_id: str) -> ScrapePerson:
         "other_names",
     )
 
-    result = ScrapePerson(
+    result = Person(
+        id=ocd_uuid("person"),
         name=person["name"],
         roles=[],
         links=[Link(url=link["url"], note=link["note"]) for link in person["links"]],
