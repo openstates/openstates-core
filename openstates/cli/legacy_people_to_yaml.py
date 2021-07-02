@@ -8,13 +8,14 @@ from collections import defaultdict
 from pydantic import BaseModel
 from .. import metadata
 from ..utils import abbr_to_jid
-from ..people.utils import (
+from ..utils.people import (
     get_new_filename,
     get_data_path,
     dump_obj,
     ocd_uuid,
+    retire_person,
+    retire_file,
 )
-from ..people.utils.retire import retire_person, retire_file
 from ..models.people import (
     Person,
     Role,

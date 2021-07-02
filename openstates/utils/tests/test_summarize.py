@@ -6,7 +6,7 @@ from openstates.models.people import (
     OtherIdentifier,
     PersonIdBlock,
 )
-from openstates.people.utils import ocd_uuid
+from openstates.utils.people import ocd_uuid
 
 
 def test_person_summary():

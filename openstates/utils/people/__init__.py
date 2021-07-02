@@ -8,5 +8,5 @@ from .general import (
     legacy_districts,
     load_municipalities,
 )
-from .retire import retire_file
+from .retire import retire_file, retire_person
 from .images import download_state_images

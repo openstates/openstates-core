@@ -3,7 +3,7 @@ import datetime
 from functools import lru_cache
 import click
 from openstates import metadata
-from ..utils import legacy_districts
+from .general import legacy_districts
 from ...models.people import MAJOR_PARTIES, Person, PartyName
 
 

@@ -1,4 +1,4 @@
-from openstates.people.utils.retire import retire_person
+from openstates.utils.people.retire import retire_person
 from openstates.models.people import Person, Role, Party
 
 JID = "ocd-jurisdiction/country:us/state:nc/government"

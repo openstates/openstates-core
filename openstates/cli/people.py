@@ -12,7 +12,7 @@ from django.db import transaction  # type: ignore
 from ..utils import abbr_to_jid
 from ..utils.django import init_django  # type: ignore
 from ..models.people import Person, Role, Party, Link
-from ..people.utils import (
+from ..utils.people import (
     ocd_uuid,
     get_data_path,
     dump_obj,
@@ -20,9 +20,9 @@ from ..people.utils import (
     download_state_images,
     load_municipalities,
 )
-from ..people.utils.retire import retire_person, add_vacancy, retire_file
-from ..people.utils.lint_people import Validator, BadVacancy, PersonType
-from ..people.utils.to_database import (
+from ..utils.people.retire import retire_person, add_vacancy, retire_file
+from ..utils.people.lint_people import Validator, BadVacancy, PersonType
+from ..utils.people.to_database import (
     create_municipalities,
     create_parties,
     load_person,

@@ -8,7 +8,7 @@ import typing
 from PIL import Image  # type: ignore
 from botocore.exceptions import ClientError  # type: ignore
 import requests
-from ..utils import get_data_path
+from .general import get_data_path
 from ...models.people import Person
 
 

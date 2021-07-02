@@ -1,7 +1,7 @@
 import pytest  # type: ignore
 import datetime
 from pathlib import Path
-from openstates.people.utils.lint_people import (
+from openstates.utils.people.lint_people import (
     validate_name,
     validate_roles,
     validate_offices,

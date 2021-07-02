@@ -1,7 +1,7 @@
 import pytest  # type: ignore
 from openstates.data.models import Organization, Jurisdiction, Division
 from openstates.data.models import Person as DjangoPerson
-from openstates.people.utils.to_database import load_person, cached_lookup
+from openstates.utils.people.to_database import load_person, cached_lookup
 from openstates.models.people import (
     Person,
     Party,

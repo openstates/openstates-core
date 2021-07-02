@@ -15,8 +15,8 @@ from yaml.representer import Representer
 from pydantic import ValidationError
 from ..metadata import lookup
 from ..utils.django import init_django  # type: ignore
-from ..people.utils import get_data_path, get_all_abbreviations
-from ..people.utils.to_database import CancelTransaction
+from ..utils.people import get_data_path, get_all_abbreviations
+from ..utils.people.to_database import CancelTransaction
 from ..models.committees import Committee, ScrapeCommittee
 from ..models.people import Person
 
