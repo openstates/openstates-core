@@ -157,32 +157,88 @@ def scrape_people() -> None:
         dump_obj(person, output_dir=output_dir)
 
 
+def get_thomas_mapping() -> dict[str, str]:
+    name_mapping = {}
+    url = "https://theunitedstates.io/congress-legislators/committees-current.json"
+    committees = requests.get(url).json()
+    for com in committees:
+        name = com['name']
+        thomas_id = com['thomas_id']
+        name_mapping[name] = thomas_id
+        if 'subcommittees' in com:
+            for sub in com['subcommittees']:
+                name = sub['name']
+                thomas_id_agg = thomas_id + sub['thomas_id']
+                name_mapping[name] = thomas_id_agg
+
+    return name_mapping
+
+
 def fetch_current_committees() -> typing.Iterable[Committee]:
     url = "https://theunitedstates.io/congress-legislators/committees-current.json"
     committees = requests.get(url).json()
     for com in committees:
         # TODO 1: convert unitedstates committee JSON to our 'Committee' class
+        committee_name = com['name']
+        thomas_id = com['thomas_id']
+        chamber = com['type']
+        if chamber == "house":
+            chamber = "lower"
+        elif chamber == "senate":
+            chamber = "upper"
+        else:
+            chamber = "legislature"
+
         yield Committee(
             id="ocd-organization/" + str(uuid.uuid5(US_UUID_NAMESPACE, thomas_id)),
             jurisdiction="ocd-jurisdiction/country:us/government",
             name=committee_name,
+            parent=chamber,
+            # classification="committee",
+            # links=[],
         )
-        # probably need a second for loop to handle subcommittees
+        if 'subcommittees' in com:
+            for sub in com['subcommittees']:
+                # probably need a second for loop to handle subcommittees
+                subcommittee_name = sub['name']
+                thomas_id = sub['thomas_id']
+                yield Committee(
+                    id="ocd-organization/" + str(uuid.uuid5(US_UUID_NAMESPACE, thomas_id)),
+                    jurisdiction="ocd-jurisdiction/country:us/government",
+                    name=subcommittee_name,
+                    parent=chamber,
+                    classification="subcommittee",
+                    # links=[],
+                )
 
 
 def get_committee_members() -> dict[str, list]:
-    members_mapping = {}
+    # members_mapping = {}
     url = "https://theunitedstates.io/congress-legislators/committee-membership-current.json"
     # TODO 2a: convert this JSON to a mapping of committee names -> memberships
+    members_mapping = requests.get(url).json()
+
     return members_mapping
 
 
 def scrape_committees() -> None:
     output_dir = get_data_path("us") / "committees"
-    mapping = get_committee_members()
+    members_mapping = get_committee_members()
+    # print(len(members_mapping.keys()))
+    name_mapping = get_thomas_mapping()
+    # print("Number of committees with list of members", len(members_mapping))
+    # print("Number of all committees", len(name_mapping))
+
     for committee in fetch_current_committees():
         # TODO 2b: attach members from committee_members
-        # com.members.append(Membership(name=name, role=role))
+        name = committee.name
+        if name_mapping[name] in members_mapping:
+            members = members_mapping[name_mapping[name]]
+            for member in members:
+                if 'title' in member:
+                    committee.members.append(Membership(name=member['name'], role=member['title']))
+                else:
+                    committee.members.append(Membership(name=member['name'], role='Member'))
         committee.sources.append(Link(url="https://theunitedstates.io/"))
         dump_obj(committee, output_dir=output_dir)
 

@@ -45,7 +45,7 @@ class ScrapeCommittee(BaseModel):
     ) -> dict[str, typing.Any]:
         if (
             values.get("classification") == "subcommittee"
-            and values.get("parent") in COMMITTEE_PARENTS
+            and values.get("parent") not in COMMITTEE_PARENTS
         ):
             raise ValueError("subcommittees must have a committee parent")
         if (
