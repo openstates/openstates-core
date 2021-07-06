@@ -13,6 +13,7 @@ from ..models.people import (
     Link,
     PersonIdBlock,
 )  # type: ignore
+from ..models.committees import Committee, Membership
 from ..utils.people import dump_obj, get_data_path
 
 # chosen at random, but needs to be constant
@@ -57,7 +58,7 @@ def get_social() -> dict[str, PersonIdBlock]:
     return social
 
 
-def fetch_current() -> typing.Iterable[tuple[str, Person]]:
+def fetch_current_people() -> typing.Iterable[tuple[str, Person]]:
     url = "https://theunitedstates.io/congress-legislators/legislators-current.json"
     legislators = requests.get(url).json()
     for leg in legislators:
@@ -141,15 +142,11 @@ def current_to_person(current: dict[str, typing.Any]) -> tuple[str, Person]:
     return bioguide, p
 
 
-@click.command()
-def main() -> None:
-    """
-    Create/Update United States legislators from unitedstates.io
-    """
+def scrape_people() -> None:
     output_dir = get_data_path("us") / "legislature"
     district_offices = get_district_offices()
     social = get_social()
-    for bioguide, person in fetch_current():
+    for bioguide, person in fetch_current_people():
         person.contact_details.extend(district_offices[bioguide])
         if bioguide in social:
             person.ids = social[bioguide]
@@ -158,6 +155,45 @@ def main() -> None:
             f"https://theunitedstates.io/images/congress/450x550/{bioguide}.jpg"
         )
         dump_obj(person, output_dir=output_dir)
+
+
+def fetch_current_committees() -> typing.Iterable[Committee]:
+    url = "https://theunitedstates.io/congress-legislators/committees-current.json"
+    committees = requests.get(url).json()
+    for com in committees:
+        # TODO 1: convert unitedstates committee JSON to our 'Committee' class
+        yield Committee(
+            id="ocd-organization/" + str(uuid.uuid5(US_UUID_NAMESPACE, thomas_id)),
+            jurisdiction="ocd-jurisdiction/country:us/government",
+            name=committee_name,
+        )
+        # probably need a second for loop to handle subcommittees
+
+
+def get_committee_members() -> dict[str, list]:
+    members_mapping = {}
+    url = "https://theunitedstates.io/congress-legislators/committee-membership-current.json"
+    # TODO 2a: convert this JSON to a mapping of committee names -> memberships
+    return members_mapping
+
+
+def scrape_committees() -> None:
+    output_dir = get_data_path("us") / "committees"
+    mapping = get_committee_members()
+    for committee in fetch_current_committees():
+        # TODO 2b: attach members from committee_members
+        # com.members.append(Membership(name=name, role=role))
+        committee.sources.append(Link(url="https://theunitedstates.io/"))
+        dump_obj(committee, output_dir=output_dir)
+
+
+@click.command()
+def main() -> None:
+    """
+    Create/Update United States legislators from unitedstates.io
+    """
+    scrape_people()
+    scrape_committees()
 
 
 if __name__ == "__main__":
