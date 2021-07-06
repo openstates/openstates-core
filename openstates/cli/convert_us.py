@@ -189,7 +189,7 @@ def fetch_current_committees() -> typing.Iterable[Committee]:
         else:
             chamber = "legislature"
 
-        yield Committee(
+        c = Committee(
             id="ocd-organization/" + str(uuid.uuid5(US_UUID_NAMESPACE, thomas_id)),
             jurisdiction="ocd-jurisdiction/country:us/government",
             name=committee_name,
@@ -197,12 +197,22 @@ def fetch_current_committees() -> typing.Iterable[Committee]:
             # classification="committee",
             # links=[],
         )
+
+        if 'address' in com:
+            com_address = com['address']
+            c.extras['address'] = com_address
+        if 'phone' in com:
+            com_phone = com['phone']
+            c.extras['phone'] = com_phone
+
+        yield c
+
         if 'subcommittees' in com:
             for sub in com['subcommittees']:
                 # probably need a second for loop to handle subcommittees
                 subcommittee_name = sub['name']
                 thomas_id = sub['thomas_id']
-                yield Committee(
+                s = Committee(
                     id="ocd-organization/" + str(uuid.uuid5(US_UUID_NAMESPACE, thomas_id)),
                     jurisdiction="ocd-jurisdiction/country:us/government",
                     name=subcommittee_name,
@@ -210,6 +220,15 @@ def fetch_current_committees() -> typing.Iterable[Committee]:
                     classification="subcommittee",
                     # links=[],
                 )
+
+                if 'address' in sub:
+                    sub_address = sub['address']
+                    s.extras['address'] = sub_address
+                if 'phone' in sub:
+                    sub_phone = sub['phone']
+                    s.extras['phone'] = sub_phone
+
+                yield s
 
 
 def get_committee_members() -> dict[str, list]:
