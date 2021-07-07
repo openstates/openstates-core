@@ -161,16 +161,38 @@ def get_thomas_mapping() -> dict[str, str]:
     name_mapping = {}
     url = "https://theunitedstates.io/congress-legislators/committees-current.json"
     committees = requests.get(url).json()
+
+    # run_time = 0
+
     for com in committees:
         name = com['name']
         thomas_id = com['thomas_id']
-        name_mapping[name] = thomas_id
+        type = com['type']
+
+        name_mapping[(name, type)] = name_mapping.get((name, type), []) + [thomas_id]
+
+        # name_mapping[(name, type)] = thomas_id
+
+        # run_time += 1
+
+        # print(name)
+        # print(thomas_id)
         if 'subcommittees' in com:
             for sub in com['subcommittees']:
-                name = sub['name']
+                # run_time += 1
+                sub_name = sub['name']
                 thomas_id_agg = thomas_id + sub['thomas_id']
-                name_mapping[name] = thomas_id_agg
+                # type = sub['type']
+                name_mapping[(name, sub_name, type)] = name_mapping.get((name, sub_name, type), []) + [thomas_id_agg]
 
+                # name_mapping[(name, type)] = thomas_id_agg
+                # print(name)
+                # print(thomas_id_agg)
+
+    # print("Thomas run time", run_time)
+    # for name, map in name_mapping.items():
+    #     if len(map) > 1:
+    #         print(name, map)
     return name_mapping
 
 
@@ -194,7 +216,6 @@ def fetch_current_committees() -> typing.Iterable[Committee]:
             jurisdiction="ocd-jurisdiction/country:us/government",
             name=committee_name,
             parent=chamber,
-            # classification="committee",
             # links=[],
         )
 
@@ -228,6 +249,8 @@ def fetch_current_committees() -> typing.Iterable[Committee]:
                     sub_phone = sub['phone']
                     s.extras['phone'] = sub_phone
 
+                s.extras['parent committee name'] = committee_name
+
                 yield s
 
 
@@ -243,21 +266,44 @@ def get_committee_members() -> dict[str, list]:
 def scrape_committees() -> None:
     output_dir = get_data_path("us") / "committees"
     members_mapping = get_committee_members()
-    # print(len(members_mapping.keys()))
+    # print("Count of comms with members listed", len(members_mapping.keys()))
     name_mapping = get_thomas_mapping()
     # print("Number of committees with list of members", len(members_mapping))
-    # print("Number of all committees", len(name_mapping))
+    # print("Number of committees with thomas_id", len(name_mapping))
 
     for committee in fetch_current_committees():
         # TODO 2b: attach members from committee_members
         name = committee.name
-        if name_mapping[name] in members_mapping:
-            members = members_mapping[name_mapping[name]]
-            for member in members:
-                if 'title' in member:
-                    committee.members.append(Membership(name=member['name'], role=member['title']))
-                else:
-                    committee.members.append(Membership(name=member['name'], role='Member'))
+        chamber = committee.parent
+        classification = committee.classification
+        if chamber == "lower":
+            chamber = "house"
+        elif chamber == "upper":
+            chamber = "senate"
+        else:
+            chamber = "joint"
+        
+        if classification == "committee":
+            for t_id in name_mapping[(name, chamber)]:
+                if t_id in members_mapping:
+                    members = members_mapping[t_id]
+                    for member in members:
+                        if 'title' in member:
+                            committee.members.append(Membership(name=member['name'], role=member['title']))
+                        else:
+                            committee.members.append(Membership(name=member['name'], role='Member'))
+        else:
+            parent_name = committee.extras['parent committee name']
+            for t_id in name_mapping[(parent_name, name, chamber)]:
+                if t_id in members_mapping:
+                    members = members_mapping[t_id]
+                    for member in members:
+                        if 'title' in member:
+                            committee.members.append(Membership(name=member['name'], role=member['title']))
+                        else:
+                            committee.members.append(Membership(name=member['name'], role='Member'))
+        # print("Have members", count_with_mems)
+        # print("No members listed", count_no_mems)
         committee.sources.append(Link(url="https://theunitedstates.io/"))
         dump_obj(committee, output_dir=output_dir)
 
