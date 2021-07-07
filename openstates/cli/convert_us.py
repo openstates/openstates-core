@@ -157,7 +157,7 @@ def scrape_people() -> None:
         dump_obj(person, output_dir=output_dir)
 
 
-def get_thomas_mapping() -> dict[str, str]:
+def get_thomas_mapping() -> dict[str, list]:
     name_mapping = {}
     url = "https://theunitedstates.io/congress-legislators/committees-current.json"
     committees = requests.get(url).json()
@@ -216,7 +216,6 @@ def fetch_current_committees() -> typing.Iterable[Committee]:
             jurisdiction="ocd-jurisdiction/country:us/government",
             name=committee_name,
             parent=chamber,
-            # links=[],
         )
 
         if 'address' in com:
@@ -225,21 +224,26 @@ def fetch_current_committees() -> typing.Iterable[Committee]:
         if 'phone' in com:
             com_phone = com['phone']
             c.extras['phone'] = com_phone
+        if 'url' in com:
+            link_one = com['url']
+            c.add_link(link_one)
+        if 'minority_url' in com:
+            link_two = com['minority_url']
+            c.add_link(link_two)
 
         yield c
 
         if 'subcommittees' in com:
             for sub in com['subcommittees']:
-                # probably need a second for loop to handle subcommittees
                 subcommittee_name = sub['name']
-                thomas_id = sub['thomas_id']
+                sub_thomas_id = sub['thomas_id']
+                sub_thomas_id = thomas_id + sub_thomas_id
                 s = Committee(
-                    id="ocd-organization/" + str(uuid.uuid5(US_UUID_NAMESPACE, thomas_id)),
+                    id="ocd-organization/" + str(uuid.uuid5(US_UUID_NAMESPACE, sub_thomas_id)),
                     jurisdiction="ocd-jurisdiction/country:us/government",
                     name=subcommittee_name,
                     parent=chamber,
                     classification="subcommittee",
-                    # links=[],
                 )
 
                 if 'address' in sub:
