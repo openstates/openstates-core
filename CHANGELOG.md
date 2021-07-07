@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.2.1 - July 7 2021
+
+* refactor openstates.people into openstates.models and openstates.utils
+
 ## 6.2.0 - July 5 2021
 
 * refactor openstates.people into openstates.models and openstates.utils
