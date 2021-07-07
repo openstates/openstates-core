@@ -303,7 +303,7 @@ class Validator:
             role_type = district = None
             for role in person.roles:
                 if role.is_active():
-                    role_type = role.type.value
+                    role_type = role.type
                     district = role.district
                     break
             self.active_legislators[str(role_type)][str(district)].append(
@@ -324,8 +324,8 @@ class Validator:
         for role in person.roles:
             if (
                 role.district
-                and role.district not in self.expected[role.type.value]
-                and role.district not in self.legacy_districts[role.type.value]
+                and role.district not in self.expected[role.type]
+                and role.district not in self.legacy_districts[role.type]
             ):
                 errors.append(f"unknown district name: {role.type} {role.district}")
         return errors
