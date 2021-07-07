@@ -67,6 +67,9 @@ class PersonMatcher:
             self.current_people[chamber][name_piece].add(id_)
         else:
             self.current_people[chamber][name_piece] = {id_}
+        # add to legislature too
+        if chamber != "legislature":
+            self.add_name("legislature", name_piece, id_)
 
     @lru_cache(500)
     def match(self, chamber: str, name: str) -> typing.Optional[str]:
@@ -269,7 +272,12 @@ class CommitteeDir:
                 com = ScrapeCommittee(**data)
                 # do person matching on import so that diffs work
                 for member in com.members:
-                    mid = self.person_matcher.match(com.parent, member.name)
+                    # could improve this and use the appropriate parent chamber
+                    # but that'd require a topological sort for subcommittees
+                    parent = com.parent
+                    if parent not in ("upper", "lower"):
+                        parent = "legislature"
+                    mid = self.person_matcher.match(parent, member.name)
                     if mid:
                         member.person_id = mid
                 scraped_data.append(com)
