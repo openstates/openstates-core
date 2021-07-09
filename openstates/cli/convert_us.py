@@ -230,7 +230,7 @@ def fetch_current_committees(convert_chamber) -> typing.Iterable[Committee]:
                     s.extras['address'] = sub['address']
                 if 'phone' in sub:
                     s.extras['phone'] = sub['phone']
-                
+
                 s.extras['type'] = com['type']
 
                 yield s
@@ -243,7 +243,7 @@ def get_members_mapping() -> dict[str, list]:
     return members_mapping
 
 
-def grab_members(committee, name_mapping, members_mapping) -> None:    
+def grab_members(committee, name_mapping, members_mapping) -> None:
     for t_id in name_mapping:
         if t_id in members_mapping:
             members = members_mapping[t_id]
@@ -255,13 +255,14 @@ def grab_members(committee, name_mapping, members_mapping) -> None:
 
     return committee
 
+
 def scrape_committees() -> None:
     output_dir = get_data_path("us") / "committees"
 
-    convert_chamber = {"house" : "lower",
-                       "senate" : "upper",
+    convert_chamber = {"house": "lower",
+                       "senate": "upper",
                        "joint": "legislature"}
-    
+
     members_mapping = get_members_mapping()
     name_mapping = get_thomas_mapping(convert_chamber)
 
@@ -271,7 +272,7 @@ def scrape_committees() -> None:
 
         committee = grab_members(committee, name_mapping[(committee.parent, name, chamber)], members_mapping)
         committee.sources.append(Link(url="https://theunitedstates.io/"))
-        
+
         if len(committee.members) > 0:
             dump_obj(committee, output_dir=output_dir)
 
