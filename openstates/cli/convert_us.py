@@ -13,7 +13,7 @@ from ..models.people import (
     Link,
     PersonIdBlock,
 )  # type: ignore
-from ..models.committees import Committee, Membership
+from ..models.committees import Committee, Membership, ScrapeCommittee
 from ..utils.people import dump_obj, get_data_path
 
 # chosen at random, but needs to be constant
@@ -157,14 +157,14 @@ def scrape_people() -> None:
         dump_obj(person, output_dir=output_dir)
 
 
-def get_thomas_mapping(convert_chamber) -> dict[tuple, list]:
+def get_thomas_mapping(convert_chamber: dict) -> dict[tuple[str, str, str], list[str]]:
     """
     This function creates a dictionary that maps a tuple to a list of thomas_ids.
     This tuple differs depending on if its mapping a committee versus a subcommittee.
     Committee tuples consist of (chamber, name, type).
     Subcommittee tuples consiste of (name, sub_name, type).
     """
-    name_mapping = {}
+    name_mapping: dict[tuple[str, str, str], list[str]] = {}
     url = "https://theunitedstates.io/congress-legislators/committees-current.json"
     committees = requests.get(url).json()
 
@@ -189,7 +189,7 @@ def get_thomas_mapping(convert_chamber) -> dict[tuple, list]:
     return name_mapping
 
 
-def fetch_current_committees(convert_chamber) -> typing.Iterable[Committee]:
+def fetch_current_committees(convert_chamber: dict) -> typing.Iterable[Committee]:
     url = "https://theunitedstates.io/congress-legislators/committees-current.json"
     committees = requests.get(url).json()
     for com in committees:
@@ -248,7 +248,11 @@ def get_members_mapping() -> dict[str, list]:
     return members_mapping
 
 
-def grab_members(committee, name_mapping, members_mapping) -> None:
+def grab_members(
+    committee: ScrapeCommittee,
+    name_mapping: list[str],
+    members_mapping: dict[str, list],
+) -> None:
     for t_id in name_mapping:
         if t_id in members_mapping:
             members = members_mapping[t_id]
@@ -261,8 +265,6 @@ def grab_members(committee, name_mapping, members_mapping) -> None:
                     committee.members.append(
                         Membership(name=member["name"], role="Member")
                     )
-
-    return committee
 
 
 def scrape_committees() -> None:
@@ -277,7 +279,7 @@ def scrape_committees() -> None:
         name = committee.name
         chamber = committee.extras["type"]
 
-        committee = grab_members(
+        grab_members(
             committee, name_mapping[(committee.parent, name, chamber)], members_mapping
         )
         committee.sources.append(Link(url="https://theunitedstates.io/"))
