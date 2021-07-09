@@ -271,7 +271,9 @@ def scrape_committees() -> None:
 
         committee = grab_members(committee, name_mapping[(committee.parent, name, chamber)], members_mapping)
         committee.sources.append(Link(url="https://theunitedstates.io/"))
-        dump_obj(committee, output_dir=output_dir)
+        
+        if len(committee.members) > 0:
+            dump_obj(committee, output_dir=output_dir)
 
 
 @click.command()
