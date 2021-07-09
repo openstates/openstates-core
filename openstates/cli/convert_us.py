@@ -209,9 +209,9 @@ def fetch_current_committees(convert_chamber: dict) -> typing.Iterable[Committee
         if "phone" in com:
             c.extras["phone"] = com["phone"]
         if "url" in com:
-            c.add_link(com["url"])
+            c.add_link(com["url"], note="homepage")
         if "minority_url" in com:
-            c.add_link(com["minority_url"])
+            c.add_link(com["minority_url"], note="homepage")
 
         c.extras["type"] = com["type"]
 
