@@ -158,29 +158,33 @@ def scrape_people() -> None:
 
 
 def get_thomas_mapping(convert_chamber) -> dict[tuple, list]:
-    '''
+    """
     This function creates a dictionary that maps a tuple to a list of thomas_ids.
     This tuple differs depending on if its mapping a committee versus a subcommittee.
     Committee tuples consist of (chamber, name, type).
     Subcommittee tuples consiste of (name, sub_name, type).
-    '''
+    """
     name_mapping = {}
     url = "https://theunitedstates.io/congress-legislators/committees-current.json"
     committees = requests.get(url).json()
 
     for com in committees:
-        name = com['name']
-        thomas_id = com['thomas_id']
-        type = com['type']
+        name = com["name"]
+        thomas_id = com["thomas_id"]
+        type = com["type"]
         chamber = convert_chamber[type]
 
-        name_mapping[(chamber, name, type)] = name_mapping.get((chamber, name, type), []) + [thomas_id]
+        name_mapping[(chamber, name, type)] = name_mapping.get(
+            (chamber, name, type), []
+        ) + [thomas_id]
 
-        if 'subcommittees' in com:
-            for sub in com['subcommittees']:
-                sub_name = sub['name']
-                thomas_id_agg = thomas_id + sub['thomas_id']
-                name_mapping[(name, sub_name, type)] = name_mapping.get((name, sub_name, type), []) + [thomas_id_agg]
+        if "subcommittees" in com:
+            for sub in com["subcommittees"]:
+                sub_name = sub["name"]
+                thomas_id_agg = thomas_id + sub["thomas_id"]
+                name_mapping[(name, sub_name, type)] = name_mapping.get(
+                    (name, sub_name, type), []
+                ) + [thomas_id_agg]
 
     return name_mapping
 
@@ -189,9 +193,9 @@ def fetch_current_committees(convert_chamber) -> typing.Iterable[Committee]:
     url = "https://theunitedstates.io/congress-legislators/committees-current.json"
     committees = requests.get(url).json()
     for com in committees:
-        committee_name = com['name']
-        thomas_id = com['thomas_id']
-        chamber = convert_chamber[com['type']]
+        committee_name = com["name"]
+        thomas_id = com["thomas_id"]
+        chamber = convert_chamber[com["type"]]
 
         c = Committee(
             id="ocd-organization/" + str(uuid.uuid5(US_UUID_NAMESPACE, thomas_id)),
@@ -200,38 +204,39 @@ def fetch_current_committees(convert_chamber) -> typing.Iterable[Committee]:
             parent=chamber,
         )
 
-        if 'address' in com:
-            c.extras['address'] = com['address']
-        if 'phone' in com:
-            c.extras['phone'] = com['phone']
-        if 'url' in com:
-            c.add_link(com['url'])
-        if 'minority_url' in com:
-            c.add_link(com['minority_url'])
+        if "address" in com:
+            c.extras["address"] = com["address"]
+        if "phone" in com:
+            c.extras["phone"] = com["phone"]
+        if "url" in com:
+            c.add_link(com["url"])
+        if "minority_url" in com:
+            c.add_link(com["minority_url"])
 
-        c.extras['type'] = com['type']
+        c.extras["type"] = com["type"]
 
         yield c
 
-        if 'subcommittees' in com:
-            for sub in com['subcommittees']:
-                subcommittee_name = sub['name']
-                sub_thomas_id = sub['thomas_id']
+        if "subcommittees" in com:
+            for sub in com["subcommittees"]:
+                subcommittee_name = sub["name"]
+                sub_thomas_id = sub["thomas_id"]
                 sub_thomas_id = thomas_id + sub_thomas_id
                 s = Committee(
-                    id="ocd-organization/" + str(uuid.uuid5(US_UUID_NAMESPACE, sub_thomas_id)),
+                    id="ocd-organization/"
+                    + str(uuid.uuid5(US_UUID_NAMESPACE, sub_thomas_id)),
                     jurisdiction="ocd-jurisdiction/country:us/government",
                     name=subcommittee_name,
                     parent=committee_name,
                     classification="subcommittee",
                 )
 
-                if 'address' in sub:
-                    s.extras['address'] = sub['address']
-                if 'phone' in sub:
-                    s.extras['phone'] = sub['phone']
+                if "address" in sub:
+                    s.extras["address"] = sub["address"]
+                if "phone" in sub:
+                    s.extras["phone"] = sub["phone"]
 
-                s.extras['type'] = com['type']
+                s.extras["type"] = com["type"]
 
                 yield s
 
@@ -248,10 +253,14 @@ def grab_members(committee, name_mapping, members_mapping) -> None:
         if t_id in members_mapping:
             members = members_mapping[t_id]
             for member in members:
-                if 'title' in member:
-                    committee.members.append(Membership(name=member['name'], role=member['title']))
+                if "title" in member:
+                    committee.members.append(
+                        Membership(name=member["name"], role=member["title"])
+                    )
                 else:
-                    committee.members.append(Membership(name=member['name'], role='Member'))
+                    committee.members.append(
+                        Membership(name=member["name"], role="Member")
+                    )
 
     return committee
 
@@ -259,18 +268,18 @@ def grab_members(committee, name_mapping, members_mapping) -> None:
 def scrape_committees() -> None:
     output_dir = get_data_path("us") / "committees"
 
-    convert_chamber = {"house": "lower",
-                       "senate": "upper",
-                       "joint": "legislature"}
+    convert_chamber = {"house": "lower", "senate": "upper", "joint": "legislature"}
 
     members_mapping = get_members_mapping()
     name_mapping = get_thomas_mapping(convert_chamber)
 
     for committee in fetch_current_committees(convert_chamber):
         name = committee.name
-        chamber = committee.extras['type']
+        chamber = committee.extras["type"]
 
-        committee = grab_members(committee, name_mapping[(committee.parent, name, chamber)], members_mapping)
+        committee = grab_members(
+            committee, name_mapping[(committee.parent, name, chamber)], members_mapping
+        )
         committee.sources.append(Link(url="https://theunitedstates.io/"))
 
         if len(committee.members) > 0:
