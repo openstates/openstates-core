@@ -13,6 +13,7 @@ from ..models.people import (
     Link,
     PersonIdBlock,
 )  # type: ignore
+from ..models.committees import Committee, Membership, ScrapeCommittee
 from ..utils.people import dump_obj, get_data_path
 
 # chosen at random, but needs to be constant
@@ -57,7 +58,7 @@ def get_social() -> dict[str, PersonIdBlock]:
     return social
 
 
-def fetch_current() -> typing.Iterable[tuple[str, Person]]:
+def fetch_current_people() -> typing.Iterable[tuple[str, Person]]:
     url = "https://theunitedstates.io/congress-legislators/legislators-current.json"
     legislators = requests.get(url).json()
     for leg in legislators:
@@ -141,15 +142,11 @@ def current_to_person(current: dict[str, typing.Any]) -> tuple[str, Person]:
     return bioguide, p
 
 
-@click.command()
-def main() -> None:
-    """
-    Create/Update United States legislators from unitedstates.io
-    """
+def scrape_people() -> None:
     output_dir = get_data_path("us") / "legislature"
     district_offices = get_district_offices()
     social = get_social()
-    for bioguide, person in fetch_current():
+    for bioguide, person in fetch_current_people():
         person.contact_details.extend(district_offices[bioguide])
         if bioguide in social:
             person.ids = social[bioguide]
@@ -158,6 +155,146 @@ def main() -> None:
             f"https://theunitedstates.io/images/congress/450x550/{bioguide}.jpg"
         )
         dump_obj(person, output_dir=output_dir)
+
+
+def get_thomas_mapping(convert_chamber: dict) -> dict[tuple[str, str, str], list[str]]:
+    """
+    This function creates a dictionary that maps a tuple to a list of thomas_ids.
+    This tuple differs depending on if its mapping a committee versus a subcommittee.
+    Committee tuples consist of (chamber, name, type).
+    Subcommittee tuples consiste of (name, sub_name, type).
+    """
+    name_mapping: dict[tuple[str, str, str], list[str]] = {}
+    url = "https://theunitedstates.io/congress-legislators/committees-current.json"
+    committees = requests.get(url).json()
+
+    for com in committees:
+        name = com["name"]
+        thomas_id = com["thomas_id"]
+        type = com["type"]
+        chamber = convert_chamber[type]
+
+        name_mapping[(chamber, name, type)] = name_mapping.get(
+            (chamber, name, type), []
+        ) + [thomas_id]
+
+        if "subcommittees" in com:
+            for sub in com["subcommittees"]:
+                sub_name = sub["name"]
+                thomas_id_agg = thomas_id + sub["thomas_id"]
+                name_mapping[(name, sub_name, type)] = name_mapping.get(
+                    (name, sub_name, type), []
+                ) + [thomas_id_agg]
+
+    return name_mapping
+
+
+def fetch_current_committees(convert_chamber: dict) -> typing.Iterable[Committee]:
+    url = "https://theunitedstates.io/congress-legislators/committees-current.json"
+    committees = requests.get(url).json()
+    for com in committees:
+        committee_name = com["name"]
+        thomas_id = com["thomas_id"]
+        chamber = convert_chamber[com["type"]]
+
+        c = Committee(
+            id="ocd-organization/" + str(uuid.uuid5(US_UUID_NAMESPACE, thomas_id)),
+            jurisdiction="ocd-jurisdiction/country:us/government",
+            name=committee_name,
+            parent=chamber,
+        )
+
+        if "address" in com:
+            c.extras["address"] = com["address"]
+        if "phone" in com:
+            c.extras["phone"] = com["phone"]
+        if "url" in com:
+            c.add_link(com["url"], note="homepage")
+        if "minority_url" in com:
+            c.add_link(com["minority_url"], note="homepage")
+
+        c.extras["type"] = com["type"]
+
+        yield c
+
+        if "subcommittees" in com:
+            for sub in com["subcommittees"]:
+                subcommittee_name = sub["name"]
+                sub_thomas_id = sub["thomas_id"]
+                sub_thomas_id = thomas_id + sub_thomas_id
+                s = Committee(
+                    id="ocd-organization/"
+                    + str(uuid.uuid5(US_UUID_NAMESPACE, sub_thomas_id)),
+                    jurisdiction="ocd-jurisdiction/country:us/government",
+                    name=subcommittee_name,
+                    parent=committee_name,
+                    classification="subcommittee",
+                )
+
+                if "address" in sub:
+                    s.extras["address"] = sub["address"]
+                if "phone" in sub:
+                    s.extras["phone"] = sub["phone"]
+
+                s.extras["type"] = com["type"]
+
+                yield s
+
+
+def get_members_mapping() -> dict[str, list]:
+    url = "https://theunitedstates.io/congress-legislators/committee-membership-current.json"
+    members_mapping = requests.get(url).json()
+
+    return members_mapping
+
+
+def grab_members(
+    committee: ScrapeCommittee,
+    name_mapping: list[str],
+    members_mapping: dict[str, list],
+) -> None:
+    for t_id in name_mapping:
+        if t_id in members_mapping:
+            members = members_mapping[t_id]
+            for member in members:
+                if "title" in member:
+                    committee.members.append(
+                        Membership(name=member["name"], role=member["title"])
+                    )
+                else:
+                    committee.members.append(
+                        Membership(name=member["name"], role="Member")
+                    )
+
+
+def scrape_committees() -> None:
+    output_dir = get_data_path("us") / "committees"
+
+    convert_chamber = {"house": "lower", "senate": "upper", "joint": "legislature"}
+
+    members_mapping = get_members_mapping()
+    name_mapping = get_thomas_mapping(convert_chamber)
+
+    for committee in fetch_current_committees(convert_chamber):
+        name = committee.name
+        chamber = committee.extras["type"]
+
+        grab_members(
+            committee, name_mapping[(committee.parent, name, chamber)], members_mapping
+        )
+        committee.sources.append(Link(url="https://theunitedstates.io/"))
+
+        if len(committee.members) > 0:
+            dump_obj(committee, output_dir=output_dir)
+
+
+@click.command()
+def main() -> None:
+    """
+    Create/Update United States legislators from unitedstates.io
+    """
+    scrape_people()
+    scrape_committees()
 
 
 if __name__ == "__main__":
