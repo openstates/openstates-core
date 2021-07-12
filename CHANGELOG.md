@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.3.0
+
+* committees in os-us-to-yaml
+
 ## 6.2.1 - July 7 2021
 
 * refactor openstates.people into openstates.models and openstates.utils
