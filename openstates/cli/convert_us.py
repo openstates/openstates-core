@@ -20,6 +20,10 @@ from ..utils.people import dump_obj, get_data_path
 US_UUID_NAMESPACE = uuid.UUID("bf6b57c6-8cfe-454c-bd26-9c2b508c30b2")
 
 
+def make_person_id(bioguide: str) -> str:
+    return "ocd-person/" + str(uuid.uuid5(US_UUID_NAMESPACE, bioguide))
+
+
 def get_district_offices() -> defaultdict[str, list[ContactDetail]]:
     district_offices = defaultdict(list)
     url = "https://theunitedstates.io/congress-legislators/legislators-district-offices.json"
@@ -71,7 +75,7 @@ def current_to_person(current: dict[str, typing.Any]) -> tuple[str, Person]:
     )
     bioguide = current["id"]["bioguide"]
     p = Person(
-        id="ocd-person/" + str(uuid.uuid5(US_UUID_NAMESPACE, bioguide)),
+        id=make_person_id(bioguide),
         name=full_name,
         given_name=current["name"]["first"],
         family_name=current["name"]["last"],
@@ -259,11 +263,19 @@ def grab_members(
             for member in members:
                 if "title" in member:
                     committee.members.append(
-                        Membership(name=member["name"], role=member["title"])
+                        Membership(
+                            name=member["name"],
+                            role=member["title"],
+                            person_id=make_person_id(member["bioguide"]),
+                        )
                     )
                 else:
                     committee.members.append(
-                        Membership(name=member["name"], role="Member")
+                        Membership(
+                            name=member["name"],
+                            role="Member",
+                            person_id=make_person_id(member["bioguide"]),
+                        )
                     )
 
 
