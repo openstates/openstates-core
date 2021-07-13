@@ -212,6 +212,19 @@ class CommitteeDir:
                     raise
                 self.errors.append((filename, ve))
 
+    def print_warnings(self) -> None:
+        unmatched_names = set()
+        for coms_for_chamber in self.coms_by_chamber_and_name.values():
+            for com in coms_for_chamber.values():
+                for membership in com.members:
+                    if not membership.person_id:
+                        unmatched_names.add(membership.name)
+
+        if unmatched_names:
+            click.secho(f"{len(unmatched_names)} unmatched legislators:", fg="yellow")
+            for name in unmatched_names:
+                click.secho(f"    {name}", fg="yellow")
+
     def get_new_filename(self, obj: Committee) -> str:
         id = obj.id.split("/")[1]
         name = re.sub(r"\s+", "-", obj.name)
@@ -443,6 +456,7 @@ def lint(abbreviations: list[str]) -> None:
                     f"  {'.'.join(str(l) for l in err['loc'])}: {err['msg']}", fg="red"
                 )
                 errors += 1
+        comdir.print_warnings()
         if errors:
             click.secho(f"exiting with {errors} errors", fg="red")
             sys.exit(1)
