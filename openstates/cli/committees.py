@@ -93,7 +93,16 @@ class PersonMatcher:
         return id_ in self.all_ids
 
 
-def committee_to_db(com: Committee, parent_id: str) -> tuple[bool, bool]:
+@lru_cache(5)
+def _parent_lookup(jurisdiction_id: str, chamber: str):
+    from openstates.data.models import Organization
+
+    return Organization.objects.get(
+        jurisdiction_id=jurisdiction_id, classification=chamber
+    ).id
+
+
+def committee_to_db(com: Committee) -> tuple[bool, bool]:
     from openstates.data.models import Organization, Membership
 
     updated = False
@@ -101,7 +110,7 @@ def committee_to_db(com: Committee, parent_id: str) -> tuple[bool, bool]:
     db_com, created = Organization.objects.get_or_create(
         id=com.id,
         jurisdiction_id=com.jurisdiction,
-        parent_id=parent_id,
+        parent_id=_parent_lookup(com.jurisdiction, com.chamber),
         classification=com.classification,
         defaults=dict(name=com.name),
     )
@@ -349,18 +358,10 @@ class CommitteeDir:
         # TODO: remove this once committee imports aren't broken
         Organization.objects.filter(id__in=existing_ids).delete()
 
-        for parent, committees in self.coms_by_chamber_and_name.items():
-            if parent in ("lower", "upper", "legislature"):
-                parent_id = Organization.objects.get(
-                    jurisdiction_id=jurisdiction_id, classification=parent
-                ).id
-            else:
-                parent_id = Organization.objects.get(
-                    jurisdiction_id=jurisdiction_id, name=parent
-                ).id
+        for chamber, committees in self.coms_by_chamber_and_name.items():
             for name, committee in committees.items():
                 ids.add(committee.id)
-                created, updated = committee_to_db(committee, parent_id)
+                created, updated = committee_to_db(committee)
 
                 if created:
                     click.secho(f"created committee {name}", fg="cyan", bold=True)

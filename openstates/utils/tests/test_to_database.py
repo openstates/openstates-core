@@ -12,7 +12,7 @@ from openstates.models.people import (
     ContactDetail,
 )
 from openstates.models.committees import Committee
-from openstates.cli.committees import committee_to_db
+from openstates.cli.committees import committee_to_db, _parent_lookup
 
 
 def setup():
@@ -43,6 +43,7 @@ def setup():
     # clear cache here because we can't have lru_cache keep the old party ids, etc. around
     # between tests as setup() is called once per test
     cached_lookup.cache_clear()
+    _parent_lookup.cache_clear()
 
 
 @pytest.fixture

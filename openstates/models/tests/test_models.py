@@ -274,30 +274,32 @@ def test_committee_membership():
 
 
 def test_scrapecommittee():
-    assert ScrapeCommittee(name="Health", parent="upper")
+    assert ScrapeCommittee(name="Health", chamber="upper")
     with pytest.raises(ValidationError):
-        ScrapeCommittee(name="Health \n Roads", parent="upper")
+        ScrapeCommittee(name="Health \n Roads", chamber="upper")
 
 
 def test_committee():
     assert Committee(
         name="Health",
-        parent="upper",
+        chamber="upper",
         id=VALID_ORG_ID,
         jurisdiction=VALID_JURISDICTION_ID,
     )
     with pytest.raises(ValidationError):
         Committee(
-            name="Health", parent="upper", id="123", jurisdiction=VALID_JURISDICTION_ID
+            name="Health", chamber="upper", id="123", jurisdiction=VALID_JURISDICTION_ID
         )
     with pytest.raises(ValidationError):
-        Committee(name="Health", parent="upper", id=VALID_ORG_ID, jurisdiction="canada")
+        Committee(
+            name="Health", chamber="upper", id=VALID_ORG_ID, jurisdiction="canada"
+        )
 
 
 def test_committee_dict_order():
     c = Committee(
         name="Health",
-        parent="upper",
+        chamber="upper",
         id=VALID_ORG_ID,
         jurisdiction=VALID_JURISDICTION_ID,
     )
