@@ -235,10 +235,9 @@ class CommitteeDir:
         unmatched_names = set()
         for coms_for_chamber in self.coms_by_chamber_and_name.values():
             for com in coms_for_chamber.values():
-                # TODO: uncomment once homepages are commonly added
-                # has_homepage = "homepage" in [link.note for link in com.links]
-                # if not has_homepage:
-                #     click.secho(f"{com.name} does not have homepage link", fg="yellow")
+                has_homepage = "homepage" in [link.note for link in com.links]
+                if com.classification == "committee" and not has_homepage:
+                    click.secho(f"{com.name} does not have homepage link", fg="yellow")
                 for membership in com.members:
                     if not membership.person_id:
                         unmatched_names.add(membership.name)

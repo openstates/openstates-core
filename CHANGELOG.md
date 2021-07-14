@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.3.1
+
+* add linting check for committee homepages
+
 ## 6.3.0 - July 14 2021
 
 * fix for committee parent/subcommittee in ScrapeCommittee
