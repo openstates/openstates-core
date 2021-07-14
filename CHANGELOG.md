@@ -1,6 +1,6 @@
 # Changelog
 
-## 6.3.0
+## 6.3.0 - July 14 2021
 
 * fix for committee parent/subcommittee in ScrapeCommittee
 * committees in os-us-to-yaml
