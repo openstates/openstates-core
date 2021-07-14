@@ -94,7 +94,7 @@ class PersonMatcher:
 
 
 @lru_cache(5)
-def _parent_lookup(jurisdiction_id: str, chamber: str, parent: str):
+def _parent_lookup(jurisdiction_id: str, chamber: str, parent: str) -> str:
     from openstates.data.models import Organization
 
     if not parent:

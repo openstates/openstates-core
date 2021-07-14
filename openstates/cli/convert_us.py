@@ -161,12 +161,15 @@ def scrape_people() -> None:
         dump_obj(person, output_dir=output_dir)
 
 
-def get_thomas_mapping(convert_chamber: dict) -> dict[tuple[str, str, str], list[str]]:
+ThomasMappingType = dict[tuple[str, typing.Optional[str], str], list[str]]
+
+
+def get_thomas_mapping(convert_chamber: dict) -> ThomasMappingType:
     """
     This function creates a dictionary that maps a tuple to a list of thomas_ids.
     the tuples consist of (chamber, parent, name).
     """
-    name_mapping: dict[tuple[str, str, str], list[str]] = {}
+    name_mapping: ThomasMappingType = {}
     url = "https://theunitedstates.io/congress-legislators/committees-current.json"
     committees = requests.get(url).json()
 
