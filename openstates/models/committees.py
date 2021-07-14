@@ -11,7 +11,11 @@ from .common import (
     validate_str_no_newline,
 )
 
-COMMITTEE_PARENTS = ("upper", "lower", "legislature")
+
+class CommitteeChamber(str, Enum):
+    UPPER = "upper"
+    LOWER = "lower"
+    LEGISLATURE = "legislature"
 
 
 class CommitteeType(str, Enum):
@@ -29,8 +33,9 @@ class Membership(BaseModel):
 
 class ScrapeCommittee(BaseModel):
     name: str
-    parent: str
+    chamber: CommitteeChamber
     classification: CommitteeType = CommitteeType.COMMITTEE
+    parent: str = None
     sources: typing.List[Link] = []
     links: typing.List[Link] = []
     other_names: typing.List[OtherName] = []
@@ -43,16 +48,12 @@ class ScrapeCommittee(BaseModel):
     def validate_parent_and_classification(
         cls, values: dict[str, typing.Any]
     ) -> dict[str, typing.Any]:
-        if (
-            values.get("classification") == "subcommittee"
-            and values.get("parent") in COMMITTEE_PARENTS
-        ):
-            raise ValueError("subcommittees must have a committee parent")
-        if (
-            values.get("classification") == "committee"
-            and values.get("parent") not in COMMITTEE_PARENTS
-        ):
-            raise ValueError(f"committees must have a parent in {COMMITTEE_PARENTS}")
+        if values.get("classification") == "subcommittee" and not values.get("parent"):
+            raise ValueError("subcommittees must have a parent")
+        if values.get("classification") == "committee" and values.get("parent"):
+            raise ValueError(
+                "committees may not have a parent, set classification=subcommittee"
+            )
         return values
 
     def add_member(self, name: str, role: str = "member") -> None:

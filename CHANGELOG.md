@@ -2,7 +2,9 @@
 
 ## 6.3.0
 
+* fix for committee parent/subcommittee in ScrapeCommittee
 * committees in os-us-to-yaml
+* committees linting includes warnings now
 
 ## 6.2.1 - July 7 2021
 
