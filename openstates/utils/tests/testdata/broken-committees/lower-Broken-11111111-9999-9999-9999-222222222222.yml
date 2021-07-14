@@ -1,7 +1,7 @@
 id: ocd-organization/11111111-9999-9999-9999-222222222222
 jurisdiction: ocd-jurisdiction/country:us/state:wa/government
 name: Broken
-parent: disallowed
+chamber: disallowed
 sources:
 - url: https://example.com/committee
   extra: 123

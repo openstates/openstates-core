@@ -319,7 +319,7 @@ def test_committee_to_db_simple():
     new_com = Committee(
         id=com_id,
         name="Education",
-        parent="lower",
+        chamber="lower",
         jurisdiction="ocd-jurisdiction/country:us/state:nc/government",
         sources=[{"url": "https://example.com"}],
     )
@@ -341,7 +341,7 @@ def test_committee_to_db_memberships():
     new_com = Committee(
         id=com_id,
         name="Education",
-        parent="lower",
+        chamber="lower",
         jurisdiction="ocd-jurisdiction/country:us/state:nc/government",
     )
     new_com.add_member("Steve", role="chair")

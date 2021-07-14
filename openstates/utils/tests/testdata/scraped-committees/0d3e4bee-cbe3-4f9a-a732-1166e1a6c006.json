@@ -1,6 +1,6 @@
 {
   "name": "Judiciary 4",
-  "parent": "lower",
+  "chamber": "lower",
   "classification": "committee",
   "sources": [
     {

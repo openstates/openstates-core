@@ -26,13 +26,15 @@ def test_validation_chamber():
 
 def test_parent_validation_subcommittee():
     # subcommittees can be any string...
-    ScrapeCommittee(name="Pre-K", parent="Education", classification="subcommittee")
+    ScrapeCommittee(
+        name="Pre-K", chamber="upper", parent="Education", classification="subcommittee"
+    )
     # must set parent if subcommittee
     with pytest.raises(ValidationError):
-        ScrapeCommittee(name="Pre-K", classification="subcommittee")
+        ScrapeCommittee(name="Pre-K", chamber="upper", classification="subcommittee")
     # must set can't set parent without subcommittees
     with pytest.raises(ValidationError):
-        ScrapeCommittee(name="Pre-K", parent="Education")
+        ScrapeCommittee(name="Pre-K", chamber="upper", parent="Education")
 
 
 @pytest.fixture
@@ -185,7 +187,7 @@ def test_load_data_with_errors():
     assert "members -> 3 -> who" in str(msg0)
     assert "members -> 3 -> name" in str(msg0)
     assert "2 validation errors" in str(msg1)
-    assert "committees must have a chamber in" in str(msg1)
+    assert "not a valid enumeration member" in str(msg1)
     assert "extra fields not permitted" in str(msg1)
 
 

@@ -1,7 +1,7 @@
 id: ocd-organization/11111111-2222-3333-4444-111111111111
 jurisdiction: ocd-jurisdiction/country:us/state:wa/government
 name: Agriculture
-parent: lower
+chamber: lower
 classification: committee
 sources:
 - url: https://example.com/committee
