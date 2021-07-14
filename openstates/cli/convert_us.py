@@ -205,7 +205,7 @@ def fetch_current_committees(convert_chamber: dict) -> typing.Iterable[Committee
             id="ocd-organization/" + str(uuid.uuid5(US_UUID_NAMESPACE, thomas_id)),
             jurisdiction="ocd-jurisdiction/country:us/government",
             name=committee_name,
-            parent=chamber,
+            chamber=chamber,
         )
 
         if "address" in com:
@@ -232,6 +232,7 @@ def fetch_current_committees(convert_chamber: dict) -> typing.Iterable[Committee
                     jurisdiction="ocd-jurisdiction/country:us/government",
                     name=subcommittee_name,
                     parent=committee_name,
+                    chamber=chamber,
                     classification="subcommittee",
                 )
 
@@ -292,7 +293,7 @@ def scrape_committees() -> None:
         chamber = committee.extras["type"]
 
         grab_members(
-            committee, name_mapping[(committee.parent, name, chamber)], members_mapping
+            committee, name_mapping[(committee.chamber, name, chamber)], members_mapping
         )
         committee.sources.append(Link(url="https://theunitedstates.io/"))
 

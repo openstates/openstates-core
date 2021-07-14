@@ -35,7 +35,7 @@ class ScrapeCommittee(BaseModel):
     name: str
     chamber: CommitteeChamber
     classification: CommitteeType = CommitteeType.COMMITTEE
-    parent: str = None
+    parent: typing.Optional[str] = None
     sources: typing.List[Link] = []
     links: typing.List[Link] = []
     other_names: typing.List[OtherName] = []

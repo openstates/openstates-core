@@ -16,23 +16,23 @@ JURISDICTION_ID = "ocd-jurisdiction/country:us/state:wa/government"
 TEST_DATA_PATH = Path(__file__).parent / "testdata"
 
 
-def test_parent_validation_chamber():
-    ScrapeCommittee(name="Education", parent="lower")
-    ScrapeCommittee(name="Education", parent="upper")
-    ScrapeCommittee(name="Education", parent="legislature")
+def test_validation_chamber():
+    ScrapeCommittee(name="Education", chamber="lower")
+    ScrapeCommittee(name="Education", chamber="upper")
+    ScrapeCommittee(name="Education", chamber="legislature")
     with pytest.raises(ValidationError):
-        ScrapeCommittee(name="Education", parent="joint")
-    # not a subcommittee
-    with pytest.raises(ValidationError):
-        ScrapeCommittee(name="Education", parent="Supercommittee")
+        ScrapeCommittee(name="Education", chamber="joint")
 
 
 def test_parent_validation_subcommittee():
     # subcommittees can be any string...
     ScrapeCommittee(name="Pre-K", parent="Education", classification="subcommittee")
-    # except subcommittees can't use the 3 chambers
+    # must set parent if subcommittee
     with pytest.raises(ValidationError):
-        ScrapeCommittee(name="Pre-K", parent="lower", classification="subcommittee")
+        ScrapeCommittee(name="Pre-K", classification="subcommittee")
+    # must set can't set parent without subcommittees
+    with pytest.raises(ValidationError):
+        ScrapeCommittee(name="Pre-K", parent="Education")
 
 
 @pytest.fixture
@@ -66,12 +66,12 @@ def test_merge_committees_name():
     id_one = "ocd-organization/00000000-0000-0000-0000-000000000001"
     id_two = "ocd-organization/00000000-0000-0000-0000-000000000002"
     c1 = Committee(
-        id=id_one, jurisdiction=JURISDICTION_ID, parent="upper", name="Education"
+        id=id_one, jurisdiction=JURISDICTION_ID, chamber="upper", name="Education"
     )
     c2 = Committee(
         id=id_two,
         jurisdiction=JURISDICTION_ID,
-        parent="upper",
+        chamber="upper",
         name="Education & Children",
     )
     merged = merge_committees(c1, c2)
@@ -83,12 +83,12 @@ def test_merge_committees_invalid():
     id_one = "ocd-organization/00000000-0000-0000-0000-000000000001"
     id_two = "ocd-organization/00000000-0000-0000-0000-000000000002"
     c1 = Committee(
-        id=id_one, jurisdiction=JURISDICTION_ID, parent="upper", name="Education"
+        id=id_one, jurisdiction=JURISDICTION_ID, chamber="upper", name="Education"
     )
     c2 = Committee(
         id=id_two,
         jurisdiction=JURISDICTION_ID,
-        parent="lower",
+        chamber="lower",
         name="Education & Children",
     )
     with pytest.raises(ValueError):
@@ -101,7 +101,7 @@ def test_merge_committees_links():
     c1 = Committee(
         id=id_one,
         jurisdiction=JURISDICTION_ID,
-        parent="upper",
+        chamber="upper",
         name="Education",
         links=[
             Link(url="https://example.com/1"),
@@ -111,7 +111,7 @@ def test_merge_committees_links():
     c2 = Committee(
         id=id_two,
         jurisdiction=JURISDICTION_ID,
-        parent="upper",
+        chamber="upper",
         name="Education & Children",
         links=[
             Link(url="https://example.com/1", note="first"),
@@ -133,7 +133,7 @@ def test_merge_committees_members():
     c1 = Committee(
         id=id_one,
         jurisdiction=JURISDICTION_ID,
-        parent="upper",
+        chamber="upper",
         name="Education",
         members=[
             Membership(name="Amy", role="chair"),
@@ -143,7 +143,7 @@ def test_merge_committees_members():
     c2 = Committee(
         id=id_two,
         jurisdiction=JURISDICTION_ID,
-        parent="upper",
+        chamber="upper",
         name="Education & Children",
         members=[
             Membership(name="Amy", role="chair", person_id=person_id),
@@ -185,7 +185,7 @@ def test_load_data_with_errors():
     assert "members -> 3 -> who" in str(msg0)
     assert "members -> 3 -> name" in str(msg0)
     assert "2 validation errors" in str(msg1)
-    assert "committees must have a parent in" in str(msg1)
+    assert "committees must have a chamber in" in str(msg1)
     assert "extra fields not permitted" in str(msg1)
 
 
@@ -207,13 +207,13 @@ def test_get_new_filename():
         id="ocd-organization/00001111-2222-3333-4444-555566667777",
         jurisdiction=JURISDICTION_ID,
         name="Simple",
-        parent="lower",
+        chamber="lower",
     )
     longer = Committee(
         id="ocd-organization/00001111-2222-3333-4444-999999999999",
         jurisdiction=JURISDICTION_ID,
         name="Ways, Means & Taxes",
-        parent="upper",
+        chamber="upper",
     )
     assert (
         comdir.get_new_filename(simple)
@@ -266,9 +266,9 @@ def test_add_committee():
         directory=TEST_DATA_PATH / "committees",
     )
     with patch.object(comdir, "save_committee") as patch_obj:
-        sc = ScrapeCommittee(parent="lower", name="New Business")
+        sc = ScrapeCommittee(chamber="lower", name="New Business")
         comdir.add_committee(sc)
-        full_com = comdir.coms_by_chamber_and_name[sc.parent][sc.name]
+        full_com = comdir.coms_by_chamber_and_name[sc.chamber][sc.name]
         assert full_com.name == sc.name
         assert full_com.id.startswith("ocd-organization")
         assert full_com.jurisdiction == JURISDICTION_ID
@@ -316,7 +316,7 @@ def test_get_merge_plan_by_chamber(person_matcher):
         # identical
         ScrapeCommittee(
             name="Education",
-            parent="lower",
+            chamber="lower",
             sources=[Link(url="https://example.com/committee")],
             members=[
                 Membership(name="Jones", role="chair"),
@@ -328,7 +328,7 @@ def test_get_merge_plan_by_chamber(person_matcher):
         # new
         ScrapeCommittee(
             name="Science",
-            parent="lower",
+            chamber="lower",
             sources=[Link(url="https://example.com/committee")],
             members=[
                 Membership(name="Jones", role="chair"),
@@ -338,7 +338,7 @@ def test_get_merge_plan_by_chamber(person_matcher):
         # changed
         ScrapeCommittee(
             name="Rules",
-            parent="lower",
+            chamber="lower",
             sources=[Link(url="https://example.com/committee")],
             members=[
                 Membership(name="Fox", role="chair"),

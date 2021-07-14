@@ -93,7 +93,7 @@ class PersonMatcher:
         return id_ in self.all_ids
 
 
-def committee_to_db(com: Committee) -> tuple[bool, bool]:
+def committee_to_db(com: Committee, parent_id: str) -> tuple[bool, bool]:
     from openstates.data.models import Organization, Membership
 
     updated = False
@@ -101,6 +101,7 @@ def committee_to_db(com: Committee) -> tuple[bool, bool]:
     db_com, created = Organization.objects.get_or_create(
         id=com.id,
         jurisdiction_id=com.jurisdiction,
+        parent_id=parent_id,
         classification=com.classification,
         defaults=dict(name=com.name),
     )
@@ -141,7 +142,7 @@ def committee_to_db(com: Committee) -> tuple[bool, bool]:
 
 
 def merge_lists(orig: list, new: list, key_attr: str) -> list:
-    """ merge two lists based on a unique property """
+    """merge two lists based on a unique property"""
     combined = []
     new_by_key = {getattr(item, key_attr): item for item in new}
     seen = set()
@@ -162,6 +163,8 @@ def merge_lists(orig: list, new: list, key_attr: str) -> list:
 
 def merge_committees(orig: Committee, new: ScrapeCommittee) -> Committee:
     # disallow merge of these, likely error & unclear what should happen
+    if orig.chamber != new.chamber:
+        raise ValueError("cannot merge committees with different chambers")
     if orig.parent != new.parent:
         raise ValueError("cannot merge committees with different parents")
     if orig.classification != new.classification:
@@ -170,6 +173,7 @@ def merge_committees(orig: Committee, new: ScrapeCommittee) -> Committee:
 
     merged = Committee(
         id=orig.id,  # id stays constant
+        chamber=orig.chamber,
         parent=orig.parent,
         classification=orig.classification,
         jurisdiction=orig.jurisdiction,
@@ -206,7 +210,7 @@ class CommitteeDir:
         for filename in self.directory.glob("*.yml"):
             try:
                 com: Committee = Committee.load_yaml(filename)
-                self.coms_by_chamber_and_name[com.parent][com.name] = com
+                self.coms_by_chamber_and_name[com.chamber][com.name] = com
             except ValidationError as ve:
                 if raise_errors:
                     raise
@@ -233,7 +237,7 @@ class CommitteeDir:
         id = obj.id.split("/")[1]
         name = re.sub(r"\s+", "-", obj.name)
         name = re.sub(r"[^a-zA-Z-]", "", name)
-        return f"{obj.parent}-{name}-{id}.yml"
+        return f"{obj.chamber}-{name}-{id}.yml"
 
     def get_filename_by_id(self, com_id: str) -> Path:
         if com_id.startswith("ocd-organization"):
@@ -275,7 +279,7 @@ class CommitteeDir:
             jurisdiction=lookup(abbr=self.abbr).jurisdiction_id,
             **committee.dict(),
         )
-        self.coms_by_chamber_and_name[committee.parent][committee.name] = full_com
+        self.coms_by_chamber_and_name[committee.chamber][committee.name] = full_com
         self.save_committee(full_com)
 
     def ingest_scraped_json(self, input_dir: str) -> list[ScrapeCommittee]:
@@ -289,12 +293,7 @@ class CommitteeDir:
                 com = ScrapeCommittee(**data)
                 # do person matching on import so that diffs work
                 for member in com.members:
-                    # could improve this and use the appropriate parent chamber
-                    # but that'd require a topological sort for subcommittees
-                    parent = com.parent
-                    if parent not in ("upper", "lower"):
-                        parent = "legislature"
-                    mid = self.person_matcher.match(parent, member.name)
+                    mid = self.person_matcher.match(com.chamber, member.name)
                     if mid:
                         member.person_id = mid
                 scraped_data.append(com)
@@ -339,17 +338,29 @@ class CommitteeDir:
         created_count = 0
         updated_count = 0
 
+        jurisdiction_id = lookup(abbr=self.abbr).jurisdiction_id
         existing_ids = set(
             Organization.objects.filter(
-                jurisdiction_id=lookup(abbr=self.abbr).jurisdiction_id,
-                classification="committee",
+                jurisdiction_id=jurisdiction_id,
+                classification__in=("committee", "subcommittee"),
             ).values_list("id", flat=True)
         )
 
-        for chamber, committees in self.coms_by_chamber_and_name.items():
+        # TODO: remove this once committee imports aren't broken
+        Organization.objects.filter(id__in=existing_ids).delete()
+
+        for parent, committees in self.coms_by_chamber_and_name.items():
+            if parent in ("lower", "upper", "legislature"):
+                parent_id = Organization.objects.get(
+                    jurisdiction_id=jurisdiction_id, classification=parent
+                ).id
+            else:
+                parent_id = Organization.objects.get(
+                    jurisdiction_id=jurisdiction_id, name=parent
+                ).id
             for name, committee in committees.items():
                 ids.add(committee.id)
-                created, updated = committee_to_db(committee)
+                created, updated = committee_to_db(committee, parent_id)
 
                 if created:
                     click.secho(f"created committee {name}", fg="cyan", bold=True)
@@ -397,7 +408,7 @@ def merge(abbr: str, input_dir: str) -> None:
     coms_by_chamber: defaultdict[str, list[ScrapeCommittee]] = defaultdict(list)
     scraped_data = comdir.ingest_scraped_json(input_dir)
     for com in scraped_data:
-        coms_by_chamber[com.parent].append(com)
+        coms_by_chamber[com.chamber].append(com)
 
     for chamber, coms in coms_by_chamber.items():
         plan = comdir.get_merge_plan_by_chamber(chamber, coms)
@@ -424,7 +435,7 @@ def merge(abbr: str, input_dir: str) -> None:
             for com in coms:
                 if com.name in plan.names_to_add:
                     comdir.add_committee(com)
-                    click.secho(f"  adding {com.parent} {com.name}")
+                    click.secho(f"  adding {com.chamber} {com.name}")
 
             # remove old committees
             for name in plan.names_to_remove:
