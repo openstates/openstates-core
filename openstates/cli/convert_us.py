@@ -164,9 +164,7 @@ def scrape_people() -> None:
 def get_thomas_mapping(convert_chamber: dict) -> dict[tuple[str, str, str], list[str]]:
     """
     This function creates a dictionary that maps a tuple to a list of thomas_ids.
-    This tuple differs depending on if its mapping a committee versus a subcommittee.
-    Committee tuples consist of (chamber, name, type).
-    Subcommittee tuples consiste of (name, sub_name, type).
+    the tuples consist of (chamber, parent, name).
     """
     name_mapping: dict[tuple[str, str, str], list[str]] = {}
     url = "https://theunitedstates.io/congress-legislators/committees-current.json"
@@ -175,19 +173,18 @@ def get_thomas_mapping(convert_chamber: dict) -> dict[tuple[str, str, str], list
     for com in committees:
         name = com["name"]
         thomas_id = com["thomas_id"]
-        type = com["type"]
-        chamber = convert_chamber[type]
+        chamber = convert_chamber[com["type"]]
 
-        name_mapping[(chamber, name, type)] = name_mapping.get(
-            (chamber, name, type), []
+        name_mapping[(chamber, None, name)] = name_mapping.get(
+            (chamber, None, name), []
         ) + [thomas_id]
 
         if "subcommittees" in com:
             for sub in com["subcommittees"]:
                 sub_name = sub["name"]
                 thomas_id_agg = thomas_id + sub["thomas_id"]
-                name_mapping[(name, sub_name, type)] = name_mapping.get(
-                    (name, sub_name, type), []
+                name_mapping[(chamber, name, sub_name)] = name_mapping.get(
+                    (chamber, name, sub_name), []
                 ) + [thomas_id_agg]
 
     return name_mapping
@@ -290,10 +287,10 @@ def scrape_committees() -> None:
 
     for committee in fetch_current_committees(convert_chamber):
         name = committee.name
-        chamber = committee.extras["type"]
-
         grab_members(
-            committee, name_mapping[(committee.chamber, name, chamber)], members_mapping
+            committee,
+            name_mapping[(committee.chamber, committee.parent, name)],
+            members_mapping,
         )
         committee.sources.append(Link(url="https://theunitedstates.io/"))
 
