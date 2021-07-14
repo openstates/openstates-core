@@ -94,12 +94,18 @@ class PersonMatcher:
 
 
 @lru_cache(5)
-def _parent_lookup(jurisdiction_id: str, chamber: str):
+def _parent_lookup(jurisdiction_id: str, chamber: str, parent: str):
     from openstates.data.models import Organization
 
-    return Organization.objects.get(
-        jurisdiction_id=jurisdiction_id, classification=chamber
-    ).id
+    if not parent:
+        return Organization.objects.get(
+            jurisdiction_id=jurisdiction_id, classification=chamber
+        ).id
+    else:
+        print(jurisdiction_id, chamber, parent)
+        return Organization.objects.get(
+            jurisdiction_id=jurisdiction_id, parent__classification=chamber, name=parent
+        ).id
 
 
 def committee_to_db(com: Committee) -> tuple[bool, bool]:
@@ -110,7 +116,7 @@ def committee_to_db(com: Committee) -> tuple[bool, bool]:
     db_com, created = Organization.objects.get_or_create(
         id=com.id,
         jurisdiction_id=com.jurisdiction,
-        parent_id=_parent_lookup(com.jurisdiction, com.chamber),
+        parent_id=_parent_lookup(com.jurisdiction, com.chamber, com.parent),
         classification=com.classification,
         defaults=dict(name=com.name),
     )
@@ -359,7 +365,10 @@ class CommitteeDir:
         Organization.objects.filter(id__in=existing_ids).delete()
 
         for chamber, committees in self.coms_by_chamber_and_name.items():
-            for name, committee in committees.items():
+            # this sorted hack ensures subcommittees are processed after all committees
+            for name, committee in sorted(
+                committees.items(), key=lambda c: c[1].parent or ""
+            ):
                 ids.add(committee.id)
                 created, updated = committee_to_db(committee)
 
