@@ -326,6 +326,9 @@ class CommitteeDir:
     ) -> DirectoryMergePlan:
         existing_names = set(self.coms_by_chamber_and_name[chamber].keys())
         new_names = {com.name for com in new_data}
+        parent_names = {
+            c.id: c.name for c in self.coms_by_chamber_and_name[chamber].values()
+        }
 
         names_to_add = new_names - existing_names
         names_to_remove = existing_names - new_names
@@ -338,6 +341,8 @@ class CommitteeDir:
                 # reverse a saved Committee to a ScrapeCommittee for comparison
                 existing = self.coms_by_chamber_and_name[chamber][com.name]
                 com_without_id = existing.dict()
+                if com_without_id["parent"]:
+                    com_without_id["parent"] = parent_names[com_without_id["parent"]]
                 com_without_id.pop("id")
                 com_without_id.pop("jurisdiction")
                 rev_sc = ScrapeCommittee(**com_without_id)
