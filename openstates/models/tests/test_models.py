@@ -303,4 +303,9 @@ def test_committee_dict_order():
         id=VALID_ORG_ID,
         jurisdiction=VALID_JURISDICTION_ID,
     )
-    assert list(c.to_dict().keys())[:3] == ["id", "jurisdiction", "name"]
+    assert list(c.to_dict().keys())[:4] == [
+        "id",
+        "jurisdiction",
+        "classification",
+        "name",
+    ]
