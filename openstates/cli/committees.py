@@ -97,14 +97,11 @@ class PersonMatcher:
 def _parent_lookup(jurisdiction_id: str, chamber: str, parent: str) -> str:
     from openstates.data.models import Organization
 
-    if not parent:
+    if parent:
+        return parent
+    else:
         return Organization.objects.get(
             jurisdiction_id=jurisdiction_id, classification=chamber
-        ).id
-    else:
-        print(jurisdiction_id, chamber, parent)
-        return Organization.objects.get(
-            jurisdiction_id=jurisdiction_id, parent__classification=chamber, name=parent
         ).id
 
 
