@@ -287,6 +287,7 @@ class CommitteeDir:
             )
 
     def add_committee(self, committee: ScrapeCommittee) -> None:
+        parent_id: typing.Optional[str]
         # parent name needs to be converted to ID
         if committee.parent:
             parent_id = self.coms_by_chamber_and_name[committee.chamber][
