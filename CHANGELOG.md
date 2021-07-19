@@ -1,8 +1,10 @@
 # Changelog
 
-## 6.3.1
+## 6.3.1 - July 19 2021
 
 * add linting check for committee homepages
+* committees will always have classification in file
+* fix committee linting/import/etc. to set parent key to an ocd-organization ID
 
 ## 6.3.0 - July 14 2021
 
