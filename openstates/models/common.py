@@ -48,6 +48,12 @@ def validate_ocd_jurisdiction(v: typing.Any) -> str:
     return v
 
 
+def validate_ocd_organization(v: str) -> str:
+    if not ORG_ID_RE.match(v):
+        raise ValueError("must match ocd-organization/UUID format")
+    return v
+
+
 def validate_url(v: str) -> str:
     if not v.startswith(("http://", "https://", "ftp://")):
         raise ValueError("URL must start with protocol")

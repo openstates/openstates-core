@@ -3,11 +3,11 @@ from enum import Enum
 from pydantic import validator, root_validator
 from .common import (
     BaseModel,
-    ORG_ID_RE,
     Link,
     OtherName,
     validate_ocd_person,
     validate_ocd_jurisdiction,
+    validate_ocd_organization,
     validate_str_no_newline,
 )
 
@@ -73,12 +73,8 @@ class Committee(ScrapeCommittee):
     _validate_jurisdiction = validator("jurisdiction", allow_reuse=True)(
         validate_ocd_jurisdiction
     )
-
-    @validator("id")
-    def valid_ocd_org_format(cls, v: str) -> str:
-        if not ORG_ID_RE.match(v):
-            raise ValueError("must match ocd-organization/UUID format")
-        return v
+    _validate_id = validator("id", allow_reuse=True)(validate_ocd_organization)
+    _validate_parent = validator("parent", allow_reuse=True)(validate_ocd_organization)
 
     def to_dict(self) -> dict[str, typing.Any]:
         # hack to always have id on top & always include classification
