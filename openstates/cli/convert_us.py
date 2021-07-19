@@ -24,6 +24,10 @@ def make_person_id(bioguide: str) -> str:
     return "ocd-person/" + str(uuid.uuid5(US_UUID_NAMESPACE, bioguide))
 
 
+def make_org_id(id_: str) -> str:
+    return "ocd-organization/" + str(uuid.uuid5(US_UUID_NAMESPACE, id_))
+
+
 def get_district_offices() -> defaultdict[str, list[ContactDetail]]:
     district_offices = defaultdict(list)
     url = "https://theunitedstates.io/congress-legislators/legislators-district-offices.json"
@@ -186,8 +190,9 @@ def get_thomas_mapping(convert_chamber: dict) -> ThomasMappingType:
             for sub in com["subcommittees"]:
                 sub_name = sub["name"]
                 thomas_id_agg = thomas_id + sub["thomas_id"]
-                name_mapping[(chamber, name, sub_name)] = name_mapping.get(
-                    (chamber, name, sub_name), []
+                parent_id = make_org_id(thomas_id)
+                name_mapping[(chamber, parent_id, sub_name)] = name_mapping.get(
+                    (chamber, parent_id, sub_name), []
                 ) + [thomas_id_agg]
 
     return name_mapping
@@ -202,7 +207,7 @@ def fetch_current_committees(convert_chamber: dict) -> typing.Iterable[Committee
         chamber = convert_chamber[com["type"]]
 
         c = Committee(
-            id="ocd-organization/" + str(uuid.uuid5(US_UUID_NAMESPACE, thomas_id)),
+            id=make_org_id(thomas_id),
             jurisdiction="ocd-jurisdiction/country:us/government",
             name=committee_name,
             chamber=chamber,
@@ -227,11 +232,10 @@ def fetch_current_committees(convert_chamber: dict) -> typing.Iterable[Committee
                 sub_thomas_id = sub["thomas_id"]
                 sub_thomas_id = thomas_id + sub_thomas_id
                 s = Committee(
-                    id="ocd-organization/"
-                    + str(uuid.uuid5(US_UUID_NAMESPACE, sub_thomas_id)),
+                    id=make_org_id(sub_thomas_id),
                     jurisdiction="ocd-jurisdiction/country:us/government",
                     name=subcommittee_name,
-                    parent=committee_name,
+                    parent=make_org_id(thomas_id),
                     chamber=chamber,
                     classification="subcommittee",
                 )
