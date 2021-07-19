@@ -49,7 +49,7 @@ def validate_ocd_jurisdiction(v: typing.Any) -> str:
 
 
 def validate_ocd_organization(v: str) -> str:
-    if not ORG_ID_RE.match(v):
+    if isinstance(v, str) and not ORG_ID_RE.match(v):
         raise ValueError("must match ocd-organization/UUID format")
     return v
 

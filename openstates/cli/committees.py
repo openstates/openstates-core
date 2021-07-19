@@ -287,11 +287,19 @@ class CommitteeDir:
             )
 
     def add_committee(self, committee: ScrapeCommittee) -> None:
+        # parent name needs to be converted to ID
+        if committee.parent:
+            parent_id = self.coms_by_chamber_and_name[committee.chamber][
+                committee.parent
+            ].id
+        else:
+            parent_id = None
         # convert a ScrapeCommittee to a committee by giving it an ID
         full_com = Committee(
             id=f"ocd-organization/{uuid.uuid4()}",
             jurisdiction=lookup(abbr=self.abbr).jurisdiction_id,
-            **committee.dict(),
+            parent=parent_id,
+            **committee.dict(exclude={"parent"}),
         )
         self.coms_by_chamber_and_name[committee.chamber][committee.name] = full_com
         self.save_committee(full_com)
