@@ -81,9 +81,12 @@ class Committee(ScrapeCommittee):
         return v
 
     def to_dict(self) -> dict[str, typing.Any]:
-        # hack to always have id on top
+        # hack to always have id on top & always include classification
         return {
             "id": self.id,
             "jurisdiction": self.jurisdiction,
+            "classification": self.classification.value
+            if isinstance(self.classification, CommitteeType)
+            else self.classification,
             **super().dict(exclude_defaults=True),
         }
