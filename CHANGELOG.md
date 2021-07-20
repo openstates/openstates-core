@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.3.2 - July 20 2021
+
+* stop auto-purging committees
+
 ## 6.3.1 - July 19 2021
 
 * add linting check for committee homepages
