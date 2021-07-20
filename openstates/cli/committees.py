@@ -371,9 +371,6 @@ class CommitteeDir:
             ).values_list("id", flat=True)
         )
 
-        # TODO: remove this once committee imports aren't broken
-        Organization.objects.filter(id__in=existing_ids).delete()
-
         for chamber, committees in self.coms_by_chamber_and_name.items():
             # this sorted hack ensures subcommittees are processed after all committees
             for name, committee in sorted(
