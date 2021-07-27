@@ -38,6 +38,11 @@ def get_base_path() -> Path:
                 "could not find openstates/people checkout, set OS_PEOPLE_DIRECTORY env variable"
             )
 
+    if not (base_dir / "data").exists():
+        raise EnvironmentError(
+            f"{base_dir}/data does not exist, check OS_PEOPLE_DIRECTORY"
+        )
+
     return base_dir
 
 
