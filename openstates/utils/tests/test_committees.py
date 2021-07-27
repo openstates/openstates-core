@@ -282,7 +282,7 @@ def test_ingest_scraped_json():
         abbr="wa",
         directory=TEST_DATA_PATH / "committees",
     )
-    os.environ["OS_PEOPLE_DIRECTORY"] = "not-used-but-must-be-set"
+    os.environ["OS_PEOPLE_DIRECTORY"] = str(TEST_DATA_PATH)
     committees = comdir.ingest_scraped_json(TEST_DATA_PATH / "scraped-committees")
     assert len(committees) == 2
     assert {"Judiciary 2", "Judiciary 4"} == {c.name for c in committees}
