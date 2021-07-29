@@ -115,8 +115,12 @@ def committee_to_db(com: Committee) -> tuple[bool, bool]:
         jurisdiction_id=com.jurisdiction,
         parent_id=_parent_lookup(com.jurisdiction, com.chamber, com.parent),
         classification=com.classification,
-        defaults=dict(name=com.name),
+        defaults=dict(name=com.name, extras=com.extras),
     )
+
+    if db_com.extras != com.extras:
+        updated = True
+        db_com.extras = com.extras
 
     for key_name in ("links", "sources", "other_names"):
         list_json = [n.dict() for n in getattr(com, key_name)]
