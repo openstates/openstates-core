@@ -1,5 +1,10 @@
 # Changelog
 
+## 6.3.3 - August 1 2021
+
+* fix for OS_PEOPLE_DIRECTORY setting detection
+* fix committee import to include extras
+
 ## 6.3.2 - July 20 2021
 
 * stop auto-purging committees
