@@ -287,7 +287,7 @@ def _echo_org_status(org: typing.Any, created: bool, updated: bool) -> None:
 
 def load_directory_to_database(files: list[Path], purge: bool) -> None:
     from openstates.data.models import Person as DjangoPerson
-    from openstates.data.models import BillSponsorship, PersonVote
+    from openstates.data.models import BillSponsorship, PersonVote, Jurisdiction
 
     ids = set()
     merged = {}
@@ -296,6 +296,7 @@ def load_directory_to_database(files: list[Path], purge: bool) -> None:
 
     all_data = []
     all_jurisdictions = []
+    updated_jurisdictions = set()
     for filename in files:
         person: Person = Person.load_yaml(filename)
         all_data.append((person, filename))
@@ -318,6 +319,9 @@ def load_directory_to_database(files: list[Path], purge: bool) -> None:
         elif updated:
             click.secho(f"updated person from {filename}", fg="cyan")
             updated_count += 1
+
+        if created or updated:
+            updated_jurisdictions.add(person.roles[0].jurisdiction)
 
     missing_ids = existing_ids - ids
 
@@ -352,6 +356,11 @@ def load_directory_to_database(files: list[Path], purge: bool) -> None:
     elif missing_ids and purge:
         click.secho(f"{len(missing_ids)} purged", fg="yellow")
         DjangoPerson.objects.filter(id__in=missing_ids).delete()
+
+    if created_count or updated_count:
+        Jurisdiction.objects.filter(id__in=updated_jurisdictions).update(
+            latest_people_update=datetime.datetime.utcnow()
+        )
 
     click.secho(
         f"processed {len(ids)} person files, {created_count} created, "
@@ -672,6 +681,7 @@ def to_database(abbreviations: list[str], purge: bool, safe: bool) -> None:
         try:
             with transaction.atomic():
                 load_directory_to_database(person_files, purge=purge)
+
                 if safe:
                     click.secho("ran in safe mode, no changes were made", fg="magenta")
                     raise CancelTransaction()
