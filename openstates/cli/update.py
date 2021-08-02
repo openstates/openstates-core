@@ -1,6 +1,7 @@
 from collections import OrderedDict
 import argparse
 import contextlib
+import datetime
 import glob
 import importlib
 import logging
@@ -98,6 +99,7 @@ def do_import(juris, args):
         BillImporter,
         VoteEventImporter,
     )
+    from openstates.data.models import Jurisdiction as DatabaseJurisdiction
 
     datadir = os.path.join(settings.SCRAPED_DATA_DIR, args.module)
 
@@ -115,6 +117,9 @@ def do_import(juris, args):
         if settings.ENABLE_VOTES:
             print("import vote events...")
             report.update(vote_event_importer.import_directory(datadir))
+        DatabaseJurisdiction.objects.filter(id=juris.jurisdiction_id).update(
+            latest_bill_update=datetime.datetime.utcnow()
+        )
 
     # compile info on all sessions that were updated in this run
     seen_sessions = set()
