@@ -1,5 +1,5 @@
 from django.db import models  # type: ignore
-from ..data.models import Jurisdiction, LegislativeSession
+from .jurisdiction import Jurisdiction, LegislativeSession
 
 
 OBJECT_TYPES = (

@@ -6,7 +6,6 @@ SECRET_KEY = "test"
 INSTALLED_APPS = (
     "django.contrib.contenttypes",
     "openstates.data",
-    "openstates.reports",
 )
 MIDDLEWARE_CLASSES = ()
 DATABASES = {

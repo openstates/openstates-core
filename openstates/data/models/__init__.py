@@ -44,3 +44,10 @@ from .event import (
     EventAgendaMediaLink,
     EventDocumentLink,
 )
+from .reports import (
+    RunPlan,
+    ScrapeReport,
+    ScrapeObjects,
+    ImportObjects,
+    SessionDataQualityReport,
+)
