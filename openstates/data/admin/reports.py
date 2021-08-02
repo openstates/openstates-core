@@ -1,6 +1,6 @@
 #  type: ignore
 from django.contrib import admin  # type: ignore
-from . import models
+from .. import models
 
 
 class ScrapeReportInline(admin.TabularInline):

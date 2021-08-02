@@ -34,8 +34,7 @@ def print_report(report: dict[str, typing.Any]) -> None:
 
 @transaction.atomic
 def save_report(report: dict[str, typing.Any], jurisdiction: str) -> typing.Any:
-    from ..reports.models import RunPlan
-    from ..data.models import Jurisdiction
+    from ..data.models import Jurisdiction, RunPlan
 
     # set end time
     report["end"] = utils.utcnow()
@@ -93,8 +92,14 @@ def _simple_count(ModelCls: typing.Any, session: str, **filter: typing.Any) -> i
 
 
 def generate_session_report(session: str) -> typing.Any:
-    from ..data.models import Bill, VoteEvent, VoteCount, PersonVote, BillSponsorship
-    from ..reports.models import SessionDataQualityReport
+    from ..data.models import (
+        Bill,
+        VoteEvent,
+        VoteCount,
+        PersonVote,
+        BillSponsorship,
+        SessionDataQualityReport,
+    )
 
     report: dict[str, typing.Any] = {
         "bills_missing_actions": _simple_count(Bill, session, actions__isnull=True),

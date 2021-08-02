@@ -49,7 +49,6 @@ types-requests = "^2.25.0"
 [tool.coverage.run]
 omit = [
   "openstates/data/admin/*",
-  "openstates/reports/admin.py",
   "openstates/utils/ansistrm.py",
 ]
 

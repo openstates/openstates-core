@@ -140,7 +140,7 @@ def current_to_person(current: dict[str, typing.Any]) -> tuple[str, Person]:
         p.links.append(Link(note="contact form", url=cur_term["contact_form"]))
 
     address = cur_term.get("address", "")
-    voice = cur_term.get("voice", "")
+    voice = cur_term.get("phone", "")
     if address or voice:
         p.contact_details.append(
             ContactDetail(

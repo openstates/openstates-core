@@ -1,5 +1,11 @@
 # Changelog
 
+## 6.4.0
+
+* fix os-us-to-yaml phone numbers
+* added latest_bill_update and latest_people_update to Jurisdiction table
+* moved openstates.reports into openstates.data
+
 ## 6.3.4 - August 2 2021
 
 * fix os-us-to-yaml with no office details
