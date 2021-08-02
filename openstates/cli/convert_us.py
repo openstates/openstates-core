@@ -139,13 +139,16 @@ def current_to_person(current: dict[str, typing.Any]) -> tuple[str, Person]:
     if "contact_form" in cur_term:
         p.links.append(Link(note="contact form", url=cur_term["contact_form"]))
 
-    p.contact_details.append(
-        ContactDetail(
-            note="Capitol Office",
-            address=cur_term.get("address", ""),
-            voice=cur_term.get("phone", ""),
+    address = cur_term.get("address", "")
+    voice = cur_term.get("voice", "")
+    if address or voice:
+        p.contact_details.append(
+            ContactDetail(
+                note="Capitol Office",
+                address=address,
+                voice=voice,
+            )
         )
-    )
 
     return bioguide, p
 
