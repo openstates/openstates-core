@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.3.4 - August 2 2021
+
+* fix os-us-to-yaml with no office details
+
 ## 6.3.3 - August 1 2021
 
 * fix for OS_PEOPLE_DIRECTORY setting detection
