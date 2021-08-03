@@ -453,7 +453,8 @@ def merge(abbr: str, input_dir: str) -> None:
                 sys.exit(1)
 
             # add new committees
-            for com in coms:
+            # sort key ensures parents are added before children
+            for com in sorted(coms, key=lambda c: c.parent or ""):
                 if com.name in plan.names_to_add:
                     comdir.add_committee(com)
                     click.secho(f"  adding {com.chamber} {com.name}")
