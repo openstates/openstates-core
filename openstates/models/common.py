@@ -21,7 +21,8 @@ DATE_RE = re.compile(r"^\d{4}(-\d{2}(-\d{2})?)?$")
 def validate_str_no_newline(v: typing.Any) -> str:
     if isinstance(v, str) and "\n" in v:
         raise ValueError("must be a string without newline")
-    return v
+    # normalize spaces
+    return re.sub(r"\s+", " ", v).strip()
 
 
 def validate_fuzzy_date(v: typing.Any) -> typing.Union[datetime.date, str]:

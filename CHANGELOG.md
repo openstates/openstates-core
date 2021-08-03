@@ -3,6 +3,7 @@
 ## 6.4.1
 
 * committee merge bugfix for parent committees
+* normalize whitespace in committee names/members
 * add --fix flag to committee lint
 
 ## 6.4.0 - August 2 2021

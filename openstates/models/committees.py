@@ -29,6 +29,8 @@ class Membership(BaseModel):
     person_id: typing.Optional[str] = None
 
     _validate_person_id = validator("person_id", allow_reuse=True)(validate_ocd_person)
+    _validate_name = validator("name", allow_reuse=True)(validate_str_no_newline)
+    _validate_role = validator("role", allow_reuse=True)(validate_str_no_newline)
 
 
 class ScrapeCommittee(BaseModel):
