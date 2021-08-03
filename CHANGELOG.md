@@ -1,5 +1,10 @@
 # Changelog
 
+## 6.4.1
+
+* committee merge bugfix for parent committees
+* add --fix flag to committee lint
+
 ## 6.4.0 - August 2 2021
 
 * fix os-us-to-yaml phone numbers

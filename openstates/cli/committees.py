@@ -247,6 +247,7 @@ class CommitteeDir:
             click.secho(f"{len(unmatched_names)} unmatched legislators:", fg="yellow")
             for name in unmatched_names:
                 click.secho(f"    {name}", fg="yellow")
+            click.secho("try running with --fix", fg="yellow")
 
     def get_new_filename(self, obj: Committee) -> str:
         id = obj.id.split("/")[1]
@@ -322,6 +323,28 @@ class CommitteeDir:
                         member.person_id = mid
                 scraped_data.append(com)
         return scraped_data
+
+    def update_unmatched_names(self) -> None:
+        if not self.person_matcher:
+            self.person_matcher = PersonMatcher(self.abbr)
+
+        # find all committees with unmatched names
+        for coms_for_chamber in self.coms_by_chamber_and_name.values():
+            for com in coms_for_chamber.values():
+                updated_count = 0
+                for membership in com.members:
+                    if not membership.person_id:
+                        # do the matching
+                        mid = self.person_matcher.match(com.chamber, membership.name)
+                        if mid:
+                            membership.person_id = mid
+                            updated_count += 1
+                if updated_count:
+                    self.save_committee(com)
+                    click.secho(
+                        f"updated {updated_count} memberships on {com.name} with names",
+                        fg="yellow",
+                    )
 
     def get_merge_plan_by_chamber(
         self, chamber: str, new_data: list[ScrapeCommittee]
@@ -475,7 +498,10 @@ def merge(abbr: str, input_dir: str) -> None:
 
 @main.command()  # pragma: no cover
 @click.argument("abbreviations", nargs=-1)
-def lint(abbreviations: list[str]) -> None:
+@click.option(
+    "--fix/--no-fix", default=False, help="Enable/disable automatic fixing of data."
+)
+def lint(abbreviations: list[str], fix: bool) -> None:
     """
     Lint committee YAML files.
     """
@@ -493,6 +519,8 @@ def lint(abbreviations: list[str]) -> None:
                     f"  {'.'.join(str(l) for l in err['loc'])}: {err['msg']}", fg="red"
                 )
                 errors += 1
+        if fix:
+            comdir.update_unmatched_names()
         comdir.print_warnings()
         if errors:
             click.secho(f"exiting with {errors} errors", fg="red")
