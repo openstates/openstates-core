@@ -1,6 +1,6 @@
 # Changelog
 
-## 6.4.1
+## 6.4.1 - August 19 2021
 
 * committee merge bugfix for parent committees
 * normalize whitespace in committee names/members
