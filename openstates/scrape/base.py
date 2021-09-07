@@ -172,6 +172,9 @@ class Scraper(scrapelib.Scraper):
                 raise ScrapeError(
                     f"objects returned from {self.__class__.__name__} scrape, expected none"
                 )
+            self.warning(
+                f"{self.__class__.__name__} raised EmptyScrape, continuing without any results"
+            )
         else:
             if not self.output_names:
                 raise ScrapeError(
