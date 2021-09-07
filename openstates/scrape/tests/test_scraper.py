@@ -1,6 +1,6 @@
 import pytest
 from unittest import mock
-from openstates.scrape import Person, Organization, Bill, Jurisdiction
+from openstates.scrape import Person, Organization, Bill, Jurisdiction, EmptyScrape
 from openstates.scrape.base import Scraper, ScrapeError, BaseBillScraper
 
 
@@ -94,6 +94,28 @@ def test_no_objects():
 
     with pytest.raises(ScrapeError):
         NullScraper(juris, "/tmp/", fastmode=True).do_scrape()
+
+
+def test_no_objects_empty_scrape():
+    class NullScraper(Scraper):
+        def scrape(self):
+            raise EmptyScrape()
+
+    # doesn't raise despite yielding zero objects
+    NullScraper(juris, "/tmp/", fastmode=True).do_scrape()
+
+
+def test_empty_scrape_with_objects():
+    class TestScraper(Scraper):
+        def scrape(self):
+            p = Person("Don Jaggerty")
+            p.add_source("https://example.com")
+            yield p
+            raise EmptyScrape()
+
+    # can't yield objects and raise EmptyScrape
+    with pytest.raises(ScrapeError):
+        TestScraper(juris, "/tmp/", fastmode=True).do_scrape()
 
 
 def test_no_scrape():
