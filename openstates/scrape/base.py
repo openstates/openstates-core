@@ -11,7 +11,7 @@ from jsonschema import Draft3Validator, FormatChecker
 import scrapelib
 
 from .. import utils, settings
-from ..exceptions import ScrapeError, ScrapeValueError
+from ..exceptions import ScrapeError, ScrapeValueError, EmptyScrape
 
 
 @FormatChecker.cls_checks("uri-blank")
@@ -35,7 +35,7 @@ def cleanup_list(obj, default):
 
 
 def clean_whitespace(obj):
-    """ deep whitespace clean for ScrapeObj & dicts """
+    """deep whitespace clean for ScrapeObj & dicts"""
     if isinstance(obj, dict):
         items = obj.items()
         use_setattr = False
@@ -67,7 +67,7 @@ def clean_whitespace(obj):
 
 
 class Scraper(scrapelib.Scraper):
-    """ Base class for all scrapers """
+    """Base class for all scrapers"""
 
     def __init__(
         self, jurisdiction, datadir, *, strict_validation=True, fastmode=False
@@ -160,18 +160,26 @@ class Scraper(scrapelib.Scraper):
         record = {"objects": defaultdict(int)}
         self.output_names = defaultdict(set)
         record["start"] = utils.utcnow()
-        for obj in self.scrape(**kwargs) or []:
-            if hasattr(obj, "__iter__"):
-                for iterobj in obj:
-                    self.save_object(iterobj)
-            else:
-                self.save_object(obj)
+        try:
+            for obj in self.scrape(**kwargs) or []:
+                if hasattr(obj, "__iter__"):
+                    for iterobj in obj:
+                        self.save_object(iterobj)
+                else:
+                    self.save_object(obj)
+        except EmptyScrape:
+            if self.output_names:
+                raise ScrapeError(
+                    f"objects returned from {self.__class__.__name__} scrape, expected none"
+                )
+        else:
+            if not self.output_names:
+                raise ScrapeError(
+                    "no objects returned from {} scrape".format(self.__class__.__name__)
+                )
+
         record["end"] = utils.utcnow()
         record["skipped"] = getattr(self, "skipped", 0)
-        if not self.output_names:
-            raise ScrapeError(
-                "no objects returned from {} scrape".format(self.__class__.__name__)
-            )
         for _type, nameset in self.output_names.items():
             record["objects"][_type] += len(nameset)
 
@@ -190,7 +198,7 @@ class BaseBillScraper(Scraper):
     skipped = 0
 
     class ContinueScraping(Exception):
-        """ indicate that scraping should continue without saving an object """
+        """indicate that scraping should continue without saving an object"""
 
         pass
 
@@ -289,7 +297,7 @@ class SourceMixin(object):
         self.sources = []
 
     def add_source(self, url, *, note=""):
-        """ Add a source URL from which data was collected """
+        """Add a source URL from which data was collected"""
         new = {"url": url, "note": note}
         self.sources.append(new)
 
