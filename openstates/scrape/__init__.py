@@ -5,3 +5,4 @@ from .vote_event import VoteEvent
 from .bill import Bill
 from .event import Event
 from .base import Scraper, BaseBillScraper
+from ..exceptions import EmptyScrape

@@ -58,3 +58,7 @@ class ScrapeError(OpenStatesError):
 
 class ScrapeValueError(OpenStatesError, ValueError):
     """ An invalid value was passed to a scrape object. """
+
+
+class EmptyScrape(OpenStatesError):
+    """ Indicate an intentionally empty scrape. """
