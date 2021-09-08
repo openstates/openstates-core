@@ -215,13 +215,28 @@ def test_citations():
     b.validate()
     assert len(b.citations) == 4
 
-    # with pytest.raises(ScrapeValueError):
+    with pytest.raises(TypeError):
         # Missing citation
-    b.add_version_link(
-        "Legal Code of Elbonia",
-        url="http://openstates.org",
-    )
-    # assert len(b.versions) == 4
+        b.add_citation(
+            "Legal Code of Elbonia",
+            url="http://openstates.org",
+        )
+
+        # Invalid citation
+        b.add_citation(
+            "Legal Code of Elbonia",
+            "",
+            citation_type="final",
+        )
+
+        # invalid citation type
+        b.add_citation(
+            "Legal Code of Elbonia",
+            "Chapter 12",
+            citation_type="aspiration",
+        )
+
+        b.validate()
 
 
 def test_versions():
