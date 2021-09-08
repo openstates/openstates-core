@@ -76,14 +76,15 @@ class Bill(SourceMixin, AssociatedLinkMixin, BaseModel):
         return action
 
     def add_citation(
-        self, citation, citation_type, effective=None, expiration=None, url=None
+        self, publication, citation, citation_type, *, effective=None, expires=None, url=None
     ):
         self.citations.append(
             {
+                "publication": publication,
                 "citation": citation,
                 "citation_type": citation_type,
                 "effective": effective,
-                "expiration": expiration,
+                "expires": expires,
                 "url": url,
             }
         )
