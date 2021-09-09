@@ -181,6 +181,7 @@ def test_add_documents():
     with pytest.raises(ScrapeValueError):
         b.validate()
 
+
 def test_citations():
     b = toy_bill()
 
@@ -205,7 +206,7 @@ def test_citations():
         citation_type="final",
         expires="2021-03-06"
     )
- 
+
     b.add_citation(
         "Constitution of Missouri",
         "Article X Section 6",
