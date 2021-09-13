@@ -41,7 +41,14 @@ class EventAgendaItem(dict, AssociatedLinkMixin):
         self.add_entity(name=person, entity_type="person", id=id, note=note)
 
     def add_media_link(
-        self, note, url, media_type, *, text="", type="media", on_duplicate="warn"
+        self,
+        note,
+        url,
+        media_type,
+        *,
+        on_duplicate="warn",
+        date="",
+        classification="",
     ):
         return self._add_associated_link(
             collection="media",
@@ -49,6 +56,8 @@ class EventAgendaItem(dict, AssociatedLinkMixin):
             url=url,
             media_type=media_type,
             on_duplicate=on_duplicate,
+            date=date,
+            classification=classification,
         )
 
     def add_entity(self, name, entity_type, *, id, note):
@@ -144,10 +153,9 @@ class Event(BaseModel, SourceMixin, AssociatedLinkMixin, LinkMixin):
         url,
         media_type,
         *,
-        text="",
-        type="media",
         on_duplicate="error",
         date="",
+        classification="",
     ):
         return self._add_associated_link(
             collection="media",
@@ -156,11 +164,10 @@ class Event(BaseModel, SourceMixin, AssociatedLinkMixin, LinkMixin):
             media_type=media_type,
             on_duplicate=on_duplicate,
             date=date,
+            classification=classification,
         )
 
-    def add_document(
-        self, note, url, *, text="", media_type="", on_duplicate="error", date=""
-    ):
+    def add_document(self, note, url, *, media_type="", on_duplicate="error", date=""):
         return self._add_associated_link(
             collection="documents",
             note=note,
