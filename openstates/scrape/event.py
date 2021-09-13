@@ -88,7 +88,8 @@ class Event(BaseModel, SourceMixin, AssociatedLinkMixin, LinkMixin):
         description="",
         end_date="",
         status="confirmed",
-        classification="event"
+        classification="event",
+        upstream_id="",
     ):
         super(Event, self).__init__()
         self.start_date = start_date
@@ -98,6 +99,7 @@ class Event(BaseModel, SourceMixin, AssociatedLinkMixin, LinkMixin):
         self.description = description
         self.status = status
         self.classification = classification
+        self.upstream_id = upstream_id
         self.location = {"name": location_name, "note": "", "coordinates": None}
         self.documents = []
         self.participants = []
@@ -145,7 +147,7 @@ class Event(BaseModel, SourceMixin, AssociatedLinkMixin, LinkMixin):
         text="",
         type="media",
         on_duplicate="error",
-        date=""
+        date="",
     ):
         return self._add_associated_link(
             collection="media",
