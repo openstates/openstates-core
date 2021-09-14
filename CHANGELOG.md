@@ -1,5 +1,13 @@
 # Changelog
 
+## 6.5.0
+
+* allow raising `EmptyScrape` to end a scrape without 'no objects returned' error
+* added `upstream_id` to Event model
+* add classification parameter to `Event.add_document`
+* fix up `Event.add_media_link` parameters to be uniform (including classification)
+* added `Event.add_bill` helper method
+
 ## 6.4.1 - August 19 2021
 
 * committee merge bugfix for parent committees

@@ -63,7 +63,9 @@ class Event(OCDBase):
     all_day = models.BooleanField(default=False)
     status = models.CharField(max_length=20, choices=EVENT_STATUS_CHOICES)
     location = models.ForeignKey(EventLocation, null=True, on_delete=models.SET_NULL)
+    upstream_id = models.CharField(max_length=300, blank=True)
     dedupe_key = models.CharField(max_length=500, null=True)
+    deleted = models.BooleanField(default=False)
 
     def __str__(self):
         return "{0} ({1})".format(self.name, self.start_date)

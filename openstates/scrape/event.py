@@ -1,7 +1,17 @@
+from datetime import date, timedelta
 from ..exceptions import ScrapeValueError
 from ..utils import _make_pseudo_id
 from .base import BaseModel, SourceMixin, AssociatedLinkMixin, LinkMixin
 from .schemas.event import schema
+
+
+def calculate_window(*, base_day=None, days_before=30, days_after=90):
+    """ given details on a window, returns start & end dates for windowing purposes """
+    if not base_day:
+        base_day = date.today()
+    start = base_day - timedelta(days=days_before)
+    end = base_day + timedelta(days=days_after)
+    return start, end
 
 
 class EventAgendaItem(dict, AssociatedLinkMixin):
@@ -41,7 +51,14 @@ class EventAgendaItem(dict, AssociatedLinkMixin):
         self.add_entity(name=person, entity_type="person", id=id, note=note)
 
     def add_media_link(
-        self, note, url, media_type, *, text="", type="media", on_duplicate="warn"
+        self,
+        note,
+        url,
+        media_type,
+        *,
+        on_duplicate="warn",
+        date="",
+        classification="",
     ):
         return self._add_associated_link(
             collection="media",
@@ -49,6 +66,8 @@ class EventAgendaItem(dict, AssociatedLinkMixin):
             url=url,
             media_type=media_type,
             on_duplicate=on_duplicate,
+            date=date,
+            classification=classification,
         )
 
     def add_entity(self, name, entity_type, *, id, note):
@@ -88,7 +107,8 @@ class Event(BaseModel, SourceMixin, AssociatedLinkMixin, LinkMixin):
         description="",
         end_date="",
         status="confirmed",
-        classification="event"
+        classification="event",
+        upstream_id="",
     ):
         super(Event, self).__init__()
         self.start_date = start_date
@@ -98,6 +118,7 @@ class Event(BaseModel, SourceMixin, AssociatedLinkMixin, LinkMixin):
         self.description = description
         self.status = status
         self.classification = classification
+        self.upstream_id = upstream_id
         self.location = {"name": location_name, "note": "", "coordinates": None}
         self.documents = []
         self.participants = []
@@ -136,16 +157,30 @@ class Event(BaseModel, SourceMixin, AssociatedLinkMixin, LinkMixin):
         self.agenda.append(obj)
         return obj
 
+    def add_bill(self, bill, *, note="consideration", agenda_item="Associated Bills"):
+        """
+        adds a dummy agenda item for associating bills for cases where we want bills
+        but don't have appropriate agenda items
+
+        context: https://github.com/openstates/enhancement-proposals/pull/28#issuecomment-898720989
+        """
+        for item in self.agenda:
+            if item["description"] == agenda_item:
+                break
+        else:
+            item = EventAgendaItem(agenda_item, self)
+            self.agenda.append(item)
+        item.add_bill(bill, note=note)
+
     def add_media_link(
         self,
         note,
         url,
         media_type,
         *,
-        text="",
-        type="media",
         on_duplicate="error",
-        date=""
+        date="",
+        classification="",
     ):
         return self._add_associated_link(
             collection="media",
@@ -154,10 +189,18 @@ class Event(BaseModel, SourceMixin, AssociatedLinkMixin, LinkMixin):
             media_type=media_type,
             on_duplicate=on_duplicate,
             date=date,
+            classification=classification,
         )
 
     def add_document(
-        self, note, url, *, text="", media_type="", on_duplicate="error", date=""
+        self,
+        note,
+        url,
+        *,
+        media_type="",
+        on_duplicate="error",
+        date="",
+        classification="",
     ):
         return self._add_associated_link(
             collection="documents",
@@ -166,4 +209,5 @@ class Event(BaseModel, SourceMixin, AssociatedLinkMixin, LinkMixin):
             media_type=media_type,
             on_duplicate=on_duplicate,
             date=date,
+            classification=classification,
         )

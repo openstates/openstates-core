@@ -45,6 +45,7 @@ schema = {
         },
         "classification": {"type": "string", "minLength": 1},  # TODO: enum
         "description": {"type": "string"},
+        "upstream_id": {"type": "string"},
         "location": {
             "type": "object",
             "properties": {

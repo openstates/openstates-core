@@ -1,6 +1,6 @@
 import pytest
 import datetime
-from openstates.scrape import Event
+from openstates.scrape import Event, calculate_window
 
 
 def event_obj():
@@ -111,10 +111,16 @@ def test_add_bill():
 def test_add_document():
     e = event_obj()
     assert e.documents == []
-    e.add_document(note="hello", url="http://example.com", media_type="text/html")
+    e.add_document(
+        note="hello",
+        url="http://example.com",
+        media_type="text/html",
+        classification="testimony",
+    )
     assert len(e.documents) == 1
     o = e.documents[0]
     assert o["note"] == "hello"
+    assert o["classification"] == "testimony"
     assert o["links"] == [{"url": "http://example.com", "media_type": "text/html"}]
     e.validate()
 
@@ -168,3 +174,34 @@ def test_add_media():
     e.validate()
     assert len(e.media) == 1
     assert len(e.media[0]["links"]) == 2
+
+
+def test_add_bill_on_event():
+    e = event_obj()
+    e.add_bill("HB 6")
+    e.validate()
+    assert e.agenda[0]["description"] == "Associated Bills"
+    assert e.agenda[0]["related_entities"][0] == {
+        "bill_id": '~{"identifier": "HB 6"}',
+        "entity_type": "bill",
+        "name": "HB 6",
+        "note": "consideration",
+    }
+    e.add_bill("HB 7", note="passed")
+    assert e.agenda[0]["related_entities"][1] == {
+        "bill_id": '~{"identifier": "HB 7"}',
+        "entity_type": "bill",
+        "name": "HB 7",
+        "note": "passed",
+    }
+
+
+def test_calculate_window():
+    base_day = datetime.date(2021, 9, 14)
+    start, end = calculate_window(base_day=base_day)
+    assert start == datetime.date(2021, 8, 15)
+    assert end == datetime.date(2021, 12, 13)
+
+    start, end = calculate_window(base_day=base_day, days_before=1, days_after=1)
+    assert start == datetime.date(2021, 9, 13)
+    assert end == datetime.date(2021, 9, 15)
