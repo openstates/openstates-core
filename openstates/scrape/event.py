@@ -1,7 +1,17 @@
+from datetime import date, timedelta
 from ..exceptions import ScrapeValueError
 from ..utils import _make_pseudo_id
 from .base import BaseModel, SourceMixin, AssociatedLinkMixin, LinkMixin
 from .schemas.event import schema
+
+
+def calculate_window(*, base_day=None, days_before=30, days_after=90):
+    """ given details on a window, returns start & end dates for windowing purposes """
+    if not base_day:
+        base_day = date.today()
+    start = base_day - timedelta(days=days_before)
+    end = base_day + timedelta(days=days_after)
+    return start, end
 
 
 class EventAgendaItem(dict, AssociatedLinkMixin):

@@ -1,6 +1,6 @@
 import pytest
 import datetime
-from openstates.scrape import Event
+from openstates.scrape import Event, calculate_window
 
 
 def event_obj():
@@ -194,3 +194,14 @@ def test_add_bill_on_event():
         "name": "HB 7",
         "note": "passed",
     }
+
+
+def test_calculate_window():
+    base_day = datetime.date(2021, 9, 14)
+    start, end = calculate_window(base_day=base_day)
+    assert start == datetime.date(2021, 8, 15)
+    assert end == datetime.date(2021, 12, 13)
+
+    start, end = calculate_window(base_day=base_day, days_before=1, days_after=1)
+    assert start == datetime.date(2021, 9, 13)
+    assert end == datetime.date(2021, 9, 15)
