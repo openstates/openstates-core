@@ -147,6 +147,21 @@ class Event(BaseModel, SourceMixin, AssociatedLinkMixin, LinkMixin):
         self.agenda.append(obj)
         return obj
 
+    def add_bill(self, bill, *, note="consideration", agenda_item="Associated Bills"):
+        """
+        adds a dummy agenda item for associating bills for cases where we want bills
+        but don't have appropriate agenda items
+
+        context: https://github.com/openstates/enhancement-proposals/pull/28#issuecomment-898720989
+        """
+        for item in self.agenda:
+            if item["description"] == agenda_item:
+                break
+        else:
+            item = EventAgendaItem(agenda_item, self)
+            self.agenda.append(item)
+        item.add_bill(bill, note=note)
+
     def add_media_link(
         self,
         note,

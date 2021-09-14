@@ -168,3 +168,23 @@ def test_add_media():
     e.validate()
     assert len(e.media) == 1
     assert len(e.media[0]["links"]) == 2
+
+
+def test_add_bill_on_event():
+    e = event_obj()
+    e.add_bill("HB 6")
+    e.validate()
+    assert e.agenda[0]["description"] == "Associated Bills"
+    assert e.agenda[0]["related_entities"][0] == {
+        "bill_id": '~{"identifier": "HB 6"}',
+        "entity_type": "bill",
+        "name": "HB 6",
+        "note": "consideration",
+    }
+    e.add_bill("HB 7", note="passed")
+    assert e.agenda[0]["related_entities"][1] == {
+        "bill_id": '~{"identifier": "HB 7"}',
+        "entity_type": "bill",
+        "name": "HB 7",
+        "note": "passed",
+    }
