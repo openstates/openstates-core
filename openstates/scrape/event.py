@@ -182,7 +182,16 @@ class Event(BaseModel, SourceMixin, AssociatedLinkMixin, LinkMixin):
             classification=classification,
         )
 
-    def add_document(self, note, url, *, media_type="", on_duplicate="error", date=""):
+    def add_document(
+        self,
+        note,
+        url,
+        *,
+        media_type="",
+        on_duplicate="error",
+        date="",
+        classification="",
+    ):
         return self._add_associated_link(
             collection="documents",
             note=note,
@@ -190,4 +199,5 @@ class Event(BaseModel, SourceMixin, AssociatedLinkMixin, LinkMixin):
             media_type=media_type,
             on_duplicate=on_duplicate,
             date=date,
+            classification=classification,
         )

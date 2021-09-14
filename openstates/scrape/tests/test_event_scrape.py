@@ -111,10 +111,16 @@ def test_add_bill():
 def test_add_document():
     e = event_obj()
     assert e.documents == []
-    e.add_document(note="hello", url="http://example.com", media_type="text/html")
+    e.add_document(
+        note="hello",
+        url="http://example.com",
+        media_type="text/html",
+        classification="testimony",
+    )
     assert len(e.documents) == 1
     o = e.documents[0]
     assert o["note"] == "hello"
+    assert o["classification"] == "testimony"
     assert o["links"] == [{"url": "http://example.com", "media_type": "text/html"}]
     e.validate()
 
