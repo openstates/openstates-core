@@ -205,7 +205,7 @@ def compute_merge(
             changes.extend(compute_merge(val1, val2, prefix=key_name))
         else:
             # if values both exist and differ, or val1 is empty, do a Replace
-            if (val1 and val2 and val1 != val2) or not val1:
+            if (val1 and val2 and val1 != val2) or (not val1 and val2):
                 changes.append(Replace(key_name, val1, val2))
 
     return changes
@@ -435,15 +435,36 @@ def process_scrape_dir(input_dir: Path, jurisdiction_id: str) -> list[Person]:
     return new_people
 
 
-def process_person(data: dict, jurisdiction_id: str) -> Person:
-    offices = []
-    if office := data.pop("capitol_office"):
-        offices.append(office)
-    if office := data.pop("district_office"):
-        offices.append(office)
-    offices.extend(data.pop("additional_offices"))
+def process_office(office_type: str, office_data: dict):
+    voice = fax = address = ""
+    if value := office_data["voice"]:
+        voice = reformat_phone_number(value)
+    if value := office_data["fax"]:
+        fax = reformat_phone_number(value)
+    if value := office_data["address"]:
+        address = reformat_address(value)
 
-    # TODO: use this?
+    if voice or fax or address:
+        return ContactDetail(note=office_type, voice=voice, fax=fax, address=address)
+    else:
+        return None
+
+
+def process_person(data: dict, jurisdiction_id: str) -> Person:
+    contact_details: list[ContactDetail] = []
+    if office := data.pop("capitol_office"):
+        cd = process_office("Capitol Office", office)
+        if cd:
+            contact_details.append(cd)
+    if office := data.pop("district_office"):
+        cd = process_office("District Office", office)
+        if cd:
+            contact_details.append(cd)
+    for office in data.pop("additional_offices"):
+        cd = process_office("District Office", office)
+        if cd:
+            contact_details.append(cd)
+
     data.pop("state")
     chamber = data.pop("chamber")
     district = data.pop("district")
@@ -462,27 +483,9 @@ def process_person(data: dict, jurisdiction_id: str) -> Person:
         sources=[
             Link(url=link["url"], note=link["note"]) for link in data.pop("sources")
         ],
+        contact_details=contact_details,
         **data,
     )
-
-    # TODO: fix this
-    # contact_details: defaultdict[str, defaultdict[str, list[str]]] = defaultdict(
-    #     lambda: defaultdict(list)
-    # )
-    # email = None
-    # for detail in person["contact_details"]:
-    #     value = detail["value"]
-    #     if detail["type"] in ("voice", "fax"):
-    #         value = reformat_phone_number(value)
-    #     elif detail["type"] == "address":
-    #         value = reformat_address(value)
-    #     elif detail["type"] == "email":
-    #         email = value
-    #         continue
-    #     contact_details[detail["note"]][detail["type"]] = value
-    # result.contact_details = [
-    #     ContactDetail(note=key, **val) for key, val in contact_details.items()
-    # ]
 
     return result
 
