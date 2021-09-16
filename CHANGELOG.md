@@ -7,6 +7,7 @@
 * add classification parameter to `Event.add_document`
 * fix up `Event.add_media_link` parameters to be uniform (including classification)
 * added `Event.add_bill` helper method
+* `os-people-to-yaml` is now part of `os-people merge`
 
 ## 6.4.1 - August 19 2021
 
