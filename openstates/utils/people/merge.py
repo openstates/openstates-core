@@ -433,7 +433,9 @@ def process_scrape_dir(input_dir: Path, jurisdiction_id: str) -> list[Person]:
     return new_people
 
 
-def process_office(office_type: str, office_data: dict):
+def process_office(
+    office_type: str, office_data: dict
+) -> typing.Optional[ContactDetail]:
     voice = fax = address = ""
     if value := office_data["voice"]:
         voice = reformat_phone_number(value)
