@@ -1,7 +1,7 @@
 import os
 from pathlib import Path
 import pytest  # type: ignore
-from openstates.cli.legacy_people_to_yaml import (
+from openstates.utils.people.merge import (
     reformat_phone_number,
     reformat_address,
     compute_merge,
