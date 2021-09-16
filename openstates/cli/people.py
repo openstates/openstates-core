@@ -28,6 +28,7 @@ from ..utils.people.to_database import (
     load_person,
     CancelTransaction,
 )
+from ..utils.people.merge import process_scrape_dir, incoming_merge
 
 
 OPTIONAL_FIELD_SET = {
@@ -687,6 +688,38 @@ def to_database(abbreviations: list[str], purge: bool, safe: bool) -> None:
                     raise CancelTransaction()
         except CancelTransaction:
             sys.exit(1)
+
+
+@main.command()  # pragma: no cover
+@click.argument("abbr")
+@click.argument("input_dir")
+@click.option(
+    "--retirement",
+    default=None,
+    help="Set retirement date for all people marked retired.",
+)
+def merge(abbr: str, input_dir: str, retirement: str) -> None:
+    """
+    Convert scraped JSON in INPUT_DIR to YAML files for this repo.
+    """
+    jurisdiction_id = abbr_to_jid(abbr)
+
+    new_people = process_scrape_dir(Path(input_dir), jurisdiction_id)
+
+    existing_people: list[Person] = []
+    directory = get_data_path(abbr)
+    for filename in itertools.chain(
+        directory.glob("legislature/*.yml"),
+        directory.glob("retired/*.yml"),
+    ):
+        existing_people.append(Person.load_yaml(filename))
+
+    click.secho(
+        f"analyzing {len(existing_people)} existing people and {len(new_people)} scraped"
+    )
+
+    unmatched = incoming_merge(abbr, existing_people, new_people, retirement)
+    click.secho(f"{len(unmatched)} people were unmatched")
 
 
 if __name__ == "__main__":

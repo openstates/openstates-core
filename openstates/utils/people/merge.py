@@ -2,12 +2,10 @@ import typing
 import re
 import json
 import click
-import itertools
 from pathlib import Path
 from pydantic import BaseModel
-from .. import metadata
-from ..utils import abbr_to_jid
-from ..utils.people import (
+from ... import metadata
+from ..people import (
     get_new_filename,
     get_data_path,
     dump_obj,
@@ -15,7 +13,7 @@ from ..utils.people import (
     retire_person,
     retire_file,
 )
-from ..models.people import (
+from ...models.people import (
     Person,
     Role,
     Party,
@@ -488,39 +486,3 @@ def process_person(data: dict, jurisdiction_id: str) -> Person:
     )
 
     return result
-
-
-@click.command()  # pragma: no cover
-@click.argument("abbr")
-@click.argument("input_dir")
-@click.option(
-    "--retirement",
-    default=None,
-    help="Set retirement date for all people marked retired.",
-)
-def main(abbr: str, input_dir: str, retirement: str) -> None:
-    """
-    Convert scraped JSON in INPUT_DIR to YAML files for this repo.
-    """
-    jurisdiction_id = abbr_to_jid(abbr)
-
-    new_people = process_scrape_dir(Path(input_dir), jurisdiction_id)
-
-    existing_people: list[Person] = []
-    directory = get_data_path(abbr)
-    for filename in itertools.chain(
-        directory.glob("legislature/*.yml"),
-        directory.glob("retired/*.yml"),
-    ):
-        existing_people.append(Person.load_yaml(filename))
-
-    click.secho(
-        f"analyzing {len(existing_people)} existing people and {len(new_people)} scraped"
-    )
-
-    unmatched = incoming_merge(abbr, existing_people, new_people, retirement)
-    click.secho(f"{len(unmatched)} people were unmatched")
-
-
-if __name__ == "__main__":
-    main()
