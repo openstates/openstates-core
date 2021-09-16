@@ -12,7 +12,6 @@ os-update-computed = 'openstates.cli.update_computed:main'
 os-text-extract = 'openstates.cli.text_extract:main'
 os-people = 'openstates.cli.people:main'
 os-committees = 'openstates.cli.committees:main'
-os-people-to-yaml = 'openstates.cli.legacy_people_to_yaml:main'
 os-us-to-yaml = 'openstates.cli.convert_us:main'
 
 [tool.poetry.dependencies]
