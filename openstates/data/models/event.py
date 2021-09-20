@@ -2,7 +2,6 @@ from django.db import models
 from django.contrib.postgres.fields import ArrayField
 from .base import (
     OCDBase,
-    LinkBase,
     OCDIDField,
     RelatedBase,
     RelatedEntityBase,
@@ -64,8 +63,14 @@ class Event(OCDBase):
     status = models.CharField(max_length=20, choices=EVENT_STATUS_CHOICES)
     location = models.ForeignKey(EventLocation, null=True, on_delete=models.SET_NULL)
     upstream_id = models.CharField(max_length=300, blank=True)
+
+    # internal fields
     dedupe_key = models.CharField(max_length=500, null=True)
     deleted = models.BooleanField(default=False)
+
+    # compound fields
+    sources = models.JSONField(default=list, blank=True)
+    links = models.JSONField(default=list, blank=True)
 
     def __str__(self):
         return "{0} ({1})".format(self.name, self.start_date)
@@ -126,20 +131,6 @@ class EventDocumentLink(MimetypeLinkBase):
 
     class Meta:
         db_table = "opencivicdata_eventdocumentlink"
-
-
-class EventLink(LinkBase):
-    event = models.ForeignKey(Event, related_name="links", on_delete=models.CASCADE)
-
-    class Meta:
-        db_table = "opencivicdata_eventlink"
-
-
-class EventSource(LinkBase):
-    event = models.ForeignKey(Event, related_name="sources", on_delete=models.CASCADE)
-
-    class Meta:
-        db_table = "opencivicdata_eventsource"
 
 
 class EventParticipant(RelatedEntityBase):

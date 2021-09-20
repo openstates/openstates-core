@@ -35,8 +35,6 @@ from .event import (
     EventMedia,
     EventMediaLink,
     EventDocument,
-    EventLink,
-    EventSource,
     EventParticipant,
     EventAgendaItem,
     EventRelatedEntity,
