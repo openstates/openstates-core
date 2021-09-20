@@ -51,12 +51,6 @@ class EventDocumentAdmin(admin.ModelAdmin):
     list_display = ("event", "date", "note")
 
 
-# @admin.register(models.EventDocumentLink)
-# class EventDocumentLinkAdmin(base.MimetypeLinkAdmin):
-#    readonly_fields = ('document',)
-#    list_display = ('document', 'media_type', 'url',)
-
-
 @admin.register(models.EventSource)
 class EventSourceAdmin(admin.ModelAdmin):
     readonly_fields = ("event",)
@@ -92,9 +86,4 @@ class EventRelatedEntityAdmin(admin.ModelAdmin):
 
 @admin.register(models.EventAgendaMedia)
 class EventAgendaMediaAdmin(admin.ModelAdmin):
-    pass
-
-
-@admin.register(models.EventAgendaMediaLink)
-class EventAgendaMediaLinkAdmin(admin.ModelAdmin):
     pass

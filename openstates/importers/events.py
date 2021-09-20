@@ -5,14 +5,11 @@ from ..data.models import (
     Event,
     EventLocation,
     EventDocument,
-    EventDocumentLink,
     EventParticipant,
     EventMedia,
-    EventMediaLink,
     EventAgendaItem,
     EventRelatedEntity,
     EventAgendaMedia,
-    EventAgendaMediaLink,
 )
 from .organizations import OrganizationImporter
 from .vote_events import VoteEventImporter
@@ -26,20 +23,16 @@ class EventImporter(BaseImporter):
         "documents": (
             EventDocument,
             "event_id",
-            {"links": (EventDocumentLink, "document_id", {})},
+            {},
         ),
         "participants": (EventParticipant, "event_id", {}),
-        "media": (EventMedia, "event_id", {"links": (EventMediaLink, "media_id", {})}),
+        "media": (EventMedia, "event_id", {}),
         "agenda": (
             EventAgendaItem,
             "event_id",
             {
                 "related_entities": (EventRelatedEntity, "agenda_item_id", {}),
-                "media": (
-                    EventAgendaMedia,
-                    "agenda_item_id",
-                    {"links": (EventAgendaMediaLink, "media_id", {})},
-                ),
+                "media": (EventAgendaMedia, "agenda_item_id", {}),
             },
         ),
     }
