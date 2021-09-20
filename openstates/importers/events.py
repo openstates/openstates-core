@@ -4,10 +4,8 @@ from ..utils import get_pseudo_id, _make_pseudo_id
 from ..data.models import (
     Event,
     EventLocation,
-    EventSource,
     EventDocument,
     EventDocumentLink,
-    EventLink,
     EventParticipant,
     EventMedia,
     EventMediaLink,
@@ -25,13 +23,11 @@ class EventImporter(BaseImporter):
     _type = "event"
     model_class = Event
     related_models = {
-        "sources": (EventSource, "event_id", {}),
         "documents": (
             EventDocument,
             "event_id",
             {"links": (EventDocumentLink, "document_id", {})},
         ),
-        "links": (EventLink, "event_id", {}),
         "participants": (EventParticipant, "event_id", {}),
         "media": (EventMedia, "event_id", {"links": (EventMediaLink, "media_id", {})}),
         "agenda": (
@@ -83,7 +79,6 @@ class EventImporter(BaseImporter):
             url=location_data.get("url", ""),
             jurisdiction_id=self.jurisdiction_id,
         )
-        # TODO: geocode here?
         return obj
 
     def prepare_for_db(self, data: _JsonDict) -> _JsonDict:

@@ -9,14 +9,6 @@ class EventLocationAdmin(admin.ModelAdmin):
     pass
 
 
-class EventLinkInline(base.LinkInline):
-    model = models.EventLink
-
-
-class EventSourceInline(base.LinkInline):
-    model = models.EventSource
-
-
 class EventParticipantInline(base.RelatedEntityInline):
     model = models.EventParticipant
     readonly_fields = ("organization", "person")
@@ -45,7 +37,7 @@ class EventAdmin(admin.ModelAdmin):
 
     list_display = ("jurisdiction", "name", "start_date", "source_link")
 
-    inlines = [EventLinkInline, EventSourceInline, EventParticipantInline]
+    inlines = [EventParticipantInline]
 
 
 @admin.register(models.EventMedia)
