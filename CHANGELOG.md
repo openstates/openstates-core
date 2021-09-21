@@ -1,6 +1,6 @@
 # Changelog
 
-## 6.5.0
+## 6.5.0 - September 21 2021
 
 * allow raising `EmptyScrape` to end a scrape without 'no objects returned' error
 * added `upstream_id` to Event model
@@ -8,6 +8,7 @@
 * fix up `Event.add_media_link` parameters to be uniform (including classification)
 * added `Event.add_bill` helper method
 * `os-people-to-yaml` is now part of `os-people merge`
+* Events imports now include soft-deletion of events that are not included in latest scrape
 
 ## 6.4.1 - August 19 2021
 
