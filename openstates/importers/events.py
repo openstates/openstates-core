@@ -78,6 +78,8 @@ class EventImporter(BaseImporter):
         data["jurisdiction_id"] = self.jurisdiction_id
         data["location"] = self.get_location(data["location"])
 
+        # all objects being inserted should be non-deleted
+        data["deleted"] = False
         data["start_date"] = data["start_date"]
         data["end_date"] = data.get("end_date", "")
 
@@ -111,3 +113,10 @@ class EventImporter(BaseImporter):
                     )
 
         return data
+
+    def postimport(self) -> None:
+        all_db_ids = self.json_to_db_id.values()
+        update_set = Event.objects.filter(jurisdiction_id=self.jurisdiction_id).exclude(
+            id__in=all_db_ids, deleted=False
+        )
+        update_set.update(deleted=True)

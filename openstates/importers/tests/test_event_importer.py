@@ -329,3 +329,32 @@ def test_event_agenda_item():
     e = Event.objects.get()
     a = e.agenda.all()[0]
     assert a.extras == {"one": 1, "two": [2]}
+
+
+@pytest.mark.django_db
+def test_event_soft_deletion():
+    create_jurisdiction()
+    event1 = ge()
+    event2 = ge()
+    event2.name = "Other Event"
+    result = EventImporter("jid", oi, bi, vei).import_data(
+        [event1.as_dict(), event2.as_dict()]
+    )
+    assert result["event"]["insert"] == 2
+    assert Event.objects.count() == 2
+
+    # delete
+    result = EventImporter("jid", oi, bi, vei).import_data([event1.as_dict()])
+    assert result["event"]["noop"] == 1
+    # TODO: assert result["event"]["deleted"] == 1
+    assert Event.objects.count() == 2
+    assert Event.objects.get(deleted=True).name == "Other Event"
+
+    # undelete
+    result = EventImporter("jid", oi, bi, vei).import_data(
+        [event1.as_dict(), event2.as_dict()]
+    )
+    assert result["event"]["update"] == 1
+    assert result["event"]["noop"] == 1
+    assert Event.objects.count() == 2
+    assert Event.objects.filter(deleted=True).count() == 0
