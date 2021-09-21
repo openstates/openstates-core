@@ -5,7 +5,6 @@ from .base import (
     OCDIDField,
     RelatedBase,
     RelatedEntityBase,
-    MimetypeLinkBase,
 )
 from .jurisdiction import Jurisdiction
 from .bill import Bill
@@ -85,24 +84,13 @@ class EventMedia(EventMediaBase):
     classification = models.CharField(
         max_length=50, choices=EVENT_MEDIA_CLASSIFICATION_CHOICES, blank=True
     )
+    links = models.JSONField(default=list, blank=True)
 
     def __str__(self):
         return "%s for %s" % (self.note, self.event)
 
     class Meta:
         db_table = "opencivicdata_eventmedia"
-
-
-class EventMediaLink(MimetypeLinkBase):
-    media = models.ForeignKey(
-        EventMedia, related_name="links", on_delete=models.CASCADE
-    )
-
-    def __str__(self):
-        return "{0} for {1}".format(self.url, self.media.event)
-
-    class Meta:
-        db_table = "opencivicdata_eventmedialink"
 
 
 class EventDocument(RelatedBase):
@@ -112,6 +100,7 @@ class EventDocument(RelatedBase):
     classification = models.CharField(
         max_length=50, choices=EVENT_DOCUMENT_CLASSIFICATION_CHOICES, blank=True
     )
+    links = models.JSONField(default=list, blank=True)
 
     def __str__(self):
         tmpl = "{doc.note} for event {doc.event}"
@@ -119,18 +108,6 @@ class EventDocument(RelatedBase):
 
     class Meta:
         db_table = "opencivicdata_eventdocument"
-
-
-class EventDocumentLink(MimetypeLinkBase):
-    document = models.ForeignKey(
-        EventDocument, related_name="links", on_delete=models.CASCADE
-    )
-
-    def __str__(self):
-        return "{0} for {1}".format(self.url, self.document)
-
-    class Meta:
-        db_table = "opencivicdata_eventdocumentlink"
 
 
 class EventParticipant(RelatedEntityBase):
@@ -203,21 +180,10 @@ class EventAgendaMedia(EventMediaBase):
         EventAgendaItem, related_name="media", on_delete=models.CASCADE
     )
     classification = models.CharField(max_length=100, blank=True, default="")
+    links = models.JSONField(default=list, blank=True)
 
     def __str__(self):
         return "{0} for {1}".format(self.note, self.agenda_item)
 
     class Meta:
         db_table = "opencivicdata_eventagendamedia"
-
-
-class EventAgendaMediaLink(MimetypeLinkBase):
-    media = models.ForeignKey(
-        EventAgendaMedia, related_name="links", on_delete=models.CASCADE
-    )
-
-    def __str__(self):
-        return "{0} for {1}".format(self.url, self.media)
-
-    class Meta:
-        db_table = "opencivicdata_eventagendamedialink"

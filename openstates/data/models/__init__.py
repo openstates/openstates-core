@@ -33,14 +33,11 @@ from .event import (
     Event,
     EventLocation,
     EventMedia,
-    EventMediaLink,
     EventDocument,
     EventParticipant,
     EventAgendaItem,
     EventRelatedEntity,
     EventAgendaMedia,
-    EventAgendaMediaLink,
-    EventDocumentLink,
 )
 from .reports import (
     RunPlan,

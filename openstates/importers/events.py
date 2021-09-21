@@ -5,14 +5,11 @@ from ..data.models import (
     Event,
     EventLocation,
     EventDocument,
-    EventDocumentLink,
     EventParticipant,
     EventMedia,
-    EventMediaLink,
     EventAgendaItem,
     EventRelatedEntity,
     EventAgendaMedia,
-    EventAgendaMediaLink,
 )
 from .organizations import OrganizationImporter
 from .vote_events import VoteEventImporter
@@ -26,20 +23,16 @@ class EventImporter(BaseImporter):
         "documents": (
             EventDocument,
             "event_id",
-            {"links": (EventDocumentLink, "document_id", {})},
+            {},
         ),
         "participants": (EventParticipant, "event_id", {}),
-        "media": (EventMedia, "event_id", {"links": (EventMediaLink, "media_id", {})}),
+        "media": (EventMedia, "event_id", {}),
         "agenda": (
             EventAgendaItem,
             "event_id",
             {
                 "related_entities": (EventRelatedEntity, "agenda_item_id", {}),
-                "media": (
-                    EventAgendaMedia,
-                    "agenda_item_id",
-                    {"links": (EventAgendaMediaLink, "media_id", {})},
-                ),
+                "media": (EventAgendaMedia, "agenda_item_id", {}),
             },
         ),
     }
@@ -85,6 +78,8 @@ class EventImporter(BaseImporter):
         data["jurisdiction_id"] = self.jurisdiction_id
         data["location"] = self.get_location(data["location"])
 
+        # all objects being inserted should be non-deleted
+        data["deleted"] = False
         data["start_date"] = data["start_date"]
         data["end_date"] = data.get("end_date", "")
 
@@ -118,3 +113,10 @@ class EventImporter(BaseImporter):
                     )
 
         return data
+
+    def postimport(self) -> None:
+        all_db_ids = self.json_to_db_id.values()
+        update_set = Event.objects.filter(jurisdiction_id=self.jurisdiction_id).exclude(
+            id__in=all_db_ids, deleted=False
+        )
+        update_set.update(deleted=True)
