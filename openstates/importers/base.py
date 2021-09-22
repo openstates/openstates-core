@@ -172,6 +172,7 @@ class BaseImporter:
             | Q(legislative_session__end_date=""),
             legislative_session__start_date__lte=date,
             legislative_session__jurisdiction_id=self.jurisdiction_id,
+            identifier=bill_id,
         )
         ids = {each.id for each in objects}
 
