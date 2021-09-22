@@ -161,6 +161,12 @@ class BaseImporter:
         pass
 
     def resolve_bill(self, bill_id: str, *, date: str) -> typing.Optional[_ID]:
+        bill_transform_func = settings.IMPORT_TRANSFORMERS.get("bill", {}).get(
+            "identifier", None
+        )
+        if bill_transform_func:
+            bill_id = bill_transform_func(bill_id)
+
         objects = Bill.objects.filter(
             Q(legislative_session__end_date__gte=date)
             | Q(legislative_session__end_date=""),
