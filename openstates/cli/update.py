@@ -107,9 +107,7 @@ def do_import(juris, args):
     juris_importer = JurisdictionImporter(juris.jurisdiction_id)
     bill_importer = BillImporter(juris.jurisdiction_id)
     vote_event_importer = VoteEventImporter(juris.jurisdiction_id, bill_importer)
-    event_importer = EventImporter(
-        juris.jurisdiction_id, bill_importer, vote_event_importer
-    )
+    event_importer = EventImporter(juris.jurisdiction_id, vote_event_importer)
     report = {}
 
     with transaction.atomic():

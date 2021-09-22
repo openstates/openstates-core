@@ -1,6 +1,6 @@
 from .base import BaseImporter
 from ._types import _JsonDict
-from ..utils import get_pseudo_id, _make_pseudo_id
+from ..utils import get_pseudo_id
 from ..data.models import (
     Event,
     EventLocation,
@@ -13,7 +13,6 @@ from ..data.models import (
 )
 from .organizations import OrganizationImporter
 from .vote_events import VoteEventImporter
-from .bills import BillImporter
 
 
 class EventImporter(BaseImporter):
@@ -41,12 +40,10 @@ class EventImporter(BaseImporter):
     def __init__(
         self,
         jurisdiction_id: str,
-        bill_importer: BillImporter,
         vote_event_importer: VoteEventImporter,
     ):
         super(EventImporter, self).__init__(jurisdiction_id)
         self.org_importer = OrganizationImporter(jurisdiction_id)
-        self.bill_importer = bill_importer
         self.vote_event_importer = vote_event_importer
 
     def get_object(self, event: _JsonDict) -> Event:
@@ -105,12 +102,9 @@ class EventImporter(BaseImporter):
                         entity["organization_id"], allow_no_match=True
                     )
                 elif "bill_id" in entity:
-                    # unpack and repack bill psuedo id in case filters alter it
                     bill = get_pseudo_id(entity["bill_id"])
-                    self.bill_importer.apply_transformers(bill)
-                    bill = _make_pseudo_id(**bill)
-                    entity["bill_id"] = self.bill_importer.resolve_json_id(
-                        bill, allow_no_match=True
+                    entity["bill_id"] = self.resolve_bill(
+                        bill["identifier"], date=data["start_date"]
                     )
                 elif "vote_event_id" in entity:
                     entity["vote_event_id"] = self.vote_event_importer.resolve_json_id(
