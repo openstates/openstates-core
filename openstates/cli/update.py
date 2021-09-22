@@ -98,6 +98,7 @@ def do_import(juris, args):
         JurisdictionImporter,
         BillImporter,
         VoteEventImporter,
+        EventImporter,
     )
     from openstates.data.models import Jurisdiction as DatabaseJurisdiction
 
@@ -106,17 +107,20 @@ def do_import(juris, args):
     juris_importer = JurisdictionImporter(juris.jurisdiction_id)
     bill_importer = BillImporter(juris.jurisdiction_id)
     vote_event_importer = VoteEventImporter(juris.jurisdiction_id, bill_importer)
+    event_importer = EventImporter(
+        juris.jurisdiction_id, bill_importer, vote_event_importer
+    )
     report = {}
 
     with transaction.atomic():
         print("import jurisdictions...")
         report.update(juris_importer.import_directory(datadir))
-        if settings.ENABLE_BILLS:
-            print("import bills...")
-            report.update(bill_importer.import_directory(datadir))
-        if settings.ENABLE_VOTES:
-            print("import vote events...")
-            report.update(vote_event_importer.import_directory(datadir))
+        print("import bills...")
+        report.update(bill_importer.import_directory(datadir))
+        print("import vote events...")
+        report.update(vote_event_importer.import_directory(datadir))
+        print("import events...")
+        report.update(event_importer.import_directory(datadir))
         DatabaseJurisdiction.objects.filter(id=juris.jurisdiction_id).update(
             latest_bill_update=datetime.datetime.utcnow()
         )

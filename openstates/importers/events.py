@@ -41,12 +41,11 @@ class EventImporter(BaseImporter):
     def __init__(
         self,
         jurisdiction_id: str,
-        org_importer: OrganizationImporter,
         bill_importer: BillImporter,
         vote_event_importer: VoteEventImporter,
     ):
         super(EventImporter, self).__init__(jurisdiction_id)
-        self.org_importer = org_importer
+        self.org_importer = OrganizationImporter(jurisdiction_id)
         self.bill_importer = bill_importer
         self.vote_event_importer = vote_event_importer
 

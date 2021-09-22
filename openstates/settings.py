@@ -12,13 +12,6 @@ SCRAPELIB_VERIFY = True
 CACHE_DIR = os.path.join(os.getcwd(), "_cache")
 SCRAPED_DATA_DIR = os.path.join(os.getcwd(), "_data")
 
-# import settings
-
-ENABLE_BILLS = True
-ENABLE_VOTES = True
-ENABLE_PEOPLE_AND_ORGS = False
-ENABLE_EVENTS = False
-
 IMPORT_TRANSFORMERS = {"bill": {"identifier": transformers.fix_bill_id}}
 
 # Django settings
