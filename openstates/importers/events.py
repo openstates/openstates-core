@@ -83,8 +83,12 @@ class EventImporter(BaseImporter):
         data["end_date"] = data.get("end_date", "")
 
         for participant in data["participants"]:
+            # conversion from old/incorrect names first
             if "committee_id" in participant:
                 participant["organization_id"] = participant.pop("committee_id")
+            if "legislator_id" in participant:
+                participant["person_id"] = participant.pop("legislator_id")
+
             if "person_id" in participant:
                 participant["person_id"] = self.resolve_person(participant["person_id"])
             elif "organization_id" in participant:
