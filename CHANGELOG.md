@@ -1,5 +1,10 @@
 # Changelog
 
+## 6.5.1 - September 22 2021
+
+* import fix for committee_id on scraped events
+* enable import of events by default in os-update
+
 ## 6.5.0 - September 21 2021
 
 * allow raising `EmptyScrape` to end a scrape without 'no objects returned' error
