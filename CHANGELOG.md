@@ -1,5 +1,11 @@
 # Changelog
 
+## 6.5.2 - September 23 2021
+
+* bugfix for duplicates on Event importer
+* fix for bill matching on Event importer
+* speed up imports when there are no bills in import
+
 ## 6.5.1 - September 22 2021
 
 * import fix for committee_id on scraped events
