@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.5.3 - September 24 2021
+
+* bugfix for EventImporter.postimport being called after bill-only scrapes
+
 ## 6.5.2 - September 23 2021
 
 * bugfix for duplicates on Event importer
