@@ -302,7 +302,11 @@ class BaseImporter:
             record[what] += 1
 
         # all objects are loaded, a perfect time to do inter-object resolution and other tasks
-        self.postimport()
+        if self.json_to_db_id:
+            # only do postimport step if there are some items of this type
+            # resolution of bills take a long time if not
+            # and events & votes get deleted!
+            self.postimport()
 
         record["end"] = utcnow()
 

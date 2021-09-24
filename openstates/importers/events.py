@@ -115,7 +115,7 @@ class EventImporter(BaseImporter):
 
     def postimport(self) -> None:
         all_db_ids = self.json_to_db_id.values()
-        update_set = Event.objects.filter(jurisdiction_id=self.jurisdiction_id).exclude(
-            id__in=all_db_ids, deleted=False
-        )
+        update_set = Event.objects.filter(
+            jurisdiction_id=self.jurisdiction_id, deleted=False
+        ).exclude(id__in=all_db_ids)
         update_set.update(deleted=True)

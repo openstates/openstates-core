@@ -106,11 +106,6 @@ class BillImporter(BaseImporter):
         return data
 
     def postimport(self) -> None:
-
-        # shortcut if no bills imported
-        if not self.json_to_db_id:
-            return
-
         # go through all RelatedBill objs that are attached to a bill in this jurisdiction and
         # are currently unresolved
         for rb in RelatedBill.objects.filter(
