@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.5.4
+
+* bugfixes for committee merge with joint committees & case-insensitive matching
+
 ## 6.5.3 - September 24 2021
 
 * bugfix for EventImporter.postimport being called after bill-only scrapes
