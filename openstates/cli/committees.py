@@ -62,6 +62,7 @@ class PersonMatcher:
                 self.add_name(chamber, name.name, person.id)
 
     def add_name(self, chamber: str, name_piece: str, id_: str) -> None:
+        name_piece = name_piece.lower()
         self.all_ids.add(id_)
         if name_piece in self.current_people[chamber]:
             self.current_people[chamber][name_piece].add(id_)
@@ -73,6 +74,7 @@ class PersonMatcher:
 
     @lru_cache(500)
     def match(self, chamber: str, name: str) -> typing.Optional[str]:
+        name = name.lower()
         candidates = self.current_people[chamber].get(name, None)
         if not candidates:
             click.secho(
