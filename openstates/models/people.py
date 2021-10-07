@@ -75,10 +75,10 @@ EXECUTIVE_ROLES = (
 )
 
 
-class ContactType(str, Enum):
-    DISTRICT = "District Office"
-    CAPITOL = "Capitol Office"
-    PRIMARY = "Primary Office"
+class OfficeType(str, Enum):
+    DISTRICT = "district"
+    CAPITOL = "capitol"
+    PRIMARY = "primary"
 
 
 class PersonIdBlock(BaseModel):
@@ -129,15 +129,15 @@ class Role(TimeScoped):
         return values
 
 
-class ScrapeContactDetail(BaseModel):
-    # switch this to be a version of openstates' ContactDetail without root_validator when ready
-    note: ContactType
+class ScrapeOffice(BaseModel):
+    classification: OfficeType
     address: str = ""
     voice: str = ""
     fax: str = ""
+    name: str = ""
 
 
-class ContactDetail(ScrapeContactDetail):
+class Office(ScrapeOffice):
     _validate_strs = validator("address", allow_reuse=True)(validate_str_no_newline)
     _validate_phones = validator("voice", "fax", allow_reuse=True)(validate_phone)
 
@@ -175,9 +175,9 @@ class ScrapePerson(BaseModel):
     links: list[Link] = []
     sources: list[Link] = []
     ids: PersonIdBlock = PersonIdBlock()
-    capitol_office = ScrapeContactDetail(note="Capitol Office")
-    district_office = ScrapeContactDetail(note="District Office")
-    additional_offices: list[ScrapeContactDetail] = []
+    capitol_office = ScrapeOffice(classification="capitol")
+    district_office = ScrapeOffice(classification="district")
+    additional_offices: list[ScrapeOffice] = []
     extras: dict = {}
 
     @validator("party", pre=True)
@@ -197,15 +197,20 @@ class ScrapePerson(BaseModel):
 
     def add_office(
         self,
-        contact_type: ContactType,
+        classification: OfficeType,
         *,
         address: str = "",
         voice: str = "",
         fax: str = "",
+        name: str = "",
     ) -> None:
         self.additional_offices.append(
-            ScrapeContactDetail(
-                note=contact_type, address=address, voice=voice, fax=fax
+            ScrapeOffice(
+                classification=classification,
+                address=address,
+                voice=voice,
+                fax=fax,
+                name=name,
             )
         )
 
@@ -227,7 +232,7 @@ class Person(BaseModel):
     party: list[Party] = []
     roles: list[Role]
 
-    contact_details: list[ContactDetail] = []
+    offices: list[Office] = []
     links: list[Link] = []
     other_names: list[OtherName] = []
     ids: PersonIdBlock = PersonIdBlock()
