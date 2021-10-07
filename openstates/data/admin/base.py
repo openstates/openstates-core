@@ -44,13 +44,6 @@ class LinkInline(admin.TabularInline):
     extra = 0
 
 
-class ContactDetailInline(admin.TabularInline):
-    fields = ("type", "value", "note", "label")
-    extra = 0
-    verbose_name = "Piece of contact information"
-    verbose_name_plural = "Contact information"
-
-
 class OtherNameInline(admin.TabularInline):
     extra = 0
     verbose_name = "Alternate name"
