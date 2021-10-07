@@ -145,7 +145,7 @@ class Replace:
 class OfficesReplace(Replace):
     def __str__(self) -> str:
         def _fmt_cd(cd: Office) -> str:
-            cd_str = f"{cd.note}"
+            cd_str = f"{cd.display_name}"
             for key in ("address", "voice", "fax"):
                 if val := getattr(cd, key):
                     cd_str += f" {key}={val}"
@@ -441,7 +441,7 @@ def process_office(office_type: str, office_data: dict) -> typing.Optional[Offic
         address = reformat_address(value)
 
     if voice or fax or address:
-        return Office(note=office_type, voice=voice, fax=fax, address=address)
+        return Office(classification=office_type, voice=voice, fax=fax, address=address)
     else:
         return None
 

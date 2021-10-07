@@ -142,7 +142,7 @@ class Office(ScrapeOffice):
     _validate_phones = validator("voice", "fax", allow_reuse=True)(validate_phone)
 
     @property
-    def display_name(self):
+    def display_name(self) -> str:
         return self.name or f"{self.classification.title()} Office"
 
     @root_validator
