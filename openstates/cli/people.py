@@ -77,10 +77,10 @@ class Summarizer:
             if p_role.is_active():
                 self.parties[p_role.name] += 1
 
-        for cd in person.contact_details:
+        for cd in person.offices:
             for key in ("voice", "fax", "address"):
                 if getattr(cd, key, None):
-                    self.contact_counts[cd.note + " " + key] += 1
+                    self.contact_counts[cd.classification + " " + key] += 1
 
         for scheme, id_ in person.ids or []:
             if id_:
@@ -190,18 +190,15 @@ def write_csv(files: list[Path], jurisdiction_id: str, output_filename: str) -> 
 
             district_address = district_voice = district_fax = None
             capitol_address = capitol_voice = capitol_fax = None
-            for cd in person.contact_details:
-                note = cd.note.lower()
-                if "district" in note:
+            for cd in person.offices:
+                if cd.classification == "district":
                     district_address = cd.address
                     district_voice = cd.voice
                     district_fax = cd.fax
-                elif "capitol" in note:
+                elif cd.classification == "district":
                     capitol_address = cd.address
                     capitol_voice = cd.voice
                     capitol_fax = cd.fax
-                else:
-                    click.secho("unknown office: " + note, fg="red")
 
             links = ";".join(k.url for k in person.links)
             sources = ";".join(k.url for k in person.sources)

@@ -15,8 +15,8 @@ from openstates.models.people import (
     Person,
     Party,
     RoleType,
-    ContactType,
-    ContactDetail,
+    OfficeType,
+    Office,
     PersonIdBlock,
     Role,
 )
@@ -158,19 +158,24 @@ def test_party_cls():
         party.end_date = "x"
 
 
-def test_contact_detail():
+def test_office():
     # need at least one type
     with pytest.raises(ValidationError):
-        ContactDetail(note=ContactType.DISTRICT)
-    cd = ContactDetail(note=ContactType.DISTRICT, address="123 Boogie Woogie Ave")
+        Office(classification=OfficeType.DISTRICT)
+    cd = Office(classification=OfficeType.DISTRICT, address="123 Boogie Woogie Ave")
+
+    # no newline
     with pytest.raises(ValidationError):
         cd.address = "123 Boogie Woogie Avenue\nSpringfield, MA"
+
+    # phone number regex
     with pytest.raises(ValidationError):
         cd.voice = "911"
-    cd.fax = "919-555-1234"
-    cd.voice = "1-123-555-6666 ext. 3333"
     with pytest.raises(ValidationError):
         cd.fax = "911"
+    cd.fax = "919-555-1234"
+    cd.voice = "1-123-555-6666 ext. 3333"
+
     # no such field
     with pytest.raises(ValueError):
         cd.phone = "911"

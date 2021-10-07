@@ -38,7 +38,7 @@ class OCDIDField(models.CharField):
 
 
 class OCDBase(models.Model):
-    """ common base fields across all top-level models """
+    """common base fields across all top-level models"""
 
     created_at = models.DateTimeField(
         auto_now_add=True, help_text="The date and time of creation."

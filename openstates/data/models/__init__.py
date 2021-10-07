@@ -6,7 +6,6 @@ from .people_orgs import (
     Person,
     PersonIdentifier,
     PersonName,
-    PersonContactDetail,
     PersonLink,
     PersonSource,
     Post,

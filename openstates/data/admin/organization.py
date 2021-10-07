@@ -5,7 +5,7 @@ from .base import ModelAdmin, ReadOnlyTabularInline
 
 
 class PostInline(admin.TabularInline):
-    """ a read-only inline for posts here, with links to the real thing """
+    """a read-only inline for posts here, with links to the real thing"""
 
     model = models.Post
     extra = 0

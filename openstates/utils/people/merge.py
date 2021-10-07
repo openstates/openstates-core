@@ -17,7 +17,7 @@ from ...models.people import (
     Person,
     Role,
     Party,
-    ContactDetail,
+    Office,
     Link,
     OtherName,
     OtherIdentifier,
@@ -44,32 +44,32 @@ def find_file(leg_id: str, *, state: str = "*") -> Path:
         raise FileNotFoundError()
 
 
-def merge_contact_details(
-    old: list[ContactDetail], new: list[ContactDetail]
-) -> typing.Optional[typing.List[ContactDetail]]:
+def merge_offices(
+    old: list[Office], new: list[Office]
+) -> typing.Optional[typing.List[Office]]:
     # figure out which office entries are which
-    old_offices: dict[str, ContactDetail] = {}
-    new_offices: dict[str, ContactDetail] = {}
+    old_offices: dict[str, Office] = {}
+    new_offices: dict[str, Office] = {}
     offices = []
     update = False
 
     for office in old:
-        note = office.note
+        note = office.display_name
         if note not in old_offices:
             old_offices[note] = office
         else:
             raise NotImplementedError(f"extra old {note}")
     for office in new:
-        note = office.note
+        note = office.display_name
         if note not in new_offices:
             new_offices[note] = office
         else:
             raise NotImplementedError(f"extra old {note}")
 
-    for note_type in sorted(set(old_offices) | set(new_offices)):
-        combined = update_office(old_offices.get(note_type), new_offices.get(note_type))
+    for note in sorted(set(old_offices) | set(new_offices)):
+        combined = update_office(old_offices.get(note), new_offices.get(note))
         offices.append(combined)
-        if combined != old_offices.get(note_type):
+        if combined != old_offices.get(note):
             update = True
 
     # return all offices if there were any changes
@@ -80,9 +80,9 @@ def merge_contact_details(
 
 
 def update_office(
-    old_office: typing.Optional[ContactDetail],
-    new_office: typing.Optional[ContactDetail],
-) -> ContactDetail:
+    old_office: typing.Optional[Office],
+    new_office: typing.Optional[Office],
+) -> Office:
     """function returns a copy of old_office updated with values from new if applicable"""
 
     # if only one exists, return that one
@@ -142,10 +142,10 @@ class Replace:
         return f"Replace({self.key_name}, {self.value_one}, {self.value_two})"
 
 
-class ContactDetailsReplace(Replace):
+class OfficesReplace(Replace):
     def __str__(self) -> str:
-        def _fmt_cd(cd: ContactDetail) -> str:
-            cd_str = f"{cd.note}"
+        def _fmt_cd(cd: Office) -> str:
+            cd_str = f"{cd.display_name}"
             for key in ("address", "voice", "fax"):
                 if val := getattr(cd, key):
                     cd_str += f" {key}={val}"
@@ -183,12 +183,10 @@ def compute_merge(
                 # new name becomes name, but old name goes into other_names
                 changes.append(Append("other_names", OtherName(name=val1)))
                 changes.append(Replace("name", val1, val2))
-        elif key == "contact_details":
-            changed = merge_contact_details(val1, val2)
+        elif key == "offices":
+            changed = merge_offices(val1, val2)
             if changed:
-                changes.append(
-                    ContactDetailsReplace("contact_details", val1 or [], changed)
-                )
+                changes.append(OfficesReplace("offices", val1 or [], changed))
         elif isinstance(val1, list) or isinstance(val2, list):
             if val1 and not val2:
                 continue
@@ -433,9 +431,7 @@ def process_scrape_dir(input_dir: Path, jurisdiction_id: str) -> list[Person]:
     return new_people
 
 
-def process_office(
-    office_type: str, office_data: dict
-) -> typing.Optional[ContactDetail]:
+def process_office(office_type: str, office_data: dict) -> typing.Optional[Office]:
     voice = fax = address = ""
     if value := office_data["voice"]:
         voice = reformat_phone_number(value)
@@ -445,25 +441,25 @@ def process_office(
         address = reformat_address(value)
 
     if voice or fax or address:
-        return ContactDetail(note=office_type, voice=voice, fax=fax, address=address)
+        return Office(classification=office_type, voice=voice, fax=fax, address=address)
     else:
         return None
 
 
 def process_person(data: dict, jurisdiction_id: str) -> Person:
-    contact_details: list[ContactDetail] = []
+    offices: list[Office] = []
     if office := data.pop("capitol_office"):
         cd = process_office("Capitol Office", office)
         if cd:
-            contact_details.append(cd)
+            offices.append(cd)
     if office := data.pop("district_office"):
         cd = process_office("District Office", office)
         if cd:
-            contact_details.append(cd)
+            offices.append(cd)
     for office in data.pop("additional_offices"):
         cd = process_office("District Office", office)
         if cd:
-            contact_details.append(cd)
+            offices.append(cd)
 
     data.pop("state")
     chamber = data.pop("chamber")
@@ -483,7 +479,7 @@ def process_person(data: dict, jurisdiction_id: str) -> Person:
         sources=[
             Link(url=link["url"], note=link["note"]) for link in data.pop("sources")
         ],
-        contact_details=contact_details,
+        offices=offices,
         **data,
     )
 

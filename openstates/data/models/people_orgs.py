@@ -59,7 +59,7 @@ class Organization(OCDBase):
                 break
 
     def get_current_members(self):
-        """ return all Person objects w/ current memberships to org """
+        """return all Person objects w/ current memberships to org"""
         today = datetime.date.today().isoformat()
 
         return Person.objects.filter(
@@ -282,6 +282,37 @@ class PersonName(RelatedBase):
 
     def __str__(self):
         return "{} ({})".format(self.name, self.note)
+
+
+OFFICE_CHOICES = (
+    ("district", "District Office"),
+    ("capitol", "Capitol Office"),
+    ("primary", "Primary Office"),
+)
+
+
+class PersonOffice(RelatedBase):
+    """
+    Office for a Person.
+    """
+
+    classification = models.CharField(max_length=20, choices=OFFICE_CHOICES)
+    address = models.CharField(max_length=300, blank=True, default="")
+    voice = models.CharField(max_length=30, blank=True, default="")
+    fax = models.CharField(max_length=30, blank=True, default="")
+    name = models.CharField(max_length=200, blank=True, default="")
+
+    @property
+    def display_name(self):
+        return self.name or self.get_classification_display()
+
+    person = models.ForeignKey(Person, related_name="offices", on_delete=models.CASCADE)
+
+    class Meta:
+        db_table = "openstates_personoffice"
+
+    def __str__(self):
+        return f"{self.person} {self.display_name}"
 
 
 class PersonContactDetail(RelatedBase):

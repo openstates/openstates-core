@@ -9,7 +9,7 @@ from openstates.models.people import (
     Role,
     OtherName,
     OtherIdentifier,
-    ContactDetail,
+    Office,
 )
 from openstates.models.committees import Committee
 from openstates.cli.committees import committee_to_db, _parent_lookup
@@ -188,19 +188,19 @@ def test_person_identifiers(person):
 
 
 @pytest.mark.django_db
-def test_person_contact_details(person):
+def test_person_offices(person):
     person.email = "fake@example.com"
-    person.contact_details.append(
-        ContactDetail(
-            note="Capitol Office",
+    person.offices.append(
+        Office(
+            classification="capitol",
             fax="111-222-3333",
             voice="555-555-5555",
             address="123 Main St; Washington DC",
         )
     )
-    person.contact_details.append(
-        ContactDetail(
-            note="Primary Office",
+    person.offices.append(
+        Office(
+            classification="primary",
             voice="333-333-5555",
         )
     )
@@ -209,8 +209,11 @@ def test_person_contact_details(person):
     p = DjangoPerson.objects.get(pk=person.id)
 
     assert p.email == "fake@example.com"
+    # these should stick around for now, eventually to be replaced by offices
     assert p.contact_details.count() == 4
     assert p.contact_details.filter(note="Primary Office").count() == 1
+    assert p.offices.count() == 2
+    # TODO: after contact details are gone, check more here
 
 
 @pytest.mark.django_db

@@ -43,8 +43,8 @@ def retire_person(
     if death:
         person.death_date = end_date
 
-    # remove old contact details
-    person.contact_details = []
+    # remove old offices
+    person.offices = []
 
     return person, num
 

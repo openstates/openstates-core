@@ -3,7 +3,7 @@ import pytest  # type: ignore
 from unittest.mock import patch
 from pathlib import Path
 from pydantic import ValidationError
-from openstates.cli.committees import CommitteeDir, PersonMatcher, merge_committees
+from openstates.cli.committees import CommitteeDir, PersonMatcher
 from openstates.models.committees import (
     Committee,
     Link,
@@ -65,6 +65,7 @@ def test_person_matcher_match(person_matcher):
 
 
 def test_merge_committees_name():
+    comdir = CommitteeDir(abbr="wa", directory=TEST_DATA_PATH / "committees")
     id_one = "ocd-organization/00000000-0000-0000-0000-000000000001"
     id_two = "ocd-organization/00000000-0000-0000-0000-000000000002"
     c1 = Committee(
@@ -76,12 +77,14 @@ def test_merge_committees_name():
         chamber="upper",
         name="Education & Children",
     )
-    merged = merge_committees(c1, c2)
+    merged = comdir.merge_committees(c1, c2)
     assert merged.id == c1.id
     assert merged.name == c2.name
 
 
 def test_merge_committees_invalid():
+    comdir = CommitteeDir(abbr="wa", directory=TEST_DATA_PATH / "committees")
+
     id_one = "ocd-organization/00000000-0000-0000-0000-000000000001"
     id_two = "ocd-organization/00000000-0000-0000-0000-000000000002"
     c1 = Committee(
@@ -94,10 +97,11 @@ def test_merge_committees_invalid():
         name="Education & Children",
     )
     with pytest.raises(ValueError):
-        merge_committees(c1, c2)
+        comdir.merge_committees(c1, c2)
 
 
 def test_merge_committees_links():
+    comdir = CommitteeDir(abbr="wa", directory=TEST_DATA_PATH / "committees")
     id_one = "ocd-organization/00000000-0000-0000-0000-000000000001"
     id_two = "ocd-organization/00000000-0000-0000-0000-000000000002"
     c1 = Committee(
@@ -120,7 +124,7 @@ def test_merge_committees_links():
             Link(url="https://example.com/3"),
         ],
     )
-    merged = merge_committees(c1, c2)
+    merged = comdir.merge_committees(c1, c2)
     assert merged.links == [
         Link(url="https://example.com/1", note="first"),
         Link(url="https://example.com/2"),
@@ -129,6 +133,7 @@ def test_merge_committees_links():
 
 
 def test_merge_committees_members():
+    comdir = CommitteeDir(abbr="wa", directory=TEST_DATA_PATH / "committees")
     id_one = "ocd-organization/00000000-0000-0000-0000-000000000001"
     id_two = "ocd-organization/00000000-0000-0000-0000-000000000002"
     person_id = "ocd-person/00000000-0000-0000-0000-000000000002"
@@ -152,7 +157,7 @@ def test_merge_committees_members():
             Membership(name="Charlize", role="member"),
         ],
     )
-    merged = merge_committees(c1, c2)
+    merged = comdir.merge_committees(c1, c2)
     assert merged.members == [
         Membership(name="Amy", role="chair", person_id=person_id),
         Membership(name="Bo", role="chair"),

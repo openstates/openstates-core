@@ -6,12 +6,12 @@ roles:
 - district: '50'
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   type: lower
-contact_details:
-- note: Capitol Office
+offices:
+- classification: capitol
   address: 101 Irvis Office Building P.O. Box 202050 Harrisburg, PA 17120-2050
   fax: 717-772-3605
   voice: 717-783-3797
-- note: District Office
+- classification: district
   address: Wilson Building 61 West High Street Suite 2 Waynesburg, PA 15370
   fax: 724-627-8696
   voice: 724-627-8683

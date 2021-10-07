@@ -114,6 +114,7 @@ def load_person(data: Person) -> tuple[bool, bool]:
     )
     updated |= update_subobjects(person, "links", [n.dict() for n in data.links])
     updated |= update_subobjects(person, "sources", [n.dict() for n in data.sources])
+    updated |= update_subobjects(person, "offices", [n.dict() for n in data.offices])
 
     identifiers = []
     for scheme, value in data.ids.dict().items():
@@ -125,11 +126,14 @@ def load_person(data: Person) -> tuple[bool, bool]:
         )
     updated |= update_subobjects(person, "identifiers", identifiers)
 
+    # backwards compatibility shim
     contact_details = []
-    for cd in data.contact_details:
+    for cd in data.offices:
         for field in ("address", "voice", "fax"):
             if value := getattr(cd, field):
-                contact_details.append({"note": cd.note, "type": field, "value": value})
+                contact_details.append(
+                    {"note": cd.display_name, "type": field, "value": value}
+                )
     updated |= update_subobjects(person, "contact_details", contact_details)
 
     memberships = []

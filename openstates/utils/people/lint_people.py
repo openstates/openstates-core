@@ -89,13 +89,13 @@ def validate_offices(person: Person) -> list[str]:
     errors = []
     type_counter: Counter[str] = Counter()
     seen_values: dict[str, str] = {}
-    for office in person.contact_details:
-        type_counter[office.note] += 1
+    for office in person.offices:
+        type_counter[office.classification] += 1
         for key, value in office.dict().items():
-            if key == "note" or not value:
+            if key == "classification" or not value:
                 continue
             # reverse lookup to see if we've used this phone number/etc. before
-            location_str = f"{office.note} {key}"
+            location_str = f"{office.classification} {key}"
             if value in seen_values:
                 errors.append(
                     f"Value '{value}' used multiple times: {seen_values[value]} and {location_str}"
@@ -103,7 +103,7 @@ def validate_offices(person: Person) -> list[str]:
             seen_values[value] = location_str
     # if type_counter["District Office"] > 1:
     #     errors.append("Multiple district offices.")
-    if type_counter["Capitol Office"] > 1:
+    if type_counter["capitol"] > 1:
         errors.append("Multiple capitol offices, condense to one.")
     return errors
 
