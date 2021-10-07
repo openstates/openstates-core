@@ -141,6 +141,10 @@ class Office(ScrapeOffice):
     _validate_strs = validator("address", allow_reuse=True)(validate_str_no_newline)
     _validate_phones = validator("voice", "fax", allow_reuse=True)(validate_phone)
 
+    @property
+    def display_name(self):
+        return self.name or f"{self.classification.title()} Office"
+
     @root_validator
     def check_have_at_least_one_value(
         cls, values: dict[str, typing.Any]
