@@ -103,7 +103,7 @@ def validate_offices(person: Person) -> list[str]:
             seen_values[value] = location_str
     # if type_counter["District Office"] > 1:
     #     errors.append("Multiple district offices.")
-    if type_counter["Capitol Office"] > 1:
+    if type_counter["capitol"] > 1:
         errors.append("Multiple capitol offices, condense to one.")
     return errors
 
