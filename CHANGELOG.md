@@ -1,6 +1,6 @@
 # Changelog
 
-## 6.6.0
+## 6.6.0 - October 8 2021
 
 * implement core parts of OSEP #6: switch to Person.offices from Person.contact_details
 * bugfixes for committee merge with joint committees & case-insensitive matching
