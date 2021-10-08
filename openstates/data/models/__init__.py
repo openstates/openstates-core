@@ -8,6 +8,8 @@ from .people_orgs import (
     PersonName,
     PersonLink,
     PersonSource,
+    PersonOffice,
+    PersonContactDetail,
     Post,
     Membership,
 )
