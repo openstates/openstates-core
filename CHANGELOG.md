@@ -1,6 +1,6 @@
 # Changelog
 
-## 6.6.1
+## 6.6.1 - October 12 2021
 
 * bugfix for openstates.data django app with new PersonOffice model
 * bugfix for us-to-yaml addresses missing names
