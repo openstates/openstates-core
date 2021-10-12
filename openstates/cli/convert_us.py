@@ -33,7 +33,7 @@ def get_district_offices() -> defaultdict[str, list[Office]]:
     url = "https://theunitedstates.io/congress-legislators/legislators-district-offices.json"
     entries = requests.get(url).json()
     for entry in entries:
-        for office in entry["offices"]:
+        for num, office in enumerate(entry["offices"]):
             address = office.get("address", "")
             if address:
                 if office.get("suite"):
@@ -46,6 +46,7 @@ def get_district_offices() -> defaultdict[str, list[Office]]:
                     voice=office.get("phone", ""),
                     fax=office.get("fax", ""),
                     address=address,
+                    name=f"District Office #{num+1}",
                 )
             )
     return district_offices

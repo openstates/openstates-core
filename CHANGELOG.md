@@ -1,5 +1,10 @@
 # Changelog
 
+## 6.6.1
+
+* bugfix for openstates.data django app with new PersonOffice model
+* bugfix for us-to-yaml addresses missing names
+
 ## 6.6.0 - October 8 2021
 
 * implement core parts of OSEP #6: switch to Person.offices from Person.contact_details
