@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.7.0 - October 13 2021
+
+* remove PersonContactDetail entirely, completing OSEP #6
+
 ## 6.6.1 - October 12 2021
 
 * bugfix for openstates.data django app with new PersonOffice model
