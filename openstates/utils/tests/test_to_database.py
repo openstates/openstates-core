@@ -209,11 +209,7 @@ def test_person_offices(person):
     p = DjangoPerson.objects.get(pk=person.id)
 
     assert p.email == "fake@example.com"
-    # these should stick around for now, eventually to be replaced by offices
-    assert p.contact_details.count() == 4
-    assert p.contact_details.filter(note="Primary Office").count() == 1
     assert p.offices.count() == 2
-    # TODO: after contact details are gone, check more here
 
 
 @pytest.mark.django_db
