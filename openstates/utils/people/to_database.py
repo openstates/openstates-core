@@ -126,16 +126,6 @@ def load_person(data: Person) -> tuple[bool, bool]:
         )
     updated |= update_subobjects(person, "identifiers", identifiers)
 
-    # backwards compatibility shim
-    contact_details = []
-    for cd in data.offices:
-        for field in ("address", "voice", "fax"):
-            if value := getattr(cd, field):
-                contact_details.append(
-                    {"note": cd.display_name, "type": field, "value": value}
-                )
-    updated |= update_subobjects(person, "contact_details", contact_details)
-
     memberships = []
     primary_party = ""
     current_jurisdiction_id = None
