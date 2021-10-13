@@ -23,22 +23,6 @@ The only exception to this would be translations, which should simply exist as t
 the display name (2nd attribute).
 """
 
-# NOTE: this list explicitly does not include RFC 6350s 'cell' as that is redundant with
-# voice and the distinction will only lead to confusion.  contact_detail.note can be
-# used to indicate if something is a home, work, cell, etc.
-CONTACT_TYPE_CHOICES = (
-    ("address", "Postal Address"),
-    ("email", "Email"),
-    ("url", "URL"),
-    ("fax", "Fax"),
-    ("text", "Text Phone"),
-    ("voice", "Voice Phone"),
-    ("video", "Video Phone"),
-    ("pager", "Pager"),
-    ("textphone", "Device for people with hearing impairment"),
-)
-CONTACT_TYPES = _keys(CONTACT_TYPE_CHOICES)
-
 
 JURISDICTION_CLASSIFICATION_CHOICES = (
     ("state", "State"),

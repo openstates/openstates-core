@@ -9,7 +9,6 @@ from .people_orgs import (
     PersonLink,
     PersonSource,
     PersonOffice,
-    PersonContactDetail,
     Post,
     Membership,
 )

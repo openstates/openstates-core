@@ -315,40 +315,6 @@ class PersonOffice(RelatedBase):
         return f"{self.person} {self.display_name}"
 
 
-class PersonContactDetail(RelatedBase):
-    """
-    Contact information for a Person.
-    """
-
-    type = models.CharField(
-        max_length=50,
-        choices=common.CONTACT_TYPE_CHOICES,
-        help_text="The type of Contact being defined.",
-    )
-    value = models.CharField(
-        max_length=300,
-        help_text="The content of the Contact information like a phone number or address.",
-    )
-    note = models.CharField(
-        max_length=300,
-        blank=True,
-        help_text="A short, optional note about the Contact value.",
-    )
-
-    person = models.ForeignKey(
-        Person,
-        related_name="contact_details",
-        on_delete=models.CASCADE,
-        help_text="A link to the Person connected to this contact.",
-    )
-
-    class Meta:
-        db_table = "opencivicdata_personcontactdetail"
-
-    def __str__(self):
-        return "{}: {}".format(self.get_type_display(), self.value)
-
-
 class PersonLink(LinkBase):
     """
     URL for a document about a Person.
