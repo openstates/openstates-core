@@ -1,5 +1,5 @@
 # flake8: noqa
-from .jurisdiction import Jurisdiction, JurisdictionScraper
+from .jurisdiction import State, JurisdictionScraper
 from .popolo import Organization
 from .vote_event import VoteEvent
 from .bill import Bill

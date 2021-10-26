@@ -1,14 +1,14 @@
 import pytest
 from unittest import mock
-from openstates.scrape import Bill, Jurisdiction, EmptyScrape
+from openstates.scrape import Bill, State, EmptyScrape
 from openstates.scrape.base import Scraper, ScrapeError, BaseBillScraper
 
 
-class FakeJurisdiction(Jurisdiction):
-    jurisdiction_id = "jurisdiction"
+class NewJersey(State):
+    pass
 
 
-juris = FakeJurisdiction()
+juris = NewJersey()
 
 
 def test_save_object_basics():
