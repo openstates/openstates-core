@@ -13,7 +13,7 @@ import traceback
 from django.db import transaction  # type: ignore
 
 from ..exceptions import CommandError
-from ..scrape import Jurisdiction, JurisdictionScraper
+from ..scrape import State, JurisdictionScraper
 from ..utils.django import init_django
 from .. import utils, settings
 from .reports import generate_session_report, print_report, save_report
@@ -46,23 +46,13 @@ def override_settings(settings, overrides):
 
 
 def get_jurisdiction(module_name):
-    # get the jurisdiction object
+    # get the state object
     module = importlib.import_module(module_name)
     for obj in module.__dict__.values():
-        # ensure we're dealing with a subclass of Jurisdiction
-        if (
-            isinstance(obj, type)
-            and issubclass(obj, Jurisdiction)
-            and getattr(obj, "division_id", None)
-            and obj.classification
-        ):
+        # ensure we're dealing with a subclass of State
+        if isinstance(obj, type) and issubclass(obj, State) and obj != State:
             return obj(), module
-    raise CommandError(
-        "Unable to import Jurisdiction subclass from "
-        + module_name
-        + ". Jurisdiction subclass may be missing a "
-        + "division_id or classification."
-    )
+    raise CommandError(f"Unable to import State subclass from {module_name}")
 
 
 def do_scrape(juris, args, scrapers):
