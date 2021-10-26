@@ -2,7 +2,10 @@
 
 ## 6.8.0
 
-* add LegislativeSession.active for OSEP #8
+* OSEP #8: add LegislativeSession.active flags
+* running a scraper without a session will now run active sessions instead of "latest"
+* removal of BillScraper.latest_session in favor of new session injection
+* replace scrape.Jurisdiction with scrape.State, which was formerly in scrapers.utils
 
 ## 6.7.0 - October 13 2021
 
