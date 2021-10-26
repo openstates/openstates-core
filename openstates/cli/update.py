@@ -1,4 +1,3 @@
-from collections import OrderedDict
 import argparse
 import contextlib
 import datetime
@@ -9,6 +8,7 @@ import logging.config
 import os
 import sys
 import traceback
+import typing
 from types import ModuleType
 
 from django.db import transaction  # type: ignore
@@ -33,7 +33,7 @@ UNSET = _Unset()
 
 
 @contextlib.contextmanager
-def override_settings(settings, overrides):
+def override_settings(settings, overrides):  # type: ignore
     original = {}
     for key, value in overrides.items():
         original[key] = getattr(settings, key, UNSET)
@@ -56,7 +56,12 @@ def get_jurisdiction(module_name: str) -> tuple[State, ModuleType]:
     raise CommandError(f"Unable to import State subclass from {module_name}")
 
 
-def do_scrape(juris, args, scrapers, active_sessions: set[str]):
+def do_scrape(
+    juris: State,
+    args: argparse.Namespace,
+    scrapers: dict[str, dict[str, str]],
+    active_sessions: set[str],
+) -> dict[str, typing.Any]:
     # make output and cache dirs
     utils.makedirs(settings.CACHE_DIR)
     datadir = os.path.join(settings.SCRAPED_DATA_DIR, args.module)
@@ -83,7 +88,7 @@ def do_scrape(juris, args, scrapers, active_sessions: set[str]):
     return report
 
 
-def do_import(juris, args):
+def do_import(juris: State, args: argparse.Namespace) -> dict[str, typing.Any]:
     # import inside here because to avoid loading Django code unnecessarily
     from openstates.importers import (
         JurisdictionImporter,
@@ -160,10 +165,12 @@ def check_session_list(juris: State) -> set[str]:
     return active_sessions
 
 
-def do_update(args, other, juris):
+def do_update(
+    args: argparse.Namespace, other: list[str], juris: State
+) -> dict[str, typing.Any]:
     available_scrapers = getattr(juris, "scrapers", {})
     default_scrapers = getattr(juris, "default_scrapers", None)
-    scrapers = OrderedDict()
+    scrapers: dict[str, dict[str, str]] = {}
 
     if not available_scrapers:
         raise CommandError("no scrapers defined on jurisdiction")
@@ -227,7 +234,7 @@ def do_update(args, other, juris):
     return report
 
 
-def parse_args():
+def parse_args() -> tuple[argparse.Namespace, list[str]]:
     parser = argparse.ArgumentParser("openstates", description="openstates CLI")
     parser.add_argument("--debug", action="store_true", help="open debugger on error")
     parser.add_argument(
@@ -290,12 +297,12 @@ def parse_args():
     return parser.parse_known_args()
 
 
-def main():
+def main() -> int:
     args, other = parse_args()
 
     # set log level from command line
     handler_level = getattr(logging, args.loglevel.upper(), "INFO")
-    settings.LOGGING["handlers"]["default"]["level"] = handler_level
+    settings.LOGGING["handlers"]["default"]["level"] = handler_level  # type: ignore
     logging.config.dictConfig(settings.LOGGING)
 
     # turn debug on
@@ -308,7 +315,7 @@ def main():
         # turn on PDB-on-error mode
         # stolen from http://stackoverflow.com/questions/1237379/
         # if this causes problems in interactive mode check that page
-        def _tb_info(type, value, tb):
+        def _tb_info(type, value, tb):  # type: ignore
             traceback.print_exception(type, value, tb)
             debug_module.pm()
 
@@ -330,4 +337,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

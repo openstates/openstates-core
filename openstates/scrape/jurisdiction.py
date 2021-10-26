@@ -88,6 +88,9 @@ class State(BaseModel):
                 parent_id=legislature._id,
             )
 
+    def get_session_list(self) -> list[str]:
+        raise NotImplementedError()
+
     _id = jurisdiction_id
 
     def as_dict(self):
