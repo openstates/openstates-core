@@ -13,7 +13,7 @@ class NewJersey(State):
 
 @pytest.mark.django_db
 def test_jurisdiction_import():
-    Division.objects.create(id="ocd-division/country:us", name="USA")
+    Division.objects.create(id="ocd-division/country:us/state:nj", name="NJ")
     tj = NewJersey()
     juris_dict = tj.as_dict()
     JurisdictionImporter("jurisdiction-id").import_data([juris_dict])
@@ -27,7 +27,7 @@ def test_jurisdiction_import():
 
 @pytest.mark.django_db
 def test_jurisdiction_update():
-    Division.objects.create(id="ocd-division/country:us", name="USA")
+    Division.objects.create(id="ocd-division/country:us/state:nj", name="NJ")
     tj = NewJersey()
     ji = JurisdictionImporter("jurisdiction-id")
     _, what = ji.import_item(tj.as_dict())
@@ -37,16 +37,16 @@ def test_jurisdiction_update():
     assert what == "noop"
     assert Jurisdiction.objects.count() == 1
 
-    tj.name = "different name"
+    tj.extras = {"something": "here"}
     obj, what = ji.import_item(tj.as_dict())
     assert what == "update"
     assert Jurisdiction.objects.count() == 1
-    assert Jurisdiction.objects.get().name == "different name"
+    assert Jurisdiction.objects.get().extras == {"something": "here"}
 
 
 @pytest.mark.django_db
 def test_jurisdiction_merge_related():
-    Division.objects.create(id="ocd-division/country:us", name="USA")
+    Division.objects.create(id="ocd-division/country:us/state:nj", name="NJ")
     # need to ensure legislative_sessions don't get deleted
     ji = JurisdictionImporter("jurisdiction-id")
     tj = NewJersey()
