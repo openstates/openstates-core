@@ -62,6 +62,7 @@ class LegislativeSession(RelatedBase):
     )
     start_date = models.CharField(max_length=10)  # YYYY[-MM[-DD]]
     end_date = models.CharField(max_length=10)  # YYYY[-MM[-DD]]
+    active = models.BooleanField(default=False)
 
     def __str__(self):
         return "{} {}".format(self.jurisdiction, self.name)

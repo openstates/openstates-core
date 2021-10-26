@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.8.0
+
+* add LegislativeSession.active for OSEP #8
+
 ## 6.7.0 - October 13 2021
 
 * remove PersonContactDetail entirely, completing OSEP #6
