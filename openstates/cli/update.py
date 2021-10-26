@@ -9,6 +9,7 @@ import logging.config
 import os
 import sys
 import traceback
+from types import ModuleType
 
 from django.db import transaction  # type: ignore
 
@@ -45,7 +46,7 @@ def override_settings(settings, overrides):
             setattr(settings, key, value)
 
 
-def get_jurisdiction(module_name):
+def get_jurisdiction(module_name: str) -> tuple[State, ModuleType]:
     # get the state object
     module = importlib.import_module(module_name)
     for obj in module.__dict__.values():
@@ -55,7 +56,7 @@ def get_jurisdiction(module_name):
     raise CommandError(f"Unable to import State subclass from {module_name}")
 
 
-def do_scrape(juris, args, scrapers):
+def do_scrape(juris, args, scrapers, active_sessions: set[str]):
     # make output and cache dirs
     utils.makedirs(settings.CACHE_DIR)
     datadir = os.path.join(settings.SCRAPED_DATA_DIR, args.module)
@@ -123,7 +124,7 @@ def do_import(juris, args):
     return report
 
 
-def check_session_list(juris):
+def check_session_list(juris: State) -> set[str]:
     scraper = type(juris).__name__
 
     # if get_session_list is not defined
@@ -135,10 +136,16 @@ def check_session_list(juris):
     if not scraped_sessions:
         raise CommandError("no sessions from {}.get_session_list()".format(scraper))
 
+    active_sessions = set()
     # copy the list to avoid modifying it
     sessions = set(juris.ignored_scraped_sessions)
     for session in juris.legislative_sessions:
         sessions.add(session.get("_scraped_name", session["identifier"]))
+        if session.get("active"):
+            active_sessions.add(session.get("identifier"))
+
+    if not active_sessions:
+        raise CommandError(f"No active sessions on {scraper}")
 
     unaccounted_sessions = list(set(scraped_sessions) - sessions)
     if unaccounted_sessions:
@@ -149,6 +156,8 @@ def check_session_list(juris):
                 "{scraper}.ignored_scraped_sessions."
             ).format(sessions=", ".join(unaccounted_sessions), scraper=scraper)
         )
+
+    return active_sessions
 
 
 def do_update(args, other, juris):
@@ -195,11 +204,11 @@ def do_update(args, other, juris):
     print_report(report)
 
     if "scrape" in args.actions:
-        check_session_list(juris)
+        active_sessions = check_session_list(juris)
 
     try:
         if "scrape" in args.actions:
-            report["scrape"] = do_scrape(juris, args, scrapers)
+            report["scrape"] = do_scrape(juris, args, scrapers, active_sessions)
         if "import" in args.actions:
             report["import"] = do_import(juris, args)
         report["success"] = True
