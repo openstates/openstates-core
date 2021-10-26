@@ -1,6 +1,6 @@
 # Changelog
 
-## 6.8.0
+## 6.8.0 - October 26 2021
 
 * OSEP #8: add LegislativeSession.active flags
 * running a scraper without a session will now run active sessions instead of "latest"
