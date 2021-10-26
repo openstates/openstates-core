@@ -1,5 +1,6 @@
 import argparse
 import contextlib
+import inspect
 import datetime
 import glob
 import importlib
@@ -9,6 +10,7 @@ import os
 import sys
 import traceback
 import typing
+from collections import defaultdict
 from types import ModuleType
 
 from django.db import transaction  # type: ignore
@@ -80,10 +82,38 @@ def do_scrape(
 
     for scraper_name, scrape_args in scrapers.items():
         ScraperCls = juris.scrapers[scraper_name]
-        scraper = ScraperCls(
-            juris, datadir, strict_validation=args.strict, fastmode=args.fastmode
-        )
-        report[scraper_name] = scraper.do_scrape(**scrape_args)
+        if (
+            "session" in inspect.getargspec(ScraperCls.scrape).args
+            and "session" not in scrape_args
+        ):
+            print(f"no session provided, using active sessions: {active_sessions}")
+            # handle automatically setting session if required by the scraper
+            # the report logic was originally meant for one run, so we combine the start & end times
+            # and counts here
+            report[scraper_name] = {
+                "start": None,
+                "end": None,
+                "objects": defaultdict(int),
+            }
+            for session in active_sessions:
+                # new scraper each time
+                scraper = ScraperCls(
+                    juris,
+                    datadir,
+                    strict_validation=args.strict,
+                    fastmode=args.fastmode,
+                )
+                partial_report = scraper.do_scrape(**scrape_args, session=session)
+                if not report[scraper_name]["start"]:
+                    report[scraper_name]["start"] = partial_report["start"]
+                report[scraper_name]["end"] = partial_report["end"]
+                for obj, val in partial_report["objects"].items():
+                    report[scraper_name]["objects"][obj] += val
+        else:
+            scraper = ScraperCls(
+                juris, datadir, strict_validation=args.strict, fastmode=args.fastmode
+            )
+            report[scraper_name] = scraper.do_scrape(**scrape_args)
 
     return report
 
