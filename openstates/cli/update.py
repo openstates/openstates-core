@@ -1,6 +1,6 @@
-from collections import OrderedDict
 import argparse
 import contextlib
+import inspect
 import datetime
 import glob
 import importlib
@@ -9,11 +9,14 @@ import logging.config
 import os
 import sys
 import traceback
+import typing
+from collections import defaultdict
+from types import ModuleType
 
 from django.db import transaction  # type: ignore
 
 from ..exceptions import CommandError
-from ..scrape import Jurisdiction, JurisdictionScraper
+from ..scrape import State, JurisdictionScraper
 from ..utils.django import init_django
 from .. import utils, settings
 from .reports import generate_session_report, print_report, save_report
@@ -32,7 +35,7 @@ UNSET = _Unset()
 
 
 @contextlib.contextmanager
-def override_settings(settings, overrides):
+def override_settings(settings, overrides):  # type: ignore
     original = {}
     for key, value in overrides.items():
         original[key] = getattr(settings, key, UNSET)
@@ -45,27 +48,22 @@ def override_settings(settings, overrides):
             setattr(settings, key, value)
 
 
-def get_jurisdiction(module_name):
-    # get the jurisdiction object
+def get_jurisdiction(module_name: str) -> tuple[State, ModuleType]:
+    # get the state object
     module = importlib.import_module(module_name)
     for obj in module.__dict__.values():
-        # ensure we're dealing with a subclass of Jurisdiction
-        if (
-            isinstance(obj, type)
-            and issubclass(obj, Jurisdiction)
-            and getattr(obj, "division_id", None)
-            and obj.classification
-        ):
+        # ensure we're dealing with a subclass of State
+        if isinstance(obj, type) and issubclass(obj, State) and obj != State:
             return obj(), module
-    raise CommandError(
-        "Unable to import Jurisdiction subclass from "
-        + module_name
-        + ". Jurisdiction subclass may be missing a "
-        + "division_id or classification."
-    )
+    raise CommandError(f"Unable to import State subclass from {module_name}")
 
 
-def do_scrape(juris, args, scrapers):
+def do_scrape(
+    juris: State,
+    args: argparse.Namespace,
+    scrapers: dict[str, dict[str, str]],
+    active_sessions: set[str],
+) -> dict[str, typing.Any]:
     # make output and cache dirs
     utils.makedirs(settings.CACHE_DIR)
     datadir = os.path.join(settings.SCRAPED_DATA_DIR, args.module)
@@ -84,15 +82,43 @@ def do_scrape(juris, args, scrapers):
 
     for scraper_name, scrape_args in scrapers.items():
         ScraperCls = juris.scrapers[scraper_name]
-        scraper = ScraperCls(
-            juris, datadir, strict_validation=args.strict, fastmode=args.fastmode
-        )
-        report[scraper_name] = scraper.do_scrape(**scrape_args)
+        if (
+            "session" in inspect.getargspec(ScraperCls.scrape).args
+            and "session" not in scrape_args
+        ):
+            print(f"no session provided, using active sessions: {active_sessions}")
+            # handle automatically setting session if required by the scraper
+            # the report logic was originally meant for one run, so we combine the start & end times
+            # and counts here
+            report[scraper_name] = {
+                "start": None,
+                "end": None,
+                "objects": defaultdict(int),
+            }
+            for session in active_sessions:
+                # new scraper each time
+                scraper = ScraperCls(
+                    juris,
+                    datadir,
+                    strict_validation=args.strict,
+                    fastmode=args.fastmode,
+                )
+                partial_report = scraper.do_scrape(**scrape_args, session=session)
+                if not report[scraper_name]["start"]:
+                    report[scraper_name]["start"] = partial_report["start"]
+                report[scraper_name]["end"] = partial_report["end"]
+                for obj, val in partial_report["objects"].items():
+                    report[scraper_name]["objects"][obj] += val
+        else:
+            scraper = ScraperCls(
+                juris, datadir, strict_validation=args.strict, fastmode=args.fastmode
+            )
+            report[scraper_name] = scraper.do_scrape(**scrape_args)
 
     return report
 
 
-def do_import(juris, args):
+def do_import(juris: State, args: argparse.Namespace) -> dict[str, typing.Any]:
     # import inside here because to avoid loading Django code unnecessarily
     from openstates.importers import (
         JurisdictionImporter,
@@ -133,7 +159,7 @@ def do_import(juris, args):
     return report
 
 
-def check_session_list(juris):
+def check_session_list(juris: State) -> set[str]:
     scraper = type(juris).__name__
 
     # if get_session_list is not defined
@@ -145,10 +171,16 @@ def check_session_list(juris):
     if not scraped_sessions:
         raise CommandError("no sessions from {}.get_session_list()".format(scraper))
 
+    active_sessions = set()
     # copy the list to avoid modifying it
     sessions = set(juris.ignored_scraped_sessions)
     for session in juris.legislative_sessions:
         sessions.add(session.get("_scraped_name", session["identifier"]))
+        if session.get("active"):
+            active_sessions.add(session.get("identifier"))
+
+    if not active_sessions:
+        raise CommandError(f"No active sessions on {scraper}")
 
     unaccounted_sessions = list(set(scraped_sessions) - sessions)
     if unaccounted_sessions:
@@ -160,11 +192,15 @@ def check_session_list(juris):
             ).format(sessions=", ".join(unaccounted_sessions), scraper=scraper)
         )
 
+    return active_sessions
 
-def do_update(args, other, juris):
+
+def do_update(
+    args: argparse.Namespace, other: list[str], juris: State
+) -> dict[str, typing.Any]:
     available_scrapers = getattr(juris, "scrapers", {})
     default_scrapers = getattr(juris, "default_scrapers", None)
-    scrapers = OrderedDict()
+    scrapers: dict[str, dict[str, str]] = {}
 
     if not available_scrapers:
         raise CommandError("no scrapers defined on jurisdiction")
@@ -205,11 +241,11 @@ def do_update(args, other, juris):
     print_report(report)
 
     if "scrape" in args.actions:
-        check_session_list(juris)
+        active_sessions = check_session_list(juris)
 
     try:
         if "scrape" in args.actions:
-            report["scrape"] = do_scrape(juris, args, scrapers)
+            report["scrape"] = do_scrape(juris, args, scrapers, active_sessions)
         if "import" in args.actions:
             report["import"] = do_import(juris, args)
         report["success"] = True
@@ -228,7 +264,7 @@ def do_update(args, other, juris):
     return report
 
 
-def parse_args():
+def parse_args() -> tuple[argparse.Namespace, list[str]]:
     parser = argparse.ArgumentParser("openstates", description="openstates CLI")
     parser.add_argument("--debug", action="store_true", help="open debugger on error")
     parser.add_argument(
@@ -291,12 +327,12 @@ def parse_args():
     return parser.parse_known_args()
 
 
-def main():
+def main() -> int:
     args, other = parse_args()
 
     # set log level from command line
     handler_level = getattr(logging, args.loglevel.upper(), "INFO")
-    settings.LOGGING["handlers"]["default"]["level"] = handler_level
+    settings.LOGGING["handlers"]["default"]["level"] = handler_level  # type: ignore
     logging.config.dictConfig(settings.LOGGING)
 
     # turn debug on
@@ -309,7 +345,7 @@ def main():
         # turn on PDB-on-error mode
         # stolen from http://stackoverflow.com/questions/1237379/
         # if this causes problems in interactive mode check that page
-        def _tb_info(type, value, tb):
+        def _tb_info(type, value, tb):  # type: ignore
             traceback.print_exception(type, value, tb)
             debug_module.pm()
 
@@ -331,4 +367,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

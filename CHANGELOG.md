@@ -1,5 +1,12 @@
 # Changelog
 
+## 6.8.0 - October 26 2021
+
+* OSEP #8: add LegislativeSession.active flags
+* running a scraper without a session will now run active sessions instead of "latest"
+* removal of BillScraper.latest_session in favor of new session injection
+* replace scrape.Jurisdiction with scrape.State, which was formerly in scrapers.utils
+
 ## 6.7.0 - October 13 2021
 
 * remove PersonContactDetail entirely, completing OSEP #6
