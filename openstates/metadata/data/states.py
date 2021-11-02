@@ -5,7 +5,6 @@ from .az import AZ
 from .ca import CA
 from .co import CO
 from .ct import CT
-from .dc import DC
 from .de import DE
 from .fl import FL
 from .ga import GA
@@ -37,7 +36,6 @@ from .oh import OH
 from .ok import OK
 from .ore import OR
 from .pa import PA
-from .pr import PR
 from .ri import RI
 from .sc import SC
 from .sd import SD
