@@ -1,6 +1,6 @@
 # type: ignore
 import re
-from ..data import STATES, NC, VT
+from ..data.states import STATES, NC, VT
 
 
 def test_basics() -> None:
