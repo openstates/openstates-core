@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.8.1 - November 4 2021
+
+* fix for circular import in openstates.metadata
+
 ## 6.8.0 - October 26 2021
 
 * OSEP #8: add LegislativeSession.active flags
