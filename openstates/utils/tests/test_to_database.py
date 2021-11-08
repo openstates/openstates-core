@@ -344,9 +344,8 @@ def test_committee_to_db_memberships():
         name="Education",
         chamber="lower",
         jurisdiction="ocd-jurisdiction/country:us/state:nc/government",
-        members=[Membership(name="someone", role="member")],
+        members=[Membership(name="Steve", role="chair")],
     )
-    new_com.add_member("Steve", role="chair")
     created, updated = committee_to_db(new_com)
     org = Organization.objects.get(pk=com_id)
     assert org.memberships.count() == 1
