@@ -47,6 +47,12 @@ class ScrapeCommittee(BaseModel):
     _validate_strs = validator("name", allow_reuse=True)(validate_str_no_newline)
 
     @root_validator
+    def validate_has_members(cls, data: dict[str, typing.Any]) -> dict[str, typing.Any]:
+        if not len(data.get("members")):  # type: ignore
+            raise ValueError("committees must have members")
+        return data
+
+    @root_validator
     def validate_parent_and_classification(
         cls, values: dict[str, typing.Any]
     ) -> dict[str, typing.Any]:

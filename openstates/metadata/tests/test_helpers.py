@@ -1,6 +1,6 @@
 import pytest  # type: ignore
 from .. import lookup, lookup_district_with_ancestors
-from ..data import NC, NE
+from ..data.states import NC, NE
 
 
 def test_lookup() -> None:

@@ -4,7 +4,7 @@ from django.contrib import admin
 
 
 class ModelAdmin(admin.ModelAdmin):
-    """ deletion of top level objects is evil """
+    """deletion of top level objects is evil"""
 
     actions = None
 
@@ -42,13 +42,6 @@ class IdentifierInline(admin.TabularInline):
 class LinkInline(admin.TabularInline):
     fields = ("url", "note")
     extra = 0
-
-
-class ContactDetailInline(admin.TabularInline):
-    fields = ("type", "value", "note", "label")
-    extra = 0
-    verbose_name = "Piece of contact information"
-    verbose_name_plural = "Contact information"
 
 
 class OtherNameInline(admin.TabularInline):

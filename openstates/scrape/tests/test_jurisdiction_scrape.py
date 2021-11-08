@@ -1,31 +1,22 @@
 from collections import defaultdict
-from openstates.scrape import Jurisdiction, Organization, JurisdictionScraper
+from openstates.scrape import State, Organization, JurisdictionScraper
 from openstates.exceptions import ScrapeValueError
 import pytest
 
 
-class FakeJurisdiction(Jurisdiction):
-    division_id = "ocd-division/test"
-    classification = "government"
-    name = "Test"
-    url = "http://example.com"
-
-    def get_organizations(self):
-        parent = Organization("Congress", classification="legislature")
-        yield parent
-        yield Organization("House", classification="lower", parent_id=parent)
-        yield Organization("Senate", classification="upper", parent_id=parent)
+class NewJersey(State):
+    pass
 
 
 def test_basics():
     # id property and string
-    j = FakeJurisdiction()
-    assert j.jurisdiction_id == "ocd-jurisdiction/test/government"
+    j = NewJersey()
+    assert j.jurisdiction_id == "ocd-jurisdiction/country:us/state:nj/government"
     assert j.name in str(j)
 
 
 def test_as_dict():
-    j = FakeJurisdiction()
+    j = NewJersey()
     d = j.as_dict()
 
     assert d["_id"] == j.jurisdiction_id
@@ -35,15 +26,10 @@ def test_as_dict():
 
 
 def test_jurisdiction_unicam_scrape():
-    class UnicameralJurisdiction(Jurisdiction):
-        jurisdiction_id = "unicam"
-        name = "Unicameral"
-        url = "http://example.com"
+    class Nebraska(State):
+        pass
 
-        def get_organizations(self):
-            yield Organization("Unicameral Legislature", classification="legislature")
-
-    j = UnicameralJurisdiction()
+    j = Nebraska()
     js = JurisdictionScraper(j, "/tmp/")
     objects = list(js.scrape())
 
@@ -57,7 +43,7 @@ def test_jurisdiction_unicam_scrape():
 
 
 def test_jurisdiction_bicameral_scrape():
-    j = FakeJurisdiction()
+    j = NewJersey()
     js = JurisdictionScraper(j, "/tmp/")
     objects = list(js.scrape())
     obj_names = set()
@@ -67,14 +53,14 @@ def test_jurisdiction_bicameral_scrape():
         obj_names.add(o.name)
         obj_types[type(o)] += 1
 
-    # ensure Jurisdiction and 5 organizations were found
-    assert obj_names == {"Test", "Congress", "House", "Senate"}
-    assert obj_types[FakeJurisdiction] == 1
+    # ensure Jurisdiction and 3 organizations were found
+    assert obj_names == {"New jersey Legislature", "Assembly", "New Jersey", "Senate"}
+    assert obj_types[NewJersey] == 1
     assert obj_types[Organization] == 3
 
 
 def test_jurisdiction_validate_sessions():
-    j = FakeJurisdiction()
+    j = NewJersey()
     j.legislative_sessions = [
         {
             "_scraped_name": "s1",

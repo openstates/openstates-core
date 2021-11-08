@@ -1,15 +1,10 @@
 import pytest
-from openstates.scrape import Jurisdiction as JurisdictionBase
+from openstates.scrape import State
 from openstates.importers import JurisdictionImporter
 from openstates.data.models import Jurisdiction, Division, LegislativeSession
 
 
-class FakeJurisdiction(JurisdictionBase):
-    division_id = "ocd-division/country:us"
-    name = "test"
-    url = "http://example.com"
-    classification = "government"
-
+class NewJersey(State):
     legislative_sessions = [
         {"identifier": "2015", "name": "2015 Regular Session"},
         {"identifier": "2016", "name": "2016 Regular Session"},
@@ -18,8 +13,8 @@ class FakeJurisdiction(JurisdictionBase):
 
 @pytest.mark.django_db
 def test_jurisdiction_import():
-    Division.objects.create(id="ocd-division/country:us", name="USA")
-    tj = FakeJurisdiction()
+    Division.objects.create(id="ocd-division/country:us/state:nj", name="NJ")
+    tj = NewJersey()
     juris_dict = tj.as_dict()
     JurisdictionImporter("jurisdiction-id").import_data([juris_dict])
 
@@ -32,8 +27,8 @@ def test_jurisdiction_import():
 
 @pytest.mark.django_db
 def test_jurisdiction_update():
-    Division.objects.create(id="ocd-division/country:us", name="USA")
-    tj = FakeJurisdiction()
+    Division.objects.create(id="ocd-division/country:us/state:nj", name="NJ")
+    tj = NewJersey()
     ji = JurisdictionImporter("jurisdiction-id")
     _, what = ji.import_item(tj.as_dict())
     assert what == "insert"
@@ -42,19 +37,19 @@ def test_jurisdiction_update():
     assert what == "noop"
     assert Jurisdiction.objects.count() == 1
 
-    tj.name = "different name"
+    tj.extras = {"something": "here"}
     obj, what = ji.import_item(tj.as_dict())
     assert what == "update"
     assert Jurisdiction.objects.count() == 1
-    assert Jurisdiction.objects.get().name == "different name"
+    assert Jurisdiction.objects.get().extras == {"something": "here"}
 
 
 @pytest.mark.django_db
 def test_jurisdiction_merge_related():
-    Division.objects.create(id="ocd-division/country:us", name="USA")
+    Division.objects.create(id="ocd-division/country:us/state:nj", name="NJ")
     # need to ensure legislative_sessions don't get deleted
     ji = JurisdictionImporter("jurisdiction-id")
-    tj = FakeJurisdiction()
+    tj = NewJersey()
     ji.import_item(tj.as_dict())
 
     assert LegislativeSession.objects.count() == 2

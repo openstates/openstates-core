@@ -1,34 +1,34 @@
 import pytest
 from unittest import mock
-from openstates.scrape import Person, Organization, Bill, Jurisdiction, EmptyScrape
+from openstates.scrape import Bill, State, EmptyScrape
 from openstates.scrape.base import Scraper, ScrapeError, BaseBillScraper
 
 
-class FakeJurisdiction(Jurisdiction):
-    jurisdiction_id = "jurisdiction"
+class NewJersey(State):
+    pass
 
 
-juris = FakeJurisdiction()
+juris = NewJersey()
 
 
 def test_save_object_basics():
     # ensure that save object dumps a file
     s = Scraper(juris, "/tmp/")
-    p = Person("Michael Jordan")
+    p = Bill("HB 1", "2021", "Test")
     p.add_source("http://example.com")
 
     with mock.patch("json.dump") as json_dump:
         s.save_object(p)
 
     # ensure object is saved in right place
-    filename = "person_" + p._id + ".json"
-    assert filename in s.output_names["person"]
+    filename = "bill_" + p._id + ".json"
+    assert filename in s.output_names["bill"]
     json_dump.assert_called_once_with(p.as_dict(), mock.ANY, cls=mock.ANY)
 
 
 def test_save_object_invalid():
     s = Scraper(juris, "/tmp/")
-    p = Person("Michael Jordan")
+    p = Bill("HB 1", "2021", "Test")
     # no source, won't validate
 
     with pytest.raises(ValueError):
@@ -37,9 +37,9 @@ def test_save_object_invalid():
 
 def test_save_related():
     s = Scraper(juris, "/tmp/")
-    p = Person("Michael Jordan")
+    p = Bill("HB 1", "2021", "Test")
     p.add_source("http://example.com")
-    o = Organization("Chicago Bulls", classification="committee")
+    o = Bill("HB 2", "2021", "Test")
     o.add_source("http://example.com")
     p._related.append(o)
 
@@ -55,7 +55,7 @@ def test_save_related():
 def test_simple_scrape():
     class FakeScraper(Scraper):
         def scrape(self):
-            p = Person("Michael Jordan")
+            p = Bill("HB 1", "2021", "Test")
             p.add_source("http://example.com")
             yield p
 
@@ -63,7 +63,7 @@ def test_simple_scrape():
         record = FakeScraper(juris, "/tmp/").do_scrape()
 
     assert len(json_dump.mock_calls) == 1
-    assert record["objects"]["person"] == 1
+    assert record["objects"]["bill"] == 1
     assert record["end"] > record["start"]
     assert record["skipped"] == 0
 
@@ -76,7 +76,7 @@ def test_double_iter():
             yield self.scrape_people()
 
         def scrape_people(self):
-            p = Person("Michael Jordan")
+            p = Bill("HB 1", "2021", "The Club")
             p.add_source("http://example.com")
             yield p
 
@@ -84,7 +84,7 @@ def test_double_iter():
         record = IterScraper(juris, "/tmp/").do_scrape()
 
     assert len(json_dump.mock_calls) == 1
-    assert record["objects"]["person"] == 1
+    assert record["objects"]["bill"] == 1
 
 
 def test_no_objects():
@@ -108,7 +108,7 @@ def test_no_objects_empty_scrape():
 def test_empty_scrape_with_objects():
     class TestScraper(Scraper):
         def scrape(self):
-            p = Person("Don Jaggerty")
+            p = Bill("HB 6", "2021", "Don Jaggerty")
             p.add_source("https://example.com")
             yield p
             raise EmptyScrape()

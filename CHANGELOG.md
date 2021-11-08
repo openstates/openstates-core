@@ -1,5 +1,60 @@
 # Changelog
 
+## 6.8.2 - November 8 2021
+
+* os-committee linting improvements
+* os-committee merge avoids duplicates
+
+## 6.8.1 - November 4 2021
+
+* fix for circular import in openstates.metadata
+
+## 6.8.0 - October 26 2021
+
+* OSEP #8: add LegislativeSession.active flags
+* running a scraper without a session will now run active sessions instead of "latest"
+* removal of BillScraper.latest_session in favor of new session injection
+* replace scrape.Jurisdiction with scrape.State, which was formerly in scrapers.utils
+
+## 6.7.0 - October 13 2021
+
+* remove PersonContactDetail entirely, completing OSEP #6
+
+## 6.6.1 - October 12 2021
+
+* bugfix for openstates.data django app with new PersonOffice model
+* bugfix for us-to-yaml addresses missing names
+
+## 6.6.0 - October 8 2021
+
+* implement core parts of OSEP #6: switch to Person.offices from Person.contact_details
+* bugfixes for committee merge with joint committees & case-insensitive matching
+
+## 6.5.3 - September 24 2021
+
+* bugfix for EventImporter.postimport being called after bill-only scrapes
+
+## 6.5.2 - September 23 2021
+
+* bugfix for duplicates on Event importer
+* fix for bill matching on Event importer
+* speed up imports when there are no bills in import
+
+## 6.5.1 - September 22 2021
+
+* import fix for committee_id on scraped events
+* enable import of events by default in os-update
+
+## 6.5.0 - September 21 2021
+
+* allow raising `EmptyScrape` to end a scrape without 'no objects returned' error
+* added `upstream_id` to Event model
+* add classification parameter to `Event.add_document`
+* fix up `Event.add_media_link` parameters to be uniform (including classification)
+* added `Event.add_bill` helper method
+* `os-people-to-yaml` is now part of `os-people merge`
+* Events imports now include soft-deletion of events that are not included in latest scrape
+
 ## 6.4.1 - August 19 2021
 
 * committee merge bugfix for parent committees

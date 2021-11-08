@@ -2,7 +2,7 @@ from openstates.cli.people import Summarizer
 from openstates.models.people import (
     Person,
     Party,
-    ContactDetail,
+    Office,
     OtherIdentifier,
     PersonIdBlock,
 )
@@ -28,7 +28,7 @@ def test_person_summary():
             image="https://example.com/image2",
             party=[Party(name="Democratic"), Party(name="Progressive")],
             extras={"religion": "Zoroastrian"},
-            contact_details=[ContactDetail(fax="123-435-9999", note="Capitol Office")],
+            offices=[Office(fax="123-435-9999", classification="capitol")],
             other_identifiers=[OtherIdentifier(scheme="fake", identifier="abc")],
             ids=PersonIdBlock(twitter="fake"),
             roles=[],
@@ -39,9 +39,7 @@ def test_person_summary():
             gender="M",
             image="https://example.com/image3",
             party=[Party(name="Republican")],
-            contact_details=[
-                ContactDetail(voice="123-435-9999", note="Capitol Office")
-            ],
+            offices=[Office(voice="123-435-9999", classification="capitol")],
             other_identifiers=[OtherIdentifier(scheme="fake", identifier="123")],
             roles=[],
         ),
@@ -51,7 +49,7 @@ def test_person_summary():
         s.summarize(p)
 
     assert s.parties == {"Republican": 1, "Democratic": 2, "Progressive": 1}
-    assert s.contact_counts == {"Capitol Office voice": 1, "Capitol Office fax": 1}
+    assert s.contact_counts == {"capitol voice": 1, "capitol fax": 1}
     assert s.id_counts == {"fake": 2, "twitter": 1}
     assert s.optional_fields == {"gender": 3, "image": 3}
     assert s.extra_counts == {"religion": 1}

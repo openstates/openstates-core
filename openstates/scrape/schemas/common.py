@@ -1,18 +1,3 @@
-from ...data import common
-
-contact_details = {
-    "type": "array",
-    "items": {
-        "type": "object",
-        "properties": {
-            "type": {"type": "string", "enum": common.CONTACT_TYPES},
-            "value": {"type": "string", "minLength": 1},
-            "note": {"type": "string"},
-            "label": {"type": "string"},
-        },
-    },
-}
-
 identifiers = {
     "items": {
         "properties": {

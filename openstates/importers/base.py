@@ -7,7 +7,7 @@ import typing
 from django.db.models import Q, Model
 from django.db.models.signals import post_save
 from .. import settings
-from ..data.models import LegislativeSession, Person
+from ..data.models import LegislativeSession, Person, Bill
 from ..exceptions import DuplicateItemError, UnresolvedIdError, DataImportError
 from ..utils import get_pseudo_id, utcnow
 from ._types import _ID, _JsonDict, _RelatedModels, _TransformerMapping
@@ -16,7 +16,7 @@ _PersonCacheKey = typing.Tuple[str, typing.Optional[str], typing.Optional[str]]
 
 
 def omnihash(obj: typing.Any) -> int:
-    """ recursively hash unhashable objects """
+    """recursively hash unhashable objects"""
     if isinstance(obj, set):
         return hash(frozenset(omnihash(e) for e in obj))
     elif isinstance(obj, (tuple, list)):
@@ -54,7 +54,7 @@ def items_differ(
     dbitems: typing.List[Model],
     subfield_dict: _JsonDict,
 ) -> bool:
-    """ check whether or not jsonitems and dbitems differ """
+    """check whether or not jsonitems and dbitems differ"""
 
     # short circuit common cases
     if len(jsonitems) == len(dbitems) == 0:
@@ -160,6 +160,32 @@ class BaseImporter:
     def update_computed_fields(self, obj: Model) -> None:
         pass
 
+    def resolve_bill(self, bill_id: str, *, date: str) -> typing.Optional[_ID]:
+        bill_transform_func = settings.IMPORT_TRANSFORMERS.get("bill", {}).get(
+            "identifier", None
+        )
+        if bill_transform_func:
+            bill_id = bill_transform_func(bill_id)
+
+        objects = Bill.objects.filter(
+            Q(legislative_session__end_date__gte=date)
+            | Q(legislative_session__end_date=""),
+            legislative_session__start_date__lte=date,
+            legislative_session__jurisdiction_id=self.jurisdiction_id,
+            identifier=bill_id,
+        )
+        ids = {each.id for each in objects}
+
+        if len(ids) == 1:
+            return ids.pop()
+        elif len(ids) == 0:
+            self.error(f"could not resolve bill id {bill_id} {date}, no matches")
+        else:
+            self.error(
+                f"could not resolve bill id {bill_id} {date}, {len(ids)} matches"
+            )
+        return None
+
     def resolve_json_id(
         self, json_id: str, allow_no_match: bool = False
     ) -> typing.Optional[_ID]:
@@ -222,7 +248,7 @@ class BaseImporter:
             raise UnresolvedIdError("cannot resolve id: {}".format(json_id))
 
     def import_directory(self, datadir: str) -> typing.Dict[str, typing.Dict]:
-        """ import a JSON directory into the database """
+        """import a JSON directory into the database"""
 
         def json_stream() -> typing.Iterator[_JsonDict]:
             # load all json, mapped by json_id
@@ -259,7 +285,7 @@ class BaseImporter:
     def import_data(
         self, data_items: typing.Iterable[_JsonDict]
     ) -> typing.Dict[str, typing.Dict]:
-        """ import a bunch of dicts together """
+        """import a bunch of dicts together"""
         # keep counts of all actions
         record = {
             "insert": 0,
@@ -276,14 +302,18 @@ class BaseImporter:
             record[what] += 1
 
         # all objects are loaded, a perfect time to do inter-object resolution and other tasks
-        self.postimport()
+        if self.json_to_db_id:
+            # only do postimport step if there are some items of this type
+            # resolution of bills take a long time if not
+            # and events & votes get deleted!
+            self.postimport()
 
         record["end"] = utcnow()
 
         return {self._type: record}
 
     def import_item(self, data: _JsonDict) -> typing.Tuple[_ID, str]:
-        """ function used by import_data """
+        """function used by import_data"""
         what = "noop"
 
         # remove the JSON _id (may still be there if called directly)
@@ -483,7 +513,7 @@ class BaseImporter:
 
         return data
 
-    def get_seen_sessions(self) -> typing.List[int]:
+    def get_seen_sessions(self) -> typing.List[str]:
         return [s.id for s in self.session_cache.values()]
 
     def resolve_person(

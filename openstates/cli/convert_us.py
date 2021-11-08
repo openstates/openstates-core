@@ -9,7 +9,7 @@ from ..models.people import (
     OtherIdentifier,
     Role,
     Party,
-    ContactDetail,
+    Office,
     Link,
     PersonIdBlock,
 )  # type: ignore
@@ -28,12 +28,12 @@ def make_org_id(id_: str) -> str:
     return "ocd-organization/" + str(uuid.uuid5(US_UUID_NAMESPACE, id_))
 
 
-def get_district_offices() -> defaultdict[str, list[ContactDetail]]:
+def get_district_offices() -> defaultdict[str, list[Office]]:
     district_offices = defaultdict(list)
     url = "https://theunitedstates.io/congress-legislators/legislators-district-offices.json"
     entries = requests.get(url).json()
     for entry in entries:
-        for office in entry["offices"]:
+        for num, office in enumerate(entry["offices"]):
             address = office.get("address", "")
             if address:
                 if office.get("suite"):
@@ -41,11 +41,12 @@ def get_district_offices() -> defaultdict[str, list[ContactDetail]]:
                 address += f"; {office['city']}, {office['state']} {office['zip']}"
 
             district_offices[entry["id"]["bioguide"]].append(
-                ContactDetail(
-                    note="District Office",
+                Office(
+                    classification="district",
                     voice=office.get("phone", ""),
                     fax=office.get("fax", ""),
                     address=address,
+                    name=f"District Office #{num+1}",
                 )
             )
     return district_offices
@@ -142,9 +143,9 @@ def current_to_person(current: dict[str, typing.Any]) -> tuple[str, Person]:
     address = cur_term.get("address", "")
     voice = cur_term.get("phone", "")
     if address or voice:
-        p.contact_details.append(
-            ContactDetail(
-                note="Capitol Office",
+        p.offices.append(
+            Office(
+                classification="capitol",
                 address=address,
                 voice=voice,
             )
@@ -158,7 +159,7 @@ def scrape_people() -> None:
     district_offices = get_district_offices()
     social = get_social()
     for bioguide, person in fetch_current_people():
-        person.contact_details.extend(district_offices[bioguide])
+        person.offices.extend(district_offices[bioguide])
         if bioguide in social:
             person.ids = social[bioguide]
         person.sources.append(Link(url="https://theunitedstates.io/"))

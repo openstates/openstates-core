@@ -6,9 +6,9 @@ from .people_orgs import (
     Person,
     PersonIdentifier,
     PersonName,
-    PersonContactDetail,
     PersonLink,
     PersonSource,
+    PersonOffice,
     Post,
     Membership,
 )
@@ -33,16 +33,11 @@ from .event import (
     Event,
     EventLocation,
     EventMedia,
-    EventMediaLink,
     EventDocument,
-    EventLink,
-    EventSource,
     EventParticipant,
     EventAgendaItem,
     EventRelatedEntity,
     EventAgendaMedia,
-    EventAgendaMediaLink,
-    EventDocumentLink,
 )
 from .reports import (
     RunPlan,

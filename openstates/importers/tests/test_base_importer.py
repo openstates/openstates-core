@@ -21,11 +21,12 @@ from openstates.exceptions import UnresolvedIdError, DataImportError
 
 def create_jurisdiction():
     Division.objects.create(id="ocd-division/country:us", name="USA")
-    Jurisdiction.objects.create(id="jid", division_id="ocd-division/country:us")
+    j = Jurisdiction.objects.create(id="jid", division_id="ocd-division/country:us")
     Organization.objects.create(jurisdiction_id="jid", classification="legislature")
     LegislativeSession.objects.create(
         jurisdiction_id="jid", name="2020", identifier="2020"
     )
+    return j
 
 
 class FakeImporter(BaseImporter):
@@ -194,3 +195,53 @@ def test_resolve_person_case_insensitive():
     p.memberships.create(organization=org)
 
     assert bi.resolve_person('~{"name": "JohN mCgUIrk"}') == p.id
+
+
+@pytest.mark.django_db
+def test_resolve_bill_by_date():
+    j = create_jurisdiction()
+    session = j.legislative_sessions.create(
+        name="2021",
+        identifier="2021",
+        start_date="2021-01-01",
+        end_date="2021-12-31",
+    )
+    bi = BillImporter("jid")
+    b = Bill.objects.create(
+        identifier="HB 1", title="Some Bill", legislative_session=session
+    )
+
+    assert bi.resolve_bill("HB 1", date="2021-05-06") == b.id
+
+
+@pytest.mark.django_db
+def test_resolve_bill_by_date_transformers():
+    j = create_jurisdiction()
+    session = j.legislative_sessions.create(
+        name="2021",
+        identifier="2021",
+        start_date="2021-01-01",
+        end_date="2021-12-31",
+    )
+    bi = BillImporter("jid")
+    b = Bill.objects.create(
+        identifier="HB 1", title="Some Bill", legislative_session=session
+    )
+    assert bi.resolve_bill("hb1", date="2021-05-06") == b.id
+
+
+@pytest.mark.django_db
+def test_resolve_bill_by_date_open_session():
+    j = create_jurisdiction()
+    session = j.legislative_sessions.create(
+        name="2021",
+        identifier="2021",
+        start_date="2021-01-01",
+        # no end date
+    )
+    bi = BillImporter("jid")
+    b = Bill.objects.create(
+        identifier="HB 1", title="Some Bill", legislative_session=session
+    )
+
+    assert bi.resolve_bill("HB 1", date="2021-05-06") == b.id

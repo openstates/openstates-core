@@ -188,9 +188,6 @@ class Scraper(scrapelib.Scraper):
 
         return record
 
-    def latest_session(self):
-        return self.jurisdiction.legislative_sessions[-1]["identifier"]
-
     def scrape(self, **kwargs):
         raise NotImplementedError(
             self.__class__.__name__ + " must provide a scrape() method"
@@ -305,15 +302,6 @@ class SourceMixin(object):
         self.sources.append(new)
 
 
-class ContactDetailMixin(object):
-    def __init__(self):
-        super(ContactDetailMixin, self).__init__()
-        self.contact_details = []
-
-    def add_contact_detail(self, *, type, value, note=""):
-        self.contact_details.append({"type": type, "value": value, "note": note})
-
-
 class LinkMixin(object):
     def __init__(self):
         super(LinkMixin, self).__init__()
@@ -321,31 +309,6 @@ class LinkMixin(object):
 
     def add_link(self, url, *, note=""):
         self.links.append({"note": note, "url": url})
-
-
-class IdentifierMixin(object):
-    def __init__(self):
-        super(IdentifierMixin, self).__init__()
-        self.identifiers = []
-
-    def add_identifier(self, identifier, *, scheme=""):
-        self.identifiers.append({"identifier": identifier, "scheme": scheme})
-
-
-class OtherNameMixin(object):
-    def __init__(self):
-        super(OtherNameMixin, self).__init__()
-        self.other_names = []
-
-    def add_name(self, name, *, start_date="", end_date="", note=""):
-        other_name = {"name": name}
-        if start_date:
-            other_name["start_date"] = start_date
-        if end_date:
-            other_name["end_date"] = end_date
-        if note:
-            other_name["note"] = note
-        self.other_names.append(other_name)
 
 
 class AssociatedLinkMixin(object):

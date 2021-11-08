@@ -1,17 +1,17 @@
 import os
 from pathlib import Path
 import pytest  # type: ignore
-from openstates.cli.legacy_people_to_yaml import (
+from openstates.utils.people.merge import (
     reformat_phone_number,
     reformat_address,
     compute_merge,
     Append,
     Replace,
     merge_people,
-    merge_contact_details,
+    merge_offices,
     find_file,
 )
-from openstates.models.people import OtherName, OtherIdentifier, ContactDetail
+from openstates.models.people import OtherName, OtherIdentifier, Office
 from pydantic import BaseModel
 
 
@@ -265,23 +265,23 @@ def test_keep_both_ids(old, new, expected):
     "old, new",
     [
         (
-            [ContactDetail(note="Capitol Office", voice="123-555-9999")],
-            [ContactDetail(note="Capitol Office", voice="123-555-9999")],
+            [Office(classification="capitol", voice="123-555-9999")],
+            [Office(classification="capitol", voice="123-555-9999")],
         ),
         (
             [
-                ContactDetail(note="Capitol Office", voice="123-555-9999"),
-                ContactDetail(note="District Office", address="abc"),
+                Office(classification="capitol", voice="123-555-9999"),
+                Office(classification="district", address="abc"),
             ],
             [
-                ContactDetail(note="Capitol Office", voice="123-555-9999"),
-                ContactDetail(note="District Office", address="abc"),
+                Office(classification="capitol", voice="123-555-9999"),
+                Office(classification="district", address="abc"),
             ],
         ),
     ],
 )
-def test_merge_contact_details_no_change(old, new):
-    assert merge_contact_details(old, new) is None
+def test_merge_office_no_change(old, new):
+    assert merge_offices(old, new) is None
 
 
 @pytest.mark.parametrize(
@@ -289,33 +289,33 @@ def test_merge_contact_details_no_change(old, new):
     [
         # replace a value with a new one
         (
-            [ContactDetail(note="Capitol Office", voice="111-111-1111")],
-            [ContactDetail(note="Capitol Office", voice="222-222-2222")],
-            [ContactDetail(note="Capitol Office", voice="222-222-2222")],
+            [Office(classification="capitol", voice="111-111-1111")],
+            [Office(classification="capitol", voice="222-222-2222")],
+            [Office(classification="capitol", voice="222-222-2222")],
         ),
         # merge two partial records
         (
-            [ContactDetail(note="Capitol Office", voice="111-111-1111")],
-            [ContactDetail(note="Capitol Office", fax="444-444-4444")],
+            [Office(classification="capitol", voice="111-111-1111")],
+            [Office(classification="capitol", fax="444-444-4444")],
             [
-                ContactDetail(
-                    note="Capitol Office", voice="111-111-1111", fax="444-444-4444"
+                Office(
+                    classification="capitol", voice="111-111-1111", fax="444-444-4444"
                 )
             ],
         ),
         # merge two offices into a single list
         (
-            [ContactDetail(note="Capitol Office", voice="111-111-1111")],
-            [ContactDetail(note="District Office", voice="444-444-4444")],
+            [Office(classification="capitol", voice="111-111-1111")],
+            [Office(classification="district", voice="444-444-4444")],
             [
-                ContactDetail(note="Capitol Office", voice="111-111-1111"),
-                ContactDetail(note="District Office", voice="444-444-4444"),
+                Office(classification="capitol", voice="111-111-1111"),
+                Office(classification="district", voice="444-444-4444"),
             ],
         ),
     ],
 )
-def test_merge_contact_details_changes(old, new, expected):
-    assert merge_contact_details(old, new) == expected
+def test_merge_offices_changes(old, new, expected):
+    assert merge_offices(old, new) == expected
 
 
 def test_merge_extras():

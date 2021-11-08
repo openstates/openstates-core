@@ -2,13 +2,10 @@ import typing
 import re
 import json
 import click
-import itertools
 from pathlib import Path
-from collections import defaultdict
 from pydantic import BaseModel
-from .. import metadata
-from ..utils import abbr_to_jid
-from ..utils.people import (
+from ... import metadata
+from ..people import (
     get_new_filename,
     get_data_path,
     dump_obj,
@@ -16,11 +13,11 @@ from ..utils.people import (
     retire_person,
     retire_file,
 )
-from ..models.people import (
+from ...models.people import (
     Person,
     Role,
     Party,
-    ContactDetail,
+    Office,
     Link,
     OtherName,
     OtherIdentifier,
@@ -47,32 +44,32 @@ def find_file(leg_id: str, *, state: str = "*") -> Path:
         raise FileNotFoundError()
 
 
-def merge_contact_details(
-    old: list[ContactDetail], new: list[ContactDetail]
-) -> typing.Optional[typing.List[ContactDetail]]:
+def merge_offices(
+    old: list[Office], new: list[Office]
+) -> typing.Optional[typing.List[Office]]:
     # figure out which office entries are which
-    old_offices: dict[str, ContactDetail] = {}
-    new_offices: dict[str, ContactDetail] = {}
+    old_offices: dict[str, Office] = {}
+    new_offices: dict[str, Office] = {}
     offices = []
     update = False
 
     for office in old:
-        note = office.note
+        note = office.display_name
         if note not in old_offices:
             old_offices[note] = office
         else:
             raise NotImplementedError(f"extra old {note}")
     for office in new:
-        note = office.note
+        note = office.display_name
         if note not in new_offices:
             new_offices[note] = office
         else:
             raise NotImplementedError(f"extra old {note}")
 
-    for note_type in sorted(set(old_offices) | set(new_offices)):
-        combined = update_office(old_offices.get(note_type), new_offices.get(note_type))
+    for note in sorted(set(old_offices) | set(new_offices)):
+        combined = update_office(old_offices.get(note), new_offices.get(note))
         offices.append(combined)
-        if combined != old_offices.get(note_type):
+        if combined != old_offices.get(note):
             update = True
 
     # return all offices if there were any changes
@@ -83,10 +80,10 @@ def merge_contact_details(
 
 
 def update_office(
-    old_office: typing.Optional[ContactDetail],
-    new_office: typing.Optional[ContactDetail],
-) -> ContactDetail:
-    """ function returns a copy of old_office updated with values from new if applicable """
+    old_office: typing.Optional[Office],
+    new_office: typing.Optional[Office],
+) -> Office:
+    """function returns a copy of old_office updated with values from new if applicable"""
 
     # if only one exists, return that one
     if not old_office and new_office:
@@ -145,10 +142,10 @@ class Replace:
         return f"Replace({self.key_name}, {self.value_one}, {self.value_two})"
 
 
-class ContactDetailsReplace(Replace):
+class OfficesReplace(Replace):
     def __str__(self) -> str:
-        def _fmt_cd(cd: ContactDetail) -> str:
-            cd_str = f"{cd.note}"
+        def _fmt_cd(cd: Office) -> str:
+            cd_str = f"{cd.display_name}"
             for key in ("address", "voice", "fax"):
                 if val := getattr(cd, key):
                     cd_str += f" {key}={val}"
@@ -186,12 +183,10 @@ def compute_merge(
                 # new name becomes name, but old name goes into other_names
                 changes.append(Append("other_names", OtherName(name=val1)))
                 changes.append(Replace("name", val1, val2))
-        elif key == "contact_details":
-            changed = merge_contact_details(val1, val2)
+        elif key == "offices":
+            changed = merge_offices(val1, val2)
             if changed:
-                changes.append(
-                    ContactDetailsReplace("contact_details", val1 or [], changed)
-                )
+                changes.append(OfficesReplace("offices", val1 or [], changed))
         elif isinstance(val1, list) or isinstance(val2, list):
             if val1 and not val2:
                 continue
@@ -206,7 +201,7 @@ def compute_merge(
             changes.extend(compute_merge(val1, val2, prefix=key_name))
         else:
             # if values both exist and differ, or val1 is empty, do a Replace
-            if (val1 and val2 and val1 != val2) or not val1:
+            if (val1 and val2 and val1 != val2) or (not val1 and val2):
                 changes.append(Replace(key_name, val1, val2))
 
     return changes
@@ -277,12 +272,12 @@ def incoming_merge(
     return unmatched
 
 
-def copy_new_incoming(abbr: str, new: Person, _type: str) -> None:
+def write_new_file(abbr: str, new: Person, _type: str) -> None:
+    filedir = get_data_path(abbr)
     fname = get_new_filename(new.dict())
-    oldfname = Path(f"incoming/{abbr}/{_type}/{fname}")
-    newfname = f"data/{abbr}/{_type}/{fname}"
-    click.secho(f"moving {oldfname} to {newfname}", fg="yellow")
-    oldfname.rename(newfname)
+    newpath = filedir / _type / fname
+    dump_obj(new, filename=newpath)
+    click.secho(f"writing {new} to {newpath}", fg="yellow")
 
 
 def retire(
@@ -309,17 +304,13 @@ def interactive_merge(
     returns True iff a merge was done
     """
     oldfname = find_file(old.id)
-    newfname = Path(
-        "incoming/{}/legislature/{}".format(abbr, get_new_filename(new.dict()))
-    )
-    click.secho(" {} {}".format(oldfname, newfname), fg="yellow")
+    # click.secho(" {} {}".format(oldfname, newfname), fg="yellow")
 
     # simulate difference
     changes = compute_merge(old, new, keep_both_ids=False)
 
     if not changes:
-        click.secho(f" perfect match, removing {newfname}", fg="green")
-        newfname.unlink()
+        click.secho(" perfect match", fg="green")
         return True
 
     for change in changes:
@@ -349,12 +340,13 @@ def interactive_merge(
     if ch == "a":
         raise SystemExit(-1)
     elif ch == "m":
+        # TODO: remove new file
         merged = merge_people(old, new, keep_both_ids=False)
         dump_obj(merged, filename=oldfname)
         click.secho(" merged.", fg="green")
-        newfname.unlink()
     elif ch == "r":
-        copy_new_incoming(abbr, new, "legislature")
+        # TODO: remove new file
+        write_new_file(abbr, new, "legislature")
         retire(old, new, retirement)
     elif ch == "s":
         return False
@@ -425,165 +417,70 @@ def reformat_address(address: str) -> str:
     return re.sub(r"\s+", " ", re.sub(r"\s*\n\s*", ";", address))
 
 
-def process_pupa_scrape_dir(
-    input_dir: Path, output_dir: Path, jurisdiction_id: str
-) -> list[Person]:
+def process_scrape_dir(input_dir: Path, jurisdiction_id: str) -> list[Person]:
     new_people = []
-    person_memberships = defaultdict(list)
-
-    # collect memberships
-    for filename in input_dir.glob("membership_*.json"):
-        with open(filename) as f:
-            membership = json.load(f)
-
-        if membership["person_id"].startswith("~"):
-            raise ValueError(membership)
-        person_memberships[membership["person_id"]].append(membership)
 
     # process people
-    for filename in input_dir.glob("person_*.json"):
+    for filename in input_dir.glob("*.json"):
         with open(filename) as f:
-            person = json.load(f)
+            data = json.load(f)
 
-        scrape_id = person["_id"]
-        person["memberships"] = person_memberships[scrape_id]
-        scrape_person = process_pupa_person(person, jurisdiction_id)
-        new_people.append(scrape_person)
-        dump_obj(person, output_dir=output_dir)
+        person = process_person(data, jurisdiction_id)
+        new_people.append(person)
 
     return new_people
 
 
-def process_pupa_person(person: dict, jurisdiction_id: str) -> Person:
-    optional_keys = (
-        "image",
-        "gender",
-        "biography",
-        "given_name",
-        "family_name",
-        "birth_date",
-        "death_date",
-        "national_identity",
-        "summary",
-        # maybe post-process these?
-        "other_names",
-    )
+def process_office(office_type: str, office_data: dict) -> typing.Optional[Office]:
+    voice = fax = address = ""
+    if value := office_data["voice"]:
+        voice = reformat_phone_number(value)
+    if value := office_data["fax"]:
+        fax = reformat_phone_number(value)
+    if value := office_data["address"]:
+        address = reformat_address(value)
+
+    if voice or fax or address:
+        return Office(classification=office_type, voice=voice, fax=fax, address=address)
+    else:
+        return None
+
+
+def process_person(data: dict, jurisdiction_id: str) -> Person:
+    offices: list[Office] = []
+    if office := data.pop("capitol_office"):
+        cd = process_office("Capitol Office", office)
+        if cd:
+            offices.append(cd)
+    if office := data.pop("district_office"):
+        cd = process_office("District Office", office)
+        if cd:
+            offices.append(cd)
+    for office in data.pop("additional_offices"):
+        cd = process_office("District Office", office)
+        if cd:
+            offices.append(cd)
+
+    data.pop("state")
+    chamber = data.pop("chamber")
+    district = data.pop("district")
 
     result = Person(
         id=ocd_uuid("person"),
-        name=person["name"],
-        roles=[],
-        links=[Link(url=link["url"], note=link["note"]) for link in person["links"]],
-        sources=[
-            Link(url=link["url"], note=link["note"]) for link in person["sources"]
+        roles=[
+            Role(
+                type=chamber,
+                district=str(district),
+                jurisdiction=jurisdiction_id,
+            )
         ],
+        party=[Party(name=data.pop("party"))],
+        links=[Link(url=link["url"], note=link["note"]) for link in data.pop("links")],
+        sources=[
+            Link(url=link["url"], note=link["note"]) for link in data.pop("sources")
+        ],
+        offices=offices,
+        **data,
     )
-
-    contact_details: defaultdict[str, defaultdict[str, list[str]]] = defaultdict(
-        lambda: defaultdict(list)
-    )
-    email = None
-    for detail in person["contact_details"]:
-        value = detail["value"]
-        if detail["type"] in ("voice", "fax"):
-            value = reformat_phone_number(value)
-        elif detail["type"] == "address":
-            value = reformat_address(value)
-        elif detail["type"] == "email":
-            email = value
-            continue
-        contact_details[detail["note"]][detail["type"]] = value
-
-    if email:
-        result.email = email
-    result.contact_details = [
-        ContactDetail(note=key, **val) for key, val in contact_details.items()
-    ]
-
-    for membership in person["memberships"]:
-        organization_id = membership["organization_id"]
-        if organization_id.startswith("~"):
-            org = json.loads(organization_id[1:])
-            if org["classification"] in ("upper", "lower", "legislature"):
-                post = json.loads(membership["post_id"][1:])["label"]
-                result.roles = [
-                    Role(
-                        type=org["classification"],
-                        district=str(post),
-                        jurisdiction=jurisdiction_id,
-                    )
-                ]
-            elif org["classification"] == "party":
-                result.party = [Party(name=org["name"])]
-
-    for key in optional_keys:
-        if val := person.get(key):
-            setattr(result, key, val)
-
-    # promote some extras where appropriate
-    extras = person.get("extras", {}).copy()
-    for key in person.get("extras", {}).keys():
-        if key in optional_keys:
-            setattr(result, key, extras.pop(key))
-    if extras:
-        result.extras = extras
-
-    if person.get("identifiers"):
-        result.other_identifiers = person["identifiers"]
 
     return result
-
-
-@click.command()  # pragma: no cover
-@click.argument("input_dir")
-@click.option(
-    "--retirement",
-    default=None,
-    help="Set retirement date for all people marked retired (in incoming mode).",
-)
-def main(input_dir: str, retirement: str) -> None:
-    """
-    Convert scraped JSON in INPUT_DIR to YAML files for this repo.
-
-    Will put data into incoming/ directory for usage with merge.py's --incoming option.
-    """
-
-    # abbr is last piece of directory name
-    abbr = ""
-    for piece in input_dir.split("/")[::-1]:
-        if piece:
-            abbr = piece
-            break
-
-    jurisdiction_id = abbr_to_jid(abbr)
-
-    output_dir = get_data_path(abbr)
-    incoming_dir = Path(str(output_dir).replace("data", "incoming")) / "legislature"
-    assert "incoming" in str(incoming_dir)
-
-    try:
-        incoming_dir.mkdir(parents=True)
-    except FileExistsError:
-        for file in incoming_dir.glob("*.yml"):
-            file.unlink()
-
-    new_people = process_pupa_scrape_dir(Path(input_dir), incoming_dir, jurisdiction_id)
-
-    existing_people: list[Person] = []
-    directory = get_data_path(abbr)
-    for filename in itertools.chain(
-        directory.glob("legislature/*.yml"),
-        directory.glob("retired/*.yml"),
-    ):
-        existing_people.append(Person.load_yaml(filename))
-
-    click.secho(
-        f"analyzing {len(existing_people)} existing people and {len(new_people)} incoming"
-    )
-
-    unmatched = incoming_merge(abbr, existing_people, new_people, retirement)
-    click.secho(f"{len(unmatched)} people were unmatched")
-
-
-if __name__ == "__main__":
-    main()

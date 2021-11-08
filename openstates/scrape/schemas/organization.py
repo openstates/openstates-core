@@ -1,6 +1,5 @@
 from .common import (
     links,
-    contact_details,
     identifiers,
     other_names,
     sources,
@@ -18,7 +17,6 @@ schema = {
             "enum": common.ORGANIZATION_CLASSIFICATIONS,
         },
         "parent_id": {"type": ["string", "null"]},
-        "contact_details": contact_details,
         "links": links,
         "sources": sources,
         # added to popolo

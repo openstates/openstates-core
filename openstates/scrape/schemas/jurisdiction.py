@@ -19,6 +19,7 @@ schema = {
                         "required": True,
                     },
                     "end_date": {"type": [fuzzy_date_string, "date"], "required": True},
+                    "active": {"type": "boolean"},
                 },
             },
         },

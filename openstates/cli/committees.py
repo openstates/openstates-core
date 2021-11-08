@@ -62,6 +62,7 @@ class PersonMatcher:
                 self.add_name(chamber, name.name, person.id)
 
     def add_name(self, chamber: str, name_piece: str, id_: str) -> None:
+        name_piece = name_piece.lower()
         self.all_ids.add(id_)
         if name_piece in self.current_people[chamber]:
             self.current_people[chamber][name_piece].add(id_)
@@ -73,6 +74,7 @@ class PersonMatcher:
 
     @lru_cache(500)
     def match(self, chamber: str, name: str) -> typing.Optional[str]:
+        name = name.lower()
         candidates = self.current_people[chamber].get(name, None)
         if not candidates:
             click.secho(
@@ -165,6 +167,8 @@ def merge_lists(orig: list, new: list, key_attr: str) -> list:
     # add original items, or their replacements if present
     for item in orig:
         key = getattr(item, key_attr)
+        if key in seen:
+            continue
         seen.add(key)
         if key in new_by_key:
             combined.append(new_by_key[key])
@@ -175,31 +179,6 @@ def merge_lists(orig: list, new: list, key_attr: str) -> list:
         if key not in seen:
             combined.append(item)
     return combined
-
-
-def merge_committees(orig: Committee, new: ScrapeCommittee) -> Committee:
-    # disallow merge of these, likely error & unclear what should happen
-    if orig.chamber != new.chamber:
-        raise ValueError("cannot merge committees with different chambers")
-    if orig.parent != new.parent:
-        raise ValueError("cannot merge committees with different parents")
-    if orig.classification != new.classification:
-        raise ValueError("cannot merge committees with different classifications")
-    # TODO: jurisdiction isn't yet set on ScrapeCommittee... do we need another check here?
-
-    merged = Committee(
-        id=orig.id,  # id stays constant
-        chamber=orig.chamber,
-        parent=orig.parent,
-        classification=orig.classification,
-        jurisdiction=orig.jurisdiction,
-        name=new.name,  # name can be updated
-        sources=merge_lists(orig.sources, new.sources, "url"),
-        links=merge_lists(orig.links, new.links, "url"),
-        other_names=merge_lists(orig.other_names, new.other_names, "name"),
-        members=merge_lists(orig.members, new.members, "name"),
-    )
-    return merged
 
 
 class CommitteeDir:
@@ -231,6 +210,38 @@ class CommitteeDir:
                 if raise_errors:
                     raise
                 self.errors.append((filename, ve))
+
+    def merge_committees(self, orig: Committee, new: ScrapeCommittee) -> Committee:
+        # need new parent id
+        new_parent_id = None
+        if new.parent:
+            new_parent_id = self.coms_by_chamber_and_name[new.chamber][new.parent].id
+
+        # disallow merge of these, likely error & unclear what should happen
+        if orig.chamber != new.chamber:
+            raise ValueError("cannot merge committees with different chambers")
+        if orig.parent != new_parent_id:
+            print(orig)
+            print(new_parent_id)
+            print(new)
+            raise ValueError("cannot merge committees with different parents")
+        if orig.classification != new.classification:
+            raise ValueError("cannot merge committees with different classifications")
+        # TODO: jurisdiction isn't yet set on ScrapeCommittee... do we need another check here?
+
+        merged = Committee(
+            id=orig.id,  # id stays constant
+            chamber=orig.chamber,
+            parent=orig.parent,
+            classification=orig.classification,
+            jurisdiction=orig.jurisdiction,
+            name=new.name,  # name can be updated
+            sources=merge_lists(orig.sources, new.sources, "url"),
+            links=merge_lists(orig.links, new.links, "url"),
+            other_names=merge_lists(orig.other_names, new.other_names, "name"),
+            members=merge_lists(orig.members, new.members, "name"),
+        )
+        return merged
 
     def print_warnings(self) -> None:
         unmatched_names = set()
@@ -371,7 +382,7 @@ class CommitteeDir:
                 com_without_id.pop("id")
                 com_without_id.pop("jurisdiction")
                 rev_sc = ScrapeCommittee(**com_without_id)
-                if com != rev_sc:
+                if com != rev_sc and com.parent == rev_sc.parent:
                     to_merge.append((existing, com))
                 else:
                     same += 1
@@ -490,7 +501,7 @@ def merge(abbr: str, input_dir: str) -> None:
 
             # merge remaining committees
             for orig, new in plan.to_merge:
-                merged = merge_committees(orig, new)
+                merged = comdir.merge_committees(orig, new)
                 comdir.save_committee(merged)
         else:
             click.secho("nothing to do!", fg="green")

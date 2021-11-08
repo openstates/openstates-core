@@ -1,7 +1,6 @@
 import typing
 from ..models import State, Chamber, District
-from us import STATES  # type: ignore
-
+from .states import STATES
 
 seats_by_state = {
     "AL": 7,

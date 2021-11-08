@@ -6,7 +6,6 @@ from .base import (
     ModelAdmin,
     ReadOnlyTabularInline,
     IdentifierInline,
-    ContactDetailInline,
     OtherNameInline,
 )
 
@@ -19,8 +18,9 @@ class PersonNameInline(OtherNameInline):
     model = models.PersonName
 
 
-class PersonContactDetailInline(ContactDetailInline):
-    model = models.PersonContactDetail
+class PersonOfficeInline(ReadOnlyTabularInline):
+    readonly_fields = ("classification", "address", "voice", "fax", "name")
+    model = models.PersonOffice
 
 
 class PersonLinkInline(ReadOnlyTabularInline):
@@ -62,7 +62,7 @@ class PersonAdmin(ModelAdmin):
     inlines = [
         PersonIdentifierInline,
         PersonNameInline,
-        PersonContactDetailInline,
+        PersonOfficeInline,
         PersonLinkInline,
         PersonSourceInline,
         MembershipInline,

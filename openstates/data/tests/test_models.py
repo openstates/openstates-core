@@ -109,7 +109,7 @@ def test_ocdid_default():
 
 @pytest.mark.django_db
 def test_ocdid_default_nondup():
-    """ ensure that defaults actually vary """
+    """ensure that defaults actually vary"""
     p1 = Person(name="test person 1")
     p2 = Person(name="test person 2")
     assert p1.id != p2.id
@@ -427,36 +427,24 @@ def test_event_participant_organization(event):
 
 @pytest.mark.django_db
 def test_event_link(event):
-    event.links.create(note="EPA Website", url="http://www.epa.gov/")
-    assert "http://www.epa.gov/" in str(event.links.all()[0])
+    event.links.append(dict(note="EPA Website", url="http://www.epa.gov/"))
+    event.save()
+    assert "http://www.epa.gov/" in str(event.links[0])
 
 
 @pytest.mark.django_db
 def test_event_media_w_links(event):
     # test adding media to event
     e_m = event.media.create(
-        note="Recording of the meeting", date="2014-04-12", offset="19"
+        note="Recording of the meeting",
+        date="2014-04-12",
+        offset="19",
+        links=[dict(media_type="video/webm", url="http://example.com/video.webm")],
     )
     assert "Recording of the meeting" in str(e_m)
 
-    # test adding link event media
-    e_m.links.create(media_type="video/webm", url="http://example.com/video.webm")
-    assert "http://example.com/video.webm" in str(e_m.links.all()[0])
-
-
-@pytest.mark.django_db
-def test_event_document_w_links(event):
-    # test adding document to event
-    e_d = event.documents.create(date="2014-04-12", note="Agenda")
-    assert "Agenda" in str(e_d)
-    assert event.name in str(e_d)
-
-    # test adding link to event document
-    e_d.links.create(
-        url="http://committee.example.com/agenda.pdf", media_type="application/pdf"
-    )
-    assert "http://committee.example.com/agenda.pdf" in str(e_d.links.all()[0])
-    assert e_d.note in str(e_d.links.all()[0])
+    # test link event media
+    assert "http://example.com/video.webm" in str(e_m.links[0])
 
 
 @pytest.mark.django_db
@@ -472,12 +460,14 @@ def test_event_agenda(event, vote_event, bill):
     assert event.name in str(e_a)
 
     # test adding media to event agenda item
-    e_a_med = e_a.media.create(note="Recording Darwin presentation", date="2014-04-12")
+    e_a_med = e_a.media.create(
+        note="Recording Darwin presentation",
+        date="2014-04-12",
+        links=[dict(media_type="video/mp4", url="http://example.com/video.mp4")],
+    )
     assert "Recording Darwin presentation" in str(e_a_med)
-
     # test adding link to event agenda item media
-    e_a_med.links.create(media_type="video/mp4", url="http://example.com/video.mp4")
-    assert "http://example.com/video.mp4" in str(e_a_med.links.all()[0])
+    assert "http://example.com/video.mp4" in str(e_a_med.links[0])
 
     # test adding related entities to event agenda
     e_a.related_entities.create(bill=bill, entity_type="bill", name=bill.identifier)
