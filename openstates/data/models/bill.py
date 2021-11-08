@@ -39,6 +39,7 @@ class Bill(OCDBase):
     # check that array values are in enum?
     classification = ArrayField(base_field=models.TextField(), blank=True, default=list)
     subject = ArrayField(base_field=models.TextField(), blank=True, default=list)
+    citations = models.JSONField(default=dict, blank=True)
 
     # computed fields
     first_action_date = models.CharField(max_length=25, default=None, null=True)
