@@ -2,6 +2,7 @@ from django.contrib import admin
 from django.template import defaultfilters
 from .base import ModelAdmin, ReadOnlyTabularInline, IdentifierInline
 from .. import models
+from django.utils.html import format_html_join
 
 
 class BillAbstractInline(ReadOnlyTabularInline):
@@ -33,7 +34,7 @@ class BillActionInline(ReadOnlyTabularInline):
     get_related_entities.allow_tags = True
 
     list_select_related = ("BillActionRelatedEntity",)
-    readonly_fields = ("date", "organization", "description", "get_related_entities")
+    readonly_fields = fields = ("date", "organization", "description", "get_related_entities")
 
 
 class RelatedBillInline(ReadOnlyTabularInline):
@@ -45,7 +46,8 @@ class RelatedBillInline(ReadOnlyTabularInline):
 
 class BillSponsorshipInline(ReadOnlyTabularInline):
     model = models.BillSponsorship
-    readonly_fields = fields = ("name", "primary", "classification")
+    readonly_fields = fields = ("person", "primary", "classification")
+    ordering = ("classification", "name")
     extra = 0
 
 
@@ -53,8 +55,10 @@ class DocVersionInline(ReadOnlyTabularInline):
     model = models.BillVersion
 
     def get_links(self, obj):
-        return "<br />".join(
-            '<a href="{0}">{0}</a>'.format(link.url) for link in obj.links.all()
+        return format_html_join(
+            '<br />',
+            '<a href="{}" target="_blank">{}</a>',
+            ((link.url, link.url) for link in obj.links.all())
         )
 
     get_links.short_description = "Links"
@@ -66,7 +70,7 @@ class DocVersionInline(ReadOnlyTabularInline):
 
 class BillVersionInline(DocVersionInline):
     model = models.BillVersion
-
+    readonly_fields = fields = ("date", "note", "classification")
 
 class BillDocumentInline(DocVersionInline):
     model = models.BillDocument
@@ -89,7 +93,7 @@ class BillAdmin(ModelAdmin):
         "subject",
         "extras",
     )
-    search_fields = ["identifier", "title"]
+    search_fields = ["identifier", "title", "legislative_session__jurisdiction__name"]
     list_select_related = ("legislative_session", "legislative_session__jurisdiction")
     inlines = [
         BillAbstractInline,
@@ -137,3 +141,4 @@ class BillAdmin(ModelAdmin):
     )
 
     list_filter = ("legislative_session__jurisdiction__name",)
+    ordering = ("legislative_session__jurisdiction__name", "legislative_session", "identifier")
