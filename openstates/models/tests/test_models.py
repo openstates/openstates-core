@@ -290,14 +290,23 @@ def test_committee():
         chamber="upper",
         id=VALID_ORG_ID,
         jurisdiction=VALID_JURISDICTION_ID,
+        members=[Membership(name="someone", role="member")],
     )
     with pytest.raises(ValidationError):
         Committee(
-            name="Health", chamber="upper", id="123", jurisdiction=VALID_JURISDICTION_ID
+            name="Health",
+            chamber="upper",
+            id="123",
+            jurisdiction=VALID_JURISDICTION_ID,
+            members=[Membership(name="someone", role="member")],
         )
     with pytest.raises(ValidationError):
         Committee(
-            name="Health", chamber="upper", id=VALID_ORG_ID, jurisdiction="canada"
+            name="Health",
+            chamber="upper",
+            id=VALID_ORG_ID,
+            jurisdiction="canada",
+            members=[Membership(name="someone", role="member")],
         )
 
 
@@ -307,6 +316,7 @@ def test_committee_dict_order():
         chamber="upper",
         id=VALID_ORG_ID,
         jurisdiction=VALID_JURISDICTION_ID,
+        members=[Membership(name="someone", role="member")],
     )
     assert list(c.to_dict().keys())[:4] == [
         "id",
