@@ -8,7 +8,7 @@ class Migration(migrations.Migration):
     dependencies = [
         (
             "data",
-            "0037_importobjects_runplan_scrapeobjects_scrapereport_sessiondataqualityreport",
+            "0043_legislativesession_active",
         ),
     ]
 
