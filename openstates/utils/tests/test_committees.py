@@ -69,13 +69,18 @@ def test_merge_committees_name():
     id_one = "ocd-organization/00000000-0000-0000-0000-000000000001"
     id_two = "ocd-organization/00000000-0000-0000-0000-000000000002"
     c1 = Committee(
-        id=id_one, jurisdiction=JURISDICTION_ID, chamber="upper", name="Education"
+        id=id_one,
+        jurisdiction=JURISDICTION_ID,
+        chamber="upper",
+        name="Education",
+        members=[Membership(name="Someone", role="member")],
     )
     c2 = Committee(
         id=id_two,
         jurisdiction=JURISDICTION_ID,
         chamber="upper",
         name="Education & Children",
+        members=[Membership(name="Someone", role="member")],
     )
     merged = comdir.merge_committees(c1, c2)
     assert merged.id == c1.id
@@ -88,13 +93,18 @@ def test_merge_committees_invalid():
     id_one = "ocd-organization/00000000-0000-0000-0000-000000000001"
     id_two = "ocd-organization/00000000-0000-0000-0000-000000000002"
     c1 = Committee(
-        id=id_one, jurisdiction=JURISDICTION_ID, chamber="upper", name="Education"
+        id=id_one,
+        jurisdiction=JURISDICTION_ID,
+        chamber="upper",
+        name="Education",
+        members=[Membership(name="Someone", role="member")],
     )
     c2 = Committee(
         id=id_two,
         jurisdiction=JURISDICTION_ID,
         chamber="lower",
         name="Education & Children",
+        members=[Membership(name="Someone", role="member")],
     )
     with pytest.raises(ValueError):
         comdir.merge_committees(c1, c2)
@@ -113,6 +123,7 @@ def test_merge_committees_links():
             Link(url="https://example.com/1"),
             Link(url="https://example.com/2"),
         ],
+        members=[Membership(name="Someone", role="member")],
     )
     c2 = Committee(
         id=id_two,
@@ -123,6 +134,7 @@ def test_merge_committees_links():
             Link(url="https://example.com/1", note="first"),
             Link(url="https://example.com/3"),
         ],
+        members=[Membership(name="Someone", role="member")],
     )
     merged = comdir.merge_committees(c1, c2)
     assert merged.links == [
@@ -188,7 +200,7 @@ def test_load_data_with_errors():
     path1, msg1 = comdir.errors[1]
     if "lower" in str(path0):
         msg0, msg1 = msg1, msg0
-    assert "8 validation errors" in str(msg0)
+    assert "9 validation errors" in str(msg0)
     assert "members -> 3 -> who" in str(msg0)
     assert "members -> 3 -> name" in str(msg0)
     assert "2 validation errors" in str(msg1)
@@ -215,12 +227,14 @@ def test_get_new_filename():
         jurisdiction=JURISDICTION_ID,
         name="Simple",
         chamber="lower",
+        members=[Membership(name="Someone", role="member")],
     )
     longer = Committee(
         id="ocd-organization/00001111-2222-3333-4444-999999999999",
         jurisdiction=JURISDICTION_ID,
         name="Ways, Means & Taxes",
         chamber="upper",
+        members=[Membership(name="Someone", role="member")],
     )
     assert (
         comdir.get_new_filename(simple)
@@ -273,7 +287,11 @@ def test_add_committee():
         directory=TEST_DATA_PATH / "committees",
     )
     with patch.object(comdir, "save_committee") as patch_obj:
-        sc = ScrapeCommittee(chamber="lower", name="New Business")
+        sc = ScrapeCommittee(
+            chamber="lower",
+            name="New Business",
+            members=[Membership(name="Someone", role="member")],
+        )
         comdir.add_committee(sc)
         full_com = comdir.coms_by_chamber_and_name[sc.chamber][sc.name]
         assert full_com.name == sc.name
