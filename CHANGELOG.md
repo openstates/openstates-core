@@ -1,5 +1,10 @@
 # Changelog
 
+## 6.8.2 - November 8 2021
+
+* os-committee linting improvements
+* os-committee merge avoids duplicates
+
 ## 6.8.1 - November 4 2021
 
 * fix for circular import in openstates.metadata
