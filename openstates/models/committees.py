@@ -48,7 +48,7 @@ class ScrapeCommittee(BaseModel):
 
     @root_validator
     def validate_has_members(cls, data: dict[str, typing.Any]) -> dict[str, typing.Any]:
-        if not len(data.get("members")):
+        if not len(data.get("members")):  # type: ignore
             raise ValueError("committees must have members")
         return data
 
