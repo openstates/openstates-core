@@ -167,6 +167,8 @@ def merge_lists(orig: list, new: list, key_attr: str) -> list:
     # add original items, or their replacements if present
     for item in orig:
         key = getattr(item, key_attr)
+        if key in seen:
+            continue
         seen.add(key)
         if key in new_by_key:
             combined.append(new_by_key[key])
