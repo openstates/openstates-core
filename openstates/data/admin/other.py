@@ -45,14 +45,14 @@ class LegislativeSessionInline(ReadOnlyTabularInline):
     readonly_fields = ("identifier", "get_name", "classification", "start_date", "end_date")
     fields = readonly_fields
     ordering = ("-identifier",)
-    
+
     def get_name(self, legislative_session):
         admin_url = reverse(
             "admin:data_legislativesession_change", args=(legislative_session.pk,)
         )
         tmpl = u'<a href="%s">%s</a>'
         return format_html(tmpl % (admin_url, legislative_session.name))
-    
+
     get_name.short_description = "NAME"
     get_name.allow_tags = True
 
@@ -94,6 +94,6 @@ class JurisdictionAdmin(ModelAdmin):
         "extras",
         "url",
     )
-    ordering = ("id",)
+    ordering = ("-classification", "id",)
     search_fields = ("id", "name")
     inlines = [LegislativeSessionInline, OrganizationInline]

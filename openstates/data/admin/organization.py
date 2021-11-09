@@ -16,16 +16,16 @@ class PostInline(admin.TabularInline):
     fields = readonly_fields = ("get_label", "role")
     ordering = ("label",)
     can_delete = False
-    
+
     def get_label(self, post):
         admin_url = reverse(
             "admin:data_post_change", args=(post.pk,)
         )
         tmpl = u'<a href="%s">%s</a>'
         return format_html(tmpl % (admin_url, post.label))
-    
+
     get_label.short_description = "Label"
-    
+
     def has_add_permission(self, request, obj=None):
         return False
 
@@ -36,7 +36,7 @@ class OrganizationInline(ReadOnlyTabularInline):
     model = models.Organization
     fields = readonly_fields = ("get_name", "jurisdiction", "classification")
     ordering = ("-classification", "name")
-    
+
     def get_name(self, organization):
         admin_url = reverse(
             "admin:data_organization_change", args=(organization.pk,)

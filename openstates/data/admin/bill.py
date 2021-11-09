@@ -72,6 +72,7 @@ class BillVersionInline(DocVersionInline):
     model = models.BillVersion
     readonly_fields = fields = ("date", "note", "classification")
 
+
 class BillDocumentInline(DocVersionInline):
     model = models.BillDocument
 
