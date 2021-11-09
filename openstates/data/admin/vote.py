@@ -33,7 +33,6 @@ class VoteEventAdmin(ModelAdmin):
         "result",
         "motion_classification",
         "start_date",
-        "end_date",
     )
 
     list_selected_related = (

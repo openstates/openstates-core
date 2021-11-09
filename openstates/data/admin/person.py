@@ -35,11 +35,12 @@ class PersonSourceInline(ReadOnlyTabularInline):
 
 class MembershipInline(ReadOnlyTabularInline):
     model = models.Membership
-    readonly_fields = ("organization", "post", "role", "start_date")
+    readonly_fields = ("organization", "person", "post", "role", "start_date")
     fields = ("id",) + readonly_fields + ("end_date",)
     exclude = ("id",)
     extra = 0
     can_delete = False
+    ordering = ("end_date",)
 
 
 # TODO field locking

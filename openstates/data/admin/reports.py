@@ -7,7 +7,7 @@ class ScrapeReportInline(admin.TabularInline):
     model = models.ScrapeReport
     readonly_fields = ("scraper", "args", "start_time", "end_time", "get_object_list")
 
-    def has_add_permission(self, request):
+    def has_add_permission(self, request, obj=None):
         return False
 
     can_delete = False
@@ -29,7 +29,7 @@ class ImportObjectsInline(admin.TabularInline):
         "end_time",
     )
 
-    def has_add_permission(self, request):
+    def has_add_permission(self, request, obj=None):
         return False
 
     can_delete = False
@@ -54,7 +54,7 @@ class RunPlanAdmin(admin.ModelAdmin):
     def has_delete_permission(self, request, obj=None):
         return False
 
-    def has_add_permission(self, request):
+    def has_add_permission(self, request, obj=None):
         return False
 
 
