@@ -13,7 +13,7 @@ from ..models.people import (
     Link,
     PersonIdBlock,
 )  # type: ignore
-from ..models.committees import Committee, Membership, ScrapeCommittee
+from ..models.committees import Committee, Membership
 from ..utils.people import dump_obj, get_data_path
 
 # chosen at random, but needs to be constant
@@ -215,6 +215,7 @@ def fetch_current_committees(convert_chamber: dict) -> typing.Iterable[Committee
             jurisdiction="ocd-jurisdiction/country:us/government",
             name=committee_name,
             chamber=chamber,
+            members=[Membership(name="placeholder", role="member")],
         )
 
         if "address" in com:
@@ -242,6 +243,7 @@ def fetch_current_committees(convert_chamber: dict) -> typing.Iterable[Committee
                     parent=make_org_id(thomas_id),
                     chamber=chamber,
                     classification="subcommittee",
+                    members=[Membership(name="placeholder", role="member")],
                 )
 
                 if "address" in sub:
@@ -262,7 +264,7 @@ def get_members_mapping() -> dict[str, list]:
 
 
 def grab_members(
-    committee: ScrapeCommittee,
+    committee: Committee,
     name_mapping: list[str],
     members_mapping: dict[str, list],
 ) -> None:
@@ -286,6 +288,8 @@ def grab_members(
                             person_id=make_person_id(member["bioguide"]),
                         )
                     )
+    # remove placeholder member
+    committee.members.pop(0)
 
 
 def scrape_committees() -> None:
