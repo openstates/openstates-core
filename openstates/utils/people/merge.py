@@ -431,7 +431,7 @@ def process_scrape_dir(input_dir: Path, jurisdiction_id: str) -> list[Person]:
     return new_people
 
 
-def process_office(office_type: str, office_data: dict) -> typing.Optional[Office]:
+def process_office(office_data: dict) -> typing.Optional[Office]:
     voice = fax = address = ""
     if value := office_data["voice"]:
         voice = reformat_phone_number(value)
@@ -441,7 +441,12 @@ def process_office(office_type: str, office_data: dict) -> typing.Optional[Offic
         address = reformat_address(value)
 
     if voice or fax or address:
-        return Office(classification=office_type, voice=voice, fax=fax, address=address)
+        return Office(
+            classification=office_data["classification"],
+            voice=voice,
+            fax=fax,
+            address=address,
+        )
     else:
         return None
 
@@ -449,15 +454,15 @@ def process_office(office_type: str, office_data: dict) -> typing.Optional[Offic
 def process_person(data: dict, jurisdiction_id: str) -> Person:
     offices: list[Office] = []
     if office := data.pop("capitol_office"):
-        cd = process_office("Capitol Office", office)
+        cd = process_office(office)
         if cd:
             offices.append(cd)
     if office := data.pop("district_office"):
-        cd = process_office("District Office", office)
+        cd = process_office(office)
         if cd:
             offices.append(cd)
     for office in data.pop("additional_offices"):
-        cd = process_office("District Office", office)
+        cd = process_office(office)
         if cd:
             offices.append(cd)
 
