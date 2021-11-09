@@ -119,6 +119,15 @@ BILL_ACTION_CLASSIFICATION_CHOICES = (
 )
 BILL_ACTION_CLASSIFICATIONS = _keys(BILL_ACTION_CLASSIFICATION_CHOICES)
 
+CITATION_TYPE_CHOICES = {
+    ("proposed", "Proposed Change"),
+    ("chapter", "Chapter Law"),
+    ("final", "Final"),
+    ("other", "Other"),
+}
+
+CITATION_TYPES = _keys(CITATION_TYPE_CHOICES)
+
 VOTE_CLASSIFICATION_CHOICES = (
     ("passage", "Passage in Chamber"),
     ("amendment", "Amendment Passage"),

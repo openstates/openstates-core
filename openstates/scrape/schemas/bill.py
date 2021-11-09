@@ -145,6 +145,23 @@ schema = {
         },
         "versions": versions,
         "documents": documents,
+        "citations": {
+            "items": {
+                "properties": {
+                    "publication": {"type": "string", "minLength": 1},
+                    "citation": {"type": "string", "minLength": 1},
+                    "citation_type": {
+                        "enum": common.CITATION_TYPES,
+                        "type": "string",
+                    },
+                    "effective": {"type": [fuzzy_date_blank, "null"]},
+                    "expires": {"type": [fuzzy_date_blank, "null"]},
+                    "url": {"type": ["string", "null"]},
+                },
+                "type": "object",
+            },
+            "type": "array",
+        },
         "sources": sources,
         "extras": extras,
     },

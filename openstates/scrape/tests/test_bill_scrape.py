@@ -1,5 +1,6 @@
 import pytest
 import warnings
+from datetime import date
 from openstates.scrape import Bill
 from openstates.utils.generic import get_pseudo_id
 from openstates.exceptions import ScrapeValueError
@@ -178,6 +179,64 @@ def test_add_documents():
         note="Fiscal Impact", date="2013-04", url=None, media_type="foo"
     )
     with pytest.raises(ScrapeValueError):
+        b.validate()
+
+
+def test_citations():
+    b = toy_bill()
+
+    b.add_citation(
+        "Wyoming Chapter Laws of 2019",
+        "CH0024",
+        citation_type="chapter",
+        effective=date(2019, 7, 1)
+    )
+
+    b.add_citation(
+        "Minnesota Session Laws, 2020",
+        "Chapter 89",
+        citation_type="chapter",
+        effective=date(2020, 8, 1),
+        url="https://www.revisor.mn.gov/laws/2020/0/Session+Law/Chapter/89/",
+    )
+
+    b.add_citation(
+        "DC Register",
+        "Vol 67 and Page 14429",
+        citation_type="final",
+        expires="2021-03-06"
+    )
+
+    b.add_citation(
+        "Constitution of Missouri",
+        "Article X Section 6",
+        citation_type="proposed",
+    )
+
+    b.validate()
+    assert len(b.citations) == 4
+
+    with pytest.raises(TypeError):
+        # Missing citation
+        b.add_citation(
+            "Legal Code of Elbonia",
+            url="http://openstates.org",
+        )
+
+        # Invalid citation
+        b.add_citation(
+            "Legal Code of Elbonia",
+            "",
+            citation_type="final",
+        )
+
+        # invalid citation type
+        b.add_citation(
+            "Legal Code of Elbonia",
+            "Chapter 12",
+            citation_type="aspiration",
+        )
+
         b.validate()
 
 
