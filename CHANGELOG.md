@@ -1,9 +1,10 @@
 # Changelog
 
-## 6.9.0
+## 6.9.0 - November 9 2021
 
 * OSEP #2: add citation support to Bill
 * several test fixes for OS committee changes
+* fix for update-us
 
 ## 6.8.2 - November 8 2021
 
