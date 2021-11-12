@@ -117,7 +117,7 @@ class Post(OCDBase):
 
 
 class PersonQuerySet(QuerySet):
-    def member_of(self, organization_name, current_only=True, post=None):
+    def member_of(self, organization_name, current_only=True, post=None, division_id=None):
         if organization_name.startswith("ocd-organization/"):
             org_filter = Q(memberships__organization_id=organization_name)
         else:
@@ -132,6 +132,8 @@ class PersonQuerySet(QuerySet):
             ) & Q(memberships__end_date="") | Q(memberships__end_date__gte=today)
         if post:
             org_filter &= Q(memberships__post__label=post)
+        if division_id:
+            org_filter &= Q(memberships__post__division_id=division_id)
         return qs.filter(org_filter).distinct()
 
     def active(self):
