@@ -28,6 +28,10 @@ def make_org_id(id_: str) -> str:
     return "ocd-organization/" + str(uuid.uuid5(US_UUID_NAMESPACE, id_))
 
 
+def _fix_bad_dashes(phone):
+    return phone.replace("–", "-")
+
+
 def get_district_offices() -> defaultdict[str, list[Office]]:
     district_offices = defaultdict(list)
     url = "https://theunitedstates.io/congress-legislators/legislators-district-offices.json"
@@ -43,8 +47,8 @@ def get_district_offices() -> defaultdict[str, list[Office]]:
             district_offices[entry["id"]["bioguide"]].append(
                 Office(
                     classification="district",
-                    voice=office.get("phone", ""),
-                    fax=office.get("fax", ""),
+                    voice=_fix_bad_dashes(office.get("phone", "")),
+                    fax=_fix_bad_dashes(office.get("fax", "")),
                     address=address,
                     name=f"District Office #{num+1}",
                 )
