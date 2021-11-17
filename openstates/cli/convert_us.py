@@ -28,7 +28,7 @@ def make_org_id(id_: str) -> str:
     return "ocd-organization/" + str(uuid.uuid5(US_UUID_NAMESPACE, id_))
 
 
-def _fix_bad_dashes(phone):
+def _fix_bad_dashes(phone: str) -> str:
     return phone.replace("–", "-")
 
 
