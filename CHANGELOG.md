@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.9.1 - November 17 2021
+
+* fix for bad phone numbers in update-us
+
 ## 6.9.0 - November 9 2021
 
 * OSEP #2: add citation support to Bill
