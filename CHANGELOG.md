@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.9.2
+
+* improve committee membership validation
+
 ## 6.9.1 - November 17 2021
 
 * fix for bad phone numbers in update-us
