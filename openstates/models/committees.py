@@ -32,6 +32,13 @@ class Membership(BaseModel):
     _validate_name = validator("name", allow_reuse=True)(validate_str_no_newline)
     _validate_role = validator("role", allow_reuse=True)(validate_str_no_newline)
 
+    @validator("name")
+    def not_blank(cls, val: str) -> str:
+        val = val.strip()
+        if not val:
+            raise ValueError("empty name")
+        return val
+
 
 class ScrapeCommittee(BaseModel):
     name: str
