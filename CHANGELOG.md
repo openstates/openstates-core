@@ -1,6 +1,6 @@
 # Changelog
 
-## 6.9.2
+## 6.9.2 - November 29 2021
 
 * improve committee membership validation
 * add migration to os-initdb
