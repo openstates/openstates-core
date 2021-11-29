@@ -3,6 +3,7 @@
 ## 6.9.2
 
 * improve committee membership validation
+* add migration to os-initdb
 
 ## 6.9.1 - November 17 2021
 

@@ -2,6 +2,7 @@
 # too many django types in this to type for now
 from ..metadata import STATES_BY_ABBR
 from ..utils.django import init_django
+from django.core import management
 from django.db import transaction  # type: ignore
 
 
@@ -88,5 +89,6 @@ def load_jurisdictions() -> None:
 
 def main() -> None:
     init_django()
+    management.call_command("migrate")
     with transaction.atomic():
         load_jurisdictions()
