@@ -193,6 +193,34 @@ def test_organization_membership():
 
 
 @pytest.mark.django_db
+def test_organization_membership_multiple_divisions():
+    o = Organization.objects.create(name="state")
+    p1 = Person.objects.create(name="rep1")
+    p2 = Person.objects.create(name="rep2")
+    d1 = Division.objects.create(id="ocd-division/country:aa/place:locality1", name="locality1")
+    d2 = Division.objects.create(id="ocd-division/country:aa/place:locality2", name="locality2")
+
+    post1 = Post.objects.create(label="district rep", role="vip", organization=o, division=d1)
+    post2 = Post.objects.create(label="district rep", role="vip", organization=o, division=d2)
+
+    o.memberships.create(person=p1, post=post1)
+    o.memberships.create(person=p2, post=post2)
+
+    people = Person.objects.member_of(o.id, post="district rep").all()
+    assert len(people) == 2
+    assert p1 in people
+    assert p2 in people
+
+    people = Person.objects.member_of(o.id, post="district rep", division_id=d1.id).all()
+    assert len(people) == 1
+    assert p1 in people
+
+    people = Person.objects.member_of(o.id, post="district rep", division_id=d2.id).all()
+    assert len(people) == 1
+    assert p2 in people
+
+
+@pytest.mark.django_db
 def test_member_of_with_post():
     o = Organization.objects.create(name="The Org")
     p = Post.objects.create(organization=o, label="1")
