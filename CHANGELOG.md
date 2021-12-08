@@ -2,6 +2,7 @@
 
 ## 6.9.3
 
+* add prototype os-scrape command to help with people updates
 * fix for empty URL validation
 
 ## 6.9.2 - November 29 2021

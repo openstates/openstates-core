@@ -19,3 +19,4 @@ version-export.csv
 .DS_Store
 raw/
 text/
+_scrapes/
