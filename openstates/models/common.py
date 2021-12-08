@@ -56,7 +56,7 @@ def validate_ocd_organization(v: str) -> str:
 
 
 def validate_url(v: str) -> str:
-    if not v.startswith(("http://", "https://", "ftp://")):
+    if v and not v.startswith(("http://", "https://", "ftp://")):
         raise ValueError("URL must start with protocol")
     return v
 

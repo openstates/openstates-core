@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.9.3
+
+* fix for empty URL validation
+
 ## 6.9.2 - November 29 2021
 
 * improve committee membership validation
