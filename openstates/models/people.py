@@ -19,7 +19,9 @@ from .common import (
 # can only have one of these at a time
 MAJOR_PARTIES = ("Democratic", "Republican", "Independent")
 
-SUFFIX_RE = re.compile(r"(iii?)|(i?v)|((ed|ph|m|o)\.?d\.?)|([sj]r\.?)|(esq\.?)", re.I)
+SUFFIX_RE = re.compile(
+    r"(iii?)|(i?v)|((ed|ph|m|o)\.?d\.?)|([sj]r\.?)|(esq\.?)|(fnp)", re.I
+)
 PHONE_RE = re.compile(r"^(1-)?\d{3}-\d{3}-\d{4}( ext. \d+)?$")
 
 
