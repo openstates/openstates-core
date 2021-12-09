@@ -1,4 +1,5 @@
 import os
+import datetime
 from pathlib import Path
 import pytest  # type: ignore
 from openstates.utils.people.merge import (
@@ -152,6 +153,41 @@ def test_compute_merge_special_cases(a, b, keep_both, output):
         name: str = ""
 
     assert compute_merge(Model(**a), Model(**b), keep_both_ids=keep_both) == output
+
+
+def test_compute_merge_party():
+    class Model(BaseModel):
+        party: list[dict] = []
+
+    # no change
+    a = Model(party=[{"party": "Democratic"}])
+    b = Model(party=[{"party": "Democratic"}])
+    assert compute_merge(a, b) == []
+
+    # set end date on prior party
+    c = Model(party=[{"party": "Republican"}])
+    today = datetime.date.today().strftime("%Y-%m-%d")
+    assert compute_merge(a, c) == [
+        Replace(
+            "party",
+            [
+                {"party": "Democratic"},
+            ],
+            [
+                {"party": "Democratic", "end_date": today},
+                {"party": "Republican"},
+            ],
+        )
+    ]
+
+    # extra data isn't affected
+    d = Model(
+        party=[
+            {"party": "Indpendent", "end_date": "2020-01-01"},
+            {"party": "Republican"},
+        ]
+    )
+    assert compute_merge(d, c) == []
 
 
 @pytest.mark.parametrize(

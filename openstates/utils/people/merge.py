@@ -2,6 +2,8 @@ import typing
 import re
 import json
 import click
+import copy
+import datetime
 from pathlib import Path
 from pydantic import BaseModel
 from ... import metadata
@@ -90,6 +92,23 @@ def collapse_duplicates(offices: list[Office]):
             used_offices.add(i)
 
     return output_offices
+
+
+def merge_parties(old: list[Party], new: list[Party]) -> typing.Optional[list[Party]]:
+    # only works for one new party for now, other cases aren't needed yet
+    if len(new) > 1:
+        raise ValueError(f"invalid new party config: {new}")
+
+    if old[-1] == new[-1]:
+        return
+
+    retval = copy.deepcopy(old)
+
+    if retval[-1].get("end_date") is None:
+        # these dates are imprecise
+        retval[-1]["end_date"] = datetime.date.today().strftime("%Y-%m-%d")
+    retval.append(new[0])
+    return retval
 
 
 def merge_offices(
@@ -231,6 +250,10 @@ def compute_merge(
                 # new name becomes name, but old name goes into other_names
                 changes.append(Append("other_names", OtherName(name=val1)))
                 changes.append(Replace("name", val1, val2))
+        elif key == "party":
+            changed = merge_parties(val1, val2)
+            if changed:
+                changes.append(Replace("party", val1, changed))
         elif key == "offices":
             changed = merge_offices(val1, val2)
             if changed:
@@ -379,7 +402,7 @@ def interactive_merge(
         text = "(m)erge?"
     elif role_match:
         choices = "mr"
-        text = f"(m)erge? (r)etire {old.name}"
+        text = f"(m)erge? (r)etire {old.name}?"
 
     while ch not in (choices + "sa"):
         click.secho(text + " (s)kip? (a)bort?", bold=True)
