@@ -4,6 +4,7 @@
 
 * add prototype os-scrape command to help with people updates
 * fix for empty URL validation
+* lots of improvements to os-people merge's automation
 
 ## 6.9.2 - November 29 2021
 
