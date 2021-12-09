@@ -13,7 +13,7 @@ from openstates.utils.people.merge import (
     find_file,
     collapse_duplicates,
 )
-from openstates.models.people import OtherName, OtherIdentifier, Office
+from openstates.models.people import OtherName, OtherIdentifier, Office, Party
 from pydantic import BaseModel
 
 
@@ -157,25 +157,25 @@ def test_compute_merge_special_cases(a, b, keep_both, output):
 
 def test_compute_merge_party():
     class Model(BaseModel):
-        party: list[dict] = []
+        party: list[Party] = []
 
     # no change
-    a = Model(party=[{"party": "Democratic"}])
-    b = Model(party=[{"party": "Democratic"}])
+    a = Model(party=[Party(name="Democratic")])
+    b = Model(party=[Party(name="Democratic")])
     assert compute_merge(a, b) == []
 
     # set end date on prior party
-    c = Model(party=[{"party": "Republican"}])
+    c = Model(party=[Party(name="Republican")])
     today = datetime.date.today().strftime("%Y-%m-%d")
     assert compute_merge(a, c) == [
         Replace(
             "party",
             [
-                {"party": "Democratic"},
+                Party(name="Democratic"),
             ],
             [
-                {"party": "Democratic", "end_date": today},
-                {"party": "Republican"},
+                Party(name="Democratic", end_date=today),
+                Party(name="Republican"),
             ],
         )
     ]
@@ -183,8 +183,8 @@ def test_compute_merge_party():
     # extra data isn't affected
     d = Model(
         party=[
-            {"party": "Indpendent", "end_date": "2020-01-01"},
-            {"party": "Republican"},
+            Party(name="Independent", end_date=today),
+            Party(name="Republican"),
         ]
     )
     assert compute_merge(d, c) == []

@@ -104,9 +104,9 @@ def merge_parties(old: list[Party], new: list[Party]) -> typing.Optional[list[Pa
 
     retval = copy.deepcopy(old)
 
-    if retval[-1].get("end_date") is None:
-        # these dates are imprecise
-        retval[-1]["end_date"] = datetime.date.today().strftime("%Y-%m-%d")
+    if retval[-1].end_date == "":
+        # these dates are imprecise for now
+        retval[-1].end_date = datetime.date.today().strftime("%Y-%m-%d")
     retval.append(new[0])
     return retval
 
