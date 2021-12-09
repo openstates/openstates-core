@@ -10,6 +10,7 @@ from openstates.utils.people.merge import (
     merge_people,
     merge_offices,
     find_file,
+    collapse_duplicates,
 )
 from openstates.models.people import OtherName, OtherIdentifier, Office
 from pydantic import BaseModel
@@ -316,6 +317,65 @@ def test_merge_office_no_change(old, new):
 )
 def test_merge_offices_changes(old, new, expected):
     assert merge_offices(old, new) == expected
+
+
+@pytest.mark.parametrize(
+    "old, expected",
+    [
+        # no change
+        (
+            [
+                Office(classification="capitol", voice="222-222-2222"),
+                Office(classification="capitol", voice="222-222-2222"),
+            ],
+            [Office(classification="capitol", voice="222-222-2222")],
+        ),
+        # one is a subset of the other, return bigger one
+        (
+            [
+                Office(classification="capitol", voice="111-111-1111"),
+                Office(
+                    classification="capitol", voice="111-111-1111", fax="444-444-4444"
+                ),
+            ],
+            [
+                Office(
+                    classification="capitol", voice="111-111-1111", fax="444-444-4444"
+                )
+            ],
+        ),
+        # only differ by name
+        (
+            [
+                Office(classification="capitol", voice="111-111-1111"),
+                Office(
+                    classification="capitol",
+                    voice="111-111-1111",
+                    name="Capitol Office",
+                ),
+            ],
+            [
+                Office(
+                    classification="capitol",
+                    voice="111-111-1111",
+                    name="Capitol Office",
+                )
+            ],
+        ),
+    ],
+)
+def test_collapse_duplicates(old, expected):
+    assert collapse_duplicates(old) == expected
+
+
+def test_merge_offices_duplicate():
+    old = [Office(classification="district", voice="111-222-3333")]
+    new = [
+        Office(
+            classification="district", voice="111-222-3333", name="District Office #1"
+        )
+    ]
+    assert merge_offices(old, new) == new
 
 
 def test_merge_extras():

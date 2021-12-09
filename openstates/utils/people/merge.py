@@ -44,6 +44,54 @@ def find_file(leg_id: str, *, state: str = "*") -> Path:
         raise FileNotFoundError()
 
 
+def collapse_duplicates(offices: list[Office]):
+    output_offices = []
+    used_offices = set()
+
+    for i, office1 in enumerate(offices):
+        if i in used_offices:
+            continue
+        for j, office2 in enumerate(offices):
+            if j in used_offices or i == j:
+                continue
+            # can one subsume the other?
+            office1_wins = all(
+                (
+                    office1.voice == office2.voice or office2.voice == "",
+                    office1.fax == office2.fax or office2.fax == "",
+                    office1.address == office2.address or office2.address == "",
+                )
+            )
+            office2_wins = all(
+                (
+                    office1.voice == office2.voice or office1.voice == "",
+                    office1.fax == office2.fax or office1.fax == "",
+                    office1.address == office2.address or office1.address == "",
+                )
+            )
+            # if both are the same except the name, the one with the name wins
+            if office1_wins and office2_wins:
+                if office1.name:
+                    office2_wins = False
+                elif office2.name:
+                    office1_wins = False
+
+            if office1_wins:
+                output_offices.append(office1)
+                used_offices.update((i, j))
+                break
+            elif office2_wins:
+                output_offices.append(office2)
+                used_offices.update((i, j))
+                break
+
+        if i not in used_offices:
+            output_offices.append(office1)
+            used_offices.add(i)
+
+    return output_offices
+
+
 def merge_offices(
     old: list[Office], new: list[Office]
 ) -> typing.Optional[typing.List[Office]]:
@@ -74,7 +122,7 @@ def merge_offices(
 
     # return all offices if there were any changes
     if update:
-        return offices
+        return collapse_duplicates(offices)
     else:
         return None
 
