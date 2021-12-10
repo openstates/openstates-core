@@ -98,10 +98,8 @@ def merge_parties(old: list[Party], new: list[Party]) -> typing.Optional[list[Pa
     # only works for one new party for now, other cases aren't needed yet
     if len(new) > 1:
         raise ValueError(f"invalid new party config: {new}")
-
-    if old[-1] == new[-1]:
+    if old[-1] == new[0]:
         return
-
     retval = copy.deepcopy(old)
 
     if retval[-1].end_date == "":
@@ -319,7 +317,9 @@ def incoming_merge(
                 seats = seats_for_district[role.type].get(
                     typing.cast(str, role.district), 1
                 )
-                if roles_equalish(new.roles[0], role) and seats == 1:
+                # roles match if they are equal and there's only one seat, or
+                # if there is already a name match on this legislator
+                if roles_equalish(new.roles[0], role) and (seats == 1 or name_match):
                     role_match = True
                     # if they match without start date, copy the start date over so it isn't
                     # altered or otherwise removed in the merge
