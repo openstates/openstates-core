@@ -20,3 +20,4 @@ version-export.csv
 raw/
 text/
 _scrapes/
+spatula-cache.db
