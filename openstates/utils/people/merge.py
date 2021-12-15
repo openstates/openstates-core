@@ -223,7 +223,11 @@ class OfficesReplace(Replace):
 
 
 def compute_merge(
-    obj1: BaseModel, obj2: BaseModel, prefix: str = "", keep_both_ids: bool = False
+    obj1: BaseModel,
+    obj2: BaseModel,
+    prefix: str = "",
+    keep_both_ids: bool = False,
+    reset_offices: bool = False,
 ) -> list[typing.Union[Append, Replace]]:
     all_keys = obj1.__fields__.keys()
     changes: list[typing.Union[Append, Replace]] = []
@@ -253,7 +257,10 @@ def compute_merge(
             if changed:
                 changes.append(Replace("party", val1, changed))
         elif key == "offices":
-            changed = merge_offices(val1, val2)
+            if reset_offices:
+                changed = val2
+            else:
+                changed = merge_offices(val1, val2)
             if changed:
                 changes.append(OfficesReplace("offices", val1 or [], changed))
         elif isinstance(val1, list) or isinstance(val2, list):
@@ -287,7 +294,11 @@ def roles_equalish(role1: Role, role2: Role) -> bool:
 
 
 def incoming_merge(
-    abbr: str, existing_people: list[Person], new_people: list[Person], retirement: str
+    abbr: str,
+    existing_people: list[Person],
+    new_people: list[Person],
+    retirement: str,
+    reset_offices: bool,
 ) -> list[tuple[Person, list[Person]]]:
     unmatched = []
 
@@ -327,7 +338,13 @@ def incoming_merge(
                     break
             if name_match or role_match:
                 matched = interactive_merge(
-                    abbr, existing, new, name_match, role_match, retirement
+                    abbr,
+                    existing,
+                    new,
+                    name_match,
+                    role_match,
+                    retirement,
+                    reset_offices,
                 )
 
             if matched:
@@ -370,6 +387,7 @@ def interactive_merge(
     name_match: bool,
     role_match: bool,
     retirement: str,
+    reset_offices: bool,
 ) -> bool:
     """
     returns True iff a merge was done
@@ -378,7 +396,7 @@ def interactive_merge(
     # click.secho(" {} {}".format(oldfname, newfname), fg="yellow")
 
     # simulate difference
-    changes = compute_merge(old, new, keep_both_ids=False)
+    changes = compute_merge(old, new, keep_both_ids=False, reset_offices=reset_offices)
 
     if not changes:
         click.secho(" perfect match", fg="green")
@@ -411,8 +429,9 @@ def interactive_merge(
     if ch == "a":
         raise SystemExit(-1)
     elif ch == "m":
-        # TODO: remove new file
-        merged = merge_people(old, new, keep_both_ids=False)
+        merged = merge_people(
+            old, new, keep_both_ids=False, reset_offices=reset_offices
+        )
         dump_obj(merged, filename=oldfname)
         click.secho(" merged.", fg="green")
     elif ch == "r":
@@ -425,7 +444,9 @@ def interactive_merge(
     return True
 
 
-def merge_people(old: Person, new: Person, keep_both_ids: bool = False) -> Person:
+def merge_people(
+    old: Person, new: Person, keep_both_ids: bool = False, reset_offices: bool = False
+) -> Person:
     """
     Function to merge two people objects.
 
@@ -438,6 +459,7 @@ def merge_people(old: Person, new: Person, keep_both_ids: bool = False) -> Perso
         old,
         new,
         keep_both_ids=keep_both_ids,
+        reset_offices=reset_offices,
     )
 
     for change in changes:

@@ -14,8 +14,18 @@ import click
     help="Use a cache to avoid making unnecessary requests while developing.",
     is_flag=True,
 )
+@click.option(
+    "--reset-offices",
+    is_flag=True,
+    help="Reset offices to latest scrape instead of trying to merge old with new.",
+)
 def main(
-    abbr: str, scraper_type: str, scrape_only: bool, merge_only: bool, fastmode: bool
+    abbr: str,
+    scraper_type: str,
+    scrape_only: bool,
+    merge_only: bool,
+    fastmode: bool,
+    reset_offices: bool,
 ):
     output_dir = Path(f"_scrapes/{abbr}/{scraper_type}")
     if not merge_only:
@@ -33,7 +43,10 @@ def main(
             if e.code != 0:
                 raise
     if not scrape_only:
-        merge([abbr, str(output_dir)])
+        merge_args = [abbr, str(output_dir)]
+        if reset_offices:
+            merge_args.append("--reset-offices")
+        merge(merge_args)
 
 
 if __name__ == "__main__":

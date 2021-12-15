@@ -695,7 +695,12 @@ def to_database(abbreviations: list[str], purge: bool, safe: bool) -> None:
     default=None,
     help="Set retirement date for all people marked retired.",
 )
-def merge(abbr: str, input_dir: str, retirement: str) -> None:
+@click.option(
+    "--reset-offices",
+    is_flag=True,
+    help="Reset offices to latest scrape instead of trying to merge old with new.",
+)
+def merge(abbr: str, input_dir: str, retirement: str, reset_offices: bool) -> None:
     """
     Convert scraped JSON in INPUT_DIR to YAML files for this repo.
     """
@@ -715,7 +720,9 @@ def merge(abbr: str, input_dir: str, retirement: str) -> None:
         f"analyzing {len(existing_people)} existing people and {len(new_people)} scraped"
     )
 
-    unmatched = incoming_merge(abbr, existing_people, new_people, retirement)
+    unmatched = incoming_merge(
+        abbr, existing_people, new_people, retirement, reset_offices
+    )
     click.secho(f"{len(unmatched)} people were unmatched")
 
 
