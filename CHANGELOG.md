@@ -1,10 +1,11 @@
 # Changelog
 
-## 6.9.3
+## 6.10.0
 
 * add prototype os-scrape command to help with people updates
 * people model fix for empty URL validation
 * people model fix for new suffixes
+* add --reset-offices flag for people merging when office data has changed significantly
 * lots of improvements to os-people merge's automation
 
 ## 6.9.2 - November 29 2021
