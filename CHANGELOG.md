@@ -1,6 +1,6 @@
 # Changelog
 
-## 6.10.0
+## 6.10.0 - December 15 2021
 
 * add prototype os-scrape command to help with people updates
 * people model fix for empty URL validation
