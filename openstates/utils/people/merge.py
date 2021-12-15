@@ -119,22 +119,22 @@ def merge_offices(
     update = False
 
     for office in old:
-        note = office.display_name
-        if note not in old_offices:
-            old_offices[note] = office
+        name = office.display_name
+        if name not in old_offices:
+            old_offices[name] = office
         else:
-            raise NotImplementedError(f"extra old {note}")
+            raise NotImplementedError(f"extra old {name}")
     for office in new:
-        note = office.display_name
-        if note not in new_offices:
-            new_offices[note] = office
+        name = office.display_name
+        if name not in new_offices:
+            new_offices[name] = office
         else:
-            raise NotImplementedError(f"extra old {note}")
+            raise NotImplementedError(f"extra old {name}")
 
-    for note in sorted(set(old_offices) | set(new_offices)):
-        combined = update_office(old_offices.get(note), new_offices.get(note))
+    for name in sorted(set(old_offices) | set(new_offices)):
+        combined = update_office(old_offices.get(name), new_offices.get(name))
         offices.append(combined)
-        if combined != old_offices.get(note):
+        if combined != old_offices.get(name):
             update = True
 
     # return all offices if there were any changes
