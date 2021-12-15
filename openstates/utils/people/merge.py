@@ -46,9 +46,9 @@ def find_file(leg_id: str, *, state: str = "*") -> Path:
         raise FileNotFoundError()
 
 
-def collapse_duplicates(offices: list[Office]):
+def collapse_duplicates(offices: list[Office]) -> list[Office]:
     output_offices = []
-    used_offices = set()
+    used_offices: set[int] = set()
 
     for i, office1 in enumerate(offices):
         if i in used_offices:
@@ -99,7 +99,7 @@ def merge_parties(old: list[Party], new: list[Party]) -> typing.Optional[list[Pa
     if len(new) > 1:
         raise ValueError(f"invalid new party config: {new}")
     if old[-1] == new[0]:
-        return
+        return None
     retval = copy.deepcopy(old)
 
     if retval[-1].end_date == "":
@@ -258,11 +258,11 @@ def compute_merge(
                 changes.append(Replace("party", val1, changed))
         elif key == "offices":
             if reset_offices:
-                changed = val2
+                changed_offices = val2
             else:
-                changed = merge_offices(val1, val2)
+                changed_offices = merge_offices(val1, val2)
             if changed:
-                changes.append(OfficesReplace("offices", val1 or [], changed))
+                changes.append(OfficesReplace("offices", val1 or [], changed_offices))
         elif isinstance(val1, list) or isinstance(val2, list):
             if val1 and not val2:
                 continue

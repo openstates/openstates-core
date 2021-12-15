@@ -26,7 +26,7 @@ def main(
     merge_only: bool,
     fastmode: bool,
     reset_offices: bool,
-):
+) -> None:
     output_dir = Path(f"_scrapes/{abbr}/{scraper_type}")
     if not merge_only:
         args = [
