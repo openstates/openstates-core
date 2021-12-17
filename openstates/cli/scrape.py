@@ -1,6 +1,7 @@
 from pathlib import Path
 from spatula.cli import scrape
-from .people import merge
+from .people import merge as people_merge
+from .committees import merge as committees_merge
 import click
 
 
@@ -42,11 +43,14 @@ def main(
         except SystemExit as e:
             if e.code != 0:
                 raise
-    if not scrape_only:
+    if not scrape_only and "people" in scraper_type:
         merge_args = [abbr, str(output_dir)]
         if reset_offices:
             merge_args.append("--reset-offices")
-        merge(merge_args)
+        people_merge(merge_args)
+    elif not scrape_only and "committees" in scraper_type:
+        merge_args = [abbr, str(output_dir)]
+        committees_merge(merge_args)
 
 
 if __name__ == "__main__":
