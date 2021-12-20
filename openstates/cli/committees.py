@@ -455,7 +455,8 @@ def main() -> None:
 @main.command()  # pragma: no cover
 @click.argument("abbr")
 @click.argument("input_dir")
-def merge(abbr: str, input_dir: str) -> None:
+@click.option("--interactive/--no-interactive", default=False)
+def merge(abbr: str, input_dir: str, interactive: bool) -> None:
     """
     Merge scraped committee data into repo.
     """
@@ -484,7 +485,7 @@ def merge(abbr: str, input_dir: str) -> None:
         )
 
         if plan.names_to_add or plan.names_to_remove or plan.to_merge:
-            if not click.confirm("Do you wish to continue?"):
+            if interactive and not click.confirm("Do you wish to continue?"):
                 sys.exit(1)
 
             # add new committees
