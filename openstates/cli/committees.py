@@ -240,6 +240,7 @@ class CommitteeDir:
             links=merge_lists(orig.links, new.links, "url"),
             other_names=merge_lists(orig.other_names, new.other_names, "name"),
             members=merge_lists(orig.members, new.members, "name"),
+            extras=orig.extras | new.extras,
         )
         return merged
 
