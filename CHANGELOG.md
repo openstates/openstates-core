@@ -1,5 +1,10 @@
 # Changelog
 
+## 6.10.1 - December 20 2021
+
+* add committees to os-scrape command
+* improve committee merging
+
 ## 6.10.0 - December 15 2021
 
 * add prototype os-scrape command to help with people updates
