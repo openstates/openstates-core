@@ -327,6 +327,9 @@ class CommitteeDir:
         for filename in Path(input_dir).glob("*"):
             with open(filename) as file:
                 data = json.load(file)
+                if not data:
+                    click.secho(f"no committee in {filename}", fg="yellow")
+                    continue
                 com = ScrapeCommittee(**data)
                 # do person matching on import so that diffs work
                 for member in com.members:
