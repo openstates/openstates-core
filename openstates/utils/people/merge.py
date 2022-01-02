@@ -356,6 +356,7 @@ def incoming_merge(
         else:
             # not matched
             unmatched.append((new, role_matches))
+            write_new_file(abbr, new, "legislature")
 
     return unmatched
 
