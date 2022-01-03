@@ -299,6 +299,49 @@ def test_keep_both_ids(old, new, expected):
 
 
 @pytest.mark.parametrize(
+    "old, new, expected",
+    [
+        # no change
+        (
+            {
+                "id": "ocd-person/1",
+                "offices": [Office(classification="capitol", voice="111-111-1111")],
+            },
+            {
+                "id": "ocd-person/1",
+                "offices": [Office(classification="capitol", voice="111-111-1111")],
+            },
+            {
+                "id": "ocd-person/1",
+                "offices": [Office(classification="capitol", voice="111-111-1111")],
+            },
+        ),
+        # change in voice
+        (
+            {
+                "id": "ocd-person/1",
+                "offices": [Office(classification="capitol", voice="111-111-1111")],
+            },
+            {
+                "id": "ocd-person/1",
+                "offices": [Office(classification="capitol", voice="111-111-1112")],
+            },
+            {
+                "id": "ocd-person/1",
+                "offices": [Office(classification="capitol", voice="111-111-1112")],
+            },
+        ),
+    ],
+)
+def test_merge_with_offices(old, new, expected):
+    class Model(BaseModel):
+        id: str
+        offices: list[Office] = []
+
+    assert merge_people(Model(**old), Model(**new)) == Model(**expected)
+
+
+@pytest.mark.parametrize(
     "old, new",
     [
         (

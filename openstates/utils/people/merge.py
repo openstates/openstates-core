@@ -261,7 +261,7 @@ def compute_merge(
                 changed_offices = val2
             else:
                 changed_offices = merge_offices(val1, val2)
-            if changed:
+            if changed_offices:
                 changes.append(OfficesReplace("offices", val1 or [], changed_offices))
         elif isinstance(val1, list) or isinstance(val2, list):
             if val1 and not val2:
@@ -356,6 +356,7 @@ def incoming_merge(
         else:
             # not matched
             unmatched.append((new, role_matches))
+            write_new_file(abbr, new, "legislature")
 
     return unmatched
 
