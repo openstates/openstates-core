@@ -1,5 +1,11 @@
 # Changelog
 
+## 6.10.2 - January 3 2022
+
+* fixes for people merging
+* handle null committees in committee merge/scrape
+* allow executives to have inactive roles too for linting purposes
+
 ## 6.10.1 - December 20 2021
 
 * add committees to os-scrape command
