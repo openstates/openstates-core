@@ -74,7 +74,9 @@ def validate_roles_key(
         person_type == PersonType.RETIRED,
     )
 
-    if person_type == PersonType.MUNICIPAL and role_issues == ["no active roles"]:
+    if person_type in (PersonType.MUNICIPAL, PersonType.EXECUTIVE) and role_issues == [
+        "no active roles"
+    ]:
         # municipals missing roles is a warning to avoid blocking lint
         if fix:
             resp.fixes = [MOVED_TO_RETIRED]
@@ -109,7 +111,7 @@ def validate_offices(person: Person) -> list[str]:
 
 
 def validate_name(person: Person, person_type: PersonType, fix: bool) -> CheckResult:
-    """ some basic checks on a persons name """
+    """some basic checks on a persons name"""
     errors = []
     fixes = []
     spaces_in_name = person.name.count(" ")
