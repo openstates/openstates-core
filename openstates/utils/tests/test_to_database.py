@@ -363,3 +363,22 @@ def test_committee_to_db_memberships():
     assert org.memberships.count() == 2
     w_mem = org.memberships.filter(person_name="Wendy")[0]
     assert w_mem.person == wendy
+
+@pytest.mark.django_db
+def test_no_person_updates_with_committee(person):
+    created, updated = load_person(person)
+    p = DjangoPerson.objects.get(pk=person.id)
+
+    com_id = "ocd-organization/00000000-1111-1111-1111-222222222222"
+    new_com = Committee(
+        id=com_id,
+        name="Education",
+        chamber="lower",
+        jurisdiction="ocd-jurisdiction/country:us/state:nc/government",
+        members=[Membership(name="Steve", role="chair", person_id=person.id)],
+    )
+    created, updated = committee_to_db(new_com)
+    assert created and not updated
+
+    created, updated = load_person(person)
+    assert not created and not updated
