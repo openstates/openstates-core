@@ -240,7 +240,7 @@ def load_person(data: Person) -> tuple[bool, bool]:
         "memberships",
         memberships,
         read_manager=person.memberships.exclude(
-            organization__classification="committee"
+            organization__classification__in=["committee", "subcommittee"]
         ),
     )
 
