@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.10.3
+
+* fix for subcommittee memberships not being ignored on person import
+
 ## 6.10.2 - January 3 2022
 
 * fixes for people merging
