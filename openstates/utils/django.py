@@ -16,7 +16,9 @@ def init_django() -> None:  # pragma: no cover
         DEBUG=False,
         INSTALLED_APPS=(
             "django.contrib.contenttypes",
+            "django.contrib.auth",
             "openstates.data",
+            "openstates.web.people_admin",
         ),
         DATABASES=DATABASES,
         TIME_ZONE="UTC",
