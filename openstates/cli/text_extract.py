@@ -293,15 +293,22 @@ def status() -> None:
 
 @main.command(help="rebuild the search index objects for a given state")
 @click.argument("state")
-def reindex_state(state: str) -> None:
+@click.option("--session", default=None)
+def reindex_state(state: str, session: str = None) -> None:
     init_django()
     from openstates.data.models import SearchableBill
 
-    ids = list(
-        SearchableBill.objects.filter(
+    if session:
+        bills = SearchableBill.objects.filter(
+            bill__legislative_session__jurisdiction_id=abbr_to_jid(state),
+            bill__legislative_session__identifier=session,
+        )
+    else:
+        bills = SearchableBill.objects.filter(
             bill__legislative_session__jurisdiction_id=abbr_to_jid(state)
-        ).values_list("id", flat=True)
-    )
+        )
+
+    ids = list(bills).values_list("id", flat=True)
     print(f"reindexing {len(ids)} bills for state")
     reindex(ids)
 
@@ -311,7 +318,10 @@ def reindex_state(state: str) -> None:
 @click.option("-n", default=None)
 @click.option("--clear-errors/--no-clear-errors", default=False)
 @click.option("--checkpoint", default=500)
-def update(state: str, n: int, clear_errors: bool, checkpoint: int) -> None:
+@click.option("--session", default=None)
+def update(
+    state: str, n: int, clear_errors: bool, checkpoint: int, session: str = None
+) -> None:
     init_django()
     from openstates.data.models import Bill, SearchableBill
 
@@ -320,6 +330,11 @@ def update(state: str, n: int, clear_errors: bool, checkpoint: int) -> None:
 
     if state == "all":
         all_bills = Bill.objects.all()
+    elif session:
+        all_bills = Bill.objects.filter(
+            legislative_session__jurisdiction_id=abbr_to_jid(state),
+            legislative_session__identifier=session,
+        )
     else:
         all_bills = Bill.objects.filter(
             legislative_session__jurisdiction_id=abbr_to_jid(state)
