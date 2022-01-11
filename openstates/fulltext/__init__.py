@@ -126,6 +126,10 @@ CONVERSION_FUNCTIONS = {
     },
     "wv": {"text/html": extractor_for_element_by_xpath('.//*[@class="textcontainer"]')},
     "wy": {"application/pdf": extract_sometimes_numbered_pdf},
+    "us": {
+        "text/xml": DoNotDownload,
+        "application/pdf": extract_sometimes_numbered_pdf,
+    },
 }
 
 
