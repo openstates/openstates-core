@@ -1,6 +1,10 @@
 # Changelog
 
-## 6.10.3
+## 6.10.4 - January 11 2022
+
+* fix typo in 6.10.3 release
+
+## 6.10.3 - January 11 2022
 
 * fix for subcommittee memberships not being ignored on person import
 * special case fix for extracting bill text from California (openstates/issues#147)

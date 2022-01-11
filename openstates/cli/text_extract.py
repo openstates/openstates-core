@@ -318,7 +318,7 @@ def reindex_state(state: str, session: str = None) -> None:
             bill__legislative_session__jurisdiction_id=abbr_to_jid(state)
         )
 
-    ids = list(bills).values_list("id", flat=True)
+    ids = list(bills.values_list("id", flat=True))
     print(f"reindexing {len(ids)} bills for state")
     reindex(ids)
 
