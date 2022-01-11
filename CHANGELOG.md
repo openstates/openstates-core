@@ -3,6 +3,7 @@
 ## 6.10.3
 
 * fix for subcommittee memberships not being ignored on person import
+* special case fix for extracting bill text from California (openstates/issues#147)
 
 ## 6.10.2 - January 3 2022
 
