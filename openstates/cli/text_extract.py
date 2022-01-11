@@ -122,6 +122,16 @@ def update_bill(bill: typing.Any) -> int:
     raw_text = ""
     link = None
     for link in links:
+        # TODO: if we need other exceptions, change this to a pluggable interface
+        if (
+            bill.legislative_session.jurisdiction_id
+            == "ocd-jurisdiction/country:us/state:ca/government"
+        ):
+            # move CA query string onto a docs-proxy query string for working PDF extraction
+            old_url = link.url
+            new_url = "http://docs-proxy.openstates.org/ca?" + link.url.split("?")[1]
+            print(f"{old_url} => {new_url}")
+            link.url = new_url
         metadata: Metadata = {
             "url": link.url,
             "media_type": link.media_type,
