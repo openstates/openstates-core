@@ -8,7 +8,7 @@ from pathlib import Path
 import click
 import boto3  # type: ignore
 import yaml
-from django.db import transaction  # type: ignore
+from django.db import transaction, connection  # type: ignore
 from ..utils import abbr_to_jid
 from ..utils.django import init_django  # type: ignore
 from ..models.people import Person, Role, Party, Link
@@ -337,6 +337,21 @@ def load_directory_to_database(files: list[Path], purge: bool) -> None:
         click.secho(f"{len(merged)} removed via merge", fg="yellow")
         for old, new in merged.items():
             click.secho(f"   {old} => {new}", fg="yellow")
+            # first we do some raw SQL updates because the appropriate Django apps are part of
+            # openstates.org and therefore not installed, but not updating these tables
+            # causes foreign key constraint issues
+            with connection.cursor() as cursor:
+                cursor.execute(
+                    "UPDATE people_admin_unmatchedname SET matched_person_id = %s WHERE matched_person_id = %s",
+                    [new, old],
+                )
+                cursor.execute(
+                    "DELETE FROM people_admin_persondelta WHERE person_id = %s", [old]
+                )
+                cursor.execute(
+                    "DELETE FROM people_admin_personretirement WHERE person_id = %s",
+                    [old],
+                )
             BillSponsorship.objects.filter(person_id=old).update(person_id=new)
             PersonVote.objects.filter(voter_id=old).update(voter_id=new)
             DjangoPerson.objects.filter(id=old).delete()
