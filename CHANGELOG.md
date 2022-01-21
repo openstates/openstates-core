@@ -1,5 +1,10 @@
 # Changelog
 
+## 6.10.5 - January 21 2022
+
+* US text extraction enabled
+* fix for openstates/issues#608
+
 ## 6.10.4 - January 11 2022
 
 * fix typo in 6.10.3 release
