@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.10.6 - January 31 2022
+
+* update click dependency
+
 ## 6.10.5 - January 21 2022
 
 * US text extraction enabled
