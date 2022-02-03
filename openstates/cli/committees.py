@@ -192,7 +192,7 @@ class CommitteeDir:
         # allow overriding directory explicitly, useful for testing
         self.directory = directory if directory else get_data_path(abbr) / "committees"
         # chamber -> name -> Committee
-        self.coms_by_chamber_and_name: defaultdict[
+        self.coms_by_parent_and_name: defaultdict[
             str, dict[str, Committee]
         ] = defaultdict(dict)
         self.errors = []
@@ -205,7 +205,7 @@ class CommitteeDir:
         for filename in self.directory.glob("*.yml"):
             try:
                 com: Committee = Committee.load_yaml(filename)
-                self.coms_by_chamber_and_name[com.chamber][com.name] = com
+                self.coms_by_parent_and_name[com.parent or com.chamber][com.name] = com
             except ValidationError as ve:
                 if raise_errors:
                     raise
@@ -215,7 +215,7 @@ class CommitteeDir:
         # need new parent id
         new_parent_id = None
         if new.parent:
-            new_parent_id = self.coms_by_chamber_and_name[new.chamber][new.parent].id
+            new_parent_id = self.coms_by_parent_and_name[new.chamber][new.parent].id
 
         # disallow merge of these, likely error & unclear what should happen
         if orig.chamber != new.chamber:
@@ -246,7 +246,7 @@ class CommitteeDir:
 
     def print_warnings(self) -> None:
         unmatched_names = set()
-        for coms_for_chamber in self.coms_by_chamber_and_name.values():
+        for coms_for_chamber in self.coms_by_parent_and_name.values():
             for com in coms_for_chamber.values():
                 has_homepage = "homepage" in [link.note for link in com.links]
                 if com.classification == "committee" and not has_homepage:
@@ -277,9 +277,9 @@ class CommitteeDir:
         else:
             raise FileNotFoundError()
 
-    def get_filename_by_name(self, chamber: str, name: str) -> Path:
+    def get_filename_by_name(self, parent: str, name: str) -> Path:
         try:
-            com = self.coms_by_chamber_and_name[chamber][name]
+            com = self.coms_by_parent_and_name[parent][name]
         except KeyError:
             raise FileNotFoundError()
         return self.get_filename_by_id(com.id)
@@ -304,7 +304,7 @@ class CommitteeDir:
         parent_id: typing.Optional[str]
         # parent name needs to be converted to ID
         if committee.parent:
-            parent_id = self.coms_by_chamber_and_name[committee.chamber][
+            parent_id = self.coms_by_parent_and_name[committee.chamber][
                 committee.parent
             ].id
         else:
@@ -316,7 +316,9 @@ class CommitteeDir:
             parent=parent_id,
             **committee.dict(exclude={"parent"}),
         )
-        self.coms_by_chamber_and_name[committee.chamber][committee.name] = full_com
+        self.coms_by_parent_and_name[committee.parent or committee.chamber][
+            committee.name
+        ] = full_com
         self.save_committee(full_com)
 
     def ingest_scraped_json(self, input_dir: str) -> list[ScrapeCommittee]:
@@ -344,7 +346,7 @@ class CommitteeDir:
             self.person_matcher = PersonMatcher(self.abbr)
 
         # find all committees with unmatched names
-        for coms_for_chamber in self.coms_by_chamber_and_name.values():
+        for coms_for_chamber in self.coms_by_parent_and_name.values():
             for com in coms_for_chamber.values():
                 updated_count = 0
                 for membership in com.members:
@@ -361,13 +363,13 @@ class CommitteeDir:
                         fg="yellow",
                     )
 
-    def get_merge_plan_by_chamber(
-        self, chamber: str, new_data: list[ScrapeCommittee]
+    def get_merge_plan_by_parent(
+        self, parent: str, new_data: list[ScrapeCommittee]
     ) -> DirectoryMergePlan:
-        existing_names = set(self.coms_by_chamber_and_name[chamber].keys())
+        existing_names = set(self.coms_by_parent_and_name[parent].keys())
         new_names = {com.name for com in new_data}
         parent_names = {
-            c.id: c.name for c in self.coms_by_chamber_and_name[chamber].values()
+            c.id: c.name for c in self.coms_by_parent_and_name[parent].values()
         }
 
         names_to_add = new_names - existing_names
@@ -379,7 +381,7 @@ class CommitteeDir:
         for com in new_data:
             if com.name in names_to_compare:
                 # reverse a saved Committee to a ScrapeCommittee for comparison
-                existing = self.coms_by_chamber_and_name[chamber][com.name]
+                existing = self.coms_by_parent_and_name[parent][com.name]
                 com_without_id = existing.dict()
                 if com_without_id["parent"]:
                     com_without_id["parent"] = parent_names[com_without_id["parent"]]
@@ -413,7 +415,7 @@ class CommitteeDir:
             ).values_list("id", flat=True)
         )
 
-        for chamber, committees in self.coms_by_chamber_and_name.items():
+        for parent, committees in self.coms_by_parent_and_name.items():
             # this sorted hack ensures subcommittees are processed after all committees
             for name, committee in sorted(
                 committees.items(), key=lambda c: c[1].parent or ""
@@ -465,13 +467,13 @@ def merge(abbr: str, input_dir: str, interactive: bool) -> None:
     """
     comdir = CommitteeDir(abbr)
 
-    coms_by_chamber: defaultdict[str, list[ScrapeCommittee]] = defaultdict(list)
+    coms_by_parent: defaultdict[str, list[ScrapeCommittee]] = defaultdict(list)
     scraped_data = comdir.ingest_scraped_json(input_dir)
     for com in scraped_data:
-        coms_by_chamber[com.chamber].append(com)
+        coms_by_parent[com.parent or com.chamber].append(com)
 
-    for chamber, coms in coms_by_chamber.items():
-        plan = comdir.get_merge_plan_by_chamber(chamber, coms)
+    for parent, coms in coms_by_parent.items():
+        plan = comdir.get_merge_plan_by_parent(parent, coms)
 
         click.secho(
             f"{len(plan.names_to_add)} to add",
@@ -500,7 +502,7 @@ def merge(abbr: str, input_dir: str, interactive: bool) -> None:
 
             # remove old committees
             for name in plan.names_to_remove:
-                filename = comdir.get_filename_by_name(chamber, name)
+                filename = comdir.get_filename_by_name(parent, name)
                 click.secho(f"removing {filename}", fg="red")
                 filename.unlink()
 
