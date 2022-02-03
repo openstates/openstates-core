@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.10.7 - February 3 2022
+
+* fix https://github.com/openstates/issues/issues/598, committees with duplicate names
+
 ## 6.10.6 - January 31 2022
 
 * update click dependency
