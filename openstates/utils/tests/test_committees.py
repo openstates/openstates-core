@@ -180,8 +180,8 @@ def test_merge_committees_members():
 def test_load_data():
     comdir = CommitteeDir(abbr="wa", directory=TEST_DATA_PATH / "committees")
 
-    assert len(comdir.coms_by_chamber_and_name["lower"]) == 3
-    assert len(comdir.coms_by_chamber_and_name["upper"]) == 1
+    assert len(comdir.coms_by_parent_and_name["lower"]) == 3
+    assert len(comdir.coms_by_parent_and_name["upper"]) == 1
     assert comdir.errors == []
 
 
@@ -192,8 +192,8 @@ def test_load_data_with_errors():
         raise_errors=False,
     )
 
-    assert len(comdir.coms_by_chamber_and_name["lower"]) == 0
-    assert len(comdir.coms_by_chamber_and_name["upper"]) == 0
+    assert len(comdir.coms_by_parent_and_name["lower"]) == 0
+    assert len(comdir.coms_by_parent_and_name["upper"]) == 0
     assert len(comdir.errors) == 2
     # error order isn't deterministic
     path0, msg0 = comdir.errors[0]
@@ -293,7 +293,7 @@ def test_add_committee():
             members=[Membership(name="Someone", role="member")],
         )
         comdir.add_committee(sc)
-        full_com = comdir.coms_by_chamber_and_name[sc.chamber][sc.name]
+        full_com = comdir.coms_by_parent_and_name[sc.chamber][sc.name]
         assert full_com.name == sc.name
         assert full_com.id.startswith("ocd-organization")
         assert full_com.jurisdiction == JURISDICTION_ID
@@ -330,7 +330,7 @@ def test_ingest_scraped_json_names_resolved():
     assert committees[1].name == "Judiciary 4"
 
 
-def test_get_merge_plan_by_chamber(person_matcher):
+def test_get_merge_plan_by_parent(person_matcher):
     comdir = CommitteeDir(
         abbr="wa",
         directory=TEST_DATA_PATH / "committees",
@@ -373,7 +373,7 @@ def test_get_merge_plan_by_chamber(person_matcher):
         ),
     ]
 
-    plan = comdir.get_merge_plan_by_chamber("lower", newdata)
+    plan = comdir.get_merge_plan_by_parent("lower", newdata)
     assert plan.names_to_add == {"Science"}
     assert plan.names_to_remove == {"Agriculture"}
     assert plan.same == 1  # Edcuation
