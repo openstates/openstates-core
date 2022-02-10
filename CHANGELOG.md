@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.10.8 - February 10 2022
+
+* loosen version requirements for spatula
+
 ## 6.10.7 - February 3 2022
 
 * fix https://github.com/openstates/issues/issues/598, committees with duplicate names
