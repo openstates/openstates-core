@@ -400,7 +400,7 @@ class CommitteeDir:
             to_merge=to_merge,
         )
 
-    def to_database(self, purge: bool) -> None:
+    def to_database(self, purge: bool, allow_missing_ids: bool) -> None:
         from openstates.data.models import Organization
 
         ids = set()
@@ -432,18 +432,20 @@ class CommitteeDir:
 
         missing_ids = existing_ids - ids
 
-        # ids that are missing need to be purged
-        if missing_ids and not purge:
-            click.secho(
-                f"{len(missing_ids)} went missing, run with --purge to remove", fg="red"
-            )
-            for id in missing_ids:
-                mobj = Organization.objects.get(pk=id)
-                click.secho(f"  {id}: {mobj}")
-            raise CancelTransaction()
-        elif missing_ids and purge:
-            click.secho(f"{len(missing_ids)} purged", fg="yellow")
-            Organization.objects.filter(id__in=missing_ids).delete()
+        # purge missing ids if they're not allowed
+        if missing_ids and not allow_missing_ids:
+            # ids that are missing need to be purged
+            if purge:
+                click.secho(f"{len(missing_ids)} purged", fg="yellow")
+                Organization.objects.filter(id__in=missing_ids).delete()
+            else:
+                click.secho(
+                    f"{len(missing_ids)} went missing, run with --purge to remove", fg="red"
+                )
+                for id in missing_ids:
+                    mobj = Organization.objects.get(pk=id)
+                    click.secho(f"  {id}: {mobj}")
+                raise CancelTransaction()
 
         click.secho(
             f"processed {len(ids)} committees, {created_count} created, "
@@ -557,7 +559,12 @@ def lint(abbreviations: list[str], fix: bool) -> None:
     default=False,
     help="Operate in safe mode, no changes will be written to database.",
 )
-def to_database(abbreviations: list[str], purge: bool, safe: bool) -> None:
+@click.option(
+    "--allow-missing-ids/--no-allow-missing-ids",
+    default=False,
+    help="Allow ids in the database that aren't in the YAML files.",
+)
+def to_database(abbreviations: list[str], purge: bool, safe: bool, allow_missing_ids: bool) -> None:
     """
     Sync YAML files to DB.
     """
@@ -575,7 +582,7 @@ def to_database(abbreviations: list[str], purge: bool, safe: bool) -> None:
 
         try:
             with transaction.atomic():
-                comdir.to_database(purge=purge)
+                comdir.to_database(purge=purge, allow_missing_ids=allow_missing_ids)
                 if safe:
                     click.secho("ran in safe mode, no changes were made", fg="magenta")
                     raise CancelTransaction()

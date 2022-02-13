@@ -1,15 +1,15 @@
 from django.db import migrations, models
 import django.db.models.deletion
-from ...metadata import lookup
+# from ...metadata import lookup
 
 
-def forwards_func(apps, schema_editor):
-    # copy cities into jurisdiction ids
-    Person = apps.get_model("data", "Person")
+# def forwards_func(apps, schema_editor):
+#     # copy cities into jurisdiction ids
+#     Person = apps.get_model("data", "Person")
 
-    for p in Person.objects.exclude(current_state=""):
-        p.current_jurisdiction_id = lookup(abbr=p.current_state).jurisdiction_id
-        p.save()
+#     for p in Person.objects.exclude(current_state=""):
+#         p.current_jurisdiction_id = lookup(abbr=p.current_state).jurisdiction_id
+#         p.save()
 
 
 class Migration(migrations.Migration):
@@ -28,5 +28,5 @@ class Migration(migrations.Migration):
                 to="data.Jurisdiction",
             ),
         ),
-        migrations.RunPython(forwards_func),
+        # migrations.RunPython(forwards_func),
     ]

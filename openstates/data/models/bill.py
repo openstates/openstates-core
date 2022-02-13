@@ -1,3 +1,4 @@
+from datetime import datetime
 from django.db import models
 from django.contrib.postgres.fields import ArrayField
 from django.contrib.postgres.search import SearchVectorField
@@ -39,7 +40,7 @@ class Bill(OCDBase):
     # check that array values are in enum?
     classification = ArrayField(base_field=models.TextField(), blank=True, default=list)
     subject = ArrayField(base_field=models.TextField(), blank=True, default=list)
-    citations = models.JSONField(default=dict, blank=True)
+    citations = models.JSONField(default=dict, blank=True, null=True)
 
     # computed fields
     first_action_date = models.CharField(max_length=25, default=None, null=True)
@@ -180,7 +181,7 @@ class BillDocument(RelatedBase):
         max_length=100, choices=common.BILL_DOCUMENT_CHOICES, blank=True
     )
     extras = models.JSONField(default=dict, blank=True)
-
+            
     def __str__(self):
         return "{0} document of {1}".format(self.date, self.bill)
 
@@ -196,7 +197,7 @@ class BillVersion(RelatedBase):
         max_length=100, choices=common.BILL_VERSION_CHOICES, blank=True
     )
     extras = models.JSONField(default=dict, blank=True)
-
+            
     def __str__(self):
         return "{0} version of {1}".format(self.date, self.bill)
 

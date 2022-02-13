@@ -81,6 +81,7 @@ class BillInline(ReadOnlyTabularInline):
 class LegislativeSessionAdmin(ModelAdmin):
     readonly_fields = ("jurisdiction", "identifier", "name", "active", "classification", "start_date", "end_date")
     inlines = [BillInline]
+    list_display = ("identifier", "name", "jurisdiction")
 
 
 @admin.register(models.Jurisdiction)

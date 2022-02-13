@@ -4,14 +4,17 @@ import inspect
 import datetime
 import glob
 import importlib
+import json
 import logging
 import logging.config
 import os
+import signal
 import sys
 import traceback
 import typing
 from collections import defaultdict
 from types import ModuleType
+from google.cloud.pubsub import PublisherClient
 
 from django.db import transaction  # type: ignore
 
@@ -258,10 +261,10 @@ def do_update(
         raise
 
     if "import" in args.actions:
-        save_report(report, juris.jurisdiction_id)
+        plan = save_report(report, juris.jurisdiction_id)
 
     print_report(report)
-    return report
+    return plan
 
 
 def parse_args() -> tuple[argparse.Namespace, list[str]]:
@@ -358,13 +361,27 @@ def main() -> int:
         {key: value for key, value in vars(args).items() if value is not None}
     )
     with override_settings(settings, overrides):
-        report = do_update(args, other, juris)
+        plan = do_update(args, other, juris)
 
-    if report.get("success", False):
+    if plan.success:
+        publisher_client = PublisherClient()
+        topic_path = os.environ.get('SUCCESS_TOPIC_PATH')
+        if topic_path:
+            data = json.dumps({'run_plan_id': plan.id}).encode("utf-8")
+            logger.info("%s %s" % (topic_path, data))
+            future = publisher_client.publish(topic_path, data)
+            print(f"Published message ID: {future.result()}")
         return 0
     else:
         return 1
 
 
+def shutdown_handler(signal: int, _) -> None:
+    logger.info("Signal received, safely shutting down.")
+    print("Exiting process.", flush=True)
+    sys.exit(0)
+
+
 if __name__ == "__main__":
+    signal.signal(signal.SIGINT, shutdown_handler)
     sys.exit(main())

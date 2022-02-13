@@ -1,3 +1,4 @@
+
 import datetime
 from django.db import models
 from django.db.models import Q, QuerySet
@@ -5,7 +6,6 @@ from .base import OCDBase, LinkBase, OCDIDField, RelatedBase, IdentifierBase
 from .division import Division
 from .jurisdiction import Jurisdiction
 from .. import common
-from ...utils import abbr_to_jid
 
 
 # the actual models
@@ -155,10 +155,6 @@ class PersonQuerySet(QuerySet):
         else:
             people = self.filter(name__icontains=query)
 
-        if state:
-            people = people.filter(
-                memberships__organization__jurisdiction_id=abbr_to_jid(state)
-            )
         return people
 
 

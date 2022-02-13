@@ -285,7 +285,7 @@ def _echo_org_status(org: typing.Any, created: bool, updated: bool) -> None:
         click.secho(f"{org} updated", fg="yellow")
 
 
-def load_directory_to_database(files: list[Path], purge: bool) -> None:
+def load_directory_to_database(files: list[Path], purge: bool, allow_missing_ids: bool) -> None:
     from openstates.data.models import Person as DjangoPerson
     from openstates.data.models import BillSponsorship, PersonVote, Jurisdiction
 
@@ -334,7 +334,6 @@ def load_directory_to_database(files: list[Path], purge: bool) -> None:
             merged[missing_id] = found.id
         except DjangoPerson.DoesNotExist:
             pass
-
     if merged:
         click.secho(f"{len(merged)} removed via merge", fg="yellow")
         for old, new in merged.items():
@@ -359,18 +358,19 @@ def load_directory_to_database(files: list[Path], purge: bool) -> None:
             DjangoPerson.objects.filter(id=old).delete()
             missing_ids.remove(old)
 
-    # ids that are still missing would need to be purged
-    if missing_ids and not purge:
-        click.secho(
-            f"{len(missing_ids)} went missing, run with --purge to remove", fg="red"
-        )
-        for id in missing_ids:
-            mobj = DjangoPerson.objects.get(pk=id)
-            click.secho(f"  {id}: {mobj}")
-        raise CancelTransaction()
-    elif missing_ids and purge:
-        click.secho(f"{len(missing_ids)} purged", fg="yellow")
-        DjangoPerson.objects.filter(id__in=missing_ids).delete()
+    # if missing ids are not allowed, consider purging them or canceling the transaction
+    if missing_ids and not allow_missing_ids:
+        if purge:
+            click.secho(f"{len(missing_ids)} purged", fg="yellow")
+            DjangoPerson.objects.filter(id__in=missing_ids).delete()
+        else:
+            click.secho(
+                f"{len(missing_ids)} went missing, run with --purge to remove", fg="red"
+            )
+            for id in missing_ids:
+                mobj = DjangoPerson.objects.get(pk=id)
+                click.secho(f"  {id}: {mobj}")
+            raise CancelTransaction()
 
     if created_count or updated_count:
         Jurisdiction.objects.filter(id__in=updated_jurisdictions).update(
@@ -662,7 +662,12 @@ def lint(
     default=False,
     help="Operate in safe mode, no changes will be written to database.",
 )
-def to_database(abbreviations: list[str], purge: bool, safe: bool) -> None:
+@click.option(
+    "--allow-missing-ids/--no-allow-missing-ids",
+    default=False,
+    help="Allow ids in the database that aren't in the YAML files.",
+)
+def to_database(abbreviations: list[str], purge: bool, safe: bool, allow_missing_ids: bool) -> None:
     """
     Sync YAML files to DB.
     """
@@ -684,8 +689,8 @@ def to_database(abbreviations: list[str], purge: bool, safe: bool) -> None:
         person_files = list(
             itertools.chain(
                 directory.glob("legislature/*.yml"),
-                directory.glob("executive/*.yml"),
-                directory.glob("municipalities/*.yml"),
+                # directory.glob("executive/*.yml"),
+                # directory.glob("municipalities/*.yml"),
                 directory.glob("retired/*.yml"),
             )
         )
@@ -695,7 +700,7 @@ def to_database(abbreviations: list[str], purge: bool, safe: bool) -> None:
 
         try:
             with transaction.atomic():
-                load_directory_to_database(person_files, purge=purge)
+                load_directory_to_database(person_files, purge=purge, allow_missing_ids=allow_missing_ids)
 
                 if safe:
                     click.secho("ran in safe mode, no changes were made", fg="magenta")
@@ -745,3 +750,4 @@ def merge(abbr: str, input_dir: str, retirement: str, reset_offices: bool) -> No
 
 if __name__ == "__main__":
     main()
+    

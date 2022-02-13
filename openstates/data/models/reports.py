@@ -60,6 +60,7 @@ class ImportObjects(models.Model):
     noop_count = models.PositiveIntegerField()
     start_time = models.DateTimeField()
     end_time = models.DateTimeField()
+    records = models.JSONField(blank=True, null=True)
 
     class Meta:
         db_table = "pupa_importobjects"

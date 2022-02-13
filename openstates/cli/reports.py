@@ -82,7 +82,9 @@ def save_report(report: dict[str, typing.Any], jurisdiction: str) -> typing.Any:
                 noop_count=changes["noop"],
                 start_time=changes["start"],
                 end_time=changes["end"],
+                records=changes["records"],
             )
+    return plan
 
 
 def _simple_count(ModelCls: typing.Any, session: str, **filter: typing.Any) -> int:

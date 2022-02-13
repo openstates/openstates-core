@@ -111,7 +111,7 @@ class Scraper(scrapelib.Scraper):
         if modname is None:
             self.scrape_output_handler = None
         else:
-            handler = importlib.import_module(modname)
+            handler = importlib.import_module(modname) 
             self.scrape_output_handler = handler.Handler(self)
 
     def save_object(self, obj):
@@ -125,7 +125,7 @@ class Scraper(scrapelib.Scraper):
 
         filename = "{0}_{1}.json".format(obj._type, obj._id).replace("/", "-")
 
-        self.info("save %s %s as %s", obj._type, obj, filename)
+        # self.info("save %s %s as %s", obj._type, obj, filename)
         self.debug(
             json.dumps(
                 OrderedDict(sorted(obj.as_dict().items())),
