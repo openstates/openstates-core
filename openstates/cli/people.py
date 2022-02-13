@@ -139,7 +139,7 @@ class Summarizer:
             self.summarize(person)
 
 
-def write_csv(files: list[Path], jurisdiction_id: str, output_filename: str) -> None:
+def write_csv(files: typing.List[Path], jurisdiction_id: str, output_filename: str) -> None:
     with open(output_filename, "w") as outf:
         out = csv.DictWriter(
             outf,
@@ -285,7 +285,7 @@ def _echo_org_status(org: typing.Any, created: bool, updated: bool) -> None:
         click.secho(f"{org} updated", fg="yellow")
 
 
-def load_directory_to_database(files: list[Path], purge: bool, allow_missing_ids: bool, create_posts: bool) -> None:
+def load_directory_to_database(files: typing.List[Path], purge: bool, allow_missing_ids: bool, create_posts: bool) -> None:
     from openstates.data.models import Person as DjangoPerson
     from openstates.data.models import BillSponsorship, PersonVote, Jurisdiction
 
@@ -438,7 +438,7 @@ def main() -> None:
 @click.option(
     "--upload/--no-upload", default=False, help="Upload to S3. (default: false)"
 )
-def to_csv(abbreviations: list[str], upload: bool) -> None:
+def to_csv(abbreviations: typing.List[str], upload: bool) -> None:
     """
     Generate CSV files for YAML and optionally sync to S3.
     """
@@ -521,7 +521,7 @@ def new(
 @main.command()
 @click.argument("abbreviations", nargs=-1)
 @click.option("--roster/--no-roster", default=False, help="Print roster after summary.")
-def summarize(abbreviations: list[str], roster: bool) -> None:
+def summarize(abbreviations: typing.List[str], roster: bool) -> None:
     """
     Provide summary of a jurisdiction's data.
 
@@ -546,7 +546,7 @@ def summarize(abbreviations: list[str], roster: bool) -> None:
 @click.option("--vacant", is_flag=True)
 def retire(
     date: str,
-    filenames: list[str],
+    filenames: typing.List[str],
     reason: typing.Optional[str],
     death: bool,
     vacant: bool,
@@ -588,7 +588,7 @@ def retire(
     "--skip-existing/--no-skip-existing",
     help="Skip processing for files that already exist on S3. (default: true)",
 )
-def sync_images(abbreviations: list[str], skip_existing: bool) -> None:
+def sync_images(abbreviations: typing.List[str], skip_existing: bool) -> None:
     """
     Download images and sync them to S3.
 
@@ -624,7 +624,7 @@ def sync_images(abbreviations: list[str], skip_existing: bool) -> None:
     help="Lint roles using a certain date instead of today.",
 )
 def lint(
-    abbreviations: list[str],
+    abbreviations: typing.List[str],
     verbose: bool,
     municipal: bool,
     date: str,
@@ -672,7 +672,7 @@ def lint(
     default=False,
     help="Create posts for people.",
 )
-def to_database(abbreviations: list[str], purge: bool, safe: bool, allow_missing_ids: bool, create_posts: bool) -> None:
+def to_database(abbreviations: typing.List[str], purge: bool, safe: bool, allow_missing_ids: bool, create_posts: bool) -> None:
     """
     Sync YAML files to DB.
     """
@@ -694,8 +694,8 @@ def to_database(abbreviations: list[str], purge: bool, safe: bool, allow_missing
         person_files = list(
             itertools.chain(
                 directory.glob("legislature/*.yml"),
-                directory.glob("executive/*.yml"),
-                directory.glob("municipalities/*.yml"),
+                # directory.glob("executive/*.yml"),
+                # directory.glob("municipalities/*.yml"),
                 directory.glob("retired/*.yml"),
             )
         )

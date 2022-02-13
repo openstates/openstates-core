@@ -51,7 +51,7 @@ def override_settings(settings, overrides):  # type: ignore
             setattr(settings, key, value)
 
 
-def get_jurisdiction(module_name: str) -> tuple[State, ModuleType]:
+def get_jurisdiction(module_name: str) -> typing.Tuple[State, ModuleType]:
     # get the state object
     module = importlib.import_module(module_name)
     for obj in module.__dict__.values():
@@ -64,9 +64,9 @@ def get_jurisdiction(module_name: str) -> tuple[State, ModuleType]:
 def do_scrape(
     juris: State,
     args: argparse.Namespace,
-    scrapers: dict[str, dict[str, str]],
-    active_sessions: set[str],
-) -> dict[str, typing.Any]:
+    scrapers: typing.Dict[str, typing.Dict[str, str]],
+    active_sessions: typing.Set[str],
+) -> typing.Dict[str, typing.Any]:
     # make output and cache dirs
     utils.makedirs(settings.CACHE_DIR)
     datadir = os.path.join(settings.SCRAPED_DATA_DIR, args.module)
@@ -121,7 +121,7 @@ def do_scrape(
     return report
 
 
-def do_import(juris: State, args: argparse.Namespace) -> dict[str, typing.Any]:
+def do_import(juris: State, args: argparse.Namespace) -> typing.Dict[str, typing.Any]:
     # import inside here because to avoid loading Django code unnecessarily
     from openstates.importers import (
         JurisdictionImporter,
@@ -162,7 +162,7 @@ def do_import(juris: State, args: argparse.Namespace) -> dict[str, typing.Any]:
     return report
 
 
-def check_session_list(juris: State) -> set[str]:
+def check_session_list(juris: State) -> typing.Set[str]:
     scraper = type(juris).__name__
 
     # if get_session_list is not defined
@@ -199,11 +199,11 @@ def check_session_list(juris: State) -> set[str]:
 
 
 def do_update(
-    args: argparse.Namespace, other: list[str], juris: State
-) -> dict[str, typing.Any]:
+    args: argparse.Namespace, other: typing.List[str], juris: State
+) -> typing.Dict[str, typing.Any]:
     available_scrapers = getattr(juris, "scrapers", {})
     default_scrapers = getattr(juris, "default_scrapers", None)
-    scrapers: dict[str, dict[str, str]] = {}
+    scrapers: typing.Dict[str, typing.Dict[str, str]] = {}
 
     if not available_scrapers:
         raise CommandError("no scrapers defined on jurisdiction")
@@ -267,7 +267,7 @@ def do_update(
     return plan
 
 
-def parse_args() -> tuple[argparse.Namespace, list[str]]:
+def parse_args() -> typing.Tuple[argparse.Namespace, typing.List[str]]:
     parser = argparse.ArgumentParser("openstates", description="openstates CLI")
     parser.add_argument("--debug", action="store_true", help="open debugger on error")
     parser.add_argument(
