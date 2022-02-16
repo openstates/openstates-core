@@ -21,3 +21,4 @@ raw/
 text/
 _scrapes/
 spatula-cache.db
+.idea/
