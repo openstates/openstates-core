@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.10.9 - February 16 2022
+
+* test for rylie 
+
 ## 6.10.8 - February 10 2022
 
 * loosen version requirements for spatula
