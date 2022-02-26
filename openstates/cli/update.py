@@ -364,13 +364,13 @@ def main() -> int:
         plan = do_update(args, other, juris)
 
     if plan.success:
-        publisher_client = PublisherClient()
-        topic_path = os.environ.get('SUCCESS_TOPIC_PATH')
-        if topic_path:
-            data = json.dumps({'run_plan_id': plan.id}).encode("utf-8")
-            logger.info("%s %s" % (topic_path, data))
-            future = publisher_client.publish(topic_path, data)
-            print(f"Published message ID: {future.result()}")
+        # publisher_client = PublisherClient()
+        # topic_path = os.environ.get('SUCCESS_TOPIC_PATH')
+        # if topic_path:
+        #     data = json.dumps({'run_plan_id': plan.id}).encode("utf-8")
+        #     logger.info("%s %s" % (topic_path, data))
+        #     future = publisher_client.publish(topic_path, data)
+        #     print(f"Published message ID: {future.result()}")
         return 0
     else:
         return 1
