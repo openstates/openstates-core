@@ -7,7 +7,7 @@ from .general import legacy_districts
 from ...models.people import MAJOR_PARTIES, Person, PartyName
 
 
-DataDict = dict[str, typing.Any]
+DataDict = typing.Dict[str, typing.Any]
 # TODO: whenever Django typed replace these
 DjangoModel = typing.Any
 DjangoModelInstance = typing.Any
@@ -27,7 +27,7 @@ def cached_lookup(ModelCls: DjangoModel, **kwargs: str) -> DjangoModelInstance:
 def update_subobjects(
     person: DjangoModelInstance,
     fieldname: str,
-    objects: list[DataDict],
+    objects: typing.List[DataDict],
     read_manager: typing.Any = None,
 ) -> bool:
     """returns True if there are any updates"""
@@ -68,8 +68,8 @@ def update_subobjects(
 
 
 def get_update_or_create(
-    ModelCls: DjangoModel, data: dict, lookup_keys: list[str]
-) -> tuple[DjangoModelInstance, bool, bool]:
+    ModelCls: DjangoModel, data: dict, lookup_keys: typing.List[str]
+) -> typing.Tuple[DjangoModelInstance, bool, bool]:
     updated = created = False
     kwargs = {k: data[k] for k in lookup_keys}
     try:
@@ -89,7 +89,7 @@ def get_update_or_create(
     return obj, created, updated
 
 
-def load_person(data: Person, create_post_if_not_exsist=False) -> tuple[bool, bool]:
+def load_person(data: Person, create_post_if_not_exsist=False) -> typing.Tuple[bool, bool]:
     # import has to be here so that Django is set up
     from openstates.data.models import Organization, Post
     from openstates.data.models import Person as DjangoPerson
@@ -273,7 +273,7 @@ def create_parties() -> None:
             click.secho(f"created party: {party.value}", fg="green")
 
 
-def create_municipalities(jurisdictions: list[DataDict]) -> None:
+def create_municipalities(jurisdictions: typing.List[DataDict]) -> None:
     from openstates.data.models import Jurisdiction, Organization
 
     for jurisdiction in jurisdictions:
