@@ -169,6 +169,7 @@ def write_csv(files: list[Path], jurisdiction_id: str, output_filename: str) -> 
                 "youtube",
                 "instagram",
                 "facebook",
+                "wikidata",
             ),
         )
         out.writeheader()
@@ -221,6 +222,7 @@ def write_csv(files: list[Path], jurisdiction_id: str, output_filename: str) -> 
                 "youtube": person.ids.youtube if person.ids else "",
                 "instagram": person.ids.instagram if person.ids else "",
                 "facebook": person.ids.facebook if person.ids else "",
+                "wikidata": person.ids.wikidata if person.ids else "",
                 "links": links,
                 "sources": sources,
                 "district_address": district_address,

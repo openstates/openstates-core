@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.10.10 - March 8, 2022
+
+* add wikidata to people ids
+
 ## 6.10.9 - February 16 2022
 
 * test for rylie 

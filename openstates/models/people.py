@@ -88,6 +88,7 @@ class PersonIdBlock(BaseModel):
     youtube: str = ""
     instagram: str = ""
     facebook: str = ""
+    wikidata: str = ""
 
     @validator("*")
     def validate_social(cls, val: str) -> str:
