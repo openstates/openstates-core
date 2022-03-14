@@ -45,12 +45,8 @@ ORGANIZATION_CLASSIFICATION_CHOICES = (
     ("committee", "Committee"),
     ("government", "Government"),
     ("subcommittee", "Subcommittee"),
-<<<<<<< HEAD
     ("judicial", "Judicial"),
     ("", "Unknown")
-=======
-    ("judicial", "Judicial")
->>>>>>> 89e6b1d5 (squashed commits)
 )
 ORGANIZATION_CLASSIFICATIONS = _keys(ORGANIZATION_CLASSIFICATION_CHOICES)
 

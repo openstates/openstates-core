@@ -694,8 +694,8 @@ def to_database(abbreviations: typing.List[str], purge: bool, safe: bool, allow_
         person_files = list(
             itertools.chain(
                 directory.glob("legislature/*.yml"),
-                # directory.glob("executive/*.yml"),
-                # directory.glob("municipalities/*.yml"),
+                directory.glob("executive/*.yml"),
+                directory.glob("municipalities/*.yml"),
                 directory.glob("retired/*.yml"),
             )
         )
