@@ -1,5 +1,10 @@
 # Changelog
 
+## 6.10.11 - March 14, 2022
+
+* FL: Fix text extraction
+* move scrapelib dependency to Civic Eagle forked repo
+
 ## 6.10.10 - March 8, 2022
 
 * add wikidata to people ids
