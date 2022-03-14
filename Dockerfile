@@ -6,12 +6,15 @@ ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONIOENCODING 'utf-8'
 ENV LANG 'C.UTF-8'
 
+
+
 # text extraction stuff
 RUN apt update && apt install -y --no-install-recommends \
       libgdal-dev \
       poppler-utils \
       antiword \
-      tesseract-ocr
+      tesseract-ocr \
+      git # install git for forked dependency re: scrapelib
 
 ADD . /opt/os
 WORKDIR /opt/os
