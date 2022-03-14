@@ -55,13 +55,18 @@ def download(
     )
     filename.replace("#", "__")
 
+    # FL "dh key too small" error due to bad Diffie Hellman key on the server side
+    ciphers_list_addition = None
+    if abbr == 'fl':
+        ciphers_list_addition = 'HIGH:!DH:!aNULL'
+
     if not os.path.exists(filename):
         try:
             os.makedirs(os.path.dirname(filename))
         except OSError:
             pass
         try:
-            _, resp = scraper.urlretrieve(version["url"], filename)
+            _, resp = scraper.urlretrieve(version["url"], filename, ciphers_list_addition=ciphers_list_addition)
         except Exception:
             click.secho("could not fetch " + version["url"], fg="yellow")
             return None, None
