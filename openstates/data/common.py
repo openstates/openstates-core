@@ -32,7 +32,7 @@ JURISDICTION_CLASSIFICATION_CHOICES = (
 JURISDICTION_CLASSIFICATIONS = _keys(JURISDICTION_CLASSIFICATION_CHOICES)
 
 
-SESSION_CLASSIFICATION_CHOICES = (("primary", "Primary"), ("special", "Special"))
+SESSION_CLASSIFICATION_CHOICES = (("primary", "Primary"), ("special", "Special"), ("", "Unknown"))
 SESSION_CLASSIFICATIONS = _keys(SESSION_CLASSIFICATION_CHOICES)
 
 
@@ -45,7 +45,8 @@ ORGANIZATION_CLASSIFICATION_CHOICES = (
     ("committee", "Committee"),
     ("government", "Government"),
     ("subcommittee", "Subcommittee"),
-    ("judicial", "Judicial")
+    ("judicial", "Judicial"),
+    ("", "Unknown")
 )
 ORGANIZATION_CLASSIFICATIONS = _keys(ORGANIZATION_CLASSIFICATION_CHOICES)
 
@@ -74,6 +75,7 @@ BILL_CLASSIFICATION_CHOICES = (
     ("study request", "Study Request"),
     ("concurrent study request", "Concurrent Study Request"),
     ("bill of address", "Bill of Address"),
+    ("", "Unknown")
 )
 BILL_CLASSIFICATIONS = _keys(BILL_CLASSIFICATION_CHOICES)
 
@@ -126,6 +128,7 @@ CITATION_TYPE_CHOICES = {
     ("chapter", "Chapter Law"),
     ("final", "Final"),
     ("other", "Other"),
+    ("", "Unknown")
 }
 
 CITATION_TYPES = _keys(CITATION_TYPE_CHOICES)
@@ -152,6 +155,7 @@ VOTE_OPTION_CHOICES = (
     ("excused", "Excused"),
     # Only for open states.
     ("other", "Other"),
+    ("", "Unknown")
 )
 VOTE_OPTIONS = _keys(VOTE_OPTION_CHOICES)
 
@@ -178,12 +182,14 @@ BILL_DOCUMENT_CHOICES = (
     ("veto-message", "Veto Message"),
     ("analysis", "Analysis"),
     ("law", "Law"),
+    ("", "Unknown")
 )
 BILL_DOCUMENT_CLASSIFICATIONS = _keys(BILL_DOCUMENT_CHOICES)
 
 EVENT_MEDIA_CLASSIFICATION_CHOICES = (
     ("audio recording", "Audio Recording"),
     ("video recording", "Video Recording"),
+    ("", "Unknown")
 )
 EVENT_MEDIA_CLASSIFICATIONS = _keys(EVENT_MEDIA_CLASSIFICATION_CHOICES)
 
@@ -192,5 +198,6 @@ EVENT_DOCUMENT_CLASSIFICATION_CHOICES = (
     ("minutes", "Minutes"),
     ("transcript", "Transcript"),
     ("testimony", "Testimony"),
+    ("", "Unknown")
 )
 EVENT_DOCUMENT_CLASSIFICATIONS = _keys(EVENT_DOCUMENT_CLASSIFICATION_CHOICES)

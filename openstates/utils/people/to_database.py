@@ -30,7 +30,7 @@ def update_subobjects(
     objects: list[DataDict],
     read_manager: typing.Any = None,
 ) -> bool:
-    """ returns True if there are any updates """
+    """returns True if there are any updates"""
     # we need the default manager for this field in case we need to do updates
     manager = getattr(person, fieldname)
 
@@ -89,7 +89,7 @@ def get_update_or_create(
     return obj, created, updated
 
 
-def load_person(data: Person) -> tuple[bool, bool]:
+def load_person(data: Person, create_post_if_not_exsist=False) -> tuple[bool, bool]:
     # import has to be here so that Django is set up
     from openstates.data.models import Organization, Post
     from openstates.data.models import Person as DjangoPerson
@@ -181,8 +181,12 @@ def load_person(data: Person) -> tuple[bool, bool]:
             )
             if use_district:
                 post = org.posts.get(label=role.district)
-            else:
-                post = None
+            elif create_post_if_not_exsist:
+                post, created = org.posts.get_or_create(
+                    role=role_name, defaults=dict(label=role_name)
+                )
+                if created:
+                    click.secho(f"created post {role_name} in {org.name}")
         except Organization.DoesNotExist:
             click.secho(
                 f"{person} no such organization {role.jurisdiction} {org_type}",

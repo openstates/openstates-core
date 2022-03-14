@@ -62,7 +62,7 @@ class State:
 
     @property
     def legacy_districts(self) -> typing.List[District]:
-        from .data.legacy_districts import legacy_districts
+        from openstates.metadata.data.legacy_districts import legacy_districts
 
         return legacy_districts.get(self.abbr.lower(), [])
 

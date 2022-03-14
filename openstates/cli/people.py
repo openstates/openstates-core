@@ -285,7 +285,7 @@ def _echo_org_status(org: typing.Any, created: bool, updated: bool) -> None:
         click.secho(f"{org} updated", fg="yellow")
 
 
-def load_directory_to_database(files: list[Path], purge: bool, allow_missing_ids: bool) -> None:
+def load_directory_to_database(files: list[Path], purge: bool, allow_missing_ids: bool, create_posts: bool) -> None:
     from openstates.data.models import Person as DjangoPerson
     from openstates.data.models import BillSponsorship, PersonVote, Jurisdiction
 
@@ -311,7 +311,7 @@ def load_directory_to_database(files: list[Path], purge: bool, allow_missing_ids
 
     for person, filename in all_data:
         ids.add(person.id)
-        created, updated = load_person(person)
+        created, updated = load_person(person, create_post_if_not_exsist=create_posts)
 
         if created:
             click.secho(f"created person from {filename}", fg="cyan", bold=True)
@@ -667,7 +667,12 @@ def lint(
     default=False,
     help="Allow ids in the database that aren't in the YAML files.",
 )
-def to_database(abbreviations: list[str], purge: bool, safe: bool, allow_missing_ids: bool) -> None:
+@click.option(
+    "--create-posts/--no-create-posts",
+    default=False,
+    help="Create posts for people.",
+)
+def to_database(abbreviations: list[str], purge: bool, safe: bool, allow_missing_ids: bool, create_posts: bool) -> None:
     """
     Sync YAML files to DB.
     """
@@ -689,8 +694,8 @@ def to_database(abbreviations: list[str], purge: bool, safe: bool, allow_missing
         person_files = list(
             itertools.chain(
                 directory.glob("legislature/*.yml"),
-                # directory.glob("executive/*.yml"),
-                # directory.glob("municipalities/*.yml"),
+                directory.glob("executive/*.yml"),
+                directory.glob("municipalities/*.yml"),
                 directory.glob("retired/*.yml"),
             )
         )
@@ -700,7 +705,7 @@ def to_database(abbreviations: list[str], purge: bool, safe: bool, allow_missing
 
         try:
             with transaction.atomic():
-                load_directory_to_database(person_files, purge=purge, allow_missing_ids=allow_missing_ids)
+                load_directory_to_database(person_files, purge=purge, allow_missing_ids=allow_missing_ids, create_posts=create_posts)
 
                 if safe:
                     click.secho("ran in safe mode, no changes were made", fg="magenta")

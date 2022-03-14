@@ -8,9 +8,11 @@ services:
   core:
     build: .
     environment:
-    - DATABASE_URL=postgres://openstates:openstates@db/openstatesorg
+    - DATABASE_URL=postgres://pgbouncer:42571allahis1@34.132.172.238:5432/civiqa-sql-db-2
+    - OS_PEOPLE_DIRECTORY=/opt/people
     volumes:
     - .:/opt/openstates-core
+    - ../people:/opt/people
     entrypoint: ["poetry", "run"]
     networks:
     - openstates-network
