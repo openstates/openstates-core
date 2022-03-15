@@ -122,6 +122,12 @@ def update_bill(bill: typing.Any) -> int:
     #         return      # nothing to do
     #     bill.searchable.delete()
 
+    # FL "dh key too small" error due to bad Diffie Hellman key on the server side
+    jurisdiction = bill.legislative_session.jurisdiction.name
+    ciphers_list_addition = None
+    if jurisdiction == 'Florida':
+        ciphers_list_addition = 'HIGH:!DH:!aNULL'
+
     # iterate through versions until we extract some good text
     is_error = True
     raw_text = ""
@@ -147,7 +153,7 @@ def update_bill(bill: typing.Any) -> int:
         if func == DoNotDownload:
             continue
         try:
-            data = scraper.get(link.url).content
+            data = scraper.request('GET', link.url, allow_redirects=True, ciphers_list_addition=ciphers_list_addition).content
         except Exception:
             continue
         try:
