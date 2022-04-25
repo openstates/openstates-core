@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.10.12 - April 25, 2022
+
+* update django dependency
+
 ## 6.10.11 - March 14, 2022
 
 * FL: Fix text extraction
