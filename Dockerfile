@@ -17,7 +17,8 @@ RUN apt-get update -qq && apt-get install -y -qq --no-install-recommends \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
-ADD . /opt/os
+ADD pyproject.toml /opt/os
+ADD poetry.lock /opt/os
 WORKDIR /opt/os
 RUN pip --no-cache-dir --disable-pip-version-check install poetry \
     && poetry install \
@@ -28,4 +29,5 @@ RUN pip --no-cache-dir --disable-pip-version-check install poetry \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
+ADD . /opt/os
 ENTRYPOINT ["poetry", "run"]
