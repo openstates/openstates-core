@@ -7,17 +7,25 @@ ENV PYTHONIOENCODING 'utf-8'
 ENV LANG 'C.UTF-8'
 
 # text extraction stuff
+# install git for forked dependency re: scrapelib
 RUN apt-get update -qq && apt-get install -y -qq --no-install-recommends \
       libgdal-dev \
       poppler-utils \
       antiword \
       tesseract-ocr \
-      git # install git for forked dependency re: scrapelib
+      git \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
 
 ADD . /opt/os
 WORKDIR /opt/os
 RUN pip --no-cache-dir --disable-pip-version-check install poetry \
     && poetry install \
-    && rm -r /root/.cache/pypoetry/cache /root/.cache/pypoetry/artifacts/
+    && rm -r /root/.cache/pypoetry/cache /root/.cache/pypoetry/artifacts/ \
+    && apt-get -y -qq remove \
+      git \
+    && apt-get autoremove -y -qq \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
 
 ENTRYPOINT ["poetry", "run"]
