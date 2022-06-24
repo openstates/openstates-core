@@ -129,7 +129,7 @@ def merge_offices(
         if name not in new_offices:
             new_offices[name] = office
         else:
-            raise NotImplementedError(f"extra old {name}")
+            raise NotImplementedError(f"extra new {name}")
 
     for name in sorted(set(old_offices) | set(new_offices)):
         combined = update_office(old_offices.get(name), new_offices.get(name))
