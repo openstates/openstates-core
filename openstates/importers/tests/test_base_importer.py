@@ -117,8 +117,8 @@ def test_exception_on_identical_objects_in_import_stream():
     b1 = ScrapeBill("HB 1", "2020", "Title", chamber="upper").as_dict()
     b2 = ScrapeBill("HB 1", "2020", "Title", chamber="lower").as_dict()
 
-    with pytest.raises(Exception):
-        BillImporter("jid").import_data([b1, b2])
+    BillImporter("jid").import_data([b1, b2])
+    assert Bill.objects.count() == 0
 
 
 @pytest.mark.django_db
