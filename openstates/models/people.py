@@ -50,6 +50,12 @@ class PartyName(str, Enum):
     PR_PPD = "Partido Popular Democr\xE1tico"
     PR_PD = "Proyecto Dignidad"
     PR_MVC = "Movimiento Victoria Ciudadana"
+    NY_R_C_IP_RFM = "Republican/Conservative/Independence/Reform"
+    NY_D_WF = "Democratic/Working Families"
+    NY_R_C_IP_LIBT = "Republican/Conservative/Independence/Libertarian"
+    NY_D_IP_WF = "Democratic/Independence/Working Families"
+    NY_R_C = "Republican/Conservative"
+    NY_R_C_IP = "Republican/Conservative/Independence"
 
 
 class RoleType(str, Enum):
