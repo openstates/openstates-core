@@ -1,5 +1,12 @@
 # Changelog
 
+## 6.11.0 - June 30, 2022
+
+* update dependency
+* add additional parties for NY senate
+* allow returning None objects in scrapes
+* skip objects with unresolved ID error
+
 ## 6.10.12 - April 25, 2022
 
 * update django dependency
