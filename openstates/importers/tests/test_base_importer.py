@@ -112,13 +112,14 @@ def test_deduplication_identical_object():
 @pytest.mark.django_db
 def test_exception_on_identical_objects_in_import_stream():
     create_jurisdiction()
-    # these two objects aren't identical, but refer to the same thing
-    # at the moment we consider this an error (but there may be a better way to handle this?)
+    # the first two objects aren't identical, but refer to the same thing
+    # at the moment we drop both objects (because we can't know which one is correct)
     b1 = ScrapeBill("HB 1", "2020", "Title", chamber="upper").as_dict()
     b2 = ScrapeBill("HB 1", "2020", "Title", chamber="lower").as_dict()
+    b3 = ScrapeBill("HB 2", "2020", "Bill Title").as_dict()
 
-    with pytest.raises(Exception):
-        BillImporter("jid").import_data([b1, b2])
+    BillImporter("jid").import_data([b1, b2, b3])
+    assert Bill.objects.count() == 1
 
 
 @pytest.mark.django_db
