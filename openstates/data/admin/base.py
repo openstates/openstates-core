@@ -9,7 +9,7 @@ class ModelAdmin(admin.ModelAdmin):
     actions = None
 
     def has_delete_permission(self, request, obj=None):
-        return False
+        return True
 
     # we probably don't want to add anything through the interface
     def has_add_permission(self, request, obj=None):
