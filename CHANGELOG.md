@@ -1,5 +1,10 @@
 # Changelog
 
+## 6.11.1 - July 11, 2022
+
+* update dependency
+* decrease size of dockerfile
+
 ## 6.11.0 - June 30, 2022
 
 * update dependency
