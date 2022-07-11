@@ -15,11 +15,12 @@ RUN apt-get update -qq && apt-get install -y -qq --no-install-recommends \
       tesseract-ocr \
       git \
     && apt-get clean \
-    && rm -rf /var/lib/apt/lists/*
+    && rm -rf /var/lib/apt/lists/* \
+    && mkdir -p /opt/os
 
-ADD pyproject.toml /opt/os
-ADD poetry.lock /opt/os
 WORKDIR /opt/os
+ADD pyproject.toml /opt/os/
+ADD poetry.lock /opt/os/
 RUN pip --no-cache-dir --disable-pip-version-check install poetry \
     && poetry install -q --no-root \
     && apt-get -y -qq remove \
@@ -30,6 +31,6 @@ RUN pip --no-cache-dir --disable-pip-version-check install poetry \
 
 ADD . /opt/os
 RUN poetry install -q \
-    && rm -r /root/.cache/pypoetry/cache /root/.cache/pypoetry/artifacts/ \
+    && rm -r /root/.cache/pypoetry/cache /root/.cache/pypoetry/artifacts/
 
 ENTRYPOINT ["poetry", "run"]
