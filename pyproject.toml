@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "openstates"
-version = "6.10.12"
+version = "6.11.0"
 description = "core infrastructure for the openstates project"
 authors = ["James Turk <dev@jamesturk.net>"]
 license = "MIT"
@@ -20,8 +20,7 @@ python = "^3.9"
 psycopg2-binary = "^2.8.4"
 dj_database_url = "^0.5.0"
 Django = "3.2.13"
-# scrapelib = "^2.0.2"
-scrapelib = { git = "https://github.com/civic-eagle/scrapelib.git", branch = "cipherlist-dh-key-too-small-error" }
+scrapelib = "^2.0.7"
 jsonschema = "^3.2.0"
 pytz = "^2019.3"
 click = "^8.0"

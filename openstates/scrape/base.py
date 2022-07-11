@@ -162,6 +162,9 @@ class Scraper(scrapelib.Scraper):
         record["start"] = utils.utcnow()
         try:
             for obj in self.scrape(**kwargs) or []:
+                # allow for returning empty objects in a list
+                if not obj:
+                    continue
                 if hasattr(obj, "__iter__"):
                     for iterobj in obj:
                         self.save_object(iterobj)
