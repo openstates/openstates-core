@@ -21,8 +21,7 @@ ADD pyproject.toml /opt/os
 ADD poetry.lock /opt/os
 WORKDIR /opt/os
 RUN pip --no-cache-dir --disable-pip-version-check install poetry \
-    && poetry install \
-    && rm -r /root/.cache/pypoetry/cache /root/.cache/pypoetry/artifacts/ \
+    && poetry install -q --no-root \
     && apt-get -y -qq remove \
       git \
     && apt-get autoremove -y -qq \
@@ -30,4 +29,7 @@ RUN pip --no-cache-dir --disable-pip-version-check install poetry \
     && rm -rf /var/lib/apt/lists/*
 
 ADD . /opt/os
+RUN poetry install -q \
+    && rm -r /root/.cache/pypoetry/cache /root/.cache/pypoetry/artifacts/ \
+
 ENTRYPOINT ["poetry", "run"]
