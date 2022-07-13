@@ -301,7 +301,6 @@ def incoming_merge(
     retirement: str,
     reset_offices: bool,
 ) -> list[tuple[Person, list[Person]]]:
-    unmatched = []
 
     seats_for_district = {}
     state = metadata.lookup(abbr=abbr)
@@ -316,16 +315,17 @@ def incoming_merge(
         }
 
     # find candidate(s) for each new person
+    unmatched = []
     for new in new_people:
         matched = False
         role_matches = []
         retired = False
-        for retired in retired_people:
-            name_match = new.name == retired.name
+        for retired_member in retired_people:
+            name_match = new.name == retired_member.name
             if name_match:
                 retired = True
-                unmatched.append((new, []))
                 break
+        # skip this new person because they're already retired
         if retired:
             continue
         for existing in existing_people:
