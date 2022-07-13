@@ -22,7 +22,7 @@ _name_fixes = {
 
 
 class State(BaseModel):
-    """ Base class for a jurisdiction """
+    """Base class for a jurisdiction"""
 
     _type = "jurisdiction"
     _schema = schema

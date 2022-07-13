@@ -69,7 +69,7 @@ def test_simple_scrape():
 
 
 def test_double_iter():
-    """ tests that scrapers that yield iterables work OK """
+    """tests that scrapers that yield iterables work OK"""
 
     class IterScraper(Scraper):
         def scrape(self):

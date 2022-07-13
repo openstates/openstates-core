@@ -30,7 +30,7 @@ def update_subobjects(
     objects: list[DataDict],
     read_manager: typing.Any = None,
 ) -> bool:
-    """ returns True if there are any updates """
+    """returns True if there are any updates"""
     # we need the default manager for this field in case we need to do updates
     manager = getattr(person, fieldname)
 

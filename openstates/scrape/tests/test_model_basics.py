@@ -12,7 +12,7 @@ class GenericModel(
     SourceMixin,
     AssociatedLinkMixin,
 ):
-    """ a generic model used for testing the base and mixins """
+    """a generic model used for testing the base and mixins"""
 
     _type = "generic"
     _schema = schema

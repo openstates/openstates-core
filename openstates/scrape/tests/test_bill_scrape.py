@@ -59,7 +59,7 @@ def test_bill_type_setting():
 
 
 def test_basic_invalid_bill():
-    """ Test that we can create an invalid bill, and validation will fail """
+    """Test that we can create an invalid bill, and validation will fail"""
     b = toy_bill()
     b.identifier = None
     with pytest.raises(ValueError):
@@ -88,7 +88,7 @@ def test_from_organization():
 
 
 def test_add_action():
-    """ Make sure actions work """
+    """Make sure actions work"""
     b = toy_bill()
     b.add_action("Some dude liked it.", "2013-04-29T20:00Z", chamber="lower")
     assert len(b.actions) == 1
@@ -99,7 +99,7 @@ def test_add_action():
 
 
 def test_add_related_bill():
-    """ Make sure related bills work """
+    """Make sure related bills work"""
     b = toy_bill()
     b.add_related_bill(
         identifier="HB 2020", legislative_session="2011A", relation_type="companion"
@@ -189,7 +189,7 @@ def test_citations():
         "Wyoming Chapter Laws of 2019",
         "CH0024",
         citation_type="chapter",
-        effective=date(2019, 7, 1)
+        effective=date(2019, 7, 1),
     )
 
     b.add_citation(
@@ -204,7 +204,7 @@ def test_citations():
         "DC Register",
         "Vol 67 and Page 14429",
         citation_type="final",
-        expires="2021-03-06"
+        expires="2021-03-06",
     )
 
     b.add_citation(

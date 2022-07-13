@@ -126,7 +126,7 @@ def extractor_for_elements_by_xpath(bill_text_element_selector: str) -> Extracto
 
 
 def textract_extractor(**kwargs: str) -> ExtractorFunc:
-    """ pass through kwargs to textextract.process """
+    """pass through kwargs to textextract.process"""
     assert "extension" in kwargs, "Must supply extension"
 
     def func(data: bytes, metadata: Metadata) -> str:

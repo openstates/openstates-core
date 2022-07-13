@@ -296,6 +296,7 @@ def roles_equalish(role1: Role, role2: Role) -> bool:
 def incoming_merge(
     abbr: str,
     existing_people: list[Person],
+    retired_people: list[Person],
     new_people: list[Person],
     retirement: str,
     reset_offices: bool,
@@ -318,7 +319,15 @@ def incoming_merge(
     for new in new_people:
         matched = False
         role_matches = []
-
+        retired = False
+        for retired in retired_people:
+            name_match = new.name == retired.name
+            if name_match:
+                retired = True
+                unmatched.append((new, []))
+                break
+        if retired:
+            continue
         for existing in existing_people:
             name_match = new.name == existing.name
             role_match = False
@@ -354,7 +363,7 @@ def incoming_merge(
             if role_match:
                 role_matches.append(existing)
         else:
-            # not matched
+            # new item not matched against existing
             unmatched.append((new, role_matches))
             write_new_file(abbr, new, "legislature")
 

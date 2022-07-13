@@ -18,7 +18,7 @@ from .de import handle_delaware
 
 
 class DoNotDownload:
-    """ Sentinel to indicate that nothing should be downloaded """
+    """Sentinel to indicate that nothing should be downloaded"""
 
 
 DOCX_MIMETYPE = (

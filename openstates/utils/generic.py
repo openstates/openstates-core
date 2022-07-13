@@ -11,7 +11,7 @@ def utcnow() -> datetime.datetime:
 
 
 def _make_pseudo_id(**kwargs: str) -> str:
-    """ pseudo ids are just JSON """
+    """pseudo ids are just JSON"""
     # ensure keys are sorted so that these are deterministic
     return "~" + json.dumps(kwargs, sort_keys=True)
 

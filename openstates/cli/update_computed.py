@@ -23,7 +23,7 @@ def update_bill_fields_for_state(abbr: str) -> None:
 @click.command()
 @click.argument("abbrs", nargs=-1)
 def main(abbrs: list[str]) -> None:
-    """ updates computed fields """
+    """updates computed fields"""
     init_django()
     if not abbrs:
         abbrs = list(metadata.STATES_BY_ABBR.keys())

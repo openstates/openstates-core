@@ -35,7 +35,7 @@ def clean(text: str) -> str:
 
 
 def _text_near_line_numbers(lines: str, regex: str) -> str:
-    """ used for before & after line numbers """
+    """used for before & after line numbers"""
     text = []
     for line in lines.splitlines():
         # real bill text starts with an optional space, line number,
