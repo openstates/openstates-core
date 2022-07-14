@@ -527,9 +527,8 @@ def process_scrape_dir(input_dir: Path, jurisdiction_id: str) -> list[Person]:
     for filename in input_dir.glob("*.json"):
         with open(filename) as f:
             data = json.load(f)
-        # handle empty data objects
         if not data:
-            continue
+            raise ValueError(f"Empty person object in {filename}")
         person = process_person(data, jurisdiction_id)
         new_people.append(person)
 
