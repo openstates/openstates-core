@@ -315,11 +315,11 @@ def incoming_merge(
         }
 
     # find candidate(s) for each new person
-    unmatched = []
+    unmatched: list[tuple[Person, list[Person]]] = []
     for new in new_people:
-        matched = False
-        role_matches = []
-        retired = False
+        matched: bool = False
+        role_matches: list[Person] = []
+        retired: bool = False
         for retired_member in retired_people:
             name_match = new.name == retired_member.name
             if name_match:
