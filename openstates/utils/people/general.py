@@ -86,7 +86,7 @@ def get_new_filename(obj: dict) -> str:
 def legacy_districts(
     abbr: typing.Optional[str] = None, jurisdiction_id: typing.Optional[str] = None
 ) -> dict[str, list[str]]:
-    """ can take jurisdiction_id or abbr via kwargs """
+    """can take jurisdiction_id or abbr via kwargs"""
     legacy_districts: dict[str, list[str]] = {"upper": [], "lower": []}
     for d in metadata.lookup(
         abbr=abbr, jurisdiction_id=jurisdiction_id

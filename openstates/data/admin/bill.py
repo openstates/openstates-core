@@ -34,7 +34,12 @@ class BillActionInline(ReadOnlyTabularInline):
     get_related_entities.allow_tags = True
 
     list_select_related = ("BillActionRelatedEntity",)
-    readonly_fields = fields = ("date", "organization", "description", "get_related_entities")
+    readonly_fields = fields = (
+        "date",
+        "organization",
+        "description",
+        "get_related_entities",
+    )
 
 
 class RelatedBillInline(ReadOnlyTabularInline):
@@ -56,9 +61,9 @@ class DocVersionInline(ReadOnlyTabularInline):
 
     def get_links(self, obj):
         return format_html_join(
-            '<br />',
+            "<br />",
             '<a href="{}" target="_blank">{}</a>',
-            ((link.url, link.url) for link in obj.links.all())
+            ((link.url, link.url) for link in obj.links.all()),
         )
 
     get_links.short_description = "Links"
@@ -142,4 +147,8 @@ class BillAdmin(ModelAdmin):
     )
 
     list_filter = ("legislative_session__jurisdiction__name",)
-    ordering = ("legislative_session__jurisdiction__name", "legislative_session", "identifier")
+    ordering = (
+        "legislative_session__jurisdiction__name",
+        "legislative_session",
+        "identifier",
+    )

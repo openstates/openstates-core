@@ -296,11 +296,11 @@ def roles_equalish(role1: Role, role2: Role) -> bool:
 def incoming_merge(
     abbr: str,
     existing_people: list[Person],
+    retired_people: list[Person],
     new_people: list[Person],
     retirement: str,
     reset_offices: bool,
 ) -> list[tuple[Person, list[Person]]]:
-    unmatched = []
 
     seats_for_district = {}
     state = metadata.lookup(abbr=abbr)
@@ -315,17 +315,27 @@ def incoming_merge(
         }
 
     # find candidate(s) for each new person
+    unmatched: list[tuple[Person, list[Person]]] = []
     for new in new_people:
-        matched = False
-        role_matches = []
-
+        matched: bool = False
+        role_matches: list[Person] = []
+        retired: bool = False
+        for retired_member in retired_people:
+            name_match = new.name == retired_member.name
+            if name_match:
+                retired = True
+                retire(new, retired_member, retirement)
+                break
+        # skip this new person because they're already retired
+        if retired:
+            continue
         for existing in existing_people:
             name_match = new.name == existing.name
             role_match = False
             for role in existing.roles:
-                if role.type == "mayor" or role.type == "governor":
+                if role.type in ["mayor", "governor"]:
                     continue
-                seats = seats_for_district[role.type].get(
+                seats = seats_for_district.get(role.type, {}).get(
                     typing.cast(str, role.district), 1
                 )
                 # roles match if they are equal and there's only one seat, or
@@ -354,7 +364,7 @@ def incoming_merge(
             if role_match:
                 role_matches.append(existing)
         else:
-            # not matched
+            # new item not matched against existing
             unmatched.append((new, role_matches))
             write_new_file(abbr, new, "legislature")
 
@@ -518,7 +528,8 @@ def process_scrape_dir(input_dir: Path, jurisdiction_id: str) -> list[Person]:
     for filename in input_dir.glob("*.json"):
         with open(filename) as f:
             data = json.load(f)
-
+        if not data:
+            raise ValueError(f"Empty person object in {filename}")
         person = process_person(data, jurisdiction_id)
         new_people.append(person)
 

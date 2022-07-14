@@ -6,7 +6,7 @@ from .schemas.event import schema
 
 
 def calculate_window(*, base_day=None, days_before=30, days_after=90):
-    """ given details on a window, returns start & end dates for windowing purposes """
+    """given details on a window, returns start & end dates for windowing purposes"""
     if not base_day:
         base_day = date.today()
     start = base_day - timedelta(days=days_before)

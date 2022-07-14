@@ -40,7 +40,7 @@ pytest-django = "^3.8.0"
 coveralls = "^1.11.1"
 flake8 = "^3.7.9"
 coverage = {extras = ["toml"], version = "^5.0.4"}
-black = "^20.8b1"
+black = "^22"
 mypy = "^0.900"
 types-pytz = "^2021.1.0"
 types-click = "^7.1.2"

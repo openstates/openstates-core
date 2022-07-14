@@ -726,19 +726,19 @@ def merge(abbr: str, input_dir: str, retirement: str, reset_offices: bool) -> No
     new_people = process_scrape_dir(Path(input_dir), jurisdiction_id)
 
     existing_people: list[Person] = []
+    retired_people: list[Person] = []
     directory = get_data_path(abbr)
-    for filename in itertools.chain(
-        directory.glob("legislature/*.yml"),
-        directory.glob("retired/*.yml"),
-    ):
+    for filename in directory.glob("legislature/*.yml"):
         existing_people.append(Person.load_yaml(filename))
+    for filename in directory.glob("retired/*.yml"):
+        retired_people.append(Person.load_yaml(filename))
 
     click.secho(
         f"analyzing {len(existing_people)} existing people and {len(new_people)} scraped"
     )
 
     unmatched = incoming_merge(
-        abbr, existing_people, new_people, retirement, reset_offices
+        abbr, existing_people, retired_people, new_people, retirement, reset_offices
     )
     click.secho(f"{len(unmatched)} people were unmatched")
 

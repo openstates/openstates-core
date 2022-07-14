@@ -57,8 +57,8 @@ def download(
 
     # FL "dh key too small" error due to bad Diffie Hellman key on the server side
     ciphers_list_addition = None
-    if abbr == 'fl':
-        ciphers_list_addition = 'HIGH:!DH:!aNULL'
+    if abbr == "fl":
+        ciphers_list_addition = "HIGH:!DH:!aNULL"
 
     if not os.path.exists(filename):
         try:
@@ -66,7 +66,9 @@ def download(
         except OSError:
             pass
         try:
-            _, resp = scraper.urlretrieve(version["url"], filename, ciphers_list_addition=ciphers_list_addition)
+            _, resp = scraper.urlretrieve(
+                version["url"], filename, ciphers_list_addition=ciphers_list_addition
+            )
         except Exception:
             click.secho("could not fetch " + version["url"], fg="yellow")
             return None, None
@@ -125,8 +127,8 @@ def update_bill(bill: typing.Any) -> int:
     # FL "dh key too small" error due to bad Diffie Hellman key on the server side
     jurisdiction = bill.legislative_session.jurisdiction.name
     ciphers_list_addition = None
-    if jurisdiction == 'Florida':
-        ciphers_list_addition = 'HIGH:!DH:!aNULL'
+    if jurisdiction == "Florida":
+        ciphers_list_addition = "HIGH:!DH:!aNULL"
 
     # iterate through versions until we extract some good text
     is_error = True
@@ -153,7 +155,12 @@ def update_bill(bill: typing.Any) -> int:
         if func == DoNotDownload:
             continue
         try:
-            data = scraper.request('GET', link.url, allow_redirects=True, ciphers_list_addition=ciphers_list_addition).content
+            data = scraper.request(
+                "GET",
+                link.url,
+                allow_redirects=True,
+                ciphers_list_addition=ciphers_list_addition,
+            ).content
         except Exception:
             continue
         try:

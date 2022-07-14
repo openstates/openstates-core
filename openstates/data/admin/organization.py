@@ -18,10 +18,8 @@ class PostInline(admin.TabularInline):
     can_delete = False
 
     def get_label(self, post):
-        admin_url = reverse(
-            "admin:data_post_change", args=(post.pk,)
-        )
-        tmpl = u'<a href="%s">%s</a>'
+        admin_url = reverse("admin:data_post_change", args=(post.pk,))
+        tmpl = '<a href="%s">%s</a>'
         return format_html(tmpl % (admin_url, post.label))
 
     get_label.short_description = "Label"
@@ -38,10 +36,8 @@ class OrganizationInline(ReadOnlyTabularInline):
     ordering = ("-classification", "name")
 
     def get_name(self, organization):
-        admin_url = reverse(
-            "admin:data_organization_change", args=(organization.pk,)
-        )
-        tmpl = u'<a href="%s">%s</a>'
+        admin_url = reverse("admin:data_organization_change", args=(organization.pk,))
+        tmpl = '<a href="%s">%s</a>'
         return format_html(tmpl % (admin_url, organization.name))
 
     get_name.short_description = "ID"
@@ -61,7 +57,15 @@ class OrgMembershipInline(ReadOnlyTabularInline):
 
 @admin.register(models.Post)
 class PostAdmin(ModelAdmin):
-    readonly_fields = fields = ("id", "division", "organization", "label", "role", "maximum_memberships", "extras")
+    readonly_fields = fields = (
+        "id",
+        "division",
+        "organization",
+        "label",
+        "role",
+        "maximum_memberships",
+        "extras",
+    )
     ordering = ("division__id", "organization", "role", "label")
     inlines = (MembershipInline,)
     list_display = ("division", "organization", "role", "label")

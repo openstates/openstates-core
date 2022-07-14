@@ -14,7 +14,7 @@ from openstates.utils.transformers import fix_bill_id
 
 
 class DumbMockImporter(object):
-    """ this is a mock importer that implements a resolve_json_id that is just a pass-through """
+    """this is a mock importer that implements a resolve_json_id that is just a pass-through"""
 
     def resolve_json_id(self, json_id, allow_no_match=False):
         return json_id
