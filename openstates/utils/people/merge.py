@@ -334,7 +334,7 @@ def incoming_merge(
             for role in existing.roles:
                 if role.type == "mayor" or role.type == "governor":
                     continue
-                seats = seats_for_district[role.type].get(
+                seats = seats_for_district.get(role.type, {}).get(
                     typing.cast(str, role.district), 1
                 )
                 # roles match if they are equal and there's only one seat, or
