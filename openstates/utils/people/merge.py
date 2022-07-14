@@ -333,7 +333,7 @@ def incoming_merge(
             name_match = new.name == existing.name
             role_match = False
             for role in existing.roles:
-                if role.type == "mayor" or role.type == "governor":
+                if role.type in ["mayor", "governor"]:
                     continue
                 seats = seats_for_district.get(role.type, {}).get(
                     typing.cast(str, role.district), 1
