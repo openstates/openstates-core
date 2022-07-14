@@ -324,6 +324,7 @@ def incoming_merge(
             name_match = new.name == retired_member.name
             if name_match:
                 retired = True
+                retire(new, retired_member, retirement)
                 break
         # skip this new person because they're already retired
         if retired:
