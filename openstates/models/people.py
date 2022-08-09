@@ -187,6 +187,7 @@ class ScrapePerson(BaseModel):
 
     links: list[Link] = []
     sources: list[Link] = []
+    other_names: list[OtherName] = []
     ids: PersonIdBlock = PersonIdBlock()
     capitol_office = ScrapeOffice(classification="capitol")
     district_office = ScrapeOffice(classification="district")
