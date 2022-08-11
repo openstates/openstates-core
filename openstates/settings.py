@@ -8,7 +8,9 @@ SCRAPELIB_TIMEOUT = 60
 SCRAPELIB_RETRY_ATTEMPTS = 3
 SCRAPELIB_RETRY_WAIT_SECONDS = 10
 try:
-    verify = bool(os.environ.get("VERIFY_CERTS", False))
+    verify = os.environ.get("VERIFY_CERTS", False)
+    if verify == "False":
+        verify = False
 except Exception:
     verify = False
 SCRAPELIB_VERIFY = verify
