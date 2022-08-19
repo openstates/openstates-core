@@ -7,7 +7,13 @@ SCRAPELIB_RPM = 60
 SCRAPELIB_TIMEOUT = 60
 SCRAPELIB_RETRY_ATTEMPTS = 3
 SCRAPELIB_RETRY_WAIT_SECONDS = 10
-SCRAPELIB_VERIFY = True
+try:
+    verify = os.environ.get("VERIFY_CERTS", False)
+    if verify == "False":
+        verify = False
+except Exception:
+    verify = False
+SCRAPELIB_VERIFY = verify
 
 CACHE_DIR = os.path.join(os.getcwd(), "_cache")
 SCRAPED_DATA_DIR = os.path.join(os.getcwd(), "_data")
