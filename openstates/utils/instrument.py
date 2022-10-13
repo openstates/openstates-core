@@ -21,7 +21,7 @@ class Instrumentation(object):
         secret = os.environ["JWT_SECRET"]
         return jwt.encode({"id": "openstates"}, secret, algorithm="HS256")
 
-    def send_stats(self, force: bool=False) -> None:
+    def send_stats(self, force: bool = False) -> None:
         if not self.endpoint or not self.enabled:
             self.logger.warning("No stats endpoint defined, not emitting stats")
             return
