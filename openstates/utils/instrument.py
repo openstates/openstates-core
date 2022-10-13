@@ -1,6 +1,6 @@
 import logging
 import os
-import pyjwt
+import jwt
 import requests
 
 
@@ -30,7 +30,14 @@ class Instrumentation(object):
             requests.post(f"{self.endpoint}/batch", json=self.batch, headers=headers)
             self.batch = list()
 
-    def _process_metric(self, metric_type: str, metric: str, tags: list, value: float, sample_rate: float=0):
+    def _process_metric(
+        self,
+        metric_type: str,
+        metric: str,
+        tags: list,
+        value: float,
+        sample_rate: float = 0,
+    ):
         """
         Ensure consistent formatting of data objects to add to batch for sending
 
@@ -38,7 +45,12 @@ class Instrumentation(object):
         """
         tags.extend(self.default_tags)
         tagstr = ",".join([f"{k}={v}" for k, v in list(set(tags))])
-        data = {"value": value, "metric": metric, "metric_type": metric_type, "tags": tags}
+        data = {
+            "value": value,
+            "metric": metric,
+            "metric_type": metric_type,
+            "tags": tagstr,
+        }
         # don't add a useless key if we don't need it
         if sample_rate:
             data["sampleRate"] = sample_rate
@@ -49,22 +61,26 @@ class Instrumentation(object):
     Wrapper scripts for easier sending
     """
 
-    def send_counter(self, metric: str, value: float, tags: list=[], sample_rate: float=0):
+    def send_counter(
+        self, metric: str, value: float, tags: list = [], sample_rate: float = 0
+    ):
         if not self.enabled:
             return
         self._process_metric("counter", metric, tags, value, sample_rate)
 
-    def send_gauge(self, metric: str, value: float, tags: list=[]):
+    def send_gauge(self, metric: str, value: float, tags: list = []):
         if not self.enabled:
             return
         self._process_metric("counter", metric, tags, value)
 
-    def send_timing(self, metric: str, value: float, tags: list=[], sample_rate: float=0):
+    def send_timing(
+        self, metric: str, value: float, tags: list = [], sample_rate: float = 0
+    ):
         if not self.enabled:
             return
         self._process_metric("counter", metric, tags, value)
 
-    def send_set(self, metric: str, value: float, tags: list=[]):
+    def send_set(self, metric: str, value: float, tags: list = []):
         if not self.enabled:
             return
         self._process_metric("counter", metric, tags, value)
