@@ -2,25 +2,26 @@ import logging
 import os
 import jwt
 import requests
+from typing import List, Dict
 
 
 class Instrumentation(object):
-    def __init__(self):
+    def __init__(self) -> None:
         self.enabled = os.environ.get("STATS_ENABLED", False)
         self.logger = logging.getLogger("openstates.instrument")
         self.token = self._jwt_token()
-        self.batch = list()
+        self.batch: List[Dict] = list()
         self.endpoint = os.environ.get("STATS_ENDPOINT", None)
-        self.default_tags = list()
+        self.default_tags: List = list()
         self.batch_size = 50
 
-    def _jwt_token(self):
+    def _jwt_token(self) -> str:
         if not self.enabled:
-            return
+            return ""
         secret = os.environ["JWT_SECRET"]
         return jwt.encode({"id": "openstates"}, secret, algorithm="HS256")
 
-    def send_stats(self, force=False):
+    def send_stats(self, force: bool=False) -> None:
         if not self.endpoint or not self.enabled:
             self.logger.warning("No stats endpoint defined, not emitting stats")
             return
@@ -37,7 +38,7 @@ class Instrumentation(object):
         tags: list,
         value: float,
         sample_rate: float = 0,
-    ):
+    ) -> None:
         """
         Ensure consistent formatting of data objects to add to batch for sending
 
@@ -63,24 +64,24 @@ class Instrumentation(object):
 
     def send_counter(
         self, metric: str, value: float, tags: list = [], sample_rate: float = 0
-    ):
+    ) -> None:
         if not self.enabled:
             return
         self._process_metric("counter", metric, tags, value, sample_rate)
 
-    def send_gauge(self, metric: str, value: float, tags: list = []):
+    def send_gauge(self, metric: str, value: float, tags: list = []) -> None:
         if not self.enabled:
             return
         self._process_metric("counter", metric, tags, value)
 
     def send_timing(
         self, metric: str, value: float, tags: list = [], sample_rate: float = 0
-    ):
+    ) -> None:
         if not self.enabled:
             return
         self._process_metric("counter", metric, tags, value)
 
-    def send_set(self, metric: str, value: float, tags: list = []):
+    def send_set(self, metric: str, value: float, tags: list = []) -> None:
         if not self.enabled:
             return
         self._process_metric("counter", metric, tags, value)
