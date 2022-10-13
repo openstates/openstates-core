@@ -81,7 +81,7 @@ def do_scrape(
         juris, datadir, strict_validation=args.strict, fastmode=args.fastmode
     )
     report["jurisdiction"] = jscraper.do_scrape()
-    stats.send_counter("openstates_jurisdiction_scrapes", 1, ["jurisdiction": juris])
+    stats.send_counter("openstates_jurisdiction_scrapes", 1, [{"jurisdiction": juris}])
 
     for scraper_name, scrape_args in scrapers.items():
         ScraperCls = juris.scrapers[scraper_name]
