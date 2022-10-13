@@ -2,6 +2,7 @@ from pathlib import Path
 from spatula.cli import scrape
 from .people import merge as people_merge
 from .committees import merge as committees_merge
+from ..utils.instrument import Instrumentation
 import click
 
 
@@ -28,6 +29,7 @@ def main(
     fastmode: bool,
     reset_offices: bool,
 ) -> None:
+    stats = Instrumentation()
     output_dir = Path(f"_scrapes/{abbr}/{scraper_type}")
     if not merge_only:
         args = [

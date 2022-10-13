@@ -18,6 +18,7 @@ from django.db import transaction  # type: ignore
 from ..exceptions import CommandError
 from ..scrape import State, JurisdictionScraper
 from ..utils.django import init_django
+from ..utils.instrument import Instrumentation
 from .. import utils, settings
 from .reports import generate_session_report, print_report, save_report
 
@@ -64,6 +65,7 @@ def do_scrape(
     scrapers: dict[str, dict[str, str]],
     active_sessions: set[str],
 ) -> dict[str, typing.Any]:
+    stats = Instrumentation()
     # make output and cache dirs
     utils.makedirs(settings.CACHE_DIR)
     datadir = os.path.join(settings.SCRAPED_DATA_DIR, args.module)
@@ -79,6 +81,7 @@ def do_scrape(
         juris, datadir, strict_validation=args.strict, fastmode=args.fastmode
     )
     report["jurisdiction"] = jscraper.do_scrape()
+    stats.send_counter("openstates_jurisdiction_scrapes", 1, ["jurisdiction": juris])
 
     for scraper_name, scrape_args in scrapers.items():
         ScraperCls = juris.scrapers[scraper_name]
@@ -86,7 +89,7 @@ def do_scrape(
             "session" in inspect.getargspec(ScraperCls.scrape).args
             and "session" not in scrape_args
         ):
-            print(f"no session provided, using active sessions: {active_sessions}")
+            logger.warning(f"no session provided, using active sessions: {active_sessions}")
             # handle automatically setting session if required by the scraper
             # the report logic was originally meant for one run, so we combine the start & end times
             # and counts here
@@ -137,13 +140,13 @@ def do_import(juris: State, args: argparse.Namespace) -> dict[str, typing.Any]:
     report = {}
 
     with transaction.atomic():
-        print("import jurisdictions...")
+        logger.info("import jurisdictions...")
         report.update(juris_importer.import_directory(datadir))
-        print("import bills...")
+        logger.info("import bills...")
         report.update(bill_importer.import_directory(datadir))
-        print("import vote events...")
+        logger.info("import vote events...")
         report.update(vote_event_importer.import_directory(datadir))
-        print("import events...")
+        logger.info("import events...")
         report.update(event_importer.import_directory(datadir))
         DatabaseJurisdiction.objects.filter(id=juris.jurisdiction_id).update(
             latest_bill_update=datetime.datetime.utcnow()

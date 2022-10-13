@@ -6,6 +6,7 @@ import requests
 
 class Instrumentation(object):
     def __init__(self):
+        self.enabled = os.environ.get("STATS_ENABLED", False)
         self.logger = logging.getLogger("openstates.instrument")
         self.token = self._jwt_token()
         self.batch = list()
@@ -14,11 +15,13 @@ class Instrumentation(object):
         self.batch_size = 50
 
     def _jwt_token(self):
+        if not self.enabled:
+            return
         secret = os.environ["JWT_SECRET"]
         return jwt.encode({"id": "openstates"}, secret, algorithm="HS256")
 
     def send_stats(self, force=False):
-        if not self.endpoint:
+        if not self.endpoint or not self.enabled:
             self.logger.warning("No stats endpoint defined, not emitting stats")
             return
         batch_len = len(self.batch)
@@ -46,14 +49,22 @@ class Instrumentation(object):
     Wrapper scripts for easier sending
     """
 
-    def send_counter(self, metric: str, tags: list, value: float, sample_rate: float=0):
+    def send_counter(self, metric: str, value: float, tags: list=[], sample_rate: float=0):
+        if not self.enabled:
+            return
         self._process_metric("counter", metric, tags, value, sample_rate)
 
-    def send_gauge(self, metric: str, tags: list, value: float):
+    def send_gauge(self, metric: str, value: float, tags: list=[]):
+        if not self.enabled:
+            return
         self._process_metric("counter", metric, tags, value)
 
-    def send_timing(self, metric: str, tags: list, value: float, sample_rate: float=0):
+    def send_timing(self, metric: str, value: float, tags: list=[], sample_rate: float=0):
+        if not self.enabled:
+            return
         self._process_metric("counter", metric, tags, value)
 
-    def send_set(self, metric: str, tags: list, value: float):
+    def send_set(self, metric: str, value: float, tags: list=[]):
+        if not self.enabled:
+            return
         self._process_metric("counter", metric, tags, value)
