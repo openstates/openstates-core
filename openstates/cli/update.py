@@ -76,7 +76,7 @@ def do_scrape(
 
     # do jurisdiction
     jscraper = JurisdictionScraper(
-        juris, datadir, strict_validation=args.strict, fastmode=args.fastmode
+        juris, datadir, strict_validation=args.strict, fastmode=args.fastmode, realtime=args.realtime
     )
     report["jurisdiction"] = jscraper.do_scrape()
 
@@ -322,6 +322,9 @@ def parse_args() -> tuple[argparse.Namespace, list[str]]:
         type=int,
         dest="SCRAPELIB_RETRY_WAIT_SECONDS",
     )
+
+    # realtime mode
+    parser.add_argument("--realtime", action="store_true", help="enable realtime mode")
 
     # process args
     return parser.parse_known_args()

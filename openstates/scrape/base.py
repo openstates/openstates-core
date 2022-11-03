@@ -70,13 +70,14 @@ class Scraper(scrapelib.Scraper):
     """Base class for all scrapers"""
 
     def __init__(
-        self, jurisdiction, datadir, *, strict_validation=True, fastmode=False
+        self, jurisdiction, datadir, *, strict_validation=True, fastmode=False, realtime=False
     ):
         super(Scraper, self).__init__()
 
         # set options
         self.jurisdiction = jurisdiction
         self.datadir = datadir
+        self.realtime = realtime
 
         # scrapelib setup
         self.timeout = settings.SCRAPELIB_TIMEOUT
