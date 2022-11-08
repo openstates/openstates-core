@@ -9,6 +9,7 @@ from collections import defaultdict, OrderedDict
 import jsonschema
 from jsonschema import Draft3Validator, FormatChecker
 import scrapelib
+from s3fs import S3FileSystem
 
 from .. import utils, settings
 from ..exceptions import ScrapeError, ScrapeValueError, EmptyScrape
@@ -139,8 +140,19 @@ class Scraper(scrapelib.Scraper):
         self.output_names[obj._type].add(filename)
 
         if self.scrape_output_handler is None:
-            with open(os.path.join(self.datadir, filename), "w") as f:
-                json.dump(obj.as_dict(), f, cls=utils.JSONEncoderPlus)
+            file_path = os.path.join(self.datadir, filename)
+            if realtime:
+
+                s3 = S3FileSystem(anon=False)
+
+                S3_FULL_PATH =  settings.S3_REALTIME_BASE + str(file_path)
+
+                with s3.open(S3_FULL_PATH, 'w') as file:
+                    json.dump(obj.as_dict(), file)
+            else:
+                with open(file_path, "w") as f:
+                    json.dump(obj.as_dict(), f, cls=utils.JSONEncoderPlus)
+
         else:
             self.scrape_output_handler.handle(obj)
 

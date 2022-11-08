@@ -1,6 +1,9 @@
 import os
 from .utils import transformers
 
+# realtime settings
+S3_REALTIME_BASE = 's3://openstates-realtime-bills/'
+
 # scrape settings
 
 SCRAPELIB_RPM = 60
