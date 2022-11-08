@@ -32,7 +32,7 @@ chardet = "^3.0"
 pydantic = "^1.8.2"
 boto3 = "^1.17.79"
 spatula = ">=0.8.9,<1.0"
-s3fs="2022.10.0"
+s3fs="^2022.10.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.4.1"
@@ -47,7 +47,7 @@ types-pytz = "^2021.1.0"
 types-click = "^7.1.2"
 types-PyYAML = "^5.4.3"
 types-requests = "^2.25.0"
-s3fs="2022.10.0"
+s3fs="^2022.10.0"
 
 [tool.coverage.run]
 omit = [
