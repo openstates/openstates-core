@@ -145,7 +145,7 @@ class Scraper(scrapelib.Scraper):
 
                 s3 = S3FileSystem(anon=False)
 
-                S3_FULL_PATH =  settings.S3_REALTIME_BASE + str(file_path)
+                S3_FULL_PATH = settings.S3_REALTIME_BASE + str(file_path)
 
                 with s3.open(S3_FULL_PATH, 'w') as file:
                     json.dump(obj.as_dict(), file)
