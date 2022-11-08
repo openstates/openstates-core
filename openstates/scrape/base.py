@@ -141,7 +141,7 @@ class Scraper(scrapelib.Scraper):
 
         if self.scrape_output_handler is None:
             file_path = os.path.join(self.datadir, filename)
-            if realtime:
+            if self.realtime:
 
                 s3 = S3FileSystem(anon=False)
 
