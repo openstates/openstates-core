@@ -45,6 +45,8 @@ jobs:
           poetry-${{ hashFiles('**/poetry.lock') }}
     - name: set poetry config path
       run: poetry config virtualenvs.path ~/.virtualenvs
+    - name: update pip 
+      run: poetry run pip install --upgrade pip
     - name: install dependencies
       run: poetry install
 
