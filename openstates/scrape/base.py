@@ -140,7 +140,10 @@ class Scraper(scrapelib.Scraper):
         self.output_names[obj._type].add(filename)
 
         if self.scrape_output_handler is None:
-            file_path = os.path.join(self.datadir, filename)
+            # Remove redundant prefix
+            DIR_PATH = self.datadir.split("_data")[1:]
+            DIR_PATH = " ".join(DIR_PATH)
+            file_path = os.path.join(DIR_PATH, filename)
             if self.realtime:
 
                 s3 = S3FileSystem(anon=False)
