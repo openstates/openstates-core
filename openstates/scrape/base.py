@@ -149,6 +149,7 @@ class Scraper(scrapelib.Scraper):
                 file_path = file_path[file_path.index("_data") + 5:]
             except Exception:
                 pass
+            self.info(file_path)
 
             if self.realtime:
 
