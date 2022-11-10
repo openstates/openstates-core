@@ -142,9 +142,13 @@ class Scraper(scrapelib.Scraper):
         if self.scrape_output_handler is None:
 
             file_path = os.path.join(self.datadir, filename)
+            self.info(file_path)
 
             # Remove redundant prefix
-            file_path = file_path[file_path.index("_data") + 5:]
+            try:
+                file_path = file_path[file_path.index("_data") + 5:]
+            except:
+                pass
 
             if self.realtime:
 
