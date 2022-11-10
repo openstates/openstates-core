@@ -147,7 +147,7 @@ class Scraper(scrapelib.Scraper):
             # Remove redundant prefix
             try:
                 file_path = file_path[file_path.index("_data") + 5:]
-            except:
+            except Exception:
                 pass
 
             if self.realtime:
