@@ -144,8 +144,7 @@ class Scraper(scrapelib.Scraper):
             file_path = os.path.join(self.datadir, filename)
 
             # Remove redundant prefix
-            file_path = file_path.split("_data")[1:]
-            file_path = " ".join(file_path)
+            file_path = file_path[file_path.index("_data")+5:]
             if self.realtime:
 
                 s3 = S3FileSystem(anon=False)
