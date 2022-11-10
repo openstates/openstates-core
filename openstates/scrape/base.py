@@ -144,7 +144,7 @@ class Scraper(scrapelib.Scraper):
             file_path = os.path.join(self.datadir, filename)
 
             # Remove redundant prefix
-            file_path = file_path[file_path.index("_data")+5:]
+            file_path = file_path[file_path.index("_data") + 5:]
 
             if self.realtime:
 
