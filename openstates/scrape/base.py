@@ -146,7 +146,7 @@ class Scraper(scrapelib.Scraper):
 
             # Remove redundant prefix
             try:
-                file_path = file_path[file_path.index("_data") + 5:]
+                file_path = file_path[file_path.index("_data") + 6:]
             except Exception:
                 pass
             self.info(file_path)
