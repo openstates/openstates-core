@@ -145,15 +145,12 @@ class Scraper(scrapelib.Scraper):
 
             # Remove redundant prefix
             file_path = file_path[file_path.index("_data")+5:]
-            logging.INFO(f"FILE PATH: {file_path}")
 
             if self.realtime:
 
                 s3 = S3FileSystem(anon=False)
 
                 S3_FULL_PATH = settings.S3_REALTIME_BASE + str(file_path)
-                logging.INFO(f"S3 PATH: {S3_FULL_PATH}")
-
 
                 with s3.open(S3_FULL_PATH, 'w') as file:
                     json.dump(obj.as_dict(), file)
