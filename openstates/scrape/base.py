@@ -172,7 +172,7 @@ class Scraper(scrapelib.Scraper):
                         indent=4,
                         separators=(",", ": "),
                     )
-                    self.info(" - %s", S3_FULL_PATH)
+                self.info("S3_FULL_PATH - %s", S3_FULL_PATH)
             else:
                 with open(file_path, "w") as f:
                     json.dump(obj.as_dict(), f, cls=utils.JSONEncoderPlus)
