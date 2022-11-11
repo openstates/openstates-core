@@ -2,7 +2,7 @@ import os
 from .utils import transformers
 
 # settings for realtime flag
-S3_REALTIME_BASE = 's3://openstates-realtime-bills'
+S3_REALTIME_BASE = 's3://openstates-realtime-bills/'
 
 # scrape settings
 
