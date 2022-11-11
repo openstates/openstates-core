@@ -145,9 +145,10 @@ class Scraper(scrapelib.Scraper):
 
             # Remove redundant prefix
             try:
-                file_path = file_path[file_path.index("_data") + 6:]
+                file_path = file_path[file_path.index("_data") + 7:]
             except Exception:
                 pass
+            
             self.info(f" s3 path - {file_path}")
 
             if self.realtime:
