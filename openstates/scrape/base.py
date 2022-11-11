@@ -147,7 +147,7 @@ class Scraper(scrapelib.Scraper):
             try:
                 file_path_ = file_path[file_path.index("_data") + 6:]
             except Exception:
-                pass
+                file_path_ = file_path
 
             self.info(f" s3 path - {file_path_}")
 
