@@ -150,7 +150,6 @@ class Scraper(scrapelib.Scraper):
                 file_path_ = file_path
             self.info(file_path_)
 
-
             if self.realtime:
 
                 s3 = S3FileSystem(anon=False)
