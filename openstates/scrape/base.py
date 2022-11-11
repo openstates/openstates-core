@@ -162,7 +162,13 @@ class Scraper(scrapelib.Scraper):
                     self.info(" - %s", S3_FULL_PATH)
             else:
                 with open(file_path, "w") as f:
-                    json.dump(obj.as_dict(), f, cls=utils.JSONEncoderPlus)
+                    # json.dump(obj.as_dict(), f, cls=utils.JSONEncoderPlus)
+                    json.dumps(
+                                OrderedDict(sorted(obj.as_dict().items())),
+                                cls=utils.JSONEncoderPlus,
+                                indent=4,
+                                separators=(",", ": "),
+                            )
 
         else:
             self.scrape_output_handler.handle(obj)
