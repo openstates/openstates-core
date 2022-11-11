@@ -75,11 +75,9 @@ class Scraper(scrapelib.Scraper):
         jurisdiction,
         datadir,
         *,
-        scraper,
         strict_validation=True,
         fastmode=False,
         realtime=False,
-        
     ):
         super(Scraper, self).__init__()
 
@@ -154,7 +152,7 @@ class Scraper(scrapelib.Scraper):
 
             # Remove redundant prefix
             try:
-                file_path_ = file_path[file_path.index("_data") + 6 :]
+                file_path_ = file_path[file_path.index("_data") + 6:]
             except Exception:
                 file_path_ = file_path
             self.info("filepath - %s", file_path_)
