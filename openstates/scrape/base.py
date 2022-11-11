@@ -75,9 +75,11 @@ class Scraper(scrapelib.Scraper):
         jurisdiction,
         datadir,
         *,
+        scraper,
         strict_validation=True,
         fastmode=False,
         realtime=False,
+        
     ):
         super(Scraper, self).__init__()
 
@@ -165,7 +167,7 @@ class Scraper(scrapelib.Scraper):
 
                 with s3.open(S3_FULL_PATH, "w") as file:
                     # json.dump(obj.as_dict(), file)
-                    json.dumps(
+                    json.dump(
                         OrderedDict(sorted(obj.as_dict().items())),
                         file,
                         cls=utils.JSONEncoderPlus,
