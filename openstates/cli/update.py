@@ -102,6 +102,7 @@ def do_scrape(
                     datadir,
                     strict_validation=args.strict,
                     fastmode=args.fastmode,
+                    realtime=args.realtime
                 )
                 partial_report = scraper.do_scrape(**scrape_args, session=session)
                 if not report[scraper_name]["start"]:
@@ -111,7 +112,7 @@ def do_scrape(
                     report[scraper_name]["objects"][obj] += val
         else:
             scraper = ScraperCls(
-                juris, datadir, strict_validation=args.strict, fastmode=args.fastmode
+                juris, datadir, strict_validation=args.strict, fastmode=args.fastmode, realtime=args.realtime
             )
             report[scraper_name] = scraper.do_scrape(**scrape_args)
 
