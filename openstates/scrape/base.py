@@ -158,17 +158,18 @@ class Scraper(scrapelib.Scraper):
                 S3_FULL_PATH = settings.S3_REALTIME_BASE + str(file_path_)
 
                 with s3.open(S3_FULL_PATH, 'w') as file:
-                    json.dump(obj.as_dict(), file)
-                    self.info(" - %s", S3_FULL_PATH)
-            else:
-                with open(file_path, "w") as f:
-                    # json.dump(obj.as_dict(), f, cls=utils.JSONEncoderPlus)
+                    # json.dump(obj.as_dict(), file)
                     json.dumps(
                                 OrderedDict(sorted(obj.as_dict().items())),
+                                file,
                                 cls=utils.JSONEncoderPlus,
                                 indent=4,
                                 separators=(",", ": "),
                             )
+                    self.info(" - %s", S3_FULL_PATH)
+            else:
+                with open(file_path, "w") as f:
+                    json.dump(obj.as_dict(), f, cls=utils.JSONEncoderPlus)
 
         else:
             self.scrape_output_handler.handle(obj)
