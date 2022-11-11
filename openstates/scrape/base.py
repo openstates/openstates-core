@@ -148,8 +148,8 @@ class Scraper(scrapelib.Scraper):
                 file_path_ = file_path[file_path.index("_data") + 6:]
             except Exception:
                 file_path_ = file_path
-            info_msg = f"s3 path - {file_path_}"
-            self.info(info_msg)
+            self.info(file_path_)
+
 
             if self.realtime:
 
@@ -159,6 +159,7 @@ class Scraper(scrapelib.Scraper):
 
                 with s3.open(S3_FULL_PATH, 'w') as file:
                     json.dump(obj.as_dict(), file)
+                    self.info(S3_FULL_PATH)
             else:
                 with open(file_path, "w") as f:
                     json.dump(obj.as_dict(), f, cls=utils.JSONEncoderPlus)
