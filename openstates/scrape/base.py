@@ -71,7 +71,13 @@ class Scraper(scrapelib.Scraper):
     """Base class for all scrapers"""
 
     def __init__(
-        self, jurisdiction, datadir, *, strict_validation=True, fastmode=False, realtime=False
+        self,
+        jurisdiction,
+        datadir,
+        *,
+        strict_validation=True,
+        fastmode=False,
+        realtime=False,
     ):
         super(Scraper, self).__init__()
 
@@ -146,7 +152,7 @@ class Scraper(scrapelib.Scraper):
 
             # Remove redundant prefix
             try:
-                file_path_ = file_path[file_path.index("_data") + 6:]
+                file_path_ = file_path[file_path.index("_data") + 6 :]
             except Exception:
                 file_path_ = file_path
             self.info("filepath - %s", file_path_)
@@ -157,15 +163,15 @@ class Scraper(scrapelib.Scraper):
 
                 S3_FULL_PATH = settings.S3_REALTIME_BASE + str(file_path_)
 
-                with s3.open(S3_FULL_PATH, 'w') as file:
+                with s3.open(S3_FULL_PATH, "w") as file:
                     # json.dump(obj.as_dict(), file)
                     json.dumps(
-                                OrderedDict(sorted(obj.as_dict().items())),
-                                file,
-                                cls=utils.JSONEncoderPlus,
-                                indent=4,
-                                separators=(",", ": "),
-                            )
+                        OrderedDict(sorted(obj.as_dict().items())),
+                        file,
+                        cls=utils.JSONEncoderPlus,
+                        indent=4,
+                        separators=(",", ": "),
+                    )
                     self.info(" - %s", S3_FULL_PATH)
             else:
                 with open(file_path, "w") as f:
