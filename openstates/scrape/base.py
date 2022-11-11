@@ -128,6 +128,7 @@ class Scraper(scrapelib.Scraper):
         filename = "{0}_{1}.json".format(obj._type, obj._id).replace("/", "-")
 
         self.info("save %s %s as %s", obj._type, obj, filename)
+        self.info("juris-id %s", self.jurisdiction.jurisdiction_id)
         self.debug(
             json.dumps(
                 OrderedDict(sorted(obj.as_dict().items())),
@@ -148,7 +149,7 @@ class Scraper(scrapelib.Scraper):
                 file_path_ = file_path[file_path.index("_data") + 6:]
             except Exception:
                 file_path_ = file_path
-            self.info(file_path_)
+            self.info("filepath - %s", file_path_)
 
             if self.realtime:
 
@@ -158,7 +159,7 @@ class Scraper(scrapelib.Scraper):
 
                 with s3.open(S3_FULL_PATH, 'w') as file:
                     json.dump(obj.as_dict(), file)
-                    self.info(S3_FULL_PATH)
+                    self.info(" - %s", S3_FULL_PATH)
             else:
                 with open(file_path, "w") as f:
                     json.dump(obj.as_dict(), f, cls=utils.JSONEncoderPlus)
