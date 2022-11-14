@@ -355,7 +355,11 @@ def main() -> int:
 
         sys.excepthook = _tb_info
 
+    logging.info(f"Module: {args.module}")
     juris, module = get_jurisdiction(args.module)
+    logging.info(f"Juris: {juris}")
+    logging.info(f"Module: {module}")
+
     overrides = {}
     overrides.update(getattr(module, "settings", {}))
     overrides.update(
