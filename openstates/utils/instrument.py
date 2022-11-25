@@ -55,6 +55,7 @@ class Instrumentation(object):
         # don't add a useless key if we don't need it
         if sample_rate:
             data["sampleRate"] = sample_rate
+        self.logger.debug(f"Adding metric {data}")
         self.batch.append(data)
         self.send_stats()
 
