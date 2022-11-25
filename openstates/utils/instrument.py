@@ -157,7 +157,7 @@ class Instrumentation(object):
     """
 
     def send_counter(
-        self, metric: str, value: float, tags: list = [], sample_rate: float = 0
+        self, metric: str, value: float, tags: list = [], sample_rate: float = 0, description: str = "",
     ) -> None:
         if not self.enabled:
             return
@@ -178,9 +178,9 @@ class Instrumentation(object):
     ) -> None:
         if not self.enabled:
             return
-        self._process_metric("timing", metric, tags, value, sample_rate, description)
+        self._process_metric("timing", metric, tags, value, 0, description)
 
-    def send_set(self, metric: str, value: float, tags: list = []) -> None:
+    def send_set(self, metric: str, value: float, tags: list = [], description: str = "") -> None:
         if not self.enabled:
             return
-        self._process_metric("set", metric, tags, value, sample_rate, description)
+        self._process_metric("set", metric, tags, value, 0, description)
