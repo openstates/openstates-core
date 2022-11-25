@@ -40,7 +40,7 @@ class Instrumentation(object):
         self._stat_client = requests.Session()
         self._stat_client.headers.update(headers)
         # only mount https endpoint if we need it
-        if self._endpoint.startswith("https"):
+        if self.endpoint.startswith("https"):
             self._stat_client.mount("https://", adapter)
         else:
             self._stat_client.mount("http://", adapter)
@@ -68,7 +68,7 @@ class Instrumentation(object):
         """
         for metric in self.batch:
             path = "/".join(f"{k}/{v}" for k, v in metric["tags"].items())
-            url = f"{self._endpoint}/metrics/job/scrapers/{path}"
+            url = f"{self.endpoint}/metrics/job/scrapers/{path}"
             metric_name = metric["metric"]
             mtype = metric["metric_type"]
             description = metric["description"]
