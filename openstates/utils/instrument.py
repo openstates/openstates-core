@@ -3,7 +3,7 @@ import os
 import jwt
 import requests
 from requests.adapters import HTTPAdapter
-from requests.packages.urllib3.util.retry import Retry
+from urllib3.util import Retry
 from typing import List, Dict
 
 
@@ -13,12 +13,12 @@ class Instrumentation(object):
     def __init__(self) -> None:
         self.enabled = os.environ.get("STATS_ENABLED", False)
         self.logger = logging.getLogger("openstates.instrument")
-        token = self._jwt_token()
+        token: str = self._jwt_token()
         self.batch: List[Dict] = list()
-        self.endpoint = os.environ.get("STATS_ENDPOINT", None)
-        self.send_type = os.environ.get("STATS_TYPE", None)
+        self.endpoint: str = os.environ.get("STATS_ENDPOINT", "")
+        self.send_type: str = os.environ.get("STATS_TYPE", "")
         if self.send_type not in self.stat_emission_types:
-            raise (f"Invalid stats type {self.send_type}!")
+            raise Exception(f"Invalid stats type {self.send_type}!")
         if self.send_type == "STATSD":
             headers = {"X-JWT-Token": token, "Content-Type": "application/json"}
         else:
