@@ -125,15 +125,31 @@ class Instrumentation(object):
             "metric_type": metric_type,
             "tags": tagstr,
         }
-        # don't add a useless key if we don't need it
-        if data["metric_type"] == "count" and self.send_type == "PROMETHEUS":
-            data["metric_type"] == "counter"
+        """
+        Fix up a few settings based on output type
+
+        STATSD:
+        expects a "sampleRate" setting
+
+        PROMETHEUS:
+        expects as "description" setting
+        counter vs. count
+        """
         if self.send_type == "STATSD":
-            data["sampleRate"] = sample_rate
+            if sample_rate:
+                data["sampleRate"] = sample_rate
         if self.send_type == "PROMETHEUS":
-            data["description"] = description
+            data["description"] = description or "No description provided"
+            if data["metric_type"] == "count":
+                data["metric_type"] == "counter"
+
         self.logger.debug(f"Adding metric {data}")
         self.batch.append(data)
+        """
+        we attempt to send (without forcing) after
+        adding each stat to make sure we emit
+        batches as quickly as we can
+        """
         self.send_stats()
 
     """
@@ -145,7 +161,7 @@ class Instrumentation(object):
     ) -> None:
         if not self.enabled:
             return
-        self._process_metric("count", metric, tags, value, sample_rate)
+        self._process_metric("count", metric, tags, value, sample_rate, description)
 
     def send_gauge(self, metric: str, value: float, tags: list = []) -> None:
         if not self.enabled:
@@ -167,4 +183,4 @@ class Instrumentation(object):
     def send_set(self, metric: str, value: float, tags: list = []) -> None:
         if not self.enabled:
             return
-        self._process_metric("set", metric, tags, value)
+        self._process_metric("set", metric, tags, value, sample_rate, description)
