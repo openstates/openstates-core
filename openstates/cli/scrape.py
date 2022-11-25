@@ -2,7 +2,7 @@ from pathlib import Path
 from spatula.cli import scrape
 from .people import merge as people_merge
 from .committees import merge as committees_merge
-# from ..utils.instrument import Instrumentation
+from ..utils.instrument import Instrumentation
 import click
 
 
@@ -29,7 +29,7 @@ def main(
     fastmode: bool,
     reset_offices: bool,
 ) -> None:
-    # stats = Instrumentation()
+    stats = Instrumentation()
     output_dir = Path(f"_scrapes/{abbr}/{scraper_type}")
     if not merge_only:
         args = [
@@ -45,14 +45,17 @@ def main(
         except SystemExit as e:
             if e.code != 0:
                 raise
+        stats.send_counter("people_scrapes_total", 1, [{"jurisdiction": abbr}])
     if not scrape_only and "people" in scraper_type:
         merge_args = [abbr, str(output_dir)]
         if reset_offices:
             merge_args.append("--reset-offices")
         people_merge(merge_args)
+        stats.send_counter("people_merges_total", 1, [{"jurisdiction": abbr}])
     elif not scrape_only and "committees" in scraper_type:
         merge_args = [abbr, str(output_dir)]
         committees_merge(merge_args)
+        stats.send_counter("committee_merges_total", 1, [{"jurisdiction": abbr}])
 
 
 if __name__ == "__main__":

@@ -12,9 +12,10 @@ class Instrumentation(object):
 
     def __init__(self) -> None:
         self.enabled = os.environ.get("STATS_ENABLED", False)
-        self.logger = logging.getLogger("openstates.instrument")
+        self.logger = logging.getLogger("openstates")
         token: str = self._jwt_token()
         self.batch: List[Dict] = list()
+        self.prefix: str = os.environ.get("STATS_PREFIX", "")
         self.endpoint: str = os.environ.get("STATS_ENDPOINT", "")
         self.send_type: str = os.environ.get("STATS_TYPE", "")
         if self.send_type not in self.stat_emission_types:
@@ -120,7 +121,7 @@ class Instrumentation(object):
         tagstr = ",".join([f"{k}={v}" for k, v in list(set(tags))])
         data = {
             "value": value,
-            "metric": metric,
+            "metric": f"{self.prefix}{metric}",
             "metric_type": metric_type,
             "tags": tagstr,
         }

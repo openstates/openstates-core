@@ -81,7 +81,7 @@ def do_scrape(
         juris, datadir, strict_validation=args.strict, fastmode=args.fastmode
     )
     report["jurisdiction"] = jscraper.do_scrape()
-    stats.send_counter("openstates_jurisdiction_scrapes", 1, [{"jurisdiction": juris}])
+    stats.send_counter("jurisdiction_scrapes", 1, [{"jurisdiction": juris}])
 
     for scraper_name, scrape_args in scrapers.items():
         ScraperCls = juris.scrapers[scraper_name]
@@ -107,6 +107,7 @@ def do_scrape(
                     fastmode=args.fastmode,
                 )
                 partial_report = scraper.do_scrape(**scrape_args, session=session)
+                stats.send_counter("jurisdiction_scrapes", 1, [{"jurisdiction": juris, "session": session}])
                 if not report[scraper_name]["start"]:
                     report[scraper_name]["start"] = partial_report["start"]
                 report[scraper_name]["end"] = partial_report["end"]
@@ -117,6 +118,7 @@ def do_scrape(
                 juris, datadir, strict_validation=args.strict, fastmode=args.fastmode
             )
             report[scraper_name] = scraper.do_scrape(**scrape_args)
+            stats.send_counter("jurisdiction_scrapes", 1, [{"jurisdiction": scrape_args["abbr"], "session": scrape_args["session"]}])
 
     return report
 
