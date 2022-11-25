@@ -18,7 +18,7 @@ class Instrumentation(object):
         self.prefix: str = os.environ.get("STATS_PREFIX", "")
         self.endpoint: str = os.environ.get("STATS_ENDPOINT", "")
         self.send_type: str = os.environ.get("STATS_TYPE", "")
-        if self.send_type not in self.stat_emission_types:
+        if self.enabled and self.send_type not in self.stat_emission_types:
             raise Exception(f"Invalid stats type {self.send_type}!")
         if self.send_type == "STATSD":
             headers = {"X-JWT-Token": token, "Content-Type": "application/json"}
