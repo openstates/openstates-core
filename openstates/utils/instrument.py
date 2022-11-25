@@ -22,7 +22,7 @@ class Instrumentation(object):
             raise Exception(f"Invalid stats type {self.send_type}!")
         if self.send_type == "STATSD":
             headers = {"X-JWT-Token": token, "Content-Type": "application/json"}
-        else:
+        elif self.send_type == "PROMETHEUS":
             headers = {"Content-Type": "text/plain"}
             token = os.environ.get("PROMETHEUS_AUTH_TOKEN", "")
             if token:
