@@ -26,7 +26,7 @@ class Instrumentation(object):
         self.prefix: str = os.environ.get("STATS_PREFIX", "")
         self.endpoint: str = os.environ.get("STATS_ENDPOINT", "")
         stats_retries: int = int(os.environ.get("STATS_RETRIES", 3))
-        self.batch_size: str = int(os.environ.get("STATS_BATCH_SIZE", 50))
+        self.batch_size: int = int(os.environ.get("STATS_BATCH_SIZE", 50))
         self.default_tags: List = list()
         headers = {"X-JWT-Token": token, "Content-Type": "application/json"}
         retry = Retry(
