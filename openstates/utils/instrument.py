@@ -22,7 +22,7 @@ class Instrumentation(object):
         """
         self.logger = logging.getLogger("openstates")
         # use a literal_eval to properly turn a string into a bool (literal_eval 'cause it's safer than stdlib eval)
-        self.enabled = literal_eval(os.environ.get("STATS_ENABLED", False))  # type: ignore
+        self.enabled = literal_eval(os.environ.get("STATS_ENABLED", "False"))  # type: ignore
         token: str = self._jwt_token()
         self._batch: List[Dict] = list()
         self.prefix: str = os.environ.get("STATS_PREFIX", "")
