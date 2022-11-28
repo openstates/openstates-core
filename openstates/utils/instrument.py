@@ -22,18 +22,17 @@ class Instrumentation(object):
         self.enabled = os.environ.get("STATS_ENABLED", False)
         self.logger = logging.getLogger("openstates")
         token: str = self._jwt_token()
-        self.batch: List[Dict] = list()
+        self._batch: List[Dict] = list()
         self.prefix: str = os.environ.get("STATS_PREFIX", "")
         self.endpoint: str = os.environ.get("STATS_ENDPOINT", "")
+        stats_retries: int = int(os.environ.get("STATS_RETRIES", 3))
+        self.batch_size: str = int(os.environ.get("STATS_BATCH_SIZE", 50))
         self.default_tags: List = list()
         headers = {"X-JWT-Token": token, "Content-Type": "application/json"}
-
-        self.batch_size = 50
-        retries = 3
         retry = Retry(
-            total=retries,
-            read=retries,
-            connect=retries,
+            total=stats_retries,
+            read=stats_retries,
+            connect=stats_retries,
             backoff_factor=0.3,
             status_forcelist=(500, 502, 503, 504, 429, 104),
         )
@@ -52,7 +51,7 @@ class Instrumentation(object):
         """
         if not self.enabled:
             return ""
-        secret = os.environ["JWT_SECRET"]
+        secret = os.environ["STATS_JWT_SECRET"]
         return jwt.encode({"id": "openstates"}, secret, algorithm="HS256")
 
     def send_stats(self, force: bool = False) -> None:
@@ -65,10 +64,10 @@ class Instrumentation(object):
             return
         if not self.enabled:
             self.logger.warning("Stats disabled. Send skipped.")
-        batch_len = len(self.batch)
+        batch_len = len(self._batch)
         if (force and batch_len > 0) or batch_len > self.batch_size:
-            self._stat_client.post(f"{self.endpoint}/batch", json=self.batch)
-        self.batch = list()
+            self._stat_client.post(f"{self.endpoint}/batch", json=self._batch)
+        self._batch = list()
 
     def _process_metric(
         self,
@@ -83,6 +82,9 @@ class Instrumentation(object):
 
         returns: None
         """
+        if not self.enabled:
+            self.logger.warning("Stats disabled. Processing skipped.")
+            return
         tags.extend(self.default_tags)
         # list(set()) to remove duplicates
         tagstr = ",".join([f"{k}={v}" for k, v in list(set(tags))])
@@ -92,21 +94,11 @@ class Instrumentation(object):
             "metric_type": metric_type,
             "tags": tagstr,
         }
-        """
-        Fix up a few settings based on output type
-
-        STATSD:
-        expects a "sampleRate" setting
-
-        PROMETHEUS:
-        expects as "description" setting
-        counter vs. count
-        """
         if sample_rate:
             data["sampleRate"] = sample_rate
 
         self.logger.debug(f"Adding metric {data}")
-        self.batch.append(data)
+        self._batch.append(data)
         """
         we attempt to send (without forcing) after
         adding each stat to make sure we emit
@@ -129,20 +121,14 @@ class Instrumentation(object):
         Set a gauge with a current timestamp
         Emulates a "last run time" feature simply
         """
-        if not self.enabled:
-            return
         self._process_metric("gauge", metric, tags, time.time())
 
     def send_counter(
         self, metric: str, value: float, tags: list = [], sample_rate: float = 0,
     ) -> None:
-        if not self.enabled:
-            return
         self._process_metric("count", metric, tags, value, sample_rate)
 
     def send_gauge(self, metric: str, value: float, tags: list = []) -> None:
-        if not self.enabled:
-            return
         self._process_metric("gauge", metric, tags, value)
 
     def send_timing(
@@ -152,11 +138,7 @@ class Instrumentation(object):
         tags: list = [],
         sample_rate: float = 0,
     ) -> None:
-        if not self.enabled:
-            return
         self._process_metric("timing", metric, tags, value)
 
     def send_set(self, metric: str, value: float, tags: list = []) -> None:
-        if not self.enabled:
-            return
         self._process_metric("set", metric, tags, value)

@@ -410,6 +410,8 @@ def main() -> int:
     with override_settings(settings, overrides):
         report = do_update(args, other, juris)
 
+    # empty stats batch
+    stats.send_stats(force=True)
     if report.get("success", False):
         return 0
     else:
