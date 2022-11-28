@@ -1,3 +1,4 @@
+from ast import literal_eval
 import logging
 import os
 import jwt
@@ -19,8 +20,9 @@ class Instrumentation(object):
         Essentially statsd-style metrics, we can rely on the aggregator
         to continually emit these stats so we get useful stats for monitoring/reporting
         """
-        self.enabled = os.environ.get("STATS_ENABLED", False)
         self.logger = logging.getLogger("openstates")
+        # use a literal_eval to properly turn a string into a bool (literal_eval 'cause it's safer than stdlib eval)
+        self.enabled = literal_eval(os.environ.get("STATS_ENABLED", False))
         token: str = self._jwt_token()
         self._batch: List[Dict] = list()
         self.prefix: str = os.environ.get("STATS_PREFIX", "")
@@ -28,7 +30,9 @@ class Instrumentation(object):
         stats_retries: int = int(os.environ.get("STATS_RETRIES", 3))
         self.batch_size: int = int(os.environ.get("STATS_BATCH_SIZE", 50))
         self.default_tags: List = list()
-        headers = {"X-JWT-Token": token, "Content-Type": "application/json"}
+        headers = {"Content-Type": "application/json"}
+        if token:
+            headers["X-JWT-Token"] = token
         retry = Retry(
             total=stats_retries,
             read=stats_retries,
@@ -51,7 +55,9 @@ class Instrumentation(object):
         """
         if not self.enabled:
             return ""
-        secret = os.environ["STATS_JWT_SECRET"]
+        secret = os.environ.get("STATS_JWT_SECRET", "")
+        if not secret:
+            return ""
         return jwt.encode({"id": "openstates"}, secret, algorithm="HS256")
 
     def send_stats(self, force: bool = False) -> None:
