@@ -11,6 +11,14 @@ from typing import List, Dict
 class Instrumentation(object):
 
     def __init__(self) -> None:
+        """
+        We're currently leveraging https://github.com/civic-eagle/statsd-http-proxy
+        to have an easy to reason about stats aggregation tool
+        on the other end of an internet connection
+
+        Essentially statsd-style metrics, we can rely on the aggregator
+        to continually emit these stats so we get useful stats for monitoring/reporting
+        """
         self.enabled = os.environ.get("STATS_ENABLED", False)
         self.logger = logging.getLogger("openstates")
         token: str = self._jwt_token()
@@ -47,12 +55,6 @@ class Instrumentation(object):
         secret = os.environ["JWT_SECRET"]
         return jwt.encode({"id": "openstates"}, secret, algorithm="HS256")
 
-    def _send_statsd(self) -> None:
-        """
-        Very simple wrapper currently.
-        We may want to change this, so keep it a function
-        """
-
     def send_stats(self, force: bool = False) -> None:
         """
         Needs to be broken out from _process_metric to have a
@@ -82,6 +84,7 @@ class Instrumentation(object):
         returns: None
         """
         tags.extend(self.default_tags)
+        # list(set()) to remove duplicates
         tagstr = ",".join([f"{k}={v}" for k, v in list(set(tags))])
         data = {
             "value": value,
@@ -115,12 +118,13 @@ class Instrumentation(object):
     Wrapper scripts for easier sending
 
     Using these functions would look like:
+
     from utils.instrument import Instrumentation
-    Instrumentation()
-    send_gauge("objects_scraped", 10, {"jurisdiction": "ca"})
+    stats = Instrumentation()
+    stats.send_gauge("objects_scraped", 10, [{"jurisdiction": "ca"}])
     """
 
-    def last_run(self, metric: str, tags: list = []):
+    def send_last_run(self, metric: str, tags: list = []) -> None:
         """
         Set a gauge with a current timestamp
         Emulates a "last run time" feature simply
