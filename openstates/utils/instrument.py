@@ -4,6 +4,7 @@ import jwt
 import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util import Retry
+import time
 from typing import List, Dict
 
 
@@ -112,7 +113,21 @@ class Instrumentation(object):
 
     """
     Wrapper scripts for easier sending
+
+    Using these functions would look like:
+    from utils.instrument import Instrumentation
+    Instrumentation()
+    send_gauge("objects_scraped", 10, {"jurisdiction": "ca"})
     """
+
+    def last_run(self, metric: str, tags: list = []):
+        """
+        Set a gauge with a current timestamp
+        Emulates a "last run time" feature simply
+        """
+        if not self.enabled:
+            return
+        self._process_metric("gauge", metric, tags, time.time())
 
     def send_counter(
         self, metric: str, value: float, tags: list = [], sample_rate: float = 0,

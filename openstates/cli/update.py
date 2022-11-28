@@ -23,7 +23,7 @@ from .. import utils, settings
 from .reports import generate_session_report, print_report, save_report
 
 logger = logging.getLogger("openstates")
-
+stats = Instrumentation()
 
 ALL_ACTIONS = ("scrape", "import")
 
@@ -65,7 +65,6 @@ def do_scrape(
     scrapers: dict[str, dict[str, str]],
     active_sessions: set[str],
 ) -> dict[str, typing.Any]:
-    stats = Instrumentation()
     # make output and cache dirs
     utils.makedirs(settings.CACHE_DIR)
     datadir = os.path.join(settings.SCRAPED_DATA_DIR, args.module)
@@ -81,7 +80,7 @@ def do_scrape(
         juris, datadir, strict_validation=args.strict, fastmode=args.fastmode
     )
     report["jurisdiction"] = jscraper.do_scrape()
-    stats.send_counter("jurisdiction_scrapes", 1, [{"jurisdiction": juris}])
+    stats.send_counter("jurisdiction_scrapes_total", 1, [{"jurisdiction": juris}])
 
     for scraper_name, scrape_args in scrapers.items():
         ScraperCls = juris.scrapers[scraper_name]
@@ -89,7 +88,9 @@ def do_scrape(
             "session" in inspect.getargspec(ScraperCls.scrape).args
             and "session" not in scrape_args
         ):
-            logger.warning(f"no session provided, using active sessions: {active_sessions}")
+            logger.warning(
+                f"no session provided, using active sessions: {active_sessions}"
+            )
             # handle automatically setting session if required by the scraper
             # the report logic was originally meant for one run, so we combine the start & end times
             # and counts here
@@ -107,19 +108,53 @@ def do_scrape(
                     fastmode=args.fastmode,
                 )
                 partial_report = scraper.do_scrape(**scrape_args, session=session)
-                stats.send_counter("jurisdiction_scrapes", 1, [{"jurisdiction": juris, "session": session}])
+                stats.send_counter(
+                    "session_scrapes_total",
+                    1,
+                    [{"jurisdiction": juris, "session": session}],
+                )
                 if not report[scraper_name]["start"]:
                     report[scraper_name]["start"] = partial_report["start"]
                 report[scraper_name]["end"] = partial_report["end"]
                 for obj, val in partial_report["objects"].items():
                     report[scraper_name]["objects"][obj] += val
+                stats.send_gauge(
+                    "objects_scraped",
+                    len(partial_report["objects"]),
+                    [{"jurisdiction": juris, "session": session}],
+                )
+                stats.send_last_run(
+                    "last_scrape_time", [{"jurisdiction": juris, "session": session}]
+                )
         else:
             scraper = ScraperCls(
                 juris, datadir, strict_validation=args.strict, fastmode=args.fastmode
             )
             report[scraper_name] = scraper.do_scrape(**scrape_args)
-            stats.send_counter("jurisdiction_scrapes", 1, [{"jurisdiction": scrape_args["abbr"], "session": scrape_args["session"]}])
-
+            stats.send_counter(
+                "session_scrapes_total",
+                1,
+                [
+                    {
+                        "jurisdiction": scrape_args["abbr"],
+                        "session": scrape_args["session"],
+                    }
+                ],
+            )
+            stats.send_gauge(
+                "objects_scraped",
+                len(partial_report["objects"]),
+                [{"jurisdiction": juris, "session": session}],
+            )
+            stats.send_last_run(
+                "last_scrape_time",
+                [
+                    {
+                        "jurisdiction": scrape_args["abbr"],
+                        "session": scrape_args["session"],
+                    }
+                ],
+            )
     return report
 
 
@@ -196,7 +231,17 @@ def check_session_list(juris: State) -> set[str]:
                 "{scraper}.ignored_scraped_sessions."
             ).format(sessions=", ".join(unaccounted_sessions), scraper=scraper)
         )
-
+    stats.send_gauge(
+        "active_sessions", len(active_sessions), [{"jurisdiction": scraper}]
+    )
+    stats.send_gauge(
+        "unaccounted_sessions", len(unaccounted_sessions), [{"jurisdiction": scraper}]
+    )
+    stats.send_gauge(
+        "ignored_sessions",
+        len(juris.ignored_scraped_sessions),
+        [{"jurisdiction": scraper}],
+    )
     return active_sessions
 
 
