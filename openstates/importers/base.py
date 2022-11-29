@@ -328,7 +328,8 @@ class BaseImporter:
         data = self.apply_transformers(data)
         try:
             data = self.prepare_for_db(data)
-        except UnresolvedIdError:
+        except Exception as e:
+            self.logger.error(f"error preparing {self._type} for db: {e}")
             return None, what
 
         try:
