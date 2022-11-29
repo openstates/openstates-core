@@ -9,8 +9,14 @@ import time
 from typing import List, Dict
 
 
-class Instrumentation(object):
+class MetricTypes:
+    CounterType = "count"
+    GaugeType = "gauge"
+    TimingType = "timing"
+    SetType = "set"
 
+
+class Instrumentation(object):
     def __init__(self) -> None:
         """
         We're currently leveraging https://github.com/civic-eagle/statsd-http-proxy
@@ -22,7 +28,7 @@ class Instrumentation(object):
         """
         self.logger = logging.getLogger("openstates")
         # use a literal_eval to properly turn a string into a bool (literal_eval 'cause it's safer than stdlib eval)
-        self.enabled = literal_eval(os.environ.get("STATS_ENABLED", "False"))  # type: ignore
+        self.enabled = literal_eval(os.environ.get("STATS_ENABLED", "False"))
         token: str = self._jwt_token()
         self._batch: List[Dict] = list()
         self.prefix: str = os.environ.get("STATS_PREFIX", "")
@@ -127,15 +133,19 @@ class Instrumentation(object):
         Set a gauge with a current timestamp
         Emulates a "last run time" feature simply
         """
-        self._process_metric("gauge", metric, tags, time.time())
+        self._process_metric(MetricTypes.GaugeType, metric, tags, time.time())
 
     def send_counter(
-        self, metric: str, value: float, tags: list = [], sample_rate: float = 0,
+        self,
+        metric: str,
+        value: float,
+        tags: list = [],
+        sample_rate: float = 0,
     ) -> None:
-        self._process_metric("count", metric, tags, value, sample_rate)
+        self._process_metric(MetricTypes.CounterType, metric, tags, value, sample_rate)
 
     def send_gauge(self, metric: str, value: float, tags: list = []) -> None:
-        self._process_metric("gauge", metric, tags, value)
+        self._process_metric(MetricTypes.GaugeType, metric, tags, value)
 
     def send_timing(
         self,
@@ -144,7 +154,7 @@ class Instrumentation(object):
         tags: list = [],
         sample_rate: float = 0,
     ) -> None:
-        self._process_metric("timing", metric, tags, value)
+        self._process_metric(MetricTypes.TimingType, metric, tags, value)
 
     def send_set(self, metric: str, value: float, tags: list = []) -> None:
-        self._process_metric("set", metric, tags, value)
+        self._process_metric(MetricTypes.SetType, metric, tags, value)
