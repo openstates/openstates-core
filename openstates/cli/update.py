@@ -134,10 +134,10 @@ def do_scrape(
             stats.send_counter(
                 "session_scrapes_total",
                 1,
-                    {
-                        "jurisdiction": scrape_args["abbr"],
-                        "session": scrape_args["session"],
-                    },
+                {
+                    "jurisdiction": scrape_args["abbr"],
+                    "session": scrape_args["session"],
+                },
             )
             stats.send_gauge(
                 "objects_scraped",
@@ -146,10 +146,10 @@ def do_scrape(
             )
             stats.send_last_run(
                 "last_scrape_time",
-                    {
-                        "jurisdiction": scrape_args["abbr"],
-                        "session": scrape_args["session"],
-                    },
+                {
+                    "jurisdiction": scrape_args["abbr"],
+                    "session": scrape_args["session"],
+                },
             )
     return report
 
@@ -227,9 +227,7 @@ def check_session_list(juris: State) -> set[str]:
                 "{scraper}.ignored_scraped_sessions."
             ).format(sessions=", ".join(unaccounted_sessions), scraper=scraper)
         )
-    stats.send_gauge(
-        "active_sessions", len(active_sessions), {"jurisdiction": scraper}
-    )
+    stats.send_gauge("active_sessions", len(active_sessions), {"jurisdiction": scraper})
     stats.send_gauge(
         "unaccounted_sessions", len(unaccounted_sessions), {"jurisdiction": scraper}
     )
