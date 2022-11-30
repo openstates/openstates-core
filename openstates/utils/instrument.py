@@ -85,7 +85,7 @@ class Instrumentation(object):
         self,
         metric_type: str,
         metric: str,
-        tags: list,
+        tags: dict,
         value: float,
         sample_rate: float = 0,
     ) -> None:
@@ -97,9 +97,12 @@ class Instrumentation(object):
         if not self.enabled:
             self.logger.warning("Stats disabled. Processing skipped.")
             return
-        tags.extend(self.default_tags)
+        # apply defaults only if not overridden
+        for k, v in self.default_tags.items():
+            if k not in tags:
+                tags[k] = v
         # list(set()) to remove duplicates
-        tagstr = ",".join([f"{k}={v}" for k, v in list(set(tags))])
+        tagstr = ",".join(list(set([f"{k}={v}" for k, v in tags.items()])))
         data = {
             "value": value,
             "metric": f"{self.prefix}{metric}",
@@ -128,7 +131,7 @@ class Instrumentation(object):
     stats.send_gauge("objects_scraped", 10, [{"jurisdiction": "ca"}])
     """
 
-    def send_last_run(self, metric: str, tags: list = []) -> None:
+    def send_last_run(self, metric: str, tags: dict = {}) -> None:
         """
         Set a gauge with a current timestamp
         Emulates a "last run time" feature simply
@@ -139,12 +142,12 @@ class Instrumentation(object):
         self,
         metric: str,
         value: float,
-        tags: list = [],
+        tags: dict = {},
         sample_rate: float = 0,
     ) -> None:
         self._process_metric(MetricTypes.CounterType, metric, tags, value, sample_rate)
 
-    def send_gauge(self, metric: str, value: float, tags: list = []) -> None:
+    def send_gauge(self, metric: str, value: float, tags: dict = {}) -> None:
         self._process_metric(MetricTypes.GaugeType, metric, tags, value)
 
     def send_timing(
@@ -156,5 +159,5 @@ class Instrumentation(object):
     ) -> None:
         self._process_metric(MetricTypes.TimingType, metric, tags, value)
 
-    def send_set(self, metric: str, value: float, tags: list = []) -> None:
+    def send_set(self, metric: str, value: float, tags: dict = {}) -> None:
         self._process_metric(MetricTypes.SetType, metric, tags, value)

@@ -45,17 +45,18 @@ def main(
         except SystemExit as e:
             if e.code != 0:
                 raise
-        stats.send_counter("people_scrapes_total", 1, [{"jurisdiction": abbr}])
+        stats.send_counter("people_scrapes_total", 1, {"jurisdiction": abbr})
     if not scrape_only and "people" in scraper_type:
         merge_args = [abbr, str(output_dir)]
         if reset_offices:
             merge_args.append("--reset-offices")
         people_merge(merge_args)
-        stats.send_counter("people_merges_total", 1, [{"jurisdiction": abbr}])
+        stats.send_counter("people_merges_total", 1, {"jurisdiction": abbr})
     elif not scrape_only and "committees" in scraper_type:
         merge_args = [abbr, str(output_dir)]
         committees_merge(merge_args)
-        stats.send_counter("committee_merges_total", 1, [{"jurisdiction": abbr}])
+        stats.send_counter("committee_merges_total", 1, {"jurisdiction": abbr})
+    stats.send_stats(force=True)
 
 
 if __name__ == "__main__":
