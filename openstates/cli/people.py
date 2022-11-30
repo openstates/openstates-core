@@ -29,7 +29,9 @@ from ..utils.people.to_database import (
     CancelTransaction,
 )
 from ..utils.people.merge import process_scrape_dir, incoming_merge
+from ..utils.instrument import Instrumentation
 
+stats = Instrumentation()
 OPTIONAL_FIELD_SET = {
     "sort_name",
     "given_name",
@@ -720,6 +722,7 @@ def merge(abbr: str, input_dir: str, retirement: str, reset_offices: bool) -> No
     """
     Convert scraped JSON in INPUT_DIR to YAML files for this repo.
     """
+    stats.send_counter("people_scrapes_total", 1, {"jurisdiction": abbr})
     jurisdiction_id = abbr_to_jid(abbr)
     new_people = process_scrape_dir(Path(input_dir), jurisdiction_id)
 
@@ -731,6 +734,9 @@ def merge(abbr: str, input_dir: str, retirement: str, reset_offices: bool) -> No
     ):
         existing_people.append(Person.load_yaml(filename))
 
+    stats.send_gauge("new_people_discovered", len(existing_people), {"jurisdiction": abbr})
+    stats.send_gauge("existing_people_discovered", len(new_people), {"jurisdiction": abbr})
+
     click.secho(
         f"analyzing {len(existing_people)} existing people and {len(new_people)} scraped"
     )
@@ -739,6 +745,8 @@ def merge(abbr: str, input_dir: str, retirement: str, reset_offices: bool) -> No
         abbr, existing_people, new_people, retirement, reset_offices
     )
     click.secho(f"{len(unmatched)} people were unmatched")
+    stats.send_gauge("people_unmatched", len(unmatched), {"jurisdiction": abbr})
+    stats.close()
 
 
 if __name__ == "__main__":

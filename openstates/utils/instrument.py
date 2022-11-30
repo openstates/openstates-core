@@ -66,7 +66,7 @@ class Instrumentation(object):
             return ""
         return jwt.encode({"id": "openstates"}, secret, algorithm="HS256")
 
-    def send_stats(self, force: bool = False) -> None:
+    def _send_stats(self, force: bool = False) -> None:
         """
         Needs to be broken out from _process_metric to have a
         "write at shutdown" function (force=True)
@@ -119,7 +119,7 @@ class Instrumentation(object):
         adding each stat to make sure we emit
         batches as quickly as we can
         """
-        self.send_stats()
+        self._send_stats()
 
     """
     Wrapper scripts for easier sending
@@ -130,6 +130,13 @@ class Instrumentation(object):
     stats = Instrumentation()
     stats.send_gauge("objects_scraped", 10, [{"jurisdiction": "ca"}])
     """
+
+    def close(self) -> None:
+        """
+        "Shut down" our instrumentation connection
+        Currently just forces any batched stats out
+        """
+        self._send_stats(force=True)
 
     def send_last_run(self, metric: str, tags: dict = {}) -> None:
         """

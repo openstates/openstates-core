@@ -56,7 +56,7 @@ def main(
         merge_args = [abbr, str(output_dir)]
         committees_merge(merge_args)
         stats.send_counter("committee_merges_total", 1, {"jurisdiction": abbr})
-    stats.send_stats(force=True)
+    stats.close()
 
 
 if __name__ == "__main__":

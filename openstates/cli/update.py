@@ -405,7 +405,7 @@ def main() -> int:
         report = do_update(args, other, juris)
 
     # empty stats batch
-    stats.send_stats(force=True)
+    stats.close()
     if report.get("success", False):
         return 0
     else:
