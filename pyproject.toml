@@ -47,7 +47,6 @@ types-pytz = "^2021.1.0"
 types-click = "^7.1.2"
 types-PyYAML = "^5.4.3"
 types-requests = "^2.25.0"
-s3fs="^2022.10.0"
 
 [tool.coverage.run]
 omit = [
