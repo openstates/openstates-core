@@ -35,7 +35,7 @@ class Instrumentation(object):
         self.endpoint: str = os.environ.get("STATS_ENDPOINT", "")
         stats_retries: int = int(os.environ.get("STATS_RETRIES", 3))
         self.batch_size: int = int(os.environ.get("STATS_BATCH_SIZE", 50))
-        self.default_tags: List = list()
+        self.default_tags: Dict = dict()
         headers = {"Content-Type": "application/json"}
         if token:
             headers["X-JWT-Token"] = token
@@ -154,7 +154,7 @@ class Instrumentation(object):
         self,
         metric: str,
         value: float,
-        tags: list = [],
+        tags: dict = {},
         sample_rate: float = 0,
     ) -> None:
         self._process_metric(MetricTypes.TimingType, metric, tags, value)
