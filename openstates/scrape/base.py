@@ -132,9 +132,7 @@ class Scraper(scrapelib.Scraper):
         obj.pre_save(self.jurisdiction.jurisdiction_id)
 
         filename = "{0}_{1}.json".format(obj._type, obj._id).replace("/", "-")
-
         self.info("save %s %s as %s", obj._type, obj, filename)
-        self.info("juris-id %s", self.jurisdiction.jurisdiction_id)
         self.debug(
             json.dumps(
                 OrderedDict(sorted(obj.as_dict().items())),
@@ -152,10 +150,9 @@ class Scraper(scrapelib.Scraper):
 
             # Remove redundant prefix
             try:
-                file_path_ = file_path[file_path.index("_data") + 6:]
+                file_path_ = file_path[file_path.index("_data") + 6 :]
             except Exception:
                 file_path_ = file_path
-            self.info("filepath - %s", file_path_)
 
             if self.realtime:
 
@@ -164,7 +161,6 @@ class Scraper(scrapelib.Scraper):
                 S3_FULL_PATH = settings.S3_REALTIME_BASE + str(file_path_)
 
                 with s3.open(S3_FULL_PATH, "w") as file:
-                    # json.dump(obj.as_dict(), file)
                     json.dump(
                         OrderedDict(sorted(obj.as_dict().items())),
                         file,
@@ -172,7 +168,6 @@ class Scraper(scrapelib.Scraper):
                         indent=4,
                         separators=(",", ": "),
                     )
-                self.info("S3_FULL_PATH - %s", S3_FULL_PATH)
             else:
                 with open(file_path, "w") as f:
                     json.dump(obj.as_dict(), f, cls=utils.JSONEncoderPlus)

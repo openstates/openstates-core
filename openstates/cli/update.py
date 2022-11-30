@@ -76,7 +76,11 @@ def do_scrape(
 
     # do jurisdiction
     jscraper = JurisdictionScraper(
-        juris, datadir, strict_validation=args.strict, fastmode=args.fastmode, realtime=args.realtime
+        juris,
+        datadir,
+        strict_validation=args.strict,
+        fastmode=args.fastmode,
+        realtime=args.realtime,
     )
     report["jurisdiction"] = jscraper.do_scrape()
 
@@ -102,7 +106,7 @@ def do_scrape(
                     datadir,
                     strict_validation=args.strict,
                     fastmode=args.fastmode,
-                    realtime=args.realtime
+                    realtime=args.realtime,
                 )
                 partial_report = scraper.do_scrape(**scrape_args, session=session)
                 if not report[scraper_name]["start"]:
@@ -112,7 +116,11 @@ def do_scrape(
                     report[scraper_name]["objects"][obj] += val
         else:
             scraper = ScraperCls(
-                juris, datadir, strict_validation=args.strict, fastmode=args.fastmode, realtime=args.realtime
+                juris,
+                datadir,
+                strict_validation=args.strict,
+                fastmode=args.fastmode,
+                realtime=args.realtime,
             )
             report[scraper_name] = scraper.do_scrape(**scrape_args)
 
@@ -357,8 +365,6 @@ def main() -> int:
 
     logging.info(f"Module: {args.module}")
     juris, module = get_jurisdiction(args.module)
-    logging.info(f"Juris: {juris}")
-    logging.info(f"Module: {module}")
 
     overrides = {}
     overrides.update(getattr(module, "settings", {}))
