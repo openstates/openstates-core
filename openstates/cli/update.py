@@ -23,7 +23,6 @@ from .. import utils, settings
 from .reports import generate_session_report, print_report, save_report
 
 logger = logging.getLogger("openstates")
-stats = Instrumentation()
 
 ALL_ACTIONS = ("scrape", "import")
 
@@ -80,7 +79,7 @@ def do_scrape(
         juris, datadir, strict_validation=args.strict, fastmode=args.fastmode
     )
     report["jurisdiction"] = jscraper.do_scrape()
-    stats.send_counter("jurisdiction_scrapes_total", 1, {"jurisdiction": juris})
+    stats.send_counter("jurisdiction_scrapes_total", 1, {"jurisdiction": juris.abbr})
 
     for scraper_name, scrape_args in scrapers.items():
         ScraperCls = juris.scrapers[scraper_name]
@@ -111,7 +110,7 @@ def do_scrape(
                 stats.send_counter(
                     "session_scrapes_total",
                     1,
-                    {"jurisdiction": juris, "session": session},
+                    {"jurisdiction": juris.abbr, "session": session},
                 )
                 if not report[scraper_name]["start"]:
                     report[scraper_name]["start"] = partial_report["start"]
@@ -121,10 +120,10 @@ def do_scrape(
                 stats.send_gauge(
                     "objects_scraped",
                     len(partial_report["objects"]),
-                    {"jurisdiction": juris, "session": session},
+                    {"jurisdiction": juris.abbr, "session": session},
                 )
                 stats.send_last_run(
-                    "last_scrape_time", {"jurisdiction": juris, "session": session}
+                    "last_scrape_time", {"jurisdiction": juris.abbr, "session": session}
                 )
         else:
             scraper = ScraperCls(
@@ -135,21 +134,14 @@ def do_scrape(
                 "session_scrapes_total",
                 1,
                 {
-                    "jurisdiction": scrape_args["abbr"],
+                    "jurisdiction": juris.abbr,
                     "session": scrape_args["session"],
                 },
             )
             stats.send_gauge(
                 "objects_scraped",
                 len(partial_report["objects"]),
-                {"jurisdiction": juris, "session": session},
-            )
-            stats.send_last_run(
-                "last_scrape_time",
-                {
-                    "jurisdiction": scrape_args["abbr"],
-                    "session": scrape_args["session"],
-                },
+                {"jurisdiction": juris.abbr, "session": session},
             )
     return report
 
@@ -373,6 +365,7 @@ def parse_args() -> tuple[argparse.Namespace, list[str]]:
 
 def main() -> int:
     args, other = parse_args()
+    stats = Instrumentation()
 
     # set log level from command line
     handler_level = getattr(logging, args.loglevel.upper(), "INFO")
@@ -404,7 +397,13 @@ def main() -> int:
     with override_settings(settings, overrides):
         report = do_update(args, other, juris)
 
-    # empty stats batch
+    stats.send_last_run(
+        "last_scrape_time",
+        {
+            "jurisdiction": juris.abbr,
+            "session": scrape_args["session"],
+        },
+    )
     stats.close()
     if report.get("success", False):
         return 0

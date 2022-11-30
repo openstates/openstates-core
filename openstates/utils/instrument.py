@@ -31,7 +31,7 @@ class Instrumentation(object):
         self.enabled = literal_eval(os.environ.get("STATS_ENABLED", "False"))
         token: str = self._jwt_token()
         self._batch: List[Dict] = list()
-        self.prefix: str = os.environ.get("STATS_PREFIX", "")
+        self.prefix: str = os.environ.get("STATS_PREFIX", "openstates_")
         self.endpoint: str = os.environ.get("STATS_ENDPOINT", "")
         stats_retries: int = int(os.environ.get("STATS_RETRIES", 3))
         self.batch_size: int = int(os.environ.get("STATS_BATCH_SIZE", 50))
