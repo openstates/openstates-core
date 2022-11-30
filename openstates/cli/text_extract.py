@@ -19,7 +19,9 @@ from openstates.fulltext import (
     CONVERSION_FUNCTIONS,
     Metadata,
 )
+from ..utils.instrument import Instrumentation
 
+stats = Instrumentation()
 # disable SSL validation and ignore warnings
 scraper = scrapelib.Scraper(verify=False)
 scraper.user_agent = "Mozilla"
@@ -356,6 +358,8 @@ def update(
     # print status within checkpoints
     status_num = checkpoint / 5
 
+    stats.send_counter("text_extraction_runs_total", 1, {"jurisdiction": state})
+
     if state == "all":
         all_bills = Bill.objects.all()
     elif session:
@@ -397,6 +401,9 @@ def update(
         print(
             f"{state}: {len(all_bills)} bills, {len(missing_search)} without search results"
         )
+    stats.send_gauge(
+        "text_extraction_updates", len(missing_search), {"jurisdiction": state}
+    )
 
     if n:
         missing_search = missing_search[: int(n)]
@@ -423,6 +430,7 @@ def update(
     reindex(ids_to_update)
     transaction.commit()
     transaction.set_autocommit(True)
+    stats.send_last_run("last_text_extract_time", {"jurisdiction": state})
 
 
 def reindex(ids_to_update: list[int]) -> None:

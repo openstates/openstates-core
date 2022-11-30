@@ -30,7 +30,6 @@ from ..utils.people.to_database import (
 )
 from ..utils.people.merge import process_scrape_dir, incoming_merge
 
-
 OPTIONAL_FIELD_SET = {
     "sort_name",
     "given_name",
@@ -722,7 +721,6 @@ def merge(abbr: str, input_dir: str, retirement: str, reset_offices: bool) -> No
     Convert scraped JSON in INPUT_DIR to YAML files for this repo.
     """
     jurisdiction_id = abbr_to_jid(abbr)
-
     new_people = process_scrape_dir(Path(input_dir), jurisdiction_id)
 
     existing_people: list[Person] = []
