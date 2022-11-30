@@ -131,8 +131,9 @@ class Scraper(scrapelib.Scraper):
         clean_whitespace(obj)
         obj.pre_save(self.jurisdiction.jurisdiction_id)
 
-        filename = "{0}_{1}.json".format(obj._type, obj._id).replace("/", "-")
-        self.info("save %s %s as %s", obj._type, obj, filename)
+        filename = f"{obj._type}_{obj._id}.json".replace("/", "-")
+        self.info(f"save {obj._type} {obj} as {filename}")
+
         self.debug(
             json.dumps(
                 OrderedDict(sorted(obj.as_dict().items())),
@@ -150,7 +151,7 @@ class Scraper(scrapelib.Scraper):
 
             # Remove redundant prefix
             try:
-                file_path_ = file_path[file_path.index("_data") + 6 :]
+                file_path_ = file_path[file_path.index("_data") + len("_data")+1 :]
             except Exception:
                 file_path_ = file_path
 
@@ -165,7 +166,6 @@ class Scraper(scrapelib.Scraper):
                         OrderedDict(sorted(obj.as_dict().items())),
                         file,
                         cls=utils.JSONEncoderPlus,
-                        indent=4,
                         separators=(",", ": "),
                     )
             else:
