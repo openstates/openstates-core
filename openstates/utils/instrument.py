@@ -79,8 +79,9 @@ class Instrumentation(object):
             if not self.enabled:
                 self.logger.warning("Stats disabled. Sending skipped skipped.")
                 return
+            self.logger.debug(f"Sending batch: {self._batch}")
             self._stat_client.post(f"{self.endpoint}/batch", json=self._batch)
-        self._batch = list()
+            self._batch = list()
 
     def _process_metric(
         self,
@@ -110,7 +111,6 @@ class Instrumentation(object):
         if sample_rate:
             data["sampleRate"] = sample_rate
 
-        self.logger.debug(f"Adding metric {data}")
         self._batch.append(data)
         """
         we attempt to send (without forcing) after
