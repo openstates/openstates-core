@@ -80,7 +80,7 @@ def do_scrape(
         juris, datadir, strict_validation=args.strict, fastmode=args.fastmode
     )
     report["jurisdiction"] = jscraper.do_scrape()
-    stats.send_counter("jurisdiction_scrapes_total", 1, {"jurisdiction": juris.abbr})
+    stats.send_counter("jurisdiction_scrapes_total", 1, {"jurisdiction": juris.name})
 
     for scraper_name, scrape_args in scrapers.items():
         ScraperCls = juris.scrapers[scraper_name]
@@ -111,7 +111,7 @@ def do_scrape(
                 stats.send_counter(
                     "session_scrapes_total",
                     1,
-                    {"jurisdiction": juris.abbr, "session": session},
+                    {"jurisdiction": juris.name, "session": session},
                 )
                 if not report[scraper_name]["start"]:
                     report[scraper_name]["start"] = partial_report["start"]
@@ -121,10 +121,10 @@ def do_scrape(
                 stats.send_gauge(
                     "objects_scraped",
                     len(partial_report["objects"]),
-                    {"jurisdiction": juris.abbr, "session": session},
+                    {"jurisdiction": juris.name, "session": session},
                 )
                 stats.send_last_run(
-                    "last_scrape_time", {"jurisdiction": juris.abbr, "session": session}
+                    "last_session_scrape_time", {"jurisdiction": juris.name, "session": session}
                 )
         else:
             scraper = ScraperCls(
@@ -135,14 +135,17 @@ def do_scrape(
                 "session_scrapes_total",
                 1,
                 {
-                    "jurisdiction": juris.abbr,
+                    "jurisdiction": juris.name,
                     "session": scrape_args["session"],
                 },
             )
             stats.send_gauge(
                 "objects_scraped",
                 len(partial_report["objects"]),
-                {"jurisdiction": juris.abbr, "session": session},
+                {"jurisdiction": juris.name, "session": session},
+            )
+            stats.send_last_run(
+                "last_session_scrape_time", {"jurisdiction": juris.name, "session": session}
             )
     return report
 
@@ -400,7 +403,7 @@ def main() -> int:
     stats.send_last_run(
         "last_scrape_time",
         {
-            "jurisdiction": juris.abbr,
+            "jurisdiction": juris.name,
         },
     )
     stats.close()
