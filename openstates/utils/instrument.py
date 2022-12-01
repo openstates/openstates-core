@@ -77,7 +77,7 @@ class Instrumentation(object):
                 self.logger.warning("No stats endpoint defined. Not emitting stats")
                 return
             if not self.enabled:
-                self.logger.warning("Stats disabled. Sending skipped skipped.")
+                self.logger.warning("Stats disabled. Sending skipped.")
                 return
             self.logger.debug(f"Sending batch: {self._batch}")
             self._stat_client.post(f"{self.endpoint}/batch", json=self._batch)
