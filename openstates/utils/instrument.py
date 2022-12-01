@@ -71,13 +71,14 @@ class Instrumentation(object):
         Needs to be broken out from _process_metric to have a
         "write at shutdown" function (force=True)
         """
-        if not self.endpoint:
-            self.logger.warning("No stats endpoint defined, not emitting stats")
-            return
-        if not self.enabled:
-            self.logger.warning("Stats disabled. Send skipped.")
         batch_len = len(self._batch)
         if (force and batch_len > 0) or batch_len > self.batch_size:
+            if not self.endpoint:
+                self.logger.warning("No stats endpoint defined. Not emitting stats")
+                return
+            if not self.enabled:
+                self.logger.warning("Stats disabled. Sending skipped skipped.")
+                return
             self._stat_client.post(f"{self.endpoint}/batch", json=self._batch)
         self._batch = list()
 
@@ -94,9 +95,6 @@ class Instrumentation(object):
 
         returns: None
         """
-        if not self.enabled:
-            self.logger.warning("Stats disabled. Processing skipped.")
-            return
         # apply defaults only if not overridden
         for k, v in self.default_tags.items():
             if k not in tags:
