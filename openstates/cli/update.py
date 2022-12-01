@@ -23,6 +23,7 @@ from .. import utils, settings
 from .reports import generate_session_report, print_report, save_report
 
 logger = logging.getLogger("openstates")
+stats = Instrumentation()
 
 ALL_ACTIONS = ("scrape", "import")
 
@@ -365,7 +366,6 @@ def parse_args() -> tuple[argparse.Namespace, list[str]]:
 
 def main() -> int:
     args, other = parse_args()
-    stats = Instrumentation()
 
     # set log level from command line
     handler_level = getattr(logging, args.loglevel.upper(), "INFO")
@@ -401,7 +401,6 @@ def main() -> int:
         "last_scrape_time",
         {
             "jurisdiction": juris.abbr,
-            "session": scrape_args["session"],
         },
     )
     stats.close()
