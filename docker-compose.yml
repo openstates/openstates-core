@@ -8,9 +8,9 @@ services:
   core:
     build: .
     environment:
-    - DATABASE_URL=postgres://openstates:openstates@db/openstatesorg
+      - DATABASE_URL=postgres://openstates:openstates@db/openstatesorg
     volumes:
-    - .:/opt/openstates-core
+      - .:/opt/openstates-core
     entrypoint: ["poetry", "run"]
     networks:
-    - openstates-network
+      - openstates-network
