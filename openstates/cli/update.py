@@ -118,13 +118,9 @@ def do_scrape(
                 report[scraper_name]["end"] = partial_report["end"]
                 for obj, val in partial_report["objects"].items():
                     report[scraper_name]["objects"][obj] += val
-                stats.send_gauge(
-                    "objects_scraped",
-                    len(partial_report["objects"]),
-                    {"jurisdiction": juris.name, "session": session},
-                )
                 stats.send_last_run(
-                    "last_session_scrape_time", {"jurisdiction": juris.name, "session": session}
+                    "last_session_scrape_time",
+                    {"jurisdiction": juris.name, "session": session},
                 )
         else:
             scraper = ScraperCls(
@@ -139,14 +135,11 @@ def do_scrape(
                     "session": scrape_args["session"],
                 },
             )
-            stats.send_gauge(
-                "objects_scraped",
-                len(partial_report["objects"]),
+            stats.send_last_run(
+                "last_session_scrape_time",
                 {"jurisdiction": juris.name, "session": session},
             )
-            stats.send_last_run(
-                "last_session_scrape_time", {"jurisdiction": juris.name, "session": session}
-            )
+
     return report
 
 
@@ -296,12 +289,51 @@ def do_update(
         if "import" in args.actions:
             save_report(report, juris.jurisdiction_id)
         raise
+    else:
+        stats.send_last_run(
+            "last_collection_run_time",
+            {
+                "jurisdiction": juris.name,
+            },
+        )
+        finish = utils.utcnow()
 
-    if "import" in args.actions:
-        save_report(report, juris.jurisdiction_id)
+        for scrape_type, details in report.get("scrape", {}).items():  # type: ignore
+            stats.send_gauge(
+                "scrape_runtime",
+                (finish - details["start"]).timestamp(),
+                {
+                    "jurisdiction": juris.name,
+                    "scrape_type": scrape_type,
+                },
+            )
+            for objtype, num in details["objects"].items():
+                stats.send_gauge(
+                    "objects_collected",
+                    num,
+                    {
+                        "jurisdiction": juris.name,
+                        "scrape_type": scrape_type,
+                        "object_type": objtype,
+                    },
+                )
+        for scrape_type, details in report.get("import", {}).items():  # type: ignore
+            for import_type in ["insert", "update", "noop"]:
+                stats.send_gauge(
+                    "objects_imported",
+                    details[import_type],
+                    {
+                        "jurisdiction": juris.name,
+                        "scrape_type": scrape_type,
+                        "import_type": import_type,
+                    },
+                )
 
-    print_report(report)
-    return report
+        if "import" in args.actions:
+            save_report(report, juris.jurisdiction_id)
+
+        print_report(report)
+        return report
 
 
 def parse_args() -> tuple[argparse.Namespace, list[str]]:
@@ -400,12 +432,6 @@ def main() -> int:
     with override_settings(settings, overrides):
         report = do_update(args, other, juris)
 
-    stats.send_last_run(
-        "last_scrape_time",
-        {
-            "jurisdiction": juris.name,
-        },
-    )
     stats.close()
     if report.get("success", False):
         return 0
