@@ -301,7 +301,8 @@ def do_update(
         for scrape_type, details in report.get("scrape", {}).items():  # type: ignore
             stats.send_gauge(
                 "scrape_runtime",
-                (finish - details["start"]).timestamp(),
+                # datetime - datetime = timedelta, which has a 'seconds' attribute
+                (finish - details["start"]).seconds,
                 {
                     "jurisdiction": juris.name,
                     "scrape_type": scrape_type,
