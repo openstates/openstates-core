@@ -29,6 +29,8 @@ class Instrumentation(object):
         self.logger = logging.getLogger("openstates")
         # use a literal_eval to properly turn a string into a bool (literal_eval 'cause it's safer than stdlib eval)
         self.enabled = literal_eval(os.environ.get("STATS_ENABLED", "False"))
+        if not self.enabled:
+            self.logger.warning("Stat emission is not enabled.")
         token: str = self._jwt_token()
         self._batch: List[Dict] = list()
         self.prefix: str = os.environ.get("STATS_PREFIX", "openstates_")
@@ -73,11 +75,10 @@ class Instrumentation(object):
         """
         batch_len = len(self._batch)
         if (force and batch_len > 0) or batch_len > self.batch_size:
-            if not self.endpoint:
-                self.logger.warning("No stats endpoint defined. Not emitting stats")
-                return
             if not self.enabled:
-                self.logger.warning("Stats disabled. Sending skipped.")
+                return
+            if not self.endpoint:
+                self.logger.debug("No stats endpoint defined. Not emitting stats")
                 return
             self.logger.debug(f"Sending batch: {self._batch}")
             self._stat_client.post(f"{self.endpoint}/batch", json=self._batch)
