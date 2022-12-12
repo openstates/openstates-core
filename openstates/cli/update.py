@@ -399,7 +399,11 @@ def main() -> int:
     logging.info(f"Module: {args.module}")
 
     # delete all objects from S3 folder for current module
-    delete_all_objects_from_s3_folder(args.module)
+    try:
+        delete_all_objects_from_s3_folder(args.module)
+    except Exception as e:
+        # this is might occur for first run of a jurisdiction, which might not have an existing folder
+        logging.error(f"Error deleting objects from S3: {e}")
 
     juris, module = get_jurisdiction(args.module)
 
