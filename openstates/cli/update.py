@@ -342,8 +342,14 @@ def parse_args() -> tuple[argparse.Namespace, list[str]]:
 
 def delete_all_objects_from_s3_folder(module: str) -> None:
     """
-    This function deletes all files in the current module's folder on S3
-    :return: None
+    This function deletes all files in the current module's folder on S3. It is done to ensure that the files are not
+    left over from a previous run for a jurisdiction. This is also not after runs because we want to keep the files
+    for the previous run in case we need to revert, or check out issues during failures.
+
+    Args:
+        module (str): The module name for the jurisdiction that is being run.
+    Example:
+        delete_all_objects_from_s3_folder("il")
     """
 
     logging.info(f"Deleting initial objects from {module} folder")
