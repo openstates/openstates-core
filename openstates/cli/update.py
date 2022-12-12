@@ -13,7 +13,7 @@ import typing
 from collections import defaultdict
 from types import ModuleType
 
-import boto3
+import boto3 # type: ignore
 from django.db import transaction  # type: ignore
 
 from .. import settings, utils
