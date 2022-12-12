@@ -1,9 +1,9 @@
 import argparse
 import contextlib
-import inspect
 import datetime
 import glob
 import importlib
+import inspect
 import logging
 import logging.config
 import os
@@ -13,12 +13,13 @@ import typing
 from collections import defaultdict
 from types import ModuleType
 
+import boto3
 from django.db import transaction  # type: ignore
 
+from .. import settings, utils
 from ..exceptions import CommandError
-from ..scrape import State, JurisdictionScraper
+from ..scrape import JurisdictionScraper, State
 from ..utils.django import init_django
-from .. import utils, settings
 from .reports import generate_session_report, print_report, save_report
 
 logger = logging.getLogger("openstates")
@@ -129,13 +130,13 @@ def do_scrape(
 
 def do_import(juris: State, args: argparse.Namespace) -> dict[str, typing.Any]:
     # import inside here because to avoid loading Django code unnecessarily
-    from openstates.importers import (
-        JurisdictionImporter,
-        BillImporter,
-        VoteEventImporter,
-        EventImporter,
-    )
     from openstates.data.models import Jurisdiction as DatabaseJurisdiction
+    from openstates.importers import (
+        BillImporter,
+        EventImporter,
+        JurisdictionImporter,
+        VoteEventImporter,
+    )
 
     datadir = os.path.join(settings.SCRAPED_DATA_DIR, args.module)
 
@@ -339,6 +340,32 @@ def parse_args() -> tuple[argparse.Namespace, list[str]]:
     return parser.parse_known_args()
 
 
+def delete_all_objects_from_s3_folder(module):
+    """
+    This function deletes all files in the current module's folder on S3
+    :return: None
+    """
+
+    logging.info(f"Deleting initial objects from {module} folder")
+
+    bucket_name = os.environ.get("S3_REALTIME_BASE")
+
+    s3_client = boto3.client("s3")
+
+    # First we list all files in folder
+    response = s3_client.list_objects_v2(Bucket=bucket_name, Prefix=f"{module}/")
+
+    files_in_folder = response["Contents"]
+
+    # We will create Key array to pass to delete_objects function
+    files_to_delete = [{"Key": f["Key"]} for f in files_in_folder]
+
+    # This will delete all files in a folder
+    response = s3_client.delete_objects(
+        Bucket=bucket_name, Delete={"Objects": files_to_delete}
+    )
+
+
 def main() -> int:
     args, other = parse_args()
 
@@ -364,6 +391,10 @@ def main() -> int:
         sys.excepthook = _tb_info
 
     logging.info(f"Module: {args.module}")
+
+    # delete all objects from S3 folder for current module
+    delete_all_objects_from_s3_folder(args.module)
+
     juris, module = get_jurisdiction(args.module)
 
     overrides = {}
