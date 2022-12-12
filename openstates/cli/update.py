@@ -340,7 +340,7 @@ def parse_args() -> tuple[argparse.Namespace, list[str]]:
     return parser.parse_known_args()
 
 
-def delete_all_objects_from_s3_folder(module):
+def delete_all_objects_from_s3_folder(module: str) -> None:
     """
     This function deletes all files in the current module's folder on S3
     :return: None
