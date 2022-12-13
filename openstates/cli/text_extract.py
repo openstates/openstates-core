@@ -72,7 +72,7 @@ def download(
                 version["url"], filename, ciphers_list_addition=ciphers_list_addition
             )
         except Exception:
-            click.secho("could not fetch " + version["url"], fg="yellow")
+            click.secho(f"could not fetch {version['url']}", fg="yellow")
             return None, None
 
         return filename, resp.content
@@ -92,6 +92,7 @@ def extract_to_file(
         else:
             text = func(data, version)
     except Exception as e:
+        stats.send_counter("failed_text_extractions_total", 1, {"jurisdiction": version.jurisdiction_id})
         click.secho(f"exception processing {version['url']}: {e}", fg="red")
         text = None
 
@@ -402,7 +403,7 @@ def update(
             f"{state}: {len(all_bills)} bills, {len(missing_search)} without search results"
         )
     stats.send_gauge(
-        "text_extraction_updates", len(missing_search), {"jurisdiction": state}
+        "text_extraction_missing_vectors", len(missing_search), {"jurisdiction": state}
     )
 
     if n:
@@ -426,6 +427,9 @@ def update(
             transaction.commit()
             ids_to_update = []
 
+    stats.send_gauge(
+        "text_extraction_updates", len(ids_to_update), {"jurisdiction": state}
+    )
     # be sure to reindex final set
     reindex(ids_to_update)
     transaction.commit()
