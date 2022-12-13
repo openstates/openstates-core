@@ -13,7 +13,6 @@ import typing
 from collections import defaultdict
 from types import ModuleType
 
-import boto3  # type: ignore
 from django.db import transaction  # type: ignore
 
 from .. import settings, utils
@@ -341,44 +340,6 @@ def parse_args() -> tuple[argparse.Namespace, list[str]]:
     return parser.parse_known_args()
 
 
-def delete_all_objects_from_s3_folder(module: str) -> None:
-    """
-    This function deletes all files in the current module's folder on S3. It is done to ensure that the files are not
-    left over from a previous run for a jurisdiction. This is also not after runs because we want to keep the files
-    for the previous run in case we need to revert, or check out issues during failures.
-
-    Args:
-        module (str): The module name for the jurisdiction that is being run.
-    Example:
-        delete_all_objects_from_s3_folder("il")
-    """
-
-    logging.info(f"Deleting initial objects from {module} folder")
-
-    bucket_name = os.environ.get("S3_REALTIME_BASE")
-
-    s3_client = boto3.client("s3")
-
-    # First we list all files in folder
-    response = s3_client.list_objects_v2(Bucket=bucket_name, Prefix=f"{module}/")
-    if response.get("Contents") or response.get("KeyCount") == 0:
-
-        files_in_folder = response["Contents"]
-
-        # We will create a key array to pass to delete_objects function
-        files_to_delete = [{"Key": f["Key"]} for f in files_in_folder]
-
-        logging.info(f"Files to delete: {files_to_delete}")
-
-        # This will delete all files in a folder
-        s3_client.delete_objects(
-            Bucket=bucket_name, Delete={"Objects": files_to_delete}
-        )
-    else:
-        # files or folder (module) does not exist
-        logging.info(f"No files found in {module} folder")
-
-
 def main() -> int:
     args, other = parse_args()
 
@@ -404,10 +365,6 @@ def main() -> int:
         sys.excepthook = _tb_info
 
     logging.info(f"Module: {args.module}")
-
-    if args.realtime:
-        # Delete all files in the module folder before running
-        delete_all_objects_from_s3_folder(args.module)
 
     juris, module = get_jurisdiction(args.module)
 
