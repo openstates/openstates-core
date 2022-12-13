@@ -404,8 +404,9 @@ def main() -> int:
 
     logging.info(f"Module: {args.module}")
 
-    # delete all objects from S3 folder for current module
-    delete_all_objects_from_s3_folder(args.module)
+    if args.realtime:
+        # Delete all files in the module folder before running
+        delete_all_objects_from_s3_folder(args.module)
 
     juris, module = get_jurisdiction(args.module)
 
