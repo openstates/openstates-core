@@ -360,16 +360,22 @@ def delete_all_objects_from_s3_folder(module: str) -> None:
 
     # First we list all files in folder
     response = s3_client.list_objects_v2(Bucket=bucket_name, Prefix=f"{module}/")
+    if response.get("Contents") or response.get("KeyCount") == 0:
 
-    files_in_folder = response["Contents"]
+        files_in_folder = response["Contents"]
 
-    # We will create Key array to pass to delete_objects function
-    files_to_delete = [{"Key": f["Key"]} for f in files_in_folder]
+        # We will create a key array to pass to delete_objects function
+        files_to_delete = [{"Key": f["Key"]} for f in files_in_folder]
 
-    # This will delete all files in a folder
-    response = s3_client.delete_objects(
-        Bucket=bucket_name, Delete={"Objects": files_to_delete}
-    )
+        logging.info(f"Files to delete: {files_to_delete}")
+
+        # This will delete all files in a folder
+        s3_client.delete_objects(
+            Bucket=bucket_name, Delete={"Objects": files_to_delete}
+        )
+    else:
+        # files or folder (module) does not exist
+        logging.info(f"No files found in {module} folder")
 
 
 def main() -> int:
@@ -399,11 +405,7 @@ def main() -> int:
     logging.info(f"Module: {args.module}")
 
     # delete all objects from S3 folder for current module
-    try:
-        delete_all_objects_from_s3_folder(args.module)
-    except Exception as e:
-        # this is might occur for first run of a jurisdiction, which might not have an existing folder
-        logging.error(f"Error deleting objects from S3: {e}")
+    delete_all_objects_from_s3_folder(args.module)
 
     juris, module = get_jurisdiction(args.module)
 
