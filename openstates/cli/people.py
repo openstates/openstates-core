@@ -747,7 +747,7 @@ def merge(abbr: str, input_dir: str, retirement: str, reset_offices: bool) -> No
     )
     click.secho(f"{len(unmatched)} people were unmatched")
     stats.send_gauge("people_unmatched", len(unmatched), {"jurisdiction": abbr})
-    stats.send_last_run("people_merge_last_run", {"jurisdiction": abbr})
+    stats.send_last_run("people_merge_last_run_secs", {"jurisdiction": abbr})
     stats.close()
 
 
