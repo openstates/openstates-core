@@ -92,7 +92,7 @@ def extract_to_file(
         else:
             text = func(data, version)
     except Exception as e:
-        stats.send_counter("failed_text_extractions_total", 1, {"jurisdiction": version.jurisdiction_id})
+        stats.send_counter("failed_text_extractions_total", 1, {"jurisdiction": version["jurisdiction_id"]})
         click.secho(f"exception processing {version['url']}: {e}", fg="red")
         text = None
 
