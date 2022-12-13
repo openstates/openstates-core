@@ -76,6 +76,7 @@ class Instrumentation(object):
         batch_len = len(self._batch)
         if (force and batch_len > 0) or batch_len > self.batch_size:
             if not self.enabled:
+                self.logger.debug("Stats diasbled. Skipping send")
                 return
             if not self.endpoint:
                 self.logger.debug("No stats endpoint defined. Not emitting stats")
