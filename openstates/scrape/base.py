@@ -9,6 +9,7 @@ from collections import defaultdict, OrderedDict
 import jsonschema
 from jsonschema import Draft3Validator, FormatChecker
 import scrapelib
+from s3fs import S3FileSystem
 
 from .. import utils, settings
 from ..exceptions import ScrapeError, ScrapeValueError, EmptyScrape
@@ -70,13 +71,20 @@ class Scraper(scrapelib.Scraper):
     """Base class for all scrapers"""
 
     def __init__(
-        self, jurisdiction, datadir, *, strict_validation=True, fastmode=False
+        self,
+        jurisdiction,
+        datadir,
+        *,
+        strict_validation=True,
+        fastmode=False,
+        realtime=False,
     ):
         super(Scraper, self).__init__()
 
         # set options
         self.jurisdiction = jurisdiction
         self.datadir = datadir
+        self.realtime = realtime
 
         # scrapelib setup
         self.timeout = settings.SCRAPELIB_TIMEOUT
@@ -123,9 +131,9 @@ class Scraper(scrapelib.Scraper):
         clean_whitespace(obj)
         obj.pre_save(self.jurisdiction.jurisdiction_id)
 
-        filename = "{0}_{1}.json".format(obj._type, obj._id).replace("/", "-")
+        filename = f"{obj._type}_{obj._id}.json".replace("/", "-")
+        self.info(f"save {obj._type} {obj} as {filename}")
 
-        self.info("save %s %s as %s", obj._type, obj, filename)
         self.debug(
             json.dumps(
                 OrderedDict(sorted(obj.as_dict().items())),
@@ -138,8 +146,32 @@ class Scraper(scrapelib.Scraper):
         self.output_names[obj._type].add(filename)
 
         if self.scrape_output_handler is None:
-            with open(os.path.join(self.datadir, filename), "w") as f:
-                json.dump(obj.as_dict(), f, cls=utils.JSONEncoderPlus)
+
+            file_path = os.path.join(self.datadir, filename)
+
+            # Remove redundant prefix
+            try:
+                file_path_ = file_path[file_path.index("_data") + len("_data") + 1:]
+            except Exception:
+                file_path_ = file_path
+
+            if self.realtime:
+
+                s3 = S3FileSystem(anon=False)
+
+                S3_FULL_PATH = settings.S3_REALTIME_BASE + str(file_path_)
+
+                with s3.open(S3_FULL_PATH, "w") as file:
+                    json.dump(
+                        OrderedDict(sorted(obj.as_dict().items())),
+                        file,
+                        cls=utils.JSONEncoderPlus,
+                        separators=(",", ": "),
+                    )
+            else:
+                with open(file_path, "w") as f:
+                    json.dump(obj.as_dict(), f, cls=utils.JSONEncoderPlus)
+
         else:
             self.scrape_output_handler.handle(obj)
 

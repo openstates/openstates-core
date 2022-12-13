@@ -1,6 +1,9 @@
 import os
 from .utils import transformers
 
+# settings for realtime flag
+S3_REALTIME_BASE = os.environ.get("S3_REALTIME_BASE")  # e.g 's3://realtime-bucket'
+
 # scrape settings
 
 SCRAPELIB_RPM = 60

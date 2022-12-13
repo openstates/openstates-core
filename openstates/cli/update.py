@@ -77,7 +77,11 @@ def do_scrape(
 
     # do jurisdiction
     jscraper = JurisdictionScraper(
-        juris, datadir, strict_validation=args.strict, fastmode=args.fastmode
+        juris,
+        datadir,
+        strict_validation=args.strict,
+        fastmode=args.fastmode,
+        realtime=args.realtime,
     )
     report["jurisdiction"] = jscraper.do_scrape()
     stats.send_counter("jurisdiction_scrapes_total", 1, {"jurisdiction": juris.name})
@@ -106,6 +110,7 @@ def do_scrape(
                     datadir,
                     strict_validation=args.strict,
                     fastmode=args.fastmode,
+                    realtime=args.realtime,
                 )
                 partial_report = scraper.do_scrape(**scrape_args, session=session)
                 stats.send_counter(
@@ -124,7 +129,11 @@ def do_scrape(
                 )
         else:
             scraper = ScraperCls(
-                juris, datadir, strict_validation=args.strict, fastmode=args.fastmode
+                juris,
+                datadir,
+                strict_validation=args.strict,
+                fastmode=args.fastmode,
+                realtime=args.realtime,
             )
             report[scraper_name] = scraper.do_scrape(**scrape_args)
             stats.send_counter(
@@ -396,6 +405,9 @@ def parse_args() -> tuple[argparse.Namespace, list[str]]:
         dest="SCRAPELIB_RETRY_WAIT_SECONDS",
     )
 
+    # realtime mode
+    parser.add_argument("--realtime", action="store_true", help="enable realtime mode")
+
     # process args
     return parser.parse_known_args()
 
@@ -424,7 +436,9 @@ def main() -> int:
 
         sys.excepthook = _tb_info
 
+    logging.info(f"Module: {args.module}")
     juris, module = get_jurisdiction(args.module)
+
     overrides = {}
     overrides.update(getattr(module, "settings", {}))
     overrides.update(
