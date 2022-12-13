@@ -59,7 +59,8 @@ class Instrumentation(object):
 
     def _jwt_token(self) -> str:
         """
-        Only generate a token at startup. Much faster.
+        Generate a JWT token from a consistent environment secret
+        Return empty strings when generation isn't possible.
         """
         if not self.enabled:
             return ""
@@ -72,6 +73,8 @@ class Instrumentation(object):
         """
         Needs to be broken out from _process_metric to have a
         "write at shutdown" function (force=True)
+        Even with force=True, we should only write when there is data
+        to write. Otherwise, just skip things.
         """
         batch_len = len(self._batch)
         if (force and batch_len > 0) or batch_len > self.batch_size:
@@ -95,8 +98,6 @@ class Instrumentation(object):
     ) -> None:
         """
         Ensure consistent formatting of data objects to add to batch for sending
-
-        returns: None
         """
         # apply defaults only if not overridden
         for k, v in self.default_tags.items():
@@ -129,12 +130,14 @@ class Instrumentation(object):
     from utils.instrument import Instrumentation
     stats = Instrumentation()
     stats.send_gauge("objects_scraped", 10, [{"jurisdiction": "ca"}])
+    stats.close()
     """
 
     def close(self) -> None:
         """
         "Shut down" our instrumentation connection
         Currently just forces any batched stats out
+        Keep as a wrapper script for later extensibility
         """
         self._send_stats(force=True)
 
@@ -143,7 +146,7 @@ class Instrumentation(object):
         Set a gauge with a current timestamp
         Emulates a "last run time" feature simply
         """
-        self._process_metric(MetricTypes.GaugeType, metric, tags, time.time())
+        self._process_metric(MetricTypes.GaugeType, metric, tags, int(time.time()))
 
     def send_counter(
         self,
@@ -155,6 +158,9 @@ class Instrumentation(object):
         self._process_metric(MetricTypes.CounterType, metric, tags, value, sample_rate)
 
     def send_gauge(self, metric: str, value: float, tags: dict = {}) -> None:
+        """
+        Gauges aren't calculated, so don't require a sample rate
+        """
         self._process_metric(MetricTypes.GaugeType, metric, tags, value)
 
     def send_timing(
@@ -167,4 +173,7 @@ class Instrumentation(object):
         self._process_metric(MetricTypes.TimingType, metric, tags, value)
 
     def send_set(self, metric: str, value: float, tags: dict = {}) -> None:
+        """
+        Sets (naturally) aren't calculated, so don't require a sample rate
+        """
         self._process_metric(MetricTypes.SetType, metric, tags, value)

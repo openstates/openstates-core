@@ -299,9 +299,9 @@ def do_update(
         finish = utils.utcnow()
 
         for scrape_type, details in report.get("scrape", {}).items():  # type: ignore
-            stats.send_gauge(
+            stats.send_timing(
                 "scrape_runtime_secs",
-                # datetime - datetime = timedelta, which has a 'seconds' attribute
+                # datetime - datetime = timedelta object, which has a 'seconds' attribute
                 (finish - details["start"]).seconds,
                 {
                     "jurisdiction": juris.name,
