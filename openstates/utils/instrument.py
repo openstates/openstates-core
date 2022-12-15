@@ -103,6 +103,10 @@ class Instrumentation(object):
         for k, v in self.default_tags.items():
             if k not in tags:
                 tags[k] = v
+
+        """
+        Statsd http proxy specific formatting
+        """
         # list(set()) to remove duplicates
         tagstr = ",".join(list(set([f"{k}={v}" for k, v in tags.items()])))
         data = {
@@ -113,12 +117,14 @@ class Instrumentation(object):
         }
         if sample_rate:
             data["sampleRate"] = sample_rate
+        # End specific formatting
 
         self._batch.append(data)
         """
         we attempt to send (without forcing) after
         adding each stat to make sure we emit
-        batches as quickly as we can
+        batches as quickly as we can, without
+        overloading the write endpoint with tiny writes
         """
         self._send_stats()
 
