@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.12.0 - December 15, 2022
+
+* adds realtime bill yield
+
 ## 6.11.1 - July 11, 2022
 
 * update dependency
