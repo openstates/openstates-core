@@ -84,7 +84,7 @@ class Instrumentation(object):
             if not self.endpoint:
                 self.logger.debug("No stats endpoint defined. Not emitting stats")
                 return
-            self.logger.debug(f"Sending batch: {self._batch}")
+            self.logger.debug(f"\n\nSending stats batch: {self._batch}\n\n")
             self._stat_client.post(f"{self.endpoint}/batch", json=self._batch)
             self._batch = list()
 
