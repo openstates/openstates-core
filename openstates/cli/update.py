@@ -312,6 +312,7 @@ def do_update(
             1,
             {"jurisdiction": juris.name, "scrapers": sorted(",".join(args.actions))},
         )
+        stats.close()
         report["success"] = False
         report["exception"] = exc
         report["traceback"] = traceback.format_exc()
