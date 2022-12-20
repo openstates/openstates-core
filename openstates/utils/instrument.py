@@ -91,8 +91,13 @@ class Instrumentation(object):
                 self.logger.debug("No stats endpoint defined. Not emitting stats")
                 return
             self.logger.debug(f"Sending stats batch: {self._batch}")
-            self._stat_client.post(f"{self.endpoint}/batch", json=self._batch)
-            self._batch = list()
+            try:
+                self._stat_client.post(f"{self.endpoint}/batch", json=self._batch)
+                self._batch = list()
+            except Exception as e:
+                self.logger.warning(
+                    f"Failed to write {len(self._batch)} stats to {self.endpoint} :: {e}"
+                )
 
     def _process_metric(
         self,
