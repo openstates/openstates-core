@@ -434,7 +434,7 @@ def update(
     reindex(ids_to_update)
     transaction.commit()
     transaction.set_autocommit(True)
-    stats.send_last_run("last_text_extract_time_secs", {"jurisdiction": state})
+    stats.send_last_run("last_text_extract_time", {"jurisdiction": state})
     stats.close()
 
 

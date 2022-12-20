@@ -50,7 +50,7 @@ def main(
             if e.code != 0:
                 raise
         stats.send_last_run(
-            "last_scrape_time_secs",
+            "last_scrape_time",
             {
                 "jurisdiction": abbr,
                 "scraper_type": scraper_type,
@@ -63,7 +63,7 @@ def main(
             merge_args.append("--reset-offices")
         people_merge(merge_args)
         stats.send_last_run(
-            "last_people_merge_time_secs",
+            "last_people_merge_time",
             {
                 "jurisdiction": abbr,
             },
@@ -73,7 +73,7 @@ def main(
         merge_args = [abbr, str(output_dir)]
         committees_merge(merge_args)
         stats.send_last_run(
-            "last_committee_merge_time_secs",
+            "last_committee_merge_time",
             {
                 "jurisdiction": abbr,
             },
