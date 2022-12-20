@@ -310,7 +310,7 @@ def do_update(
         stats.send_counter(
             "scraper_failures_total",
             1,
-            {"jurisdiction": juris.name, "scrapers": sorted(",".join(args.actions))},
+            {"jurisdiction": juris.name, "scrapers": ",".join(sorted(args.actions))},
         )
         stats.close()
         report["success"] = False
