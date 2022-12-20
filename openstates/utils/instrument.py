@@ -105,6 +105,8 @@ class Instrumentation(object):
         """
         Ensure consistent formatting of data objects to add to batch for sending
         """
+        if not self.enabled:
+            return
         # apply defaults only if not overridden
         for k, v in self.default_tags.items():
             if k not in tags:
@@ -151,6 +153,8 @@ class Instrumentation(object):
         Currently just forces any batched stats out
         Keep as a wrapper script for later extensibility
         """
+        if not self.enabled:
+            return
         self._send_stats(force=True)
 
     def send_last_run(self, metric: str, tags: dict = {}) -> None:
@@ -158,6 +162,8 @@ class Instrumentation(object):
         Set a gauge with a current timestamp
         Emulates a "last run time" feature simply
         """
+        if not self.enabled:
+            return
         self._process_metric(MetricTypes.GaugeType, metric, tags, int(time.time()))
 
     def send_counter(
@@ -167,12 +173,16 @@ class Instrumentation(object):
         tags: dict = {},
         sample_rate: float = 0,
     ) -> None:
+        if not self.enabled:
+            return
         self._process_metric(MetricTypes.CounterType, metric, tags, value, sample_rate)
 
     def send_gauge(self, metric: str, value: float, tags: dict = {}) -> None:
         """
         Gauges aren't calculated, so don't require a sample rate
         """
+        if not self.enabled:
+            return
         self._process_metric(MetricTypes.GaugeType, metric, tags, value)
 
     def send_timing(
@@ -182,10 +192,14 @@ class Instrumentation(object):
         tags: dict = {},
         sample_rate: float = 0,
     ) -> None:
+        if not self.enabled:
+            return
         self._process_metric(MetricTypes.TimingType, metric, tags, value)
 
     def send_set(self, metric: str, value: float, tags: dict = {}) -> None:
         """
         Sets (naturally) aren't calculated, so don't require a sample rate
         """
+        if not self.enabled:
+            return
         self._process_metric(MetricTypes.SetType, metric, tags, value)
