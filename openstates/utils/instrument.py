@@ -9,8 +9,6 @@ import time
 from typing import List, Dict
 from .. import settings
 
-logging.config.dictConfig(settings.LOGGING)
-
 
 class MetricTypes:
     CounterType = "count"
@@ -29,6 +27,7 @@ class Instrumentation(object):
         Essentially statsd-style metrics, we can rely on the aggregator
         to continually emit these stats so we get useful stats for monitoring/reporting
         """
+        logging.config.dictConfig(settings.LOGGING)
         self.logger = logging.getLogger("openstates.stats")
         # use a literal_eval to properly turn a string into a bool (literal_eval 'cause it's safer than stdlib eval)
         self.enabled = literal_eval(os.environ.get("STATS_ENABLED", "False"))

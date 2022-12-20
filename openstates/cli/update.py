@@ -428,7 +428,7 @@ def main() -> int:
     handler_level = getattr(logging, args.loglevel.upper(), "INFO")
     settings.LOGGING["handlers"]["default"]["level"] = handler_level  # type: ignore
     logging.config.dictConfig(settings.LOGGING)
-    stats.logger.getLogger("openstates.stats")
+    stats.logger.setLevel(handler_level)
 
     # turn debug on
     if args.debug:
