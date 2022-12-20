@@ -124,7 +124,7 @@ def do_scrape(
                 for obj, val in partial_report["objects"].items():
                     report[scraper_name]["objects"][obj] += val
                 stats.send_last_run(
-                    "last_session_scrape_time",
+                    "last_session_scrape_time_secs",
                     {"jurisdiction": juris.name, "session": session},
                 )
         else:
@@ -145,7 +145,7 @@ def do_scrape(
                 },
             )
             stats.send_last_run(
-                "last_session_scrape_time",
+                "last_session_scrape_time_secs",
                 {"jurisdiction": juris.name, "session": session},
             )
 
@@ -289,7 +289,7 @@ def do_update(
         if "scrape" in args.actions:
             report["scrape"] = do_scrape(juris, args, scrapers, active_sessions)
             stats.send_last_run(
-                "last_collection_run_time",
+                "last_collection_run_time_secs",
                 {
                     "jurisdiction": juris.name,
                     "scrape_type": "scrape",
@@ -299,7 +299,7 @@ def do_update(
         if "import" in args.actions and not args.realtime:
             report["import"] = do_import(juris, args)
             stats.send_last_run(
-                "last_collection_run_time",
+                "last_collection_run_time_secs",
                 {
                     "jurisdiction": juris.name,
                     "scrape_type": "import",
@@ -307,6 +307,11 @@ def do_update(
             )
         report["success"] = True
     except Exception as exc:
+        stats.send_counter(
+            "scraper_failures_total",
+            1,
+            {"jurisdiction": juris.name, "scrapers": sorted(",".join(args.actions))},
+        )
         report["success"] = False
         report["exception"] = exc
         report["traceback"] = traceback.format_exc()

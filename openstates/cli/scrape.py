@@ -33,6 +33,9 @@ def main(
 ) -> None:
     output_dir = Path(f"_scrapes/{abbr}/{scraper_type}")
     if not merge_only:
+        stats.send_counter(
+            "scrapes_total", 1, {"jurisdiction": abbr, "scraper_type": scraper_type}
+        )
         args = [
             f"scrapers_next.{abbr}.{scraper_type}",
             "-o",
@@ -46,17 +49,36 @@ def main(
         except SystemExit as e:
             if e.code != 0:
                 raise
-        stats.send_counter("people_scrapes_total", 1, {"jurisdiction": abbr})
+        stats.send_last_run(
+            "last_scrape_time_secs",
+            {
+                "jurisdiction": abbr,
+                "scraper_type": scraper_type,
+            },
+        )
     if not scrape_only and "people" in scraper_type:
+        stats.send_counter("people_merges_total", 1, {"jurisdiction": abbr})
         merge_args = [abbr, str(output_dir)]
         if reset_offices:
             merge_args.append("--reset-offices")
         people_merge(merge_args)
-        stats.send_counter("people_merges_total", 1, {"jurisdiction": abbr})
+        stats.send_last_run(
+            "last_people_merge_time_secs",
+            {
+                "jurisdiction": abbr,
+            },
+        )
     elif not scrape_only and "committees" in scraper_type:
+        stats.send_counter("committee_merges_total", 1, {"jurisdiction": abbr})
         merge_args = [abbr, str(output_dir)]
         committees_merge(merge_args)
-        stats.send_counter("committee_merges_total", 1, {"jurisdiction": abbr})
+        stats.send_last_run(
+            "last_committee_merge_time_secs",
+            {
+                "jurisdiction": abbr,
+            },
+        )
+
     stats.close()
 
 
