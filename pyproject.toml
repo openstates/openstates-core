@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "openstates"
-version = "6.12.0"
+version = "6.13.0"
 description = "core infrastructure for the openstates project"
 authors = ["James Turk <dev@jamesturk.net>"]
 license = "MIT"
@@ -32,6 +32,7 @@ chardet = "^3.0"
 pydantic = "^1.8.2"
 boto3 = "^1.17.79"
 spatula = ">=0.8.9,<1.0"
+PyJWT = "^2.5.0"
 s3fs="^2022.10.0"
 
 [tool.poetry.dev-dependencies]
@@ -41,12 +42,12 @@ pytest-django = "^3.8.0"
 coveralls = "^1.11.1"
 flake8 = "^3.7.9"
 coverage = {extras = ["toml"], version = "^5.0.4"}
-black = "^20.8b1"
 mypy = "^0.900"
 types-pytz = "^2021.1.0"
 types-click = "^7.1.2"
 types-PyYAML = "^5.4.3"
-types-requests = "^2.25.0"
+types-requests = "^2.28.11.5"
+black = "^22.10.0"
 
 [tool.coverage.run]
 omit = [
