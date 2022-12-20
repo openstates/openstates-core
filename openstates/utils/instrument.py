@@ -31,7 +31,7 @@ class Instrumentation(object):
         self.enabled = literal_eval(os.environ.get("STATS_ENABLED", "False"))
         if not self.enabled:
             self.logger.warning("Stat emission is not enabled.")
-            exit(1)
+            return
         token: str = self._jwt_token()
         self._batch: List[Dict] = list()
         self.prefix: str = os.environ.get("STATS_PREFIX", "openstates_")
@@ -57,7 +57,7 @@ class Instrumentation(object):
             self._stat_client.mount("https://", adapter)
         else:
             self._stat_client.mount("http://", adapter)
-        self.logger.info(f"\n\nStats emission to {self.endpoint} configured\n\n")
+        self.logger.warning(f"\n\nStats emission to {self.endpoint} configured:\nBatch size: {self.batch_size}\n\n")
 
     def _jwt_token(self) -> str:
         """
