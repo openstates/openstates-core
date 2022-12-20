@@ -288,9 +288,23 @@ def do_update(
     try:
         if "scrape" in args.actions:
             report["scrape"] = do_scrape(juris, args, scrapers, active_sessions)
+            stats.send_last_run(
+                "last_collection_run_time",
+                {
+                    "jurisdiction": juris.name,
+                    "scrape_type": "scrape",
+                },
+            )
         # we skip import in realtime mode since this happens via the lambda function
         if "import" in args.actions and not args.realtime:
             report["import"] = do_import(juris, args)
+            stats.send_last_run(
+                "last_collection_run_time",
+                {
+                    "jurisdiction": juris.name,
+                    "scrape_type": "import",
+                },
+            )
         report["success"] = True
     except Exception as exc:
         report["success"] = False
@@ -300,12 +314,6 @@ def do_update(
             save_report(report, juris.jurisdiction_id)
         raise
     else:
-        stats.send_last_run(
-            "last_collection_run_time",
-            {
-                "jurisdiction": juris.name,
-            },
-        )
         finish = utils.utcnow()
 
         for scrape_type, details in report.get("scrape", {}).items():  # type: ignore
@@ -420,6 +428,7 @@ def main() -> int:
     handler_level = getattr(logging, args.loglevel.upper(), "INFO")
     settings.LOGGING["handlers"]["default"]["level"] = handler_level  # type: ignore
     logging.config.dictConfig(settings.LOGGING)
+    stats.logger.getLogger("openstates.stats")
 
     # turn debug on
     if args.debug:

@@ -7,6 +7,9 @@ from requests.adapters import HTTPAdapter
 from urllib3.util import Retry
 import time
 from typing import List, Dict
+from .. import settings
+
+logging.config.dictConfig(settings.LOGGING)
 
 
 class MetricTypes:
@@ -26,7 +29,7 @@ class Instrumentation(object):
         Essentially statsd-style metrics, we can rely on the aggregator
         to continually emit these stats so we get useful stats for monitoring/reporting
         """
-        self.logger = logging.getLogger("openstates")
+        self.logger = logging.getLogger("openstates.stats")
         # use a literal_eval to properly turn a string into a bool (literal_eval 'cause it's safer than stdlib eval)
         self.enabled = literal_eval(os.environ.get("STATS_ENABLED", "False"))
         if not self.enabled:
@@ -57,7 +60,9 @@ class Instrumentation(object):
             self._stat_client.mount("https://", adapter)
         else:
             self._stat_client.mount("http://", adapter)
-        self.logger.warning(f"\n\nStats emission to {self.endpoint} configured:\nBatch size: {self.batch_size}\n\n")
+        self.logger.info(
+            f"\n\nStats emission to {self.endpoint} configured:\nBatch size: {self.batch_size}\n\n"
+        )
 
     def _jwt_token(self) -> str:
         """
