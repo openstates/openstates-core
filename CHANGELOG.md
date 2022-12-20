@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.13.0 - December 20, 2022
+
+* emit stat data as scrapers run
+
 ## 6.12.0 - December 15, 2022
 
 * adds realtime bill yield
