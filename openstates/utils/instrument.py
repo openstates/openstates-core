@@ -32,7 +32,7 @@ class Instrumentation(object):
         # use a literal_eval to properly turn a string into a bool (literal_eval 'cause it's safer than stdlib eval)
         self.enabled = literal_eval(os.environ.get("STATS_ENABLED", "False"))
         if not self.enabled:
-            self.logger.warning("Stat emission is not enabled.")
+            self.logger.debug("Stat emission is not enabled.")
             return
         token: str = self._jwt_token()
         self._batch: List[Dict] = list()
@@ -59,8 +59,8 @@ class Instrumentation(object):
             self._stat_client.mount("https://", adapter)
         else:
             self._stat_client.mount("http://", adapter)
-        self.logger.info(
-            f"\n\nStats emission to {self.endpoint} configured:\nBatch size: {self.batch_size}\n\n"
+        self.logger.debug(
+            f"Stats emission to {self.endpoint} configured with batch size: {self.batch_size}"
         )
 
     def _jwt_token(self) -> str:
@@ -90,7 +90,7 @@ class Instrumentation(object):
             if not self.endpoint:
                 self.logger.debug("No stats endpoint defined. Not emitting stats")
                 return
-            self.logger.info(f"\n\nSending stats batch: {self._batch}\n\n")
+            self.logger.debug(f"Sending stats batch: {self._batch}")
             self._stat_client.post(f"{self.endpoint}/batch", json=self._batch)
             self._batch = list()
 
