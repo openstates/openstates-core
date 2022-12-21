@@ -1,13 +1,15 @@
 from ast import literal_eval
+import datetime
+import jwt
 import logging
 import logging.config
 import os
-import jwt
 import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util import Retry
 import time
 from typing import List, Dict
+
 from .. import settings
 
 
@@ -74,7 +76,22 @@ class Instrumentation(object):
         secret = os.environ.get("STATS_JWT_SECRET", "")
         if not secret:
             return ""
-        return jwt.encode({"id": "openstates"}, secret, algorithm="HS256")
+        """
+        We need a pretty long expiration time for runs that take 12+ hours
+        (the default exp *appears* to be somewhere around 30 seconds - 1 minute)
+        So we add the `exp` setting as one day out. Should give us plenty of time.
+        But also give us a bunch of leeway before _actually_ invalidating.
+        """
+        return jwt.encode(
+            {
+                "id": "openstates",
+                "exp": datetime.datetime.now(tz=datetime.timezone.utc)
+                + datetime.timedelta(days=1),
+            },
+            secret,
+            leeway=datetime.timedelta(days=1),
+            algorithm="HS256",
+        )
 
     def _send_stats(self, force: bool = False) -> None:
         """
