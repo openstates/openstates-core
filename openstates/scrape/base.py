@@ -10,6 +10,7 @@ import jsonschema
 from jsonschema import Draft3Validator, FormatChecker
 import scrapelib
 from s3fs import S3FileSystem
+import boto3  # noqa
 
 from .. import utils, settings
 from ..exceptions import ScrapeError, ScrapeValueError, EmptyScrape
