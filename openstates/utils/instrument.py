@@ -1,5 +1,6 @@
 from ast import literal_eval
 import logging
+import logging.config
 import os
 import jwt
 import requests
