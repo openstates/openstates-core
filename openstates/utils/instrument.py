@@ -79,16 +79,14 @@ class Instrumentation(object):
         if not secret:
             return ""
         """
-        We need a pretty long expiration time for runs that take 12+ hours
-        (the default exp *appears* to be somewhere around 30 seconds - 1 minute)
-        So we add the `exp` setting as one day out. Should give us plenty of time.
-        But also give us a bunch of leeway before _actually_ invalidating.
+        We need a pretty long expiration time for runs that take 12+ hours.
+        So we add the `exp` setting as 36 hours out. Should give us plenty of time.
         """
         return jwt.encode(
             {
                 "id": "openstates",
                 "exp": datetime.datetime.now(tz=datetime.timezone.utc)
-                + datetime.timedelta(days=1),
+                + datetime.timedelta(hours=36),
             },
             secret,
             algorithm="HS256",
