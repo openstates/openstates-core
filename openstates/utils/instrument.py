@@ -91,7 +91,6 @@ class Instrumentation(object):
                 + datetime.timedelta(days=1),
             },
             secret,
-            leeway=datetime.timedelta(days=1),
             algorithm="HS256",
         )
 
