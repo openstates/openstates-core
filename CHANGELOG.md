@@ -1,5 +1,13 @@
 # Changelog
 
+## 6.13.1 - December 21, 2022
+
+* fix import bug
+
+## 6.13.0 - December 20, 2022
+
+* emit stat data as scrapers run
+
 ## 6.12.0 - December 15, 2022
 
 * adds realtime bill yield
@@ -31,7 +39,7 @@
 
 ## 6.10.9 - February 16 2022
 
-* test for rylie 
+* test for rylie
 
 ## 6.10.8 - February 10 2022
 
