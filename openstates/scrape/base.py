@@ -93,6 +93,9 @@ class Scraper(scrapelib.Scraper):
         self.retry_wait_seconds = settings.SCRAPELIB_RETRY_WAIT_SECONDS
         self.verify = settings.SCRAPELIB_VERIFY
 
+        # output
+        self.s3_output_path = None
+
         # caching
         if settings.CACHE_DIR:
             self.cache_storage = scrapelib.FileCache(settings.CACHE_DIR)
@@ -121,6 +124,27 @@ class Scraper(scrapelib.Scraper):
         else:
             handler = importlib.import_module(modname)
             self.scrape_output_handler = handler.Handler(self)
+
+    def push_to_queue(self):
+        """Push this output to the sqs for realtime imports."""
+
+        # Create SQS client
+        sqs = boto3.client("sqs")
+
+        queue_url = settings.SQS_QUEUE_URL
+
+        # Send message to SQS queue
+        response = sqs.send_message(
+            QueueUrl=queue_url,
+            DelaySeconds=10,
+            MessageAttributes={
+                "Title": {"DataType": "String", "StringValue": "S3 Output Path"},
+                "Author": {"DataType": "String", "StringValue": "Open States"},
+                "WeeksOn": {"DataType": "Number", "StringValue": "6"},
+            },
+            MessageBody=(f"{self.s3_output_path}"),
+        )
+        self.info(f"Message ID: {response['MessageId']}")
 
     def save_object(self, obj):
         """
@@ -151,7 +175,7 @@ class Scraper(scrapelib.Scraper):
 
             # Remove redundant prefix
             try:
-                file_path_ = file_path[file_path.index("_data") + len("_data") + 1:]
+                file_path_ = file_path[file_path.index("_data") + len("_data") + 1 :]
             except Exception:
                 file_path_ = file_path
 
@@ -160,6 +184,7 @@ class Scraper(scrapelib.Scraper):
                 s3 = S3FileSystem(anon=False)
 
                 S3_FULL_PATH = settings.S3_REALTIME_BASE + str(file_path_)
+                self.s3_output_path = S3_FULL_PATH
 
                 with s3.open(S3_FULL_PATH, "w") as file:
                     json.dump(
@@ -168,6 +193,8 @@ class Scraper(scrapelib.Scraper):
                         cls=utils.JSONEncoderPlus,
                         separators=(",", ": "),
                     )
+
+                self.push_to_queue()
             else:
                 with open(file_path, "w") as f:
                     json.dump(obj.as_dict(), f, cls=utils.JSONEncoderPlus)
