@@ -58,6 +58,7 @@ class Instrumentation(object):
         adapter = HTTPAdapter(max_retries=retry)
         self._stat_client = requests.Session()
         self._stat_client.headers.update(headers)
+        self.logger.debug(f"request object: {self._stat_client.__dict__}")
         # only mount https endpoint if we need it
         if self.endpoint.startswith("https"):
             self._stat_client.mount("https://", adapter)
