@@ -41,13 +41,14 @@ class Instrumentation(object):
         self._batch: List[Dict] = list()
         self.prefix: str = os.environ.get("STATS_PREFIX", "openstates_")
         self.endpoint: str = os.environ.get("STATS_ENDPOINT", "")
+        if self.endpoint.endswith("/"):
+            self.endpoint = self.endpoint.strip("/")
         stats_retries: int = int(os.environ.get("STATS_RETRIES", 3))
         self.batch_size: int = int(os.environ.get("STATS_BATCH_SIZE", 50))
         self.default_tags: Dict = dict()
         headers = {"Content-Type": "application/json"}
         if token:
             headers["X-JWT-Token"] = token
-        self.logger.debug(f"Headers: {headers}")
         retry = Retry(
             total=stats_retries,
             read=stats_retries,
@@ -58,7 +59,6 @@ class Instrumentation(object):
         adapter = HTTPAdapter(max_retries=retry)
         self._stat_client = requests.Session()
         self._stat_client.headers.update(headers)
-        self.logger.debug(f"request object: {self._stat_client.__dict__}")
         # only mount https endpoint if we need it
         if self.endpoint.startswith("https"):
             self._stat_client.mount("https://", adapter)
