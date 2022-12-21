@@ -47,6 +47,7 @@ class Instrumentation(object):
         headers = {"Content-Type": "application/json"}
         if token:
             headers["X-JWT-Token"] = token
+        self.logger.debug(f"Headers: {headers}")
         retry = Retry(
             total=stats_retries,
             read=stats_retries,
