@@ -95,7 +95,7 @@ class Scraper(scrapelib.Scraper):
         self.verify = settings.SCRAPELIB_VERIFY
 
         # output
-        self.s3_output_path = None
+        self.output_file_path = None
 
         # caching
         if settings.CACHE_DIR:
@@ -134,6 +134,14 @@ class Scraper(scrapelib.Scraper):
 
         queue_url = settings.SQS_QUEUE_URL
 
+        # TODO: add jurisdiction to the message
+        message_body = json.dumps(
+            {
+                "file_path": self.output_file_path,
+                "bucket": settings.S3_REALTIME_BASE,
+            }
+        )
+
         # Send message to SQS queue
         response = sqs.send_message(
             QueueUrl=queue_url,
@@ -143,7 +151,7 @@ class Scraper(scrapelib.Scraper):
                 "Author": {"DataType": "String", "StringValue": "Open States"},
                 "WeeksOn": {"DataType": "Number", "StringValue": "6"},
             },
-            MessageBody=(f"{self.s3_output_path}"),
+            MessageBody=message_body,
         )
         self.info(f"Message ID: {response['MessageId']}")
 
@@ -182,10 +190,11 @@ class Scraper(scrapelib.Scraper):
 
             if self.realtime:
 
+                self.output_file_path = str(file_path_)
+
                 s3 = S3FileSystem(anon=False)
 
-                S3_FULL_PATH = settings.S3_REALTIME_BASE + str(file_path_)
-                self.s3_output_path = S3_FULL_PATH
+                S3_FULL_PATH = settings.S3_REALTIME_BASE + self.output_file_path
 
                 with s3.open(S3_FULL_PATH, "w") as file:
                     json.dump(
