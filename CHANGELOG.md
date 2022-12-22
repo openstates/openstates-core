@@ -1,5 +1,10 @@
 # Changelog
 
+## 6.13.2 - December 22, 2022
+
+* Actually set timeout on JWT tokens
+* clean up instrumentation endpoint
+
 ## 6.13.1 - December 21, 2022
 
 * fix import bug

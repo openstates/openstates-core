@@ -1,13 +1,15 @@
 from ast import literal_eval
+import datetime
+import jwt
 import logging
 import logging.config
 import os
-import jwt
 import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util import Retry
 import time
 from typing import List, Dict
+
 from .. import settings
 
 
@@ -39,6 +41,8 @@ class Instrumentation(object):
         self._batch: List[Dict] = list()
         self.prefix: str = os.environ.get("STATS_PREFIX", "openstates_")
         self.endpoint: str = os.environ.get("STATS_ENDPOINT", "")
+        if self.endpoint.endswith("/"):
+            self.endpoint = self.endpoint.strip("/")
         stats_retries: int = int(os.environ.get("STATS_RETRIES", 3))
         self.batch_size: int = int(os.environ.get("STATS_BATCH_SIZE", 50))
         self.default_tags: Dict = dict()
@@ -74,7 +78,19 @@ class Instrumentation(object):
         secret = os.environ.get("STATS_JWT_SECRET", "")
         if not secret:
             return ""
-        return jwt.encode({"id": "openstates"}, secret, algorithm="HS256")
+        """
+        We need a pretty long expiration time for runs that take 12+ hours.
+        So we add the `exp` setting as 36 hours out. Should give us plenty of time.
+        """
+        return jwt.encode(
+            {
+                "id": "openstates",
+                "exp": datetime.datetime.now(tz=datetime.timezone.utc)
+                + datetime.timedelta(hours=36),
+            },
+            secret,
+            algorithm="HS256",
+        )
 
     def _send_stats(self, force: bool = False) -> None:
         """

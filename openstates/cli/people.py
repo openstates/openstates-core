@@ -735,8 +735,12 @@ def merge(abbr: str, input_dir: str, retirement: str, reset_offices: bool) -> No
     ):
         existing_people.append(Person.load_yaml(filename))
 
-    stats.send_gauge("new_people_discovered", len(existing_people), {"jurisdiction": abbr})
-    stats.send_gauge("existing_people_discovered", len(new_people), {"jurisdiction": abbr})
+    stats.send_gauge(
+        "new_people_discovered", len(existing_people), {"jurisdiction": abbr}
+    )
+    stats.send_gauge(
+        "existing_people_discovered", len(new_people), {"jurisdiction": abbr}
+    )
 
     click.secho(
         f"analyzing {len(existing_people)} existing people and {len(new_people)} scraped"
