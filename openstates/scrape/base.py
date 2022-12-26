@@ -139,6 +139,7 @@ class Scraper(scrapelib.Scraper):
             {
                 "file_path": self.output_file_path,
                 "bucket": settings.S3_REALTIME_BASE,
+                "jurisdiction_id": self.jurisdiction.jurisdiction_id,
             }
         )
 
