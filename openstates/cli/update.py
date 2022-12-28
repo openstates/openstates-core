@@ -188,7 +188,6 @@ def do_import(juris: State, args: argparse.Namespace) -> dict[str, typing.Any]:
     seen_sessions = set()
     seen_sessions.update(bill_importer.get_seen_sessions())
     seen_sessions.update(vote_event_importer.get_seen_sessions())
-    # seen_sessions.update(event_importer.get_seen_sessions())
     for session in seen_sessions:
         generate_session_report(session)
 
