@@ -133,12 +133,12 @@ class Scraper(scrapelib.Scraper):
         sqs = boto3.client("sqs")
 
         queue_url = settings.SQS_QUEUE_URL
+        bucket = settings.S3_BUCKET.replace("s3://", "").rstrip("/")
 
-        # TODO: add jurisdiction to the message
         message_body = json.dumps(
             {
                 "file_path": self.output_file_path,
-                "bucket": settings.S3_REALTIME_BASE,
+                "bucket": bucket,
                 "jurisdiction_id": self.jurisdiction.jurisdiction_id,
             }
         )
@@ -195,7 +195,7 @@ class Scraper(scrapelib.Scraper):
 
                 s3 = S3FileSystem(anon=False)
 
-                S3_FULL_PATH = f"{settings.S3_REALTIME_BASE}{self.output_file_path}"
+                S3_FULL_PATH = f"{settings.S3_REALTIME_BASE}/{self.output_file_path}"
 
                 with s3.open(S3_FULL_PATH, "w") as file:
                     json.dump(
