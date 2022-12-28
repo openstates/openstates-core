@@ -19,7 +19,9 @@ from openstates.fulltext import (
     CONVERSION_FUNCTIONS,
     Metadata,
 )
+from ..utils.instrument import Instrumentation
 
+stats = Instrumentation()
 # disable SSL validation and ignore warnings
 scraper = scrapelib.Scraper(verify=False)
 scraper.user_agent = "Mozilla"
@@ -57,8 +59,8 @@ def download(
 
     # FL "dh key too small" error due to bad Diffie Hellman key on the server side
     ciphers_list_addition = None
-    if abbr == 'fl':
-        ciphers_list_addition = 'HIGH:!DH:!aNULL'
+    if abbr == "fl":
+        ciphers_list_addition = "HIGH:!DH:!aNULL"
 
     if not os.path.exists(filename):
         try:
@@ -66,9 +68,11 @@ def download(
         except OSError:
             pass
         try:
-            _, resp = scraper.urlretrieve(version["url"], filename, ciphers_list_addition=ciphers_list_addition)
+            _, resp = scraper.urlretrieve(
+                version["url"], filename, ciphers_list_addition=ciphers_list_addition
+            )
         except Exception:
-            click.secho("could not fetch " + version["url"], fg="yellow")
+            click.secho(f"could not fetch {version['url']}", fg="yellow")
             return None, None
 
         return filename, resp.content
@@ -88,6 +92,11 @@ def extract_to_file(
         else:
             text = func(data, version)
     except Exception as e:
+        stats.send_counter(
+            "failed_text_extractions_total",
+            1,
+            {"jurisdiction": version["jurisdiction_id"]},
+        )
         click.secho(f"exception processing {version['url']}: {e}", fg="red")
         text = None
 
@@ -125,8 +134,8 @@ def update_bill(bill: typing.Any) -> int:
     # FL "dh key too small" error due to bad Diffie Hellman key on the server side
     jurisdiction = bill.legislative_session.jurisdiction.name
     ciphers_list_addition = None
-    if jurisdiction == 'Florida':
-        ciphers_list_addition = 'HIGH:!DH:!aNULL'
+    if jurisdiction == "Florida":
+        ciphers_list_addition = "HIGH:!DH:!aNULL"
 
     # iterate through versions until we extract some good text
     is_error = True
@@ -153,7 +162,12 @@ def update_bill(bill: typing.Any) -> int:
         if func == DoNotDownload:
             continue
         try:
-            data = scraper.request('GET', link.url, allow_redirects=True, ciphers_list_addition=ciphers_list_addition).content
+            data = scraper.request(
+                "GET",
+                link.url,
+                allow_redirects=True,
+                ciphers_list_addition=ciphers_list_addition,
+            ).content
         except Exception:
             continue
         try:
@@ -349,6 +363,8 @@ def update(
     # print status within checkpoints
     status_num = checkpoint / 5
 
+    stats.send_counter("text_extraction_runs_total", 1, {"jurisdiction": state})
+
     if state == "all":
         all_bills = Bill.objects.all()
     elif session:
@@ -390,6 +406,9 @@ def update(
         print(
             f"{state}: {len(all_bills)} bills, {len(missing_search)} without search results"
         )
+    stats.send_gauge(
+        "text_extraction_missing_vectors", len(missing_search), {"jurisdiction": state}
+    )
 
     if n:
         missing_search = missing_search[: int(n)]
@@ -412,10 +431,15 @@ def update(
             transaction.commit()
             ids_to_update = []
 
+    stats.send_gauge(
+        "text_extraction_updates", len(ids_to_update), {"jurisdiction": state}
+    )
     # be sure to reindex final set
     reindex(ids_to_update)
     transaction.commit()
     transaction.set_autocommit(True)
+    stats.send_last_run("last_text_extract_time", {"jurisdiction": state})
+    stats.close()
 
 
 def reindex(ids_to_update: list[int]) -> None:
