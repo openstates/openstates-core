@@ -136,18 +136,31 @@ def do_scrape(
                 realtime=args.realtime,
             )
             report[scraper_name] = scraper.do_scrape(**scrape_args)
-            stats.send_counter(
-                "session_scrapes_total",
-                1,
-                {
-                    "jurisdiction": juris.name,
-                    "session": scrape_args["session"],
-                },
-            )
-            stats.send_last_run(
-                "last_session_scrape_time",
-                {"jurisdiction": juris.name, "session": session},
-            )
+            session = scrape_args.get("session", "")
+            if session:
+                stats.send_counter(
+                    "session_scrapes_total",
+                    1,
+                    {"jurisdiction": juris.name, "session": session},
+                )
+                stats.send_last_run(
+                    "last_session_scrape_time",
+                    {"jurisdiction": juris.name, "session": session},
+                )
+            else:
+                stats.send_counter(
+                    "non_session_scrapes_total",
+                    1,
+                    {
+                        "jurisdiction": juris.name,
+                    },
+                )
+                stats.send_last_run(
+                    "last_non_session_scrape_time",
+                    {
+                        "jurisdiction": juris.name,
+                    },
+                )
 
     return report
 
