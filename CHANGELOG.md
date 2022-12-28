@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.13.3 - December 28, 2022
+
+* session key bug fix
+
 ## 6.13.2 - December 22, 2022
 
 * Actually set timeout on JWT tokens
