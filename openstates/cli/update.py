@@ -136,7 +136,7 @@ def do_scrape(
                 realtime=args.realtime,
             )
             report[scraper_name] = scraper.do_scrape(**scrape_args)
-            session = scrape_args.get("session", None)
+            session = scrape_args.get("session", "")
             if session:
                 stats.send_counter(
                     "session_scrapes_total",
