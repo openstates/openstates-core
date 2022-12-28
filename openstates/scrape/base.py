@@ -133,7 +133,7 @@ class Scraper(scrapelib.Scraper):
         sqs = boto3.client("sqs")
 
         queue_url = settings.SQS_QUEUE_URL
-        bucket = settings.S3_BUCKET.replace("s3://", "").rstrip("/")
+        bucket = settings.S3_REALTIME_BASE.replace("s3://", "")
 
         message_body = json.dumps(
             {
