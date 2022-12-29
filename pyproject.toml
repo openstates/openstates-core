@@ -16,7 +16,7 @@ os-us-to-yaml = 'openstates.cli.convert_us:main'
 os-scrape = 'openstates.cli.scrape:main'
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = ">=3.9,<4.0"
 psycopg2-binary = "^2.8.4"
 dj_database_url = "^0.5.0"
 Django = "3.2.14"
