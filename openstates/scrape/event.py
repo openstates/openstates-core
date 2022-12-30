@@ -97,6 +97,7 @@ class EventAgendaItem(dict, AssociatedLinkMixin):
             ret[entity_type + "_id"] = id
 
         self["related_entities"].append(ret)
+        self.info("added related entity id: {}".format(ret["id"]))
 
 
 class Event(BaseModel, SourceMixin, AssociatedLinkMixin, LinkMixin):
