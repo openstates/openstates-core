@@ -3,10 +3,11 @@ from ..exceptions import ScrapeValueError
 from ..utils import _make_pseudo_id
 from .base import BaseModel, SourceMixin, AssociatedLinkMixin, LinkMixin
 from .schemas.event import schema
+import uuid
 
 
 def calculate_window(*, base_day=None, days_before=30, days_after=90):
-    """ given details on a window, returns start & end dates for windowing purposes """
+    """given details on a window, returns start & end dates for windowing purposes"""
     if not base_day:
         base_day = date.today()
     start = base_day - timedelta(days=days_before)
@@ -70,9 +71,18 @@ class EventAgendaItem(dict, AssociatedLinkMixin):
             classification=classification,
         )
 
+    @staticmethod
+    def is_valid_uuid(val):
+        try:
+            uuid.UUID(str(val))
+            return True
+        except ValueError:
+            return False
+
     def add_entity(self, name, entity_type, *, id, note):
         ret = {"name": name, "entity_type": entity_type, "note": note}
-        if id:
+
+        if self.is_valid_uuid(id):
             ret["id"] = id
         elif entity_type:
             if entity_type in ("organization", "person"):
