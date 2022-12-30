@@ -15,6 +15,14 @@ def calculate_window(*, base_day=None, days_before=30, days_after=90):
     return start, end
 
 
+def is_valid_uuid(val):
+    try:
+        uuid.UUID(str(val))
+        return True
+    except ValueError:
+        return False
+
+
 class EventAgendaItem(dict, AssociatedLinkMixin):
     event = None
 
@@ -71,18 +79,10 @@ class EventAgendaItem(dict, AssociatedLinkMixin):
             classification=classification,
         )
 
-    @staticmethod
-    def is_valid_uuid(val):
-        try:
-            uuid.UUID(str(val))
-            return True
-        except ValueError:
-            return False
-
     def add_entity(self, name, entity_type, *, id, note):
         ret = {"name": name, "entity_type": entity_type, "note": note}
 
-        if self.is_valid_uuid(id):
+        if is_valid_uuid(id):
             ret["id"] = id
         elif entity_type:
             if entity_type in ("organization", "person"):
@@ -149,7 +149,7 @@ class Event(BaseModel, SourceMixin, AssociatedLinkMixin, LinkMixin):
 
     def add_participant(self, name, type, *, id=None, note="participant"):
         p = {"name": name, "entity_type": type, "note": note}
-        if id:
+        if is_valid_uuid(id):
             p["id"] = id
         elif type:
             id = _make_pseudo_id(name=name)
