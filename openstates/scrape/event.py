@@ -1,9 +1,9 @@
 from datetime import date, timedelta
-from ..exceptions import ScrapeValueError
-from ..utils import _make_pseudo_id
+
 from .base import BaseModel, SourceMixin, AssociatedLinkMixin, LinkMixin
 from .schemas.event import schema
-import uuid
+from ..exceptions import ScrapeValueError
+from ..utils import _make_pseudo_id, is_valid_uuid
 
 
 def calculate_window(*, base_day=None, days_before=30, days_after=90):
@@ -13,17 +13,6 @@ def calculate_window(*, base_day=None, days_before=30, days_after=90):
     start = base_day - timedelta(days=days_before)
     end = base_day + timedelta(days=days_after)
     return start, end
-
-
-def is_valid_uuid(val):
-    """
-    Check if a string is a valid UUID.
-    """
-    try:
-        uuid.UUID(str(val))
-        return True
-    except ValueError:
-        return False
 
 
 class EventAgendaItem(dict, AssociatedLinkMixin):
