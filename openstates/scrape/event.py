@@ -16,6 +16,9 @@ def calculate_window(*, base_day=None, days_before=30, days_after=90):
 
 
 def is_valid_uuid(val):
+    """
+    Check if a string is a valid UUID.
+    """
     try:
         uuid.UUID(str(val))
         return True
