@@ -72,7 +72,6 @@ class EventAgendaItem(dict, AssociatedLinkMixin):
 
     def add_entity(self, name, entity_type, *, id, note):
         ret = {"name": name, "entity_type": entity_type, "note": note}
-
         if id:
             ret["id"] = id
         elif entity_type:
