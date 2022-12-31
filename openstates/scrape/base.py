@@ -150,7 +150,6 @@ class Scraper(scrapelib.Scraper):
             MessageAttributes={
                 "Title": {"DataType": "String", "StringValue": "S3 Output Path"},
                 "Author": {"DataType": "String", "StringValue": "Open States"},
-                "WeeksOn": {"DataType": "Number", "StringValue": "6"},
             },
             MessageBody=message_body,
         )

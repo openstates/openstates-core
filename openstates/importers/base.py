@@ -494,9 +494,6 @@ class BaseImporter:
             try:
                 Subtype.objects.bulk_create(subobjects)
             except Exception as e:
-                self.error("Error bulk creating related objects: {}".format(e))
-                self.error(f"Related objects: {subobjects}")
-                self.error(f"Subtype: {Subtype}")
                 raise DataImportError(
                     "{} while importing {} as {}".format(e, subobjects, Subtype)
                 )
