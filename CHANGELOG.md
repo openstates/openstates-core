@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.13.4 - January 3, 2023
+
+* properly handle bad UUIDs in event objects
+
 ## 6.13.3 - December 28, 2022
 
 * session key bug fix
