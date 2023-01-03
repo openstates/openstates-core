@@ -1,9 +1,26 @@
-import typing
-import os
-import json
-import pytz
 import datetime
+import json
+import os
+import pytz
 import subprocess
+import typing
+import uuid
+
+
+def is_valid_uuid(val: str) -> bool:
+    """
+    Check if a string is a valid UUID.
+
+    Parameters
+    ----------
+    val : str
+        The string to be checked.
+    """
+    try:
+        uuid.UUID(str(val))
+        return True
+    except ValueError:
+        return False
 
 
 def utcnow() -> datetime.datetime:
@@ -11,7 +28,7 @@ def utcnow() -> datetime.datetime:
 
 
 def _make_pseudo_id(**kwargs: str) -> str:
-    """ pseudo ids are just JSON """
+    """pseudo ids are just JSON"""
     # ensure keys are sorted so that these are deterministic
     return "~" + json.dumps(kwargs, sort_keys=True)
 
