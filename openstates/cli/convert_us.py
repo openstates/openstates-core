@@ -83,14 +83,16 @@ def current_to_person(current: dict[str, typing.Any]) -> tuple[str, Person]:
         "official_full", f"{current['name']['first']} {current['name']['last']}"
     )
     bioguide = current["id"]["bioguide"]
+    gender = current["bio"]["gender"] if current["bio"]["gender"] else ""
+    birthday = current["bio"]["birthday"] if current["bio"]["birthday"] else ""
     p = Person(
         id=make_person_id(bioguide),
         name=full_name,
         given_name=current["name"]["first"],
         family_name=current["name"]["last"],
         middle_name=current["name"].get("middle", ""),
-        gender=current["bio"]["gender"],
-        birth_date=current["bio"]["birthday"],
+        gender=gender,
+        birth_date=birthday,
         roles=[],
     )
     for key, value in current["id"].items():

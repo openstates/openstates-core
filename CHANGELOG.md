@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.13.5 - January 4, 2023
+
+* check for congress bio info existing before assigning values
+
 ## 6.13.4 - January 3, 2023
 
 * properly handle bad UUIDs in event objects
