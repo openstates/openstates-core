@@ -1,8 +1,5 @@
 # Changelog
 
-## 6.13.7 - January 9, 2023
-
-* update us district numbers
 
 ## 6.13.5 - January 4, 2023
 
