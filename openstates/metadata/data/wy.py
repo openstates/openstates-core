@@ -31,7 +31,7 @@ WY = State(
         num_seats=30,
         title="Senator",
         districts=simple_numbered_districts(
-            "ocd-division/country:us/state:wy", "upper", 30
+            "ocd-division/country:us/state:wy", "upper", 31
         ),
     ),
 )
