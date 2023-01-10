@@ -68,6 +68,7 @@ MD = State(
             District("29C", "lower", "ocd-division/country:us/state:md/sldl:29c", 1),
             District("30A", "lower", "ocd-division/country:us/state:md/sldl:30a", 2),
             District("30B", "lower", "ocd-division/country:us/state:md/sldl:30b", 1),
+            District("31", "lower", "ocd-division/country:us/state:md/sldl:31", 3),
             District("31A", "lower", "ocd-division/country:us/state:md/sldl:31a", 1),
             District("31B", "lower", "ocd-division/country:us/state:md/sldl:31b", 2),
             District("32", "lower", "ocd-division/country:us/state:md/sldl:32", 3),
