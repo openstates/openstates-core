@@ -655,6 +655,12 @@ VT = State(
             #     1,
             # ),
             District(
+                "Windham-9",
+                "lower",
+                "ocd-division/country:us/state:vt/sldl:windham-9",
+                1,
+            ),
+            District(
                 "Windham-3",
                 "lower",
                 "ocd-division/country:us/state:vt/sldl:windham-3",
