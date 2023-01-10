@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.13.8 - January 9, 2023
+
+* update us legacy districts
+
 ## 6.13.7 - January 9, 2023
 
 * update us district numbers
