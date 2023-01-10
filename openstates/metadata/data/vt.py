@@ -64,17 +64,23 @@ VT = State(
                 1,
             ),
             District(
-                "Bennington-2-1",
+                "Bennington-2",
                 "lower",
-                "ocd-division/country:us/state:vt/sldl:bennington-2-1",
+                "ocd-division/country:us/state:vt/sldl:bennington-2",
                 2,
             ),
-            District(
-                "Bennington-2-2",
-                "lower",
-                "ocd-division/country:us/state:vt/sldl:bennington-2-2",
-                2,
-            ),
+            # District(
+            #     "Bennington-2-1",
+            #     "lower",
+            #    "ocd-division/country:us/state:vt/sldl:bennington-2-1",
+            #     2,
+            # ),
+            # District(
+            #     "Bennington-2-2",
+            #     "lower",
+            #     "ocd-division/country:us/state:vt/sldl:bennington-2-2",
+            #     2,
+            # ),
             District(
                 "Bennington-3",
                 "lower",
