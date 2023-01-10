@@ -94,6 +94,12 @@ VT = State(
                 2,
             ),
             District(
+                "Bennington-5",
+                "lower",
+                "ocd-division/country:us/state:vt/sldl:bennington-5",
+                2,
+            ),
+            District(
                 "Bennington-Rutland",
                 "lower",
                 "ocd-division/country:us/state:vt/sldl:bennington-rutland",
