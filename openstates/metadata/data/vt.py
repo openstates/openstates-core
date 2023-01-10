@@ -154,6 +154,12 @@ VT = State(
                 1,
             ),
             District(
+                "Windsor-Addison",
+                "lower",
+                "ocd-division/country:us/state:vt/sldl:windsor-addison",
+                1,
+            ),
+            District(
                 "Washington-Orange",
                 "lower",
                 "ocd-division/country:us/state:vt/sldl:washington-orange",
