@@ -30,24 +30,8 @@ WV = State(
         organization_id="ocd-organization/660bc141-f4cb-4d98-b334-b12b637776ba",
         num_seats=34,
         title="Senator",
-        districts=[
-            District("1", "upper", "ocd-division/country:us/state:wv/sldu:1", 2),
-            District("2", "upper", "ocd-division/country:us/state:wv/sldu:2", 2),
-            District("3", "upper", "ocd-division/country:us/state:wv/sldu:3", 2),
-            District("4", "upper", "ocd-division/country:us/state:wv/sldu:4", 2),
-            District("5", "upper", "ocd-division/country:us/state:wv/sldu:5", 2),
-            District("6", "upper", "ocd-division/country:us/state:wv/sldu:6", 2),
-            District("7", "upper", "ocd-division/country:us/state:wv/sldu:7", 2),
-            District("8", "upper", "ocd-division/country:us/state:wv/sldu:8", 2),
-            District("9", "upper", "ocd-division/country:us/state:wv/sldu:9", 2),
-            District("10", "upper", "ocd-division/country:us/state:wv/sldu:10", 2),
-            District("11", "upper", "ocd-division/country:us/state:wv/sldu:11", 2),
-            District("12", "upper", "ocd-division/country:us/state:wv/sldu:12", 2),
-            District("13", "upper", "ocd-division/country:us/state:wv/sldu:13", 2),
-            District("14", "upper", "ocd-division/country:us/state:wv/sldu:14", 2),
-            District("15", "upper", "ocd-division/country:us/state:wv/sldu:15", 2),
-            District("16", "upper", "ocd-division/country:us/state:wv/sldu:16", 2),
-            District("17", "upper", "ocd-division/country:us/state:wv/sldu:17", 2),
-        ],
+        districts=simple_numbered_districts(
+            "ocd-division/country:us/state:wv", "upper", 17
+        ),
     ),
 )
