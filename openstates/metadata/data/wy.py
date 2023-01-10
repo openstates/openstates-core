@@ -21,7 +21,7 @@ WY = State(
         num_seats=60,
         title="Representative",
         districts=simple_numbered_districts(
-            "ocd-division/country:us/state:wy", "lower", 61
+            "ocd-division/country:us/state:wy", "lower", 62
         ),
     ),
     upper=Chamber(
