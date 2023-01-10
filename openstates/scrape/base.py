@@ -10,6 +10,7 @@ import jsonschema
 from jsonschema import Draft3Validator, FormatChecker
 import scrapelib
 from s3fs import S3FileSystem
+import boto3  # noqa
 
 from .. import utils, settings
 from ..exceptions import ScrapeError, ScrapeValueError, EmptyScrape
@@ -93,6 +94,9 @@ class Scraper(scrapelib.Scraper):
         self.retry_wait_seconds = settings.SCRAPELIB_RETRY_WAIT_SECONDS
         self.verify = settings.SCRAPELIB_VERIFY
 
+        # output
+        self.output_file_path = None
+
         # caching
         if settings.CACHE_DIR:
             self.cache_storage = scrapelib.FileCache(settings.CACHE_DIR)
@@ -121,6 +125,35 @@ class Scraper(scrapelib.Scraper):
         else:
             handler = importlib.import_module(modname)
             self.scrape_output_handler = handler.Handler(self)
+
+    def push_to_queue(self):
+        """Push this output to the sqs for realtime imports."""
+
+        # Create SQS client
+        sqs = boto3.client("sqs")
+
+        queue_url = settings.SQS_QUEUE_URL
+        bucket = settings.S3_REALTIME_BASE.replace("s3://", "")
+
+        message_body = json.dumps(
+            {
+                "file_path": self.output_file_path,
+                "bucket": bucket,
+                "jurisdiction_id": self.jurisdiction.jurisdiction_id,
+            }
+        )
+
+        # Send message to SQS queue
+        response = sqs.send_message(
+            QueueUrl=queue_url,
+            DelaySeconds=10,
+            MessageAttributes={
+                "Title": {"DataType": "String", "StringValue": "S3 Output Path"},
+                "Author": {"DataType": "String", "StringValue": "Open States"},
+            },
+            MessageBody=message_body,
+        )
+        self.info(f"Message ID: {response['MessageId']}")
 
     def save_object(self, obj):
         """
@@ -151,15 +184,17 @@ class Scraper(scrapelib.Scraper):
 
             # Remove redundant prefix
             try:
-                file_path_ = file_path[file_path.index("_data") + len("_data") + 1:]
+                file_path_ = file_path[file_path.index("_data") + len("_data") + 1 :]
             except Exception:
                 file_path_ = file_path
 
             if self.realtime:
 
+                self.output_file_path = str(file_path_)
+
                 s3 = S3FileSystem(anon=False)
 
-                S3_FULL_PATH = settings.S3_REALTIME_BASE + str(file_path_)
+                S3_FULL_PATH = f"{settings.S3_REALTIME_BASE}/{self.output_file_path}"
 
                 with s3.open(S3_FULL_PATH, "w") as file:
                     json.dump(
@@ -168,6 +203,8 @@ class Scraper(scrapelib.Scraper):
                         cls=utils.JSONEncoderPlus,
                         separators=(",", ": "),
                     )
+
+                self.push_to_queue()
             else:
                 with open(file_path, "w") as f:
                     json.dump(obj.as_dict(), f, cls=utils.JSONEncoderPlus)

@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.13.9 - January 10, 2023
+
+* add SQS for batching
+
 ## 6.13.8 - January 9, 2023
 
 * update us legacy districts

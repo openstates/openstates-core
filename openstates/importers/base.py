@@ -298,7 +298,9 @@ class BaseImporter:
         for json_id, data in self._prepare_imports(data_items):
             obj_id, what = self.import_item(data)
             if not obj_id or not what:
-                self.logger.warning(f"Skipped {data} because it did not have an associated ID or type")
+                self.logger.warning(
+                    f"Skipped {data} because it did not have an associated ID or type"
+                )
                 continue
             self.json_to_db_id[json_id] = obj_id
             record["records"][what].append(obj_id)
