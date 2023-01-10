@@ -18,7 +18,7 @@ VT = State(
         chamber_type="lower",
         name="House",
         organization_id="ocd-organization/1bba67ba-1a0c-4edc-a9de-32c2e5c13c6e",
-        num_seats=150,
+        num_seats=148,
         title="Representative",
         districts=[
             District(
@@ -123,12 +123,12 @@ VT = State(
                 "ocd-division/country:us/state:vt/sldl:caledonia-3",
                 2,
             ),
-            District(
-                "Caledonia-4",
-                "lower",
-                "ocd-division/country:us/state:vt/sldl:caledonia-4",
-                2,
-            ),
+            # District(
+            #     "Caledonia-4",
+            #     "lower",
+            #     "ocd-division/country:us/state:vt/sldl:caledonia-4",
+            #     2,
+            # ),
             District(
                 "Caledonia-Washington",
                 "lower",
@@ -145,7 +145,7 @@ VT = State(
                 "Chittenden-10",
                 "lower",
                 "ocd-division/country:us/state:vt/sldl:chittenden-10",
-                2,
+                1,
             ),
             District(
                 "Chittenden-4",
@@ -158,6 +158,18 @@ VT = State(
                 "lower",
                 "ocd-division/country:us/state:vt/sldl:chittenden-5",
                 1,
+            ),
+            District(
+                "Chittenden-13",
+                "lower",
+                "ocd-division/country:us/state:vt/sldl:chittenden-13",
+                2,
+            ),
+            District(
+                "Chittenden-14",
+                "lower",
+                "ocd-division/country:us/state:vt/sldl:chittenden-14",
+                2,
             ),
             District(
                 "Chittenden-15",
@@ -196,6 +208,54 @@ VT = State(
                 2,
             ),
             District(
+                "Chittenden-8",
+                "lower",
+                "ocd-division/country:us/state:vt/sldl:chittenden-8",
+                1,
+            ),
+            District(
+                "Chittenden-9",
+                "lower",
+                "ocd-division/country:us/state:vt/sldl:chittenden-9",
+                1,
+            ),
+            District(
+                "Chittenden-12",
+                "lower",
+                "ocd-division/country:us/state:vt/sldl:chittenden-12",
+                1,
+            ),
+            District(
+                "Chittenden-11",
+                "lower",
+                "ocd-division/country:us/state:vt/sldl:chittenden-11",
+                1,
+            ),
+            District(
+                "Chittenden-18",
+                "lower",
+                "ocd-division/country:us/state:vt/sldl:chittenden-18",
+                2,
+            ),
+            District(
+                "Chittenden-24",
+                "lower",
+                "ocd-division/country:us/state:vt/sldl:chittenden-24",
+                1,
+            ),
+            District(
+                "Chittenden-23",
+                "lower",
+                "ocd-division/country:us/state:vt/sldl:chittenden-23",
+                2,
+            ),
+            District(
+                "Chittenden-22",
+                "lower",
+                "ocd-division/country:us/state:vt/sldl:chittenden-22",
+                2,
+            ),
+            District(
                 "Chittenden-21",
                 "lower",
                 "ocd-division/country:us/state:vt/sldl:chittenden-21",
@@ -231,30 +291,30 @@ VT = State(
                 "ocd-division/country:us/state:vt/sldl:chittenden-3",
                 2,
             ),
-            District(
-                "Chittenden-4-1",
-                "lower",
-                "ocd-division/country:us/state:vt/sldl:chittenden-4-1",
-                1,
-            ),
-            District(
-                "Chittenden-4-2",
-                "lower",
-                "ocd-division/country:us/state:vt/sldl:chittenden-4-2",
-                1,
-            ),
-            District(
-                "Chittenden-5-1",
-                "lower",
-                "ocd-division/country:us/state:vt/sldl:chittenden-5-1",
-                1,
-            ),
-            District(
-                "Chittenden-5-2",
-                "lower",
-                "ocd-division/country:us/state:vt/sldl:chittenden-5-2",
-                1,
-            ),
+            # District(
+            #     "Chittenden-4-1",
+            #     "lower",
+            #     "ocd-division/country:us/state:vt/sldl:chittenden-4-1",
+            #     1,
+            # ),
+            # District(
+            #     "Chittenden-4-2",
+            #     "lower",
+            #     "ocd-division/country:us/state:vt/sldl:chittenden-4-2",
+            #     1,
+            # ),
+            # District(
+            #     "Chittenden-5-1",
+            #     "lower",
+            #     "ocd-division/country:us/state:vt/sldl:chittenden-5-1",
+            #     1,
+            # ),
+            # District(
+            #     "Chittenden-5-2",
+            #     "lower",
+            #     "ocd-division/country:us/state:vt/sldl:chittenden-5-2",
+            #     1,
+            # ),
             District(
                 "Chittenden-6",
                 "lower",
@@ -296,13 +356,13 @@ VT = State(
             #     "lower",
             #    "ocd-division/country:us/state:vt/sldl:chittenden-6-6",
             #    1,
-            #),
-            #District(
+            # ),
+            # District(
             #    "Chittenden-6-7",
             #    "lower",
             #    "ocd-division/country:us/state:vt/sldl:chittenden-6-7",
             #    2,
-            #),
+            # ),
             District(
                 "Chittenden-7",
                 "lower",
@@ -333,52 +393,58 @@ VT = State(
             #     "ocd-division/country:us/state:vt/sldl:chittenden-7-4",
             #     1,
             # ),
-            District(
-                "Chittenden-8-1",
-                "lower",
-                "ocd-division/country:us/state:vt/sldl:chittenden-8-1",
-                2,
-            ),
-            District(
-                "Chittenden-8-2",
-                "lower",
-                "ocd-division/country:us/state:vt/sldl:chittenden-8-2",
-                2,
-            ),
-            District(
-                "Chittenden-8-3",
-                "lower",
-                "ocd-division/country:us/state:vt/sldl:chittenden-8-3",
-                1,
-            ),
-            District(
-                "Chittenden-9-1",
-                "lower",
-                "ocd-division/country:us/state:vt/sldl:chittenden-9-1",
-                2,
-            ),
-            District(
-                "Chittenden-9-2",
-                "lower",
-                "ocd-division/country:us/state:vt/sldl:chittenden-9-2",
-                2,
-            ),
+            # District(
+            #     "Chittenden-8-1",
+            #     "lower",
+            #     "ocd-division/country:us/state:vt/sldl:chittenden-8-1",
+            #     2,
+            # ),
+            # District(
+            #     "Chittenden-8-2",
+            #     "lower",
+            #     "ocd-division/country:us/state:vt/sldl:chittenden-8-2",
+            #     2,
+            # ),
+            # District(
+            #     "Chittenden-8-3",
+            #     "lower",
+            #     "ocd-division/country:us/state:vt/sldl:chittenden-8-3",
+            #     1,
+            # ),
+            # District(
+            #     "Chittenden-9-1",
+            #     "lower",
+            #     "ocd-division/country:us/state:vt/sldl:chittenden-9-1",
+            #     2,
+            # ),
+            # District(
+            #     "Chittenden-9-2",
+            #     "lower",
+            #     "ocd-division/country:us/state:vt/sldl:chittenden-9-2",
+            #     2,
+            # ),
             District(
                 "Essex-Caledonia",
                 "lower",
                 "ocd-division/country:us/state:vt/sldl:essex-caledonia",
                 1,
             ),
-            District(
-                "Essex-Caledonia-Orleans",
-                "lower",
-                "ocd-division/country:us/state:vt/sldl:essex-caledonia-orleans",
-                1,
-            ),
+            # District(
+            #     "Essex-Caledonia-Orleans",
+            #     "lower",
+            #     "ocd-division/country:us/state:vt/sldl:essex-caledonia-orleans",
+            #     1,
+            # ),
             District(
                 "Essex-Orleans",
                 "lower",
                 "ocd-division/country:us/state:vt/sldl:essex-orleans",
+                1,
+            ),
+            District(
+                "Franklin-8",
+                "lower",
+                "ocd-division/country:us/state:vt/sldl:franklin-8",
                 1,
             ),
             District(
@@ -394,17 +460,23 @@ VT = State(
                 1,
             ),
             District(
-                "Franklin-3-1",
+                "Franklin-3",
                 "lower",
-                "ocd-division/country:us/state:vt/sldl:franklin-3-1",
-                2,
-            ),
-            District(
-                "Franklin-3-2",
-                "lower",
-                "ocd-division/country:us/state:vt/sldl:franklin-3-2",
+                "ocd-division/country:us/state:vt/sldl:franklin-3",
                 1,
             ),
+            # District(
+            #     "Franklin-3-1",
+            #     "lower",
+            #     "ocd-division/country:us/state:vt/sldl:franklin-3-1",
+            #     2,
+            # ),
+            # District(
+            #     "Franklin-3-2",
+            #     "lower",
+            #     "ocd-division/country:us/state:vt/sldl:franklin-3-2",
+            #     1,
+            # ),
             District(
                 "Franklin-4",
                 "lower",
@@ -460,7 +532,7 @@ VT = State(
                 2,
             ),
             District(
-                "Orange-1", "lower", "ocd-division/country:us/state:vt/sldl:orange-1", 2
+                "Orange-1", "lower", "ocd-division/country:us/state:vt/sldl:orange-1", 1
             ),
             District(
                 "Orange-2", "lower", "ocd-division/country:us/state:vt/sldl:orange-2", 1
@@ -484,13 +556,13 @@ VT = State(
                 "Orleans-1",
                 "lower",
                 "ocd-division/country:us/state:vt/sldl:orleans-1",
-                2,
+                1,
             ),
             District(
                 "Orleans-2",
                 "lower",
                 "ocd-division/country:us/state:vt/sldl:orleans-2",
-                2,
+                1,
             ),
             District(
                 "Orleans-3",
@@ -504,17 +576,17 @@ VT = State(
                 "ocd-division/country:us/state:vt/sldl:orleans-4",
                 1,
             ),
-            District(
-                "Orleans-Caledonia",
-                "lower",
-                "ocd-division/country:us/state:vt/sldl:orleans-caledonia",
-                2,
-            ),
+            # District(
+            #     "Orleans-Caledonia",
+            #     "lower",
+            #     "ocd-division/country:us/state:vt/sldl:orleans-caledonia",
+            #     2,
+            # ),
             District(
                 "Orleans-Lamoille",
                 "lower",
                 "ocd-division/country:us/state:vt/sldl:orleans-lamoille",
-                1,
+                2,
             ),
             District(
                 "Rutland-1",
@@ -532,7 +604,7 @@ VT = State(
                 "Rutland-3",
                 "lower",
                 "ocd-division/country:us/state:vt/sldl:rutland-3",
-                2,
+                1,
             ),
             District(
                 "Rutland-4",
@@ -546,35 +618,35 @@ VT = State(
                 "ocd-division/country:us/state:vt/sldl:rutland-5",
                 1,
             ),
-            District(
-                "Rutland-5-1",
-                "lower",
-                "ocd-division/country:us/state:vt/sldl:rutland-5-1",
-                1,
-            ),
-            District(
-                "Rutland-5-2",
-                "lower",
-                "ocd-division/country:us/state:vt/sldl:rutland-5-2",
-                1,
-            ),
-            District(
-                "Rutland-5-3",
-                "lower",
-                "ocd-division/country:us/state:vt/sldl:rutland-5-3",
-                1,
-            ),
-            District(
-                "Rutland-5-4",
-                "lower",
-                "ocd-division/country:us/state:vt/sldl:rutland-5-4",
-                1,
-            ),
+            # District(
+            #     "Rutland-5-1",
+            #     "lower",
+            #     "ocd-division/country:us/state:vt/sldl:rutland-5-1",
+            #     1,
+            # ),
+            # District(
+            #     "Rutland-5-2",
+            #     "lower",
+            #     "ocd-division/country:us/state:vt/sldl:rutland-5-2",
+            #     1,
+            # ),
+            # District(
+            #     "Rutland-5-3",
+            #     "lower",
+            #     "ocd-division/country:us/state:vt/sldl:rutland-5-3",
+            #     1,
+            # ),
+            # District(
+            #     "Rutland-5-4",
+            #     "lower",
+            #     "ocd-division/country:us/state:vt/sldl:rutland-5-4",
+            #     1,
+            # ),
             District(
                 "Rutland-6",
                 "lower",
                 "ocd-division/country:us/state:vt/sldl:rutland-6",
-                2,
+                1,
             ),
             District(
                 "Rutland-Bennington",
@@ -594,18 +666,18 @@ VT = State(
                 "ocd-division/country:us/state:vt/sldl:windsor-windham",
                 1,
             ),
-            District(
-                "Rutland-Windsor-1",
-                "lower",
-                "ocd-division/country:us/state:vt/sldl:rutland-windsor-1",
-                1,
-            ),
-            District(
-                "Rutland-Windsor-2",
-                "lower",
-                "ocd-division/country:us/state:vt/sldl:rutland-windsor-2",
-                1,
-            ),
+            # District(
+            #     "Rutland-Windsor-1",
+            #     "lower",
+            #     "ocd-division/country:us/state:vt/sldl:rutland-windsor-1",
+            #     1,
+            # ),
+            # District(
+            #     "Rutland-Windsor-2",
+            #     "lower",
+            #     "ocd-division/country:us/state:vt/sldl:rutland-windsor-2",
+            #     1,
+            # ),
             District(
                 "Washington-1",
                 "lower",
@@ -642,12 +714,12 @@ VT = State(
                 "ocd-division/country:us/state:vt/sldl:washington-6",
                 1,
             ),
-            District(
-                "Washington-7",
-                "lower",
-                "ocd-division/country:us/state:vt/sldl:washington-7",
-                2,
-            ),
+            # District(
+            #     "Washington-7",
+            #     "lower",
+            #     "ocd-division/country:us/state:vt/sldl:washington-7",
+            #     2,
+            # ),
             District(
                 "Washington-Chittenden",
                 "lower",
@@ -726,12 +798,12 @@ VT = State(
                 "ocd-division/country:us/state:vt/sldl:windham-6",
                 1,
             ),
-            District(
-                "Windham-Bennington",
-                "lower",
-                "ocd-division/country:us/state:vt/sldl:windham-bennington",
-                1,
-            ),
+            # District(
+            #     "Windham-Bennington",
+            #     "lower",
+            #     "ocd-division/country:us/state:vt/sldl:windham-bennington",
+            #     1,
+            # ),
             District(
                 "Windham-Bennington-Windsor",
                 "lower",
@@ -756,36 +828,36 @@ VT = State(
                 "ocd-division/country:us/state:vt/sldl:windsor-3",
                 2,
             ),
-            District(
-                "Windsor-3-1",
-                "lower",
-                "ocd-division/country:us/state:vt/sldl:windsor-3-1",
-                1,
-            ),
-            District(
-                "Windsor-3-2",
-                "lower",
-                "ocd-division/country:us/state:vt/sldl:windsor-3-2",
-                2,
-            ),
+            # District(
+            #     "Windsor-3-1",
+            #     "lower",
+            #     "ocd-division/country:us/state:vt/sldl:windsor-3-1",
+            #     1,
+            # ),
+            # District(
+            #     "Windsor-3-2",
+            #     "lower",
+            #     "ocd-division/country:us/state:vt/sldl:windsor-3-2",
+            #     2,
+            # ),
             District(
                 "Windsor-4",
                 "lower",
                 "ocd-division/country:us/state:vt/sldl:windsor-4",
                 1,
             ),
-            District(
-                "Windsor-4-1",
-                "lower",
-                "ocd-division/country:us/state:vt/sldl:windsor-4-1",
-                1,
-            ),
-            District(
-                "Windsor-4-2",
-                "lower",
-                "ocd-division/country:us/state:vt/sldl:windsor-4-2",
-                2,
-            ),
+            # District(
+            #     "Windsor-4-1",
+            #     "lower",
+            #     "ocd-division/country:us/state:vt/sldl:windsor-4-1",
+            #     1,
+            # ),
+            # District(
+            #     "Windsor-4-2",
+            #     "lower",
+            #     "ocd-division/country:us/state:vt/sldl:windsor-4-2",
+            #     2,
+            # ),
             District(
                 "Windsor-5",
                 "lower",
@@ -796,7 +868,7 @@ VT = State(
                 "Windsor-6",
                 "lower",
                 "ocd-division/country:us/state:vt/sldl:windsor-6",
-                1,
+                2,
             ),
             District(
                 "Rutland-11",
@@ -840,12 +912,12 @@ VT = State(
                 "ocd-division/country:us/state:vt/sldl:windsor-orange-2",
                 2,
             ),
-            District(
-                "Windsor-Rutland",
-                "lower",
-                "ocd-division/country:us/state:vt/sldl:windsor-rutland",
-                1,
-            ),
+            # District(
+            #     "Windsor-Rutland",
+            #     "lower",
+            #     "ocd-division/country:us/state:vt/sldl:windsor-rutland",
+            #     1,
+            # ),
         ],
     ),
     upper=Chamber(
