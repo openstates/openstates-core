@@ -82,11 +82,15 @@ legacy_districts = {
     "us": [
         District("IL-20", "lower", division_id=None),
         District("MA-10", "lower", division_id=None),
+        District("MI-14", "lower", division_id=None),
         District("MO-9", "lower", division_id=None),
         District("NJ-13", "lower", division_id=None),
         District("NY-29", "lower", division_id=None),
+        District("NY-27", "lower", division_id=None),
+        District("OH-16", "lower", division_id=None),
         District("OH-17", "lower", division_id=None),
         District("OH-18", "lower", division_id=None),
         District("OK-6", "lower", division_id=None),
+        District("PA-18", "lower", division_id=None),
     ],
 }
