@@ -31,7 +31,10 @@ WV = State(
         num_seats=34,
         title="Senator",
         districts=simple_numbered_districts(
-            "ocd-division/country:us/state:wv", "upper", 17, num_seats=2,
+            "ocd-division/country:us/state:wv",
+            "upper",
+            17,
+            num_seats=2,
         ),
     ),
 )
