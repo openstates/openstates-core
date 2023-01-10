@@ -334,6 +334,12 @@ MA = State(
                 1,
             ),
             District(
+                "19th Worcester",
+                "lower",
+                "ocd-division/country:us/state:ma/sldl:19th_worcester",
+                1,
+            ),
+            District(
                 "18th Worcester",
                 "lower",
                 "ocd-division/country:us/state:ma/sldl:18th_worcester",
