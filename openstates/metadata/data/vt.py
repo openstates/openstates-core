@@ -946,19 +946,43 @@ VT = State(
                 "Caledonia",
                 "upper",
                 "ocd-division/country:us/state:vt/sldu:caledonia",
-                2,
+                1,
             ),
             District(
-                "Chittenden",
+                "Chittenden Central",
                 "upper",
-                "ocd-division/country:us/state:vt/sldu:chittenden",
-                6,
+                "ocd-division/country:us/state:vt/sldu:chittenden-central",
+                3,
             ),
             District(
-                "Essex-Orleans",
+                "Chittenden North",
                 "upper",
-                "ocd-division/country:us/state:vt/sldu:essex-orleans",
-                2,
+                "ocd-division/country:us/state:vt/sldu:chittenden-north",
+                1,
+            ),
+            District(
+                "Chittenden Southeast",
+                "upper",
+                "ocd-division/country:us/state:vt/sldu:chittenden-southeast",
+                3,
+            ),
+            # District(
+            #     "Chittenden",
+            #     "upper",
+            #     "ocd-division/country:us/state:vt/sldu:chittenden",
+            #     6,
+            # ),
+            # District(
+            #     "Essex-Orleans",
+            #     "upper",
+            #     "ocd-division/country:us/state:vt/sldu:essex-orleans",
+            #     2,
+            # ),
+            District(
+                "Orleans", "upper", "ocd-division/country:us/state:vt/sldu:orleans", 1
+            ),
+            District(
+                "Essex", "upper", "ocd-division/country:us/state:vt/sldu:essex", 1
             ),
             District(
                 "Franklin", "upper", "ocd-division/country:us/state:vt/sldu:franklin", 2
