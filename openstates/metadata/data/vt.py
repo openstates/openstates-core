@@ -400,6 +400,12 @@ VT = State(
                 2,
             ),
             District(
+                "Orleans-3",
+                "lower",
+                "ocd-division/country:us/state:vt/sldl:orleans-3",
+                1,
+            ),
+            District(
                 "Orleans-Caledonia",
                 "lower",
                 "ocd-division/country:us/state:vt/sldl:orleans-caledonia",
