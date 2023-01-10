@@ -631,23 +631,29 @@ VT = State(
                 1,
             ),
             District(
-                "Windham-2-1",
+                "Windham-2",
                 "lower",
-                "ocd-division/country:us/state:vt/sldl:windham-2-1",
+                "ocd-division/country:us/state:vt/sldl:windham-2",
                 1,
             ),
-            District(
-                "Windham-2-2",
-                "lower",
-                "ocd-division/country:us/state:vt/sldl:windham-2-2",
-                1,
-            ),
-            District(
-                "Windham-2-3",
-                "lower",
-                "ocd-division/country:us/state:vt/sldl:windham-2-3",
-                1,
-            ),
+            # District(
+            #     "Windham-2-1",
+            #     "lower",
+            #     "ocd-division/country:us/state:vt/sldl:windham-2-1",
+            #     1,
+            # ),
+            # District(
+            #     "Windham-2-2",
+            #     "lower",
+            #     "ocd-division/country:us/state:vt/sldl:windham-2-2",
+            #     1,
+            # ),
+            # District(
+            #     "Windham-2-3",
+            #     "lower",
+            #     "ocd-division/country:us/state:vt/sldl:windham-2-3",
+            #     1,
+            # ),
             District(
                 "Windham-3",
                 "lower",
