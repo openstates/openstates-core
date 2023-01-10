@@ -200,8 +200,8 @@ def test_get_expected_districts():
 
     expected = get_expected_districts({}, "md")
     print(expected)
-    assert expected["lower"]["3A"] == 2
-    assert expected["lower"]["3B"] == 1
+    assert expected["lower"]["43A"] == 2
+    assert expected["lower"]["43B"] == 1
 
 
 def test_expected_districts_vacancies():
