@@ -32,6 +32,7 @@ ND = State(
             District("7", "lower", "ocd-division/country:us/state:nd/sldl:7", 1),
             District("8", "lower", "ocd-division/country:us/state:nd/sldl:8", 1),
             District("9", "lower", "ocd-division/country:us/state:nd/sldl:9", 1),
+            District("9A", "lower", "ocd-division/country:us/state:nd/sldl:9a", 1),
             District("9B", "lower", "ocd-division/country:us/state:nd/sldl:9b", 1),
             District("10", "lower", "ocd-division/country:us/state:nd/sldl:10", 1),
             District("11", "lower", "ocd-division/country:us/state:nd/sldl:11", 1),
