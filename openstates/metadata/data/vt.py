@@ -196,6 +196,12 @@ VT = State(
                 2,
             ),
             District(
+                "Chittenden-21",
+                "lower",
+                "ocd-division/country:us/state:vt/sldl:chittenden-21",
+                2,
+            ),
+            District(
                 "Chittenden-20",
                 "lower",
                 "ocd-division/country:us/state:vt/sldl:chittenden-20",
