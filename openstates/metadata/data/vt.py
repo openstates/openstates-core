@@ -283,7 +283,7 @@ VT = State(
                 "Franklin-1",
                 "lower",
                 "ocd-division/country:us/state:vt/sldl:franklin-1",
-                2,
+                1,
             ),
             District(
                 "Franklin-2",
