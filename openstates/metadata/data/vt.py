@@ -18,7 +18,7 @@ VT = State(
         chamber_type="lower",
         name="House",
         organization_id="ocd-organization/1bba67ba-1a0c-4edc-a9de-32c2e5c13c6e",
-        num_seats=148,
+        num_seats=150,
         title="Representative",
         districts=[
             District(
@@ -139,6 +139,12 @@ VT = State(
                 "Caledonia-Essex",
                 "lower",
                 "ocd-division/country:us/state:vt/sldl:caledonia-essex",
+                2,
+            ),
+            District(
+                "Chittenden-19",
+                "lower",
+                "ocd-division/country:us/state:vt/sldl:chittenden-19",
                 2,
             ),
             District(
