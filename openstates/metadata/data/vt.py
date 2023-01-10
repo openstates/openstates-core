@@ -286,6 +286,12 @@ VT = State(
                 1,
             ),
             District(
+                "Essex-Orleans",
+                "lower",
+                "ocd-division/country:us/state:vt/sldl:essex-orleans",
+                1,
+            ),
+            District(
                 "Franklin-1",
                 "lower",
                 "ocd-division/country:us/state:vt/sldl:franklin-1",
