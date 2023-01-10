@@ -142,6 +142,12 @@ VT = State(
                 1,
             ),
             District(
+                "Chittenden-5",
+                "lower",
+                "ocd-division/country:us/state:vt/sldl:chittenden-5",
+                1,
+            ),
+            District(
                 "Washington-Orange",
                 "lower",
                 "ocd-division/country:us/state:vt/sldl:washington-orange",
