@@ -21,7 +21,7 @@ WV = State(
         num_seats=100,
         title="Delegate",
         districts=simple_numbered_districts(
-            "ocd-division/country:us/state:wv", "lower", 67
+            "ocd-division/country:us/state:wv", "lower", 100
         ),
     ),
     upper=Chamber(
