@@ -733,6 +733,12 @@ VT = State(
                 1,
             ),
             District(
+                "Rutland-7",
+                "lower",
+                "ocd-division/country:us/state:vt/sldl:rutland-7",
+                1,
+            ),
+            District(
                 "Rutland-8",
                 "lower",
                 "ocd-division/country:us/state:vt/sldl:rutland-8",
