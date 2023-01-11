@@ -18,20 +18,20 @@ WY = State(
         chamber_type="lower",
         name="House",
         organization_id="ocd-organization/683ca907-05d4-4c84-8d7b-f04f73e295ad",
-        num_seats=60,
+        num_seats=62,
         title="Representative",
         districts=simple_numbered_districts(
-            "ocd-division/country:us/state:wy", "lower", 60
+            "ocd-division/country:us/state:wy", "lower", 62
         ),
     ),
     upper=Chamber(
         chamber_type="upper",
         name="Senate",
         organization_id="ocd-organization/6e0e804b-be2d-408b-9dc4-d8e3739915bd",
-        num_seats=30,
+        num_seats=31,
         title="Senator",
         districts=simple_numbered_districts(
-            "ocd-division/country:us/state:wy", "upper", 30
+            "ocd-division/country:us/state:wy", "upper", 31
         ),
     ),
 )

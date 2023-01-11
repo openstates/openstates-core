@@ -104,7 +104,7 @@ def us_house_districts() -> typing.List[District]:
         if num_districts == 1:
             districts.append(
                 District(
-                    abbr + "-AL",
+                    f"{abbr}-AL",
                     "lower",
                     f"ocd-division/country:us/state:{abbr.lower()}/cd:at-large",
                 )
