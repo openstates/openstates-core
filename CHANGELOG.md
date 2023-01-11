@@ -1,8 +1,12 @@
 # Changelog
+## 6.14.0 - January 11, 2023
+
+* update to metadata for MA, MD, ND, NH, US, VT, WV, WY
 
 ## 6.13.9 - January 10, 2023
 
 * add SQS for batching
+
 
 ## 6.13.8 - January 9, 2023
 
