@@ -940,6 +940,12 @@ MA = State(
                 1,
             ),
             District(
+                "18th Essex",
+                "lower",
+                "ocd-division/country:us/state:ma/sldl:18th_essex",
+                1,
+            ),
+            District(
                 "9th Essex",
                 "lower",
                 "ocd-division/country:us/state:ma/sldl:9th_essex",
