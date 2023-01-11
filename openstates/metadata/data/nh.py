@@ -217,7 +217,13 @@ NH = State(
                 "Cheshire 16",
                 "lower",
                 "ocd-division/country:us/state:nh/sldl:cheshire_16",
-                2,
+                1,
+            ),
+            District(
+                "Cheshire 17",
+                "lower",
+                "ocd-division/country:us/state:nh/sldl:cheshire_17",
+                1,
             ),
             District(
                 "Coos 1", "lower", "ocd-division/country:us/state:nh/sldl:coos_1", 2
