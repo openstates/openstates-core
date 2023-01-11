@@ -18,7 +18,7 @@ MA = State(
         chamber_type="lower",
         name="House",
         organization_id="ocd-organization/ca38ad9c-c3d5-4c4f-bc2f-d885218ed802",
-        num_seats=160,
+        num_seats=162,
         title="Representative",
         districts=[
             District(
