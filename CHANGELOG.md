@@ -1,4 +1,8 @@
 # Changelog
+## 6.14.2 - January 24, 2023
+
+* add nomination as valid event type
+
 ## 6.14.1 - January 20, 2023
 
 * update to metadata for MD
