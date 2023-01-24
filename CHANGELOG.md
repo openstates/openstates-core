@@ -1,4 +1,8 @@
 # Changelog
+## 6.14.1 - January 20, 2023
+
+* update to metadata for MD
+
 ## 6.14.0 - January 11, 2023
 
 * update to metadata for MA, MD, ND, NH, US, VT, WV, WY
