@@ -1,5 +1,5 @@
 # Changelog
-## 6.14.2.1 - January 25, 2023
+## 6.14.3 - January 25, 2023
 
 * revert nomination event type
 
