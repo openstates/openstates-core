@@ -78,7 +78,7 @@ class EventAgendaItem(dict, AssociatedLinkMixin):
         elif entity_type:
             if entity_type in ("organization", "person"):
                 id = _make_pseudo_id(name=name)
-            elif entity_type in ("bill", "vote_event", "nomination"):
+            elif entity_type in ("bill", "vote_event"):
                 id = _make_pseudo_id(identifier=name)
             else:
                 raise ScrapeValueError(
