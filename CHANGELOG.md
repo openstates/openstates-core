@@ -1,4 +1,8 @@
 # Changelog
+## 6.14.2.1 - January 25, 2023
+
+* revert nomination event type
+
 ## 6.14.2 - January 24, 2023
 
 * add nomination as valid event type
