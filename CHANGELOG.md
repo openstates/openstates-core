@@ -1,4 +1,8 @@
 # Changelog
+## 6.14.6 - January 25, 2023
+
+* skip bad tags
+
 ## 6.14.3.1 - January 25, 2023
 
 * revert nomination event type
