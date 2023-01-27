@@ -682,12 +682,6 @@ MA = State(
                 1,
             ),
             District(
-                "4th Berkshire",
-                "lower",
-                "ocd-division/country:us/state:ma/sldl:4th_berkshire",
-                1,
-            ),
-            District(
                 "4th Bristol",
                 "lower",
                 "ocd-division/country:us/state:ma/sldl:4th_bristol",
@@ -1021,6 +1015,12 @@ MA = State(
                 1,
             ),
             District(
+                "First Plymouth and Norfolk",
+                "upper",
+                "ocd-division/country:us/state:ma/sldu:5th_middlesex",
+                1,
+            ),
+            District(
                 "First Bristol and Plymouth",
                 "upper",
                 "ocd-division/country:us/state:ma/sldu:1st_bristol_and_plymouth",
@@ -1051,27 +1051,9 @@ MA = State(
                 1,
             ),
             District(
-                "First Middlesex and Norfolk",
-                "upper",
-                "ocd-division/country:us/state:ma/sldu:1st_middlesex_and_norfolk",
-                1,
-            ),
-            District(
-                "First Plymouth and Bristol",
-                "upper",
-                "ocd-division/country:us/state:ma/sldu:1st_plymouth_and_bristol",
-                1,
-            ),
-            District(
                 "First Suffolk",
                 "upper",
                 "ocd-division/country:us/state:ma/sldu:1st_suffolk",
-                1,
-            ),
-            District(
-                "First Suffolk and Middlesex",
-                "upper",
-                "ocd-division/country:us/state:ma/sldu:1st_suffolk_and_middlesex",
                 1,
             ),
             District(
@@ -1108,18 +1090,6 @@ MA = State(
                 1,
             ),
             District(
-                "Norfolk, Bristol and Middlesex",
-                "upper",
-                "ocd-division/country:us/state:ma/sldu:norfolk_bristol_and_middlesex",
-                1,
-            ),
-            District(
-                "Norfolk, Bristol and Plymouth",
-                "upper",
-                "ocd-division/country:us/state:ma/sldu:norfolk_bristol_and_plymouth",
-                1,
-            ),
-            District(
                 "Norfolk and Plymouth",
                 "upper",
                 "ocd-division/country:us/state:ma/sldu:norfolk_and_plymouth",
@@ -1135,12 +1105,6 @@ MA = State(
                 "Plymouth and Barnstable",
                 "upper",
                 "ocd-division/country:us/state:ma/sldu:plymouth_and_barnstable",
-                1,
-            ),
-            District(
-                "Plymouth and Norfolk",
-                "upper",
-                "ocd-division/country:us/state:ma/sldu:plymouth_and_norfolk",
                 1,
             ),
             District(
@@ -1162,27 +1126,9 @@ MA = State(
                 1,
             ),
             District(
-                "Second Hampden and Hampshire",
-                "upper",
-                "ocd-division/country:us/state:ma/sldu:2nd_hampden_and_hampshire",
-                1,
-            ),
-            District(
                 "Second Middlesex",
                 "upper",
                 "ocd-division/country:us/state:ma/sldu:2nd_middlesex",
-                1,
-            ),
-            District(
-                "Second Middlesex and Norfolk",
-                "upper",
-                "ocd-division/country:us/state:ma/sldu:2nd_middlesex_and_norfolk",
-                1,
-            ),
-            District(
-                "Second Plymouth and Bristol",
-                "upper",
-                "ocd-division/country:us/state:ma/sldu:2nd_plymouth_and_bristol",
                 1,
             ),
             District(
@@ -1192,9 +1138,9 @@ MA = State(
                 1,
             ),
             District(
-                "Second Suffolk and Middlesex",
+                "Second Plymouth and Norfolk",
                 "upper",
-                "ocd-division/country:us/state:ma/sldu:2nd_suffolk_and_middlesex",
+                "ocd-division/country:us/state:ma/sldu:2nd_suffolk",
                 1,
             ),
             District(
@@ -1216,25 +1162,73 @@ MA = State(
                 1,
             ),
             District(
+                "Third Bristol and Plymouth",
+                "upper",
+                "ocd-division/country:us/state:ma/sldu:3rd_middlesex",
+                1,
+            ),
+            District(
+                "Third Suffolk",
+                "upper",
+                "ocd-division/country:us/state:ma/sldu:3rd_middlesex",
+                1,
+            ),
+            District(
                 "Worcester and Middlesex",
                 "upper",
                 "ocd-division/country:us/state:ma/sldu:worcester_and_middlesex",
                 1,
             ),
             District(
-                "Worcester and Norfolk",
-                "upper",
-                "ocd-division/country:us/state:ma/sldu:worcester_and_norfolk",
-                1,
-            ),
-            District(
-                "Worcester, Hampden, Hampshire and Middlesex",
-                "upper",
-                "ocd-division/country:us/state:ma/sldu:worcester_hampden_hampshire_and_middlesex",
-                1,
-            ),
-            District(
                 "Hampshire, Franklin and Worcester",
+                "upper",
+                "ocd-division/country:us/state:ma/sldu:hampshire_franklin_and_worcester",
+                1,
+            ),
+            District(
+                "Berkshire, Hampden, Franklin and Hampshire",
+                "upper",
+                "ocd-division/country:us/state:ma/sldu:hampshire_franklin_and_worcester",
+                1,
+            ),
+            District(
+                "Middlesex and Norfolk",
+                "upper",
+                "ocd-division/country:us/state:ma/sldu:hampshire_franklin_and_worcester",
+                1,
+            ),
+            District(
+                "Norfolk and Middlesex",
+                "upper",
+                "ocd-division/country:us/state:ma/sldu:hampshire_franklin_and_worcester",
+                1,
+            ),
+            District(
+                "Norfolk, Plymouth and Bristol",
+                "upper",
+                "ocd-division/country:us/state:ma/sldu:hampshire_franklin_and_worcester",
+                1,
+            ),
+            District(
+                "Norfolk, Worcester and Middlesex",
+                "upper",
+                "ocd-division/country:us/state:ma/sldu:hampshire_franklin_and_worcester",
+                1,
+            ),
+            District(
+                "Suffolk and Middlesex",
+                "upper",
+                "ocd-division/country:us/state:ma/sldu:hampshire_franklin_and_worcester",
+                1,
+            ),
+            District(
+                "Worcester and Hampden",
+                "upper",
+                "ocd-division/country:us/state:ma/sldu:hampshire_franklin_and_worcester",
+                1,
+            ),
+            District(
+                "Worcester and Hampshire",
                 "upper",
                 "ocd-division/country:us/state:ma/sldu:hampshire_franklin_and_worcester",
                 1,
