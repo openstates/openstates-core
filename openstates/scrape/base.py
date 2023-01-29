@@ -1,16 +1,15 @@
-import os
+import boto3  # noqa
+import datetime
 import importlib
 import json
-import uuid
-import logging
-import datetime
-from collections import defaultdict, OrderedDict
-
 import jsonschema
-from jsonschema import Draft3Validator, FormatChecker
+import logging
+import os
 import scrapelib
+import uuid
+from collections import defaultdict, OrderedDict
+from jsonschema import Draft3Validator, FormatChecker
 from s3fs import S3FileSystem
-import boto3  # noqa
 
 from .. import utils, settings
 from ..exceptions import ScrapeError, ScrapeValueError, EmptyScrape
@@ -140,6 +139,7 @@ class Scraper(scrapelib.Scraper):
                 "file_path": self.output_file_path,
                 "bucket": bucket,
                 "jurisdiction_id": self.jurisdiction.jurisdiction_id,
+                "jurisdiction_name": self.jurisdiction.name,
             }
         )
 
@@ -184,7 +184,7 @@ class Scraper(scrapelib.Scraper):
 
             # Remove redundant prefix
             try:
-                file_path_ = file_path[file_path.index("_data") + len("_data") + 1 :]
+                file_path_ = file_path[file_path.index("_data") + len("_data") + 1:]
             except Exception:
                 file_path_ = file_path
 
