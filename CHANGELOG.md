@@ -1,4 +1,8 @@
 # Changelog
+## 6.14.7 - January 30, 2023
+
+* Updated Districts for MA and VT
+
 ## 6.14.6 - January 25, 2023
 
 * skip bad tags
