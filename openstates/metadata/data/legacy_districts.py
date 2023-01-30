@@ -1,5 +1,10 @@
 from ..models import District
 
+"""
+Legacy Districts is how we represent districts that have been retired due to redistricting
+which occurs every 10 years. 
+"""
+
 legacy_districts = {
     "ma": [
         # These Districts were Retired in 2022
