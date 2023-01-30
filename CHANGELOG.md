@@ -1,4 +1,8 @@
 # Changelog
+## 6.14.8 - January 30, 2023
+
+* Realtime Bills Metrics Update
+
 ## 6.14.7 - January 30, 2023
 
 * Updated Districts for MA and VT
