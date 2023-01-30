@@ -86,4 +86,4 @@ def test_everything_has_organization_id() -> None:
 
 def test_legacy_ids() -> None:
     assert not NC.legacy_districts
-    assert len(VT.legacy_districts) == 38
+    assert len(VT.legacy_districts) == 83

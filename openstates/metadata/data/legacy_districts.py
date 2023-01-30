@@ -1,6 +1,27 @@
 from ..models import District
 
+"""
+Legacy Districts is how we represent districts that have been retired due to redistricting
+which occurs every 10 years
+"""
+
 legacy_districts = {
+    "ma": [
+        # These Districts were Retired in 2022
+        District("Worcester, Hampden, Hampshire and Middlesex", "upper", division_id=None),
+        District("Worcester and Norfolk", "upper", division_id=None),
+        District("Second Suffolk and Middlesex", "upper", division_id=None),
+        District("Second Plymouth and Bristol", "upper", division_id=None),
+        District("Second Middlesex and Norfolk", "upper", division_id=None),
+        District("Second Hampden and Hampshire", "upper", division_id=None),
+        District("Plymouth and Norfolk", "upper", division_id=None),
+        District("Norfolk, Bristol and Plymouth", "upper", division_id=None),
+        District("Norfolk, Bristol and Middlesex", "upper", division_id=None),
+        District("First Suffolk and Middlesex", "upper", division_id=None),
+        District("First Plymouth and Bristol", "upper", division_id=None),
+        District("First Middlesex and Norfolk", "upper", division_id=None),
+        District("4th Berkshire", "lower", division_id=None),
+    ],
     "md": [
         District("12A", "lower", division_id=None),
         District("12B", "lower", division_id=None),
@@ -78,6 +99,53 @@ legacy_districts = {
         District("Windsor-4", "lower", division_id=None),
         District("Windsor-6-1", "lower", division_id=None),
         District("Windsor-6-2", "lower", division_id=None),
+
+        # These Districts were Retired in 2022
+        District("Bennington-2-1", "lower", division_id=None),
+        District("Bennington-2-2", "lower", division_id=None),
+        District("Caledonia-4", "lower", division_id=None),
+        District("Chittenden-4-1", "lower", division_id=None),
+        District("Chittenden-4-2", "lower", division_id=None),
+        District("Chittenden-5-1", "lower", division_id=None),
+        District("Chittenden-5-2", "lower", division_id=None),
+        District("Chittenden-6-1", "lower", division_id=None),
+        District("Chittenden-6-2", "lower", division_id=None),
+        District("Chittenden-6-3", "lower", division_id=None),
+        District("Chittenden-6-4", "lower", division_id=None),
+        District("Chittenden-6-5", "lower", division_id=None),
+        District("Chittenden-6-6", "lower", division_id=None),
+        District("Chittenden-6-7", "lower", division_id=None),
+        District("Chittenden-7-1", "lower", division_id=None),
+        District("Chittenden-7-2", "lower", division_id=None),
+        District("Chittenden-7-3", "lower", division_id=None),
+        District("Chittenden-7-4", "lower", division_id=None),
+        District("Chittenden-8-1", "lower", division_id=None),
+        District("Chittenden-8-2", "lower", division_id=None),
+        District("Chittenden-8-3", "lower", division_id=None),
+        District("Chittenden-9-1", "lower", division_id=None),
+        District("Chittenden-9-2", "lower", division_id=None),
+        District("Essex-Caledonia-Orleans", "lower", division_id=None),
+        District("Franklin-3-1", "lower", division_id=None),
+        District("Franklin-3-2", "lower", division_id=None),
+        District("Orleans-Caledonia", "lower", division_id=None),
+        District("Rutland-5-1", "lower", division_id=None),
+        District("Rutland-5-2", "lower", division_id=None),
+        District("Rutland-5-3", "lower", division_id=None),
+        District("Rutland-5-4", "lower", division_id=None),
+        District("Rutland-Windsor-1", "lower", division_id=None),
+        District("Rutland-Windsor-2", "lower", division_id=None),
+        District("Washington-7", "lower", division_id=None),
+        District("Windham-2-1", "lower", division_id=None),
+        District("Windham-2-2", "lower", division_id=None),
+        District("Windham-2-3", "lower", division_id=None),
+        District("Windham-Bennington", "lower", division_id=None),
+        District("Windsor-3-1", "lower", division_id=None),
+        District("Windsor-3-2", "lower", division_id=None),
+        District("Windsor-4-1", "lower", division_id=None),
+        District("Windsor-4-2", "lower", division_id=None),
+        District("Windsor-Rutland", "lower", division_id=None),
+        District("Chittenden", "upper", division_id=None),
+        District("Essex-Orleans", "upper", division_id=None),
     ],
     "us": [
         District("CA-53", "lower", division_id=None),
