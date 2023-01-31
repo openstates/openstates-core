@@ -1,4 +1,4 @@
-from ..models import State, Chamber, simple_numbered_districts
+from ..models import State, Chamber, District, simple_numbered_districts
 
 ID = State(
     name="Idaho",
