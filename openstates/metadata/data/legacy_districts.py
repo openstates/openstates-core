@@ -6,14 +6,12 @@ which occurs every 10 years
 """
 
 legacy_districts = {
-    "id": [
-        simple_numbered_districts(
-            "ocd-division/country:us/state:id",
-            "lower",
-            35,
-            num_seats=2,
-        )
-    ],
+    "id": simple_numbered_districts(
+        "ocd-division/country:us/state:id",
+        "lower",
+        35,
+        num_seats=2,
+    ),
     "nd": [
         District("4", "lower", "ocd-division/country:us/state:nd/sldl:4", 2),
         District("9", "lower", "ocd-division/country:us/state:nd/sldl:9", 2),
