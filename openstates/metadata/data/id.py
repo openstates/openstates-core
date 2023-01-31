@@ -18,7 +18,7 @@ ID = State(
         chamber_type="lower",
         name="House",
         organization_id="ocd-organization/7a59916c-201a-49b2-9288-776ffea9f6cb",
-        num_seats=92,
+        num_seats=70,
         title="Representative",
         districts=[
             District("1A", "lower", "ocd-division/country:us/state:id/sldl:1a", 1),
