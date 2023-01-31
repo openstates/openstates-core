@@ -52,6 +52,7 @@ ID = State(
             District("15A", "lower", "ocd-division/country:us/state:id/sldl:15a", 1),
             District("15B", "lower", "ocd-division/country:us/state:id/sldl:15b", 1),
             District("16A", "lower", "ocd-division/country:us/state:id/sldl:16a", 1),
+            District("16B", "lower", "ocd-division/country:us/state:id/sldl:16b", 1),
             District("17A", "lower", "ocd-division/country:us/state:id/sldl:17a", 1),
             District("17B", "lower", "ocd-division/country:us/state:id/sldl:17b", 1),
             District("18A", "lower", "ocd-division/country:us/state:id/sldl:18a", 1),
