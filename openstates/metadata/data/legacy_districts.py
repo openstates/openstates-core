@@ -6,9 +6,15 @@ which occurs every 10 years
 """
 
 legacy_districts = {
+    "nd": [
+        District("4", "lower", "ocd-division/country:us/state:nd/sldl:4", 2),
+        District("9", "lower", "ocd-division/country:us/state:nd/sldl:9", 2),
+    ],
     "ma": [
         # These Districts were Retired in 2022
-        District("Worcester, Hampden, Hampshire and Middlesex", "upper", division_id=None),
+        District(
+            "Worcester, Hampden, Hampshire and Middlesex", "upper", division_id=None
+        ),
         District("Worcester and Norfolk", "upper", division_id=None),
         District("Second Suffolk and Middlesex", "upper", division_id=None),
         District("Second Plymouth and Bristol", "upper", division_id=None),
@@ -99,7 +105,6 @@ legacy_districts = {
         District("Windsor-4", "lower", division_id=None),
         District("Windsor-6-1", "lower", division_id=None),
         District("Windsor-6-2", "lower", division_id=None),
-
         # These Districts were Retired in 2022
         District("Bennington-2-1", "lower", division_id=None),
         District("Bennington-2-2", "lower", division_id=None),
