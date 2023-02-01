@@ -76,7 +76,16 @@ legacy_districts = {
         District("Washoe County, No. 3", "upper", division_id=None),
         District("Washoe County, No. 4", "upper", division_id=None),
     ],
-    "pr": [District(str(n), "upper", division_id=None) for n in range(1, 9)],
+    "pr": [
+        District("I", "upper", division_id=None),
+        District("II", "upper", division_id=None),
+        District("III", "upper", division_id=None),
+        District("IV", "upper", division_id=None),
+        District("V", "upper", division_id=None),
+        District("VI", "upper", division_id=None),
+        District("VII", "upper", division_id=None),
+        District("VIII", "upper", division_id=None),
+    ],
     "vt": [
         District("Addison-Rutland-1", "lower", division_id=None),
         District("Bennington-Rutland-1", "lower", division_id=None),
