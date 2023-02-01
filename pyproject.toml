@@ -29,10 +29,9 @@ PyYAML = "^5.3.1"
 textract = "^1.6"
 chardet = "^3.0"
 pydantic = "^1.8.2"
-boto3 = "^1.17.79"
 spatula = ">=0.8.9,<1.0"
 PyJWT = "^2.5.0"
-s3fs="^2022.10.0"
+boto3 = "^1.26.61"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.4.1"
