@@ -37,6 +37,7 @@ stats = Instrumentation()
 logging.getLogger('boto3').setLevel(logging.WARNING)
 logging.getLogger('botocore').setLevel(logging.WARNING)
 logging.getLogger('s3transfer').setLevel(logging.WARNING)
+logging.getLogger('urllib3').setLevel(logging.WARNING)
 
 OPTIONAL_FIELD_SET = {
     "sort_name",
