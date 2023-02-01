@@ -49,7 +49,7 @@ legacy_districts = {
         District("4B", "lower", division_id=None),
         District("5A", "lower", division_id=None),
         District("5B", "lower", division_id=None),
-
+        District("7", "lower", division_id=None),
         District("3A", "lower", division_id=None),
         District("3B", "lower", division_id=None),
         District("11", "lower", division_id=None),
