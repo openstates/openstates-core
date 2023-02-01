@@ -313,7 +313,7 @@ VT = State(
                 "Franklin-1",
                 "lower",
                 "ocd-division/country:us/state:vt/sldl:franklin-1",
-                1,
+                2,
             ),
             District(
                 "Franklin-2",
@@ -568,7 +568,7 @@ VT = State(
                 "Windham-4",
                 "lower",
                 "ocd-division/country:us/state:vt/sldl:windham-4",
-                2,
+                1,
             ),
             District(
                 "Windham-5",
@@ -583,7 +583,7 @@ VT = State(
                 1,
             ),
             District(
-                "Windham-Bennington-Windsor",
+                "Windham-Windsor-Bennington",
                 "lower",
                 "ocd-division/country:us/state:vt/sldl:windham-bennington-windsor",
                 1,

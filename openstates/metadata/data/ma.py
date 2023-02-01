@@ -1033,9 +1033,9 @@ MA = State(
                 1,
             ),
             District(
-                "First Hampden and Hampshire",
+                "Hampden and Hampshire",
                 "upper",
-                "ocd-division/country:us/state:ma/sldu:1st_hampden_and_hampshire",
+                "ocd-division/country:us/state:ma/sldu:hampden_and_hampshire",
                 1,
             ),
             District(
@@ -1066,9 +1066,9 @@ MA = State(
                 "Hampden", "upper", "ocd-division/country:us/state:ma/sldu:hampden", 1
             ),
             District(
-                "Berkshire, Hampshire, Franklin and Hampden",
+                "Hampden, Hampshire and Worcester",
                 "upper",
-                "ocd-division/country:us/state:ma/sldu:berkshire_hampshire_franklin_and_hampden",
+                "ocd-division/country:us/state:ma/sldu:hampden_hampshire_and_worcester",
                 1,
             ),
             District(
