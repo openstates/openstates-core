@@ -583,7 +583,7 @@ VT = State(
                 1,
             ),
             District(
-                "Windham-Bennington-Windsor",
+                "Windham-Windsor-Bennington",
                 "lower",
                 "ocd-division/country:us/state:vt/sldl:windham-bennington-windsor",
                 1,

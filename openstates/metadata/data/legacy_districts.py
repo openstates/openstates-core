@@ -170,6 +170,7 @@ legacy_districts = {
         District("Windham-2-2", "lower", division_id=None),
         District("Windham-2-3", "lower", division_id=None),
         District("Windham-Bennington", "lower", division_id=None),
+        District("Windham-Bennington-Windsor", "lower", division_id=None),
         District("Windsor-3-1", "lower", division_id=None),
         District("Windsor-3-2", "lower", division_id=None),
         District("Windsor-4-1", "lower", division_id=None),
