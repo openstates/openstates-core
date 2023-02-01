@@ -177,7 +177,8 @@ def write_csv(files: list[Path], jurisdiction_id: str, output_filename: str) -> 
         out.writeheader()
 
         for filename in files:
-            click.secho(f"\nProcessing {filename}")
+            if jurisdiction_id.abbr == "OH":
+                click.secho(f"\nProcessing {filename}")
             person: Person = Person.load_yaml(filename)
 
             # current party
