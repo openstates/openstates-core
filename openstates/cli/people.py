@@ -7,6 +7,7 @@ from collections import Counter, defaultdict
 from pathlib import Path
 import click
 import boto3  # type: ignore
+import logging
 import yaml
 from django.db import transaction, connection  # type: ignore
 from ..utils import abbr_to_jid
@@ -32,6 +33,10 @@ from ..utils.people.merge import process_scrape_dir, incoming_merge
 from ..utils.instrument import Instrumentation
 
 stats = Instrumentation()
+
+logging.getLogger('boto3').setLevel(logging.WARNING)
+logging.getLogger('botocore').setLevel(logging.WARNING)
+logging.getLogger('s3transfer').setLevel(logging.WARNING)
 
 OPTIONAL_FIELD_SET = {
     "sort_name",
