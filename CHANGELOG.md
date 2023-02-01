@@ -1,4 +1,8 @@
 # Changelog
+## 6.14.9 - January 31, 2023
+
+* Updated Districts for PR, MD, MA, NH, ID, ND, VT
+
 ## 6.14.8 - January 30, 2023
 
 * Realtime Bills Metrics Update
