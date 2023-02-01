@@ -1,4 +1,8 @@
 # Changelog
+## 6.15.0 - February 1, 2023
+
+* Updated Districts for NH
+
 ## 6.14.9 - January 31, 2023
 
 * Updated Districts for PR, MD, MA, NH, ID, ND, VT
