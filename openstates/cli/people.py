@@ -177,8 +177,11 @@ def write_csv(files: list[Path], jurisdiction_id: str, output_filename: str) -> 
         out.writeheader()
 
         for filename in files:
-            click.secho(f"\n{jurisdiction_id}: Processing {filename}")
-            person: Person = Person.load_yaml(filename)
+            try:
+                person: Person = Person.load_yaml(filename)
+            except Exception as e:
+                click.secho(f"Cannot load {filename} :: {e}")
+                raise
 
             # current party
             for p_role in person.party:
