@@ -197,9 +197,8 @@ class Scraper(scrapelib.Scraper):
                 bucket = settings.S3_REALTIME_BASE.removeprefix("s3://")
 
                 s3.put_object(
-                    Body=json.dump(
+                    Body=json.dumps(
                         OrderedDict(sorted(obj.as_dict().items())),
-                        file,
                         cls=utils.JSONEncoderPlus,
                         separators=(",", ": "),
                     ),
