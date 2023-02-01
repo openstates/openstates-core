@@ -21,6 +21,9 @@ legacy_districts = {
         District(
             "Worcester, Hampden, Hampshire and Middlesex", "upper", division_id=None
         ),
+        District(
+            "Berkshire, Hampshire, Franklin and Hampden", "upper", division_id=None
+        ),
         District("Worcester and Norfolk", "upper", division_id=None),
         District("Second Suffolk and Middlesex", "upper", division_id=None),
         District("Second Plymouth and Bristol", "upper", division_id=None),
@@ -31,6 +34,8 @@ legacy_districts = {
         District("Norfolk, Bristol and Middlesex", "upper", division_id=None),
         District("First Suffolk and Middlesex", "upper", division_id=None),
         District("First Plymouth and Bristol", "upper", division_id=None),
+        District("First Middlesex and Norfolk", "upper", division_id=None),
+        District("First Hampden and Hampshire", "upper", division_id=None),
         District("First Middlesex and Norfolk", "upper", division_id=None),
         District("4th Berkshire", "lower", division_id=None),
     ],
