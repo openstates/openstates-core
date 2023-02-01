@@ -183,7 +183,9 @@ class Scraper(scrapelib.Scraper):
 
             # Remove redundant prefix
             try:
-                upload_file_path = file_path[file_path.index("_data") + len("_data") + 1:]
+                upload_file_path = file_path[
+                    file_path.index("_data") + len("_data") + 1 :
+                ]
             except Exception:
                 upload_file_path = file_path
 
@@ -194,12 +196,16 @@ class Scraper(scrapelib.Scraper):
                 s3 = boto3.client("s3")
                 bucket = settings.S3_REALTIME_BASE.removeprefix("s3://")
 
-                s3.put_object(Body=json.dump(
+                s3.put_object(
+                    Body=json.dump(
                         OrderedDict(sorted(obj.as_dict().items())),
                         file,
                         cls=utils.JSONEncoderPlus,
                         separators=(",", ": "),
-                    ), Bucket=bucket, Key=self.output_file_path)
+                    ),
+                    Bucket=bucket,
+                    Key=self.output_file_path,
+                )
 
                 self.push_to_queue()
             else:
