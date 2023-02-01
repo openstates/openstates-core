@@ -9,7 +9,6 @@ import scrapelib
 import uuid
 from collections import defaultdict, OrderedDict
 from jsonschema import Draft3Validator, FormatChecker
-from s3fs import S3FileSystem
 
 from .. import utils, settings
 from ..exceptions import ScrapeError, ScrapeValueError, EmptyScrape
@@ -184,25 +183,23 @@ class Scraper(scrapelib.Scraper):
 
             # Remove redundant prefix
             try:
-                file_path_ = file_path[file_path.index("_data") + len("_data") + 1:]
+                upload_file_path = file_path[file_path.index("_data") + len("_data") + 1:]
             except Exception:
-                file_path_ = file_path
+                upload_file_path = file_path
 
             if self.realtime:
 
-                self.output_file_path = str(file_path_)
+                self.output_file_path = str(upload_file_path)
 
-                s3 = S3FileSystem(anon=False)
+                s3 = boto3.client("s3")
+                bucket = settings.S3_REALTIME_BASE.removeprefix("s3://")
 
-                S3_FULL_PATH = f"{settings.S3_REALTIME_BASE}/{self.output_file_path}"
-
-                with s3.open(S3_FULL_PATH, "w") as file:
-                    json.dump(
+                s3.put_object(Body=json.dump(
                         OrderedDict(sorted(obj.as_dict().items())),
                         file,
                         cls=utils.JSONEncoderPlus,
                         separators=(",", ": "),
-                    )
+                    ), Bucket=bucket, Key=self.output_file_path)
 
                 self.push_to_queue()
             else:
