@@ -50,6 +50,15 @@ legacy_districts = {
         District("5A", "lower", division_id=None),
         District("5B", "lower", division_id=None),
     ],
+    "nh": [
+        District("Strafford 22", "lower", "ocd-division/country:us/state:nh/sldl:strafford_22", 1),
+        District("Strafford 23", "lower", "ocd-division/country:us/state:nh/sldl:strafford_23", 1),
+        District("Strafford 24", "lower", "ocd-division/country:us/state:nh/sldl:strafford_24", 1),
+        District("Strafford 25", "lower", "ocd-division/country:us/state:nh/sldl:strafford_25", 1),
+        District("Sullivan 9", "lower", "ocd-division/country:us/state:nh/sldl:sullivan_9", 1),
+        District("Sullivan 10", "lower", "ocd-division/country:us/state:nh/sldl:sullivan_10", 1),
+        District("Sullivan 11", "lower", "ocd-division/country:us/state:nh/sldl:sullivan_11", 1),
+    ],
     "nv": [
         District("Capital Senatorial District", "upper", division_id=None),
         District("Central Nevada Senatorial District", "upper", division_id=None),
