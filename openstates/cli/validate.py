@@ -48,6 +48,8 @@ def main(
         Draft3Validator, type_checker=type_checker
     )
     validate(instance=entity_instance, schema=schema, cls=ValidatorCls)
+    # `validate()` exits non-0 when invalid, so we can just add a line here for feedback
+    click.secho(f"{filepath} is a valid {scraper_entity_type} object")
 
 
 if __name__ == "__main__":
