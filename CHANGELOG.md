@@ -1,4 +1,9 @@
 # Changelog
+## 6.15.1 - February 6, 2023
+
+* Fix boto3 library usage for realtime consumption
+* Add CLI tool for manual JSON schema validation
+
 ## 6.15.0 - February 1, 2023
 
 * Updated Districts for NH
