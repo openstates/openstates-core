@@ -14,6 +14,7 @@ os-people = 'openstates.cli.people:main'
 os-committees = 'openstates.cli.committees:main'
 os-us-to-yaml = 'openstates.cli.convert_us:main'
 os-scrape = 'openstates.cli.scrape:main'
+os-validate = 'openstates.cli.validate:main'
 
 [tool.poetry.dependencies]
 python = "^3.9"
@@ -46,6 +47,9 @@ types-click = "^7.1.2"
 types-PyYAML = "^5.4.3"
 types-requests = "^2.28.11.5"
 black = "^22.10.0"
+
+[tool.poetry.group.dev.dependencies]
+types-jsonschema = "^4.17.0.3"
 
 [tool.coverage.run]
 omit = [

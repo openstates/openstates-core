@@ -1709,6 +1709,18 @@ files = [
 ]
 
 [[package]]
+name = "types-jsonschema"
+version = "4.17.0.3"
+description = "Typing stubs for jsonschema"
+category = "dev"
+optional = false
+python-versions = "*"
+files = [
+    {file = "types-jsonschema-4.17.0.3.tar.gz", hash = "sha256:746aa466ffed9a1acc7bdbd0ac0b5e068f00be2ee008c1d1e14b0944a8c8b24b"},
+    {file = "types_jsonschema-4.17.0.3-py3-none-any.whl", hash = "sha256:c8d5b26b7c8da6a48d7fb1ce029b97e0ff6e74db3727efb968c69f39ad013685"},
+]
+
+[[package]]
 name = "types-pytz"
 version = "2021.3.8"
 description = "Typing stubs for pytz"
@@ -1873,4 +1885,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.9"
-content-hash = "aa779b0fcde19f11bc20dfcfb63b1d3be94fc4d38f5c3f84d7a16c65a54fb18a"
+content-hash = "ae0e74bb184ed77cafb18a5f84235b9b84937a6aef924b7e08fda82968e0b694"
