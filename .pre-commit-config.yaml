@@ -11,6 +11,6 @@ repos:
         exclude: openstates/il/tests/
 
 -   repo: https://github.com/ambv/black
-    rev: 20.8b1
+    rev: 23.1.0
     hooks:
       - id: black
