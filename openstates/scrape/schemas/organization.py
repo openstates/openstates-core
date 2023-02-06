@@ -25,4 +25,9 @@ schema = {
         "extras": extras,
     },
     "type": "object",
+    "required": [
+        "name",
+        "classification",
+        "division_id",
+    ],
 }

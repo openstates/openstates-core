@@ -43,4 +43,9 @@ schema = {
         "extras": extras,
         "dedupe_key": {"type": ["string", "null"], "minLength": 1},
     },
+    "required": [
+        "identifier",
+        "result",
+        "bill",
+    ],
 }

@@ -25,4 +25,10 @@ schema = {
         },
         "extras": extras,
     },
+    "required": [
+        "name",
+        "division_id",
+        "classification",
+        "url",
+    ],
 }

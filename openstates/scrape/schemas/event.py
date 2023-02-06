@@ -136,4 +136,8 @@ schema = {
         "dedupe_key": {"type": ["string", "null"], "minLength": 1},
     },
     "type": "object",
+    "required": [
+        "name",
+        "start_date",
+    ],
 }
