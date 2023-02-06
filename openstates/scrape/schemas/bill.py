@@ -165,4 +165,11 @@ schema = {
         "sources": sources,
         "extras": extras,
     },
+    "required": [
+        "classification",
+        "title",
+        "legislative_session",
+        "identifier",
+        "sources",
+    ],
 }
