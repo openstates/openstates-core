@@ -34,6 +34,7 @@ def main(
     elif scraper_entity_type == "vote_event":
         schema = vote_event_schema
 
+    # See openstates/scrape/base.py for source of this validation code
     type_checker = Draft3Validator.TYPE_CHECKER.redefine(
         "datetime", lambda c, d: isinstance(d, (datetime.date, datetime.datetime))
     )

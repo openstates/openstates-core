@@ -178,7 +178,6 @@ class Scraper(scrapelib.Scraper):
         self.output_names[obj._type].add(filename)
 
         if self.scrape_output_handler is None:
-
             file_path = os.path.join(self.datadir, filename)
 
             # Remove redundant prefix
@@ -190,7 +189,6 @@ class Scraper(scrapelib.Scraper):
                 upload_file_path = file_path
 
             if self.realtime:
-
                 self.output_file_path = str(upload_file_path)
 
                 s3 = boto3.client("s3")
@@ -321,6 +319,7 @@ class BaseModel(object):
         if schema is None:
             schema = self._schema
 
+        # this code copied to openstates/cli/validate - maybe update it if changes here :)
         type_checker = Draft3Validator.TYPE_CHECKER.redefine(
             "datetime", lambda c, d: isinstance(d, (datetime.date, datetime.datetime))
         )
