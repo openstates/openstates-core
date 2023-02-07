@@ -6,7 +6,7 @@ import jsonschema
 import logging
 import os
 import scrapelib
-from typing import Dict, Any
+from typing import Dict, Any, Collection, Optional, Union
 import uuid
 from collections import defaultdict, OrderedDict
 
@@ -26,7 +26,17 @@ def check_uri(val):
     return val and val.startswith(("http://", "https://", "ftp://"))
 
 
-def validator_setup(schema: Dict[Any, Any]):
+@jsonschema.FormatChecker.cls_checks("python-datetime")
+def check_date(val):
+    return isinstance(val, datetime.datetime)
+
+
+@jsonschema.FormatChecker.cls_checks("python-date")
+def check_datetime(val):
+    return isinstance(val, (datetime.date, datetime.datetime))
+
+
+def validator_setup(schema: Union[Dict[Any, Any], Optional[Dict[str, Collection[str]]]]):
     """
     Break out the validator setup
     so it can be used at other places
@@ -48,11 +58,10 @@ def validator_setup(schema: Dict[Any, Any]):
     type_checker = BaseVal.TYPE_CHECKER.redefine("python-datetime", is_datetime)
     type_checker = type_checker.redefine("python-date", is_date)
     ValidatorCls = jsonschema.validators.extend(BaseVal, type_checker=type_checker)
-    logger.error(f"{ValidatorCls.__dict__}")
-    # also make sure the schema itself is valid
-    ValidatorCls.check_schema(schema)
-
     validator = ValidatorCls(schema, format_checker=jsonschema.FormatChecker())
+    # also make sure the schema itself is valid
+    validator.check_schema(schema)
+
     return validator
 
 

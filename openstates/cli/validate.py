@@ -34,7 +34,6 @@ def main(
         schema = vote_event_schema
 
     validator = validator_setup(schema)
-    click.secho(f"Schema we'll process:\n{validator.schema}\n\nData we'll compare:\n{data}")
     validator.validate(data)
     click.secho(f"{filepath} is a valid {scraper_entity_type} object")
 
