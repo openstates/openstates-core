@@ -1,8 +1,4 @@
-import copy
 from .common import extras, fuzzy_date
-
-required_date = copy.deepcopy(fuzzy_date)
-required_date["required"] = True
 
 schema = {
     "type": "object",
@@ -18,10 +14,11 @@ schema = {
                 "properties": {
                     "name": {"type": "string", "minLength": 1},
                     "type": {"type": "string", "enum": ["primary", "special"]},
-                    "start_date": required_date,
-                    "end_date": required_date,
+                    "start_date": fuzzy_date,
+                    "end_date": fuzzy_date,
                     "active": {"type": "boolean"},
                 },
+                "required": ["start_date", "end_date"],
             },
         },
         "extras": extras,
@@ -31,5 +28,6 @@ schema = {
         "division_id",
         "classification",
         "url",
+        "legislative_sessions",
     ],
 }

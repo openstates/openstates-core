@@ -19,16 +19,16 @@ fuzzy_datetime_string_blank = {
     ),
 }
 # fuzzy_date = {"anyOf": [fuzzy_date_string, {"type": "python-date"}]}
-fuzzy_date = {"anyOf": [fuzzy_date_string, {"type": "string"}]}
+fuzzy_date = {"anyOf": [fuzzy_date_string, {"type": "number"}]}
 # fuzzy_date_blank = {"anyOf": [fuzzy_date_string_blank, {"type": "null"}, {"type": "python-date"}]}
 fuzzy_date_blank = {
-    "anyOf": [fuzzy_date_string_blank, {"type": "null"}, {"type": "string"}]
+    "anyOf": [fuzzy_date_string_blank, {"type": "null"}, {"type": "number"}]
 }
 # fuzzy_datetime = {"anyOf": [fuzzy_datetime_string_blank, {"type": "python-datetime"}]}
-fuzzy_datetime = {"anyOf": [fuzzy_datetime_string_blank, {"type": "string"}]}
+fuzzy_datetime = {"anyOf": [fuzzy_datetime_string_blank, {"type": "number"}]}
 # fuzzy_datetime_blank = {"anyOf": [fuzzy_datetime_string_blank, {"type": "null"}, {"type": "python-datetime"}]}
 fuzzy_datetime_blank = {
-    "anyOf": [fuzzy_datetime_string_blank, {"type": "null"}, {"type": "string"}]
+    "anyOf": [fuzzy_datetime_string_blank, {"type": "null"}, {"type": "number"}]
 }
 
 other_names = {
