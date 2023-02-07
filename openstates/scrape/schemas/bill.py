@@ -53,7 +53,7 @@ schema = {
         "identifier": {
             "type": "string",
             "minLength": 1,
-            "description": "String uniquely identifying this bill within this legislative session as presented by the data source, (e.g. HF 1)",
+            "description": "String uniquely identifying this bill (e.g. HF 1)",
         },
         "title": {
             "type": "string",

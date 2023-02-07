@@ -21,7 +21,9 @@ fuzzy_datetime_string_blank = {
 fuzzy_date = {"anyOf": [fuzzy_date_string, {"type": "python-date"}]}
 fuzzy_date_blank = {"anyOf": [fuzzy_date_string_blank, {"type": "python-date"}]}
 fuzzy_datetime = {"anyOf": [fuzzy_datetime_string_blank, {"type": "python-datetime"}]}
-fuzzy_datetime_blank = {"anyOf": [fuzzy_datetime_string_blank, {"type": "python-datetime"}]}
+fuzzy_datetime_blank = {
+    "anyOf": [fuzzy_datetime_string_blank, {"type": "python-datetime"}]
+}
 
 other_names = {
     "items": {

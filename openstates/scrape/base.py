@@ -46,9 +46,7 @@ def validator_setup(schema: dict):
     """
     type_checker = BaseVal.TYPE_CHECKER.redefine("python-datetime", is_datetime)
     type_checker = type_checker.redefine("python-date", is_date)
-    ValidatorCls = jsonschema.validators.extend(
-        BaseVal, type_checker=type_checker
-    )
+    ValidatorCls = jsonschema.validators.extend(BaseVal, type_checker=type_checker)
     logger.error(f"{ValidatorCls.__dict__}")
     # also make sure the schema itself is valid
     ValidatorCls.check_schema(schema)
@@ -216,7 +214,7 @@ class Scraper(scrapelib.Scraper):
             # Remove redundant prefix
             try:
                 upload_file_path = file_path[
-                    file_path.index("_data") + len("_data") + 1 :
+                    file_path.index("_data") + len("_data") + 1:
                 ]
             except Exception:
                 upload_file_path = file_path
