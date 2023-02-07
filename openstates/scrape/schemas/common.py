@@ -32,6 +32,7 @@ other_names = {
             "note": {"type": "string"},
         },
         "type": "object",
+        "required": ["name"],
     },
     "type": "array",
 }
@@ -44,6 +45,7 @@ links = {
             "url": {"format": "uri", "type": "string"},
         },
         "type": "object",
+        "required": ["url"],
     },
     "type": "array",
 }
@@ -56,9 +58,11 @@ sources = {
             "note": {"type": "string"},
         },
         "type": "object",
+        "required": ["url"],
     },
     "minItems": 1,
     "type": "array",
+    "description": "An array of objects representing data sources where this data was found",
 }
 
 extras = {"type": "object"}

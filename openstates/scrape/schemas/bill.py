@@ -18,13 +18,16 @@ versions_or_documents = {
                         "url": {"type": "string", "format": "uri"},
                     },
                     "type": "object",
+                    "required": ["url"],
                 },
                 "type": "array",
             },
         },
         "type": "object",
+        "required": ["note", "date", "links"],
     },
     "type": "array",
+    "description": "An array of versions, each representing a version of the text of the bill",
 }
 versions = copy.deepcopy(versions_or_documents)
 versions["items"]["properties"]["classification"][
@@ -36,25 +39,54 @@ documents["items"]["properties"]["classification"][
 ] = common.BILL_DOCUMENT_CLASSIFICATIONS
 
 schema = {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "http://json-schema.org/draft-07/schema#",
+    "title": "Bill",
+    "description": "An Open Civic Data bill object",
     "type": "object",
     "properties": {
-        "legislative_session": {"type": "string", "minLength": 1},
-        "identifier": {"type": "string", "minLength": 1},
-        "title": {"type": "string", "minLength": 1},
-        "from_organization": {"type": ["string", "null"]},
-        "classification": {
-            "items": {"type": "string", "enum": common.BILL_CLASSIFICATIONS},
-            "type": "array",
+        "legislative_session": {
+            "type": "string",
+            "minLength": 1,
+            "description": "String uniquely identifying this legislative session within the jurisdiction",
         },
-        "subject": {"items": {"type": "string", "minLength": 1}, "type": "array"},
+        "identifier": {
+            "type": "string",
+            "minLength": 1,
+            "description": "String uniquely identifying this bill within this legislative session as presented by the data source, (e.g. HF 1)",
+        },
+        "title": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Title of the bill, as presented by the data source",
+        },
+        "from_organization": {
+            "type": ["string", "null"],
+            "description": "A serialized JSON object with the property of classification: lower/upper (???)",
+        },
+        "classification": {
+            "items": {
+                "type": "string",
+                "minItems": 1,
+                "enum": common.BILL_CLASSIFICATIONS,
+            },
+            "type": "array",
+            "description": "An array of labels that classify the type of bill this is, (e.g. 'bill' or 'constitutional amendment'",
+        },
+        "subject": {
+            "items": {"type": "string", "minLength": 1},
+            "type": "array",
+            "description": "An array of subject or topic strings provided by the data source",
+        },
         "abstracts": {
             "items": {
                 "properties": {
                     "abstract": {"type": "string", "minLength": 1},
                     "note": {"type": "string"},
-                    "date": {"type": "string"},
+                    "date": {"type": "string", "format": "date"},
                 },
                 "type": "object",
+                "required": ["abstract"],
             },
             "type": "array",
         },
@@ -65,6 +97,7 @@ schema = {
                     "note": {"type": "string"},
                 },
                 "type": "object",
+                "required": ["title"],
             },
             "type": "array",
         },
@@ -76,6 +109,7 @@ schema = {
                     "scheme": {"type": "string"},
                 },
                 "type": "object",
+                "required": ["identifier"],
             },
             "type": "array",
         },
@@ -109,8 +143,10 @@ schema = {
                     },
                 },
                 "type": "object",
+                "required": ["description", "date"],
             },
             "type": "array",
+            "description": "An array of actions, each representing an official action taken in the legislature on this bill",
         },
         "sponsorships": {
             "items": {
@@ -126,6 +162,7 @@ schema = {
                     "organization_id": {"type": ["string", "null"]},
                 },
                 "type": "object",
+                "required": ["name", "classification", "entity_type", "primary"],
             },
             "type": "array",
         },
@@ -140,6 +177,7 @@ schema = {
                     },
                 },
                 "type": "object",
+                "required": ["identifier", "legislative_session", "relation_type"],
             },
             "type": "array",
         },
@@ -166,10 +204,8 @@ schema = {
         "extras": extras,
     },
     "required": [
-        "classification",
         "title",
-        "legislative_session",
         "identifier",
-        "sources",
+        "legislative_session",
     ],
 }

@@ -8,20 +8,36 @@ import os
 import scrapelib
 import uuid
 from collections import defaultdict, OrderedDict
-from jsonschema import Draft3Validator, FormatChecker
 
 from .. import utils, settings
 from ..exceptions import ScrapeError, ScrapeValueError, EmptyScrape
 
 
-@FormatChecker.cls_checks("uri-blank")
+@jsonschema.FormatChecker.cls_checks("uri-blank")
 def uri_blank(value):
     return value == "" or FormatChecker().conforms(value, "uri")
 
 
-@FormatChecker.cls_checks("uri")
+@jsonschema.FormatChecker.cls_checks("uri")
 def check_uri(val):
     return val and val.startswith(("http://", "https://", "ftp://"))
+
+
+def validate_setup(schema):
+    type_checker = jsonschema.Draft7Validator.TYPE_CHECKER.redefine(
+        "datetime", lambda c, d: isinstance(d, (datetime.date, datetime.datetime))
+    )
+    type_checker = type_checker.redefine(
+        "date",
+        lambda c, d: (
+            isinstance(d, datetime.date) and not isinstance(d, datetime.datetime)
+        ),
+    )
+    ValidatorCls = jsonschema.validators.extend(
+        jsonschema.Draft7Validator, type_checker=type_checker
+    )
+    validator = ValidatorCls(schema, format_checker=jsonschema.FormatChecker())
+    return validator
 
 
 def cleanup_list(obj, default):
@@ -319,28 +335,13 @@ class BaseModel(object):
         if schema is None:
             schema = self._schema
 
-        # this code copied to openstates/cli/validate - maybe update it if changes here :)
-        type_checker = Draft3Validator.TYPE_CHECKER.redefine(
-            "datetime", lambda c, d: isinstance(d, (datetime.date, datetime.datetime))
-        )
-        type_checker = type_checker.redefine(
-            "date",
-            lambda c, d: (
-                isinstance(d, datetime.date) and not isinstance(d, datetime.datetime)
-            ),
-        )
-
-        ValidatorCls = jsonschema.validators.extend(
-            Draft3Validator, type_checker=type_checker
-        )
-        validator = ValidatorCls(schema, format_checker=FormatChecker())
+        validator = validate_setup(schema)
 
         errors = [str(error) for error in validator.iter_errors(self.as_dict())]
         if errors:
+            err_str = "\n\t".join(errors)
             raise ScrapeValueError(
-                "validation of {} {} failed: {}".format(
-                    self.__class__.__name__, self._id, "\n\t" + "\n\t".join(errors)
-                )
+                f"validation of {self.__class__.__name__} {self._id} failed:\n\t{err_str}"
             )
 
     def pre_save(self, jurisdiction_id):
