@@ -22,7 +22,6 @@ psycopg2-binary = "^2.8.4"
 dj_database_url = "^0.5.0"
 Django = "3.2.14"
 scrapelib = "^2.0.7"
-jsonschema = "^3.2.0"
 click = "^8.0"
 attrs = "^20.2.0"
 us = "^2.0.2"
@@ -33,6 +32,7 @@ pydantic = "^1.8.2"
 spatula = ">=0.8.9,<1.0"
 PyJWT = "^2.5.0"
 boto3 = "^1.26.61"
+jsonschema = {extras = ["format"], version = "^4.17.3"}
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.4.1"

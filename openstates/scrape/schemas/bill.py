@@ -207,5 +207,7 @@ schema = {
         "title",
         "identifier",
         "legislative_session",
+        "from_organization",
+        "classification",
     ],
 }

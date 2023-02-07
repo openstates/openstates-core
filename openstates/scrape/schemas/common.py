@@ -18,10 +18,10 @@ fuzzy_datetime_string_blank = {
         "(Z|[+-][0-9]{2}(:[0-9]{2})?))?)?$"
     ),
 }
-fuzzy_date = {"anyOf": [fuzzy_date_string, {"type": "date"}]}
-fuzzy_date_blank = {"anyOf": [fuzzy_date_string_blank, {"type": "date"}]}
-fuzzy_datetime = {"anyOf": [fuzzy_datetime_string_blank, {"type": "datetime"}]}
-fuzzy_datetime_blank = {"anyOf": [fuzzy_datetime_string_blank, {"type": "datetime"}]}
+fuzzy_date = {"anyOf": [fuzzy_date_string, {"type": "python-date"}]}
+fuzzy_date_blank = {"anyOf": [fuzzy_date_string_blank, {"type": "python-date"}]}
+fuzzy_datetime = {"anyOf": [fuzzy_datetime_string_blank, {"type": "python-datetime"}]}
+fuzzy_datetime_blank = {"anyOf": [fuzzy_datetime_string_blank, {"type": "python-datetime"}]}
 
 other_names = {
     "items": {

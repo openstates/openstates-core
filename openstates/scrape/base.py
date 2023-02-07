@@ -12,6 +12,8 @@ from collections import defaultdict, OrderedDict
 from .. import utils, settings
 from ..exceptions import ScrapeError, ScrapeValueError, EmptyScrape
 
+logger = logging.getLogger("openstates")
+
 
 @jsonschema.FormatChecker.cls_checks("uri-blank")
 def uri_blank(value):
@@ -29,24 +31,25 @@ def validator_setup(schema: dict):
     so it can be used at other places
     in our code base
     """
-    type_checker = jsonschema.Draft7Validator.TYPE_CHECKER.redefine(
-        "datetime", lambda c, d: isinstance(d, (datetime.date, datetime.datetime))
-    )
-    type_checker = type_checker.redefine(
-        "date",
-        lambda c, d: (
-            isinstance(d, datetime.date) and not isinstance(d, datetime.datetime)
-        ),
-    )
+    BaseVal = jsonschema.Draft7Validator
+
+    def is_date(checker, inst):
+        return isinstance(inst, (datetime.date, datetime.datetime))
+
+    def is_datetime(checker, inst):
+        return isinstance(inst, datetime.datetime)
+
     """
     We extend the basic jsonschema validation
     to validate datetime objects using lambdas to convert them to strings
     and regex matching on the results
     """
+    type_checker = BaseVal.TYPE_CHECKER.redefine("python-datetime", is_datetime)
+    type_checker = type_checker.redefine("python-date", is_date)
     ValidatorCls = jsonschema.validators.extend(
-        jsonschema.Draft7Validator, type_checker=type_checker
+        BaseVal, type_checker=type_checker
     )
-
+    logger.error(f"{ValidatorCls.__dict__}")
     # also make sure the schema itself is valid
     ValidatorCls.check_schema(schema)
 
