@@ -1,15 +1,12 @@
 import click
 import json
-import logging
 
 from ..scrape.schemas.bill import schema as bill_schema
 from ..scrape.schemas.event import schema as event_schema
 from ..scrape.schemas.jurisdiction import schema as jurisdiction_schema
 from ..scrape.schemas.organization import schema as organization_schema
 from ..scrape.schemas.vote_event import schema as vote_event_schema
-from ..scrape.base import validate_setup
-
-logger = logging.getLogger("openstates.scrape-validate")
+from ..scrape.base import validator_setup
 
 
 @click.command()
@@ -22,7 +19,7 @@ def main(
     """Validate a JSON file against scraper data schema. scraper_entity_type may be bill, event, jurisdiction,
     organization, vote_event. filepath needs to be a json file"""
     with open(filepath) as json_file:
-        entity_instance = json.load(json_file)
+        data = json.load(json_file)
 
     schema = None
     if scraper_entity_type == "bill":
@@ -36,13 +33,10 @@ def main(
     elif scraper_entity_type == "vote_event":
         schema = vote_event_schema
 
-    validator = validate_setup(schema)
-    try:
-        jsonschema.validate(instance=entity_instance, schema=schema, cls=ValidatorCls)
-        click.secho(f"{filepath} is a valid {scraper_entity_type} object")
-    except Exception as e:
-        click.secho(f"{filepath} is invalid:\n\t{e}")
-        exit(2)
+    validator = validator_setup(schema)
+    click.secho(f"Schema we'll process:\n{validator.schema}\n\nData we'll compare:\n{data}")
+    validator.validate(data)
+    click.secho(f"{filepath} is a valid {scraper_entity_type} object")
 
 
 if __name__ == "__main__":

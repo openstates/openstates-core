@@ -15,7 +15,7 @@ from ..exceptions import ScrapeError, ScrapeValueError, EmptyScrape
 
 @jsonschema.FormatChecker.cls_checks("uri-blank")
 def uri_blank(value):
-    return value == "" or FormatChecker().conforms(value, "uri")
+    return value == "" or jsonschema.FormatChecker().conforms(value, "uri")
 
 
 @jsonschema.FormatChecker.cls_checks("uri")
@@ -23,7 +23,12 @@ def check_uri(val):
     return val and val.startswith(("http://", "https://", "ftp://"))
 
 
-def validate_setup(schema):
+def validator_setup(schema: dict):
+    """
+    Break out the validator setup
+    so it can be used at other places
+    in our code base
+    """
     type_checker = jsonschema.Draft7Validator.TYPE_CHECKER.redefine(
         "datetime", lambda c, d: isinstance(d, (datetime.date, datetime.datetime))
     )
@@ -33,9 +38,18 @@ def validate_setup(schema):
             isinstance(d, datetime.date) and not isinstance(d, datetime.datetime)
         ),
     )
+    """
+    We extend the basic jsonschema validation
+    to validate datetime objects using lambdas to convert them to strings
+    and regex matching on the results
+    """
     ValidatorCls = jsonschema.validators.extend(
         jsonschema.Draft7Validator, type_checker=type_checker
     )
+
+    # also make sure the schema itself is valid
+    ValidatorCls.check_schema(schema)
+
     validator = ValidatorCls(schema, format_checker=jsonschema.FormatChecker())
     return validator
 
@@ -335,7 +349,7 @@ class BaseModel(object):
         if schema is None:
             schema = self._schema
 
-        validator = validate_setup(schema)
+        validator = validator_setup(schema)
 
         errors = [str(error) for error in validator.iter_errors(self.as_dict())]
         if errors:
