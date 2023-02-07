@@ -39,8 +39,6 @@ documents["items"]["properties"]["classification"][
 ] = common.BILL_DOCUMENT_CLASSIFICATIONS
 
 schema = {
-    "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "http://json-schema.org/draft-07/schema#",
     "title": "Bill",
     "description": "An Open Civic Data bill object",
     "type": "object",

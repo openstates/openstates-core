@@ -2,7 +2,7 @@ import boto3  # noqa
 import datetime
 import importlib
 import json
-import jsonschema
+from jsonschema import Draft7Validator, FormatChecker, validators
 import logging
 import os
 import scrapelib
@@ -13,52 +13,55 @@ from collections import defaultdict, OrderedDict
 from .. import utils, settings
 from ..exceptions import ScrapeError, ScrapeValueError, EmptyScrape
 
-logger = logging.getLogger("openstates")
 
-
-@jsonschema.FormatChecker.cls_checks("uri-blank")
+@FormatChecker.cls_checks("uri-blank")
 def uri_blank(value):
-    return value == "" or jsonschema.FormatChecker().conforms(value, "uri")
+    return value == "" or FormatChecker().conforms(value, "uri")
 
 
-@jsonschema.FormatChecker.cls_checks("uri")
+@FormatChecker.cls_checks("uri")
 def check_uri(val):
     return val and val.startswith(("http://", "https://", "ftp://"))
 
 
-@jsonschema.FormatChecker.cls_checks("python-datetime")
-def check_date(val):
-    return isinstance(val, datetime.datetime)
-
-
-@jsonschema.FormatChecker.cls_checks("python-date")
+@FormatChecker.cls_checks("python-datetime")
 def check_datetime(val):
     return isinstance(val, (datetime.date, datetime.datetime))
 
 
-def validator_setup(schema: Union[Dict[Any, Any], Optional[Dict[str, Collection[str]]]]):
+@FormatChecker.cls_checks("python-date")
+def check_date(val):
+    return isinstance(val, datetime.date) and not isinstance(val, datetime.datetime)
+
+
+def validator_setup(
+    schema: Union[Dict[Any, Any], Optional[Dict[str, Collection[str]]]]
+):
     """
     Break out the validator setup
     so it can be used at other places
     in our code base
     """
-    BaseVal = jsonschema.Draft7Validator
-
-    def is_date(checker, inst):
-        return isinstance(inst, (datetime.date, datetime.datetime))
-
-    def is_datetime(checker, inst):
-        return isinstance(inst, datetime.datetime)
+    BaseVal = Draft7Validator
 
     """
     We extend the basic jsonschema validation
     to validate datetime objects using lambdas to convert them to strings
     and regex matching on the results
     """
-    type_checker = BaseVal.TYPE_CHECKER.redefine("python-datetime", is_datetime)
-    type_checker = type_checker.redefine("python-date", is_date)
-    ValidatorCls = jsonschema.validators.extend(BaseVal, type_checker=type_checker)
-    validator = ValidatorCls(schema, format_checker=jsonschema.FormatChecker())
+    type_checker = BaseVal.TYPE_CHECKER.redefine_many(
+        {
+            "python-datetime": lambda c, d: isinstance(
+                d, (datetime.date, datetime.datetime)
+            ),
+            "python-date": lambda c, d: isinstance(d, datetime.date)
+            and not isinstance(d, datetime.datetime),
+        }
+    )
+
+    ValidatorCls = validators.extend(BaseVal, type_checker=type_checker)
+    validator = ValidatorCls(schema, format_checker=FormatChecker())
+
     # also make sure the schema itself is valid
     validator.check_schema(schema)
 
@@ -224,7 +227,7 @@ class Scraper(scrapelib.Scraper):
             # Remove redundant prefix
             try:
                 upload_file_path = file_path[
-                    file_path.index("_data") + len("_data") + 1:
+                    file_path.index("_data") + len("_data") + 1 :
                 ]
             except Exception:
                 upload_file_path = file_path
