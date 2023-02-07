@@ -25,7 +25,7 @@ def check_uri(val):
     return val and val.startswith(("http://", "https://", "ftp://"))
 
 
-def validator_setup(schema: dict):
+def validator_setup(schema: Dict[Any, Any]):
     """
     Break out the validator setup
     so it can be used at other places
