@@ -6,6 +6,7 @@ import jsonschema
 import logging
 import os
 import scrapelib
+from typing import Dict, Any
 import uuid
 from collections import defaultdict, OrderedDict
 
