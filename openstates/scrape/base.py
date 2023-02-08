@@ -2,7 +2,7 @@ import boto3  # noqa
 import datetime
 import importlib
 import json
-from jsonschema import Draft7Validator, FormatChecker, validators
+from jsonschema import Draft202012Validator, FormatChecker, validators
 import logging
 import os
 import scrapelib
@@ -13,25 +13,27 @@ from collections import defaultdict, OrderedDict
 from .. import utils, settings
 from ..exceptions import ScrapeError, ScrapeValueError, EmptyScrape
 
+"""
+jsonschema FormatChecker setup
 
+Adding additional formatters this way is deprecated, but there
+doesn't appear to be a new way to add additional formatters
+
+leaving uri-blank disabled for now as there don't appear to be any uses of it
 @FormatChecker.cls_checks("uri-blank")
-def uri_blank(value):
-    return value == "" or FormatChecker().conforms(value, "uri")
-
-
-@FormatChecker.cls_checks("uri")
-def check_uri(val):
-    return val and val.startswith(("http://", "https://", "ftp://"))
-
-
-@FormatChecker.cls_checks("python-datetime")
-def check_datetime(val):
-    return isinstance(val, (datetime.date, datetime.datetime))
+def uri_blank(v):
+    return v == "" or FormatChecker.conforms(v, "uri")
+"""
 
 
 @FormatChecker.cls_checks("python-date")
-def check_date(val):
-    return isinstance(val, datetime.date) and not isinstance(val, datetime.datetime)
+def python_date(v):
+    return isinstance(v, datetime.date) and not isinstance(v, datetime.datetime)
+
+
+@FormatChecker.cls_checks("python-datetime")
+def python_datetime(v):
+    return isinstance(v, (datetime.date, datetime.datetime))
 
 
 def validator_setup(
@@ -42,23 +44,23 @@ def validator_setup(
     so it can be used at other places
     in our code base
     """
-    BaseVal = Draft7Validator
+    BaseVal = Draft202012Validator
 
     """
     We extend the basic jsonschema validation
-    to validate datetime objects using lambdas to convert them to strings
-    and regex matching on the results
+    to validate datetime objects using lambdas
+    or datetime-like strings using regex matching
     """
+    py_datetime_type = lambda c, d: isinstance(d, (datetime.date, datetime.datetime))
+    py_date_type = lambda c, d: isinstance(d, datetime.date) and not isinstance(
+        d, datetime.datetime
+    )
     type_checker = BaseVal.TYPE_CHECKER.redefine_many(
         {
-            "python-datetime": lambda c, d: isinstance(
-                d, (datetime.date, datetime.datetime)
-            ),
-            "python-date": lambda c, d: isinstance(d, datetime.date)
-            and not isinstance(d, datetime.datetime),
+            "python-datetime": py_datetime_type,
+            "python-date": py_date_type,
         }
     )
-
     ValidatorCls = validators.extend(BaseVal, type_checker=type_checker)
     validator = ValidatorCls(schema, format_checker=FormatChecker())
 

@@ -1,13 +1,3 @@
-identifiers = {
-    "items": {
-        "properties": {
-            "identifier": {"type": "string", "minLength": 1},
-            "scheme": {"type": "string"},
-        }
-    },
-    "type": "array",
-}
-
 fuzzy_date_string = {"type": "string", "pattern": "^[0-9]{4}(-[0-9]{2}){0,2}$"}
 fuzzy_date_string_blank = {"type": "string", "pattern": "^([0-9]{4})?(-[0-9]{2}){0,2}$"}
 fuzzy_datetime_string_blank = {
@@ -18,17 +8,44 @@ fuzzy_datetime_string_blank = {
         "(Z|[+-][0-9]{2}(:[0-9]{2})?))?)?$"
     ),
 }
-# fuzzy_date = {"anyOf": [fuzzy_date_string, {"type": "python-date"}]}
-fuzzy_date = {"anyOf": [fuzzy_date_string, {"type": "number"}]}
-# fuzzy_date_blank = {"anyOf": [fuzzy_date_string_blank, {"type": "null"}, {"type": "python-date"}]}
+
+"""
+anyOf schema settings allow us to define mutiple types
+for one value
+"""
+fuzzy_date = {"anyOf": [fuzzy_date_string, {"type": "object", "format": "python-date"}]}
 fuzzy_date_blank = {
-    "anyOf": [fuzzy_date_string_blank, {"type": "null"}, {"type": "number"}]
+    "anyOf": [
+        fuzzy_date_string_blank,
+        {"type": "null"},
+        {"type": "object", "format": "python-date"},
+    ]
 }
-# fuzzy_datetime = {"anyOf": [fuzzy_datetime_string_blank, {"type": "python-datetime"}]}
-fuzzy_datetime = {"anyOf": [fuzzy_datetime_string_blank, {"type": "number"}]}
-# fuzzy_datetime_blank = {"anyOf": [fuzzy_datetime_string_blank, {"type": "null"}, {"type": "python-datetime"}]}
+fuzzy_datetime = {
+    "anyOf": [
+        fuzzy_datetime_string_blank,
+        {"type": "object", "format": "python-datetime"},
+    ]
+}
 fuzzy_datetime_blank = {
-    "anyOf": [fuzzy_datetime_string_blank, {"type": "null"}, {"type": "number"}]
+    "anyOf": [
+        fuzzy_datetime_string_blank,
+        {"type": "null"},
+        {"type": "object", "format": "python-datetime"},
+    ]
+}
+
+"""
+General Sub-schemas
+"""
+identifiers = {
+    "items": {
+        "properties": {
+            "identifier": {"type": "string", "minLength": 1},
+            "scheme": {"type": "string"},
+        }
+    },
+    "type": "array",
 }
 
 other_names = {
