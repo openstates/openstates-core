@@ -31,6 +31,7 @@ jobs:
             openstates/metadata
             openstates/data
             openstates/cli/initdb.py
+            .github/workflows/release.yml
           files_ignore: |
             openstates/metadata/tests
             openstates/data/tests
