@@ -9,9 +9,9 @@ GU = State(
     url="https://guam.gov",
     unicameral=True,
     legislature_name="Guam Legislature",
-    # legislature_organization_id="ocd-organization/803c558f-dec2-4f43-9c35-e73a6e849408",
+    legislature_organization_id="ocd-organization/74999629-090b-4aa4-92ed-6eb86396017d",
     executive_name="Governor of Guam",
-    # executive_organization_id="ocd-organization/2838c5e6-e793-518d-a722-6140d5f8d0aa",
+    executive_organization_id="ocd-organization/2ac004ab-9614-47a0-b9b4-58d5c90f8081",
     division_id="ocd-division/country:us/territory:gu",
     jurisdiction_id="ocd-jurisdiction/country:us/territory:gu/government",
 )

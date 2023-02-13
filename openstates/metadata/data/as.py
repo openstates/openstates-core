@@ -11,7 +11,7 @@ AS = State(
     division_id="ocd-division/country:us/territory:as",
     jurisdiction_id="ocd-jurisdiction/country:us/territory:as/government",
     legislature_name="American Samoa Fono",
-    # legislature_organization_id="ocd-organization/803c558f-dec2-4f43-9c35-e73a6e849408",
+    legislature_organization_id="ocd-organization/739d2a37-30aa-46ca-a0ce-41bdd9f39f51",
     executive_name="Governor of American Samoa",
-    # executive_organization_id="ocd-organization/2838c5e6-e793-518d-a722-6140d5f8d0aa",
+    executive_organization_id="ocd-organization/1b28142e-dcb4-457e-b17a-11298ae7ccf8",
 )
