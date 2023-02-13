@@ -22,7 +22,7 @@ MP = State(
         num_seats=20,
         title="Legislators",
         districts=simple_numbered_districts(
-            "ocd-division/country:us/territory:as", "lower", 20
+            "ocd-division/country:us/territory:mp", "lower", 20
         ),
     ),
     upper=Chamber(
@@ -32,7 +32,7 @@ MP = State(
         num_seats=9,
         title="Senators",
         districts=simple_numbered_districts(
-            "ocd-division/country:us/territory:as", "upper", 9
+            "ocd-division/country:us/territory:mp", "upper", 9
         ),
     ),
 )
