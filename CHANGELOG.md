@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.15.2.1 - February 13, 2023
+
+* Fix CI bug
+
 ## 6.15.2 - February 13, 2023
 
 * Update legacy district ids & seats
