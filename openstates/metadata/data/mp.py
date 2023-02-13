@@ -1,4 +1,4 @@
-from ..models import State
+from ..models import State, Chamber, simple_numbered_districts
 
 AS = State(
     name="Northern Mariana Islands",
@@ -15,4 +15,24 @@ AS = State(
     executive_organization_id="ocd-organization/568c13c8-d87b-40f0-a4a5-f1543e5f9089",
     division_id="ocd-division/country:us/territory:mp",
     jurisdiction_id="ocd-jurisdiction/country:us/territory:mp/government",
+    lower=Chamber(
+        chamber_type="lower",
+        name="House",
+        organization_id="ocd-organization/58222d00-3b6f-422e-9b34-81350338ae91",
+        num_seats=20,
+        title="Legislators",
+        districts=simple_numbered_districts(
+            "ocd-division/country:us/territory:as", "lower", 20
+        ),
+    ),
+    upper=Chamber(
+        chamber_type="upper",
+        name="Senate",
+        organization_id="ocd-organization/9f00690c-2f99-4ed0-8d0c-feadfc058054",
+        num_seats=9,
+        title="Senators",
+        districts=simple_numbered_districts(
+            "ocd-division/country:us/territory:as", "upper", 9
+        ),
+    ),
 )
