@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.15.2.2 - February 13, 2023
+
+* Bump version correctly
+
 ## 6.15.2.1 - February 13, 2023
 
 * Fix CI bug
