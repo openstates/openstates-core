@@ -1,4 +1,10 @@
 # Changelog
+
+## 6.15.2 - February 13, 2023
+
+* Update legacy district ids & seats
+* Add database migrations & metadata updates to release steps
+
 ## 6.15.1 - February 6, 2023
 
 * Fix boto3 library usage for realtime consumption
