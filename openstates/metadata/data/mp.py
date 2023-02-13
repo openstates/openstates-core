@@ -1,6 +1,6 @@
 from ..models import State, Chamber, simple_numbered_districts
 
-AS = State(
+MP = State(
     name="Northern Mariana Islands",
     abbr="MP",
     capital="Saipan",

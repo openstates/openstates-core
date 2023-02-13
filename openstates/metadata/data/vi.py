@@ -1,6 +1,6 @@
 from ..models import State, Chamber, simple_numbered_districts
 
-AS = State(
+VI = State(
     name="Virgin Islands",
     abbr="VI",
     capital="Charlotte Amalie",
