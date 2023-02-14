@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.15.3 - February 14, 2023
+
+* Update MA metadata
+
 ## 6.15.2.3 - February 13, 2023
 
 * Change to force deploy
