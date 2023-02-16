@@ -119,6 +119,7 @@ BILL_ACTION_CLASSIFICATION_CHOICES = (
     ("hearing-held", "Public Hearing Held/Scheduled"),
     ("work-session", "Work Session Held/Scheduled"),
     ("sponsorship", "Authorship/Sponsorship Details"),
+    ("carried-over", "Carried Over from Previous Session")
 
 )
 BILL_ACTION_CLASSIFICATIONS = _keys(BILL_ACTION_CLASSIFICATION_CHOICES)
