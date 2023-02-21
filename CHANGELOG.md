@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.15.4 - February 21, 2023
+
+* Update bill action classification options
+
 ## 6.15.3 - February 14, 2023
 
 * Update MA metadata
