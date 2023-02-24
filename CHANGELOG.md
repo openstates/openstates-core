@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.15.5 - February 24, 2023
+
+* Update Django dependency
+
 ## 6.15.4 - February 21, 2023
 
 * Update bill action classification options
