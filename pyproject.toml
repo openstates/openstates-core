@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "openstates"
-version = "6.15.5"
+version = "6.15.4"
 description = "core infrastructure for the openstates project"
 authors = ["James Turk <dev@jamesturk.net>"]
 license = "MIT"
@@ -20,7 +20,7 @@ os-validate = 'openstates.cli.validate:main'
 python = "^3.9"
 psycopg2-binary = "^2.8.4"
 dj_database_url = "^0.5.0"
-django = "^4.1"
+Django = "3.2.14"
 scrapelib = "^2.0.7"
 jsonschema = "^3.2.0"
 click = "^8.0"
@@ -33,7 +33,6 @@ pydantic = "^1.8.2"
 spatula = ">=0.8.9,<1.0"
 PyJWT = "^2.5.0"
 boto3 = "^1.26.61"
-pytz = "^2022.7.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.4.1"
