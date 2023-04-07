@@ -18,6 +18,7 @@ _name_fixes = {
     "PuertoRico": "Puerto Rico",
     "DistrictOfColumbia": "District of Columbia",
     "UnitedStates": "United States",
+    "SouthAfrica": "South Africa"
 }
 
 
@@ -44,7 +45,12 @@ class State(BaseModel):
 
     @property
     def classification(self):
-        return "state" if self.name != "United States" else "country"
+        if self.name == "United States":
+            return "country"
+        elif self.name == "South Africa":
+            return "country"
+        else:
+            return "state"
 
     @property
     def metadata(self):
