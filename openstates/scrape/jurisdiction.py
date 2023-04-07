@@ -45,9 +45,7 @@ class State(BaseModel):
 
     @property
     def classification(self):
-        if self.name == "United States":
-            return "country"
-        elif self.name == "South Africa":
+        if any(c == self.name for c in ["United States", "South Africa"]):
             return "country"
         else:
             return "state"
