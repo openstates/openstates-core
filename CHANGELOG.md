@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.16.0 - April 7, 2023
+
+* Add metadata for ZA
+
 ## 6.15.4 - February 21, 2023
 
 * Update bill action classification options
