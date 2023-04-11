@@ -52,7 +52,7 @@ def create_chamber(juris, parent, chamber) -> None:
 def create_full_jurisdiction(state) -> None:
     from ..data.models import Jurisdiction, Organization
 
-    if any(c == state.abbr for c in ["United States", "South Africa"]):
+    if any(c == state.abbr for c in ["US", "ZA"]):
         classification = "country"
     else:
         classification = "state"
