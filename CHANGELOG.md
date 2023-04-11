@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.16.1 - April 11, 2023
+
+* Init metadata for ZA
+
 ## 6.16.0 - April 7, 2023
 
 * Add metadata for ZA
