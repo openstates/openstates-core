@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.16.2 - April 11, 2023
+
+* Correct initdb for ZA
+
 ## 6.16.1 - April 11, 2023
 
 * Init metadata for ZA
