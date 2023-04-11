@@ -52,12 +52,17 @@ def create_chamber(juris, parent, chamber) -> None:
 def create_full_jurisdiction(state) -> None:
     from ..data.models import Jurisdiction, Organization
 
+    if any(c == state.abbr for c in ["United States", "South Africa"]):
+        classification = "country"
+    else:
+        classification = "state"
+
     div = create_division(state.division_id, state.name)
     juris, created = Jurisdiction.objects.get_or_create(
         id=state.jurisdiction_id,
         name=state.name,
         division=div,
-        classification="state" if state.abbr != "US" else "country",
+        classification=classification,
         defaults=dict(url=state.url),
     )
     leg, created = Organization.objects.get_or_create(
