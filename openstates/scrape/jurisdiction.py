@@ -18,7 +18,7 @@ _name_fixes = {
     "PuertoRico": "Puerto Rico",
     "DistrictOfColumbia": "District of Columbia",
     "UnitedStates": "United States",
-    "SouthAfrica": "South Africa"
+    "southafrica": "South Africa"
 }
 
 
