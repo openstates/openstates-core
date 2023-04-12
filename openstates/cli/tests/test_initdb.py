@@ -20,7 +20,7 @@ def test_create_division_basic():
 def test_create_division_duplicate():
     div = create_division("ocd-division/country:us/state:nc", "North Carolina", "NC")
     # first name persists b/c of get_or_create
-    div = create_division("ocd-division/country:us/state:nc", "N. Carolina" "NC")
+    div = create_division("ocd-division/country:us/state:nc", "N. Carolina", "NC")
     assert div.name == "North Carolina"
     assert Division.objects.count() == 1
 
