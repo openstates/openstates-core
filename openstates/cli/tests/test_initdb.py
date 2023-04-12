@@ -11,16 +11,16 @@ from django.db.utils import IntegrityError  # type: ignore
 
 @pytest.mark.django_db
 def test_create_division_basic():
-    div = create_division("ocd-division/country:us/state:nc", "North Carolina")
+    div = create_division("ocd-division/country:us/state:nc", "North Carolina", "NC")
     assert div.name == "North Carolina"
     assert Division.objects.count() == 1
 
 
 @pytest.mark.django_db
 def test_create_division_duplicate():
-    div = create_division("ocd-division/country:us/state:nc", "North Carolina")
+    div = create_division("ocd-division/country:us/state:nc", "North Carolina", "NC")
     # first name persists b/c of get_or_create
-    div = create_division("ocd-division/country:us/state:nc", "N. Carolina")
+    div = create_division("ocd-division/country:us/state:nc", "N. Carolina" "NC")
     assert div.name == "North Carolina"
     assert Division.objects.count() == 1
 
