@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.16.4 - April 12, 2023
+
+* check abbr on division creation
+
 ## 6.16.3 - April 12, 2023
 
 * change name lookup
