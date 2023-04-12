@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.16.3 - April 12, 2023
+
+* change name lookup
+
 ## 6.16.2 - April 11, 2023
 
 * Correct initdb for ZA
