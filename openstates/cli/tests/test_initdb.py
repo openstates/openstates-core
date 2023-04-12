@@ -38,7 +38,7 @@ def test_create_chamber_basic():
         classification="legislature",
         jurisdiction=juris,
     )
-    create_chamber(juris, leg, nc.lower)
+    create_chamber(juris, leg, nc.lower, "nc")
 
     # ensure the org and posts were created
     org = Organization.objects.get(classification="lower")
@@ -62,8 +62,8 @@ def test_create_chamber_duplicate_idempotent():
     )
 
     # second call, identical to first, should be idempotent
-    create_chamber(juris, leg, nc.lower)
-    create_chamber(juris, leg, nc.lower)
+    create_chamber(juris, leg, nc.lower, "nc")
+    create_chamber(juris, leg, nc.lower, "nc")
 
     assert Organization.objects.filter(classification="lower").count() == 1
 
@@ -88,11 +88,11 @@ def test_create_chamber_duplicate_with_changes():
         jurisdiction=juris,
     )
 
-    create_chamber(juris, leg, nc.lower)
+    create_chamber(juris, leg, nc.lower, "nc")
     # second call, but lower chamber name has been changed
     nc.lower.name = "Ronald McDonald House of Clowns"
     with pytest.raises(IntegrityError):
-        create_chamber(juris, leg, nc.lower)  # unsupported, should definitely be loud
+        create_chamber(juris, leg, nc.lower, "nc")  # unsupported, should definitely be loud
 
     assert Organization.objects.filter(classification="lower").count() == 1
 
@@ -111,7 +111,7 @@ def test_create_chamber_unicam():
         jurisdiction=juris,
     )
 
-    create_chamber(juris, leg, ne.legislature)
+    create_chamber(juris, leg, ne.legislature, "ne")
 
     # no org was created, but posts were
     assert Organization.objects.count() == 1
