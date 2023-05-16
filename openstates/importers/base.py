@@ -580,9 +580,9 @@ class BaseImporter:
             self.person_cache[cache_key] = ids.pop()
             errmsg = None
         elif not ids:
-            errmsg = f"no people returned for spec"
+            errmsg = "no people returned for spec"
         else:
-            errmsg = f"multiple people returned for spec"
+            errmsg = "multiple people returned for spec"
 
         # either raise or log error
         if errmsg:
