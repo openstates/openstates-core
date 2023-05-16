@@ -298,9 +298,6 @@ class BaseImporter:
         for json_id, data in self._prepare_imports(data_items):
             obj_id, what = self.import_item(data)
             if not obj_id or not what:
-                self.logger.warning(
-                    f"Skipped {data} because it did not have an associated ID or type"
-                )
                 continue
             self.json_to_db_id[json_id] = obj_id
             record["records"][what].append(obj_id)
@@ -583,13 +580,14 @@ class BaseImporter:
             self.person_cache[cache_key] = ids.pop()
             errmsg = None
         elif not ids:
-            errmsg = f"no people returned for {spec}"
+            errmsg = f"no people returned for spec"
         else:
-            errmsg = f"multiple people returned for {spec}"
+            errmsg = f"multiple people returned for spec"
 
         # either raise or log error
         if errmsg:
-            self.error(errmsg)
+            # we'll mute this for now, but it's useful for debugging
+            # self.error(errmsg)
             self.person_cache[cache_key] = None
 
         # return the newly-cached object
