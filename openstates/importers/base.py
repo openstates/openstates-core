@@ -587,7 +587,6 @@ class BaseImporter:
 
         # either raise or log error
         if errmsg:
-            # we'll mute this for now, but it's useful for debugging
             self.error(errmsg)
             self.person_cache[cache_key] = None
 
