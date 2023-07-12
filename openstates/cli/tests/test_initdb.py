@@ -11,16 +11,16 @@ from django.db.utils import IntegrityError  # type: ignore
 
 @pytest.mark.django_db
 def test_create_division_basic():
-    div = create_division("ocd-division/country:us/state:nc", "North Carolina")
+    div = create_division("ocd-division/country:us/state:nc", "North Carolina", "NC")
     assert div.name == "North Carolina"
     assert Division.objects.count() == 1
 
 
 @pytest.mark.django_db
 def test_create_division_duplicate():
-    div = create_division("ocd-division/country:us/state:nc", "North Carolina")
+    div = create_division("ocd-division/country:us/state:nc", "North Carolina", "NC")
     # first name persists b/c of get_or_create
-    div = create_division("ocd-division/country:us/state:nc", "N. Carolina")
+    div = create_division("ocd-division/country:us/state:nc", "N. Carolina", "NC")
     assert div.name == "North Carolina"
     assert Division.objects.count() == 1
 
@@ -38,7 +38,7 @@ def test_create_chamber_basic():
         classification="legislature",
         jurisdiction=juris,
     )
-    create_chamber(juris, leg, nc.lower)
+    create_chamber(juris, leg, nc.lower, "NC")
 
     # ensure the org and posts were created
     org = Organization.objects.get(classification="lower")
@@ -62,8 +62,8 @@ def test_create_chamber_duplicate_idempotent():
     )
 
     # second call, identical to first, should be idempotent
-    create_chamber(juris, leg, nc.lower)
-    create_chamber(juris, leg, nc.lower)
+    create_chamber(juris, leg, nc.lower, "NC")
+    create_chamber(juris, leg, nc.lower, "NC")
 
     assert Organization.objects.filter(classification="lower").count() == 1
 
@@ -88,11 +88,11 @@ def test_create_chamber_duplicate_with_changes():
         jurisdiction=juris,
     )
 
-    create_chamber(juris, leg, nc.lower)
+    create_chamber(juris, leg, nc.lower, "NC")
     # second call, but lower chamber name has been changed
     nc.lower.name = "Ronald McDonald House of Clowns"
     with pytest.raises(IntegrityError):
-        create_chamber(juris, leg, nc.lower)  # unsupported, should definitely be loud
+        create_chamber(juris, leg, nc.lower, "NC")  # unsupported, should definitely be loud
 
     assert Organization.objects.filter(classification="lower").count() == 1
 
@@ -111,7 +111,7 @@ def test_create_chamber_unicam():
         jurisdiction=juris,
     )
 
-    create_chamber(juris, leg, ne.legislature)
+    create_chamber(juris, leg, ne.legislature, "NE")
 
     # no org was created, but posts were
     assert Organization.objects.count() == 1

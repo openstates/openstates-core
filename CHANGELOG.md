@@ -1,4 +1,54 @@
 # Changelog
+
+## 6.16.5 - May 16, 2023
+
+* update logs on import
+
+## 6.16.4 - April 12, 2023
+
+* check abbr on division creation
+
+## 6.16.3 - April 12, 2023
+
+* change name lookup
+
+## 6.16.2 - April 11, 2023
+
+* Correct initdb for ZA
+
+## 6.16.1 - April 11, 2023
+
+* Init metadata for ZA
+
+## 6.16.0 - April 7, 2023
+
+* Add metadata for ZA
+
+## 6.15.4 - February 21, 2023
+
+* Update bill action classification options
+
+## 6.15.3 - February 14, 2023
+
+* Update MA metadata
+
+## 6.15.2.3 - February 13, 2023
+
+* Change to force deploy
+
+## 6.15.2.2 - February 13, 2023
+
+* Bump version correctly
+
+## 6.15.2.1 - February 13, 2023
+
+* Fix CI bug
+
+## 6.15.2 - February 13, 2023
+
+* Update legacy district ids & seats
+* Add database migrations & metadata updates to release steps
+
 ## 6.15.1 - February 6, 2023
 
 * Fix boto3 library usage for realtime consumption

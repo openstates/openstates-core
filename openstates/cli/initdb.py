@@ -6,18 +6,20 @@ from django.core import management
 from django.db import transaction  # type: ignore
 
 
-def create_division(division_id: str, name: str):
+def create_division(division_id: str, name: str, jurisdiction: str):
     from ..data.models import Division
+
+    country = "us" if jurisdiction != "ZA" else "za"
 
     return Division.objects.get_or_create(
         id=division_id,
-        country="us",
+        country=country,
         # TODO: allow changing name
         defaults=dict(name=name),
     )[0]
 
 
-def create_chamber(juris, parent, chamber) -> None:
+def create_chamber(juris, parent, chamber, abbr) -> None:
     from ..data.models import Organization, Post
 
     if chamber.chamber_type != "unicameral":
@@ -35,7 +37,7 @@ def create_chamber(juris, parent, chamber) -> None:
     # create divisions and posts
     for district in chamber.districts:
         post_div = create_division(
-            district.division_id, f"{juris.name} {chamber.name} {district.name}"
+            district.division_id, f"{juris.name} {chamber.name} {district.name}", abbr
         )
         Post.objects.get_or_create(
             label=district.name,
@@ -52,12 +54,17 @@ def create_chamber(juris, parent, chamber) -> None:
 def create_full_jurisdiction(state) -> None:
     from ..data.models import Jurisdiction, Organization
 
-    div = create_division(state.division_id, state.name)
+    if any(c == state.abbr for c in ["US", "ZA"]):
+        classification = "country"
+    else:
+        classification = "state"
+
+    div = create_division(state.division_id, state.name, state.abbr)
     juris, created = Jurisdiction.objects.get_or_create(
         id=state.jurisdiction_id,
         name=state.name,
         division=div,
-        classification="state" if state.abbr != "US" else "country",
+        classification=classification,
         defaults=dict(url=state.url),
     )
     leg, created = Organization.objects.get_or_create(
@@ -75,10 +82,10 @@ def create_full_jurisdiction(state) -> None:
     )
 
     if state.unicameral:
-        create_chamber(juris, leg, state.legislature)
+        create_chamber(juris, leg, state.legislature, state.abbr)
     else:
-        create_chamber(juris, leg, state.lower)
-        create_chamber(juris, leg, state.upper)
+        create_chamber(juris, leg, state.lower, state.abbr)
+        create_chamber(juris, leg, state.upper, state.abbr)
 
 
 def load_jurisdictions() -> None:

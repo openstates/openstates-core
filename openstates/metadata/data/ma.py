@@ -1011,7 +1011,7 @@ MA = State(
             District(
                 "First Plymouth and Norfolk",
                 "upper",
-                "ocd-division/country:us/state:ma/sldu:5th_middlesex",
+                "ocd-division/country:us/state:ma/sldu:1st_plymouth_and_norfolk",
                 1,
             ),
             District(
@@ -1206,7 +1206,7 @@ MA = State(
             District(
                 "Norfolk, Worcester and Middlesex",
                 "upper",
-                "ocd-division/country:us/state:ma/sldu:worcester_and_middlesex",
+                "ocd-division/country:us/state:ma/sldu:norfolk_worcester_and_middlesex",
                 1,
             ),
             District(
