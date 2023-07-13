@@ -109,4 +109,4 @@ STATES = [
     WY,
 ]
 
-TERRITORIES = [DC, PR, AS, GU, VI, MP]
+TERRITORIES = [PR, AS, GU, VI, MP]
