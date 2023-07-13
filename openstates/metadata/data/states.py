@@ -50,11 +50,14 @@ from .wv import WV
 from .wy import WY
 
 from .dc import DC
+
 from .pr import PR
 from .asm import AS
 from .mp import MP
 from .gu import GU
 from .vi import VI
+
+from .za import ZA
 
 STATES = [
     AK,
@@ -109,4 +112,6 @@ STATES = [
     WY,
 ]
 
+DISTRICTS = [DC]
 TERRITORIES = [PR, AS, GU, VI, MP]
+INTERNATIONAL = [ZA]
