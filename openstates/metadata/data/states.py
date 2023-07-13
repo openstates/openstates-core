@@ -57,6 +57,7 @@ from .mp import MP
 from .gu import GU
 from .vi import VI
 
+from .us import US
 from .za import ZA
 
 STATES = [
@@ -114,4 +115,4 @@ STATES = [
 
 DISTRICTS = [DC]
 TERRITORIES = [PR, AS, GU, VI, MP]
-INTERNATIONAL = [ZA]
+INTERNATIONAL = [ZA, US]
