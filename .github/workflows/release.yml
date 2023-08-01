@@ -26,23 +26,9 @@ jobs:
         run: poetry config pypi-token.pypi "${{ secrets.PYPI_API_KEY }}"
       - name: Publish package
         run: poetry publish --build
-      - name: metadata filter
-        uses: tj-actions/changed-files@v33
-        id: metadata-filter
-        with:
-          files: |
-            openstates/metadata
-            openstates/data
-            openstates/cli/initdb.py
-            .github/workflows/release.yml
-          files_ignore: |
-            openstates/metadata/tests
-            openstates/data/tests
       - name: install dependencies
-        if: "steps.metadata-filter.outputs.any_changed == 'true'"
         run: poetry install
       - name: update metadata
-        if: "steps.metadata-filter.outputs.any_changed == 'true'"
         env:
           DATABASE_URL: ${{ secrets.OPENSTATES_DATABASE_URL }}
         run: poetry run os-initdb
