@@ -13,7 +13,10 @@ from django.db import transaction  # type: ignore
 def create_division(division_id: str, name: str, jurisdiction: str):
     from ..data.models import Division
 
-    country = jurisdiction.lower() if jurisdiction in NON_US_INTERNATIONAL_ABBRS else "us"
+    if jurisdiction in NON_US_INTERNATIONAL_ABBRS:
+        country = jurisdiction.lower()
+    else:
+        country = "us"
 
     return Division.objects.get_or_create(
         id=division_id,
