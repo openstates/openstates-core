@@ -56,7 +56,7 @@ def create_chamber(juris, parent, chamber, abbr) -> None:
 def create_full_jurisdiction(state) -> None:
     from ..data.models import Jurisdiction, Organization
 
-    if any(c == state.abbr for c in INTERNATIONAL):
+    if any(k for k in INTERNATIONAL if state.abbr == k.abbr):
         classification = "country"
     else:
         classification = "state"
