@@ -183,7 +183,7 @@ class Scraper(scrapelib.Scraper):
             # Remove redundant prefix
             try:
                 upload_file_path = file_path[
-                    file_path.index("_data") + len("_data") + 1 :
+                    file_path.index("_data") + len("_data") + 1:
                 ]
             except Exception:
                 upload_file_path = file_path

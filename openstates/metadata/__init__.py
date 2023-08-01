@@ -1,5 +1,5 @@
 import typing
-from .data import STATES_BY_ABBR, STATES_BY_JID, STATES_BY_NAME
+from .data import STATES_BY_ABBR, INTERNATIONAL, STATES_BY_JID, STATES_BY_NAME  # noqa: F401
 from .models import State, Chamber, District
 
 
