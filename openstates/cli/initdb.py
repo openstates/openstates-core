@@ -1,17 +1,19 @@
 # type: ignore
 # too many django types in this to type for now
-from ..metadata import STATES_BY_ABBR, INTERNATIONAL
+from ..metadata import (
+    STATES_BY_ABBR,
+    NON_US_INTERNATIONAL_ABBRS,
+    INTERNATIONAL_ABBRS,
+)
 from ..utils.django import init_django
 from django.core import management
 from django.db import transaction  # type: ignore
-
-NON_US_INTERNATIONAL = [k.abbr for k in INTERNATIONAL if k.abbr != "US"]
 
 
 def create_division(division_id: str, name: str, jurisdiction: str):
     from ..data.models import Division
 
-    country = jurisdiction.lower() if jurisdiction in NON_US_INTERNATIONAL else "us"
+    country = jurisdiction.lower() if jurisdiction in NON_US_INTERNATIONAL_ABBRS else "us"
 
     return Division.objects.get_or_create(
         id=division_id,
@@ -56,7 +58,7 @@ def create_chamber(juris, parent, chamber, abbr) -> None:
 def create_full_jurisdiction(state) -> None:
     from ..data.models import Jurisdiction, Organization
 
-    if any(k for k in INTERNATIONAL if state.abbr == k.abbr):
+    if state.abbr in INTERNATIONAL_ABBRS:
         classification = "country"
     else:
         classification = "state"
