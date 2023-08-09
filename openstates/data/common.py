@@ -121,7 +121,7 @@ BILL_ACTION_CLASSIFICATION_CHOICES = (
     ("sponsorship", "Authorship/Sponsorship Details"),
     ("carried-over", "Carried Over from Previous Session"),
     ("reported-out-of-committee", "Reported Out of Committee"),
-    ("concurrence", "Sent For Concurrence")
+    ("concurrence", "Sent for Concurrence")
 
 
 )
