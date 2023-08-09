@@ -1,5 +1,25 @@
 # Changelog
 
+## 6.17.5 - August 9, 2023
+
+* Add new bill statuses to validation
+
+## 6.17.4 - August 2, 2023
+
+* Small territory fixes
+
+## 6.17.3 - August 1, 2023
+
+* update pyyaml dependency
+      
+## 6.17.2 - August 1, 2023
+
+* Support additional territories in db init
+      
+## 6.17.0 - July 14, 2023
+
+* Add additional US territory support#113
+
 ## 6.16.5 - May 16, 2023
 
 * update logs on import
