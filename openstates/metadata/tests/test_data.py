@@ -1,14 +1,14 @@
 # type: ignore
 import re
 
-from ..data import STATES_AND_DC_PR
+from ..data import STATES_AND_TERRITORIES
 from ..data.states import NC, VT
 
 
 def test_basics() -> None:
     unicam_count = 0
     bicam_count = 0
-    for state in STATES_AND_DC_PR:
+    for state in STATES_AND_TERRITORIES:
         if state.unicameral:
             unicam_count += 1
             assert state.legislature
@@ -19,12 +19,12 @@ def test_basics() -> None:
             assert not state.legislature
             assert state.lower
             assert state.upper
-    assert unicam_count == 2
-    assert bicam_count == 50
+    assert unicam_count == 4
+    assert bicam_count == 52
 
 
 def test_district_numbers() -> None:
-    for state in STATES_AND_DC_PR:
+    for state in STATES_AND_TERRITORIES:
         if state.unicameral:
             assert state.legislature.num_seats == sum(
                 d.num_seats for d in state.legislature.districts
@@ -37,7 +37,7 @@ def test_district_numbers() -> None:
             assert state.lower.num_seats == sum(
                 d.num_seats for d in state.lower.districts
             )
-            assert state.lower.num_seats > state.upper.num_seats > 10
+            assert state.lower.num_seats > state.upper.num_seats > 8
 
 
 def test_simple_numbered_districts() -> None:
@@ -48,7 +48,7 @@ def test_simple_numbered_districts() -> None:
 
 
 def test_everything_has_division_id() -> None:
-    for state in STATES_AND_DC_PR:
+    for state in STATES_AND_TERRITORIES:
         if state.unicameral:
             for d in state.legislature.districts:
                 assert d.num_seats
@@ -76,7 +76,7 @@ def test_everything_has_division_id() -> None:
 
 
 def test_everything_has_organization_id() -> None:
-    for state in STATES_AND_DC_PR:
+    for state in STATES_AND_TERRITORIES:
         if state.unicameral:
             assert len(state.legislature.organization_id) == 53
         else:

@@ -18,7 +18,10 @@ _name_fixes = {
     "PuertoRico": "Puerto Rico",
     "DistrictOfColumbia": "District of Columbia",
     "UnitedStates": "United States",
-    "southafrica": "South Africa"
+    "southafrica": "South Africa",
+    "VirginIslands": "Virgin Islands",
+    "AmericanSamoa": "American Samoa",
+    "NorthernMarianaIslands": "Northern Mariana Islands",
 }
 
 

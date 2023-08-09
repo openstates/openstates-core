@@ -1,8 +1,12 @@
 # Changelog
 
-## 6.16.5 - August 9, 2023
+## 6.16.6 - August 9, 2023
 
 * Add new bill statuses to validation
+
+## 6.16.5 - May 16, 2023
+
+* update logs on import
 
 ## 6.16.4 - April 12, 2023
 
