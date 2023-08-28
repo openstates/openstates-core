@@ -582,9 +582,10 @@ class BaseImporter:
             errmsg = None
         elif not ids:
             errmsg = "no people returned for spec"
-            errmsg += f" {psuedo_person_id} {start_date} {end_date} {org_classification}"
+            errmsg += f" {psuedo_person_id} {start_date} {end_date} {org_classification} {self.jurisdiction_id}"
         else:
             errmsg = "multiple people returned for spec"
+            errmsg += f" {psuedo_person_id} {start_date} {end_date} {org_classification} {self.jurisdiction_id}"
 
         # either raise or log error
         if errmsg:
