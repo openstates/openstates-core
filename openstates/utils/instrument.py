@@ -88,7 +88,7 @@ class Instrumentation(object):
                 points.append(p)
             self.logger.debug(f"Sending stats batch: {self._batch}")
             try:
-                self.write_api("", record=points)
+                self.write_api.write("", record=points)
                 self._batch = list()
             except Exception as e:
                 self.logger.warning(
