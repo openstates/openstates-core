@@ -8,6 +8,7 @@ from pathlib import Path
 import click
 import boto3  # type: ignore
 import logging
+import time
 import yaml
 from django.db import transaction, connection  # type: ignore
 from ..utils import abbr_to_jid
@@ -34,10 +35,10 @@ from ..utils.instrument import Instrumentation
 
 stats = Instrumentation()
 
-logging.getLogger('boto3').setLevel(logging.WARNING)
-logging.getLogger('botocore').setLevel(logging.WARNING)
-logging.getLogger('s3transfer').setLevel(logging.WARNING)
-logging.getLogger('urllib3').setLevel(logging.WARNING)
+logging.getLogger("boto3").setLevel(logging.WARNING)
+logging.getLogger("botocore").setLevel(logging.WARNING)
+logging.getLogger("s3transfer").setLevel(logging.WARNING)
+logging.getLogger("urllib3").setLevel(logging.WARNING)
 
 OPTIONAL_FIELD_SET = {
     "sort_name",
@@ -733,7 +734,15 @@ def merge(abbr: str, input_dir: str, retirement: str, reset_offices: bool) -> No
     """
     Convert scraped JSON in INPUT_DIR to YAML files for this repo.
     """
-    stats.send_counter("people_scrapes_total", 1, {"jurisdiction": abbr})
+    stats.write_stats(
+        [
+            {
+                "metric": "people_scrapes",
+                "fields": {"total": 1},
+                "tags": {"jurisdiction": abbr},
+            }
+        ]
+    )
     jurisdiction_id = abbr_to_jid(abbr)
     new_people = process_scrape_dir(Path(input_dir), jurisdiction_id)
 
@@ -745,11 +754,19 @@ def merge(abbr: str, input_dir: str, retirement: str, reset_offices: bool) -> No
     ):
         existing_people.append(Person.load_yaml(filename))
 
-    stats.send_gauge(
-        "new_people_discovered", len(existing_people), {"jurisdiction": abbr}
-    )
-    stats.send_gauge(
-        "existing_people_discovered", len(new_people), {"jurisdiction": abbr}
+    stats.write_stats(
+        [
+            {
+                "metric": "people",
+                "fields": {"discovered": len(existing_people)},
+                "tags": {"jurisdiction": abbr, "people_type": "new"},
+            },
+            {
+                "metric": "people",
+                "fields": {"discovered": len(new_people)},
+                "tags": {"jurisdiction": abbr, "people_type": "existing"},
+            },
+        ]
     )
 
     click.secho(
@@ -760,8 +777,20 @@ def merge(abbr: str, input_dir: str, retirement: str, reset_offices: bool) -> No
         abbr, existing_people, new_people, retirement, reset_offices
     )
     click.secho(f"{len(unmatched)} people were unmatched")
-    stats.send_gauge("people_unmatched", len(unmatched), {"jurisdiction": abbr})
-    stats.send_last_run("people_merge_last_run_time", {"jurisdiction": abbr})
+    stats.write_stats(
+        [
+            {
+                "metric": "people",
+                "fields": {"unmatched": len(unmatched)},
+                "tags": {"jurisdiction": abbr},
+            },
+            {
+                "metric": "people_merge_last_run",
+                "fields": {"time": int(time.time())},
+                "tags": {"jurisdiction": abbr},
+            },
+        ]
+    )
     stats.close()
 
 

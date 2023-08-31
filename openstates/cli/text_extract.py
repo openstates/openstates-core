@@ -7,6 +7,7 @@ import math
 import warnings
 import click
 import scrapelib
+import time
 from pathlib import Path
 from django.contrib.postgres.search import SearchVector  # type: ignore
 from django.db import transaction  # type: ignore
@@ -92,10 +93,14 @@ def extract_to_file(
         else:
             text = func(data, version)
     except Exception as e:
-        stats.send_counter(
-            "failed_text_extractions_total",
-            1,
-            {"jurisdiction": version["jurisdiction_id"]},
+        stats.write_stats(
+            [
+                {
+                    "metric": "failed_text_extractions",
+                    "fields": {"total": 1},
+                    "tags": {"jurisdiction": version["jurisdiction_id"]},
+                }
+            ]
         )
         click.secho(f"exception processing {version['url']}: {e}", fg="red")
         text = None
@@ -363,7 +368,15 @@ def update(
     # print status within checkpoints
     status_num = checkpoint / 5
 
-    stats.send_counter("text_extraction_runs_total", 1, {"jurisdiction": state})
+    stats.write_stats(
+        [
+            {
+                "metric": "text_extraction_runs",
+                "fields": {"total": 1},
+                "tags": {"jurisdiction": state},
+            }
+        ]
+    )
 
     if state == "all":
         all_bills = Bill.objects.all()
@@ -406,8 +419,14 @@ def update(
         print(
             f"{state}: {len(all_bills)} bills, {len(missing_search)} without search results"
         )
-    stats.send_gauge(
-        "text_extraction_missing_vectors", len(missing_search), {"jurisdiction": state}
+    stats.write_stats(
+        [
+            {
+                "metric": "text_extraction_missing",
+                "fields": {"vectors": len(missing_search)},
+                "tags": {"jurisdiction": state},
+            }
+        ]
     )
 
     if n:
@@ -431,14 +450,28 @@ def update(
             transaction.commit()
             ids_to_update = []
 
-    stats.send_gauge(
-        "text_extraction_updates", len(ids_to_update), {"jurisdiction": state}
+    stats.write_stats(
+        [
+            {
+                "metric": "text_extraction",
+                "fields": {"updates": len(ids_to_update)},
+                "tags": {"jurisdiction": state},
+            }
+        ]
     )
     # be sure to reindex final set
     reindex(ids_to_update)
     transaction.commit()
     transaction.set_autocommit(True)
-    stats.send_last_run("last_text_extract_time", {"jurisdiction": state})
+    stats.write_stats(
+        [
+            {
+                "metric": "last_text_extract",
+                "fields": {"time": int(time.time())},
+                "tags": {"jurisdiction": state},
+            }
+        ]
+    )
     stats.close()
 
 
