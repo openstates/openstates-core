@@ -51,6 +51,7 @@ black = "^22.10.0"
 
 [tool.poetry.group.dev.dependencies]
 types-jsonschema = "^4.17.0.3"
+types-influxdb-client = "^1.37.0.0"
 
 [tool.coverage.run]
 omit = [

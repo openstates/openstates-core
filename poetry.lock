@@ -1809,6 +1809,20 @@ files = [
 ]
 
 [[package]]
+name = "types-influxdb-client"
+version = "1.37.0.0"
+description = "Typing stubs for influxdb-client"
+optional = false
+python-versions = "*"
+files = [
+    {file = "types-influxdb-client-1.37.0.0.tar.gz", hash = "sha256:05d0a9faccb5f532fa8aa354d3134e67662f6f9b8fedc5acf2d0288a7c4d4659"},
+    {file = "types_influxdb_client-1.37.0.0-py3-none-any.whl", hash = "sha256:ddaf6896dc22869a9a357718f8e07d1c676ab88c5aed5887f5709270caf04f42"},
+]
+
+[package.dependencies]
+types-urllib3 = "*"
+
+[[package]]
 name = "types-jsonschema"
 version = "4.17.0.10"
 description = "Typing stubs for jsonschema"
@@ -1970,4 +1984,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.9"
-content-hash = "535eaf1f55e7c47bfa8ed410fbde0c8132e7fca14eea403a6937bcb2c88f71d9"
+content-hash = "4ca23b11ba7cf90da3df2c2edc6f885e9119e4f86bf2b9e9e87df03773ea0fd1"
