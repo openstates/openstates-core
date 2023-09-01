@@ -557,6 +557,30 @@ doc = ["sphinx"]
 test = ["mock (>=1.3.0)"]
 
 [[package]]
+name = "influxdb-client"
+version = "1.37.0"
+description = "InfluxDB 2.0 Python client library"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "influxdb_client-1.37.0-py3-none-any.whl", hash = "sha256:30b03888846fab6fb740936b1a08af24841b791cf1b99773e3894dd1d64edf2f"},
+    {file = "influxdb_client-1.37.0.tar.gz", hash = "sha256:01ac44d6a16a965ae2e0fa3238e2edeb147c11935a89b61439c9a752458001da"},
+]
+
+[package.dependencies]
+certifi = ">=14.05.14"
+python-dateutil = ">=2.5.3"
+reactivex = ">=4.0.4"
+setuptools = ">=21.0.0"
+urllib3 = ">=1.26.0"
+
+[package.extras]
+async = ["aiocsv (>=1.2.2)", "aiohttp (>=3.8.1)"]
+ciso = ["ciso8601 (>=2.1.1)"]
+extra = ["numpy", "pandas (>=0.25.3)"]
+test = ["aioresponses (>=0.7.3)", "coverage (>=4.0.3)", "flake8 (>=5.0.3)", "httpretty (==1.0.5)", "jinja2 (==3.1.2)", "nose (>=1.3.7)", "pluggy (>=0.3.1)", "psutil (>=5.6.3)", "py (>=1.4.31)", "pytest (>=5.0.0)", "pytest-cov (>=3.0.0)", "pytest-timeout (>=2.1.0)", "randomize (>=0.13)", "sphinx (==1.8.5)", "sphinx-rtd-theme"]
+
+[[package]]
 name = "ipython"
 version = "7.34.0"
 description = "IPython: Productive Interactive Computing"
@@ -1549,6 +1573,20 @@ files = [
 ]
 
 [[package]]
+name = "reactivex"
+version = "4.0.4"
+description = "ReactiveX (Rx) for Python"
+optional = false
+python-versions = ">=3.7,<4.0"
+files = [
+    {file = "reactivex-4.0.4-py3-none-any.whl", hash = "sha256:0004796c420bd9e68aad8e65627d85a8e13f293de76656165dffbcb3a0e3fb6a"},
+    {file = "reactivex-4.0.4.tar.gz", hash = "sha256:e912e6591022ab9176df8348a653fe8c8fa7a301f26f9931c9d8c78a650e04e8"},
+]
+
+[package.dependencies]
+typing-extensions = ">=4.1.1,<5.0.0"
+
+[[package]]
 name = "requests"
 version = "2.31.0"
 description = "Python HTTP for Humans."
@@ -1771,6 +1809,20 @@ files = [
 ]
 
 [[package]]
+name = "types-influxdb-client"
+version = "1.37.0.0"
+description = "Typing stubs for influxdb-client"
+optional = false
+python-versions = "*"
+files = [
+    {file = "types-influxdb-client-1.37.0.0.tar.gz", hash = "sha256:05d0a9faccb5f532fa8aa354d3134e67662f6f9b8fedc5acf2d0288a7c4d4659"},
+    {file = "types_influxdb_client-1.37.0.0-py3-none-any.whl", hash = "sha256:ddaf6896dc22869a9a357718f8e07d1c676ab88c5aed5887f5709270caf04f42"},
+]
+
+[package.dependencies]
+types-urllib3 = "*"
+
+[[package]]
 name = "types-jsonschema"
 version = "4.17.0.10"
 description = "Typing stubs for jsonschema"
@@ -1932,4 +1984,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.9"
-content-hash = "3bde81add7ed5d58bfba30ea035d0868af270b7327769138c8fa582c065fea83"
+content-hash = "4ca23b11ba7cf90da3df2c2edc6f885e9119e4f86bf2b9e9e87df03773ea0fd1"

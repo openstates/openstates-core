@@ -8,6 +8,7 @@ import logging
 import logging.config
 import os
 import sys
+import time
 import traceback
 import typing
 from collections import defaultdict
@@ -84,7 +85,15 @@ def do_scrape(
         realtime=args.realtime,
     )
     report["jurisdiction"] = jscraper.do_scrape()
-    stats.send_counter("jurisdiction_scrapes_total", 1, {"jurisdiction": juris.name})
+    stats.write_stats(
+        [
+            {
+                "metric": "jurisdiction_scrapes",
+                "fields": {"total": 1},
+                "tags": {"jurisdiction": juris.name},
+            }
+        ]
+    )
 
     for scraper_name, scrape_args in scrapers.items():
         ScraperCls = juris.scrapers[scraper_name]
@@ -113,19 +122,28 @@ def do_scrape(
                     realtime=args.realtime,
                 )
                 partial_report = scraper.do_scrape(**scrape_args, session=session)
-                stats.send_counter(
-                    "session_scrapes_total",
-                    1,
-                    {"jurisdiction": juris.name, "session": session},
+                stats.write_stats(
+                    [
+                        {
+                            "metric": "session_scrapes",
+                            "fields": {"total": 1},
+                            "tags": {"jurisdiction": juris.name, "session": session},
+                        }
+                    ]
                 )
                 if not report[scraper_name]["start"]:
                     report[scraper_name]["start"] = partial_report["start"]
                 report[scraper_name]["end"] = partial_report["end"]
                 for obj, val in partial_report["objects"].items():
                     report[scraper_name]["objects"][obj] += val
-                stats.send_last_run(
-                    "last_session_scrape_time",
-                    {"jurisdiction": juris.name, "session": session},
+                stats.write_stats(
+                    [
+                        {
+                            "metric": "last_session_scrape",
+                            "fields": {"time": int(time.time())},
+                            "tags": {"jurisdiction": juris.name, "session": session},
+                        }
+                    ]
                 )
         else:
             scraper = ScraperCls(
@@ -138,28 +156,34 @@ def do_scrape(
             report[scraper_name] = scraper.do_scrape(**scrape_args)
             session = scrape_args.get("session", "")
             if session:
-                stats.send_counter(
-                    "session_scrapes_total",
-                    1,
-                    {"jurisdiction": juris.name, "session": session},
-                )
-                stats.send_last_run(
-                    "last_session_scrape_time",
-                    {"jurisdiction": juris.name, "session": session},
+                stats.write_stats(
+                    [
+                        {
+                            "metric": "session_scrapes",
+                            "fields": {"total": 1},
+                            "tags": {"jurisdiction": juris.name, "session": session},
+                        },
+                        {
+                            "metric": "last_session_scrape",
+                            "fields": {"time": int(time.time())},
+                            "tags": {"jurisdiction": juris.name, "session": session},
+                        },
+                    ]
                 )
             else:
-                stats.send_counter(
-                    "non_session_scrapes_total",
-                    1,
-                    {
-                        "jurisdiction": juris.name,
-                    },
-                )
-                stats.send_last_run(
-                    "last_non_session_scrape_time",
-                    {
-                        "jurisdiction": juris.name,
-                    },
+                stats.write_stats(
+                    [
+                        {
+                            "metric": "non_session_scrapes",
+                            "fields": {"total": 1},
+                            "tags": {"jurisdiction": juris.name},
+                        },
+                        {
+                            "metric": "last_non_session_scrape",
+                            "fields": {"time": int(time.time())},
+                            "tags": {"jurisdiction": juris.name},
+                        },
+                    ]
                 )
 
     return report
@@ -238,14 +262,24 @@ def check_session_list(juris: State) -> set[str]:
                 "{scraper}.ignored_scraped_sessions."
             ).format(sessions=", ".join(unaccounted_sessions), scraper=scraper)
         )
-    stats.send_gauge("active_sessions", len(active_sessions), {"jurisdiction": scraper})
-    stats.send_gauge(
-        "unaccounted_sessions", len(unaccounted_sessions), {"jurisdiction": scraper}
-    )
-    stats.send_gauge(
-        "ignored_sessions",
-        len(juris.ignored_scraped_sessions),
-        {"jurisdiction": scraper},
+    stats.write_stats(
+        [
+            {
+                "metric": "sessions",
+                "fields": {"count": len(active_sessions)},
+                "tags": {"jurisdiction": scraper, "session_type": "active"},
+            },
+            {
+                "metric": "sessions",
+                "fields": {"count": len(unaccounted_sessions)},
+                "tags": {"jurisdiction": scraper, "session_type": "unaccounted"},
+            },
+            {
+                "metric": "sessions",
+                "fields": {"count": len(juris.ignored_scraped_sessions)},
+                "tags": {"jurisdiction": scraper, "session_type": "ignored"},
+            },
+        ]
     )
     return active_sessions
 
@@ -301,29 +335,46 @@ def do_update(
     try:
         if "scrape" in args.actions:
             report["scrape"] = do_scrape(juris, args, scrapers, active_sessions)
-            stats.send_last_run(
-                "last_collection_run_time",
-                {
-                    "jurisdiction": juris.name,
-                    "scrape_type": "scrape",
-                },
+            stats.write_stats(
+                [
+                    {
+                        "metric": "last_collection_run",
+                        "fields": {"time": int(time.time())},
+                        "tags": {
+                            "jurisdiction": juris.name,
+                            "scrape_type": "scrape",
+                        },
+                    }
+                ]
             )
         # we skip import in realtime mode since this happens via the lambda function
         if "import" in args.actions and not args.realtime:
             report["import"] = do_import(juris, args)
-            stats.send_last_run(
-                "last_collection_run_time",
-                {
-                    "jurisdiction": juris.name,
-                    "scrape_type": "import",
-                },
+            stats.write_stats(
+                [
+                    {
+                        "metric": "last_collection_run",
+                        "fields": {"time": int(time.time())},
+                        "tags": {
+                            "jurisdiction": juris.name,
+                            "scrape_type": "import",
+                        },
+                    }
+                ]
             )
         report["success"] = True
     except Exception as exc:
-        stats.send_counter(
-            "scraper_failures_total",
-            1,
-            {"jurisdiction": juris.name, "scrapers": ",".join(sorted(args.actions))},
+        stats.write_stats(
+            [
+                {
+                    "metric": "scraper_failures",
+                    "fields": {"total": 1},
+                    "tags": {
+                        "jurisdiction": juris.name,
+                        "scrapers": ",".join(sorted(args.actions)),
+                    },
+                }
+            ]
         )
         stats.close()
         report["success"] = False
@@ -336,35 +387,47 @@ def do_update(
         finish = utils.utcnow()
 
         for scrape_type, details in report.get("scrape", {}).items():  # type: ignore
-            stats.send_timing(
-                "scrape_runtime_secs",
-                # datetime - datetime = timedelta object, which has a 'seconds' attribute
-                (finish - details["start"]).seconds,
-                {
-                    "jurisdiction": juris.name,
-                    "scrape_type": scrape_type,
-                },
+            # datetime - datetime = timedelta object, which has a 'seconds' attribute
+            stats.write_stats(
+                [
+                    {
+                        "metric": "scrape_runtime",
+                        "fields": {"secs": (finish - details["start"]).seconds},
+                        "tags": {
+                            "jurisdiction": juris.name,
+                            "scrape_type": scrape_type,
+                        },
+                    }
+                ]
             )
             for objtype, num in details["objects"].items():
-                stats.send_gauge(
-                    "objects_collected",
-                    num,
-                    {
-                        "jurisdiction": juris.name,
-                        "scrape_type": scrape_type,
-                        "object_type": objtype,
-                    },
+                stats.write_stats(
+                    [
+                        {
+                            "metric": "objects",
+                            "fields": {"collected": num},
+                            "tags": {
+                                "jurisdiction": juris.name,
+                                "scrape_type": scrape_type,
+                                "object_type": objtype,
+                            },
+                        }
+                    ]
                 )
         for scrape_type, details in report.get("import", {}).items():  # type: ignore
             for import_type in ["insert", "update", "noop"]:
-                stats.send_gauge(
-                    "objects_imported",
-                    details[import_type],
-                    {
-                        "jurisdiction": juris.name,
-                        "scrape_type": scrape_type,
-                        "import_type": import_type,
-                    },
+                stats.write_stats(
+                    [
+                        {
+                            "metric": "objects",
+                            "fields": {"imported": details[import_type]},
+                            "tags": {
+                                "jurisdiction": juris.name,
+                                "scrape_type": scrape_type,
+                                "import_type": import_type,
+                            },
+                        }
+                    ]
                 )
 
         if "import" in args.actions:

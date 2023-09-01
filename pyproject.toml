@@ -33,6 +33,7 @@ spatula = ">=0.8.9,<1.0"
 PyJWT = "^2.5.0"
 boto3 = "^1.26.61"
 us = "^3.1.1"
+influxdb-client = "^1.37.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.4.1"
@@ -50,6 +51,7 @@ black = "^22.10.0"
 
 [tool.poetry.group.dev.dependencies]
 types-jsonschema = "^4.17.0.3"
+types-influxdb-client = "^1.37.0.0"
 
 [tool.coverage.run]
 omit = [
