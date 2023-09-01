@@ -38,7 +38,7 @@ class Instrumentation(object):
         if not self.enabled:
             self.logger.debug("Stat emission is not enabled.")
             return
-        token: str = os.environ["OPENSTATES_STATS_AUTH_TOKEN"]
+        token: str = os.environ.get("OPENSTATES_STATS_AUTH_TOKEN", "")
         self._batch: List[Dict] = list()
         self.prefix: str = os.environ.get("STATS_PREFIX", "openstates_")
         self.endpoint: str = os.environ.get("STATS_ENDPOINT", "")
