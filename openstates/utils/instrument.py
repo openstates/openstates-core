@@ -42,6 +42,7 @@ class Instrumentation(object):
         self._batch: List[Dict] = list()
         self.prefix: str = os.environ.get("STATS_PREFIX", "openstates_")
         self.endpoint: str = os.environ.get("STATS_ENDPOINT", "")
+        self.bucket: str = os.environ.get("STATS_BUCKET", "openstates")
         if self.endpoint.endswith("/"):
             self.endpoint = self.endpoint.strip("/")
         client = InfluxDBClient(
@@ -88,7 +89,7 @@ class Instrumentation(object):
                 points.append(p)
             self.logger.debug(f"Sending stats batch: {self._batch}")
             try:
-                self.write_api.write("", record=points)
+                self.write_api.write(self.bucket, record=points)
                 self._batch = list()
             except Exception as e:
                 self.logger.warning(
