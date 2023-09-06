@@ -42,12 +42,14 @@ class Instrumentation(object):
         self._batch: List[Dict] = list()
         self.prefix: str = os.environ.get("STATS_PREFIX", "openstates_")
         self.endpoint: str = os.environ.get("STATS_ENDPOINT", "")
+        bucket: str = os.environ.get("STATS_BUCKET", "openstates")
         if self.endpoint.endswith("/"):
             self.endpoint = self.endpoint.strip("/")
         client = InfluxDBClient(
             url=self.endpoint,
             token=token,
             org="openstates",
+            bucket=bucket,
             enable_gzip=True,
         )
         self.write_api = client.write_api(write_options=SYNCHRONOUS)
