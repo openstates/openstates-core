@@ -9,6 +9,11 @@ def init_django() -> None:  # pragma: no cover
         "DATABASE_URL", "postgis://openstates:openstates@localhost/openstates"
     )
     DATABASES = {"default": dj_database_url.parse(DATABASE_URL)}
+    application_name = "os_core"
+    if "OPTIONS" not in DATABASES:
+        DATABASES["default"]["OPTIONS"] = {"application_name": application_name}
+    else:
+        DATABASES["default"]["OPTIONS"]["application_name"] = application_name
 
     conf.settings.configure(
         conf.global_settings,
