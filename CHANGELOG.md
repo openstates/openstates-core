@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.17.8 - October 16, 2023
+
+* set application_name for better performance monitoring
+
 ## 6.17.5 - August 9, 2023
 
 * Add new bill statuses to validation
