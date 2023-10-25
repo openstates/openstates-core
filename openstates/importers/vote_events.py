@@ -17,8 +17,8 @@ class VoteEventImporter(BaseImporter):
         "sources": (VoteSource, "vote_event_id", {}),
     }
 
-    def __init__(self, jurisdiction_id: str, bill_importer: BillImporter):
-        super(VoteEventImporter, self).__init__(jurisdiction_id)
+    def __init__(self, jurisdiction_id: str, bill_importer: BillImporter, do_postimport=True):
+        super(VoteEventImporter, self).__init__(jurisdiction_id, do_postimport)
         self.org_importer = OrganizationImporter(jurisdiction_id)
         self.bill_importer = bill_importer
         self.seen_bill_ids: typing.Set[str] = set()

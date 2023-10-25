@@ -41,8 +41,9 @@ class EventImporter(BaseImporter):
         self,
         jurisdiction_id: str,
         vote_event_importer: VoteEventImporter,
+        do_postimport=True,
     ):
-        super(EventImporter, self).__init__(jurisdiction_id)
+        super(EventImporter, self).__init__(jurisdiction_id, do_postimport)
         self.org_importer = OrganizationImporter(jurisdiction_id)
         self.vote_event_importer = vote_event_importer
 

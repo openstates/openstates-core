@@ -48,8 +48,8 @@ class BillImporter(BaseImporter):
     }
     preserve_order = {"actions"}
 
-    def __init__(self, jurisdiction_id: str):
-        super(BillImporter, self).__init__(jurisdiction_id)
+    def __init__(self, jurisdiction_id: str, do_postimport=True):
+        super(BillImporter, self).__init__(jurisdiction_id, do_postimport)
         self.org_importer = OrganizationImporter(jurisdiction_id)
 
     def get_object(self, bill: _JsonDict) -> Model:
