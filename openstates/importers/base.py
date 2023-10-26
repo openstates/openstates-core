@@ -119,8 +119,9 @@ class BaseImporter:
     merge_related: typing.Dict[str, typing.List[str]] = {}
     cached_transformers: _TransformerMapping = {}
 
-    def __init__(self, jurisdiction_id: str) -> None:
+    def __init__(self, jurisdiction_id: str, do_postimport=True) -> None:
         self.jurisdiction_id = jurisdiction_id
+        self.do_postimport = do_postimport
         self.json_to_db_id: typing.Dict[str, _ID] = {}
         self.duplicates: typing.Dict[str, str] = {}
         self.pseudo_id_cache: typing.Dict[str, typing.Optional[_ID]] = {}
@@ -305,8 +306,8 @@ class BaseImporter:
             record[what] += 1
 
         # all objects are loaded, a perfect time to do inter-object resolution and other tasks
-        if self.json_to_db_id:
-            # only do postimport step if there are some items of this type
+        if self.json_to_db_id and self.do_postimport:
+            # only do postimport step if requested by client code AND there are some items of this type
             # resolution of bills take a long time if not
             # and events & votes get deleted!
             self.postimport()

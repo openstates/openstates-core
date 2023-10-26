@@ -3,7 +3,6 @@
 *swp
 .cache
 .coverage
-.python-version
 .tox
 .venv/
 __pycache__
