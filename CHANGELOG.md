@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.17.9 - October 26, 2023
+
+* allow postimport hook to be skipped in os-update command
+
 ## 6.17.8 - October 16, 2023
 
 * set application_name for better performance monitoring
