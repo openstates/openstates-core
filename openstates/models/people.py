@@ -89,6 +89,7 @@ class OfficeType(str, Enum):
     CAPITOL = "capitol"
     CAPITOL_MAIL = "capitol-mail"
     PRIMARY = "primary"
+    HOME = "home"
 
 
 class PersonIdBlock(BaseModel):
