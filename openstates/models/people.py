@@ -85,7 +85,9 @@ EXECUTIVE_ROLES = (
 
 class OfficeType(str, Enum):
     DISTRICT = "district"
+    DISTRICT_MAIL = "district-mail"
     CAPITOL = "capitol"
+    CAPITOL_MAIL = "capitol-mail"
     PRIMARY = "primary"
 
 
