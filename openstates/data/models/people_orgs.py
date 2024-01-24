@@ -286,8 +286,11 @@ class PersonName(RelatedBase):
 
 OFFICE_CHOICES = (
     ("district", "District Office"),
+    ("district-mail", "District Mailing Address"),
     ("capitol", "Capitol Office"),
+    ("capitol-mail", "Capitol Mailing Address"),
     ("primary", "Primary Office"),
+    ("home", "Home"),
 )
 
 

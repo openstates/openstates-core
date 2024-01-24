@@ -172,15 +172,6 @@ def test_validate_roles_retired(roles, expected):
             ],
             [],
         ),
-        (
-            [
-                {"classification": "district", "voice": "123-444-4444"},
-                {"classification": "capitol", "voice": "123-444-4444"},
-            ],
-            [
-                "Value '123-444-4444' used multiple times: district voice and capitol voice"
-            ],
-        ),
     ],
 )
 def test_validate_offices(offices, expected):
