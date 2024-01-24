@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "openstates"
-version = "6.17.11"
+version = "6.18.0"
 description = "core infrastructure for the openstates project"
 authors = ["James Turk <dev@jamesturk.net>"]
 license = "MIT"
