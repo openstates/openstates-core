@@ -7,6 +7,10 @@ This repository contains the Open States data model and scraper backend.
 * [Code of Conduct](https://docs.openstates.org/en/latest/contributing/code-of-conduct.html)
 * [Contributing to Open States](https://docs.openstates.org/contributing/)
 
+## Release steps
+
+See [RELASE.md](./RELEASE.md)
+
 ## Debugging openstates-core code
 
 ### Update command / scrapers
