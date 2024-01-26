@@ -23,7 +23,7 @@ ME = State(
         districts=simple_numbered_districts(
             "ocd-division/country:us/state:me", "lower", 151
         ) + [District("Passamaquoddy Tribe", "lower",
-                     f"ocd-division/country:us/state:me/sldl:passamaquoddy-tribe")],
+                      "ocd-division/country:us/state:me/sldl:passamaquoddy-tribe")],
     ),
     upper=Chamber(
         chamber_type="upper",
