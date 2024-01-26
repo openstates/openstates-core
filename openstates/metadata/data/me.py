@@ -1,4 +1,4 @@
-from ..models import State, Chamber, simple_numbered_districts
+from ..models import State, Chamber, District, simple_numbered_districts
 
 ME = State(
     name="Maine",
@@ -22,7 +22,8 @@ ME = State(
         title="Representative",
         districts=simple_numbered_districts(
             "ocd-division/country:us/state:me", "lower", 151
-        ),
+        ) + [District("Passamaquoddy Tribe", "lower",
+                     f"ocd-division/country:us/state:me/sldl:passamaquoddy-tribe")],
     ),
     upper=Chamber(
         chamber_type="upper",
