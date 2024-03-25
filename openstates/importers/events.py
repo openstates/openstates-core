@@ -90,7 +90,7 @@ class EventImporter(BaseImporter):
             if "person_id" in participant:
                 participant["person_id"] = self.resolve_person(participant["person_id"])
             elif "organization_id" in participant:
-                participant["organization_id"] = self.org_importer.resolve_json_id(
+                participant["organization_id"] = self.resolve_committee(
                     participant["organization_id"], allow_no_match=True
                 )
 

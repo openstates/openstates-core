@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.18.0 - March 25, 2024
+
+* Add other_names to committee matching for Event Imports
+
 ## 6.17.9 - October 26, 2023
 
 * allow postimport hook to be skipped in os-update command
