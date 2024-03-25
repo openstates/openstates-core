@@ -608,8 +608,8 @@ class BaseImporter:
                 if list(spec.keys()) == ["name"]:
                     name = spec["name"]
                     spec = (
-                            Q(name__iexact=name)
-                            | Q(other_names__name__iexact=name)
+                        Q(name__iexact=name)
+                        | Q(other_names__name__iexact=name)
                     )
                 else:
                     spec = Q(**spec)
