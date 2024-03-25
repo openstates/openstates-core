@@ -2,8 +2,7 @@
 
 ## 6.18.4 - March 25, 2024
 
-* Different approach to committee name matching
-
+* Rollback on committee matching
 
 ## 6.18.3 - March 25, 2024
 

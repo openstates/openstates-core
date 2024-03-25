@@ -14,5 +14,5 @@ class OrganizationImporter(BaseImporter):
 
         name = spec.pop("name", None)
         if name:
-            return Q(**spec) & Q(name=name) & Q(other_names=name)
+            return Q(**spec) & Q(name=name)
         return spec
