@@ -1,5 +1,10 @@
 # Changelog
 
+## 6.18.4 - March 25, 2024
+
+* Different approach to committee name matching
+
+
 ## 6.18.3 - March 25, 2024
 
 * Add other_names to committee matching for Event Imports
