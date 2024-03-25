@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.18.3 - March 25, 2024
+
+* Add other_names to committee matching for Event Imports
+
 ## 6.18.2
 
 * Maine (ME): add a tribal representative district to the jurisdiction metadata
