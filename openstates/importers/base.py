@@ -604,7 +604,7 @@ class BaseImporter:
             # keep caches of all the pseudo-ids to avoid doing 1000s of lookups during import
             if json_id not in self.pseudo_id_cache:
                 spec = get_pseudo_id(json_id)
-                # need to include other_names to include in matching
+                # need to include other_names in matching
                 if list(spec.keys()) == ["name"]:
                     name = spec["name"]
                     spec = (
