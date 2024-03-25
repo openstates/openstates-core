@@ -20,6 +20,8 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: 3.9
+      - name: install GDAL and python bindings
+        run: sudo apt update && sudo apt-get install -y gdal-bin python3-gdal
       - name: install Poetry
         uses: snok/install-poetry@v1.3.3
       - name: configure pypi credentials
