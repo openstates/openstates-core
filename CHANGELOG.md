@@ -1,8 +1,21 @@
 # Changelog
 
-## 6.18.0 - March 25, 2024
+## 6.18.3 - March 25, 2024
 
 * Add other_names to committee matching for Event Imports
+
+## 6.18.2
+
+* Maine (ME): add a tribal representative district to the jurisdiction metadata
+
+## 6.18.1 - January 24, 2024
+
+* Stop validating the repeated use of the same phone number in People offices data
+
+## 6.18.0 - January 24, 2024
+
+* People: add distinct mailing classification options (district-mail, capitol-mail) and home classification to offices
+* Docs: Add debug instructions for the update command by @jessemortenson in #119
 
 ## 6.17.9 - October 26, 2023
 

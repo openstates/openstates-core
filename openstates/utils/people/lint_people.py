@@ -94,7 +94,7 @@ def validate_offices(person: Person) -> list[str]:
     for office in person.offices:
         type_counter[office.classification] += 1
         for key, value in office.dict().items():
-            if key == "classification" or not value:
+            if key == "classification" or key == "voice" or key == "fax" or not value:
                 continue
             # reverse lookup to see if we've used this phone number/etc. before
             location_str = f"{office.classification} {key}"
