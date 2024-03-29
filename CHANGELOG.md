@@ -1,5 +1,10 @@
 # Changelog
 
+## 6.18.5 - March 29, 2024
+
+* other_name in committee matching
+* swap getargspec for getfullargspec on Update
+
 ## 6.18.4 - March 25, 2024
 
 * Rollback on committee matching

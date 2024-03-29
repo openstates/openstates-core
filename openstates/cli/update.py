@@ -98,7 +98,7 @@ def do_scrape(
     for scraper_name, scrape_args in scrapers.items():
         ScraperCls = juris.scrapers[scraper_name]
         if (
-            "session" in inspect.getargspec(ScraperCls.scrape).args
+            "session" in inspect.getfullargspec(ScraperCls.scrape).args
             and "session" not in scrape_args
         ):
             logger.warning(
