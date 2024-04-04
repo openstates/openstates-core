@@ -20,6 +20,39 @@ from .computed_fields import update_bill_fields
 from .organizations import OrganizationImporter
 
 
+def resolve_related_bills(jurisdiction_id, logger) -> None:
+    # go through all RelatedBill objs that are attached to a bill in this jurisdiction and
+    # are currently unresolved
+    related_bills = RelatedBill.objects.filter(
+            bill__legislative_session__jurisdiction_id=jurisdiction_id,
+            related_bill=None,
+    )
+    logger.info(f"Found {len(related_bills)} unresolved bill relationships")
+    matches_found = 0
+    for rb in related_bills:
+        candidates = list(
+            Bill.objects.filter(
+                legislative_session__identifier=rb.legislative_session,
+                legislative_session__jurisdiction_id=jurisdiction_id,
+                identifier=rb.identifier,
+            )
+        )
+        if len(candidates) == 1:
+            rb.related_bill = candidates[0]
+            rb.save()
+            matches_found += 1
+            logger.debug(f"Resolved {rb.legislative_session} {rb.bill.identifier}")
+        elif len(candidates) > 1:  # pragma: no cover
+            # if we ever see this, we need to add additional fields on the relation
+            raise InternalError(
+                "multiple related_bill candidates found for {}".format(rb)
+            )
+        else:
+            logger.debug(f"FAILED to resolve {rb.legislative_session} {rb.bill.identifier}")
+
+    logger.info(f"Resolved {matches_found} bills out of {len(related_bills)} bills needing resolution")
+
+
 class BillImporter(BaseImporter):
     _type = "bill"
     model_class = Bill
@@ -106,27 +139,7 @@ class BillImporter(BaseImporter):
         return data
 
     def postimport(self) -> None:
-        # go through all RelatedBill objs that are attached to a bill in this jurisdiction and
-        # are currently unresolved
-        for rb in RelatedBill.objects.filter(
-            bill__legislative_session__jurisdiction_id=self.jurisdiction_id,
-            related_bill=None,
-        ):
-            candidates = list(
-                Bill.objects.filter(
-                    legislative_session__identifier=rb.legislative_session,
-                    legislative_session__jurisdiction_id=self.jurisdiction_id,
-                    identifier=rb.identifier,
-                )
-            )
-            if len(candidates) == 1:
-                rb.related_bill = candidates[0]
-                rb.save()
-            elif len(candidates) > 1:  # pragma: no cover
-                # if we ever see this, we need to add additional fields on the relation
-                raise InternalError(
-                    "multiple related_bill candidates found for {}".format(rb)
-                )
+        resolve_related_bills(self.jurisdiction_id, self.logger)
 
     def update_computed_fields(self, obj: Model) -> None:
         update_bill_fields(obj, save=False)
