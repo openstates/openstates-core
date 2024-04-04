@@ -24,8 +24,8 @@ def resolve_related_bills(jurisdiction_id, logger) -> None:
     # go through all RelatedBill objs that are attached to a bill in this jurisdiction and
     # are currently unresolved
     related_bills = RelatedBill.objects.filter(
-            bill__legislative_session__jurisdiction_id=jurisdiction_id,
-            related_bill=None,
+        bill__legislative_session__jurisdiction_id=jurisdiction_id,
+        related_bill=None,
     )
     logger.info(f"Found {len(related_bills)} unresolved bill relationships")
     matches_found = 0
