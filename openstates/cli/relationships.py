@@ -14,7 +14,7 @@ from .. import settings
     help="Set the level of logging to output.",
     default="INFO"
 )
-def main(jurisdiction_abbreviation: str, log_level: str):
+def main(jurisdiction_abbreviation: str, log_level: str) -> None:
     # set up logging
     logger = logging.getLogger("openstates")
     handler_level = log_level
