@@ -13,6 +13,19 @@ See [RELASE.md](./RELEASE.md)
 
 ## Debugging openstates-core code
 
+### Commands that do not integrate with openstates-scrapers
+
+* Install pyenv and correct python version
+* Install poetry
+* `poetry install`
+
+Example PyCharm config (for `relationships` CLI command):
+
+* Interpeter: the poetry env that you just set up
+* Module: `openstates.cli.relationships`
+* Parameters: `--log_level=DEBUG us`
+* Env vars: `DATABASE_URL=postgres://USERNAME:PASSWORD@DB_HOSTNAME:PORT/openstatesorg`
+
 ### Update command / scrapers
 
 There are
@@ -27,7 +40,7 @@ within `openstates-core`.
 
 Here's a recipe using PyCharm to successfully debug the update command:
 
-#### Requirements to run code natively (not in docker)
+#### Requirements to run the scrape/update code natively (not in docker)
 
 * You need the `gdal` library installed on the host system. For me: `sudo apt install gdal-bin python3-gdal`
 * `openstates-core` checked out at /home/username/repo/openstates/openstates-core/
@@ -37,7 +50,7 @@ Here's a recipe using PyCharm to successfully debug the update command:
 * Install required python version using the `pyenv` utility
 * `pip install poetry` (if that python version doesn't already have it)
 
-#### Debugging natively
+#### Debugging the scrape/update code natively
 
 * If you have previously installed the `openstates` dependency (eg `openstates-core`), then you need
   to run `poetry remove openstates` to clear that remotely-installed (from pypi) dependency. Each time you make a round

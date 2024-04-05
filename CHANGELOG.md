@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.19.0 - April 5, 2024
+
+* Adds a new CLI tool that can be called to resolve unresolved bill-to-bill relationships in the openstates DB
+
 ## 6.18.5 - March 29, 2024
 
 * other_name in committee matching
