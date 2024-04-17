@@ -1,5 +1,5 @@
 import warnings
-from ..utils import _make_pseudo_id
+from ..utils import _make_pseudo_id, transformers
 from .popolo import pseudo_organization
 from .base import BaseModel, SourceMixin, AssociatedLinkMixin, cleanup_list
 from .schemas.bill import schema
@@ -90,6 +90,9 @@ class Bill(SourceMixin, AssociatedLinkMixin, BaseModel):
         )
 
     def add_related_bill(self, identifier, legislative_session, relation_type):
+        # Normalize identifier before saving
+        identifier = transformers.fix_bill_id(identifier)
+
         # will we need jurisdiction, organization?
         self.related_bills.append(
             {
