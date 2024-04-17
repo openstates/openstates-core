@@ -1,7 +1,6 @@
 from typing import Union
 from .base import BaseImporter
 from ._types import _JsonDict, Model
-from ..exceptions import InternalError
 from ..data.models import (
     Bill,
     RelatedBill,
