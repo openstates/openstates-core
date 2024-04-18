@@ -1,6 +1,6 @@
+from typing import Union
 from .base import BaseImporter
 from ._types import _JsonDict, Model
-from ..exceptions import InternalError
 from ..data.models import (
     Bill,
     RelatedBill,
@@ -20,33 +20,53 @@ from .computed_fields import update_bill_fields
 from .organizations import OrganizationImporter
 
 
-def resolve_related_bills(jurisdiction_id, logger) -> None:
+def resolve_related_bills(jurisdiction_id: str, session: Union[str, None], logger) -> None:
     # go through all RelatedBill objs that are attached to a bill in this jurisdiction and
     # are currently unresolved
-    related_bills = RelatedBill.objects.filter(
-        bill__legislative_session__jurisdiction_id=jurisdiction_id,
-        related_bill=None,
-    )
-    logger.info(f"Found {len(related_bills)} unresolved bill relationships")
-    matches_found = 0
+    if session is not None:
+        session_log = f"-{session}"
+        related_bills = RelatedBill.objects.filter(
+            bill__legislative_session__jurisdiction_id=jurisdiction_id,
+            bill__legislative_session__identifier=session,
+            related_bill=None,
+        )
+    else:
+        session_log = ""
+        related_bills = RelatedBill.objects.filter(
+            bill__legislative_session__jurisdiction_id=jurisdiction_id,
+            related_bill=None,
+        )
+    logger.info(f"Found {len(related_bills)} unresolved bill relationships in {jurisdiction_id}{session_log}")
+
+    # go session-by-session and see if we can find matching candidates
+    # we do this to reduce the number of SELECT queries we run in cases where there are many relations unresolved
+    sessions = {}
     for rb in related_bills:
+        if rb.legislative_session not in sessions:
+            sessions[rb.legislative_session] = [rb.identifier]
+        else:
+            sessions[rb.legislative_session].append(rb.identifier)
+
+    session_candidate_bills = {}
+    for session in dict.keys(sessions):
         candidates = list(
             Bill.objects.filter(
-                legislative_session__identifier=rb.legislative_session,
+                identifier__in=sessions[session],
+                legislative_session__identifier=session,
                 legislative_session__jurisdiction_id=jurisdiction_id,
-                identifier=rb.identifier,
             )
         )
-        if len(candidates) == 1:
-            rb.related_bill = candidates[0]
+        session_candidate_bills[session] = {}
+        for bill in candidates:
+            session_candidate_bills[session][bill.identifier] = bill
+
+    matches_found = 0
+    for rb in related_bills:
+        if rb.identifier in session_candidate_bills[rb.legislative_session]:
+            rb.related_bill = session_candidate_bills[rb.legislative_session][rb.identifier]
             rb.save()
             matches_found += 1
             logger.debug(f"Resolved {rb.legislative_session} {rb.bill.identifier}")
-        elif len(candidates) > 1:  # pragma: no cover
-            # if we ever see this, we need to add additional fields on the relation
-            raise InternalError(
-                "multiple related_bill candidates found for {}".format(rb)
-            )
         else:
             logger.debug(f"FAILED to resolve {rb.legislative_session} {rb.bill.identifier}")
 
@@ -139,7 +159,7 @@ class BillImporter(BaseImporter):
         return data
 
     def postimport(self) -> None:
-        resolve_related_bills(self.jurisdiction_id, self.logger)
+        resolve_related_bills(self.jurisdiction_id, None, self.logger)
 
     def update_computed_fields(self, obj: Model) -> None:
         update_bill_fields(obj, save=False)
