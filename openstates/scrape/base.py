@@ -141,7 +141,7 @@ class Scraper(scrapelib.Scraper):
                 "bucket": bucket,
                 "jurisdiction_id": self.jurisdiction.jurisdiction_id,
                 "jurisdiction_name": self.jurisdiction.name,
-                "archive_files": self.archive_files,
+                "is_archive_files": self.archive_files,
             }
         )
 
