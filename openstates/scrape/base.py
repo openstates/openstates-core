@@ -77,7 +77,7 @@ class Scraper(scrapelib.Scraper):
         strict_validation=True,
         fastmode=False,
         realtime=False,
-        archive_files,
+        archive_files=False,
     ):
         super(Scraper, self).__init__()
 
