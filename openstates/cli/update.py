@@ -83,7 +83,7 @@ def do_scrape(
         strict_validation=args.strict,
         fastmode=args.fastmode,
         realtime=args.realtime,
-        archive_files=args.archive,
+        file_archiving_enabled=args.archive,
     )
     report["jurisdiction"] = jscraper.do_scrape()
     stats.write_stats(
@@ -121,7 +121,7 @@ def do_scrape(
                     strict_validation=args.strict,
                     fastmode=args.fastmode,
                     realtime=args.realtime,
-                    archive_files=args.archive,
+                    file_archiving_enabled=args.archive,
                 )
                 partial_report = scraper.do_scrape(**scrape_args, session=session)
                 stats.write_stats(
@@ -154,7 +154,7 @@ def do_scrape(
                 strict_validation=args.strict,
                 fastmode=args.fastmode,
                 realtime=args.realtime,
-                archive_files=args.archive,
+                file_archiving_enabled=args.archive,
             )
             report[scraper_name] = scraper.do_scrape(**scrape_args)
             session = scrape_args.get("session", "")

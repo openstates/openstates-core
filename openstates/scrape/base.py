@@ -77,7 +77,7 @@ class Scraper(scrapelib.Scraper):
         strict_validation=True,
         fastmode=False,
         realtime=False,
-        archive_files=False,
+        file_archiving_enabled=False,
     ):
         super(Scraper, self).__init__()
 
@@ -85,7 +85,7 @@ class Scraper(scrapelib.Scraper):
         self.jurisdiction = jurisdiction
         self.datadir = datadir
         self.realtime = realtime
-        self.archive_files = archive_files
+        self.file_archiving_enabled = file_archiving_enabled
 
         # scrapelib setup
         self.timeout = settings.SCRAPELIB_TIMEOUT
@@ -141,7 +141,7 @@ class Scraper(scrapelib.Scraper):
                 "bucket": bucket,
                 "jurisdiction_id": self.jurisdiction.jurisdiction_id,
                 "jurisdiction_name": self.jurisdiction.name,
-                "is_archive_files": self.archive_files,
+                "file_archiving_enabled": self.file_archiving_enabled,
             }
         )
 
