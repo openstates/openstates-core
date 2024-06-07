@@ -77,6 +77,7 @@ class Scraper(scrapelib.Scraper):
         strict_validation=True,
         fastmode=False,
         realtime=False,
+        file_archiving_enabled=False,
     ):
         super(Scraper, self).__init__()
 
@@ -84,6 +85,7 @@ class Scraper(scrapelib.Scraper):
         self.jurisdiction = jurisdiction
         self.datadir = datadir
         self.realtime = realtime
+        self.file_archiving_enabled = file_archiving_enabled
 
         # scrapelib setup
         self.timeout = settings.SCRAPELIB_TIMEOUT
@@ -139,6 +141,7 @@ class Scraper(scrapelib.Scraper):
                 "bucket": bucket,
                 "jurisdiction_id": self.jurisdiction.jurisdiction_id,
                 "jurisdiction_name": self.jurisdiction.name,
+                "file_archiving_enabled": self.file_archiving_enabled,
             }
         )
 
@@ -183,7 +186,7 @@ class Scraper(scrapelib.Scraper):
             # Remove redundant prefix
             try:
                 upload_file_path = file_path[
-                    file_path.index("_data") + len("_data") + 1:
+                    file_path.index("_data") + len("_data") + 1 :
                 ]
             except Exception:
                 upload_file_path = file_path

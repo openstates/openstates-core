@@ -83,6 +83,7 @@ def do_scrape(
         strict_validation=args.strict,
         fastmode=args.fastmode,
         realtime=args.realtime,
+        file_archiving_enabled=args.archive,
     )
     report["jurisdiction"] = jscraper.do_scrape()
     stats.write_stats(
@@ -120,6 +121,7 @@ def do_scrape(
                     strict_validation=args.strict,
                     fastmode=args.fastmode,
                     realtime=args.realtime,
+                    file_archiving_enabled=args.archive,
                 )
                 partial_report = scraper.do_scrape(**scrape_args, session=session)
                 stats.write_stats(
@@ -152,6 +154,7 @@ def do_scrape(
                 strict_validation=args.strict,
                 fastmode=args.fastmode,
                 realtime=args.realtime,
+                file_archiving_enabled=args.archive,
             )
             report[scraper_name] = scraper.do_scrape(**scrape_args)
             session = scrape_args.get("session", "")
@@ -498,6 +501,13 @@ def parse_args() -> tuple[argparse.Namespace, list[str]]:
 
     # realtime mode
     parser.add_argument("--realtime", action="store_true", help="enable realtime mode")
+
+    # Archiving realtime processing JSON files
+    parser.add_argument(
+        "--archive",
+        action="store_true",
+        help="enable archiving of realtime processing JSON files, defaults to false",
+    )
 
     # process args
     return parser.parse_known_args()
