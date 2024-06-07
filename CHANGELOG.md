@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.19.2 - Jun 7, 2024
+
+* Turn off archiving processed realtime bills by default.
+
 ## 6.19.0 - April 5, 2024
 
 * Adds a new CLI tool that can be called to resolve unresolved bill-to-bill relationships in the openstates DB
