@@ -63,6 +63,9 @@ class VoteEvent(OCDBase):
             ["legislative_session", "identifier", "bill"],
             ["legislative_session", "bill"],
         ]
+        indexes = [
+            models.Index(fields=["dedupe_key"])
+        ]
         ordering = ["start_date", "order"]
 
 
