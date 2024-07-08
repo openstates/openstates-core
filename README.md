@@ -11,6 +11,30 @@ This repository contains the Open States data model and scraper backend.
 
 See [RELASE.md](./RELEASE.md)
 
+## Database Migrations
+
+openstates-core data models may occasionally change, requiring changes to the Open States database in production. Here
+are the steps to create and execute a new migration:
+
+* Follow the steps in [Running a Local Database doc](https://docs.openstates.org/contributing/local-database/) to get
+  a copy of the database running locally with the prior schema. It is important to develop and test your migration
+  locally before executing it on the production DB.
+* In most cases, you will auto-generate a migration by first modifying the model file. Make a change to one or more of
+  the files in `openstates/data/models`.
+* Test the migration locally:
+    * Identify the DB connection URL that is accurate to your local database. In most cases, it should
+      be: `postgis://openstates:openstates@localhost:5405/openstatesorg`
+    * In the repo's root folder, run the `os-dbmakemigrations` command to generate a migration file based on your
+      changes: `DATABASE_URL=postgis://openstates:openstates@localhost:5405/openstatesorg poetry run os-dbmakemigrations`
+    * Look at the generated migration file in `openstates/data/migrations` and ensure that it looks correct.
+    * Execute the migration by running the `os-initdb`
+      command: `DATABASE_URL=postgis://openstates:openstates@localhost:5405/openstatesorg poetry run os-initdb`
+* Once the migration is verified by local testing, you can execute it against the production DB
+    * Identify the DB connection URL that is accurate for the PROD database. This typically should use the same Postgres
+      user that owns the tables you want to change. Contact an admin if you need help.
+    * Run the `os-initdb` command to
+      migrate: `DATABASE_URL=postgis://USERNAME_HERE:PASSWORD_HERE@PROD_DB_HOSTNAME_HERE:5432/openstatesorg poetry run os-initdb`
+
 ## Debugging openstates-core code
 
 ### Commands that do not integrate with openstates-scrapers
