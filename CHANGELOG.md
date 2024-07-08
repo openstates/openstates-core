@@ -1,5 +1,12 @@
 # Changelog
 
+## 6.19.3 - Jul 8, 2024
+
+* Add instructions on DB migrations to docs
+* Change schema to fix two DB issues:
+    * Event Document `note` changed to Text type to avoid character limit errors
+    * Vote Event `dedupe_key` index added to improve performance on Vote Event lookups during import
+
 ## 6.19.2 - Jun 7, 2024
 
 * Turn off archiving processed realtime bills by default.
@@ -53,11 +60,11 @@
 ## 6.17.3 - August 1, 2023
 
 * update pyyaml dependency
-      
+
 ## 6.17.2 - August 1, 2023
 
 * Support additional territories in db init
-      
+
 ## 6.17.0 - July 14, 2023
 
 * Add additional US territory support#113
@@ -155,7 +162,6 @@
 ## 6.13.9 - January 10, 2023
 
 * add SQS for batching
-
 
 ## 6.13.8 - January 9, 2023
 
@@ -349,7 +355,7 @@
 * fix os-us-to-yaml phone numbers
 * added latest_bill_update and latest_people_update to Jurisdiction table
   (these fields are now automatically updated when os-update or os-people
-   update the relevant tables)
+  update the relevant tables)
 * moved openstates.reports into openstates.data
 
 ## 6.3.4 - August 2 2021
@@ -460,8 +466,8 @@
 ## 5.8.0 - April 5 2021
 
 * remaining implementation of OSEP #5
-  * remove pupa_id backwards compatibility
-  * migration: drop reports.Identifier
+    * remove pupa_id backwards compatibility
+    * migration: drop reports.Identifier
 * Add veto and veto-override vote classifications
 
 ## 5.7.1 - April 5 2021
@@ -471,9 +477,9 @@
 ## 5.7.0 - April 2 2021
 
 * Implementation of OSEP #5
-  * migration: added dedupe_key to replace pupa_id
-  * added dedupe_key to replace pupa_id in scrape as well
-  * alter import logic to stop using reports.Identifier
+    * migration: added dedupe_key to replace pupa_id
+    * added dedupe_key to replace pupa_id in scrape as well
+    * alter import logic to stop using reports.Identifier
 
 ## 5.6.0 - March 23 2021
 
@@ -542,25 +548,24 @@
 
 * merge openstates_metadata into openstates.metadata
 * large database cleanup:
-  * remove unused fields:
-    * BillAbstract.date
-    * BillAction.extras
-    * BillIdentifier.scheme & note
-    * Jurisdiction.feature_flags
-    * Membership.label
-    * Organization.image, founding_date, dissolution_date
-    * Person.summary
-    * PersonContactDetail.label
-    * Post.start_date & end_date
-    * VoteEvent.end_date
-    * BillDocumentLink & BillVersionLink.text
-    * *.locked_fields
-  * add VoteEvent.order
+    * remove unused fields:
+        * BillAbstract.date
+        * BillAction.extras
+        * BillIdentifier.scheme & note
+        * Jurisdiction.feature_flags
+        * Membership.label
+        * Organization.image, founding_date, dissolution_date
+        * Person.summary
+        * PersonContactDetail.label
+        * Post.start_date & end_date
+        * VoteEvent.end_date
+        * BillDocumentLink & BillVersionLink.text
+        * *.locked_fields
+    * add VoteEvent.order
 
 ## 4.8.0 - August 21 2020
 
 * remove GIS dependency, alter (unused) EventLocation model accordingly
-
 
 ## 4.7.1 - August 5 2020
 
