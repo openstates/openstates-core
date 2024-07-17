@@ -95,7 +95,7 @@ class EventMedia(EventMediaBase):
 
 class EventDocument(RelatedBase):
     event = models.ForeignKey(Event, related_name="documents", on_delete=models.CASCADE)
-    note = models.CharField(max_length=300)
+    note = models.TextField()
     date = models.CharField(max_length=25, blank=True)  # YYYY-MM-DD HH:MM:SS+HH:MM
     classification = models.CharField(
         max_length=50, choices=EVENT_DOCUMENT_CLASSIFICATION_CHOICES, blank=True
