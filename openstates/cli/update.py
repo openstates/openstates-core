@@ -503,7 +503,7 @@ def parse_args() -> tuple[argparse.Namespace, list[str]]:
     parser.add_argument("--realtime", action="store_true", help="enable realtime mode")
 
     # kafka mode
-    parser.add_argument("--kafka", type=str, help="Enable Kafka (MSK) integration")
+    parser.add_argument("--kafka", type=str, help="Enable writes to Kafka (MSK)")
 
     # Archiving realtime processing JSON files
     parser.add_argument(
