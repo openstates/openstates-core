@@ -202,7 +202,14 @@ class Scraper(scrapelib.Scraper):
 
                 # Grab Cluster Arn
                 clusters = client.list_clusters()['ClusterInfoList']
-                cluster_arn = clusters[0]['ClusterArn']
+                cluster_arn = None
+                for cluster in clusters:
+                    if cluster['ClusterName'] == self.kafka:
+                        cluster_arn = cluster['ClusterArn']
+                        break
+
+                if cluster_arn is None:
+                    raise ValueError(f"No Kafka cluster found with name: {self.kafka}")
 
                 # Grab Brokers
                 response = client.get_bootstrap_brokers(ClusterArn=cluster_arn)
