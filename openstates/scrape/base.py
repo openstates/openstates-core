@@ -215,9 +215,12 @@ class Scraper(scrapelib.Scraper):
                 response = client.get_bootstrap_brokers(ClusterArn=cluster_arn)
                 kafka_brokers = response['BootstrapBrokerStringTls']
 
+                # Pull Out Jurisdiction from Upload File Path
+                jurisdiction = upload_file_path[:3]
+
                 # Instantiate KafkaProducer and Send Bill JSON to State Topic
                 producer = KafkaProducer(security_protocol="SSL", bootstrap_servers=kafka_brokers, value_serializer=lambda v: json.dumps(v).encode('utf-8'))
-                producer.send(upload_file_path[:3], obj.as_dict()) # Sending the Bill JSON to a State Topic (file_path[:3] is state abbreviation)
+                producer.send(jurisdiction, obj.as_dict()) # Sending the Bill JSON to a State Topic
                 time.sleep(.1)
                 producer.flush()
             elif self.realtime:
