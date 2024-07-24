@@ -186,14 +186,14 @@ class Scraper(scrapelib.Scraper):
         if self.scrape_output_handler is None:
             file_path = os.path.join(self.datadir, filename)
 
-            # Remove redundant prefix
             try:
-                upload_file_path = file_path[
-                    file_path.index("_data") + len("_data") + 1 :
-                ]
-                # This sets the upload file path to be within a bill folder within a session folder within a state folder 
-                upload_file_path = upload_file_path[:3] + obj.legislative_session + '/' + obj.identifier + '/' + upload_file_path[3:]
-            except Exception:
+                # Remove redundant prefix and amend file path
+                upload_file_path = file_path[file_path.index("_data") + len("_data") + 1:]
+                jurisdiction = upload_file_path[:2]
+                session = obj.legislative_session
+                identifier = obj.identifier
+                upload_file_path = f'{jurisdiction}/{session}/{identifier}/{upload_file_path[3:]}'
+            except ValueError:
                 upload_file_path = file_path
 
             if self.kafka:
@@ -214,9 +214,6 @@ class Scraper(scrapelib.Scraper):
                 # Grab Brokers
                 response = client.get_bootstrap_brokers(ClusterArn=cluster_arn)
                 kafka_brokers = response['BootstrapBrokerStringTls']
-
-                # Pull Out Jurisdiction from Upload File Path
-                jurisdiction = upload_file_path[:3]
 
                 # Instantiate KafkaProducer and Send Bill JSON to State Topic
                 producer = KafkaProducer(security_protocol="SSL", bootstrap_servers=kafka_brokers, value_serializer=lambda v: json.dumps(v).encode('utf-8'))
