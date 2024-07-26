@@ -218,6 +218,10 @@ class Scraper(scrapelib.Scraper):
                 # Instantiate KafkaProducer and Send Bill JSON to State Topic
                 producer = KafkaProducer(security_protocol="SSL", bootstrap_servers=kafka_brokers, value_serializer=lambda v: json.dumps(v).encode('utf-8'))
                 producer.send(jurisdiction, obj.as_dict()) # Sending the Bill JSON to a State Topic
+                
+                # Kafka producers use batching to optimize throughput and reduce the load on brokers
+                # The delay below ensures messages are sent before the script continues
+                # Documentation: https://kafka.apache.org/documentation/#producerconfigs_linger.ms
                 time.sleep(.1)
                 producer.flush()
             elif self.realtime:
