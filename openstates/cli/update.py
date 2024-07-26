@@ -543,6 +543,9 @@ def main() -> int:
 
     logging.info(f"Module: {args.module}")
 
+    if args.kafka:
+        logging.info(f"Kafka topic specified: {args.kafka}")
+
     juris, module = get_jurisdiction(args.module)
 
     overrides = {}

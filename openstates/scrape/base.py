@@ -6,6 +6,7 @@ import jsonschema
 import logging
 import os
 import scrapelib
+import time
 import uuid
 from collections import defaultdict, OrderedDict
 from jsonschema import Draft3Validator, FormatChecker
@@ -77,6 +78,7 @@ class Scraper(scrapelib.Scraper):
         strict_validation=True,
         fastmode=False,
         realtime=False,
+        kafka=False,
         file_archiving_enabled=False,
     ):
         super(Scraper, self).__init__()
@@ -85,6 +87,7 @@ class Scraper(scrapelib.Scraper):
         self.jurisdiction = jurisdiction
         self.datadir = datadir
         self.realtime = realtime
+        self.kafka = kafka
         self.file_archiving_enabled = file_archiving_enabled
 
         # scrapelib setup
@@ -183,15 +186,45 @@ class Scraper(scrapelib.Scraper):
         if self.scrape_output_handler is None:
             file_path = os.path.join(self.datadir, filename)
 
-            # Remove redundant prefix
             try:
-                upload_file_path = file_path[
-                    file_path.index("_data") + len("_data") + 1 :
-                ]
-            except Exception:
+                # Remove redundant prefix and amend file path
+                upload_file_path = file_path[file_path.index("_data") + len("_data") + 1:]
+                jurisdiction = upload_file_path[:2]
+                session = obj.legislative_session
+                identifier = obj.identifier
+                upload_file_path = f'{jurisdiction}/{session}/{identifier}/{upload_file_path[3:]}'
+            except ValueError:
                 upload_file_path = file_path
 
-            if self.realtime:
+            if self.kafka:
+                # Instantiate Boto3 Kafka Client
+                client = boto3.client('kafka', region_name='us-west-2')
+
+                # Grab Cluster Arn
+                clusters = client.list_clusters()['ClusterInfoList']
+                cluster_arn = None
+                for cluster in clusters:
+                    if cluster['ClusterName'] == self.kafka:
+                        cluster_arn = cluster['ClusterArn']
+                        break
+
+                if cluster_arn is None:
+                    raise ValueError(f"No Kafka cluster found with name: {self.kafka}")
+
+                # Grab Brokers
+                response = client.get_bootstrap_brokers(ClusterArn=cluster_arn)
+                kafka_brokers = response['BootstrapBrokerStringTls']
+
+                # Instantiate KafkaProducer and Send Bill JSON to State Topic
+                producer = KafkaProducer(security_protocol="SSL", bootstrap_servers=kafka_brokers, value_serializer=lambda v: json.dumps(v).encode('utf-8'))
+                producer.send(jurisdiction, obj.as_dict()) # Sending the Bill JSON to a State Topic
+                
+                # Kafka producers use batching to optimize throughput and reduce the load on brokers
+                # The delay below ensures messages are sent before the script continues
+                # Documentation: https://kafka.apache.org/documentation/#producerconfigs_linger.ms
+                time.sleep(.1)
+                producer.flush()
+            elif self.realtime:
                 self.output_file_path = str(upload_file_path)
 
                 s3 = boto3.client("s3")
