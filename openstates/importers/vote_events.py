@@ -1,3 +1,4 @@
+import json
 import typing
 from .base import BaseImporter
 from ._types import _JsonDict, _DBSpec, _RelatedModels
@@ -69,8 +70,9 @@ class VoteEventImporter(BaseImporter):
     def prepare_for_db(self, data: _JsonDict) -> _JsonDict:
         session = self.get_session(data.pop("legislative_session"))
         data["legislative_session_id"] = session.id
+        organization_classification = data.pop("organization")
         data["organization_id"] = self.org_importer.resolve_json_id(
-            data.pop("organization")
+            organization_classification
         )
 
         bill = data.pop("bill")
@@ -117,7 +119,8 @@ class VoteEventImporter(BaseImporter):
 
         for vote in data["votes"]:
             vote["voter_id"] = self.resolve_person(
-                vote["voter_id"], session.start_date, session.end_date
+                vote["voter_id"], session.start_date, session.end_date,
+                json.loads(organization_classification[1:]).get("classification", None)
             )
         return data
 
