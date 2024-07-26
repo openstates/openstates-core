@@ -333,7 +333,7 @@ def load_directory_to_database(files: list[Path], purge: bool) -> None:
             click.secho(f"updated person from {filename}", fg="cyan")
             updated_count += 1
 
-        if created or updated:
+        if (created or updated) and len(person.roles) > 0:
             updated_jurisdictions.add(person.roles[0].jurisdiction)
 
     missing_ids = existing_ids - ids
