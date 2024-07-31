@@ -191,13 +191,14 @@ class Scraper(scrapelib.Scraper):
                 upload_file_path = file_path[file_path.index("_data") + len("_data") + 1:]
                 jurisdiction = upload_file_path[:2]
                 # Bills will be routed through this conditional
-                if obj.legislative_session:
+                if hasattr(obj, 'legislative_session') and obj.legislative_session:
                     session = obj.legislative_session
                     identifier = obj.identifier
                     upload_file_path = f'{jurisdiction}/{session}/{identifier}/{upload_file_path[3:]}'
                 # All other ancillary JSONs will be routed here (e.g. jurisdiction JSONs)
                 else:
                     upload_file_path = f'{jurisdiction}/{"Jurisdiction_Information"}/{upload_file_path[3:]}'
+
             except ValueError:
                 upload_file_path = file_path
 
