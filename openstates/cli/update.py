@@ -32,7 +32,7 @@ ALL_ACTIONS = ("scrape", "import")
 # Settings to archive scraped out put to GCP Cloud Storage
 GCP_PROJECT = os.environ.get("GCP_PROJECT", None)
 BUCKET_NAME = os.environ.get("BUCKET_NAME", None)
-SCRAPE_LAKE_PREFIX = "legislation"
+SCRAPE_LAKE_PREFIX = os.environ.get("BUCKET_PREFIX", "legislation")
 
 
 class _Unset:
