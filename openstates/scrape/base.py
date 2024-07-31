@@ -10,6 +10,7 @@ import time
 import uuid
 from collections import defaultdict, OrderedDict
 from jsonschema import Draft3Validator, FormatChecker
+from kafka import KafkaProducer
 
 from .. import utils, settings
 from ..exceptions import ScrapeError, ScrapeValueError, EmptyScrape
