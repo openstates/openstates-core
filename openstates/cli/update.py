@@ -2,7 +2,7 @@ import argparse
 import contextlib
 import datetime
 import glob
-from google.cloud import storage  # noqa
+from google.cloud import storage  # type: ignore
 import importlib
 import inspect
 import logging
