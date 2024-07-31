@@ -205,15 +205,21 @@ def do_scrape(
     return report
 
 
-def archive_to_cloud_storage(datadir, juris, last_scrape_end_datetime):
+def archive_to_cloud_storage(
+    datadir: str, juris: State, last_scrape_end_datetime: datetime.datetime
+) -> None:
     # check if we have necessary settings
     if GCP_PROJECT is None or BUCKET_NAME is None:
-        logger.error("Scrape archiving is turned on, but necessary settings are missing. No archive was done.")
+        logger.error(
+            "Scrape archiving is turned on, but necessary settings are missing. No archive was done."
+        )
         return
     cloud_storage_client = storage.Client()
     bucket = cloud_storage_client.bucket(BUCKET_NAME, GCP_PROJECT)
     jurisdiction_id = juris.jurisdiction_id.replace("ocd-jurisdiction/", "")
-    destination_prefx = f"{SCRAPE_LAKE_PREFIX}/{jurisdiction_id}/{last_scrape_end_datetime.isoformat()}"
+    destination_prefx = (
+        f"{SCRAPE_LAKE_PREFIX}/{jurisdiction_id}/{last_scrape_end_datetime.isoformat()}"
+    )
 
     # read files in directory and upload
     for file_path in glob.glob(datadir + "/*.json"):
