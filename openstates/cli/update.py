@@ -199,7 +199,8 @@ def do_scrape(
                 )
 
     # optionally upload scrape output to cloud storage
-    if args.archive:
+    # but do not archive if realtime mode enabled, as realtime mode has its own archiving process
+    if args.archive and not args.realtime:
         archive_to_cloud_storage(datadir, juris, last_scrape_end_datetime)
 
     return report
