@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.20.0 - Aug 1, 2024
+
+* Adds support for --archive flag on os-update to archive a full scrape to google cloud storage bucket
+
 ## 6.19.3 - Jul 8, 2024
 
 * Add instructions on DB migrations to docs
