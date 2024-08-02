@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.20.1 - Aug 2, 2024
+
+* Fix permissions issue caused by slightly wrong usage of GCP storage client code
+
 ## 6.20.0 - Aug 1, 2024
 
 * Adds support for --archive flag on os-update to archive a full scrape to google cloud storage bucket
