@@ -2,6 +2,7 @@ import argparse
 import contextlib
 import datetime
 import glob
+from google.cloud import storage  # type: ignore
 import importlib
 import inspect
 import logging
@@ -27,6 +28,11 @@ logger = logging.getLogger("openstates")
 stats = Instrumentation()
 
 ALL_ACTIONS = ("scrape", "import")
+
+# Settings to archive scraped out put to GCP Cloud Storage
+GCP_PROJECT = os.environ.get("GCP_PROJECT", None)
+BUCKET_NAME = os.environ.get("BUCKET_NAME", None)
+SCRAPE_LAKE_PREFIX = os.environ.get("BUCKET_PREFIX", "legislation")
 
 
 class _Unset:
@@ -96,6 +102,7 @@ def do_scrape(
         ]
     )
 
+    last_scrape_end_datetime = datetime.datetime.utcnow()
     for scraper_name, scrape_args in scrapers.items():
         ScraperCls = juris.scrapers[scraper_name]
         if (
@@ -124,6 +131,7 @@ def do_scrape(
                     file_archiving_enabled=args.archive,
                 )
                 partial_report = scraper.do_scrape(**scrape_args, session=session)
+                last_scrape_end_datetime = partial_report["end"]
                 stats.write_stats(
                     [
                         {
@@ -157,6 +165,7 @@ def do_scrape(
                 file_archiving_enabled=args.archive,
             )
             report[scraper_name] = scraper.do_scrape(**scrape_args)
+            last_scrape_end_datetime = report[scraper_name]["end"]
             session = scrape_args.get("session", "")
             if session:
                 stats.write_stats(
@@ -189,7 +198,41 @@ def do_scrape(
                     ]
                 )
 
+    # optionally upload scrape output to cloud storage
+    # but do not archive if realtime mode enabled, as realtime mode has its own archiving process
+    if args.archive and not args.realtime:
+        archive_to_cloud_storage(datadir, juris, last_scrape_end_datetime)
+
     return report
+
+
+def archive_to_cloud_storage(
+    datadir: str, juris: State, last_scrape_end_datetime: datetime.datetime
+) -> None:
+    # check if we have necessary settings
+    if GCP_PROJECT is None or BUCKET_NAME is None:
+        logger.error(
+            "Scrape archiving is turned on, but necessary settings are missing. No archive was done."
+        )
+        return
+    logger.info("Beginning archive of scraped files to google cloud storage.")
+    logger.info(f"GCP Project is {GCP_PROJECT} and bucket is {BUCKET_NAME}")
+    cloud_storage_client = storage.Client(project=GCP_PROJECT)
+    bucket = cloud_storage_client.bucket(BUCKET_NAME)
+    jurisdiction_id = juris.jurisdiction_id.replace("ocd-jurisdiction/", "")
+    destination_prefx = (
+        f"{SCRAPE_LAKE_PREFIX}/{jurisdiction_id}/{last_scrape_end_datetime.isoformat()}"
+    )
+
+    # read files in directory and upload
+    files_count = 0
+    for file_path in glob.glob(datadir + "/*.json"):
+        files_count += 1
+        blob_name = os.path.join(destination_prefx, os.path.basename(file_path))
+        blob = bucket.blob(blob_name)
+        blob.upload_from_filename(file_path)
+
+    logger.info(f"Completed archive to Google Cloud Storage, {files_count} files were uploaded.")
 
 
 def do_import(juris: State, args: argparse.Namespace) -> dict[str, typing.Any]:

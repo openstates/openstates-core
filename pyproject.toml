@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "openstates"
-version = "6.19.3"
+version = "6.20.1"
 description = "core infrastructure for the openstates project"
 authors = ["James Turk <dev@jamesturk.net>"]
 license = "MIT"
@@ -37,6 +37,7 @@ boto3 = "^1.26.61"
 us = "^3.1.1"
 influxdb-client = "^1.37.0"
 pytz = "^2024.1"
+google-cloud-storage = "^2.18.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.4.1"
