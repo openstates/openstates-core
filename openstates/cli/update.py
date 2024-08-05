@@ -89,6 +89,7 @@ def do_scrape(
         strict_validation=args.strict,
         fastmode=args.fastmode,
         realtime=args.realtime,
+        kafka=args.kafka,
         file_archiving_enabled=args.archive,
     )
     report["jurisdiction"] = jscraper.do_scrape()
@@ -128,6 +129,7 @@ def do_scrape(
                     strict_validation=args.strict,
                     fastmode=args.fastmode,
                     realtime=args.realtime,
+                    kafka=args.kafka,
                     file_archiving_enabled=args.archive,
                 )
                 partial_report = scraper.do_scrape(**scrape_args, session=session)
@@ -162,6 +164,7 @@ def do_scrape(
                 strict_validation=args.strict,
                 fastmode=args.fastmode,
                 realtime=args.realtime,
+                kafka=args.kafka,
                 file_archiving_enabled=args.archive,
             )
             report[scraper_name] = scraper.do_scrape(**scrape_args)
