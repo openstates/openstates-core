@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.20.2 - Aug 14, 2024
+
+* Prevent failure in Google Cloud Storage archiving from failing a scrape/update operation
+
 ## 6.20.1 - Aug 2, 2024
 
 * Fix permissions issue caused by slightly wrong usage of GCP storage client code
