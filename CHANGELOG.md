@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.20.3 - Aug 27, 2024
+
+* Improve query for searching committee other_names
+
 ## 6.20.2 - Aug 14, 2024
 
 * Prevent failure in Google Cloud Storage archiving from failing a scrape/update operation
