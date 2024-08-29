@@ -536,6 +536,12 @@ class BaseImporter:
 
         # turn spec into DB query
         spec = get_pseudo_id(psuedo_person_id)
+
+        # if chamber is included in pseudo_person_id, use that as org_classification
+        if "chamber" in spec and org_classification is None:
+            org_classification = spec["chamber"]
+            del spec["chamber"]
+
         if list(spec.keys()) == ["name"]:
             # if we're just resolving on name, include other names and family name
             name = spec["name"]
