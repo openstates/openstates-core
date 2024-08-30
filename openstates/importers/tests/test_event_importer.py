@@ -17,6 +17,7 @@ from openstates.data.models import (
 )
 
 jid = "ocd-jurisdiction/country:us/state:ne/government"
+ojid = "ocd-jurisdiction/country:us/state:ca/government"
 
 
 def create_jurisdiction():
@@ -27,7 +28,7 @@ def create_jurisdiction():
 
 def create_other_jurisdiction():
     Division.objects.create(id="ocd-division/country:ca", name="USA")
-    j = Jurisdiction.objects.create(id="ojid", division_id="ocd-division/country:ca")
+    j = Jurisdiction.objects.create(id=ojid, division_id="ocd-division/country:ca")
     return j
 
 
@@ -307,7 +308,7 @@ def test_dedupe_key_event():
     result = EventImporter(jid, vei).import_data([event.as_dict()])
     assert result["event"]["insert"] == 1
 
-    result = EventImporter("ojid", vei).import_data([event.as_dict()])
+    result = EventImporter(ojid, vei).import_data([event.as_dict()])
     assert result["event"]["insert"] == 1
 
 
