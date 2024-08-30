@@ -75,8 +75,13 @@ class EventImporter(BaseImporter):
         return obj
 
     def get_chamber_name_from_event_name(self, name: str) -> typing.Union[str, None]:
-        possible_chamber_name = name.split()[0].lower()
+        if isinstance(name, tuple):
+            possible_chamber_name = name[0].split()[0].lower()
+        else:
+            possible_chamber_name = name.split()[0].lower()
+
         state = lookup(jurisdiction_id=self.jurisdiction_id)
+
         if state.lower and state.lower.name.lower() == possible_chamber_name:
             return state.lower.chamber_type
         elif state.upper and state.upper.name.lower() == possible_chamber_name:
