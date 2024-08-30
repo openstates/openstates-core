@@ -77,15 +77,9 @@ class EventImporter(BaseImporter):
     def get_chamber_name_from_event_name(self, name: str) -> typing.Union[str, None]:
         possible_chamber_name = name.split()[0].lower()
         state = lookup(jurisdiction_id=self.jurisdiction_id)
-        if (
-            hasattr(state, "lower")
-            and state.lower.name.lower() == possible_chamber_name
-        ):
+        if state.lower and state.lower.name.lower() == possible_chamber_name:
             return state.lower.chamber_type
-        elif (
-            hasattr(state, "upper")
-            and state.upper.name.lower() == possible_chamber_name
-        ):
+        elif state.upper and state.upper.name.lower() == possible_chamber_name:
             return state.upper.chamber_type
         return None
 
