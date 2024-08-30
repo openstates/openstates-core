@@ -16,10 +16,12 @@ from openstates.data.models import (
     Event,
 )
 
+jid = "ocd-jurisdiction/country:us/state:ne/government"
+
 
 def create_jurisdiction():
     Division.objects.create(id="ocd-division/country:us", name="USA")
-    j = Jurisdiction.objects.create(id="jid", division_id="ocd-division/country:us")
+    j = Jurisdiction.objects.create(id=jid, division_id="ocd-division/country:us")
     return j
 
 
@@ -39,8 +41,8 @@ def ge():
     return event
 
 
-bi = BillImporter("jid")
-vei = VoteEventImporter("jid", bi)
+bi = BillImporter(jid)
+vei = VoteEventImporter(jid, bi)
 
 
 @pytest.mark.django_db
@@ -49,7 +51,7 @@ def test_related_people_event():
     george = Person.objects.create(id="gw", name="George Washington")
     john = Person.objects.create(id="jqp", name="John Q. Public")
     o = Organization.objects.create(
-        name="Merica", jurisdiction_id="jid", classification="legislature"
+        name="Merica", jurisdiction_id=jid, classification="legislature"
     )
 
     Membership.objects.create(person=george, organization=o)
@@ -63,10 +65,10 @@ def test_related_people_event():
         item.add_person(person="John Q. Public")
         event.add_person("George Washington")
 
-    result = EventImporter("jid", vei).import_data([event1.as_dict()])
+    result = EventImporter(jid, vei).import_data([event1.as_dict()])
     assert result["event"]["insert"] == 1
 
-    result = EventImporter("jid", vei).import_data([event2.as_dict()])
+    result = EventImporter(jid, vei).import_data([event2.as_dict()])
     assert result["event"]["noop"] == 1
 
     assert (
@@ -106,10 +108,10 @@ def test_related_vote_event():
         item = event.add_agenda_item("Cookies will be served")
         item.add_vote_event(vote_event="Roll no. 12")
 
-    result = EventImporter("jid", vei).import_data([event1.as_dict()])
+    result = EventImporter(jid, vei).import_data([event1.as_dict()])
     assert result["event"]["insert"] == 1
 
-    result = EventImporter("jid", vei).import_data([event2.as_dict()])
+    result = EventImporter(jid, vei).import_data([event2.as_dict()])
     assert result["event"]["noop"] == 1
 
     assert (
@@ -136,10 +138,10 @@ def test_related_bill_event():
         item = event.add_agenda_item("Cookies will be served")
         item.add_bill(bill="HB 101")
 
-    result = EventImporter("jid", vei).import_data([event1.as_dict()])
+    result = EventImporter(jid, vei).import_data([event1.as_dict()])
     assert result["event"]["insert"] == 1
 
-    result = EventImporter("jid", vei).import_data([event2.as_dict()])
+    result = EventImporter(jid, vei).import_data([event2.as_dict()])
     assert result["event"]["noop"] == 1
 
     assert (
@@ -168,7 +170,7 @@ def test_related_bill_event_duplicate_id_use_session():
     item = event.add_agenda_item("Cookies will be served")
     item.add_bill(bill="HB 101")
 
-    result = EventImporter("jid", vei).import_data([event.as_dict()])
+    result = EventImporter(jid, vei).import_data([event.as_dict()])
     assert result["event"]["insert"] == 1
 
     assert (
@@ -202,10 +204,10 @@ def test_related_committee_event():
         item = event.add_agenda_item("Cookies will be served")
         item.add_committee(committee="Fiscal Committee")
 
-    result = EventImporter("jid", vei).import_data([event1.as_dict()])
+    result = EventImporter(jid, vei).import_data([event1.as_dict()])
     assert result["event"]["insert"] == 1
 
-    result = EventImporter("jid", vei).import_data([event2.as_dict()])
+    result = EventImporter(jid, vei).import_data([event2.as_dict()])
     assert result["event"]["noop"] == 1
 
     assert (
@@ -231,10 +233,10 @@ def test_media_event():
             url="http://hello.world/foo",
         )
 
-    result = EventImporter("jid", vei).import_data([event1.as_dict()])
+    result = EventImporter(jid, vei).import_data([event1.as_dict()])
     assert result["event"]["insert"] == 1
 
-    result = EventImporter("jid", vei).import_data([event2.as_dict()])
+    result = EventImporter(jid, vei).import_data([event2.as_dict()])
     assert result["event"]["noop"] == 1
 
 
@@ -249,10 +251,10 @@ def test_media_document():
             note="Presentation", url="http://example.com/presentation.pdf"
         )
 
-    result = EventImporter("jid", vei).import_data([event1.as_dict()])
+    result = EventImporter(jid, vei).import_data([event1.as_dict()])
     assert result["event"]["insert"] == 1
 
-    result = EventImporter("jid", vei).import_data([event2.as_dict()])
+    result = EventImporter(jid, vei).import_data([event2.as_dict()])
     assert result["event"]["noop"] == 1
 
 
@@ -260,22 +262,22 @@ def test_media_document():
 def test_full_event():
     create_jurisdiction()
     george = Person.objects.create(id="gw", name="George Washington")
-    o = Organization.objects.create(name="Merica", jurisdiction_id="jid")
+    o = Organization.objects.create(name="Merica", jurisdiction_id=jid)
     Membership.objects.create(person=george, organization=o)
 
     event = ge()
 
-    result = EventImporter("jid", vei).import_data([event.as_dict()])
+    result = EventImporter(jid, vei).import_data([event.as_dict()])
     assert result["event"]["insert"] == 1
 
     event = ge()
 
-    result = EventImporter("jid", vei).import_data([event.as_dict()])
+    result = EventImporter(jid, vei).import_data([event.as_dict()])
     assert result["event"]["noop"] == 1
 
     event = ge()
     event.location["name"] = "United States of America"
-    result = EventImporter("jid", vei).import_data([event.as_dict()])
+    result = EventImporter(jid, vei).import_data([event.as_dict()])
     assert result["event"]["update"] == 1
 
 
@@ -284,25 +286,25 @@ def test_dedupe_key_event():
     create_jurisdiction()
     create_other_jurisdiction()
     george = Person.objects.create(id="gw", name="George Washington")
-    o = Organization.objects.create(name="Merica", jurisdiction_id="jid")
+    o = Organization.objects.create(name="Merica", jurisdiction_id=jid)
     Membership.objects.create(person=george, organization=o)
 
     event = ge()
     event.dedupe_key = "foo"
 
-    result = EventImporter("jid", vei).import_data([event.as_dict()])
+    result = EventImporter(jid, vei).import_data([event.as_dict()])
     assert result["event"]["insert"] == 1
 
-    result = EventImporter("jid", vei).import_data([event.as_dict()])
+    result = EventImporter(jid, vei).import_data([event.as_dict()])
     assert result["event"]["noop"] == 1
 
     event.name = ("America's Anniversary",)
     event.location["name"] = "United States of America"
-    result = EventImporter("jid", vei).import_data([event.as_dict()])
+    result = EventImporter(jid, vei).import_data([event.as_dict()])
     assert result["event"]["update"] == 1
 
     event.dedupe_key = "bar"
-    result = EventImporter("jid", vei).import_data([event.as_dict()])
+    result = EventImporter(jid, vei).import_data([event.as_dict()])
     assert result["event"]["insert"] == 1
 
     result = EventImporter("ojid", vei).import_data([event.as_dict()])
@@ -337,10 +339,10 @@ def test_top_level_media_event():
         media_type="application/octet-stream",
     )
 
-    result = EventImporter("jid", vei).import_data([event1.as_dict()])
+    result = EventImporter(jid, vei).import_data([event1.as_dict()])
     assert result["event"]["insert"] == 1
 
-    result = EventImporter("jid", vei).import_data([event2.as_dict()])
+    result = EventImporter(jid, vei).import_data([event2.as_dict()])
     assert result["event"]["noop"] == 1
 
 
@@ -352,7 +354,7 @@ def test_event_agenda_item():
     agenda = event1.add_agenda_item("first item")
     agenda["extras"] = {"one": 1, "two": [2]}
 
-    result = EventImporter("jid", vei).import_data([event1.as_dict()])
+    result = EventImporter(jid, vei).import_data([event1.as_dict()])
     assert result["event"]["insert"] == 1
 
     e = Event.objects.get()
@@ -366,19 +368,19 @@ def test_event_soft_deletion():
     event1 = ge()
     event2 = ge()
     event2.name = "Other Event"
-    result = EventImporter("jid", vei).import_data([event1.as_dict(), event2.as_dict()])
+    result = EventImporter(jid, vei).import_data([event1.as_dict(), event2.as_dict()])
     assert result["event"]["insert"] == 2
     assert Event.objects.count() == 2
 
     # delete
-    result = EventImporter("jid", vei).import_data([event1.as_dict()])
+    result = EventImporter(jid, vei).import_data([event1.as_dict()])
     assert result["event"]["noop"] == 1
     # TODO: assert result["event"]["deleted"] == 1
     assert Event.objects.count() == 2
     assert Event.objects.get(deleted=True).name == "Other Event"
 
     # undelete
-    result = EventImporter("jid", vei).import_data([event1.as_dict(), event2.as_dict()])
+    result = EventImporter(jid, vei).import_data([event1.as_dict(), event2.as_dict()])
     assert result["event"]["update"] == 1
     assert result["event"]["noop"] == 1
     assert Event.objects.count() == 2
