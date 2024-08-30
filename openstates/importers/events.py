@@ -1,3 +1,5 @@
+import typing
+
 from .base import BaseImporter
 from ._types import _JsonDict
 from ..utils import get_pseudo_id
@@ -13,6 +15,7 @@ from ..data.models import (
 )
 from .organizations import OrganizationImporter
 from .vote_events import VoteEventImporter
+from ..metadata import lookup
 
 
 class EventImporter(BaseImporter):
@@ -71,9 +74,25 @@ class EventImporter(BaseImporter):
         )
         return obj
 
+    def get_chamber_name_from_event_name(self, name: str) -> typing.Union[str, None]:
+        possible_chamber_name = name.split()[0].lower()
+        state = lookup(jurisdiction_id=self.jurisdiction_id)
+        if (
+            hasattr(state, "lower")
+            and state.lower.name.lower() == possible_chamber_name
+        ):
+            return state.lower.chamber_type
+        elif (
+            hasattr(state, "upper")
+            and state.upper.name.lower() == possible_chamber_name
+        ):
+            return state.upper.chamber_type
+        return None
+
     def prepare_for_db(self, data: _JsonDict) -> _JsonDict:
         data["jurisdiction_id"] = self.jurisdiction_id
         data["location"] = self.get_location(data["location"])
+        org_classification = self.get_chamber_name_from_event_name(data["name"])
 
         # all objects being inserted should be non-deleted
         data["deleted"] = False
@@ -88,7 +107,9 @@ class EventImporter(BaseImporter):
                 participant["person_id"] = participant.pop("legislator_id")
 
             if "person_id" in participant:
-                participant["person_id"] = self.resolve_person(participant["person_id"])
+                participant["person_id"] = self.resolve_person(
+                    participant["person_id"], org_classification=org_classification
+                )
             elif "organization_id" in participant:
                 participant["organization_id"] = self.org_importer.resolve_json_id(
                     participant["organization_id"], allow_no_match=True
@@ -97,7 +118,9 @@ class EventImporter(BaseImporter):
         for item in data["agenda"]:
             for entity in item["related_entities"]:
                 if "person_id" in entity:
-                    entity["person_id"] = self.resolve_person(entity["person_id"])
+                    entity["person_id"] = self.resolve_person(
+                        entity["person_id"], org_classification=org_classification
+                    )
                 elif "organization_id" in entity:
                     entity["organization_id"] = self.org_importer.resolve_json_id(
                         entity["organization_id"], allow_no_match=True
