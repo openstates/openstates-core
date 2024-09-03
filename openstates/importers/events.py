@@ -74,7 +74,9 @@ class EventImporter(BaseImporter):
         )
         return obj
 
-    def get_chamber_name_from_event_name(self, name: str) -> typing.Union[str, None]:
+    def get_chamber_name_from_event_name(
+        self, name: typing.Union[str, tuple]
+    ) -> typing.Union[str, None]:
         if isinstance(name, tuple):
             possible_chamber_name = name[0].split()[0].lower()
         else:
