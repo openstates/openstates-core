@@ -78,16 +78,18 @@ class EventImporter(BaseImporter):
         self, name: typing.Union[str, tuple]
     ) -> typing.Union[str, None]:
         if isinstance(name, tuple):
-            possible_chamber_name = name[0].split()[0].lower()
+            event_name = name[0].lower()
         else:
-            possible_chamber_name = name.split()[0].lower()
+            event_name = name.lower()
 
         state = lookup(jurisdiction_id=self.jurisdiction_id)
-
-        if state.lower and state.lower.name.lower() == possible_chamber_name:
-            return state.lower.chamber_type
-        elif state.upper and state.upper.name.lower() == possible_chamber_name:
-            return state.upper.chamber_type
+        chamber_types = []
+        if state.lower and state.lower.name.lower() in event_name:
+            chamber_types.append(state.lower.chamber_type)
+        if state.upper and state.upper.name.lower() in event_name:
+            chamber_types.append(state.upper.chamber_type)
+        if len(chamber_types) == 1:
+            return chamber_types[0]
         return None
 
     def prepare_for_db(self, data: _JsonDict) -> _JsonDict:
