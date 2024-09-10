@@ -4,6 +4,7 @@ import glob
 import json
 import logging
 import typing
+from dateutils.parser import *
 from django.db.models import Q, Model
 from django.db.models.signals import post_save
 from .. import settings
@@ -181,6 +182,21 @@ class BaseImporter:
             return ids.pop()
         elif len(ids) == 0:
             self.error(f"could not resolve bill id {bill_id} {date}, no matches")
+            new_date = parse(date)+relativedelta(days=4)
+            objects = Bill.objects.filter(
+                Q(legislative_session__end_date__gte=new_date)
+                | Q(legislative_session__end_date=""),
+                legislative_session__start_date__lte=new_date,
+                legislative_session__jurisdiction_id=self.jurisdiction_id,
+                identifier=bill_id,
+            )
+            ids = {each.id for each in objects}
+            if len(ids) == 1:
+                return ids.pop()
+            else:
+                self.error(
+                    f"could not resolve bill with fluffed date {bill_id} {new_date}, {len(ids)} matches"
+                )
         else:
             self.error(
                 f"could not resolve bill id {bill_id} {date}, {len(ids)} matches"
