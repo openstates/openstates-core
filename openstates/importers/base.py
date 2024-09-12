@@ -169,8 +169,12 @@ class BaseImporter:
         if bill_transform_func:
             bill_id = bill_transform_func(bill_id)
 
+        # move the start_date up a bit in case the event is on the last day of a session to compare with end_date
+        date = datetime.fromisoformat(date)
+        new_date = date + timedelta(days=-1)
+
         objects = Bill.objects.filter(
-            Q(legislative_session__end_date__gte=date)
+            Q(legislative_session__end_date__gte=new_date)
             | Q(legislative_session__end_date=""),
             legislative_session__start_date__lte=date,
             legislative_session__jurisdiction_id=self.jurisdiction_id,
@@ -181,19 +185,18 @@ class BaseImporter:
         if len(ids) == 1:
             return ids.pop()
         elif len(ids) == 0:
-            self.warning(f"could not resolve bill id {bill_id} {date}, no matches so will retry")
-            date = datetime.fromisoformat(date)
-            new_date = date + timedelta(days=-4)
+            self.warning(f"could not resolve {bill_id} {new_date}, no matches so will retry with a week earlier")
+            week_date = date + timedelta(days=-7)
             objects = Bill.objects.filter(
-                Q(legislative_session__end_date__gte=new_date)
+                Q(legislative_session__end_date__gte=week_date)
                 | Q(legislative_session__end_date=""),
-                legislative_session__start_date__lte=new_date,
+                legislative_session__start_date__lte=date,
                 legislative_session__jurisdiction_id=self.jurisdiction_id,
                 identifier=bill_id,
             )
             ids = {each.id for each in objects}
             if len(ids) == 1:
-                self.info(f"resolved bill id {bill_id} with tweaked start_date {new_date}")
+                self.info(f"resolved bill id {bill_id} with tweaked start_date {week_date}")
                 return ids.pop()
             else:
                 self.error(
