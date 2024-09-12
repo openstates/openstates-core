@@ -32,7 +32,7 @@ def create_other_jurisdiction():
 def ge():
     event = ScrapeEvent(
         name="America's Birthday",
-        start_date="2014-07-04T05:00Z",
+        start_date="2014-07-04T05:00:00+00:00",
         location_name="America",
         all_day=True,
     )
