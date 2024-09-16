@@ -81,6 +81,7 @@ class EventImporter(BaseImporter):
             event_name = name[0].lower()
         else:
             event_name = name.lower()
+        event_name = event_name.split(" ")[0]
 
         state = lookup(jurisdiction_id=self.jurisdiction_id)
         chamber_types = []
