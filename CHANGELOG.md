@@ -1,5 +1,10 @@
 # Changelog
 
+## 6.20.4 - Sept 16, 2024
+
+* Add Chamber on Bill Sponsorship matches for people
+* Improve Event to Bill matching for Events on last day of session
+
 ## 6.20.3 - Aug 27, 2024
 
 * Improve query for searching committee other_names
