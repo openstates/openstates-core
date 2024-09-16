@@ -4,6 +4,7 @@ import glob
 import json
 import logging
 import typing
+from datetime import datetime, timedelta
 from django.db.models import Q, Model
 from django.db.models.signals import post_save
 from .. import settings
@@ -168,8 +169,12 @@ class BaseImporter:
         if bill_transform_func:
             bill_id = bill_transform_func(bill_id)
 
+        # move the start_date up a bit in case the event is on the last day of a session to compare with end_date
+        date = datetime.fromisoformat(date)
+        new_date = date - timedelta(days=1)
+
         objects = Bill.objects.filter(
-            Q(legislative_session__end_date__gte=date)
+            Q(legislative_session__end_date__gte=new_date)
             | Q(legislative_session__end_date=""),
             legislative_session__start_date__lte=date,
             legislative_session__jurisdiction_id=self.jurisdiction_id,
