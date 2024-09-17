@@ -589,14 +589,15 @@ class BaseImporter:
             )
 
         query_result = Person.objects.filter(spec).values("id", "current_role")
+        result_set = set([p["id"] for p in query_result])
         errmsg = None
-        if len(query_result) == 1:
-            self.person_cache[cache_key] = query_result[0]["id"]
-        elif not query_result:
+        if len(result_set) == 1:
+            self.person_cache[cache_key] = result_set.pop()
+        elif not result_set:
             errmsg = "no people returned for spec"
         else:
-            # If there are multiple rows returned see we can get the current
-            ids = set([entry["id"] for entry in query_result if entry["current_role"] is not None])
+            # If there are multiple rows returned see we can get the active legislator.
+            ids = set([p["id"] for p in query_result if p["current_role"] is not None])
             if len(ids) == 1:
                 self.person_cache[cache_key] = ids.pop()
             else:
