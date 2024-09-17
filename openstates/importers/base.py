@@ -588,14 +588,19 @@ class BaseImporter:
                 memberships__start_date__lt=end_date
             )
 
-        ids = set(Person.objects.filter(spec).values_list("id", flat=True))
-        if len(ids) == 1:
-            self.person_cache[cache_key] = ids.pop()
-            errmsg = None
-        elif not ids:
+        query_result = Person.objects.filter(spec).values("id", "current_role")
+        errmsg = None
+        if len(query_result) == 1:
+            self.person_cache[cache_key] = query_result[0]["id"]
+        elif not query_result:
             errmsg = "no people returned for spec"
         else:
-            errmsg = "multiple people returned for spec"
+            # If there are multiple rows returned see we can get the current
+            ids = set([entry["id"] for entry in query_result if entry["current_role"] is not None])
+            if len(ids) == 1:
+                self.person_cache[cache_key] = ids.pop()
+            else:
+                errmsg = "multiple people returned for spec"
 
         # either raise or log error
         if errmsg:
