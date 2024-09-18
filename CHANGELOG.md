@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.20.5 - Sept 18, 2024
+
+* Improve Event to Person matching
+
 ## 6.20.4 - Sept 16, 2024
 
 * Add Chamber on Bill Sponsorship matches for people
