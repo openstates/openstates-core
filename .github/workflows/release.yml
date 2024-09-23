@@ -34,15 +34,25 @@ jobs:
         env:
           DATABASE_URL: ${{ secrets.OPENSTATES_DATABASE_URL }}
         run: poetry run os-initdb
-      # Add steps for metadata package
-      - name: Change directory to metadata
-        run: cd openstates/metadata
+      # Add steps for openstates-metadata package
+      - name: Create directory and copy openstates-metadata
+        run: |
+          mkdir -p /openstates-core-metadata/openstates-metadata
+          cp -r openstates/metadata /openstates-core-metadata/openstates-metadata
 
-      - name: install dependencies for metadata
+      - name: Change directory to openstates-metadata
+        run: cd /openstates-core-metadata/openstates-metadata
+
+      - name: Move configuration files
+        run: |
+          mv pyproject.toml.sample pyproject.toml
+          mv .python-version.sample .python-version
+
+      - name: Install dependencies for openstates-metadata
         run: poetry install
 
-      - name: configure pypi credentials for metadata package
+      - name: Configure pypi credentials for metadata package
         run: poetry config pypi-token.pypi "${{ secrets.PYPI_API_KEY }}"
 
-      - name: Publish metadata package
+      - name: Publish openstates-metadata package
         run: poetry publish --build
