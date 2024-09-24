@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "openstates-metadata"
+name = "openstates_metadata"
 version = "0.1.0"
 description = "Openstates metadata"
 authors = ["Alex Obaseki <alex@pluralpolicy.com>"]
