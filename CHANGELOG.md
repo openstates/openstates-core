@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.20.6 - Sept 18, 2024
+
+* Add steps to publish lightweight openstates-metadata
+
 ## 6.20.5 - Sept 18, 2024
 
 * Improve Event to Person matching
