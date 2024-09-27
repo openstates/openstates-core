@@ -14,7 +14,10 @@ class OrganizationImporter(BaseImporter):
 
         name = spec.pop("name", None)
         if name:
+            # __icontains doesn't work for JSONField ArrayField
+            # so other_names follows "title" naming pattern
+            other_names = name.title().replace(" On ", " on ")
             return Q(**spec) & (
-                Q(name_iexact=name) | Q(other_names__icontains=[{"name": name}])
+                Q(name__iexact=name) | Q(other_names__contains=[{"name": other_names}])
             )
         return spec
