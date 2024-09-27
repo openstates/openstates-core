@@ -16,8 +16,9 @@ class OrganizationImporter(BaseImporter):
         if name:
             # __icontains doesn't work for JSONField ArrayField
             # so other_names follows "title" naming pattern
-            other_names = name.title().replace(" On ", " on ")
+            other_name_lowercase_on = name.title().replace(" On ", " on ")
             return Q(**spec) & (
-                Q(name__iexact=name) | Q(other_names__contains=[{"name": other_names}])
+                Q(name__iexact=name)
+                | Q(other_names__contains=[{"name": other_name_lowercase_on}])
             )
         return spec
