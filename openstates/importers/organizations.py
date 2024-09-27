@@ -15,6 +15,6 @@ class OrganizationImporter(BaseImporter):
         name = spec.pop("name", None)
         if name:
             return Q(**spec) & (
-                Q(name=name) | Q(other_names__contains=[{"name": name}])
+                Q(name_iexact=name) | Q(other_names__icontains=[{"name": name}])
             )
         return spec
