@@ -1,0 +1,35 @@
+# openstates_metadata
+
+The `openstates_metadata` package provides a lightweight solution for accessing legislative metadata from the OpenStates project without needing to install the entire core OpenStates project. It is designed for external projects that rely on this specific subset of data.
+
+## Motivation
+
+There are a couple of key reasons for creating this separate package:
+
+1. **Minimize Dependencies:** If your project only requires access to metadata, this package allows you to avoid installing the larger OpenStates core package.
+2. **Simplify Dependency Management:** With a large project like OpenStates core, managing dependencies can be complex. By isolating metadata functionality, dependency resolution becomes much simpler and faster.
+
+## Installation
+
+To install the `openstates_metadata` package, simply run:
+
+```bash
+pip install openstates_metadata
+```
+
+## Usage
+
+Here’s an example of how to use the openstates_metadata package:
+
+```code
+import openstates_metadata as metadata
+
+jurisdiction_metadata = metadata.lookup(jurisdiction_id="ocd-jurisdiction/country:us/state:ak/government")
+print(jurisdiction_metadata)
+```
+
+## Features
+
+1. Access to legislative metadata from OpenStates.
+2. Lightweight and easy to integrate into projects.
+3. Avoid unnecessary dependencies and overhead from the full OpenStates core project.
