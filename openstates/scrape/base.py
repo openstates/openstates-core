@@ -226,7 +226,7 @@ class Scraper(scrapelib.Scraper):
                 producer = KafkaProducer(
                     security_protocol="SSL", 
                     bootstrap_servers=kafka_brokers, 
-                    value_serializer=lambda v: json.dumps(v, cls=JSONEncoderPlus).encode('utf-8')
+                    value_serializer=lambda v: json.dumps(v, cls=utils.JSONEncoderPlus).encode('utf-8')
                 )                
                 producer.send(jurisdiction, obj.as_dict()) # Sending the Bill JSON to a State Topic
                 
