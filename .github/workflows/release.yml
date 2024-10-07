@@ -39,22 +39,13 @@ jobs:
         run: |
           mkdir -p core_metadata
           cp -r openstates/metadata core_metadata
-      - name: Change directory to core_metadata and Move configuration files
+      - name:  Handle openstates_metadata steps
+        working-directory: ./core_metadata
         run: |
-          cd core_metadata
           mv metadata/pyproject.toml.sample pyproject.toml
           mv metadata/.python-version.sample .python-version
           mv metadata/README.md.sample README.md
           mv metadata openstates_metadata
-      - name: Install dependencies for openstates_metadata
-        run: |
-          cd core_metadata 
           poetry install
-      - name: Configure pypi credentials for metadata package
-        run: |
-          cd core_metadata  
           poetry config pypi-token.pypi "${{ secrets.OPENSTATES_METADATA_PYPI_API_KEY }}"
-      - name: Publish openstates_metadata package
-        run: |
-          cd core_metadata 
           poetry publish --build
