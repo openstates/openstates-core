@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.20.7 - Oct 10, 2024
+
+* Fix matching committee organizations when chamber is specified for an organizational bill sponsor
+
 ## 6.20.6 - Sept 18, 2024
 
 * Add steps to publish lightweight openstates-metadata

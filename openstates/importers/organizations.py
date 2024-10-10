@@ -15,16 +15,27 @@ class OrganizationImporter(BaseImporter):
 
         org_name_prepositions = ["and", "at", "by", "for", "in", "on", "of", "the"]
         name = spec.pop("name", None)
+        # if chamber is included in pseudo_person_id, we assume this is a committee
+        # and chamber is here to help us find its parent
+        chamber_classification = spec.pop("chamber", None)
         if name:
             # __icontains doesn't work for JSONField ArrayField
             # so name follows "title" naming pattern
             name = name.title()
-            pattern = '(' + '|'.join(org_name_prepositions) + ')'
-            name = re.sub(pattern, lambda match: match.group(0).lower(), name, flags=re.IGNORECASE)
+            pattern = "(" + "|".join(org_name_prepositions) + ")"
+            name = re.sub(
+                pattern, lambda match: match.group(0).lower(), name, flags=re.IGNORECASE
+            )
             name = name.replace(" & ", " and ")
 
-            return Q(**spec) & (
-                Q(name__iexact=name)
-                | Q(other_names__contains=[{"name": name}])
-            )
+            if chamber_classification:
+                return (
+                    Q(**spec)
+                    & (Q(name__iexact=name) | Q(other_names__contains=[{"name": name}]))
+                    & Q(parent__classification=chamber_classification)
+                )
+            else:
+                return Q(**spec) & (
+                    Q(name__iexact=name) | Q(other_names__contains=[{"name": name}])
+                )
         return spec
