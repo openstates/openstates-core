@@ -22,18 +22,20 @@ class OrganizationImporter(BaseImporter):
             # __icontains doesn't work for JSONField ArrayField
             # so name follows "title" naming pattern
             name = name.title()
-            pattern = '(' + '|'.join(org_name_prepositions) + ')'
-            name = re.sub(pattern, lambda match: match.group(0).lower(), name, flags=re.IGNORECASE)
+            pattern = "(" + "|".join(org_name_prepositions) + ")"
+            name = re.sub(
+                pattern, lambda match: match.group(0).lower(), name, flags=re.IGNORECASE
+            )
             name = name.replace(" & ", " and ")
 
             if chamber_classification:
-                return Q(**spec) & (
-                        Q(name__iexact=name)
-                        | Q(other_names__contains=[{"name": name}])
-                ) & Q(parent__classification=chamber_classification)
+                return (
+                    Q(**spec)
+                    & (Q(name__iexact=name) | Q(other_names__contains=[{"name": name}]))
+                    & Q(parent__classification=chamber_classification)
+                )
             else:
                 return Q(**spec) & (
-                    Q(name__iexact=name)
-                    | Q(other_names__contains=[{"name": name}])
+                    Q(name__iexact=name) | Q(other_names__contains=[{"name": name}])
                 )
         return spec
