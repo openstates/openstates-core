@@ -2,6 +2,7 @@ from .base import BaseModel, Scraper
 from .popolo import Organization
 from .schemas.jurisdiction import schema
 from ..metadata import lookup
+import requests
 
 
 _name_fixes = {
@@ -26,7 +27,7 @@ _name_fixes = {
 
 
 class State(BaseModel):
-    """ Base class for a jurisdiction """
+    """Base class for a jurisdiction"""
 
     _type = "jurisdiction"
     _schema = schema
@@ -77,6 +78,16 @@ class State(BaseModel):
     @property
     def url(self):
         return self.metadata.url
+
+    @property
+    def legislative_sessions(self):
+        params = {"state_name": self.name}
+        response = requests.get(
+            "http://abstractcronos.us-west-2.elasticbeanstalk.com/sessions/query",
+            params=params,
+        )
+        response.raise_for_status()
+        return response.json()
 
     def get_organizations(self):
         legislature = Organization(
