@@ -2,6 +2,8 @@ from .base import BaseModel, Scraper
 from .popolo import Organization
 from .schemas.jurisdiction import schema
 from ..metadata import lookup
+import requests
+import os
 
 
 _name_fixes = {
@@ -26,12 +28,13 @@ _name_fixes = {
 
 
 class State(BaseModel):
-    """ Base class for a jurisdiction """
+    """Base class for a jurisdiction"""
 
     _type = "jurisdiction"
     _schema = schema
 
     # schema objects
+    historical_legislative_sessions = []
     legislative_sessions = []
     extras = {}
 
@@ -77,6 +80,43 @@ class State(BaseModel):
     @property
     def url(self):
         return self.metadata.url
+
+    @property
+    def new_sessions(
+        self,
+        endpoint: str = os.getenv("CRONOS_ENDPOINT"),
+    ):
+        params = {"state_name": self.name}
+        response = requests.get(
+            endpoint,
+            params=params,
+        )
+        response.raise_for_status()
+        return response.json()
+
+    @property
+    def legislative_sessions(self, opt_for_new: bool = False):
+        if not opt_for_new:
+            sessions_table = {
+                session["identifier"]: session for session in self.new_sessions
+            }
+            # Now, any historical sessions with the same identifier will be overridden
+            sessions_table.update(
+                {
+                    session["identifier"]: session
+                    for session in self.historical_legislative_sessions
+                }
+            )
+        else:  # Override sessions with the same identifier with the new ones from cronos.
+            sessions_table = {
+                session["identifier"]: session
+                for session in self.historical_legislative_sessions
+            }
+            sessions_table.update(
+                {session["identifier"]: session for session in self.new_sessions}
+            )
+
+        return list(sessions_table.values())
 
     def get_organizations(self):
         legislature = Organization(
