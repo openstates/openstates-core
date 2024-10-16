@@ -169,15 +169,28 @@ class BaseImporter:
         if bill_transform_func:
             bill_id = bill_transform_func(bill_id)
 
-        # move the start_date up a bit in case the event is on the last day of a session to compare with end_date
+        # Some steps here to first find the session that match the incoming event using the event date
+        # If a unique session is not found, then use the session with the latest "start_date"
         date = datetime.fromisoformat(date)
-        new_date = date - timedelta(days=1)
+        legislative_session = LegislativeSession.objects.filter(
+            Q(end_date__gte=date) | Q(end_date=""),
+            start_date__lte=date,
+            jurisdiction_id=self.jurisdiction_id,
+        )
+        session_ids = {each.id for each in legislative_session}
+
+        if len(session_ids) == 1:
+            session_id = session_ids.pop()
+        else:
+            legislative_session = (
+                LegislativeSession.objects.filter(jurisdiction_id=self.jurisdiction_id)
+                .order_by("-start_date")
+                .first()
+            )
+            session_id = legislative_session.id
 
         objects = Bill.objects.filter(
-            Q(legislative_session__end_date__gte=new_date)
-            | Q(legislative_session__end_date=""),
-            legislative_session__start_date__lte=date,
-            legislative_session__jurisdiction_id=self.jurisdiction_id,
+            legislative_session__id=session_id,
             identifier=bill_id,
         )
         ids = {each.id for each in objects}
