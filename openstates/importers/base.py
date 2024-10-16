@@ -4,7 +4,7 @@ import glob
 import json
 import logging
 import typing
-from datetime import datetime, timedelta
+from datetime import datetime
 from django.db.models import Q, Model
 from django.db.models.signals import post_save
 from .. import settings
@@ -169,7 +169,7 @@ class BaseImporter:
         if bill_transform_func:
             bill_id = bill_transform_func(bill_id)
 
-        # Some steps here to first find the session that match the incoming event using the event date
+        # Some steps here to first find the session that matches the incoming entity using the entity date
         # If a unique session is not found, then use the session with the latest "start_date"
         date = datetime.fromisoformat(date)
         legislative_session = LegislativeSession.objects.filter(
@@ -187,7 +187,7 @@ class BaseImporter:
                 .order_by("-start_date")
                 .first()
             )
-            session_id = legislative_session.id
+            session_id = legislative_session.id if legislative_session else None
 
         objects = Bill.objects.filter(
             legislative_session__id=session_id,
