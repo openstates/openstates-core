@@ -128,6 +128,7 @@ class BaseImporter:
         self.pseudo_id_cache: typing.Dict[str, typing.Optional[_ID]] = {}
         self.person_cache: typing.Dict[_PersonCacheKey, typing.Optional[str]] = {}
         self.session_cache: typing.Dict[str, LegislativeSession] = {}
+        self.all_sessions_cache: typing.List[LegislativeSession] = []
         self.logger = logging.getLogger("openstates")
         self.info = self.logger.info
         self.debug = self.logger.debug
@@ -138,6 +139,12 @@ class BaseImporter:
         # load transformers from appropriate setting
         if settings.IMPORT_TRANSFORMERS.get(self._type):
             self.cached_transformers = settings.IMPORT_TRANSFORMERS[self._type]
+
+    def get_all_sessions(self) -> None:
+        if not self.all_sessions_cache:
+            self.all_sessions_cache = LegislativeSession.objects.filter(
+                jurisdiction_id=self.jurisdiction_id
+            ).order_by("-start_date")
 
     def get_session(self, identifier: str) -> LegislativeSession:
         if identifier not in self.session_cache:
@@ -171,23 +178,18 @@ class BaseImporter:
 
         # Some steps here to first find the session that matches the incoming entity using the entity date
         # If a unique session is not found, then use the session with the latest "start_date"
-        date = datetime.fromisoformat(date)
-        legislative_session = LegislativeSession.objects.filter(
-            Q(end_date__gte=date) | Q(end_date=""),
-            start_date__lte=date,
-            jurisdiction_id=self.jurisdiction_id,
-        )
-        session_ids = {each.id for each in legislative_session}
+        date = datetime.fromisoformat(date).strftime("%Y-%m-%d")
+        session_ids = [
+            session.id
+            for session in self.all_sessions_cache
+            if session.start_date <= date
+            and (session.end_date >= date or not session.end_date)
+        ]
 
         if len(session_ids) == 1:
             session_id = session_ids.pop()
         else:
-            legislative_session = (
-                LegislativeSession.objects.filter(jurisdiction_id=self.jurisdiction_id)
-                .order_by("-start_date")
-                .first()
-            )
-            session_id = legislative_session.id if legislative_session else None
+            session_id = self.all_sessions_cache[0].id
 
         objects = Bill.objects.filter(
             legislative_session__id=session_id,
