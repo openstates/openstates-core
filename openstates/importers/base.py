@@ -173,6 +173,7 @@ class BaseImporter:
         bill_transform_func = settings.IMPORT_TRANSFORMERS.get("bill", {}).get(
             "identifier", None
         )
+        self.get_all_sessions()
         if bill_transform_func:
             bill_id = bill_transform_func(bill_id)
 
@@ -189,7 +190,7 @@ class BaseImporter:
         if len(session_ids) == 1:
             session_id = session_ids.pop()
         else:
-            session_id = self.all_sessions_cache[0].id
+            session_id = self.all_sessions_cache[0].id if self.all_sessions_cache else None
 
         objects = Bill.objects.filter(
             legislative_session__id=session_id,

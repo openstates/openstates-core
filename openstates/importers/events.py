@@ -94,7 +94,6 @@ class EventImporter(BaseImporter):
         return None
 
     def prepare_for_db(self, data: _JsonDict) -> _JsonDict:
-        self.get_all_sessions()
         data["jurisdiction_id"] = self.jurisdiction_id
         data["location"] = self.get_location(data["location"])
         org_classification = self.get_chamber_name_from_event_name(data["name"])
