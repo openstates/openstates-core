@@ -140,11 +140,12 @@ class BaseImporter:
         if settings.IMPORT_TRANSFORMERS.get(self._type):
             self.cached_transformers = settings.IMPORT_TRANSFORMERS[self._type]
 
-    def get_all_sessions(self) -> None:
+    def get_all_sessions(self) -> typing.List[LegislativeSession]:
         if not self.all_sessions_cache:
             self.all_sessions_cache = LegislativeSession.objects.filter(
                 jurisdiction_id=self.jurisdiction_id
             ).order_by("-start_date")
+        return self.all_sessions_cache
 
     def get_session(self, identifier: str) -> LegislativeSession:
         if identifier not in self.session_cache:
@@ -173,7 +174,7 @@ class BaseImporter:
         bill_transform_func = settings.IMPORT_TRANSFORMERS.get("bill", {}).get(
             "identifier", None
         )
-        self.get_all_sessions()
+        all_sessions = self.get_all_sessions()
         if bill_transform_func:
             bill_id = bill_transform_func(bill_id)
 
@@ -182,7 +183,7 @@ class BaseImporter:
         date = datetime.fromisoformat(date).strftime("%Y-%m-%d")
         session_ids = [
             session.id
-            for session in self.all_sessions_cache
+            for session in all_sessions
             if session.start_date <= date
             and (session.end_date >= date or not session.end_date)
         ]
@@ -190,7 +191,7 @@ class BaseImporter:
         if len(session_ids) == 1:
             session_id = session_ids.pop()
         else:
-            session_id = self.all_sessions_cache[0].id if self.all_sessions_cache else None
+            session_id = all_sessions[0].id if all_sessions else None
 
         objects = Bill.objects.filter(
             legislative_session__id=session_id,
