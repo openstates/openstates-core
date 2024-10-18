@@ -128,6 +128,9 @@ class BaseImporter:
         self.pseudo_id_cache: typing.Dict[str, typing.Optional[_ID]] = {}
         self.person_cache: typing.Dict[_PersonCacheKey, typing.Optional[str]] = {}
         self.session_cache: typing.Dict[str, LegislativeSession] = {}
+        # Get all_session_cache is a list of all sessions available for this jurisdiction.
+        # It is different from session_cache: which is a dictionary session(s) that is loaded a session
+        # session_cache may not contain all jurisdiction legislative sessions while all_session_cache will.
         self.all_sessions_cache: typing.List[LegislativeSession] = []
         self.logger = logging.getLogger("openstates")
         self.info = self.logger.info
