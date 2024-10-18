@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.20.8 - Oct 18, 2024q
+
+* Improve resolve bill to capture at least the most recent session
+
 ## 6.20.7 - Oct 10, 2024
 
 * Fix matching committee organizations when chamber is specified for an organizational bill sponsor

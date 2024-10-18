@@ -4,7 +4,7 @@ import glob
 import json
 import logging
 import typing
-from datetime import datetime, timedelta
+from datetime import datetime
 from django.db.models import Q, Model
 from django.db.models.signals import post_save
 from .. import settings
@@ -128,6 +128,10 @@ class BaseImporter:
         self.pseudo_id_cache: typing.Dict[str, typing.Optional[_ID]] = {}
         self.person_cache: typing.Dict[_PersonCacheKey, typing.Optional[str]] = {}
         self.session_cache: typing.Dict[str, LegislativeSession] = {}
+        # Get all_session_cache is a list of all sessions available for this jurisdiction.
+        # It is different from session_cache: which is a dictionary session(s) that is loaded a session
+        # session_cache may not contain all jurisdiction legislative sessions while all_session_cache will.
+        self.all_sessions_cache: typing.List[LegislativeSession] = []
         self.logger = logging.getLogger("openstates")
         self.info = self.logger.info
         self.debug = self.logger.debug
@@ -138,6 +142,13 @@ class BaseImporter:
         # load transformers from appropriate setting
         if settings.IMPORT_TRANSFORMERS.get(self._type):
             self.cached_transformers = settings.IMPORT_TRANSFORMERS[self._type]
+
+    def get_all_sessions(self) -> typing.List[LegislativeSession]:
+        if not self.all_sessions_cache:
+            self.all_sessions_cache = LegislativeSession.objects.filter(
+                jurisdiction_id=self.jurisdiction_id
+            ).order_by("-start_date")
+        return self.all_sessions_cache
 
     def get_session(self, identifier: str) -> LegislativeSession:
         if identifier not in self.session_cache:
@@ -166,18 +177,27 @@ class BaseImporter:
         bill_transform_func = settings.IMPORT_TRANSFORMERS.get("bill", {}).get(
             "identifier", None
         )
+        all_sessions = self.get_all_sessions()
         if bill_transform_func:
             bill_id = bill_transform_func(bill_id)
 
-        # move the start_date up a bit in case the event is on the last day of a session to compare with end_date
-        date = datetime.fromisoformat(date)
-        new_date = date - timedelta(days=1)
+        # Some steps here to first find the session that matches the incoming entity using the entity date
+        # If a unique session is not found, then use the session with the latest "start_date"
+        date = datetime.fromisoformat(date).strftime("%Y-%m-%d")
+        session_ids = [
+            session.id
+            for session in all_sessions
+            if session.start_date <= date
+            and (session.end_date >= date or not session.end_date)
+        ]
+
+        if len(session_ids) == 1:
+            session_id = session_ids.pop()
+        else:
+            session_id = all_sessions[0].id if all_sessions else None
 
         objects = Bill.objects.filter(
-            Q(legislative_session__end_date__gte=new_date)
-            | Q(legislative_session__end_date=""),
-            legislative_session__start_date__lte=date,
-            legislative_session__jurisdiction_id=self.jurisdiction_id,
+            legislative_session__id=session_id,
             identifier=bill_id,
         )
         ids = {each.id for each in objects}
