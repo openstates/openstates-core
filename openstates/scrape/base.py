@@ -80,6 +80,7 @@ class Scraper(scrapelib.Scraper):
         fastmode=False,
         realtime=False,
         kafka=None,
+        kafka_producer=None, 
         file_archiving_enabled=False,
     ):
         super(Scraper, self).__init__()
@@ -89,6 +90,7 @@ class Scraper(scrapelib.Scraper):
         self.datadir = datadir
         self.realtime = realtime
         self.kafka = kafka
+        self.kafka_producer = kafka_producer
         self.file_archiving_enabled = file_archiving_enabled
 
         # scrapelib setup
@@ -203,38 +205,14 @@ class Scraper(scrapelib.Scraper):
             except ValueError:
                 upload_file_path = file_path
 
-            if self.kafka:
-                # Instantiate Boto3 Kafka Client
-                client = boto3.client('kafka', region_name='us-west-2')
-
-                # Grab Cluster Arn
-                clusters = client.list_clusters()['ClusterInfoList']
-                cluster_arn = None
-                for cluster in clusters:
-                    if cluster['ClusterName'] == self.kafka:
-                        cluster_arn = cluster['ClusterArn']
-                        break
-
-                if cluster_arn is None:
-                    raise ValueError(f"No Kafka cluster found with name: {self.kafka}")
-
-                # Grab Brokers
-                response = client.get_bootstrap_brokers(ClusterArn=cluster_arn)
-                kafka_brokers = response['BootstrapBrokerStringTls']
-
-                # Instantiate KafkaProducer and Send Bill JSON to State Topic
-                producer = KafkaProducer(
-                    security_protocol="SSL", 
-                    bootstrap_servers=kafka_brokers, 
-                    value_serializer=lambda v: json.dumps(v, cls=utils.JSONEncoderPlus).encode('utf-8')
-                )                
-                producer.send(jurisdiction, obj.as_dict()) # Sending the Bill JSON to a State Topic
-                
+            if self.kafka:  # Send to Kafka only if producer is initialized
+                self.kafka_producer.send(jurisdiction, obj.as_dict())
                 # Kafka producers use batching to optimize throughput and reduce the load on brokers
                 # The delay below ensures messages are sent before the script continues
                 # Documentation: https://kafka.apache.org/documentation/#producerconfigs_linger.ms
                 time.sleep(.1)
-                producer.flush()
+                logging.info(f"{obj._type} {obj} sent to Kafka.")
+                self.kafka_producer.flush()
             elif self.realtime:
                 self.output_file_path = str(upload_file_path)
 

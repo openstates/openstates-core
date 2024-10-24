@@ -1,10 +1,12 @@
 import argparse
+import boto3
 import contextlib
 import datetime
 import glob
 from google.cloud import storage  # type: ignore
 import importlib
 import inspect
+import json
 import logging
 import logging.config
 import os
@@ -13,6 +15,7 @@ import time
 import traceback
 import typing
 from collections import defaultdict
+from kafka import KafkaProducer
 from types import ModuleType
 
 from django.db import transaction  # type: ignore
@@ -66,6 +69,33 @@ def get_jurisdiction(module_name: str) -> tuple[State, ModuleType]:
     raise CommandError(f"Unable to import State subclass from {module_name}")
 
 
+def init_kafka_producer(kafka_cluster_name):
+    client = boto3.client('kafka', region_name='us-west-2')
+
+    # Grab Cluster Arn
+    clusters = client.list_clusters()['ClusterInfoList']
+    cluster_arn = None
+    for cluster in clusters:
+        if cluster['ClusterName'] == kafka_cluster_name:
+            cluster_arn = cluster['ClusterArn']
+            break
+
+    if cluster_arn is None:
+        raise ValueError(f"No Kafka cluster found with name: {self.kafka}")
+
+    # Grab Brokers
+    response = client.get_bootstrap_brokers(ClusterArn=cluster_arn)
+    kafka_brokers = response['BootstrapBrokerStringTls']
+    
+    producer = KafkaProducer(
+                    security_protocol="SSL", 
+                    bootstrap_servers=kafka_brokers, 
+                    value_serializer=lambda v: json.dumps(v, cls=utils.JSONEncoderPlus).encode('utf-8')
+                ) 
+
+    return producer
+
+
 def do_scrape(
     juris: State,
     args: argparse.Namespace,
@@ -79,7 +109,9 @@ def do_scrape(
     # clear json from data dir
     for f in glob.glob(datadir + "/*.json"):
         os.remove(f)
-
+    
+    kafka_producer = init_kafka_producer(args.kafka) if args.kafka else None
+        
     report = {}
 
     # do jurisdiction
@@ -90,6 +122,7 @@ def do_scrape(
         fastmode=args.fastmode,
         realtime=args.realtime,
         kafka=args.kafka,
+        kafka_producer=kafka_producer,
         file_archiving_enabled=args.archive,
     )
     report["jurisdiction"] = jscraper.do_scrape()
@@ -130,6 +163,7 @@ def do_scrape(
                     fastmode=args.fastmode,
                     realtime=args.realtime,
                     kafka=args.kafka,
+                    kafka_producer=kafka_producer,
                     file_archiving_enabled=args.archive,
                 )
                 partial_report = scraper.do_scrape(**scrape_args, session=session)
@@ -165,6 +199,7 @@ def do_scrape(
                 fastmode=args.fastmode,
                 realtime=args.realtime,
                 kafka=args.kafka,
+                kafka_producer=kafka_producer,
                 file_archiving_enabled=args.archive,
             )
             report[scraper_name] = scraper.do_scrape(**scrape_args)
