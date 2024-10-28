@@ -205,10 +205,10 @@ class BaseImporter:
         if len(ids) == 1:
             return ids.pop()
         elif len(ids) == 0:
-            self.error(f"could not resolve bill id {bill_id} {date}, no matches")
+            self.error(f"could not resolve bill id {bill_id}, {date}, no matches")
         else:
             self.error(
-                f"could not resolve bill id {bill_id} {date}, {len(ids)} matches"
+                f"could not resolve bill id {bill_id}, {date}, {len(ids)} matches"
             )
         return None
 
