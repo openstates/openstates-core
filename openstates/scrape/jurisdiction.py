@@ -86,6 +86,17 @@ class State(BaseModel):
         self,
         endpoint: str = os.getenv("CRONOS_ENDPOINT"),
     ):
+        """Requires CRONOS_ENDPOINT for getting the legislative sessions. Note that legislative sessions are retrieved as a list of json objects.
+
+        The legislative sessions appear in the following format
+        {
+            "identifier": "2021",
+            "name": "2021 Regular Session",
+            "start_date": "2021-01-01",
+            "end_date": "2021-12-31",
+            "classification": "primary", # primary or special
+            }
+        """
         params = {"state_name": self.name}
         response = requests.get(
             endpoint,
@@ -96,6 +107,9 @@ class State(BaseModel):
 
     @property
     def legislative_sessions(self, opt_for_new: bool = False):
+        """Returns a list of legislative sessions. If opt_for_new is True, it will override the historical sessions with the new ones from cronos. Otherwise,
+        any sessions from cronos with the same identifier as the historical ones will not be used.
+        """
         if not opt_for_new:
             sessions_table = {
                 session["identifier"]: session for session in self.new_sessions
