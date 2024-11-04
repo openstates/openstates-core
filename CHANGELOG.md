@@ -1,6 +1,10 @@
 # Changelog
 
-## 6.20.8 - Oct 18, 2024q
+## 6.20.9 - Nov 4, 2024
+
+* Fix bug with import caused by newish "extras" field on scraper
+
+## 6.20.8 - Oct 18, 2024
 
 * Improve resolve bill to capture at least the most recent session
 
