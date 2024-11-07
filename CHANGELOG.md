@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.20.10 - Nov 7, 2024
+
+* Add additional log info re: archiving scrape files to cloud storage
+
 ## 6.20.9 - Nov 4, 2024
 
 * Fix bug with import caused by newish "extras" field on scraper

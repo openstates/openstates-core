@@ -223,7 +223,7 @@ def archive_to_cloud_storage(
         cloud_storage_client = storage.Client(project=GCP_PROJECT)
         bucket = cloud_storage_client.bucket(BUCKET_NAME)
         jurisdiction_id = juris.jurisdiction_id.replace("ocd-jurisdiction/", "")
-        destination_prefx = (
+        destination_prefix = (
             f"{SCRAPE_LAKE_PREFIX}/{jurisdiction_id}/{last_scrape_end_datetime.isoformat()}"
         )
 
@@ -231,11 +231,12 @@ def archive_to_cloud_storage(
         files_count = 0
         for file_path in glob.glob(datadir + "/*.json"):
             files_count += 1
-            blob_name = os.path.join(destination_prefx, os.path.basename(file_path))
+            blob_name = os.path.join(destination_prefix, os.path.basename(file_path))
             blob = bucket.blob(blob_name)
             blob.upload_from_filename(file_path)
 
-        logger.info(f"Completed archive to Google Cloud Storage, {files_count} files were uploaded.")
+        logger.info(f"Completed archive to Google Cloud Storage, {files_count} files "
+                    f"were uploaded to {destination_prefix}.")
 
     except Exception as e:
         logger.warning(f"An error occurred during the attempt to archive files to Google Cloud Storage: {e}")
