@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.20.11 - Nov 7, 2024
+
+* Events import: ignore deleted events when matching incoming events to existing.
+
 ## 6.20.10 - Nov 7, 2024
 
 * Add additional log info re: archiving scrape files to cloud storage
