@@ -63,7 +63,6 @@ class EventImporter(BaseImporter):
                 "start_date": event["start_date"],
                 "end_date": event["end_date"],
                 "jurisdiction_id": self.jurisdiction_id,
-                "deleted": False,  # no need to match existing deleted events if this is new/incoming
             }
         return self.model_class.objects.get(**spec)
 
