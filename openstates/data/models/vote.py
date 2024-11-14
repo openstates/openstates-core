@@ -10,7 +10,7 @@ from .. import common
 
 class VoteEvent(OCDBase):
     id = OCDIDField(ocd_type="vote")
-    identifier = models.TextField(blank=True)
+    identifier = models.CharField(max_length=300, blank=True)
     motion_text = models.TextField()
     # enum
     motion_classification = ArrayField(
@@ -18,7 +18,7 @@ class VoteEvent(OCDBase):
     )
     start_date = models.CharField(max_length=25)  # YYYY-MM-DD HH:MM:SS+HH:MM
 
-    result = models.TextField(choices=common.VOTE_RESULT_CHOICES)
+    result = models.CharField(max_length=50, choices=common.VOTE_RESULT_CHOICES)
     organization = models.ForeignKey(
         Organization,
         related_name="votes",
@@ -47,7 +47,7 @@ class VoteEvent(OCDBase):
         on_delete=models.SET_NULL,
     )
     order = models.PositiveIntegerField(default=0)
-    dedupe_key = models.TextField(null=True)
+    dedupe_key = models.CharField(max_length=500, null=True)
 
     extras = models.JSONField(default=dict, blank=True)
 
@@ -64,7 +64,7 @@ class VoteEvent(OCDBase):
             ["legislative_session", "bill"],
         ]
         indexes = [
-            models.Index(fields=["dedupe_key"], name="opencivicdata_voteevent_dedupe__75a90b_idx")
+            models.Index(fields=["dedupe_key"])
         ]
         ordering = ["start_date", "order"]
 
@@ -73,7 +73,7 @@ class VoteCount(RelatedBase):
     vote_event = models.ForeignKey(
         VoteEvent, related_name="counts", on_delete=models.CASCADE
     )
-    option = models.TextField(choices=common.VOTE_OPTION_CHOICES)
+    option = models.CharField(max_length=50, choices=common.VOTE_OPTION_CHOICES)
     value = models.PositiveIntegerField()
 
     def __str__(self):
@@ -87,8 +87,8 @@ class PersonVote(RelatedBase):
     vote_event = models.ForeignKey(
         VoteEvent, related_name="votes", on_delete=models.CASCADE
     )
-    option = models.TextField(choices=common.VOTE_OPTION_CHOICES)
-    voter_name = models.TextField()
+    option = models.CharField(max_length=50, choices=common.VOTE_OPTION_CHOICES)
+    voter_name = models.CharField(max_length=300)
     voter = models.ForeignKey(
         Person,
         related_name="votes",

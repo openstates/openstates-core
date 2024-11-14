@@ -17,7 +17,7 @@ class Organization(OCDBase):
     """
 
     id = OCDIDField(ocd_type="organization")
-    name = models.TextField(help_text="The name of the Organization.")
+    name = models.CharField(max_length=300, help_text="The name of the Organization.")
     parent = models.ForeignKey(
         "self",
         related_name="children",
@@ -34,7 +34,8 @@ class Organization(OCDBase):
         on_delete=models.PROTECT,
         help_text="A link to the Jurisdiction that contains this Organization.",
     )
-    classification = models.TextField(
+    classification = models.CharField(
+        max_length=100,
         blank=True,
         choices=common.ORGANIZATION_CLASSIFICATION_CHOICES,
         help_text="The type of Organization being defined.",
@@ -81,8 +82,9 @@ class Post(OCDBase):
     """
 
     id = OCDIDField(ocd_type="post")
-    label = models.TextField(help_text="A label describing the Post.")
-    role = models.TextField(
+    label = models.CharField(max_length=300, help_text="A label describing the Post.")
+    role = models.CharField(
+        max_length=300,
         blank=True,
         help_text="The function that the holder of the post fulfills.",
     )
@@ -166,26 +168,27 @@ class Person(OCDBase):
     objects = PersonQuerySet.as_manager()
 
     id = OCDIDField(ocd_type="person")
-    name = models.TextField(
-        db_index=True, help_text="A Person's preferred full name."
+    name = models.CharField(
+        max_length=300, db_index=True, help_text="A Person's preferred full name."
     )
-    family_name = models.TextField(
-        blank=True, help_text="A Person's family name."
+    family_name = models.CharField(
+        max_length=100, blank=True, help_text="A Person's family name."
     )
-    given_name = models.TextField(
-        blank=True, help_text="A Person's given name."
+    given_name = models.CharField(
+        max_length=100, blank=True, help_text="A Person's given name."
     )
     image = models.URLField(
         blank=True,
         max_length=2000,
         help_text="A URL leading to an image that identifies the Person visually.",
     )
-    email = models.TextField(
+    email = models.CharField(
+        max_length=300,
         help_text="The official email address of the Person.",
         blank=True,
         default="",
     )
-    gender = models.TextField(blank=True, help_text="A Person's gender")
+    gender = models.CharField(max_length=100, blank=True, help_text="A Person's gender")
     biography = models.TextField(
         blank=True, help_text="An extended account of a Person's life."
     )
@@ -201,7 +204,8 @@ class Person(OCDBase):
     )
 
     # computed fields
-    primary_party = models.TextField(
+    primary_party = models.CharField(
+        max_length=100,
         default="",
         help_text="Primary party an individual is associated with.",
     )
@@ -246,10 +250,11 @@ class PersonName(RelatedBase):
     Alternate or former name of a Person.
     """
 
-    name = models.TextField(
-        db_index=True, help_text="An alternative name."
+    name = models.CharField(
+        max_length=500, db_index=True, help_text="An alternative name."
     )
-    note = models.TextField(
+    note = models.CharField(
+        max_length=500,
         blank=True,
         help_text="A short, optional note about alternative name.",
     )
@@ -294,11 +299,11 @@ class PersonOffice(RelatedBase):
     Office for a Person.
     """
 
-    classification = models.TextField(choices=OFFICE_CHOICES)
-    address = models.TextField(blank=True, default="")
-    voice = models.TextField(blank=True, default="")
-    fax = models.TextField(blank=True, default="")
-    name = models.TextField(blank=True, default="")
+    classification = models.CharField(max_length=20, choices=OFFICE_CHOICES)
+    address = models.CharField(max_length=300, blank=True, default="")
+    voice = models.CharField(max_length=30, blank=True, default="")
+    fax = models.CharField(max_length=30, blank=True, default="")
+    name = models.CharField(max_length=200, blank=True, default="")
 
     @property
     def display_name(self):
@@ -366,7 +371,8 @@ class Membership(OCDBase):
         on_delete=models.SET_NULL,
         help_text="A link to the Person that is a member of the Organization.",
     )
-    person_name = models.TextField(
+    person_name = models.CharField(
+        max_length=300,
         blank=True,
         default="",
         help_text="The name of the Person that is a member of the Organization.",
@@ -379,7 +385,8 @@ class Membership(OCDBase):
         on_delete=models.SET_NULL,
         help_text="	The Post held by the member in the Organization.",
     )
-    role = models.TextField(
+    role = models.CharField(
+        max_length=300,
         blank=True,
         help_text="The role that the member fulfills in the Organization.",
     )

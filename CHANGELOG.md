@@ -1,9 +1,5 @@
 # Changelog
 
-## 6.20.11 - Nov 14, 2024
-
-* Migrate many length-constrained VARCHAR columns to TEXT columns to reduce DB bugs
-
 ## 6.20.10 - Nov 7, 2024
 
 * Add additional log info re: archiving scrape files to cloud storage

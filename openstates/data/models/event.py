@@ -23,7 +23,7 @@ EVENT_STATUS_CHOICES = (
 
 
 class EventMediaBase(RelatedBase):
-    note = models.TextField()
+    note = models.CharField(max_length=300)
     date = models.CharField(max_length=25, blank=True)  # YYYY-MM-DD HH:MM:SS+HH:MM
     offset = models.PositiveIntegerField(null=True)
 
@@ -32,7 +32,7 @@ class EventMediaBase(RelatedBase):
 
 
 class EventLocation(RelatedBase):
-    name = models.TextField()
+    name = models.CharField(max_length=200)
     url = models.URLField(blank=True, max_length=2000)
     jurisdiction = models.ForeignKey(
         Jurisdiction, related_name="event_locations", on_delete=models.CASCADE
@@ -47,7 +47,7 @@ class EventLocation(RelatedBase):
 
 class Event(OCDBase):
     id = OCDIDField(ocd_type="event")
-    name = models.TextField()
+    name = models.CharField(max_length=1000)
     jurisdiction = models.ForeignKey(
         Jurisdiction,
         related_name="events",
@@ -55,16 +55,16 @@ class Event(OCDBase):
         on_delete=models.PROTECT,
     )
     description = models.TextField()
-    classification = models.TextField()
+    classification = models.CharField(max_length=100)
     start_date = models.CharField(max_length=25)  # YYYY-MM-DD HH:MM:SS+HH:MM
     end_date = models.CharField(max_length=25, blank=True)  # YYYY-MM-DD HH:MM:SS+HH:MM
     all_day = models.BooleanField(default=False)
     status = models.CharField(max_length=20, choices=EVENT_STATUS_CHOICES)
     location = models.ForeignKey(EventLocation, null=True, on_delete=models.SET_NULL)
-    upstream_id = models.TextField(blank=True)
+    upstream_id = models.CharField(max_length=300, blank=True)
 
     # internal fields
-    dedupe_key = models.TextField(null=True)
+    dedupe_key = models.CharField(max_length=500, null=True)
     deleted = models.BooleanField(default=False)
 
     # compound fields
@@ -81,8 +81,8 @@ class Event(OCDBase):
 
 class EventMedia(EventMediaBase):
     event = models.ForeignKey(Event, related_name="media", on_delete=models.CASCADE)
-    classification = models.TextField(
-        choices=EVENT_MEDIA_CLASSIFICATION_CHOICES, blank=True
+    classification = models.CharField(
+        max_length=50, choices=EVENT_MEDIA_CLASSIFICATION_CHOICES, blank=True
     )
     links = models.JSONField(default=list, blank=True)
 
@@ -97,8 +97,8 @@ class EventDocument(RelatedBase):
     event = models.ForeignKey(Event, related_name="documents", on_delete=models.CASCADE)
     note = models.TextField()
     date = models.CharField(max_length=25, blank=True)  # YYYY-MM-DD HH:MM:SS+HH:MM
-    classification = models.TextField(
-        choices=EVENT_DOCUMENT_CLASSIFICATION_CHOICES, blank=True
+    classification = models.CharField(
+        max_length=50, choices=EVENT_DOCUMENT_CLASSIFICATION_CHOICES, blank=True
     )
     links = models.JSONField(default=list, blank=True)
 
@@ -179,7 +179,7 @@ class EventAgendaMedia(EventMediaBase):
     agenda_item = models.ForeignKey(
         EventAgendaItem, related_name="media", on_delete=models.CASCADE
     )
-    classification = models.TextField(blank=True, default="")
+    classification = models.CharField(max_length=100, blank=True, default="")
     links = models.JSONField(default=list, blank=True)
 
     def __str__(self):
