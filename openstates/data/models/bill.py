@@ -25,7 +25,7 @@ class Bill(OCDBase):
         # sessions should be hard to delete
         on_delete=models.PROTECT,
     )
-    identifier = models.TextField()
+    identifier = models.CharField(max_length=100)
 
     title = models.TextField()
 
@@ -85,7 +85,8 @@ class BillIdentifier(RelatedBase):
     bill = models.ForeignKey(
         Bill, related_name="other_identifiers", on_delete=models.CASCADE
     )
-    identifier = models.TextField(
+    identifier = models.CharField(
+        max_length=300,
         help_text="A unique identifier developed by an upstream or third party source.",
     )
 
@@ -102,7 +103,7 @@ class BillAction(RelatedBase):
         on_delete=models.PROTECT,
     )
     description = models.TextField()
-    date = models.TextField()  # YYYY-MM-DD HH:MM:SS+HH:MM
+    date = models.CharField(max_length=25)  # YYYY-MM-DD HH:MM:SS+HH:MM
     classification = ArrayField(
         base_field=models.TextField(), blank=True, default=list
     )  # enum
@@ -139,11 +140,11 @@ class RelatedBill(RelatedBase):
         # if related bill goes away, just unlink the relationship
         on_delete=models.SET_NULL,
     )
-    identifier = models.TextField()
+    identifier = models.CharField(max_length=100)
     # not a FK in case we don't know the session yet
-    legislative_session = models.TextField()
-    relation_type = models.TextField(
-        choices=common.BILL_RELATION_TYPE_CHOICES
+    legislative_session = models.CharField(max_length=100)
+    relation_type = models.CharField(
+        max_length=100, choices=common.BILL_RELATION_TYPE_CHOICES
     )
 
     def __str__(self):
@@ -160,7 +161,7 @@ class BillSponsorship(RelatedEntityBase):
         Bill, related_name="sponsorships", on_delete=models.CASCADE
     )
     primary = models.BooleanField(default=False)
-    classification = models.TextField()  # enum?
+    classification = models.CharField(max_length=100)  # enum?
 
     def __str__(self):
         return "{} ({}) sponsorship of {}".format(
@@ -173,10 +174,10 @@ class BillSponsorship(RelatedEntityBase):
 
 class BillDocument(RelatedBase):
     bill = models.ForeignKey(Bill, related_name="documents", on_delete=models.CASCADE)
-    note = models.TextField()
+    note = models.CharField(max_length=300)
     date = models.CharField(max_length=10)  # YYYY[-MM[-DD]]
-    classification = models.TextField(
-        choices=common.BILL_DOCUMENT_CHOICES, blank=True
+    classification = models.CharField(
+        max_length=100, choices=common.BILL_DOCUMENT_CHOICES, blank=True
     )
     extras = models.JSONField(default=dict, blank=True)
 
@@ -189,10 +190,10 @@ class BillDocument(RelatedBase):
 
 class BillVersion(RelatedBase):
     bill = models.ForeignKey(Bill, related_name="versions", on_delete=models.CASCADE)
-    note = models.TextField()
+    note = models.CharField(max_length=300)
     date = models.CharField(max_length=10)  # YYYY[-MM[-DD]]
-    classification = models.TextField(
-        choices=common.BILL_VERSION_CHOICES, blank=True
+    classification = models.CharField(
+        max_length=100, choices=common.BILL_VERSION_CHOICES, blank=True
     )
     extras = models.JSONField(default=dict, blank=True)
 
