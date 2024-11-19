@@ -103,7 +103,11 @@ class State(BaseModel):
             endpoint,
             params=params,
         )
-        response.raise_for_status()
+
+        try:
+            response.raise_for_status()
+        except requests.RequestException:
+            return []
 
         sessions = []
         for session in response.json():
