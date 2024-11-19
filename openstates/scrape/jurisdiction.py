@@ -4,6 +4,7 @@ from .schemas.jurisdiction import schema
 from ..metadata import lookup
 import requests
 import os
+from datetime import datetime
 
 
 _name_fixes = {
@@ -103,10 +104,29 @@ class State(BaseModel):
             params=params,
         )
         response.raise_for_status()
-        return response.json()
+
+        sessions = []
+        for session in response.json():
+            clean_session = {
+                key: value
+                for key, value in session.items()
+                if key
+                in ["classification", "identifier", "name", "start_date", "end_date"]
+            }
+            clean_session["active"] = (
+                datetime.strptime(session["start_date"], "%Y-%m-%d").date()
+                <= datetime.now().date()
+                <= datetime.strptime(session["end_date"], "%Y-%m-%d").date()
+                if "active" not in session
+                else session["active"]
+            )
+            sessions.append(clean_session)
+
+        # TODO: Move the above feature to cronos' endpoint, and then we can just have this line: return [{key: value for key, value in session.items() if key in ["classification", "identifier", "name", "start_date", "end_date", "active"]} for session in response.json()]
+        return sessions
 
     @property
-    def legislative_sessions(self, opt_for_new: bool = False):
+    def legislative_sessions(self, opt_for_new: bool = True):
         """Returns a list of legislative sessions. If opt_for_new is True, it will override the historical sessions with the new ones from cronos. Otherwise,
         any sessions from cronos with the same identifier as the historical ones will not be used.
         """
