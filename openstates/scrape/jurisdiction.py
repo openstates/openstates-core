@@ -107,22 +107,26 @@ class State(BaseModel):
         try:
             response.raise_for_status()
         except requests.RequestException:
+            print("No sessions found for ", self.name, " in cronos")
             return []
 
         sessions = []
         for session in response.json():
-            clean_session = {
-                key: value
-                for key, value in session.items()
-                if key
-                in ["classification", "identifier", "name", "start_date", "end_date"]
-            }
-            clean_session["active"] = (
-                datetime.strptime(session["start_date"], "%Y-%m-%d").date()
-                <= datetime.now().date()
-                <= datetime.strptime(session["end_date"], "%Y-%m-%d").date()
-                if "active" not in session
-                else session["active"]
+            # Clean the session by removing any unnecessary fields from cronos (session ID, etc.)
+            clean_session = self.check_session_active(
+                {
+                    key: value
+                    for key, value in session.items()
+                    if key
+                    in [
+                        "classification",
+                        "identifier",
+                        "active",
+                        "name",
+                        "start_date",
+                        "end_date",
+                    ]
+                }
             )
             sessions.append(clean_session)
 
@@ -172,6 +176,16 @@ class State(BaseModel):
                 classification="lower",
                 parent_id=legislature._id,
             )
+
+    def check_session_active(session: dict):
+        """For a given session dictionary, checks to see if "active" is a denoted field. If it's not, then 'active' is set based on the start_date and end_date"""
+        if "active" not in session:
+            session["active"] = (
+                datetime.strptime(session["start_date"], "%Y-%m-%d").date()
+                <= datetime.now().date()
+                <= datetime.strptime(session["end_date"], "%Y-%m-%d").date()
+            )
+        return session
 
     def get_session_list(self) -> list[str]:
         raise NotImplementedError()
