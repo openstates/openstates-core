@@ -206,7 +206,7 @@ class Scraper(scrapelib.Scraper):
                         f"{jurisdiction}/{session}/{identifier}".upper()
                     )
                     s3 = boto3.client("s3")
-                    bucket = "cyclades"
+                    bucket = settings.S3_BILLS_BUCKET
 
                     # Check if the s3_bucket_directory exists
                     result = s3.list_objects_v2(
