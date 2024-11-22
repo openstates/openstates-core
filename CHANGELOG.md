@@ -1,10 +1,15 @@
 # Changelog
 
-## 6.20.11 - Nov 22, 2024
+## 6.20.12 - Nov 22, 2024
 
 * Use transformers to trim incoming strings at import that are too long for DB columns:
     * Bill: document note, version note
     * Event: media note
+
+## 6.20.11 - Nov 15, 2024
+
+* This release was yanked. It involved a database migration that operationally failed,
+  and was reverted.
 
 ## 6.20.10 - Nov 7, 2024
 
