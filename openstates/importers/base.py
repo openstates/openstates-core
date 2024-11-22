@@ -532,16 +532,20 @@ class BaseImporter:
         if transformers is None:
             transformers = self.cached_transformers
 
-        for key, key_transformers in transformers.items():
-            if key not in data:
-                continue
-            if isinstance(key_transformers, list):
-                for transformer in key_transformers:
-                    data[key] = transformer(data[key])
-            elif isinstance(key_transformers, dict):
-                self.apply_transformers(data[key], key_transformers)
-            else:
-                data[key] = key_transformers(data[key])
+        if isinstance(data, list):
+            for data_item in data:
+                self.apply_transformers(data_item, transformers)
+        else:
+            for key, key_transformers in transformers.items():
+                if key not in data:
+                    continue
+                if isinstance(key_transformers, list):
+                    for transformer in key_transformers:
+                        data[key] = transformer(data[key])
+                elif isinstance(key_transformers, dict):
+                    self.apply_transformers(data[key], key_transformers)
+                else:
+                    data[key] = key_transformers(data[key])
 
         return data
 
