@@ -99,12 +99,11 @@ class State(BaseModel):
             }
         """
         params = {"state_name": self.name}
-        response = requests.get(
-            endpoint,
-            params=params,
-        )
-
         try:
+            response = requests.get(
+                endpoint,
+                params=params,
+            )
             response.raise_for_status()
         except requests.RequestException:
             print("No sessions found for ", self.name, " in cronos")
