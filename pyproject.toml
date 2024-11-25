@@ -1,8 +1,8 @@
 [tool.poetry]
-name = "openstates"
-version = "6.20.1"
-description = "core infrastructure for the openstates project"
-authors = ["James Turk <dev@jamesturk.net>"]
+name = "cyclades"
+version = "1.0.0"
+description = "core infrastructure for the cyclades project"
+authors = ["James Turk <dev@jamesturk.net>", "Daniel Gieseke <daniel@abstract.us>", "Neal P. Patel <neal@abstract.us>"]
 license = "MIT"
 
 [tool.poetry.scripts]
