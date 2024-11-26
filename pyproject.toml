@@ -1,6 +1,6 @@
 [tool.poetry]
-name = "cyclades"
-version = "1.0.0"
+name = "openstates"
+version = "6.20.12"
 description = "core infrastructure for the cyclades project"
 authors = ["James Turk <dev@jamesturk.net>", "Daniel Gieseke <daniel@abstract.us>", "Neal P. Patel <neal@abstract.us>"]
 license = "MIT"
