@@ -6,6 +6,7 @@ S3_REALTIME_BASE = os.environ.get("S3_REALTIME_BASE")  # e.g 's3://realtime-buck
 SQS_QUEUE_URL = os.environ.get(
     "SQS_QUEUE_URL"
 )
+S3_BILLS_BUCKET = "cyclades" # Current bucket for which bills are stored. Used to check and validate existence of bills
 
 # scrape settings
 

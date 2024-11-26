@@ -80,7 +80,7 @@ class Scraper(scrapelib.Scraper):
         fastmode=False,
         realtime=False,
         kafka=None,
-        kafka_producer=None, 
+        kafka_producer=None,
         file_archiving_enabled=False,
     ):
         super(Scraper, self).__init__()
@@ -191,13 +191,37 @@ class Scraper(scrapelib.Scraper):
 
             try:
                 # Remove redundant prefix and amend file path
-                upload_file_path = file_path[file_path.index("_data") + len("_data") + 1:]
+                upload_file_path = file_path[
+                    file_path.index("_data") + len("_data") + 1 :
+                ]
                 jurisdiction = upload_file_path[:2]
                 # Bills will be routed through this conditional
-                if hasattr(obj, 'legislative_session') and obj.legislative_session:
+                if hasattr(obj, "legislative_session") and obj.legislative_session:
                     session = obj.legislative_session
                     identifier = obj.identifier
-                    upload_file_path = f'{jurisdiction}/{session}/{identifier}/{upload_file_path[3:]}'
+                    upload_file_path = (
+                        f"{jurisdiction}/{session}/{identifier}/{upload_file_path[3:]}"
+                    )
+                    s3_bucket_directory = (
+                        f"{jurisdiction}/{session}/{identifier}".upper()
+                    )
+                    s3 = boto3.client("s3")
+                    bucket = settings.S3_BILLS_BUCKET
+
+                    # Check if the s3_bucket_directory exists
+                    result = s3.list_objects_v2(
+                        Bucket=bucket, Prefix=s3_bucket_directory
+                    )
+                    if "Contents" in result:
+                        logging.info(
+                            f"Directory {s3_bucket_directory} exists in bucket {bucket}. Skipping save."
+                        )
+                        return ()
+                    else:
+                        logging.info(
+                            f"Directory {s3_bucket_directory} does not exist in bucket {bucket}. Beginning save process"
+                        )
+
                 # All other ancillary JSONs will be routed here (e.g. jurisdiction JSONs)
                 else:
                     upload_file_path = f'{jurisdiction}/{"Jurisdiction_Information"}/{upload_file_path[3:]}'
@@ -210,7 +234,7 @@ class Scraper(scrapelib.Scraper):
                 # Kafka producers use batching to optimize throughput and reduce the load on brokers
                 # The delay below ensures messages are sent before the script continues
                 # Documentation: https://kafka.apache.org/documentation/#producerconfigs_linger.ms
-                time.sleep(.1)
+                time.sleep(0.1)
                 logging.info(f"{obj._type} {obj} sent to Kafka.")
                 self.kafka_producer.flush()
             elif self.realtime:
