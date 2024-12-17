@@ -1,0 +1,26 @@
+name: Trigger CI in cyclades-openstates-scrapers
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  trigger-ci:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Trigger CI workflow
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const octokit = github.getOctokit(process.env.GITHUB_TOKEN);
+            const response = await octokit.actions.createWorkflowDispatch({
+              owner: 'washabstract',
+              repo: 'cyclades-openstates-scrapers',
+              workflow_id: 'CI',
+              ref: 'main'
+            });
+            console.log(response);
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
