@@ -69,7 +69,7 @@ def get_jurisdiction(module_name: str) -> tuple[State, ModuleType]:
     raise CommandError(f'Unable to import State subclass from {module_name}')
 
 
-def init_kafka_producer(kafka_cluster_name):
+def init_kafka_producer(kafka_cluster_name: str) -> KafkaProducer:
     client = boto3.client('kafka', region_name='us-west-2')
 
     # Grab Cluster Arn
