@@ -10,20 +10,19 @@ import time
 import uuid
 from collections import defaultdict, OrderedDict
 from jsonschema import Draft3Validator, FormatChecker
-from kafka import KafkaProducer
 
 from .. import utils, settings
 from ..exceptions import ScrapeError, ScrapeValueError, EmptyScrape
 
 
-@FormatChecker.cls_checks("uri-blank")
+@FormatChecker.cls_checks('uri-blank')
 def uri_blank(value):
-    return value == "" or FormatChecker().conforms(value, "uri")
+    return value == '' or FormatChecker().conforms(value, 'uri')
 
 
-@FormatChecker.cls_checks("uri")
+@FormatChecker.cls_checks('uri')
 def check_uri(val):
-    return val and val.startswith(("http://", "https://", "ftp://"))
+    return val and val.startswith(('http://', 'https://', 'ftp://'))
 
 
 def cleanup_list(obj, default):
@@ -37,7 +36,7 @@ def cleanup_list(obj, default):
 
 
 def clean_whitespace(obj):
-    """deep whitespace clean for ScrapeObj & dicts"""
+    '''deep whitespace clean for ScrapeObj & dicts'''
     if isinstance(obj, dict):
         items = obj.items()
         use_setattr = False
@@ -56,7 +55,7 @@ def clean_whitespace(obj):
             elif isinstance(v[0], (dict, object)):
                 newv = [clean_whitespace(i) for i in v]
             else:
-                raise ValueError(f"Unhandled case, {k} is list of {type(v[0])}")
+                raise ValueError(f'Unhandled case, {k} is list of {type(v[0])}')
         else:
             continue
 
@@ -69,7 +68,7 @@ def clean_whitespace(obj):
 
 
 class Scraper(scrapelib.Scraper):
-    """Base class for all scrapers"""
+    '''Base class for all scrapers'''
 
     def __init__(
         self,
@@ -118,14 +117,14 @@ class Scraper(scrapelib.Scraper):
         self.output_names = defaultdict(set)
 
         # logging convenience methods
-        self.logger = logging.getLogger("openstates")
+        self.logger = logging.getLogger('openstates')
         self.info = self.logger.info
         self.debug = self.logger.debug
         self.warning = self.logger.warning
         self.error = self.logger.error
         self.critical = self.logger.critical
 
-        modname = os.environ.get("SCRAPE_OUTPUT_HANDLER")
+        modname = os.environ.get('SCRAPE_OUTPUT_HANDLER')
         if modname is None:
             self.scrape_output_handler = None
         else:
@@ -133,21 +132,21 @@ class Scraper(scrapelib.Scraper):
             self.scrape_output_handler = handler.Handler(self)
 
     def push_to_queue(self):
-        """Push this output to the sqs for realtime imports."""
+        '''Push this output to the sqs for realtime imports.'''
 
         # Create SQS client
-        sqs = boto3.client("sqs")
+        sqs = boto3.client('sqs')
 
         queue_url = settings.SQS_QUEUE_URL
-        bucket = settings.S3_REALTIME_BASE.replace("s3://", "")
+        bucket = settings.S3_REALTIME_BASE.replace('s3://', '')
 
         message_body = json.dumps(
             {
-                "file_path": self.output_file_path,
-                "bucket": bucket,
-                "jurisdiction_id": self.jurisdiction.jurisdiction_id,
-                "jurisdiction_name": self.jurisdiction.name,
-                "file_archiving_enabled": self.file_archiving_enabled,
+                'file_path': self.output_file_path,
+                'bucket': bucket,
+                'jurisdiction_id': self.jurisdiction.jurisdiction_id,
+                'jurisdiction_name': self.jurisdiction.name,
+                'file_archiving_enabled': self.file_archiving_enabled,
             }
         )
 
@@ -156,31 +155,31 @@ class Scraper(scrapelib.Scraper):
             QueueUrl=queue_url,
             DelaySeconds=10,
             MessageAttributes={
-                "Title": {"DataType": "String", "StringValue": "S3 Output Path"},
-                "Author": {"DataType": "String", "StringValue": "Open States"},
+                'Title': {'DataType': 'String', 'StringValue': 'S3 Output Path'},
+                'Author': {'DataType': 'String', 'StringValue': 'Open States'},
             },
             MessageBody=message_body,
         )
         self.info(f"Message ID: {response['MessageId']}")
 
     def save_object(self, obj):
-        """
+        '''
         Save object to disk as JSON.
 
         Generally shouldn't be called directly.
-        """
+        '''
         clean_whitespace(obj)
         obj.pre_save(self.jurisdiction.jurisdiction_id)
 
-        filename = f"{obj._type}_{obj._id}.json".replace("/", "-")
-        self.info(f"save {obj._type} {obj} as {filename}")
+        filename = f'{obj._type}_{obj._id}.json'.replace('/', '-')
+        self.info(f'save {obj._type} {obj} as {filename}')
 
         self.debug(
             json.dumps(
                 OrderedDict(sorted(obj.as_dict().items())),
                 cls=utils.JSONEncoderPlus,
                 indent=4,
-                separators=(",", ": "),
+                separators=(',', ': '),
             )
         )
 
@@ -192,34 +191,34 @@ class Scraper(scrapelib.Scraper):
             try:
                 # Remove redundant prefix and amend file path
                 upload_file_path = file_path[
-                    file_path.index("_data") + len("_data") + 1 :
+                    file_path.index('_data') + len('_data') + 1 :
                 ]
                 jurisdiction = upload_file_path[:2]
                 # Bills will be routed through this conditional
-                if hasattr(obj, "legislative_session") and obj.legislative_session:
+                if hasattr(obj, 'legislative_session') and obj.legislative_session:
                     session = obj.legislative_session
                     identifier = obj.identifier
                     upload_file_path = (
-                        f"{jurisdiction}/{session}/{identifier}/{upload_file_path[3:]}"
+                        f'{jurisdiction}/{session}/{identifier}/{upload_file_path[3:]}'
                     )
                     s3_bucket_directory = (
-                        f"{jurisdiction}/{session}/{identifier}".upper()
+                        f'{jurisdiction}/{session}/{identifier}'.upper()
                     )
-                    s3 = boto3.client("s3")
+                    s3 = boto3.client('s3')
                     bucket = settings.S3_BILLS_BUCKET
 
                     # Check if the s3_bucket_directory exists
                     result = s3.list_objects_v2(
                         Bucket=bucket, Prefix=s3_bucket_directory
                     )
-                    if "Contents" in result:
+                    if 'Contents' in result:
                         logging.info(
-                            f"Directory {s3_bucket_directory} exists in bucket {bucket}. Skipping save."
+                            f'Directory {s3_bucket_directory} exists in bucket {bucket}. Skipping save.'
                         )
                         return ()
                     else:
                         logging.info(
-                            f"Directory {s3_bucket_directory} does not exist in bucket {bucket}. Beginning save process"
+                            f'Directory {s3_bucket_directory} does not exist in bucket {bucket}. Beginning save process'
                         )
 
                 # All other ancillary JSONs will be routed here (e.g. jurisdiction JSONs)
@@ -235,19 +234,19 @@ class Scraper(scrapelib.Scraper):
                 # The delay below ensures messages are sent before the script continues
                 # Documentation: https://kafka.apache.org/documentation/#producerconfigs_linger.ms
                 time.sleep(0.1)
-                logging.info(f"{obj._type} {obj} sent to Kafka.")
+                logging.info(f'{obj._type} {obj} sent to Kafka.')
                 self.kafka_producer.flush()
             elif self.realtime:
                 self.output_file_path = str(upload_file_path)
 
-                s3 = boto3.client("s3")
-                bucket = settings.S3_REALTIME_BASE.removeprefix("s3://")
+                s3 = boto3.client('s3')
+                bucket = settings.S3_REALTIME_BASE.removeprefix('s3://')
 
                 s3.put_object(
                     Body=json.dumps(
                         OrderedDict(sorted(obj.as_dict().items())),
                         cls=utils.JSONEncoderPlus,
-                        separators=(",", ": "),
+                        separators=(',', ': '),
                     ),
                     Bucket=bucket,
                     Key=self.output_file_path,
@@ -255,7 +254,7 @@ class Scraper(scrapelib.Scraper):
 
                 self.push_to_queue()
             else:
-                with open(file_path, "w") as f:
+                with open(file_path, 'w') as f:
                     json.dump(obj.as_dict(), f, cls=utils.JSONEncoderPlus)
 
         else:
@@ -275,15 +274,15 @@ class Scraper(scrapelib.Scraper):
             self.save_object(obj)
 
     def do_scrape(self, **kwargs):
-        record = {"objects": defaultdict(int)}
+        record = {'objects': defaultdict(int)}
         self.output_names = defaultdict(set)
-        record["start"] = utils.utcnow()
+        record['start'] = utils.utcnow()
         try:
             for obj in self.scrape(**kwargs) or []:
                 # allow for returning empty objects in a list
                 if not obj:
                     continue
-                if hasattr(obj, "__iter__"):
+                if hasattr(obj, '__iter__'):
                     for iterobj in obj:
                         self.save_object(iterobj)
                 else:
@@ -291,27 +290,27 @@ class Scraper(scrapelib.Scraper):
         except EmptyScrape:
             if self.output_names:
                 raise ScrapeError(
-                    f"objects returned from {self.__class__.__name__} scrape, expected none"
+                    f'objects returned from {self.__class__.__name__} scrape, expected none'
                 )
             self.warning(
-                f"{self.__class__.__name__} raised EmptyScrape, continuing without any results"
+                f'{self.__class__.__name__} raised EmptyScrape, continuing without any results'
             )
         else:
             if not self.output_names:
                 raise ScrapeError(
-                    "no objects returned from {} scrape".format(self.__class__.__name__)
+                    'no objects returned from {} scrape'.format(self.__class__.__name__)
                 )
 
-        record["end"] = utils.utcnow()
-        record["skipped"] = getattr(self, "skipped", 0)
+        record['end'] = utils.utcnow()
+        record['skipped'] = getattr(self, 'skipped', 0)
         for _type, nameset in self.output_names.items():
-            record["objects"][_type] += len(nameset)
+            record['objects'][_type] += len(nameset)
 
         return record
 
     def scrape(self, **kwargs):
         raise NotImplementedError(
-            self.__class__.__name__ + " must provide a scrape() method"
+            self.__class__.__name__ + ' must provide a scrape() method'
         )
 
 
@@ -319,7 +318,7 @@ class BaseBillScraper(Scraper):
     skipped = 0
 
     class ContinueScraping(Exception):
-        """indicate that scraping should continue without saving an object"""
+        '''indicate that scraping should continue without saving an object'''
 
         pass
 
@@ -329,18 +328,18 @@ class BaseBillScraper(Scraper):
             try:
                 yield self.get_bill(bill_id, **extras)
             except self.ContinueScraping as exc:
-                self.warning("skipping %s: %r", bill_id, exc)
+                self.warning('skipping %s: %r', bill_id, exc)
                 self.skipped += 1
                 continue
 
 
 class BaseModel(object):
-    """
+    '''
     This is the base class for all the Open Civic objects. This contains
     common methods and abstractions for OCD objects.
-    """
+    '''
 
-    # to be overridden by children. Something like "person" or "organization".
+    # to be overridden by children. Something like 'person' or 'organization'.
     # Used in :func:`validate`.
     _type = None
     _schema = None
@@ -354,7 +353,7 @@ class BaseModel(object):
     # validation
 
     def validate(self, schema=None):
-        """
+        '''
         Validate that we have a valid object.
 
         On error, this will raise a `ScrapeValueError`
@@ -364,16 +363,16 @@ class BaseModel(object):
         due to upstream schemas being in JSON Schema v3, and not validictory's
         modified syntax.
         ^ TODO: FIXME
-        """
+        '''
         if schema is None:
             schema = self._schema
 
         # this code copied to openstates/cli/validate - maybe update it if changes here :)
         type_checker = Draft3Validator.TYPE_CHECKER.redefine(
-            "datetime", lambda c, d: isinstance(d, (datetime.date, datetime.datetime))
+            'datetime', lambda c, d: isinstance(d, (datetime.date, datetime.datetime))
         )
         type_checker = type_checker.redefine(
-            "date",
+            'date',
             lambda c, d: (
                 isinstance(d, datetime.date) and not isinstance(d, datetime.datetime)
             ),
@@ -387,8 +386,8 @@ class BaseModel(object):
         errors = [str(error) for error in validator.iter_errors(self.as_dict())]
         if errors:
             raise ScrapeValueError(
-                "validation of {} {} failed: {}".format(
-                    self.__class__.__name__, self._id, "\n\t" + "\n\t".join(errors)
+                'validation of {} {} failed: {}'.format(
+                    self.__class__.__name__, self._id, '\n\t' + '\n\t'.join(errors)
                 )
             )
 
@@ -397,16 +396,16 @@ class BaseModel(object):
 
     def as_dict(self):
         d = {}
-        for attr in self._schema["properties"].keys():
+        for attr in self._schema['properties'].keys():
             if hasattr(self, attr):
                 d[attr] = getattr(self, attr)
-        d["_id"] = self._id
+        d['_id'] = self._id
         return d
 
     # operators
 
     def __setattr__(self, key, val):
-        if key[0] != "_" and key not in self._schema["properties"].keys():
+        if key[0] != '_' and key not in self._schema['properties'].keys():
             raise ScrapeValueError(
                 'property "{}" not in {} schema'.format(key, self._type)
             )
@@ -418,9 +417,9 @@ class SourceMixin(object):
         super(SourceMixin, self).__init__()
         self.sources = []
 
-    def add_source(self, url, *, note=""):
-        """Add a source URL from which data was collected"""
-        new = {"url": url, "note": note}
+    def add_source(self, url, *, note=''):
+        '''Add a source URL from which data was collected'''
+        new = {'url': url, 'note': note}
         self.sources.append(new)
 
 
@@ -429,8 +428,8 @@ class LinkMixin(object):
         super(LinkMixin, self).__init__()
         self.links = []
 
-    def add_link(self, url, *, note=""):
-        self.links.append({"note": note, "url": url})
+    def add_link(self, url, *, note=''):
+        self.links.append({'note': note, 'url': url})
 
 
 class AssociatedLinkMixin(object):
@@ -441,12 +440,12 @@ class AssociatedLinkMixin(object):
         url,
         *,
         media_type,
-        on_duplicate="warn",
-        date="",
-        classification="",
+        on_duplicate='warn',
+        date='',
+        classification='',
     ):
-        if on_duplicate not in ["error", "ignore", "warn"]:
-            raise ScrapeValueError("on_duplicate must be 'warn', 'error' or 'ignore'")
+        if on_duplicate not in ['error', 'ignore', 'warn']:
+            raise ScrapeValueError('on_duplicate must be "warn", "error" or "ignore"')
 
         try:
             associated = getattr(self, collection)
@@ -454,10 +453,10 @@ class AssociatedLinkMixin(object):
             associated = self[collection]
 
         ver = {
-            "note": note,
-            "links": [],
-            "date": date,
-            "classification": classification,
+            'note': note,
+            'links': [],
+            'date': date,
+            'classification': classification,
         }
 
         # keep a list of the links we've seen, we need to iterate over whole list on each add
@@ -466,28 +465,28 @@ class AssociatedLinkMixin(object):
 
         matches = 0
         for item in associated:
-            for link in item["links"]:
-                seen_links.add(link["url"])
+            for link in item['links']:
+                seen_links.add(link['url'])
 
             if all(
-                ver.get(x) == item.get(x) for x in ["note", "date", "classification"]
+                ver.get(x) == item.get(x) for x in ['note', 'date', 'classification']
             ):
                 matches = matches + 1
                 ver = item
 
         # it should be impossible to have multiple matches found unless someone is bypassing
         # _add_associated_link
-        assert matches <= 1, "multiple matches found in _add_associated_link"
+        assert matches <= 1, 'multiple matches found in _add_associated_link'
 
         if url in seen_links:
-            if on_duplicate == "error":
+            if on_duplicate == 'error':
                 raise ScrapeValueError(
-                    "Duplicate entry in '%s' - URL: '%s'" % (collection, url)
+                    'Duplicate entry in "%s" - URL: "%s"' % (collection, url)
                 )
-            elif on_duplicate == "warn":
+            elif on_duplicate == 'warn':
                 # default behavior: same as ignore but logs an warning so people can fix
-                logging.getLogger("openstates").warning(
-                    f"Duplicate entry in '{collection}' - URL: {url}"
+                logging.getLogger('openstates').warning(
+                    f'Duplicate entry in "{collection}" - URL: {url}'
                 )
                 return None
             else:
@@ -495,15 +494,15 @@ class AssociatedLinkMixin(object):
                 # means we should *skip* adding this link silently and continue
                 # on with our scrape. This should *ONLY* be used when there's
                 # a site issue (Version 1 == Version 2 because of a bug) and
-                # *NEVER* because "Current" happens to match "Version 3". Fix
+                # *NEVER* because 'Current' happens to match 'Version 3'. Fix
                 # that in the scraper, please.
                 #  - PRT
                 return None
 
         # OK. This is either new or old. Let's just go for it.
-        ret = {"url": url, "media_type": media_type}
+        ret = {'url': url, 'media_type': media_type}
 
-        ver["links"].append(ret)
+        ver['links'].append(ret)
 
         if matches == 0:
             # in the event we've got a new entry; let's just insert it into
