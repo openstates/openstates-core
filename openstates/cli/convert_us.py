@@ -1,3 +1,4 @@
+import re
 import typing
 import uuid
 from collections import defaultdict
@@ -28,7 +29,22 @@ def make_org_id(id_: str) -> str:
     return "ocd-organization/" + str(uuid.uuid5(US_UUID_NAMESPACE, id_))
 
 
+def sanitize_phone(phone: str) -> str:
+    """Remove trail text, toll-free phone number or N/A"""
+    if phone.lower() in ["n/a", "same as above"]:
+        return ""
+
+    pattern = r"\((\d{3})\)\s*(\d{3})-(\d{4})"
+    match = re.search(pattern, phone)
+    if match:
+        # Format the first matched number as XXX-XXX-XXXX
+        formatted_number = f"{match.group(1)}-{match.group(2)}-{match.group(3)}"
+        return formatted_number
+    return phone
+
+
 def _fix_bad_dashes(phone: str) -> str:
+    phone = sanitize_phone(phone)
     return phone.replace("–", "-")
 
 
@@ -43,7 +59,6 @@ def get_district_offices() -> defaultdict[str, list[Office]]:
                 if office.get("suite"):
                     address += " " + office["suite"]
                 address += f"; {office['city']}, {office['state']} {office['zip']}"
-
             district_offices[entry["id"]["bioguide"]].append(
                 Office(
                     classification="district",
