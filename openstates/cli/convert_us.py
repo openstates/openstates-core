@@ -33,7 +33,7 @@ def sanitize_phone(phone: str) -> str:
     """Remove trail text, toll-free phone number or N/A"""
     if phone.lower() in ["n/a", "same as above"]:
         return ""
-
+    # Some phone might appear like (123) 456 7890
     pattern = r"\((\d{3})\)\s*(\d{3})-(\d{4})"
     match = re.search(pattern, phone)
     if match:
@@ -59,6 +59,7 @@ def get_district_offices() -> defaultdict[str, list[Office]]:
                 if office.get("suite"):
                     address += " " + office["suite"]
                 address += f"; {office['city']}, {office['state']} {office['zip']}"
+
             district_offices[entry["id"]["bioguide"]].append(
                 Office(
                     classification="district",
