@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.20.13 - Dec 27, 2024
+
+* Sanitize phone number for US people scrape.
+
 ## 6.20.12 - Nov 22, 2024
 
 * Use transformers to trim incoming strings at import that are too long for DB columns:
