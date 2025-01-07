@@ -19,3 +19,7 @@ def fix_bill_id(bill_id: str) -> str:
 
 def collapse_whitespace(value: str) -> str:
     return _whitespace_re.sub(" ", value)
+
+
+def truncate_300(value: str) -> str:
+    return value[:300]

@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "openstates_metadata"
+version = "2024.10.3"
+description = "Openstates metadata"
+authors = ["Alex Obaseki <alex@pluralpolicy.com>"]
+license = "MIT"
+
+
+[tool.poetry.dependencies]
+python = "^3.9"
+attr = "^0.3.2"
+attrs = "^24.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -4,6 +4,7 @@ import glob
 import json
 import logging
 import typing
+from datetime import datetime
 from django.db.models import Q, Model
 from django.db.models.signals import post_save
 from .. import settings
@@ -127,6 +128,10 @@ class BaseImporter:
         self.pseudo_id_cache: typing.Dict[str, typing.Optional[_ID]] = {}
         self.person_cache: typing.Dict[_PersonCacheKey, typing.Optional[str]] = {}
         self.session_cache: typing.Dict[str, LegislativeSession] = {}
+        # Get all_session_cache is a list of all sessions available for this jurisdiction.
+        # It is different from session_cache: which is a dictionary session(s) that is loaded a session
+        # session_cache may not contain all jurisdiction legislative sessions while all_session_cache will.
+        self.all_sessions_cache: typing.List[LegislativeSession] = []
         self.logger = logging.getLogger("openstates")
         self.info = self.logger.info
         self.debug = self.logger.debug
@@ -137,6 +142,13 @@ class BaseImporter:
         # load transformers from appropriate setting
         if settings.IMPORT_TRANSFORMERS.get(self._type):
             self.cached_transformers = settings.IMPORT_TRANSFORMERS[self._type]
+
+    def get_all_sessions(self) -> typing.List[LegislativeSession]:
+        if not self.all_sessions_cache:
+            self.all_sessions_cache = LegislativeSession.objects.filter(
+                jurisdiction_id=self.jurisdiction_id
+            ).order_by("-start_date")
+        return self.all_sessions_cache
 
     def get_session(self, identifier: str) -> LegislativeSession:
         if identifier not in self.session_cache:
@@ -165,14 +177,27 @@ class BaseImporter:
         bill_transform_func = settings.IMPORT_TRANSFORMERS.get("bill", {}).get(
             "identifier", None
         )
+        all_sessions = self.get_all_sessions()
         if bill_transform_func:
             bill_id = bill_transform_func(bill_id)
 
+        # Some steps here to first find the session that matches the incoming entity using the entity date
+        # If a unique session is not found, then use the session with the latest "start_date"
+        date = datetime.fromisoformat(date).strftime("%Y-%m-%d")
+        session_ids = [
+            session.id
+            for session in all_sessions
+            if session.start_date <= date
+            and (session.end_date >= date or not session.end_date)
+        ]
+
+        if len(session_ids) == 1:
+            session_id = session_ids.pop()
+        else:
+            session_id = all_sessions[0].id if all_sessions else None
+
         objects = Bill.objects.filter(
-            Q(legislative_session__end_date__gte=date)
-            | Q(legislative_session__end_date=""),
-            legislative_session__start_date__lte=date,
-            legislative_session__jurisdiction_id=self.jurisdiction_id,
+            legislative_session__id=session_id,
             identifier=bill_id,
         )
         ids = {each.id for each in objects}
@@ -180,10 +205,10 @@ class BaseImporter:
         if len(ids) == 1:
             return ids.pop()
         elif len(ids) == 0:
-            self.error(f"could not resolve bill id {bill_id} {date}, no matches")
+            self.error(f"could not resolve bill id {bill_id}, {date}, no matches")
         else:
             self.error(
-                f"could not resolve bill id {bill_id} {date}, {len(ids)} matches"
+                f"could not resolve bill id {bill_id}, {date}, {len(ids)} matches"
             )
         return None
 
@@ -507,16 +532,20 @@ class BaseImporter:
         if transformers is None:
             transformers = self.cached_transformers
 
-        for key, key_transformers in transformers.items():
-            if key not in data:
-                continue
-            if isinstance(key_transformers, list):
-                for transformer in key_transformers:
-                    data[key] = transformer(data[key])
-            elif isinstance(key_transformers, dict):
-                self.apply_transformers(data[key], key_transformers)
-            else:
-                data[key] = key_transformers(data[key])
+        if isinstance(data, list):
+            for data_item in data:
+                self.apply_transformers(data_item, transformers)
+        else:
+            for key, key_transformers in transformers.items():
+                if key not in data:
+                    continue
+                if isinstance(key_transformers, list):
+                    for transformer in key_transformers:
+                        data[key] = transformer(data[key])
+                elif isinstance(key_transformers, dict):
+                    self.apply_transformers(data[key], key_transformers)
+                else:
+                    data[key] = key_transformers(data[key])
 
         return data
 
@@ -536,6 +565,12 @@ class BaseImporter:
 
         # turn spec into DB query
         spec = get_pseudo_id(psuedo_person_id)
+
+        # if chamber is included in pseudo_person_id, use that as org_classification
+        if "chamber" in spec and org_classification is None:
+            org_classification = spec["chamber"]
+            del spec["chamber"]
+
         if list(spec.keys()) == ["name"]:
             # if we're just resolving on name, include other names and family name
             name = spec["name"]
@@ -577,14 +612,20 @@ class BaseImporter:
                 memberships__start_date__lt=end_date
             )
 
-        ids = set(Person.objects.filter(spec).values_list("id", flat=True))
-        if len(ids) == 1:
-            self.person_cache[cache_key] = ids.pop()
-            errmsg = None
-        elif not ids:
+        query_result = Person.objects.filter(spec).values("id", "current_role")
+        result_set = set([p["id"] for p in query_result])
+        errmsg = None
+        if len(result_set) == 1:
+            self.person_cache[cache_key] = result_set.pop()
+        elif not result_set:
             errmsg = "no people returned for spec"
         else:
-            errmsg = "multiple people returned for spec"
+            # If there are multiple rows returned see we can get the active legislator.
+            ids = set([p["id"] for p in query_result if p["current_role"] is not None])
+            if len(ids) == 1:
+                self.person_cache[cache_key] = ids.pop()
+            else:
+                errmsg = "multiple people returned for spec"
 
         # either raise or log error
         if errmsg:
