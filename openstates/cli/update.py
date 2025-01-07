@@ -81,7 +81,7 @@ def init_kafka_producer(kafka_cluster_name):
             break
 
     if cluster_arn is None:
-        raise ValueError(f"No Kafka cluster found with name: {self.kafka}")
+        raise ValueError(f"No Kafka cluster found with name: {kafka_cluster_name}")
 
     # Grab Brokers
     response = client.get_bootstrap_brokers(ClusterArn=cluster_arn)
