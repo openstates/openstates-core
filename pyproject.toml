@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "openstates"
+name = "cyclades"
 version = "6.20.13"
 description = "core infrastructure for the openstates project"
 authors = ["James Turk <dev@jamesturk.net>"]
@@ -57,6 +57,11 @@ black = "^22.10.0"
 [tool.poetry.group.dev.dependencies]
 types-jsonschema = "^4.17.0.3"
 types-influxdb-client = "^1.37.0.0"
+
+[tool.poetry.packages]
+include = [
+    { include = "openstates" }
+]
 
 [tool.coverage.run]
 omit = [
