@@ -1,5 +1,57 @@
 # Changelog
 
+## 6.20.13 - Dec 27, 2024
+
+* Sanitize phone number for US people scrape.
+
+## 6.20.12 - Nov 22, 2024
+
+* Use transformers to trim incoming strings at import that are too long for DB columns:
+    * Bill: document note, version note
+    * Event: media note
+
+## 6.20.11 - Nov 15, 2024
+
+* This release was yanked. It involved a database migration that operationally failed,
+  and was reverted.
+
+## 6.20.10 - Nov 7, 2024
+
+* Add additional log info re: archiving scrape files to cloud storage
+
+## 6.20.9 - Nov 4, 2024
+
+* Fix bug with import caused by newish "extras" field on scraper
+
+## 6.20.8 - Oct 18, 2024
+
+* Improve resolve bill to capture at least the most recent session
+
+## 6.20.7 - Oct 10, 2024
+
+* Fix matching committee organizations when chamber is specified for an organizational bill sponsor
+
+## 6.20.6 - Sept 18, 2024
+
+* Add steps to publish lightweight openstates-metadata
+
+## 6.20.5 - Sept 18, 2024
+
+* Improve Event to Person matching
+
+## 6.20.4 - Sept 16, 2024
+
+* Add Chamber on Bill Sponsorship matches for people
+* Improve Event to Bill matching for Events on last day of session
+
+## 6.20.3 - Aug 27, 2024
+
+* Improve query for searching committee other_names
+
+## 6.20.2 - Aug 14, 2024
+
+* Prevent failure in Google Cloud Storage archiving from failing a scrape/update operation
+
 ## 6.20.1 - Aug 2, 2024
 
 * Fix permissions issue caused by slightly wrong usage of GCP storage client code

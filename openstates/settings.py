@@ -25,7 +25,16 @@ SCRAPELIB_VERIFY = verify
 CACHE_DIR = os.path.join(os.getcwd(), "_cache")
 SCRAPED_DATA_DIR = os.path.join(os.getcwd(), "_data")
 
-IMPORT_TRANSFORMERS = {"bill": {"identifier": transformers.fix_bill_id}}
+IMPORT_TRANSFORMERS = {
+    "bill": {
+        "identifier": transformers.fix_bill_id,
+        "documents": {"note": transformers.truncate_300},  # TODO remove when db migration done
+        "versions": {"note": transformers.truncate_300},  # TODO remove when db migration done
+    },
+    "event": {
+        "media": {"note": transformers.truncate_300},  # TODO remove when db migration done
+    }
+}
 
 # Django settings
 LOGGING = {

@@ -26,7 +26,7 @@ jobs:
         uses: snok/install-poetry@v1.3.3
       - name: configure pypi credentials
         run: poetry config pypi-token.pypi "${{ secrets.PYPI_API_KEY }}"
-      - name: Publish package
+      - name: Publish core package
         run: poetry publish --build
       - name: install dependencies
         run: poetry install
@@ -34,3 +34,18 @@ jobs:
         env:
           DATABASE_URL: ${{ secrets.OPENSTATES_DATABASE_URL }}
         run: poetry run os-initdb
+      # Add steps for openstates_metadata package
+      - name: Create directory and copy openstates_metadata
+        run: |
+          mkdir -p core_metadata
+          cp -r openstates/metadata core_metadata
+      - name:  Handle openstates_metadata steps
+        working-directory: ./core_metadata
+        run: |
+          mv metadata/pyproject.toml.sample pyproject.toml
+          mv metadata/.python-version.sample .python-version
+          mv metadata/README.md.sample README.md
+          mv metadata openstates_metadata
+          poetry install
+          poetry config pypi-token.pypi "${{ secrets.OPENSTATES_METADATA_PYPI_API_KEY }}"
+          poetry publish --build
