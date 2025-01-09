@@ -64,6 +64,7 @@ def test_jurisdiction_validate_sessions():
     j.historical_legislative_sessions = [
         {
             "_scraped_name": "s1",
+            "identifier": "s1",
             "classification": "primary",
             "name": "First Session",
             "start_date": "2020-01-01",
