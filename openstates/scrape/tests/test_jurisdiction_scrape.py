@@ -61,7 +61,7 @@ def test_jurisdiction_bicameral_scrape():
 
 def test_jurisdiction_validate_sessions():
     j = NewJersey()
-    j.legislative_sessions = [
+    j.historical_legislative_sessions = [
         {
             "_scraped_name": "s1",
             "classification": "primary",
@@ -71,5 +71,5 @@ def test_jurisdiction_validate_sessions():
     ]
     with pytest.raises(ScrapeValueError):
         j.validate()
-    j.legislative_sessions[0]["end_date"] = "2020-02-01"
+    j.historical_legislative_sessions[0]["end_date"] = "2020-02-01"
     j.validate()
