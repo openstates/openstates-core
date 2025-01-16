@@ -124,7 +124,7 @@ def test_add_sponsor():
     )
     assert len(b.sponsorships) == 1
     assert b.sponsorships[0] == {
-        "person_id": '~{"name": "Joe Bleu"}',
+        "person_id": '~{"chamber": "upper", "name": "Joe Bleu"}',
         "name": "Joe Bleu",
         "classification": "Author",
         "entity_type": "person",

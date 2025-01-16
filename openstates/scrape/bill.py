@@ -109,7 +109,7 @@ class Bill(SourceMixin, AssociatedLinkMixin, BaseModel):
         entity_type,
         primary,
         *,
-        chamber=None,
+        chamber=None,  # upper, lower or legislature
         entity_id=None,
     ):
         sp = {
@@ -124,7 +124,10 @@ class Bill(SourceMixin, AssociatedLinkMixin, BaseModel):
         # overwrite the id that exists
         if entity_type:
             if not entity_id:
-                entity_id = _make_pseudo_id(name=name)
+                if chamber is not None:
+                    entity_id = _make_pseudo_id(name=name, chamber=chamber)
+                else:
+                    entity_id = _make_pseudo_id(name=name)
             sp[entity_type + "_id"] = entity_id
         if sp in self.sponsorships:
             warnings.warn(f"duplicate sponsor {sp}", RuntimeWarning)

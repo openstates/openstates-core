@@ -27,15 +27,15 @@ from ..utils.django import init_django
 from ..utils.instrument import Instrumentation
 from .reports import generate_session_report, print_report, save_report
 
-logger = logging.getLogger("openstates")
+logger = logging.getLogger('openstates')
 stats = Instrumentation()
 
-ALL_ACTIONS = ("scrape", "import")
+ALL_ACTIONS = ('scrape', 'import')
 
 # Settings to archive scraped out put to GCP Cloud Storage
-GCP_PROJECT = os.environ.get("GCP_PROJECT", None)
-BUCKET_NAME = os.environ.get("BUCKET_NAME", None)
-SCRAPE_LAKE_PREFIX = os.environ.get("BUCKET_PREFIX", "legislation")
+GCP_PROJECT = os.environ.get('GCP_PROJECT', None)
+BUCKET_NAME = os.environ.get('BUCKET_NAME', None)
+SCRAPE_LAKE_PREFIX = os.environ.get('BUCKET_PREFIX', 'legislation')
 
 
 class _Unset:
@@ -66,10 +66,10 @@ def get_jurisdiction(module_name: str) -> tuple[State, ModuleType]:
         # ensure we're dealing with a subclass of State
         if isinstance(obj, type) and issubclass(obj, State) and obj != State:
             return obj(), module
-    raise CommandError(f"Unable to import State subclass from {module_name}")
+    raise CommandError(f'Unable to import State subclass from {module_name}')
 
 
-def init_kafka_producer(kafka_cluster_name):
+def init_kafka_producer(kafka_cluster_name: str) -> KafkaProducer:
     client = boto3.client('kafka', region_name='us-west-2')
 
     # Grab Cluster Arn
@@ -81,17 +81,19 @@ def init_kafka_producer(kafka_cluster_name):
             break
 
     if cluster_arn is None:
-        raise ValueError(f"No Kafka cluster found with name: {self.kafka}")
+        raise ValueError(f'No Kafka cluster found with name: {kafka_cluster_name}')
 
     # Grab Brokers
     response = client.get_bootstrap_brokers(ClusterArn=cluster_arn)
     kafka_brokers = response['BootstrapBrokerStringTls']
-    
+
     producer = KafkaProducer(
-                    security_protocol="SSL", 
-                    bootstrap_servers=kafka_brokers, 
-                    value_serializer=lambda v: json.dumps(v, cls=utils.JSONEncoderPlus).encode('utf-8')
-                ) 
+        security_protocol='SSL',
+        bootstrap_servers=kafka_brokers,
+        value_serializer=lambda v: json.dumps(v, cls=utils.JSONEncoderPlus).encode(
+            'utf-8'
+        ),
+    )
 
     return producer
 
@@ -107,11 +109,11 @@ def do_scrape(
     datadir = os.path.join(settings.SCRAPED_DATA_DIR, args.module)
     utils.makedirs(datadir)
     # clear json from data dir
-    for f in glob.glob(datadir + "/*.json"):
+    for f in glob.glob(datadir + '/*.json'):
         os.remove(f)
-    
+
     kafka_producer = init_kafka_producer(args.kafka) if args.kafka else None
-        
+
     report = {}
 
     # do jurisdiction
@@ -125,13 +127,13 @@ def do_scrape(
         kafka_producer=kafka_producer,
         file_archiving_enabled=args.archive,
     )
-    report["jurisdiction"] = jscraper.do_scrape()
+    report['jurisdiction'] = jscraper.do_scrape()
     stats.write_stats(
         [
             {
-                "metric": "jurisdiction_scrapes",
-                "fields": {"total": 1},
-                "tags": {"jurisdiction": juris.name},
+                'metric': 'jurisdiction_scrapes',
+                'fields': {'total': 1},
+                'tags': {'jurisdiction': juris.name},
             }
         ]
     )
@@ -140,19 +142,19 @@ def do_scrape(
     for scraper_name, scrape_args in scrapers.items():
         ScraperCls = juris.scrapers[scraper_name]
         if (
-            "session" in inspect.getfullargspec(ScraperCls.scrape).args
-            and "session" not in scrape_args
+            'session' in inspect.getfullargspec(ScraperCls.scrape).args
+            and 'session' not in scrape_args
         ):
             logger.warning(
-                f"no session provided, using active sessions: {active_sessions}"
+                f'no session provided, using active sessions: {active_sessions}'
             )
             # handle automatically setting session if required by the scraper
             # the report logic was originally meant for one run, so we combine the start & end times
             # and counts here
             report[scraper_name] = {
-                "start": None,
-                "end": None,
-                "objects": defaultdict(int),
+                'start': None,
+                'end': None,
+                'objects': defaultdict(int),
             }
             for session in active_sessions:
                 # new scraper each time
@@ -167,27 +169,27 @@ def do_scrape(
                     file_archiving_enabled=args.archive,
                 )
                 partial_report = scraper.do_scrape(**scrape_args, session=session)
-                last_scrape_end_datetime = partial_report["end"]
+                last_scrape_end_datetime = partial_report['end']
                 stats.write_stats(
                     [
                         {
-                            "metric": "session_scrapes",
-                            "fields": {"total": 1},
-                            "tags": {"jurisdiction": juris.name, "session": session},
+                            'metric': 'session_scrapes',
+                            'fields': {'total': 1},
+                            'tags': {'jurisdiction': juris.name, 'session': session},
                         }
                     ]
                 )
-                if not report[scraper_name]["start"]:
-                    report[scraper_name]["start"] = partial_report["start"]
-                report[scraper_name]["end"] = partial_report["end"]
-                for obj, val in partial_report["objects"].items():
-                    report[scraper_name]["objects"][obj] += val
+                if not report[scraper_name]['start']:
+                    report[scraper_name]['start'] = partial_report['start']
+                report[scraper_name]['end'] = partial_report['end']
+                for obj, val in partial_report['objects'].items():
+                    report[scraper_name]['objects'][obj] += val
                 stats.write_stats(
                     [
                         {
-                            "metric": "last_session_scrape",
-                            "fields": {"time": int(time.time())},
-                            "tags": {"jurisdiction": juris.name, "session": session},
+                            'metric': 'last_session_scrape',
+                            'fields': {'time': int(time.time())},
+                            'tags': {'jurisdiction': juris.name, 'session': session},
                         }
                     ]
                 )
@@ -203,20 +205,20 @@ def do_scrape(
                 file_archiving_enabled=args.archive,
             )
             report[scraper_name] = scraper.do_scrape(**scrape_args)
-            last_scrape_end_datetime = report[scraper_name]["end"]
-            session = scrape_args.get("session", "")
+            last_scrape_end_datetime = report[scraper_name]['end']
+            session = scrape_args.get('session', '')
             if session:
                 stats.write_stats(
                     [
                         {
-                            "metric": "session_scrapes",
-                            "fields": {"total": 1},
-                            "tags": {"jurisdiction": juris.name, "session": session},
+                            'metric': 'session_scrapes',
+                            'fields': {'total': 1},
+                            'tags': {'jurisdiction': juris.name, 'session': session},
                         },
                         {
-                            "metric": "last_session_scrape",
-                            "fields": {"time": int(time.time())},
-                            "tags": {"jurisdiction": juris.name, "session": session},
+                            'metric': 'last_session_scrape',
+                            'fields': {'time': int(time.time())},
+                            'tags': {'jurisdiction': juris.name, 'session': session},
                         },
                     ]
                 )
@@ -224,14 +226,14 @@ def do_scrape(
                 stats.write_stats(
                     [
                         {
-                            "metric": "non_session_scrapes",
-                            "fields": {"total": 1},
-                            "tags": {"jurisdiction": juris.name},
+                            'metric': 'non_session_scrapes',
+                            'fields': {'total': 1},
+                            'tags': {'jurisdiction': juris.name},
                         },
                         {
-                            "metric": "last_non_session_scrape",
-                            "fields": {"time": int(time.time())},
-                            "tags": {"jurisdiction": juris.name},
+                            'metric': 'last_non_session_scrape',
+                            'fields': {'time': int(time.time())},
+                            'tags': {'jurisdiction': juris.name},
                         },
                     ]
                 )
@@ -250,27 +252,29 @@ def archive_to_cloud_storage(
     # check if we have necessary settings
     if GCP_PROJECT is None or BUCKET_NAME is None:
         logger.error(
-            "Scrape archiving is turned on, but necessary settings are missing. No archive was done."
+            'Scrape archiving is turned on, but necessary settings are missing. No archive was done.'
         )
         return
-    logger.info("Beginning archive of scraped files to google cloud storage.")
-    logger.info(f"GCP Project is {GCP_PROJECT} and bucket is {BUCKET_NAME}")
+    logger.info('Beginning archive of scraped files to google cloud storage.')
+    logger.info(f'GCP Project is {GCP_PROJECT} and bucket is {BUCKET_NAME}')
     cloud_storage_client = storage.Client(project=GCP_PROJECT)
     bucket = cloud_storage_client.bucket(BUCKET_NAME)
-    jurisdiction_id = juris.jurisdiction_id.replace("ocd-jurisdiction/", "")
+    jurisdiction_id = juris.jurisdiction_id.replace('ocd-jurisdiction/', '')
     destination_prefx = (
-        f"{SCRAPE_LAKE_PREFIX}/{jurisdiction_id}/{last_scrape_end_datetime.isoformat()}"
+        f'{SCRAPE_LAKE_PREFIX}/{jurisdiction_id}/{last_scrape_end_datetime.isoformat()}'
     )
 
     # read files in directory and upload
     files_count = 0
-    for file_path in glob.glob(datadir + "/*.json"):
+    for file_path in glob.glob(datadir + '/*.json'):
         files_count += 1
         blob_name = os.path.join(destination_prefx, os.path.basename(file_path))
         blob = bucket.blob(blob_name)
         blob.upload_from_filename(file_path)
 
-    logger.info(f"Completed archive to Google Cloud Storage, {files_count} files were uploaded.")
+    logger.info(
+        f'Completed archive to Google Cloud Storage, {files_count} files were uploaded.'
+    )
 
 
 def do_import(juris: State, args: argparse.Namespace) -> dict[str, typing.Any]:
@@ -292,13 +296,13 @@ def do_import(juris: State, args: argparse.Namespace) -> dict[str, typing.Any]:
     report = {}
 
     with transaction.atomic():
-        logger.info("import jurisdictions...")
+        logger.info('import jurisdictions...')
         report.update(juris_importer.import_directory(datadir))
-        logger.info("import bills...")
+        logger.info('import bills...')
         report.update(bill_importer.import_directory(datadir))
-        logger.info("import vote events...")
+        logger.info('import vote events...')
         report.update(vote_event_importer.import_directory(datadir))
-        logger.info("import events...")
+        logger.info('import events...')
         report.update(event_importer.import_directory(datadir))
         DatabaseJurisdiction.objects.filter(id=juris.jurisdiction_id).update(
             latest_bill_update=datetime.datetime.utcnow()
@@ -318,50 +322,50 @@ def check_session_list(juris: State) -> set[str]:
     scraper = type(juris).__name__
 
     # if get_session_list is not defined
-    if not hasattr(juris, "get_session_list"):
-        raise CommandError(f"{scraper}.get_session_list() is not provided")
+    if not hasattr(juris, 'get_session_list'):
+        raise CommandError(f'{scraper}.get_session_list() is not provided')
 
     scraped_sessions = juris.get_session_list()
 
     if not scraped_sessions:
-        raise CommandError("no sessions from {}.get_session_list()".format(scraper))
+        raise CommandError('no sessions from {}.get_session_list()'.format(scraper))
 
     active_sessions = set()
     # copy the list to avoid modifying it
     sessions = set(juris.ignored_scraped_sessions)
     for session in juris.legislative_sessions:
-        sessions.add(session.get("_scraped_name", session["identifier"]))
-        if session.get("active"):
-            active_sessions.add(session.get("identifier"))
+        sessions.add(session.get('_scraped_name', session['identifier']))
+        if session.get('active'):
+            active_sessions.add(session.get('identifier'))
 
     if not active_sessions:
-        raise CommandError(f"No active sessions on {scraper}")
+        raise CommandError(f'No active sessions on {scraper}')
 
     unaccounted_sessions = list(set(scraped_sessions) - sessions)
     if unaccounted_sessions:
         raise CommandError(
             (
-                "Session(s) {sessions} were reported by {scraper}.get_session_list() "
-                "but were not found in {scraper}.legislative_sessions or "
-                "{scraper}.ignored_scraped_sessions."
-            ).format(sessions=", ".join(unaccounted_sessions), scraper=scraper)
+                'Session(s) {sessions} were reported by {scraper}.get_session_list() '
+                'but were not found in {scraper}.legislative_sessions or '
+                '{scraper}.ignored_scraped_sessions.'
+            ).format(sessions=', '.join(unaccounted_sessions), scraper=scraper)
         )
     stats.write_stats(
         [
             {
-                "metric": "sessions",
-                "fields": {"count": len(active_sessions)},
-                "tags": {"jurisdiction": scraper, "session_type": "active"},
+                'metric': 'sessions',
+                'fields': {'count': len(active_sessions)},
+                'tags': {'jurisdiction': scraper, 'session_type': 'active'},
             },
             {
-                "metric": "sessions",
-                "fields": {"count": len(unaccounted_sessions)},
-                "tags": {"jurisdiction": scraper, "session_type": "unaccounted"},
+                'metric': 'sessions',
+                'fields': {'count': len(unaccounted_sessions)},
+                'tags': {'jurisdiction': scraper, 'session_type': 'unaccounted'},
             },
             {
-                "metric": "sessions",
-                "fields": {"count": len(juris.ignored_scraped_sessions)},
-                "tags": {"jurisdiction": scraper, "session_type": "ignored"},
+                'metric': 'sessions',
+                'fields': {'count': len(juris.ignored_scraped_sessions)},
+                'tags': {'jurisdiction': scraper, 'session_type': 'ignored'},
             },
         ]
     )
@@ -371,28 +375,28 @@ def check_session_list(juris: State) -> set[str]:
 def do_update(
     args: argparse.Namespace, other: list[str], juris: State
 ) -> dict[str, typing.Any]:
-    available_scrapers = getattr(juris, "scrapers", {})
-    default_scrapers = getattr(juris, "default_scrapers", None)
+    available_scrapers = getattr(juris, 'scrapers', {})
+    default_scrapers = getattr(juris, 'default_scrapers', None)
     scrapers: dict[str, dict[str, str]] = {}
 
     if not available_scrapers:
-        raise CommandError("no scrapers defined on jurisdiction")
+        raise CommandError('no scrapers defined on jurisdiction')
 
     if other:
         # parse arg list in format: (scraper (k:v)+)+
         cur_scraper = None
         for arg in other:
-            if "=" in arg:
+            if '=' in arg:
                 if not cur_scraper:
-                    raise CommandError("argument {} before scraper name".format(arg))
-                k, v = arg.split("=", 1)
+                    raise CommandError('argument {} before scraper name'.format(arg))
+                k, v = arg.split('=', 1)
                 scrapers[cur_scraper][k] = v
             elif arg in juris.scrapers:
                 cur_scraper = arg
                 scrapers[cur_scraper] = {}
             else:
                 raise CommandError(
-                    "no such scraper: module={} scraper={}".format(args.module, arg)
+                    'no such scraper: module={} scraper={}'.format(args.module, arg)
                 )
     elif default_scrapers is not None:
         scrapers = {s: {} for s in default_scrapers}
@@ -403,118 +407,118 @@ def do_update(
     if not args.actions:
         args.actions = ALL_ACTIONS
 
-    if "import" in args.actions:
+    if 'import' in args.actions:
         init_django()
 
     # print the plan
     report = {
-        "plan": {"module": args.module, "actions": args.actions, "scrapers": scrapers},
-        "start": utils.utcnow(),
+        'plan': {'module': args.module, 'actions': args.actions, 'scrapers': scrapers},
+        'start': utils.utcnow(),
     }
     print_report(report)
 
-    if "scrape" in args.actions:
+    if 'scrape' in args.actions:
         active_sessions = check_session_list(juris)
 
     try:
-        if "scrape" in args.actions:
-            report["scrape"] = do_scrape(juris, args, scrapers, active_sessions)
+        if 'scrape' in args.actions:
+            report['scrape'] = do_scrape(juris, args, scrapers, active_sessions)
             stats.write_stats(
                 [
                     {
-                        "metric": "last_collection_run",
-                        "fields": {"time": int(time.time())},
-                        "tags": {
-                            "jurisdiction": juris.name,
-                            "scrape_type": "scrape",
+                        'metric': 'last_collection_run',
+                        'fields': {'time': int(time.time())},
+                        'tags': {
+                            'jurisdiction': juris.name,
+                            'scrape_type': 'scrape',
                         },
                     }
                 ]
             )
         # we skip import in realtime mode since this happens via the lambda function
-        if "import" in args.actions and not args.realtime:
-            report["import"] = do_import(juris, args)
+        if 'import' in args.actions and not args.realtime:
+            report['import'] = do_import(juris, args)
             stats.write_stats(
                 [
                     {
-                        "metric": "last_collection_run",
-                        "fields": {"time": int(time.time())},
-                        "tags": {
-                            "jurisdiction": juris.name,
-                            "scrape_type": "import",
+                        'metric': 'last_collection_run',
+                        'fields': {'time': int(time.time())},
+                        'tags': {
+                            'jurisdiction': juris.name,
+                            'scrape_type': 'import',
                         },
                     }
                 ]
             )
-        report["success"] = True
+        report['success'] = True
     except Exception as exc:
         stats.write_stats(
             [
                 {
-                    "metric": "scraper_failures",
-                    "fields": {"total": 1},
-                    "tags": {
-                        "jurisdiction": juris.name,
-                        "scrapers": ",".join(sorted(args.actions)),
+                    'metric': 'scraper_failures',
+                    'fields': {'total': 1},
+                    'tags': {
+                        'jurisdiction': juris.name,
+                        'scrapers': ','.join(sorted(args.actions)),
                     },
                 }
             ]
         )
         stats.close()
-        report["success"] = False
-        report["exception"] = exc
-        report["traceback"] = traceback.format_exc()
-        if "import" in args.actions:
+        report['success'] = False
+        report['exception'] = exc
+        report['traceback'] = traceback.format_exc()
+        if 'import' in args.actions:
             save_report(report, juris.jurisdiction_id)
         raise
     else:
         finish = utils.utcnow()
 
-        for scrape_type, details in report.get("scrape", {}).items():  # type: ignore
+        for scrape_type, details in report.get('scrape', {}).items():  # type: ignore
             # datetime - datetime = timedelta object, which has a 'seconds' attribute
             stats.write_stats(
                 [
                     {
-                        "metric": "scrape_runtime",
-                        "fields": {"secs": (finish - details["start"]).seconds},
-                        "tags": {
-                            "jurisdiction": juris.name,
-                            "scrape_type": scrape_type,
+                        'metric': 'scrape_runtime',
+                        'fields': {'secs': (finish - details['start']).seconds},
+                        'tags': {
+                            'jurisdiction': juris.name,
+                            'scrape_type': scrape_type,
                         },
                     }
                 ]
             )
-            for objtype, num in details["objects"].items():
+            for objtype, num in details['objects'].items():
                 stats.write_stats(
                     [
                         {
-                            "metric": "objects",
-                            "fields": {"collected": num},
-                            "tags": {
-                                "jurisdiction": juris.name,
-                                "scrape_type": scrape_type,
-                                "object_type": objtype,
+                            'metric': 'objects',
+                            'fields': {'collected': num},
+                            'tags': {
+                                'jurisdiction': juris.name,
+                                'scrape_type': scrape_type,
+                                'object_type': objtype,
                             },
                         }
                     ]
                 )
-        for scrape_type, details in report.get("import", {}).items():  # type: ignore
-            for import_type in ["insert", "update", "noop"]:
+        for scrape_type, details in report.get('import', {}).items():  # type: ignore
+            for import_type in ['insert', 'update', 'noop']:
                 stats.write_stats(
                     [
                         {
-                            "metric": "objects",
-                            "fields": {"imported": details[import_type]},
-                            "tags": {
-                                "jurisdiction": juris.name,
-                                "scrape_type": scrape_type,
-                                "import_type": import_type,
+                            'metric': 'objects',
+                            'fields': {'imported': details[import_type]},
+                            'tags': {
+                                'jurisdiction': juris.name,
+                                'scrape_type': scrape_type,
+                                'import_type': import_type,
                             },
                         }
                     ]
                 )
 
-        if "import" in args.actions:
+        if 'import' in args.actions:
             save_report(report, juris.jurisdiction_id)
 
         print_report(report)
@@ -522,75 +526,75 @@ def do_update(
 
 
 def parse_args() -> tuple[argparse.Namespace, list[str]]:
-    parser = argparse.ArgumentParser("openstates", description="openstates CLI")
-    parser.add_argument("--debug", action="store_true", help="open debugger on error")
+    parser = argparse.ArgumentParser('openstates', description='openstates CLI')
+    parser.add_argument('--debug', action='store_true', help='open debugger on error')
     parser.add_argument(
-        "--loglevel",
-        default="INFO",
+        '--loglevel',
+        default='INFO',
         help=(
-            "set log level. options are: "
-            "DEBUG|INFO|WARNING|ERROR|CRITICAL "
-            "(default is INFO)"
+            'set log level. options are: '
+            'DEBUG|INFO|WARNING|ERROR|CRITICAL '
+            '(default is INFO)'
         ),
     )
     # what to scrape
-    parser.add_argument("module", type=str, help="path to scraper module")
+    parser.add_argument('module', type=str, help='path to scraper module')
     for arg in ALL_ACTIONS:
         parser.add_argument(
-            "--" + arg,
-            dest="actions",
-            action="append_const",
+            '--' + arg,
+            dest='actions',
+            action='append_const',
             const=arg,
-            help="only run {} post-scrape step".format(arg),
+            help='only run {} post-scrape step'.format(arg),
         )
 
     # scraper arguments
     parser.add_argument(
-        "--nonstrict",
-        action="store_false",
-        dest="strict",
-        help="skip validation on save",
+        '--nonstrict',
+        action='store_false',
+        dest='strict',
+        help='skip validation on save',
     )
     parser.add_argument(
-        "--fastmode", action="store_true", help="use cache and turn off throttling"
+        '--fastmode', action='store_true', help='use cache and turn off throttling'
     )
 
     # settings overrides
-    parser.add_argument("--datadir", help="data directory", dest="SCRAPED_DATA_DIR")
-    parser.add_argument("--cachedir", help="cache directory", dest="CACHE_DIR")
+    parser.add_argument('--datadir', help='data directory', dest='SCRAPED_DATA_DIR')
+    parser.add_argument('--cachedir', help='cache directory', dest='CACHE_DIR')
     parser.add_argument(
-        "-r", "--rpm", help="scraper rpm", type=int, dest="SCRAPELIB_RPM"
+        '-r', '--rpm', help='scraper rpm', type=int, dest='SCRAPELIB_RPM'
     )
     parser.add_argument(
-        "--timeout", help="scraper timeout", type=int, dest="SCRAPELIB_TIMEOUT"
+        '--timeout', help='scraper timeout', type=int, dest='SCRAPELIB_TIMEOUT'
     )
     parser.add_argument(
-        "--no-verify",
-        help="skip tls verification",
-        action="store_false",
-        dest="SCRAPELIB_VERIFY",
+        '--no-verify',
+        help='skip tls verification',
+        action='store_false',
+        dest='SCRAPELIB_VERIFY',
     )
     parser.add_argument(
-        "--retries", help="scraper retries", type=int, dest="SCRAPELIB_RETRIES"
+        '--retries', help='scraper retries', type=int, dest='SCRAPELIB_RETRIES'
     )
     parser.add_argument(
-        "--retry_wait",
-        help="scraper retry wait",
+        '--retry_wait',
+        help='scraper retry wait',
         type=int,
-        dest="SCRAPELIB_RETRY_WAIT_SECONDS",
+        dest='SCRAPELIB_RETRY_WAIT_SECONDS',
     )
 
     # realtime mode
-    parser.add_argument("--realtime", action="store_true", help="enable realtime mode")
+    parser.add_argument('--realtime', action='store_true', help='enable realtime mode')
 
     # kafka mode
-    parser.add_argument("--kafka", type=str, help="Enable writes to Kafka (MSK)")
+    parser.add_argument('--kafka', type=str, help='Enable writes to Kafka (MSK)')
 
     # Archiving realtime processing JSON files
     parser.add_argument(
-        "--archive",
-        action="store_true",
-        help="enable archiving of realtime processing JSON files, defaults to false",
+        '--archive',
+        action='store_true',
+        help='enable archiving of realtime processing JSON files, defaults to false',
     )
 
     # process args
@@ -601,17 +605,17 @@ def main() -> int:
     args, other = parse_args()
 
     # set log level from command line
-    handler_level = getattr(logging, args.loglevel.upper(), "INFO")
-    settings.LOGGING["handlers"]["default"]["level"] = handler_level  # type: ignore
+    handler_level = getattr(logging, args.loglevel.upper(), 'INFO')
+    settings.LOGGING['handlers']['default']['level'] = handler_level  # type: ignore
     logging.config.dictConfig(settings.LOGGING)
     stats.logger.setLevel(handler_level)
 
     # turn debug on
     if args.debug:
         try:
-            debug_module = importlib.import_module("ipdb")
+            debug_module = importlib.import_module('ipdb')
         except ImportError:
-            debug_module = importlib.import_module("pdb")
+            debug_module = importlib.import_module('pdb')
 
         # turn on PDB-on-error mode
         # stolen from http://stackoverflow.com/questions/1237379/
@@ -622,15 +626,15 @@ def main() -> int:
 
         sys.excepthook = _tb_info
 
-    logging.info(f"Module: {args.module}")
+    logging.info(f'Module: {args.module}')
 
     if args.kafka:
-        logging.info(f"Kafka topic specified: {args.kafka}")
+        logging.info(f'Kafka topic specified: {args.kafka}')
 
     juris, module = get_jurisdiction(args.module)
 
     overrides = {}
-    overrides.update(getattr(module, "settings", {}))
+    overrides.update(getattr(module, 'settings', {}))
     overrides.update(
         {key: value for key, value in vars(args).items() if value is not None}
     )
@@ -638,11 +642,11 @@ def main() -> int:
         report = do_update(args, other, juris)
 
     stats.close()
-    if report.get("success", False):
+    if report.get('success', False):
         return 0
     else:
         return 1
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     sys.exit(main())
