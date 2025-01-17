@@ -198,9 +198,9 @@ class Scraper(scrapelib.Scraper):
                 if hasattr(obj, 'motion_text'):
                     identifier = obj.bill_identifier
                     logging.info(
-                            f'Saving vote event from bill {identifier}.'
-                        )
-                # Bills will be routed through this conditional      
+                        f'Saving vote event from bill {identifier}.'
+                    )
+                # Bills will be routed through this conditional
                 elif hasattr(obj, 'legislative_session') and obj.legislative_session:
                     session = obj.legislative_session
                     identifier = obj.identifier
