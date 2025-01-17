@@ -194,8 +194,14 @@ class Scraper(scrapelib.Scraper):
                     file_path.index('_data') + len('_data') + 1 :
                 ]
                 jurisdiction = upload_file_path[:2]
-                # Bills will be routed through this conditional
-                if hasattr(obj, 'legislative_session') and obj.legislative_session:
+                # Vote events will be routed through this conditional
+                if hasattr(obj, 'motion_text'):
+                    identifier = obj.bill_identifier
+                    logging.info(
+                            f'Saving vote event from bill {identifier}.'
+                        )
+                # Bills will be routed through this conditional      
+                elif hasattr(obj, 'legislative_session') and obj.legislative_session:
                     session = obj.legislative_session
                     identifier = obj.identifier
                     upload_file_path = (
