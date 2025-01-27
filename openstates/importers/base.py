@@ -9,7 +9,7 @@ from django.db.models import Q, Model
 from django.db.models.signals import post_save
 from .. import settings
 from ..data.models import LegislativeSession, Person, Bill
-from ..exceptions import UnresolvedIdError, DataImportError
+from ..exceptions import DuplicateItemError, UnresolvedIdError, DataImportError
 from ..utils import get_pseudo_id, utcnow
 from ._types import _ID, _JsonDict, _RelatedModels, _TransformerMapping
 
@@ -273,7 +273,7 @@ class BaseImporter:
         except KeyError:
             raise UnresolvedIdError("cannot resolve id: {}".format(json_id))
 
-    def import_directory(self, datadir: str) -> typing.Dict[str, typing.Dict]:
+    def import_directory(self, datadir: str, allow_duplicates=False) -> typing.Dict[str, typing.Dict]:
         """import a JSON directory into the database"""
 
         def json_stream() -> typing.Iterator[_JsonDict]:
@@ -282,7 +282,7 @@ class BaseImporter:
                 with open(fname) as f:
                     yield json.load(f)
 
-        return self.import_data(json_stream())
+        return self.import_data(json_stream(), allow_duplicates)
 
     def _prepare_imports(
         self, dicts: typing.Iterable[_JsonDict]
@@ -309,7 +309,7 @@ class BaseImporter:
                 self.duplicates[json_id] = seen_hashes[objhash]
 
     def import_data(
-        self, data_items: typing.Iterable[_JsonDict]
+        self, data_items: typing.Iterable[_JsonDict], allow_duplicates=False
     ) -> typing.Dict[str, typing.Dict]:
         """import a bunch of dicts together"""
         # keep counts of all actions
@@ -322,7 +322,7 @@ class BaseImporter:
         }
 
         for json_id, data in self._prepare_imports(data_items):
-            obj_id, what = self.import_item(data)
+            obj_id, what = self.import_item(data, allow_duplicates)
             if not obj_id or not what:
                 "Skipping data because it did not have an associated ID or type"
                 continue
@@ -341,7 +341,7 @@ class BaseImporter:
 
         return {self._type: record}
 
-    def import_item(self, data: _JsonDict) -> typing.Tuple[_ID, str]:
+    def import_item(self, data: _JsonDict, allow_duplicates=False) -> typing.Tuple[_ID, str]:
         """function used by import_data"""
         what = "noop"
 
@@ -372,8 +372,10 @@ class BaseImporter:
             # JKM: no longer checking for duplacates! Too many import errors
             # and they are time consuming to track down.
             # what is the worst thing that can happen if we overwrite dupe data?
-            # if obj.id in self.json_to_db_id.values():
-            #     raise DuplicateItemError(data, obj, related.get("sources", []))
+            if not allow_duplicates and obj.id in self.json_to_db_id.values():
+                raise DuplicateItemError(data, obj, related.get("sources", []))
+            elif allow_duplicates and obj.id in self.json_to_db_id.values():
+                self.logger.warning(f"Ignored a DuplicateItemError for {obj.id}")
             # check base object for changes
             for key, value in data.items():
                 if getattr(obj, key) != value:
