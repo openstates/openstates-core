@@ -369,8 +369,11 @@ class BaseImporter:
 
         # obj existed, check if we need to do an update
         if obj:
-            if obj.id in self.json_to_db_id.values():
-                raise DuplicateItemError(data, obj, related.get("sources", []))
+            # JKM: no longer checking for duplacates! Too many import errors
+            # and they are time consuming to track down.
+            # what is the worst thing that can happen if we overwrite dupe data?
+            # if obj.id in self.json_to_db_id.values():
+            #     raise DuplicateItemError(data, obj, related.get("sources", []))
             # check base object for changes
             for key, value in data.items():
                 if getattr(obj, key) != value:
