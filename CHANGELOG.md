@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.20.14 - Jan 27, 2025
+
+* Allow duplicate items to be imported in import via new runtime flag --allow_duplicates
+
 ## 6.20.13 - Dec 27, 2024
 
 * Sanitize phone number for US people scrape.
