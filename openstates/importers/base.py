@@ -369,9 +369,8 @@ class BaseImporter:
 
         # obj existed, check if we need to do an update
         if obj:
-            # JKM: no longer checking for duplacates! Too many import errors
-            # and they are time consuming to track down.
-            # what is the worst thing that can happen if we overwrite dupe data?
+            # If --allow_duplicates flag is set on client CLI command
+            # then we ignore duplicates instead of raising an exception
             if not allow_duplicates and obj.id in self.json_to_db_id.values():
                 raise DuplicateItemError(data, obj, related.get("sources", []))
             elif allow_duplicates and obj.id in self.json_to_db_id.values():
