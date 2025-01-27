@@ -9,7 +9,7 @@ from django.db.models import Q, Model
 from django.db.models.signals import post_save
 from .. import settings
 from ..data.models import LegislativeSession, Person, Bill
-from ..exceptions import DuplicateItemError, UnresolvedIdError, DataImportError
+from ..exceptions import UnresolvedIdError, DataImportError
 from ..utils import get_pseudo_id, utcnow
 from ._types import _ID, _JsonDict, _RelatedModels, _TransformerMapping
 
