@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.20.15 - Feb 14, 2025
+
+* Committee yaml-to-database cli should be able to update committee name 
+
 ## 6.20.14 - Jan 27, 2025
 
 * Allow duplicate items to be imported in import via new runtime flag --allow_duplicates
