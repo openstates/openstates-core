@@ -58,7 +58,7 @@ def clone_people_repo() -> None:
     shutil.copytree(source_data_dir, destination_data_dir)
 
 
-def opts() -> argparse.Namespace:
+def opts() -> [argparse.Namespace, list[str]]:
     parser = argparse.ArgumentParser(
         description="Trigger Openstates people and committees to-database",
     )
@@ -84,15 +84,32 @@ def opts() -> argparse.Namespace:
         action="store_true",
         help="Set to True to ingest only committees data",
     )
-    return parser.parse_args()
+    return parser.parse_known_args()
+
+
+def get_keyword_args(keyword_args: list) -> dict:
+    def parse_value(value):
+        if value.lower() == "true":
+            return True
+        elif value.lower() == "false" or value.lower() == " " or value.lower() == "":
+            return False
+        return value
+
+    keyword_dict = {
+        k: parse_value(v) for item in keyword_args for k, v in [item.split("=")]
+    }
+    return keyword_dict
 
 
 def main() -> int:
-    args = opts()
-    is_purge = args.purge
-    people = args.people
-    committees = args.committees
-    if not args.force_ingest:
+    args, others = opts()
+    keyword_args_dict = get_keyword_args(others)
+    is_purge = args.purge or keyword_args_dict.get("purge", False)
+    force_ingest = args.force_ingest or keyword_args_dict.get("force-ingest", False)
+    people = args.people or keyword_args_dict.get("people", False)
+    committees = args.committees or keyword_args_dict.get("committees", False)
+
+    if not force_ingest:
         logger.info("Checking if an update is necessary")
         if not is_recent_people_repo_commit():
             logger.info(
