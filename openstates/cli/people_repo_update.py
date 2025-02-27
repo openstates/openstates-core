@@ -104,7 +104,14 @@ def main() -> None:
     help="Operate in safe mode, no changes will be written to database.",
 )
 @click.pass_context
-def update(ctx, other_options: list[str], purge: bool, force_ingest: bool, people: bool, committees: bool) -> int:
+def update(
+    ctx: typing.Any,
+    other_options: list[str],
+    purge: bool,
+    force_ingest: bool,
+    people: bool,
+    committees: bool,
+) -> int:
 
     keyword_args_dict = get_keyword_args(other_options)
 
