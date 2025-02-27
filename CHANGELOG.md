@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.21.0 - Feb 26, 2025
+
+* Add CLI script to ingest into database from people repo 
+
 ## 6.20.15 - Feb 14, 2025
 
 * Committee yaml-to-database cli should be able to update committee name 
