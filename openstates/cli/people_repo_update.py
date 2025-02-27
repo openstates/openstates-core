@@ -109,7 +109,7 @@ def update(ctx, other_options: list[str], purge: bool, force_ingest: bool, peopl
     keyword_args_dict = get_keyword_args(other_options)
 
     abbreviation = keyword_args_dict.get("abbreviation", None)
-    is_purge = purge or keyword_args_dict.get("purge", False)
+    purge = purge or keyword_args_dict.get("purge", False)
     force_ingest = force_ingest or keyword_args_dict.get("force-ingest", False)
     people = people or keyword_args_dict.get("people", False)
     committees = committees or keyword_args_dict.get("committees", False)
