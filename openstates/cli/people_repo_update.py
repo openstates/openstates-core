@@ -58,7 +58,7 @@ def clone_people_repo() -> None:
     shutil.copytree(source_data_dir, destination_data_dir)
 
 
-def opts():
+def opts() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description="Trigger Openstates people and committees to-database",
     )
@@ -75,18 +75,23 @@ def opts():
         help="Set to True to purge old data from database",
     )
     parser.add_argument(
-        "--data-class",
-        "-d",
-        type=str,
-        help="Set data class to committees or people to ingest only the specified data",
+        "--people",
+        action="store_true",
+        help="Set to True to ingest only people data",
+    )
+    parser.add_argument(
+        "--committees",
+        action="store_true",
+        help="Set to True to ingest only committees data",
     )
     return parser.parse_args()
 
 
-def main():
+def main() -> int:
     args = opts()
     is_purge = args.purge
-    data_class = args.data_class
+    people = args.people
+    committees = args.committees
     if not args.force_ingest:
         logger.info("Checking if an update is necessary")
         if not is_recent_people_repo_commit():
@@ -105,10 +110,10 @@ def main():
         if is_purge:
             people_arguments.append("--purge")
             committee_arguments.append("--purge")
-        if data_class == "people":
+        if people and not committees:
             result = subprocess.run(people_arguments, check=True)
             logger.info(f"Status code {result.returncode} returned for people.")
-        elif data_class == "committees":
+        elif committees and not people:
             result = subprocess.run(committee_arguments, check=True)
             logger.info(f"Status code {result.returncode} returned for people.")
         else:
@@ -120,6 +125,7 @@ def main():
             )
     except subprocess.CalledProcessError as e:
         raise RuntimeError(f"Subprocess failed with error: {e}")
+    return 0
 
 
 if __name__ == "__main__":
