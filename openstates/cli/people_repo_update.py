@@ -1,6 +1,8 @@
 import argparse
 import datetime
 import os
+import typing
+
 import requests
 import logging
 import shutil
@@ -58,7 +60,7 @@ def clone_people_repo() -> None:
     shutil.copytree(source_data_dir, destination_data_dir)
 
 
-def opts() -> [argparse.Namespace, list[str]]:
+def opts() -> tuple[argparse.Namespace, list[str]]:
     parser = argparse.ArgumentParser(
         description="Trigger Openstates people and committees to-database",
     )
@@ -88,7 +90,7 @@ def opts() -> [argparse.Namespace, list[str]]:
 
 
 def get_keyword_args(keyword_args: list) -> dict:
-    def parse_value(value):
+    def parse_value(value: str) -> typing.Union[bool, str]:
         if value.lower() == "true":
             return True
         elif value.lower() == "false" or value.lower() == " " or value.lower() == "":
