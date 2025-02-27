@@ -86,22 +86,22 @@ def main() -> None:
 @click.option(
     "--purge/--no-purge",
     default=False,
-    help="Set to True to purge old data from database",
+    help="Set to True to purge data not in repo from database.",
 )
 @click.option(
     "--force-ingest/--no-force-ingest",
     default=False,
-    help="Operate in safe mode, no changes will be written to database.",
+    help="Force ingest of data to database.",
 )
 @click.option(
     "--people/--no-people",
     default=False,
-    help="Operate in safe mode, no changes will be written to database.",
+    help="Set to True to ingest only people.",
 )
 @click.option(
     "--committees/--no-committees",
     default=False,
-    help="Operate in safe mode, no changes will be written to database.",
+    help="Set to True to ingest only committees.",
 )
 @click.pass_context
 def update(
