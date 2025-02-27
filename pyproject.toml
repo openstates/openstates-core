@@ -17,6 +17,7 @@ os-us-to-yaml = 'openstates.cli.convert_us:main'
 os-relationships = 'openstates.cli.relationships:main'
 os-scrape = 'openstates.cli.scrape:main'
 os-validate = 'openstates.cli.validate:main'
+os-people-repo-update = 'openstates.cli.people_repo_update:main'
 
 [tool.poetry.dependencies]
 python = "^3.9"
@@ -38,6 +39,7 @@ us = "^3.1.1"
 influxdb-client = "^1.37.0"
 pytz = "^2024.1"
 google-cloud-storage = "^2.18.0"
+gitpython = "^3.1.44"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.4.1"
