@@ -8,6 +8,7 @@ ENV LANG 'C.UTF-8'
 
 # text extraction stuff
 # install git for forked dependency re: scrapelib
+# and gitPython uses it
 RUN apt-get update -qq && apt-get install -y -qq --no-install-recommends \
       libgdal-dev \
       poppler-utils \
@@ -23,8 +24,6 @@ ADD pyproject.toml /opt/os/
 ADD poetry.lock /opt/os/
 RUN pip --no-cache-dir --disable-pip-version-check install poetry \
     && poetry install -q --no-root \
-    && apt-get -y -qq remove \
-      git \
     && apt-get autoremove -y -qq \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
