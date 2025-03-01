@@ -52,8 +52,8 @@ def clone_people_repo() -> None:
 
     logger.info(f"Cloning {repo_name}")
     git.refresh("/usr/bin/git")
-    repo_url_ssh = "git@github.com:openstates/people.git"
-    git.Repo.clone_from(repo_url_ssh, repo_name)
+    repo_url_http = "https://github.com/openstates/people.git"
+    git.Repo.clone_from(repo_url_http, repo_name)
     logger.info(f"Done cloning {repo_name}!")
 
     current_directory = base_dir / repo_name
@@ -63,12 +63,12 @@ def clone_people_repo() -> None:
 
 
 def get_args(args: list) -> list:
-    def parse_value(value: str) -> typing.Union[bool, str]:
+    def parse_value(value: typing.Union[str, None]) -> typing.Union[bool, str]:
         if value.lower() == "true":
             return True
         elif value.lower() == "false":
             return False
-        elif value.lower() == " ":
+        elif value.lower() == "none" or value is None:
             return ""
         return value
 
@@ -113,7 +113,7 @@ def update(
     committees: bool,
 ) -> int:
     logger.info(f"Begin ingesting people {other_options}")
-    [abbr, pur, f_ingest, ppl, comms] = get_args(other_options)
+    [abbr, f_ingest, pur, ppl, comms] = get_args(other_options)
 
     abbreviation = abbr
     purge = purge or pur
@@ -133,9 +133,8 @@ def update(
         "An update is necessary...\nBegin updating Openstates People to-database!"
     )
 
-    clone_people_repo()
-
     abbreviations = [abbreviation] if abbreviation else []
+    clone_people_repo()
 
     if people and not committees:
         ctx.invoke(people_to_database, abbreviations=abbreviations, purge=purge)
