@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.21.1 - Mar 1, 2025
+
+* Update people repo cli usage
+
 ## 6.21.0 - Feb 28, 2025
 
 * Install git for gitPython dependencies usage
