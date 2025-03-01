@@ -17,10 +17,10 @@ from ..cli.people import to_database as people_to_database
 logger = logging.getLogger(__name__)
 
 
-def is_recent_people_repo_commit() -> bool:
+def no_recent_people_repo_commit() -> bool:
     repo_url = "https://api.github.com/repos/openstates/people/commits"
     response = requests.get(repo_url)
-    recent_commit_exists = False
+    no_recent_commit_exists = False
     if response.status_code == 200:
         latest_commit = response.json()[0]
         last_commit_time = latest_commit["commit"]["committer"]["date"]
@@ -33,8 +33,8 @@ def is_recent_people_repo_commit() -> bool:
         ) - datetime.timedelta(
             minutes=2 * 60 + 5
         )  # 2 hours and 5-minute buffer.
-        recent_commit_exists = last_commit_time > two_hours_ago
-    return recent_commit_exists
+        no_recent_commit_exists = two_hours_ago > last_commit_time
+    return no_recent_commit_exists
 
 
 def clone_people_repo() -> None:
@@ -62,18 +62,18 @@ def clone_people_repo() -> None:
     shutil.copytree(source_data_dir, destination_data_dir)
 
 
-def get_keyword_args(keyword_args: list) -> dict:
+def get_args(args: list) -> list:
     def parse_value(value: str) -> typing.Union[bool, str]:
         if value.lower() == "true":
             return True
-        elif value.lower() == "false" or value.lower() == " " or value.lower() == "":
+        elif value.lower() == "false":
             return False
+        elif value.lower() == " ":
+            return ""
         return value
 
-    keyword_dict = {
-        k: parse_value(v) for item in keyword_args for k, v in [item.split("=")]
-    }
-    return keyword_dict
+    args_list = [parse_value(item) for item in args]
+    return args_list
 
 
 @click.group()
@@ -112,18 +112,18 @@ def update(
     people: bool,
     committees: bool,
 ) -> int:
+    logger.info(f"Begin ingesting people {other_options}")
+    [abbr, pur, f_ingest, ppl, comms] = get_args(other_options)
 
-    keyword_args_dict = get_keyword_args(other_options)
-
-    abbreviation = keyword_args_dict.get("abbreviation", None)
-    purge = purge or keyword_args_dict.get("purge", False)
-    force_ingest = force_ingest or keyword_args_dict.get("force-ingest", False)
-    people = people or keyword_args_dict.get("people", False)
-    committees = committees or keyword_args_dict.get("committees", False)
+    abbreviation = abbr
+    purge = purge or pur
+    force_ingest = force_ingest or f_ingest
+    people = people or ppl
+    committees = committees or comms
 
     if not force_ingest:
         logger.info("Checking if an update is necessary")
-        if not is_recent_people_repo_commit():
+        if no_recent_people_repo_commit():
             logger.info(
                 "There was no recent update to Openstates People Repo \n exiting..."
             )

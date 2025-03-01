@@ -47,7 +47,7 @@ def main(
     ValidatorCls = jsonschema.validators.extend(
         Draft3Validator, type_checker=type_checker
     )
-    validate(instance=entity_instance, schema=schema, cls=ValidatorCls)
+    validate(instance=entity_instance, schema=schema, cls=ValidatorCls)  # type: ignore
 
 
 if __name__ == "__main__":

@@ -1,6 +1,10 @@
 # Changelog
 
-## 6.21.0 - Feb 26, 2025
+## 6.21.0 - Feb 28, 2025
+
+* Install git for gitPython dependencies usage
+
+## 6.20.16 - Feb 26, 2025
 
 * Add CLI script to ingest into database from people repo 
 
