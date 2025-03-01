@@ -63,12 +63,12 @@ def clone_people_repo() -> None:
 
 
 def get_args(args: list) -> list:
-    def parse_value(value: typing.Union[str, None]) -> typing.Union[bool, str]:
+    def parse_value(value: str) -> typing.Union[bool, str]:
         if value.lower() == "true":
             return True
         elif value.lower() == "false":
             return False
-        elif value.lower() == "none" or value is None:
+        elif value.lower() == "none":
             return ""
         return value
 
