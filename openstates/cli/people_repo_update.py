@@ -135,7 +135,12 @@ def update(
 
     abbreviations = [abbreviation] if abbreviation else []
     clone_people_repo()
-
+    jurisdictions_to_ingest = (
+        ", ".join(abbreviations) if abbreviations else "all jurisdictions"
+    )
+    logger.info(
+        f"Begin Openstates People Repo to Database for {jurisdictions_to_ingest}."
+    )
     if people and not committees:
         ctx.invoke(people_to_database, abbreviations=abbreviations, purge=purge)
     elif committees and not people:
