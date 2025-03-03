@@ -28,12 +28,12 @@ def no_recent_people_repo_commit() -> bool:
         last_commit_time = datetime.datetime.fromisoformat(
             last_commit_time.rstrip("Z")
         ).replace(tzinfo=datetime.timezone.utc)
-        two_hours_ago = datetime.datetime.now(
+        six_hours_ago = datetime.datetime.now(
             datetime.timezone.utc
         ) - datetime.timedelta(
-            minutes=2 * 60 + 5
-        )  # 2 hours and 5-minute buffer.
-        no_recent_commit_exists = two_hours_ago > last_commit_time
+            minutes=6 * 60 + 5
+        )  # 6 hours and 5-minute buffer.
+        no_recent_commit_exists = six_hours_ago > last_commit_time
     return no_recent_commit_exists
 
 

@@ -15,16 +15,20 @@ def init_django() -> None:  # pragma: no cover
     else:
         DATABASES["default"]["OPTIONS"]["application_name"] = application_name
 
-    conf.settings.configure(
-        conf.global_settings,
-        SECRET_KEY="not-important",
-        DEBUG=False,
-        INSTALLED_APPS=(
-            "django.contrib.contenttypes",
-            "openstates.data",
-        ),
-        DATABASES=DATABASES,
-        TIME_ZONE="UTC",
-        MIDDLEWARE_CLASSES=(),
-    )
-    django.setup()
+    try:
+        conf.settings.configure(
+            conf.global_settings,
+            SECRET_KEY="not-important",
+            DEBUG=False,
+            INSTALLED_APPS=(
+                "django.contrib.contenttypes",
+                "openstates.data",
+            ),
+            DATABASES=DATABASES,
+            TIME_ZONE="UTC",
+            MIDDLEWARE_CLASSES=(),
+        )
+        django.setup()
+    except RuntimeError as e:
+        if "Settings already configured." not in str(e):
+            raise RuntimeError(f"Encountered error {e}")
