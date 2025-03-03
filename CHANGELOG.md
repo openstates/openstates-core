@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.21.2 - Mar 3, 2025
+
+* Catch Django Settings already configures exception
+
 ## 6.21.1 - Mar 1, 2025
 
 * Update people repo cli usage
