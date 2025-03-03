@@ -144,10 +144,10 @@ def update(
     if people and not committees:
         ctx.invoke(people_to_database, abbreviations=abbreviations, purge=purge)
     elif committees and not people:
-        ctx.invoke(committee_to_database, abbreviations=abbreviations, purge=purge)
+        ctx.invoke(committee_to_database, abbreviations=abbreviations, purge=True)
     else:
         ctx.invoke(people_to_database, abbreviations=abbreviations, purge=purge)
-        ctx.invoke(committee_to_database, abbreviations=abbreviations, purge=purge)
+        ctx.invoke(committee_to_database, abbreviations=abbreviations, purge=True)
     return 0
 
 

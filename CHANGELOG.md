@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.21.3 - Mar 3, 2025
+
+* Purge Committees to database by default
+
 ## 6.21.2 - Mar 3, 2025
 
 * Catch Django Settings already configures exception
