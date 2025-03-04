@@ -85,7 +85,7 @@ class State(BaseModel):
     @property
     def new_sessions(
         self,
-        endpoint: str = os.getenv("CRONOS_ENDPOINT"),
+        endpoint: str = os.getenv("CRONOS_ENDPOINT") + "/sessions/query",
     ):
         """Requires CRONOS_ENDPOINT for getting the legislative sessions. Note that legislative sessions are retrieved as a list of json objects.
 
@@ -98,7 +98,7 @@ class State(BaseModel):
             "classification": "primary", # primary or special
             }
         """
-        params = {"state_name": self.name}
+        params = {"state_names": self.name}
         try:
             response = requests.get(
                 endpoint,
@@ -176,7 +176,7 @@ class State(BaseModel):
                 parent_id=legislature._id,
             )
 
-    def check_session_active(session: dict):
+    def check_session_active(self, session: dict):
         """For a given session dictionary, checks to see if "active" is a denoted field. If it's not, then 'active' is set based on the start_date and end_date"""
         if "active" not in session:
             session["active"] = (
