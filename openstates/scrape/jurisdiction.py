@@ -186,6 +186,20 @@ class State(BaseModel):
             )
         return session
 
+    def create_session_in_cronos(
+        self,
+        session: dict,
+        cronos_endpoint: str = os.getenv("CRONOS_ENDPOINT") + "/sessions/create",
+    ):
+        try:
+            session["state_name"] = self.name
+            response = requests.post(cronos_endpoint, data=session, timeout=20)
+            response.raise_for_status()
+            return True
+        except Exception as e:
+            print(f"Failed to send new session data to cronos: {e}")
+            return False
+
     def get_session_list(self) -> list[str]:
         raise NotImplementedError()
 
