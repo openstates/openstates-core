@@ -10,7 +10,6 @@ import json
 import logging
 import logging.config
 import os
-import requests
 import sys
 import time
 import traceback
