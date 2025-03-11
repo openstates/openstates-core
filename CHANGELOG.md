@@ -1,5 +1,8 @@
 # Changelog
 
+## 6.21.4 - Mar 11, 2025
+* Remove extra whitespace from query value
+
 ## 6.21.3 - Mar 3, 2025
 
 * Purge Committees to database by default
