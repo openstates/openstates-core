@@ -3,6 +3,7 @@ import copy
 import glob
 import json
 import logging
+import re
 import typing
 from datetime import datetime
 from django.db.models import Q, Model
@@ -578,6 +579,7 @@ class BaseImporter:
         if list(spec.keys()) == ["name"]:
             # if we're just resolving on name, include other names and family name
             name = spec["name"]
+            name = re.sub(r"\s+", " ", name)
             spec = (
                 Q(name__iexact=name)
                 | Q(other_names__name__iexact=name)
