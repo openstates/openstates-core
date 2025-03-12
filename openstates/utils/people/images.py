@@ -83,7 +83,7 @@ def download_image(url: str) -> _IMAGE_RETURN_TYPE:
 
 def resize_image(img_bytes: bytes, size: int) -> _IMAGE_RETURN_TYPE:
     img = Image.open(fp=io.BytesIO(img_bytes))
-    img = img.convert("RGB")
+    img = img.convert("RGB")  # type: ignore
     img.thumbnail((size, size))
     output = io.BytesIO()
     img.save(output, "JPEG", quality=80, progressive=True)

@@ -3,6 +3,7 @@ import copy
 import glob
 import json
 import logging
+import re
 import typing
 from datetime import datetime
 from django.db.models import Q, Model
@@ -273,7 +274,7 @@ class BaseImporter:
         except KeyError:
             raise UnresolvedIdError("cannot resolve id: {}".format(json_id))
 
-    def import_directory(self, datadir: str) -> typing.Dict[str, typing.Dict]:
+    def import_directory(self, datadir: str, allow_duplicates=False) -> typing.Dict[str, typing.Dict]:
         """import a JSON directory into the database"""
 
         def json_stream() -> typing.Iterator[_JsonDict]:
@@ -282,7 +283,7 @@ class BaseImporter:
                 with open(fname) as f:
                     yield json.load(f)
 
-        return self.import_data(json_stream())
+        return self.import_data(json_stream(), allow_duplicates)
 
     def _prepare_imports(
         self, dicts: typing.Iterable[_JsonDict]
@@ -309,7 +310,7 @@ class BaseImporter:
                 self.duplicates[json_id] = seen_hashes[objhash]
 
     def import_data(
-        self, data_items: typing.Iterable[_JsonDict]
+        self, data_items: typing.Iterable[_JsonDict], allow_duplicates=False
     ) -> typing.Dict[str, typing.Dict]:
         """import a bunch of dicts together"""
         # keep counts of all actions
@@ -322,7 +323,7 @@ class BaseImporter:
         }
 
         for json_id, data in self._prepare_imports(data_items):
-            obj_id, what = self.import_item(data)
+            obj_id, what = self.import_item(data, allow_duplicates)
             if not obj_id or not what:
                 "Skipping data because it did not have an associated ID or type"
                 continue
@@ -341,7 +342,7 @@ class BaseImporter:
 
         return {self._type: record}
 
-    def import_item(self, data: _JsonDict) -> typing.Tuple[_ID, str]:
+    def import_item(self, data: _JsonDict, allow_duplicates=False) -> typing.Tuple[_ID, str]:
         """function used by import_data"""
         what = "noop"
 
@@ -369,8 +370,12 @@ class BaseImporter:
 
         # obj existed, check if we need to do an update
         if obj:
-            if obj.id in self.json_to_db_id.values():
+            # If --allow_duplicates flag is set on client CLI command
+            # then we ignore duplicates instead of raising an exception
+            if not allow_duplicates and obj.id in self.json_to_db_id.values():
                 raise DuplicateItemError(data, obj, related.get("sources", []))
+            elif allow_duplicates and obj.id in self.json_to_db_id.values():
+                self.logger.warning(f"Ignored a DuplicateItemError for {obj.id}")
             # check base object for changes
             for key, value in data.items():
                 if getattr(obj, key) != value:
@@ -574,6 +579,7 @@ class BaseImporter:
         if list(spec.keys()) == ["name"]:
             # if we're just resolving on name, include other names and family name
             name = spec["name"]
+            name = re.sub(r"\s+", " ", name)
             spec = (
                 Q(name__iexact=name)
                 | Q(other_names__name__iexact=name)

@@ -1,5 +1,36 @@
 # Changelog
 
+## 6.21.4 - Mar 11, 2025
+* Remove extra whitespace from query value
+
+## 6.21.3 - Mar 3, 2025
+
+* Purge Committees to database by default
+
+## 6.21.2 - Mar 3, 2025
+
+* Catch Django Settings already configures exception
+
+## 6.21.1 - Mar 1, 2025
+
+* Update people repo cli usage
+
+## 6.21.0 - Feb 28, 2025
+
+* Install git for gitPython dependencies usage
+
+## 6.20.16 - Feb 26, 2025
+
+* Add CLI script to ingest into database from people repo 
+
+## 6.20.15 - Feb 14, 2025
+
+* Committee yaml-to-database cli should be able to update committee name 
+
+## 6.20.14 - Jan 27, 2025
+
+* Allow duplicate items to be imported in import via new runtime flag --allow_duplicates
+
 ## 6.20.13 - Dec 27, 2024
 
 * Sanitize phone number for US people scrape.

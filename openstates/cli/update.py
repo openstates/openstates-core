@@ -298,12 +298,12 @@ def do_import(juris: State, args: argparse.Namespace) -> dict[str, typing.Any]:
     with transaction.atomic():
         logger.info('import jurisdictions...')
         report.update(juris_importer.import_directory(datadir))
-        logger.info('import bills...')
-        report.update(bill_importer.import_directory(datadir))
-        logger.info('import vote events...')
-        report.update(vote_event_importer.import_directory(datadir))
-        logger.info('import events...')
-        report.update(event_importer.import_directory(datadir))
+        logger.info("import bills...")
+        report.update(bill_importer.import_directory(datadir, allow_duplicates=args.allow_duplicates))
+        logger.info("import vote events...")
+        report.update(vote_event_importer.import_directory(datadir, allow_duplicates=args.allow_duplicates))
+        logger.info("import events...")
+        report.update(event_importer.import_directory(datadir, allow_duplicates=args.allow_duplicates))
         DatabaseJurisdiction.objects.filter(id=juris.jurisdiction_id).update(
             latest_bill_update=datetime.datetime.utcnow()
         )
@@ -559,7 +559,13 @@ def parse_args() -> tuple[argparse.Namespace, list[str]]:
         help='skip validation on save',
     )
     parser.add_argument(
-        '--fastmode', action='store_true', help='use cache and turn off throttling'
+        "--allow_duplicates",
+        action="store_true",
+        dest="allow_duplicates",
+        help="Skip throwing a DuplicateItemError, instead all import of duplicate items",
+    )
+    parser.add_argument(
+        "--fastmode", action="store_true", help="use cache and turn off throttling"
     )
 
     # settings overrides
