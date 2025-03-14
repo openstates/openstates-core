@@ -324,14 +324,20 @@ def test_committee_to_db_simple():
         sources=[{"url": "https://example.com"}],
         members=[Membership(name="someone", role="member")],
     )
-    created, updated = committee_to_db(new_com)
-    assert created and not updated
+    created, updated, name_changed = committee_to_db(new_com)
+    assert created and not updated and not name_changed
     org = Organization.objects.get(pk=com_id)
     assert org.sources == new_com.sources
 
     new_com.links = [{"url": "https://example.com"}]
-    created, updated = committee_to_db(new_com)
-    assert updated and not created
+    created, updated, name_changed = committee_to_db(new_com)
+    assert updated and not created and not name_changed
+    org = Organization.objects.get(pk=com_id)
+    assert org.links == new_com.links
+
+    new_com.name = "Education k-12"
+    created, updated, name_changed = committee_to_db(new_com)
+    assert updated and not created and name_changed
     org = Organization.objects.get(pk=com_id)
     assert org.links == new_com.links
 
@@ -346,7 +352,7 @@ def test_committee_to_db_memberships():
         jurisdiction="ocd-jurisdiction/country:us/state:nc/government",
         members=[Membership(name="Steve", role="chair")],
     )
-    created, updated = committee_to_db(new_com)
+    created, updated, name_changed = committee_to_db(new_com)
     org = Organization.objects.get(pk=com_id)
     assert org.memberships.count() == 1
     s_mem = org.memberships.get()
@@ -357,8 +363,8 @@ def test_committee_to_db_memberships():
     wendy = DjangoPerson.objects.create(id=person_id, name="Wendy")
     new_com.add_member("Wendy", role="chair")
     new_com.members[-1].person_id = person_id
-    created, updated = committee_to_db(new_com)
-    assert updated and not created
+    created, updated, name_changed = committee_to_db(new_com)
+    assert updated and not created and not name_changed
     org = Organization.objects.get(pk=com_id)
     assert org.memberships.count() == 2
     w_mem = org.memberships.filter(person_name="Wendy")[0]
@@ -377,7 +383,7 @@ def test_no_person_updates_with_committee(person):
         jurisdiction="ocd-jurisdiction/country:us/state:nc/government",
         members=[Membership(name="Steve", role="chair")],
     )
-    created, updated = committee_to_db(parent_com)
+    created, updated, name_changed = committee_to_db(parent_com)
 
     sub_com = Committee(
         id="ocd-organization/00000000-1111-1111-1111-333333333333",
@@ -388,8 +394,8 @@ def test_no_person_updates_with_committee(person):
         jurisdiction="ocd-jurisdiction/country:us/state:nc/government",
         members=[Membership(name="Steve", role="chair", person_id=person.id)],
     )
-    created, updated = committee_to_db(sub_com)
-    assert created and not updated
+    created, updated, name_changed = committee_to_db(sub_com)
+    assert created and not updated and not name_changed
 
     created, updated = load_person(person)
     assert not created and not updated

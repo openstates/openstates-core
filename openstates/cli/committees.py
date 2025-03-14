@@ -107,10 +107,11 @@ def _parent_lookup(jurisdiction_id: str, chamber: str, parent: str) -> str:
         ).id
 
 
-def committee_to_db(com: Committee) -> tuple[bool, bool]:
+def committee_to_db(com: Committee) -> tuple[bool, bool, bool]:
     from openstates.data.models import Organization, Membership
 
     updated = False
+    name_changed = False
 
     db_com, created = Organization.objects.get_or_create(
         id=com.id,
@@ -119,6 +120,11 @@ def committee_to_db(com: Committee) -> tuple[bool, bool]:
         classification=com.classification,
         defaults=dict(name=com.name, extras=com.extras),
     )
+
+    if db_com.name != com.name:
+        updated = True
+        name_changed = True
+        db_com.name = com.name
 
     if db_com.extras != com.extras:
         updated = True
@@ -156,7 +162,7 @@ def committee_to_db(com: Committee) -> tuple[bool, bool]:
         # don't set updated to true in return if created
         if created:
             updated = False
-    return created, updated
+    return created, updated, name_changed
 
 
 def merge_lists(orig: list, new: list, key_attr: str) -> list:
@@ -192,9 +198,9 @@ class CommitteeDir:
         # allow overriding directory explicitly, useful for testing
         self.directory = directory if directory else get_data_path(abbr) / "committees"
         # chamber -> name -> Committee
-        self.coms_by_parent_and_name: defaultdict[
-            str, dict[str, Committee]
-        ] = defaultdict(dict)
+        self.coms_by_parent_and_name: defaultdict[str, dict[str, Committee]] = (
+            defaultdict(dict)
+        )
         self.errors = []
         # person matcher will be prepared if/when needed
         self.person_matcher: typing.Optional[PersonMatcher] = None
@@ -406,6 +412,7 @@ class CommitteeDir:
         ids = set()
         created_count = 0
         updated_count = 0
+        name_change_count = 0
 
         jurisdiction_id = lookup(abbr=self.abbr).jurisdiction_id
         existing_ids = set(
@@ -421,7 +428,7 @@ class CommitteeDir:
                 committees.items(), key=lambda c: c[1].parent or ""
             ):
                 ids.add(committee.id)
-                created, updated = committee_to_db(committee)
+                created, updated, name_changed = committee_to_db(committee)
 
                 if created:
                     click.secho(f"created committee {name}", fg="cyan", bold=True)
@@ -429,6 +436,9 @@ class CommitteeDir:
                 elif updated:
                     click.secho(f"updated committee {name}", fg="cyan")
                     updated_count += 1
+
+                if name_changed:
+                    name_change_count += 1
 
         missing_ids = existing_ids - ids
 
@@ -447,7 +457,8 @@ class CommitteeDir:
 
         click.secho(
             f"processed {len(ids)} committees, {created_count} created, "
-            f"{updated_count} updated",
+            f"{updated_count} updated"
+            f" {name_change_count} name changed",
             fg="green",
         )
 
