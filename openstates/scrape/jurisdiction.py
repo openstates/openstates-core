@@ -124,6 +124,7 @@ class State(BaseModel):
                         "name",
                         "start_date",
                         "end_date",
+                        "_scraped_name"
                     ]
                 }
             )
