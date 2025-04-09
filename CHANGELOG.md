@@ -1,5 +1,8 @@
 # Changelog
 
+## 6.21.5 - Apr 9, 2025
+* Add to Docker workflow to publish to internal repo as well
+
 ## 6.21.4 - Mar 11, 2025
 * Remove extra whitespace from query value
 
