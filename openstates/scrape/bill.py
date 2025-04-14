@@ -1,5 +1,5 @@
 import warnings
-from ..utils import _make_pseudo_id, transformers, utcnow
+from ..utils import _make_pseudo_id, transformers
 from .popolo import pseudo_organization
 from .base import BaseModel, SourceMixin, AssociatedLinkMixin, cleanup_list
 from .schemas.bill import schema
@@ -50,15 +50,6 @@ class Bill(SourceMixin, AssociatedLinkMixin, BaseModel):
         self.abstracts = []
         self.versions = []
         self.citations = []
-
-    def add_scrape_metadata(self, jurisdiction):
-        self.jurisdiction = {
-            "id": jurisdiction.jurisdiction_id,
-            "name": jurisdiction.name,
-            "classification": jurisdiction.classification,
-            "division_id": jurisdiction.division_id,
-        }
-        self.scraped_at = utcnow()
 
     def pre_save(self, jurisdiction):
         # ensure subject is sorted for idempotent JSON output

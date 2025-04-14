@@ -366,6 +366,17 @@ class BaseModel(object):
             )
         super(BaseModel, self).__setattr__(key, val)
 
+    def add_scrape_metadata(self, jurisdiction):
+        """Add scrape metadata"""
+        self.jurisdiction = {
+            "id": jurisdiction.jurisdiction_id,
+            "name": jurisdiction.name,
+            "classification": jurisdiction.classification,
+            "division_id": jurisdiction.division_id,
+        }
+
+        self.scraped_at = utils.utcnow()
+
 
 class SourceMixin(object):
     def __init__(self):

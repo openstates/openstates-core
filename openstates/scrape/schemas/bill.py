@@ -2,7 +2,13 @@
     Schema for bill objects.
 """
 import copy
-from .common import sources, extras, fuzzy_date_blank, fuzzy_datetime
+from .common import (
+    sources,
+    extras,
+    fuzzy_date_blank,
+    fuzzy_datetime,
+    jurisdiction_summary,
+)
 from ...data import common
 
 versions_or_documents = {
@@ -164,16 +170,7 @@ schema = {
         },
         "sources": sources,
         "extras": extras,
-        "jurisdiction": {
-            "items": {
-                "properties": {
-                    "id": {"type": "string", "minLength": 1},
-                    "name": {"type": "string", "minLength": 1},
-                    "classification": {"type": "string", "minLength": 1},
-                    "division_id": {"type": "string", "minLength": 1},
-                },
-            },
-        },
+        "jurisdiction": jurisdiction_summary,
         "scraped_at": fuzzy_datetime,
     },
 }
