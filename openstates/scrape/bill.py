@@ -51,9 +51,10 @@ class Bill(SourceMixin, AssociatedLinkMixin, BaseModel):
         self.versions = []
         self.citations = []
 
-    def pre_save(self, jurisdiction_id):
+    def pre_save(self, jurisdiction):
         # ensure subject is sorted for idempotent JSON output
         self.subject = sorted(self.subject)
+        self.add_scrape_metadata(jurisdiction)
 
     def add_action(
         self,
@@ -76,7 +77,14 @@ class Bill(SourceMixin, AssociatedLinkMixin, BaseModel):
         return action
 
     def add_citation(
-        self, publication, citation, citation_type, *, effective=None, expires=None, url=None
+        self,
+        publication,
+        citation,
+        citation_type,
+        *,
+        effective=None,
+        expires=None,
+        url=None,
     ):
         self.citations.append(
             {
