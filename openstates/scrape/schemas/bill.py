@@ -164,5 +164,16 @@ schema = {
         },
         "sources": sources,
         "extras": extras,
+        "jurisdiction": {
+            "items": {
+                "properties": {
+                    "id": {"type": "string", "minLength": 1},
+                    "name": {"type": "string", "minLength": 1},
+                    "classification": {"type": "string", "minLength": 1},
+                    "division_id": {"type": "string", "minLength": 1},
+                },
+            },
+        },
+        "scraped_at": fuzzy_datetime,
     },
 }
