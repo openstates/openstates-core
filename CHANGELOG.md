@@ -1,5 +1,8 @@
 # Changelog
 
+## 6.21.6 - Apr 21, 2025
+* Add informal passage to bill action classification
+
 ## 6.21.5 - Apr 9, 2025
 * Add to Docker workflow to publish to internal repo as well
 
