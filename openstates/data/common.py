@@ -92,6 +92,7 @@ BILL_ACTION_CLASSIFICATION_CHOICES = (
     ("reading-2", "Second Reading"),
     ("reading-3", "Third Reading"),
     ("passage", "Passage"),
+    ("informal-passage", "Informal Passage"),
     ("failure", "Passage Failure"),
     ("withdrawal", "Withdrawal"),
     ("substitution", "Substitution"),
