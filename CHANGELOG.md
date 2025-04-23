@@ -1,5 +1,8 @@
 # Changelog
 
+## 6.22.0 - Apr 22, 2025
+* Add metadata to scraper output
+
 ## 6.21.6 - Apr 21, 2025
 * Add informal passage to bill action classification
 

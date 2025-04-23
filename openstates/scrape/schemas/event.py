@@ -8,6 +8,7 @@ from .common import (
     fuzzy_date_blank,
     fuzzy_datetime,
     fuzzy_datetime_blank,
+    jurisdiction_summary,
 )
 
 media_schema = {
@@ -134,6 +135,8 @@ schema = {
         "sources": sources,
         "extras": extras,
         "dedupe_key": {"type": ["string", "null"], "minLength": 1},
+        "jurisdiction": jurisdiction_summary,
+        "scraped_at": fuzzy_datetime,
     },
     "type": "object",
 }

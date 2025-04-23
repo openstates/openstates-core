@@ -164,7 +164,7 @@ class Scraper(scrapelib.Scraper):
         Generally shouldn't be called directly.
         """
         clean_whitespace(obj)
-        obj.pre_save(self.jurisdiction.jurisdiction_id)
+        obj.pre_save(self.jurisdiction)
 
         filename = f"{obj._type}_{obj._id}.json".replace("/", "-")
         self.info(f"save {obj._type} {obj} as {filename}")
@@ -346,7 +346,7 @@ class BaseModel(object):
                 )
             )
 
-    def pre_save(self, jurisdiction_id):
+    def pre_save(self, jurisdiction):
         pass
 
     def as_dict(self):
@@ -365,6 +365,17 @@ class BaseModel(object):
                 'property "{}" not in {} schema'.format(key, self._type)
             )
         super(BaseModel, self).__setattr__(key, val)
+
+    def add_scrape_metadata(self, jurisdiction):
+        """Add scrape metadata"""
+        self.jurisdiction = {
+            "id": jurisdiction.jurisdiction_id,
+            "name": jurisdiction.name,
+            "classification": jurisdiction.classification,
+            "division_id": jurisdiction.division_id,
+        }
+
+        self.scraped_at = utils.utcnow()
 
 
 class SourceMixin(object):

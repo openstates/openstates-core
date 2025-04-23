@@ -1,9 +1,13 @@
 import pytest
 import warnings
 from datetime import date
-from openstates.scrape import Bill
+from openstates.scrape import Bill, State
 from openstates.utils.generic import get_pseudo_id
 from openstates.exceptions import ScrapeValueError
+
+
+class NewJersey(State):
+    pass
 
 
 def toy_bill():
@@ -311,10 +315,11 @@ def test_str():
 
 def test_pre_save():
     b = toy_bill()
+    j = NewJersey()
     b.add_subject("ZZZ")
     b.add_subject("AAA")
     b.add_subject("MMM")
-    b.pre_save(None)
+    b.pre_save(j)
     assert b.subject == ["AAA", "MMM", "ZZZ"]
 
 

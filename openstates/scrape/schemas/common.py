@@ -62,3 +62,14 @@ sources = {
 }
 
 extras = {"type": "object"}
+
+jurisdiction_summary = {
+    "items": {
+        "properties": {
+            "id": {"type": "string", "minLength": 1},
+            "name": {"type": "string", "minLength": 1},
+            "classification": {"type": "string", "minLength": 1},
+            "division_id": {"type": "string", "minLength": 1},
+        },
+    },
+}
