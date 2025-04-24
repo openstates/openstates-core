@@ -5,6 +5,7 @@
 * Update PR senate to 28 seats incl 12 at-large
 * Update PR senate to 53 seats incl 13 at-large
 * Update ND house district to merge 9A and 9B into district 9
+* Stop restricting multiple capitol offices
 
 ## 6.22.0 - Apr 22, 2025
 * Add metadata to scraper output
