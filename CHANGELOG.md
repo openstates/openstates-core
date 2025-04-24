@@ -1,5 +1,8 @@
 # Changelog
 
+## 6.22.1 - Apr 23, 2025
+* Add Forward Party as a political party option
+
 ## 6.22.0 - Apr 22, 2025
 * Add metadata to scraper output
 
