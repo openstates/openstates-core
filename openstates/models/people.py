@@ -39,6 +39,7 @@ class PartyName(str, Enum):
     NP = "Nonpartisan"
     PROG = "Progressive"
     REP = "Republican"
+    FWD = "Forward"
     MN_DFL = "Democratic-Farmer-Labor"
     VT_DEM_PROG = "Democratic/Progressive"
     VT_PROG_DEM = "Progressive/Democratic"

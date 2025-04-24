@@ -103,10 +103,11 @@ def validate_offices(person: Person) -> list[str]:
                     f"Value '{value}' used multiple times: {seen_values[value]} and {location_str}"
                 )
             seen_values[value] = location_str
+    # We have found legit instances where electeds have multiple offices of these types
     # if type_counter["District Office"] > 1:
     #     errors.append("Multiple district offices.")
-    if type_counter["capitol"] > 1:
-        errors.append("Multiple capitol offices, condense to one.")
+    # if type_counter["capitol"] > 1:
+    #     errors.append("Multiple capitol offices, condense to one.")
     return errors
 
 

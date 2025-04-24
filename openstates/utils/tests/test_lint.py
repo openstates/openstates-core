@@ -163,7 +163,6 @@ def test_validate_roles_retired(roles, expected):
                 {"classification": "capitol", "voice": "111-222-3333"},
                 {"classification": "capitol", "fax": "111-222-5555"},
             ],
-            ["Multiple capitol offices, condense to one."],
         ),
         (
             [

@@ -18,7 +18,7 @@ PR = State(
         chamber_type="lower",
         name="House",
         organization_id="ocd-organization/f932d329-15b2-4385-9d7d-d4b8a7ed8495",
-        num_seats=51,
+        num_seats=53,
         title="Representative",
         districts=[
             District("1", "lower", "ocd-division/country:us/territory:pr/sldl:1", 1),
@@ -65,7 +65,7 @@ PR = State(
                 "At-Large",
                 "lower",
                 "ocd-division/country:us/territory:pr/sldl:at-large",
-                11,
+                13,
             ),
         ],
     ),
@@ -73,7 +73,7 @@ PR = State(
         chamber_type="upper",
         name="Senate",
         organization_id="ocd-organization/c187ea65-5cd6-42fb-b08b-18e487855526",
-        num_seats=27,
+        num_seats=28,
         title="Senator",
         districts=[
             District("1", "upper", "ocd-division/country:us/territory:pr/sldu:1", 2),
@@ -84,7 +84,7 @@ PR = State(
             District("6", "upper", "ocd-division/country:us/territory:pr/sldu:6", 2),
             District("7", "upper", "ocd-division/country:us/territory:pr/sldu:7", 2),
             District("8", "upper", "ocd-division/country:us/territory:pr/sldu:8", 2),
-            District("At-Large", "upper", "ocd-division/country:us/territory:pr", 11),
+            District("At-Large", "upper", "ocd-division/country:us/territory:pr", 12),
         ],
     ),
 )
