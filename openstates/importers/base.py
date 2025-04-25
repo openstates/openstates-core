@@ -274,7 +274,9 @@ class BaseImporter:
         except KeyError:
             raise UnresolvedIdError("cannot resolve id: {}".format(json_id))
 
-    def import_directory(self, datadir: str, allow_duplicates=False) -> typing.Dict[str, typing.Dict]:
+    def import_directory(
+        self, datadir: str, allow_duplicates=False
+    ) -> typing.Dict[str, typing.Dict]:
         """import a JSON directory into the database"""
 
         def json_stream() -> typing.Iterator[_JsonDict]:
@@ -342,12 +344,17 @@ class BaseImporter:
 
         return {self._type: record}
 
-    def import_item(self, data: _JsonDict, allow_duplicates=False) -> typing.Tuple[_ID, str]:
+    def import_item(
+        self, data: _JsonDict, allow_duplicates=False
+    ) -> typing.Tuple[_ID, str]:
         """function used by import_data"""
         what = "noop"
 
         # remove the JSON _id (may still be there if called directly)
         data.pop("_id", None)
+        # Drop "jurisdiction" and "scraped_at" that is not needed for import
+        data.pop("jurisdiction", None)
+        data.pop("scraped_at", None)
         if self._type == "vote_event":
             data.pop("bill_identifier", None)
 
