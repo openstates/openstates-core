@@ -1,5 +1,8 @@
 # Changelog
 
+## 6.22.2 - Apr 25, 2025
+* Bug fix due to metadata error during import
+
 ## 6.22.1 - Apr 24, 2025
 * Add Forward Party as a political party option
 * Update PR senate to 28 seats incl 12 at-large
