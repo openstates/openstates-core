@@ -90,6 +90,7 @@ def do_scrape(
         fastmode=args.fastmode,
         realtime=args.realtime,
         file_archiving_enabled=args.archive,
+        http_resilience_mode=args.http_resilience,
     )
     report["jurisdiction"] = jscraper.do_scrape()
     stats.write_stats(
@@ -129,6 +130,7 @@ def do_scrape(
                     fastmode=args.fastmode,
                     realtime=args.realtime,
                     file_archiving_enabled=args.archive,
+                    http_resilience_mode=args.http_resilience,
                 )
                 partial_report = scraper.do_scrape(**scrape_args, session=session)
                 last_scrape_end_datetime = partial_report["end"]
@@ -163,6 +165,7 @@ def do_scrape(
                 fastmode=args.fastmode,
                 realtime=args.realtime,
                 file_archiving_enabled=args.archive,
+                http_resilience_mode=args.http_resilience,
             )
             report[scraper_name] = scraper.do_scrape(**scrape_args)
             last_scrape_end_datetime = report[scraper_name]["end"]
@@ -553,6 +556,13 @@ def parse_args() -> tuple[argparse.Namespace, list[str]]:
         help="scraper retry wait",
         type=int,
         dest="SCRAPELIB_RETRY_WAIT_SECONDS",
+    )
+
+    # HTTP resilience mode: enable random delays, user agents, more complicated retries
+    parser.add_argument(
+        "--http-resilience",
+        action="store_true",
+        help="enable HTTP resilience mode, defaults to false",
     )
 
     # realtime mode
