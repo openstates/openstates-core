@@ -1,5 +1,8 @@
 # Changelog
 
+## 6.22.3 - May 14, 2025
+* Use DAG run start time for archiving scrape output
+
 ## 6.22.2 - Apr 25, 2025
 * Bug fix due to metadata error during import
 
