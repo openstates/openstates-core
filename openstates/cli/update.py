@@ -103,7 +103,7 @@ def do_scrape(
         ]
     )
 
-    last_scrape_datetime = DAG_RUN_START or datetime.datetime.utcnow()
+    last_scrape_datetime = DAG_RUN_START or datetime.datetime.utcnow().isoformat()
     for scraper_name, scrape_args in scrapers.items():
         ScraperCls = juris.scrapers[scraper_name]
         if (
@@ -206,7 +206,7 @@ def do_scrape(
 
 
 def archive_to_cloud_storage(
-    datadir: str, juris: State, last_scrape_datetime: datetime.datetime
+    datadir: str, juris: State, last_scrape_datetime: str
 ) -> None:
     # check if we have necessary settings
     if GCP_PROJECT is None or BUCKET_NAME is None:
@@ -223,7 +223,7 @@ def archive_to_cloud_storage(
         bucket = cloud_storage_client.bucket(BUCKET_NAME)
         jurisdiction_id = juris.jurisdiction_id.replace("ocd-jurisdiction/", "")
         destination_prefix = (
-            f"{SCRAPE_LAKE_PREFIX}/{jurisdiction_id}/{last_scrape_datetime.isoformat()}"
+            f"{SCRAPE_LAKE_PREFIX}/{jurisdiction_id}/{last_scrape_datetime}"
         )
 
         # read files in directory and upload
