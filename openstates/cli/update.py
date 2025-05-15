@@ -33,6 +33,7 @@ ALL_ACTIONS = ("scrape", "import")
 GCP_PROJECT = os.environ.get("GCP_PROJECT", None)
 BUCKET_NAME = os.environ.get("BUCKET_NAME", None)
 SCRAPE_LAKE_PREFIX = os.environ.get("BUCKET_PREFIX", "legislation")
+DAG_RUN_START = os.environ.get("DAG_RUN_START", None)
 
 
 class _Unset:
@@ -102,7 +103,7 @@ def do_scrape(
         ]
     )
 
-    last_scrape_end_datetime = datetime.datetime.utcnow()
+    last_scrape_datetime = DAG_RUN_START or datetime.datetime.utcnow().isoformat()
     for scraper_name, scrape_args in scrapers.items():
         ScraperCls = juris.scrapers[scraper_name]
         if (
@@ -131,7 +132,6 @@ def do_scrape(
                     file_archiving_enabled=args.archive,
                 )
                 partial_report = scraper.do_scrape(**scrape_args, session=session)
-                last_scrape_end_datetime = partial_report["end"]
                 stats.write_stats(
                     [
                         {
@@ -165,7 +165,6 @@ def do_scrape(
                 file_archiving_enabled=args.archive,
             )
             report[scraper_name] = scraper.do_scrape(**scrape_args)
-            last_scrape_end_datetime = report[scraper_name]["end"]
             session = scrape_args.get("session", "")
             if session:
                 stats.write_stats(
@@ -201,13 +200,13 @@ def do_scrape(
     # optionally upload scrape output to cloud storage
     # but do not archive if realtime mode enabled, as realtime mode has its own archiving process
     if args.archive and not args.realtime:
-        archive_to_cloud_storage(datadir, juris, last_scrape_end_datetime)
+        archive_to_cloud_storage(datadir, juris, last_scrape_datetime)
 
     return report
 
 
 def archive_to_cloud_storage(
-    datadir: str, juris: State, last_scrape_end_datetime: datetime.datetime
+    datadir: str, juris: State, last_scrape_datetime: str
 ) -> None:
     # check if we have necessary settings
     if GCP_PROJECT is None or BUCKET_NAME is None:
@@ -224,7 +223,7 @@ def archive_to_cloud_storage(
         bucket = cloud_storage_client.bucket(BUCKET_NAME)
         jurisdiction_id = juris.jurisdiction_id.replace("ocd-jurisdiction/", "")
         destination_prefix = (
-            f"{SCRAPE_LAKE_PREFIX}/{jurisdiction_id}/{last_scrape_end_datetime.isoformat()}"
+            f"{SCRAPE_LAKE_PREFIX}/{jurisdiction_id}/{last_scrape_datetime}"
         )
 
         # read files in directory and upload
