@@ -91,15 +91,15 @@ class Scraper(scrapelib.Scraper):
     """Base class for all scrapers"""
 
     def __init__(
-        self,
-        jurisdiction,
-        datadir,
-        *,
-        strict_validation=True,
-        fastmode=False,
-        realtime=False,
-        file_archiving_enabled=False,
-        http_resilience_mode=False,
+            self,
+            jurisdiction,
+            datadir,
+            *,
+            strict_validation=True,
+            fastmode=False,
+            realtime=False,
+            file_archiving_enabled=False,
+            http_resilience_mode=False,
     ):
         super(Scraper, self).__init__()
 
@@ -118,6 +118,7 @@ class Scraper(scrapelib.Scraper):
 
         # HTTP connection resilience settings
         self.http_resilience_mode = http_resilience_mode
+        self.http_resilience_headers = {}
         # http resilience: Set up a circuit breaker to track consecutive failures
         self._consecutive_failures = 0
         self._max_consecutive_failures = 3
@@ -223,9 +224,8 @@ class Scraper(scrapelib.Scraper):
 
             # Remove redundant prefix
             try:
-                upload_file_path = file_path[
-                    file_path.index("_data") + len("_data") + 1 :
-                ]
+                index = file_path.index("_data") + len("_data") + 1
+                upload_file_path = file_path[index:]
             except Exception:
                 upload_file_path = file_path
 
@@ -350,16 +350,16 @@ class Scraper(scrapelib.Scraper):
                 self.headers["User-Agent"] = get_random_user_agent()
 
     def get(self, url, **kwargs):
-        request_func = lambda: super(Scraper, self).get(url, **kwargs)
+        request_func = lambda: super(Scraper, self).get(url, **kwargs)  # noqa: E731
         if self.http_resilience_mode:
-            self.request_resiliently(request_func)
+            return self.request_resiliently(request_func)
         else:
             return super().get(url, **kwargs)
 
     def post(self, url, data=None, json=None, **kwargs):
-        request_func = lambda: super(Scraper, self).post(url, data=data, json=json **kwargs)
+        request_func = lambda: super(Scraper, self).post(url, data=data, json=json ** kwargs)  # noqa: E731
         if self.http_resilience_mode:
-            self.request_resiliently(request_func)
+            return self.request_resiliently(request_func)
         else:
             return super().post(url, data=data, json=json, **kwargs)
 
@@ -416,8 +416,8 @@ class Scraper(scrapelib.Scraper):
         # Create a new session
         self.session = requests.Session()
 
-        # IA specific thing
-        self.session.headers.update({"X-Requested-With": "XMLHttpRequest"})
+        # Set any custom headers
+        self.session.headers.update(self.http_resilience_headers)
 
         # Set up retry mechanism
         adapter = requests.adapters.HTTPAdapter(
@@ -464,7 +464,6 @@ class Scraper(scrapelib.Scraper):
         delay = random.uniform(min_seconds, max_seconds)
         self.logger.debug(f"Adding random delay of {delay:.2f} seconds")
         time.sleep(delay)
-
 
 
 class BaseBillScraper(Scraper):
@@ -598,15 +597,15 @@ class LinkMixin(object):
 
 class AssociatedLinkMixin(object):
     def _add_associated_link(
-        self,
-        collection,
-        note,
-        url,
-        *,
-        media_type,
-        on_duplicate="warn",
-        date="",
-        classification="",
+            self,
+            collection,
+            note,
+            url,
+            *,
+            media_type,
+            on_duplicate="warn",
+            date="",
+            classification="",
     ):
         if on_duplicate not in ["error", "ignore", "warn"]:
             raise ScrapeValueError("on_duplicate must be 'warn', 'error' or 'ignore'")
@@ -633,7 +632,7 @@ class AssociatedLinkMixin(object):
                 seen_links.add(link["url"])
 
             if all(
-                ver.get(x) == item.get(x) for x in ["note", "date", "classification"]
+                    ver.get(x) == item.get(x) for x in ["note", "date", "classification"]
             ):
                 matches = matches + 1
                 ver = item
