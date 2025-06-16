@@ -1,6 +1,7 @@
 import boto3  # noqa
 import datetime
 from http.client import RemoteDisconnected
+from google.cloud import storage  # type: ignore
 import importlib
 import json
 import jsonschema
@@ -17,6 +18,11 @@ from jsonschema import Draft3Validator, FormatChecker
 
 from .. import utils, settings
 from ..exceptions import ScrapeError, ScrapeValueError, EmptyScrape
+
+
+GCP_PROJECT = os.environ.get("GCP_PROJECT", None)
+BUCKET_NAME = os.environ.get("BUCKET_NAME", None)
+SCRAPE_LAKE_PREFIX = os.environ.get("BUCKET_PREFIX", "legislation")
 
 
 @FormatChecker.cls_checks("uri-blank")
@@ -91,15 +97,15 @@ class Scraper(scrapelib.Scraper):
     """Base class for all scrapers"""
 
     def __init__(
-            self,
-            jurisdiction,
-            datadir,
-            *,
-            strict_validation=True,
-            fastmode=False,
-            realtime=False,
-            file_archiving_enabled=False,
-            http_resilience_mode=False,
+        self,
+        jurisdiction,
+        datadir,
+        *,
+        strict_validation=True,
+        fastmode=False,
+        realtime=False,
+        file_archiving_enabled=False,
+        http_resilience_mode=False,
     ):
         super(Scraper, self).__init__()
 
@@ -131,6 +137,9 @@ class Scraper(scrapelib.Scraper):
 
         # output
         self.output_file_path = None
+        self._data_classes = settings.DATA_CLASSES
+        self._flush_interval = 60 * 15  # 15 minutes
+        self._last_flush_time = time.time()
 
         # caching
         if settings.CACHE_DIR:
@@ -196,6 +205,52 @@ class Scraper(scrapelib.Scraper):
         )
         self.info(f"Message ID: {response['MessageId']}")
 
+    def _flush_jsonl_to_gcs(self):
+        cloud_storage_client = storage.Client(project=GCP_PROJECT)
+        bucket = cloud_storage_client.bucket(BUCKET_NAME)
+
+        for data_class in self._data_classes:
+            jsonl_path = os.path.join(self.datadir, f"{data_class}.jsonl")
+            if os.path.exists(jsonl_path) and os.path.getsize(jsonl_path) > 0:
+                timestamp = datetime.datetime.now(datetime.timezone.utc).isoformat()
+                jurisdiction_id = self.jurisdiction.jurisdiction_id.replace(
+                    "ocd-jurisdiction/", ""
+                )
+                dest_file_path = f"{SCRAPE_LAKE_PREFIX}/realtime/{data_class}/{jurisdiction_id}/{timestamp}.jsonl"
+
+                blob = bucket.blob(dest_file_path)
+                blob.upload_from_filename(jsonl_path)
+                self.logger.info(f"Uploaded {data_class} to GCS: {dest_file_path}")
+                # Delete the local file after upload
+                os.remove(jsonl_path)
+
+    def archive_to_gcs_real_time(self, obj):
+        if GCP_PROJECT is None or BUCKET_NAME is None:
+            self.logger.warning(
+                "Real-time Upload missing necessary settings are missing. No archive was done."
+            )
+            return
+
+        obj_dict = obj.as_dict()
+        data_class = obj._type
+
+        if data_class not in self._data_classes:
+            raise ScrapeError(
+                f"Unsupported data class for gcs_real_time_upload {data_class}"
+            )
+            return
+
+        jsonl_path = os.path.join(self.datadir, f"{data_class}.jsonl")
+        # with self._lock:
+        with open(jsonl_path, "a") as f:
+            json.dump(obj_dict, f, cls=utils.JSONEncoderPlus)
+            f.write("\n")
+
+        now = time.time()
+        if now - self._last_flush_time >= self._flush_interval:
+            self._flush_jsonl_to_gcs()
+            self._last_flush_time = now
+
     def save_object(self, obj):
         """
         Save object to disk as JSON.
@@ -249,6 +304,9 @@ class Scraper(scrapelib.Scraper):
             else:
                 with open(file_path, "w") as f:
                     json.dump(obj.as_dict(), f, cls=utils.JSONEncoderPlus)
+
+            # Periodically push data to GCS by data class
+            self.archive_to_gcs_real_time(obj)
 
         else:
             self.scrape_output_handler.handle(obj)
@@ -344,7 +402,9 @@ class Scraper(scrapelib.Scraper):
             # If it's a connection error, add a longer delay
             if isinstance(e, (ConnectionError, RemoteDisconnected)):
                 self.logger.warning("Connection error. Adding longer delay.")
-                self.add_random_delay(self._random_delay_on_failure_min, self._random_delay_on_failure_max)
+                self.add_random_delay(
+                    self._random_delay_on_failure_min, self._random_delay_on_failure_max
+                )
 
                 # Rotate user agent after connection error
                 self.headers["User-Agent"] = get_random_user_agent()
@@ -357,13 +417,17 @@ class Scraper(scrapelib.Scraper):
             return super().get(url, **kwargs)
 
     def post(self, url, data=None, json=None, **kwargs):
-        request_func = lambda: super(Scraper, self).post(url, data=data, json=json ** kwargs)  # noqa: E731
+        request_func = lambda: super(Scraper, self).post(
+            url, data=data, json=json**kwargs
+        )  # noqa: E731
         if self.http_resilience_mode:
             return self.request_resiliently(request_func)
         else:
             return super().post(url, data=data, json=json, **kwargs)
 
-    def retry_on_connection_error(self, func, max_retries=5, initial_backoff=2, max_backoff=60):
+    def retry_on_connection_error(
+        self, func, max_retries=5, initial_backoff=2, max_backoff=60
+    ):
         """
         Retry a function call on connection errors with exponential backoff.
 
@@ -383,15 +447,17 @@ class Scraper(scrapelib.Scraper):
             try:
                 return func()
             except (
-                    ConnectionError,
-                    RemoteDisconnected,
-                    URLError,
-                    requests.exceptions.Timeout,
-                    requests.exceptions.RequestException,
+                ConnectionError,
+                RemoteDisconnected,
+                URLError,
+                requests.exceptions.Timeout,
+                requests.exceptions.RequestException,
             ) as e:
                 retries += 1
                 if retries > max_retries:
-                    self.logger.error(f"Max retries ({max_retries}) exceeded. Last error: {e}")
+                    self.logger.error(
+                        f"Max retries ({max_retries}) exceeded. Last error: {e}"
+                    )
                     raise
 
                 # Calculate backoff with jitter
@@ -597,15 +663,15 @@ class LinkMixin(object):
 
 class AssociatedLinkMixin(object):
     def _add_associated_link(
-            self,
-            collection,
-            note,
-            url,
-            *,
-            media_type,
-            on_duplicate="warn",
-            date="",
-            classification="",
+        self,
+        collection,
+        note,
+        url,
+        *,
+        media_type,
+        on_duplicate="warn",
+        date="",
+        classification="",
     ):
         if on_duplicate not in ["error", "ignore", "warn"]:
             raise ScrapeValueError("on_duplicate must be 'warn', 'error' or 'ignore'")
@@ -632,7 +698,7 @@ class AssociatedLinkMixin(object):
                 seen_links.add(link["url"])
 
             if all(
-                    ver.get(x) == item.get(x) for x in ["note", "date", "classification"]
+                ver.get(x) == item.get(x) for x in ["note", "date", "classification"]
             ):
                 matches = matches + 1
                 ver = item

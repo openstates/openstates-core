@@ -3,9 +3,7 @@ from .utils import transformers
 
 # settings for realtime flag
 S3_REALTIME_BASE = os.environ.get("S3_REALTIME_BASE")  # e.g 's3://realtime-bucket'
-SQS_QUEUE_URL = os.environ.get(
-    "SQS_QUEUE_URL"
-)
+SQS_QUEUE_URL = os.environ.get("SQS_QUEUE_URL")
 
 # scrape settings
 
@@ -27,12 +25,18 @@ SCRAPED_DATA_DIR = os.path.join(os.getcwd(), "_data")
 IMPORT_TRANSFORMERS = {
     "bill": {
         "identifier": transformers.fix_bill_id,
-        "documents": {"note": transformers.truncate_300},  # TODO remove when db migration done
-        "versions": {"note": transformers.truncate_300},  # TODO remove when db migration done
+        "documents": {
+            "note": transformers.truncate_300
+        },  # TODO remove when db migration done
+        "versions": {
+            "note": transformers.truncate_300
+        },  # TODO remove when db migration done
     },
     "event": {
-        "media": {"note": transformers.truncate_300},  # TODO remove when db migration done
-    }
+        "media": {
+            "note": transformers.truncate_300
+        },  # TODO remove when db migration done
+    },
 }
 
 # Django settings
@@ -59,3 +63,6 @@ LOGGING = {
         "boto": {"handlers": ["default"], "level": "WARN", "propagate": False},
     },
 }
+
+# Realtime Upload
+DATA_CLASSES = ["bill", "event", "vote_event", "jurisdiction", "organization"]
