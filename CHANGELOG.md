@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.24.0 - Jun 17, 2025
+* Incrementally saving scrape output to GCS, --archive turned on. Uses a default interval of 15 minutes to upload a JSONL file of 
+  by data class. Data class can be jurisdiction, organization, bill, event and vote event. 
+
 ## 6.23.0 - May 21, 2025
 * Introduces --http-resilience flag for the os-update command which runs a scraper with techniques to avoid getting
   disconnected from a source server.
