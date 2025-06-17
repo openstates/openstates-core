@@ -310,7 +310,8 @@ class Scraper(scrapelib.Scraper):
                     json.dump(obj.as_dict(), f, cls=utils.JSONEncoderPlus)
 
             # Periodically push data to GCS by data class
-            self.archive_to_gcs_real_time(obj)
+            if self.file_archiving_enabled:
+                self.archive_to_gcs_real_time(obj)
 
         else:
             self.scrape_output_handler.handle(obj)
@@ -421,9 +422,7 @@ class Scraper(scrapelib.Scraper):
             return super().get(url, **kwargs)
 
     def post(self, url, data=None, json=None, **kwargs):
-        request_func = lambda: super(Scraper, self).post(
-            url, data=data, json=json**kwargs
-        )  # noqa: E731
+        request_func = lambda: super(Scraper, self).post(url, data=data, json=json**kwargs)  # noqa: E731
         if self.http_resilience_mode:
             return self.request_resiliently(request_func)
         else:

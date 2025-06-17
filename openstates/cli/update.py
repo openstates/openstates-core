@@ -169,7 +169,8 @@ def do_scrape(
             )
             report[scraper_name] = scraper.do_scrape(**scrape_args)
             session = scrape_args.get("session", "")
-            scraper.archive_to_gcs_real_time(force_flush=True)
+            if args.archive:
+                scraper.archive_to_gcs_real_time(force_flush=True)
             if session:
                 stats.write_stats(
                     [
