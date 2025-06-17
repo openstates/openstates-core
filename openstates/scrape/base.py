@@ -138,8 +138,8 @@ class Scraper(scrapelib.Scraper):
         # output
         self.output_file_path = None
         self._data_classes = settings.DATA_CLASSES
-        self._flush_interval = 60 * 15  # 15 minutes
-        self._last_flush_time = time.time()
+        self._archive_interval = 60 * 15  # 15 minutes
+        self._last_archive_time = time.time()
 
         # caching
         if settings.CACHE_DIR:
@@ -205,7 +205,7 @@ class Scraper(scrapelib.Scraper):
         )
         self.info(f"Message ID: {response['MessageId']}")
 
-    def _flush_jsonl_to_gcs(self):
+    def _force_archive_jsonl_to_gcs(self):
         cloud_storage_client = storage.Client(project=GCP_PROJECT)
         bucket = cloud_storage_client.bucket(BUCKET_NAME)
 
@@ -216,7 +216,7 @@ class Scraper(scrapelib.Scraper):
                 jurisdiction_id = self.jurisdiction.jurisdiction_id.replace(
                     "ocd-jurisdiction/", ""
                 )
-                dest_file_path = f"{SCRAPE_LAKE_PREFIX}/realtime/{data_class}/{jurisdiction_id}/{timestamp}.jsonl"
+                dest_file_path = f"{SCRAPE_LAKE_PREFIX}/realtime/{jurisdiction_id}/{data_class}_{timestamp}.jsonl"
 
                 blob = bucket.blob(dest_file_path)
                 blob.upload_from_filename(jsonl_path)
@@ -224,32 +224,36 @@ class Scraper(scrapelib.Scraper):
                 # Delete the local file after upload
                 os.remove(jsonl_path)
 
-    def archive_to_gcs_real_time(self, obj):
+    def archive_to_gcs_real_time(self, obj=None, force_archive=False):
+        """
+        Save scrape output to object bucket every interval
+        """
         if GCP_PROJECT is None or BUCKET_NAME is None:
             self.logger.warning(
                 "Real-time Upload missing necessary settings are missing. No archive was done."
             )
             return
 
-        obj_dict = obj.as_dict()
-        data_class = obj._type
+        # Attempt to save only when there is an object.
+        if obj:
+            obj_dict = obj.as_dict()
+            data_class = obj._type
 
-        if data_class not in self._data_classes:
-            raise ScrapeError(
-                f"Unsupported data class for gcs_real_time_upload {data_class}"
-            )
-            return
+            if data_class not in self._data_classes:
+                raise ScrapeError(
+                    f"Unsupported data class for gcs_real_time_upload {data_class}"
+                )
+                return
 
-        jsonl_path = os.path.join(self.datadir, f"{data_class}.jsonl")
-        # with self._lock:
-        with open(jsonl_path, "a") as f:
-            json.dump(obj_dict, f, cls=utils.JSONEncoderPlus)
-            f.write("\n")
+            jsonl_path = os.path.join(self.datadir, f"{data_class}.jsonl")
+            with open(jsonl_path, "a") as f:
+                json.dump(obj_dict, f, cls=utils.JSONEncoderPlus)
+                f.write("\n")
 
         now = time.time()
-        if now - self._last_flush_time >= self._flush_interval:
-            self._flush_jsonl_to_gcs()
-            self._last_flush_time = now
+        if force_archive or now - self._last_archive_time >= self._archive_interval:
+            self._force_archive_jsonl_to_gcs()
+            self._last_archive_time = now
 
     def save_object(self, obj):
         """
