@@ -65,4 +65,4 @@ LOGGING = {
 }
 
 # Realtime Upload
-DATA_CLASSES = ["bill", "event", "vote_event", "jurisdiction", "organization"]
+REALTIME_UPLOAD_DATA_CLASSES = ["bill", "event", "vote_event", "jurisdiction", "organization"]

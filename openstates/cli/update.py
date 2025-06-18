@@ -157,6 +157,8 @@ def do_scrape(
                         }
                     ]
                 )
+                if args.realtime:
+                    scraper.upload_to_gcs_real_time(force_upload=True)
         else:
             scraper = ScraperCls(
                 juris,
@@ -169,8 +171,8 @@ def do_scrape(
             )
             report[scraper_name] = scraper.do_scrape(**scrape_args)
             session = scrape_args.get("session", "")
-            if args.archive:
-                scraper.archive_to_gcs_real_time(force_flush=True)
+            if args.realtime:
+                scraper.upload_to_gcs_real_time(force_upload=True)
             if session:
                 stats.write_stats(
                     [

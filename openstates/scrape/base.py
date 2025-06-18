@@ -22,7 +22,9 @@ from ..exceptions import ScrapeError, ScrapeValueError, EmptyScrape
 
 GCP_PROJECT = os.environ.get("GCP_PROJECT", None)
 BUCKET_NAME = os.environ.get("BUCKET_NAME", None)
-SCRAPE_LAKE_PREFIX = os.environ.get("BUCKET_PREFIX", "legislation")
+SCRAPE_REALTIME_LAKE_PREFIX = os.environ.get(
+    "SCRAPE_REALTIME_LAKE_PREFIX", "legislation/realtime"
+)
 
 
 @FormatChecker.cls_checks("uri-blank")
@@ -137,9 +139,9 @@ class Scraper(scrapelib.Scraper):
 
         # output
         self.output_file_path = None
-        self._data_classes = settings.DATA_CLASSES
-        self._archive_interval = 60 * 15  # 15 minutes
-        self._last_archive_time = time.time()
+        self._realtime_upload_data_classes = settings.REALTIME_UPLOAD_DATA_CLASSES
+        self._upload_interval = 60 * 15  # 15 minutes
+        self._last_upload_time = time.time()
 
         # caching
         if settings.CACHE_DIR:
@@ -205,55 +207,59 @@ class Scraper(scrapelib.Scraper):
         )
         self.info(f"Message ID: {response['MessageId']}")
 
-    def _force_archive_jsonl_to_gcs(self):
+    def _upload_jsonl_to_gcs(self):
         cloud_storage_client = storage.Client(project=GCP_PROJECT)
         bucket = cloud_storage_client.bucket(BUCKET_NAME)
 
-        for data_class in self._data_classes:
-            jsonl_path = os.path.join(self.datadir, f"{data_class}.jsonl")
+        for upload_data_class in self._realtime_upload_data_classes:
+            jsonl_path = os.path.join(self.datadir, f"{upload_data_class}.jsonl")
             if os.path.exists(jsonl_path) and os.path.getsize(jsonl_path) > 0:
-                timestamp = datetime.datetime.now(datetime.timezone.utc).isoformat()
+                now = datetime.datetime.now(datetime.timezone.utc)
+                scrape_year_month = now.strftime("%Y-%m")
+                timestamp = now.isoformat()
                 jurisdiction_id = self.jurisdiction.jurisdiction_id.replace(
                     "ocd-jurisdiction/", ""
                 )
-                dest_file_path = f"{SCRAPE_LAKE_PREFIX}/realtime/{jurisdiction_id}/{data_class}_{timestamp}.jsonl"
+                dest_file_path = f"{SCRAPE_REALTIME_LAKE_PREFIX}/{jurisdiction_id}/{scrape_year_month}/{upload_data_class}_{timestamp}.jsonl"
 
                 blob = bucket.blob(dest_file_path)
                 blob.upload_from_filename(jsonl_path)
-                self.logger.info(f"Uploaded {data_class} to GCS: {dest_file_path}")
+                self.logger.info(
+                    f"Uploaded {upload_data_class} to GCS: {dest_file_path}"
+                )
                 # Delete the local file after upload
                 os.remove(jsonl_path)
 
-    def archive_to_gcs_real_time(self, obj=None, force_archive=False):
+    def upload_to_gcs_real_time(self, obj=None, force_upload=False):
         """
         Save scrape output to object bucket every interval
         """
         if GCP_PROJECT is None or BUCKET_NAME is None:
             self.logger.warning(
-                "Real-time Upload missing necessary settings are missing. No archive was done."
+                "Real-time Upload missing necessary settings are missing. No upload was done."
             )
             return
 
         # Attempt to save only when there is an object.
         if obj:
             obj_dict = obj.as_dict()
-            data_class = obj._type
+            upload_data_class = obj._type
 
-            if data_class not in self._data_classes:
+            if upload_data_class not in self._realtime_upload_data_classes:
                 raise ScrapeError(
-                    f"Unsupported data class for gcs_real_time_upload {data_class}"
+                    f"Unsupported data class for gcs_real_time_upload {upload_data_class}"
                 )
                 return
 
-            jsonl_path = os.path.join(self.datadir, f"{data_class}.jsonl")
+            jsonl_path = os.path.join(self.datadir, f"{upload_data_class}.jsonl")
             with open(jsonl_path, "a") as f:
                 json.dump(obj_dict, f, cls=utils.JSONEncoderPlus)
                 f.write("\n")
 
         now = time.time()
-        if force_archive or now - self._last_archive_time >= self._archive_interval:
-            self._force_archive_jsonl_to_gcs()
-            self._last_archive_time = now
+        if force_upload or now - self._last_upload_time >= self._upload_interval:
+            self._upload_jsonl_to_gcs()
+            self._last_upload_time = now
 
     def save_object(self, obj):
         """
@@ -281,37 +287,12 @@ class Scraper(scrapelib.Scraper):
         if self.scrape_output_handler is None:
             file_path = os.path.join(self.datadir, filename)
 
-            # Remove redundant prefix
-            try:
-                index = file_path.index("_data") + len("_data") + 1
-                upload_file_path = file_path[index:]
-            except Exception:
-                upload_file_path = file_path
-
-            if self.realtime:
-                self.output_file_path = str(upload_file_path)
-
-                s3 = boto3.client("s3")
-                bucket = settings.S3_REALTIME_BASE.removeprefix("s3://")
-
-                s3.put_object(
-                    Body=json.dumps(
-                        OrderedDict(sorted(obj.as_dict().items())),
-                        cls=utils.JSONEncoderPlus,
-                        separators=(",", ": "),
-                    ),
-                    Bucket=bucket,
-                    Key=self.output_file_path,
-                )
-
-                self.push_to_queue()
-            else:
-                with open(file_path, "w") as f:
-                    json.dump(obj.as_dict(), f, cls=utils.JSONEncoderPlus)
+            with open(file_path, "w") as f:
+                json.dump(obj.as_dict(), f, cls=utils.JSONEncoderPlus)
 
             # Periodically push data to GCS by data class
-            if self.file_archiving_enabled:
-                self.archive_to_gcs_real_time(obj)
+            if self.realtime:
+                self.upload_to_gcs_real_time(obj)
 
         else:
             self.scrape_output_handler.handle(obj)
@@ -422,7 +403,9 @@ class Scraper(scrapelib.Scraper):
             return super().get(url, **kwargs)
 
     def post(self, url, data=None, json=None, **kwargs):
-        request_func = lambda: super(Scraper, self).post(url, data=data, json=json**kwargs)  # noqa: E731
+        request_func = lambda: super(Scraper, self).post(
+            url, data=data, json=json**kwargs
+        )  # noqa: E731
         if self.http_resilience_mode:
             return self.request_resiliently(request_func)
         else:
