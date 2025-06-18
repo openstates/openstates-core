@@ -403,9 +403,7 @@ class Scraper(scrapelib.Scraper):
             return super().get(url, **kwargs)
 
     def post(self, url, data=None, json=None, **kwargs):
-        request_func = lambda: super(Scraper, self).post(
-            url, data=data, json=json**kwargs
-        )  # noqa: E731
+        request_func = lambda: super(Scraper, self).post(url, data=data, json=json**kwargs)  # noqa: E731
         if self.http_resilience_mode:
             return self.request_resiliently(request_func)
         else:
