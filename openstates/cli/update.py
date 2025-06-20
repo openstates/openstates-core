@@ -157,6 +157,8 @@ def do_scrape(
                         }
                     ]
                 )
+                if args.realtime:
+                    scraper.upload_to_gcs_real_time(force_upload=True)
         else:
             scraper = ScraperCls(
                 juris,
@@ -169,6 +171,8 @@ def do_scrape(
             )
             report[scraper_name] = scraper.do_scrape(**scrape_args)
             session = scrape_args.get("session", "")
+            if args.realtime:
+                scraper.upload_to_gcs_real_time(force_upload=True)
             if session:
                 stats.write_stats(
                     [
@@ -237,11 +241,15 @@ def archive_to_cloud_storage(
             blob = bucket.blob(blob_name)
             blob.upload_from_filename(file_path)
 
-        logger.info(f"Completed archive to Google Cloud Storage, {files_count} files "
-                    f"were uploaded to {destination_prefix}.")
+        logger.info(
+            f"Completed archive to Google Cloud Storage, {files_count} files "
+            f"were uploaded to {destination_prefix}."
+        )
 
     except Exception as e:
-        logger.warning(f"An error occurred during the attempt to archive files to Google Cloud Storage: {e}")
+        logger.warning(
+            f"An error occurred during the attempt to archive files to Google Cloud Storage: {e}"
+        )
 
 
 def do_import(juris: State, args: argparse.Namespace) -> dict[str, typing.Any]:
@@ -266,11 +274,23 @@ def do_import(juris: State, args: argparse.Namespace) -> dict[str, typing.Any]:
         logger.info("import jurisdictions...")
         report.update(juris_importer.import_directory(datadir))
         logger.info("import bills...")
-        report.update(bill_importer.import_directory(datadir, allow_duplicates=args.allow_duplicates))
+        report.update(
+            bill_importer.import_directory(
+                datadir, allow_duplicates=args.allow_duplicates
+            )
+        )
         logger.info("import vote events...")
-        report.update(vote_event_importer.import_directory(datadir, allow_duplicates=args.allow_duplicates))
+        report.update(
+            vote_event_importer.import_directory(
+                datadir, allow_duplicates=args.allow_duplicates
+            )
+        )
         logger.info("import events...")
-        report.update(event_importer.import_directory(datadir, allow_duplicates=args.allow_duplicates))
+        report.update(
+            event_importer.import_directory(
+                datadir, allow_duplicates=args.allow_duplicates
+            )
+        )
         DatabaseJurisdiction.objects.filter(id=juris.jurisdiction_id).update(
             latest_bill_update=datetime.datetime.utcnow()
         )
