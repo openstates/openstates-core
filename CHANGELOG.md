@@ -1,5 +1,8 @@
 # Changelog
 
+## 6.24.1 - Jun 22, 2025
+* Update file path for real-time upload. 
+
 ## 6.24.0 - Jun 17, 2025
 * Incrementally saving scrape output to GCS, if `--realtime` flag is used.
   Uses a default interval of 15 minutes to upload a JSONL file by data class.
