@@ -220,7 +220,7 @@ class Scraper(scrapelib.Scraper):
                 jurisdiction_id = self.jurisdiction.jurisdiction_id.replace(
                     "ocd-jurisdiction/", ""
                 )
-                dest_file_path = f"{SCRAPE_REALTIME_LAKE_PREFIX}/{jurisdiction_id}/{scrape_year_month}/{upload_data_class}_{timestamp}.jsonl"
+                dest_file_path = f"{SCRAPE_REALTIME_LAKE_PREFIX}/{upload_data_class}/{jurisdiction_id}/{scrape_year_month}/{upload_data_class}_{timestamp}.jsonl"
 
                 blob = bucket.blob(dest_file_path)
                 blob.upload_from_filename(jsonl_path)
