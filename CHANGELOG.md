@@ -1,5 +1,10 @@
 # Changelog
 
+## 6.24.2 - Jun 24, 2025
+* Change real-time mode to be non-exclusive while we work on refactoring it.
+  The --realtime flag will no longer prevent normal import nor prevent the
+  --archive logic from working.
+
 ## 6.24.1 - Jun 22, 2025
 * Update file path for real-time upload. 
 
