@@ -205,8 +205,8 @@ def do_scrape(
                 )
 
     # optionally upload scrape output to cloud storage
-    # but do not archive if realtime mode enabled, as realtime mode has its own archiving process
-    if args.archive and not args.realtime:
+    # archive and realtime BOTH coexist for now, as we refactor realtime
+    if args.archive:  # and not args.realtime:
         archive_to_cloud_storage(datadir, juris, last_scrape_datetime)
 
     return report
@@ -422,8 +422,8 @@ def do_update(
                     }
                 ]
             )
-        # we skip import in realtime mode since this happens via the lambda function
-        if "import" in args.actions and not args.realtime:
+        # realtime and normal import coexist for now as we refactor realtime
+        if "import" in args.actions:  # and not args.realtime:
             report["import"] = do_import(juris, args)
             stats.write_stats(
                 [
