@@ -1,4 +1,4 @@
-version: "3.5"
+# version: "3.5"
 
 # shared network to let these services connect to other containerized openstates services
 networks:

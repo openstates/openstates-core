@@ -21,9 +21,8 @@ os-people-repo-update = 'openstates.cli.people_repo_update:main'
 
 [tool.poetry.dependencies]
 python = "^3.9"
-psycopg2-binary = "^2.8.4"
 dj_database_url = "^0.5.0"
-Django = "3.2.14"
+Django = "4.0.10"
 scrapelib = "^2.0.7"
 jsonschema = "^3.2.0"
 click = "^8.0"
@@ -37,19 +36,18 @@ PyJWT = "^2.5.0"
 boto3 = "^1.26.61"
 us = "^3.1.1"
 influxdb-client = "^1.37.0"
-pytz = "^2024.1"
 google-cloud-storage = "^2.18.0"
 gitpython = "^3.1.44"
+psycopg2-binary = "2.9.3" # changed from 2.9.10 to resolve Mac M1 compatibility issues
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.4.1"
 pytest-cov = "^2.8.1"
-pytest-django = "^3.8.0"
+pytest-django = "4.5.0"
 coveralls = "^1.11.1"
 flake8 = "^3.7.9"
 coverage = {extras = ["toml"], version = "^5.0.4"}
 mypy = "^0.900"
-types-pytz = "^2021.1.0"
 types-click = "^7.1.2"
 types-PyYAML = "^5.4.3"
 types-requests = "^2.28.11.5"
@@ -58,6 +56,7 @@ black = "^22.10.0"
 [tool.poetry.group.dev.dependencies]
 types-jsonschema = "^4.17.0.3"
 types-influxdb-client = "^1.37.0.0"
+django-upgrade = "^1.25.0"
 
 [tool.coverage.run]
 omit = [
