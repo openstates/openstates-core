@@ -227,7 +227,7 @@ def archive_to_cloud_storage(
     # Temporarily override any HTTP_PROXY env var
     # because GCP client uses requests, and it doesn't like self-signed cert in chain
     # so we do NOT want to use http proxy when connecting to google
-    prior_proxy_env = os.getenv('HTTP_PROXY')
+    prior_proxy_env = os.getenv('HTTP_PROXY') or ""
     os.environ["HTTP_PROXY"] = ""
     os.environ["HTTPS_PROXY"] = ""
 
