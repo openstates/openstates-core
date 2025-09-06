@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.24.5 - Sep 5, 2025
+* Fix NEW bug introduced by messing with proxy/realtime (python, why would
+  you retrieve a value for an env var that you can't encode back to an env var?)
+
 ## 6.24.4 - Sep 5, 2025
 * Fix same bug but with interaction between archive mode and HTTP proxy
 
