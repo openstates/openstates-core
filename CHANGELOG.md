@@ -1,5 +1,11 @@
 # Changelog
 
+## 6.24.3 - Sep 5, 2025
+* Fix bug caused by interaction between usage of 3rd party HTTP proxy and
+  realtime storage of output to GCS.
+* Fix bug where request output is returned as None in some cases, when using
+  --http-resilience mode
+
 ## 6.24.2 - Jun 24, 2025
 * Change real-time mode to be non-exclusive while we work on refactoring it.
   The --realtime flag will no longer prevent normal import nor prevent the
