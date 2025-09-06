@@ -234,6 +234,12 @@ class Scraper(scrapelib.Scraper):
         """
         Save scrape output to object bucket every interval
         """
+        # Temporarily override any HTTP_PROXY env var
+        # because GCP client uses requests, and it doesn't like self-signed cert in chain
+        # so we do NOT want to use http proxy when connecting to google
+        prior_proxy_env = os.getenv('HTTP_PROXY')
+        os.environ["HTTP_PROXY"] = ""
+        os.environ["HTTPS_PROXY"] = ""
         if GCP_PROJECT is None or BUCKET_NAME is None:
             self.logger.warning(
                 "Real-time Upload missing necessary settings are missing. No upload was done."
@@ -260,6 +266,10 @@ class Scraper(scrapelib.Scraper):
         if force_upload or now - self._last_upload_time >= self._upload_interval:
             self._upload_jsonl_to_gcs()
             self._last_upload_time = now
+
+        # Reset HTTP_PROXY settings to prior value, see comment above
+        os.environ["HTTP_PROXY"] = prior_proxy_env
+        os.environ["HTTPS_PROXY"] = prior_proxy_env
 
     def save_object(self, obj):
         """
@@ -394,6 +404,8 @@ class Scraper(scrapelib.Scraper):
 
                 # Rotate user agent after connection error
                 self.headers["User-Agent"] = get_random_user_agent()
+            else:
+                raise e
 
     def get(self, url, **kwargs):
         request_func = lambda: super(Scraper, self).get(url, **kwargs)  # noqa: E731
