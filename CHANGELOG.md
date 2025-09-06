@@ -1,5 +1,8 @@
 # Changelog
 
+## 6.24.4 - Sep 5, 2025
+* Fix same bug but with interaction between archive mode and HTTP proxy
+
 ## 6.24.3 - Sep 5, 2025
 * Fix bug caused by interaction between usage of 3rd party HTTP proxy and
   realtime storage of output to GCS.

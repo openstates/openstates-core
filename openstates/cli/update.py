@@ -224,6 +224,13 @@ def archive_to_cloud_storage(
     logger.info("Beginning archive of scraped files to google cloud storage.")
     logger.info(f"GCP Project is {GCP_PROJECT} and bucket is {BUCKET_NAME}")
 
+    # Temporarily override any HTTP_PROXY env var
+    # because GCP client uses requests, and it doesn't like self-signed cert in chain
+    # so we do NOT want to use http proxy when connecting to google
+    prior_proxy_env = os.getenv('HTTP_PROXY')
+    os.environ["HTTP_PROXY"] = ""
+    os.environ["HTTPS_PROXY"] = ""
+
     # Catch exceptions so that we do not fail the scrape if transient GCS error occurs
     try:
         cloud_storage_client = storage.Client(project=GCP_PROJECT)
@@ -250,6 +257,10 @@ def archive_to_cloud_storage(
         logger.warning(
             f"An error occurred during the attempt to archive files to Google Cloud Storage: {e}"
         )
+    finally:
+        # Reset HTTP_PROXY settings to prior value, see comment above
+        os.environ["HTTP_PROXY"] = prior_proxy_env
+        os.environ["HTTPS_PROXY"] = prior_proxy_env
 
 
 def do_import(juris: State, args: argparse.Namespace) -> dict[str, typing.Any]:
