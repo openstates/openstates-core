@@ -69,6 +69,7 @@ class PersonAdmin(ModelAdmin):
         MembershipInline,
     ]
 
+    @admin.display(description="Memberships")
     def get_memberships(self, obj):
         memberships = obj.memberships.select_related("organization__jurisdiction")
         html = []
@@ -93,7 +94,5 @@ class PersonAdmin(ModelAdmin):
         if 0 < more:
             html.append("And %d more" % more)
         return mark_safe("<br/>".join(html))
-
-    get_memberships.short_description = "Memberships"
 
     list_display = ("name", "id", "get_memberships")

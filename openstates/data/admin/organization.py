@@ -17,14 +17,11 @@ class PostInline(admin.TabularInline):
     ordering = ("label",)
     can_delete = False
 
+    @admin.display(description="Label")
     def get_label(self, post):
-        admin_url = reverse(
-            "admin:data_post_change", args=(post.pk,)
-        )
-        tmpl = u'<a href="%s">%s</a>'
+        admin_url = reverse("admin:data_post_change", args=(post.pk,))
+        tmpl = '<a href="%s">%s</a>'
         return format_html(tmpl % (admin_url, post.label))
-
-    get_label.short_description = "Label"
 
     def has_add_permission(self, request, obj=None):
         return False
@@ -37,16 +34,14 @@ class OrganizationInline(ReadOnlyTabularInline):
     fields = readonly_fields = ("get_name", "jurisdiction", "classification")
     ordering = ("-classification", "name")
 
+    @admin.display(
+        description="ID",
+        ordering="organization__name",
+    )
     def get_name(self, organization):
-        admin_url = reverse(
-            "admin:data_organization_change", args=(organization.pk,)
-        )
-        tmpl = u'<a href="%s">%s</a>'
+        admin_url = reverse("admin:data_organization_change", args=(organization.pk,))
+        tmpl = '<a href="%s">%s</a>'
         return format_html(tmpl % (admin_url, organization.name))
-
-    get_name.short_description = "ID"
-    get_name.allow_tags = True
-    get_name.admin_order_field = "organization__name"
 
 
 class OrgMembershipInline(ReadOnlyTabularInline):
@@ -61,7 +56,15 @@ class OrgMembershipInline(ReadOnlyTabularInline):
 
 @admin.register(models.Post)
 class PostAdmin(ModelAdmin):
-    readonly_fields = fields = ("id", "division", "organization", "label", "role", "maximum_memberships", "extras")
+    readonly_fields = fields = (
+        "id",
+        "division",
+        "organization",
+        "label",
+        "role",
+        "maximum_memberships",
+        "extras",
+    )
     ordering = ("division__id", "organization", "role", "label")
     inlines = (MembershipInline,)
     list_display = ("division", "organization", "role", "label")
@@ -87,16 +90,20 @@ class OrganizationAdmin(ModelAdmin):
         OrganizationInline,
     ]
 
+    @admin.display(
+        description="Name",
+        ordering="name",
+    )
     def get_org_name(self, obj):
         parent = obj.parent
         if parent:
             return "{org} ({parent})".format(org=obj.name, parent=parent.name)
         return obj.name
 
-    get_org_name.short_description = "Name"
-    get_org_name.allow_tags = True
-    get_org_name.admin_order_field = "name"
-
+    @admin.display(
+        description="Jurisdiction",
+        ordering="jurisdiction__name",
+    )
     def get_jurisdiction(self, obj):
         jurisdiction = obj.jurisdiction
         if jurisdiction:
@@ -107,10 +114,6 @@ class OrganizationAdmin(ModelAdmin):
             return format_html(tmpl % (admin_url, jurisdiction.name))
 
         return "(none)"
-
-    get_jurisdiction.short_description = "Jurisdiction"
-    get_jurisdiction.allow_tags = True
-    get_jurisdiction.admin_order_field = "jurisdiction__name"
 
     list_select_related = ("jurisdiction",)
     list_display = ("get_org_name", "get_jurisdiction", "classification")
