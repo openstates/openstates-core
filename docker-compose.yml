@@ -1,4 +1,4 @@
-version: "3.5"
+# version: "3.5"
 
 # shared network to let these services connect to other containerized openstates services
 networks:
@@ -17,6 +17,7 @@ services:
       - openstates-network
   db:
     image: postgres
+    platform: linux/amd64 # added for Mac M1 compatibility
     environment:
       - POSTGRES_PASSWORD=test
       - POSTGRES_USER=test
