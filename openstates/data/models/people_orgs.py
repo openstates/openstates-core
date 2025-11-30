@@ -156,7 +156,7 @@ class PersonQuerySet(QuerySet):
         if state:
             people = people.filter(
                 memberships__organization__jurisdiction_id=abbr_to_jid(state)
-            )
+            ).distinct()
         return people
 
 
