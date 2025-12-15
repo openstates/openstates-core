@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.24.6 - Dec 15, 2025
+* Add generate_bill_namespace() method to standardize bill namespace construction
+  based on jurisdiction, legislative session, and identifier.
+
 ## 6.24.5 - Sep 5, 2025
 * Fix NEW bug introduced by messing with proxy/realtime (python, why would
   you retrieve a value for an env var that you can't encode back to an env var?)
