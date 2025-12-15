@@ -69,7 +69,7 @@ class Bill(SourceMixin, AssociatedLinkMixin, BaseModel):
         # Normalize legislative_session
         legislative_session = legislative_session.lower()
 
-        # Special Arizona rule: AZ + session <= '57'
+        # Special Arizona rule for session before 57
         if jurisdiction_id_ext == "az" and legislative_session[:2] <= "57":
             legislative_session = re.sub(r"-", "_", legislative_session)
         else:
