@@ -1,3 +1,4 @@
+import re
 import warnings
 from ..utils import _make_pseudo_id, transformers
 from .popolo import pseudo_organization
@@ -51,10 +52,44 @@ class Bill(SourceMixin, AssociatedLinkMixin, BaseModel):
         self.versions = []
         self.citations = []
 
+    def generate_bill_namespaced_identifier(self) -> str:
+        division_id = self.jurisdiction["division_id"].lower()
+        legislative_session = self.legislative_session.lower()
+        identifier = self.identifier.lower()
+
+        # Remove quotes and take last 2 chars
+        cleaned_div = division_id.replace('"', "")
+        jurisdiction_id_ext = cleaned_div[-2:]
+
+        prefix = f"ocd-bill-{jurisdiction_id_ext}-"
+
+        # Normalize legislative_session
+        legislative_session = legislative_session.lower()
+
+        # Special Arizona rule for session before 57
+        if jurisdiction_id_ext == "az" and legislative_session[:2] <= "57":
+            legislative_session = re.sub(r"-", "_", legislative_session)
+        else:
+            legislative_session = legislative_session.replace("-", "_")
+
+        # Remove non alphanumeric and underscores from session
+        session_clean = re.sub(r"[^a-zA-Z0-9_]", "", legislative_session)
+
+        # Normalize identifier
+        # Remove zero padding inside something like "HB 0013" -> "HB13"
+        identifier_clean = re.sub(r"^([a-zA-Z]+)\s*0*([0-9]+)$", r"\1\2", identifier)
+
+        # Remove ALL non-alphanumeric from identifier
+        identifier_clean = re.sub(r"[^a-zA-Z0-9]", "", identifier_clean)
+
+        bill_namespace = prefix + session_clean + "-" + identifier_clean
+        return bill_namespace
+
     def pre_save(self, jurisdiction):
         # ensure subject is sorted for idempotent JSON output
         self.subject = sorted(self.subject)
         self.add_scrape_metadata(jurisdiction)
+        self.add_identifier(self.generate_bill_namespaced_identifier())
 
     def add_action(
         self,
