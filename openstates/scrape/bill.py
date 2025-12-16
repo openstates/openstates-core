@@ -61,10 +61,7 @@ class Bill(SourceMixin, AssociatedLinkMixin, BaseModel):
         cleaned_div = division_id.replace('"', "")
         jurisdiction_id_ext = cleaned_div[-2:]
 
-        if jurisdiction_id_ext == "usa" or jurisdiction_id_ext == "us":
-            prefix = "federal-"
-        else:
-            prefix = f"state-{jurisdiction_id_ext}-"
+        prefix = f"ocd-bill-{jurisdiction_id_ext}-"
 
         # Normalize legislative_session
         legislative_session = legislative_session.lower()
