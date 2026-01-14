@@ -1,5 +1,6 @@
 import datetime
 from django.db import models
+from zoneinfo import ZoneInfo
 from ..common import JURISDICTION_CLASSIFICATION_CHOICES, SESSION_CLASSIFICATION_CHOICES
 from .base import OCDBase, OCDIDField, RelatedBase
 from .division import Division
@@ -38,8 +39,12 @@ class Jurisdiction(OCDBase):
         # don't allow deletion of a division that a Jurisdiction depends upon
         on_delete=models.PROTECT,
     )
-    latest_bill_update = models.DateTimeField(default=datetime.date(2021, 1, 1))
-    latest_people_update = models.DateTimeField(default=datetime.date(2021, 1, 1))
+    latest_bill_update = models.DateTimeField(
+        default=datetime.datetime(2021, 1, 1, tzinfo=ZoneInfo("UTC"))
+    )
+    latest_people_update = models.DateTimeField(
+        default=datetime.datetime(2021, 1, 1, tzinfo=ZoneInfo("UTC"))
+    )
 
     class Meta:
         db_table = "opencivicdata_jurisdiction"

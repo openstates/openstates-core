@@ -1,10 +1,10 @@
 import datetime
 import json
 import os
-import pytz
 import subprocess
 import typing
 import uuid
+import zoneinfo
 
 
 def is_valid_uuid(val: str) -> bool:
@@ -53,7 +53,7 @@ class JSONEncoderPlus(json.JSONEncoder):
         if isinstance(obj, datetime.datetime):
             if obj.tzinfo is None:
                 raise TypeError("date '%s' is not fully timezone qualified." % (obj))
-            obj = obj.astimezone(pytz.UTC)
+            obj = obj.astimezone(datetime.timezone.utc)
             return "{}".format(obj.replace(microsecond=0).isoformat())
         elif isinstance(obj, datetime.date):
             return "{}".format(obj.isoformat())
@@ -87,4 +87,8 @@ def convert_pdf(filename: str, type: str = "xml") -> bytes:
 
 
 def format_datetime(dt: datetime.datetime, timezone: str) -> str:
-    return pytz.timezone(timezone).localize(dt).replace(microsecond=0).isoformat()
+    if dt.tzinfo is None:
+        tz_aware_dt = dt.replace(tzinfo=zoneinfo.ZoneInfo(timezone))
+    else:
+        tz_aware_dt = dt.astimezone(zoneinfo.ZoneInfo(timezone))
+    return tz_aware_dt.replace(microsecond=0).isoformat()

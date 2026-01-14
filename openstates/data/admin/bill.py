@@ -25,16 +25,19 @@ class BillIdentifierInline(IdentifierInline):
 class BillActionInline(ReadOnlyTabularInline):
     model = models.BillAction
 
+    @admin.display(description="Related Entities")
     def get_related_entities(self, obj):
         ents = obj.related_entities.all()
         ent_list = [e.name for e in ents]
         return ", ".join(ent_list)
 
-    get_related_entities.short_description = "Related Entities"
-    get_related_entities.allow_tags = True
-
     list_select_related = ("BillActionRelatedEntity",)
-    readonly_fields = fields = ("date", "organization", "description", "get_related_entities")
+    readonly_fields = fields = (
+        "date",
+        "organization",
+        "description",
+        "get_related_entities",
+    )
 
 
 class RelatedBillInline(ReadOnlyTabularInline):
@@ -54,15 +57,13 @@ class BillSponsorshipInline(ReadOnlyTabularInline):
 class DocVersionInline(ReadOnlyTabularInline):
     model = models.BillVersion
 
+    @admin.display(description="Links")
     def get_links(self, obj):
         return format_html_join(
-            '<br />',
+            "<br />",
             '<a href="{}" target="_blank">{}</a>',
-            ((link.url, link.url) for link in obj.links.all())
+            ((link.url, link.url) for link in obj.links.all()),
         )
-
-    get_links.short_description = "Links"
-    get_links.allow_tags = True
 
     list_select_related = ("BillVersionLink",)
     readonly_fields = ("note", "date", "get_links")
@@ -111,27 +112,25 @@ class BillAdmin(ModelAdmin):
     def bill_classifications(self, obj):
         return ", ".join(obj.classification)
 
+    @admin.display(description="Jurisdiction")
     def get_jurisdiction_name(self, obj):
         return obj.legislative_session.jurisdiction.name
 
-    get_jurisdiction_name.short_description = "Jurisdiction"
-
+    @admin.display(
+        description="Session",
+        ordering="legislative_session__name",
+    )
     def get_session_name(self, obj):
         return obj.legislative_session.name
 
-    get_session_name.short_description = "Session"
-    get_session_name.admin_order_field = "legislative_session__name"
-
+    @admin.display(description="Sponsors")
     def get_truncated_sponsors(self, obj):
         spons = ", ".join(s.name for s in obj.sponsorships.all()[:5])
         return defaultfilters.truncatewords(spons, 10)
 
-    get_truncated_sponsors.short_description = "Sponsors"
-
+    @admin.display(description="Title")
     def get_truncated_title(self, obj):
         return defaultfilters.truncatewords(obj.title, 25)
-
-    get_truncated_title.short_description = "Title"
 
     list_display = (
         "identifier",
@@ -142,4 +141,8 @@ class BillAdmin(ModelAdmin):
     )
 
     list_filter = ("legislative_session__jurisdiction__name",)
-    ordering = ("legislative_session__jurisdiction__name", "legislative_session", "identifier")
+    ordering = (
+        "legislative_session__jurisdiction__name",
+        "legislative_session",
+        "identifier",
+    )
