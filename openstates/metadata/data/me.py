@@ -18,7 +18,7 @@ ME = State(
         chamber_type="lower",
         name="House",
         organization_id="ocd-organization/a26314f0-dc6f-4cfc-99ca-dee4bafc9d4c",
-        num_seats=152,
+        num_seats=153,
         title="Representative",
         districts=simple_numbered_districts(
             "ocd-division/country:us/state:me", "lower", 151
