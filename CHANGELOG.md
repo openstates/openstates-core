@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.24.7 - Jan 30, 2026
+* Add Houlton Band of Indians district to Maine jurisdiction metadata
+* Changes to get CI test workflow working again: package/python updates mostly
+
 ## 6.24.6 - Dec 15, 2025
 * Add generate_bill_namespace() method to standardize bill namespace construction
   based on jurisdiction, legislative session, and identifier.
