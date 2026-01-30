@@ -40,9 +40,10 @@ influxdb-client = "^1.37.0"
 pytz = "^2024.1"
 google-cloud-storage = "^2.18.0"
 gitpython = "^3.1.44"
+pytest = "^6.2.5"
 
 [tool.poetry.dev-dependencies]
-pytest = "^5.4.1"
+pytest = "^6.2.5"
 pytest-cov = "^2.8.1"
 pytest-django = "^3.8.0"
 coveralls = "^1.11.1"
