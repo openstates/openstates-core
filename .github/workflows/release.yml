@@ -16,14 +16,14 @@ jobs:
         with:
           # Retrieves all commit history for path filter checking
           fetch-depth: 0
-      - name: setup Python 3.9
+      - name: setup Python 3.11
         uses: actions/setup-python@v4
         with:
-          python-version: 3.9
+          python-version: 3.11
       - name: install GDAL and python bindings
         run: sudo apt update && sudo apt-get install -y gdal-bin python3-gdal
       - name: install Poetry
-        uses: snok/install-poetry@v1.3.3
+        uses: snok/install-poetry@v1.4.1
       - name: configure pypi credentials
         run: poetry config pypi-token.pypi "${{ secrets.PYPI_API_KEY }}"
       - name: Publish core package
