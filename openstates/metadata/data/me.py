@@ -18,12 +18,14 @@ ME = State(
         chamber_type="lower",
         name="House",
         organization_id="ocd-organization/a26314f0-dc6f-4cfc-99ca-dee4bafc9d4c",
-        num_seats=152,
+        num_seats=153,
         title="Representative",
         districts=simple_numbered_districts(
             "ocd-division/country:us/state:me", "lower", 151
         ) + [District("Passamaquoddy Tribe", "lower",
-                      "ocd-division/country:us/state:me/sldl:passamaquoddy-tribe")],
+                      "ocd-division/country:us/state:me/sldl:passamaquoddy-tribe"),
+             District("Houlton Band of Maliseet Indians", "lower",
+                      "ocd-division/country:us/state:me/sldl:houlton-band")],
     ),
     upper=Chamber(
         chamber_type="upper",
