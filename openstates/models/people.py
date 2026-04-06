@@ -73,7 +73,7 @@ class RoleType(str, Enum):
     COMPTROLLER = "comptroller"
     ATTORNEY_GENERAL = "attorney general"
     COUNCILOR = "council member"
-    COMISSIONER = "comissioner"
+    COMMISSIONER = "commissioner"
     ASSESSOR = "assessor"
     DISTRICT_ATTORNEY = "district attorney"
 
@@ -94,7 +94,7 @@ EXECUTIVE_ROLES = (
     RoleType.AUDITOR,
     RoleType.COMPTROLLER,
     RoleType.ATTORNEY_GENERAL,
-    RoleType.COMISSIONER,
+    RoleType.COMMISSIONER,
     RoleType.ASSESSOR,
     RoleType.DISTRICT_ATTORNEY,
 )
