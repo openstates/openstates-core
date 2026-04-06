@@ -4,7 +4,7 @@ from functools import lru_cache
 import click
 from openstates import metadata
 from .general import legacy_districts
-from ...models.people import MAJOR_PARTIES, Person, PartyName
+from ...models.people import MAJOR_PARTIES, EXECUTIVE_ROLES, Person, PartyName
 
 
 DataDict = dict[str, typing.Any]
@@ -166,7 +166,7 @@ def load_person(data: Person) -> tuple[bool, bool]:
                 role_name = "Mayor"
             org_type = "executive"
             use_district = False
-        elif role.type in ("secretary of state", "chief election officer"):
+        elif role.type in EXECUTIVE_ROLES.values():
             role_name = role.type.title()
             org_type = "executive"
             use_district = False
