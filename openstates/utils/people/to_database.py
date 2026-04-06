@@ -166,7 +166,7 @@ def load_person(data: Person) -> tuple[bool, bool]:
                 role_name = "Mayor"
             org_type = "executive"
             use_district = False
-        elif role.type in EXECUTIVE_ROLES.values():
+        elif role.type in EXECUTIVE_ROLES:
             role_name = role.type.title()
             org_type = "executive"
             use_district = False
