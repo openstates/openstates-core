@@ -289,10 +289,20 @@ def test_person_governor_role(person):
 
 
 @pytest.mark.django_db
-def test_person_attorney_general_role(person):
+@pytest.mark.parametrize(
+    ("role_type", "title"),
+    [
+        ("lt_governor", "Lieutenant Governor"),
+        ("treasurer", "Treasurer"),
+        ("auditor", "Auditor"),
+        ("comptroller", "Comptroller"),
+        ("attorney_general", "Attorney General"),
+    ],
+)
+def test_person_new_executive_role_titles(person, role_type, title):
     person.roles.append(
         Role(
-            type="attorney_general",
+            type=role_type,
             jurisdiction="ocd-jurisdiction/country:us/state:nc/government",
             end_date="2030-01-01",
         )
@@ -309,7 +319,7 @@ def test_person_attorney_general_role(person):
         "org_classification": "executive",
         "district": None,
         "division_id": None,
-        "title": "Attorney General",
+        "title": title,
     }
     assert (
         p.current_jurisdiction_id == "ocd-jurisdiction/country:us/state:nc/government"

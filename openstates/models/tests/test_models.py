@@ -200,6 +200,31 @@ def test_role_basics():
         )
 
 
+@pytest.mark.parametrize(
+    "role_type",
+    [
+        RoleType.TREASURER,
+        RoleType.AUDITOR,
+        RoleType.COMPTROLLER,
+        RoleType.ATTORNEY_GENERAL,
+    ],
+)
+def test_new_executive_roles_require_end_date(role_type):
+    assert Role(
+        type=role_type,
+        start_date="2010",
+        end_date="2016",
+        jurisdiction=VALID_JURISDICTION_ID,
+    )
+
+    with pytest.raises(ValidationError):
+        assert Role(
+            type=role_type,
+            start_date="2010",
+            jurisdiction=VALID_JURISDICTION_ID,
+        )
+
+
 def test_role_conditional_requires():
     assert Role(
         type=RoleType.UPPER,
@@ -213,12 +238,6 @@ def test_role_conditional_requires():
         end_date="2016",
         jurisdiction=VALID_JURISDICTION_ID,
     )
-    assert Role(
-        type=RoleType.ATTORNEY_GENERAL,
-        start_date="2010",
-        end_date="2016",
-        jurisdiction=VALID_JURISDICTION_ID,
-    )
 
     with pytest.raises(ValidationError):
         assert Role(
@@ -228,12 +247,6 @@ def test_role_conditional_requires():
     with pytest.raises(ValidationError):
         assert Role(
             type=RoleType.GOVERNOR,
-            start_date="2010",
-            jurisdiction=VALID_JURISDICTION_ID,
-        )
-    with pytest.raises(ValidationError):
-        assert Role(
-            type=RoleType.TREASURER,
             start_date="2010",
             jurisdiction=VALID_JURISDICTION_ID,
         )
