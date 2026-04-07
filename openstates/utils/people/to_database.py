@@ -12,6 +12,17 @@ DataDict = dict[str, typing.Any]
 DjangoModel = typing.Any
 DjangoModelInstance = typing.Any
 
+EXECUTIVE_ROLE_TITLES = {
+    "governor": "Governor",
+    "lt_governor": "Lieutenant Governor",
+    "secretary of state": "Secretary of State",
+    "chief election officer": "Chief Election Officer",
+    "treasurer": "Treasurer",
+    "auditor": "Auditor",
+    "comptroller": "Comptroller",
+    "attorney_general": "Attorney General",
+}
+
 
 class CancelTransaction(Exception):
     pass
@@ -166,8 +177,8 @@ def load_person(data: Person) -> tuple[bool, bool]:
                 role_name = "Mayor"
             org_type = "executive"
             use_district = False
-        elif role.type in ("secretary of state", "chief election officer"):
-            role_name = role.type.title()
+        elif role.type in EXECUTIVE_ROLE_TITLES:
+            role_name = EXECUTIVE_ROLE_TITLES[role.type]
             org_type = "executive"
             use_district = False
         elif role.type in ("upper", "lower", "legislature"):

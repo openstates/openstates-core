@@ -213,6 +213,12 @@ def test_role_conditional_requires():
         end_date="2016",
         jurisdiction=VALID_JURISDICTION_ID,
     )
+    assert Role(
+        type=RoleType.ATTORNEY_GENERAL,
+        start_date="2010",
+        end_date="2016",
+        jurisdiction=VALID_JURISDICTION_ID,
+    )
 
     with pytest.raises(ValidationError):
         assert Role(
@@ -222,6 +228,12 @@ def test_role_conditional_requires():
     with pytest.raises(ValidationError):
         assert Role(
             type=RoleType.GOVERNOR,
+            start_date="2010",
+            jurisdiction=VALID_JURISDICTION_ID,
+        )
+    with pytest.raises(ValidationError):
+        assert Role(
+            type=RoleType.TREASURER,
             start_date="2010",
             jurisdiction=VALID_JURISDICTION_ID,
         )

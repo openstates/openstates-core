@@ -289,6 +289,34 @@ def test_person_governor_role(person):
 
 
 @pytest.mark.django_db
+def test_person_attorney_general_role(person):
+    person.roles.append(
+        Role(
+            type="attorney_general",
+            jurisdiction="ocd-jurisdiction/country:us/state:nc/government",
+            end_date="2030-01-01",
+        )
+    )
+    created, updated = load_person(person)
+    p = DjangoPerson.objects.get(pk=person.id)
+
+    assert p.memberships.count() == 2
+    assert (
+        p.memberships.get(organization__classification="executive").organization.name
+        == "Executive"
+    )
+    assert p.current_role == {
+        "org_classification": "executive",
+        "district": None,
+        "division_id": None,
+        "title": "Attorney General",
+    }
+    assert (
+        p.current_jurisdiction_id == "ocd-jurisdiction/country:us/state:nc/government"
+    )
+
+
+@pytest.mark.django_db
 def test_person_mayor_role(person):
     person.roles.append(
         Role(

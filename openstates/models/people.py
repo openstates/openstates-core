@@ -68,6 +68,10 @@ class RoleType(str, Enum):
     MAYOR = "mayor"
     SOS = "secretary of state"
     CHIEF_ELECTION_OFFICER = "chief election officer"
+    TREASURER = "treasurer"
+    AUDITOR = "auditor"
+    COMPTROLLER = "comptroller"
+    ATTORNEY_GENERAL = "attorney_general"
 
 
 LEGISLATIVE_ROLES = (
@@ -81,6 +85,10 @@ EXECUTIVE_ROLES = (
     RoleType.MAYOR,
     RoleType.CHIEF_ELECTION_OFFICER,
     RoleType.SOS,
+    RoleType.TREASURER,
+    RoleType.AUDITOR,
+    RoleType.COMPTROLLER,
+    RoleType.ATTORNEY_GENERAL,
 )
 
 
