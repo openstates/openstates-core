@@ -1,5 +1,10 @@
 # Changelog
 
+## 6.25.0 - Apr 14, 2026
+* Adds multiple elected official role types for executive branch: treasurer, auditor,
+  attorney general, etc..
+* Adds RoleType.COUNCILOR legislative role type
+
 ## 6.24.7 - Jan 30, 2026
 * Add Houlton Band of Indians district to Maine jurisdiction metadata
 * Changes to get CI test workflow working again: package/python updates mostly
