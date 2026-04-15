@@ -68,12 +68,21 @@ class RoleType(str, Enum):
     MAYOR = "mayor"
     SOS = "secretary of state"
     CHIEF_ELECTION_OFFICER = "chief election officer"
+    TREASURER = "treasurer"
+    AUDITOR = "auditor"
+    COMPTROLLER = "comptroller"
+    ATTORNEY_GENERAL = "attorney general"
+    COUNCILOR = "council member"
+    COMMISSIONER = "commissioner"
+    ASSESSOR = "assessor"
+    DISTRICT_ATTORNEY = "district attorney"
 
 
 LEGISLATIVE_ROLES = (
     RoleType.UPPER,
     RoleType.LOWER,
     RoleType.JOINT,
+    RoleType.COUNCILOR,
 )
 EXECUTIVE_ROLES = (
     RoleType.GOVERNOR,
@@ -81,6 +90,13 @@ EXECUTIVE_ROLES = (
     RoleType.MAYOR,
     RoleType.CHIEF_ELECTION_OFFICER,
     RoleType.SOS,
+    RoleType.TREASURER,
+    RoleType.AUDITOR,
+    RoleType.COMPTROLLER,
+    RoleType.ATTORNEY_GENERAL,
+    RoleType.COMMISSIONER,
+    RoleType.ASSESSOR,
+    RoleType.DISTRICT_ATTORNEY,
 )
 
 
