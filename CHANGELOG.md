@@ -1,4 +1,6 @@
 # Changelog
+* Fixes a syntax error that caused a bug when POSTing data in http-resilience mode, if
+  supplying headers or other kwargs.
 
 ## 6.25.0 - Apr 14, 2026
 * Adds multiple elected official role types for executive branch: treasurer, auditor,
