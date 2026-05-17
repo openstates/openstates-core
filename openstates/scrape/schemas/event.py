@@ -67,9 +67,18 @@ schema = {
             "items": {
                 "properties": {
                     "note": {"type": "string", "minLength": 1},
-                    "url": {"type": "string", "minLength": 1},
-                    "media_type": {"type": "string", "minLength": 1},
                     "date": fuzzy_date_blank,
+                    "classification": {"type": "string"},
+                    "links": {
+                        "items": {
+                            "properties": {
+                                "media_type": {"type": "string"},
+                                "url": {"type": "string", "format": "uri"},
+                            },
+                            "type": "object",
+                        },
+                        "type": "array",
+                    },
                 },
                 "type": "object",
             },
