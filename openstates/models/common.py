@@ -99,7 +99,7 @@ class TimeScoped(BaseModel):
     )
 
     def is_active(self) -> bool:
-        date = datetime.datetime.utcnow().date().isoformat()
+        date = datetime.datetime.now(datetime.timezone.utc).date().isoformat()
         return (self.end_date == "" or str(self.end_date) > date) and (
             self.start_date == "" or str(self.start_date) <= date
         )
