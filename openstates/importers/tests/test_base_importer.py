@@ -171,7 +171,9 @@ def test_invalid_fields_related_item():
 @pytest.mark.django_db
 def test_automatic_updated_at():
     create_jurisdiction()
-    difference = Organization.objects.get().updated_at - datetime.datetime.utcnow()
+    difference = Organization.objects.get().updated_at - datetime.datetime.now(
+        datetime.timezone.utc
+    ).replace(tzinfo=None)
     # updated_at should be in UTC, a bit of clock drift notwithstanding
     assert abs(difference) < datetime.timedelta(minutes=5)
 
