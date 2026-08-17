@@ -16,10 +16,10 @@ jobs:
         with:
           # Retrieves all commit history for path filter checking
           fetch-depth: 0
-      - name: setup Python 3.11
+      - name: setup Python 3.13
         uses: actions/setup-python@v4
         with:
-          python-version: 3.11
+          python-version: 3.13
       - name: install GDAL and python bindings
         run: sudo apt update && sudo apt-get install -y gdal-bin python3-gdal
       - name: install Poetry
