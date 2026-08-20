@@ -199,6 +199,123 @@ def test_resolve_person_case_insensitive():
 
 
 @pytest.mark.django_db
+def test_resolve_person_cache_key_includes_org_classification():
+    """resolve_person()'s cache used to key only on (psuedo_person_id,
+    start_date, end_date) -- omitting org_classification. Two same-surname
+    people in different chambers of the same jurisdiction, looked up with the
+    SAME session dates (the normal case -- a jurisdiction's chambers usually
+    share one LegislativeSession), produced the SAME cache key despite being
+    genuinely different queries. Whichever chamber got resolved first within
+    an import run silently poisoned the cache for the other for the rest of
+    that run."""
+    create_jurisdiction()
+    upper_org = Organization.objects.create(jurisdiction_id="jid", classification="upper")
+    lower_org = Organization.objects.create(jurisdiction_id="jid", classification="lower")
+    upper_person = Person.objects.create(name="Smith")
+    upper_person.memberships.create(organization=upper_org)
+    lower_person = Person.objects.create(name="Smith")
+    lower_person.memberships.create(organization=lower_org)
+
+    bi = BillImporter("jid")
+    same_start, same_end = "2026-01-01", "2026-12-31"
+
+    resolved_upper = bi.resolve_person(
+        '~{"name": "Smith"}', same_start, same_end, "upper"
+    )
+    resolved_lower = bi.resolve_person(
+        '~{"name": "Smith"}', same_start, same_end, "lower"
+    )
+
+    assert resolved_upper == upper_person.id
+    assert resolved_lower == lower_person.id, (
+        "The lower-chamber lookup must resolve its own chamber's person, not "
+        "reuse the upper-chamber lookup's cached result just because the "
+        "name and session dates are identical."
+    )
+
+
+@pytest.mark.django_db
+def test_resolve_person_cache_key_includes_org_classification_reverse_order():
+    """Same shape as above, chambers queried in the opposite order -- the bug
+    doesn't care which chamber is resolved first, so neither should the fix."""
+    create_jurisdiction()
+    upper_org = Organization.objects.create(jurisdiction_id="jid", classification="upper")
+    lower_org = Organization.objects.create(jurisdiction_id="jid", classification="lower")
+    upper_person = Person.objects.create(name="Smith")
+    upper_person.memberships.create(organization=upper_org)
+    lower_person = Person.objects.create(name="Smith")
+    lower_person.memberships.create(organization=lower_org)
+
+    bi = BillImporter("jid")
+    same_start, same_end = "2026-01-01", "2026-12-31"
+
+    resolved_lower = bi.resolve_person(
+        '~{"name": "Smith"}', same_start, same_end, "lower"
+    )
+    resolved_upper = bi.resolve_person(
+        '~{"name": "Smith"}', same_start, same_end, "upper"
+    )
+
+    assert resolved_lower == lower_person.id
+    assert resolved_upper == upper_person.id
+
+
+@pytest.mark.django_db
+def test_resolve_person_cache_key_includes_embedded_chamber():
+    """The cache key is built AFTER a chamber embedded in psuedo_person_id
+    (rather than passed as the explicit org_classification argument, e.g. the
+    bill-sponsorship lookup path) is folded in -- covers that path
+    specifically. Two embedded chambers must not collide just because the
+    caller never passed org_classification explicitly."""
+    create_jurisdiction()
+    upper_org = Organization.objects.create(jurisdiction_id="jid", classification="upper")
+    lower_org = Organization.objects.create(jurisdiction_id="jid", classification="lower")
+    upper_person = Person.objects.create(name="Smith")
+    upper_person.memberships.create(organization=upper_org)
+    lower_person = Person.objects.create(name="Smith")
+    lower_person.memberships.create(organization=lower_org)
+
+    bi = BillImporter("jid")
+    same_start, same_end = "2026-01-01", "2026-12-31"
+
+    resolved_upper = bi.resolve_person(
+        '~{"name": "Smith", "chamber": "upper"}', same_start, same_end
+    )
+    resolved_lower = bi.resolve_person(
+        '~{"name": "Smith", "chamber": "lower"}', same_start, same_end
+    )
+
+    assert resolved_upper == upper_person.id
+    assert resolved_lower == lower_person.id, (
+        "A chamber embedded in psuedo_person_id must participate in the "
+        "cache key the same way an explicit org_classification does."
+    )
+
+
+@pytest.mark.django_db
+def test_resolve_person_same_chamber_still_hits_cache():
+    """The fix must not turn the cache into a no-op -- a second lookup with
+    the SAME org_classification (the common case: many votes on one bill, one
+    chamber) should still be served from cache, not re-query every time."""
+    create_jurisdiction()
+    org = Organization.objects.create(jurisdiction_id="jid", classification="lower")
+    person = Person.objects.create(name="Smith")
+    person.memberships.create(organization=org)
+
+    bi = BillImporter("jid")
+    first = bi.resolve_person('~{"name": "Smith"}', "2026-01-01", "2026-12-31", "lower")
+    cache_size_after_first = len(bi.person_cache)
+    second = bi.resolve_person('~{"name": "Smith"}', "2026-01-01", "2026-12-31", "lower")
+
+    assert first == person.id
+    assert second == person.id
+    assert len(bi.person_cache) == cache_size_after_first, (
+        "A repeat lookup with the same org_classification must hit the "
+        "existing cache entry, not add a new one."
+    )
+
+
+@pytest.mark.django_db
 def test_resolve_bill_by_date():
     j = create_jurisdiction()
     session = j.legislative_sessions.create(
