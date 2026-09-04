@@ -162,7 +162,7 @@ schema = {
                     },
                     "effective": {"type": [fuzzy_date_blank, "null"]},
                     "expires": {"type": [fuzzy_date_blank, "null"]},
-                    "url": {"type": ["string", "null"]},
+                    "url": {"type": ["string", "null"], "format": "uri"},
                 },
                 "type": "object",
             },
