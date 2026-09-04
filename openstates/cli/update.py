@@ -303,7 +303,7 @@ def do_import(juris: State, args: argparse.Namespace) -> dict[str, typing.Any]:
             )
         )
         DatabaseJurisdiction.objects.filter(id=juris.jurisdiction_id).update(
-            latest_bill_update=datetime.datetime.utcnow()
+            latest_bill_update=datetime.datetime.now(datetime.timezone.utc).replace(tzinfo=None)
         )
 
     # 8/12/26: generating session report is generating a lot of SQL load

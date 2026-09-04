@@ -387,7 +387,7 @@ def load_directory_to_database(files: list[Path], purge: bool) -> None:
 
     if created_count or updated_count:
         Jurisdiction.objects.filter(id__in=updated_jurisdictions).update(
-            latest_people_update=datetime.datetime.utcnow()
+            latest_people_update=datetime.datetime.now(datetime.timezone.utc).replace(tzinfo=None)
         )
 
     click.secho(
