@@ -221,6 +221,49 @@ def test_related_committee_event():
 
 
 @pytest.mark.django_db
+def test_related_committee_event_other_names_case_mismatch():
+    """Reproduces the bug where a committee is stored with an other_name
+    that differs only in case/punctuation from what the event scraper
+    reports, and the match should still succeed."""
+    j = create_jurisdiction()
+    j.legislative_sessions.create(name="1900", identifier="1900")
+    org = Organization.objects.create(
+        id="org-id", name="Senate", classification="upper", jurisdiction=j
+    )
+    Organization.objects.create(
+        id="ag-forestry",
+        name="Committee on Agriculture, Nutrition, and Forestry",
+        classification="committee",
+        parent=org,
+        jurisdiction=j,
+        # other_names as it might really be entered by a human in the
+        # people repo YAML -- different case/punctuation than what the
+        # scraper reports below.
+        other_names=[{"name": "Senate Agriculture, Nutrition, AND Forestry"}],
+    )
+
+    event = ge()
+    item = event.add_agenda_item("Cookies will be served")
+    # scraper-reported name has different case ("and" lowercase already
+    # matches after .title()-based normalization, but let's use a variant
+    # that the current .title()-based heuristic can't reconcile, e.g. an
+    # apostrophe or different casing on a "preposition" word not in the
+    # hardcoded list, or simply an all-different case).
+    item.add_committee(committee="senate agriculture, nutrition, and forestry")
+
+    result = EventImporter(jid, vei).import_data([event.as_dict()])
+    assert result["event"]["insert"] == 1
+
+    assert (
+        Event.objects.get(name="America's Birthday")
+        .agenda.first()
+        .related_entities.first()
+        .organization_id
+        == "ag-forestry"
+    )
+
+
+@pytest.mark.django_db
 def test_media_event():
     create_jurisdiction()
     event1 = ge()
