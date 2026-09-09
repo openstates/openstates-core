@@ -110,7 +110,10 @@ class TestUploadAndVerifyDispatch:
 class TestUploadAndVerifyDirect:
     """OPEN-192's cloud transport, corrected 2026-08-31 (OPEN-238) to a single write: no more
     separate "working tier" bucket -- one `put_object` to `S3_BILL_ARCHIVE_BUCKET` at
-    `STANDARD_IA` instead of `DEEP_ARCHIVE` is both the archive and the readable copy at once.
+    `GLACIER_IR` instead of `DEEP_ARCHIVE` is both the archive and the readable copy at once.
+    Corrected again 2026-09-09: `STANDARD_IA` -> `GLACIER_IR`, matching the bucket-wide re-tier
+    of the historical Deep Archive corpus to `GLACIER_IR` (cheaper storage for a mostly-cold
+    archive outweighs its higher per-GB retrieval fee at this archive's actual read volume).
     Every test supplies its own real bytes on disk and its own real MD5 of them -- matching how
     the caller (`archive_bill_versions`) actually computes `local_md5` -- rather than asserting
     against a hand-typed hash string."""
@@ -120,7 +123,7 @@ class TestUploadAndVerifyDirect:
         path.write_bytes(content)
         return str(path), hashlib.md5(content).hexdigest()
 
-    def test_successful_upload_writes_standard_ia_and_returns_uri(self, tmp_path):
+    def test_successful_upload_writes_glacier_ir_and_returns_uri(self, tmp_path):
         path, md5 = self._write_temp_file(tmp_path, b"pdf bytes")
         object_key = "bills/raw/fl/2026/lower/x.pdf"
         client = mock.Mock()
@@ -135,10 +138,10 @@ class TestUploadAndVerifyDirect:
         put = client.put_object.call_args
         assert put.kwargs["Bucket"] == S3_BILL_ARCHIVE_BUCKET
         assert put.kwargs["Key"] == object_key
-        # STANDARD_IA, not DEEP_ARCHIVE -- OPEN-238's whole point is that this single write is
-        # immediately readable, no ~12h restore, in the same bucket the historical Deep-Archive
-        # corpus already lives in.
-        assert put.kwargs["StorageClass"] == "STANDARD_IA"
+        # GLACIER_IR, not DEEP_ARCHIVE -- OPEN-238's whole point is that this single write is
+        # immediately readable, no ~12h restore, in the same bucket the historical corpus
+        # already lives in.
+        assert put.kwargs["StorageClass"] == "GLACIER_IR"
         # The verify call has to check the same object it just wrote, not some other one --
         # a regression that verified the wrong key/bucket would otherwise still pass.
         client.head_object.assert_called_once_with(

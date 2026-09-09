@@ -682,7 +682,7 @@ def _upload_and_verify_direct(
     path: str, object_key: str, local_md5: str
 ) -> typing.Optional[str]:
     """OPEN-192's cloud upload path: an ordinary credentialed boto3 PutObject to
-    `S3_BILL_ARCHIVE_BUCKET` (the same bucket the wrapper path writes), at `STANDARD_IA` instead
+    `S3_BILL_ARCHIVE_BUCKET` (the same bucket the wrapper path writes), at `GLACIER_IR` instead
     of `DEEP_ARCHIVE` -- immediately readable, no ~12hr restore, which is the entire reason
     Phase 3 exists to write it (`PLAN-scraper-execution-migration.md`, "do not treat the vault
     write as sufficient").
@@ -692,9 +692,21 @@ def _upload_and_verify_direct(
     second, `STANDARD`-class copy to a separate, configurable "working tier" bucket
     (`WORKING_TIER_S3_BUCKET`), requiring both to succeed. That bucket doesn't exist any more, by
     design: storage class is a property of each S3 object, not the bucket, so this single write
-    at `STANDARD_IA` is both the archive and the readable copy at once, in the same bucket the
-    historical Deep-Archive corpus already lives in. There is no bucket decision left to make and
-    no second write to coordinate.
+    is both the archive and the readable copy at once, in the same bucket the historical
+    corpus already lives in. There is no bucket decision left to make and no second write to
+    coordinate.
+
+    **Corrected 2026-09-09: `STANDARD_IA` -> `GLACIER_IR`, matching the bucket's own bulk
+    re-tier.** The rest of `ddp-bill-archive` (the pre-OPEN-192 Deep Archive backlog) was just
+    migrated wholesale to `GLACIER_IR` rather than `STANDARD`/`STANDARD_IA` -- storage cost is
+    the dominant factor for a 52+ GB and growing archive that only a small slice of gets read
+    back each month (each document is synced to DDP-HOT exactly once, right after archiving,
+    never again), and `GLACIER_IR`'s ~6x cheaper storage more than offsets its higher per-GB
+    retrieval fee at this archive's actual read volume. Writing new documents directly at
+    `STANDARD_IA` would silently reintroduce the cost mismatch this bucket-wide migration just
+    fixed, one new document at a time. `GLACIER_IR` has the same "immediately readable, no
+    restore" property `STANDARD_IA` had -- nothing about `_check_etag` or the read path below
+    needed to change for this.
 
     Same verification contract as the wrapper path (`_check_etag`): a single-part PutObject's
     response ETag is the plain hex MD5 of exactly the bytes S3 stored, checked against the same
@@ -726,7 +738,7 @@ def _upload_and_verify_direct(
             Bucket=S3_BILL_ARCHIVE_BUCKET,
             Key=object_key,
             Body=body,
-            StorageClass="STANDARD_IA",
+            StorageClass="GLACIER_IR",
         )
         head = client.head_object(Bucket=S3_BILL_ARCHIVE_BUCKET, Key=object_key)
     except (ClientError, BotoCoreError) as e:
@@ -2342,10 +2354,10 @@ def _fetch_archive_bytes(
 
     Deliberately does not call `RestoreObject` or retry after one for a Deep-Archive object:
     the archive has two storage tiers (`_upload_and_verify_via_wrapper`'s original path writes
-    to Glacier Deep Archive; only `_upload_and_verify_direct`'s newer cloud path, OPEN-192,
-    writes at STANDARD_IA specifically to be immediately readable), and a ~12h asynchronous
-    restore-then-reprocess workflow is a different, stateful feature this function should not
-    attempt silently as a side effect of a read.
+    to Glacier Deep Archive; `_upload_and_verify_direct`'s newer cloud path, OPEN-192, writes at
+    GLACIER_IR specifically to be immediately readable, no restore needed), and a ~12h
+    asynchronous restore-then-reprocess workflow is a different, stateful feature this function
+    should not attempt silently as a side effect of a read.
     """
     try:
         with open(local_path, "rb") as f:
@@ -2369,9 +2381,10 @@ def _fetch_archive_bytes(
         if code == "InvalidObjectState":
             # A real, expected, per-document condition, not a systemic problem -- the archive
             # has two storage tiers (`_upload_and_verify_via_wrapper`'s original path writes to
-            # Glacier Deep Archive; only `_upload_and_verify_direct`'s newer cloud path,
-            # OPEN-192, writes at STANDARD_IA specifically to be immediately readable). A plain
-            # GetObject against a Deep Archive object that was never explicitly restored raises
+            # Glacier Deep Archive; `_upload_and_verify_direct`'s newer cloud path, OPEN-192,
+            # writes at GLACIER_IR, which never raises this -- GLACIER_IR reads like a normal
+            # GetObject, no restore ever needed). A plain GetObject against a Deep Archive
+            # object that was never explicitly restored raises
             # exactly this code -- distinct from both "genuinely missing" and "systemic S3
             # trouble," so it gets its own poolable reason rather than folding into either.
             # This function deliberately does NOT call RestoreObject or retry after one --
