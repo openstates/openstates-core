@@ -1,5 +1,8 @@
 # Changelog
 
+## 6.25.6 - Sep 15, 2026
+* Fixes case/punctuation-sensitive committee matching for USA events
+
 ## 6.25.5 - Aug 12, 2026
 * Disable session report generation to reduce database load
 
