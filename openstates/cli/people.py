@@ -205,11 +205,19 @@ def write_csv(files: list[Path], jurisdiction_id: str, output_filename: str) -> 
             district_address = district_voice = district_fax = None
             capitol_address = capitol_voice = capitol_fax = None
             for cd in person.offices:
-                if cd.classification == "district":
+                if cd.classification == "district-mail":
+                     district_address = cd.address
+                     district_voice = cd.voice
+                     district_fax = cd.fax
+                 elif cd.classification == "district":
                     district_address = cd.address
                     district_voice = cd.voice
                     district_fax = cd.fax
-                elif cd.classification == "district":
+                elif cd.classification == "capitol-mail":
+                    capitol_address = cd.address
+                    capitol_voice = cd.voice
+                    capitol_fax = cd.fax
+                elif cd.classification == "capitol":
                     capitol_address = cd.address
                     capitol_voice = cd.voice
                     capitol_fax = cd.fax
