@@ -51,7 +51,7 @@ def make_districts(
         parent_id.split(":")[-1] in ("az", "id", "nd", "nj", "wa")
         and chamber_type == "lower"
     ):
-        return f"simple_numbered_districts('{parent_id}', '{chamber_type}', {num//2}, num_seats=2)"
+        return f"simple_numbered_districts('{parent_id}', '{chamber_type}', {num // 2}, num_seats=2)"
     elif seats and not division_ids:
         prefix = "sldl" if chamber_type == "lower" else "sldu"
         return (
