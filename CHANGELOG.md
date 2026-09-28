@@ -1,5 +1,10 @@
 # Changelog
 
+## 6.26.0 - Sep 28, 2026
+
+- Upgrade Python support from 3.9 to 3.13.
+- Update flake8 and fix related lint/test issues.
+
 ## 6.25.6 - Sep 15, 2026
 * Fixes case/punctuation-sensitive committee matching for USA events
 
