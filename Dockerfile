@@ -1,10 +1,10 @@
-FROM python:3.9-slim
-LABEL maintainer="James Turk <dev@jamesturk.net>"
+FROM python:3.13-slim
+LABEL maintainer="Jesse Mortenson <Jesse.Mortenson@sai360.com>"
 
-ENV PYTHONUNBUFFERED 1
+ENV PYTHONUNBUFFERED=1
 ENV PYTHONDONTWRITEBYTECODE=1
-ENV PYTHONIOENCODING 'utf-8'
-ENV LANG 'C.UTF-8'
+ENV PYTHONIOENCODING='utf-8'
+ENV LANG='C.UTF-8'
 
 # text extraction stuff
 # install git for forked dependency re: scrapelib

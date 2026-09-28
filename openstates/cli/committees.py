@@ -545,7 +545,8 @@ def lint(abbreviations: list[str], fix: bool) -> None:
             click.secho(filename.name)
             for err in error.errors():
                 click.secho(
-                    f"  {'.'.join(str(l) for l in err['loc'])}: {err['msg']}", fg="red"
+                    f"  {'.'.join(str(loc) for loc in err['loc'])}: {err['msg']}",
+                    fg="red",
                 )
                 errors += 1
         if fix:

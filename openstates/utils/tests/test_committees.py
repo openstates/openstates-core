@@ -297,7 +297,7 @@ def test_add_committee():
         assert full_com.name == sc.name
         assert full_com.id.startswith("ocd-organization")
         assert full_com.jurisdiction == JURISDICTION_ID
-        assert patch_obj.called_once_with(full_com)
+        patch_obj.assert_called_once_with(full_com)
 
 
 def test_ingest_scraped_json():

@@ -271,7 +271,7 @@ class Validator:
             self.errors[print_filename] = []
         except ValidationError as ve:
             self.errors[print_filename] = [
-                f"  {'.'.join(str(l) for l in error['loc'])}: {error['msg']}"
+                f"  {'.'.join(str(loc) for loc in error['loc'])}: {error['msg']}"
                 for error in ve.errors()
             ]
             # if we couldn't create a valid person, bail now

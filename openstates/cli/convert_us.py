@@ -66,7 +66,7 @@ def get_district_offices() -> defaultdict[str, list[Office]]:
                     voice=_fix_bad_dashes(office.get("phone", "")),
                     fax=_fix_bad_dashes(office.get("fax", "")),
                     address=address,
-                    name=f"District Office #{num+1}",
+                    name=f"District Office #{num + 1}",
                 )
             )
     return district_offices
