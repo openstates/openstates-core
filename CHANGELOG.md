@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.26.1 - Sep 30, 2026
+
+- Fix openstates_metadata PyPI publish failure by updating version in pyproject.toml.sample from 2024.10.3 to 2026.9.1
+
 ## 6.26.0 - Sep 28, 2026
 
 - Upgrade Python support from 3.9 to 3.13.
