@@ -34,12 +34,28 @@ jobs:
         env:
           DATABASE_URL: ${{ secrets.OPENSTATES_DATABASE_URL }}
         run: poetry run os-initdb
-      # Add steps for openstates_metadata package
+      # Check if metadata files changed since last tag
+      - name: Check if metadata changed
+        id: metadata_changed
+        run: |
+          PREV_TAG=$(git describe --tags --abbrev=0 HEAD^)
+          echo "Previous tag: $PREV_TAG"
+          if git diff --name-only "$PREV_TAG" HEAD | grep -q "^openstates/metadata/"; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "Metadata files changed - will publish openstates_metadata"
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No metadata files changed - skipping openstates_metadata publish"
+          fi
+
+      # Only prepare and publish metadata when metadata files changed
       - name: Create directory and copy openstates_metadata
+        if: steps.metadata_changed.outputs.changed == 'true'
         run: |
           mkdir -p core_metadata
           cp -r openstates/metadata core_metadata
-      - name:  Handle openstates_metadata steps
+      - name: Handle openstates_metadata steps
+        if: steps.metadata_changed.outputs.changed == 'true'
         working-directory: ./core_metadata
         run: |
           mv metadata/pyproject.toml.sample pyproject.toml
