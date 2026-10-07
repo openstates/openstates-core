@@ -1,5 +1,10 @@
 # Changelog
 
+## 6.26.2 - Oct 7, 2026
+
+- Make people-to-database "purge" error more explicit that the operation failed
+- Fix bug in people CSV generation handling of adddress/contact info
+
 ## 6.26.1 - Sep 30, 2026
 
 - Fix openstates_metadata PyPI publish failure by updating version in pyproject.toml.sample from 2024.10.3 to 2026.9.1
