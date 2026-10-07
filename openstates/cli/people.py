@@ -390,7 +390,8 @@ def load_directory_to_database(files: list[Path], purge: bool) -> None:
     # ids that are still missing would need to be purged
     if missing_ids and not purge:
         click.secho(
-            f"{len(missing_ids)} went missing, run with --purge to remove", fg="red"
+            f"{len(missing_ids)} went missing, run with --purge to remove. "
+            f"The transaction is cancelled and the run FAILED", fg="red"
         )
         for id in missing_ids:
             mobj = DjangoPerson.objects.get(pk=id)
