@@ -204,15 +204,30 @@ def write_csv(files: list[Path], jurisdiction_id: str, output_filename: str) -> 
 
             district_address = district_voice = district_fax = None
             capitol_address = capitol_voice = capitol_fax = None
+            office_types = [office.classification for office in person.offices]
             for cd in person.offices:
-                if cd.classification == "district":
+                # Opting here to favor "xyz-mail" for address and "xyz" for voice & fax if both are available
+                type = cd.classification
+                if (type == "district" and "district-mail" not in office_types) or (type == "district-mail" and "district" not in office_types):
                     district_address = cd.address
                     district_voice = cd.voice
                     district_fax = cd.fax
-                elif cd.classification == "district":
+                elif "district" in office_types and "district-mail" in office_types:
+                    if type == "district":
+                        district_voice = cd.voice
+                        district_fax = cd.fax
+                    elif type == "district-mail":
+                        district_address = cd.address
+                elif (type == "capitol" and "capitol-mail" not in office_types) or (type == "capitol-mail" and "capitol" not in office_types):
                     capitol_address = cd.address
                     capitol_voice = cd.voice
                     capitol_fax = cd.fax
+                elif "capitol" in office_types and "capitol-mail" in office_types:
+                    if type == "capitol":
+                        capitol_voice = cd.voice
+                        capitol_fax = cd.fax
+                    elif type == "capitol-mail":
+                        capitol_address = cd.address
 
             links = ";".join(k.url for k in person.links)
             sources = ";".join(k.url for k in person.sources)
