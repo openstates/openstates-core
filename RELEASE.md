@@ -4,6 +4,9 @@
 
 * bump version in `pyproject.toml`
 * update `CHANGELOG.md`
+* if you made changes to any files under `openstates/metadata/`:
+    * bump the version in `openstates/metadata/pyproject.toml.sample` to today's date in `YYYY.M.D` format (e.g. `2026.10.6`)
+    * the release workflow will fail if metadata files changed but this version was not bumped
 * once code is merged into `main`
     * Create a new Release in Github
         * Target `main`
