@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.26.3 - Oct 8, 2026
+
+* Add path filter to release workflow so openstates_metadata only publishes when metadata files change
+
 ## 6.26.2 - Oct 7, 2026
 
 - Make people-to-database "purge" error more explicit that the operation failed
