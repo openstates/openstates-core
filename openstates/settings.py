@@ -19,8 +19,8 @@ except Exception:
     verify = False
 SCRAPELIB_VERIFY = verify
 
-CACHE_DIR = os.path.join(os.getcwd(), "_cache")
-SCRAPED_DATA_DIR = os.path.join(os.getcwd(), "_data")
+CACHE_DIR = os.environ.get("CACHE_DIR", os.path.join(os.getcwd(), "_cache"))
+SCRAPED_DATA_DIR = os.environ.get("SCRAPED_DATA_DIR", os.path.join(os.getcwd(), "_data"))
 
 IMPORT_TRANSFORMERS = {
     "bill": {
