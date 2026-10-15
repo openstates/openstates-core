@@ -42,11 +42,11 @@ class VoteEventAdmin(ModelAdmin):
         "counts",
     )
 
+    @admin.display(description="Jurisdiction")
     def get_jurisdiction_name(self, obj):
         return obj.legislative_session.jurisdiction.name
 
-    get_jurisdiction_name.short_description = "Jurisdiction"
-
+    @admin.display(description="Vote Tally")
     def get_vote_tally(self, obj):
         yes = no = other = 0
         for vc in obj.counts.all():
@@ -57,8 +57,6 @@ class VoteEventAdmin(ModelAdmin):
             else:
                 other += vc.value
         return "{}-{}-{}".format(yes, no, other)
-
-    get_vote_tally.short_description = "Vote Tally"
 
     list_display = ("get_jurisdiction_name", "identifier", "bill", "get_vote_tally")
 
