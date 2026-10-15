@@ -63,6 +63,13 @@ LOGGING = {
         "boto": {"handlers": ["default"], "level": "WARN", "propagate": False},
     },
 }
+USE_TZ = True  # default for django 5.0+
 
 # Realtime Upload
-REALTIME_UPLOAD_DATA_CLASSES = ["bill", "event", "vote_event", "jurisdiction", "organization"]
+REALTIME_UPLOAD_DATA_CLASSES = [
+    "bill",
+    "event",
+    "vote_event",
+    "jurisdiction",
+    "organization",
+]
