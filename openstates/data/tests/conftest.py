@@ -1,5 +1,4 @@
 import pytest
-from datetime import datetime
 from openstates.data.models import (
     Jurisdiction,
     Division,
@@ -13,6 +12,7 @@ from openstates.data.models import (
     VoteEvent,
     Bill,
 )
+from openstates.utils import utcnow
 
 
 @pytest.fixture
@@ -90,7 +90,7 @@ def event(jurisdiction, event_location):
         jurisdiction=jurisdiction,
         description="To discuss the pros/cons of wind farming.",
         classification="committee-meeting",
-        start_date=datetime.utcnow().isoformat().split(".")[0],
+        start_date=utcnow().isoformat().split(".")[0],
         status="passed",
         location=event_location,
     )

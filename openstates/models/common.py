@@ -5,6 +5,7 @@ from pathlib import Path
 import yaml
 from pydantic import BaseModel as PydanticBaseModel, validator
 from openstates.metadata import lookup
+from openstates.utils import utcnow
 
 JURISDICTION_RE = re.compile(
     r"ocd-jurisdiction/country:us/(state|district|territory):\w\w/(place|county):[a-z_]+/government"
@@ -99,7 +100,7 @@ class TimeScoped(BaseModel):
     )
 
     def is_active(self) -> bool:
-        date = datetime.datetime.utcnow().date().isoformat()
+        date = utcnow().date().isoformat()
         return (self.end_date == "" or str(self.end_date) > date) and (
             self.start_date == "" or str(self.start_date) <= date
         )
