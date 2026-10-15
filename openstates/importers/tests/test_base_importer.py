@@ -54,8 +54,10 @@ def test_import_directory():
     datadir = tempfile.mkdtemp()
     dicta = {"test": "A"}
     dictb = {"test": "B"}
-    open(os.path.join(datadir, "test_a.json"), "w").write(json.dumps(dicta))
-    open(os.path.join(datadir, "test_b.json"), "w").write(json.dumps(dictb))
+    with open(os.path.join(datadir, "test_a.json"), "w") as f:
+        f.write(json.dumps(dicta))
+    with open(os.path.join(datadir, "test_b.json"), "w") as f:
+        f.write(json.dumps(dictb))
 
     # simply ensure that import directory calls import_data with all dicts
     ti = FakeImporter("jurisdiction-id")
