@@ -38,8 +38,12 @@ class Jurisdiction(OCDBase):
         # don't allow deletion of a division that a Jurisdiction depends upon
         on_delete=models.PROTECT,
     )
-    latest_bill_update = models.DateTimeField(default=datetime.date(2021, 1, 1))
-    latest_people_update = models.DateTimeField(default=datetime.date(2021, 1, 1))
+    latest_bill_update = models.DateTimeField(
+        default=datetime.datetime(2021, 1, 1, tzinfo=datetime.timezone.utc)
+    )
+    latest_people_update = models.DateTimeField(
+        default=datetime.datetime(2021, 1, 1, tzinfo=datetime.timezone.utc)
+    )
 
     class Meta:
         db_table = "opencivicdata_jurisdiction"
