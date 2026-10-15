@@ -22,7 +22,7 @@ os-people-repo-update = 'openstates.cli.people_repo_update:main'
 [tool.poetry.dependencies]
 python = "^3.13"
 psycopg2-binary = "^2.9.6"
-dj_database_url = "^0.5.0"
+dj_database_url = "^3.0.0"
 django = "5.2.18"
 scrapelib = "^2.4.1"
 jsonschema = "^3.2.0"
