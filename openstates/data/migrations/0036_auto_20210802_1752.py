@@ -5,7 +5,6 @@ from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
         ("data", "0035_auto_20210422_1926"),
     ]
@@ -14,11 +13,15 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name="jurisdiction",
             name="latest_bill_update",
-            field=models.DateTimeField(default=datetime.date(2021, 1, 1)),
+            field=models.DateTimeField(
+                default=datetime.datetime(2021, 1, 1, tzinfo=datetime.timezone.utc)
+            ),
         ),
         migrations.AddField(
             model_name="jurisdiction",
             name="latest_people_update",
-            field=models.DateTimeField(default=datetime.date(2021, 1, 1)),
+            field=models.DateTimeField(
+                default=datetime.datetime(2021, 1, 1, tzinfo=datetime.timezone.utc)
+            ),
         ),
     ]
