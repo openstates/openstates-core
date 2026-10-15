@@ -2809,18 +2809,6 @@ typing-extensions = ">=4.9.0"
 XlsxWriter = ">=0.5.7"
 
 [[package]]
-name = "pytz"
-version = "2024.2"
-description = "World timezone definitions, modern and historical"
-optional = false
-python-versions = "*"
-groups = ["main"]
-files = [
-    {file = "pytz-2024.2-py2.py3-none-any.whl", hash = "sha256:31c7c1817eb7fae7ca4b8c7ee50c72f93aa2dd863de768e1ef4245d426aa0725"},
-    {file = "pytz-2024.2.tar.gz", hash = "sha256:2aa355083c50a0f93fa581709deac0c9ad65cca8a9e9beac660adcbd493c798a"},
-]
-
-[[package]]
 name = "pyyaml"
 version = "6.0.3"
 description = "YAML parser and emitter for Python"
@@ -3292,18 +3280,6 @@ files = [
 referencing = "*"
 
 [[package]]
-name = "types-pytz"
-version = "2021.3.8"
-description = "Typing stubs for pytz"
-optional = false
-python-versions = "*"
-groups = ["dev"]
-files = [
-    {file = "types-pytz-2021.3.8.tar.gz", hash = "sha256:41253a3a2bf028b6a3f17b58749a692d955af0f74e975de94f6f4d2d3cd01dbd"},
-    {file = "types_pytz-2021.3.8-py3-none-any.whl", hash = "sha256:aef4a917ab28c585d3f474bfce4f4b44b91e95d9d47d4de29dd845e0db8e3910"},
-]
-
-[[package]]
 name = "types-pyyaml"
 version = "5.4.12"
 description = "Typing stubs for PyYAML"
@@ -3646,4 +3622,4 @@ propcache = ">=0.2.1"
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.13"
-content-hash = "e3b8cbef15909d965b229ebbc6a8a986e9cbb808f9f80400e161d1cc93fd50db"
+content-hash = "1e29f5a83456291ac0b44da4bf1c620af5d55525ba169dfb6ba90ebb0ddc5b39"
