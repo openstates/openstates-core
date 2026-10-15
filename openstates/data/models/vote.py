@@ -59,12 +59,10 @@ class VoteEvent(OCDBase):
 
     class Meta:
         db_table = "opencivicdata_voteevent"
-        index_together = [
-            ["legislative_session", "identifier", "bill"],
-            ["legislative_session", "bill"],
-        ]
         indexes = [
-            models.Index(fields=["dedupe_key"])
+            models.Index(fields=["dedupe_key"]),
+            models.Index(fields=["legislative_session", "identifier", "bill"]),
+            models.Index(fields=["legislative_session", "bill"]),
         ]
         ordering = ["start_date", "order"]
 

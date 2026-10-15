@@ -1,6 +1,5 @@
 import argparse
 import contextlib
-import datetime
 import glob
 from google.cloud import storage  # type: ignore
 import importlib
@@ -104,7 +103,7 @@ def do_scrape(
         ]
     )
 
-    last_scrape_datetime = DAG_RUN_START or datetime.datetime.utcnow().isoformat()
+    last_scrape_datetime = DAG_RUN_START or utils.utcnow().isoformat()
     for scraper_name, scrape_args in scrapers.items():
         ScraperCls = juris.scrapers[scraper_name]
         if (
@@ -227,7 +226,7 @@ def archive_to_cloud_storage(
     # Temporarily override any HTTP_PROXY env var
     # because GCP client uses requests, and it doesn't like self-signed cert in chain
     # so we do NOT want to use http proxy when connecting to google
-    prior_proxy_env = os.getenv('HTTP_PROXY') or ""
+    prior_proxy_env = os.getenv("HTTP_PROXY") or ""
     os.environ["HTTP_PROXY"] = ""
     os.environ["HTTPS_PROXY"] = ""
 
@@ -303,7 +302,7 @@ def do_import(juris: State, args: argparse.Namespace) -> dict[str, typing.Any]:
             )
         )
         DatabaseJurisdiction.objects.filter(id=juris.jurisdiction_id).update(
-            latest_bill_update=datetime.datetime.utcnow()
+            latest_bill_update=utils.utcnow()
         )
 
     # 8/12/26: generating session report is generating a lot of SQL load

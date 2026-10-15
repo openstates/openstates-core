@@ -19,6 +19,7 @@ DATABASES = {
     }
 }
 TIME_ZONE = "UTC"
+USE_TZ = True  # default for django 5.0+
 DATABASE_URL = os.environ.get("OVERRIDE_DATABASE_URL")
 if DATABASE_URL:
     DATABASES = {"default": dj_database_url.parse(DATABASE_URL)}

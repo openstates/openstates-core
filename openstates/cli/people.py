@@ -11,7 +11,7 @@ import logging
 import time
 import yaml
 from django.db import transaction, connection  # type: ignore
-from ..utils import abbr_to_jid
+from ..utils import abbr_to_jid, utcnow
 from ..utils.django import init_django  # type: ignore
 from ..models.people import Person, Role, Party, Link
 from ..utils.people import (
@@ -208,7 +208,9 @@ def write_csv(files: list[Path], jurisdiction_id: str, output_filename: str) -> 
             for cd in person.offices:
                 # Opting here to favor "xyz-mail" for address and "xyz" for voice & fax if both are available
                 type = cd.classification
-                if (type == "district" and "district-mail" not in office_types) or (type == "district-mail" and "district" not in office_types):
+                if (type == "district" and "district-mail" not in office_types) or (
+                    type == "district-mail" and "district" not in office_types
+                ):
                     district_address = cd.address
                     district_voice = cd.voice
                     district_fax = cd.fax
@@ -218,7 +220,9 @@ def write_csv(files: list[Path], jurisdiction_id: str, output_filename: str) -> 
                         district_fax = cd.fax
                     elif type == "district-mail":
                         district_address = cd.address
-                elif (type == "capitol" and "capitol-mail" not in office_types) or (type == "capitol-mail" and "capitol" not in office_types):
+                elif (type == "capitol" and "capitol-mail" not in office_types) or (
+                    type == "capitol-mail" and "capitol" not in office_types
+                ):
                     capitol_address = cd.address
                     capitol_voice = cd.voice
                     capitol_fax = cd.fax
@@ -266,7 +270,13 @@ def write_csv(files: list[Path], jurisdiction_id: str, output_filename: str) -> 
 
 
 def lint_dir(
-        abbr: str, verbose: bool, municipal: bool, date: str, fix: bool, save_all: bool, ignore_role_warnings: bool
+    abbr: str,
+    verbose: bool,
+    municipal: bool,
+    date: str,
+    fix: bool,
+    save_all: bool,
+    ignore_role_warnings: bool,
 ) -> int:  # pragma: no cover
     state_dir = get_data_path(abbr)
     legislative_filenames = (state_dir / "legislature").glob("*.yml")
@@ -391,7 +401,8 @@ def load_directory_to_database(files: list[Path], purge: bool) -> None:
     if missing_ids and not purge:
         click.secho(
             f"{len(missing_ids)} went missing, run with --purge to remove. "
-            f"The transaction is cancelled and the run FAILED", fg="red"
+            f"The transaction is cancelled and the run FAILED",
+            fg="red",
         )
         for id in missing_ids:
             mobj = DjangoPerson.objects.get(pk=id)
@@ -403,7 +414,7 @@ def load_directory_to_database(files: list[Path], purge: bool) -> None:
 
     if created_count or updated_count:
         Jurisdiction.objects.filter(id__in=updated_jurisdictions).update(
-            latest_people_update=datetime.datetime.utcnow()
+            latest_people_update=utcnow()
         )
 
     click.secho(
@@ -414,17 +425,17 @@ def load_directory_to_database(files: list[Path], purge: bool) -> None:
 
 
 def create_person(
-        fname: str,
-        lname: str,
-        name: str,
-        state: str,
-        district: str,
-        party: str,
-        rtype: str,
-        url: str,
-        image: str,
-        email: str,
-        start_date: str,
+    fname: str,
+    lname: str,
+    name: str,
+    state: str,
+    district: str,
+    party: str,
+    rtype: str,
+    url: str,
+    image: str,
+    email: str,
+    start_date: str,
 ) -> None:
     role = Role(
         type=rtype,
@@ -513,17 +524,17 @@ def to_csv(abbreviations: list[str], upload: bool) -> None:
 @click.option("--email", prompt="Email", help="Email")
 @click.option("--start-date", prompt="Start Date", help="Start Date YYYY-MM-DD")
 def new(
-        fname: str,
-        lname: str,
-        name: str,
-        state: str,
-        district: str,
-        party: str,
-        rtype: str,
-        url: str,
-        image: str,
-        email: str,
-        start_date: str,
+    fname: str,
+    lname: str,
+    name: str,
+    state: str,
+    district: str,
+    party: str,
+    rtype: str,
+    url: str,
+    image: str,
+    email: str,
+    start_date: str,
 ) -> None:
     """
     Create a new person record.
@@ -574,11 +585,11 @@ def summarize(abbreviations: list[str], roster: bool) -> None:
 @click.option("--death", is_flag=True)
 @click.option("--vacant", is_flag=True)
 def retire(
-        date: str,
-        filenames: list[str],
-        reason: typing.Optional[str],
-        death: bool,
-        vacant: bool,
+    date: str,
+    filenames: list[str],
+    reason: typing.Optional[str],
+    death: bool,
+    vacant: bool,
 ) -> None:
     """
     Retire a legislator, given END_DATE and FILENAME.
@@ -658,13 +669,13 @@ def sync_images(abbreviations: list[str], skip_existing: bool) -> None:
     help="Do not emit warnings for people with no active roles.",
 )
 def lint(
-        abbreviations: list[str],
-        verbose: bool,
-        municipal: bool,
-        date: str,
-        fix: bool,
-        save_all: bool,
-        ignore_role_warnings: bool,
+    abbreviations: list[str],
+    verbose: bool,
+    municipal: bool,
+    date: str,
+    fix: bool,
+    save_all: bool,
+    ignore_role_warnings: bool,
 ) -> None:
     """
     Lint YAML files.
@@ -678,7 +689,9 @@ def lint(
 
     for abbr in abbreviations:
         click.secho("==== {} ====".format(abbr), bold=True)
-        error_count += lint_dir(abbr, verbose, municipal, date, fix, save_all, ignore_role_warnings)
+        error_count += lint_dir(
+            abbr, verbose, municipal, date, fix, save_all, ignore_role_warnings
+        )
 
     if error_count:
         click.secho(f"exiting with {error_count} errors", fg="red")
@@ -771,8 +784,8 @@ def merge(abbr: str, input_dir: str, retirement: str, reset_offices: bool) -> No
     existing_people: list[Person] = []
     directory = get_data_path(abbr)
     for filename in itertools.chain(
-            directory.glob("legislature/*.yml"),
-            directory.glob("retired/*.yml"),
+        directory.glob("legislature/*.yml"),
+        directory.glob("retired/*.yml"),
     ):
         existing_people.append(Person.load_yaml(filename))
 

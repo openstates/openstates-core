@@ -13,7 +13,6 @@ import uuid
 
 
 class Migration(migrations.Migration):
-
     initial = True
 
     dependencies = []
@@ -1273,10 +1272,16 @@ class Migration(migrations.Migration):
             ],
             options={
                 "db_table": "opencivicdata_voteevent",
-                "index_together": {
-                    ("legislative_session", "bill"),
-                    ("legislative_session", "identifier", "bill"),
-                },
+                "indexes": [
+                    models.Index(
+                        fields=["legislative_session", "bill"],
+                        name="opencivicda_legisla_a364f8_idx",
+                    ),
+                    models.Index(
+                        fields=["legislative_session", "identifier", "bill"],
+                        name="opencivicda_legisla_0f4811_idx",
+                    ),
+                ],
             },
         ),
         migrations.CreateModel(
@@ -2773,25 +2778,44 @@ class Migration(migrations.Migration):
                 fields=["search_vector"], name="search_index"
             ),
         ),
-        migrations.AlterIndexTogether(
-            name="post", index_together={("organization", "label")}
+        migrations.AddIndex(
+            model_name="post",
+            index=models.Index(
+                fields=["organization", "label"], name="opencivicda_organiz_5da878_idx"
+            ),
         ),
-        migrations.AlterIndexTogether(
-            name="organization",
-            index_together={
-                ("classification", "name"),
-                ("jurisdiction", "classification", "name"),
-            },
+        migrations.AddIndex(
+            model_name="organization",
+            index=models.Index(
+                fields=["classification", "name"], name="opencivicda_classif_dcc6c5_idx"
+            ),
         ),
-        migrations.AlterIndexTogether(
-            name="membership",
-            index_together={("organization", "person", "label", "post")},
+        migrations.AddIndex(
+            model_name="organization",
+            index=models.Index(
+                fields=["jurisdiction", "classification", "name"],
+                name="opencivicda_jurisdi_f0913f_idx",
+            ),
         ),
-        migrations.AlterIndexTogether(
-            name="event", index_together={("jurisdiction", "start_date", "name")}
+        migrations.AddIndex(
+            model_name="membership",
+            index=models.Index(
+                fields=["organization", "person", "label", "post"],
+                name="opencivicda_organiz_947bc9_idx",
+            ),
         ),
-        migrations.AlterIndexTogether(
-            name="bill",
-            index_together={("from_organization", "legislative_session", "identifier")},
+        migrations.AddIndex(
+            model_name="event",
+            index=models.Index(
+                fields=["jurisdiction", "start_date", "name"],
+                name="opencivicda_jurisdi_5409af_idx",
+            ),
+        ),
+        migrations.AddIndex(
+            model_name="bill",
+            index=models.Index(
+                fields=["from_organization", "legislative_session", "identifier"],
+                name="opencivicda_from_or_ed0dc1_idx",
+            ),
         ),
     ]

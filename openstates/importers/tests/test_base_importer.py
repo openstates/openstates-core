@@ -17,6 +17,7 @@ from openstates.scrape import Bill as ScrapeBill
 from openstates.importers.base import omnihash, BaseImporter
 from openstates.importers import BillImporter
 from openstates.exceptions import UnresolvedIdError, DataImportError
+from openstates.utils import utcnow
 
 
 def create_jurisdiction():
@@ -53,8 +54,10 @@ def test_import_directory():
     datadir = tempfile.mkdtemp()
     dicta = {"test": "A"}
     dictb = {"test": "B"}
-    open(os.path.join(datadir, "test_a.json"), "w").write(json.dumps(dicta))
-    open(os.path.join(datadir, "test_b.json"), "w").write(json.dumps(dictb))
+    with open(os.path.join(datadir, "test_a.json"), "w") as f:
+        f.write(json.dumps(dicta))
+    with open(os.path.join(datadir, "test_b.json"), "w") as f:
+        f.write(json.dumps(dictb))
 
     # simply ensure that import directory calls import_data with all dicts
     ti = FakeImporter("jurisdiction-id")
@@ -171,7 +174,7 @@ def test_invalid_fields_related_item():
 @pytest.mark.django_db
 def test_automatic_updated_at():
     create_jurisdiction()
-    difference = Organization.objects.get().updated_at - datetime.datetime.utcnow()
+    difference = Organization.objects.get().updated_at - utcnow()
     # updated_at should be in UTC, a bit of clock drift notwithstanding
     assert abs(difference) < datetime.timedelta(minutes=5)
 

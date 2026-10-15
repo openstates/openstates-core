@@ -15,7 +15,8 @@ from openstates.models.committees import Committee, Membership
 from openstates.cli.committees import committee_to_db, _parent_lookup
 
 
-def setup():
+@pytest.fixture(autouse=True)
+def setup(db):
     d = Division.objects.create(id="ocd-division/country:us/state:nc", name="NC")
     j = Jurisdiction.objects.create(
         id="ocd-jurisdiction/country:us/state:nc/government", name="NC", division=d

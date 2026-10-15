@@ -1,12 +1,13 @@
 import pytest
 import datetime
 from openstates.scrape import Event, calculate_window
+from openstates.utils import utcnow
 
 
 def event_obj():
     e = Event(
         name="get-together",
-        start_date=datetime.datetime.utcnow().isoformat().split(".")[0] + "Z",
+        start_date=utcnow().isoformat().split(".")[0] + "Z",
         location_name="Joe's Place",
     )
     e.add_source(url="http://example.com/foobar")

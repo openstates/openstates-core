@@ -52,15 +52,17 @@ class Bill(OCDBase):
 
     class Meta:
         db_table = "opencivicdata_bill"
-        index_together = [["from_organization", "legislative_session", "identifier"]]
         indexes = [
             models.Index(
                 fields=["latest_action_date"],
-                name="opencivicdata_bill_latest_action_idx",
+                name="ocd_bill_latest_action_idx",
             ),
             models.Index(
                 fields=["updated_at"],
-                name="opencivicdata_bill_updated_at_idx",
+                name="ocd_bill_updated_at_idx",
+            ),
+            models.Index(
+                fields=["from_organization", "legislative_session", "identifier"]
             ),
         ]
 
