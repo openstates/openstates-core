@@ -122,9 +122,8 @@ BILL_ACTION_CLASSIFICATION_CHOICES = (
     ("sponsorship", "Authorship/Sponsorship Details"),
     ("carried-over", "Carried Over from Previous Session"),
     ("reported-out-of-committee", "Reported Out of Committee"),
-    ("concurrence", "Sent for Concurrence")
-
-
+    ("concurrence", "Sent for Concurrence"),
+    ("non-concurrence", "Non-Concurrence"),
 )
 BILL_ACTION_CLASSIFICATIONS = _keys(BILL_ACTION_CLASSIFICATION_CHOICES)
 
