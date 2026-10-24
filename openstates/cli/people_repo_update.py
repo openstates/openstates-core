@@ -133,7 +133,7 @@ def update(
         "An update is necessary...\nBegin updating Openstates People to-database!"
     )
 
-    abbreviations = [abbreviation] if abbreviation else []
+    abbreviations = abbreviation.split(",") if abbreviation else []
     clone_people_repo()
     jurisdictions_to_ingest = (
         ", ".join(abbreviations) if abbreviations else "all jurisdictions"
