@@ -27,12 +27,12 @@ Django = "3.2.14"
 scrapelib = "^2.4.1"
 jsonschema = "^3.2.0"
 click = "^8.0"
-attrs = "^20.2.0"
+attrs = ">=20.2.0"
 PyYAML = "^6.0"
 textract = "^2.0"
 chardet = "^7.4"
 pydantic = "^1.8.2"
-spatula = ">=0.8.9,<1.0"
+spatula = { version = ">=0.8.9,<1.0", optional = true }
 PyJWT = "^2.5.0"
 boto3 = "^1.26.61"
 us = "^3.1.1"
@@ -44,6 +44,9 @@ pytest = "^6.2.5"
 six = "^1.17.0"
 legacy-cgi = "^2.6.4"
 urllib3 = "^2.7.0"
+
+[tool.poetry.extras]
+spatula = ["spatula"]
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2.5"
