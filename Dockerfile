@@ -19,17 +19,25 @@ RUN apt-get update -qq && apt-get install -y -qq --no-install-recommends \
     && rm -rf /var/lib/apt/lists/* \
     && mkdir -p /opt/os
 
+# use the image's python rather than downloading the one pinned in .python-version
+ENV UV_PYTHON=/usr/local/bin/python3
+ENV UV_PYTHON_DOWNLOADS=never
+ENV UV_NO_CACHE=1
+COPY --from=ghcr.io/astral-sh/uv:0.13.6 /uv /uvx /bin/
+
 WORKDIR /opt/os
 ADD pyproject.toml /opt/os/
-ADD poetry.lock /opt/os/
-RUN pip --no-cache-dir --disable-pip-version-check install poetry \
-    && poetry install -q --no-root \
+ADD uv.lock /opt/os/
+ADD .python-version /opt/os/
+RUN uv sync -q --locked --no-install-project \
     && apt-get autoremove -y -qq \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
 ADD . /opt/os
-RUN poetry install -q \
-    && rm -r /root/.cache/pypoetry/cache /root/.cache/pypoetry/artifacts/
+RUN uv sync -q --locked
 
-ENTRYPOINT ["poetry", "run"]
+# deps are baked in above; skip re-syncing on every `uv run`
+ENV UV_NO_SYNC=1
+
+ENTRYPOINT ["uv", "run"]
