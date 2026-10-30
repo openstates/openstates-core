@@ -25,27 +25,26 @@ are the steps to create and execute a new migration:
     * Identify the DB connection URL that is accurate to your local database. In most cases, it should
       be: `postgis://openstates:openstates@localhost:5405/openstatesorg`
     * In the repo's root folder, run the `os-dbmakemigrations` command to generate a migration file based on your
-      changes: `DATABASE_URL=postgis://openstates:openstates@localhost:5405/openstatesorg poetry run os-dbmakemigrations`
+      changes: `DATABASE_URL=postgis://openstates:openstates@localhost:5405/openstatesorg uv run os-dbmakemigrations`
     * Look at the generated migration file in `openstates/data/migrations` and ensure that it looks correct.
     * Execute the migration by running the `os-initdb`
-      command: `DATABASE_URL=postgis://openstates:openstates@localhost:5405/openstatesorg poetry run os-initdb`
+      command: `DATABASE_URL=postgis://openstates:openstates@localhost:5405/openstatesorg uv run os-initdb`
 * Once the migration is verified by local testing, you can execute it against the production DB
     * Identify the DB connection URL that is accurate for the PROD database. This typically should use the same Postgres
       user that owns the tables you want to change. Contact an admin if you need help.
     * Run the `os-initdb` command to
-      migrate: `DATABASE_URL=postgis://USERNAME_HERE:PASSWORD_HERE@PROD_DB_HOSTNAME_HERE:5432/openstatesorg poetry run os-initdb`
+      migrate: `DATABASE_URL=postgis://USERNAME_HERE:PASSWORD_HERE@PROD_DB_HOSTNAME_HERE:5432/openstatesorg uv run os-initdb`
 
 ## Debugging openstates-core code
 
 ### Commands that do not integrate with openstates-scrapers
 
-* Install pyenv and correct python version
-* Install poetry
-* `poetry install`
+* Install [uv](https://docs.astral.sh/uv/getting-started/installation/)
+* `uv sync` (uv installs the python version from `.python-version` automatically)
 
 Example PyCharm config (for `relationships` CLI command):
 
-* Interpeter: the poetry env that you just set up
+* Interpeter: the `.venv` that `uv sync` just set up
 * Module: `openstates.cli.relationships`
 * Parameters: `--log_level=DEBUG us`
 * Env vars: `DATABASE_URL=postgres://USERNAME:PASSWORD@DB_HOSTNAME:PORT/openstatesorg`
