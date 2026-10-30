@@ -125,6 +125,24 @@ def test_add_document():
     e.validate()
 
 
+def test_add_document_rejects_bad_url():
+    # Regression for openstates/issues#1298: the schema treated document
+    # urls as plain strings, so a relative path like "/whatever/124.html"
+    # silently passed validation. The url should now have to be a real URI.
+    import pytest
+
+    from openstates.exceptions import ScrapeValueError
+
+    e = event_obj()
+    e.add_document(
+        note="hello",
+        url="/whatever/124.html",
+        media_type="text/html",
+    )
+    with pytest.raises(ScrapeValueError):
+        e.validate()
+
+
 def test_participants():
     e = event_obj()
     e.add_participant("Committee of the Whole", type="committee", note="everyone")
