@@ -164,6 +164,42 @@ def test_vote_event_dedupe_key_dedupe():
 
 
 @pytest.mark.django_db
+def test_vote_event_dedupe_key_scoped_to_session():
+    j = create_jurisdiction()
+    j.legislative_sessions.create(name="1901", identifier="1901")
+    Organization.objects.create(
+        id="org-id", name="Legislature", classification="legislature", jurisdiction=j
+    )
+
+    def make_vote(session):
+        vote_event = ScrapeVoteEvent(
+            legislative_session=session,
+            start_date="2013",
+            classification="anything",
+            result="passed",
+            motion_text="a vote on something",
+            identifier="Roll Call No. 1",
+        )
+        vote_event.dedupe_key = "foo"
+        return vote_event
+
+    bi = BillImporter("jid")
+    _, what = VoteEventImporter("jid", bi).import_item(make_vote("1900").as_dict())
+    assert what == "insert"
+
+    # same key, different session: new vote, old one untouched
+    _, what = VoteEventImporter("jid", bi).import_item(make_vote("1901").as_dict())
+    assert what == "insert"
+    assert VoteEvent.objects.count() == 2
+    assert VoteEvent.objects.filter(legislative_session__identifier="1900").count() == 1
+
+    # same key, same session: still dedupes
+    _, what = VoteEventImporter("jid", bi).import_item(make_vote("1901").as_dict())
+    assert what == "noop"
+    assert VoteEvent.objects.count() == 2
+
+
+@pytest.mark.django_db
 def test_vote_event_bill_id_dedupe():
     create_jurisdiction()
     bill = Bill.objects.create(
