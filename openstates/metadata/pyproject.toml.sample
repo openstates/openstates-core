@@ -1,17 +1,19 @@
-[tool.poetry]
+[project]
 name = "openstates_metadata"
 version = "2026.9.1"
 description = "Openstates metadata"
-authors = ["Alex Obaseki <alex@pluralpolicy.com>"]
+authors = [{ name = "Alex Obaseki", email = "alex@pluralpolicy.com" }]
 license = "MIT"
+readme = "README.md"
+requires-python = ">=3.9,<4.0"
+dependencies = [
+    "attr>=0.3.2,<0.4",
+    "attrs>=24.2.0,<25",
+]
 
-
-[tool.poetry.dependencies]
-python = "^3.9"
-attr = "^0.3.2"
-attrs = "^24.2.0"
-
+[tool.uv.build-backend]
+module-root = ""
 
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires = ["uv_build>=0.13.6,<0.14"]
+build-backend = "uv_build"

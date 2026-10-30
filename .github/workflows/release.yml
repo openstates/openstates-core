@@ -12,28 +12,24 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           # Retrieves all commit history for path filter checking
           fetch-depth: 0
-      - name: setup Python 3.13
-        uses: actions/setup-python@v4
-        with:
-          python-version: 3.13
       - name: install GDAL and python bindings
         run: sudo apt update && sudo apt-get install -y gdal-bin python3-gdal
-      - name: install Poetry
-        uses: snok/install-poetry@v1.4.1
-      - name: configure pypi credentials
-        run: poetry config pypi-token.pypi "${{ secrets.PYPI_API_KEY }}"
+      - name: install uv
+        uses: astral-sh/setup-uv@68559e99cc807c1eb7e9238fd43a15bba460eec2 # v10.3.3
       - name: Publish core package
-        run: poetry publish --build
+        run: uv build && uv publish
+        env:
+          UV_PUBLISH_TOKEN: ${{ secrets.PYPI_API_KEY }}
       - name: install dependencies
-        run: poetry install
+        run: uv sync --locked
       - name: update metadata
         env:
           DATABASE_URL: ${{ secrets.OPENSTATES_DATABASE_URL }}
-        run: poetry run os-initdb
+        run: uv run os-initdb
       # Check if metadata files changed since last tag
       - name: Check if metadata changed
         id: metadata_changed
@@ -62,6 +58,5 @@ jobs:
           mv metadata/.python-version.sample .python-version
           mv metadata/README.md.sample README.md
           mv metadata openstates_metadata
-          poetry install
-          poetry config pypi-token.pypi "${{ secrets.OPENSTATES_METADATA_PYPI_API_KEY }}"
-          poetry publish --build
+          uv build
+          uv publish --token "${{ secrets.OPENSTATES_METADATA_PYPI_API_KEY }}"

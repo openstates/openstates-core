@@ -30,34 +30,22 @@ jobs:
 
     steps:
     # Python & dependency installation
-    - uses: actions/checkout@v3
-    - name: setup Python 3.13
-      uses: actions/setup-python@v4
+    - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+    - name: install uv
+      uses: astral-sh/setup-uv@68559e99cc807c1eb7e9238fd43a15bba460eec2 # v10.3.3
       with:
-        python-version: 3.13
-    - name: install Poetry
-      uses: snok/install-poetry@v1.4.1
-    - name: cache Poetry virtualenv
-      uses: actions/cache@v3
-      id: cache
-      with:
-        path: ~/.virtualenvs/
-        key: poetry-${{ hashFiles('**/poetry.lock') }}
-        restore-keys: |
-          poetry-${{ hashFiles('**/poetry.lock') }}
-    - name: set poetry config path
-      run: poetry config virtualenvs.path ~/.virtualenvs
+        enable-cache: true
 
     - name: install dependencies
-      run: poetry install
+      run: uv sync --locked
 
-    - name: lint with flake8
-      run: poetry run flake8 --show-source --statistics --ignore=E203,E501,W503
+    - name: lint with ruff
+      run: uv run ruff check --output-format=github .
 # 1/30/26 this fails in CI linting against a file that should not be linted (below), no idea why
 # python3.11/site-packages/jsonschema-stubs/_utils.pyi
-#    - name: lint with mypy
-#      run: poetry run mypy openstates
+#    - name: type check with ty
+#      run: uv run ty check openstates
     - name: pytest
-      run: poetry run pytest --cov-report=xml --cov=openstates --ds=openstates.test_settings --reuse-db -v openstates
+      run: uv run pytest --cov-report=xml --cov=openstates --ds=openstates.test_settings --reuse-db -v openstates
       env:
         DATABASE_URL: postgresql://test:test@localhost/test
