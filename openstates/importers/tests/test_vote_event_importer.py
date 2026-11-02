@@ -313,6 +313,53 @@ def test_vote_event_bill_clearing():
 
 
 @pytest.mark.django_db
+def test_vote_event_clearing_bills_without_votes(caplog):
+    # a bill imported with no vote events would lose the ones from earlier imports,
+    # as long as the run imported vote events at all (dry run for now: only logged)
+    create_jurisdiction()
+    hb1 = ScrapeBill("HB 1", "1900", "first bill", chamber="lower")
+    hb2 = ScrapeBill("HB 2", "1900", "second bill", chamber="lower")
+    hb3 = ScrapeBill("HB 3", "1900", "third bill", chamber="lower")
+
+    def vote_on(bill_id):
+        return ScrapeVoteEvent(
+            legislative_session="1900",
+            start_date="2013",
+            classification="anything",
+            result="passed",
+            motion_text=f"passage of {bill_id}",
+            bill=bill_id,
+            bill_chamber="lower",
+            chamber="lower",
+        ).as_dict()
+
+    bi = BillImporter("jid")
+    bi.import_data([hb1.as_dict(), hb2.as_dict(), hb3.as_dict()])
+    VoteEventImporter("jid", bi).import_data(
+        [vote_on("HB 1"), vote_on("HB 2"), vote_on("HB 3")]
+    )
+    assert VoteEvent.objects.count() == 3
+
+    # bills-only run: no vote events imported, so nothing is deleted
+    bi = BillImporter("jid")
+    bi.import_data([hb1.as_dict(), hb2.as_dict(), hb3.as_dict()])
+    VoteEventImporter("jid", bi).import_data([])
+    assert VoteEvent.objects.count() == 3
+
+    # HB 2 is imported without votes, so its old one would be deleted (logged only);
+    # HB 3 isn't imported, so it isn't touched
+    bi = BillImporter("jid")
+    bi.import_data([hb1.as_dict(), hb2.as_dict()])
+    caplog.clear()
+    with caplog.at_level("INFO", logger="openstates"):
+        VoteEventImporter("jid", bi).import_data([vote_on("HB 1")])
+    dry_run = [r.getMessage() for r in caplog.records if "dry run" in r.getMessage()]
+    assert len(dry_run) == 1 and " on HB 2 " in dry_run[0]
+    # TODO: when deletion is re-enabled, assert only HB 1 and HB 3 keep their votes
+    assert VoteEvent.objects.count() == 3
+
+
+@pytest.mark.django_db
 def test_vote_event_bill_actions():
     create_jurisdiction()
     bill = ScrapeBill("HB 1", "1900", "Axe & Tack Tax Act", chamber="lower")
