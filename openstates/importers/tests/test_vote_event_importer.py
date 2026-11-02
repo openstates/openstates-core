@@ -277,6 +277,50 @@ def test_vote_event_bill_clearing():
 
 
 @pytest.mark.django_db
+def test_vote_event_clearing_bills_without_votes():
+    # a bill imported with no vote events loses the ones from earlier imports,
+    # as long as the run imported vote events at all
+    create_jurisdiction()
+    hb1 = ScrapeBill("HB 1", "1900", "first bill", chamber="lower")
+    hb2 = ScrapeBill("HB 2", "1900", "second bill", chamber="lower")
+    hb3 = ScrapeBill("HB 3", "1900", "third bill", chamber="lower")
+
+    def vote_on(bill_id):
+        return ScrapeVoteEvent(
+            legislative_session="1900",
+            start_date="2013",
+            classification="anything",
+            result="passed",
+            motion_text=f"passage of {bill_id}",
+            bill=bill_id,
+            bill_chamber="lower",
+            chamber="lower",
+        ).as_dict()
+
+    bi = BillImporter("jid")
+    bi.import_data([hb1.as_dict(), hb2.as_dict(), hb3.as_dict()])
+    VoteEventImporter("jid", bi).import_data(
+        [vote_on("HB 1"), vote_on("HB 2"), vote_on("HB 3")]
+    )
+    assert VoteEvent.objects.count() == 3
+
+    # bills-only run: no vote events imported, so nothing is deleted
+    bi = BillImporter("jid")
+    bi.import_data([hb1.as_dict(), hb2.as_dict(), hb3.as_dict()])
+    VoteEventImporter("jid", bi).import_data([])
+    assert VoteEvent.objects.count() == 3
+
+    # HB 2 is imported without votes and loses its old one; HB 3 isn't imported and keeps it
+    bi = BillImporter("jid")
+    bi.import_data([hb1.as_dict(), hb2.as_dict()])
+    VoteEventImporter("jid", bi).import_data([vote_on("HB 1")])
+    assert sorted(VoteEvent.objects.values_list("bill__identifier", flat=True)) == [
+        "HB 1",
+        "HB 3",
+    ]
+
+
+@pytest.mark.django_db
 def test_vote_event_bill_actions():
     create_jurisdiction()
     bill = ScrapeBill("HB 1", "1900", "Axe & Tack Tax Act", chamber="lower")
