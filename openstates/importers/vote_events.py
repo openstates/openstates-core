@@ -125,6 +125,15 @@ class VoteEventImporter(BaseImporter):
         return data
 
     def postimport(self) -> None:
+        # bills imported this time through without any vote events keep none of their old ones
+        bills_without_votes = (
+            set(self.bill_importer.json_to_db_id.values()) - self.seen_bill_ids
+        )
+        self.vote_events_to_delete.update(
+            self.model_class.objects.filter(
+                bill_id__in=bills_without_votes
+            ).values_list("id", flat=True)
+        )
         # be sure not to delete vote events that were imported (meaning updated) this time through
         self.vote_events_to_delete.difference_update(self.json_to_db_id.values())
         # everything remaining, goodbye
