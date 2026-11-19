@@ -1,5 +1,8 @@
 # Changelog
 
+## 6.26.7 - Nov 19, 2026
+- Add missing metadata to all scraper output 
+
 ## 6.26.6 - Nov 17, 2026
 - Add `non-concurrence` to `BILL_ACTION_CLASSIFICATION_CHOICES` (DATA-5822)
 
