@@ -1,4 +1,4 @@
 #!/bin/sh
 set -e
-export PYTHONPATH=.; poetry run pytest --cov openstates --cov-report html --ds=openstates.test_settings $@
-poetry run coverage report -m
+export PYTHONPATH=.; uv run pytest --cov openstates --cov-report html --ds=openstates.test_settings $@
+uv run coverage report -m

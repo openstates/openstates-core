@@ -9,6 +9,6 @@
 #    core
 set -e
 # Assuming the working directory is openstates-core/openstates
-poetry run python metadata/_creation/write_data.py
-poetry run black metadata/data/
-poetry run pytest --ds=openstates.test_settings -x
+uv run python metadata/_creation/write_data.py
+uv run ruff format metadata/data/
+uv run pytest --ds=openstates.test_settings -x

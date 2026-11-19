@@ -12,7 +12,7 @@ services:
       - DATABASE_URL=postgres://openstates:openstates@db/openstatesorg
     volumes:
       - .:/opt/openstates-core
-    entrypoint: ["poetry", "run"]
+    entrypoint: ["uv", "run"]
     networks:
       - openstates-network
   db:
