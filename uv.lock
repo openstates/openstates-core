@@ -768,7 +768,7 @@ wheels = [
 
 [[package]]
 name = "openstates"
-version = "6.26.6"
+version = "7.0.0"
 source = { editable = "." }
 dependencies = [
     { name = "attrs" },

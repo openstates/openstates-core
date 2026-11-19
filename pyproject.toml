@@ -1,6 +1,6 @@
 [project]
 name = "openstates"
-version = "6.26.7"
+version = "7.0.0"
 description = "core infrastructure for the openstates project"
 authors = [{ name = "Jesse Mortenson", email = "jesse.mortenson@sai360.com" }]
 license = "MIT"
