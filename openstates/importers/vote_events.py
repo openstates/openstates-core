@@ -46,8 +46,11 @@ class VoteEventImporter(BaseImporter):
             spec["bill_id"] = vote_event["bill_id"]
 
         if vote_event.get("dedupe_key"):
-            # replace entire spec with dedupe key
-            spec = {"dedupe_key": vote_event.get("dedupe_key")}
+            # replace spec with dedupe key, still scoped to the session
+            spec = {
+                "legislative_session_id": vote_event["legislative_session_id"],
+                "dedupe_key": vote_event.get("dedupe_key"),
+            }
         elif vote_event["identifier"]:
             # if there's an identifier, just use it and the bill_id and the session
             spec["identifier"] = vote_event["identifier"]
