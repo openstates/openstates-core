@@ -1,5 +1,4 @@
 from pathlib import Path
-from spatula.cli import scrape
 from .people import merge as people_merge
 from .committees import merge as committees_merge
 from ..utils.instrument import Instrumentation
@@ -51,6 +50,9 @@ def main(
         ]
         if fastmode:
             args.append("--fastmode")
+        # spatula is an optional extra: it pins attrs<21, which conflicts with Scrapy
+        from spatula.cli import scrape
+
         try:
             scrape(args)
         except SystemExit as e:
