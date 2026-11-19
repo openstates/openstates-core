@@ -1,3 +1,4 @@
+from .. import utils
 from .base import BaseModel, Scraper
 from .popolo import Organization
 from .schemas.jurisdiction import schema
@@ -100,8 +101,12 @@ class State(BaseModel):
 
     _id = jurisdiction_id
 
+    def pre_save(self, jurisdiction):
+        # A jurisdiction's own fields already describe it, so skip the jurisdiction summary
+        self.scraped_at = utils.utcnow()
+
     def as_dict(self):
-        return {
+        j_data = {
             "_id": self.jurisdiction_id,
             "id": self.jurisdiction_id,
             "name": self.name,
@@ -111,6 +116,10 @@ class State(BaseModel):
             "legislative_sessions": self.legislative_sessions,
             "extras": self.extras,
         }
+        # Scrape metadata, set by pre_save
+        if hasattr(self, "scraped_at"):
+            j_data["scraped_at"] = self.scraped_at
+        return j_data
 
     def __str__(self):
         return self.name
