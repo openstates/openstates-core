@@ -212,6 +212,3 @@ class Event(BaseModel, SourceMixin, AssociatedLinkMixin, LinkMixin):
             date=date,
             classification=classification,
         )
-
-    def pre_save(self, jurisdiction):
-        self.add_scrape_metadata(jurisdiction)

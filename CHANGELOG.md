@@ -1,5 +1,9 @@
 # Changelog
 
+## 7.0.0 - Nov 19, 2026
+- Change tooling to uv, ruff, ty
+- Add missing metadata to all scraper output
+
 ## 6.26.6 - Nov 17, 2026
 - Add `non-concurrence` to `BILL_ACTION_CLASSIFICATION_CHOICES` (DATA-5822)
 

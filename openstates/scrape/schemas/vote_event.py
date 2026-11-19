@@ -1,4 +1,10 @@
-from .common import sources, extras, fuzzy_datetime_blank
+from .common import (
+    sources,
+    extras,
+    fuzzy_datetime,
+    fuzzy_datetime_blank,
+    jurisdiction_summary,
+)
 from ...data import common
 
 
@@ -42,5 +48,7 @@ schema = {
         "sources": sources,
         "extras": extras,
         "dedupe_key": {"type": ["string", "null"], "minLength": 1},
+        "jurisdiction": jurisdiction_summary,
+        "scraped_at": fuzzy_datetime,
     },
 }
