@@ -1,4 +1,4 @@
-from .common import extras, fuzzy_date_string
+from .common import extras, fuzzy_date_string, fuzzy_datetime
 
 schema = {
     "type": "object",
@@ -24,5 +24,6 @@ schema = {
             },
         },
         "extras": extras,
+        "scraped_at": fuzzy_datetime,
     },
 }

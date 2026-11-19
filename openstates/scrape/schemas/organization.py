@@ -4,6 +4,8 @@ from .common import (
     other_names,
     sources,
     extras,
+    fuzzy_datetime,
+    jurisdiction_summary,
 )
 from ...data import common
 
@@ -23,6 +25,8 @@ schema = {
         "jurisdiction_id": {"type": "string", "minLength": 1},
         "division_id": {"type": ["string", "null"], "minLength": 1},
         "extras": extras,
+        "jurisdiction": jurisdiction_summary,
+        "scraped_at": fuzzy_datetime,
     },
     "type": "object",
 }
