@@ -606,7 +606,7 @@ class BaseModel(object):
             )
 
     def pre_save(self, jurisdiction):
-        pass
+        self.add_scrape_metadata(jurisdiction)
 
     def as_dict(self):
         d = {}
