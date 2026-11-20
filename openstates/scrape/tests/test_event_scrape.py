@@ -6,7 +6,11 @@ from openstates.scrape import Event, calculate_window
 def event_obj():
     e = Event(
         name="get-together",
-        start_date=datetime.datetime.utcnow().isoformat().split(".")[0] + "Z",
+        start_date=datetime.datetime.now(datetime.timezone.utc)
+        .replace(tzinfo=None)
+        .isoformat()
+        .split(".")[0]
+        + "Z",
         location_name="Joe's Place",
     )
     e.add_source(url="http://example.com/foobar")
