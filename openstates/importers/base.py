@@ -14,7 +14,9 @@ from ..exceptions import DuplicateItemError, UnresolvedIdError, DataImportError
 from ..utils import get_pseudo_id, utcnow
 from ._types import _ID, _JsonDict, _RelatedModels, _TransformerMapping
 
-_PersonCacheKey = typing.Tuple[str, typing.Optional[str], typing.Optional[str]]
+_PersonCacheKey = typing.Tuple[
+    str, typing.Optional[str], typing.Optional[str], typing.Optional[str]
+]
 
 
 def omnihash(obj: typing.Any) -> int:
@@ -575,10 +577,6 @@ class BaseImporter:
         end_date: typing.Optional[str] = None,
         org_classification: typing.Optional[str] = None,
     ) -> str:
-        cache_key = (psuedo_person_id, start_date, end_date)
-        if cache_key in self.person_cache:
-            return self.person_cache[cache_key]
-
         # turn spec into DB query
         spec = get_pseudo_id(psuedo_person_id)
 
@@ -586,6 +584,19 @@ class BaseImporter:
         if "chamber" in spec and org_classification is None:
             org_classification = spec["chamber"]
             del spec["chamber"]
+
+        # The cache key includes org_classification (resolved above, so a chamber
+        # embedded in psuedo_person_id counts the same as one passed explicitly).
+        # A bare-name lookup for one chamber and the identical lookup for a
+        # different chamber -- same name, same session dates, the normal case
+        # since a jurisdiction's chambers usually share one LegislativeSession --
+        # are different queries that can resolve to different people (e.g. two
+        # same-surname legislators, one per chamber). Without org_classification
+        # in the key, whichever chamber resolved first would silently poison the
+        # cache for the other for the rest of an import run.
+        cache_key = (psuedo_person_id, start_date, end_date, org_classification)
+        if cache_key in self.person_cache:
+            return self.person_cache[cache_key]
 
         if list(spec.keys()) == ["name"]:
             # if we're just resolving on name, include other names and family name
