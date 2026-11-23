@@ -33,6 +33,28 @@ def create_org():
 
 
 @pytest.mark.django_db
+def test_import_bill_action_preserves_people_without_ids():
+    create_jurisdiction()
+    lower = create_org()
+    person = Person.objects.create(name="Adam Smith")
+    Membership.objects.create(person=person, organization=lower)
+    bill = ScrapeBill("HB 1", "1900", "Act", chamber="lower")
+    bill.add_source("https://example.org/bill")
+    action = bill.add_action("Hearing", "1900-04-01", chamber="lower")
+    action.add_related_entity(
+        "Adam Smith", "person", _make_pseudo_id(name="Adam Smith")
+    )
+    action.add_related_entity("Jane Doe", "person")
+    bill.validate()
+
+    BillImporter("jid").import_data([bill.as_dict()])
+
+    entities = Bill.objects.get(identifier="HB 1").actions.get().related_entities
+    assert entities.get(name="Adam Smith").person == person
+    assert entities.get(name="Jane Doe").person is None
+
+
+@pytest.mark.django_db
 def test_full_bill():
     create_jurisdiction()
     person = Person.objects.create(name="Adam Smith")
