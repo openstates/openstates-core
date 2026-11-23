@@ -139,7 +139,7 @@ class BillImporter(BaseImporter):
                     entity["organization_id"] = self.org_importer.resolve_json_id(
                         entity["organization_id"]
                     )
-                elif "person_id" in entity:
+                elif entity.get("person_id") is not None:
                     entity["person_id"] = self.resolve_person(
                         entity["person_id"], session.start_date, session.end_date
                     )
