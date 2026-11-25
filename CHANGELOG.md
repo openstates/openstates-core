@@ -1,5 +1,8 @@
 # Changelog
 
+## 7.0.1 - Nov 25, 2026
+- Fix import failure bug when add_related_entity() creates a null person_id
+
 ## 7.0.0 - Nov 19, 2026
 - Change tooling to uv, ruff, ty
 - Add missing metadata to all scraper output
