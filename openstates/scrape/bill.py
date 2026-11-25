@@ -8,6 +8,8 @@ from .schemas.bill import schema
 
 class Action(dict):
     def add_related_entity(self, name, entity_type, entity_id=None):
+        if name and not entity_id:
+            entity_id = _make_pseudo_id(name=name)
         ent = {"name": name, "entity_type": entity_type, entity_type + "_id": entity_id}
         self["related_entities"].append(ent)
         return ent
